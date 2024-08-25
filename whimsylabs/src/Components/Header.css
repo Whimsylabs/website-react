@@ -1,0 +1,19 @@
+header {
+    background-color: #1f1968;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  header .nav-link {
+    color: white !important;
+  }
+  
+  header .active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 0.2em;
+    text-decoration-color: #15b7ff;
+    background-color: transparent !important;
+  }
+  
