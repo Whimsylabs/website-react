@@ -25,6 +25,27 @@
     margin: 0;
 }
 
+.wave-text span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    animation-delay: calc(var(--index) * 0.01s);
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px); /* Reduced movement */
+    }
+}
+
+
 #tiled-1 .contact-us {
     position: relative;
     overflow: hidden;
