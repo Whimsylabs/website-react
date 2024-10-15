@@ -1,0 +1,75 @@
+#tiled-1 {
+    background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
+                      linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                      linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                      url("./images/tiled.png") !important;
+    background-blend-mode: darken, multiply, multiply;
+    padding-bottom: 10em;
+    mask: url("./images/wave_tall.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: bottom;
+    mask-composite: exclude;
+    color: white !important;
+    text-align: center; /* Centers all child elements */
+}
+
+#tiled-1 img.logo {
+    max-height: 120px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#tiled-1 h1 {
+    color: #14b7ff;
+    margin: 0;
+}
+
+#tiled-1 .contact-us {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(92, 45, 135, 1) 0%, rgba(31, 133, 193, 1) 100%);
+    transition: background 0.3s;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2.5em 0 2.5em 0;
+    margin-top: 20px;
+}
+
+#tiled-1 .contact-us:hover {
+    background: linear-gradient(90deg, rgba(92, 45, 135, 0.8) 0%, rgba(31, 133, 193, 0.8) 100%);
+}
+
+#tiled-1 .contact-us:active {
+    background: linear-gradient(90deg, rgba(92, 45, 135, 1.2) 0%, rgba(31, 133, 193, 1.2) 100%);
+}
+
+#tiled-1 .contact-us::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s, height 0.3s;
+}
+
+#tiled-1 .contact-us:active::after {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+    transition: opacity 0.3s, width 0.3s 0.3s, height 0.3s 0.3s;
+}
+
+#tiled-1 .justified-text {
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+}

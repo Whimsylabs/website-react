@@ -4,13 +4,16 @@ header {
   background-color: #1f1968;
   display: flex;
   align-items: center;
-  padding: 0; /* Remove padding to get rid of white space above */
-  height: 100px; /* Set fixed height for consistency */
+  padding: 0 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Logo container */
 .logo-container {
-  margin-left: 20px;
+  margin-left: 0px;
+  padding: 5px;
 }
 
 .logo {
@@ -23,14 +26,16 @@ header .nav {
   display: flex;
   margin-left: auto; /* Align the links to the right */
   margin-right: 20px;
+  /* place it to the left */
+  align-items: left;
 }
 
 header .nav-item {
-  margin: 0 20px;
+  margin-left: 15px;
+  font-size: clamp(0.5rem, 2.5vw, 1.2rem); /* Responsive font size */
 }
 
 header .nav-link {
-  font-size: clamp(1em, 2vw, 1.5em); /* Scale font size based on viewport width */
   color: white !important;
   font-weight: bold;
   text-transform: uppercase;
