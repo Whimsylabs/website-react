@@ -57,3 +57,23 @@
 #carouselTestimonial .d-flex {
     min-height: 100px;
 }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .row.mt-5 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-4 {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
