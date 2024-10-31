@@ -29,7 +29,7 @@ const FeaturesSection = () => {
             imgSrc={catVr}
             title="VR/DESKTOP/ON THE GO ACCESS"
             description="In VR, desktop, and mobile our lab is accessible..."
-            delay={1}
+            delay={0.25}
           />
         </div>
         <div className="col-4">
@@ -37,7 +37,7 @@ const FeaturesSection = () => {
             imgSrc={catBrain}
             title="AI SUPPORTED TUTOR AND ASSESSOR"
             description="Our software provides a built-in tutor support..."
-            delay={2}
+            delay={0.5}
           />
         </div>
       </div>

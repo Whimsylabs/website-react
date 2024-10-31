@@ -42,11 +42,16 @@ header .nav-link {
   white-space: nowrap; /* Prevents the text from breaking into a new line */
 }
 
+header .nav-link:hover {
+  transform: scale(1.05); /* Scales up the link on hover */
+}
+
 
 /* Active link styling */
 header .nav-link.active {
   position: relative;
 }
+
 
 header .nav-link.active::after {
   content: '';

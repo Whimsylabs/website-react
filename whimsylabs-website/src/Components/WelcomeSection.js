@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './WelcomeSection.css';
 import logo from './images/logo.png'; // Import the logo image file
+import ContactUs from './ContactUs';
 
 const WelcomeSection = () => {
     useEffect(() => {
@@ -29,9 +30,7 @@ const WelcomeSection = () => {
           </div>
         </div>
       </div>
-      <a href="mailto:marisa.french@whimsylabs.ai" className="btn contact-us" type="button">
-        Contact Us
-      </a>
+      <ContactUs />
     </div>
   );
 };

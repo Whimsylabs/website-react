@@ -13,6 +13,7 @@ import bubble2 from './images/bubble2.svg';
 import bubble3 from './images/bubble3.svg';
 import bubble4 from './images/bubble4.svg';
 import SplashSection from './SplashSection';
+import ContactUs from './ContactUs';
 
 const MainContent = () => {
     const intervalRef = useRef(null);
@@ -32,7 +33,7 @@ const MainContent = () => {
               const driftRight = Math.random() * 20 - 10;
               bubble.style.setProperty('--drift-left', `${driftLeft}px`);
               bubble.style.setProperty('--drift-right', `${driftRight}px`);
-              bubble.style.left = `${Math.random() * 100}%`;
+              bubble.style.left = `${Math.random() * 97}%`;
               section.appendChild(bubble);
   
               bubble.addEventListener('animationend', () => {
@@ -41,7 +42,7 @@ const MainContent = () => {
           });
       };
   
-      intervalRef.current = setInterval(createBubble, 150 + (Math.random() * 100));
+      intervalRef.current = setInterval(createBubble, 200 + (Math.random() * 100));
   
       return () => clearInterval(intervalRef.current); // Cleanup on component unmount
   }, []);
@@ -67,6 +68,8 @@ const MainContent = () => {
           <div className="bubble-container"/>
           <div className="content">
             <Testimonial />
+            <h1>Curious?</h1>
+            <ContactUs />
           </div>
         </section>
         <Partners />
