@@ -9,7 +9,9 @@ const Footer = () => {
                 <li><a href="#home" className="nav-link">Home</a></li>
                 <li><a href="#about" className="nav-link">About</a></li>
                 <li><a href="#services" className="nav-link">Services</a></li>
-                <li><a href="#contact" className="nav-link">Contact</a></li>
+                <li>
+                    <a href="mailto:inquiries@whimsylabs.ai" className="nav-link">Contact</a>
+                </li>
             </ul>
         </footer>
     );
