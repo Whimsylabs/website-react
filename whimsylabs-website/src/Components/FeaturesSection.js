@@ -21,14 +21,14 @@ const FeaturesSection = () => {
           <Feature
             imgSrc={catBeaker}
             title="SIMULATION DEPTH and ACCURACY"
-            description="Our real-time academic simulations are the result..."
+            description="Every biological, chemical and physical reaction and process is accurately modelled, providing users with a true-to-life sandbox experience that mirrors real world laboratory conditions and risks. Explore science firsthand with the freedom of a fully simulated open lab to explore in!"
           />
         </div>
         <div className="col-4">
           <Feature
             imgSrc={catVr}
             title="VR/DESKTOP/ON THE GO ACCESS"
-            description="In VR, desktop, and mobile our lab is accessible..."
+            description="Our platform's realistic physics engine ensures that each movement and interaction within the virtual lab closely replicates the physical feel and response, enhancing muscle memory and practical skill acquisition. Use our desktop/mobile versions for on the go and ease of use access!"
             delay={0.25}
           />
         </div>
@@ -36,7 +36,7 @@ const FeaturesSection = () => {
           <Feature
             imgSrc={catBrain}
             title="AI SUPPORTED TUTOR AND ASSESSOR"
-            description="Our software provides a built-in tutor support..."
+            description="Elevate learning effectiveness with AI-driven assessment. Instant, detailed feedback on users' actions gives measurable improvements in learning ability and proficiency. We support both teachers by saving them time and students by improving their learning!"
             delay={0.5}
           />
         </div>

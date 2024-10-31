@@ -12,7 +12,10 @@ const Header = () => {
         <li className="nav-item"><a href="#" className="nav-link active" aria-current="page">Home</a></li>
         <li className="nav-item"><a href="#" className="nav-link">Features</a></li>
         <li className="nav-item"><a href="#" className="nav-link">Mission</a></li>
-        <li className="nav-item"><a href="#" className="nav-link">Contact</a></li>
+        <li className="nav-item">
+          <a href="mailto:inquiries@whimsylabs.ai" className="nav-link">Contact</a>
+        </li>
+
       </ul>
     </header>
   );
