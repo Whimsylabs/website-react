@@ -9,92 +9,32 @@
   min-height: 400px;
   opacity: 0; /* Start fully transparent */
   transform: translateY(50px); /* Start slightly lower */
-  /* Ensure animations don't conflict */
-  animation-fill-mode: forwards;
-  min-width: 200px;
 }
 
 .home-bubble img {
   width: 50%;
   height: auto;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em; /* Reduced space below the image */
 }
 
 .unique-header {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-top: 0.5em;
+  margin-top: 0.5em; /* Adjusted top margin to control space above the text */
 }
 
-/* RiseUp Animation */
 @keyframes riseUp {
   from {
-    opacity: 0;
-    transform: translateY(50px);
+      opacity: 0;
+      transform: translateY(50px); /* Start slightly lower */
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0); /* End in original position */
   }
 }
 
 .home-bubble.in-view {
-  animation-name: riseUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: inherit;
-}
-
-.home-bubble.in-view:not(.rise-up-complete) {
-  animation-name: riseUp;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-/* Persistent final state of riseUp animation */
-.home-bubble.rise-up-complete {
-  opacity: 1;
-  transform: translateY(0); /* Ensures it remains in final position */
-}
-
-/* Wiggle animation on hover */
-.home-bubble.rise-up-complete:hover {
-  animation: wiggle 0.5s ease-in-out;
-  animation-iteration-count: 1; /* Ensure wiggle repeats once per hover */
-  animation-fill-mode: none; /* Reset to allow for re-triggering on each hover */
-}
-
-/* Wiggle Animation */
-@keyframes wiggle {
-  0% {
-    transform: translateX(0);
-  }
-  15% {
-    transform: translateX(-5px) rotate(-5deg);
-  }
-  30% {
-    transform: translateX(5px) rotate(5deg);
-  }
-  45% {
-    transform: translateX(-5px) rotate(-5deg);
-  }
-  60% {
-    transform: translateX(5px) rotate(5deg);
-  }
-  75% {
-    transform: translateX(-5px) rotate(-5deg);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.home-bubble.wiggle {
-  /* Only specify wiggle animation properties */
-  animation-name: wiggle;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  /* Do not set animation-fill-mode to avoid interfering with riseUp */
+  animation: riseUp 1s ease-out forwards; /* Trigger the animation when in-view */
+  animation-delay: inherit; /* Respect delay from inline style */
 }
