@@ -1,0 +1,29 @@
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    width: 100%; /* Ensures it spans the full width of the parent */
+  }
+  
+  .video-player {
+    border: 10px solid #1F1968; /* Thicker blue border */
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 800px; /* Sets a maximum width for the video player */
+    background-color: #1F1968; /* Matches border color to avoid gaps */
+  }
+  
+  .video-element {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline element spacing */
+    border-radius: 0; /* Ensures no extra rounding on the video itself */
+  }
+  
+  
+  .video-element {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline element spacing */
+    border-radius: 10px; /* Matches container radius */
+  }
+  

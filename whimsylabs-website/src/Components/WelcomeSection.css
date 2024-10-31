@@ -1,0 +1,66 @@
+#tiled-1 {
+    background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
+                      linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                      linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                      url("./images/tiled.png") !important;
+    background-blend-mode: darken, multiply, multiply;
+    z-index: 3;
+    padding-bottom: 10em;
+    mask: url("./images/wave_tall.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: bottom;
+    mask-composite: exclude;
+    color: white !important;
+    text-align: center; /* Centers all child elements */
+    
+}
+
+#tiled-1 img.logo {
+    max-height: 120px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#tiled-1 h1.wave-text {
+    color: #14b7ff;
+    margin: 0;
+    font-size: clamp(1rem, 5vw, 3rem); /* Scales between 1rem and 3rem based on viewport width */
+    overflow-wrap: break-word; /* Ensures text wraps within the container if needed */
+    word-break: break-word;
+    padding: 10px;
+}
+
+
+#tiled-1 h1 {
+    color: #14b7ff;
+    margin: 0;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    animation-delay: calc(var(--index) * 0.01s);
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px); /* Reduced movement */
+    }
+}
+
+
+#tiled-1 .justified-text {
+    text-align: justify;
+    max-width: 600px;
+    margin: 2px auto;
+    padding: 10px;
+}

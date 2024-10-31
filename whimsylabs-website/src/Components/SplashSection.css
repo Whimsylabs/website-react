@@ -1,0 +1,51 @@
+.splash-container {
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%),
+                      linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%),
+                      linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%),
+                      url("./images/tiled.png");
+    background-blend-mode: darken, multiply, multiply;
+    background-size: 500px;
+    background-repeat: repeat;
+    color: white;
+}
+
+.splash-top-mask, .splash-bottom-mask {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transform: scaleY(1.4) translateY(-10%);
+}
+
+
+.flipped-wave {
+    transform: scaleY(-1); /* Flip the bottom wave if needed */
+}
+
+.splash-top-mask svg, .splash-bottom-mask svg {
+    display: block;
+    width: 200%; /* Double the width for seamless animation */
+    height: 100px;
+    animation: waveMove 10s ease-in-out infinite;
+    z-index: 3;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0%) scaleX(1);
+    }
+    50% {
+        transform: translateX(-50%) scaleX(1);
+    }
+    100% {
+        transform: translateX(0%) scaleX(1);
+    }
+}
+
+.splash-content {
+    position: relative;
+    z-index: 2;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}

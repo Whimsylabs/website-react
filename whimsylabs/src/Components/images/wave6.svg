@@ -1,5 +1,0 @@
-<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-  <path d="" id="sineWave" stroke="blue" fill="transparent" stroke-width="2">
-    <animate attributeName="d" from="M 0,100 Q 50,100 100,100 T 200,100 T 300,100 T 400,100 T 500,100 T 600,100 T 700,100 T 800,100" to="M 0,100 Q 50,50 100,100 T 200,100 T 300,100 T 400,100 T 500,100 T 600,100 T 700,100 T 800,100 M 0,100 Q 50,150 100,100 T 200,100 T 300,100 T 400,100 T 500,100 T 600,100 T 700,100 T 800,100" dur="5s" repeatCount="indefinite" />
-  </path>
-</svg>

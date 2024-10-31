@@ -1,0 +1,33 @@
+footer {
+  background-color: #1f1968;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between each link */
+  margin: 10px 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-links li {
+  display: inline;
+}
+
+footer .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+}
