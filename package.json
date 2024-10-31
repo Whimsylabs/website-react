@@ -1,5 +1,6 @@
 {
   "name": "whimsylabs-website",
+  "homepage": "https://yourusername.github.io/repositoryname",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
