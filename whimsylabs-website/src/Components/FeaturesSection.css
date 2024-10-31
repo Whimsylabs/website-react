@@ -8,54 +8,19 @@
     padding-right: 2.5em;
 }
 
-.testimonial-header {
-    color: #000067;
-    border-radius: 2.5em 0 2.5em 0;
-    background: #a7bcfb;
-    width: fit-content;
-    margin: auto;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-}
-
-#carouselTestimonial {
+.unique-features-heading {
     position: relative;
-}
-
-#carouselTestimonial .carousel-inner {
-    padding: 0 50px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: auto;
-    position: relative;
-}
-
-.carousel-button {
+    overflow: hidden;
+    background: #6d8fc7;
+    transition: background 0.3s;
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%; 
-}
-
-.prev-icon {
-    background-image: url("./images/left-arrow.svg");
-}
-
-.next-icon {
-    background-image: url("./images/right-arrow.svg");
-}
-
-.testimonial-item {
-    text-align: center;
-    padding: 1em;
-}
-
-#carouselTestimonial .d-flex {
-    min-height: 100px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2.5em 0 2.5em 0;
+    margin-top: 20px;
+    font-size: 1.5em;
 }
 
 .container {

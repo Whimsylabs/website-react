@@ -1,0 +1,102 @@
+.testimonial-carousel {
+    text-align: center;
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-header {
+    font-size: 1.5rem;
+    background-color: #6d8fc7; /* Header background color */
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5em em 5em 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial-content {
+    flex-grow: 1;
+    padding: 0 2rem; /* Spacing between arrows and content */
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.testimonial-person {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.carousel-control {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.prev-icon {
+    background-image: url('./images/left-arrow.svg'); /* Replace with the path to your left arrow image */
+}
+
+.next-icon {
+    background-image: url('./images/right-arrow.svg'); /* Replace with the path to your right arrow image */
+}
+
+.carousel-control:focus {
+    outline: none;
+}
+
+/* Animation Classes */
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: fadeInRight 0.5s forwards;
+}
+
+.fade-out-left {
+    opacity: 1;
+    transform: translateX(0);
+    animation: fadeOutLeft 0.5s forwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}

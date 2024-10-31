@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Feature.css';
 
-const Feature = ({ imgSrc, title, description, delay = 1 }) => {
+const Feature = ({ imgSrc, title, description, delay = 0 }) => {
   useEffect(() => {
     const options = {
       threshold: 0.5, // Trigger when 50% of the element is in view
@@ -11,6 +11,7 @@ const Feature = ({ imgSrc, title, description, delay = 1 }) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);  // Stops observing after adding class
         } else {
           entry.target.classList.remove('in-view');
         }

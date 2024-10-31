@@ -5,14 +5,13 @@ import catBeaker from './images/cat_beaker.png';
 import catVr from './images/cat_vr.png';
 import catBrain from './images/cat_brain.png';
 
-
 const FeaturesSection = () => {
   return (
     <div className="container">
       <div className="row">
         <div className="col-3"></div>
         <div className="col-6 text-center">
-          <h2>OUR UNIQUE FEATURES</h2>
+          <h2 className="unique-features-heading">OUR UNIQUE FEATURES</h2>
         </div>
         <div className="col-3"></div>
       </div>
@@ -30,7 +29,7 @@ const FeaturesSection = () => {
             imgSrc={catVr}
             title="VR/DESKTOP/ON THE GO ACCESS"
             description="In VR, desktop, and mobile our lab is accessible..."
-            delay={2}
+            delay={1}
           />
         </div>
         <div className="col-4">
@@ -38,7 +37,7 @@ const FeaturesSection = () => {
             imgSrc={catBrain}
             title="AI SUPPORTED TUTOR AND ASSESSOR"
             description="Our software provides a built-in tutor support..."
-            delay={3}
+            delay={2}
           />
         </div>
       </div>
