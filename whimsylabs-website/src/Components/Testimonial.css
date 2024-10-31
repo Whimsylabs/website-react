@@ -9,7 +9,7 @@
 
 .testimonial-header {
     font-size: 1.5rem;
-    background-color: #6d8fc7; /* Header background color */
+    background-color: #6172B3; /* Header background color */
     color: white;
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -27,7 +27,7 @@
 
 .testimonial-content {
     flex-grow: 1;
-    padding: 0 2rem; /* Spacing between arrows and content */
+    padding: 0 -2rem; /* Spacing between arrows and content */
 }
 
 .testimonial-text {
@@ -43,6 +43,16 @@
     color: #4a4a4a;
 }
 
+.testimonial-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 1rem; /* Adjust padding as needed */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Optional: soft shadow for depth */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
 .carousel-control {
     background-color: transparent;
     border: none;
@@ -54,12 +64,15 @@
     background-size: contain;
 }
 
+
 .prev-icon {
     background-image: url('./images/left-arrow.svg'); /* Replace with the path to your left arrow image */
+    padding: 25px;
 }
 
 .next-icon {
     background-image: url('./images/right-arrow.svg'); /* Replace with the path to your right arrow image */
+    padding: 25px;
 }
 
 .carousel-control:focus {

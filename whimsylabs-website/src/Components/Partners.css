@@ -1,7 +1,10 @@
 .partners-section {
+    position: relative;
     padding: 20px 0;
     background-color: #f8f9fa; /* Light background color to distinguish section */
     text-align: center;
+    z-index: 3;
+    overflow:auto
 }
 
 .partners-row {

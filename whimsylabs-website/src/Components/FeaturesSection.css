@@ -11,7 +11,7 @@
 .unique-features-heading {
     position: relative;
     overflow: hidden;
-    background: #95CEF6;
+    background: #6172B3;
     transition: background 0.3s;
     display: inline-block;
     font-weight: bold;
@@ -30,13 +30,17 @@
   
   .row.mt-5 {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Enables wrapping to the next line */
+    justify-content: center;
+    gap: 20px; /* Adds spacing between items */
   }
   
   .col-4 {
     padding: 15px;
-    flex: 1;
+    flex: 1 1 300px; /* Allows items to take up space responsively with a minimum width */
+    max-width: 100%;
   }
+  
   
   h2 {
     text-align: center;

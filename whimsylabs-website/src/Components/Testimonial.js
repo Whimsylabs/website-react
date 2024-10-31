@@ -47,13 +47,15 @@ const Testimonial = () => {
             <h2 className="testimonial-header">Testimonials</h2>
             <div className="testimonial-container">
                 <button className="carousel-control prev-icon" onClick={handlePrev} aria-label="Previous testimonial"></button>
-                <div className={`testimonial-content ${animationClass}`}>
-                    <p className="testimonial-text">
-                        "{testimonials[currentIndex].text}"
-                    </p>
-                    <p className="testimonial-person">
-                        {testimonials[currentIndex].person}
-                    </p>
+                <div class="testimonial-box">
+                    <div className={`testimonial-content ${animationClass}`}>
+                        <p className="testimonial-text">
+                            "{testimonials[currentIndex].text}"
+                        </p>
+                        <p className="testimonial-person">
+                            {testimonials[currentIndex].person}
+                        </p>
+                    </div>
                 </div>
                 <button className="carousel-control next-icon" onClick={handleNext} aria-label="Next testimonial"></button>
             </div>
