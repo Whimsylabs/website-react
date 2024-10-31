@@ -1,6 +1,6 @@
 {
   "name": "whimsylabs-website",
-  "homepage": "http://whimsylabs.ai",
+  "homepage": "https://whimsylabs.ai",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
