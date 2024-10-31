@@ -26,8 +26,6 @@ header .nav {
   display: flex;
   margin-left: auto; /* Align the links to the right */
   margin-right: 20px;
-  /* place it to the left */
-  align-items: left;
 }
 
 header .nav-item {
