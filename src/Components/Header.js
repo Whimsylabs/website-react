@@ -9,13 +9,26 @@ const Header = () => {
         <img src={logo} alt="Whimsylabs Logo" className="logo" />
       </div>
       <ul className="nav nav-pills">
-        <li className="nav-item"><a href="#" className="nav-link active" aria-current="page">Home</a></li>
-        <li className="nav-item"><a href="#" className="nav-link">Features</a></li>
-        <li className="nav-item"><a href="#" className="nav-link">Mission</a></li>
         <li className="nav-item">
-          <a href="mailto:inquiries@whimsylabs.ai" className="nav-link">Contact</a>
+          <a href="#home" className="nav-link active" aria-current="page">
+            Home
+          </a>
         </li>
-
+        <li className="nav-item">
+          <a href="#features" className="nav-link">
+            Features
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#mission" className="nav-link">
+            Mission
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="mailto:inquiries@whimsylabs.ai" className="nav-link">
+            Contact
+          </a>
+        </li>
       </ul>
     </header>
   );
