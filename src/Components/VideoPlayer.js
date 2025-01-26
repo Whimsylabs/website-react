@@ -12,9 +12,10 @@ const VideoPlayer = ({ videoSrc, poster, fallbackImage }) => {
           controls
           poster={poster}
           className="video-element"
+          aria-labelledby="video-title"
         >
           <source src={videoSrc} type="video/webm" />
-          <img src={fallbackImage} alt="Video not supported" className="fallback-image" />
+          <img src={fallbackImage} alt="Video not supported. Fallback image displayed." className="fallback-image" />
         </video>
       </div>
     </div>

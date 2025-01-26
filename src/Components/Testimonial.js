@@ -7,7 +7,7 @@ const testimonials = [
         person: "Kids Judge Bett",
     },
     {
-        text: "The feeling of the lab was amazing. Being able to train students in pracicals remotely not only saves our glassware/equipment but gives students an extra space to learn lab skills effectively.",
+        text: "The feeling of the lab was amazing. Being able to train students in practicals remotely not only saves our glassware/equipment but gives students an extra space to learn lab skills effectively.",
         person: "Bett2025 Lab Manager",
     },
     {
@@ -51,11 +51,11 @@ const Testimonial = () => {
     }, [currentIndex]); // Reset interval whenever currentIndex changes
 
     return (
-        <div className="testimonial-carousel">
-            <h2 className="testimonial-header">Testimonials</h2>
+        <section className="testimonial-carousel" aria-labelledby="testimonial-heading">
+            <h2 id="testimonial-heading" className="testimonial-header">Testimonials</h2>
             <div className="testimonial-container">
                 <button className="carousel-control prev-icon" onClick={handlePrev} aria-label="Previous testimonial"></button>
-                <div class="testimonial-box">
+                <div className="testimonial-box">
                     <div className={`testimonial-content ${animationClass}`}>
                         <p className="testimonial-text">
                             "{testimonials[currentIndex].text}"
@@ -67,7 +67,7 @@ const Testimonial = () => {
                 </div>
                 <button className="carousel-control next-icon" onClick={handleNext} aria-label="Next testimonial"></button>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -7,11 +7,11 @@ const Header = () => {
   const location = useLocation(); // Get the current path
 
   return (
-    <header className="header-container">
+    <header className="header-container" aria-label="Main site navigation">
       <div className="logo-container">
         <img src={logo} alt="Whimsylabs Logo" className="logo" />
       </div>
-      <ul className="nav nav-pills">
+      <ul className="nav nav-pills" aria-label="Primary navigation">
         {/* Dynamically apply the "active" class based on the current location */}
         <li className="nav-item">
           <Link
@@ -26,6 +26,7 @@ const Header = () => {
           <a
             href="#features"
             className={`nav-link ${location.hash === '#features' ? 'active' : ''}`}
+            aria-label="Explore Features"
           >
             Features
           </a>
@@ -34,12 +35,13 @@ const Header = () => {
           <a
             href="#mission"
             className={`nav-link ${location.hash === '#mission' ? 'active' : ''}`}
+            aria-label="Learn About Our Mission"
           >
             Mission
           </a>
         </li>
         <li className="nav-item">
-          <a href="mailto:inquiries@whimsylabs.ai" className="nav-link">
+          <a href="mailto:inquiries@whimsylabs.ai" className="nav-link" aria-label="Contact Us">
             Contact
           </a>
         </li>
@@ -47,6 +49,7 @@ const Header = () => {
           <Link
             to="/blog"
             className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`}
+            aria-label="Read Our Blog"
           >
             Blog
           </Link>
@@ -57,3 +60,4 @@ const Header = () => {
 };
 
 export default Header;
+
