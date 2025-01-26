@@ -3,17 +3,25 @@ import './Testimonial.css';
 
 const testimonials = [
     {
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum imperdiet sapien, non mattis nisl laoreet non.",
-        person: "Person X",
+        text: "Very fun and engaging, and will cater fun for all children!",
+        person: "Kids Judge Bett",
     },
     {
-        text: "Item 2 text goes here for the second testimonial.",
-        person: "Person Y",
+        text: "The feeling of the lab was amazing. Being able to train students in pracicals remotely not only saves our glassware/equipment but gives students an extra space to learn lab skills effectively.",
+        person: "Bett2025 Lab Manager",
     },
     {
-        text: "This is a third testimonial. They really loved the service!",
-        person: "Person Z",
+        text: "The automated grading on a curve with a wide range of student outcomes is incredible. It saves me so much time and targets our learning objectives perfectly.",
+        person: "Bett2025 Teacher",
     },
+    {
+        text: "I wish we had this at school.",
+        person: "Bett2025 Chemistry Student",
+    },
+    {
+        text: "That was so fun!!! (after taking the headset off and running over to their friends)",
+        person: "Bett2025 primary school student",
+    }    
 ];
 
 const Testimonial = () => {

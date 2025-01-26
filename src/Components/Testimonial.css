@@ -44,13 +44,17 @@
 }
 
 .testimonial-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-    padding: 1rem; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Keep the white background */
+    padding: 1rem; /* Add spacing around the text */
     border-radius: 15px; /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Optional: soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for depth */
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: auto; /* Ensure it resizes dynamically */
+    height: auto; /* Allow height to grow with content */
+    display: block; /* Ensure it respects content layout */
 }
+
 
 
 .carousel-control {
