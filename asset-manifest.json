@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1b94de9.css",
-    "main.js": "/static/js/main.6ef17ada.js",
+    "main.css": "/static/css/main.e3242ba1.css",
+    "main.js": "/static/js/main.0f8d0f16.js",
     "static/js/453.78e2a7e7.chunk.js": "/static/js/453.78e2a7e7.chunk.js",
-    "static/media/placeholder.webm": "/static/media/placeholder.3007cf6d06c84e7615b1.webm",
+    "static/media/placeholder.webm": "/static/media/placeholder.0eb0051bf1317d1658f7.webm",
     "static/media/tiled.png": "/static/media/tiled.f61b4dad43f2e0e26fee.png",
     "static/media/logo.png": "/static/media/logo.31d09db8cb0d5865563d.png",
+    "static/media/kids_judge_bett.png": "/static/media/kids_judge_bett.b880bb25f21a34156f11.png",
     "static/media/cat_brain.png": "/static/media/cat_brain.9f2353a5367e98ef48e6.png",
     "static/media/cat_beaker.png": "/static/media/cat_beaker.33fbf159a642f37030f9.png",
     "static/media/cat_vr.png": "/static/media/cat_vr.46c6d6df6b8bdfc45d5c.png",
@@ -17,12 +18,12 @@
     "static/media/wave_tall.svg": "/static/media/wave_tall.ddc516966a78291cf15f.svg",
     "static/media/left-arrow.svg": "/static/media/left-arrow.a85062204305d88a602d.svg",
     "static/media/right-arrow.svg": "/static/media/right-arrow.6c8c62cc08d9508c78dd.svg",
-    "main.f1b94de9.css.map": "/static/css/main.f1b94de9.css.map",
-    "main.6ef17ada.js.map": "/static/js/main.6ef17ada.js.map",
+    "main.e3242ba1.css.map": "/static/css/main.e3242ba1.css.map",
+    "main.0f8d0f16.js.map": "/static/js/main.0f8d0f16.js.map",
     "453.78e2a7e7.chunk.js.map": "/static/js/453.78e2a7e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1b94de9.css",
-    "static/js/main.6ef17ada.js"
+    "static/css/main.e3242ba1.css",
+    "static/js/main.0f8d0f16.js"
   ]
 }
