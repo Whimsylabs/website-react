@@ -23,13 +23,11 @@ const Partners = () => {
                         </a>
                     </div>
                     <div className="partner-logo">
-                        <a href="https://www.bettshow.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/bett-show-uk-2024/media/logos/Bett-UK-2025-Logo-Navy.png"
-                                className="img-fluid"
-                                alt="Bett UK 2025"
-                            />
+                        <a href="https://uk.bettshow.com/exhibitors/whimsylabs" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/bett-show-uk-2024/media/logos/Bett-UK-2025-Logo-Navy.png" alt="BETT UK 2025" />
                         </a>
                     </div>
+                    
                     <div className="partner-logo">
                         <a href="https://www.bettshow.com/" target="_blank" rel="noopener noreferrer">
                             <img src={DJB}
@@ -38,8 +36,6 @@ const Partners = () => {
                             />
                         </a>
                     </div>
-
-
                     {/* Todo:
                     <div className="partner-logo">
                         <a href="https://www.scottish-enterprise.com/" target="_blank" rel="noopener noreferrer">
