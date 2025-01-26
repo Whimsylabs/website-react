@@ -4,7 +4,6 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="footer-container" aria-labelledby="footer-heading">
-            <h2 id="footer-heading" className="visually-hidden">Footer Navigation</h2>
             <p>© 2025 Whimsylabs – Virtual Laboratory Solutions</p>
             <ul className="footer-links" aria-label="Footer navigation">
                 <li><a href="#home" className="nav-link" aria-label="Navigate to Home">Home</a></li>
