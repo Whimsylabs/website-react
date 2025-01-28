@@ -1,19 +1,21 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
-const Post1 = () => {
-  return (
-    <div>
-      <Helmet>
-        <title>How Whimsylabs Revolutionizes Science Education</title>
-        <meta name="description" content="Discover how Whimsylabs is improving STEM education through virtual labs and AI-powered simulations." />
-        <meta name="keywords" content="virtual labs, science education, AI, STEM learning" />
-        <link rel="canonical" href="https://whimsylabs.ai/blog/whimsylabs-science-education" />
-      </Helmet>
-      <h1>How Whimsylabs Revolutionizes Science Education</h1>
-      <p>Whimsylabs is transforming science education by providing innovative and interactive virtual laboratory experiences...</p>
-    </div>
-  );
-};
+export const title = "How Whimsylabs Revolutionizes Science Education";
+export const date = "2025-01-26";
+export const slug = "whimsylabs-science-education";
+export const description =
+  "Learn how Whimsylabs is transforming science education through immersive virtual labs and AI-powered environments.";
 
-export default Post1;
+export const content = (
+  <div>
+    <p>
+      Whimsylabs is at the forefront of modern science education, offering state-of-the-art virtual laboratories that
+      empower students to explore STEM subjects in depth.
+    </p>
+    <img src="/path/to/image.jpg" alt="Virtual Lab in Action" className="rounded shadow" />
+    <p>
+      These labs provide a safe, accessible, and engaging environment for hands-on learning, without the risks or costs
+      associated with traditional labs.
+    </p>
+  </div>
+);

@@ -1,36 +1,55 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import BubbleContainer from "./BubbleContainer";
+import React, { useState } from 'react';
+import './Blog.css';
+import BubbleContainer from './BubbleContainer';
+
+// Import all posts dynamically
+const postsContext = require.context('./blog', false, /Post\d+\.js$/);
+const posts = postsContext.keys().map((key) => {
+  const postModule = postsContext(key);
+  return {
+    id: postModule.slug,
+    title: postModule.title,
+    content: postModule.content,
+    date: postModule.date,
+    description: postModule.description,
+  };
+});
 
 const Blog = () => {
-  const posts = [
-    { title: "How Whimsylabs Revolutionizes Science Education", slug: "whimsylabs-science-education" },
-    { title: "Virtual Labs: The Future of STEM Learning", slug: "virtual-labs-stem" },
-    { title: "AI-Powered Laboratories for Students", slug: "ai-laboratories" },
-  ];
+  const [activePostId, setActivePostId] = useState(null);
+
+  const handlePostClick = (id) => {
+    setActivePostId(id);
+    document.getElementById(`post-${id}`).scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <BubbleContainer>
-      <Helmet>
-        <title>Blog - Whimsylabs</title>
-        <meta
-          name="description"
-          content="Explore how Whimsylabs is transforming science education through virtual labs and AI-driven environments."
-        />
-        <meta name="keywords" content="Whimsylabs, virtual labs, STEM education, AI laboratories" />
-        <link rel="canonical" href="https://whimsylabs.ai/blog" />
-      </Helmet>
-
-      <h1 className="text-4xl font-bold mb-6">Blog</h1>
-      <ul className="list-disc list-inside text-left">
+    <div className="blog-container">
+      <div className="posts-section">
         {posts.map((post) => (
-          <li key={post.slug}>
-            <a href={`/blog/${post.slug}`} className="text-blue-500 hover:underline">
-              {post.title}
-            </a>
-          </li>
+          <div className="post-box" id={`post-${post.id}`} key={post.id}>
+            <h2>{post.title}</h2>
+            <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
+            <div>{post.content}</div>
+          </div>
         ))}
-      </ul>
+      </div>
+      <div className="sidebar">
+        <h3>Jump to Post</h3>
+        <ul>
+          {posts.map((post) => (
+            <li
+              key={post.id}
+              className={activePostId === post.id ? 'active' : ''}
+              onClick={() => handlePostClick(post.id)}
+            >
+              {post.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
     </BubbleContainer>
   );
 };
