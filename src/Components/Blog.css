@@ -7,82 +7,137 @@
     padding: 20px;
     background-color: #f9f9f93b;
     min-height: 100vh;
-  }
-  
-  .posts-section {
+}
+
+.posts-section {
     flex: 3;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .post-box {
-    background-color: #ffffff;
+}
+
+.post-box {
+    background-color: #ffffffef;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .post-box:hover {
+}
+
+.post-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .post-box h2 {
+}
+
+.post-box h2 {
     margin: 0 0 10px;
     font-size: 1.5rem;
     color: #333333;
-  }
-  
-  .post-box p {
+}
+
+.post-box p {
     margin: 0 0 10px;
     font-size: 1rem;
     line-height: 1.6;
     color: #555555;
-  }
-  
-  .post-date {
+}
+
+.post-date {
     font-size: 0.85rem;
-    color: #888888;
-  }
-  
-  .sidebar {
+    color: #e01b84;
+}
+
+.sidebar {
     flex: 1;
-    background-color: #ffffff;
+    background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
+                        linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                        linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                        url("./images/tiled.png") !important;
+    background-blend-mode: darken, multiply, multiply;
+    color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidebar h3 {
+    text-align: center; /* Aligns content within the sidebar */
+}
+
+.sidebar h3 {
     margin: 0 0 15px;
     font-size: 1.25rem;
     color: #333333;
-  }
-  
-  .sidebar ul {
+}
+
+.sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .sidebar li {
+}
+
+.sidebar li {
     margin: 10px 0;
     padding: 10px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
-  }
-  
-  .sidebar li:hover {
     background-color: #f0f0f0;
     color: #000000;
-  }
-  
-  .sidebar li.active {
-    background-color: #007bff;
-    color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sidebar li:hover {
+    background-color: #007bff; /* Same as active background */
+    color: #ffffff; /* White text */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar li.active {
+    background-color: #007bff; /* Active background */
+    color: #ffffff; /* White text */
     font-weight: bold;
-  }
+}
+
+.sidebar h2 {
+    margin: 0 0 15px;
+    font-size: 1.25rem;
+    color: #ffffff; /* Change to white */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+/* Define the rounded class for rounded corners */
+.rounded {
+    border-radius: 8px; /* Adjust the radius as needed */
+}
+
+/* Define the shadow class for a subtle shadow effect */
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Center images horizontally */
+.center {
+    display: block;
+    margin: 0 auto; /* Horizontal centering */
+}
+
+/* Limit image size while maintaining aspect ratio */
+.limited-size {
+    max-width: 100%; /* Scale down to fit within the container */
+    max-height: 300px; /* Limit height to 300px */
+    display: block; /* Ensure proper block-level rendering */
+    margin: 0 auto; /* Center the image horizontally */
+    object-fit: cover; /* Ensure the image is properly cropped if needed */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Caption styling */
+.caption {
+    font-size: 0.9rem; /* Slightly smaller font size for captions */
+    color: #555555; /* Muted color for captions */
+    text-align: center; /* Center-align the caption text */
+    margin-top: 5px; /* Add space above the caption */
+    margin-bottom: 15px; /* Add space below the caption */
+    font-style: italic; /* Make the text italic for a distinctive caption style */
+}
   

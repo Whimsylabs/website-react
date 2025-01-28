@@ -5,7 +5,7 @@ import bubble2 from './images/bubble2.svg';
 import bubble3 from './images/bubble3.svg';
 import bubble4 from './images/bubble4.svg';
 
-const BubbleContainer = ({ children }) => {
+const BubbleContainer = ({ children, speed = 10 }) => {
   const intervalRef = useRef(null);
 
   useEffect(() => {
@@ -19,6 +19,7 @@ const BubbleContainer = ({ children }) => {
         const randomBubble = bubbles[Math.floor(Math.random() * bubbles.length)];
         bubble.style.backgroundImage = `url(${randomBubble})`;
         bubble.style.left = `${Math.random() * 97}%`;
+        bubble.style.animationDuration = `${speed}s`; // Set animation speed dynamically
         section.appendChild(bubble);
 
         bubble.addEventListener('animationend', () => {
@@ -49,7 +50,7 @@ const BubbleContainer = ({ children }) => {
     return () => {
       stopBubbleGeneration();
     };
-  }, []);
+  }, [speed]); // Re-run effect if speed changes
 
   return (
     <section className="gradient-section">

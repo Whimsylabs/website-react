@@ -24,7 +24,7 @@ const Blog = () => {
   };
 
   return (
-    <BubbleContainer>
+    <BubbleContainer speed={50}>
     <div className="blog-container">
       <div className="posts-section">
         {posts.map((post) => (
@@ -36,7 +36,7 @@ const Blog = () => {
         ))}
       </div>
       <div className="sidebar">
-        <h3>Jump to Post</h3>
+        <h2>Jump to Post</h2>
         <ul>
           {posts.map((post) => (
             <li
