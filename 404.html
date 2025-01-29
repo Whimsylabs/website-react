@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="https://whimsylabs.com/logo.png" alt="Whimsylabs Logo">
     <title>Redirecting...</title>
     <script>
         var pathname = window.location.pathname;
-        var redirectTo = "/?" + pathname;
-        window.location.replace(redirectTo);
+        if (pathname !== "/") {
+            window.location.replace("/#" + pathname);
+        }
     </script>
 </head>
 <body>
     <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
     <script>
-        document.getElementById("redirect-link").href = "/?" + window.location.pathname;
+        document.getElementById("redirect-link").href = "/#" + window.location.pathname;
     </script>
 </body>
 </html>
