@@ -11,10 +11,14 @@ import Partners from './Partners';
 import BubbleContainer from './BubbleContainer';
 import SplashSection from './SplashSection';
 import ContactUs from './ContactUs';
+import Header from './Header';
+import Footer from './Footer';
 
 const MainContent = () => {
   return (
+    
     <main className="container-fluid text-center p-0">
+      <Header/>
       <WelcomeSection />
       <BubbleContainer>
         <VideoPlayer
@@ -32,6 +36,7 @@ const MainContent = () => {
         <ContactUs />
       </BubbleContainer>
       <Partners />
+      <Footer />
     </main>
   );
 };

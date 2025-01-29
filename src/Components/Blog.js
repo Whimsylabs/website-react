@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
+import Header from './Header';
+import Footer from './Footer';
 
 // Import all posts dynamically
 const postsContext = require.context('./blog', false, /Post\d+\.js$/);
@@ -46,6 +48,8 @@ const Blog = () => {
   }, []);
 
   return (
+    <main className="container-fluid text-center p-0">
+    <Header />
     <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
       <div className="blog-container">
         <div className="posts-section">
@@ -73,6 +77,8 @@ const Blog = () => {
         </div>
       </div>
     </BubbleContainer>
+    <Footer />
+    </main>
   );
 };
 
