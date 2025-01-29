@@ -7,14 +7,14 @@
     <script>
         var pathname = window.location.pathname;
         if (pathname !== "/") {
-            window.location.replace("/index.html?redirect=" + pathname);
+            window.location.replace(pathname);
         }
     </script>
 </head>
 <body>
     <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
     <script>
-        document.getElementById("redirect-link").href = "/index.html?redirect=" + window.location.pathname;
+        document.getElementById("redirect-link").href = window.location.pathname;
     </script>
 </body>
 </html>
