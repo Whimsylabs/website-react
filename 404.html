@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        var pathname = window.location.pathname;
-        if (pathname !== "/") {
-            window.location.replace(pathname);
+        // Prevent infinite loops by only redirecting if we are NOT on index.html
+        if (!window.location.pathname.startsWith("/index.html")) {
+            window.location.replace("/index.html");
         }
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
-    <script>
-        document.getElementById("redirect-link").href = window.location.pathname;
-    </script>
+    <p>If you are not redirected, <a href="/index.html">click here</a>.</p>
 </body>
 </html>
