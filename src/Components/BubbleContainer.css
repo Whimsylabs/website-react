@@ -2,7 +2,7 @@
     position: relative;
     overflow: visible; /* Allow content to flow outside */
     background: linear-gradient(180deg, #dabeff 0%, #95CEF6 100%);
-    padding: 20px;
+    padding: 10px;
     min-height: 100px;
 }
 
@@ -15,6 +15,13 @@
     height: 120%; /* Allow bubbles to animate beyond */
 }
 
+.bubble-container.blog-context {
+    overflow: hidden;
+}
+
+.gradient-section.blog-context {
+    overflow: hidden;
+}
   
   .content {
     position: relative;

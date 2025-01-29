@@ -1,10 +1,27 @@
-// App.js
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import MainContent from "./Components/MainContent";
 import Blog from "./Components/Blog";
+import Services from "./Components/Services";
+
+const HashRedirector = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const hashSlug = location.hash.replace("#", "").trim();
+      if (hashSlug.startsWith("blog/")) {
+        const slug = hashSlug.replace("blog/", "");
+        window.location.replace(`#/blog/${slug}`);
+      }
+    }
+  }, [location]);
+
+  return null;
+};
 
 function App() {
   return (
@@ -16,6 +33,7 @@ function App() {
         </Helmet>
         <Header />
         <div className="flex-grow">
+          <HashRedirector />
           <Routes>
             <Route 
               path="/" 
@@ -41,6 +59,19 @@ function App() {
                 </>
               } 
             />
+            <Route 
+              path="/blog/:slug" 
+              element={
+                <>
+                  <Helmet>
+                    <title>Blog Post - Whimsylabs</title>
+                    <meta name="description" content="Read the latest blog post from Whimsylabs." />
+                  </Helmet>
+                  <Blog />
+                </>
+              } 
+            />
+            <Route path="/services" element={<Services />} /> {/* Add this */}
           </Routes>
         </div>
         <Footer />
@@ -50,4 +81,3 @@ function App() {
 }
 
 export default App;
-

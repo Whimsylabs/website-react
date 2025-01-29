@@ -15,6 +15,9 @@ const posts = postsContext.keys().map((key) => {
   };
 });
 
+// Function to convert titles into URL-friendly slugs
+const generateSlug = (title) => title.replace(/\s+/g, '-').toLowerCase();
+
 const Blog = () => {
   const [activePostId, setActivePostId] = useState(null);
 
@@ -22,28 +25,28 @@ const Blog = () => {
     setActivePostId(id);
     document.getElementById(`post-${id}`).scrollIntoView({ behavior: 'smooth' });
 
-    // Convert title to a URL-friendly slug
-    const postSlug = title.replace(/\s+/g, '-').toLowerCase();
-    
-    // Use window.history instead of history
+    // Convert title to slug & update URL
+    const postSlug = generateSlug(title);
     window.history.pushState(null, null, `#${postSlug}`);
-};
+  };
 
   // Handle page load with existing hash
   useEffect(() => {
     if (window.location.hash) {
       const hash = window.location.hash.substring(1);
-      const targetPost = posts.find(post => post.title.replace(/\s+/g, '-').toLowerCase() === hash);
+      const targetPost = posts.find((post) => generateSlug(post.title) === hash);
 
       if (targetPost) {
         setActivePostId(targetPost.id);
-        document.getElementById(`post-${targetPost.id}`).scrollIntoView({ behavior: 'instant' });
+        setTimeout(() => {
+          document.getElementById(`post-${targetPost.id}`)?.scrollIntoView({ behavior: 'instant' });
+        }, 100); // Ensure smooth behavior after page load
       }
     }
   }, []);
 
   return (
-    <BubbleContainer speed={50}>
+    <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
       <div className="blog-container">
         <div className="posts-section">
           {posts.map((post) => (
@@ -69,7 +72,7 @@ const Blog = () => {
           </ul>
         </div>
       </div>
-        </BubbleContainer>
+    </BubbleContainer>
   );
 };
 

@@ -31,7 +31,7 @@ const Header = () => {
             Features
           </a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a
             href="#mission"
             className={`nav-link ${location.hash === '#mission' ? 'active' : ''}`}
@@ -39,7 +39,7 @@ const Header = () => {
           >
             Mission
           </a>
-        </li>
+        </li> */}
         <li className="nav-item">
           <a href="mailto:inquiries@whimsylabs.ai" className="nav-link" aria-label="Contact Us">
             Contact
