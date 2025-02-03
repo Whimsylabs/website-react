@@ -4,7 +4,7 @@ import testLab from '../images/testLab.png'; // Tech test lab image
 import finalLab from '../images/finalLab.png'; // Final lab design image
 
 export const title = "A Brief History of Whimsylabs: From our Humble Start to a BETT 2025 Winner ";
-export const date = "2025-01-28";
+export const date = "2025-01-27";
 export const slug = "whimsylabs-education-revolution";
 export const description =
   "How Whimsylabs, founded by Marisa French, is addressing STEM challenges with fully simulated labs, impactful partnerships, and award-winning innovation.";
