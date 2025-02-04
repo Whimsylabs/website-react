@@ -101,4 +101,8 @@ if (document.getElementById("blog-root")) {
   ReactDOM.render(<Blog />, document.getElementById("blog-root"));
 }
 
+if (typeof window !== "undefined") {
+  window.Blog = Blog; // Make Blog component available globally
+}
+
 export default Blog;
