@@ -20,7 +20,7 @@ const MainContent = () => {
     <main className="container-fluid text-center p-0">
       <Header/>
       <WelcomeSection />
-      <BubbleContainer>
+      <BubbleContainer bubbleCount={0.6}>
         <VideoPlayer
           videoSrc={sampleVideo}
           poster={videoPoster}
@@ -30,7 +30,7 @@ const MainContent = () => {
       <SplashSection>
         <FeaturesSection />
       </SplashSection>
-      <BubbleContainer>
+      <BubbleContainer bubbleCount={0.4}>
         <Testimonial />
         <h1>Curious?</h1>
         <ContactUs />
