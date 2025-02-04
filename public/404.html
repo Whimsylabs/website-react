@@ -1,8 +1,7 @@
 <script>
     var pathname = window.location.pathname;
-    var redirectTo = "/?redirect=" + pathname; // Preserve original path
 
-    // Define metadata for different pages
+    // Define metadata for known pages
     var metaInfo = {
         "/": {
             title: "Whimsylabs - Award Winning Virtual Labs",
@@ -22,29 +21,36 @@
         }
     };
 
-    // Default metadata if the page is unknown
-    var pageMeta = metaInfo[pathname] || metaInfo["/"];
+    if (!metaInfo[pathname]) {
+        // Show a 404 page instead of redirecting
+        document.title = "404 Not Found - Whimsylabs";
+        document.body.innerHTML = `
+            <div style="text-align: center; font-family: Arial, sans-serif; padding: 50px;">
+                <h1>404 - Page Not Found</h1>
+                <p>The page you are looking for does not exist.</p>
+                <a href="/" style="text-decoration: none; font-size: 18px; color: #007bff;">Go back to Homepage</a>
+            </div>
+        `;
+    } else {
+        // Update the page title and metadata dynamically
+        var pageMeta = metaInfo[pathname];
 
-    // Update title
-    document.title = pageMeta.title;
+        document.title = pageMeta.title;
 
-    // Function to add meta tags dynamically
-    function updateMetaTag(name, content) {
-        var meta = document.createElement("meta");
-        meta.name = name;
-        meta.content = content;
-        document.head.appendChild(meta);
+        function updateMetaTag(name, content) {
+            var meta = document.createElement("meta");
+            meta.name = name;
+            meta.content = content;
+            document.head.appendChild(meta);
+        }
+
+        updateMetaTag("description", pageMeta.description);
+        updateMetaTag("robots", "index, follow");
+
+        updateMetaTag("og:title", pageMeta.title);
+        updateMetaTag("og:description", pageMeta.description);
+        updateMetaTag("og:url", "https://whimsylabs.ai" + pathname);
+
+        window.location.replace("/?redirect=" + pathname);
     }
-
-    // Insert meta description
-    updateMetaTag("description", pageMeta.description);
-    updateMetaTag("robots", "index, follow");
-
-    // Open Graph meta tags (for social sharing)
-    updateMetaTag("og:title", pageMeta.title);
-    updateMetaTag("og:description", pageMeta.description);
-    updateMetaTag("og:url", "https://whimsylabs.ai" + pathname);
-
-    // Redirect user to React app while keeping the path
-    window.location.replace(redirectTo);
 </script>
