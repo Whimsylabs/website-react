@@ -5,7 +5,7 @@ import logo from './images/logo.png';
 
 const Header = () => {
     const location = useLocation();
-    const pdfPath = process.env.PUBLIC_URL + '/Two_pager_Website.pdf';
+    const pdfPath = 'https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440';
 
     return (
         <header className="header-container" aria-label="Main site navigation">
