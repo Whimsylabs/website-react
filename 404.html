@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Prevent infinite loops by ensuring we only redirect once
-        if (sessionStorage.getItem("redirected") !== "true") {
-            sessionStorage.setItem("redirected", "true");
-            var pathname = window.location.pathname;
-            window.location.replace("/index.html?redirect=" + pathname);
+        var pathname = window.location.pathname;
+        if (pathname !== "/") {
+            window.location.replace(pathname);
         }
     </script>
 </head>
 <body>
     <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
     <script>
-        document.getElementById("redirect-link").href = "/index.html?redirect=" + window.location.pathname;
+        document.getElementById("redirect-link").href = window.location.pathname;
     </script>
 </body>
 </html>
