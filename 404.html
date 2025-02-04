@@ -7,16 +7,13 @@
 
     <script>
         var pathname = window.location.pathname;
+        var redirectTo = "/?redirect=" + pathname; // Preserve original path
 
-        // Define metadata for different pages
+        // Update title and metadata dynamically
         var metaInfo = {
             "/": {
                 title: "Whimsylabs - Award Winning Virtual Labs",
                 description: "Whimsylabs provides virtual labs for Biology, Chemistry, Physics, and more. Used in Schools, Colleges, and Universities.",
-            },
-            "/blog": {
-                title: "Whimsylabs Blog - Latest Virtual Lab Innovations",
-                description: "Stay updated with Whimsylabs' latest news on virtual laboratory technology and STEM education.",
             },
             "/services": {
                 title: "Whimsylabs Services - Virtual Labs for Education",
@@ -28,13 +25,9 @@
             }
         };
 
-        // Default metadata if the page is unknown
         var pageMeta = metaInfo[pathname] || metaInfo["/"];
-
-        // Update title
         document.title = pageMeta.title;
 
-        // Function to add meta tags dynamically
         function updateMetaTag(name, content) {
             var meta = document.createElement("meta");
             meta.name = name;
@@ -42,25 +35,21 @@
             document.head.appendChild(meta);
         }
 
-        // Insert meta description
         updateMetaTag("description", pageMeta.description);
         updateMetaTag("robots", "index, follow");
-
-        // Open Graph meta tags (for social sharing)
         updateMetaTag("og:title", pageMeta.title);
         updateMetaTag("og:description", pageMeta.description);
         updateMetaTag("og:url", "https://whimsylabs.ai" + pathname);
 
-        // Redirect the user to the actual React page
-        if (pathname !== "/") {
-            window.location.replace(pathname);
-        }
+        // Redirect user to React app
+        window.location.replace(redirectTo);
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
+    <p>If you are not redirected, <a href="/">go to the homepage</a>.</p>
+    <p>Canonical link: <a href="https://whimsylabs.ai" id="canonical-link"></a></p>
     <script>
-        document.getElementById("redirect-link").href = window.location.pathname;
+        document.getElementById("canonical-link").href = "https://whimsylabs.ai" + window.location.pathname;
     </script>
 </body>
 </html>
