@@ -26,7 +26,7 @@ export const content = (
         Most of the work was done to refine these equations down to run in real time, while still producing realistic results. The first lab was purely a proof of concept, showing that the simulations could be run in real time, and that they could be interacted with in a meaningful way.
     </p>
     <p>
-      Around this time Whimsylabs caught the attention of the University of Edinburgh due to our breakthrough work in simuations and ambitious impact driven goals, securing places in their prestigious incubator programs and going on to win the Summer Accelerator. From these vitories and recognitions, we were able to secure our first bout of funding to build a bespoke VR/web combo platform, and bring on our second founder to help build the lab - a Chemist PhD with years of experience in education and training for the chemical industry. 
+      Around this time Whimsylabs caught the attention of the University of Edinburgh due to our breakthrough work in simuations and ambitious impact driven goals, securing places in their prestigious incubator programs and going on to win the Summer Accelerator. From these victories and recognitions, we were able to secure our first bout of funding to build a bespoke VR/web combo platform, and bring on our second founder to help build the lab - a Chemist PhD with years of experience in education and training for the chemical industry. 
     </p>
     <img src={testLab} alt="Second tech test lab" className="rounded shadow center limited-size" />
     <p className="caption">The second lab: A testing ground for advanced simulation technologies.</p>

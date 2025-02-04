@@ -1,7 +1,7 @@
 import React from "react";
-import labInnovation from '../images/labInnovation.png'; // Representation of lab innovations
-import proceduralLab from '../images/proceduralLab.png'; // Showcasing procedural learning
-import gradingSystem from '../images/gradingSystem.png'; // Depiction of the grading system
+// import labInnovation from '../images/labInnovation.png'; // Representation of lab innovations
+// import proceduralLab from '../images/proceduralLab.png'; // Showcasing procedural learning
+// import gradingSystem from '../images/gradingSystem.png'; // Depiction of the grading system
 
 export const title = "The Importance of Physicality in Virtual Labs: A Step Beyond Traditional Simulations";
 export const date = "2025-02-03";
@@ -20,13 +20,13 @@ export const content = (
     <p> 
       The ability to physically perform lab procedures in a virtual space not only enhances technical proficiency but also fosters deeper conceptual understanding. In traditional educational settings, students often struggle with abstract concepts because they lack the opportunity to see them in action. With Whimsylabs, concepts like fluid dynamics, chemical reactions, and instrument handling become intuitive, as students engage directly with the materials in a controlled yet realistic environment. This hands-on approach ensures that learning is both engaging and effective, moving beyond passive instruction to active discovery. 
     </p>
-    <img src={labInnovation} alt="Innovations in Virtual Labs" className="rounded shadow center limited-size" />
+    {/* <img src={labInnovation} alt="Innovations in Virtual Labs" className="rounded shadow center limited-size" /> */}
     <p className="caption">Whimsylabs' proprietary simulation technology enables hands-on procedural training.</p>
     
     <p>
       One of the most significant aspects of our innovation is our highly advanced liquid physics simulation. Unlike other virtual labs that rely on pre-scripted animations, our platform fully simulates fluid dynamics, allowing students to accurately practice techniques such as pipetting, titration, and handling volatile chemicals. Even small mistakes—like reaching around the back of a burette instead of using it properly—are detected and factored into assessment, reinforcing correct procedural techniques through experiential learning.
     </p>
-    <img src={proceduralLab} alt="Procedural Training in Whimsylabs" className="rounded shadow center limited-size" />
+    {/* <img src={proceduralLab} alt="Procedural Training in Whimsylabs" className="rounded shadow center limited-size" /> */}
     <p className="caption">Performing real procedural actions develops muscle memory, just like in a physical lab.</p>
     <p>
       Traditional grading systems in virtual labs are often binary—either the student completes a procedure "correctly" or they fail. This simplistic approach does not reflect the nuanced way real-world laboratories function. Whimsylabs introduces a groundbreaking grading system that assesses performance across multiple parameters. Instead of a simple pass/fail model, our software evaluates a wide range of approaches and assigns scores accordingly, allowing students to explore different methods and see how their decisions impact results. 
@@ -34,7 +34,7 @@ export const content = (
     <p>
       This sandbox-style grading means that in a single classroom, students can arrive at diverse solutions based on their individual approaches. Rather than enforcing a rigid step-by-step guide, we allow creativity and experimentation, mirroring how science is conducted in the real world. 
     </p>
-    <img src={gradingSystem} alt="Whimsylabs Grading System" className="rounded shadow center limited-size" />
+    {/* <img src={gradingSystem} alt="Whimsylabs Grading System" className="rounded shadow center limited-size" /> */}
     <p className="caption">Our dynamic grading system assesses real procedural techniques rather than binary correctness.</p>
     <p>
       The future of virtual science education lies in immersion, realism, and genuine hands-on experience. Whimsylabs has pioneered this space by moving beyond basic interactivity to true physical engagement. By providing the first virtual lab where students physically perform experiments, make real mistakes, and develop procedural fluency, we offer a learning experience unmatched by anything else in the market. 

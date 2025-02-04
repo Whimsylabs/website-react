@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
 import Header from './Header';
@@ -15,17 +15,24 @@ const posts = postsContext.keys().map((key) => {
     date: postModule.date,
     description: postModule.description,
   };
-});
+}).sort((a, b) => new Date(b.date) - new Date(a.date)); // Ensure posts are displayed from oldest to newest with Post 1 at the bottom
 
 // Function to convert titles into URL-friendly slugs
 const generateSlug = (title) => title.replace(/\s+/g, '-').toLowerCase();
 
 const Blog = () => {
   const [activePostId, setActivePostId] = useState(null);
+  const postsSectionRef = useRef(null);
 
   const handlePostClick = (id, title) => {
     setActivePostId(id);
-    document.getElementById(`post-${id}`).scrollIntoView({ behavior: 'smooth' });
+    const postElement = document.getElementById(`post-${id}`);
+    if (postElement && postsSectionRef.current) {
+      postsSectionRef.current.scrollTo({
+        top: postElement.offsetTop - postsSectionRef.current.offsetTop,
+        behavior: 'smooth'
+      });
+    }
 
     // Convert title to slug & update URL
     const postSlug = generateSlug(title);
@@ -41,7 +48,13 @@ const Blog = () => {
       if (targetPost) {
         setActivePostId(targetPost.id);
         setTimeout(() => {
-          document.getElementById(`post-${targetPost.id}`)?.scrollIntoView({ behavior: 'instant' });
+          const postElement = document.getElementById(`post-${targetPost.id}`);
+          if (postElement && postsSectionRef.current) {
+            postsSectionRef.current.scrollTo({
+              top: postElement.offsetTop - postsSectionRef.current.offsetTop,
+              behavior: 'instant'
+            });
+          }
         }, 100); // Ensure smooth behavior after page load
       }
     }
@@ -49,35 +62,35 @@ const Blog = () => {
 
   return (
     <main className="container-fluid text-center p-0">
-    <Header />
-    <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
-      <div className="blog-container">
-        <div className="posts-section">
-          {posts.map((post) => (
-            <div className="post-box" id={`post-${post.id}`} key={post.id}>
-              <h2>{post.title}</h2>
-              <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
-              <div>{post.content}</div>
-            </div>
-          ))}
-        </div>
-        <div className="sidebar">
-          <h2>Jump to Post</h2>
-          <ul>
+      <Header />
+      <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
+        <div className="blog-container">
+          <div className="posts-section" ref={postsSectionRef}>
             {posts.map((post) => (
-              <li
-                key={post.id}
-                className={activePostId === post.id ? 'active' : ''}
-                onClick={() => handlePostClick(post.id, post.title)}
-              >
-                {post.title}
-              </li>
+              <div className="post-box" id={`post-${post.id}`} key={post.id}>
+                <h2>{post.title}</h2>
+                <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
+                <div>{post.content}</div>
+              </div>
             ))}
-          </ul>
+          </div>
+          <div className="sidebar">
+            <h2>Jump to Post</h2>
+            <ul>
+              {posts.map((post) => (
+                <li
+                  key={post.id}
+                  className={activePostId === post.id ? 'active' : ''}
+                  onClick={() => handlePostClick(post.id, post.title)}
+                >
+                  {post.title}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-    </BubbleContainer>
-    <Footer />
+      </BubbleContainer>
+      <Footer />
     </main>
   );
 };

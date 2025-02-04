@@ -1,26 +1,25 @@
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import MetaTags from "./Components/MetaTags";
 import MainContent from "./Components/MainContent";
 import Blog from "./Components/Blog";
 import Services from "./Components/Services";
 import Features from "./Components/FeaturesPage";
-import "./App.css";
 
 function App() {
     return (
-        <Router>
-            <Helmet>
-                <title>Whimsylabs - Virtual Laboratory Solutions</title>
-            </Helmet>
-            <RedirectHandler />
-            <Routes>
-                <Route path="/" element={<MainContent />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/features" element={<Features />} />
-            </Routes>
-        </Router>
+        <HelmetProvider>
+            <Router>
+                <MetaTags />
+                <Routes>
+                    <Route path="/" element={<MainContent />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/features" element={<Features />} />
+                </Routes>
+            </Router>
+        </HelmetProvider>
     );
 }
 
