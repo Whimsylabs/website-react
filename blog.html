@@ -11,20 +11,19 @@
 <body>
     <div id="blog-root"></div>
     
-    <!-- Load React and ReactDOM (CDN fallback in case GitHub Pages doesn't serve main.js properly) -->
+    <!-- Load React and ReactDOM from CDN -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <!-- Load your React app -->
+
+    <!-- Load the compiled React app -->
     <script src="/static/js/main.js"></script>
 
-    <!-- Ensure the Blog component renders -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            if (typeof React !== "undefined" && typeof ReactDOM !== "undefined" && typeof Blog !== "undefined") {
-                ReactDOM.createRoot(document.getElementById("blog-root")).render(React.createElement(Blog));
+            if (typeof React !== "undefined" && typeof ReactDOM !== "undefined" && typeof window.Blog !== "undefined") {
+                ReactDOM.createRoot(document.getElementById("blog-root")).render(React.createElement(window.Blog));
             } else {
-                console.error("React, ReactDOM, or Blog is not defined.");
+                console.error("React, ReactDOM, or Blog is not defined. Ensure the script is loaded.");
             }
         });
     </script>
