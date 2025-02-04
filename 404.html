@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
+
     <script>
         var pathname = window.location.pathname;
+
+        // Define metadata for different pages
+        var metaInfo = {
+            "/": {
+                title: "Whimsylabs - Award Winning Virtual Labs",
+                description: "Whimsylabs provides virtual labs for Biology, Chemistry, Physics, and more. Used in Schools, Colleges, and Universities.",
+            },
+            "/blog": {
+                title: "Whimsylabs Blog - Latest Virtual Lab Innovations",
+                description: "Stay updated with Whimsylabs' latest news on virtual laboratory technology and STEM education.",
+            },
+            "/services": {
+                title: "Whimsylabs Services - Virtual Labs for Education",
+                description: "Discover Whimsylabs' virtual lab solutions for enhancing STEM education through AI-driven simulations.",
+            },
+            "/features": {
+                title: "Whimsylabs Features - Cutting-Edge Virtual Lab Technology",
+                description: "Explore the powerful features of Whimsylabs, from immersive simulations to AI-driven experiments for STEM education.",
+            }
+        };
+
+        // Default metadata if the page is unknown
+        var pageMeta = metaInfo[pathname] || metaInfo["/"];
+
+        // Update title
+        document.title = pageMeta.title;
+
+        // Function to add meta tags dynamically
+        function updateMetaTag(name, content) {
+            var meta = document.createElement("meta");
+            meta.name = name;
+            meta.content = content;
+            document.head.appendChild(meta);
+        }
+
+        // Insert meta description
+        updateMetaTag("description", pageMeta.description);
+        updateMetaTag("robots", "index, follow");
+
+        // Open Graph meta tags (for social sharing)
+        updateMetaTag("og:title", pageMeta.title);
+        updateMetaTag("og:description", pageMeta.description);
+        updateMetaTag("og:url", "https://whimsylabs.ai" + pathname);
+
+        // Redirect the user to the actual React page
         if (pathname !== "/") {
             window.location.replace(pathname);
         }
