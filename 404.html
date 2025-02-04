@@ -1,6 +1,11 @@
 <script>
     var pathname = window.location.pathname;
-    var redirectTo = "/?redirect=" + pathname; // Preserve original path
+    var redirectTo = "/#"+ pathname; // Ensures React HashRouter recognizes the route
+
+    if (pathname !== "/") {
+        window.location.replace(redirectTo);
+    }
+
 
     // Define metadata for different pages
     var metaInfo = {
