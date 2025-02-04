@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import ReactDOM from "react-dom";
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
 import Header from './Header';
@@ -64,7 +63,7 @@ const Blog = () => {
   return (
     <main className="container-fluid text-center p-0">
       <Header />
-      <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={2}>
+      <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
           <div className="posts-section" ref={postsSectionRef}>
             {posts.map((post) => (
@@ -95,10 +94,5 @@ const Blog = () => {
     </main>
   );
 };
-
-// Mount the component if running inside `blog.html`
-if (document.getElementById("blog-root")) {
-  ReactDOM.render(<Blog />, document.getElementById("blog-root"));
-}
 
 export default Blog;

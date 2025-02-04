@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BubbleContainer from './BubbleContainer';
 import ContactUs from './ContactUs';
+import SplashSection from './SplashSection';
 import WelcomeSection from './WelcomeSection';
 
 const Services = () => {
