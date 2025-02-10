@@ -3,15 +3,23 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 120px; /* Use min-height for dynamic resizing */
+  box-sizing: border-box; /* Ensures padding is included in height calculation */
 }
 
+/* Footer Links */
 footer .footer-links {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between each link */
+  gap: 20px;
   margin: 10px 0;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 footer .footer-links li {
@@ -30,4 +38,46 @@ footer .nav-link:hover {
 
 footer p {
   margin: 0;
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 40px;
+  top: 50%; /* Center vertically using top 50% */
+  transform: translateY(-50%); /* Adjust for proper centering */
+}
+
+/* Social Icons */
+.social-icon {
+  height: 80%; /* Scale dynamically */
+  max-height: 100px;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  footer {
+    min-height: auto; /* Adjust height dynamically on smaller screens */
+  }
+
+  .social-icons {
+    position: static;
+    margin-top: 15px;
+    justify-content: center;
+    transform: none; /* Reset translation on mobile */
+    top: auto; /* Reset top property */
+  }
+
+  .social-icon {
+    height: 50px; /* Adjust size for mobile */
+    max-height: none;
+  }
 }

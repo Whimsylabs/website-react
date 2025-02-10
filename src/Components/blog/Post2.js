@@ -1,5 +1,5 @@
 import React from "react";
-// import labInnovation from '../images/labInnovation.png'; // Representation of lab innovations
+import handGrab from '../images/handGrabbingSmall.png';
 // import proceduralLab from '../images/proceduralLab.png'; // Showcasing procedural learning
 // import gradingSystem from '../images/gradingSystem.png'; // Depiction of the grading system
 
@@ -20,11 +20,11 @@ export const content = (
     <p> 
       The ability to physically perform lab procedures in a virtual space not only enhances technical proficiency but also fosters deeper conceptual understanding. In traditional educational settings, students often struggle with abstract concepts because they lack the opportunity to see them in action. With Whimsylabs, concepts like fluid dynamics, chemical reactions, and instrument handling become intuitive, as students engage directly with the materials in a controlled yet realistic environment. This hands-on approach ensures that learning is both engaging and effective, moving beyond passive instruction to active discovery. 
     </p>
-    {/* <img src={labInnovation} alt="Innovations in Virtual Labs" className="rounded shadow center limited-size" /> */}
-    <p className="caption">Whimsylabs' proprietary simulation technology enables hands-on procedural training.</p>
+    <img src={handGrab} alt="360 hand grab wowee" className="rounded shadow center limited-size" />
+    <p className="caption">Whimsylabs' immersive simulation technology allows for precise, 360-degree interactions with lab equipment, as demonstrated by the realistic handling of this beaker. This innovative approach bridges the gap between virtual training and real-world laboratory familiarity, fostering muscle memory and refining techniques in a virtual setting.</p>
     
     <p>
-      One of the most significant aspects of our innovation is our highly advanced liquid physics simulation. Unlike other virtual labs that rely on pre-scripted animations, our platform fully simulates fluid dynamics, allowing students to accurately practice techniques such as pipetting, titration, and handling volatile chemicals. Even small mistakes—like reaching around the back of a burette instead of using it properly—are detected and factored into assessment, reinforcing correct procedural techniques through experiential learning.
+      One of the most significant aspects of our innovation is our highly advanced liquid physics simulation. Unlike other virtual labs that rely on pre-scripted animations, our platform fully simulates fluid dynamics, allowing students to accurately practice techniques such as pipetting, titration, and handling volatile chemicals. Even small mistakes—like failing to remove air bubbles from a burette before starting a titration—are detected and factored into assessment, reinforcing correct procedural techniques through experiential learning.
     </p>
     {/* <img src={proceduralLab} alt="Procedural Training in Whimsylabs" className="rounded shadow center limited-size" /> */}
     <p className="caption">Performing real procedural actions develops muscle memory, just like in a physical lab.</p>
@@ -39,7 +39,7 @@ export const content = (
     <p>
       The future of virtual science education lies in immersion, realism, and genuine hands-on experience. Whimsylabs has pioneered this space by moving beyond basic interactivity to true physical engagement. By providing the first virtual lab where students physically perform experiments, make real mistakes, and develop procedural fluency, we offer a learning experience unmatched by anything else in the market. 
     </p>
-    <p> Beyond education, Whimsylabs prepares students for real-world laboratory environments in ways that conventional simulations cannot. Many industries require precision, dexterity, and adherence to strict procedural protocols—skills that cannot be developed through rote learning alone. By allowing students to make mistakes and experience consequences in a safe virtual environment, we bridge the gap between academic training and professional readiness. This hands-on learning approach ensures that students entering higher education or the workforce are already comfortable with lab procedures, making them more competent and confident practitioners. </p>
+    <p> Beyond education, Whimsylabs prepares students for real-world laboratory environments in ways that conventional simulations cannot. Many industries require precision, dexterity, and adherence to strict procedural protocols—skills that cannot be developed through guided walkthrough learning alone. By allowing students to make mistakes and experience consequences in a safe virtual environment, we bridge the gap between academic training and professional readiness. This hands-on learning approach ensures that students entering higher education or the workforce are already comfortable with lab procedures, making them more competent and confident practitioners. </p>
     <p>
       Our technology does not just simulate science—it teaches students how to do science. This commitment to fostering real skills, rather than rote memorization, is why Whimsylabs is leading the next generation of STEM education.
     </p>
