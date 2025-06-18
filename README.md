@@ -65,6 +65,16 @@ The website is deployed on GitHub Pages. To deploy updates:
 2. Run `npm run deploy` to build and deploy to GitHub Pages
 3. The site will be available at [https://whimsylabs.ai](https://whimsylabs.ai)
 
+### Multi-Page Application Structure
+
+This website uses a hybrid approach that combines React with static HTML generation:
+
+- Each main route (`/`, `/blog`, `/services`, `/features`) has its own HTML file
+- The `generate-html-pages.js` script creates these files during the build process
+- This approach improves SEO and allows direct access to URLs like [https://whimsylabs.ai/blog](https://whimsylabs.ai/blog)
+
+For more details on how this works, see [MPA-CONVERSION.md](MPA-CONVERSION.md).
+
 ## Project Structure
 
 - `src/Components/`: React components for the website
