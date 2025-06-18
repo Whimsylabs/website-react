@@ -9,6 +9,7 @@ import BlogPost from "./Components/BlogPost";
 import Services from "./Components/Services";
 import Features from "./Components/FeaturesPage";
 import FAQPage from "./Components/FAQPage";
+import ContactPage from "./Components/ContactPage";
 
 function App({ initialPath = '/' }) {
     // Use effect to ensure we're on the correct path after initial render
@@ -34,6 +35,8 @@ function App({ initialPath = '/' }) {
                     <Route path="/features/*" element={<Navigate to="/features" />} />
                     <Route path="/faq" element={<FAQPage />} />
                     <Route path="/faq/*" element={<Navigate to="/faq" />} />
+                    <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/contact/*" element={<Navigate to="/contact" />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </BrowserRouter>

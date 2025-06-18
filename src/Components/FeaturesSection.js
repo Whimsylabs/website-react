@@ -4,6 +4,7 @@ import './FeaturesSection.css';
 import catBeaker from './images/cat_beaker.png';
 import catVr from './images/cat_vr.png';
 import catBrain from './images/cat_brain.png';
+import { Link } from 'react-router-dom';
 
 const FeaturesSection = () => {
   return (
@@ -40,6 +41,10 @@ const FeaturesSection = () => {
             delay={0.5}
           />
         </article>
+      </div>
+      {/* Replace faq-teaser with a button-style link */}
+      <div className="features-btn">
+        <Link to="/faq" className="features-faq-btn">See full features here!</Link>
       </div>
     </section>
   );

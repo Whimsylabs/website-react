@@ -24,9 +24,9 @@ const Header = () => {
                     </a>
                 </li>
                 <li className="nav-item">
-                <a href="mailto:inquiries@whimsylabs.ai" className="nav-link" aria-label="Contact Us">
-                    Contact
-                </a>
+                    <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} aria-label="Contact Us">
+                        Contact
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`} aria-label="Read Our Blog">
