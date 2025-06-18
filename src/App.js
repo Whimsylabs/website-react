@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import MetaTags from "./Components/MetaTags";
 import MainContent from "./Components/MainContent";
 import Blog from "./Components/Blog";
+import BlogPost from "./Components/BlogPost";
 import Services from "./Components/Services";
 import Features from "./Components/FeaturesPage";
 
@@ -23,7 +24,7 @@ function App({ initialPath = '/' }) {
                 <Routes>
                     <Route path="/" element={<MainContent />} />
                     <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog/*" element={<Navigate to="/blog" />} />
+                    <Route path="/blog/:slug" element={<BlogPost />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/services/*" element={<Navigate to="/services" />} />
                     <Route path="/features" element={<Features />} />

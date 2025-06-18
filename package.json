@@ -19,7 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "node generate-html-pages.js",
+    "generate-sitemap": "node generate-sitemap.js",
+    "postbuild": "npm run generate-sitemap && node generate-html-pages.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

@@ -3,12 +3,60 @@ const path = require('path');
 
 console.log('Starting static HTML page generation...');
 
+// Function to get blog posts data
+function getBlogPosts() {
+  const blogDir = path.resolve(__dirname, 'src/Components/blog');
+  const posts = [];
+  
+  // Read all files in the blog directory
+  const files = fs.readdirSync(blogDir);
+  
+  // Filter for Post*.js files
+  const postFiles = files.filter(file => /^Post\d+\.js$/.test(file));
+  
+  postFiles.forEach(file => {
+    const filePath = path.join(blogDir, file);
+    const content = fs.readFileSync(filePath, 'utf8');
+    
+    // Extract post metadata using regex
+    const titleMatch = content.match(/export const title = ["'](.+?)["'];/);
+    const dateMatch = content.match(/export const date = ["'](.+?)["'];/);
+    const slugMatch = content.match(/export const slug = ["'](.+?)["'];/);
+    const descriptionMatch = content.match(/export const description =\s*["'](.+?)["'];/);
+    
+    if (titleMatch && dateMatch && slugMatch && descriptionMatch) {
+      posts.push({
+        title: titleMatch[1],
+        date: dateMatch[1],
+        slug: slugMatch[1],
+        description: descriptionMatch[1]
+      });
+    }
+  });
+  
+  return posts;
+}
+
+// Get blog posts
+const blogPosts = getBlogPosts();
+
 // Define the routes we want to generate static HTML files for
 const routes = [
   { path: '/blog', outputFile: 'blog/index.html', title: "Whimsylabs Blog - Latest Virtual Lab Innovations", description: "Stay updated with Whimsylabs' latest news on virtual laboratory technology and STEM education." },
   { path: '/services', outputFile: 'services/index.html', title: "Whimsylabs Services - Virtual Labs for Education", description: "Discover Whimsylabs' virtual lab solutions for enhancing STEM education through AI-driven simulations." },
   { path: '/features', outputFile: 'features/index.html', title: "Whimsylabs Features - Cutting-Edge Virtual Lab Technology", description: "Explore the powerful features of Whimsylabs, from immersive simulations to AI-driven experiments for STEM education." }
 ];
+
+// Add blog post routes
+blogPosts.forEach(post => {
+  routes.push({
+    path: `/blog/${post.slug}`,
+    outputFile: `blog/${post.slug}/index.html`,
+    title: `${post.title} | WhimsyLabs Blog`,
+    description: post.description,
+    date: post.date
+  });
+});
 
 // Read the built index.html file
 const indexPath = path.resolve(__dirname, 'build', 'index.html');
@@ -70,6 +118,15 @@ function updatePageContent(html, route) {
     updatedHtml = updatedHtml.replace(
       ogUrlRegex,
       `<meta property="og:url" content="https://whimsylabs.ai${route.path}">`
+    );
+  }
+  
+  // Add article metadata for blog posts
+  if (route.path.startsWith('/blog/') && route.date) {
+    // Add article:published_time meta tag
+    updatedHtml = updatedHtml.replace(
+      /<\/head>/,
+      `  <meta property="article:published_time" content="${route.date}">\n  <meta property="og:type" content="article">\n  </head>`
     );
   }
   
