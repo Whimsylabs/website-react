@@ -54,6 +54,10 @@
             // If it's a valid path, redirect to the static HTML file
             if (basePath === "/") {
                 window.location.replace("/");
+            } else if (basePath === "/blog" && pathname.split("/").length > 2) {
+                // Handle blog post URLs
+                // Keep the full path for blog posts
+                window.location.replace(pathname + "/");
             } else {
                 window.location.replace(basePath + "/");
             }
