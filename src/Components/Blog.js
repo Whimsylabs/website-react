@@ -5,6 +5,7 @@ import './Blog.css';
 import BubbleContainer from './BubbleContainer';
 import Header from './Header';
 import Footer from './Footer';
+import BlogPreview from './BlogPreview';
 
 // Import all posts dynamically
 const postsContext = require.context('./blog', false, /Post\d+\.js$/);
@@ -33,14 +34,7 @@ const Blog = () => {
         <div className="blog-container">
           <div className="posts-section blog-index">
             {posts.map((post) => (
-              <div className="post-box post-preview" id={`post-${post.id}`} key={post.id}>
-                <h2>
-                  <Link to={`/blog/${post.id}`}>{post.title}</Link>
-                </h2>
-                <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
-                <p className="post-description">{post.description}</p>
-                <Link to={`/blog/${post.id}`} className="read-more-link">Read More</Link>
-              </div>
+              <BlogPreview key={post.id} post={post} />
             ))}
           </div>
           <div className="sidebar">
