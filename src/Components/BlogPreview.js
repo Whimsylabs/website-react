@@ -2,6 +2,79 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
 
+// Function to extract the first image from content
+const extractFirstImage = (content) => {
+  try {
+    // Clone the content element to avoid modifying the original
+    const contentClone = React.cloneElement(content);
+    
+    // Get the children of the content div
+    const children = React.Children.toArray(contentClone.props.children);
+    
+    // Find the first image element
+    let firstImage = null;
+    
+    // First check for direct img elements
+    for (const child of children) {
+      if (child && child.type === 'img') {
+        firstImage = child;
+        break;
+      }
+    }
+    
+    // If no direct image found, check for images in containers like div.video-container
+    if (!firstImage) {
+      for (const child of children) {
+        if (child && child.props && child.props.children) {
+          const nestedChildren = React.Children.toArray(child.props.children);
+          const nestedImage = nestedChildren.find(nestedChild => 
+            nestedChild && nestedChild.type === 'img'
+          );
+          
+          if (nestedImage) {
+            firstImage = nestedImage;
+            break;
+          }
+          
+          // Check one level deeper (for video containers, etc.)
+          for (const nestedChild of nestedChildren) {
+            if (nestedChild && nestedChild.props && nestedChild.props.children) {
+              const deepNestedChildren = React.Children.toArray(nestedChild.props.children);
+              const deepNestedImage = deepNestedChildren.find(deepNestedChild => 
+                deepNestedChild && deepNestedChild.type === 'img'
+              );
+              
+              if (deepNestedImage) {
+                firstImage = deepNestedImage;
+                break;
+              }
+            }
+          }
+          
+          if (firstImage) break;
+        }
+      }
+    }
+    
+    // If we found an image, return it styled as a header
+    if (firstImage) {
+      return (
+        <div className="post-header-image">
+          <img 
+            src={firstImage.props.src} 
+            alt={firstImage.props.alt || "Blog post header"} 
+          />
+        </div>
+      );
+    }
+    
+    return null;
+  } catch (error) {
+    console.error("Error extracting image:", error);
+    return null;
+  }
+};
+
 // Function to extract preview content from a blog post
 const extractPreview = (content) => {
   try {
@@ -32,7 +105,7 @@ const extractPreview = (content) => {
     // If no image is found or it's too deep in the content, show first 2-3 paragraphs
     const previewLength = firstImageIndex > 0 && firstImageIndex < 4 
       ? firstImageIndex 
-      : Math.min(3, children.length);
+      : Math.min(2, children.length);
     
     // Get only text paragraphs for preview (no captions, etc.)
     const previewContent = children
@@ -66,6 +139,9 @@ const BlogPreview = ({ post }) => {
 
   return (
     <div className="post-box post-preview" id={`post-${post.id}`}>
+      {/* Extract and display the first image as a header */}
+      {extractFirstImage(post.content)}
+      
       <h2>
         <Link to={`/blog/${post.id}`}>{post.title}</Link>
       </h2>

@@ -38,7 +38,7 @@ const BubbleContainer = ({ children, speed = 10, restrictOverflow = false, bubbl
     const startBubbleGeneration = () => {
       if (!intervalRef.current) {
         // Decreased spawn rate by 20% (300ms to 360ms)
-        intervalRef.current = setInterval(createBubbles, 360);
+        intervalRef.current = setInterval(createBubbles, 450);
       }
     };
 
