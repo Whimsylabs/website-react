@@ -1,0 +1,74 @@
+#faq-tiled-background {
+  background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
+                    linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                    linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
+                    url("./images/tiled.png") !important;
+  background-blend-mode: darken, multiply, multiply;
+  color: white !important;
+  padding: 3rem 0;
+  min-height: 80vh;
+}
+
+.faq-header-container {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.faq-main-heading {
+  color: #14b7ff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.faq-subheading {
+  color: white;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.faq-content-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Override some FAQ component styles for this page */
+#faq-tiled-background .faq-heading {
+  color: #1f1968;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#faq-tiled-background .faq-item {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+#faq-tiled-background .faq-question {
+  background-color: #f5f0ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-main-heading {
+    font-size: 2rem;
+  }
+  
+  .faq-subheading {
+    font-size: 1rem;
+  }
+  
+  .faq-header-container,
+  .faq-content-container {
+    padding: 1.5rem;
+  }
+}

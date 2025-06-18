@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import MetaTags from "./Components/MetaTags";
+import SchemaMarkup from "./Components/SchemaMarkup";
 import MainContent from "./Components/MainContent";
 import Blog from "./Components/Blog";
 import BlogPost from "./Components/BlogPost";
 import Services from "./Components/Services";
 import Features from "./Components/FeaturesPage";
+import FAQPage from "./Components/FAQPage";
 
 function App({ initialPath = '/' }) {
     // Use effect to ensure we're on the correct path after initial render
@@ -21,6 +23,7 @@ function App({ initialPath = '/' }) {
         <HelmetProvider>
             <BrowserRouter>
                 <MetaTags />
+                <SchemaMarkup />
                 <Routes>
                     <Route path="/" element={<MainContent />} />
                     <Route path="/blog" element={<Blog />} />
@@ -29,6 +32,8 @@ function App({ initialPath = '/' }) {
                     <Route path="/services/*" element={<Navigate to="/services" />} />
                     <Route path="/features" element={<Features />} />
                     <Route path="/features/*" element={<Navigate to="/features" />} />
+                    <Route path="/faq" element={<FAQPage />} />
+                    <Route path="/faq/*" element={<Navigate to="/faq" />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </BrowserRouter>

@@ -3,7 +3,10 @@ import './WelcomeSection.css';
 import logo from './images/logo.png'; // Import the logo image file
 import ContactUs from './ContactUs';
 
-const WelcomeSection = ({ titleText = "Welcome to WhimsyLabs!", bodyText = "Whimsylabs is a sandbox virtual laboratory simulation that gives you the freedom to explore, play and learn scientific concepts firsthand. Whether you are a student, a teacher, a researcher, or a curious learner, Whimsylabs lets you explore and experiment with various scientific phenomena and equipment, without the limitations and risks of a real lab, building up laboratory skills to enter a physical lab safely." }) => {
+const WelcomeSection = ({ 
+  titleText = "Welcome to WhimsyLabs Virtual Lab Software!", 
+  bodyText = "WhimsyLabs provides award-winning virtual laboratory software that gives educators and students the freedom to explore, play and learn scientific concepts firsthand. Whether you're teaching Biology, Chemistry, or Physics, our online lab simulations let students experiment with scientific phenomena and equipment without the limitations and risks of a physical lab. Our STEM virtual labs for schools help students build laboratory skills safely while providing educators with powerful assessment tools." 
+}) => {
     useEffect(() => {
       const text = document.querySelector(".wave-text");
       if (text) {
@@ -18,9 +21,9 @@ const WelcomeSection = ({ titleText = "Welcome to WhimsyLabs!", bodyText = "
     }, [titleText]);
 
   return (
-    <div id="tiled-1">
+    <section id="tiled-1" className="welcome-section">
       <div className="container py-3 d-flex align-items-center justify-content-center">
-        <img src={logo} alt="Whimsylabs Logo" className="logo me-3" />
+        <img src={logo} alt="WhimsyLabs Virtual Lab Software Logo" className="logo me-3" />
         <div className="text-container">
           <h1 className="wave-text">{titleText}</h1>
           <div className="text-justify">
@@ -31,7 +34,7 @@ const WelcomeSection = ({ titleText = "Welcome to WhimsyLabs!", bodyText = "
         </div>
       </div>
       <ContactUs />
-    </div>
+    </section>
   );
 };
 

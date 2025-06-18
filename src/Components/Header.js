@@ -33,6 +33,11 @@ const Header = () => {
                         Blog
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/faq" className={`nav-link ${location.pathname === '/faq' ? 'active' : ''}`} aria-label="Frequently Asked Questions">
+                        FAQ
+                    </Link>
+                </li>
             </ul>
         </header>
     );

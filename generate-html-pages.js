@@ -42,9 +42,10 @@ const blogPosts = getBlogPosts();
 
 // Define the routes we want to generate static HTML files for
 const routes = [
-  { path: '/blog', outputFile: 'blog/index.html', title: "Whimsylabs Blog - Latest Virtual Lab Innovations", description: "Stay updated with Whimsylabs' latest news on virtual laboratory technology and STEM education." },
-  { path: '/services', outputFile: 'services/index.html', title: "Whimsylabs Services - Virtual Labs for Education", description: "Discover Whimsylabs' virtual lab solutions for enhancing STEM education through AI-driven simulations." },
-  { path: '/features', outputFile: 'features/index.html', title: "Whimsylabs Features - Cutting-Edge Virtual Lab Technology", description: "Explore the powerful features of Whimsylabs, from immersive simulations to AI-driven experiments for STEM education." }
+  { path: '/blog', outputFile: 'blog/index.html', title: "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources", description: "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators." },
+  { path: '/services', outputFile: 'services/index.html', title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry", description: "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments." },
+  { path: '/features', outputFile: 'features/index.html', title: "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology", description: "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments." },
+  { path: '/faq', outputFile: 'faq/index.html', title: "Frequently Asked Questions | WhimsyLabs Virtual Lab Software", description: "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators." }
 ];
 
 // Add blog post routes
