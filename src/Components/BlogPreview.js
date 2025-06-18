@@ -138,23 +138,25 @@ const BlogPreview = ({ post }) => {
   };
 
   return (
-    <div className="post-box post-preview" id={`post-${post.id}`}>
-      {/* Extract and display the first image as a header */}
-      {extractFirstImage(post.content)}
-      
-      <h2>
-        <Link to={`/blog/${post.id}`}>{post.title}</Link>
-      </h2>
-      <span className="post-date">{formatDate(post.date)}</span>
-      
-      {extractPreview(post.content)}
-      
-      <div className="post-preview-footer">
-        <Link to={`/blog/${post.id}`} className="read-more-link">
+    <Link to={`/blog/${post.id}`} className="blog-preview-link">
+      <div className="post-box post-preview" id={`post-${post.id}`}>
+        {/* Extract and display the first image as a header */}
+        {extractFirstImage(post.content)}
+        
+        <h2>
+          <span className="post-title">{post.title}</span>
+        </h2>
+        <span className="post-date">{formatDate(post.date)}</span>
+        
+        {extractPreview(post.content)}
+        
+        
+        <span className="read-more-link">
           Read More
-        </Link>
+        </span>
+        
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -22,6 +22,19 @@
     padding-bottom: 60px; /* Ensure space for the bottom bar */
 }
 
+.blog-preview-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.blog-preview-link:hover .post-box {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .post-box {
     background-color: #ffffffd0;
     padding: 20px;
@@ -36,14 +49,10 @@
     color: #333333;
 }
 
-.post-box h2 a {
+.post-box h2 {
     color: #333333;
     text-decoration: none;
     transition: color 0.2s;
-}
-
-.post-box h2 a:hover {
-    color: #007bff;
 }
 
 .post-box p {
@@ -62,7 +71,7 @@
 
 .post-preview {
     position: relative;
-    padding-bottom: 70px; /* Increased to accommodate taller content */
+    padding-bottom: 0%; /* Reduced since button is now overlaid on content */
     overflow: hidden;
     min-height: 300px; /* Set minimum height for the box */
 }
@@ -85,7 +94,7 @@
     transition: transform 0.3s ease;
 }
 
-.post-preview:hover .post-header-image img {
+.blog-preview-link:hover .post-header-image img {
     transform: scale(1.05);
 }
 
@@ -95,10 +104,11 @@
 
 .post-preview-content {
     position: relative;
-    max-height: 390px; /* Increased by 30% from 300px */
+    max-height: 350px; /* Adjusted to work with overlaid button */
     overflow: hidden;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced margin to work with overlaid button */
+    padding-bottom: 40px; /* Added padding to ensure text doesn't overlap with button */
 }
 
 .post-preview-content p {
@@ -124,22 +134,24 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 150px; /* Increased height for taller content */
+    height: 150px; /* Increased height to accommodate button overlay */
     background: linear-gradient(
         to bottom, 
         rgba(255, 255, 255, 0) 0%, 
-        rgba(255, 255, 255, 0.5) 40%, 
-        rgba(255, 255, 255, 0.8) 70%, 
-        rgba(255, 255, 255, 1) 100%
+        rgba(255, 255, 255, 0.7) 30%, 
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0.9) 70%, 
+        rgba(255, 255, 255, 1) 90%
     );
     pointer-events: none;
+    z-index: 5; /* Lower than the button but higher than content */
 }
 
 .post-preview-footer {
     position: relative;
-    margin-top: 20px;
-    text-align: right;
-    height: 40px; /* Ensure consistent height */
+    margin-top: 15px;
+    text-align: center;
+    height: 30px; /* Adjusted height for better button positioning */
 }
 
 .read-more-link {
@@ -152,16 +164,37 @@
     font-weight: 500;
     transition: all 0.3s ease;
     position: absolute;
-    bottom: -30px;
-    right: 0;
-    z-index: 5; /* Ensure button appears above fade effect */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    bottom: 15px; /* Adjusted position to overlay on text */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Higher z-index to ensure it appears above the fade effect */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 0 15px rgba(255,255,255,0.8); /* Added glow effect */
     font-size: 1.05rem;
+    opacity: 0.9; /* Slightly transparent by default */
 }
 
-.read-more-link:hover {
+.blog-preview-link:hover .read-more-link {
     background-color: #14b7ff;
     color: white;
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4), 0 0 20px rgba(20,183,255,0.6); /* Enhanced glow effect */
+    opacity: 1; /* Fully opaque on hover */
+}
+
+/* Make the button more visible on hover */
+.read-more-link:hover {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 1;
+}
+
+/* Style for post title in blog preview */
+.post-title {
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.blog-preview-link:hover .post-title {
+    color: #007bff;
 }
 
 /* Single post page styles */
