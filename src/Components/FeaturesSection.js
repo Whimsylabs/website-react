@@ -44,7 +44,7 @@ const FeaturesSection = () => {
       </div>
       {/* Replace faq-teaser with a button-style link */}
       <div className="features-btn">
-        <Link to="/faq" className="features-faq-btn">See full features here!</Link>
+        <Link to="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" className="features-faq-btn">See full features here!</Link>
       </div>
     </section>
   );

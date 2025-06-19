@@ -21,7 +21,7 @@ const posts = postsContext.keys().map((key) => {
 }).sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
 const Blog = () => {
-  const [activePostId, setActivePostId] = useState(null);
+  const [activePostId] = useState(null);
 
   return (
     <main className="container-fluid text-center p-0">

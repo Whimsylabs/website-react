@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ContactUs.css';
 
-const ContactUs = () => {
+const ContactUs = ({ buttonText = "Contact Us!" }) => {
   return (
     <section className="contact-us-container" aria-labelledby="contact-us-heading">
-      <h2 id="contact-us-heading" className="visually-hidden"></h2>
-      <a href="mailto:inquiries@whimsylabs.ai" className="btn contact-us" type="button" aria-label="Email Whimsylabs">
-        Contact Us!
-      </a>
+      <Link to="/contact" className="btn contact-us" type="button" aria-label="Contact Whimsylabs">
+        {buttonText}
+      </Link>
     </section>
   );
 };

@@ -11,7 +11,7 @@ const Footer = () => {
             <ul className="footer-links" aria-label="Footer navigation">
                 <li><Link to="/" className="nav-link" aria-label="Navigate to Home">Home</Link></li>
                 <li><Link to="/services" className="nav-link" aria-label="View Our Services">Services</Link></li>
-                <li><a href="mailto:inquiries@whimsylabs.ai" className="nav-link" aria-label="Contact Us via Email">Contact</a></li>
+                <li><a href="/contact" className="nav-link" aria-label="Contact Us via Email">Contact</a></li>
                 <li><Link to="/blog" className="nav-link" aria-label="Visit Our Blog">Blog</Link></li>
                 <li><Link to="/faq" className="nav-link" aria-label="Frequently Asked Questions">FAQ</Link></li>
             </ul>

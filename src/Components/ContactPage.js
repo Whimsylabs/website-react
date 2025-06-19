@@ -326,7 +326,7 @@ const ContactPage = () => {
           
           <div className="contact-alternative">
             <h3>Prefer to email us directly?</h3>
-            <p>Reach out to <a href="mailto:hello@whimsylabs.ai">hello@whimsylabs.ai</a></p>
+            <p>Reach out to <a href="mailto:inquiries@whimsylabs.ai">inquiries@whimsylabs.ai</a></p>
           </div>
         </div>
       </div>
