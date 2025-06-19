@@ -139,9 +139,19 @@ function updatePageContent(html, route) {
   }
   
   // Add special meta tags for AI crawlers
+  let alternateLink;
+  if (route.path.startsWith('/blog/')) {
+    // For blog posts, use blog-slug.html format
+    const slug = route.path.substring(6); // Remove /blog/
+    alternateLink = `blog-${slug}.html`;
+  } else {
+    // For other pages, use path.html format
+    alternateLink = `${route.path.substring(1) || 'index'}.html`;
+  }
+  
   updatedHtml = updatedHtml.replace(
     /<\/head>/,
-    `  <meta name="robots" content="all">\n  <meta name="ai-access" content="full">\n  </head>`
+    `  <meta name="robots" content="all">\n  <meta name="ai-access" content="full">\n  <link rel="alternate" type="text/html" href="${alternateLink}" data-purpose="ai-crawler-version">\n  </head>`
   );
   
   // Add special handling for blog index page
@@ -409,5 +419,46 @@ routes.forEach(route => {
     console.error(`Error writing file ${route.outputFile}:`, error);
   }
 });
+
+// Generate AI index with blog posts
+console.log('Generating AI index with blog posts...');
+try {
+  // Copy the AI index template to the build directory
+  const aiIndexSrc = path.resolve(__dirname, 'public', 'ai-index.html');
+  const aiIndexDest = path.resolve(__dirname, 'build', 'ai-index.html');
+  
+  if (fs.existsSync(aiIndexSrc)) {
+    let aiIndexContent = fs.readFileSync(aiIndexSrc, 'utf8');
+    
+    // Generate blog posts HTML
+    let blogPostsHtml = '';
+    
+    // Sort blog posts by date (newest first)
+    const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    sortedPosts.forEach(post => {
+      blogPostsHtml += `<div class="content-item">\n`;
+      blogPostsHtml += `  <h3>${post.title}</h3>\n`;
+      blogPostsHtml += `  <p>${post.description}</p>\n`;
+      blogPostsHtml += `  <p>URLs:</p>\n`;
+      blogPostsHtml += `  <ul>\n`;
+      blogPostsHtml += `    <li><a href="https://whimsylabs.ai/blog/${post.slug}">https://whimsylabs.ai/blog/${post.slug}</a></li>\n`;
+      blogPostsHtml += `    <li><a href="https://whimsylabs.ai/blog/${post.slug}.html">https://whimsylabs.ai/blog/${post.slug}.html</a></li>\n`;
+      blogPostsHtml += `    <li><a href="https://whimsylabs.ai/blog-${post.slug}.html">https://whimsylabs.ai/blog-${post.slug}.html</a></li>\n`;
+      blogPostsHtml += `  </ul>\n`;
+      blogPostsHtml += `  <p>Published: ${post.date}</p>\n`;
+      blogPostsHtml += `</div>\n`;
+    });
+    
+    // Replace the placeholder with the blog posts HTML
+    aiIndexContent = aiIndexContent.replace('<!-- BLOG_POSTS_PLACEHOLDER -->', blogPostsHtml);
+    
+    // Write the updated AI index to the build directory
+    fs.writeFileSync(aiIndexDest, aiIndexContent);
+    console.log('Generated AI index with blog posts');
+  }
+} catch (error) {
+  console.error('Error generating AI index:', error);
+}
 
 console.log('All static HTML pages have been generated!');
