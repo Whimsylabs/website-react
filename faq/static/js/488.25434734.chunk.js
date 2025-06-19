@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[488],{488:(s,e,t)=>{t.r(e),t.d(e,{config:()=>c});const c={formScriptUrl:"https://script.google.com/macros/s/AKfycbxpSza6Nhw-dO9RkWH2tvjgtlyppeKYElSsYD0tU0IM5N7hVj_0PhpASXAmC4XN8JdD8Q/exec"}}}]);
+//# sourceMappingURL=488.25434734.chunk.js.map
