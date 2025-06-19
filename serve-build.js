@@ -41,8 +41,12 @@ const server = http.createServer((req, res) => {
     url = '/index.html';
   }
   
+  // Handle .html extensions specially - serve the file directly
+  if (url.endsWith('.html')) {
+    // Keep the URL as is, we'll serve the .html file directly
+  }
   // Handle URLs without file extensions (assume they're directories)
-  if (!path.extname(url) && !url.endsWith('/')) {
+  else if (!path.extname(url) && !url.endsWith('/')) {
     url += '/';
   }
   

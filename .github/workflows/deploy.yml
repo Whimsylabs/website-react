@@ -8,29 +8,30 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node.js ⚙️
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
           cache: 'npm'
           
-      - name: Create config file with secrets 🔒
+      - name: Create config file with secrets
         run: |
           echo "export const config = { formScriptUrl: '${{ secrets.FORM_SCRIPT_URL }}' };" > src/config.js
           
       - name: Install dependencies
         run: npm install
         
-      - name: Build 🏗️
+      - name: Build
         run: npm run build
+        # The postbuild script will automatically run:
+        # 1. generate-sitemap.js
+        # 2. generate-html-pages.js
+        # 3. enhance-html-for-crawlers.js
         
-      - name: Generate HTML pages 📄
-        run: node generate-html-pages.js
-        
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
@@ -38,7 +39,6 @@ jobs:
           clean: true
 
 # IMPORTANT: Before using this workflow:
-# 1. Rename this file from deploy.yml.example to deploy.yml
+# 1. Rename this file from deploy-fixed.yml to deploy.yml
 # 2. Add your script URL as a repository secret named FORM_SCRIPT_URL in your GitHub repository settings
 #    (Settings > Secrets and variables > Actions > New repository secret)
-
