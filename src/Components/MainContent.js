@@ -4,7 +4,6 @@ import WelcomeSection from './WelcomeSection';
 import FeaturesSection from './FeaturesSection';
 import VideoPlayer from './VideoPlayer';
 import sampleVideo from './videos/placeholder.webm';
-import fallbackImage from './images/tiled.png';
 import videoPoster from './images/logo.png';
 import './MainContent.css';
 import Testimonial from './Testimonial';
