@@ -49,54 +49,14 @@ const routes = [
   { path: '/contact', outputFile: 'contact/index.html', title: "Contact Us | WhimsyLabs Virtual Lab Software", description: "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education." }
 ];
 
-// Function to extract blog post content
-function extractBlogPostContent(slug) {
-  const blogDir = path.resolve(__dirname, 'src/Components/blog');
-  const files = fs.readdirSync(blogDir);
-  
-  // Filter for Post*.js files
-  const postFiles = files.filter(file => /^Post\d+\.js$/.test(file));
-  
-  for (const file of postFiles) {
-    const filePath = path.join(blogDir, file);
-    const content = fs.readFileSync(filePath, 'utf8');
-    
-    // Extract post slug
-    const slugMatch = content.match(/export const slug = ["'](.+?)["'];/);
-    
-    if (slugMatch && slugMatch[1] === slug) {
-      // Try to extract post content - this might be in different formats
-      let postContent = '';
-      const contentMatch1 = content.match(/export const content = \(\s*<div>([\s\S]*?)<\/div>\s*\);/);
-      const contentMatch2 = content.match(/export const content = `([\s\S]*?)`;/);
-      const contentMatch3 = content.match(/export const content = \(\s*([\s\S]*?)\s*\);/);
-      
-      if (contentMatch1) {
-        postContent = contentMatch1[1];
-      } else if (contentMatch2) {
-        postContent = contentMatch2[1];
-      } else if (contentMatch3) {
-        postContent = contentMatch3[1];
-      }
-      
-      return postContent;
-    }
-  }
-  
-  return '';
-}
-
 // Add blog post routes
 blogPosts.forEach(post => {
-  const postContent = extractBlogPostContent(post.slug);
-  
   routes.push({
     path: `/blog/${post.slug}`,
     outputFile: `blog/${post.slug}/index.html`,
     title: `${post.title} | WhimsyLabs Blog`,
     description: post.description,
-    date: post.date,
-    content: postContent
+    date: post.date
   });
 });
 
@@ -138,83 +98,6 @@ function updatePageContent(html, route) {
     );
   }
   
-  // Add special handling for blog index page
-  if (route.path === '/blog') {
-    // Create a simplified HTML version of the blog index for crawlers
-    let blogIndexHtml = '<div id="crawler-content" style="display:none;" aria-hidden="true">\n';
-    blogIndexHtml += '  <h1>WhimsyLabs Blog</h1>\n';
-    blogIndexHtml += '  <p>Latest Virtual Laboratory Innovations & Teaching Resources</p>\n';
-    
-    // Sort blog posts by date (newest first)
-    const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
-    
-    sortedPosts.forEach(post => {
-      blogIndexHtml += `  <article itemscope itemtype="https://schema.org/BlogPosting">\n`;
-      blogIndexHtml += `    <h2 itemprop="headline">${post.title}</h2>\n`;
-      blogIndexHtml += `    <meta itemprop="datePublished" content="${post.date}">\n`;
-      blogIndexHtml += `    <p>Published: ${post.date}</p>\n`;
-      blogIndexHtml += `    <div itemprop="description">${post.description}</div>\n`;
-      blogIndexHtml += `    <a href="/blog/${post.slug}" itemprop="url">Read More</a>\n`;
-      blogIndexHtml += `  </article>\n`;
-    });
-    
-    blogIndexHtml += '</div>\n';
-    
-    // Insert the blog index content before the closing body tag
-    updatedHtml = updatedHtml.replace('</body>', `${blogIndexHtml}</body>`);
-  }
-  
-  // Add special handling for FAQ page to improve crawler accessibility
-  if (route.path === '/faq') {
-    // Extract FAQ content from the FAQ.js file
-    try {
-      const faqPath = path.resolve(__dirname, 'src/Components/FAQ.js');
-      const faqContent = fs.readFileSync(faqPath, 'utf8');
-      
-      // Extract FAQ data using regex
-      const faqCategoriesMatch = faqContent.match(/const faqCategories = ({[\s\S]*?});/);
-      
-      if (faqCategoriesMatch) {
-        // Create a simplified HTML version of the FAQ content for crawlers
-        let faqHtml = '<div id="faq-crawler-content" style="display:none">\n';
-        faqHtml += '  <h2>Frequently Asked Questions</h2>\n';
-        
-        // Parse the FAQ categories object (this is a simplified approach)
-        const categoriesText = faqCategoriesMatch[1];
-        const categoryMatches = categoriesText.matchAll(/"([^"]+)":\s*\[([\s\S]*?)(?=\],|}\);)/g);
-        
-        for (const match of categoryMatches) {
-          const category = match[1];
-          const items = match[2];
-          
-          faqHtml += `  <h3>${category}</h3>\n`;
-          
-          // Extract questions and answers
-          const qaMatches = items.matchAll(/{\s*question:\s*"([^"]+)",\s*answer:\s*"([^"]+)"\s*}/g);
-          
-          for (const qaMatch of qaMatches) {
-            const question = qaMatch[1];
-            const answer = qaMatch[2];
-            
-            faqHtml += `  <div itemscope itemtype="https://schema.org/Question">\n`;
-            faqHtml += `    <h4 itemprop="name">${question}</h4>\n`;
-            faqHtml += `    <div itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">\n`;
-            faqHtml += `      <div itemprop="text">${answer}</div>\n`;
-            faqHtml += `    </div>\n`;
-            faqHtml += `  </div>\n`;
-          }
-        }
-        
-        faqHtml += '</div>\n';
-        
-        // Insert the FAQ content before the closing body tag
-        updatedHtml = updatedHtml.replace('</body>', `${faqHtml}</body>`);
-      }
-    } catch (error) {
-      console.error('Error processing FAQ content:', error);
-    }
-  }
-  
   // Update Open Graph tags
   const ogTitleRegex = /<meta\s+property="og:title"\s+content=".*?">/;
   if (ogTitleRegex.test(updatedHtml)) {
@@ -247,22 +130,6 @@ function updatePageContent(html, route) {
       /<\/head>/,
       `  <meta property="article:published_time" content="${route.date}">\n  <meta property="og:type" content="article">\n  </head>`
     );
-    
-    // Add blog post content for crawlers if available
-    if (route.content) {
-      const blogPostHtml = `
-<div id="crawler-content" style="display:none;" aria-hidden="true">
-  <article itemscope itemtype="https://schema.org/BlogPosting">
-    <h1 itemprop="headline">${route.title.replace(' | WhimsyLabs Blog', '')}</h1>
-    <meta itemprop="datePublished" content="${route.date}">
-    <p>Published: ${route.date}</p>
-    <div itemprop="description">${route.description}</div>
-    <div itemprop="articleBody">${route.content}</div>
-  </article>
-</div>`;
-      
-      updatedHtml = updatedHtml.replace('</body>', `${blogPostHtml}\n</body>`);
-    }
   }
   
   // Add the initial route script

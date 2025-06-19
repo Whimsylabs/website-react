@@ -112,7 +112,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="faq-section" aria-labelledby="faq-heading" itemScope itemType="https://schema.org/FAQPage">
+    <section className="faq-section" aria-labelledby="faq-heading">
       <h2 id="faq-heading" className="faq-heading">Frequently Asked Questions</h2>
       <div className="faq-container">
         {Object.entries(faqCategories).map(([category, items], categoryIndex) => (
@@ -150,35 +150,12 @@ const FAQ = () => {
                   >
                     <p itemProp="text">{item.answer}</p>
                   </div>
-                  {/* Add a hidden version that's always visible to crawlers */}
-                  <div className="faq-answer-crawler" style={{ display: 'none' }}>
-                    <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                      <div itemProp="text">{item.answer}</div>
-                    </div>
-                  </div>
                 </div>
               );
             })}
           </div>
         ))}
       </div>
-      
-      {/* Add a noscript version for crawlers that don't execute JavaScript */}
-      <noscript>
-        <div className="faq-noscript-content">
-          {Object.entries(faqCategories).map(([category, items], categoryIndex) => (
-            <div key={categoryIndex} className="faq-category-noscript">
-              <h3>{category}</h3>
-              {items.map((item, index) => (
-                <div key={index} className="faq-item-noscript">
-                  <h4>{item.question}</h4>
-                  <p>{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </noscript>
     </section>
   );
 };
