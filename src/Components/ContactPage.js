@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import './ContactPage.css';
 import { Helmet } from 'react-helmet-async';
 
 const ContactPage = () => {
-  const [activeForm, setActiveForm] = useState('general'); // 'general' or 'trial'
+  const [activeForm, setActiveForm] = useState('trial'); // 'general' or 'trial'
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,6 +18,24 @@ const ContactPage = () => {
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('Please fill out all required fields.');
+  const [scriptURL, setScriptURL] = useState('');
+  
+  // Fetch the script URL from a secure source
+  useEffect(() => {
+    // Option 1: Load from config file that's in .gitignore
+    import('../config.js')
+      .then(config => {
+        setScriptURL(config.config.formScriptUrl);
+      })
+      .catch(error => {
+        console.error('Error loading config:', error);
+        // Fallback to environment variable if config fails
+        if (process.env.REACT_APP_FORM_SCRIPT_URL) {
+          setScriptURL(process.env.REACT_APP_FORM_SCRIPT_URL);
+        }
+      });
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -27,33 +45,77 @@ const ContactPage = () => {
     });
   };
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     
     // Basic validation
     if (!formData.name || !formData.email || !formData.school || !formData.message) {
       setFormError(true);
+      setErrorMessage('Please fill out all required fields.');
       return;
     }
     
-    // In a real implementation, you would send the form data to a server here
-    console.log('Form submitted:', formData);
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setFormError(true);
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
     
-    // Show success message
-    setFormSubmitted(true);
-    setFormError(false);
+    setIsSubmitting(true);
     
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      school: '',
-      role: '',
-      phoneNumber: '',
-      studentCount: '',
-      message: '',
-      preferredContact: 'email'
+    // Check if we have a script URL
+    if (!scriptURL) {
+      setFormError(true);
+      setErrorMessage('Unable to submit form at this time. Please email us directly.');
+      setIsSubmitting(false);
+      return;
+    }
+    
+    // Prepare form data for submission
+    const formDataToSend = new FormData();
+    Object.keys(formData).forEach(key => {
+      formDataToSend.append(key, formData[key]);
     });
+    
+    // Add form type (trial or general)
+    formDataToSend.append('formType', activeForm);
+    
+    // Add user agent for spam detection
+    formDataToSend.append('userAgent', navigator.userAgent);
+    
+    // Add honeypot field (should be empty, used for spam protection)
+    formDataToSend.append('website', '');
+    
+    // Send data to Google Sheets
+    fetch(scriptURL, { method: 'POST', body: formDataToSend })
+      .then(response => {
+        console.log('Success!', response);
+        setFormSubmitted(true);
+        setFormError(false);
+        setIsSubmitting(false);
+        
+        // Reset form after submission
+        setFormData({
+          name: '',
+          email: '',
+          school: '',
+          role: '',
+          phoneNumber: '',
+          studentCount: '',
+          message: '',
+          preferredContact: 'email'
+        });
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        setFormError(true);
+        setErrorMessage('There was a problem submitting your form. Please try again or email us directly.');
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -104,7 +166,7 @@ const ContactPage = () => {
               <form onSubmit={handleSubmit} className="contact-form">
                 {formError && (
                   <div className="form-error-message">
-                    Please fill out all required fields.
+                    {errorMessage}
                   </div>
                 )}
                 
@@ -236,12 +298,27 @@ const ContactPage = () => {
                   ></textarea>
                 </div>
                 
+                {/* Honeypot field - hidden from users but bots might fill it out */}
+                <div className="honeypot-field">
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabIndex="-1"
+                    autoComplete="off"
+                  />
+                </div>
+
                 <div className="form-group form-privacy-notice">
                   <p>By submitting this form, you agree to our <a href="/privacy">Privacy Policy</a>. We'll only use your information to respond to your inquiry.</p>
                 </div>
                 
-                <button type="submit" className="submit-button">
-                  {activeForm === 'trial' ? 'Request Trial' : 'Send Message'}
+                <button 
+                  type="submit" 
+                  className="submit-button"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : (activeForm === 'trial' ? 'Request Trial' : 'Send Message')}
                 </button>
               </form>
             </div>
