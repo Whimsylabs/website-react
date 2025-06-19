@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# WhimsyLabs Website
+
+This is the official website for WhimsyLabs, a company that provides virtual laboratory simulations for educational purposes. The website showcases the company's products, services, blog, and contact information.
+
+## Project Overview
+
+WhimsyLabs offers award-winning virtual labs for Biology, Chemistry, Physics, and more. This website serves as the primary online presence for the company, highlighting its innovative approach to STEM education through virtual simulations.
+
+## Key Features
+
+- **Interactive Design**: Animated elements including bubbles, waves, and text effects
+- **Responsive Layout**: Optimized for all device sizes
+- **Blog System**: Dynamic blog with multiple posts
+- **Service Showcase**: Information about custom simulation development
+- **Partner Showcase**: Display of educational and business partners
+
+## Technology Stack
+
+- React.js
+- React Router for navigation
+- CSS3 with animations and responsive design
+- GitHub Pages for deployment
+
+## Development Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository
+   ```
+   git clone https://github.com/yourusername/whimsylabs-website.git
+   cd whimsylabs-website
+   ```
+
+2. Install dependencies
+   ```
+   npm install
+   ```
+
+3. Start the development server
+   ```
+   npm start
+   ```
+
+The app will run in development mode at [http://localhost:3000](http://localhost:3000).
+
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start`: Runs the app in development mode
+- `npm test`: Launches the test runner
+- `npm run build`: Builds the app for production
+- `npm run deploy`: Deploys the built app to GitHub Pages
 
-### `npm start`
+## Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The website is deployed on GitHub Pages. To deploy updates:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Make your changes and test them locally
+2. Run `npm run deploy` to build and deploy to GitHub Pages
+3. The site will be available at [https://whimsylabs.ai](https://whimsylabs.ai)
 
-### `npm test`
+### Multi-Page Application Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This website uses a hybrid approach that combines React with static HTML generation:
 
-### `npm run build`
+- Each main route (`/`, `/blog`, `/services`, `/features`) has its own HTML file
+- The `generate-html-pages.js` script creates these files during the build process
+- This approach improves SEO and allows direct access to URLs like [https://whimsylabs.ai/blog](https://whimsylabs.ai/blog)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For more details on how this works, see [MPA-CONVERSION.md](MPA-CONVERSION.md).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/Components/`: React components for the website
+- `src/Components/blog/`: Blog post components
+- `src/Components/images/`: Image assets
+- `src/Components/videos/`: Video assets
+- `public/`: Static assets and HTML template
 
-### `npm run eject`
+## Design Guidelines
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Color Palette**: Purple (#1f1968), light blue (#95CEF6), and lavender (#dabeff)
+- **Typography**: Primarily uses Poppins font family
+- **Animations**: Subtle animations for enhanced user experience
+- **Component Structure**: Each component has its own CSS file for maintainability
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Create a feature branch (`git checkout -b feature/amazing-feature`)
+2. Commit your changes (`git commit -m 'Add some amazing feature'`)
+3. Push to the branch (`git push origin feature/amazing-feature`)
+4. Open a Pull Request
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proprietary - All rights reserved by WhimsyLabs.

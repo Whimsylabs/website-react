@@ -1,0 +1,252 @@
+#contact-page-background {
+  background: linear-gradient(135deg, #dabeff 0%, #95CEF6 100%);
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.contact-header-container {
+  margin-bottom: 2.5rem;
+}
+
+.contact-main-heading {
+  color: #1f1968;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-subheading {
+  color: #333;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.form-selector-button {
+  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #6172B3;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #1f1968;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-selector-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.form-selector-button.active {
+  background-color: #6172B3;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2.5rem auto 0;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1f1968;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #6172B3;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(97, 114, 179, 0.2);
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.radio-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 0.5rem;
+}
+
+.form-privacy-notice {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Hide the honeypot field from users but keep it accessible to bots */
+.honeypot-field {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.submit-button {
+  background-color: #14b7ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-button:hover {
+  background-color: #0da1e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.form-error-message {
+  background-color: #fce4e4;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-success-message {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-success-message h2 {
+  color: #1f1968;
+  margin-bottom: 1rem;
+}
+
+.form-success-message p {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.submit-another-button {
+  background-color: #6172B3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-another-button:hover {
+  background-color: #4a5a9e;
+  transform: translateY(-2px);
+}
+
+.contact-alternative {
+  margin-top: 3rem;
+  color: #1f1968;
+  text-align: center;
+}
+
+.contact-alternative h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-alternative a {
+  color: #14b7ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-alternative a:hover {
+  color: #0da1e0;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-selector-button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact-main-heading {
+    font-size: 2rem;
+  }
+}

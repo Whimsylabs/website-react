@@ -21,6 +21,11 @@ const BubbleContainer = ({ children, speed = 10, restrictOverflow = false, bubbl
           bubble.style.backgroundImage = `url(${randomBubble})`;
           bubble.style.left = `${Math.random() * 97}%`;
           bubble.style.animationDuration = `${speed}s`;
+          
+          // Increase bubble size by 25%
+          bubble.style.width = '31px';  // 25px * 1.25 = ~31px
+          bubble.style.height = '25px'; // 20px * 1.25 = 25px
+          
           section.appendChild(bubble);
 
           bubble.addEventListener('animationend', () => {
@@ -32,7 +37,8 @@ const BubbleContainer = ({ children, speed = 10, restrictOverflow = false, bubbl
 
     const startBubbleGeneration = () => {
       if (!intervalRef.current) {
-        intervalRef.current = setInterval(createBubbles, 300);
+        // Decreased spawn rate by 20% (300ms to 360ms)
+        intervalRef.current = setInterval(createBubbles, 450);
       }
     };
 

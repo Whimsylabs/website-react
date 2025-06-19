@@ -14,3 +14,39 @@ h1 {
   color: #1f1968;
   text-align: center;
 }
+
+.faq-teaser {
+  text-align: center;
+  margin: 3rem auto 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-teaser h2 {
+  color: #1f1968;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.faq-teaser p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.faq-link {
+  color: #14b7ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid #14b7ff;
+  padding-bottom: 2px;
+}
+
+.faq-link:hover {
+  color: #1f1968;
+  border-bottom-color: #1f1968;
+}

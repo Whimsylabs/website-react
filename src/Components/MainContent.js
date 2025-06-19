@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import WelcomeSection from './WelcomeSection';
 import FeaturesSection from './FeaturesSection';
 import VideoPlayer from './VideoPlayer';
@@ -32,8 +33,12 @@ const MainContent = () => {
       </SplashSection>
       <BubbleContainer>
         <Testimonial />
-        <h1>Curious?</h1>
+        <h1>Want To Trial A Free Demo At Your School?</h1>
         <ContactUs />
+        <div className="faq-teaser">
+          <h2>Have Questions?</h2>
+          <p>Visit our <Link to="/faq" className="faq-link">FAQ page</Link> for answers to common questions, or check our our <Link to="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" className="faq-link">Features PDF</Link> for more details about our virtual lab software!</p>
+        </div>
       </BubbleContainer>
       <Partners />
       <Footer />
