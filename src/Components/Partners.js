@@ -5,7 +5,7 @@ import DJB from './images/kids_judge_bett.png';
 const Partners = () => {
     return (
         <section className="partners-section" aria-labelledby="partners-heading">
-            <h2 id="partners-heading" className="visually-hidden"></h2>
+            <h2 id="partners-heading" className="visually-hidden">Our Partners</h2>
             <div className="container">
                 <div className="partners-row">
                     <div className="partner-logo">

@@ -25,7 +25,6 @@ const MainContent = () => {
         <VideoPlayer
           videoSrc={sampleVideo}
           poster={videoPoster}
-          fallbackImage={fallbackImage}
         />
       </BubbleContainer>
       <SplashSection>
