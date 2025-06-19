@@ -29,20 +29,14 @@ function App({ initialPath = '/' }) {
                     <Route path="/" element={<MainContent />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/blog/:slug" element={<BlogPost />} />
-                    <Route path="/blog/:slug.html" element={<BlogPost />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/services/*" element={<Navigate to="/services" />} />
                     <Route path="/features" element={<Features />} />
                     <Route path="/features/*" element={<Navigate to="/features" />} />
                     <Route path="/faq" element={<FAQPage />} />
-                    <Route path="/faq.html" element={<FAQPage />} />
                     <Route path="/faq/*" element={<Navigate to="/faq" />} />
                     <Route path="/contact" element={<ContactPage />} />
-                    <Route path="/contact.html" element={<ContactPage />} />
                     <Route path="/contact/*" element={<Navigate to="/contact" />} />
-                    <Route path="/blog.html" element={<Blog />} />
-                    <Route path="/services.html" element={<Services />} />
-                    <Route path="/features.html" element={<Features />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
             </BrowserRouter>

@@ -54,40 +54,18 @@ sitemapContent += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\
 
 // Add main routes
 mainRoutes.forEach(route => {
-  // Add the directory-based URL (e.g., /blog/)
   sitemapContent += '    <url>\n';
   sitemapContent += `        <loc>https://whimsylabs.ai${route.path}</loc>\n`;
   sitemapContent += `        <changefreq>${route.changefreq}</changefreq>\n`;
   sitemapContent += `        <priority>${route.priority}</priority>\n`;
   sitemapContent += '    </url>\n';
-  
-  // Also add the root path HTML file (e.g., /blog.html) for better crawler access
-  if (route.path !== '/') {
-    const rootPath = route.path.substring(1) + '.html'; // Remove leading slash and add .html
-    sitemapContent += '    <url>\n';
-    sitemapContent += `        <loc>https://whimsylabs.ai/${rootPath}</loc>\n`;
-    sitemapContent += `        <changefreq>${route.changefreq}</changefreq>\n`;
-    sitemapContent += `        <priority>${route.priority}</priority>\n`;
-    sitemapContent += '    </url>\n';
-  }
 });
 
 // Add blog post routes
 blogPosts.forEach(post => {
   const lastmod = new Date(post.date).toISOString().split('T')[0];
-  
-  // Add the directory-based URL (e.g., /blog/post-slug/)
   sitemapContent += '    <url>\n';
   sitemapContent += `        <loc>https://whimsylabs.ai/blog/${post.slug}</loc>\n`;
-  sitemapContent += `        <lastmod>${lastmod}</lastmod>\n`;
-  sitemapContent += '        <changefreq>monthly</changefreq>\n';
-  sitemapContent += '        <priority>0.7</priority>\n';
-  sitemapContent += '    </url>\n';
-  
-  // Also add the root path HTML file (e.g., /blog-post-slug.html) for better crawler access
-  const rootPath = `blog-${post.slug}.html`;
-  sitemapContent += '    <url>\n';
-  sitemapContent += `        <loc>https://whimsylabs.ai/${rootPath}</loc>\n`;
   sitemapContent += `        <lastmod>${lastmod}</lastmod>\n`;
   sitemapContent += '        <changefreq>monthly</changefreq>\n';
   sitemapContent += '        <priority>0.7</priority>\n';

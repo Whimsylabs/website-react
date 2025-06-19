@@ -138,12 +138,6 @@ function updatePageContent(html, route) {
     );
   }
   
-  // Add special meta tags for AI crawlers
-  updatedHtml = updatedHtml.replace(
-    /<\/head>/,
-    `  <meta name="robots" content="all">\n  <meta name="ai-access" content="full">\n  </head>`
-  );
-  
   // Add special handling for blog index page
   if (route.path === '/blog') {
     // Create a simplified HTML version of the blog index for crawlers
@@ -362,46 +356,11 @@ routes.forEach(route => {
   
   // Write the HTML file
   try {
-    // Write to the directory-based path (e.g., /blog/index.html)
     fs.writeFileSync(
       path.resolve(__dirname, 'build', route.outputFile),
       pageHtml
     );
     console.log(`Generated: ${route.outputFile}`);
-    
-    // Also write to the root path (e.g., /blog.html) for better crawler access
-    if (route.path !== '/') {
-      let rootOutputFile;
-      
-      // Special handling for blog posts
-      if (route.path.startsWith('/blog/')) {
-        // For blog posts, create two formats:
-        // 1. blog-slug.html format for direct access
-        const slug = route.path.substring(6); // Remove /blog/
-        rootOutputFile = `blog-${slug}.html`;
-        fs.writeFileSync(
-          path.resolve(__dirname, 'build', rootOutputFile),
-          pageHtml
-        );
-        console.log(`Generated root path file: ${rootOutputFile}`);
-        
-        // 2. blog/slug.html format for compatibility with React Router
-        const compatOutputFile = `blog/${slug}.html`;
-        fs.writeFileSync(
-          path.resolve(__dirname, 'build', compatOutputFile),
-          pageHtml
-        );
-        console.log(`Generated compatibility file: ${compatOutputFile}`);
-      } else {
-        // For other pages, use path.html format
-        rootOutputFile = route.path.substring(1) + '.html'; // Remove leading slash and add .html
-        fs.writeFileSync(
-          path.resolve(__dirname, 'build', rootOutputFile),
-          pageHtml
-        );
-        console.log(`Generated root path file: ${rootOutputFile}`);
-      }
-    }
     
     // Copy assets to the route directory
     copyAssets(route.path);
