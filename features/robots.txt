@@ -1,15 +1,27 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
-# All search engines are allowed to crawl all content
+# All search engines and AI systems are allowed to crawl all content
 
 User-agent: *
+Allow: /
+
+# Specific allowances for AI systems
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Baiduspider
 Allow: /
 
 # Sitemap location
 Sitemap: https://whimsylabs.ai/sitemap.xml
 
-# Crawl delay to prevent server overload
-Crawl-delay: 1
+# No crawl delay for better AI access
+# Crawl-delay: 1
 
 # Disallow access to any temporary files that might exist
 Disallow: /tmp/
@@ -20,3 +32,6 @@ Allow: /services/
 Allow: /features/
 Allow: /faq/
 Allow: /contact/
+
+# Allow direct access to HTML files
+Allow: /*.html$
