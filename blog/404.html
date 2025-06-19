@@ -47,6 +47,15 @@
         var validPaths = ["/", "/blog", "/services", "/features", "/faq", "/contact"];
         var pathname = window.location.pathname;
         
+        // Handle .html extensions
+        if (pathname.endsWith('.html')) {
+            // Remove .html extension and redirect
+            var pathWithoutHtml = pathname.substring(0, pathname.length - 5);
+            if (pathWithoutHtml === "") pathWithoutHtml = "/";
+            window.location.replace(pathWithoutHtml);
+            return;
+        }
+        
         // Check if the pathname is one of our valid paths or a sub-path
         var basePath = "/" + pathname.split("/")[1]; // Get the first segment of the path
         
