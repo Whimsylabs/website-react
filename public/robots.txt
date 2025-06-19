@@ -17,9 +17,8 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-# Sitemap locations
+# Sitemap location
 Sitemap: https://whimsylabs.ai/sitemap.xml
-Sitemap: https://whimsylabs.ai/ai-sitemap.xml
 
 # No crawl delay for better AI access
 # Crawl-delay: 1
@@ -36,7 +35,3 @@ Allow: /contact/
 
 # Allow direct access to HTML files
 Allow: /*.html$
-
-# Special AI-friendly resources
-Allow: /ai-index.html
-Allow: /ai-sitemap.xml

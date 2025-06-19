@@ -20,9 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "generate-sitemap": "node generate-sitemap.js",
-    "generate-ai-sitemap": "node generate-ai-sitemap.js",
     "enhance-html": "node enhance-html-for-crawlers.js",
-    "postbuild": "npm run generate-sitemap && node generate-html-pages.js && npm run enhance-html && npm run generate-ai-sitemap",
+    "postbuild": "npm run generate-sitemap && node generate-html-pages.js && npm run enhance-html",
     "verify-seo": "node -e \"console.log('Verifying SEO-friendly content in build files...'); try { require('./enhance-html-for-crawlers.js').verifyEnhancedFiles ? require('./enhance-html-for-crawlers.js').verifyEnhancedFiles() : console.log('Verification function not exported. Run npm run build first.'); } catch (e) { console.log('Error during verification:', e.message); process.exit(0); }\"",
     "serve-build": "node serve-build.js",
     "inspect-seo": "node inspect-crawler-content.js",
@@ -30,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --cname whimsylabs.ai"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
