@@ -36,3 +36,9 @@ jobs:
           folder: build
           branch: gh-pages
           clean: true
+
+# IMPORTANT: Before using this workflow:
+# 1. Rename this file from deploy.yml.example to deploy.yml
+# 2. Add your script URL as a repository secret named FORM_SCRIPT_URL in your GitHub repository settings
+#    (Settings > Secrets and variables > Actions > New repository secret)
+
