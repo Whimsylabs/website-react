@@ -3,7 +3,7 @@ import './VideoPlayer.css';
 
 const YOUTUBE_EMBED_URL = "https://www.youtube.com/embed/9-L9i1ljEMk?autoplay=1&mute=1&loop=1&playlist=9-L9i1ljEMk";
 
-const VideoPlayer = ({ videoSrc, poster, fallbackImage }) => {
+const VideoPlayer = ({ videoSrc, poster }) => {
   const [ytFailed, setYtFailed] = useState(false);
 
   return (
@@ -33,9 +33,6 @@ const VideoPlayer = ({ videoSrc, poster, fallbackImage }) => {
             aria-labelledby="video-title"
           >
             <source src={videoSrc} type="video/webm" />
-            {fallbackImage && (
-              <img src={fallbackImage} alt="Video not supported. Fallback image displayed." className="fallback-image" />
-            )}
           </video>
         )}
       </div>
