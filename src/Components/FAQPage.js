@@ -28,6 +28,17 @@ const FAQPage = () => {
         </div>
       </div>
       <Footer />
+      
+      {/* Provide a noscript fallback for browsers with JavaScript disabled */}
+      <noscript>
+        <style jsx="true">{`
+          #root { display: none; }
+          #noscript-fallback { display: block; }
+        `}</style>
+        <div id="noscript-fallback">
+          <meta httpEquiv="refresh" content="0;url=/faq/noscript.html" />
+        </div>
+      </noscript>
     </main>
   );
 };

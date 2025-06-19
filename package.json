@@ -20,7 +20,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "generate-sitemap": "node generate-sitemap.js",
-    "postbuild": "npm run generate-sitemap && node generate-html-pages.js",
+    "enhance-html": "node enhance-html-for-crawlers.js",
+    "postbuild": "npm run generate-sitemap && node generate-html-pages.js && npm run enhance-html",
+    "verify-seo": "node -e \"console.log('Verifying SEO-friendly content in build files...'); require('./enhance-html-for-crawlers.js').verifyEnhancedFiles ? require('./enhance-html-for-crawlers.js').verifyEnhancedFiles() : console.log('Verification function not exported. Run npm run build first.');\"",
+    "serve-build": "node serve-build.js",
+    "inspect-seo": "node inspect-crawler-content.js",
+    "crawler-view": "node crawler-view.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -45,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "cheerio": "^1.1.0",
     "gh-pages": "^6.3.0"
   }
 }
