@@ -43,7 +43,9 @@ const mainRoutes = [
   { path: '/', changefreq: 'daily', priority: '1.0' },
   { path: '/blog', changefreq: 'daily', priority: '0.9' },
   { path: '/services', changefreq: 'weekly', priority: '0.8' },
-  { path: '/features', changefreq: 'weekly', priority: '0.8' }
+  { path: '/features', changefreq: 'weekly', priority: '0.8' },
+  { path: '/faq', changefreq: 'weekly', priority: '0.8' },
+  { path: '/contact', changefreq: 'monthly', priority: '0.6' }
 ];
 
 // Generate sitemap XML content
