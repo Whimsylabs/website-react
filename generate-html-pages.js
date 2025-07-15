@@ -3,6 +3,235 @@ const path = require('path');
 
 console.log('Starting static HTML page generation...');
 
+// Function to extract FAQ content and convert to static HTML
+function generateFAQContent() {
+  let html = `
+    <div class="faq-static-content">
+      <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions about our virtual lab software and how it can transform STEM education</p>
+      </header>
+      <main>
+        <section>
+          <h2>About WhimsyLabs</h2>
+          <div class="faq-item">
+            <h3>What is WhimsyLabs virtual lab software?</h3>
+            <p>WhimsyLabs is a sandbox virtual laboratory simulation that gives you the freedom to explore, play, and learn scientific concepts firsthand. It accurately models biological, chemical, and physical reactions and processes, providing a true-to-life experience without the limitations and risks of a real lab.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is WhimsyLabs a for-profit company?</h3>
+            <p>We're not here to chase profits. WhimsyLabs is built like Wikipedia - funded by supporters who believe in making science education fair and fun for everyone. We offer our labs to schools of all sizes, especially those with limited resources.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What makes WhimsyLabs different from other virtual lab platforms?</h3>
+            <p>WhimsyLabs is the only platform that combines high-fidelity liquid physics, real-time AI tutoring, sandbox freedom, and full VR/Web immersion. Unlike rigid step-by-step tools, WhimsyLabs supports open experimentation with realistic physics, building critical thinking and procedural fluency.</p>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Educational Benefits</h2>
+          <div class="faq-item">
+            <h3>How do virtual labs help students learn?</h3>
+            <p>Virtual labs help students learn by providing hands-on experience in a safe environment. They allow students to explore and experiment with various scientific phenomena and equipment, building laboratory skills that transfer to physical labs.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How does WhimsyLabs compare to traditional labs?</h3>
+            <p>WhimsyLabs complements traditional labs by providing unlimited practice opportunities without consuming physical resources or creating safety risks. Students can build confidence and skills in the virtual environment before transitioning to physical labs.</p>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Technical Features</h2>
+          <div class="faq-item">
+            <h3>How does WhimsyLabs' web and VR environment work?</h3>
+            <p>WhimsyLabs runs both in-browser and in full immersive VR. Students can interact with experiments using a mouse and keyboard, touchscreen, or VR controllers. The experience is consistent across devices, making learning accessible while maintaining realism and interactivity.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is WhimsyLabs compatible with Chromebooks?</h3>
+            <p>Yes. WhimsyLabs is optimized to run smoothly on Chromebooks, desktops, laptops, and VR devices. This ensures high-quality STEM education is accessible on almost any device, supporting equitable access across various schools and students.</p>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Curriculum & Content</h2>
+          <div class="faq-item">
+            <h3>What subjects do WhimsyLabs virtual labs cover?</h3>
+            <p>WhimsyLabs covers Biology, Chemistry, and Physics with accurately modeled experiments and simulations. Our virtual labs allow students to perform dissections, chemical reactions, and physics experiments in a safe, controlled environment.</p>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Teaching & Assessment</h2>
+          <div class="faq-item">
+            <h3>How does WhimsyLabs support teachers?</h3>
+            <p>WhimsyLabs supports teachers by saving time on lab setup, cleanup, and assessment. Our AI-driven assessment provides instant, detailed feedback on students' actions, giving measurable insights into learning progress.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How does the AI tutor work in practice?</h3>
+            <p>Our AI tutor supports students in real-time with context-sensitive feedback from the user's actions. Whimsycat will help guide students through experimental steps, warn about procedural errors, and provide summaries and safety tips.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <style>
+      .faq-static-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .faq-static-content header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .faq-static-content h1 {
+        color: #1f1968;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .faq-static-content h2 {
+        color: #1f1968;
+        font-size: 1.8rem;
+        margin: 30px 0 20px 0;
+        border-bottom: 2px solid #dabeff;
+        padding-bottom: 10px;
+      }
+      .faq-static-content h3 {
+        color: #333;
+        font-size: 1.2rem;
+        margin: 20px 0 10px 0;
+      }
+      .faq-item {
+        margin-bottom: 25px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        border-left: 4px solid #6172B3;
+      }
+      .faq-item p {
+        margin: 0;
+        color: #555;
+      }
+      @media (max-width: 768px) {
+        .faq-static-content {
+          padding: 15px;
+        }
+        .faq-static-content h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  `;
+  
+  return html;
+}
+
+// Function to generate contact page content
+function generateContactContent() {
+  return `
+    <div class="contact-static-content">
+      <header>
+        <h1>Contact WhimsyLabs</h1>
+        <p>We'd love to hear from you! Whether you're interested in trying our virtual labs at your school or have general questions, we're here to help.</p>
+      </header>
+      <main>
+        <section>
+          <h2>Get in Touch</h2>
+          <p>Ready to transform STEM education at your school? Contact us to request a trial or ask any questions about our virtual lab software.</p>
+          
+          <div class="contact-info">
+            <h3>Email Us Directly</h3>
+            <p>For immediate assistance, reach out to us at: <a href="mailto:inquiries@whimsylabs.ai">inquiries@whimsylabs.ai</a></p>
+          </div>
+          
+          <div class="contact-form-info">
+            <h3>Request a Trial</h3>
+            <p>Interested in trying WhimsyLabs at your school? We offer free trials for educational institutions. Contact us with the following information:</p>
+            <ul>
+              <li>Your name and role at the institution</li>
+              <li>School or organization name</li>
+              <li>Number of students who would use the platform</li>
+              <li>Subjects you're interested in (Biology, Chemistry, Physics)</li>
+              <li>Any specific requirements or questions</li>
+            </ul>
+          </div>
+          
+          <div class="features-highlight">
+            <h3>Why Choose WhimsyLabs?</h3>
+            <ul>
+              <li>Realistic physics simulations for authentic lab experiences</li>
+              <li>AI-powered tutoring and assessment</li>
+              <li>Cross-platform compatibility (Web, VR, Chromebooks)</li>
+              <li>Safe environment for unlimited experimentation</li>
+              <li>Significant cost savings compared to physical labs</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <style>
+      .contact-static-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .contact-static-content header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .contact-static-content h1 {
+        color: #1f1968;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .contact-static-content h2 {
+        color: #1f1968;
+        font-size: 1.8rem;
+        margin: 30px 0 20px 0;
+      }
+      .contact-static-content h3 {
+        color: #333;
+        font-size: 1.3rem;
+        margin: 25px 0 15px 0;
+      }
+      .contact-info, .contact-form-info, .features-highlight {
+        margin-bottom: 30px;
+        padding: 25px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        border-left: 4px solid #6172B3;
+      }
+      .contact-static-content ul {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+      .contact-static-content li {
+        margin-bottom: 8px;
+      }
+      .contact-static-content a {
+        color: #1f1968;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .contact-static-content a:hover {
+        color: #14b7ff;
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .contact-static-content {
+          padding: 15px;
+        }
+        .contact-static-content h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  `;
+}
+
 // Function to get blog posts data
 function getBlogPosts() {
   const blogDir = path.resolve(__dirname, 'src/Components/blog');
@@ -246,6 +475,113 @@ function updatePageContent(html, route) {
   
   // Insert the script right before the closing head tag
   updatedHtml = updatedHtml.replace('</head>', `${routeScript}\n</head>`);
+  
+  // Add structured data (JSON-LD) for better SEO
+  let structuredData = '';
+  if (route.path === '/faq') {
+    structuredData = `
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is WhimsyLabs virtual lab software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WhimsyLabs is a sandbox virtual laboratory simulation that gives you the freedom to explore, play, and learn scientific concepts firsthand. It accurately models biological, chemical, and physical reactions and processes, providing a true-to-life experience without the limitations and risks of a real lab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do virtual labs help students learn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual labs help students learn by providing hands-on experience in a safe environment. They allow students to explore and experiment with various scientific phenomena and equipment, building laboratory skills that transfer to physical labs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is WhimsyLabs compatible with Chromebooks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. WhimsyLabs is optimized to run smoothly on Chromebooks, desktops, laptops, and VR devices. This ensures high-quality STEM education is accessible on almost any device, supporting equitable access across various schools and students."
+          }
+        }
+      ]
+    }
+    </script>
+    `;
+  } else if (route.path === '/contact') {
+    structuredData = `
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "WhimsyLabs",
+        "url": "https://whimsylabs.ai",
+        "email": "inquiries@whimsylabs.ai",
+        "description": "Virtual laboratory software for STEM education",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "inquiries@whimsylabs.ai",
+          "contactType": "customer service"
+        }
+      }
+    }
+    </script>
+    `;
+  }
+  
+  // Insert structured data into head
+  if (structuredData) {
+    updatedHtml = updatedHtml.replace('</head>', `${structuredData}\n</head>`);
+  }
+
+  // Add static content for SEO (inject into the body before React takes over)
+  let staticContent = '';
+  if (route.path === '/faq') {
+    staticContent = generateFAQContent();
+  } else if (route.path === '/contact') {
+    staticContent = generateContactContent();
+  }
+  
+  if (staticContent) {
+    // Add a noscript tag with the static content for search engines
+    const noscriptContent = `
+    <noscript>
+      ${staticContent}
+    </noscript>
+    `;
+    
+    // Also add the content in a hidden div that will be replaced by React
+    const hiddenContent = `
+    <div id="static-content" style="display: block;">
+      ${staticContent}
+      <script>
+        // Hide static content once React loads
+        document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(function() {
+            const staticDiv = document.getElementById('static-content');
+            const rootDiv = document.getElementById('root');
+            if (rootDiv && rootDiv.children.length > 0 && staticDiv) {
+              staticDiv.style.display = 'none';
+            }
+          }, 1000);
+        });
+      </script>
+    </div>
+    `;
+    
+    // Insert both noscript and hidden content after the root div
+    updatedHtml = updatedHtml.replace(
+      '<div id="root"></div>',
+      `<div id="root"></div>${noscriptContent}${hiddenContent}`
+    );
+  }
   
   return updatedHtml;
 }
