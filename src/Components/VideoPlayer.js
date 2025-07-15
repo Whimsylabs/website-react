@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './VideoPlayer.css';
 
-const YOUTUBE_EMBED_URL = "https://www.youtube.com/embed/9-L9i1ljEMk?autoplay=1&mute=1&loop=1&playlist=9-L9i1ljEMk";
-
+const YOUTUBE_EMBED_URL =
+  "https://www.youtube.com/embed/9D2e2e2gzvk?autoplay=1"
 const VideoPlayer = ({ videoSrc, poster }) => {
   const [ytFailed, setYtFailed] = useState(false);
 

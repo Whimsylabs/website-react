@@ -50,11 +50,15 @@ const MetaTags = () => {
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="WhimsyLabs" />
             <meta property="og:locale" content="en_GB" />
+            <meta property="og:image" content="https://whimsylabs.ai/logo.png" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
             
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={currentMeta.title} />
             <meta name="twitter:description" content={currentMeta.description} />
+            <meta name="twitter:image" content="https://whimsylabs.ai/logo.png" />
             
             {/* Canonical URL to prevent duplicate content issues */}
             <link rel="canonical" href={`https://whimsylabs.ai${location.pathname}`} />

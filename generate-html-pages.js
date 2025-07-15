@@ -73,6 +73,103 @@ try {
   process.exit(1);
 }
 
+// Function to get static fallback content for each page
+function getStaticFallbackContent(route) {
+  const fallbackContent = {
+    '/blog': `
+      <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>WhimsyLabs Blog - Latest Virtual Laboratory Innovations</h1>
+        <p>Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.</p>
+        <div>
+          <h2>Recent Posts:</h2>
+          <ul>
+            <li><a href="/blog/whimsylabs-education-revolution">WhimsyLabs Education Revolution</a></li>
+            <li><a href="/blog/physicality-in-virtual-labs">Physicality in Virtual Labs</a></li>
+            <li><a href="/blog/virtual-kidney-dissection-send-engagement">Virtual Kidney Dissection Send Engagement</a></li>
+          </ul>
+        </div>
+        <p><a href="/">← Back to Home</a></p>
+      </div>`,
+    '/faq': `
+      <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>Frequently Asked Questions</h1>
+        <p>Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.</p>
+        <div>
+          <h2>Common Questions:</h2>
+          <h3>What is WhimsyLabs virtual lab software?</h3>
+          <p>WhimsyLabs is a sandbox virtual laboratory simulation that gives you the freedom to explore, play and learn scientific concepts firsthand. It accurately models biological, chemical, and physical reactions and processes.</p>
+          
+          <h3>How do virtual labs help students learn?</h3>
+          <p>Virtual labs help students learn by providing hands-on experience without the limitations and risks of a real lab. They allow students to explore and experiment with various scientific phenomena and equipment.</p>
+          
+          <h3>Can WhimsyLabs be used for remote teaching?</h3>
+          <p>Yes, WhimsyLabs is specifically designed for both in-classroom and remote teaching scenarios. Students can access the virtual labs from anywhere, on desktop, mobile, or VR devices.</p>
+        </div>
+        <p><a href="/">← Back to Home</a></p>
+      </div>`,
+    '/services': `
+      <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>WhimsyLabs Services</h1>
+        <p>Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.</p>
+        <div>
+          <h2>Our Services:</h2>
+          <ul>
+            <li>Custom Virtual Lab Development</li>
+            <li>Educational Content Creation</li>
+            <li>Teacher Training and Support</li>
+            <li>Integration and Deployment</li>
+          </ul>
+        </div>
+        <p><a href="/">← Back to Home</a></p>
+      </div>`,
+    '/features': `
+      <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>WhimsyLabs Features</h1>
+        <p>Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.</p>
+        <div>
+          <h2>Key Features:</h2>
+          <ul>
+            <li>Realistic Physics Simulations</li>
+            <li>AI-Driven Assessment</li>
+            <li>Cross-Platform Accessibility</li>
+            <li>Immersive STEM Experiments</li>
+            <li>Safety-First Virtual Environment</li>
+          </ul>
+        </div>
+        <p><a href="/">← Back to Home</a></p>
+      </div>`,
+    '/contact': `
+      <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>Contact WhimsyLabs</h1>
+        <p>Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.</p>
+        <div>
+          <h2>Contact Information:</h2>
+          <p>Email: <a href="mailto:inquiries@whimsylabs.ai">inquiries@whimsylabs.ai</a></p>
+          <p>We'd love to hear from you! Whether you're interested in trying our virtual labs at your school or have general questions, we're here to help.</p>
+        </div>
+        <p><a href="/">← Back to Home</a></p>
+      </div>`
+  };
+
+  // Default fallback for blog posts
+  if (route.path.startsWith('/blog/')) {
+    return `
+      <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>${route.title}</h1>
+        <p>${route.description}</p>
+        <p>This blog post contains rich interactive content. Please enable JavaScript to view the full experience.</p>
+        <p><a href="/blog">← Back to Blog</a> | <a href="/">← Back to Home</a></p>
+      </div>`;
+  }
+
+  return fallbackContent[route.path] || `
+    <div id="static-fallback" style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+      <h1>WhimsyLabs - Virtual Lab Software</h1>
+      <p>Welcome to WhimsyLabs. Please enable JavaScript to view the full experience.</p>
+      <p><a href="/">← Back to Home</a></p>
+    </div>`;
+}
+
 // Function to update meta tags and other page-specific content
 function updatePageContent(html, route) {
   let updatedHtml = html;
@@ -132,6 +229,13 @@ function updatePageContent(html, route) {
     );
   }
   
+  // Add static fallback content to noscript
+  const staticContent = getStaticFallbackContent(route);
+  updatedHtml = updatedHtml.replace(
+    /<noscript>.*?<\/noscript>/s,
+    `<noscript>${staticContent}</noscript>`
+  );
+
   // Add the initial route script
   const routeScript = `
   <script>

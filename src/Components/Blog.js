@@ -22,6 +22,14 @@ const posts = postsContext.keys().map((key) => {
 
 const Blog = () => {
   const [activePostId] = useState(null);
+  const postsPerPage = 10; // Set pagination limit
+  const totalPages = Math.ceil(posts.length / postsPerPage);
+  const currentPage = 1; // For future pagination implementation
+
+  // Get posts for current page
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
     <main className="container-fluid text-center p-0">
@@ -33,9 +41,17 @@ const Blog = () => {
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
           <div className="posts-section blog-index">
-            {posts.map((post) => (
+            {currentPosts.map((post) => (
               <BlogPreview key={post.id} post={post} />
             ))}
+            
+            {/* Pagination placeholder - will be implemented when more posts are added */}
+            {totalPages > 1 && (
+              <div className="pagination-container">
+                <p>Page {currentPage} of {totalPages}</p>
+                {/* Future pagination controls will go here */}
+              </div>
+            )}
           </div>
           <div className="sidebar">
             <h2>Blog Posts</h2>
