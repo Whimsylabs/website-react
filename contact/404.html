@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found - Whimsylabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1f1968;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+        a {
+            display: inline-block;
+            background-color: #1f1968;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #14b7ff;
+        }
+    </style>
+    <script>
+        // List of valid paths that have static HTML files
+        var validPaths = ["/", "/blog", "/services", "/features", "/faq", "/contact"];
+        var pathname = window.location.pathname;
+        
+        // Check if the pathname is one of our valid paths or a sub-path
+        var basePath = "/" + pathname.split("/")[1]; // Get the first segment of the path
+        
+        if (validPaths.includes(basePath)) {
+            // If it's a valid path, redirect to the static HTML file
+            if (basePath === "/") {
+                window.location.replace("/");
+            } else if (basePath === "/blog" && pathname.split("/").length > 2) {
+                // Handle blog post URLs
+                // Keep the full path for blog posts
+                window.location.replace(pathname + "/");
+            } else {
+                window.location.replace(basePath + "/");
+            }
+        }
+        // Otherwise, the 404 page will be displayed
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>404 - Page Not Found</h1>
+        <p>The page you are looking for does not exist or has been moved.</p>
+        <a href="/">Return to Homepage</a>
+    </div>
+</body>
+</html>
