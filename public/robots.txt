@@ -11,12 +11,13 @@ Sitemap: https://whimsylabs.ai/sitemap.xml
 # Crawl delay to prevent server overload
 Crawl-delay: 1
 
+# Disallow access to any temporary files that might exist
+Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
 # Allow important directories explicitly
 Allow: /blog/
 Allow: /services/
 Allow: /features/
-Allow: /faq/
-Allow: /contact/
-
-# Disallow access to any temporary files that might exist
-Disallow: /tmp/
