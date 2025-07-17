@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useLocation } from 'react-router-dom';
+// Removed React Router - getting location from window.location
 
 const SchemaMarkup = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
+  // Get current path from window.location instead of React Router
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
   const baseUrl = "https://whimsylabs.ai";
 
   // Organization schema that will be included on all pages

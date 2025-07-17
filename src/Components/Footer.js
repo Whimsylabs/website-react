@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.css';
 // Icons now served from public directory
 
@@ -8,11 +7,11 @@ const Footer = () => {
         <footer className="footer-container" aria-labelledby="footer-heading">
             <p>© 2025 Whimsylabs – Virtual Laboratory Solutions</p>
             <ul className="footer-links" aria-label="Footer navigation">
-                <li><Link to="/" className="nav-link" aria-label="Navigate to Home">Home</Link></li>
-                <li><Link to="/services" className="nav-link" aria-label="View Our Services">Services</Link></li>
-                <li><a href="/contact" className="nav-link" aria-label="Contact Us via Email">Contact</a></li>
-                <li><Link to="/blog" className="nav-link" aria-label="Visit Our Blog">Blog</Link></li>
-                <li><Link to="/faq" className="nav-link" aria-label="Frequently Asked Questions">FAQ</Link></li>
+                <li><a href="/" className="nav-link" aria-label="Navigate to Home">Home</a></li>
+                <li><a href="/services/" className="nav-link" aria-label="View Our Services">Services</a></li>
+                <li><a href="/contact/" className="nav-link" aria-label="Contact Us via Email">Contact</a></li>
+                <li><a href="/blog/" className="nav-link" aria-label="Visit Our Blog">Blog</a></li>
+                <li><a href="/faq/" className="nav-link" aria-label="Frequently Asked Questions">FAQ</a></li>
             </ul>
             
             {/* Social Media Icons */}

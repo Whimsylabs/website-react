@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 // Logo now served from public directory
 
 const Header = () => {
-    const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
     const pdfPath = 'https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440';
 
@@ -26,9 +24,9 @@ const Header = () => {
             
             <ul className={`nav nav-pills ${menuOpen ? 'menu-open' : ''}`} aria-label="Primary navigation">
                 <li className="nav-item">
-                    <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} aria-current={location.pathname === '/' ? 'page' : undefined} onClick={() => setMenuOpen(false)}>
+                    <a href="/" className="nav-link" aria-label="Home" onClick={() => setMenuOpen(false)}>
                         Home
-                    </Link>
+                    </a>
                 </li>
                 <li className="nav-item">
                     <a href={pdfPath} download className="nav-link" aria-label="Download Features PDF" onClick={() => setMenuOpen(false)}>
@@ -36,19 +34,19 @@ const Header = () => {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} aria-label="Contact Us" onClick={() => setMenuOpen(false)}>
+                    <a href="/contact/" className="nav-link" aria-label="Contact Us" onClick={() => setMenuOpen(false)}>
                         Contact
-                    </Link>
+                    </a>
                 </li>
                 <li className="nav-item">
-                    <Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`} aria-label="Read Our Blog" onClick={() => setMenuOpen(false)}>
+                    <a href="/blog/" className="nav-link" aria-label="Read Our Blog" onClick={() => setMenuOpen(false)}>
                         Blog
-                    </Link>
+                    </a>
                 </li>
                 <li className="nav-item">
-                    <Link to="/faq" className={`nav-link ${location.pathname === '/faq' ? 'active' : ''}`} aria-label="Frequently Asked Questions" onClick={() => setMenuOpen(false)}>
+                    <a href="/faq/" className="nav-link" aria-label="Frequently Asked Questions" onClick={() => setMenuOpen(false)}>
                         FAQ
-                    </Link>
+                    </a>
                 </li>
             </ul>
         </header>

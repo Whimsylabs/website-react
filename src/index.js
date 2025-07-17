@@ -3,58 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { 
-  isServerRendered, 
-  getInitialRoute, 
-  shouldHydrate, 
-  initializeHydration,
-  setupHydrationErrorBoundary
-} from './hydration';
-
-// Setup error boundaries for hydration
-setupHydrationErrorBoundary();
-
-// Get the initial route from the HTML (set by our static page generator)
-// or from URL parameters (for backward compatibility)
-let initialPath = getInitialRoute();
-
-// Legacy redirect handling for backward compatibility
-if (!window.__INITIAL_ROUTE__) {
-  const urlParams = new URLSearchParams(window.location.search);
-  const redirectPath = urlParams.get("redirect");
-  
-  if (redirectPath) {
-    initialPath = redirectPath;
-    // Update URL without causing a page reload
-    window.history.replaceState({}, "", redirectPath);
-  }
-}
-
-// Determine if we should hydrate or render normally
-const shouldPerformHydration = isServerRendered() && shouldHydrate();
-
 const rootElement = document.getElementById('root');
 
-if (shouldPerformHydration) {
+// Check if we have pre-rendered content to hydrate
+if (rootElement.hasChildNodes()) {
   // Hydrate the pre-rendered content
-  console.log('🔄 Hydrating pre-rendered content for route:', initialPath);
-  
-  initializeHydration(() => {
-    ReactDOM.hydrateRoot(
-      rootElement,
-      <React.StrictMode>
-        <App initialPath={initialPath} />
-      </React.StrictMode>
-    );
-  });
+  console.log('🔄 Hydrating pre-rendered content');
+  ReactDOM.hydrateRoot(
+    rootElement,
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
 } else {
   // Normal client-side rendering
-  console.log('🚀 Client-side rendering for route:', initialPath);
-  
+  console.log('🚀 Client-side rendering');
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
-      <App initialPath={initialPath} />
+      <App />
     </React.StrictMode>
   );
 }

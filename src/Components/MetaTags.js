@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
+// Removed React Router - getting location from window.location
 
 const MetaTags = () => {
-    const location = useLocation();
+    // Get current path from window.location instead of React Router
+    const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
 
     // Define meta information based on the current route with optimized SEO keywords
     const metaInfo = {
@@ -34,7 +35,7 @@ const MetaTags = () => {
     };
 
     // Default meta if path is not predefined
-    const currentMeta = metaInfo[location.pathname] || metaInfo["/"];
+    const currentMeta = metaInfo[currentPath] || metaInfo["/"];
 
     return (
         <Helmet>
@@ -46,7 +47,7 @@ const MetaTags = () => {
             {/* Open Graph Tags for Social Media */}
             <meta property="og:title" content={currentMeta.title} />
             <meta property="og:description" content={currentMeta.description} />
-            <meta property="og:url" content={`https://whimsylabs.ai${location.pathname}`} />
+            <meta property="og:url" content={`https://whimsylabs.ai${currentPath}`} />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="WhimsyLabs" />
             <meta property="og:locale" content="en_GB" />
@@ -61,7 +62,7 @@ const MetaTags = () => {
             <meta name="twitter:image" content="https://whimsylabs.ai/logo.png" />
             
             {/* Canonical URL to prevent duplicate content issues */}
-            <link rel="canonical" href={`https://whimsylabs.ai${location.pathname}`} />
+            <link rel="canonical" href={`https://whimsylabs.ai${currentPath}`} />
             
             {/* Additional SEO Meta Tags */}
             <meta name="robots" content="index, follow" />

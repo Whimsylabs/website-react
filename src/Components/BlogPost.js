@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+// Removed React Router - using direct HTML links
 import { Helmet } from 'react-helmet-async';
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
@@ -27,7 +27,8 @@ const BlogPost = (props = {}) => {
   const isSSR = props && (props.slug || props.title || props.content || props.description);
   
   // Always call hooks at the top level (React rules)
-  const { slug: routeSlug } = useParams();
+  // Get slug from props instead of router params
+  const routeSlug = props.slug;
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(!isSSR);
   const [nextPost, setNextPost] = useState(null);
@@ -117,7 +118,7 @@ const BlogPost = (props = {}) => {
               <div className="post-box not-found-box">
                 <h2>Post Not Found</h2>
                 <p>Sorry, the blog post you're looking for doesn't exist.</p>
-                <Link to="/blog" className="btn-primary post-nav-button">Back to Blog</Link>
+                <a href="../index.html" className="btn-primary post-nav-button">Back to Blog</a>
               </div>
             </div>
           </div>
@@ -156,19 +157,19 @@ function renderBlogPost(post, nextPost, prevPost, formatDate) {
               <div className="post-navigation">
                 <div className="post-nav-links">
                   {prevPost && (
-                    <Link to={`/blog/${prevPost.id || prevPost.slug}`} className="post-nav-button prev-post">
+                    <a href={`../${prevPost.id || prevPost.slug}/index.html`} className="post-nav-button prev-post">
                       &larr; Older Post
-                    </Link>
+                    </a>
                   )}
                   
-                  <Link to="/blog" className="post-nav-button back-to-blog">
+                  <a href="../index.html" className="post-nav-button back-to-blog">
                     All Posts
-                  </Link>
+                  </a>
                   
                   {nextPost && (
-                    <Link to={`/blog/${nextPost.id || nextPost.slug}`} className="post-nav-button next-post">
+                    <a href={`../${nextPost.id || nextPost.slug}/index.html`} className="post-nav-button next-post">
                       Newer Post &rarr;
-                    </Link>
+                    </a>
                   )}
                 </div>
               </div>

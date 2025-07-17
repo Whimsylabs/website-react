@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// Removed React Router - using direct HTML links
 import './Blog.css';
 
 // Function to extract the first image from content
@@ -124,7 +124,7 @@ const BlogPreview = ({ post }) => {
   };
 
   return (
-    <Link to={`/blog/${post.id}`} className="blog-preview-link">
+    <a href={`./blog/${post.id}/index.html`} className="blog-preview-link">
       <div className="post-box post-preview" id={`post-${post.id}`}>
         {/* Extract and display the first image as a header */}
         {extractFirstImage(post.content)}
@@ -141,7 +141,7 @@ const BlogPreview = ({ post }) => {
         </span>
         
       </div>
-    </Link>
+    </a>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Feature from './Feature';
 import './FeaturesSection.css';
 // Images now served from public directory
-import { Link } from 'react-router-dom';
+// Removed React Router - using direct HTML links
 
 const FeaturesSection = () => {
   return (
@@ -42,7 +42,7 @@ const FeaturesSection = () => {
       </div>
       {/* Replace faq-teaser with a button-style link */}
       <div className="features-btn">
-        <Link to="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" className="features-faq-btn">See full features here!</Link>
+        <a href="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" className="features-faq-btn" target="_blank" rel="noopener noreferrer">See full features here!</a>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// Removed React Router - using direct HTML links
 import { Helmet } from 'react-helmet-async';
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
@@ -77,7 +77,7 @@ const Blog = () => {
                   key={post.id}
                   className={activePostId === post.id ? 'active' : ''}
                 >
-                  <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                  <a href={`./blog/${post.id}/index.html`}>{post.title}</a>
                 </li>
               ))}
             </ul>
