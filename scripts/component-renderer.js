@@ -49,6 +49,32 @@ class ComponentRenderer {
     // Reset helmet context for each render
     this.helmetContext = {};
     
+    // Suppress React warnings during server-side rendering
+    const originalConsoleWarn = console.warn;
+    const originalConsoleError = console.error;
+    
+    console.warn = (message, ...args) => {
+      // Suppress key prop warnings during SSR as they don't affect functionality
+      if (typeof message === 'string' && (
+        message.includes('Each child in a list should have a unique "key" prop') ||
+        message.includes('Warning: Each child in a list')
+      )) {
+        return;
+      }
+      originalConsoleWarn(message, ...args);
+    };
+    
+    console.error = (message, ...args) => {
+      // Suppress React key warnings that come through console.error
+      if (typeof message === 'string' && (
+        message.includes('Each child in a list should have a unique "key" prop') ||
+        message.includes('Warning: Each child in a list')
+      )) {
+        return;
+      }
+      originalConsoleError(message, ...args);
+    };
+    
     try {
       // Create a mock router context for server-side rendering
       const mockRouterContext = {
@@ -85,6 +111,10 @@ class ComponentRenderer {
         helmet: null,
         error: error.message
       };
+    } finally {
+      // Restore original console methods
+      console.warn = originalConsoleWarn;
+      console.error = originalConsoleError;
     }
   }
 

@@ -40,7 +40,7 @@ if (shouldPerformHydration) {
   console.log('🔄 Hydrating pre-rendered content for route:', initialPath);
   
   initializeHydration(() => {
-    const root = ReactDOM.hydrateRoot(
+    ReactDOM.hydrateRoot(
       rootElement,
       <React.StrictMode>
         <App initialPath={initialPath} />

@@ -5,59 +5,37 @@ import './Blog.css';
 // Function to extract the first image from content
 const extractFirstImage = (content) => {
   try {
-    // Clone the content element to avoid modifying the original
-    const contentClone = React.cloneElement(content);
+    // Handle string content (from mock data)
+    if (typeof content === 'string') {
+      return null;
+    }
+    
+    // Check if content exists and is a valid React element
+    if (!content || !React.isValidElement(content)) {
+      return null;
+    }
+    
+    // Check if it has props and children
+    if (!content.props || !content.props.children) {
+      return null;
+    }
     
     // Get the children of the content div
-    const children = React.Children.toArray(contentClone.props.children);
+    const children = React.Children.toArray(content.props.children);
     
     // Find the first image element
     let firstImage = null;
     
     // First check for direct img elements
     for (const child of children) {
-      if (child && child.type === 'img') {
+      if (React.isValidElement(child) && child.type === 'img') {
         firstImage = child;
         break;
       }
     }
     
-    // If no direct image found, check for images in containers like div.video-container
-    if (!firstImage) {
-      for (const child of children) {
-        if (child && child.props && child.props.children) {
-          const nestedChildren = React.Children.toArray(child.props.children);
-          const nestedImage = nestedChildren.find(nestedChild => 
-            nestedChild && nestedChild.type === 'img'
-          );
-          
-          if (nestedImage) {
-            firstImage = nestedImage;
-            break;
-          }
-          
-          // Check one level deeper (for video containers, etc.)
-          for (const nestedChild of nestedChildren) {
-            if (nestedChild && nestedChild.props && nestedChild.props.children) {
-              const deepNestedChildren = React.Children.toArray(nestedChild.props.children);
-              const deepNestedImage = deepNestedChildren.find(deepNestedChild => 
-                deepNestedChild && deepNestedChild.type === 'img'
-              );
-              
-              if (deepNestedImage) {
-                firstImage = deepNestedImage;
-                break;
-              }
-            }
-          }
-          
-          if (firstImage) break;
-        }
-      }
-    }
-    
     // If we found an image, return it styled as a header
-    if (firstImage) {
+    if (firstImage && firstImage.props) {
       return (
         <div className="post-header-image">
           <img 
@@ -78,44 +56,52 @@ const extractFirstImage = (content) => {
 // Function to extract preview content from a blog post
 const extractPreview = (content) => {
   try {
-    // Clone the content element to avoid modifying the original
-    const contentClone = React.cloneElement(content);
+    // Handle string content (from mock data)
+    if (typeof content === 'string') {
+      return (
+        <div className="post-preview-content">
+          <p className="post-description">{content.substring(0, 150)}...</p>
+          <div className="preview-fade"></div>
+        </div>
+      );
+    }
+    
+    // Check if content exists and is a valid React element
+    if (!content || !React.isValidElement(content)) {
+      return (
+        <div className="post-preview-content">
+          <p className="post-description">Read the full article...</p>
+          <div className="preview-fade"></div>
+        </div>
+      );
+    }
+    
+    // Check if it has props and children
+    if (!content.props || !content.props.children) {
+      return (
+        <div className="post-preview-content">
+          <p className="post-description">Read the full article...</p>
+          <div className="preview-fade"></div>
+        </div>
+      );
+    }
     
     // Get the children of the content div
-    const children = React.Children.toArray(contentClone.props.children);
+    const children = React.Children.toArray(content.props.children);
     
-    // Find the index of the first image
-    const firstImageIndex = children.findIndex(child => {
-      // Direct image element
-      if (child && child.type === 'img') {
-        return true;
-      }
-      
-      // Image inside paragraph or other element
-      if (child && child.props && child.props.children) {
-        const nestedChildren = React.Children.toArray(child.props.children);
-        return nestedChildren.some(nestedChild => 
-          nestedChild && nestedChild.type === 'img'
-        );
-      }
-      
-      return false;
-    });
-    
-    // If no image is found or it's too deep in the content, show first 2-3 paragraphs
-    const previewLength = firstImageIndex > 0 && firstImageIndex < 4 
-      ? firstImageIndex 
-      : Math.min(2, children.length);
-    
-    // Get only text paragraphs for preview (no captions, etc.)
+    // Get first few paragraphs for preview
     const previewContent = children
-      .slice(0, previewLength)
-      .filter(child => child && child.type === 'p' && (!child.props.className || !child.props.className.includes('caption')));
+      .slice(0, 2)
+      .filter(child => React.isValidElement(child) && child.type === 'p');
     
     // Return the preview content
     return (
       <div className="post-preview-content">
-        {previewContent.length > 0 ? previewContent : children.slice(0, 1)}
+        {previewContent.length > 0 ? previewContent.map((child, index) => 
+          React.cloneElement(child, { key: `preview-${index}` })
+        ) : (
+          <p className="post-description">Read the full article...</p>
+        )}
         <div className="preview-fade"></div>
       </div>
     );
@@ -123,7 +109,7 @@ const extractPreview = (content) => {
     // Fallback if there's an error processing the content
     return (
       <div className="post-preview-content">
-        <p className="post-description">{content.props.children[0]?.props?.children || "Read the full article..."}</p>
+        <p className="post-description">Read the full article...</p>
         <div className="preview-fade"></div>
       </div>
     );
@@ -149,7 +135,6 @@ const BlogPreview = ({ post }) => {
         <span className="post-date">{formatDate(post.date)}</span>
         
         {extractPreview(post.content)}
-        
         
         <span className="read-more-link">
           Read More
