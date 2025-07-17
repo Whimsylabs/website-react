@@ -28,13 +28,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-spa": "react-scripts build",
     "generate-sitemap": "node generate-sitemap.js",
     "postbuild": "node build.js",
-    "build-static": "npm run build && node build.js",
+    "build-static": "npm run build-spa && node build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build-static",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

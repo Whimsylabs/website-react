@@ -1,138 +1,135 @@
 .testimonial-carousel {
-    text-align: center;
-    margin-top: 2rem;
-    width: 80%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  margin-top: 2rem;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonial-header {
-    font-size: 1.8rem;
-    background-color: #1f1968; /* Darker, more prominent header background */
-    color: white;
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    border-radius: 2.5em 0 2.5em 0;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    max-width: 90%;
-    line-height: 1.3;
+  font-size: 1.8rem;
+  background-color: #1f1968; /* Darker, more prominent header background */
+  color: white;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2.5em 0 2.5em 0;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  line-height: 1.3;
 }
 
 .testimonial-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .testimonial-content {
-    flex-grow: 1;
-    padding: 0 -2rem; /* Spacing between arrows and content */
+  flex-grow: 1;
+  padding: 0 -2rem; /* Spacing between arrows and content */
 }
 
 .testimonial-text {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 1rem;
-    font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .testimonial-person {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1f1968;
-    margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f1968;
+  margin-bottom: 5px;
 }
 
 .testimonial-title {
-    font-weight: 500;
-    color: #333;
-    margin: 0;
-    font-size: 0.95rem;
-    font-style: italic;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  font-size: 0.95rem;
+  font-style: italic;
 }
 
 .testimonial-organization {
-    font-weight: 600;
-    color: #6172B3;
-    margin: 5px 0 0;
-    font-size: 0.9rem;
+  font-weight: 600;
+  color: #6172b3;
+  margin: 5px 0 0;
+  font-size: 0.9rem;
 }
 
 .testimonial-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Keep the white background */
-    padding: 1rem; /* Add spacing around the text */
-    border-radius: 15px; /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for depth */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: auto; /* Ensure it resizes dynamically */
-    height: auto; /* Allow height to grow with content */
-    display: block; /* Ensure it respects content layout */
+  background-color: rgba(255, 255, 255, 0.8); /* Keep the white background */
+  padding: 1rem; /* Add spacing around the text */
+  border-radius: 15px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: auto; /* Ensure it resizes dynamically */
+  height: auto; /* Allow height to grow with content */
+  display: block; /* Ensure it respects content layout */
 }
-
-
 
 .carousel-control {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-
 .prev-icon {
-    background-image: url('./images/left-arrow.svg'); /* Replace with the path to your left arrow image */
-    padding: 25px;
+  background-image: url("../../public/images/left-arrow.svg"); /* Replace with the path to your left arrow image */
+  padding: 25px;
 }
 
 .next-icon {
-    background-image: url('./images/right-arrow.svg'); /* Replace with the path to your right arrow image */
-    padding: 25px;
+  background-image: url("../../public/images/right-arrow.svg"); /* Replace with the path to your right arrow image */
+  padding: 25px;
 }
 
 .carousel-control:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Animation Classes */
 .fade-in-right {
-    opacity: 0;
-    transform: translateX(100%);
-    animation: fadeInRight 0.5s forwards;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fadeInRight 0.5s forwards;
 }
 
 .fade-out-left {
-    opacity: 1;
-    transform: translateX(0);
-    animation: fadeOutLeft 0.5s forwards;
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeOutLeft 0.5s forwards;
 }
 
 @keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeOutLeft {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }

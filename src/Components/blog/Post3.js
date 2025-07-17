@@ -1,5 +1,4 @@
 import React from "react";
-import kidneyDissection from '../images/kidney_barclays.jpg';
 
 export const title = "Hands-On Learning: Virtual Kidney Dissection Enhances SEND Student Engagement";
 export const date = "2025-03-19";
@@ -34,7 +33,7 @@ export const content = (
       Immersive VR learning environments like this have been shown to improve engagement and comprehension by activating multiple neural pathways simultaneously, enhancing both memory retention and conceptual understanding (<a href="https://www.sciencedirect.com/science/article/pii/S0360131521003067" target="_blank" rel="noopener noreferrer">Makransky & Lilleholt, 2018</a>). In our simulation, participants use a virtual scalpel with natural grip mechanics, feel haptic feedback during dissection, and physically position the kidney under a microscope for further examination.
     </p>
 
-    <img src={kidneyDissection} alt="Participants engaging with the WhimsyLabs kidney dissection at Barclays Headquarters" className="rounded shadow center limited-size" />
+    <img src="/images/kidney_barclays.jpg" alt="Participants engaging with the WhimsyLabs kidney dissection at Barclays Headquarters" className="rounded shadow center limited-size" />
     <p className="caption">Our demonstration at Barclays Headquarters raised awareness about kidney function and organ donation through engaging, hands-on exploration.</p>
 
     <p>

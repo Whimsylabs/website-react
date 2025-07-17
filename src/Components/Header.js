@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
-import logo from './images/logo.png';
+// Logo now served from public directory
 
 const Header = () => {
     const location = useLocation();
@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className={`header-container ${menuOpen ? 'menu-active' : ''}`} aria-label="Main site navigation">
             <div className="logo-container">
-                <img src={logo} alt="Whimsylabs Logo" className="logo" />
+                <img src="/images/logo.png" alt="Whimsylabs Logo" className="logo" />
             </div>
             
             <button className="burger-menu" onClick={toggleMenu} aria-label="Toggle navigation menu">

@@ -79,8 +79,8 @@ For more details on how this works, see [MPA-CONVERSION.md](MPA-CONVERSION.md).
 
 - `src/Components/`: React components for the website
 - `src/Components/blog/`: Blog post components
-- `src/Components/images/`: Image assets
-- `src/Components/videos/`: Video assets
+- `public/images/`: Image assets (moved from src/Components/images/)
+- `public/videos/`: Video assets (moved from src/Components/videos/)
 - `public/`: Static assets and HTML template
 
 ## Design Guidelines

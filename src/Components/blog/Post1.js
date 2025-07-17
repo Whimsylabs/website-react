@@ -1,7 +1,4 @@
 import React from "react";
-import oldLab from '../images/oldLab.png'; // Mockup lab image
-import testLab from '../images/testLab.png'; // Tech test lab image
-import finalLab from '../images/finalLab.png'; // Final lab design image
 
 export const title = "A Brief History of Whimsylabs: From our Humble Start to a BETT 2025 Winner ";
 export const date = "2025-01-27";
@@ -17,7 +14,7 @@ export const content = (
     <p>      
       Driven by a desire to create meaningful change, Marisa leveraged her simulation and gaming skills to develop a fully simulated sandbox virtual laboratory. Research demonstrates that simulation-based learning environments can significantly improve student engagement and learning outcomes, particularly in STEM fields where hands-on experimentation is crucial (<a href="https://www.sciencedirect.com/science/article/pii/S0360131520302426" target="_blank" rel="noopener noreferrer">Rutten et al., 2012</a>). This lab was designed to be a safe, accessible, and engaging environment for hands-on learning, without the risks or costs associated with traditional labs. The goal was simple; make a virtual lab that fully captured the fun that she experienced in her school labs, and that could be used by anyone, anywhere, at any time.
     </p>
-    <img src={oldLab} alt="First mockup lab" className="rounded shadow center limited-size" />
+    <img src="/images/oldLab.png" alt="First mockup lab" className="rounded shadow center limited-size" />
     <p className="caption">The first lab mockup: A simple prototype to conceptualize the vision for Whimsylabs.</p>
     <p>
       The journey began modestly with a rudimentary lab mockup that served to test initial coding ideas. Right from the start the dream of a unified virtual lab was clear, but the path to realizing it was less so. With academic simulations as a foundation, the first lab iteration was a simple prototype that laid the groundwork to test ideas and refine the vision. However, as most academic simulations use supercomputers, and take months to run (<a href="https://link.springer.com/article/10.1007/s10723-015-9329-3" target="_blank" rel="noopener noreferrer">Foster & Kesselman, 2014</a>), the challenge was to make the simulations run in real-time on a bespoke VR platform.
@@ -28,7 +25,7 @@ export const content = (
     <p>
       Around this time Whimsylabs caught the attention of the University of Edinburgh due to our breakthrough work in simuations and ambitious impact driven goals, securing places in their prestigious incubator programs and going on to win the Summer Accelerator. From these victories and recognitions, we were able to secure our first bout of funding to build a bespoke VR/web combo platform, and bring on our second founder to help build the lab - a Chemist PhD with years of experience in education and training for the chemical industry. 
     </p>
-    <img src={testLab} alt="Second tech test lab" className="rounded shadow center limited-size" />
+    <img src="/images/testLab.png" alt="Second tech test lab" className="rounded shadow center limited-size" />
     <p className="caption">The second lab: A testing ground for advanced simulation technologies.</p>
     <p>
         The second lab was built to see how we could make the lab feel more like a real lab, and less like a video game. This was first time we had to consider how the lab would be used in a real educational setting to teach the motions and actions of a lab. This phenomenology of the lab revealed itself to be crucial for students to begin to build the muscle memory needed to perform these procedures in real life, with things like liquid physics and realistic physical interactions needed to capture feeling of being in a lab. Research in embodied cognition demonstrates that physical movements and gestures significantly enhance learning and retention in scientific contexts (<a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01142/full" target="_blank" rel="noopener noreferrer">Macedonia & von Kriegstein, 2012</a>). The lessons learnt from the second lab defined one of our core design philosophies - that procedures should be learnt by physically doing, not by watching animations or reading text.
@@ -36,7 +33,7 @@ export const content = (
     <p>
         The second lab was a success, and we were able to reach out to schools to test the lab in a real educational setting. The feedback was overwhelmingly positive, with students and teachers alike praising the lab for its realism and ease of use. This was a critical step in the development of the lab, as it showed that the lab could be used in a real educational setting, and that it could be a valuable tool for teaching and learning. There was just one issue - the lab was ugly.
     </p>
-    <img src={finalLab} alt="Final lab design" className="rounded shadow center limited-size" />
+    <img src="/images/finalLab.png" alt="Final lab design" className="rounded shadow center limited-size" />
     <p className="caption">The final lab: A blend of cutting-edge technology and an inviting design that stands out.</p>
 
     <p>

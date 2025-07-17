@@ -1,6 +1,6 @@
 import React from 'react';
 import './Partners.css';
-import DJB from './images/kids_judge_bett.png';
+// Image now served from public directory
 
 const Partners = () => {
     return (
@@ -30,7 +30,7 @@ const Partners = () => {
                     </div>
                     <div className="partner-logo">
                         <a href="https://www.bettshow.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit BETT Show">
-                            <img src={DJB} className="img-fluid" alt="Kids Judge BETT logo" />
+                            <img src="/images/kids_judge_bett.png" className="img-fluid" alt="Kids Judge BETT logo" />
                         </a>
                     </div>
                 </div>

@@ -1,15 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import './BubbleContainer.css';
-import bubble1 from './images/bubble1.svg';
-import bubble2 from './images/bubble2.svg';
-import bubble3 from './images/bubble3.svg';
-import bubble4 from './images/bubble4.svg';
+// Bubble images now served from public directory
 
 const BubbleContainer = ({ children, speed = 10, restrictOverflow = false, bubbleCount = 1 }) => {
   const intervalRef = useRef(null);
 
   useEffect(() => {
-    const bubbles = [bubble1, bubble2, bubble3, bubble4];
+    const bubbles = ['/images/bubble1.svg', '/images/bubble2.svg', '/images/bubble3.svg', '/images/bubble4.svg'];
     const gradientSections = document.querySelectorAll('.gradient-section');
 
     const createBubbles = () => {

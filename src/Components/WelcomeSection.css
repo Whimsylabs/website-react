@@ -2,11 +2,11 @@
     background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
                       linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
                       linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
-                      url("./images/tiled.png") !important;
+                      url("../../public/images/tiled.png") !important;
     background-blend-mode: darken, multiply, multiply;
     z-index: 3;
     padding-bottom: 10em;
-    mask: url("./images/wave_tall.svg");
+    mask: url("../../public/images/wave_tall.svg");
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: bottom;

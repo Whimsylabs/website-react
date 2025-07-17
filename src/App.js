@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import MetaTags from "./Components/MetaTags";
@@ -12,13 +12,8 @@ import FAQPage from "./Components/FAQPage";
 import ContactPage from "./Components/ContactPage";
 
 function App({ initialPath = '/' }) {
-    // Use effect to ensure we're on the correct path after initial render
-    useEffect(() => {
-        // If we're not already on the initial path, navigate to it
-        if (window.location.pathname !== initialPath) {
-            window.history.replaceState({}, "", initialPath);
-        }
-    }, [initialPath]);
+    // Remove the useEffect that was causing hydration issues
+    // The BrowserRouter will handle the initial path correctly
 
     return (
         <HelmetProvider>

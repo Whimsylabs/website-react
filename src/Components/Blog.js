@@ -7,18 +7,34 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogPreview from './BlogPreview';
 
-// Import all posts dynamically
-const postsContext = require.context('./blog', false, /Post\d+\.js$/);
-const posts = postsContext.keys().map((key) => {
-  const postModule = postsContext(key);
-  return {
-    id: postModule.slug,
-    title: postModule.title,
-    content: postModule.content,
-    date: postModule.date,
-    description: postModule.description,
-  };
-}).sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
+// Import posts statically to avoid hydration issues
+import * as Post1 from './blog/Post1';
+import * as Post2 from './blog/Post2';
+import * as Post3 from './blog/Post3';
+
+const posts = [
+  {
+    id: Post1.slug,
+    title: Post1.title,
+    content: Post1.content,
+    date: Post1.date,
+    description: Post1.description,
+  },
+  {
+    id: Post2.slug,
+    title: Post2.title,
+    content: Post2.content,
+    date: Post2.date,
+    description: Post2.description,
+  },
+  {
+    id: Post3.slug,
+    title: Post3.title,
+    content: Post3.content,
+    date: Post3.date,
+    description: Post3.description,
+  }
+].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
 const Blog = () => {
   const [activePostId] = useState(null);

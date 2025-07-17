@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './WelcomeSection.css';
-import logo from './images/logo.png'; // Import the logo image file
+// Logo now served from public directory
 import ContactUs from './ContactUs';
 
 const WelcomeSection = ({ 
@@ -23,7 +23,7 @@ const WelcomeSection = ({
   return (
     <section id="tiled-1" className="welcome-section">
       <div className="container py-3 d-flex align-items-center justify-content-center">
-        <img src={logo} alt="WhimsyLabs Virtual Lab Software Logo" className="logo me-3" />
+        <img src="/images/logo.png" alt="WhimsyLabs Virtual Lab Software Logo" className="logo me-3" />
         <div className="text-container">
           <h1 className="wave-text">{titleText}</h1>
           <div className="text-justify">

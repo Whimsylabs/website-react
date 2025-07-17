@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import WelcomeSection from './WelcomeSection';
 import FeaturesSection from './FeaturesSection';
 import VideoPlayer from './VideoPlayer';
-import sampleVideo from './videos/placeholder.webm';
-import videoPoster from './images/logo.png';
+// Video now served from public directory
+// Video poster now served from public directory
 import './MainContent.css';
 import Testimonial from './Testimonial';
 import Partners from './Partners';
@@ -22,8 +22,8 @@ const MainContent = () => {
       <WelcomeSection />
       <BubbleContainer>
         <VideoPlayer
-          videoSrc={sampleVideo}
-          poster={videoPoster}
+          videoSrc="/videos/placeholder.webm"
+          poster="/images/logo.png"
         />
       </BubbleContainer>
       <SplashSection>

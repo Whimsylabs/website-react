@@ -60,7 +60,7 @@ require("@babel/register");
 
 // Mock React Router hooks for server-side rendering
 const Module = require("module");
-const originalRequire = Module.prototype.require;
+const originalModuleRequire = Module.prototype.require;
 
 // Patch Module._compile to inject require.context into every module
 const originalCompile = Module.prototype._compile;
@@ -103,8 +103,8 @@ Module.prototype._compile = function(content, filename) {
 Module.prototype.require = function (id) {
 
   if (id === "react-router-dom") {
-    const original = originalRequire.call(this, id);
-    const React = originalRequire.call(this, "react");
+    const original = originalModuleRequire.call(this, id);
+    const React = originalModuleRequire.call(this, "react");
 
     return {
       ...original,
@@ -142,7 +142,7 @@ Module.prototype.require = function (id) {
       },
     };
   }
-  return originalRequire.call(this, id);
+  return originalModuleRequire.call(this, id);
 };
 
 
@@ -174,7 +174,7 @@ const config = {
   templatesDir: "./templates",
   contentDir: "./content",
   staticDir: "./src/Components",
-  distDir: "./public", // Changed to public for GitHub Pages
+  distDir: "./build", // Use React's build directory for GitHub Pages
   watch: process.argv.includes("--watch"),
   siteUrl: "https://whimsylabs.ai",
   siteName: "WhimsyLabs",
@@ -349,24 +349,13 @@ async function setupDist() {
 // Copy static assets (optimized to avoid duplication)
 async function copyAssets() {
   try {
-    // Copy React build static files to public directory
-    const reactBuildDir = "./build/static";
-    const publicStaticDir = `${config.distDir}/static`;
-
-    if (await fs.pathExists(reactBuildDir)) {
-      await fs.ensureDir(publicStaticDir);
-      await fs.copy(reactBuildDir, publicStaticDir, { overwrite: true });
-      console.log("✅ Copied React build static files to public");
-    } else {
-      console.warn(
-        "⚠️ React build static files not found. Run React build first."
-      );
-    }
-
-    // Note: We don't need to copy public assets since we're writing directly to public
-    console.log("✅ Copied optimized static assets");
+    // Since we're building directly into the build directory,
+    // the React static files are already in the right place
+    // We just need to ensure the directory exists
+    await fs.ensureDir(`${config.distDir}/static`);
+    console.log("✅ Static assets are already in place from React build");
   } catch (error) {
-    console.error("❌ Error copying assets:", error.message);
+    console.error("❌ Error with static assets:", error.message);
   }
 }
 

@@ -1,7 +1,4 @@
 import React from "react";
-import handGrab from '../images/handGrabbingSmall.png';
-// import proceduralLab from '../images/proceduralLab.png'; // Showcasing procedural learning
-// import gradingSystem from '../images/gradingSystem.png'; // Depiction of the grading system
 
 export const title = "The Importance of Physicality in Virtual Labs: A Step Beyond Traditional Simulations";
 export const date = "2025-02-03";
@@ -20,7 +17,7 @@ export const content = (
     <p> 
       The ability to physically perform lab procedures in a virtual space not only enhances technical proficiency but also fosters deeper conceptual understanding. In traditional educational settings, students often struggle with abstract concepts because they lack the opportunity to see them in action. With Whimsylabs, concepts like fluid dynamics, chemical reactions, and instrument handling become intuitive, as students engage directly with the materials in a controlled yet realistic environment. Research in embodied cognition theory supports this approach, showing that physical interaction with learning materials significantly improves conceptual understanding and retention (<a href="https://www.sciencedirect.com/science/article/pii/S1041608010001184" target="_blank" rel="noopener noreferrer">Barsalou, 2008</a>). This hands-on approach ensures that learning is both engaging and effective, moving beyond passive instruction to active discovery. 
     </p>
-    <img src={handGrab} alt="360 hand grab wowee" className="rounded shadow center limited-size" />
+    <img src="/images/handGrabbingSmall.png" alt="360 hand grab wowee" className="rounded shadow center limited-size" />
     <p className="caption">Whimsylabs' immersive simulation technology allows for precise, 360-degree interactions with lab equipment, as demonstrated by the realistic handling of this beaker. This innovative approach bridges the gap between virtual training and real-world laboratory familiarity, fostering muscle memory and refining techniques in a virtual setting.</p>
     
     <p>
