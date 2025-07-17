@@ -26,7 +26,7 @@ const FAQ = () => {
       },
       {
         question: "What makes WhimsyLabs different from other virtual lab platforms?",
-        answer: "WhimsyLabs is the only platform that combines high-fidelity liquid physics, real-time AI tutoring, sandbox freedom, and full VR/Web immersion. Unlike rigid step-by-step tools, WhimsyLabs supports open experimentation with realistic physics, building critical thinking and procedural fluency. We also are a non-profit, focused on equitable access to high-quality STEM education for all students."
+        answer: "WhimsyLabs is the only platform that combines high-fidelity liquid physics, real-time AI tutoring, sandbox freedom, and full VR/Web immersion. Unlike rigid step-by-step tools, WhimsyLabs supports open experimentation with realistic physics, building critical thinking and procedural fluency. We also are focused on equitable access to high-quality STEM education for all students."
       }
     ],
     "Educational Benefits": [
@@ -50,7 +50,7 @@ const FAQ = () => {
       },
       {
         question: "Is WhimsyLabs compatible with Chromebooks?",
-        answer: "Yes. WhimsyLabs is optimized to run smoothly on Chromebooks, desktops, laptops, and VR devices. This ensures high-quality STEM education is accessible on almost any device, supporting equitable access across various schools and students."
+        answer: "Yes. WhimsyLabs is optimized to run smoothly on Chromebooks, desktops, laptops, and VR devices. This ensures high-quality STEM education is accessible on almost any device, supporting equitable access across various schools and students. The dashboard is mobile accessible for both teachers and students alike."
       },
       {
         question: "How accurate are the simulations in WhimsyLabs?",

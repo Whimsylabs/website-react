@@ -77,7 +77,7 @@ const Blog = () => {
                   key={post.id}
                   className={activePostId === post.id ? 'active' : ''}
                 >
-                  <a href={`./blog/${post.id}/index.html`}>{post.title}</a>
+                  <a href={`/blog/${post.id}/`}>{post.title}</a>
                 </li>
               ))}
             </ul>

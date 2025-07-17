@@ -6,29 +6,44 @@ import BubbleContainer from './BubbleContainer';
 import Header from './Header';
 import Footer from './Footer';
 
-// Import all posts dynamically
-const postsContext = require.context('./blog', false, /Post\d+\.js$/);
-const posts = postsContext.keys().map((key) => {
-  const postModule = postsContext(key);
-  return {
-    id: postModule.slug,
-    title: postModule.title,
-    content: postModule.content,
-    date: postModule.date,
-    description: postModule.description,
-  };
-}).sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
+// Import posts directly to avoid require.context issues
+import * as Post1 from './blog/Post1';
+import * as Post2 from './blog/Post2';
+import * as Post3 from './blog/Post3';
+
+const posts = [
+  {
+    id: Post3.slug,
+    title: Post3.title,
+    content: Post3.content,
+    date: Post3.date,
+    description: Post3.description,
+  },
+  {
+    id: Post2.slug,
+    title: Post2.title,
+    content: Post2.content,
+    date: Post2.date,
+    description: Post2.description,
+  },
+  {
+    id: Post1.slug,
+    title: Post1.title,
+    content: Post1.content,
+    date: Post1.date,
+    description: Post1.description,
+  }
+].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
 const BlogPost = (props = {}) => {
 
   
+  // Get slug from props (passed by App component)
+  const routeSlug = props.slug;
+  
   // Check if we're in SSR mode (props passed) or client-side mode (use hooks)
   // During SSR, we'll have blog post data passed as props
-  const isSSR = props && (props.slug || props.title || props.content || props.description);
-  
-  // Always call hooks at the top level (React rules)
-  // Get slug from props instead of router params
-  const routeSlug = props.slug;
+  const isSSR = props && (props.title || props.content || props.description);
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(!isSSR);
   const [nextPost, setNextPost] = useState(null);
@@ -42,11 +57,15 @@ const BlogPost = (props = {}) => {
 
   // Always call useEffect (React rules)
   useEffect(() => {
-    if (!isSSR) {
+    if (routeSlug) {
+      console.log('Looking for post with slug:', routeSlug);
+      console.log('Available posts:', posts.map(p => ({ id: p.id, title: p.title })));
+      
       // Find the post that matches the slug
       const postIndex = posts.findIndex((p) => p.id === routeSlug);
       
       if (postIndex !== -1) {
+        console.log('Found post:', posts[postIndex].title);
         setPost(posts[postIndex]);
         
         // Set next and previous posts for navigation
@@ -57,6 +76,8 @@ const BlogPost = (props = {}) => {
         if (postIndex < posts.length - 1) {
           setPrevPost(posts[postIndex + 1]); // Older post
         }
+      } else {
+        console.log('Post not found for slug:', routeSlug);
       }
       
       setLoading(false);
@@ -66,7 +87,7 @@ const BlogPost = (props = {}) => {
         window.scrollTo(0, 0);
       }
     }
-  }, [routeSlug, isSSR]);
+  }, [routeSlug]);
 
   // For SSR, use props directly
   if (isSSR) {

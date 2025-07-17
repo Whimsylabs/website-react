@@ -124,7 +124,7 @@ const BlogPreview = ({ post }) => {
   };
 
   return (
-    <a href={`./blog/${post.id}/index.html`} className="blog-preview-link">
+    <a href={`/blog/${post.id}/`} className="blog-preview-link">
       <div className="post-box post-preview" id={`post-${post.id}`}>
         {/* Extract and display the first image as a header */}
         {extractFirstImage(post.content)}
