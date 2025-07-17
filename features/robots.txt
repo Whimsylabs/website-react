@@ -1,0 +1,23 @@
+# https://www.robotstxt.org/robotstxt.html
+# WhimsyLabs Virtual Laboratory Software
+# All search engines are allowed to crawl all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://whimsylabs.ai/sitemap.xml
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Disallow access to any temporary files that might exist
+Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow important directories explicitly
+Allow: /blog/
+Allow: /services/
+Allow: /features/
