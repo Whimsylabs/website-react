@@ -3,16 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { 
+  isServerRendered, 
+  getInitialRoute, 
+  shouldHydrate, 
+  initializeHydration,
+  setupHydrationErrorBoundary
+} from './hydration';
+
+// Setup error boundaries for hydration
+setupHydrationErrorBoundary();
 
 // Get the initial route from the HTML (set by our static page generator)
 // or from URL parameters (for backward compatibility)
-let initialPath = '/';
+let initialPath = getInitialRoute();
 
-// Check if we have an initial route set by our static HTML generator
-if (window.__INITIAL_ROUTE__) {
-  initialPath = window.__INITIAL_ROUTE__;
-} else {
-  // Legacy redirect handling
+// Legacy redirect handling for backward compatibility
+if (!window.__INITIAL_ROUTE__) {
   const urlParams = new URLSearchParams(window.location.search);
   const redirectPath = urlParams.get("redirect");
   
@@ -23,12 +30,34 @@ if (window.__INITIAL_ROUTE__) {
   }
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App initialPath={initialPath} />
-  </React.StrictMode>
-);
+// Determine if we should hydrate or render normally
+const shouldPerformHydration = isServerRendered() && shouldHydrate();
+
+const rootElement = document.getElementById('root');
+
+if (shouldPerformHydration) {
+  // Hydrate the pre-rendered content
+  console.log('🔄 Hydrating pre-rendered content for route:', initialPath);
+  
+  initializeHydration(() => {
+    const root = ReactDOM.hydrateRoot(
+      rootElement,
+      <React.StrictMode>
+        <App initialPath={initialPath} />
+      </React.StrictMode>
+    );
+  });
+} else {
+  // Normal client-side rendering
+  console.log('🚀 Client-side rendering for route:', initialPath);
+  
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App initialPath={initialPath} />
+    </React.StrictMode>
+  );
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

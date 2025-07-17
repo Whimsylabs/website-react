@@ -29,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "generate-sitemap": "node generate-sitemap.js",
-    "postbuild": "npm run generate-sitemap && node generate-html-pages.js",
+    "postbuild": "node build.js",
+    "build-static": "npm run build && node build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -54,6 +55,14 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-react": "^7.23.0",
+    "@babel/register": "^7.23.0",
+    "@babel/plugin-proposal-private-methods": "^7.18.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.0",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "ignore-styles": "^5.0.1"
   }
 }

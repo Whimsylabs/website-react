@@ -5,6 +5,70 @@ const { glob } = require('glob');
 const grayMatter = require('gray-matter');
 const chokidar = require('chokidar');
 
+// Import our new React rendering utilities
+const ComponentRenderer = require('./scripts/component-renderer');
+const AssetExtractor = require('./scripts/asset-extractor');
+const MetadataInjector = require('./scripts/metadata-injector');
+
+// Initialize rendering utilities
+const componentRenderer = new ComponentRenderer();
+const assetExtractor = new AssetExtractor('./build');
+const metadataInjector = new MetadataInjector();
+
+// Import React components (with Babel register)
+require('ignore-styles');
+require('@babel/register');
+
+// Mock React Router hooks and require.context for server-side rendering
+const Module = require('module');
+const originalRequire = Module.prototype.require;
+
+Module.prototype.require = function(id) {
+  if (id === 'react-router-dom') {
+    const original = originalRequire.call(this, id);
+    return {
+      ...original,
+      useLocation: () => ({ pathname: '/', search: '', hash: '', state: null }),
+      useNavigate: () => () => {},
+      useParams: () => ({}),
+      Link: ({ to, children, ...props }) => {
+        const React = originalRequire.call(this, 'react');
+        return React.createElement('a', { href: to, ...props }, children);
+      }
+    };
+  }
+  return originalRequire.call(this, id);
+};
+
+// Mock require.context for webpack compatibility
+require.context = function(directory, useSubdirectories, regExp) {
+  return function() {
+    return [];
+  };
+};
+let ReactComponents = {};
+// Load components individually to identify which one has the issue
+const componentFiles = [
+    { name: 'MainContent', path: './src/Components/MainContent.js' },
+    { name: 'Blog', path: './src/Components/Blog.js' },
+    { name: 'Services', path: './src/Components/Services.js' },
+    { name: 'Features', path: './src/Components/FeaturesPage.js' },
+    { name: 'FAQPage', path: './src/Components/FAQPage.js' },
+    { name: 'ContactPage', path: './src/Components/ContactPage.js' },
+    { name: 'BlogPost', path: './src/Components/BlogPost.js' }
+];
+
+console.log('🔄 Loading React components individually...');
+componentFiles.forEach(({ name, path }) => {
+    try {
+        ReactComponents[name] = require(path).default;
+        console.log(`✅ Loaded ${name}`);
+    } catch (error) {
+        console.error(`❌ Failed to load ${name}:`, error.message);
+        console.error(`Full error for ${name}:`, error.stack);
+    }
+});
+
 // Configuration
 const config = {
     templatesDir: './templates',
@@ -25,6 +89,86 @@ const siteData = {
     author: 'WhimsyLabs Team',
     year: new Date().getFullYear()
 };
+
+// Route to component mapping
+const routeComponentMap = {
+    '/': 'MainContent',
+    '/blog': 'Blog',
+    '/services': 'Services',
+    '/features': 'Features',
+    '/faq': 'FAQPage',
+    '/contact': 'ContactPage'
+};
+
+// Dynamic route patterns
+const dynamicRoutes = {
+    '/blog/:slug': 'BlogPost'
+};
+
+/**
+ * Get component for a given route
+ * @param {string} route - The route path
+ * @returns {React.Component} - The React component for the route
+ */
+function getComponentForRoute(route) {
+    // Handle exact matches first
+    if (routeComponentMap[route]) {
+        return ReactComponents[routeComponentMap[route]];
+    }
+    
+    // Handle dynamic routes
+    if (route.startsWith('/blog/') && route !== '/blog') {
+        return ReactComponents.BlogPost;
+    }
+    
+    // Default fallback
+    return ReactComponents.MainContent;
+}
+
+/**
+ * Generate routes automatically from blog posts and static routes
+ * @returns {Array} - Array of route configurations
+ */
+async function generateRouteConfigs() {
+    const routes = [];
+    
+    // Add static routes
+    Object.keys(routeComponentMap).forEach(path => {
+        const componentName = routeComponentMap[path];
+        const metadata = pageMetadata[path] || {};
+        
+        routes.push({
+            path,
+            component: componentName,
+            output: path === '/' ? 'index.html' : `${path.substring(1)}/index.html`,
+            metadata,
+            type: 'static'
+        });
+    });
+    
+    // Add dynamic blog post routes
+    try {
+        const posts = await getBlogPosts();
+        posts.forEach(post => {
+            routes.push({
+                path: post.path,
+                component: 'BlogPost',
+                output: `blog/${post.slug}/index.html`,
+                metadata: {
+                    title: `${post.title} | WhimsyLabs Blog`,
+                    description: post.description,
+                    keywords: post.keywords || ''
+                },
+                type: 'dynamic',
+                data: post
+            });
+        });
+    } catch (error) {
+        console.warn('⚠️ Could not generate blog post routes:', error.message);
+    }
+    
+    return routes;
+}
 
 // Page metadata
 const pageMetadata = {
@@ -67,37 +211,30 @@ async function setupDist() {
     console.log('✅ Cleaned and created dist directory');
 }
 
-// Copy static assets
+// Copy static assets (optimized to avoid duplication)
 async function copyAssets() {
     try {
-        // Copy assets from multiple directories
-        const assetSources = ['./public', './src', './Old images'];
-        for (const source of assetSources) {
-            if (await fs.pathExists(source)) {
-                await fs.copy(source, `${config.distDir}/static`, {
-                    filter: (src) => {
-                        return src.endsWith('.css') || 
-                               src.endsWith('.js') || 
-                               src.endsWith('.png') || 
-                               src.endsWith('.jpg') || 
-                               src.endsWith('.webp') || 
-                               src.endsWith('.svg');
-                    }
-                });
+        // Copy React build static files to dist directory
+        const reactBuildDir = './build/static';
+        const distStaticDir = `${config.distDir}/static`;
+        
+        if (await fs.pathExists(reactBuildDir)) {
+            await fs.copy(reactBuildDir, distStaticDir);
+            console.log('✅ Copied React build static files');
+        } else {
+            console.warn('⚠️ React build static files not found. Run React build first.');
+        }
+        
+        // Copy public assets (favicon, manifest, etc.)
+        const publicAssets = ['./public/favicon.ico', './public/favicon.webp', './public/logo.png', './public/manifest.json', './public/robots.txt'];
+        for (const asset of publicAssets) {
+            if (await fs.pathExists(asset)) {
+                const filename = path.basename(asset);
+                await fs.copy(asset, `${config.distDir}/${filename}`);
             }
         }
         
-        // Copy React build files
-        const reactBuildDir = './build/static/js';
-        const reactDistDir = `${config.distDir}/static/js`;
-        if (await fs.pathExists(reactBuildDir)) {
-            await fs.copy(reactBuildDir, reactDistDir);
-            console.log('✅ Copied React build files');
-        } else {
-            console.warn('⚠️ React build files not found');
-        }
-        
-        console.log('✅ Copied static assets');
+        console.log('✅ Copied optimized static assets');
     } catch (error) {
         console.error('❌ Error copying assets:', error);
     }
@@ -180,28 +317,85 @@ async function getBlogPosts() {
     return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
-// Render page with layout
-async function renderPage(templatePath, data = {}) {
+// Render page with React components
+async function renderPage(Component, data = {}) {
     try {
-        const pageContent = await ejs.renderFile(templatePath, data);
+        const { location = '/', metadata = {} } = data;
         
-        const layoutData = {
-            ...siteData,
-            ...data,
-            content: pageContent
-        };
+        // Render React component to HTML
+        const renderResult = componentRenderer.renderComponent(Component, data, location);
         
-        // Ensure redirection script is added to the head section
-        const redirectionScript = `<script>
-            if (window.location.pathname === '/') {
-                window.location.href = '/spa/index.html';
-            }
-        </script>`;
-        layoutData.headContent = layoutData.headContent ? layoutData.headContent + redirectionScript : redirectionScript;
+        if (renderResult.error) {
+            console.warn(`⚠️ Component rendering error for ${location}: ${renderResult.error}`);
+        }
         
-        return await ejs.renderFile('./templates/layouts/base.ejs', layoutData);
+        // Get optimized assets
+        const assets = assetExtractor.getOptimizedAssets();
+        
+        // Get critical CSS for inlining
+        const criticalCSS = assetExtractor.extractCriticalCSSContent();
+        
+        // Generate complete metadata
+        const completeMetadata = metadataInjector.generateCompleteMetadata(
+            location, 
+            renderResult.helmet ? { helmet: renderResult.helmet } : null, 
+            metadata
+        );
+        
+        // Create complete HTML page
+        const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    ${completeMetadata.meta}
+    ${assets.preload}
+    ${criticalCSS ? `<style>${criticalCSS}</style>` : ''}
+    ${assets.css}
+    ${completeMetadata.script}
+    <script>
+        // Set initial route for React Router
+        window.__INITIAL_ROUTE__ = "${location}";
+    </script>
+</head>
+<body>
+    <noscript>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif;">
+            ${renderResult.html}
+            <style>
+                /* Basic styling for noscript fallback */
+                .container-fluid { max-width: 1200px; margin: 0 auto; padding: 20px; }
+                .text-center { text-align: center; }
+                .btn { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin: 10px; }
+                .btn:hover { background: #0056b3; }
+                nav ul { list-style: none; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+                nav li { margin: 0 15px; }
+                nav a { text-decoration: none; color: #007bff; font-weight: bold; }
+                nav a:hover { text-decoration: underline; }
+                .faq-link { color: #007bff; text-decoration: none; }
+                .faq-link:hover { text-decoration: underline; }
+            </style>
+            <nav style="margin-top: 20px; padding: 20px; border-top: 1px solid #eee;">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </noscript>
+    <div id="root">${renderResult.html}</div>
+    ${assets.js}
+</body>
+</html>`;
+        
+        return html;
     } catch (error) {
-        console.error(`❌ Error rendering ${templatePath}:`, error);
+        console.error(`❌ Error rendering page:`, error);
         throw error;
     }
 }
@@ -209,31 +403,33 @@ async function renderPage(templatePath, data = {}) {
 // Generate individual pages
 async function generatePages() {
     const pages = [
-        { path: '/', template: 'home', output: 'index.html' },
-        { path: '/blog', template: 'blog', output: 'blog/index.html' },
-        { path: '/services', template: 'services', output: 'services/index.html' },
-        { path: '/features', template: 'features', output: 'features/index.html' },
-        { path: '/faq', template: 'faq', output: 'faq/index.html' },
-        { path: '/contact', template: 'contact', output: 'contact/index.html' }
+        { path: '/', component: 'MainContent', output: 'index.html' },
+        { path: '/blog', component: 'Blog', output: 'blog/index.html' },
+        { path: '/services', component: 'Services', output: 'services/index.html' },
+        { path: '/features', component: 'Features', output: 'features/index.html' },
+        { path: '/faq', component: 'FAQPage', output: 'faq/index.html' },
+        { path: '/contact', component: 'ContactPage', output: 'contact/index.html' }
     ];
     
     for (const page of pages) {
         const metadata = pageMetadata[page.path] || {};
-        const templatePath = `./templates/pages/${page.template}.ejs`;
+        const Component = ReactComponents[page.component];
         
-        // Check if template exists, if not create a basic one
-        if (!await fs.pathExists(templatePath)) {
-            await createBasicPageTemplate(page.template, page.path);
+        if (!Component) {
+            console.warn(`⚠️ Component ${page.component} not found, skipping ${page.path}`);
+            continue;
         }
         
         const data = {
             ...metadata,
+            location: page.path,
             currentPath: page.path,
             url: page.path,
-            site: siteData
+            site: siteData,
+            metadata
         };
         
-        const html = await renderPage(templatePath, data);
+        const html = await renderPage(Component, data);
         const outputPath = `${config.distDir}/${page.output}`;
         
         await fs.ensureDir(path.dirname(outputPath));
@@ -249,23 +445,31 @@ async function generateBlogPages() {
     
     // Generate individual blog post pages
     for (const post of posts) {
+        const Component = ReactComponents.BlogPost;
+        
+        if (!Component) {
+            console.warn(`⚠️ BlogPost component not found, skipping blog posts`);
+            continue;
+        }
+        
         const data = {
             ...post,
             title: `${post.title} | WhimsyLabs Blog`,
+            location: post.path,
             currentPath: post.path,
             url: post.path,
             ogType: 'article',
             keywords: post.keywords || '',
             site: siteData,
-            posts: posts // For navigation
+            posts: posts, // For navigation
+            metadata: {
+                title: `${post.title} | WhimsyLabs Blog`,
+                description: post.description,
+                keywords: post.keywords || ''
+            }
         };
         
-        const templatePath = './templates/pages/blog-post.ejs';
-        if (!await fs.pathExists(templatePath)) {
-            await createBasicBlogPostTemplate();
-        }
-        
-        const html = await renderPage(templatePath, data);
+        const html = await renderPage(Component, data);
         const outputPath = `${config.distDir}/blog/${post.slug}/index.html`;
         
         await fs.ensureDir(path.dirname(outputPath));
