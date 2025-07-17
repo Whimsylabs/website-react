@@ -47,13 +47,13 @@ export const content = (
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
-        <li>Barsalou, L. W. (2008). Grounded cognition. <em>Annual Review of Psychology</em>, 59, 617-645.</li>
-        <li>Black, P., & Wiliam, D. (2009). Developing the theory of formative assessment. <em>Educational Assessment, Evaluation and Accountability</em>, 21(1), 5-31.</li>
-        <li>de Jong, T., Linn, M. C., & Zacharia, Z. C. (2013). Physical and virtual laboratories in science and engineering education. <em>Science</em>, 340(6130), 305-308.</li>
-        <li>Gavi, H., Hahad, O., Daiber, A., & Münzel, T. (2020). Computational fluid dynamics in cardiovascular disease. <em>European Journal of Preventive Cardiology</em>, 27(18), 1946-1956.</li>
-        <li>Hmelo-Silver, C. E., Duncan, R. G., & Chinn, C. A. (2007). Scaffolding and achievement in problem-based and inquiry learning: A response to Kirschner, Sweller, and Clark (2006). <em>Educational Psychologist</em>, 42(2), 99-107.</li>
-        <li>McGaghie, W. C., Issenberg, S. B., Petrusa, E. R., & Scalese, R. J. (2010). A critical review of simulation‐based medical education research: 2003–2009. <em>Medical Education</em>, 44(1), 50-63.</li>
-        <li>Sigrist, R., Rauter, G., Riener, R., & Wolf, P. (2013). Augmented visual, auditory, haptic, and multimodal feedback in motor learning: A review. <em>Psychonomic Bulletin & Review</em>, 20(1), 21-53.</li>
+        <li key="ref-1">Barsalou, L. W. (2008). Grounded cognition. <em>Annual Review of Psychology</em>, 59, 617-645.</li>
+        <li key="ref-2">Black, P., & Wiliam, D. (2009). Developing the theory of formative assessment. <em>Educational Assessment, Evaluation and Accountability</em>, 21(1), 5-31.</li>
+        <li key="ref-3">de Jong, T., Linn, M. C., & Zacharia, Z. C. (2013). Physical and virtual laboratories in science and engineering education. <em>Science</em>, 340(6130), 305-308.</li>
+        <li key="ref-4">Gavi, H., Hahad, O., Daiber, A., & Münzel, T. (2020). Computational fluid dynamics in cardiovascular disease. <em>European Journal of Preventive Cardiology</em>, 27(18), 1946-1956.</li>
+        <li key="ref-5">Hmelo-Silver, C. E., Duncan, R. G., & Chinn, C. A. (2007). Scaffolding and achievement in problem-based and inquiry learning: A response to Kirschner, Sweller, and Clark (2006). <em>Educational Psychologist</em>, 42(2), 99-107.</li>
+        <li key="ref-6">McGaghie, W. C., Issenberg, S. B., Petrusa, E. R., & Scalese, R. J. (2010). A critical review of simulation‐based medical education research: 2003–2009. <em>Medical Education</em>, 44(1), 50-63.</li>
+        <li key="ref-7">Sigrist, R., Rauter, G., Riener, R., & Wolf, P. (2013). Augmented visual, auditory, haptic, and multimodal feedback in motor learning: A review. <em>Psychonomic Bulletin & Review</em>, 20(1), 21-53.</li>
       </ul>
     </div>
   </div>

@@ -60,13 +60,13 @@ export const content = (
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
-        <li>Freeman, S., Eddy, S. L., McDonough, M., Smith, M. K., Okoroafor, N., Jordt, H., & Wenderoth, M. P. (2014). Active learning increases student performance in science, engineering, and mathematics. <em>Proceedings of the National Academy of Sciences</em>, 111(23), 8410-8415.</li>
-        <li>Hall, J. E. (2015). <em>Guyton and Hall textbook of medical physiology</em>. Elsevier Health Sciences.</li>
-        <li>Lewis, T. L., Burnett, B., Tunstall, R. G., & Abrahams, P. H. (2014). Complementing anatomy education using three‐dimensional anatomy mobile software applications on tablet computers. <em>Clinical Anatomy</em>, 27(3), 313-320.</li>
-        <li>Liu, D., Bhagat, K. K., Gao, Y., Chang, T. W., & Huang, R. (2023). The impact of virtual reality on student engagement in science education: A meta-analysis. <em>British Journal of Educational Technology</em>, 54(1), 183-200.</li>
-        <li>Makransky, G., & Lilleholt, L. (2018). A structural equation modeling investigation of the emotional value of immersive virtual reality in education. <em>Educational Technology Research and Development</em>, 66(5), 1141-1164.</li>
-        <li>McMahon, A. P. (2016). Development of the mammalian kidney. <em>Current Topics in Developmental Biology</em>, 117, 31-64.</li>
-        <li>Rose, D., & Meyer, A. (2002). <em>Teaching every student in the digital age: Universal design for learning</em>. Association for Supervision and Curriculum Development.</li>
+        <li key="ref-1">Freeman, S., Eddy, S. L., McDonough, M., Smith, M. K., Okoroafor, N., Jordt, H., & Wenderoth, M. P. (2014). Active learning increases student performance in science, engineering, and mathematics. <em>Proceedings of the National Academy of Sciences</em>, 111(23), 8410-8415.</li>
+        <li key="ref-2">Hall, J. E. (2015). <em>Guyton and Hall textbook of medical physiology</em>. Elsevier Health Sciences.</li>
+        <li key="ref-3">Lewis, T. L., Burnett, B., Tunstall, R. G., & Abrahams, P. H. (2014). Complementing anatomy education using three‐dimensional anatomy mobile software applications on tablet computers. <em>Clinical Anatomy</em>, 27(3), 313-320.</li>
+        <li key="ref-4">Liu, D., Bhagat, K. K., Gao, Y., Chang, T. W., & Huang, R. (2023). The impact of virtual reality on student engagement in science education: A meta-analysis. <em>British Journal of Educational Technology</em>, 54(1), 183-200.</li>
+        <li key="ref-5">Makransky, G., & Lilleholt, L. (2018). A structural equation modeling investigation of the emotional value of immersive virtual reality in education. <em>Educational Technology Research and Development</em>, 66(5), 1141-1164.</li>
+        <li key="ref-6">McMahon, A. P. (2016). Development of the mammalian kidney. <em>Current Topics in Developmental Biology</em>, 117, 31-64.</li>
+        <li key="ref-7">Rose, D., & Meyer, A. (2002). <em>Teaching every student in the digital age: Universal design for learning</em>. Association for Supervision and Curriculum Development.</li>
       </ul>
     </div>
   </div>

@@ -55,13 +55,13 @@ export const content = (
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
-        <li>Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. <em>Psychological Inquiry</em>, 11(4), 227-268.</li>
-        <li>Foster, I., & Kesselman, C. (2014). Scaling system-level science: Scientific exploration and IT implications. <em>Computer</em>, 39(11), 31-39.</li>
-        <li>Grewenig, E., Lergetporer, P., Werner, K., Woessmann, L., & Zierow, L. (2021). COVID-19 and educational inequality: How school closures affect low- and high-achieving students. <em>European Economic Review</em>, 140, 103920.</li>
-        <li>Macedonia, M., & von Kriegstein, K. (2012). Gestures enhance foreign language learning. <em>Biolinguistics</em>, 6(3-4), 393-416.</li>
-        <li>OECD. (2023). <em>PISA 2022 Results (Volume I): The State of Learning and Equity in Education</em>. OECD Publishing.</li>
-        <li>Rutten, N., van Joolingen, W. R., & van der Veen, J. T. (2012). The learning effects of computer simulations in science education. <em>Computers & Education</em>, 58(1), 136-153.</li>
-        <li>Wieman, C. E., & Perkins, K. K. (2005). Transforming physics education. <em>Physics Today</em>, 58(11), 36-41.</li>
+        <li key="ref-1">Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. <em>Psychological Inquiry</em>, 11(4), 227-268.</li>
+        <li key="ref-2">Foster, I., & Kesselman, C. (2014). Scaling system-level science: Scientific exploration and IT implications. <em>Computer</em>, 39(11), 31-39.</li>
+        <li key="ref-3">Grewenig, E., Lergetporer, P., Werner, K., Woessmann, L., & Zierow, L. (2021). COVID-19 and educational inequality: How school closures affect low- and high-achieving students. <em>European Economic Review</em>, 140, 103920.</li>
+        <li key="ref-4">Macedonia, M., & von Kriegstein, K. (2012). Gestures enhance foreign language learning. <em>Biolinguistics</em>, 6(3-4), 393-416.</li>
+        <li key="ref-5">OECD. (2023). <em>PISA 2022 Results (Volume I): The State of Learning and Equity in Education</em>. OECD Publishing.</li>
+        <li key="ref-6">Rutten, N., van Joolingen, W. R., & van der Veen, J. T. (2012). The learning effects of computer simulations in science education. <em>Computers & Education</em>, 58(1), 136-153.</li>
+        <li key="ref-7">Wieman, C. E., & Perkins, K. K. (2005). Transforming physics education. <em>Physics Today</em>, 58(11), 36-41.</li>
       </ul>
     </div>
   </div>
