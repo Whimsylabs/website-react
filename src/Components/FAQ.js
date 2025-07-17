@@ -59,6 +59,22 @@ const FAQ = () => {
       {
         question: "Is WhimsyLabs compliant with school IT and privacy policies?",
         answer: "Yes. WhimsyLabs is web-based and requires no installation. For VR, the app must be downloaded for your device once. We comply with GDPR and school IT guidelines. No personal data is required to run the software, and data collected from the user is kept to a minimum. We provide the full details of everything we store and aim for a data minima philosophy."
+      },
+      {
+        question: "Can WhimsyLabs be used offline or with weak internet?",
+        answer: "Yes. WhimsyLabs enables caching, allowing students to perform labs offline or with a weak internet connection. Once the initial setup is complete, labs load in approximately 10 seconds, ensuring a seamless experience even in low-connectivity environments."
+      },
+      {
+        question: "How does WhimsyLabs ensure assessment integrity?",
+        answer: "WhimsyLabs generates unique questions for each student based on the data they produce during experiments. This approach ensures that no two students will have the same questions and answers, maintaining the integrity of assessments and preventing answer sharing."
+      },
+      {
+        question: "What makes WhimsyLabs fast and efficient?",
+        answer: "WhimsyLabs is designed with a small payload, ensuring quick load times and minimal resource usage. This makes it accessible on a wide range of devices, including those with limited processing power or storage."
+      },
+      {
+        question: "How does WhimsyLabs support flexible learning?",
+        answer: "Unlike rigid simulations, WhimsyLabs allows students to explore and experiment freely. This flexibility fosters critical thinking and creativity, making it ideal for inquiry-based learning and open-ended exploration. A free play option is always avalible to students, allowing them to explore the lab without any restrictions, letting them mix equipment, reagents and techniques between Physics, Chemistry and Biology."
       }
     ],
     "Curriculum & Content": [
