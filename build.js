@@ -174,7 +174,7 @@ const config = {
   templatesDir: "./templates",
   contentDir: "./content",
   staticDir: "./src/Components",
-  distDir: "./dist",
+  distDir: "./public", // Changed to public for GitHub Pages
   watch: process.argv.includes("--watch"),
   siteUrl: "https://whimsylabs.ai",
   siteName: "WhimsyLabs",
@@ -317,17 +317,31 @@ const pageMetadata = {
   },
 };
 
-// Clean and create dist directory
+// Clean and create public directory (but preserve existing public assets)
 async function setupDist() {
   try {
-    if (await fs.pathExists(config.distDir)) {
-      await fs.emptyDir(config.distDir);
-    } else {
-      await fs.ensureDir(config.distDir);
+    // Only clean generated files, not the entire public directory
+    const filesToClean = [
+      `${config.distDir}/blog`,
+      `${config.distDir}/services`,
+      `${config.distDir}/features`, 
+      `${config.distDir}/faq`,
+      `${config.distDir}/contact`,
+      `${config.distDir}/static`,
+      `${config.distDir}/sitemap.xml`,
+      `${config.distDir}/404.html`
+    ];
+    
+    for (const file of filesToClean) {
+      if (await fs.pathExists(file)) {
+        await fs.remove(file);
+      }
     }
-    console.log("✅ Cleaned and created dist directory");
+    
+    await fs.ensureDir(config.distDir);
+    console.log("✅ Cleaned generated files in public directory");
   } catch (error) {
-    console.warn("⚠️ Could not clean dist directory, creating new one:", error.message);
+    console.warn("⚠️ Could not clean public directory, creating new one:", error.message);
     await fs.ensureDir(config.distDir);
   }
 }
@@ -335,50 +349,21 @@ async function setupDist() {
 // Copy static assets (optimized to avoid duplication)
 async function copyAssets() {
   try {
-    // Ensure dist directory exists
-    await fs.ensureDir(config.distDir);
-    
-    // Copy React build static files to dist directory
+    // Copy React build static files to public directory
     const reactBuildDir = "./build/static";
-    const distStaticDir = `${config.distDir}/static`;
+    const publicStaticDir = `${config.distDir}/static`;
 
     if (await fs.pathExists(reactBuildDir)) {
-      await fs.ensureDir(distStaticDir);
-      await fs.copy(reactBuildDir, distStaticDir, { overwrite: true });
-      console.log("✅ Copied React build static files");
+      await fs.ensureDir(publicStaticDir);
+      await fs.copy(reactBuildDir, publicStaticDir, { overwrite: true });
+      console.log("✅ Copied React build static files to public");
     } else {
       console.warn(
         "⚠️ React build static files not found. Run React build first."
       );
     }
 
-    // Copy public assets (favicon, manifest, etc.)
-    const publicAssets = [
-      "./public/favicon.ico",
-      "./public/favicon.webp", 
-      "./public/logo.png",
-      "./public/manifest.json",
-      "./public/robots.txt",
-    ];
-    
-    for (const asset of publicAssets) {
-      try {
-        if (await fs.pathExists(asset)) {
-          const filename = path.basename(asset);
-          const destPath = `${config.distDir}/${filename}`;
-          
-          // Remove existing file if it exists to avoid permission issues
-          if (await fs.pathExists(destPath)) {
-            await fs.remove(destPath);
-          }
-          
-          await fs.copy(asset, destPath);
-        }
-      } catch (assetError) {
-        console.warn(`⚠️ Could not copy ${asset}:`, assetError.message);
-      }
-    }
-
+    // Note: We don't need to copy public assets since we're writing directly to public
     console.log("✅ Copied optimized static assets");
   } catch (error) {
     console.error("❌ Error copying assets:", error.message);
