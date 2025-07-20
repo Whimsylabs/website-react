@@ -24,7 +24,11 @@ function App() {
         
         // Handle blog posts
         if (path.startsWith('/blog/') && path !== '/blog/' && path !== '/blog') {
-            const slug = path.replace('/blog/', '').replace('/', '');
+            let slug = path.replace('/blog/', '').replace(/\/$/, '');
+            // Handle both /slug/ and /slug/index.html patterns
+            if (slug.endsWith('/index.html')) {
+                slug = slug.replace('/index.html', '');
+            }
             return <BlogPost slug={slug} />;
         }
         

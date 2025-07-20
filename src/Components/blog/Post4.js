@@ -17,7 +17,7 @@ export const content = (
       practical lessons, while the country faces a staggering £1.5 billion
       annual cost due to STEM talent shortages (
       <a
-        href="https://www.gov.uk/government/publications/stem-skills-shortage-and-impact-on-business"
+        href="https://post.parliament.uk/research-briefings/post-pn-0746/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -55,9 +55,8 @@ export const content = (
       provide comprehensive feedback on student performance. This system
       evaluates technique accuracy, safety compliance, data collection quality,
       and analytical reasoning with 96% correlation to expert human assessment.
-      According to research published in Educational Assessment, Evaluation and
-      Accountability, such multi-dimensional evaluation is essential for
-      promoting deep learning and scientific reasoning skills (
+      According to research published such multi-dimensional evaluation is
+      essential for promoting deep learning and scientific reasoning skills (
       <a
         href="https://www.tandfonline.com/doi/abs/10.1080/09500693.2016.1204481"
         target="_blank"
@@ -69,12 +68,12 @@ export const content = (
     </p>
 
     <p>
-      Consider this example of our AI feedback in action: "Your titration
-      technique shows strong competency with consistent endpoint detection (pH
-      8.72 ± 0.05). The 35-minute completion time is efficient but may have
-      contributed to the slight systematic error. Your data precision is
-      excellent (coefficient of variation 0.14%), indicating good pipetting and
-      burette technique. Recommendation: Practice endpoint detection with
+      Consider this early test example of our AI feedback in action: "Your
+      titration technique shows strong competency with consistent endpoint
+      detection (pH 8.72 ± 0.05). The 35-minute completion time is efficient but
+      may have contributed to the slight systematic error. Your data precision
+      is excellent (coefficient of variation 0.14%), indicating good pipetting
+      and burette technique. Recommendation: Practice endpoint detection with
       phenolphthalein indicator to reduce the 1.3% bias in future titrations."
     </p>
 
@@ -117,11 +116,22 @@ export const content = (
       directly to physical lab environments.
     </p>
 
-    <img
-      src="/images/cat_beaker.png"
-      alt="WhimsyLabs fluid dynamics simulation"
-      className="rounded shadow center limited-size"
-    />
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js"
+        async
+      ></script>
+      <bsky-embed
+        search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
     <p className="caption">
       WhimsyLabs' advanced fluid dynamics simulation allows students to practice
       precise laboratory techniques with realistic physical behavior.

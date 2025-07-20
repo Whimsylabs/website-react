@@ -17,7 +17,7 @@ const metadataInjector = new MetadataInjector();
 const config = {
   srcDir: "./src",
   buildDir: "./build",
-  distDir: "./public", // Generate static files directly to public directory
+  distDir: "./build", // Generate static files to build directory to match GitHub Pages deployment
   publicDir: "./public",
   siteUrl: "https://whimsylabs.ai",
 };

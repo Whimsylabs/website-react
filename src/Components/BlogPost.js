@@ -10,14 +10,17 @@ import Footer from './Footer';
 import * as Post1 from './blog/Post1';
 import * as Post2 from './blog/Post2';
 import * as Post3 from './blog/Post3';
+import * as Post4 from './blog/Post4';
+import * as Post5 from './blog/Post5';
+import * as Post6 from './blog/Post6';
 
 const posts = [
   {
-    id: Post3.slug,
-    title: Post3.title,
-    content: Post3.content,
-    date: Post3.date,
-    description: Post3.description,
+    id: Post1.slug,
+    title: Post1.title,
+    content: Post1.content,
+    date: Post1.date,
+    description: Post1.description,
   },
   {
     id: Post2.slug,
@@ -27,11 +30,32 @@ const posts = [
     description: Post2.description,
   },
   {
-    id: Post1.slug,
-    title: Post1.title,
-    content: Post1.content,
-    date: Post1.date,
-    description: Post1.description,
+    id: Post3.slug,
+    title: Post3.title,
+    content: Post3.content,
+    date: Post3.date,
+    description: Post3.description,
+  },
+  {
+    id: Post4.slug,
+    title: Post4.title,
+    content: Post4.content,
+    date: Post4.date,
+    description: Post4.description,
+  },
+  {
+    id: Post5.slug,
+    title: Post5.title,
+    content: Post5.content,
+    date: Post5.date,
+    description: Post5.description,
+  },
+  {
+    id: Post6.slug,
+    title: Post6.title,
+    content: Post6.content,
+    date: Post6.date,
+    description: Post6.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 

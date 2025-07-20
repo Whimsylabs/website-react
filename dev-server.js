@@ -5,8 +5,8 @@ const { build } = require('./build.js');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from dist directory
-app.use(express.static('dist'));
+// Serve static files from build directory to match GitHub Pages deployment
+app.use(express.static('build'));
 
 // Fallback for SPA-like behavior (though we're generating static pages)
 app.get('*', (req, res) => {
@@ -15,18 +15,18 @@ app.get('*', (req, res) => {
     let filePath;
     
     if (requestedPath === '/') {
-        filePath = path.join(__dirname, 'dist', 'index.html');
+        filePath = path.join(__dirname, 'build', 'index.html');
     } else if (requestedPath.endsWith('/')) {
-        filePath = path.join(__dirname, 'dist', requestedPath, 'index.html');
+        filePath = path.join(__dirname, 'build', requestedPath, 'index.html');
     } else {
-        filePath = path.join(__dirname, 'dist', requestedPath + '/index.html');
+        filePath = path.join(__dirname, 'build', requestedPath + '/index.html');
     }
     
     // Check if the file exists
     res.sendFile(filePath, (err) => {
         if (err) {
             // If file doesn't exist, serve 404 or redirect to home
-            res.status(404).sendFile(path.join(__dirname, 'dist', '404.html'));
+            res.status(404).sendFile(path.join(__dirname, 'build', '404.html'));
         }
     });
 });
@@ -40,7 +40,7 @@ async function startServer() {
         // Start the server
         app.listen(PORT, () => {
             console.log(`🚀 Development server running at http://localhost:${PORT}`);
-            console.log('📁 Serving files from ./dist directory');
+            console.log('📁 Serving files from ./build directory');
             console.log('🔄 Rebuild with: npm run build');
         });
     } catch (error) {
