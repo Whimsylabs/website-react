@@ -17,7 +17,7 @@ const metadataInjector = new MetadataInjector();
 const config = {
   srcDir: "./src",
   buildDir: "./build",
-  distDir: "./build", // Changed to build for consistency
+  distDir: "./public", // Generate static files directly to public directory
   publicDir: "./public",
   siteUrl: "https://whimsylabs.ai",
 };
@@ -219,21 +219,55 @@ async function setupDist() {
 // Copy static assets (optimized to avoid duplication)
 async function copyAssets() {
   try {
-    // Check if React build static files exist
+    // Ensure dist directory exists
+    await fs.ensureDir(config.distDir);
+    
+    // Copy React build static files (CSS/JS)
     const reactStaticDir = `${config.buildDir}/static`;
+    const destStaticDir = `${config.distDir}/static`;
+    
     if (await fs.pathExists(reactStaticDir)) {
-      // Copy React build static files to public
-      await fs.copy(reactStaticDir, `${config.distDir}/static`, {
-        overwrite: true,
-      });
-      console.log("✅ Static assets are already in place from React build");
+      await fs.ensureDir(destStaticDir);
+      await fs.copy(reactStaticDir, destStaticDir, { overwrite: true });
+      console.log("✅ Copied React build static files");
     } else {
-      console.warn(
-        "⚠️ React build static files not found - run 'npm run build-spa' first"
-      );
+      console.warn("⚠️ React build static files not found - run 'npm run build-spa' first");
     }
+
+    // Since distDir is the same as publicDir, we don't need to copy public assets
+    // They're already in the right place
+    if (config.distDir !== config.publicDir) {
+      // Copy public directory assets (images, videos, etc.) only if different directories
+      const publicDir = "./public";
+      if (await fs.pathExists(publicDir)) {
+        const publicAssets = await fs.readdir(publicDir);
+        
+        for (const asset of publicAssets) {
+          const srcPath = path.join(publicDir, asset);
+          const destPath = path.join(config.distDir, asset);
+          
+          try {
+            // Remove existing file/directory if it exists to avoid permission issues
+            if (await fs.pathExists(destPath)) {
+              await fs.remove(destPath);
+            }
+            
+            await fs.copy(srcPath, destPath, { overwrite: true });
+          } catch (assetError) {
+            console.warn(`⚠️ Could not copy ${asset}:`, assetError.message);
+          }
+        }
+        
+        console.log("✅ Copied public directory assets (images, videos, etc.)");
+      } else {
+        console.warn("⚠️ Public directory not found");
+      }
+    } else {
+      console.log("✅ Public assets already in place (distDir same as publicDir)");
+    }
+
   } catch (error) {
-    console.error("❌ Error copying assets:", error);
+    console.error("❌ Error copying assets:", error.message);
   }
 }
 
@@ -279,15 +313,18 @@ async function getBlogPosts() {
     const Post1 = require("./src/Components/blog/Post1.js");
     const Post2 = require("./src/Components/blog/Post2.js");
     const Post3 = require("./src/Components/blog/Post3.js");
+    const Post4 = require("./src/Components/blog/Post4.js");
+    const Post5 = require("./src/Components/blog/Post5.js");
+    const Post6 = require("./src/Components/blog/Post6.js");
 
     const blogPosts = [
       {
-        id: Post3.slug,
-        title: Post3.title,
-        date: Post3.date,
-        description: Post3.description,
-        content: Post3.content,
-        path: `/blog/${Post3.slug}`,
+        id: Post1.slug,
+        title: Post1.title,
+        date: Post1.date,
+        description: Post1.description,
+        content: Post1.content,
+        path: `/blog/${Post1.slug}`,
       },
       {
         id: Post2.slug,
@@ -298,12 +335,36 @@ async function getBlogPosts() {
         path: `/blog/${Post2.slug}`,
       },
       {
-        id: Post1.slug,
-        title: Post1.title,
-        date: Post1.date,
-        description: Post1.description,
-        content: Post1.content,
-        path: `/blog/${Post1.slug}`,
+        id: Post3.slug,
+        title: Post3.title,
+        date: Post3.date,
+        description: Post3.description,
+        content: Post3.content,
+        path: `/blog/${Post3.slug}`,
+      },
+      {
+        id: Post4.slug,
+        title: Post4.title,
+        date: Post4.date,
+        description: Post4.description,
+        content: Post4.content,
+        path: `/blog/${Post4.slug}`,
+      },
+      {
+        id: Post5.slug,
+        title: Post5.title,
+        date: Post5.date,
+        description: Post5.description,
+        content: Post5.content,
+        path: `/blog/${Post5.slug}`,
+      },
+      {
+        id: Post6.slug,
+        title: Post6.title,
+        date: Post6.date,
+        description: Post6.description,
+        content: Post6.content,
+        path: `/blog/${Post6.slug}`,
       },
     ];
 

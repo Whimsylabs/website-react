@@ -33,7 +33,7 @@ const WelcomeSection = ({
           </div>
         </div>
       </div>
-      <ContactUs />
+      <ContactUs buttonText='Join the pilot!' />
     </section>
   );
 };
