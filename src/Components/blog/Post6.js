@@ -92,7 +92,7 @@ export const content = (
     </p>
 
     <img
-      src="/images/sandbox.jpg"
+      src="/images/Sandbox.jpg"
       alt="A student boiling enthanol;, very dangerous!"
       className="rounded shadow center limited-size"
     />
@@ -254,12 +254,17 @@ export const content = (
     </p>
 
     <p>
-      This sandbox learning is amplified by our 
+      This sandbox learning is amplified by our
       <a href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/">
         Physicality in Virtual Labs
-      </a>, which enables genuine pratical understanding rather than memorized procedures due to students physically performing the actions themselves. This ability to educate students on real world practical form and function allows them to directly transfer capability into real labs. This is essential for preparing students for advanced STEM
-      coursework and careers where they will encounter unfamiliar challenges
-      requiring creative problem-solving.
+      </a>
+      , which enables genuine pratical understanding rather than memorized
+      procedures due to students physically performing the actions themselves.
+      This ability to educate students on real world practical form and function
+      allows them to directly transfer capability into real labs. This is
+      essential for preparing students for advanced STEM coursework and careers
+      where they will encounter unfamiliar challenges requiring creative
+      problem-solving.
     </p>
 
     <h3>Preparing Students for Scientific Careers</h3>
@@ -312,8 +317,8 @@ export const content = (
     </p>
 
     <p>
-      The skills developed through sandbox learning—creative problem-solving,
-      hypothesis testing, iterative refinement, and learning from failure—are
+      The skills developed through sandbox learning; creative problem-solving,
+      hypothesis testing, iterative refinement, and learning from failure, are
       not just valuable for science careers but essential for navigating an
       increasingly complex and rapidly changing world. These capabilities enable
       students to approach challenges with confidence, adapt to new situations,
@@ -333,8 +338,8 @@ export const content = (
       The sandbox learning revolution is just beginning, and WhimsyLabs is proud
       to lead this transformation in science education. Through our commitment
       to open exploration, authentic inquiry, and learning from failure, we're
-      helping to create a generation of students who don't just know
-      science—they think like scientists.
+      helping to create a generation of students who don't just know science:
+      but embody science scientifically.
     </p>
 
     <div className="references-section">
