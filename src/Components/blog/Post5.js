@@ -38,11 +38,22 @@ export const content = (
       guidance precisely when needed.
     </p>
 
-    <img
-      src="/images/cat_brain.png"
-      alt="WhimsyCat AI Tutor"
-      className="rounded shadow center limited-size"
-    />
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js"
+        async
+      ></script>
+      <bsky-embed
+        search="The Whimsycat is now here to help you learn science!!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
     <p className="caption">
       WhimsyCat combines advanced machine learning with pedagogical expertise to
       provide personalized laboratory guidance.

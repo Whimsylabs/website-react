@@ -196,20 +196,25 @@ async function setupDist() {
       `${config.distDir}/contact`,
       // Don't clean static folder - we need the JS/CSS files
       `${config.distDir}/sitemap.xml`,
-      `${config.distDir}/404.html`,
+      // Note: 404.html may not exist, so we'll check before cleaning
     ];
 
     for (const file of filesToClean) {
-      if (await fs.pathExists(file)) {
-        await fs.remove(file);
+      try {
+        if (await fs.pathExists(file)) {
+          await fs.remove(file);
+          console.log(`🗑️ Removed ${file}`);
+        }
+      } catch (removeError) {
+        console.warn(`⚠️ Could not remove ${file}:`, removeError.message);
       }
     }
 
     await fs.ensureDir(config.distDir);
-    console.log("✅ Cleaned generated files in public directory");
+    console.log("✅ Cleaned generated files in build directory");
   } catch (error) {
     console.warn(
-      "⚠️ Could not clean public directory, creating new one:",
+      "⚠️ Could not clean build directory, creating new one:",
       error.message
     );
     await fs.ensureDir(config.distDir);
@@ -234,37 +239,9 @@ async function copyAssets() {
       console.warn("⚠️ React build static files not found - run 'npm run build-spa' first");
     }
 
-    // Since distDir is the same as publicDir, we don't need to copy public assets
-    // They're already in the right place
-    if (config.distDir !== config.publicDir) {
-      // Copy public directory assets (images, videos, etc.) only if different directories
-      const publicDir = "./public";
-      if (await fs.pathExists(publicDir)) {
-        const publicAssets = await fs.readdir(publicDir);
-        
-        for (const asset of publicAssets) {
-          const srcPath = path.join(publicDir, asset);
-          const destPath = path.join(config.distDir, asset);
-          
-          try {
-            // Remove existing file/directory if it exists to avoid permission issues
-            if (await fs.pathExists(destPath)) {
-              await fs.remove(destPath);
-            }
-            
-            await fs.copy(srcPath, destPath, { overwrite: true });
-          } catch (assetError) {
-            console.warn(`⚠️ Could not copy ${asset}:`, assetError.message);
-          }
-        }
-        
-        console.log("✅ Copied public directory assets (images, videos, etc.)");
-      } else {
-        console.warn("⚠️ Public directory not found");
-      }
-    } else {
-      console.log("✅ Public assets already in place (distDir same as publicDir)");
-    }
+    // Since distDir is the same as buildDir, we don't need to copy public assets
+    // They're already in the right place from the React build
+    console.log("✅ Public assets already in place (distDir same as buildDir)");
 
   } catch (error) {
     console.error("❌ Error copying assets:", error.message);
