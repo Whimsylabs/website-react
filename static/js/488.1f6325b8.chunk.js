@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[488],{488:(s,e,t)=>{t.r(e),t.d(e,{config:()=>c});const c={formScriptUrl:"https://example.com/form-script-url"}}}]);
+//# sourceMappingURL=488.1f6325b8.chunk.js.map
