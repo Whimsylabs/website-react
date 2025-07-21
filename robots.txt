@@ -21,3 +21,4 @@ Disallow: /*.css$
 Allow: /blog/
 Allow: /services/
 Allow: /features/
+Allow: /sitemap
