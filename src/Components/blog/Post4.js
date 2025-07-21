@@ -51,12 +51,13 @@ export const content = (
 
     <p>
       At the core of WhimsyLabs' innovation is our sophisticated AI assessment
-      system, which analyzes over 200 behavioral indicators per experiment to
+      system, which analyzes student's actions and behaviors per experiment to
       provide comprehensive feedback on student performance. This system
       evaluates technique accuracy, safety compliance, data collection quality,
-      and analytical reasoning with 96% correlation to expert human assessment.
-      According to research published such multi-dimensional evaluation is
-      essential for promoting deep learning and scientific reasoning skills (
+      and analytical reasoning with strong correlation to expert human
+      assessment. According to research published such multi-dimensional
+      evaluation is essential for promoting deep learning and scientific
+      reasoning skills (
       <a
         href="https://www.tandfonline.com/doi/abs/10.1080/09500693.2016.1204481"
         target="_blank"
@@ -75,6 +76,18 @@ export const content = (
       is excellent (coefficient of variation 0.14%), indicating good pipetting
       and burette technique. Recommendation: Practice endpoint detection with
       phenolphthalein indicator to reduce the 1.3% bias in future titrations."
+    </p>
+
+    <img
+      src="/images/grading dashboard.jpg"
+      alt="Teacher grading dashboard"
+      className="rounded shadow center limited-size"
+    />
+    <p className="caption">
+      An example of the teacher grading dashboard, informing teachers on a
+      student's actions and performance in the lab. Futher down the page the
+      teacher is able to edit and futher review the feedback, allowing them to
+      provide a human-in-the-loop auditing experience.
     </p>
 
     <p>
@@ -109,8 +122,8 @@ export const content = (
 
     <p>
       Our simulation engine processes thousands of interactions per second,
-      detecting even small mistakes—like failing to remove air bubbles from a
-      burette before starting a titration—and factoring them into assessment.
+      detecting even small mistakes, like failing to remove air bubbles from a
+      burette before starting a titration, and factoring them into assessment.
       This level of detail reinforces correct procedural techniques through
       experiential learning, building genuine laboratory skills that transfer
       directly to physical lab environments.
@@ -146,18 +159,18 @@ export const content = (
       expensive hardware or reliable internet connections. WhimsyLabs addresses
       this challenge through multi-platform compatibility and offline-first
       architecture. Our platform operates seamlessly across VR headsets, desktop
-      computers, tablets, and mobile devices—from high-end equipment to basic
-      Chromebooks—with 99.2% device compatibility across hardware
+      computers, tablets, and mobile devices, from high-end equipment to basic
+      Chromebooks, with 96.66% device compatibility across hardware
       configurations.
     </p>
 
     <p>
       Performance testing confirms full functionality with intermittent
-      connectivity as slow as 1 Mbps, ensuring access for schools in remote
-      areas with limited infrastructure. This technical approach directly
-      supports our mission to democratize science education globally, addressing
-      the needs of the 244 million primary and secondary-age children currently
-      out of school worldwide (
+      connectivity, or full offline support through precaching laboraties,
+      ensuring access for schools in remote areas with limited infrastructure.
+      This technical approach directly supports our mission to democratize
+      science education globally, addressing the needs of the 244 million
+      primary and secondary-age children currently out of school worldwide (
       <a
         href="https://en.unesco.org/gem-report/2023"
         target="_blank"
@@ -176,14 +189,15 @@ export const content = (
       comprehensive support through evidence-based multisensory interaction,
       self-paced experimentation, and real-time feedback systems. By combining
       visual, auditory, and kinesthetic inputs, students with attention or
-      processing challenges demonstrate 84% improved learning outcomes compared
-      to traditional methods.
+      processing challenges demonstrate improved learning outcomes compared to
+      traditional methods.
     </p>
 
     <p>
-      Our revolutionary Speech-to-Action feature allows users to verbally
-      control laboratory actions through voice commands ("add 5ml of
-      hydrochloric acid," "record temperature"), supporting students with motor
+      Our revolutionary Speech-to-Action feature currently in development allows
+      users to verbally control laboratory actions through voice commands ("Pick
+      up beaker one and pour 5ml into beaker two," "record temperature in beaker
+      one with the digital themometer"), supporting students with motor
       impairments and learning differences. Research in universal design for
       learning emphasizes the importance of providing multiple means of
       representation, engagement, and expression to accommodate diverse learning
@@ -203,19 +217,20 @@ export const content = (
     <p>
       WhimsyLabs' approach has received significant validation through awards
       and partnerships. We were honored as a BETT 2025 Kids Judge Award Winner
-      in the "Best Science Lab (Start Up)" category—one of only 12 winners out
-      of 60+ evaluated products. This recognition, coming directly from young
-      learners, validates our user-centered design approach and educational
-      effectiveness.
+      in the "Best Science Lab (Start Up)" category. This recognition, coming
+      directly from young learners, validates our user-centered design approach
+      and educational effectiveness.
     </p>
 
     <p>
-      Our platform is currently deployed in 5 UK secondary schools with
-      measurable learning outcome improvements, and we're engaged in industrial
-      collaborations with pharmaceutical and chemical industry partners for
-      workforce training applications. These real-world implementations
-      demonstrate the versatility and effectiveness of our virtual laboratory
-      solution across educational and professional contexts.
+      Our platform is currently being piloted in multiple UK schools systems
+      with measurable learning outcome improvements (if you would like to join
+      the pilot, <a href="https://whimsylabs.ai/contact/">click here!</a>), and
+      we're engaged in industrial collaborations with pharmaceutical and
+      chemical industry partners for workforce training applications. These
+      real-world implementations demonstrate the versatility and effectiveness
+      of our virtual laboratory solution across educational and professional
+      contexts.
     </p>
 
     <h3>The Future of Science Education</h3>
@@ -242,8 +257,20 @@ export const content = (
       access to high-quality science education and inspiring the next generation
       of STEM leaders. By providing a virtual laboratory experience that truly
       captures the physicality, wonder, and discovery of real scientific
-      exploration, WhimsyLabs is transforming how students learn science—making
+      exploration, WhimsyLabs is transforming how students learn science, making
       it more accessible, engaging, and effective for learners worldwide.
+      worldwide,
+    </p>
+    <p>
+      For us, this growth is not about maximizing profit but about maximizing
+      impact. We are committed to channeling this financial potential directly
+      back into the educational ecosystem. Our goal is to transform market
+      growth into educational progress, reinvesting our resources to expand our
+      platform, reach more schools globally, and ensure that our cutting-edge
+      tools are accessible to every student, regardless of their background.
+      WhimsyLabs is positioned at the forefront of this movement, not just as a
+      technology provider, but as a dedicated partner in building a more
+      equitable and effective future for STEM education.
     </p>
 
     <p>

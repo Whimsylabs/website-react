@@ -31,7 +31,7 @@ export const content = (
       <a href="https://whimsylabs.ai">Whimsylabs</a> takes a radically different
       approach. We have built the first fully interactive, physics-driven
       virtual laboratory, where students do not merely watch or follow
-      instructions—they perform real procedures, manipulate tools as they would
+      instructions, they perform real procedures, manipulate tools as they would
       in a physical lab, and even experience the consequences of incorrect
       technique. This crucial innovation introduces the ability to train true
       muscle memory, ensuring that students develop procedural fluency and
@@ -98,8 +98,8 @@ export const content = (
       >
         Gavi et al., 2020
       </a>
-      ). Even small mistakes—like failing to remove air bubbles from a burette
-      before starting a titration—are detected and factored into assessment,
+      ). Even small mistakes, like failing to remove air bubbles from a burette
+      before starting a titration, are detected and factored into assessment,
       reinforcing correct procedural techniques through experiential learning.
     </p>
     {/* <img src={proceduralLab} alt="Procedural Training in Whimsylabs" className="rounded shadow center limited-size" /> */}
@@ -108,7 +108,7 @@ export const content = (
       physical lab.
     </p>
     <p>
-      Traditional grading systems in virtual labs are often binary—either the
+      Traditional grading systems in virtual labs are often binary, either the
       student completes a procedure "correctly" or they fail. This simplistic
       approach does not reflect the nuanced way real-world laboratories
       function. Whimsylabs introduces a groundbreaking grading system that
@@ -163,7 +163,7 @@ export const content = (
       Beyond education, Whimsylabs prepares students for real-world laboratory
       environments in ways that conventional simulations cannot. Many industries
       require precision, dexterity, and adherence to strict procedural
-      protocols—skills that cannot be developed through guided walkthrough
+      protocols, skills that cannot be developed through guided walkthrough
       learning alone. Studies in professional training demonstrate that
       high-fidelity simulation environments significantly improve skill transfer
       to real-world contexts, particularly in complex technical domains (
@@ -182,7 +182,7 @@ export const content = (
       practitioners.{" "}
     </p>
     <p>
-      Our technology does not just simulate science—it teaches students how to
+      Our technology does not just simulate science, it teaches students how to
       do science. This commitment to fostering real skills, rather than rote
       memorization, is why Whimsylabs is leading the next generation of STEM
       education.

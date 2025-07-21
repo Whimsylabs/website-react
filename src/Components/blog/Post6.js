@@ -33,10 +33,10 @@ export const content = (
       WhimsyLabs has pioneered a fundamentally different approach to science
       education through our sandbox learning philosophy. Unlike conventional
       virtual labs that restrict students to predetermined pathways, our
-      platform provides complete experimental freedom with over 10,000 possible
+      platform provides complete experimental freedom with infinite possible
       equipment permutations and unlimited procedural pathways. This open-ended
       environment allows students to design their own experiments, make
-      authentic choices, and—most importantly—learn from their mistakes in a
+      authentic choices, and, most importantly, learn from their mistakes in a
       safe, consequence-free setting.
     </p>
 
@@ -56,10 +56,19 @@ export const content = (
       "Traditional labs often prevent students from making mistakes due to
       safety concerns, equipment costs, or time constraints," explains Dr.
       Marisa French, WhimsyLabs founder and CEO. "But in doing so, they
-      eliminate one of the most powerful learning mechanisms humans
-      possess—learning from failure. Our virtual environment removes these
-      constraints, allowing students to experiment freely, make mistakes safely,
-      and develop genuine scientific thinking skills."
+      eliminate one of the most powerful learning mechanisms humans possess;
+      learning from failure. Our virtual environment removes these constraints,
+      allowing students to experiment freely, make mistakes safely, and develop
+      genuine scientific thinking skills. This opens up the possibility for
+      students and teachers alike; one of my favourite experiments in Whimsylabs
+      at the moment is giving experienced students a practical they've done
+      before with incomplete information. If they blindly follow the practical,
+      or assume they know best, the experiment is rigged to blow. Watching the
+      shock, then the gears begin to turn as they try to figure it out.
+      Whimsycat also helps support students so they find their footing, and then{" "}
+      <i>the student solves the rest of the practical themselves.</i> That to me
+      is when you stop being a student, and start being a scientist, and we've
+      managed to capture that experience in our software."
     </p>
 
     <p>
@@ -83,13 +92,15 @@ export const content = (
     </p>
 
     <img
-      src="/images/cat_vr.png"
-      alt="Student exploring in WhimsyLabs virtual environment"
+      src="/images/sandbox.jpg"
+      alt="A student boiling enthanol;, very dangerous!"
       className="rounded shadow center limited-size"
     />
     <p className="caption">
       WhimsyLabs' sandbox environment encourages exploration and experimentation
-      without fear of failure.
+      without fear of failure. In this case, a student is boiling ethanol over a
+      direct flame and they're about to learn an important lession about
+      flammable liquids.
     </p>
 
     <h3>Beyond Step-by-Step: Authentic Scientific Inquiry</h3>
@@ -100,7 +111,7 @@ export const content = (
       creativity. This approach fundamentally misrepresents the nature of
       scientific inquiry, which is inherently exploratory and creative.
       WhimsyLabs' sandbox environment more accurately reflects how real
-      scientists work—forming hypotheses, designing experiments to test them,
+      scientists work; forming hypotheses, designing experiments to test them,
       and iteratively refining their understanding based on results.
     </p>
 
@@ -160,13 +171,13 @@ export const content = (
     </p>
 
     <p>
-      "In a single classroom using WhimsyLabs, we regularly see students
-      arriving at the same scientific understanding through remarkably different
-      experimental pathways," notes Dr. Alexander Papiez, WhimsyLabs' Chief
-      Scientific Officer. "Some students methodically test variables one by one,
-      others take a more intuitive approach, and still others collaborate to
-      design comprehensive experimental matrices. This diversity of approach is
-      not just permitted—it's celebrated as a strength of scientific thinking."
+      "'We regularly see students take radically different approaches to
+      understand the same problem', notes Dr Alex Papiez 'Some students
+      methodically test every variable of the scenario they're confronted with,
+      others take an intuitive approach, while others find new ways to work as a
+      team to undestand the problem. This diversity of approach is illustrative
+      of the dynamism in learning that we think makes science addictive and that
+      we've designed Whimsylabs to support.'"
     </p>
 
     <p>
@@ -197,12 +208,13 @@ export const content = (
     </p>
 
     <p>
-      <strong>Progressive Challenge Design:</strong> Experiments begin with
-      guided exploration of basic concepts before opening up to more complex,
-      open-ended challenges. This scaffolded approach builds confidence and
-      competence while gradually increasing autonomy. Research in educational
-      psychology shows that this progressive release of responsibility optimizes
-      learning outcomes across diverse student populations (
+      <strong>Progressive Challenge Design:</strong> Initial experiment
+      assignments begin with guided exploration of basic concepts before opening
+      up to more complex, open-ended challenges. This scaffolded approach builds
+      confidence and competence while gradually increasing autonomy. Research in
+      educational psychology shows that this progressive release of
+      responsibility optimizes learning outcomes across diverse student
+      populations (
       <a
         href="https://www.sciencedirect.com/science/article/pii/S1747938X23000295"
         target="_blank"
@@ -235,33 +247,19 @@ export const content = (
     <p>
       The effectiveness of WhimsyLabs' sandbox approach is demonstrated through
       measurable improvements in student outcomes across diverse educational
-      settings. A longitudinal study involving 2,400 students across 15 schools
-      found that students using our sandbox-based virtual labs showed:
+      settings. This impacted is communicated through our teacehr dashboard
+      analytics section. Allowing for teachers to keep track of classroom data
+      directly, identify struggling students and allow them to spend their time
+      to the highest effectiveness.
     </p>
 
-    <ul>
-      <li>47% improvement in experimental design skills</li>
-      <li>62% increase in scientific reasoning abilities</li>
-      <li>38% better performance on standardized science assessments</li>
-      <li>84% higher engagement and motivation in science classes</li>
-    </ul>
-
     <p>
-      Perhaps most significantly, students demonstrated 73% better transfer of
-      laboratory skills to novel situations—a key indicator that they had
-      developed genuine understanding rather than memorized procedures. This
-      transfer capability is essential for preparing students for advanced STEM
+      This sandbox learning is amplified by our 
+      <a href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/">
+        Physicality in Virtual Labs
+      </a>, which enables genuine pratical understanding rather than memorized procedures due to students physically performing the actions themselves. This ability to educate students on real world practical form and function allows them to directly transfer capability into real labs. This is essential for preparing students for advanced STEM
       coursework and careers where they will encounter unfamiliar challenges
       requiring creative problem-solving.
-    </p>
-
-    <p>
-      "The difference in my students' approach to science has been remarkable,"
-      reports Sarah Mitchell, a chemistry teacher at Riverside High School.
-      "Before using WhimsyLabs, students would ask 'What's the right answer?' or
-      'Am I doing this correctly?' Now they ask 'What would happen if...?' and
-      'How could I test this hypothesis?' They've become genuine scientific
-      thinkers rather than procedure followers."
     </p>
 
     <h3>Preparing Students for Scientific Careers</h3>

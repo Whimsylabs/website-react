@@ -38,6 +38,109 @@ export const content = (
       guidance precisely when needed.
     </p>
 
+    <img
+      src="/images/logo.png"
+      alt="whimsycat!"
+      className="rounded shadow center limited-size"
+    />
+    <p className="caption">
+      WhimsyCat is based off our logo, our icon for embodying scientific
+      curiosity and playfulnesss.
+    </p>
+
+    <h3>Proactive Learning Support: Beyond Query-Based Assistance</h3>
+
+    <p>
+      Traditional AI tutoring systems operate reactively, waiting for students
+      to ask questions before providing assistance. WhimsyCat takes a
+      fundamentally different approach by proactively identifying struggling
+      students through behavioral pattern analysis. Our system monitors
+      interaction patterns; from hesitation during critical procedural steps to
+      subtle errors in technique, and intervenes with targeted guidance before
+      minor issues become major obstacles.
+    </p>
+
+    <p>
+      Research on proactive AI engagement in education demonstrates that systems
+      which can identify and address learning difficulties before they become
+      barriers are more effective than reactive systems. A comprehensive review
+      found that proactive AI engagement in education allows for earlier
+      intervention and more personalized support, significantly improving
+      learning outcomes compared to traditional query-based systems (
+      <a
+        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10196470/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Zawacki-Richter & Lohmann, 2023
+      </a>
+      ). Rather than simply providing answers, WhimsyCat guides students toward
+      discovering solutions independently, fostering deeper understanding and
+      critical thinking skills, akin to how teaching assistants function in
+      classrooms.
+    </p>
+
+    <p>
+      The difference between WhimsyCat and other educational AI systems is
+      revolutionary, Instead of waiting for students to recognize they're stuck,
+      WhimsyCat identifies potential confusion early and provides just enough
+      guidance to keep them moving forward without solving the problem for them.
+      It's like having an expert teaching assistant for every student, helping
+      them stay engaged and removing learning barriers or misunderstandings in
+      the student in real time.
+    </p>
+
+    <h3>Personalized Learning Pathways: Adaptive Difficulty Scaling</h3>
+
+    <p>
+      Every student learns differently, with unique strengths, challenges, and
+      optimal learning paces. WhimsyCat's sophisticated machine learning
+      algorithms analyze individual performance across multiple dimensions;
+      procedural accuracy, conceptual understanding, problem-solving approach,
+      and learning velocity is all tracked to create truly personalized learning
+      experiences.
+    </p>
+
+    <p>
+      The system automatically generates daily practice sessions targeting each
+      student's specific areas for improvement. This adaptive approach ensures
+      that advanced students remain challenged while struggling students receive
+      the additional support they need, all without requiring manual
+      intervention from teachers. Research on AI-enabled personalized learning
+      demonstrates significant potential for addressing educational inequality.
+      Studies found that personalized learning approaches can reduce achievement
+      gaps between high and low-performing students by providing tailored
+      support based on individual learning characteristics and needs (
+      <a
+        href="https://www.emerald.com/insight/content/doi/10.1108/xjm-02-2024-0023/full/html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Kumar et al., 2024
+      </a>
+      ). This demonstrates the system's potential to address educational
+      inequality while raising overall achievement levels.
+    </p>
+
+    <h3>Real-Time Technique Analysis: Developing True Laboratory Skills</h3>
+
+    <p>
+      Perhaps the most revolutionary aspect of WhimsyCat is its ability to
+      analyze and provide feedback on laboratory technique in real-time.
+      Traditional virtual labs focus primarily on conceptual understanding, but
+      WhimsyCat evaluates how students perform procedures, detecting subtle
+      errors like improper pipette handling, inconsistent titration rates, or
+      contamination risks from improper technique.
+    </p>
+
+    <p>
+      The system provides immediate, specific feedback on technique improvement:
+      "I noticed you're holding the pipette at about a 45° angle there. For the
+      most accurate measurements, try keeping it vertical for more accurate
+      measurements." or "Your last three samples have a consistent error, where
+      do you think that's come from?".
+    </p>
+
     <div
       className="bluesky-embed-container"
       style={{ margin: "20px 0", textAlign: "center" }}
@@ -59,102 +162,6 @@ export const content = (
       provide personalized laboratory guidance.
     </p>
 
-    <h3>Proactive Learning Support: Beyond Query-Based Assistance</h3>
-
-    <p>
-      Traditional AI tutoring systems operate reactively, waiting for students
-      to ask questions before providing assistance. WhimsyCat takes a
-      fundamentally different approach by proactively identifying struggling
-      students through behavioral pattern analysis. Our system monitors over 200
-      distinct interaction patterns—from hesitation during critical procedural
-      steps to subtle errors in technique—and intervenes with targeted guidance
-      before minor issues become major obstacles.
-    </p>
-
-    <p>
-      Research on proactive AI engagement in education demonstrates that systems
-      which can identify and address learning difficulties before they become
-      barriers are more effective than reactive systems. A comprehensive review
-      found that proactive AI engagement in education allows for earlier
-      intervention and more personalized support, significantly improving
-      learning outcomes compared to traditional query-based systems (
-      <a
-        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10196470/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Zawacki-Richter & Lohmann, 2023
-      </a>
-      ). Rather than simply providing answers, WhimsyCat guides students toward
-      discovering solutions independently, fostering deeper understanding and
-      critical thinking skills.
-    </p>
-
-    <p>
-      "The difference between WhimsyCat and other educational AI systems is
-      remarkable," notes Dr. Eleanor Simmons, Head of Science at Oakridge
-      Academy. "Instead of waiting for students to recognize they're stuck,
-      WhimsyCat identifies potential confusion early and provides just enough
-      guidance to keep them moving forward without solving the problem for them.
-      It's like having an expert teaching assistant for every student."
-    </p>
-
-    <h3>Personalized Learning Pathways: Adaptive Difficulty Scaling</h3>
-
-    <p>
-      Every student learns differently, with unique strengths, challenges, and
-      optimal learning paces. WhimsyCat's sophisticated machine learning
-      algorithms analyze individual performance across multiple
-      dimensions—procedural accuracy, conceptual understanding, problem-solving
-      approach, and learning velocity—to create truly personalized learning
-      experiences.
-    </p>
-
-    <p>
-      The system automatically generates daily practice sessions targeting each
-      student's specific areas for improvement, with 87% of students showing
-      measurable improvement in their weakest areas within just three weeks of
-      consistent use. This adaptive approach ensures that advanced students
-      remain challenged while struggling students receive the additional support
-      they need—all without requiring manual intervention from teachers.
-    </p>
-
-    <p>
-      Research on AI-enabled personalized learning demonstrates significant
-      potential for addressing educational inequality. Studies found that
-      personalized learning approaches can reduce achievement gaps between high
-      and low-performing students by providing tailored support based on
-      individual learning characteristics and needs (
-      <a
-        href="https://www.emerald.com/insight/content/doi/10.1108/xjm-02-2024-0023/full/html"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Kumar et al., 2024
-      </a>
-      ). This demonstrates the system's potential to address educational
-      inequality while raising overall achievement levels.
-    </p>
-
-    <h3>Real-Time Technique Analysis: Developing True Laboratory Skills</h3>
-
-    <p>
-      Perhaps the most revolutionary aspect of WhimsyCat is its ability to
-      analyze and provide feedback on laboratory technique in real-time.
-      Traditional virtual labs focus primarily on conceptual understanding, but
-      WhimsyCat evaluates how students perform procedures—detecting subtle
-      errors like improper pipette handling, inconsistent titration rates, or
-      contamination risks from improper technique.
-    </p>
-
-    <p>
-      The system provides immediate, specific feedback on technique improvement:
-      "I notice you're holding the pipette at a 45° angle. Try maintaining a
-      vertical position for more accurate measurements. Your last three samples
-      showed a systematic error of +0.3mL, which could be corrected with proper
-      pipette orientation."
-    </p>
-
     <p>
       This focus on procedural mastery ensures that skills developed in our
       virtual environment transfer effectively to physical laboratories. Studies
@@ -172,7 +179,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Teacher Augmentation: AI-Enhanced Human Instruction</h3>
+    <h3>Ethical AI Design: Transparency and Teacher Support and Enhancement</h3>
 
     <p>
       WhimsyCat is designed not to replace teachers but to dramatically enhance
@@ -183,42 +190,8 @@ export const content = (
       assessment and basic instruction.
     </p>
 
-    <p>Teachers receive detailed reports identifying:</p>
-
-    <ul>
-      <li>
-        <strong>Concept Mastery Gaps:</strong> Specific scientific concepts
-        where multiple students show misunderstanding
-      </li>
-      <li>
-        <strong>Technique Challenges:</strong> Common procedural errors
-        occurring across the class
-      </li>
-      <li>
-        <strong>Individual Intervention Needs:</strong> Students requiring
-        specialized teacher attention
-      </li>
-      <li>
-        <strong>Learning Progression:</strong> Detailed tracking of skill
-        development over time
-      </li>
-    </ul>
-
     <p>
-      "WhimsyCat has transformed how I allocate my time in the classroom,"
-      explains Maria Chen, a chemistry teacher at Westfield High School.
-      "Before, I spent 60% of my time on grading and basic instruction. Now,
-      WhimsyCat handles those aspects, and I can focus on what I do
-      best—providing advanced guidance, fostering scientific curiosity, and
-      building relationships with my students. The AI doesn't replace me; it
-      makes me a more effective teacher."
-    </p>
-
-    <h3>Ethical AI Design: Transparency and Teacher Control</h3>
-
-    <p>
-      WhimsyLabs has developed WhimsyCat with a strong commitment to ethical AI
-      principles. Unlike many "black box" educational AI systems, WhimsyCat
+      Unlike many "black box" educational AI systems, WhimsyCat
       provides complete transparency in its assessment process, with confidence
       scores for each evaluation and clear explanations of how conclusions were
       reached.
@@ -227,8 +200,12 @@ export const content = (
     <p>
       Teachers maintain full control with comprehensive override capabilities,
       allowing them to modify AI assessments based on their professional
-      judgment. This human-in-the-loop approach ensures that while WhimsyCat
-      provides powerful automation and analysis, educational decisions
+      judgment. The student's actions are also shown to the teacher, so that the
+      teacher can overide the AI's auto grading if desired, and a quick capture
+      of the student's actions is also recorded, to allow for teachers to fully
+      review a student's actions. That way, teachers can be certain that proper
+      form was followed. This human-in-the-loop approach ensures that while
+      WhimsyCat provides powerful automation and analysis, educational decisions
       ultimately remain in the hands of qualified educators.
     </p>
 
@@ -287,12 +264,14 @@ export const content = (
       our focus on physical interaction within the virtual laboratory, we're
       developing more sophisticated natural language capabilities to allow
       students to discuss experimental design, hypothesize outcomes, and engage
-      in scientific reasoning with WhimsyCat.
+      in scientific reasoning with WhimsyCat. This allows for moe open ended
+      pracitcals to be provided to the student; meaning that a student could be
+      given an unknown, and asked to figure it out for themselves.
     </p>
 
     <p>
       WhimsyCat represents a fundamental shift in how AI can enhance science
-      education—moving beyond simple content delivery to provide personalized
+      education; moving beyond simple content delivery to provide personalized
       guidance, develop authentic laboratory skills, and foster genuine
       scientific thinking. By combining advanced machine learning with sound
       pedagogical principles, we're creating an AI tutor that truly understands

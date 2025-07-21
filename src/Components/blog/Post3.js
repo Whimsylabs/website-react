@@ -9,7 +9,7 @@ export const description =
 export const content = (
   <div>
     <p>
-      The human kidney plays a vital role in maintaining homeostasis—filtering
+      The human kidney plays a vital role in maintaining homeostasis,filtering
       blood, balancing fluids and electrolytes, and removing waste. The kidneys
       process approximately 180 liters of filtrate daily, demonstrating the
       remarkable efficiency of these complex organs (
@@ -103,7 +103,7 @@ export const content = (
       The demo was featured at Barclays Headquarters as part of a campaign to
       raise awareness about kidney health and organ donation. Attendees from a
       wide range of backgrounds were able to explore the anatomy of the kidney
-      in detail—watching blood enter through the renal artery, being filtered,
+      in detail,watching blood enter through the renal artery, being filtered,
       and exiting through the renal vein. Zooming further into the nephrons,
       they could examine how filtration occurs at the glomerulus and how water
       and urea are processed through the loop of Henle and collecting ducts.
@@ -121,7 +121,7 @@ export const content = (
     </p>
 
     <p>
-      This format doesn’t just show anatomy—it encourages deeper curiosity. The
+      This format doesn’t just show anatomy,it encourages deeper curiosity. The
       ability to interact directly with the content, rather than passively watch
       or listen, improves conceptual understanding and retention. Users can
       repeat actions, manipulate components, and explore the system at their own
@@ -158,7 +158,7 @@ export const content = (
     </p>
 
     <p>
-      What sets WhimsyLabs apart is that we don't simplify content—we present
+      What sets WhimsyLabs apart is that we don't simplify content, we present
       complex systems in an accessible, interactive way. The full dissection
       covers the same anatomical detail and physiology as a real lab session,
       but it does so through a method that works for more students, more

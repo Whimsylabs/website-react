@@ -20,7 +20,7 @@ export const content = (
       >
         Grewenig et al., 2021
       </a>
-      ). This coupled with the UK's declining STEM rankings—with the UK dropping
+      ). This coupled with the UK's declining STEM rankings, with the UK dropping
       to 15th place in the OECD Programme for International Student Assessment
       (PISA) science rankings (
       <a
@@ -30,7 +30,7 @@ export const content = (
       >
         OECD, 2023
       </a>
-      )—highlighted a crisis for British education that felt personal, as Marisa
+      ), highlighted a crisis for British education that felt personal, as Marisa
       had been inspired to pursue science due to the practicals she had
       experienced in secondary school.
     </p>
@@ -72,7 +72,7 @@ export const content = (
       However, as most academic simulations use supercomputers, and take months
       to run (
       <a
-        href="https://www.google.co.uk/books/edition/The_Grid/eY-BBAAAQBAJ?hl=en&gbpv=0"
+        href="https://www.sciencedirect.com/book/9781558609334/the-grid-2"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -105,7 +105,7 @@ export const content = (
       going on to win the Summer Accelerator. From these victories and
       recognitions, we were able to secure our first bout of funding to build a
       bespoke VR/web combo platform, and bring on our second founder to help
-      build the lab - a Chemist PhD with years of experience in education and
+      build the lab; a Chemist PhD with years of experience in education and
       training for the chemical industry.
     </p>
     <img
@@ -143,7 +143,7 @@ export const content = (
       for its realism and ease of use. This was a critical step in the
       development of the lab, as it showed that the lab could be used in a real
       educational setting, and that it could be a valuable tool for teaching and
-      learning. There was just one issue - the lab was ugly.
+      learning. There was just one issue: the lab was ugly.
     </p>
     <img
       src="/images/finalLab.png"
@@ -161,7 +161,7 @@ export const content = (
       fidelity realism. Another consideration was the broad range of ages that
       would be using the lab, from 5 to 18+, and the need to make the lab
       accessible to all of them. The choice of direction was difficult, but in
-      the end we were guided by one of our original desires - that the lab is a
+      the end we were guided by one of our original desires that the lab is a
       place of wonder and exploration, and that it should be a place that
       students want to come back to. Research in educational psychology
       emphasizes the importance of intrinsic motivation and curiosity-driven
