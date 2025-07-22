@@ -4,24 +4,33 @@ import './BubbleContainer.css';
 
 const BubbleContainer = ({ children, speed = 10, restrictOverflow = false, bubbleCount = 1 }) => {
   const intervalRef = useRef(null);
+  const bubbleImages = useRef([
+    '/images/bubble1.svg',
+    '/images/bubble2.svg', 
+    '/images/bubble3.svg',
+    '/images/bubble4.svg'
+  ]);
 
   useEffect(() => {
-    const bubbles = ['/images/bubble1.svg', '/images/bubble2.svg', '/images/bubble3.svg', '/images/bubble4.svg'];
     const gradientSections = document.querySelectorAll('.gradient-section');
 
     const createBubbles = () => {
       gradientSections.forEach(section => {
-        for (let i = 0; i < bubbleCount; i++) { // Generate multiple bubbles
+        // Only create bubbles if the section is visible to reduce unnecessary requests
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (!isVisible) return;
+
+        for (let i = 0; i < bubbleCount; i++) {
           const bubble = document.createElement('div');
           bubble.className = 'bubble';
-          const randomBubble = bubbles[Math.floor(Math.random() * bubbles.length)];
+          
+          // Use a cached image URL to reduce HTTP requests
+          const randomBubble = bubbleImages.current[Math.floor(Math.random() * bubbleImages.current.length)];
           bubble.style.backgroundImage = `url(${randomBubble})`;
           bubble.style.left = `${Math.random() * 97}%`;
           bubble.style.animationDuration = `${speed}s`;
-          
-          // Increase bubble size by 25%
-          bubble.style.width = '31px';  // 25px * 1.25 = ~31px
-          bubble.style.height = '25px'; // 20px * 1.25 = 25px
           
           section.appendChild(bubble);
 
@@ -34,8 +43,8 @@ const BubbleContainer = ({ children, speed = 10, restrictOverflow = false, bubbl
 
     const startBubbleGeneration = () => {
       if (!intervalRef.current) {
-        // Decreased spawn rate by 20% (300ms to 360ms)
-        intervalRef.current = setInterval(createBubbles, 450);
+        // Reduced spawn rate to 800ms to minimize HTTP requests
+        intervalRef.current = setInterval(createBubbles, 800);
       }
     };
 

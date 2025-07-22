@@ -1,3 +1,5 @@
+
+
 #tiled-1 {
     background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
                       linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
@@ -13,7 +15,7 @@
     mask-composite: exclude;
     color: white !important;
     text-align: center; /* Centers all child elements */
-    
+    position: relative;
 }
 
 #tiled-1 img.logo {
@@ -64,3 +66,5 @@
     margin: 2px auto;
     padding: 10px;
 }
+
+
