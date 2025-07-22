@@ -208,8 +208,8 @@ export const content = (
       Whimsylabs is poised to transform science education and inspire the next
       generation of STEM leaders while staying true to our core values. To
       provide a sandbox laboratory that captures the physicality of performing
-      labs, to capture the fun and wonder of science, and to make science
-      accessible and affordable to all.
+      labs, to capture the fun and wonder of science, and to democratize access 
+      to premium science education technology for all institutions worldwide.
     </p>
     <div className="references-section">
       <h3>References</h3>

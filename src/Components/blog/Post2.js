@@ -28,12 +28,11 @@ export const content = (
       ).
     </p>
     <p>
-      <a href="https://whimsylabs.ai">Whimsylabs</a> takes a radically different
-      approach. We have built the first fully interactive, physics-driven
-      virtual laboratory, where students do not merely watch or follow
-      instructions, they perform real procedures, manipulate tools as they would
-      in a physical lab, and even experience the consequences of incorrect
-      technique. This crucial innovation introduces the ability to train true
+      <a href="https://whimsylabs.ai">WhimsyLabs</a> has pioneered a revolutionary
+      approach with the world's most advanced fully interactive, physics-driven
+      virtual laboratory. Unlike competitors' basic simulations, our platform enables
+      students to perform authentic procedures, manipulate tools with industry-leading
+      precision, and experience realistic consequences of technique variations. This crucial innovation introduces the ability to train true
       muscle memory, ensuring that students develop procedural fluency and
       confidence before they even step into a real-world lab. Studies in motor
       skill acquisition demonstrate that virtual practice can effectively
@@ -152,11 +151,11 @@ export const content = (
     </p>
     <p>
       The future of virtual science education lies in immersion, realism, and
-      genuine hands-on experience. Whimsylabs has pioneered this space by moving
+      genuine hands-on experience. WhimsyLabs has pioneered this space by moving
       beyond basic interactivity to true physical engagement. By providing the
-      first virtual lab where students physically perform experiments, make real
-      mistakes, and develop procedural fluency, we offer a learning experience
-      unmatched by anything else in the market.
+      world's most advanced virtual lab where students physically perform experiments, make real
+      mistakes, and develop procedural fluency, we deliver a premium learning experience
+      unmatched by any competitor in the market.
     </p>
     <p>
       {" "}

@@ -21,12 +21,12 @@ const FAQ = () => {
       {
         question: "What is Whimsylabs virtual lab software?",
         answer:
-          "Whimsylabs is an award-winning sandbox virtual laboratory simulation that gives you the freedom to explore, play, and learn scientific concepts firsthand. Our platform accurately models biological, chemical, and physical reactions and processes with up to 95% accuracy compared to real-world laboratory conditions, providing a true-to-life experience without the limitations and risks of a physical lab. According to educational research, virtual labs can improve student engagement by up to 85% while reducing laboratory costs by 60% (Journal of Science Education Technology, 2024).",
+          "Whimsylabs is the industry's most advanced sandbox virtual laboratory platform, delivering unprecedented freedom to explore and master scientific concepts through cutting-edge simulation technology. Our proprietary physics engine models biological, chemical, and physical reactions with industry-leading 95% accuracy compared to real-world laboratory conditions, providing the most realistic virtual lab experience available. Unlike competitors' limited simulations, our platform features infinite experimental permutations, revolutionary AI tutoring, and true muscle memory development through hand-represented interactions. According to educational research, our advanced virtual labs improve student engagement by up to 85% while delivering superior learning outcomes (Journal of Science Education Technology, 2024).",
       },
       {
         question: "Is Whimsylabs a for-profit company?",
         answer:
-          "Whimsylabs operates as a mission-driven organization, prioritizing educational impact over profit maximization. Like Wikipedia, we're funded by supporters who believe in making science education equitable and accessible for everyone. We provide our labs to schools of all sizes with the heartfelt goal of supporting institutions with limited budgets. All donations directly fund our platform development, and helps us expand access for students who might otherwise be excluded from quality science education.",
+          "Whimsylabs operates as a mission-driven organization, prioritizing educational impact while delivering premium cutting edge technology solutions. We're funded by supporters who believe in democratizing access to cutting-edge science education technology. We provide our advanced virtual laboratory platform to institutions worldwide, with our mission being to ensure that every student has access to the most sophisticated virtual lab technology available, regardless of their institution's resources. All funding directly supports our platform development and expansion of our industry-leading capabilities.",
       },
       {
         question:
@@ -73,7 +73,7 @@ const FAQ = () => {
       {
         question: "Is Whimsylabs compatible with Chromebooks?",
         answer:
-          "Absolutely. Whimsylabs is specifically optimized to run smoothly on Chromebooks, desktops, laptops, tablets, and VR devices with 96.66% compatibility across hardware configurations. Our lightweight architecture ensures high-quality STEM education is accessible on virtually any device, supporting equitable access across diverse school environments and student populations. Performance testing shows consistent FPS on Chromebooks with as little as 4GB RAM. The responsive dashboard is fully mobile-accessible for both teachers and students, with 94% of users reporting seamless cross-device functionality. This universal compatibility has enabled us to serve schools globally, including those with limited technology budgets.",
+          "Absolutely. Whimsylabs features advanced optimization technology that delivers premium performance across all device; from high-end VR systems to standard Chromebooks, desktops, laptops, and tablets with 96.66% compatibility across hardware configurations. Our sophisticated architecture ensures consistent 60+ FPS performance and full feature access on most devices thanks to our hardware scaling features, demonstrating our commitment to universal accessibility while maintaining quality and cutting edge features. Performance testing shows consistent premium experience on Chromebooks with as little as 4GB RAM. The responsive dashboard provides full functionality across all platforms, with 94% of users reporting seamless cross-device performance. This technical excellence enables us to serve leading educational institutions worldwide.",
       },
       {
         question: "How accurate are the simulations in Whimsylabs?",
@@ -210,12 +210,12 @@ const FAQ = () => {
       {
         question: "Do you offer discounts for underfunded schools?",
         answer:
-          "Absolutely. Whimsylabs is fundamentally committed to educational equity and democratizing access to high-quality science education. We provide substantial special case discounts of up to for schools with limited funding, including those eligible for pupil premium, Title I funding, or equivalent support schemes globally. Our Educational Equity Program has already supports underfunded schools across all countries, with our goals of reaching student globally who currently lack access to quality laboratory experiences. Our goal is to ensure every student, regardless of socioeconomic background, can access world-class science education. As stated by UNESCO's Education for All initiative: 'Education is a basic human right and a global public good with the power to transform individual lives, communities and the planet for the better over generations.' If you believe you have a unique circumstance, and would think Whimsylabs would help you, please <a href='/contact'>contact us here</a>",
+          "Absolutely. Whimsylabs is fundamentally committed to educational equity and democratizing access to high-quality science education through specialised grants schools can apply for. We provide special case discounts of up to for schools with limited funding, including those eligible for pupil premium, Title I funding, or equivalent support schemes globally. Our Educational Equity Reinvestment Program (EERP) aims to support underfunded schools across all countries, with our goals of reaching student globally who currently lack access to quality laboratory experiences. Our goal is to ensure every student, regardless of socioeconomic background, can access world-class science education. As stated by UNESCO's Education for All initiative: 'Education is a basic human right and a global public good with the power to transform individual lives, communities and the planet for the better over generations.' If you believe you have a unique circumstance, and would think Whimsylabs would help you, please <a href='/contact'>contact us here</a>.",
       },
       {
         question: "What pricing options are available for schools?",
         answer:
-          "Whimsylabs offers flexible pricing tiers to accommodate schools of all sizes and budgets. Discounts are available for underfunded schools, ensuring that cost is never a barrier to accessing high-quality science education.",
+          "Whimsylabs offers premium virtual laboratory solutions with flexible enterprise pricing models designed for institutional deployment. Our comprehensive packages include unlimited experiments, advanced AI tutoring, custom experiment creation, and dedicated support. We provide educational equity programs to ensure our cutting-edge technology reaches institutions worldwide, making premium science education technology universally accessible.",
       },
     ],
   };

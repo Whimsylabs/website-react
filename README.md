@@ -52,10 +52,8 @@ The app will run in development mode at [http://localhost:3000](http://localhost
 
 ## Available Scripts
 
-- `npm start`: Runs the app in development mode
-- `npm test`: Launches the test runner
-- `npm run build`: Builds the app for production
-- `npm run deploy`: Deploys the built app to GitHub Pages
+- npm run build-static - Builds the website as deployed for github pages (I think npm run build doesn't work so don't use that)
+- node dev-server.js (I think, might actually be a npx command)
 
 ## Deployment
 

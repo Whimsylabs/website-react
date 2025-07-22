@@ -93,13 +93,13 @@ export const content = (
 
     <img
       src="/images/Sandbox.jpg"
-      alt="A student boiling enthanol;, very dangerous!"
+      alt="A student boiling ethanol, very dangerous!"
       className="rounded shadow center limited-size"
     />
     <p className="caption">
       WhimsyLabs' sandbox environment encourages exploration and experimentation
       without fear of failure. In this case, a student is boiling ethanol over a
-      direct flame and they're about to learn an important lession about
+      direct flame and they're about to learn an important lesson about
       flammable liquids.
     </p>
 
@@ -247,18 +247,18 @@ export const content = (
     <p>
       The effectiveness of WhimsyLabs' sandbox approach is demonstrated through
       measurable improvements in student outcomes across diverse educational
-      settings. This impacted is communicated through our teacehr dashboard
-      analytics section. Allowing for teachers to keep track of classroom data
-      directly, identify struggling students and allow them to spend their time
-      to the highest effectiveness.
+      settings. This impact is communicated through our teacher dashboard
+      analytics section, allowing teachers to keep track of classroom data
+      directly, identify struggling students and allocate their time to the
+      highest effectiveness.
     </p>
 
     <p>
-      This sandbox learning is amplified by our
+      This sandbox learning is amplified by our{" "}
       <a href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/">
         Physicality in Virtual Labs
       </a>
-      , which enables genuine pratical understanding rather than memorized
+      , which enables genuine practical understanding rather than memorized
       procedures due to students physically performing the actions themselves.
       This ability to educate students on real world practical form and function
       allows them to directly transfer capability into real labs. This is
@@ -282,10 +282,10 @@ export const content = (
       Industry partners consistently report that graduates from programs
       emphasizing inquiry-based, open-ended learning demonstrate superior
       problem-solving abilities and adaptability in professional settings.
-      According to the National Science Foundation's Science & Engineering
-      Indicators 2024, the STEM workforce values experimental design skills and
-      creative problem-solving when hiring entry-level scientists, with median
-      earnings for STEM workers significantly higher than non-STEM positions (
+      Studies consistently show that high achievers in STEM fields are more
+      employable and earn significantly higher salaries than non-STEM graduates,
+      with the National Science Foundation reporting that median earnings for
+      STEM workers are substantially higher than non-STEM positions (
       <a
         href="https://ncses.nsf.gov/pubs/nsb20245/u-s-stem-workforce-size-growth-and-employment"
         target="_blank"
@@ -339,7 +339,7 @@ export const content = (
       to lead this transformation in science education. Through our commitment
       to open exploration, authentic inquiry, and learning from failure, we're
       helping to create a generation of students who don't just know science:
-      but embody science scientifically.
+      But <i>practically</i> embody science.
     </p>
 
     <div className="references-section">

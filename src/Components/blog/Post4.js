@@ -278,8 +278,8 @@ export const content = (
       innovation, WhimsyLabs is poised to lead the next generation of STEM
       education while staying true to our core values: providing a sandbox
       laboratory that captures the physicality of performing labs, fostering the
-      fun and wonder of science, and making quality science education accessible
-      and affordable to all.
+      fun and wonder of science, and democratizing access to premium science
+      education technology for institutions worldwide.
     </p>
 
     <div className="references-section">

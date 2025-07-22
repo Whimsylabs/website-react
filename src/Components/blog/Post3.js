@@ -21,10 +21,10 @@ export const content = (
         Hall, 2015
       </a>
       ). Yet for many, the complexity of its internal structures can make it
-      difficult to fully grasp how it functions. Our recent WhimsyLabs
-      demonstration tackled this challenge by recreating a full kidney
-      dissection in a virtual reality environment, complete with physically
-      interactive dissection tools and a functioning microscope simulation.
+      difficult to fully grasp how it functions. WhimsyLabs' cutting-edge virtual reality platform
+      tackles this challenge through our industry-leading kidney dissection simulation,
+      featuring advanced physically interactive dissection tools and sophisticated
+      microscope simulation technology unmatched in the educational market.
     </p>
 
     <p>
