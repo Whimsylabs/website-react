@@ -161,7 +161,7 @@ class MetadataInjector {
         "@type": "SoftwareApplication",
         "name": "WhimsyLabs Virtual Laboratory",
         "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Web, Windows, MacOS, iOS, Android, VR",
+        "operatingSystem": "Web, Windows, MacOS, Android, VR",
         "offers": {
           "@type": "Offer",
           "price": "Contact for pricing",

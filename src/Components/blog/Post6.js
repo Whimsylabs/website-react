@@ -46,7 +46,7 @@ export const content = (
       At the heart of WhimsyLabs' sandbox philosophy is a simple but powerful
       principle: failure is the greatest teacher. Our virtual laboratory is
       specifically designed to allow students to make mistakes and witness
-      realistic consequences—from minor procedural errors to dramatic (virtual)
+      realistic consequences; from minor procedural errors to dramatic (virtual)
       explosions. Each failure becomes a valuable learning opportunity,
       providing immediate, experiential feedback that reinforces correct
       techniques and deepens conceptual understanding.
@@ -301,7 +301,7 @@ export const content = (
       by providing authentic scientific experiences that mirror real-world
       research environments. Students learn to formulate hypotheses, design
       controlled experiments, analyze unexpected results, and communicate their
-      findings—all essential capabilities for successful STEM careers.
+      findings; all essential capabilities for successful STEM careers.
     </p>
 
     <h3>The Future of Science Education</h3>
