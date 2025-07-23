@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="phys" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088.67 757.89">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 13px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="10.96" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="64.38" y1="557.72" x2="132.32" y2="557.72"/>
+  <rect class="cls-1" x="117.15" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="170.57" y1="557.72" x2="238.51" y2="557.72"/>
+  <rect class="cls-1" x="222.68" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="276.11" y1="557.72" x2="344.04" y2="557.72"/>
+  <rect class="cls-1" x="328.87" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="382.3" y1="557.72" x2="450.23" y2="557.72"/>
+  <rect class="cls-1" x="435.06" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="488.49" y1="557.72" x2="556.43" y2="557.72"/>
+  <rect class="cls-1" x="541.26" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="594.68" y1="557.72" x2="662.62" y2="557.72"/>
+  <rect class="cls-1" x="646.79" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="700.21" y1="557.72" x2="768.15" y2="557.72"/>
+  <rect class="cls-1" x="752.98" y="541.89" width="67.94" height="31" rx="15.5" ry="15.5"/>
+  <line class="cls-2" x1="806.4" y1="557.72" x2="874.34" y2="557.72"/>
+</svg>

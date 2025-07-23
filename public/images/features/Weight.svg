@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="phys" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088.67 794">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linejoin: bevel;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="48.34" x2="48.34" y2="314"/>
+  <rect class="cls-2" x="11.34" y="325" width="75" height="21"/>
+  <rect class="cls-2" x="11.34" y="356" width="75" height="21"/>
+  <rect class="cls-2" x="11.34" y="387" width="75" height="21"/>
+  <rect class="cls-2" x="11.34" y="418" width="75" height="21"/>
+  <rect class="cls-2" x="11.34" y="449" width="75" height="21"/>
+  <rect class="cls-2" x="11.34" y="480" width="75" height="21"/>
+  <line class="cls-3" x1="5.34" y1="518" x2="93.34" y2="518"/>
+</svg>
