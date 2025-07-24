@@ -196,6 +196,7 @@ async function setupDist() {
       `${config.distDir}/contact`,
       // Don't clean static folder - we need the JS/CSS files
       `${config.distDir}/sitemap.xml`,
+      `${config.distDir}/robots.txt`,
       // Note: 404.html may not exist, so we'll check before cleaning
     ];
 
@@ -494,42 +495,55 @@ async function generatePages() {
 async function generateSitemap() {
   try {
     const posts = await getBlogPosts();
+    const currentDate = new Date().toISOString().split("T")[0];
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main pages -->
     <url>
         <loc>${config.siteUrl}/</loc>
+        <lastmod>${currentDate}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>${config.siteUrl}/blog/</loc>
+        <lastmod>${currentDate}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>${config.siteUrl}/services/</loc>
+        <lastmod>${currentDate}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>${config.siteUrl}/features/</loc>
+        <lastmod>${currentDate}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>${config.siteUrl}/faq/</loc>
+        <lastmod>${currentDate}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>${config.siteUrl}/contact/</loc>
+        <lastmod>${currentDate}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>`;
 
-    // Add blog posts
-    for (const post of posts) {
+    // Add blog posts with proper sorting by date (newest first)
+    const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    sitemap += `
+    <!-- Blog posts (${sortedPosts.length} total) -->`;
+    
+    for (const post of sortedPosts) {
       const lastmod = new Date(post.date).toISOString().split("T")[0];
       sitemap += `
     <url>
@@ -544,9 +558,97 @@ async function generateSitemap() {
 </urlset>`;
 
     await fs.writeFile(`${config.distDir}/sitemap.xml`, sitemap);
-    console.log("✅ Generated sitemap.xml");
+    console.log(`✅ Generated sitemap.xml with ${sortedPosts.length} blog posts`);
   } catch (error) {
     console.error("❌ Error generating sitemap:", error);
+  }
+}
+
+// Generate robots.txt
+async function generateRobotsTxt() {
+  try {
+    const posts = await getBlogPosts();
+
+    let robotsTxt = `# https://www.robotstxt.org/robotstxt.html
+# WhimsyLabs Virtual Laboratory Software
+# All search engines are allowed to crawl all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: ${config.siteUrl}/sitemap.xml
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Disallow access to any temporary files that might exist
+Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow important directories explicitly
+Allow: /blog/
+Allow: /services/
+Allow: /features/
+Allow: /faq/
+Allow: /contact/
+Allow: /sitemap
+
+# Explicitly allow all blog posts for search engine crawling`;
+
+    // Add explicit Allow entries for all blog posts
+    for (const post of posts) {
+      robotsTxt += `\nAllow: /blog/${post.id}/`;
+    }
+
+    // Add a comment section for clarity
+    robotsTxt += `\n\n# All blog posts are explicitly allowed above`;
+    robotsTxt += `\n# Total blog posts: ${posts.length}`;
+    robotsTxt += `\n# FAQ page is allowed at /faq/`;
+
+    await fs.writeFile(`${config.distDir}/robots.txt`, robotsTxt);
+    console.log(`✅ Generated robots.txt with ${posts.length} blog posts explicitly allowed`);
+  } catch (error) {
+    console.error("❌ Error generating robots.txt:", error);
+  }
+}
+
+// Log all generated URLs for verification
+async function logGeneratedUrls() {
+  try {
+    const posts = await getBlogPosts();
+    
+    console.log("\n📋 Generated URLs Summary:");
+    console.log("========================");
+    
+    // Static pages
+    const staticPages = [
+      { url: "/", description: "Homepage" },
+      { url: "/blog/", description: "Blog index" },
+      { url: "/services/", description: "Services page" },
+      { url: "/features/", description: "Features page" },
+      { url: "/faq/", description: "FAQ page" },
+      { url: "/contact/", description: "Contact page" }
+    ];
+    
+    console.log("\n🏠 Static Pages:");
+    staticPages.forEach(page => {
+      console.log(`   ${config.siteUrl}${page.url} - ${page.description}`);
+    });
+    
+    console.log(`\n📝 Blog Posts (${posts.length} total):`);
+    const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    sortedPosts.forEach(post => {
+      console.log(`   ${config.siteUrl}/blog/${post.id}/ - ${post.title} (${post.date})`);
+    });
+    
+    console.log(`\n📊 Total URLs: ${staticPages.length + posts.length}`);
+    console.log("========================\n");
+    
+  } catch (error) {
+    console.warn("⚠️ Could not log URLs:", error.message);
   }
 }
 
@@ -561,6 +663,8 @@ async function build() {
     await convertBlogPosts();
     await generatePages();
     await generateSitemap();
+    await generateRobotsTxt();
+    await logGeneratedUrls();
 
     console.log("✅ Static site generation complete!");
   } catch (error) {
