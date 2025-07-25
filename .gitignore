@@ -35,3 +35,6 @@ Whimsylabs_SEO_AI_Prompt.txt
 
 #
 local_data
+
+public/static/js/*
+public/static/js/
