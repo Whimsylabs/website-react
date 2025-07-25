@@ -31,6 +31,7 @@
     "build-spa": "react-scripts build",
     "generate-sitemap": "node generate-sitemap.js",
     "build-static": "npm run build-spa && node build.js",
+    "dev": "npm run build-spa && node dev-server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build-static",
