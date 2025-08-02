@@ -20,53 +20,50 @@ const config = {
   distDir: "./build", // Generate static files to build directory to match GitHub Pages deployment
   publicDir: "./public",
   siteUrl: "https://whimsylabs.ai",
+  // Set to ['en'] to build only English, or add/remove languages as needed
+  supportedLanguages: process.env.BUILD_LANGUAGES ? 
+    process.env.BUILD_LANGUAGES.split(',') : 
+    ['en', 'es', 'fr', 'de'],
+  defaultLanguage: 'en'
 };
 
-// Page metadata for SEO
-const pageMetadata = {
+// Import translations for metadata
+const { translations } = require('./src/i18n/translations.js');
+
+// Page metadata for SEO (multilingual)
+const getPageMetadata = (lang = 'en') => ({
   "/": {
-    title: "WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education",
-    description:
-      "WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.",
+    title: translations[lang]?.home?.title || "WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education",
+    description: translations[lang]?.home?.description || "WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.",
     keywords:
       "virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology",
   },
   "/blog": {
-    title:
-      "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources",
-    description:
-      "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.",
-    keywords:
-      "virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching",
+    title: "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources",
+    description: "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.",
+    keywords: "virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching",
   },
   "/services": {
-    title:
-      "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
-    description:
-      "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
-    keywords:
-      "custom virtual labs, educational simulations, STEM lab development, virtual lab consulting",
+    title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
+    description: "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
+    keywords: "custom virtual labs, educational simulations, STEM lab development, virtual lab consulting",
   },
   "/features": {
-    title: "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology",
-    description:
-      "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.",
-    keywords:
-      "virtual lab features, physics simulations, AI assessment, cross-platform labs",
+    title: translations[lang]?.features?.title || "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology",
+    description: translations[lang]?.features?.description || "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.",
+    keywords: "virtual lab features, physics simulations, AI assessment, cross-platform labs",
   },
   "/faq": {
     title: "Frequently Asked Questions | WhimsyLabs Virtual Lab Software",
-    description:
-      "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
+    description: "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
     keywords: "virtual lab FAQ, lab software questions, STEM education help",
   },
   "/contact": {
-    title: "Contact Us | WhimsyLabs Virtual Lab Software",
-    description:
-      "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
+    title: translations[lang]?.contact?.title || "Contact Us | WhimsyLabs Virtual Lab Software",
+    description: translations[lang]?.contact?.description || "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
     keywords: "contact WhimsyLabs, virtual lab trial, STEM education contact",
   },
-};
+});
 
 // Route to component mapping
 const routeComponentMap = {
@@ -89,13 +86,16 @@ const dynamicRoutes = {
  * @returns {React.Component} - The React component for the route
  */
 function getComponentForRoute(route) {
+  // Remove language prefix to get the base route
+  const baseRoute = route.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
+  
   // Handle exact matches first
-  if (routeComponentMap[route]) {
-    return ReactComponents[routeComponentMap[route]];
+  if (routeComponentMap[baseRoute]) {
+    return ReactComponents[routeComponentMap[baseRoute]];
   }
 
   // Handle dynamic routes
-  if (route.startsWith("/blog/") && route !== "/blog") {
+  if (baseRoute.startsWith("/blog/") && baseRoute !== "/blog") {
     return ReactComponents.BlogPost;
   }
 
@@ -110,38 +110,48 @@ function getComponentForRoute(route) {
 async function generateRouteConfigs() {
   const routes = [];
 
-  // Add static routes
-  Object.keys(routeComponentMap).forEach((path) => {
-    const componentName = routeComponentMap[path];
-    const metadata = pageMetadata[path] || {};
+  // Generate routes for each language
+  for (const lang of config.supportedLanguages) {
+    const pageMetadata = getPageMetadata(lang);
+    const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
 
-    routes.push({
-      path,
-      component: componentName,
-      metadata,
-      template: "page",
-    });
-  });
+    // Add static routes for this language
+    Object.keys(routeComponentMap).forEach((path) => {
+      const componentName = routeComponentMap[path];
+      const localizedPath = `${langPrefix}${path}`;
+      const metadata = pageMetadata[path] || {};
 
-  // Add dynamic blog post routes
-  try {
-    const posts = await getBlogPosts();
-    posts.forEach((post) => {
       routes.push({
-        path: post.path,
-        component: "BlogPost",
-        metadata: {
-          title: `${post.title} | WhimsyLabs Blog`,
-          description:
-            post.description || post.excerpt || "Read more on WhimsyLabs Blog",
-          keywords: post.keywords || "virtual lab, STEM education, science",
-        },
-        template: "blog-post",
-        data: post,
+        path: localizedPath,
+        component: componentName,
+        metadata,
+        template: "page",
+        language: lang,
       });
     });
-  } catch (error) {
-    console.warn("⚠️ Could not generate blog post routes:", error.message);
+
+    // Add dynamic blog post routes for this language
+    try {
+      const posts = await getBlogPosts();
+      posts.forEach((post) => {
+        const localizedPath = `${langPrefix}/blog/${post.id}`;
+        
+        routes.push({
+          path: localizedPath,
+          component: "BlogPost",
+          metadata: {
+            title: `${post.title} | WhimsyLabs Blog`,
+            description: post.description || post.excerpt || "Read more on WhimsyLabs Blog",
+            keywords: post.keywords || "virtual lab, STEM education, science",
+          },
+          template: "blog-post",
+          data: post,
+          language: lang,
+        });
+      });
+    } catch (error) {
+      console.warn("⚠️ Could not generate blog post routes:", error.message);
+    }
   }
 
   return routes;
@@ -393,20 +403,44 @@ async function generatePageHTML(route, data = {}) {
       route
     );
 
+    // Generate hreflang tags for SEO
+    const generateHreflangTags = (currentRoute, currentLang) => {
+      let hreflangTags = '';
+      
+      config.supportedLanguages.forEach(lang => {
+        const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
+        const localizedRoute = currentRoute.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+        const hrefUrl = `${config.siteUrl}${langPrefix}${localizedRoute}`;
+        
+        hreflangTags += `    <link rel="alternate" hreflang="${lang}" href="${hrefUrl}">\n`;
+      });
+      
+      // Add x-default for default language
+      const defaultRoute = currentRoute.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+      hreflangTags += `    <link rel="alternate" hreflang="x-default" href="${config.siteUrl}${defaultRoute}">`;
+      
+      return hreflangTags;
+    };
+
+    const currentLang = data.language || config.defaultLanguage;
+    const hreflangTags = generateHreflangTags(route, currentLang);
+
     // Generate complete HTML document
     const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="${currentLang}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
     ${completeMetadata.meta}
+    ${hreflangTags}
     ${assets.preload}
     ${assets.css}
     ${completeMetadata.script}
     <script>
-        // Set initial route for React Router
+        // Set initial route and language for React Router
         window.__INITIAL_ROUTE__ = "${route}";
+        window.__INITIAL_LANGUAGE__ = "${currentLang}";
     </script>
 </head>
 <body>
@@ -459,16 +493,29 @@ async function generatePages() {
     const routes = await generateRouteConfigs();
 
     for (const route of routes) {
-      const result = await generatePageHTML(route.path, route.data || {});
+      const result = await generatePageHTML(route.path, { 
+        ...route.data, 
+        language: route.language 
+      });
 
       // Determine output path
       let outputPath;
       if (route.path === "/") {
         outputPath = `${config.distDir}/index.html`;
-      } else if (route.path.startsWith("/blog/") && route.path !== "/blog") {
+      } else if (route.path.match(/^\/[a-z]{2}$/) || route.path === `/${route.language}`) {
+        // Language root page (e.g., /es, /fr)
+        outputPath = `${config.distDir}${route.path}/index.html`;
+      } else if (route.path.includes("/blog/") && !route.path.endsWith("/blog")) {
         // Blog post
-        const slug = route.path.replace("/blog/", "");
-        outputPath = `${config.distDir}/blog/${slug}/index.html`;
+        const pathParts = route.path.split('/');
+        const blogIndex = pathParts.indexOf('blog');
+        const slug = pathParts[blogIndex + 1];
+        
+        if (route.language === config.defaultLanguage) {
+          outputPath = `${config.distDir}/blog/${slug}/index.html`;
+        } else {
+          outputPath = `${config.distDir}/${route.language}/blog/${slug}/index.html`;
+        }
       } else {
         // Regular page
         const cleanPath = route.path.replace(/^\//, "").replace(/\/$/, "");
@@ -498,60 +545,71 @@ async function generateSitemap() {
     const currentDate = new Date().toISOString().split("T")[0];
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Main pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
+
+    // Generate URLs for each language
+    const staticPages = ['/', '/blog/', '/services/', '/features/', '/faq/', '/contact/'];
+    
+    for (const page of staticPages) {
+      for (const lang of config.supportedLanguages) {
+        const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
+        const url = `${config.siteUrl}${langPrefix}${page}`;
+        
+        let priority = '0.8';
+        if (page === '/') priority = '1.0';
+        if (page === '/blog/') priority = '0.9';
+        
+        sitemap += `
     <url>
-        <loc>${config.siteUrl}/</loc>
+        <loc>${url}</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>${config.siteUrl}/blog/</loc>
-        <lastmod>${currentDate}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>${config.siteUrl}/services/</loc>
-        <lastmod>${currentDate}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>${config.siteUrl}/features/</loc>
-        <lastmod>${currentDate}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>${config.siteUrl}/faq/</loc>
-        <lastmod>${currentDate}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>${config.siteUrl}/contact/</loc>
-        <lastmod>${currentDate}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>${priority}</priority>`;
+        
+        // Add alternate language links
+        for (const altLang of config.supportedLanguages) {
+          const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
+          const altUrl = `${config.siteUrl}${altLangPrefix}${page}`;
+          sitemap += `
+        <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}"/>`;
+        }
+        
+        sitemap += `
     </url>`;
+      }
+    }
 
     // Add blog posts with proper sorting by date (newest first)
     const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
     
     sitemap += `
-    <!-- Blog posts (${sortedPosts.length} total) -->`;
+    <!-- Blog posts (${sortedPosts.length} total, ${config.supportedLanguages.length} languages each) -->`;
     
     for (const post of sortedPosts) {
       const lastmod = new Date(post.date).toISOString().split("T")[0];
-      sitemap += `
+      
+      for (const lang of config.supportedLanguages) {
+        const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
+        const url = `${config.siteUrl}${langPrefix}/blog/${post.id}/`;
+        
+        sitemap += `
     <url>
-        <loc>${config.siteUrl}/blog/${post.id}/</loc>
+        <loc>${url}</loc>
         <lastmod>${lastmod}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.7</priority>`;
+        
+        // Add alternate language links for blog posts
+        for (const altLang of config.supportedLanguages) {
+          const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
+          const altUrl = `${config.siteUrl}${altLangPrefix}/blog/${post.id}/`;
+          sitemap += `
+        <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}"/>`;
+        }
+        
+        sitemap += `
     </url>`;
+      }
     }
 
     sitemap += `
@@ -652,10 +710,67 @@ async function logGeneratedUrls() {
   }
 }
 
+// Generate language detection script for client-side routing
+async function generateLanguageDetection() {
+  console.log('🔄 Generating language detection script...');
+  
+  const detectionScript = `
+// Language detection and routing for WhimsyLabs
+(function() {
+  'use strict';
+  
+  const SUPPORTED_LANGUAGES = ${JSON.stringify(config.supportedLanguages)};
+  const DEFAULT_LANGUAGE = '${config.defaultLanguage}';
+  
+  function getCurrentLanguageFromPath() {
+    const path = window.location.pathname;
+    const langCode = path.split('/')[1];
+    return SUPPORTED_LANGUAGES.includes(langCode) ? langCode : DEFAULT_LANGUAGE;
+  }
+  
+  function getBrowserLanguage() {
+    const browserLang = navigator.language.split('-')[0];
+    return SUPPORTED_LANGUAGES.includes(browserLang) ? browserLang : DEFAULT_LANGUAGE;
+  }
+  
+  function shouldRedirectForLanguage() {
+    const currentLang = getCurrentLanguageFromPath();
+    const browserLang = getBrowserLanguage();
+    const isRootPath = window.location.pathname === '/';
+    
+    // Only redirect from root path and if browser language is different
+    return isRootPath && browserLang !== DEFAULT_LANGUAGE && currentLang === DEFAULT_LANGUAGE;
+  }
+  
+  // Initialize language detection
+  if (shouldRedirectForLanguage()) {
+    const browserLang = getBrowserLanguage();
+    const newPath = '/' + browserLang + '/';
+    
+    // Use replace to avoid adding to history
+    window.location.replace(newPath);
+  }
+  
+  // Make language utilities available globally
+  window.WhimsyLabsI18n = {
+    getCurrentLanguage: getCurrentLanguageFromPath,
+    getBrowserLanguage: getBrowserLanguage,
+    supportedLanguages: SUPPORTED_LANGUAGES,
+    defaultLanguage: DEFAULT_LANGUAGE
+  };
+})();
+`;
+
+  await fs.ensureDir(`${config.distDir}/js`);
+  await fs.writeFile(`${config.distDir}/js/language-detection.js`, detectionScript);
+  console.log('✅ Language detection script generated');
+}
+
 // Main build function
 async function build() {
   try {
     console.log("🚀 Starting static site generation...");
+    console.log(`🌍 Building for languages: ${config.supportedLanguages.join(', ')}`);
 
     await loadReactComponents();
     await setupDist();
@@ -664,9 +779,11 @@ async function build() {
     await generatePages();
     await generateSitemap();
     await generateRobotsTxt();
+    await generateLanguageDetection();
     await logGeneratedUrls();
 
     console.log("✅ Static site generation complete!");
+    console.log(`📊 Generated static files for ${config.supportedLanguages.length} languages`);
   } catch (error) {
     console.error("❌ Build failed:", error);
     process.exit(1);

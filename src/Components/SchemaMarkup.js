@@ -47,6 +47,30 @@ const SchemaMarkup = () => {
         description: Post3.description,
         slug: Post3.slug,
         keywords: ["virtual dissection", "SEND education", "kidney anatomy", "VR learning", "accessibility in education"]
+      },
+      [`/blog/${Post4.slug}`]: {
+        title: Post4.title,
+        datePublished: Post4.date,
+        dateModified: Post4.date,
+        description: Post4.description,
+        slug: Post4.slug,
+        keywords: ["AI-powered virtual labs", "STEM education crisis", "educational technology", "virtual laboratory", "science education"]
+      },
+      [`/blog/${Post5.slug}`]: {
+        title: Post5.title,
+        datePublished: Post5.date,
+        dateModified: Post5.date,
+        description: Post5.description,
+        slug: Post5.slug,
+        keywords: ["WhimsyCat AI tutor", "personalized learning", "AI in education", "virtual laboratory", "STEM education"]
+      },
+      [`/blog/${Post6.slug}`]: {
+        title: Post6.title,
+        datePublished: Post6.date,
+        dateModified: Post6.date,
+        description: Post6.description,
+        slug: Post6.slug,
+        keywords: ["sandbox learning", "productive failure", "STEM education", "virtual laboratory", "scientific inquiry"]
       }
     };
 
@@ -90,7 +114,7 @@ const SchemaMarkup = () => {
     "@type": "SoftwareApplication",
     name: "WhimsyLabs Advanced Virtual Laboratory Platform",
     applicationCategory: "EducationalApplication",
-    operatingSystem: "Web, Windows, MacOS, Android, VR",
+    operatingSystem: "Web, Windows, MacOS, Linux, Android, VR, Quest2, Quest3, Vive, Index, Pico4",
     offers: {
       "@type": "Offer",
       price: "Contact for premium pricing",

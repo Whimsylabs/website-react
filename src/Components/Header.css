@@ -165,3 +165,33 @@ body, html {
     bottom: -5px;
   }
 }
+
+/* Language switcher in navigation */
+.language-switcher-nav {
+  margin-left: auto;
+}
+
+.nav .language-switcher-nav .language-switcher-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.nav .language-switcher-nav .language-switcher-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile responsive adjustments for language switcher */
+@media (max-width: 768px) {
+  .language-switcher-nav {
+    margin-left: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav.menu-open .language-switcher-nav {
+    display: block;
+  }
+}

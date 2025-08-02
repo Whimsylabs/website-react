@@ -9,40 +9,69 @@ import Features from "./Components/FeaturesPage";
 import FAQPage from "./Components/FAQPage";
 import ContactPage from "./Components/ContactPage";
 import BlogPost from "./Components/BlogPost";
+// Private/unreleased components (disabled)
+// import IgnitePitchDeck from "./Components/IgnitePitchDeck";
+// import CashflowProjection from "./Components/CashflowProjection";
+// import PricingPage from "./Components/PricingPage";
+import { getCurrentLanguage } from "./i18n";
 
 function App() {
-    // Determine which component to render based on the current path
-    const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
-    
-    const getComponentForPath = (path) => {
-        if (path === '/') return <MainContent />;
-        if (path === '/blog/' || path === '/blog') return <Blog />;
-        if (path === '/services/' || path === '/services') return <Services />;
-        if (path === '/features/' || path === '/features') return <Features />;
-        if (path === '/faq/' || path === '/faq') return <FAQPage />;
-        if (path === '/contact/' || path === '/contact') return <ContactPage />;
-        
-        // Handle blog posts
-        if (path.startsWith('/blog/') && path !== '/blog/' && path !== '/blog') {
-            let slug = path.replace('/blog/', '').replace(/\/$/, '');
-            // Handle both /slug/ and /slug/index.html patterns
-            if (slug.endsWith('/index.html')) {
-                slug = slug.replace('/index.html', '');
-            }
-            return <BlogPost slug={slug} />;
-        }
-        
-        // Default to MainContent
-        return <MainContent />;
-    };
+  // Determine which component to render based on the current path
+  // Use the initial route set by the static build if available
+  const currentPath =
+    typeof window !== "undefined"
+      ? window.__INITIAL_ROUTE__ || window.location.pathname
+      : "/";
 
-    return (
-        <HelmetProvider>
-            <MetaTags />
-            <SchemaMarkup />
-            {getComponentForPath(currentPath)}
-        </HelmetProvider>
-    );
+  const getComponentForPath = (path) => {
+    // Remove language prefix to get the base path
+    const basePath = path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+
+    if (basePath === "/") return <MainContent />;
+    if (basePath === "/blog/" || basePath === "/blog") return <Blog />;
+    if (basePath === "/services/" || basePath === "/services")
+      return <Services />;
+    if (basePath === "/features/" || basePath === "/features")
+      return <Features />;
+    if (basePath === "/faq/" || basePath === "/faq") return <FAQPage />;
+    if (basePath === "/contact/" || basePath === "/contact")
+      return <ContactPage />;
+    // Private/unreleased routes (disabled)
+    // if (basePath === "/ignite-pitch/" || basePath === "/ignite-pitch")
+    //   return <IgnitePitchDeck />;
+    // if (basePath === "/cashflow/" || basePath === "/cashflow")
+    //   return <CashflowProjection />;
+    // if (basePath === "/pricing/" || basePath === "/pricing")
+    //   return <PricingPage />;
+
+    // Handle blog posts
+    if (
+      basePath.startsWith("/blog/") &&
+      basePath !== "/blog/" &&
+      basePath !== "/blog"
+    ) {
+      let slug = basePath.replace("/blog/", "").replace(/\/$/, "");
+      // Handle both /slug/ and /slug/index.html patterns
+      if (slug.endsWith("/index.html")) {
+        slug = slug.replace("/index.html", "");
+      }
+      return <BlogPost slug={slug} />;
+    }
+
+    // Default to MainContent
+    return <MainContent />;
+  };
+
+  // Get current language for context
+  const currentLanguage = getCurrentLanguage();
+
+  return (
+    <HelmetProvider>
+      <MetaTags />
+      <SchemaMarkup />
+      {getComponentForPath(currentPath)}
+    </HelmetProvider>
+  );
 }
 
 export default App;

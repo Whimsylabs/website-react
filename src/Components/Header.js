@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './Header.css';
+import LanguageSwitcher from './LanguageSwitcher';
+import withTranslation from './withTranslation';
+import { getLocalizedPath } from '../i18n';
 // Logo now served from public directory
 
-const Header = () => {
+const Header = ({ t, currentLang }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const pdfPath = 'https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440';
 
@@ -24,8 +27,8 @@ const Header = () => {
             
             <ul className={`nav nav-pills ${menuOpen ? 'menu-open' : ''}`} aria-label="Primary navigation">
                 <li className="nav-item">
-                    <a href="/" className="nav-link" aria-label="Home" onClick={() => setMenuOpen(false)}>
-                        Home
+                    <a href={getLocalizedPath('/', currentLang)} className="nav-link" aria-label={t('nav.home')} onClick={() => setMenuOpen(false)}>
+                        {t('nav.home')}
                     </a>
                 </li>
                 <li className="nav-item">
@@ -33,24 +36,38 @@ const Header = () => {
                         Features PDF
                     </a>
                 </li>
+                {/* Pricing temporarily disabled */}
+                {/* <li className="nav-item">
+                    <a href="/pricing/" className="nav-link" aria-label="View Pricing" onClick={() => setMenuOpen(false)}>
+                        Pricing
+                    </a>
+                </li> */}
                 <li className="nav-item">
-                    <a href="/contact/" className="nav-link" aria-label="Contact Us" onClick={() => setMenuOpen(false)}>
-                        Contact
+                    <a href={getLocalizedPath('/contact', currentLang)} className="nav-link" aria-label={t('nav.contact')} onClick={() => setMenuOpen(false)}>
+                        {t('nav.contact')}
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="/blog/" className="nav-link" aria-label="Read Our Blog" onClick={() => setMenuOpen(false)}>
-                        Blog
+                    <a href={getLocalizedPath('/blog', currentLang)} className="nav-link" aria-label={t('nav.blog')} onClick={() => setMenuOpen(false)}>
+                        {t('nav.blog')}
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="/faq/" className="nav-link" aria-label="Frequently Asked Questions" onClick={() => setMenuOpen(false)}>
-                        FAQ
+                    <a href="/ignite-pitch/" className="nav-link" aria-label="Ignite Pitch Deck" onClick={() => setMenuOpen(false)}>
+                        Ignite Pitch
                     </a>
+                </li>
+                <li className="nav-item">
+                    <a href={getLocalizedPath('/faq', currentLang)} className="nav-link" aria-label={t('nav.faq')} onClick={() => setMenuOpen(false)}>
+                        {t('nav.faq')}
+                    </a>
+                </li>
+                <li className="nav-item language-switcher-nav">
+                    <LanguageSwitcher />
                 </li>
             </ul>
         </header>
     );
 };
 
-export default Header;
+export default withTranslation(Header);

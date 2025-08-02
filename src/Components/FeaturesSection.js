@@ -1,16 +1,21 @@
-import React from 'react';
-import Feature from './Feature';
-import './FeaturesSection.css';
+import React from "react";
+import Feature from "./Feature";
+import "./FeaturesSection.css";
 // Images now served from public directory
 // Removed React Router - using direct HTML links
 
 const FeaturesSection = () => {
   return (
-    <section className="features-section container" aria-labelledby="features-heading">
+    <section
+      className="features-section container"
+      aria-labelledby="features-heading"
+    >
       <div className="row">
         <div className="col-3"></div>
         <div className="col-6 text-center">
-          <h2 id="features-heading" className="unique-features-heading">OUR UNIQUE VIRTUAL LAB FEATURES</h2>
+          <h2 id="features-heading" className="unique-features-heading">
+            OUR UNIQUE VIRTUAL LAB FEATURES
+          </h2>
         </div>
         <div className="col-3"></div>
       </div>
@@ -43,7 +48,14 @@ const FeaturesSection = () => {
 
       {/* Replace faq-teaser with a button-style link */}
       <div className="features-btn">
-        <a href="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" className="features-faq-btn" target="_blank" rel="noopener noreferrer">See full features here!</a>
+        <a
+          href="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440"
+          className="features-faq-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See full features here!
+        </a>
       </div>
     </section>
   );

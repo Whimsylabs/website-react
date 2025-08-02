@@ -1,15 +1,15 @@
 /* Animated Title Component Styles */
 .animated-title {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 3.5rem !important;
+  font-weight: 900 !important;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 2rem;
+  letter-spacing: 0.1em !important;
+  margin-bottom: 2rem !important;
   position: relative;
   text-align: center;
   line-height: 1.2;
   word-spacing: 0.2em;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2)) !important;
 }
 
 .animated-title.lowercase {
@@ -33,18 +33,18 @@
 }
 
 .animated-char {
-  display: inline-block;
-  animation: smoothWave 6s ease-in-out infinite; /* Increased from 4s to 6s for slower wave */
-  transform-origin: center bottom;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5));
-  color: #95CEF6;
-  transition: color 0.3s ease;
+  display: inline-block !important;
+  animation: smoothWave 6s ease-in-out infinite !important; /* Increased from 4s to 6s for slower wave */
+  transform-origin: center bottom !important;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5)) !important;
+  color: #95CEF6 !important;
+  transition: color 0.3s ease !important;
   text-shadow: 
     -1px -1px 0 rgba(255, 255, 255, 0.8),
     1px -1px 0 rgba(255, 255, 255, 0.8),
     -1px 1px 0 rgba(255, 255, 255, 0.8),
     1px 1px 0 rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(149, 206, 246, 0.6);
+    0 0 20px rgba(149, 206, 246, 0.6) !important;
 }
 
 /* Dark mode colors */

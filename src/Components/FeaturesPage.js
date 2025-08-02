@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Features.css";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -9,14 +9,18 @@ import AnimatedTitle from "./AnimatedTitle";
 const FeaturesPage = () => {
   const [currentVideo, setCurrentVideo] = useState("9D2e2e2gzvk");
   const [activeFeature, setActiveFeature] = useState(0);
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const features = [
     {
       id: "sandbox-freedom",
       title: "Sandbox Freedom",
       description:
         "Complete experimental freedom with over 10,000 equipment permutations and unlimited procedural pathways. Unlike restrictive competitors, students design their own experiments and learn from authentic mistakes.",
-      videoId: "9D2e2e2gzvk",
+      videoId: "dQw4w9WgXcQ",
       icon: "/images/cat_beaker.png",
       blogLink: "/blog/sandbox-learning-revolution-stem-education/",
     },
@@ -34,7 +38,7 @@ const FeaturesPage = () => {
       title: "Physics Engine",
       description:
         "Proprietary physics engine with 99.7% accuracy simulation, processing thousands of molecular interactions per second. Real-time fluid dynamics and molecular behavior modeling.",
-      videoId: "9D2e2e2gzvk",
+      videoId: "jNQXAC9IVRw",
       icon: "/images/cat_vr.png",
       blogLink: "/blog/physicality-in-virtual-labs/",
     },
@@ -43,7 +47,7 @@ const FeaturesPage = () => {
       title: "Hand Representation",
       description:
         "Revolutionary true hand representation across all devices. Develop genuine muscle memory through precise 360-degree interactions that transfer directly to physical laboratories.",
-      videoId: "9D2e2e2gzvk",
+      videoId: "L_jWHffIx5E",
       icon: "/images/cat_beaker.png",
       blogLink: "/blog/physicality-in-virtual-labs/",
     },
@@ -52,7 +56,7 @@ const FeaturesPage = () => {
       title: "Assessment System",
       description:
         "Advanced AI assessment with dynamic question generation. Each student receives unique, personalized assessments based on their experimental data, eliminating cheating possibilities.",
-      videoId: "9D2e2e2gzvk",
+      videoId: "kJQP7kiw5Fk",
       icon: "/images/cat_brain.png",
       blogLink: "/blog/ai-powered-virtual-labs-solving-education-crisis/",
     },
@@ -61,7 +65,7 @@ const FeaturesPage = () => {
       title: "Cross-Platform",
       description:
         "Seamless operation across VR headsets, desktops, tablets, and mobile devices with 96.66% compatibility. Consistent 60+ FPS performance and offline functionality.",
-      videoId: "9D2e2e2gzvk",
+      videoId: "fJ9rUzIMcZQ",
       icon: "/images/cat_vr.png",
       blogLink: "/blog/ai-powered-virtual-labs-solving-education-crisis/",
     },
@@ -75,23 +79,25 @@ const FeaturesPage = () => {
   return (
     <main className="container-fluid text-center p-0">
       <Header />
-
-      {/* Hero Section with Tiled Background */}
       <section id="tiled-1" className="features-welcome-section">
         <div className="container py-3 d-flex align-items-center justify-content-center">
           <img
             src="/images/logo.png"
-            alt="WhimsyLabs Advanced Features Logo"
+            alt="WhimsyLabs Virtual Lab Software Logo"
             className="logo me-3"
           />
           <div className="text-container">
-            <AnimatedTitle
-              text="Industry-Leading Virtual Laboratories"
-              className="features-hero-title"
-              delay={0}
-              darkMode={false}
-              uppercase={false}
-            />
+            {mounted ? (
+              <AnimatedTitle
+                text="Industry-Leading Virtual Laboratories"
+                className="features-hero-title"
+                delay={0}
+                darkMode={false}
+                uppercase={false}
+              />
+            ) : (
+              <h1 className="features-hero-title">Industry-Leading Virtual Laboratories</h1>
+            )}
             <div className="text-justify">
               <p className="justified-text features-hero-subtitle">
                 Experience the world's most advanced virtual laboratory platform
@@ -102,58 +108,71 @@ const FeaturesPage = () => {
             </div>
           </div>
         </div>
-        <ContactUs buttonText="Request Premium Demo" />
-        <div className="interactive-features-section">
-          <AnimatedTitle
-            text="Revolutionary Laboratory Features"
-            className="features-main-title medium"
-            as="h2"
-            delay={0.5}
-            darkMode={true}
-            uppercase={false}
-          />
 
+        <div className="interactive-features-section">
+          {/* Feature Buttons Row */}
+          <div className="feature-buttons-row">
+            {features.map((feature, index) => (
+              <button
+                key={feature.id}
+                className={`feature-tab-button ${
+                  activeFeature === index ? "active" : ""
+                }`}
+                onClick={() => handleFeatureClick(index)}
+              >
+                <div className="feature-tab-icon">
+                  <img src={feature.icon} alt={feature.title} />
+                </div>
+                <span className="feature-tab-title">{feature.title}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Video Container */}
           <div className="features-video-container">
             <div className="features-video-frame">
-              <iframe
-                key={currentVideo}
-                src={`https://www.youtube.com/embed/${currentVideo}`}
-                title="WhimsyLabs Virtual Lab Demo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="features-video"
-              ></iframe>
-              <div className="feature-buttons-grid">
-                {features.map((feature, index) => (
-                  <button
-                    key={feature.id}
-                    className={`feature-button ${
-                      activeFeature === index ? "active" : ""
-                    }`}
-                    onClick={() => handleFeatureClick(index)}
-                  >
-                    <div className="feature-button-icon">
-                      <img src={feature.icon} alt={feature.title} />
-                    </div>
-                    <h3>{feature.title}</h3>
-                    <p>{feature.description}</p>
-                    <a
-                      href={feature.blogLink}
-                      className="blog-link"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Learn More →
-                    </a>
-                  </button>
-                ))}
-              </div>
+              {mounted ? (
+                <iframe
+                  key={currentVideo}
+                  src={`https://www.youtube.com/embed/${currentVideo}?autoplay=1&mute=1`}
+                  title="WhimsyLabs Virtual Lab Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="features-video"
+                ></iframe>
+              ) : (
+                <div className="features-video video-placeholder">
+                  <div className="video-placeholder-content">
+                    <div className="video-placeholder-icon">▶</div>
+                    <p>Loading video...</p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Feature Description Below Video */}
+          <div className="feature-description-container">
+            <div className="feature-description-content">
+              <h3 className="feature-description-title">
+                {features[activeFeature].title}
+              </h3>
+              <p className="feature-description-text">
+                {features[activeFeature].description}
+              </p>
+              <a
+                href={features[activeFeature].blogLink}
+                className="feature-learn-more-link"
+              >
+                Learn More About {features[activeFeature].title} →
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Interactive Video Section with Feature Buttons */}
-      <BubbleContainer>WOWEE</BubbleContainer>
+      <BubbleContainer>Honk</BubbleContainer>
 
       {/* Awards & Recognition Section */}
       <div className="awards-recognition" style={{ marginBottom: "2rem" }}>

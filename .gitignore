@@ -25,6 +25,19 @@ src/config.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Development files (excluded from production)
+dev-server.js
+dev-dashboard.html
+DEV_SERVER_GUIDE.md
+TEST_RESULTS_SUMMARY.md
+DYNAMIC_SCHEMA_IMPLEMENTATION.md
+SINGLE_SOURCE_OF_TRUTH_IMPLEMENTATION.md
+SEO_RECOMMENDATIONS.md
+tests/
+src/__tests__/
+
+# Documentation and guides (keep in repo but exclude from build)
 contact-form-enhancements-summary.md
 enhanced-google-apps-script.js
 form-handling-options.md
@@ -33,8 +46,21 @@ google-sheets-form-setup.md
 test-form-submission.html
 Whimsylabs_SEO_AI_Prompt.txt
 
-#
-local_data
+# Local data and temporary files
+local_data/
+src/utils/faqDataExtractor.js
 
+# Private/unreleased components
+src/Components/IgnitePitchDeck.js
+src/Components/IgnitePitchDeck.css
+src/Components/PricingPage.js
+src/Components/PricingPage.css
+src/Components/PricingQuestionnaire.js
+src/Components/PricingQuestionnaire.css
+src/Components/CashflowProjection.js
+src/Components/CashflowProjection.css
+
+# Build artifacts
 public/static/js/*
 public/static/js/
+public/static/js/main.0ecdd253.js

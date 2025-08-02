@@ -4,8 +4,9 @@ import Footer from './Footer';
 import FAQ from './FAQ';
 import './FAQPage.css';
 import { Helmet } from 'react-helmet-async';
+import withTranslation from './withTranslation';
 
-const FAQPage = () => {
+const FAQPage = ({ t, currentLang }) => {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
@@ -17,9 +18,9 @@ const FAQPage = () => {
       <div id="faq-tiled-background">
         <div className="container py-5">
           <div className="faq-header-container">
-            <h1 className="faq-main-heading">Frequently Asked Questions</h1>
+            <h1 className="faq-main-heading">{t('faq.title')}</h1>
             <p className="faq-subheading">
-              Find answers to common questions about our virtual lab software and how it can transform STEM education
+              {t('faq.subtitle')}
             </p>
           </div>
           <div className="faq-content-container">
@@ -32,4 +33,4 @@ const FAQPage = () => {
   );
 };
 
-export default FAQPage;
+export default withTranslation(FAQPage);
