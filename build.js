@@ -132,7 +132,7 @@ async function generateRouteConfigs() {
 
     // Add dynamic blog post routes for this language
     try {
-      const posts = await getBlogPosts();
+      const posts = await getBlogPosts(lang);
       posts.forEach((post) => {
         const localizedPath = `${langPrefix}/blog/${post.id}`;
         
@@ -145,12 +145,15 @@ async function generateRouteConfigs() {
             keywords: post.keywords || "virtual lab, STEM education, science",
           },
           template: "blog-post",
-          data: post,
+          data: {
+            ...post,
+            slug: post.id, // Pass the slug for the BlogPost component
+          },
           language: lang,
         });
       });
     } catch (error) {
-      console.warn("⚠️ Could not generate blog post routes:", error.message);
+      console.warn(`⚠️ Could not generate blog post routes for language ${lang}:`, error.message);
     }
   }
 
@@ -292,12 +295,18 @@ async function convertBlogPosts() {
   }
 }
 
-// Get blog posts from the components
-async function getBlogPosts() {
+// Get blog posts from the components (language-aware)
+async function getBlogPosts(language = 'en') {
   const posts = [];
 
   try {
-    // Import blog post data from the components
+    // Import the generated blog data
+    const blogData = require('./src/i18n/blogData.generated.js');
+    
+    // Get translated blog posts for the specified language
+    const translatedPosts = blogData[language] || blogData['en'];
+    
+    // Import English blog post components for fallback metadata
     const Post1 = require("./src/Components/blog/Post1.js");
     const Post2 = require("./src/Components/blog/Post2.js");
     const Post3 = require("./src/Components/blog/Post3.js");
@@ -305,61 +314,103 @@ async function getBlogPosts() {
     const Post5 = require("./src/Components/blog/Post5.js");
     const Post6 = require("./src/Components/blog/Post6.js");
 
-    const blogPosts = [
-      {
-        id: Post1.slug,
-        title: Post1.title,
-        date: Post1.date,
-        description: Post1.description,
-        content: Post1.content,
-        path: `/blog/${Post1.slug}`,
-      },
-      {
-        id: Post2.slug,
-        title: Post2.title,
-        date: Post2.date,
-        description: Post2.description,
-        content: Post2.content,
-        path: `/blog/${Post2.slug}`,
-      },
-      {
-        id: Post3.slug,
-        title: Post3.title,
-        date: Post3.date,
-        description: Post3.description,
-        content: Post3.content,
-        path: `/blog/${Post3.slug}`,
-      },
-      {
-        id: Post4.slug,
-        title: Post4.title,
-        date: Post4.date,
-        description: Post4.description,
-        content: Post4.content,
-        path: `/blog/${Post4.slug}`,
-      },
-      {
-        id: Post5.slug,
-        title: Post5.title,
-        date: Post5.date,
-        description: Post5.description,
-        content: Post5.content,
-        path: `/blog/${Post5.slug}`,
-      },
-      {
-        id: Post6.slug,
-        title: Post6.title,
-        date: Post6.date,
-        description: Post6.description,
-        content: Post6.content,
-        path: `/blog/${Post6.slug}`,
-      },
-    ];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6];
+    
+    // Build the blog posts array with translated content
+    for (const translatedPost of translatedPosts) {
+      posts.push({
+        id: translatedPost.slug, // Use the slug as ID for URL generation
+        title: translatedPost.title,
+        date: translatedPost.date,
+        description: translatedPost.description,
+        content: null, // Content will be loaded by the BlogPost component
+        path: `/blog/${translatedPost.slug}`,
+        language: language,
+        hasFullTranslation: translatedPost.hasFullTranslation
+      });
+    }
 
-    return blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   } catch (error) {
-    console.warn("⚠️ Could not load blog posts:", error.message);
-    return [];
+    console.warn(`⚠️ Could not load blog posts for language ${language}:`, error.message);
+    
+    // Fallback to English blog post components
+    try {
+      const Post1 = require("./src/Components/blog/Post1.js");
+      const Post2 = require("./src/Components/blog/Post2.js");
+      const Post3 = require("./src/Components/blog/Post3.js");
+      const Post4 = require("./src/Components/blog/Post4.js");
+      const Post5 = require("./src/Components/blog/Post5.js");
+      const Post6 = require("./src/Components/blog/Post6.js");
+
+      const fallbackPosts = [
+        {
+          id: Post1.slug,
+          title: Post1.title,
+          date: Post1.date,
+          description: Post1.description,
+          content: Post1.content,
+          path: `/blog/${Post1.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post2.slug,
+          title: Post2.title,
+          date: Post2.date,
+          description: Post2.description,
+          content: Post2.content,
+          path: `/blog/${Post2.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post3.slug,
+          title: Post3.title,
+          date: Post3.date,
+          description: Post3.description,
+          content: Post3.content,
+          path: `/blog/${Post3.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post4.slug,
+          title: Post4.title,
+          date: Post4.date,
+          description: Post4.description,
+          content: Post4.content,
+          path: `/blog/${Post4.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post5.slug,
+          title: Post5.title,
+          date: Post5.date,
+          description: Post5.description,
+          content: Post5.content,
+          path: `/blog/${Post5.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post6.slug,
+          title: Post6.title,
+          date: Post6.date,
+          description: Post6.description,
+          content: Post6.content,
+          path: `/blog/${Post6.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        }
+      ];
+
+      return fallbackPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } catch (fallbackError) {
+      console.error("❌ Could not load fallback blog posts:", fallbackError.message);
+      return [];
+    }
   }
 }
 
@@ -394,7 +445,43 @@ async function generatePageHTML(route, data = {}) {
       ...data,
       // Add any route-specific props here
       currentPath: route,
+      // Pass language for all components (important for SSR translations)
+      language: data.language || 'en',
     };
+
+    // For blog posts, load the full translated content
+    if (route.includes('/blog/') && !route.endsWith('/blog') && data.slug) {
+      try {
+        const language = data.language || 'en';
+        const { loadBlogPostContent } = require('./scripts/blog-content-loader.js');
+        
+        // Map slug back to post ID
+        const slugToPostId = {
+          'whimsylabs-education-revolution': 'post1',
+          'physicality-in-virtual-labs': 'post2', 
+          'virtual-kidney-dissection-send-engagement': 'post3',
+          'ai-powered-virtual-labs-solving-education-crisis': 'post4',
+          'whimsycat-ai-tutor-transforming-science-education': 'post5',
+          'sandbox-learning-revolution-stem-education': 'post6'
+        };
+        
+        const postId = slugToPostId[data.slug];
+        if (postId) {
+          const translatedPost = await loadBlogPostContent(language, postId);
+          if (translatedPost) {
+            // Add the translated content to props
+            props.content = translatedPost.content;
+            props.title = translatedPost.title;
+            props.description = translatedPost.description;
+            props.hasFullTranslation = translatedPost.hasFullTranslation;
+            props.date = data.date; // Keep the original date
+            console.log(`✅ Loaded translated content for ${data.slug} in ${language}`);
+          }
+        }
+      } catch (contentError) {
+        console.warn(`⚠️ Could not load translated content for ${data.slug}:`, contentError.message);
+      }
+    }
 
     // Render component to string
     const renderResult = componentRenderer.renderComponent(
@@ -541,7 +628,7 @@ async function generatePages() {
 // Generate sitemap
 async function generateSitemap() {
   try {
-    const posts = await getBlogPosts();
+    const posts = await getBlogPosts('en'); // Use English posts for sitemap structure
     const currentDate = new Date().toISOString().split("T")[0];
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -625,7 +712,7 @@ async function generateSitemap() {
 // Generate robots.txt
 async function generateRobotsTxt() {
   try {
-    const posts = await getBlogPosts();
+    const posts = await getBlogPosts('en'); // Use English posts for robots.txt structure
 
     let robotsTxt = `# https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
@@ -676,7 +763,7 @@ Allow: /sitemap
 // Log all generated URLs for verification
 async function logGeneratedUrls() {
   try {
-    const posts = await getBlogPosts();
+    const posts = await getBlogPosts('en'); // Use English posts for URL logging
     
     console.log("\n📋 Generated URLs Summary:");
     console.log("========================");
@@ -771,6 +858,11 @@ async function build() {
   try {
     console.log("🚀 Starting static site generation...");
     console.log(`🌍 Building for languages: ${config.supportedLanguages.join(', ')}`);
+
+    // Generate blog data first
+    console.log("📝 Generating blog data...");
+    const { generateBlogData } = require('./scripts/generate-blog-data.js');
+    await generateBlogData();
 
     await loadReactComponents();
     await setupDist();

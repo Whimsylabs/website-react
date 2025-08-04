@@ -24,7 +24,7 @@ const FAQPage = ({ t, currentLang }) => {
             </p>
           </div>
           <div className="faq-content-container">
-            <FAQ />
+            <FAQ language={currentLang} />
           </div>
         </div>
       </div>

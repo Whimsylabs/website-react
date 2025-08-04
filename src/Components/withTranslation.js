@@ -5,8 +5,11 @@ import { useTranslation } from '../i18n/translations';
 // Higher-order component to provide translation functionality
 const withTranslation = (WrappedComponent) => {
   return function TranslatedComponent(props) {
-    const currentLang = getCurrentLanguage();
+    // Use language from props (for SSR) or detect from URL (for client-side)
+    const currentLang = props.language || getCurrentLanguage();
     const { t } = useTranslation(currentLang);
+    
+
     
     return (
       <WrappedComponent 

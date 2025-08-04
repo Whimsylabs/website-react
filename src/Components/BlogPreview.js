@@ -116,7 +116,7 @@ const extractPreview = (content) => {
   }
 };
 
-const BlogPreview = ({ post }) => {
+const BlogPreview = ({ post, languagePrefix = '' }) => {
   // Format the date in a more readable format
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -124,7 +124,7 @@ const BlogPreview = ({ post }) => {
   };
 
   return (
-    <a href={`/blog/${post.id}/`} className="blog-preview-link">
+    <a href={`${languagePrefix}/blog/${post.id}/`} className="blog-preview-link">
       <div className="post-box post-preview" id={`post-${post.id}`}>
         {/* Extract and display the first image as a header */}
         {extractFirstImage(post.content)}

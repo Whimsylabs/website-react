@@ -101,17 +101,19 @@ const BlogPost = (props = {}) => {
           const postId = slugToPostId[routeSlug] || routeSlug;
           console.log('Mapped to post ID:', postId);
           
-          // Get current language from URL path
-          const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
-          let language = 'en'; // default
+          // Get current language from props (for SSR) or URL path (for client-side)
+          let language = props.language || 'en'; // Use props.language if available (SSR)
           
-          // Extract language from URL path (e.g., /de/blog/post -> 'de')
-          const pathParts = currentPath.split('/').filter(part => part);
-          if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
-            language = pathParts[0];
+          if (!props.language && typeof window !== 'undefined') {
+            // Client-side: detect from URL path
+            const currentPath = window.location.pathname;
+            const pathParts = currentPath.split('/').filter(part => part);
+            if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
+              language = pathParts[0];
+            }
           }
           
-          console.log('Detected language:', language, 'from path:', currentPath);
+          console.log('BlogPost: Using language:', language, props.language ? '(from props)' : '(detected)');
           
           // Load the specific post
           const postData = await getBlogPostTranslation(language, postId);

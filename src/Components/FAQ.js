@@ -5,6 +5,8 @@ import { generateFAQCategories } from "../i18n/faqDataGenerator";
 import withTranslation from './withTranslation';
 
 const FAQ = ({ t, currentLang }) => {
+
+  
   // Initialize with all indices active (expanded)
   const [activeIndices, setActiveIndices] = useState(
     Array.from({ length: 100 }, (_, i) => i)
@@ -19,14 +21,22 @@ const FAQ = ({ t, currentLang }) => {
   };
 
   // Get FAQ data in the current language, fallback to English structure
-  const localizedFAQCategories = currentLang !== 'en' 
-    ? generateFAQCategories(currentLang) 
-    : faqCategories;
+  let localizedFAQCategories;
+  try {
+    localizedFAQCategories = currentLang !== 'en' 
+      ? generateFAQCategories(currentLang) 
+      : faqCategories;
+    
+
+  } catch (error) {
+    console.warn(`FAQ: Error generating categories for ${currentLang}:`, error.message);
+    localizedFAQCategories = faqCategories;
+  }
 
   return (
     <section className="faq-section" aria-labelledby="faq-heading">
       <h2 id="faq-heading" className="faq-heading">
-        {t('faq.title')}
+        {t('nav.faq')}
       </h2>
       <div className="faq-container">
         {Object.entries(localizedFAQCategories).map(
