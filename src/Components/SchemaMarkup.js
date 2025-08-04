@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 // Import shared FAQ data
 import { getSchemaFAQItems } from "../data/faqData";
+import { extractSchemaFAQData } from "../utils/faqDataExtractor";
+import { getCurrentLanguage } from "../i18n";
 // Import blog post data
 import * as Post1 from "./blog/Post1";
 import * as Post2 from "./blog/Post2";
@@ -16,9 +18,18 @@ const SchemaMarkup = () => {
     typeof window !== "undefined" ? window.location.pathname : "/";
   const baseUrl = "https://whimsylabs.ai";
 
-  // Extract FAQ data from shared data source
+  // Get current language and extract FAQ data in that language
+  const currentLanguage = getCurrentLanguage();
+  
+  // Extract FAQ data from shared data source in current language
   const extractFAQData = () => {
-    return getSchemaFAQItems();
+    try {
+      // Try to get translated FAQ data, fallback to English
+      return extractSchemaFAQData(currentLanguage);
+    } catch (error) {
+      // Fallback to original method if translation fails
+      return getSchemaFAQItems();
+    }
   };
 
   // Extract blog post data dynamically

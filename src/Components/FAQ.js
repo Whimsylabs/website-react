@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./FAQ.css";
 import { faqCategories } from "../data/faqData";
+import { generateFAQCategories } from "../i18n/faqDataGenerator";
+import withTranslation from './withTranslation';
 
-const FAQ = () => {
+const FAQ = ({ t, currentLang }) => {
   // Initialize with all indices active (expanded)
   const [activeIndices, setActiveIndices] = useState(
     Array.from({ length: 100 }, (_, i) => i)
@@ -16,13 +18,18 @@ const FAQ = () => {
     }
   };
 
+  // Get FAQ data in the current language, fallback to English structure
+  const localizedFAQCategories = currentLang !== 'en' 
+    ? generateFAQCategories(currentLang) 
+    : faqCategories;
+
   return (
     <section className="faq-section" aria-labelledby="faq-heading">
       <h2 id="faq-heading" className="faq-heading">
-        Frequently Asked Questions
+        {t('faq.title')}
       </h2>
       <div className="faq-container">
-        {Object.entries(faqCategories).map(
+        {Object.entries(localizedFAQCategories).map(
           ([category, items], categoryIndex) => (
             <div key={categoryIndex} className="faq-category">
               <h3 className="faq-category-heading">{category}</h3>
@@ -392,4 +399,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default withTranslation(FAQ);

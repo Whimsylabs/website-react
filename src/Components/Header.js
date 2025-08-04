@@ -52,11 +52,12 @@ const Header = ({ t, currentLang }) => {
                         {t('nav.blog')}
                     </a>
                 </li>
-                <li className="nav-item">
+                {/* Ignite Pitch temporarily disabled */}
+                {/* <li className="nav-item">
                     <a href="/ignite-pitch/" className="nav-link" aria-label="Ignite Pitch Deck" onClick={() => setMenuOpen(false)}>
                         Ignite Pitch
                     </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                     <a href={getLocalizedPath('/faq', currentLang)} className="nav-link" aria-label={t('nav.faq')} onClick={() => setMenuOpen(false)}>
                         {t('nav.faq')}

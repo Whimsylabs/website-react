@@ -5,8 +5,9 @@ import './Blog.css';
 import BubbleContainer from './BubbleContainer';
 import Header from './Header';
 import Footer from './Footer';
+import { getBlogPostTranslation, getAllBlogPosts } from '../i18n/blogDataGenerator';
 
-// Import posts directly to avoid require.context issues
+// Import posts directly for fallback (keep for build compatibility)
 import * as Post1 from './blog/Post1';
 import * as Post2 from './blog/Post2';
 import * as Post3 from './blog/Post3';
@@ -14,7 +15,8 @@ import * as Post4 from './blog/Post4';
 import * as Post5 from './blog/Post5';
 import * as Post6 from './blog/Post6';
 
-const posts = [
+// Fallback posts for build system compatibility
+const fallbackPosts = [
   {
     id: Post1.slug,
     title: Post1.title,
@@ -59,9 +61,17 @@ const posts = [
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
-const BlogPost = (props = {}) => {
+// Mapping from old slugs to new post IDs
+const slugToPostId = {
+  'whimsylabs-education-revolution': 'post1',
+  'physicality-in-virtual-labs': 'post2', 
+  'virtual-kidney-dissection-send-engagement': 'post3',
+  'ai-powered-virtual-labs-solving-education-crisis': 'post4',
+  'whimsycat-ai-tutor-transforming-science-education': 'post5',
+  'sandbox-learning-revolution-stem-education': 'post6'
+};
 
-  
+const BlogPost = (props = {}) => {
   // Get slug from props (passed by App component)
   const routeSlug = props.slug;
   
@@ -72,6 +82,7 @@ const BlogPost = (props = {}) => {
   const [loading, setLoading] = useState(!isSSR);
   const [nextPost, setNextPost] = useState(null);
   const [prevPost, setPrevPost] = useState(null);
+  const [allPosts, setAllPosts] = useState([]);
 
   // Format the date in a more readable format
   const formatDate = (dateString) => {
@@ -81,36 +92,101 @@ const BlogPost = (props = {}) => {
 
   // Always call useEffect (React rules)
   useEffect(() => {
-    if (routeSlug) {
-      console.log('Looking for post with slug:', routeSlug);
-      console.log('Available posts:', posts.map(p => ({ id: p.id, title: p.title })));
-      
-      // Find the post that matches the slug
-      const postIndex = posts.findIndex((p) => p.id === routeSlug);
-      
-      if (postIndex !== -1) {
-        console.log('Found post:', posts[postIndex].title);
-        setPost(posts[postIndex]);
+    const loadBlogPost = async () => {
+      if (routeSlug) {
+        console.log('Looking for post with slug:', routeSlug);
         
-        // Set next and previous posts for navigation
-        if (postIndex > 0) {
-          setNextPost(posts[postIndex - 1]); // Newer post
+        try {
+          // Convert slug to post ID
+          const postId = slugToPostId[routeSlug] || routeSlug;
+          console.log('Mapped to post ID:', postId);
+          
+          // Get current language from URL path
+          const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
+          let language = 'en'; // default
+          
+          // Extract language from URL path (e.g., /de/blog/post -> 'de')
+          const pathParts = currentPath.split('/').filter(part => part);
+          if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
+            language = pathParts[0];
+          }
+          
+          console.log('Detected language:', language, 'from path:', currentPath);
+          
+          // Load the specific post
+          const postData = await getBlogPostTranslation(language, postId);
+          
+          if (postData && postData.content) {
+            const currentPost = {
+              id: postId,
+              slug: routeSlug,
+              title: postData.title,
+              content: postData.content,
+              date: '2025-01-01', // Default date, could be enhanced
+              description: postData.description
+            };
+            
+            console.log('Found post:', currentPost.title);
+            setPost(currentPost);
+            
+            // Load all posts for navigation
+            try {
+              const posts = await getAllBlogPosts(language);
+              setAllPosts(posts);
+              
+              // Set next and previous posts for navigation
+              const postIndex = posts.findIndex((p) => p.id === postId);
+              if (postIndex !== -1) {
+                if (postIndex > 0) {
+                  setNextPost(posts[postIndex - 1]); // Newer post
+                }
+                
+                if (postIndex < posts.length - 1) {
+                  setPrevPost(posts[postIndex + 1]); // Older post
+                }
+              }
+            } catch (navError) {
+              console.warn('Could not load navigation posts:', navError);
+              // Use fallback for navigation
+              setAllPosts(fallbackPosts);
+            }
+          } else {
+            console.log('Post not found, trying fallback');
+            // Fallback to old system
+            const postIndex = fallbackPosts.findIndex((p) => p.id === routeSlug);
+            if (postIndex !== -1) {
+              setPost(fallbackPosts[postIndex]);
+              setAllPosts(fallbackPosts);
+              
+              if (postIndex > 0) {
+                setNextPost(fallbackPosts[postIndex - 1]);
+              }
+              
+              if (postIndex < fallbackPosts.length - 1) {
+                setPrevPost(fallbackPosts[postIndex + 1]);
+              }
+            }
+          }
+        } catch (error) {
+          console.error('Error loading blog post:', error);
+          // Fallback to old system
+          const postIndex = fallbackPosts.findIndex((p) => p.id === routeSlug);
+          if (postIndex !== -1) {
+            setPost(fallbackPosts[postIndex]);
+            setAllPosts(fallbackPosts);
+          }
         }
         
-        if (postIndex < posts.length - 1) {
-          setPrevPost(posts[postIndex + 1]); // Older post
+        setLoading(false);
+        
+        // Scroll to top when post changes
+        if (typeof window !== 'undefined') {
+          window.scrollTo(0, 0);
         }
-      } else {
-        console.log('Post not found for slug:', routeSlug);
       }
-      
-      setLoading(false);
-      
-      // Scroll to top when post changes
-      if (typeof window !== 'undefined') {
-        window.scrollTo(0, 0);
-      }
-    }
+    };
+
+    loadBlogPost();
   }, [routeSlug]);
 
   // For SSR, use props directly
@@ -125,10 +201,10 @@ const BlogPost = (props = {}) => {
     };
     
     // Find navigation posts
-    const allPosts = props.posts || posts;
-    const postIndex = allPosts.findIndex((p) => p.slug === props.slug);
-    const currentNextPost = postIndex > 0 ? allPosts[postIndex - 1] : null;
-    const currentPrevPost = postIndex < allPosts.length - 1 ? allPosts[postIndex + 1] : null;
+    const allPostsForSSR = props.posts || fallbackPosts;
+    const postIndex = allPostsForSSR.findIndex((p) => p.slug === props.slug);
+    const currentNextPost = postIndex > 0 ? allPostsForSSR[postIndex - 1] : null;
+    const currentPrevPost = postIndex < allPostsForSSR.length - 1 ? allPostsForSSR[postIndex + 1] : null;
     
     return renderBlogPost(currentPost, currentNextPost, currentPrevPost, formatDate);
   }
