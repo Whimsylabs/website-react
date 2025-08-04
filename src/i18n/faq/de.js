@@ -1,30 +1,30 @@
 // Complete German FAQ translations
 export default {
   "categories": {
-    "About Whimsylabs": "Über WhimsyLabs",
-    "Educational Benefits": "Bildungsvorteile", 
+    "About Whimsylabs": "Über Whimsylabs",
+    "Educational Benefits": "Pädagogische Vorteile", 
     "Technical Features": "Technische Funktionen",
-    "Curriculum & Content": "Lehrplan und Inhalt",
-    "Teaching & Assessment": "Lehren und Bewertung",
-    "Educational Levels": "Bildungsstufen",
-    "Pricing & Accessibility": "Preise und Zugänglichkeit"
+    "Curriculum & Content": "Lehrplan und Inhalte",
+    "Teaching & Assessment": "Lehren und bewerten",
+    "Educational Levels": "Bildungsniveau",
+    "Pricing & Accessibility": "Preisgestaltung und Zugänglichkeit"
   },
   "faqs": {
     "what-is-whimsylabs-virtual-lab-software": {
-      "question": "Was ist die virtuelle Labor-Software WhimsyLabs?",
-      "answer": "WhimsyLabs ist die fortschrittlichste Sandbox-Virtual-Labor-Plattform der Branche, die beispiellose Freiheit bietet, wissenschaftliche Konzepte durch modernste Simulationstechnologie zu erkunden und zu meistern. Unsere proprietäre Physik-Engine modelliert biologische, chemische und physikalische Reaktionen mit branchenführender 95%iger Genauigkeit im Vergleich zu realen Laborbedingungen und bietet die realistischste verfügbare virtuelle Laborerfahrung. Im Gegensatz zu den begrenzten Simulationen der Konkurrenz bietet unsere Plattform unendliche experimentelle Permutationen, revolutionäres KI-Tutoring und echte Muskelgedächtnisentwicklung durch handrepräsentierte Interaktionen. Laut Bildungsforschung verbessern unsere fortschrittlichen virtuellen Labore das Engagement der Studenten um bis zu 85% und liefern überlegene Lernergebnisse (Journal of Science Education Technology, 2024)."
+      "question": "Was ist die virtuelle Labor-Software Whimsylabs?",
+      "answer": "Whimsylabs ist die fortschrittlichste, virtuelle Laborplattform der Branche. Whimsylabs bietet vollständige Freiheit, wissenschaftliche Konzepte durch modernste Simulationstechnologie zu erkunden und zu meistern. Unsere eigens entwickelte Physik-Engine modelliert biologische, chemische und physikalische Reaktionen in Echtzeit mit 95-prozentiger Genauigkeit im Vergleich mit realen Laborbedingungen. Im Gegensatz zu begrenzten Simulationen anderer virtueller Labore bietet unsere Plattform unendliche experimentelle Variationen, die durch echte Handinteraktionen und -koordination mithilfe von KI-Tutoring zu Muskelgedächtnisentwicklung anleitet. Laut Bildungsforschung verbessern unsere fortschrittlichen virtuellen Labore das Engagement der Studenten um bis zu 85% und liefern überlegene Lernergebnisse (Journal of Science Education Technology, 2024)."
     },
     "is-whimsylabs-a-forprofit-company": {
-      "question": "Ist WhimsyLabs ein gewinnorientiertes Unternehmen?",
-      "answer": "WhimsyLabs arbeitet als missionsorientierte Organisation und priorisiert Bildungsimpact während der Bereitstellung von Premium-Spitzentechnologielösungen. Wir werden von Unterstützern finanziert, die an die Demokratisierung des Zugangs zu modernster wissenschaftlicher Bildungstechnologie glauben. Wir stellen unsere fortschrittliche virtuelle Laborplattform Institutionen weltweit zur Verfügung, mit unserer Mission sicherzustellen, dass jeder Student Zugang zur anspruchsvollsten verfügbaren virtuellen Labortechnologie hat, unabhängig von den Ressourcen seiner Institution. Alle Finanzierung unterstützt direkt unsere Plattformentwicklung und Erweiterung unserer branchenführenden Fähigkeiten."
+      "question": "Ist Whimsylabs ein gewinnorientiertes Unternehmen?",
+      "answer": "Whimsylabs arbeitet als missionsorientierte Organisation und priorisiert die Bildungswirkung durch bereitstellen von einzigartigen Technologielösungen. Wir werden von Unterstützern finanziert, die an die Demokratisierung des Zugangs zu modernster wissenschaftlicher Bildungstechnologie glauben. Wir stellen unsere fortschrittliche virtuelle Laborplattform Institutionen weltweit zur Verfügung, mit unserer Mission sicherzustellen, dass jeder Student Zugang zur anspruchsvollsten verfügbaren virtuellen Labortechnologie hat, unabhängig von den Ressourcen seiner Institution. Alle Finanzierung unterstützt direkt unsere Plattformentwicklung und Erweiterung unserer branchenführenden Fähigkeiten."
     },
     "what-makes-whimsylabs-different-from-other-virtual": {
-      "question": "Was macht WhimsyLabs anders als andere virtuelle Laborplattformen?",
-      "answer": "WhimsyLabs ist die einzige Plattform, die hochauflösende Flüssigkeitsphysik, fortschrittliche dynamische Simulationen, Echtzeit-KI-Tutoring, vollständige Sandbox-Freiheit und vollständige VR/Web-Immersion kombiniert. Im Gegensatz zu starren schrittweisen Tools, die die Erkundung begrenzen, unterstützt WhimsyLabs offene Experimente mit realistischer Physik, die Hunderte von Interaktionen pro Sekunde verarbeitet und kritisches Denken und Verfahrensflüssigkeit aufbaut. Unabhängige Studien zeigen, dass unser Ansatz die Problemlösungsfähigkeiten der Studenten um 78% im Vergleich zu traditionellen virtuellen Laboren verbessert (Educational Technology Research, 2024). Wir konzentrieren uns einzigartig auf gerechten Zugang zu hochwertiger STEM-Bildung für alle Studenten."
+      "question": "Was macht Whimsylabs anders als andere virtuelle Laborplattformen?",
+      "answer": "Whimsylabs ist die einzige Plattform, die hochauflösende Flüssigkeitsphysik, fortschrittliche dynamische Simulationen, Echtzeit-KI-Tutoring, vollständige Sandbox-Freiheit und vollständige VR/Web-Immersion kombiniert. Im Gegensatz zu starren schrittweisen Tools, die die Erkundung begrenzen, unterstützt Whimsylabs offene Experimente mit realistischer Physik, die Hunderte von Interaktionen pro Sekunde verarbeitet und kritisches Denken und Verfahrensflüssigkeit aufbaut. Unabhängige Studien zeigen, dass unser Ansatz die Problemlösungsfähigkeiten der Studenten um 78% im Vergleich zu traditionellen virtuellen Laboren verbessert (Educational Technology Research, 2024). Wir konzentrieren uns einzigartig auf gerechten Zugang zu hochwertiger STEM-Bildung für alle Studenten."
     },
     "what-is-whimsylabs-social-mission": {
-      "question": "Was ist WhimsyLabs' soziale Mission?",
-      "answer": "WhimsyLabs ist grundlegend der Demokratisierung des Zugangs zu hochwertiger wissenschaftlicher Bildung weltweit verpflichtet, mit einer Mission, Bildungsungleichheit in STEM-Bereichen zu beseitigen. Durch systematisches Entfernen von Barrieren wie Kosten (Reduzierung der Laborkosten um 90%), geografische Lage (Bedienung abgelegener Gebiete mit unzuverlässigem Internet) und Sicherheitsbedenken (Beseitigung von 100% der Laborgefahren) bieten wir jedem Studenten gleiche Möglichkeiten, sich an praktischem wissenschaftlichem Lernen zu beteiligen. Laut unabhängiger Forschung des Youth report 2024: technology in education (UNESCO, 2024) sind Plattformen wie WhimsyLabs 'Technologie (die) hilft, den Zugang zur Bildung für viele zu verbessern, die sonst zurückgelassen würden' und zielt direkt auf das Nachhaltige Entwicklungsziel 4: Qualitätsbildung für alle ab. Wir glauben, dass die Postleitzahl eines Studenten niemals seinen Zugang zu erstklassiger wissenschaftlicher Bildung bestimmen sollte."
+      "question": "Was ist Whimsylabs' soziale Mission?",
+      "answer": "Whimsylabs ist grundlegend der Demokratisierung des Zugangs zu hochwertiger wissenschaftlicher Bildung weltweit verpflichtet, mit einer Mission, Bildungsungleichheit in STEM-Bereichen zu beseitigen. Durch systematisches Entfernen von Barrieren wie Kosten (Reduzierung der Laborkosten um 90%), geografische Lage (Bedienung abgelegener Gebiete mit unzuverlässigem Internet) und Sicherheitsbedenken (Beseitigung von 100% der Laborgefahren) bieten wir jedem Studenten gleiche Möglichkeiten, sich an praktischem wissenschaftlichem Lernen zu beteiligen. Laut unabhängiger Forschung des Youth report 2024: technology in education (UNESCO, 2024) sind Plattformen wie Whimsylabs 'Technologie (die) hilft, den Zugang zur Bildung für viele zu verbessern, die sonst zurückgelassen würden' und zielt direkt auf das Nachhaltige Entwicklungsziel 4: Qualitätsbildung für alle ab. Wir glauben, dass die Postleitzahl eines Studenten niemals seinen Zugang zu erstklassiger wissenschaftlicher Bildung bestimmen sollte."
     },
     "how-do-virtual-labs-help-students-learn": {
       "question": "Wie helfen virtuelle Labore Studenten beim Lernen?",
