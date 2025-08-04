@@ -19,11 +19,16 @@ const Header = ({ t, currentLang }) => {
                 <img src="/images/logo.png" alt="Whimsylabs Logo" className="logo" />
             </div>
             
-            <button className="burger-menu" onClick={toggleMenu} aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div className="mobile-controls">
+                <div className="mobile-language-switcher">
+                    <LanguageSwitcher />
+                </div>
+                <button className="burger-menu" onClick={toggleMenu} aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
             
             <ul className={`nav nav-pills ${menuOpen ? 'menu-open' : ''}`} aria-label="Primary navigation">
                 <li className="nav-item">

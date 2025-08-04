@@ -8,12 +8,14 @@ import Services from "./Components/Services";
 import Features from "./Components/FeaturesPage";
 import FAQPage from "./Components/FAQPage";
 import ContactPage from "./Components/ContactPage";
+import PrivacyPage from "./Components/PrivacyPage";
 import BlogPost from "./Components/BlogPost";
-// Private/unreleased components (disabled)
+import { getCurrentLanguage } from "./i18n";
 // import IgnitePitchDeck from "./Components/IgnitePitchDeck";
+
+// Private/unreleased components
 // import CashflowProjection from "./Components/CashflowProjection";
 // import PricingPage from "./Components/PricingPage";
-import { getCurrentLanguage } from "./i18n";
 
 function App() {
   // Determine which component to render based on the current path
@@ -36,6 +38,8 @@ function App() {
     if (basePath === "/faq/" || basePath === "/faq") return <FAQPage />;
     if (basePath === "/contact/" || basePath === "/contact")
       return <ContactPage />;
+    if (basePath === "/privacy/" || basePath === "/privacy")
+      return <PrivacyPage />;
     // Private/unreleased routes (disabled)
     // if (basePath === "/ignite-pitch/" || basePath === "/ignite-pitch")
     //   return <IgnitePitchDeck />;

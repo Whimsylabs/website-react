@@ -7,10 +7,8 @@ import withTranslation from './withTranslation';
 const FAQ = ({ t, currentLang }) => {
 
   
-  // Initialize with all indices active (expanded)
-  const [activeIndices, setActiveIndices] = useState(
-    Array.from({ length: 100 }, (_, i) => i)
-  );
+  // Initialize with no indices active (all collapsed)
+  const [activeIndices, setActiveIndices] = useState([]);
 
   const toggleFAQ = (index) => {
     if (activeIndices.includes(index)) {

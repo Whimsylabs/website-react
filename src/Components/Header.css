@@ -20,6 +20,20 @@ header {
   height: 60px; /* Adjust the size of the logo */
 }
 
+/* Mobile controls container */
+.mobile-controls {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  gap: 15px;
+}
+
+/* Mobile language switcher */
+.mobile-language-switcher {
+  display: none;
+}
+
 /* Burger menu button */
 .burger-menu {
   display: none;
@@ -31,8 +45,6 @@ header {
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-left: auto;
-  margin-right: 20px;
   z-index: 1001;
   position: relative;
 }
@@ -133,6 +145,14 @@ body, html {
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
+  .mobile-controls {
+    display: flex;
+  }
+
+  .mobile-language-switcher {
+    display: block;
+  }
+
   .burger-menu {
     display: flex;
   }
@@ -164,6 +184,11 @@ body, html {
   header .nav-link.active::after {
     bottom: -5px;
   }
+
+  /* Hide the language switcher inside the mobile menu */
+  .language-switcher-nav {
+    display: none;
+  }
 }
 
 /* Language switcher in navigation */
@@ -182,16 +207,18 @@ body, html {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Mobile responsive adjustments for language switcher */
+/* Mobile language switcher styling */
 @media (max-width: 768px) {
-  .language-switcher-nav {
-    margin-left: 0;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  .mobile-language-switcher .language-switcher-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 12px;
   }
-  
-  .nav.menu-open .language-switcher-nav {
-    display: block;
+
+  .mobile-language-switcher .language-switcher-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
   }
 }

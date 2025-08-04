@@ -12,6 +12,7 @@ const Footer = () => {
                 <li><a href="/contact/" className="nav-link" aria-label="Contact Us via Email">Contact</a></li>
                 <li><a href="/blog/" className="nav-link" aria-label="Visit Our Blog">Blog</a></li>
                 <li><a href="/faq/" className="nav-link" aria-label="Frequently Asked Questions">FAQ</a></li>
+                <li><a href="/privacy/" className="nav-link" aria-label="Privacy Policy">Privacy</a></li>
             </ul>
             
             {/* Social Media Icons */}

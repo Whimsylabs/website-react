@@ -52,6 +52,13 @@ const translations = {
         "Find answers to common questions about our virtual lab software and how it can transform STEM education",
     },
 
+    // Privacy
+    privacy: {
+      title: "Privacy Policy",
+      subtitle:
+        "Learn how we collect, use, and protect your personal information when using our virtual laboratory software",
+    },
+
     // Common
     common: {
       readMore: "Read More",
@@ -238,6 +245,13 @@ const translations = {
       title: "Häufig Gestellte Fragen",
       subtitle:
         "Finden Sie Antworten auf häufige Fragen zu unserer virtuellen Labor-Software und wie sie die STEM-Bildung transformieren kann",
+    },
+
+    // Privacy
+    privacy: {
+      title: "Datenschutzerklärung",
+      subtitle:
+        "Erfahren Sie, wie wir Ihre persönlichen Daten sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software nutzen",
     },
 
     // Common

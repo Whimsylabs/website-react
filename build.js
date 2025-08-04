@@ -63,6 +63,11 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.contact?.description || "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
     keywords: "contact WhimsyLabs, virtual lab trial, STEM education contact",
   },
+  "/privacy": {
+    title: translations[lang]?.privacy?.title || "Privacy Policy | WhimsyLabs Virtual Lab Software",
+    description: translations[lang]?.privacy?.subtitle || "Learn how we collect, use, and protect your personal information when using our virtual laboratory software.",
+    keywords: "WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy",
+  },
 });
 
 // Route to component mapping
@@ -73,6 +78,8 @@ const routeComponentMap = {
   "/features": "Features",
   "/faq": "FAQPage",
   "/contact": "ContactPage",
+  "/privacy": "PrivacyPage",
+  // "/ignite-pitch": "IgnitePitchDeck", // Disabled
 };
 
 // Dynamic route patterns
@@ -189,8 +196,15 @@ async function loadReactComponents() {
       require("./src/Components/ContactPage.js").default;
     console.log("✅ Loaded ContactPage");
 
+    ReactComponents.PrivacyPage =
+      require("./src/Components/PrivacyPage.js").default;
+    console.log("✅ Loaded PrivacyPage");
+
     ReactComponents.BlogPost = require("./src/Components/BlogPost.js").default;
     console.log("✅ Loaded BlogPost");
+
+    // ReactComponents.IgnitePitchDeck = require("./src/Components/IgnitePitchDeck.js").default;
+    // console.log("✅ Loaded IgnitePitchDeck"); // Disabled
   } catch (error) {
     console.error("❌ Error loading React components:", error);
     throw error;
