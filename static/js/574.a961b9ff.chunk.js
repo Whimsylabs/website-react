@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[574],{574:(s,a,e)=>{e.r(a),e.d(a,{content:()=>n,description:()=>i,title:()=>o});e(43);const o="Una breve historia de WhimsyLabs: Desde nuestros humildes comienzos hasta ser ganador de BETT 2025",i="C\xf3mo WhimsyLabs, fundado por Marisa French, est\xe1 abordando los desaf\xedos STEM con laboratorios completamente simulados, asociaciones impactantes e innovaci\xf3n galardonada.",n=null}}]);
+//# sourceMappingURL=574.a961b9ff.chunk.js.map

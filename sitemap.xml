@@ -1,69 +1,484 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://whimsylabs.ai/</loc>
+        <lastmod>2025-08-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/blog/</loc>
+        <lastmod>2025-08-04</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/services/</loc>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/services/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/services/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/services/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/services/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/services/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/services/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/services/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/services/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/services/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/services/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/services/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/services/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/services/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/services/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/services/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/services/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/services/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/services/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/services/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/features/</loc>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/features/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/features/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/features/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/features/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/features/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/features/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/features/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/features/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/features/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/features/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/features/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/features/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/features/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/features/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/features/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/features/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/faq/</loc>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/faq/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/faq/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/faq/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/faq/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/faq/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/faq/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/faq/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/faq/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/faq/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/faq/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/faq/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/faq/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/faq/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/faq/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/faq/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/faq/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/faq/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/faq/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/faq/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/contact/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/contact/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/contact/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/contact/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/contact/"/>
     </url>
     <url>
-        <loc>https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/</loc>
-        <lastmod>2025-06-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://whimsylabs.ai/es/contact/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/contact/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/contact/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/contact/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/contact/"/>
     </url>
     <url>
-        <loc>https://whimsylabs.ai/blog/whimsycat-ai-tutor-transforming-science-education/</loc>
-        <lastmod>2025-05-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://whimsylabs.ai/fr/contact/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/contact/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/contact/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/contact/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/contact/"/>
     </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/contact/</loc>
+        <lastmod>2025-08-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/contact/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/contact/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/contact/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/contact/"/>
+    </url>
+    <!-- Blog posts (6 total, 4 languages each) -->
     <url>
         <loc>https://whimsylabs.ai/blog/ai-powered-virtual-labs-solving-education-crisis/</loc>
         <lastmod>2025-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/ai-powered-virtual-labs-solving-education-crisis/</loc>
+        <lastmod>2025-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/ai-powered-virtual-labs-solving-education-crisis/</loc>
+        <lastmod>2025-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/ai-powered-virtual-labs-solving-education-crisis/</loc>
+        <lastmod>2025-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/ai-powered-virtual-labs-solving-education-crisis/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/sandbox-learning-revolution-stem-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/sandbox-learning-revolution-stem-education/</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/sandbox-learning-revolution-stem-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/sandbox-learning-revolution-stem-education/</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/sandbox-learning-revolution-stem-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/sandbox-learning-revolution-stem-education/</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/sandbox-learning-revolution-stem-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/sandbox-learning-revolution-stem-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/blog/whimsycat-ai-tutor-transforming-science-education/</loc>
+        <lastmod>2025-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/whimsycat-ai-tutor-transforming-science-education/</loc>
+        <lastmod>2025-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/whimsycat-ai-tutor-transforming-science-education/</loc>
+        <lastmod>2025-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/whimsycat-ai-tutor-transforming-science-education/</loc>
+        <lastmod>2025-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsycat-ai-tutor-transforming-science-education/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsycat-ai-tutor-transforming-science-education/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/blog/virtual-kidney-dissection-send-engagement/</loc>
-        <lastmod>2025-03-19</lastmod>
+        <lastmod>2025-02-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/virtual-kidney-dissection-send-engagement/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/virtual-kidney-dissection-send-engagement/</loc>
+        <lastmod>2025-02-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/virtual-kidney-dissection-send-engagement/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/virtual-kidney-dissection-send-engagement/</loc>
+        <lastmod>2025-02-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/virtual-kidney-dissection-send-engagement/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/virtual-kidney-dissection-send-engagement/</loc>
+        <lastmod>2025-02-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/virtual-kidney-dissection-send-engagement/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/virtual-kidney-dissection-send-engagement/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/blog/physicality-in-virtual-labs/</loc>
-        <lastmod>2025-02-03</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/physicality-in-virtual-labs/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/physicality-in-virtual-labs/</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/physicality-in-virtual-labs/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/physicality-in-virtual-labs/</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/physicality-in-virtual-labs/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/physicality-in-virtual-labs/</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/physicality-in-virtual-labs/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/physicality-in-virtual-labs/"/>
     </url>
     <url>
         <loc>https://whimsylabs.ai/blog/whimsylabs-education-revolution/</loc>
-        <lastmod>2025-01-27</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsylabs-education-revolution/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/blog/whimsylabs-education-revolution/</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsylabs-education-revolution/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/blog/whimsylabs-education-revolution/</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsylabs-education-revolution/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/blog/whimsylabs-education-revolution/</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/blog/whimsylabs-education-revolution/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/blog/whimsylabs-education-revolution/"/>
     </url>
 </urlset>

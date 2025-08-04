@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[432],{432:(e,s,t)=>{t.r(s),t.d(s,{content:()=>l,description:()=>n,title:()=>i});t(43);const i="Apprentissage pratique : La dissection virtuelle de rein am\xe9liore l'engagement des \xe9tudiants SEND",n="Explorer comment l'interaction physique de WhimsyLabs dans les environnements virtuels am\xe9liore significativement les r\xe9sultats \xe9ducatifs et l'engagement pour les \xe9tudiants SEND.",l=null}}]);
+//# sourceMappingURL=432.1ca5a9fe.chunk.js.map

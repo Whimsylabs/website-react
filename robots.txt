@@ -21,4 +21,18 @@ Disallow: /*.css$
 Allow: /blog/
 Allow: /services/
 Allow: /features/
+Allow: /faq/
+Allow: /contact/
 Allow: /sitemap
+
+# Explicitly allow all blog posts for search engine crawling
+Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /blog/sandbox-learning-revolution-stem-education/
+Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
+Allow: /blog/virtual-kidney-dissection-send-engagement/
+Allow: /blog/physicality-in-virtual-labs/
+Allow: /blog/whimsylabs-education-revolution/
+
+# All blog posts are explicitly allowed above
+# Total blog posts: 6
+# FAQ page is allowed at /faq/

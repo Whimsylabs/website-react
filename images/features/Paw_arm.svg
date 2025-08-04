@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.54 190.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-1" cx="58.77" cy="68.04" r="38.5"/>
+    <g>
+      <circle class="cls-1" cx="53.11" cy="74.41" r="22"/>
+      <circle class="cls-1" cx="22" cy="43.29" r="22"/>
+      <rect class="cls-1" x="15.56" y="36.85" width="44" height="44" transform="translate(22.5 127.02) rotate(-135)"/>
+    </g>
+    <g>
+      <circle class="cls-1" cx="58.06" cy="66" r="22"/>
+      <circle class="cls-1" cx="58.06" cy="22" r="22"/>
+      <rect class="cls-1" x="36.06" y="22" width="44" height="44" transform="translate(14.06 102.06) rotate(-90)"/>
+    </g>
+    <g>
+      <circle class="cls-1" cx="64.43" cy="74.41" r="22"/>
+      <circle class="cls-1" cx="95.54" cy="43.29" r="22"/>
+      <rect class="cls-1" x="57.98" y="36.85" width="44" height="44" transform="translate(-18.19 73.79) rotate(-45)"/>
+    </g>
+  </g>
+  <rect class="cls-1" x="35.77" y="98.95" width="44" height="92"/>
+</svg>

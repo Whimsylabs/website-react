@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[978],{978:(e,s,t)=>{t.r(s),t.d(s,{content:()=>a,description:()=>i,title:()=>n});t(43);const n="Rencontrez WhimsyCat : Le tuteur IA r\xe9volutionnaire transformant l'\xe9ducation scientifique",i="Comment le tuteur IA avanc\xe9 de WhimsyLabs fournit des conseils personnalis\xe9s, des commentaires en temps r\xe9el et des parcours d'apprentissage adaptatifs pour r\xe9volutionner l'\xe9ducation de laboratoire.",a=null}}]);
+//# sourceMappingURL=978.bebd45d2.chunk.js.map
