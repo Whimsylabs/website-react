@@ -119,38 +119,33 @@ const BlogPost = (props = {}) => {
           const postData = await getBlogPostTranslation(language, postId);
           
           if (postData && postData.content) {
+            // Get the correct date from the fallback posts
+            const fallbackPost = fallbackPosts.find(p => p.id === routeSlug);
             const currentPost = {
               id: postId,
               slug: routeSlug,
               title: postData.title,
               content: postData.content,
-              date: '2025-01-01', // Default date, could be enhanced
+              date: fallbackPost?.date || '2025-01-01', // Use fallback date
               description: postData.description
             };
             
             console.log('Found post:', currentPost.title);
             setPost(currentPost);
             
-            // Load all posts for navigation
-            try {
-              const posts = await getAllBlogPosts(language);
-              setAllPosts(posts);
-              
-              // Set next and previous posts for navigation
-              const postIndex = posts.findIndex((p) => p.id === postId);
-              if (postIndex !== -1) {
-                if (postIndex > 0) {
-                  setNextPost(posts[postIndex - 1]); // Newer post
-                }
-                
-                if (postIndex < posts.length - 1) {
-                  setPrevPost(posts[postIndex + 1]); // Older post
-                }
+            // Use fallback posts for navigation (with correct dates)
+            setAllPosts(fallbackPosts);
+            
+            // Set next and previous posts for navigation
+            const postIndex = fallbackPosts.findIndex((p) => p.id === routeSlug);
+            if (postIndex !== -1) {
+              if (postIndex > 0) {
+                setNextPost(fallbackPosts[postIndex - 1]); // Newer post
               }
-            } catch (navError) {
-              console.warn('Could not load navigation posts:', navError);
-              // Use fallback for navigation
-              setAllPosts(fallbackPosts);
+              
+              if (postIndex < fallbackPosts.length - 1) {
+                setPrevPost(fallbackPosts[postIndex + 1]); // Older post
+              }
             }
           } else {
             console.log('Post not found, trying fallback');

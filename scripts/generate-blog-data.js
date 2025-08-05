@@ -21,12 +21,12 @@ const postIdToSlug = {
 
 // Dates from the original blog components
 const postDates = {
-  'post1': '2025-01-01',
-  'post2': '2025-01-15', 
-  'post3': '2025-02-01',
+  'post1': '2025-01-27',
+  'post2': '2025-02-03', 
+  'post3': '2025-03-19',
   'post4': '2025-04-15',
-  'post5': '2025-03-01',
-  'post6': '2025-03-15'
+  'post5': '2025-05-10',
+  'post6': '2025-06-05'
 };
 
 async function generateBlogData() {
