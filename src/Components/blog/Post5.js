@@ -144,11 +144,6 @@ export const content = (
       className="bluesky-embed-container"
       style={{ margin: "20px 0", textAlign: "center" }}
     >
-      <script
-        type="module"
-        src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js"
-        async
-      ></script>
       <bsky-embed
         search="The Whimsycat is now here to help you learn science!!"
         limit="1"

@@ -112,23 +112,32 @@ const Blog = (props = {}) => {
         
         console.log('Blog: Using language:', language, props.language ? '(from props)' : '(detected)');
         
-        // Load blog posts for the detected language
-        const blogPosts = await getAllBlogPosts(language);
-        
-        if (blogPosts && blogPosts.length > 0) {
-          // Convert to the format expected by the component
-          const formattedPosts = blogPosts.map(post => ({
-            id: postIdToSlug[post.id] || post.id, // Convert back to slug for URLs
-            postId: post.id, // Keep the post ID for reference
-            title: post.title,
-            content: post.content,
-            date: '2025-01-01', // Default date, could be enhanced
-            description: post.description
-          })).sort((a, b) => new Date(b.date) - new Date(a.date));
+        // Try to load translated blog posts
+        try {
+          const blogPosts = await getAllBlogPosts(language);
           
-          setPosts(formattedPosts);
-        } else {
-          console.log('Blog: No posts found, using fallback');
+          if (blogPosts && blogPosts.length > 0) {
+            // Convert to the format expected by the component and use correct dates
+            const formattedPosts = blogPosts.map(post => {
+              // Get the correct date from fallback posts
+              const fallbackPost = fallbackPosts.find(p => p.id === (postIdToSlug[post.id] || post.id));
+              return {
+                id: postIdToSlug[post.id] || post.id, // Convert back to slug for URLs
+                postId: post.id, // Keep the post ID for reference
+                title: post.title,
+                content: post.content,
+                date: fallbackPost?.date || post.date, // Use fallback date if available
+                description: post.description
+              };
+            }).sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            setPosts(formattedPosts);
+          } else {
+            console.log('Blog: No translated posts found, using fallback');
+            setPosts(fallbackPosts);
+          }
+        } catch (translationError) {
+          console.warn('Blog: Error loading translated posts:', translationError);
           setPosts(fallbackPosts);
         }
       } catch (error) {

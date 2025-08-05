@@ -211,11 +211,12 @@ class MetadataInjector {
     // If we have helmet context, use it; otherwise generate default metadata
     if (helmetContext && helmetContext.helmet) {
       const helmetMeta = this.extractHelmetMetadata(helmetContext);
+      const blueskyScript = '<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>';
       return {
         title: helmetMeta.title,
         meta: helmetMeta.meta,
         link: helmetMeta.link,
-        script: helmetMeta.script + '\n    ' + this.generateStructuredData(route),
+        script: blueskyScript + '\n    ' + helmetMeta.script + '\n    ' + this.generateStructuredData(route),
         style: helmetMeta.style
       };
     }
@@ -225,12 +226,13 @@ class MetadataInjector {
     const ogMeta = this.generateOpenGraphTags(route, customMeta);
     const twitterMeta = this.generateTwitterCardTags(route, customMeta);
     const structuredData = this.generateStructuredData(route);
+    const blueskyScript = '<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>';
 
     return {
       title: '',
       meta: basicMeta + ogMeta + twitterMeta,
       link: '',
-      script: structuredData,
+      script: blueskyScript + '\n    ' + structuredData,
       style: ''
     };
   }
