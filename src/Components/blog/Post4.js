@@ -133,11 +133,6 @@ export const content = (
       className="bluesky-embed-container"
       style={{ margin: "20px 0", textAlign: "center" }}
     >
-      <script
-        type="module"
-        src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js"
-        async
-      ></script>
       <bsky-embed
         search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
         limit="1"
