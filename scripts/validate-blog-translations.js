@@ -33,8 +33,10 @@ async function validateBlogTranslations() {
         
         const content = await fs.readFile(filePath, 'utf8');
         
-        // Check if content exists (not null)
-        const hasContent = !content.includes('export const content = null');
+        // Check if content exists (not null and not just a placeholder)
+        const hasContent = !content.includes('export const content = null') && 
+                          !content.includes('// TODO: Translate full content') &&
+                          content.includes('export const content = (');
         
         if (hasContent) {
           results[lang].withContent++;

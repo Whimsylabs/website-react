@@ -1,23 +1,25 @@
 // Spanish - post6: La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial para la educación STEM
 import React from "react";
 
-export const title = "La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial para la educación STEM";
-export const description = "Cómo el enfoque de exploración abierta de WhimsyLabs transforma la educación científica abrazando el fracaso como una herramienta de aprendizaje poderosa y fomentando el pensamiento científico auténtico.";
+export const title =
+  "La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial para la educación STEM";
+export const description =
+  "Cómo el enfoque de exploración abierta de WhimsyLabs transforma la educación científica abrazando el fracaso como una herramienta de aprendizaje poderosa y fomentando el pensamiento científico auténtico.";
 
 export const content = (
   <div>
     <p>
-      La educación científica tradicional a menudo sigue un enfoque rígido,
-      paso a paso, donde los estudiantes son guiados a través de experimentos
-      cuidadosamente controlados con resultados predeterminados. Mientras
-      que esta metodología asegura resultados consistentes, representa mal
+      La educación científica tradicional a menudo sigue un enfoque rígido, paso
+      a paso, donde los estudiantes son guiados a través de experimentos
+      cuidadosamente controlados con resultados predeterminados. Mientras que
+      esta metodología asegura resultados consistentes, representa mal
       fundamentalmente cómo funciona la ciencia real. El descubrimiento
       científico auténtico es desordenado, iterativo, y frecuentemente involucra
-      falla productiva. Según investigación publicada en Learning: Research
-      and Practice, los estudiantes que experimentan y aprenden del fracaso
-      a través de enfoques de falla productiva desarrollan habilidades de
-      resolución de problemas más fuertes y mayor resistencia que aquellos
-      que siguen solo caminos exitosos (
+      falla productiva. Según investigación publicada en Learning: Research and
+      Practice, los estudiantes que experimentan y aprenden del fracaso a través
+      de enfoques de falla productiva desarrollan habilidades de resolución de
+      problemas más fuertes y mayor resistencia que aquellos que siguen solo
+      caminos exitosos (
       <a
         href="https://www.tandfonline.com/doi/10.1080/23735082.2015.1002195"
         target="_blank"
@@ -29,15 +31,15 @@ export const content = (
     </p>
 
     <p>
-      WhimsyLabs ha sido pionero en un enfoque fundamentalmente diferente
-      a la educación científica a través de nuestra filosofía de aprendizaje
-      sandbox. A diferencia de los laboratorios virtuales convencionales
-      que restringen a los estudiantes a caminos predeterminados, nuestra
-      plataforma proporciona libertad experimental completa con permutaciones
-      de equipo infinitas y caminos procedimentales ilimitados. Este entorno
-      abierto permite a los estudiantes diseñar sus propios experimentos,
-      hacer elecciones auténticas, y, más importante, aprender de sus errores
-      en un entorno seguro y sin consecuencias.
+      WhimsyLabs ha sido pionero en un enfoque fundamentalmente diferente a la
+      educación científica a través de nuestra filosofía de aprendizaje sandbox.
+      A diferencia de los laboratorios virtuales convencionales que restringen a
+      los estudiantes a caminos predeterminados, nuestra plataforma proporciona
+      libertad experimental completa con permutaciones de equipo infinitas y
+      caminos procedimentales ilimitados. Este entorno abierto permite a los
+      estudiantes diseñar sus propios experimentos, hacer elecciones auténticas,
+      y, más importante, aprender de sus errores en un entorno seguro y sin
+      consecuencias.
     </p>
 
     <h3>Libertad de Fallar: El Maestro Más Poderoso</h3>
@@ -55,37 +57,35 @@ export const content = (
 
     <p>
       "Los laboratorios tradicionales a menudo previenen que los estudiantes
-      cometan errores debido a preocupaciones de seguridad, costos de equipo,
-      o restricciones de tiempo," explica Dr. Marisa French, fundadora y
-      CEO de WhimsyLabs. "Pero al hacer esto, eliminan uno de los mecanismos
-      de aprendizaje más poderosos que poseen los humanos; aprender del
-      fracaso. Nuestro entorno virtual remueve estas restricciones, permitiendo
-      a los estudiantes experimentar libremente, cometer errores de manera
-      segura, y desarrollar habilidades de pensamiento científico genuinas.
-      Esto abre la posibilidad para estudiantes y maestros por igual; uno
-      de mis experimentos favoritos en Whimsylabs en este momento es dar
-      a estudiantes experimentados una práctica que han hecho antes con
-      información incompleta. Si siguen ciegamente la práctica, o asumen
-      que saben mejor, el experimento está amañado para explotar. Ver el
-      shock, luego los engranajes comenzar a girar mientras tratan de
-      entenderlo. Whimsycat también ayuda a apoyar a los estudiantes para
-      que encuentren su equilibrio, y luego{" "}
-      <i>el estudiante resuelve el resto de la práctica por sí mismo.</i>{" "}
-      Eso para mí es cuando dejas de ser un estudiante, y comienzas a ser
-      un científico, y hemos logrado capturar esa experiencia en nuestro
-      software."
+      cometan errores debido a preocupaciones de seguridad, costos de equipo, o
+      restricciones de tiempo," explica Dr. Marisa French, fundadora y CEO de
+      WhimsyLabs. "Pero al hacer esto, eliminan uno de los mecanismos de
+      aprendizaje más poderosos que poseen los humanos; aprender del fracaso.
+      Nuestro entorno virtual remueve estas restricciones, permitiendo a los
+      estudiantes experimentar libremente, cometer errores de manera segura, y
+      desarrollar habilidades de pensamiento científico genuinas. Esto abre la
+      posibilidad para estudiantes y maestros por igual; uno de mis experimentos
+      favoritos en Whimsylabs en este momento es dar a estudiantes
+      experimentados una práctica que han hecho antes con información
+      incompleta. Si siguen ciegamente la práctica, o asumen que saben mejor, el
+      experimento está amañado para explotar. Ver el shock, luego los engranajes
+      comenzar a girar mientras tratan de entenderlo. Whimsycat también ayuda a
+      apoyar a los estudiantes para que encuentren su equilibrio, y luego{" "}
+      <i>el estudiante resuelve el resto de la práctica por sí mismo.</i> Eso
+      para mí es cuando dejas de ser un estudiante, y comienzas a ser un
+      científico, y hemos logrado capturar esa experiencia en nuestro software."
     </p>
 
     <p>
-      Este enfoque está respaldado por investigación extensa en pedagogía
-      de falla productiva, que demuestra que permitir a los estudiantes
-      luchar con problemas complejos antes de recibir instrucción directa
-      lleva a comprensión conceptual significativamente más profunda y mejor
+      Este enfoque está respaldado por investigación extensa en pedagogía de
+      falla productiva, que demuestra que permitir a los estudiantes luchar con
+      problemas complejos antes de recibir instrucción directa lleva a
+      comprensión conceptual significativamente más profunda y mejor
       transferencia de conocimiento a nuevas situaciones. Un meta-análisis
-      integral encontró que los enfoques de falla productiva resultaron
-      en mejoras sustanciales en comprensión conceptual comparado con métodos
-      de instrucción directa, con tamaños de efecto casi el doble de recibir
-      un año de instrucción de un buen maestro (
+      integral encontró que los enfoques de falla productiva resultaron en
+      mejoras sustanciales en comprensión conceptual comparado con métodos de
+      instrucción directa, con tamaños de efecto casi el doble de recibir un año
+      de instrucción de un buen maestro (
       <a
         href="https://www.timeshighereducation.com/campus/using-productive-failure-activate-deeper-learning"
         target="_blank"
@@ -103,16 +103,16 @@ export const content = (
     />
     <p className="caption">
       El entorno sandbox de WhimsyLabs fomenta la exploración y experimentación
-      sin miedo al fracaso. En este caso, un estudiante está hirviendo
-      etanol sobre una llama directa y está a punto de aprender una lección
-      importante sobre líquidos inflamables.
+      sin miedo al fracaso. En este caso, un estudiante está hirviendo etanol
+      sobre una llama directa y está a punto de aprender una lección importante
+      sobre líquidos inflamables.
     </p>
 
     <h3>Más Allá del Paso-a-Paso: Investigación Científica Auténtica</h3>
 
     <p>
-      Los laboratorios virtuales tradicionales a menudo funcionan como hojas
-      de trabajo digitales, guiando a los estudiantes a través de pasos
+      Los laboratorios virtuales tradicionales a menudo funcionan como hojas de
+      trabajo digitales, guiando a los estudiantes a través de pasos
       predeterminados con poco espacio para desviación o creatividad. Este
       enfoque representa mal fundamentalmente la naturaleza de la investigación
       científica, que es inherentemente exploratoria y creativa. El entorno
@@ -121,7 +121,10 @@ export const content = (
       probarlas, y refinando iterativamente su comprensión basada en resultados.
     </p>
 
-    <p>Nuestra plataforma apoya este proceso de investigación auténtica proporcionando:</p>
+    <p>
+      Nuestra plataforma apoya este proceso de investigación auténtica
+      proporcionando:
+    </p>
 
     <ul>
       <li>
@@ -131,8 +134,8 @@ export const content = (
       </li>
       <li>
         <strong>Múltiples Caminos de Solución:</strong> La mayoría de los
-        desafíos pueden resolverse a través de varios enfoques, cada uno
-        con diferentes ventajas y compromisos.
+        desafíos pueden resolverse a través de varios enfoques, cada uno con
+        diferentes ventajas y compromisos.
       </li>
       <li>
         <strong>Consecuencias Realistas:</strong> Las acciones tienen resultados
@@ -169,13 +172,13 @@ export const content = (
 
     <p>
       Uno de los aspectos más poderosos del aprendizaje sandbox es su
-      inclusividad inherente. Los enfoques tradicionales paso-a-paso asumen
-      que todos los estudiantes aprenden mejor a través del mismo camino,
-      pero la investigación en ciencias cognitivas demuestra claramente que
-      los aprendices tienen fortalezas, preferencias y estrategias de
-      aprendizaje óptimas diversas. El entorno abierto de WhimsyLabs acomoda
-      esta diversidad al permitir a los estudiantes abordar problemas de
-      maneras que se alinean con sus estilos de aprendizaje individuales.
+      inclusividad inherente. Los enfoques tradicionales paso-a-paso asumen que
+      todos los estudiantes aprenden mejor a través del mismo camino, pero la
+      investigación en ciencias cognitivas demuestra claramente que los
+      aprendices tienen fortalezas, preferencias y estrategias de aprendizaje
+      óptimas diversas. El entorno abierto de WhimsyLabs acomoda esta diversidad
+      al permitir a los estudiantes abordar problemas de maneras que se alinean
+      con sus estilos de aprendizaje individuales.
     </p>
 
     <p>
@@ -183,19 +186,19 @@ export const content = (
       para entender el mismo problema", nota Dr Alex Papiez "Algunos estudiantes
       prueban metódicamente cada variable del escenario que enfrentan, otros
       toman un enfoque intuitivo, mientras que otros encuentran nuevas maneras
-      de trabajar como equipo para entender el problema. Esta diversidad
-      de enfoque es ilustrativa del dinamismo en aprendizaje que pensamos
-      hace la ciencia adictiva y que hemos diseñado Whimsylabs para apoyar."
+      de trabajar como equipo para entender el problema. Esta diversidad de
+      enfoque es ilustrativa del dinamismo en aprendizaje que pensamos hace la
+      ciencia adictiva y que hemos diseñado Whimsylabs para apoyar."
     </p>
 
     <p>
       Esta flexibilidad es particularmente beneficiosa para estudiantes con
-      Necesidades Educativas Especiales y Discapacidades (SEND). La investigación
-      sugiere que los entornos de aprendizaje interactivos con exploración
-      auto-dirigida mejoran significativamente la comprensión y motivación
-      para aprendices SEND. Los estudios encontraron que los entornos de
-      aprendizaje virtual adaptativos y abiertos mejoraron el compromiso
-      y comprensión conceptual en aprendices SEND comparado con enfoques
+      Necesidades Educativas Especiales y Discapacidades (SEND). La
+      investigación sugiere que los entornos de aprendizaje interactivos con
+      exploración auto-dirigida mejoran significativamente la comprensión y
+      motivación para aprendices SEND. Los estudios encontraron que los entornos
+      de aprendizaje virtual adaptativos y abiertos mejoraron el compromiso y
+      comprensión conceptual en aprendices SEND comparado con enfoques
       estructurados tradicionales (
       <a
         href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.674033/full"
@@ -220,12 +223,11 @@ export const content = (
     <p>
       <strong>Diseño de Desafío Progresivo:</strong> Las asignaciones de
       experimento iniciales comienzan con exploración guiada de conceptos
-      básicos antes de abrirse a desafíos más complejos y abiertos. Este
-      enfoque andamiado construye confianza y competencia mientras aumenta
-      gradualmente la autonomía. La investigación en psicología educativa
-      muestra que esta liberación progresiva de responsabilidad optimiza
-      los resultados de aprendizaje a través de poblaciones estudiantiles
-      diversas (
+      básicos antes de abrirse a desafíos más complejos y abiertos. Este enfoque
+      andamiado construye confianza y competencia mientras aumenta gradualmente
+      la autonomía. La investigación en psicología educativa muestra que esta
+      liberación progresiva de responsabilidad optimiza los resultados de
+      aprendizaje a través de poblaciones estudiantiles diversas (
       <a
         href="https://www.sciencedirect.com/science/article/pii/S1747938X23000295"
         target="_blank"
@@ -238,32 +240,31 @@ export const content = (
 
     <p>
       <strong>Tutoría Inteligente:</strong> Nuestro tutor de IA WhimsyCat
-      proporciona orientación contextual sin restringir la exploración.
-      En lugar de dictar pasos específicos, hace preguntas exploratorias,
-      sugiere enfoques alternativos, y ayuda a los estudiantes a reflexionar
-      sobre sus elecciones experimentales. Este enfoque mantiene los beneficios
-      de la exploración abierta mientras proporciona soporte necesario para
-      aprendices con dificultades.
+      proporciona orientación contextual sin restringir la exploración. En lugar
+      de dictar pasos específicos, hace preguntas exploratorias, sugiere
+      enfoques alternativos, y ayuda a los estudiantes a reflexionar sobre sus
+      elecciones experimentales. Este enfoque mantiene los beneficios de la
+      exploración abierta mientras proporciona soporte necesario para aprendices
+      con dificultades.
     </p>
 
     <p>
-      <strong>Límites de Seguridad:</strong> Mientras que los estudiantes
-      tienen libertad tremenda para experimentar, nuestra plataforma incluye
-      sistemas de seguridad inteligentes que previenen combinaciones
-      verdaderamente peligrosas mientras permiten errores educativos. Esto
-      asegura que aprender del fracaso permanezca productivo en lugar de
-      destructivo.
+      <strong>Límites de Seguridad:</strong> Mientras que los estudiantes tienen
+      libertad tremenda para experimentar, nuestra plataforma incluye sistemas
+      de seguridad inteligentes que previenen combinaciones verdaderamente
+      peligrosas mientras permiten errores educativos. Esto asegura que aprender
+      del fracaso permanezca productivo en lugar de destructivo.
     </p>
 
     <h3>Impacto del Mundo Real: Aprendizaje Sandbox en Acción</h3>
 
     <p>
-      La efectividad del enfoque sandbox de WhimsyLabs se demuestra a través
-      de mejoras medibles en resultados estudiantiles a través de entornos
-      educativos diversos. Este impacto se comunica a través de nuestra
-      sección de análisis del panel del maestro, permitiendo a los maestros
-      seguir datos de clase directamente, identificar estudiantes con
-      dificultades y asignar su tiempo a la máxima efectividad.
+      La efectividad del enfoque sandbox de WhimsyLabs se demuestra a través de
+      mejoras medibles en resultados estudiantiles a través de entornos
+      educativos diversos. Este impacto se comunica a través de nuestra sección
+      de análisis del panel del maestro, permitiendo a los maestros seguir datos
+      de clase directamente, identificar estudiantes con dificultades y asignar
+      su tiempo a la máxima efectividad.
     </p>
 
     <p>
@@ -272,36 +273,34 @@ export const content = (
         Fisicalidad en Laboratorios Virtuales
       </a>
       , que permite comprensión práctica genuina en lugar de procedimientos
-      memorizados debido a que los estudiantes realizan físicamente las
-      acciones ellos mismos. Esta capacidad de educar a los estudiantes
-      sobre forma y función práctica del mundo real les permite transferir
-      directamente capacidad a laboratorios reales. Esto es esencial para
-      preparar a los estudiantes para cursos STEM avanzados y carreras donde
-      encontrarán desafíos desconocidos que requieren resolución creativa
-      de problemas.
+      memorizados debido a que los estudiantes realizan físicamente las acciones
+      ellos mismos. Esta capacidad de educar a los estudiantes sobre forma y
+      función práctica del mundo real les permite transferir directamente
+      capacidad a laboratorios reales. Esto es esencial para preparar a los
+      estudiantes para cursos STEM avanzados y carreras donde encontrarán
+      desafíos desconocidos que requieren resolución creativa de problemas.
     </p>
 
     <h3>Preparando Estudiantes para Carreras Científicas</h3>
 
     <p>
-      La filosofía de aprendizaje sandbox aborda directamente una brecha
-      crítica en la educación científica tradicional: la desconexión entre
-      el aprendizaje en aula y la práctica científica del mundo real. Los
-      científicos profesionales raramente siguen protocolos predeterminados;
-      en su lugar, diseñan experimentos, solucionan problemas de resultados
+      La filosofía de aprendizaje sandbox aborda directamente una brecha crítica
+      en la educación científica tradicional: la desconexión entre el
+      aprendizaje en aula y la práctica científica del mundo real. Los
+      científicos profesionales raramente siguen protocolos predeterminados; en
+      su lugar, diseñan experimentos, solucionan problemas de resultados
       inesperados, y refinan iterativamente sus enfoques basados en evidencia.
     </p>
 
     <p>
-      Los socios industriales reportan consistentemente que los graduados
-      de programas que enfatizan aprendizaje basado en investigación y abierto
+      Los socios industriales reportan consistentemente que los graduados de
+      programas que enfatizan aprendizaje basado en investigación y abierto
       demuestran habilidades de resolución de problemas superiores y
       adaptabilidad en entornos profesionales. Los estudios muestran
-      consistentemente que los altos logros en campos STEM son más empleables
-      y ganan salarios significativamente más altos que graduados no-STEM,
-      con la National Science Foundation reportando que las ganancias medianas
-      para trabajadores STEM son sustancialmente más altas que posiciones
-      no-STEM (
+      consistentemente que los altos logros en campos STEM son más empleables y
+      ganan salarios significativamente más altos que graduados no-STEM, con la
+      National Science Foundation reportando que las ganancias medianas para
+      trabajadores STEM son sustancialmente más altas que posiciones no-STEM (
       <a
         href="https://ncses.nsf.gov/pubs/nsb20245/u-s-stem-workforce-size-growth-and-employment"
         target="_blank"
@@ -316,9 +315,9 @@ export const content = (
       El enfoque sandbox de WhimsyLabs desarrolla directamente estas habilidades
       altamente valoradas al proporcionar experiencias científicas auténticas
       que reflejan entornos de investigación del mundo real. Los estudiantes
-      aprenden a formular hipótesis, diseñar experimentos controlados,
-      analizar resultados inesperados, y comunicar sus hallazgos; todas
-      capacidades esenciales para carreras STEM exitosas.
+      aprenden a formular hipótesis, diseñar experimentos controlados, analizar
+      resultados inesperados, y comunicar sus hallazgos; todas capacidades
+      esenciales para carreras STEM exitosas.
     </p>
 
     <h3>El Futuro de la Educación Científica</h3>
@@ -326,28 +325,27 @@ export const content = (
     <p>
       Mientras miramos hacia el futuro de la educación científica, la filosofía
       de aprendizaje sandbox representa un cambio fundamental de la transmisión
-      de información al desarrollo de habilidades. En lugar de enseñar a
-      los estudiantes qué pensar, les estamos enseñando cómo pensar
-      científicamente. Este enfoque es crecientemente crítico ya que el
-      conocimiento científico continúa expandiéndose exponencialmente y
-      los hechos específicos que los estudiantes memorizan hoy pueden volverse
-      obsoletos dentro de sus vidas.
+      de información al desarrollo de habilidades. En lugar de enseñar a los
+      estudiantes qué pensar, les estamos enseñando cómo pensar científicamente.
+      Este enfoque es crecientemente crítico ya que el conocimiento científico
+      continúa expandiéndose exponencialmente y los hechos específicos que los
+      estudiantes memorizan hoy pueden volverse obsoletos dentro de sus vidas.
     </p>
 
     <p>
       Las habilidades desarrolladas a través del aprendizaje sandbox; resolución
-      creativa de problemas, pruebas de hipótesis, refinamiento iterativo,
-      y aprender del fracaso, no son solo valiosas para carreras científicas
-      sino esenciales para navegar un mundo crecientemente complejo y que
-      cambia rápidamente. Estas capacidades permiten a los estudiantes abordar
-      desafíos con confianza, adaptarse a nuevas situaciones, y continuar
-      aprendiendo a lo largo de sus vidas.
+      creativa de problemas, pruebas de hipótesis, refinamiento iterativo, y
+      aprender del fracaso, no son solo valiosas para carreras científicas sino
+      esenciales para navegar un mundo crecientemente complejo y que cambia
+      rápidamente. Estas capacidades permiten a los estudiantes abordar desafíos
+      con confianza, adaptarse a nuevas situaciones, y continuar aprendiendo a
+      lo largo de sus vidas.
     </p>
 
     <p>
       WhimsyLabs permanece comprometido a avanzar la filosofía de aprendizaje
-      sandbox a través de investigación continua, desarrollo de plataforma,
-      y colaboración con educadores mundialmente. Al proporcionar a los
+      sandbox a través de investigación continua, desarrollo de plataforma, y
+      colaboración con educadores mundialmente. Al proporcionar a los
       estudiantes la libertad de explorar, experimentar, y sí, incluso fallar,
       los estamos preparando no solo para tener éxito en ciencia sino para
       convertirse en los pensadores innovadores y solucionadores de problemas
@@ -356,8 +354,8 @@ export const content = (
 
     <p>
       La revolución del aprendizaje sandbox apenas está comenzando, y WhimsyLabs
-      está orgulloso de liderar esta transformación en educación científica.
-      A través de nuestro compromiso con la exploración abierta, investigación
+      está orgulloso de liderar esta transformación en educación científica. A
+      través de nuestro compromiso con la exploración abierta, investigación
       auténtica, y aprender del fracaso, estamos ayudando a crear una generación
       de estudiantes que no solo conocen ciencia: Sino que <i>prácticamente</i>{" "}
       encarnan la ciencia.

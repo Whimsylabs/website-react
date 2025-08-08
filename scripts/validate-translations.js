@@ -96,37 +96,38 @@ async function validateFAQTranslations(results) {
 async function validateBlogTranslations(results) {
   console.log(`${colors.blue}📝 Validating Blog Translations...${colors.reset}`);
   
+  const posts = ['post1', 'post2', 'post3', 'post4', 'post5', 'post6'];
+  
   for (const lang of languages) {
-    const filePath = `./src/i18n/blog/${lang}.js`;
+    let existingFiles = 0;
+    let withContent = 0;
     
-    if (!await fs.pathExists(filePath)) {
-      results[lang] = { exists: false, posts: 0, fullContent: 0, completion: 0 };
-      continue;
+    for (const post of posts) {
+      const filePath = `./src/i18n/blog/${post}/${lang}.js`;
+      
+      if (await fs.pathExists(filePath)) {
+        existingFiles++;
+        
+        const content = await fs.readFile(filePath, 'utf8');
+        
+        // Check if content exists (not null and not just a placeholder)
+        const hasContent = !content.includes('export const content = null') && 
+                          !content.includes('// TODO: Translate full content') &&
+                          content.includes('export const content = (');
+        
+        if (hasContent) {
+          withContent++;
+        }
+      }
     }
     
-    const content = await fs.readFile(filePath, 'utf8');
-    
-    // Count blog posts
-    const blogMatches = content.match(/"[^"]+"\s*:\s*{\s*"title"/g) || [];
-    const blogCount = blogMatches.length;
-    
-    // Count posts with full content (containing JSX)
-    const fullContentMatches = content.match(/"content"\s*:\s*\(/g) || [];
-    const fullContentCount = fullContentMatches.length;
-    
-    // Count untranslated items
-    const untranslatedMatches = content.match(/\[TRANSLATE\]/g) || [];
-    const untranslatedCount = untranslatedMatches.length;
-    
-    const totalItems = blogCount * 2; // titles + descriptions (content is optional)
-    const translatedItems = totalItems - untranslatedCount;
-    const completion = totalItems > 0 ? Math.round((translatedItems / totalItems) * 100) : 0;
+    const completion = posts.length > 0 ? Math.round((withContent / posts.length) * 100) : 0;
     
     results[lang] = {
-      exists: true,
-      posts: blogCount,
-      fullContent: fullContentCount,
-      untranslated: untranslatedCount,
+      exists: existingFiles > 0,
+      posts: posts.length,
+      fullContent: withContent,
+      untranslated: 0,
       completion: completion
     };
   }
@@ -138,6 +139,7 @@ async function validateUITranslations(results) {
   const translationsPath = './src/i18n/translations.js';
   
   if (!await fs.pathExists(translationsPath)) {
+    console.log(`Debug: translations.js file not found at ${translationsPath}`);
     for (const lang of languages) {
       results[lang] = { exists: false, keys: 0, completion: 0 };
     }
@@ -148,7 +150,7 @@ async function validateUITranslations(results) {
   
   for (const lang of languages) {
     // Look for language-specific sections - more flexible regex
-    const langRegex = new RegExp(`${lang}:\\s*{`, 'g');
+    const langRegex = new RegExp(`\\b${lang}:\\s*{`, 'g');
     const langMatch = content.match(langRegex);
     
     if (!langMatch) {
@@ -156,11 +158,16 @@ async function validateUITranslations(results) {
       continue;
     }
     
-    // Extract the language section - try different formats
-    let langStartIndex = content.indexOf(`${lang}: {`);
-    if (langStartIndex === -1) {
-      langStartIndex = content.indexOf(`  ${lang}: {`);
+    // Extract the language section - try different formats with flexible whitespace
+    const langSectionRegex = new RegExp(`\\s*${lang}:\\s*{`);
+    const langSectionMatch = content.match(langSectionRegex);
+    
+    if (!langSectionMatch) {
+      results[lang] = { exists: false, keys: 0, completion: 0 };
+      continue;
     }
+    
+    let langStartIndex = content.indexOf(langSectionMatch[0]);
     if (langStartIndex === -1) {
       results[lang] = { exists: false, keys: 0, completion: 0 };
       continue;
@@ -204,8 +211,8 @@ async function validateUITranslations(results) {
     
     const langSection = content.substring(langStartIndex, langEndIndex + 1);
     
-    // Count translation keys (more accurate)
-    const keyMatches = langSection.match(/\s+"[^"]+"\s*:/g) || [];
+    // Count translation keys (more accurate) - look for any key (quoted or unquoted) followed by a string value
+    const keyMatches = langSection.match(/\w+\s*:\s*"[^"]*"/g) || [];
     const keyCount = keyMatches.length;
     
     // Count untranslated items

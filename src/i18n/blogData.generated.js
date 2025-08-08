@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2025-08-08T22:12:54.472Z
+// Generated on 2025-08-08T22:34:01.463Z
 
 module.exports = {
   "en": [
@@ -174,10 +174,10 @@ module.exports = {
     {
       "id": "post6",
       "slug": "sandbox-learning-revolution-stem-education",
-      "title": "La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial para la educación STEM",
-      "description": "Cómo el enfoque de exploración abierta de WhimsyLabs transforma la educación científica abrazando el fracaso como una herramienta de aprendizaje poderosa y fomentando el pensamiento científico auténtico.",
+      "title": "Blog Post post6",
+      "description": "Blog post description",
       "date": "2025-06-05",
-      "hasFullTranslation": true,
+      "hasFullTranslation": false,
       "language": "es"
     },
     {
