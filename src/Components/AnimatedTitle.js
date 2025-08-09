@@ -14,17 +14,23 @@ const AnimatedTitle = ({
   useEffect(() => {
     const element = titleRef.current;
     if (element && text) {
-      // Split by words and animate whole words
-      const words = text.split(' ');
+      // Split by characters and animate each letter independently
+      const chars = text.split('');
+      let charIndex = 0;
       
-      element.innerHTML = words
-        .map((word, wordIndex) => {
-          const animationDelay = (wordIndex * 0.3) + delay; // Staggered delay for each word
-          const modeClass = darkMode ? 'dark-mode' : '';
+      element.innerHTML = chars
+        .map((char) => {
+          if (char === ' ') {
+            return ' '; // Keep spaces as regular spaces
+          }
           
-          return `<span class="animated-word ${modeClass}" style="animation-delay: ${animationDelay}s; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);" data-word-index="${wordIndex}" data-delay="${animationDelay}">${word}</span>`;
+          const animationDelay = (charIndex * 0.1) + delay; // Staggered delay for each character
+          const modeClass = darkMode ? 'dark-mode' : '';
+          charIndex++; // Only increment for non-space characters
+          
+          return `<span class="animated-char ${modeClass}" style="animation-delay: ${animationDelay}s; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);" data-char-index="${charIndex}" data-delay="${animationDelay}">${char}</span>`;
         })
-        .join(' ');
+        .join('');
     }
   }, [text, delay, darkMode, uppercase]);
 

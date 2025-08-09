@@ -26,38 +26,30 @@
   letter-spacing: 0.05em;
 }
 
-.animated-title.lowercase {
-  text-transform: none;
-  letter-spacing: 0.05em;
-}
-
 .animated-title.dark-mode {
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
 }
 
-.animated-word {
-  display: inline;
-  margin-right: 0.15em;
-  /* Allow natural text flow */
-}
-
 .animated-char {
-  display: inline-block !important;
-  animation-name: smoothWave !important;
-  animation-fill-mode: both !important;
-  transform-origin: center bottom !important;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5)) !important;
+  display: inline-block;
+  /* Animate each character independently for Mexican wave effect */
+  animation-name: smoothWave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform-origin: center bottom;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5));
   text-shadow: 
     -1px -1px 0 rgba(255, 255, 255, 0.8),
     1px -1px 0 rgba(255, 255, 255, 0.8),
     -1px 1px 0 rgba(255, 255, 255, 0.8),
     1px 1px 0 rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(149, 206, 246, 0.6) !important;
-  /* Ensure each character can animate independently */
+    0 0 20px rgba(149, 206, 246, 0.6);
   position: relative;
 }
 
-/* Dark mode colors */
+/* Dark mode colors for characters */
 .animated-char.dark-mode {
   color: #0F9FD3;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 10px rgba(15, 159, 211, 0.5));
@@ -67,6 +59,7 @@
     -1px 1px 0 rgba(0, 0, 0, 0.8),
     1px 1px 0 rgba(0, 0, 0, 0.8),
     0 0 20px rgba(15, 159, 211, 0.6);
+  animation-name: smoothWaveDark;
 }
 
 @keyframes smoothWave {
@@ -85,11 +78,6 @@
 }
 
 /* Dark mode wave animation */
-.animated-char.dark-mode {
-  animation-name: smoothWaveDark !important;
-  animation-fill-mode: both !important;
-}
-
 @keyframes smoothWaveDark {
   0% {
     transform: translateY(0) scale(1) rotateZ(0deg);
@@ -115,8 +103,9 @@
     word-spacing: 0.03em;
   }
   
-  .animated-word {
-    margin-right: 0.1em;
+  .animated-char {
+    /* Reduce animation intensity on mobile for better performance */
+    animation-duration: 2.5s;
   }
 }
 
@@ -129,13 +118,9 @@
     padding: 0 0.1rem;
   }
   
-  .animated-word {
-    margin-right: 0.08em;
-  }
-  
   .animated-char {
-    /* Reduce animation intensity on mobile for better performance */
-    animation-duration: 2.5s !important;
+    /* Further reduce animation intensity on small mobile for better performance */
+    animation-duration: 2s;
   }
 }
 
