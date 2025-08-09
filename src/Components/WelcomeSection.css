@@ -37,6 +37,59 @@
     padding: 10px;
 }
 
+/* Welcome hero title with AnimatedTitle */
+.welcome-hero-title:not(.animated-title) {
+    color: #14b7ff;
+    margin: 0;
+    font-size: clamp(1rem, 5vw, 3rem);
+    word-break: keep-all;
+    overflow-wrap: normal;
+    white-space: normal;
+    hyphens: none;
+    word-wrap: normal;
+    line-break: strict;
+    padding: 10px;
+}
+
+/* Ensure animated title works properly on welcome section */
+.welcome-hero-title.animated-title {
+    margin-bottom: 1rem !important;
+    font-size: clamp(1.8rem, 4vw, 3.5rem) !important;
+    max-width: 100% !important;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.welcome-hero-title.animated-title .animated-char {
+    animation-name: welcomeWave !important;
+    animation-fill-mode: both !important;
+    transform-origin: center bottom !important;
+    text-shadow: 
+        -1px -1px 0 rgba(255, 255, 255, 0.8),
+        1px -1px 0 rgba(255, 255, 255, 0.8),
+        -1px 1px 0 rgba(255, 255, 255, 0.8),
+        1px 1px 0 rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(149, 206, 246, 0.6) !important;
+    position: relative;
+}
+
+/* Wave animation for welcome page title */
+@keyframes welcomeWave {
+    0% {
+        transform: translateY(0) scale(1) rotateZ(0deg);
+        color: #95CEF6;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.15) rotateZ(3deg);
+        color: #dabeff;
+    }
+    100% {
+        transform: translateY(0) scale(1) rotateZ(0deg);
+        color: #95CEF6;
+    }
+}
+
 
 #tiled-1 h1 {
     color: #14b7ff;

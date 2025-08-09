@@ -41,6 +41,45 @@
   margin-bottom: 1.5rem;
 }
 
+/* Ensure animated title works properly on features page */
+.features-hero-title.animated-title {
+  margin-bottom: 2rem !important;
+}
+
+.features-hero-title.animated-title .animated-char {
+  animation: featuresWave 6s ease-in-out infinite !important;
+  transform-origin: center bottom !important;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5)) !important;
+  color: #95CEF6 !important;
+  text-shadow: 
+    -1px -1px 0 rgba(255, 255, 255, 0.8),
+    1px -1px 0 rgba(255, 255, 255, 0.8),
+    -1px 1px 0 rgba(255, 255, 255, 0.8),
+    1px 1px 0 rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(149, 206, 246, 0.6) !important;
+}
+
+/* Wave animation for features page title */
+@keyframes featuresWave {
+  0%, 100% {
+    transform: translateY(0) scale(1) rotateZ(0deg);
+    color: #95CEF6;
+  }
+  25% {
+    transform: translateY(-8px) scale(1.05) rotateZ(1deg);
+    color: #b8d9f7;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2) rotateZ(3deg);
+    color: #dabeff;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(218, 190, 255, 0.7)) !important;
+  }
+  75% {
+    transform: translateY(-8px) scale(1.05) rotateZ(-1deg);
+    color: #b8d9f7;
+  }
+}
+
 .features-hero-subtitle {
   font-size: 1.3rem;
   margin-bottom: 2rem;

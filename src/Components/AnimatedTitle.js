@@ -14,20 +14,15 @@ const AnimatedTitle = ({
   useEffect(() => {
     const element = titleRef.current;
     if (element && text) {
-      // Split by words to prevent mid-word wrapping
+      // Split by words and animate whole words
       const words = text.split(' ');
+      
       element.innerHTML = words
         .map((word, wordIndex) => {
-          const wordChars = word
-            .split('')
-            .map((char, charIndex) => {
-              const totalIndex = words.slice(0, wordIndex).join('').length + wordIndex + charIndex;
-              const animationDelay = (totalIndex * 0.25) + delay; // Increased from 0.15 to 0.25 for slower wave
-              const modeClass = darkMode ? 'dark-mode' : '';
-              return `<span class="animated-char ${modeClass}" style="animation-delay: ${animationDelay}s">${char}</span>`;
-            })
-            .join('');
-          return `<span class="animated-word">${wordChars}</span>`;
+          const animationDelay = (wordIndex * 0.3) + delay; // Staggered delay for each word
+          const modeClass = darkMode ? 'dark-mode' : '';
+          
+          return `<span class="animated-word ${modeClass}" style="animation-delay: ${animationDelay}s; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);" data-word-index="${wordIndex}" data-delay="${animationDelay}">${word}</span>`;
         })
         .join(' ');
     }

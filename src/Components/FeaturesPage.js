@@ -93,7 +93,7 @@ const FeaturesPage = ({ language }) => {
                 className="features-hero-title"
                 delay={0}
                 darkMode={false}
-                uppercase={false}
+                uppercase={true}
               />
             ) : (
               <h1 className="features-hero-title">
