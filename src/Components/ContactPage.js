@@ -4,7 +4,7 @@ import Footer from './Footer';
 import './ContactPage.css';
 import { Helmet } from 'react-helmet-async';
 
-const ContactPage = () => {
+const ContactPage = ({ language }) => {
   const [activeForm, setActiveForm] = useState('trial'); // 'general' or 'trial'
   const [formData, setFormData] = useState({
     name: '',
@@ -330,7 +330,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer language={language} />
     </main>
   );
 };

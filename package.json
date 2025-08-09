@@ -14,11 +14,13 @@
     "fs-extra": "^11.3.0",
     "glob": "^11.0.3",
     "gray-matter": "^4.0.3",
+    "i18next": "^25.3.2",
     "markdown-it": "^14.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
+    "react-i18next": "^15.6.1",
     "react-scripts": "5.0.1",
     "rimraf": "^6.0.1",
     "web-vitals": "^2.1.4",
@@ -65,15 +67,15 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "@babel/core": "^7.23.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.0",
+    "@babel/plugin-proposal-private-methods": "^7.18.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "@babel/preset-env": "^7.23.0",
     "@babel/preset-react": "^7.23.0",
     "@babel/register": "^7.23.0",
-    "@babel/plugin-proposal-private-methods": "^7.18.0",
-    "@babel/plugin-proposal-class-properties": "^7.18.0",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "babel-plugin-css-modules-transform": "^1.6.2",
+    "gh-pages": "^6.3.0",
     "ignore-styles": "^5.0.1"
   }
 }

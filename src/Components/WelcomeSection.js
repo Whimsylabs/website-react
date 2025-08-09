@@ -2,23 +2,24 @@ import React, { useEffect } from 'react';
 import './WelcomeSection.css';
 // Logo now served from public directory
 import ContactUs from './ContactUs';
+import withTranslation from './withTranslation';
 
-const WelcomeSection = ({ 
-  titleText = "Welcome to WhimsyLabs Virtual Lab Software!", 
-  bodyText = "WhimsyLabs provides award-winning virtual laboratory software that gives educators and students the freedom to explore, play and learn scientific concepts firsthand. Whether you're teaching Biology, Chemistry, or Physics, our online lab simulations let students experiment with scientific phenomena and equipment without the limitations and risks of a physical lab. Our STEM virtual labs for schools help students build laboratory skills safely while providing educators with powerful assessment tools." 
-}) => {
-    useEffect(() => {
-      const text = document.querySelector(".wave-text");
-      if (text) {
-        text.innerHTML = text.textContent
-          .split("")
-          .map((char, index) => {
-            const style = `display: inline-block; animation: wave 2.5s ease-in-out infinite; animation-delay: ${index * 0.05}s`;
-            return `<span style="${style}">${char}</span>`;
-          })
-          .join("");
-      }
-    }, [titleText]);
+const WelcomeSection = ({ t }) => {
+  const titleText = t('home.welcomeTitle');
+  const bodyText = t('home.welcomeText');
+  
+  useEffect(() => {
+    const text = document.querySelector(".wave-text");
+    if (text) {
+      text.innerHTML = text.textContent
+        .split("")
+        .map((char, index) => {
+          const style = `display: inline-block; animation: wave 2.5s ease-in-out infinite; animation-delay: ${index * 0.05}s`;
+          return `<span style="${style}">${char}</span>`;
+        })
+        .join("");
+    }
+  }, [titleText]);
 
   return (
     <section id="tiled-1" className="welcome-section">
@@ -33,9 +34,9 @@ const WelcomeSection = ({
           </div>
         </div>
       </div>
-      <ContactUs buttonText='Join the pilot!' />
+      <ContactUs buttonText={t('home.joinPilot')} />
     </section>
   );
 };
 
-export default WelcomeSection;
+export default withTranslation(WelcomeSection);

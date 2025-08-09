@@ -11,13 +11,17 @@ import ContactPage from "./Components/ContactPage";
 import PrivacyPage from "./Components/PrivacyPage";
 import BlogPost from "./Components/BlogPost";
 import { getCurrentLanguage } from "./i18n";
+import "./i18n/i18n"; // Initialize i18next
 // import IgnitePitchDeck from "./Components/IgnitePitchDeck";
 
 // Private/unreleased components
 // import CashflowProjection from "./Components/CashflowProjection";
 // import PricingPage from "./Components/PricingPage";
 
-function App() {
+function App(props = {}) {
+  // Get language from props (for SSR) or detect from URL (for client-side)
+  const language = props.language || getCurrentLanguage();
+  
   // Determine which component to render based on the current path
   // Use the initial route set by the static build if available
   const currentPath =
@@ -29,17 +33,17 @@ function App() {
     // Remove language prefix to get the base path
     const basePath = path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 
-    if (basePath === "/") return <MainContent />;
-    if (basePath === "/blog/" || basePath === "/blog") return <Blog />;
+    if (basePath === "/") return <MainContent language={language} />;
+    if (basePath === "/blog/" || basePath === "/blog") return <Blog language={language} />;
     if (basePath === "/services/" || basePath === "/services")
-      return <Services />;
+      return <Services language={language} />;
     if (basePath === "/features/" || basePath === "/features")
-      return <Features />;
-    if (basePath === "/faq/" || basePath === "/faq") return <FAQPage />;
+      return <Features language={language} />;
+    if (basePath === "/faq/" || basePath === "/faq") return <FAQPage language={language} />;
     if (basePath === "/contact/" || basePath === "/contact")
-      return <ContactPage />;
+      return <ContactPage language={language} />;
     if (basePath === "/privacy/" || basePath === "/privacy")
-      return <PrivacyPage />;
+      return <PrivacyPage language={language} />;
     // Private/unreleased routes (disabled)
     // if (basePath === "/ignite-pitch/" || basePath === "/ignite-pitch")
     //   return <IgnitePitchDeck />;
@@ -59,11 +63,11 @@ function App() {
       if (slug.endsWith("/index.html")) {
         slug = slug.replace("/index.html", "");
       }
-      return <BlogPost slug={slug} />;
+      return <BlogPost slug={slug} language={language} />;
     }
 
     // Default to MainContent
-    return <MainContent />;
+    return <MainContent language={language} />;
   };
 
   // Get current language for context

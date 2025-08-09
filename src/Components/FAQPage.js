@@ -6,7 +6,7 @@ import './FAQPage.css';
 import { Helmet } from 'react-helmet-async';
 import withTranslation from './withTranslation';
 
-const FAQPage = ({ t, currentLang }) => {
+const FAQPage = ({ t, currentLang, language }) => {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
@@ -28,7 +28,7 @@ const FAQPage = ({ t, currentLang }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer language={language || currentLang} />
     </main>
   );
 };

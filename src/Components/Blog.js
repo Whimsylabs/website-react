@@ -78,6 +78,7 @@ const postIdToSlug = Object.fromEntries(
 );
 
 const Blog = (props = {}) => {
+  const { language } = props;
   const [activePostId] = useState(null);
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -171,7 +172,7 @@ const Blog = (props = {}) => {
             </div>
           </div>
         </BubbleContainer>
-        <Footer />
+        <Footer language={language} />
       </main>
     );
   }

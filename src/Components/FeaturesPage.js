@@ -6,7 +6,7 @@ import BubbleContainer from "./BubbleContainer";
 import ContactUs from "./ContactUs";
 import AnimatedTitle from "./AnimatedTitle";
 
-const FeaturesPage = () => {
+const FeaturesPage = ({ language }) => {
   const [currentVideo, setCurrentVideo] = useState("9D2e2e2gzvk");
   const [activeFeature, setActiveFeature] = useState(0);
   const [mounted, setMounted] = useState(false);
@@ -96,7 +96,9 @@ const FeaturesPage = () => {
                 uppercase={false}
               />
             ) : (
-              <h1 className="features-hero-title">Industry-Leading Virtual Laboratories</h1>
+              <h1 className="features-hero-title">
+                Industry-Leading Virtual Laboratories
+              </h1>
             )}
             <div className="text-justify">
               <p className="justified-text features-hero-subtitle">
@@ -246,7 +248,7 @@ const FeaturesPage = () => {
         </div>
       </BubbleContainer>
 
-      <Footer />
+      <Footer language={language} />
     </main>
   );
 };

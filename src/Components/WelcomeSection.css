@@ -28,8 +28,12 @@
     color: #14b7ff;
     margin: 0;
     font-size: clamp(1rem, 5vw, 3rem); /* Scales between 1rem and 3rem based on viewport width */
-    overflow-wrap: break-word; /* Ensures text wraps within the container if needed */
-    word-break: break-word;
+    word-break: keep-all; /* Prevents breaking words in the middle */
+    overflow-wrap: normal; /* Only wrap at word boundaries */
+    white-space: normal; /* Allow normal wrapping at word boundaries */
+    hyphens: none; /* Disable hyphenation */
+    word-wrap: normal; /* Legacy support for older browsers */
+    line-break: strict; /* Strict line breaking rules */
     padding: 10px;
 }
 

@@ -1,48 +1,48 @@
 // Internationalization configuration for static builds
 const SUPPORTED_LANGUAGES = {
   en: {
-    code: 'en',
-    name: 'English',
-    flag: '🇬🇧',
-    dir: 'ltr'
+    code: "en",
+    name: "English",
+    flag: "🇬🇧",
+    dir: "ltr",
   },
   es: {
-    code: 'es',
-    name: 'Español',
-    flag: '🇪🇸',
-    dir: 'ltr'
+    code: "es",
+    name: "Español",
+    flag: "🇪🇸",
+    dir: "ltr",
   },
   fr: {
-    code: 'fr',
-    name: 'Français',
-    flag: '🇫🇷',
-    dir: 'ltr'
+    code: "fr",
+    name: "Français",
+    flag: "🇫🇷",
+    dir: "ltr",
   },
   de: {
-    code: 'de',
-    name: 'Deutsch',
-    flag: '🇩🇪',
-    dir: 'ltr'
-  }
+    code: "de",
+    name: "Deutsch",
+    flag: "🇩🇪",
+    dir: "ltr",
+  },
 };
 
-const DEFAULT_LANGUAGE = 'en';
+const DEFAULT_LANGUAGE = "en";
 
 // Get current language from URL path
 function getCurrentLanguage() {
-  if (typeof window === 'undefined') return DEFAULT_LANGUAGE;
-  
+  if (typeof window === "undefined") return DEFAULT_LANGUAGE;
+
   const path = window.location.pathname;
-  const langCode = path.split('/')[1];
-  
+  const langCode = path.split("/")[1];
+
   return SUPPORTED_LANGUAGES[langCode] ? langCode : DEFAULT_LANGUAGE;
 }
 
 // Get language-specific URL
 function getLocalizedPath(path, lang = getCurrentLanguage()) {
   // Remove existing language prefix if present
-  const cleanPath = path.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
-  
+  const cleanPath = path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+
   if (lang === DEFAULT_LANGUAGE) {
     return cleanPath;
   }
@@ -51,29 +51,29 @@ function getLocalizedPath(path, lang = getCurrentLanguage()) {
 
 // Get path without language prefix
 function getCleanPath(path) {
-  return path.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
+  return path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 }
 
 // Get alternate language URLs for hreflang
 function getAlternateUrls(currentPath) {
   const alternates = {};
-  
-  Object.keys(SUPPORTED_LANGUAGES).forEach(lang => {
+
+  Object.keys(SUPPORTED_LANGUAGES).forEach((lang) => {
     alternates[lang] = getLocalizedPath(currentPath, lang);
   });
-  
+
   return alternates;
 }
 
 // Export for both CommonJS and ES modules
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { 
-    SUPPORTED_LANGUAGES, 
-    DEFAULT_LANGUAGE, 
-    getCurrentLanguage, 
-    getLocalizedPath, 
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    SUPPORTED_LANGUAGES,
+    DEFAULT_LANGUAGE,
+    getCurrentLanguage,
+    getLocalizedPath,
     getCleanPath,
-    getAlternateUrls 
+    getAlternateUrls,
   };
 } else {
   // Browser globals

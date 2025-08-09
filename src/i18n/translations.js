@@ -1,3 +1,7 @@
+// Import separate translation modules
+const { homeTranslations } = require('./homeDataGenerator');
+const { contactTranslations } = require('./contactDataGenerator');
+
 // Translation strings for all supported languages
 const translations = {
   en: {
@@ -11,39 +15,27 @@ const translations = {
       contact: "Contact",
     },
 
-    // Homepage
-    home: {
-      title:
-        "WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education",
-      description:
-        "WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.",
-      heroTitle: "Revolutionary Virtual Laboratory Software",
-      heroSubtitle:
-        "Transform STEM education with immersive virtual lab experiences",
-      getStarted: "Get Started",
-      learnMore: "Learn More",
-    },
+    // Homepage - imported from separate file
+    home: homeTranslations.en,
 
     // Features
     features: {
       title: "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology",
       description:
         "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.",
+      uniqueFeatures: "Unique Features",
       realisticSimulations: "Realistic Physics Simulations",
+      realisticSimulationsDesc: "Experience true-to-life physics simulations with advanced fluid dynamics, realistic equipment handling, and authentic laboratory procedures that build real muscle memory.",
       aiAssessment: "AI-Driven Assessment",
+      aiAssessmentDesc: "Our intelligent assessment system provides personalized feedback, tracks student progress, and adapts to individual learning styles for optimal educational outcomes.",
       crossPlatform: "Cross-Platform Accessibility",
+      crossPlatformDesc: "Access our virtual labs on any device - VR headsets, computers, tablets, or smartphones - ensuring learning continuity across all platforms.",
       immersiveExperiments: "Immersive STEM Experiments",
+      seeFullFeatures: "See Full Features PDF",
     },
 
-    // Contact
-    contact: {
-      title: "Contact Us | WhimsyLabs Virtual Lab Software",
-      description:
-        "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
-      getInTouch: "Get in Touch",
-      email: "Email",
-      requestTrial: "Request Trial",
-    },
+    // Contact - imported from separate file
+    contact: contactTranslations.en,
 
     // FAQ
     faq: {
@@ -67,6 +59,28 @@ const translations = {
       error: "Error",
       tryAgain: "Try Again",
     },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – Virtual Laboratory Solutions",
+      navigation: "Footer navigation",
+      home: "Home",
+      services: "Services", 
+      contact: "Contact",
+      blog: "Blog",
+      faq: "FAQ",
+      privacy: "Privacy",
+      homeLabel: "Navigate to Home",
+      servicesLabel: "View Our Services",
+      contactLabel: "Contact Us via Email",
+      blogLabel: "Visit Our Blog",
+      faqLabel: "Frequently Asked Questions",
+      privacyLabel: "Privacy Policy",
+      blueskyLabel: "Visit our Bluesky profile",
+      youtubeLabel: "Visit our YouTube channel",
+      blueskyAlt: "Bluesky logo",
+      youtubeAlt: "YouTube logo"
+    },
   },
 
   es: {
@@ -80,27 +94,8 @@ const translations = {
       contact: "Contacto",
     },
 
-    // Homepage
-    home: {
-      title:
-        "WhimsyLabs - Software de Laboratorio Virtual Galardonado para Educación STEM",
-      description:
-        "WhimsyLabs proporciona software interactivo de laboratorio virtual para Biología, Química y Física. Nuestras simulaciones de laboratorio en línea mejoran la educación STEM en escuelas de toda la UE.",
-      heroTitle: "Software de Laboratorio Virtual Revolucionario",
-      heroSubtitle:
-        "Transforma la educación STEM con experiencias inmersivas de laboratorio virtual",
-      getStarted: "Comenzar",
-      learnMore: "Saber Más",
-      welcomeTitle: "¡Bienvenido al Software de Laboratorio Virtual WhimsyLabs!",
-      welcomeText: "WhimsyLabs proporciona software de laboratorio virtual galardonado que da a educadores y estudiantes la libertad de explorar, jugar y aprender conceptos científicos de primera mano. Ya sea que estés enseñando Biología, Química o Física, nuestras simulaciones de laboratorio en línea permiten a los estudiantes experimentar con fenómenos científicos y equipos sin las limitaciones y riesgos de un laboratorio físico. Nuestros laboratorios virtuales STEM para escuelas ayudan a los estudiantes a desarrollar habilidades de laboratorio de manera segura mientras proporcionan a los educadores herramientas de evaluación poderosas.",
-      joinPilot: "¡Únete al piloto!",
-      trialDemo: "¿Quieres Probar una Demo Gratuita en tu Escuela?",
-      applyTrial: "¡Solicita una prueba gratuita aquí!",
-      haveQuestions: "¿Tienes Preguntas?",
-      visitFAQ: "Visita nuestra página de FAQ para respuestas a preguntas comunes, o revisa nuestro PDF de Características para más detalles sobre nuestro software de laboratorio virtual!",
-      faqPage: "página de FAQ",
-      featuresPDF: "PDF de Características",
-    },
+    // Homepage - imported from separate file
+    home: homeTranslations.es,
 
     // Features
     features: {
@@ -108,54 +103,19 @@ const translations = {
         "Características de WhimsyLabs - Tecnología de Laboratorio Virtual de Vanguardia",
       description:
         "Explora las potentes características de WhimsyLabs incluyendo simulaciones físicas realistas, evaluación impulsada por IA, accesibilidad multiplataforma y experimentos STEM inmersivos.",
+      uniqueFeatures: "Características Únicas",
       realisticSimulations: "Simulaciones Físicas Realistas",
+      realisticSimulationsDesc: "Experimenta simulaciones físicas realistas con dinámicas de fluidos avanzadas, manejo realista de equipos y procedimientos de laboratorio auténticos que desarrollan memoria muscular real.",
       aiAssessment: "Evaluación Impulsada por IA",
+      aiAssessmentDesc: "Nuestro sistema de evaluación inteligente proporciona retroalimentación personalizada, rastrea el progreso del estudiante y se adapta a estilos de aprendizaje individuales para resultados educativos óptimos.",
       crossPlatform: "Accesibilidad Multiplataforma",
+      crossPlatformDesc: "Accede a nuestros laboratorios virtuales en cualquier dispositivo - cascos VR, computadoras, tabletas o teléfonos inteligentes - asegurando continuidad de aprendizaje en todas las plataformas.",
       immersiveExperiments: "Experimentos STEM Inmersivos",
+      seeFullFeatures: "Ver PDF de Características Completas",
     },
 
-    // Contact
-    contact: {
-      title: "Contáctanos | Software de Laboratorio Virtual WhimsyLabs",
-      description:
-        "Ponte en contacto con WhimsyLabs para solicitar una prueba para tu escuela o hacer preguntas sobre nuestro software de laboratorio virtual para educación STEM.",
-      getInTouch: "Ponte en Contacto",
-      email: "Correo Electrónico",
-      requestTrial: "Solicitar Prueba",
-      mainHeading: "Contactar WhimsyLabs",
-      subheading: "¡Nos encantaría saber de ti! Ya sea que estés interesado en probar nuestros laboratorios virtuales en tu escuela o tengas preguntas generales, estamos aquí para ayudar.",
-      requestTrialTab: "Solicitar una Prueba para tu Escuela",
-      generalInquiriesTab: "Consultas Generales",
-      thankYou: "¡Gracias!",
-      successMessage: "Tu mensaje ha sido enviado exitosamente. Te responderemos lo antes posible.",
-      submitAnother: "Enviar Otro Mensaje",
-      name: "Nombre",
-      required: "*",
-      school: "Escuela/Organización",
-      role: "Tu Rol",
-      selectRole: "Selecciona tu rol",
-      teacher: "Profesor",
-      administrator: "Administrador",
-      itStaff: "Personal de TI",
-      departmentHead: "Jefe de Departamento",
-      other: "Otro",
-      phoneNumber: "Número de Teléfono",
-      studentCount: "Número de Estudiantes",
-      preferredContact: "Método de Contacto Preferido",
-      phone: "Teléfono",
-      message: "Mensaje",
-      trialPlaceholder: "Cuéntanos sobre las necesidades de tu escuela y en qué materias estás interesado para la prueba.",
-      generalPlaceholder: "¿Cómo podemos ayudarte?",
-      privacyNotice: "Al enviar este formulario, aceptas nuestra Política de Privacidad. Solo usaremos tu información para responder a tu consulta.",
-      sending: "Enviando...",
-      sendMessage: "Enviar Mensaje",
-      emailDirectly: "¿Prefieres enviarnos un correo directamente?",
-      reachOut: "Contáctanos en",
-      errorMessage: "Por favor completa todos los campos requeridos.",
-      emailError: "Por favor ingresa una dirección de correo válida.",
-      submitError: "Hubo un problema enviando tu formulario. Por favor intenta de nuevo o envíanos un correo directamente.",
-      formUnavailable: "No se puede enviar el formulario en este momento. Por favor envíanos un correo directamente.",
-    },
+    // Contact - imported from separate file
+    contact: contactTranslations.es,
 
     // FAQ
     faq: {
@@ -172,6 +132,28 @@ const translations = {
       error: "Error",
       tryAgain: "Intentar de Nuevo",
     },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – Soluciones de Laboratorio Virtual",
+      navigation: "Navegación del pie de página",
+      home: "Inicio",
+      services: "Servicios",
+      contact: "Contacto",
+      blog: "Blog",
+      faq: "FAQ",
+      privacy: "Privacidad",
+      homeLabel: "Navegar al Inicio",
+      servicesLabel: "Ver Nuestros Servicios",
+      contactLabel: "Contáctanos por Email",
+      blogLabel: "Visita Nuestro Blog",
+      faqLabel: "Preguntas Frecuentes",
+      privacyLabel: "Política de Privacidad",
+      blueskyLabel: "Visita nuestro perfil de Bluesky",
+      youtubeLabel: "Visita nuestro canal de YouTube",
+      blueskyAlt: "Logo de Bluesky",
+      youtubeAlt: "Logo de YouTube"
+    },
   },
 
   fr: {
@@ -185,27 +167,8 @@ const translations = {
       contact: "Contact",
     },
 
-    // Homepage
-    home: {
-      title:
-        "WhimsyLabs - Logiciel de Laboratoire Virtuel Primé pour l'Éducation STEM",
-      description:
-        "WhimsyLabs fournit un logiciel de laboratoire virtuel interactif pour la Biologie, la Chimie et la Physique. Nos simulations de laboratoire en ligne améliorent l'éducation STEM dans les écoles de l'UE.",
-      heroTitle: "Logiciel de Laboratoire Virtuel Révolutionnaire",
-      heroSubtitle:
-        "Transformez l'éducation STEM avec des expériences de laboratoire virtuel immersives",
-      getStarted: "Commencer",
-      learnMore: "En Savoir Plus",
-      welcomeTitle: "Bienvenue au Logiciel de Laboratoire Virtuel WhimsyLabs !",
-      welcomeText: "WhimsyLabs fournit un logiciel de laboratoire virtuel primé qui donne aux éducateurs et aux étudiants la liberté d'explorer, jouer et apprendre les concepts scientifiques de première main. Que vous enseigniez la Biologie, la Chimie ou la Physique, nos simulations de laboratoire en ligne permettent aux étudiants d'expérimenter avec des phénomènes scientifiques et des équipements sans les limitations et risques d'un laboratoire physique. Nos laboratoires virtuels STEM pour écoles aident les étudiants à développer des compétences de laboratoire en toute sécurité tout en fournissant aux éducateurs des outils d'évaluation puissants.",
-      joinPilot: "Rejoignez le pilote !",
-      trialDemo: "Voulez-vous Essayer une Démo Gratuite dans votre École ?",
-      applyTrial: "Demandez un essai gratuit ici !",
-      haveQuestions: "Avez-vous des Questions ?",
-      visitFAQ: "Visitez notre page FAQ pour des réponses aux questions courantes, ou consultez notre PDF des Fonctionnalités pour plus de détails sur notre logiciel de laboratoire virtuel !",
-      faqPage: "page FAQ",
-      featuresPDF: "PDF des Fonctionnalités",
-    },
+    // Homepage - imported from separate file
+    home: homeTranslations.fr,
 
     // Features
     features: {
@@ -213,54 +176,19 @@ const translations = {
         "Fonctionnalités WhimsyLabs - Technologie de Laboratoire Virtuel de Pointe",
       description:
         "Explorez les fonctionnalités puissantes de WhimsyLabs incluant des simulations physiques réalistes, une évaluation pilotée par IA, une accessibilité multiplateforme et des expériences STEM immersives.",
+      uniqueFeatures: "Fonctionnalités Uniques",
       realisticSimulations: "Simulations Physiques Réalistes",
+      realisticSimulationsDesc: "Découvrez des simulations physiques réalistes avec une dynamique des fluides avancée, une manipulation d'équipement réaliste et des procédures de laboratoire authentiques qui développent une vraie mémoire musculaire.",
       aiAssessment: "Évaluation Pilotée par IA",
+      aiAssessmentDesc: "Notre système d'évaluation intelligent fournit des commentaires personnalisés, suit les progrès des étudiants et s'adapte aux styles d'apprentissage individuels pour des résultats éducatifs optimaux.",
       crossPlatform: "Accessibilité Multiplateforme",
+      crossPlatformDesc: "Accédez à nos laboratoires virtuels sur n'importe quel appareil - casques VR, ordinateurs, tablettes ou smartphones - assurant la continuité d'apprentissage sur toutes les plateformes.",
       immersiveExperiments: "Expériences STEM Immersives",
+      seeFullFeatures: "Voir le PDF des Fonctionnalités Complètes",
     },
 
-    // Contact
-    contact: {
-      title: "Contactez-nous | Logiciel de Laboratoire Virtuel WhimsyLabs",
-      description:
-        "Contactez WhimsyLabs pour demander un essai pour votre école ou poser des questions sur notre logiciel de laboratoire virtuel pour l'éducation STEM.",
-      getInTouch: "Contactez-nous",
-      email: "Email",
-      requestTrial: "Demander un Essai",
-      mainHeading: "Contacter WhimsyLabs",
-      subheading: "Nous aimerions avoir de vos nouvelles ! Que vous soyez intéressé par l'essai de nos laboratoires virtuels dans votre école ou que vous ayez des questions générales, nous sommes là pour vous aider.",
-      requestTrialTab: "Demander un Essai pour votre École",
-      generalInquiriesTab: "Demandes Générales",
-      thankYou: "Merci !",
-      successMessage: "Votre message a été envoyé avec succès. Nous vous répondrons dès que possible.",
-      submitAnother: "Envoyer un Autre Message",
-      name: "Nom",
-      required: "*",
-      school: "École/Organisation",
-      role: "Votre Rôle",
-      selectRole: "Sélectionnez votre rôle",
-      teacher: "Enseignant",
-      administrator: "Administrateur",
-      itStaff: "Personnel IT",
-      departmentHead: "Chef de Département",
-      other: "Autre",
-      phoneNumber: "Numéro de Téléphone",
-      studentCount: "Nombre d'Étudiants",
-      preferredContact: "Méthode de Contact Préférée",
-      phone: "Téléphone",
-      message: "Message",
-      trialPlaceholder: "Parlez-nous des besoins de votre école et des matières qui vous intéressent pour l'essai.",
-      generalPlaceholder: "Comment pouvons-nous vous aider ?",
-      privacyNotice: "En soumettant ce formulaire, vous acceptez notre Politique de Confidentialité. Nous n'utiliserons vos informations que pour répondre à votre demande.",
-      sending: "Envoi...",
-      sendMessage: "Envoyer le Message",
-      emailDirectly: "Préférez-vous nous envoyer un email directement ?",
-      reachOut: "Contactez-nous à",
-      errorMessage: "Veuillez remplir tous les champs requis.",
-      emailError: "Veuillez entrer une adresse email valide.",
-      submitError: "Il y a eu un problème lors de l'envoi de votre formulaire. Veuillez réessayer ou nous envoyer un email directement.",
-      formUnavailable: "Impossible de soumettre le formulaire pour le moment. Veuillez nous envoyer un email directement.",
-    },
+    // Contact - imported from separate file
+    contact: contactTranslations.fr,
 
     // FAQ
     faq: {
@@ -277,6 +205,28 @@ const translations = {
       error: "Erreur",
       tryAgain: "Réessayer",
     },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – Solutions de Laboratoire Virtuel",
+      navigation: "Navigation du pied de page",
+      home: "Accueil",
+      services: "Services",
+      contact: "Contact",
+      blog: "Blog",
+      faq: "FAQ",
+      privacy: "Confidentialité",
+      homeLabel: "Naviguer vers l'Accueil",
+      servicesLabel: "Voir Nos Services",
+      contactLabel: "Nous Contacter par Email",
+      blogLabel: "Visiter Notre Blog",
+      faqLabel: "Questions Fréquemment Posées",
+      privacyLabel: "Politique de Confidentialité",
+      blueskyLabel: "Visitez notre profil Bluesky",
+      youtubeLabel: "Visitez notre chaîne YouTube",
+      blueskyAlt: "Logo Bluesky",
+      youtubeAlt: "Logo YouTube"
+    },
   },
 
   de: {
@@ -290,94 +240,33 @@ const translations = {
       contact: "Kontakt",
     },
 
-    // Homepage
-    home: {
-      title:
-        "WhimsyLabs - Preisgekrönte Virtuelle Labor-Software für STEM-Bildung",
-      description:
-        "WhimsyLabs bietet interaktive virtuelle Labor-Software für Biologie, Chemie und Physik. Unsere Online-Laborsimulationen verbessern die STEM-Bildung in Schulen in der EU.",
-      heroTitle: "Revolutionäre Virtuelle Labor-Software",
-      heroSubtitle:
-        "Transformieren Sie die STEM-Bildung mit immersiven virtuellen Laborerfahrungen",
-      getStarted: "Loslegen",
-      learnMore: "Mehr Erfahren",
-      welcomeTitle: "Willkommen bei WhimsyLabs Virtuelle Labor-Software!",
-      welcomeText: "WhimsyLabs bietet preisgekrönte virtuelle Labor-Software, die Pädagogen und Schülern die Freiheit gibt, wissenschaftliche Konzepte aus erster Hand zu erkunden, zu spielen und zu lernen. Ob Sie Biologie, Chemie oder Physik unterrichten, unsere Online-Laborsimulationen ermöglichen es Schülern, mit wissenschaftlichen Phänomenen und Geräten zu experimentieren, ohne die Einschränkungen und Risiken eines physischen Labors. Unsere STEM-virtuellen Labore für Schulen helfen Schülern, Laborfähigkeiten sicher zu entwickeln, während sie Pädagogen leistungsstarke Bewertungstools bieten.",
-      joinPilot: "Dem Pilotprojekt beitreten!",
-      trialDemo: "Möchten Sie eine Kostenlose Demo an Ihrer Schule Testen?",
-      applyTrial: "Beantragen Sie hier eine kostenlose Testversion!",
-      haveQuestions: "Haben Sie Fragen?",
-      visitFAQ: "Besuchen Sie unsere FAQ-Seite für Antworten auf häufige Fragen oder schauen Sie sich unser Funktions-PDF für weitere Details über unsere virtuelle Labor-Software an!",
-      faqPage: "FAQ-Seite",
-      featuresPDF: "Funktions-PDF",
-    },
+    // Homepage - imported from separate file
+    home: homeTranslations.de,
 
     // Features
     features: {
       title: "WhimsyLabs Funktionen - Modernste Virtuelle Labor-Technologie",
       description:
         "Entdecken Sie WhimsyLabs' leistungsstarke Funktionen einschließlich realistischer Physiksimulationen, KI-gesteuerte Bewertung, plattformübergreifende Zugänglichkeit und immersive STEM-Experimente.",
+      uniqueFeatures: "Einzigartige Funktionen",
       realisticSimulations: "Realistische Physiksimulationen",
+      realisticSimulationsDesc: "Erleben Sie lebensechte Physiksimulationen mit fortgeschrittener Fluiddynamik, realistischer Gerätehandhabung und authentischen Laborverfahren, die echtes Muskelgedächtnis aufbauen.",
       aiAssessment: "KI-gesteuerte Bewertung",
+      aiAssessmentDesc: "Unser intelligentes Bewertungssystem bietet personalisiertes Feedback, verfolgt den Fortschritt der Studenten und passt sich an individuelle Lernstile für optimale Bildungsergebnisse an.",
       crossPlatform: "Plattformübergreifende Zugänglichkeit",
+      crossPlatformDesc: "Greifen Sie auf unsere virtuellen Labore auf jedem Gerät zu - VR-Headsets, Computer, Tablets oder Smartphones - und gewährleisten Sie Lernkontinuität auf allen Plattformen.",
       immersiveExperiments: "Immersive STEM-Experimente",
+      seeFullFeatures: "Vollständiges Funktionen-PDF ansehen",
     },
 
-    // Contact
-    contact: {
-      title: "Kontaktieren Sie uns | WhimsyLabs Virtuelle Labor-Software",
-      description:
-        "Kontaktieren Sie WhimsyLabs, um eine Testversion für Ihre Schule anzufordern oder Fragen zu unserer virtuellen Labor-Software für STEM-Bildung zu stellen.",
-      getInTouch: "Kontakt aufnehmen",
-      email: "E-Mail",
-      requestTrial: "Testversion anfordern",
-      mainHeading: "WhimsyLabs Kontaktieren",
-      subheading: "Wir würden gerne von Ihnen hören! Ob Sie daran interessiert sind, unsere virtuellen Labore in Ihrer Schule auszuprobieren oder allgemeine Fragen haben, wir sind hier, um zu helfen.",
-      requestTrialTab: "Testversion für Ihre Schule Anfordern",
-      generalInquiriesTab: "Allgemeine Anfragen",
-      thankYou: "Vielen Dank!",
-      successMessage: "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns so schnell wie möglich bei Ihnen melden.",
-      submitAnother: "Weitere Nachricht Senden",
-      name: "Name",
-      required: "*",
-      school: "Schule/Organisation",
-      role: "Ihre Rolle",
-      selectRole: "Wählen Sie Ihre Rolle",
-      teacher: "Lehrer",
-      administrator: "Administrator",
-      itStaff: "IT-Personal",
-      departmentHead: "Abteilungsleiter",
-      other: "Andere",
-      phoneNumber: "Telefonnummer",
-      studentCount: "Anzahl der Schüler",
-      preferredContact: "Bevorzugte Kontaktmethode",
-      phone: "Telefon",
-      message: "Nachricht",
-      trialPlaceholder: "Erzählen Sie uns von den Bedürfnissen Ihrer Schule und welche Fächer Sie für die Testversion interessieren.",
-      generalPlaceholder: "Wie können wir Ihnen helfen?",
-      privacyNotice: "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu. Wir verwenden Ihre Informationen nur, um auf Ihre Anfrage zu antworten.",
-      sending: "Senden...",
-      sendMessage: "Nachricht Senden",
-      emailDirectly: "Möchten Sie uns lieber direkt eine E-Mail senden?",
-      reachOut: "Kontaktieren Sie uns unter",
-      errorMessage: "Bitte füllen Sie alle erforderlichen Felder aus.",
-      emailError: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-      submitError: "Es gab ein Problem beim Senden Ihres Formulars. Bitte versuchen Sie es erneut oder senden Sie uns direkt eine E-Mail.",
-      formUnavailable: "Formular kann derzeit nicht gesendet werden. Bitte senden Sie uns direkt eine E-Mail.",
-    },
+    // Contact - imported from separate file
+    contact: contactTranslations.de,
 
     // FAQ
     faq: {
       title: "Häufig Gestellte Fragen",
       subtitle:
         "Finden Sie Antworten auf häufige Fragen zu unserer virtuellen Labor-Software und wie sie die STEM-Bildung transformieren kann",
-    },
-
-    // Privacy
-    privacy: {
-      title: "Datenschutzerklärung",
-      subtitle:
-        "Erfahren Sie, wie wir Ihre persönlichen Daten sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software nutzen",
     },
 
     // Common
@@ -388,6 +277,28 @@ const translations = {
       error: "Fehler",
       tryAgain: "Erneut Versuchen",
     },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – Virtuelle Laborlösungen",
+      navigation: "Footer-Navigation",
+      home: "Startseite",
+      services: "Dienstleistungen",
+      contact: "Kontakt",
+      blog: "Blog",
+      faq: "FAQ",
+      privacy: "Datenschutz",
+      homeLabel: "Zur Startseite navigieren",
+      servicesLabel: "Unsere Dienstleistungen ansehen",
+      contactLabel: "Kontaktieren Sie uns per E-Mail",
+      blogLabel: "Besuchen Sie unseren Blog",
+      faqLabel: "Häufig gestellte Fragen",
+      privacyLabel: "Datenschutzrichtlinie",
+      blueskyLabel: "Besuchen Sie unser Bluesky-Profil",
+      youtubeLabel: "Besuchen Sie unseren YouTube-Kanal",
+      blueskyAlt: "Bluesky-Logo",
+      youtubeAlt: "YouTube-Logo"
+    },
   },
 };
 
@@ -396,12 +307,16 @@ function useTranslation(lang = "en") {
   const t = (key) => {
     const keys = key.split(".");
     let value = translations[lang];
-
+    
     for (const k of keys) {
-      value = value?.[k];
+      if (value && typeof value === "object") {
+        value = value[k];
+      } else {
+        return key; // Return key if translation not found
+      }
     }
-
-    return value || translations.en[key] || key;
+    
+    return value || key;
   };
 
   return { t };

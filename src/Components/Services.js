@@ -5,10 +5,10 @@ import BubbleContainer from './BubbleContainer';
 import ContactUs from './ContactUs';
 import WelcomeSection from './WelcomeSection';
 
-const Services = () => {
+const Services = ({ language }) => {
     return (
             <main className="container-fluid text-center p-0">
-            <Header />
+            <Header language={language} />
            
                 <WelcomeSection titleText="Custom Simulation Development" bodyText="At Whimsylabs, we specialize in creating tailor-made simulations that bring concepts to life. Whether it's for educational institutions, corporate training, or interactive experiences, our AI-powered virtual laboratories provide immersive learning environments."/>
                 <BubbleContainer>
@@ -30,7 +30,7 @@ const Services = () => {
             
                 <ContactUs />
             </BubbleContainer>
-            <Footer />
+            <Footer language={language} />
             </main>
     );
 };

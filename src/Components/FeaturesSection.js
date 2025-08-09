@@ -1,10 +1,12 @@
 import React from "react";
 import Feature from "./Feature";
 import "./FeaturesSection.css";
+import withTranslation from "./withTranslation";
 // Images now served from public directory
 // Removed React Router - using direct HTML links
 
-const FeaturesSection = () => {
+const FeaturesSection = ({ t }) => {
+  
   return (
     <section
       className="features-section container"
@@ -14,7 +16,7 @@ const FeaturesSection = () => {
         <div className="col-3"></div>
         <div className="col-6 text-center">
           <h2 id="features-heading" className="unique-features-heading">
-            OUR UNIQUE VIRTUAL LAB FEATURES
+            {t('features.uniqueFeatures')}
           </h2>
         </div>
         <div className="col-3"></div>
@@ -24,23 +26,23 @@ const FeaturesSection = () => {
         <article className="col-4">
           <Feature
             imgSrc="/images/cat_beaker.png"
-            title="Realistic Science Simulations"
-            description="Our virtual lab software accurately models every biological, chemical, and physical reaction and process, providing students with a true-to-life sandbox experience that mirrors real-world laboratory conditions. These online lab simulations allow students to explore STEM concepts firsthand in a fully interactive environment."
+            title={t('features.realisticSimulations')}
+            description={t('features.realisticSimulationsDesc')}
           />
         </article>
         <article className="col-4">
           <Feature
             imgSrc="/images/cat_vr.png"
-            title="Multi-Platform Accessibility"
-            description="Access our virtual laboratory simulations on any device - VR headsets for immersive learning, desktop computers for classroom use, or mobile devices for on-the-go study. Our realistic physics engine ensures that each interaction closely replicates physical lab experiences, enhancing skill acquisition for students across all platforms."
+            title={t('features.crossPlatform')}
+            description={t('features.crossPlatformDesc')}
             delay={0.25}
           />
         </article>
         <article className="col-4">
           <Feature
             imgSrc="/images/cat_brain.png"
-            title="AI-Powered Assessment Tools"
-            description="Our virtual lab software includes sophisticated AI-driven assessment tools that provide instant, detailed feedback on students' actions. This gives educators measurable insights into learning progress while saving valuable time on grading. The system adapts to individual learning styles, supporting both teachers and students with personalized guidance."
+            title={t('features.aiAssessment')}
+            description={t('features.aiAssessmentDesc')}
             delay={0.5}
           />
         </article>
@@ -54,11 +56,11 @@ const FeaturesSection = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          See full features here!
+          {t('features.seeFullFeatures')}
         </a>
       </div>
     </section>
   );
 };
 
-export default FeaturesSection;
+export default withTranslation(FeaturesSection);

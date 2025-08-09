@@ -5,7 +5,7 @@ import './PrivacyPage.css';
 import { Helmet } from 'react-helmet-async';
 import withTranslation from './withTranslation';
 
-const PrivacyPage = ({ t, currentLang }) => {
+const PrivacyPage = ({ t, currentLang, language }) => {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
@@ -272,7 +272,7 @@ const PrivacyPage = ({ t, currentLang }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer language={language || currentLang} />
     </main>
   );
 };

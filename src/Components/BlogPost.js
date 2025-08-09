@@ -72,6 +72,7 @@ const slugToPostId = {
 };
 
 const BlogPost = (props = {}) => {
+  const { language } = props;
   // Get slug from props (passed by App component)
   const routeSlug = props.slug;
   
@@ -203,7 +204,7 @@ const BlogPost = (props = {}) => {
     const currentNextPost = postIndex > 0 ? allPostsForSSR[postIndex - 1] : null;
     const currentPrevPost = postIndex < allPostsForSSR.length - 1 ? allPostsForSSR[postIndex + 1] : null;
     
-    return renderBlogPost(currentPost, currentNextPost, currentPrevPost, formatDate);
+    return renderBlogPost(currentPost, currentNextPost, currentPrevPost, formatDate, language);
   }
 
   // Client-side loading and error states
@@ -221,7 +222,7 @@ const BlogPost = (props = {}) => {
             </div>
           </div>
         </BubbleContainer>
-        <Footer />
+        <Footer language={language} />
       </main>
     );
   }
@@ -241,17 +242,17 @@ const BlogPost = (props = {}) => {
             </div>
           </div>
         </BubbleContainer>
-        <Footer />
+        <Footer language={language} />
       </main>
     );
   }
 
   // Render the blog post (client-side)
-  return renderBlogPost(post, nextPost, prevPost, formatDate);
+  return renderBlogPost(post, nextPost, prevPost, formatDate, language);
 };
 
 // Separate render function for reusability
-function renderBlogPost(post, nextPost, prevPost, formatDate) {
+function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
@@ -275,17 +276,17 @@ function renderBlogPost(post, nextPost, prevPost, formatDate) {
               <div className="post-navigation">
                 <div className="post-nav-links">
                   {prevPost && (
-                    <a href={`../${prevPost.id || prevPost.slug}/index.html`} className="post-nav-button prev-post">
+                    <a href={language && language !== 'en' ? `/${language}/blog/${prevPost.id || prevPost.slug}/` : `/blog/${prevPost.id || prevPost.slug}/`} className="post-nav-button prev-post">
                       &larr; Older Post
                     </a>
                   )}
                   
-                  <a href="../index.html" className="post-nav-button back-to-blog">
+                  <a href={language && language !== 'en' ? `/${language}/blog/` : `/blog/`} className="post-nav-button back-to-blog">
                     All Posts
                   </a>
                   
                   {nextPost && (
-                    <a href={`../${nextPost.id || nextPost.slug}/index.html`} className="post-nav-button next-post">
+                    <a href={language && language !== 'en' ? `/${language}/blog/${nextPost.id || nextPost.slug}/` : `/blog/${nextPost.id || nextPost.slug}/`} className="post-nav-button next-post">
                       Newer Post &rarr;
                     </a>
                   )}
@@ -295,7 +296,7 @@ function renderBlogPost(post, nextPost, prevPost, formatDate) {
           </div>
         </div>
       </BubbleContainer>
-      <Footer />
+      <Footer language={language} />
     </main>
   );
 }
