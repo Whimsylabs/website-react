@@ -21,7 +21,7 @@ const AnimatedTitle = ({
       element.innerHTML = chars
         .map((char) => {
           if (char === ' ') {
-            return ' '; // Keep spaces as regular spaces
+            return '<span class="word-space"> </span>'; // Proper space element that allows wrapping
           }
           
           const animationDelay = (charIndex * 0.1) + delay; // Staggered delay for each character

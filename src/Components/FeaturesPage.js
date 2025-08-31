@@ -102,10 +102,7 @@ const FeaturesPage = ({ language }) => {
             )}
             <div className="text-justify">
               <p className="justified-text features-hero-subtitle">
-                Experience the world's most advanced virtual laboratory platform
-                with proprietary physics engine, 99.7% accuracy simulation, and
-                revolutionary AI assessment capabilities that redefine STEM
-                education.
+                Page WIP
               </p>
             </div>
           </div>
