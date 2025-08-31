@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[228],{228:(e,s,i)=>{i.r(s),i.d(s,{content:()=>n,description:()=>t,title:()=>a});i(43);const a="Aprendizaje pr\xe1ctico: La disecci\xf3n virtual de ri\xf1\xf3n mejora el compromiso de estudiantes SEND",t="Explorando c\xf3mo la interacci\xf3n f\xedsica de WhimsyLabs en entornos virtuales mejora significativamente los resultados educativos y el compromiso para estudiantes SEND.",n=null}}]);
-//# sourceMappingURL=228.5dddcecd.chunk.js.map

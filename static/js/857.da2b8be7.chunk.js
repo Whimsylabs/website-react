@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[857],{857:(e,a,i)=>{i.r(a),i.d(a,{content:()=>n,description:()=>l,title:()=>s});i(43);const s="La importancia de la fisicalidad en laboratorios virtuales: Un paso m\xe1s all\xe1 de las simulaciones tradicionales",l="Explorando c\xf3mo la f\xedsica de l\xedquidos revolucionaria de WhimsyLabs y el entrenamiento procedimental redefinen la educaci\xf3n cient\xedfica.",n=null}}]);
-//# sourceMappingURL=857.da2b8be7.chunk.js.map

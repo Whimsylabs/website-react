@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[10],{10:(a,e,i)=>{i.r(e),i.d(e,{content:()=>t,description:()=>n,title:()=>o});i(43);const o="Conoce a WhimsyCat: El tutor de IA revolucionario transformando la educaci\xf3n cient\xedfica",n="C\xf3mo el tutor de IA avanzado de WhimsyLabs proporciona orientaci\xf3n personalizada, retroalimentaci\xf3n en tiempo real y caminos de aprendizaje adaptativos para revolucionar la educaci\xf3n de laboratorio.",t=null}}]);
-//# sourceMappingURL=10.88e05f52.chunk.js.map

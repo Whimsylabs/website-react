@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[601],{601:(e,s,i)=>{i.r(s),i.d(s,{content:()=>a,description:()=>l,title:()=>t});i(43);const t="L'importance de la physicalit\xe9 dans les laboratoires virtuels : Un pas au-del\xe0 des simulations traditionnelles",l="Explorer comment la physique des liquides r\xe9volutionnaire de WhimsyLabs et la formation proc\xe9durale red\xe9finissent l'\xe9ducation scientifique.",a=null}}]);
-//# sourceMappingURL=601.2ff3bad6.chunk.js.map

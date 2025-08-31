@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[254],{254:(e,s,t)=>{t.r(s),t.d(s,{content:()=>a,description:()=>i,title:()=>n});t(43);const n="Une br\xe8ve histoire de WhimsyLabs : De nos d\xe9buts modestes \xe0 un gagnant BETT 2025",i="Comment WhimsyLabs, fond\xe9 par Marisa French, aborde les d\xe9fis STEM avec des laboratoires enti\xe8rement simul\xe9s, des partenariats impactants et une innovation prim\xe9e.",a=null}}]);
-//# sourceMappingURL=254.a5395e30.chunk.js.map
