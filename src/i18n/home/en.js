@@ -17,4 +17,8 @@ export default {
   haveQuestions: "Have Questions?",
   faqPage: "FAQ page",
   featuresPDF: "Features PDF",
+  visitOur: "Visit our",
+  faqAnswers: "for answers to common questions, or check our our",
+  pdfDetails: "for more details about our virtual lab software!",
+  testimonialsTitle: "What Educators Say About Our Virtual Lab Software",
 };

@@ -18,4 +18,8 @@ export default {
   haveQuestions: "Avez-vous des Questions ?",
   faqPage: "page FAQ",
   featuresPDF: "PDF des Fonctionnalités",
+  visitOur: "Visitez notre",
+  faqAnswers: "pour des réponses aux questions courantes, ou consultez notre",
+  pdfDetails: "pour plus de détails sur notre logiciel de laboratoire virtuel !",
+  testimonialsTitle: "Ce que disent les éducateurs de notre logiciel de laboratoire virtuel",
 };
