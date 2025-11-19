@@ -8,21 +8,7 @@ export const description =
 export const content = (
   <div>
     <p>
-      Whimsylabs was initially started in 2020 by Marisa French towards the end
-      of her Physics PhD, right as the pandemic was beginning to hit. The
-      devastating impact of COVID-19, which shuttered traditional lab
-      environments, left many students without access to hands-on science
-      education for years (
-      <a
-        href="https://www.iza.org/publications/dp/13820/covid-19-and-educational-inequality-how-school-closures-affect-low-and-high-achieving-students"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Grewenig et al., 2021
-      </a>
-      ). This coupled with the UK's declining STEM rankings, with the UK dropping
-      to 15th place in the OECD Programme for International Student Assessment
-      (PISA) science rankings (
+      In 2023, the UK plummeted to 15th place in global science rankings (
       <a
         href="https://www.oecd.org/publication/pisa-2022-results/"
         target="_blank"
@@ -30,10 +16,18 @@ export const content = (
       >
         OECD, 2023
       </a>
-      ), highlighted a crisis for British education that felt personal, as Marisa
-      had been inspired to pursue science due to the practicals she had
-      experienced in secondary school.
+      ), while the pandemic left millions of students worldwide without hands-on lab access for years (
+      <a
+        href="https://www.iza.org/publications/dp/13820/covid-19-and-educational-inequality-how-school-closures-affect-low-and-high-achieving-students"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Grewenig et al., 2021
+      </a>
+      ). This perfect storm of declining STEM performance and infrastructure loss catalyzed the creation of Whimsylabs in 2020, founded by Marisa French during her Physics PhD. For Marisa, this crisis felt deeply personal—she had been inspired to pursue science through the hands-on practicals she experienced in secondary school, opportunities that were now disappearing for a new generation.
     </p>
+
+    <h2>How Did Whimsylabs Begin?</h2>
     <p>
       Driven by a desire to create meaningful change, Marisa leveraged her
       simulation and gaming skills to develop a fully simulated sandbox virtual
@@ -98,9 +92,10 @@ export const content = (
       </a>
       ).
     </p>
+    <h2>What Breakthrough Led to University Recognition?</h2>
     <p>
       Around this time Whimsylabs caught the attention of the University of
-      Edinburgh due to our breakthrough work in simuations and ambitious impact
+      Edinburgh due to our breakthrough work in simulations and ambitious impact
       driven goals, securing places in their prestigious incubator programs and
       going on to win the Summer Accelerator. From these victories and
       recognitions, we were able to secure our first bout of funding to build a
@@ -145,6 +140,8 @@ export const content = (
       educational setting, and that it could be a valuable tool for teaching and
       learning. There was just one issue: the lab was ugly.
     </p>
+
+    <h2>Why Did We Redesign the Lab from Scratch?</h2>
     <img
       src="/images/finalLab.png"
       alt="Final lab design"
@@ -186,8 +183,10 @@ export const content = (
       Physics and Biology. Using this lab we were able to enter the prestigious
       Converge Challenge, a competition for the best new businesses in Scotland,
       and secure a place in the final under the Create Change category, where we
-      placed Second out of all business in Scotland.
+      placed Second out of all businesses in Scotland.
     </p>
+
+    <h2>How Did We Win BETT 2025 Recognition?</h2>
     <p>
       Through our victory at Converge, we secured the funds to attend BETT UK
       and take our innovations to a global stage. The feedback from students and
