@@ -10,9 +10,7 @@ export const description =
 export const content = (
   <div>
     <p>
-      Traditional science education faces a critical challenge: providing
-      personalized guidance to students in laboratory settings. With classroom
-      ratios often exceeding 30:1, teachers simply cannot offer the individual
+      With classroom ratios often exceeding 30:1, teachers simply cannot offer the individual
       attention each student needs during complex experimental procedures.
       According to systematic reviews of AI applications in education, the
       ability to provide personalized learning experiences that cater to unique
@@ -44,10 +42,10 @@ export const content = (
     />
     <p className="caption">
       WhimsyCat is based off our logo, our icon for embodying scientific
-      curiosity and playfulnesss.
+      curiosity and playfulness.
     </p>
 
-    <h3>Proactive Learning Support: Beyond Query-Based Assistance</h3>
+    <h2>Proactive Learning Support: Beyond Query-Based Assistance</h2>
 
     <p>
       Traditional AI tutoring systems operate reactively, waiting for students
@@ -89,7 +87,7 @@ export const content = (
       the student in real time.
     </p>
 
-    <h3>Personalized Learning Pathways: Adaptive Difficulty Scaling</h3>
+    <h2>Personalized Learning Pathways: Adaptive Difficulty Scaling</h2>
 
     <p>
       Every student learns differently, with unique strengths, challenges, and
@@ -121,7 +119,7 @@ export const content = (
       inequality while raising overall achievement levels.
     </p>
 
-    <h3>Real-Time Technique Analysis: Developing True Laboratory Skills</h3>
+    <h2>Real-Time Technique Analysis: Developing True Laboratory Skills</h2>
 
     <p>
       Perhaps the most revolutionary aspect of WhimsyCat is its ability to
@@ -173,7 +171,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Ethical AI Design: Transparency and Teacher Support and Enhancement</h3>
+    <h2>Ethical AI Design: Transparency and Teacher Support and Enhancement</h2>
 
     <p>
       WhimsyCat is designed not to replace teachers but to dramatically enhance
@@ -220,7 +218,7 @@ export const content = (
       recommendations, WhimsyCat builds trust with both educators and students.
     </p>
 
-    <h3>The Future of AI in Science Education</h3>
+    <h2>The Future of AI in Science Education</h2>
 
     <p>
       As WhimsyCat continues to evolve, we're exploring several exciting
