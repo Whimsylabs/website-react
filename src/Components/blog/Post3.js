@@ -123,7 +123,7 @@ export const content = (
 
     <h2>What Makes This Approach Effective for Learning?</h2>
     <p>
-      This format doesn't just show anatomy,it encourages deeper curiosity. The
+      This format doesn't just show anatomy, it encourages deeper curiosity. The
       ability to interact directly with the content, rather than passively watch
       or listen, improves conceptual understanding and retention. Users can
       repeat actions, manipulate components, and explore the system at their own
