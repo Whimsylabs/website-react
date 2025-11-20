@@ -169,6 +169,30 @@ export const content = (
       accessibility-focused education, this model brings science into reach.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          Meet WhimsyCat: AI Support for Diverse Learning Needs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+          24/7 AI Tutoring: Personalized Support for Every Student
+        </a>
+      </li>
+      <li>
+        <a href="/blog/green-labs-sustainability-virtual-stem-education">
+          Accessibility and Equity: Sustainability Beyond Environmental Impact
+        </a>
+      </li>
+      <li>
+        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+          Supporting Special Educational Needs and Disabilities (SEND)
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

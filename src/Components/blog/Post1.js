@@ -210,6 +210,31 @@ export const content = (
       labs, to capture the fun and wonder of science, and to democratize access 
       to premium science education technology for all institutions worldwide.
     </p>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          Meet WhimsyCat: Our AI Innovation in Science Education
+        </a>
+      </li>
+      <li>
+        <a href="/blog/physicality-in-virtual-labs">
+          The Physicality Breakthrough: How We Made Virtual Labs Feel Real
+        </a>
+      </li>
+      <li>
+        <a href="/blog/sandbox-learning-revolution-stem-education">
+          Our Sandbox Learning Philosophy: Freedom to Fail and Explore
+        </a>
+      </li>
+      <li>
+        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+          How Our Platform Addresses the Global Science Education Crisis
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
