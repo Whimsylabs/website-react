@@ -237,6 +237,30 @@ export const content = (
       Our vision is a future where every student has access to unlimited, personalized support that adapts to their unique needs, learns from their progress, and guides them toward mastery through engaging, low-stakes practice that builds genuine competence and confidence. This is not science fiction—it's happening now in schools across the UK and worldwide through WhimsyLabs' innovative platform.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          Meet WhimsyCat: The AI Tutor Behind 24/7 Personalized Support
+        </a>
+      </li>
+      <li>
+        <a href="/blog/emotional-intelligence-ai-tutors">
+          The Future of Learning: Emotional Intelligence in AI Tutors
+        </a>
+      </li>
+      <li>
+        <a href="/blog/stem-teacher-shortage-virtual-labs">
+          Addressing the STEM Teacher Shortage Crisis with Virtual Labs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/gamification-done-right-ethical-engagement">
+          Gamification Done Right: Engaging Students Through Mastery, Not Manipulation
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

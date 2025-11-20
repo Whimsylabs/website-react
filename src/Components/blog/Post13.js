@@ -239,6 +239,30 @@ export const content = (
       Dynamic simulations make learning fun. Fun makes learning effective. By being the only platform that truly understands and implements both principles, WhimsyLabs is transforming science education from obligation into adventure—precisely as it should be.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/physicality-in-virtual-labs">
+          The Importance of Physicality in Virtual Labs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/industry-ready-stem-graduates">
+          Preparing Industry-Ready STEM Graduates Through Virtual Laboratory Training
+        </a>
+      </li>
+      <li>
+        <a href="/blog/sandbox-learning-revolution-stem-education">
+          The Sandbox Learning Revolution: Why Freedom to Fail is Essential
+        </a>
+      </li>
+      <li>
+        <a href="/blog/whimsylabs-education-revolution">
+          A Brief History of WhimsyLabs: From Real-Time Simulations to BETT 2025 Winner
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

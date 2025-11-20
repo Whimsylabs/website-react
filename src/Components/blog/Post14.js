@@ -261,6 +261,30 @@ export const content = (
       By combining points for demonstrated mastery, personalized recommendations targeting growth areas, non-monetized rewards enabling self-expression, creative outlets like our art department, and social features fostering rather than replacing peer connections, WhimsyLabs proves that gamification can enhance education without the ethical compromises plaguing much of the EdTech industry. This is gamification done right—engaging, equitable, educational, and fundamentally respectful of students as learners and individuals.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+          24/7 AI Tutoring: How Personalized Support Helps Students Never Fall Behind
+        </a>
+      </li>
+      <li>
+        <a href="/blog/emotional-intelligence-ai-tutors">
+          The Future of Learning: Emotional Intelligence in AI Tutors
+        </a>
+      </li>
+      <li>
+        <a href="/blog/sandbox-learning-revolution-stem-education">
+          The Sandbox Learning Revolution: Why Freedom to Fail is Essential
+        </a>
+      </li>
+      <li>
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          Meet WhimsyCat: The AI Tutor That Makes Learning Engaging
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

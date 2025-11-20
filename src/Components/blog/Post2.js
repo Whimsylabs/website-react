@@ -192,6 +192,30 @@ export const content = (
       education.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/real-time-physics-simulations">
+          Real-Time Physics Simulations: The Technical Innovation Behind WhimsyLabs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/industry-ready-stem-graduates">
+          Preparing Industry-Ready STEM Graduates Through Virtual Laboratory Training
+        </a>
+      </li>
+      <li>
+        <a href="/blog/sandbox-learning-revolution-stem-education">
+          The Sandbox Learning Revolution: Why Freedom to Fail is Essential
+        </a>
+      </li>
+      <li>
+        <a href="/blog/whimsylabs-education-revolution">
+          A Brief History of WhimsyLabs: From Humble Start to BETT 2025 Winner
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

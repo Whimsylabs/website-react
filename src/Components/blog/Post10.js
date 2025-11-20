@@ -247,6 +247,30 @@ export const content = (
       Education has always been fundamentally about human connection and support. WhimsyCat doesn't replace that irreplaceable human element—it extends it, ensuring that every student receives the patient, empathetic, timely support they need to thrive, regardless of classroom ratios, teacher availability, or time of day. This is the promise of emotionally intelligent AI in education: amplifying human care and expertise to reach every learner when they need it most.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          Meet WhimsyCat: The Emotionally Intelligent AI Tutor
+        </a>
+      </li>
+      <li>
+        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+          24/7 AI Tutoring: How Personalized Support Helps Students Never Fall Behind
+        </a>
+      </li>
+      <li>
+        <a href="/blog/gamification-done-right-ethical-engagement">
+          Gamification Done Right: Creating Supportive Learning Environments
+        </a>
+      </li>
+      <li>
+        <a href="/blog/virtual-kidney-dissection-send-engagement">
+          Virtual Kidney Dissection: Supporting Diverse Learning Needs
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

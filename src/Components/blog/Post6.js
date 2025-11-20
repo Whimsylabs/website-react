@@ -342,6 +342,30 @@ export const content = (
       But <i>practically</i> embody science.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/physicality-in-virtual-labs">
+          The Importance of Physicality in Virtual Labs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/industry-ready-stem-graduates">
+          Preparing Industry-Ready STEM Graduates Through Virtual Laboratory Training
+        </a>
+      </li>
+      <li>
+        <a href="/blog/real-time-physics-simulations">
+          Real-Time Physics Simulations: The Technical Innovation Behind WhimsyLabs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/whimsylabs-education-revolution">
+          A Brief History of WhimsyLabs: Our Sandbox Philosophy from the Start
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
