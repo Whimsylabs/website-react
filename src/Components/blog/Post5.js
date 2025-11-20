@@ -42,7 +42,7 @@ export const content = (
     />
     <p className="caption">
       WhimsyCat is based off our logo, our icon for embodying scientific
-      curiosity and playfulnesss.
+      curiosity and playfulness.
     </p>
 
     <h2>Proactive Learning Support: Beyond Query-Based Assistance</h2>
