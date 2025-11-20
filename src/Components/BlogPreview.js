@@ -54,7 +54,7 @@ const extractFirstImage = (content) => {
 };
 
 // Function to extract preview content from a blog post
-const extractPreview = (content) => {
+const extractPreview = (content, description) => {
   try {
     // Handle string content (from mock data)
     if (typeof content === 'string') {
@@ -68,9 +68,11 @@ const extractPreview = (content) => {
     
     // Check if content exists and is a valid React element
     if (!content || !React.isValidElement(content)) {
+      // Use description if available, otherwise fallback text
+      const previewText = description || "Read the full article...";
       return (
         <div className="post-preview-content">
-          <p className="post-description">Read the full article...</p>
+          <p className="post-description">{previewText}</p>
           <div className="preview-fade"></div>
         </div>
       );
@@ -78,9 +80,11 @@ const extractPreview = (content) => {
     
     // Check if it has props and children
     if (!content.props || !content.props.children) {
+      // Use description if available, otherwise fallback text
+      const previewText = description || "Read the full article...";
       return (
         <div className="post-preview-content">
-          <p className="post-description">Read the full article...</p>
+          <p className="post-description">{previewText}</p>
           <div className="preview-fade"></div>
         </div>
       );
@@ -100,16 +104,17 @@ const extractPreview = (content) => {
         {previewContent.length > 0 ? previewContent.map((child, index) => 
           React.cloneElement(child, { key: `preview-${index}` })
         ) : (
-          <p className="post-description">Read the full article...</p>
+          <p className="post-description">{description || "Read the full article..."}</p>
         )}
         <div className="preview-fade"></div>
       </div>
     );
   } catch (error) {
     // Fallback if there's an error processing the content
+    const previewText = description || "Read the full article...";
     return (
       <div className="post-preview-content">
-        <p className="post-description">Read the full article...</p>
+        <p className="post-description">{previewText}</p>
         <div className="preview-fade"></div>
       </div>
     );
@@ -134,7 +139,7 @@ const BlogPreview = ({ post, languagePrefix = '' }) => {
         </h2>
         <span className="post-date">{formatDate(post.date)}</span>
         
-        {extractPreview(post.content)}
+        {extractPreview(post.content, post.description)}
         
         <span className="read-more-link">
           Read More

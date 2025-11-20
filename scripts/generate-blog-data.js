@@ -6,31 +6,84 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const blogPosts = ['post1', 'post2', 'post3', 'post4', 'post5', 'post6'];
 const supportedLanguages = ['en', 'de', 'fr', 'es'];
 
-// Mapping from post IDs to slugs (from the original blog components)
-const postIdToSlug = {
-  'post1': 'whimsylabs-education-revolution',
-  'post2': 'physicality-in-virtual-labs', 
-  'post3': 'virtual-kidney-dissection-send-engagement',
-  'post4': 'ai-powered-virtual-labs-solving-education-crisis',
-  'post5': 'whimsycat-ai-tutor-transforming-science-education',
-  'post6': 'sandbox-learning-revolution-stem-education'
-};
-
-// Dates from the original blog components
-const postDates = {
-  'post1': '2025-01-27',
-  'post2': '2025-02-03', 
-  'post3': '2025-03-19',
-  'post4': '2025-04-15',
-  'post5': '2025-05-10',
-  'post6': '2025-06-05'
-};
+/**
+ * Dynamically discover all blog posts by scanning the blog components directory
+ */
+async function discoverBlogPosts() {
+  const blogComponentsDir = path.join(__dirname, '..', 'src', 'Components', 'blog');
+  const postData = {};
+  
+  try {
+    const files = await fs.readdir(blogComponentsDir);
+    
+    // Filter for Post*.js files and extract metadata
+    for (const file of files) {
+      if (file.match(/^Post\d+\.js$/)) {
+        const postNumber = file.match(/Post(\d+)\.js$/)[1];
+        const postId = `post${postNumber}`;
+        const filePath = path.join(blogComponentsDir, file);
+        
+        try {
+          // Read file as text and extract metadata using regex
+          const fileContent = await fs.readFile(filePath, 'utf8');
+          
+          const titleMatch = fileContent.match(/export const title\s*=\s*["'`](.*?)["'`];/s);
+          const slugMatch = fileContent.match(/export const slug\s*=\s*["'`](.*?)["'`];/s);
+          const descriptionMatch = fileContent.match(/export const description\s*=\s*["'`](.*?)["'`];/s);
+          const dateMatch = fileContent.match(/export const date\s*=\s*["'`](.*?)["'`];/s);
+          
+          const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;
+          const slug = slugMatch ? slugMatch[1] : null;
+          const description = descriptionMatch ? descriptionMatch[1] : 'Blog post description';
+          const date = dateMatch ? dateMatch[1] : null;
+          
+          if (slug && date) {
+            postData[postId] = {
+              slug: slug,
+              date: date,
+              title: title,
+              description: description
+            };
+            
+            console.log(`📝 Discovered ${postId}: ${title?.substring(0, 50)}...`);
+          } else {
+            console.warn(`⚠️ ${file} missing required slug or date exports`);
+          }
+        } catch (error) {
+          console.warn(`⚠️ Could not load ${file}:`, error.message);
+        }
+      }
+    }
+    
+    // Sort posts by number for consistent ordering
+    const sortedPosts = Object.keys(postData).sort((a, b) => {
+      const numA = parseInt(a.replace('post', ''));
+      const numB = parseInt(b.replace('post', ''));
+      return numA - numB;
+    });
+    
+    console.log(`✅ Discovered ${sortedPosts.length} blog posts: ${sortedPosts.join(', ')}`);
+    
+    return {
+      blogPosts: sortedPosts,
+      postIdToSlug: Object.fromEntries(sortedPosts.map(id => [id, postData[id].slug])),
+      postDates: Object.fromEntries(sortedPosts.map(id => [id, postData[id].date])),
+      postTitles: Object.fromEntries(sortedPosts.map(id => [id, postData[id].title])),
+      postDescriptions: Object.fromEntries(sortedPosts.map(id => [id, postData[id].description]))
+    };
+  } catch (error) {
+    console.error('❌ Error discovering blog posts:', error);
+    throw error;
+  }
+}
 
 async function generateBlogData() {
   console.log('🔄 Generating static blog data...');
+  
+  // Dynamically discover all blog posts
+  const { blogPosts, postIdToSlug, postDates, postTitles, postDescriptions } = await discoverBlogPosts();
   
   const blogData = {};
   
@@ -46,11 +99,11 @@ async function generateBlogData() {
           // Read the file content
           const fileContent = await fs.readFile(translationPath, 'utf8');
           
-          // Extract title and description using regex
-          const titleMatch = fileContent.match(/export const title = ["'`](.*?)["'`];/s);
-          const descriptionMatch = fileContent.match(/export const description = ["'`](.*?)["'`];/s);
-          const contentMatch = fileContent.match(/export const content = \(([\s\S]*?)\);$/);
-          
+          // Extract title and description using regex (handle multi-line exports)
+          const titleMatch = fileContent.match(/export const title\s*=\s*["'`](.*?)["'`];/s);
+          const descriptionMatch = fileContent.match(/export const description\s*=\s*["'`](.*?)["'`];/s);
+          const contentMatch = fileContent.match(/export const content\s*=\s*\(/);
+
           const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;
           const description = descriptionMatch ? descriptionMatch[1] : 'Blog post description';
           const hasContent = !!contentMatch;
@@ -77,9 +130,9 @@ async function generateBlogData() {
             const englishPath = path.join(__dirname, '..', 'src', 'i18n', 'blog', postId, 'en.js');
             if (await fs.pathExists(englishPath)) {
               const englishContent = await fs.readFile(englishPath, 'utf8');
-              const titleMatch = englishContent.match(/export const title = ["'`](.*?)["'`];/s);
-              const descriptionMatch = englishContent.match(/export const description = ["'`](.*?)["'`];/s);
-              
+              const titleMatch = englishContent.match(/export const title\s*=\s*["'`](.*?)["'`];/s);
+              const descriptionMatch = englishContent.match(/export const description\s*=\s*["'`](.*?)["'`];/s);
+
               const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;
               const description = descriptionMatch ? descriptionMatch[1] : 'Blog post description';
               

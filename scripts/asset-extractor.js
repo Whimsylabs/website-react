@@ -144,9 +144,11 @@ class AssetExtractor {
    */
   generateCSSLinks(cssFiles = null) {
     const files = cssFiles || this.getCriticalCSS();
-    return files.map(file => 
-      `<link href="${file}" rel="stylesheet">`
-    ).join('\n  ');
+    return files.map(file => {
+      // Ensure absolute path from root
+      const absolutePath = file.startsWith('/') ? file : `/${file}`;
+      return `<link href="${absolutePath}" rel="stylesheet">`;
+    }).join('\n  ');
   }
 
   /**
@@ -156,9 +158,11 @@ class AssetExtractor {
    */
   generateJSScripts(jsFiles = null) {
     const files = jsFiles || this.getJavaScriptFiles();
-    return files.map(file => 
-      `<script defer="defer" src="${file}"></script>`
-    ).join('\n  ');
+    return files.map(file => {
+      // Ensure absolute path from root
+      const absolutePath = file.startsWith('/') ? file : `/${file}`;
+      return `<script defer="defer" src="${absolutePath}"></script>`;
+    }).join('\n  ');
   }
 
   /**
@@ -170,10 +174,12 @@ class AssetExtractor {
       ...this.getCriticalCSS().map(file => ({ href: file, as: 'style' })),
       ...this.getJavaScriptFiles().slice(0, 1).map(file => ({ href: file, as: 'script' }))
     ];
-    
-    return criticalAssets.map(asset => 
-      `<link rel="preload" href="${asset.href}" as="${asset.as}">`
-    ).join('\n  ');
+
+    return criticalAssets.map(asset => {
+      // Ensure absolute path from root
+      const absolutePath = asset.href.startsWith('/') ? asset.href : `/${asset.href}`;
+      return `<link rel="preload" href="${absolutePath}" as="${asset.as}">`;
+    }).join('\n  ');
   }
 
   /**

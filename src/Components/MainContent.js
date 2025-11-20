@@ -35,11 +35,11 @@ const MainContent = ({ t, language }) => {
         <div className="faq-teaser">
           <h2>{t("home.haveQuestions")}</h2>
           <p>
-            Visit our{" "}
+            {t("home.visitOur")}{" "}
             <a href="./faq/index.html" className="faq-link">
               {t("home.faqPage")}
             </a>{" "}
-            for answers to common questions, or check our our{" "}
+            {t("home.faqAnswers")}{" "}
             <a
               href="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440"
               className="faq-link"
@@ -48,7 +48,7 @@ const MainContent = ({ t, language }) => {
             >
               {t("home.featuresPDF")}
             </a>{" "}
-            for more details about our virtual lab software!
+            {t("home.pdfDetails")}
           </p>
         </div>
       </BubbleContainer>

@@ -44,18 +44,24 @@ const getPageMetadata = (lang = 'en') => ({
     keywords: "virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching",
   },
   "/services": {
-    title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
-    description: "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
-    keywords: "custom virtual labs, educational simulations, STEM lab development, virtual lab consulting",
+    title:
+      "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
+    description:
+      "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
+    keywords:
+      "custom virtual labs, educational simulations, STEM lab development, virtual lab consulting",
   },
   "/features": {
-    title: translations[lang]?.features?.title || "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology",
-    description: translations[lang]?.features?.description || "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.",
-    keywords: "virtual lab features, physics simulations, AI assessment, cross-platform labs",
+    title: "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology",
+    description:
+      "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.",
+    keywords:
+      "virtual lab features, physics simulations, AI assessment, cross-platform labs",
   },
   "/faq": {
     title: "Frequently Asked Questions | WhimsyLabs Virtual Lab Software",
-    description: "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
+    description:
+      "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
     keywords: "virtual lab FAQ, lab software questions, STEM education help",
   },
   "/contact": {
@@ -122,11 +128,22 @@ async function generateRouteConfigs() {
     const pageMetadata = getPageMetadata(lang);
     const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
 
+    // Get blog posts for this language (used by both Blog and BlogPost routes)
+    let posts = [];
+    try {
+      posts = await getBlogPosts(lang);
+    } catch (error) {
+      console.warn(`⚠️ Could not load blog posts for language ${lang}:`, error.message);
+    }
+
     // Add static routes for this language
     Object.keys(routeComponentMap).forEach((path) => {
       const componentName = routeComponentMap[path];
       const localizedPath = `${langPrefix}${path}`;
       const metadata = pageMetadata[path] || {};
+
+      // For the Blog route, pass the posts array
+      const routeData = componentName === 'Blog' ? { posts } : {};
 
       routes.push({
         path: localizedPath,
@@ -134,34 +151,31 @@ async function generateRouteConfigs() {
         metadata,
         template: "page",
         language: lang,
+        data: routeData,
       });
     });
 
     // Add dynamic blog post routes for this language
-    try {
-      const posts = await getBlogPosts(lang);
-      posts.forEach((post) => {
-        const localizedPath = `${langPrefix}/blog/${post.id}`;
-        
-        routes.push({
-          path: localizedPath,
-          component: "BlogPost",
-          metadata: {
-            title: `${post.title} | WhimsyLabs Blog`,
-            description: post.description || post.excerpt || "Read more on WhimsyLabs Blog",
-            keywords: post.keywords || "virtual lab, STEM education, science",
-          },
-          template: "blog-post",
-          data: {
-            ...post,
-            slug: post.id, // Pass the slug for the BlogPost component
-          },
-          language: lang,
-        });
+    posts.forEach((post) => {
+      const localizedPath = `${langPrefix}/blog/${post.id}`;
+
+      routes.push({
+        path: localizedPath,
+        component: "BlogPost",
+        metadata: {
+          title: `${post.title} | WhimsyLabs Blog`,
+          description: post.description || post.excerpt || "Read more on WhimsyLabs Blog",
+          keywords: post.keywords || "virtual lab, STEM education, science",
+        },
+        template: "blog-post",
+        data: {
+          ...post,
+          slug: post.id, // Pass the slug for the BlogPost component
+          posts: posts, // Pass all posts for navigation
+        },
+        language: lang,
       });
-    } catch (error) {
-      console.warn(`⚠️ Could not generate blog post routes for language ${lang}:`, error.message);
-    }
+    });
   }
 
   return routes;
@@ -202,9 +216,6 @@ async function loadReactComponents() {
 
     ReactComponents.BlogPost = require("./src/Components/BlogPost.js").default;
     console.log("✅ Loaded BlogPost");
-
-    // ReactComponents.IgnitePitchDeck = require("./src/Components/IgnitePitchDeck.js").default;
-    // console.log("✅ Loaded IgnitePitchDeck"); // Disabled
   } catch (error) {
     console.error("❌ Error loading React components:", error);
     throw error;
@@ -225,6 +236,7 @@ async function setupDist() {
       `${config.distDir}/sitemap.xml`,
       `${config.distDir}/robots.txt`,
       // Note: 404.html may not exist, so we'll check before cleaning
+      `${config.distDir}/404.html`,
     ];
 
     for (const file of filesToClean) {
@@ -264,7 +276,9 @@ async function copyAssets() {
       await fs.copy(reactStaticDir, destStaticDir, { overwrite: true });
       console.log("✅ Copied React build static files");
     } else {
-      console.warn("⚠️ React build static files not found - run 'npm run build-spa' first");
+      console.warn(
+        "⚠️ React build static files not found - run 'npm run build-spa' first"
+      );
     }
 
     // Since distDir is the same as buildDir, we don't need to copy public assets
@@ -327,8 +341,16 @@ async function getBlogPosts(language = 'en') {
     const Post4 = require("./src/Components/blog/Post4.js");
     const Post5 = require("./src/Components/blog/Post5.js");
     const Post6 = require("./src/Components/blog/Post6.js");
+    const Post7 = require("./src/Components/blog/Post7.js");
+    const Post8 = require("./src/Components/blog/Post8.js");
+    const Post9 = require("./src/Components/blog/Post9.js");
+    const Post10 = require("./src/Components/blog/Post10.js");
+    const Post11 = require("./src/Components/blog/Post11.js");
+    const Post12 = require("./src/Components/blog/Post12.js");
+    const Post13 = require("./src/Components/blog/Post13.js");
+    const Post14 = require("./src/Components/blog/Post14.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -356,69 +378,27 @@ async function getBlogPosts(language = 'en') {
       const Post4 = require("./src/Components/blog/Post4.js");
       const Post5 = require("./src/Components/blog/Post5.js");
       const Post6 = require("./src/Components/blog/Post6.js");
+      const Post7 = require("./src/Components/blog/Post7.js");
+      const Post8 = require("./src/Components/blog/Post8.js");
+      const Post9 = require("./src/Components/blog/Post9.js");
+      const Post10 = require("./src/Components/blog/Post10.js");
+      const Post11 = require("./src/Components/blog/Post11.js");
+      const Post12 = require("./src/Components/blog/Post12.js");
+      const Post13 = require("./src/Components/blog/Post13.js");
+      const Post14 = require("./src/Components/blog/Post14.js");
 
-      const fallbackPosts = [
-        {
-          id: Post1.slug,
-          title: Post1.title,
-          date: Post1.date,
-          description: Post1.description,
-          content: Post1.content,
-          path: `/blog/${Post1.slug}`,
-          language: 'en',
-          hasFullTranslation: true
-        },
-        {
-          id: Post2.slug,
-          title: Post2.title,
-          date: Post2.date,
-          description: Post2.description,
-          content: Post2.content,
-          path: `/blog/${Post2.slug}`,
-          language: 'en',
-          hasFullTranslation: true
-        },
-        {
-          id: Post3.slug,
-          title: Post3.title,
-          date: Post3.date,
-          description: Post3.description,
-          content: Post3.content,
-          path: `/blog/${Post3.slug}`,
-          language: 'en',
-          hasFullTranslation: true
-        },
-        {
-          id: Post4.slug,
-          title: Post4.title,
-          date: Post4.date,
-          description: Post4.description,
-          content: Post4.content,
-          path: `/blog/${Post4.slug}`,
-          language: 'en',
-          hasFullTranslation: true
-        },
-        {
-          id: Post5.slug,
-          title: Post5.title,
-          date: Post5.date,
-          description: Post5.description,
-          content: Post5.content,
-          path: `/blog/${Post5.slug}`,
-          language: 'en',
-          hasFullTranslation: true
-        },
-        {
-          id: Post6.slug,
-          title: Post6.title,
-          date: Post6.date,
-          description: Post6.description,
-          content: Post6.content,
-          path: `/blog/${Post6.slug}`,
-          language: 'en',
-          hasFullTranslation: true
-        }
-      ];
+      const allPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14];
+
+      const fallbackPosts = allPosts.map(post => ({
+        id: post.slug,
+        title: post.title,
+        date: post.date,
+        description: post.description,
+        content: post.content,
+        path: `/blog/${post.slug}`,
+        language: 'en',
+        hasFullTranslation: true
+      }));
 
       return fallbackPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
     } catch (fallbackError) {
@@ -472,11 +452,19 @@ async function generatePageHTML(route, data = {}) {
         // Map slug back to post ID
         const slugToPostId = {
           'whimsylabs-education-revolution': 'post1',
-          'physicality-in-virtual-labs': 'post2', 
+          'physicality-in-virtual-labs': 'post2',
           'virtual-kidney-dissection-send-engagement': 'post3',
           'ai-powered-virtual-labs-solving-education-crisis': 'post4',
           'whimsycat-ai-tutor-transforming-science-education': 'post5',
-          'sandbox-learning-revolution-stem-education': 'post6'
+          'sandbox-learning-revolution-stem-education': 'post6',
+          'green-labs-sustainability-virtual-stem-education': 'post7',
+          'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
+          '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
+          'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
+          'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
+          'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
+          'science-real-time-physics-simulations-virtual-labs': 'post13',
+          'gamification-science-education-points-rewards-engagement': 'post14'
         };
         
         const postId = slugToPostId[data.slug];
@@ -494,6 +482,25 @@ async function generatePageHTML(route, data = {}) {
         }
       } catch (contentError) {
         console.warn(`⚠️ Could not load translated content for ${data.slug}:`, contentError.message);
+      }
+    }
+
+    // For BlogPost, we need to prepare content HTML for hydration
+    let contentHTML = null;
+    let contentHTMLEscaped = null;
+    if (route.includes('/blog/') && !route.endsWith('/blog/') && props.content) {
+      try {
+        // props.content is already an HTML string from blog-content-loader.js
+        // Don't render it again - just use it directly
+        contentHTML = typeof props.content === 'string' ? props.content : props.content;
+
+        // Escape for JavaScript string (only quotes and backslashes)
+        contentHTMLEscaped = contentHTML
+          .replace(/\\/g, '\\\\')
+          .replace(/'/g, "\\'")
+          .replace(/\r?\n/g, '\\n');
+      } catch (e) {
+        console.warn(`⚠️ Could not serialize content HTML for ${data.slug}`);
       }
     }
 
@@ -539,9 +546,31 @@ async function generatePageHTML(route, data = {}) {
     ${assets.css}
     ${completeMetadata.script}
     <script>
-        // Set initial route and language for React Router
+        // Set initial route for React Router
         window.__INITIAL_ROUTE__ = "${route}";
-        window.__INITIAL_LANGUAGE__ = "${currentLang}";
+        // Pass serializable data for React hydration (excluding React elements)
+        try {
+          window.__INITIAL_DATA__ = ${JSON.stringify({
+            language: props.language,
+            slug: props.slug,
+            title: props.title,
+            date: props.date,
+            description: props.description,
+            posts: props.posts?.map(p => ({
+              id: p.id,
+              slug: p.slug,
+              title: p.title,
+              date: p.date,
+              description: p.description,
+              // Exclude 'content' as it contains React JSX elements
+            })) || undefined
+          }).replace(/</g, '\\u003c').replace(/>/g, '\\u003e')};
+          // Store contentHTML directly (escaped for JavaScript)
+          ${contentHTMLEscaped ? `window.__INITIAL_DATA__.contentHTML = '${contentHTMLEscaped}';` : ''}
+        } catch(e) {
+          console.error('Failed to serialize initial data:', e);
+          window.__INITIAL_DATA__ = {};
+        }
     </script>
 </head>
 <body>
@@ -642,8 +671,8 @@ async function generatePages() {
 // Generate sitemap
 async function generateSitemap() {
   try {
-    const posts = await getBlogPosts('en'); // Use English posts for sitemap structure
     const currentDate = new Date().toISOString().split("T")[0];
+    const posts = await getBlogPosts();
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
@@ -695,7 +724,7 @@ async function generateSitemap() {
         
         sitemap += `
     <url>
-        <loc>${url}</loc>
+        <loc>${config.siteUrl}/blog/${post.id}/</loc>
         <lastmod>${lastmod}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>`;

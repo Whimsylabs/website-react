@@ -2,15 +2,30 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 // Import shared FAQ data
 import { getSchemaFAQItems } from "../data/faqData";
-import { extractSchemaFAQData } from "../utils/faqDataExtractor";
 import { getCurrentLanguage } from "../i18n";
 // Import blog post data
+// Dynamic blog post imports - these will be loaded as needed
+// Note: We still need static imports for webpack bundling, but we'll make this more maintainable
 import * as Post1 from "./blog/Post1";
 import * as Post2 from "./blog/Post2";
 import * as Post3 from "./blog/Post3";
 import * as Post4 from "./blog/Post4";
 import * as Post5 from "./blog/Post5";
 import * as Post6 from "./blog/Post6";
+import * as Post7 from "./blog/Post7";
+import * as Post8 from "./blog/Post8";
+import * as Post9 from "./blog/Post9";
+import * as Post10 from "./blog/Post10";
+import * as Post11 from "./blog/Post11";
+import * as Post12 from "./blog/Post12";
+import * as Post13 from "./blog/Post13";
+import * as Post14 from "./blog/Post14";
+
+// Create a dynamic mapping of all posts
+const ALL_POSTS = {
+  Post1, Post2, Post3, Post4, Post5, Post6, Post7, 
+  Post8, Post9, Post10, Post11, Post12, Post13, Post14
+};
 
 const SchemaMarkup = () => {
   // Get current path from window.location instead of React Router
@@ -20,79 +35,77 @@ const SchemaMarkup = () => {
 
   // Get current language and extract FAQ data in that language
   const currentLanguage = getCurrentLanguage();
-  
-  // Extract FAQ data from shared data source in current language
+
+  // Extract FAQ data from shared data source
   const extractFAQData = () => {
-    try {
-      // Try to get translated FAQ data, fallback to English
-      return extractSchemaFAQData(currentLanguage);
-    } catch (error) {
-      // Fallback to original method if translation fails
-      return getSchemaFAQItems();
-    }
+    // Use the shared FAQ data - this already provides the most important questions
+    return getSchemaFAQItems();
   };
 
   // Extract blog post data dynamically
   const getBlogPostData = () => {
-    const blogPosts = {
-      "/blog/whimsylabs-education-revolution": {
-        title: Post1.title,
-        datePublished: Post1.date,
-        dateModified: Post1.date,
-        description: Post1.description,
-        slug: Post1.slug,
-        keywords: ["virtual laboratory history", "BETT 2025 winner", "STEM education innovation", "COVID-19 education solutions", "proprietary physics engine"]
-      },
-      "/blog/physicality-in-virtual-labs": {
-        title: Post2.title,
-        datePublished: Post2.date,
-        dateModified: Post2.date,
-        description: Post2.description,
-        slug: Post2.slug,
-        keywords: ["virtual lab physicality", "liquid physics simulation", "procedural training", "muscle memory development", "advanced virtual laboratory"]
-      },
-      "/blog/virtual-kidney-dissection-send-engagement": {
-        title: Post3.title,
-        datePublished: Post3.date,
-        dateModified: Post3.date,
-        description: Post3.description,
-        slug: Post3.slug,
-        keywords: ["virtual dissection", "SEND education", "kidney anatomy", "VR learning", "accessibility in education"]
-      },
-      [`/blog/${Post4.slug}`]: {
-        title: Post4.title,
-        datePublished: Post4.date,
-        dateModified: Post4.date,
-        description: Post4.description,
-        slug: Post4.slug,
-        keywords: ["AI-powered virtual labs", "STEM education crisis", "educational technology", "virtual laboratory", "science education"]
-      },
-      [`/blog/${Post5.slug}`]: {
-        title: Post5.title,
-        datePublished: Post5.date,
-        dateModified: Post5.date,
-        description: Post5.description,
-        slug: Post5.slug,
-        keywords: ["WhimsyCat AI tutor", "personalized learning", "AI in education", "virtual laboratory", "STEM education"]
-      },
-      [`/blog/${Post6.slug}`]: {
-        title: Post6.title,
-        datePublished: Post6.date,
-        dateModified: Post6.date,
-        description: Post6.description,
-        slug: Post6.slug,
-        keywords: ["sandbox learning", "productive failure", "STEM education", "virtual laboratory", "scientific inquiry"]
+    // Generate blog posts data dynamically from all available posts
+    const blogPosts = {};
+    
+    // Default keywords for different post types (can be customized per post)
+    const getKeywordsForPost = (post, index) => {
+      const baseKeywords = ["virtual laboratory", "STEM education"];
+      
+      // Add specific keywords based on post content/title
+      if (post.title?.toLowerCase().includes('ai')) {
+        return [...baseKeywords, "AI tutoring", "artificial intelligence", "educational technology"];
       }
+      if (post.title?.toLowerCase().includes('sustainability') || post.title?.toLowerCase().includes('green')) {
+        return [...baseKeywords, "sustainability", "environmental impact", "green labs"];
+      }
+      if (post.title?.toLowerCase().includes('teacher')) {
+        return [...baseKeywords, "teacher support", "educational crisis", "professional development"];
+      }
+      if (post.title?.toLowerCase().includes('physics')) {
+        return [...baseKeywords, "physics simulations", "computational physics", "real-time computing"];
+      }
+      if (post.title?.toLowerCase().includes('gamification')) {
+        return [...baseKeywords, "gamification", "student engagement", "educational rewards"];
+      }
+      if (post.title?.toLowerCase().includes('career')) {
+        return [...baseKeywords, "STEM careers", "professional training", "career preparation"];
+      }
+      
+      // Default keywords
+      return [...baseKeywords, "science education", "educational technology", "virtual experiments"];
     };
+    
+    // Dynamically create entries for all posts
+    Object.values(ALL_POSTS).forEach((post, index) => {
+      if (post.slug && post.title && post.date) {
+        const path = `/blog/${post.slug}`;
+        blogPosts[path] = {
+          title: post.title,
+          datePublished: post.date,
+          dateModified: post.date,
+          description: post.description || "Insights into virtual laboratory technology and STEM education innovation from WhimsyLabs.",
+          slug: post.slug,
+          keywords: getKeywordsForPost(post, index),
+        };
+      }
+    });
 
-    return blogPosts[currentPath] || {
-      title: "WhimsyLabs Blog - Virtual Laboratory Innovation",
-      datePublished: "2025-01-01",
-      dateModified: "2025-01-01",
-      description: "Insights into virtual laboratory technology and STEM education innovation from WhimsyLabs.",
-      slug: "blog-post",
-      keywords: ["virtual laboratory", "STEM education", "educational technology", "advanced simulation"]
-    };
+    return (
+      blogPosts[currentPath] || {
+        title: "WhimsyLabs Blog - Virtual Laboratory Innovation",
+        datePublished: "2025-01-01",
+        dateModified: "2025-01-01",
+        description:
+          "Insights into virtual laboratory technology and STEM education innovation from WhimsyLabs.",
+        slug: "blog-post",
+        keywords: [
+          "virtual laboratory",
+          "STEM education",
+          "educational technology",
+          "advanced simulation",
+        ],
+      }
+    );
   };
 
   // Organization schema that will be included on all pages
@@ -115,7 +128,7 @@ const SchemaMarkup = () => {
     },
     awards: [
       "BETT 2025 Kids Judge Award Winner - Best Science Lab (Start Up)",
-      "Converge Challenge Second Place Winner"
+      "Converge Challenge Second Place Winner",
     ],
   };
 
@@ -125,7 +138,8 @@ const SchemaMarkup = () => {
     "@type": "SoftwareApplication",
     name: "WhimsyLabs Advanced Virtual Laboratory Platform",
     applicationCategory: "EducationalApplication",
-    operatingSystem: "Web, Windows, MacOS, Linux, Android, VR, Quest2, Quest3, Vive, Index, Pico4",
+    operatingSystem:
+      "Web, Windows, MacOS, Linux, Android, VR, Quest2, Quest3, Vive, Index, Pico4",
     offers: {
       "@type": "Offer",
       price: "Contact for premium pricing",
@@ -140,12 +154,12 @@ const SchemaMarkup = () => {
     },
     featureList: [
       "Real world Accuracy Simulation",
-      "Proprietary Physical Chemistry Engine", 
+      "Proprietary Physical Chemistry Engine",
       "Revolutionary AI Assessment",
       "True Hand Representation",
       "Cross-Platform Compatibility",
       "Real-time Molecular Interactions",
-      "Custom Experiments and Labs Generated by AI"
+      "Custom Experiments and Labs Generated by AI",
     ],
   };
 
@@ -229,14 +243,14 @@ const SchemaMarkup = () => {
     return {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: faqData.map(item => ({
+      mainEntity: faqData.map((item) => ({
         "@type": "Question",
         name: item.question,
         acceptedAnswer: {
           "@type": "Answer",
-          text: item.answer
-        }
-      }))
+          text: item.answer,
+        },
+      })),
     };
   };
 
@@ -245,7 +259,7 @@ const SchemaMarkup = () => {
   // Blog post schema generated dynamically from blog post data
   const generateBlogPostSchema = () => {
     const postData = getBlogPostData();
-    
+
     return {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
@@ -256,7 +270,7 @@ const SchemaMarkup = () => {
       author: {
         "@type": "Organization",
         name: "WhimsyLabs",
-        url: baseUrl
+        url: baseUrl,
       },
       publisher: {
         "@type": "Organization",
@@ -265,7 +279,7 @@ const SchemaMarkup = () => {
           "@type": "ImageObject",
           url: `${baseUrl}/logo.png`,
           width: 1200,
-          height: 630
+          height: 630,
         },
       },
       url: `${baseUrl}${currentPath}`,
@@ -273,7 +287,7 @@ const SchemaMarkup = () => {
       keywords: postData.keywords,
       mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": `${baseUrl}${currentPath}`
+        "@id": `${baseUrl}${currentPath}`,
       },
       articleSection: "STEM Education Technology",
       wordCount: 2000, // Approximate word count
@@ -282,17 +296,17 @@ const SchemaMarkup = () => {
       about: [
         {
           "@type": "Thing",
-          name: "Virtual Laboratory Technology"
-        },
-        {
-          "@type": "Thing", 
-          name: "STEM Education"
+          name: "Virtual Laboratory Technology",
         },
         {
           "@type": "Thing",
-          name: "Educational Technology"
-        }
-      ]
+          name: "STEM Education",
+        },
+        {
+          "@type": "Thing",
+          name: "Educational Technology",
+        },
+      ],
     };
   };
 
@@ -311,13 +325,13 @@ const SchemaMarkup = () => {
     educationalLevel: "Secondary Education, Higher Education",
     teaches: [
       "Virtual Laboratory Procedures",
-      "STEM Practical Skills", 
+      "STEM Practical Skills",
       "Scientific Method Application",
       "Laboratory Safety Protocols",
-      "Data Analysis and Interpretation"
+      "Data Analysis and Interpretation",
     ],
     courseMode: ["Online", "VR", "Blended Learning"],
-    availableLanguage: "English"
+    availableLanguage: "English",
   };
 
   // HowTo schema for educational processes
@@ -325,52 +339,53 @@ const SchemaMarkup = () => {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: "How to Conduct Virtual Laboratory Experiments",
-    description: "Step-by-step guide to performing scientific experiments using WhimsyLabs' advanced virtual laboratory platform with 99.7% accuracy simulation.",
+    description:
+      "Step-by-step guide to performing scientific experiments using WhimsyLabs' advanced virtual laboratory platform with 99.7% accuracy simulation.",
     image: `${baseUrl}/logo.png`,
     totalTime: "PT30M",
     estimatedCost: {
       "@type": "MonetaryAmount",
       currency: "GBP",
-      value: "0"
+      value: "0",
     },
     supply: [
       {
         "@type": "HowToSupply",
-        name: "Computer or VR Headset"
+        name: "Computer or VR Headset",
       },
       {
-        "@type": "HowToSupply", 
-        name: "Internet Connection"
-      }
+        "@type": "HowToSupply",
+        name: "Internet Connection",
+      },
     ],
     tool: [
       {
         "@type": "HowToTool",
-        name: "WhimsyLabs Virtual Laboratory Platform"
-      }
+        name: "WhimsyLabs Virtual Laboratory Platform",
+      },
     ],
     step: [
       {
         "@type": "HowToStep",
         name: "Access Virtual Laboratory",
-        text: "Log into WhimsyLabs platform using any device - desktop, or VR headset."
+        text: "Log into WhimsyLabs platform using any device - desktop, or VR headset.",
       },
       {
-        "@type": "HowToStep", 
+        "@type": "HowToStep",
         name: "Select Experiment",
-        text: "Choose from Biology, Chemistry, or Physics experiments with realistic simulations."
+        text: "Choose from Biology, Chemistry, or Physics experiments with realistic simulations.",
       },
       {
         "@type": "HowToStep",
         name: "Perform Procedures",
-        text: "Use true hand representation and proprietary physics engine for realistic lab experience."
+        text: "Use true hand representation and proprietary physics engine for realistic lab experience.",
       },
       {
         "@type": "HowToStep",
-        name: "Analyze Results", 
-        text: "Review data with AI-powered assessment and instant feedback from Whimsycat tutor."
-      }
-    ]
+        name: "Analyze Results",
+        text: "Review data with AI-powered assessment and instant feedback from Whimsycat tutor.",
+      },
+    ],
   };
 
   // WebSite schema for enhanced search presence
@@ -379,35 +394,36 @@ const SchemaMarkup = () => {
     "@type": "WebSite",
     name: "WhimsyLabs - Advanced Virtual Laboratory Platform",
     url: baseUrl,
-    description: "The world's most advanced virtual laboratory platform with 99.7% accuracy simulation, proprietary physics engine, and revolutionary AI assessment for STEM education.",
+    description:
+      "The world's most advanced virtual laboratory platform with 99.7% accuracy simulation, proprietary physics engine, and revolutionary AI assessment for STEM education.",
     publisher: {
       "@type": "Organization",
-      name: "WhimsyLabs"
+      name: "WhimsyLabs",
     },
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${baseUrl}/search?q={search_term_string}`
+        urlTemplate: `${baseUrl}/search?q={search_term_string}`,
       },
-      "query-input": "required name=search_term_string"
+      "query-input": "required name=search_term_string",
     },
     mainEntity: {
       "@type": "SoftwareApplication",
-      name: "WhimsyLabs Virtual Laboratory"
+      name: "WhimsyLabs Virtual Laboratory",
     },
     audience: {
       "@type": "EducationalAudience",
-      educationalRole: ["teacher", "student", "administrator"]
+      educationalRole: ["teacher", "student", "administrator"],
     },
     genre: ["Educational Technology", "STEM Education", "Virtual Reality"],
-    inLanguage: "en-GB"
+    inLanguage: "en-GB",
   };
 
   // TechArticle schema for technical blog posts
   const generateTechArticleSchema = () => {
     const postData = getBlogPostData();
-    
+
     return {
       "@context": "https://schema.org",
       "@type": "TechArticle",
@@ -419,15 +435,15 @@ const SchemaMarkup = () => {
       author: {
         "@type": "Organization",
         name: "WhimsyLabs",
-        url: baseUrl
+        url: baseUrl,
       },
       publisher: {
         "@type": "Organization",
         name: "WhimsyLabs",
         logo: {
           "@type": "ImageObject",
-          url: `${baseUrl}/logo.png`
-        }
+          url: `${baseUrl}/logo.png`,
+        },
       },
       url: `${baseUrl}${currentPath}`,
       mainEntityOfPage: `${baseUrl}${currentPath}`,
@@ -435,7 +451,7 @@ const SchemaMarkup = () => {
       dependencies: "Virtual Reality Technology, Educational Software",
       applicationCategory: "Educational Technology",
       operatingSystem: "Web, VR, Mobile",
-      keywords: postData.keywords.join(", ")
+      keywords: postData.keywords.join(", "),
     };
   };
 
@@ -453,7 +469,10 @@ const SchemaMarkup = () => {
   } else if (currentPath.startsWith("/blog")) {
     if (currentPath !== "/blog") {
       // This is a specific blog post - include both BlogPosting and TechArticle schemas
-      schemasToInclude.push(generateBlogPostSchema(), generateTechArticleSchema());
+      schemasToInclude.push(
+        generateBlogPostSchema(),
+        generateTechArticleSchema()
+      );
     }
   }
 
