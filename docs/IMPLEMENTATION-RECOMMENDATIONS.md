@@ -291,11 +291,12 @@ cat build/blog/[any-slug]/index.html | grep -A 20 "application/ld+json"
 **Post 5 - AFTER:**
 ```jsx
 <p>
-  With classroom ratios exceeding 30:1 in most UK schools, teachers can only
+  With classroom ratios reaching the statutory maximum of 30:1 in UK infant classes
+  and over 16% of Key Stage 2 pupils taught in classes of 31 or more, teachers can only
   spend an average of 2 minutes per student per lesson, creating a critical
   personalization crisis (
-  <a href="[SOURCE]" target="_blank" rel="noopener noreferrer">
-    [Author, Year]
+  <a href="https://www.nasuwt.org.uk/advice/in-the-classroom/class-sizes.html" target="_blank" rel="noopener noreferrer">
+    NASUWT, 2024
   </a>
   ). WhimsyLabs addresses this through WhimsyCat, the most sophisticated AI
   tutor in virtual laboratory education, delivering unparalleled personalized
