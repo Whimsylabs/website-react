@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import "./FAQ.css";
-import { faqCategories } from "../data/faqData";
-import { generateFAQCategories } from "../i18n/faqDataGenerator";
-import withTranslation from './withTranslation';
+import { generateFAQCategories } from '../i18n/faqDataGenerator';
 
-const FAQ = ({ t, currentLang }) => {
-
-  
-  // Initialize with no indices active (all collapsed)
+const FAQ = ({ language = 'en' }) => {
+  // Initialize with all FAQs closed
   const [activeIndices, setActiveIndices] = useState([]);
 
   const toggleFAQ = (index) => {
@@ -18,26 +14,16 @@ const FAQ = ({ t, currentLang }) => {
     }
   };
 
-  // Get FAQ data in the current language, fallback to English structure
-  let localizedFAQCategories;
-  try {
-    localizedFAQCategories = currentLang !== 'en' 
-      ? generateFAQCategories(currentLang) 
-      : faqCategories;
-    
-
-  } catch (error) {
-    console.warn(`FAQ: Error generating categories for ${currentLang}:`, error.message);
-    localizedFAQCategories = faqCategories;
-  }
+  // Get FAQ categories for the specified language
+  const faqCategories = generateFAQCategories(language);
 
   return (
     <section className="faq-section" aria-labelledby="faq-heading">
       <h2 id="faq-heading" className="faq-heading">
-        {t('nav.faq')}
+        Frequently Asked Questions
       </h2>
       <div className="faq-container">
-        {Object.entries(localizedFAQCategories).map(
+        {Object.entries(faqCategories).map(
           ([category, items], categoryIndex) => (
             <div key={categoryIndex} className="faq-category">
               <h3 className="faq-category-heading">{category}</h3>
@@ -83,10 +69,7 @@ const FAQ = ({ t, currentLang }) => {
                           : "0",
                       }}
                     >
-                      <p
-                        itemProp="text"
-                        dangerouslySetInnerHTML={{ __html: item.answer }}
-                      ></p>
+                      <p itemProp="text" dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                   </div>
                 );
@@ -407,4 +390,4 @@ const FAQ = ({ t, currentLang }) => {
   );
 };
 
-export default withTranslation(FAQ);
+export default FAQ;

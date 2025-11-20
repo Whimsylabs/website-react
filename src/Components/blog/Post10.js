@@ -28,7 +28,7 @@ export const content = (
     </p>
 
     <p>
-      In traditional laboratory settings with classroom ratios exceeding 30:1, teachers cannot continuously monitor every student's emotional state. By the time visible signs of frustration appear—students giving up, making repeated errors, or seeking distraction—the optimal intervention window has often passed. Research in educational psychology demonstrates that early intervention at the first signs of frustration is far more effective than attempting to re-engage already disengaged students (
+      In traditional laboratory settings with classroom ratios exceeding 30:1, teachers cannot continuously monitor every student's emotional state. By the time visible signs of frustration appear: students giving up, making repeated errors, or seeking distraction: the optimal intervention window has often passed. Research in educational psychology demonstrates that early intervention at the first signs of frustration is far more effective than attempting to re-engage already disengaged students (
       <a
         href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1387089/full"
         target="_blank"
@@ -54,7 +54,7 @@ export const content = (
     <h2>How Does WhimsyCat Detect Frustration?</h2>
 
     <p>
-      WhimsyCat employs a multi-dimensional approach to frustration detection, analyzing multiple behavioral signals simultaneously to build a comprehensive picture of each student's emotional state. Unlike simplistic systems that rely on single indicators, our AI integrates diverse data streams for robust, accurate detection.
+      WhimsyCat employs a multi-dimensional approach to frustration detection, analyzing multiple behavioral signals simultaneously to build a comprehensive picture of each student's emotional state. Unlike simplistic systems that rely on single indicators, our AI integrates diverse data streams for robust, accurate detection. The best part about this sytem is that it's entirely local, preserving student privacy while delivering powerful emotional intelligence. None of the metrics or signed used to detect frustration are ever transmitted or stored outside the student's device. This ensures compliance with data protection regulations, targets our data minima goals and maintains trust with users.
     </p>
 
     <h3>Player Action Monitoring</h3>
@@ -64,7 +64,7 @@ export const content = (
     </p>
 
     <p>
-      For example, when a student repeatedly attempts to pour liquid but fails to achieve the correct volume, makes multiple rapid corrections, then pauses for extended periods, this pattern signals mounting frustration. WhimsyCat recognizes these sequences and can intervene proactively: "I notice you're working on precise volume measurement—this can be tricky! Would you like me to demonstrate the technique or provide a quick practice exercise to build confidence?"
+      For example, when a student repeatedly attempts to pour liquid but fails to achieve the correct volume, makes multiple rapid corrections, then pauses for extended periods, this pattern signals mounting frustration. WhimsyCat recognizes these sequences and can intervene proactively: "Have you considered using the pipette instead of freehanding it?"
     </p>
 
     <p>
@@ -82,7 +82,7 @@ export const content = (
     <h3>Gaze Tracking and Attention Patterns</h3>
 
     <p>
-      In VR environments, WhimsyCat analyzes where students are looking and for how long—a powerful indicator of confusion and frustration. When students repeatedly look between incompatible procedures, stare at the same object for extended periods without taking action, or rapidly scan the environment without focus, these gaze patterns signal cognitive overload or confusion.
+      In VR environments, WhimsyCat analyzes where students are looking and for how long; a powerful indicator of confusion and frustration. When students repeatedly look between incompatible procedures, stare at the same object for extended periods without taking action, or rapidly scan the environment without focus, these gaze patterns signal cognitive overload or confusion.
     </p>
 
     <p>
@@ -108,11 +108,11 @@ export const content = (
     </p>
 
     <p>
-      Declining engagement often precedes explicit frustration—students gradually slow down, take longer between actions, spend more time inactive, or begin exploring unrelated elements of the environment. These subtle shifts, invisible to human observers monitoring many students simultaneously, are precisely what AI excels at detecting through continuous data analysis.
+      Declining engagement often precedes explicit frustration: students gradually slow down, take longer between actions, spend more time inactive, or begin exploring unrelated elements of the environment. These subtle shifts, invisible to human observers monitoring many students simultaneously, are precisely what excels at detecting through continuous data analysis.
     </p>
 
     <p>
-      Importantly, WhimsyCat distinguishes between productive struggle (engaged students working through challenging but manageable tasks) and unproductive frustration (students experiencing cognitive overload or conceptual confusion). This distinction is critical—productive struggle should be supported but not eliminated, while unproductive frustration requires intervention. Research in productive failure pedagogy emphasizes that optimal learning occurs when students grapple with appropriately challenging problems with available support (
+      Importantly, WhimsyCat distinguishes between productive struggle (engaged students working through challenging but manageable tasks) and unproductive frustration (students experiencing cognitive overload or conceptual confusion). This distinction is critical; productive struggle should be supported but not eliminated, while unproductive frustration requires intervention. Research in productive failure pedagogy emphasizes that optimal learning occurs when students grapple with appropriately challenging problems with available support (
       <a
         href="https://www.tandfonline.com/doi/10.1080/23735082.2015.1002195"
         target="_blank"
@@ -126,7 +126,7 @@ export const content = (
     <h3>Integrated Multi-Modal Analysis</h3>
 
     <p>
-      The power of WhimsyCat's approach lies in integrating these multiple signals. A single indicator might reflect normal variation in learning styles, but when action patterns, gaze tracking, and engagement metrics simultaneously indicate struggle, the AI confidently identifies genuine frustration requiring support.
+      The power of WhimsyCat's approach lies in integrating these multiple signals. A single indicator might reflect normal variation in learning styles, but when action patterns, gaze tracking, and engagement metrics simultaneously indicate struggle, the WhimsyCat confidently identifies genuine frustration requiring support.
     </p>
 
     <p>
@@ -172,7 +172,7 @@ export const content = (
     <h3>Empathetic Communication</h3>
 
     <p>
-      WhimsyCat's interventions are deliberately framed with empathy and normalization. Rather than "You're doing this wrong," the AI says "Many students find this tricky at first—let me show you a helpful approach." Rather than highlighting failure, WhimsyCat emphasizes progress and effort: "I can see you're working hard to master pipetting technique—your persistence is exactly what makes great scientists!"
+      WhimsyCat's interventions are deliberately framed with empathy and normalization. Rather than "You're doing this wrong," the AI says "Many students find this tricky at first let me show you a helpful approach." Rather than highlighting failure, WhimsyCat emphasizes progress and effort: "You've certainly improved your pipetting technique since your last attempt! Keep it up!"
     </p>
 
     <p>

@@ -9,7 +9,7 @@ const fs = require('fs-extra');
 const path = require('path');
 
 // Read the original FAQ data
-const faqDataPath = './src/data/faqData.js';
+const faqDataPath = './src/data/faqData.js';  
 const faqDataContent = fs.readFileSync(faqDataPath, 'utf8');
 
 // Extract the faqCategories object using regex (since we can't import ES modules in Node directly)

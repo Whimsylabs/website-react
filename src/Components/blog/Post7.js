@@ -32,9 +32,9 @@ export const content = (
       challenge through our fully virtual laboratory platform. By eliminating
       the need for physical chemicals, single-use plastics, energy-intensive
       equipment, and hazardous waste disposal, our virtual labs dramatically
-      reduce the environmental footprint of science education while
-      maintaining—and in many ways exceeding—the educational effectiveness of
-      traditional laboratories.
+      reduce the environmental footprint of science education while maintaining,
+      and even exceeding the educational effectiveness of traditional
+      laboratories.
     </p>
 
     <h2>The Environmental Crisis in Traditional Laboratory Education</h2>
@@ -111,8 +111,8 @@ export const content = (
       className="rounded shadow center limited-size"
     />
     <p className="caption">
-      WhimsyLabs enables unlimited experimentation without environmental
-      impact—this student is learning about flammable substances through safe,
+      WhimsyLabs enables unlimited experimentation without environmental impact.
+      This student is learning about flammable substances through safe,
       waste-free virtual exploration.
     </p>
 
@@ -122,16 +122,16 @@ export const content = (
       The energy savings from virtual laboratories extend beyond eliminating
       physical equipment. Traditional laboratories require constant ventilation,
       climate control, and specialized equipment that runs continuously
-      regardless of usage. Fume hoods alone—essential safety equipment in
-      chemistry labs—consume enormous amounts of energy through constant air
+      regardless of usage. Fume hoods alone (essential safety equipment in
+      chemistry labs) consume enormous amounts of energy through constant air
       circulation and replacement.
     </p>
 
     <p>
       WhimsyLabs' platform operates efficiently on standard computing devices,
       from basic Chromebooks to VR headsets, with energy consumption orders of
-      magnitude lower than physical laboratory infrastructure. Our analysis
-      indicates that a class of 30 students using virtual labs for an academic
+      magnitude lower than physical laboratory infrastructure. Our estimations
+      indicate that a class of 30 students using virtual labs for an academic
       year consumes approximately the same energy as running a single ultra-low
       temperature freezer for three months. This represents a reduction in
       energy consumption of over 95% compared to traditional laboratory-based
@@ -184,7 +184,7 @@ export const content = (
     <h2>Green Chemistry Principles in Virtual Laboratory Design</h2>
 
     <p>
-      WhimsyLabs' platform embodies the core principles of green chemistry—
+      WhimsyLabs' platform embodies the core principles of green chemistry: 
       waste prevention, atom economy, less hazardous chemical synthesis,
       designing safer chemicals, safer solvents and auxiliaries, energy
       efficiency, use of renewable feedstocks, and reduction of derivatives. By
@@ -198,7 +198,7 @@ export const content = (
       emphasizes that integrating sustainability into chemistry education
       requires fundamental changes in how we approach laboratory instruction (
       <a
-        href="https://www.beyondbenign.org/news_categories/green-chemistry-education/"
+        href="https://www.beyondbenign.org/news/practicing-safer-science-the-urgent-case-for-green-chemistry-education/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -217,7 +217,9 @@ export const content = (
       into their foundational education rather than added as an afterthought.
     </p>
 
-    <h2>Accessibility and Equity: Sustainability Beyond Environmental Impact</h2>
+    <h2>
+      Accessibility and Equity: Sustainability Beyond Environmental Impact
+    </h2>
 
     <p>
       Sustainability encompasses not just environmental considerations but also
@@ -302,7 +304,7 @@ export const content = (
 
     <p>
       As educational institutions worldwide commit to carbon neutrality—many
-      targeting net-zero emissions by 2030 or 2040—virtual laboratories will
+      targeting net-zero emissions by 2030 or 2040; virtual laboratories will
       transition from innovative alternatives to essential components of
       sustainable educational infrastructure. The question is no longer whether
       virtual labs can match traditional instruction, but whether traditional
@@ -341,7 +343,7 @@ export const content = (
       By choosing virtual laboratories, educational institutions make a powerful
       statement: that we can inspire the next generation of scientists while
       protecting the planet they will inherit. This is not just sustainable
-      education—it is education for sustainability, preparing students to solve
+      education: it is education for sustainability, preparing students to solve
       the environmental challenges of tomorrow while minimizing our impact
       today.
     </p>
@@ -355,7 +357,8 @@ export const content = (
       </li>
       <li>
         <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
-          How AI-Powered Virtual Labs Are Solving the Global Science Education Crisis
+          How AI-Powered Virtual Labs Are Solving the Global Science Education
+          Crisis
         </a>
       </li>
     </ul>

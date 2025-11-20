@@ -114,13 +114,13 @@ export const content = (
     </p>
 
     <p>
-      This 24/7 accessibility is particularly crucial for addressing educational inequality. Students who miss school due to illness, have limited teacher access in underfunded schools, or require additional support outside classroom hours can continue learning without falling behind. The AI tutor never tires, never loses patience, and can simultaneously support unlimited students—something impossible with human teachers alone.
+      This 24/7 accessibility is particularly crucial for addressing educational inequality. Students who miss school due to illness, have limited teacher access in underfunded schools, or require additional support outside classroom hours can continue learning without falling behind. The AI tutor never tires, never loses patience, and can simultaneously support unlimited students, dramatically extending teacher reach.
     </p>
 
     <h3>Zero Laboratory Preparation and Maintenance</h3>
 
     <p>
-      Physical laboratories require extensive preparation: ordering chemicals, setting up equipment, creating safety protocols, and post-experiment cleanup. Teachers report spending 1-2 hours on lab preparation for every hour of instruction. WhimsyLabs eliminates this entirely—teachers simply assign experiments through our platform, and students can begin immediately without any physical setup, safety concerns, or cleanup requirements.
+      Physical laboratories require extensive preparation: ordering chemicals, setting up equipment, creating safety protocols, and post-experiment cleanup. Teachers report spending 1-2 hours on lab preparation for every hour of instruction. WhimsyLabs eliminates this entirely: teachers simply assign experiments through our platform, and students can begin immediately without any physical setup, safety concerns, or cleanup requirements.
     </p>
 
     <p>
@@ -142,7 +142,7 @@ export const content = (
       >
         Levac et al., 2019
       </a>
-      ). Students using WhimsyLabs develop procedural competency, muscle memory, and conceptual understanding that transfers directly to physical laboratories—all without requiring scarce teacher time for one-on-one supervision.
+      ). Students using WhimsyLabs develop procedural competency, muscle memory, and conceptual understanding that transfers directly to physical laboratories. This is a critical advantage over passive learning methods that fail to engage students in active skill development, and dramatically increase the teacher's ability to deliver quality STEM education despite shortages.
     </p>
 
     <p>
@@ -168,13 +168,13 @@ export const content = (
       >
         World Economic Forum, 2025
       </a>
-      ). WhimsyLabs develops these skills through sandbox-style experiments where students design procedures, troubleshoot unexpected results, and collaborate on complex challenges—authentic scientific practice that teacher shortages often prevent in traditional settings.
+      ). WhimsyLabs develops these skills through sandbox-style experiments where students design procedures, troubleshoot unexpected results, and collaborate on complex challenges. This authentic scientific practice is often prevented by teacher shortages in traditional settings, with student projects requiring limited scope and teacher supervision. Our platform enables rich, student-driven inquiry that builds the critical skills employers demand.
     </p>
 
     <h2>How Does WhimsyLabs Support Rather Than Replace Teachers?</h2>
 
     <p>
-      A critical distinction of our approach is that we enhance rather than replace teacher expertise. WhimsyLabs handles routine tasks—grading, basic tutoring, laboratory setup—freeing teachers to do what they do best: inspire curiosity, guide complex thinking, provide emotional support, and build meaningful relationships with students.
+      A critical distinction of our approach is that we enhance rather than replace teacher expertise. WhimsyLabs handles routine tasks: grading, basic tutoring, laboratory setup. This frees teachers to do what they do best: inspire curiosity, guide complex thinking, provide emotional support, and build meaningful relationships with students. Whimsylabs is filled with aspects to encourage teacher-student interactions natively, enabling the critical human connection at the heart of great education.
     </p>
 
     <p>

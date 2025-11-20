@@ -43,6 +43,7 @@
     "complete-faq-translations": "node scripts/complete-faq-translations.js",
     "apply-key-translations": "node scripts/apply-key-translations.js",
     "dev": "npm run build-spa && node dev-server.js",
+    "serve": "serve build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build-static",
