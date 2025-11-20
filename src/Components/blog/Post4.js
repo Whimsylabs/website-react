@@ -47,7 +47,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Revolutionary AI Assessment: Beyond Simple Grading</h3>
+    <h2>Revolutionary AI Assessment: Beyond Simple Grading</h2>
 
     <p>
       At the core of WhimsyLabs' innovation is our sophisticated AI assessment
@@ -99,7 +99,7 @@ export const content = (
       competency.
     </p>
 
-    <h3>Hyper-Realistic Simulation Engine: Physics at the Fundamental Level</h3>
+    <h2>Hyper-Realistic Simulation Engine: Physics at the Fundamental Level</h2>
 
     <p>
       WhimsyLabs stands apart from competitors through our fundamental-level
@@ -145,9 +145,9 @@ export const content = (
       precise laboratory techniques with realistic physical behavior.
     </p>
 
-    <h3>
+    <h2>
       Democratizing Access: Universal Compatibility and Offline Capabilities
-    </h3>
+    </h2>
 
     <p>
       Educational inequality is exacerbated when advanced learning tools require
@@ -176,7 +176,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Supporting Special Educational Needs and Disabilities (SEND)</h3>
+    <h2>Supporting Special Educational Needs and Disabilities (SEND)</h2>
 
     <p>
       WhimsyLabs' commitment to accessibility extends to students with Special
@@ -207,7 +207,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Market Validation and Recognition</h3>
+    <h2>Market Validation and Recognition</h2>
 
     <p>
       WhimsyLabs' approach has received significant validation through awards
@@ -228,7 +228,7 @@ export const content = (
       contexts.
     </p>
 
-    <h3>The Future of Science Education</h3>
+    <h2>The Future of Science Education</h2>
 
     <p>
       The virtual lab platforms market is forecast to reach US $2.05 billion by

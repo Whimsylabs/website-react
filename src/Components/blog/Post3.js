@@ -27,6 +27,7 @@ export const content = (
       microscope simulation technology unmatched in the educational market.
     </p>
 
+    <h2>How Does Virtual Kidney Dissection Work?</h2>
     <p>
       Unlike conventional VR labs that guide students passively through a
       process, this experience puts them in control. Participants physically
@@ -120,14 +121,16 @@ export const content = (
       ).
     </p>
 
+    <h2>What Makes This Approach Effective for Learning?</h2>
     <p>
-      This format doesn’t just show anatomy,it encourages deeper curiosity. The
+      This format doesn't just show anatomy,it encourages deeper curiosity. The
       ability to interact directly with the content, rather than passively watch
       or listen, improves conceptual understanding and retention. Users can
       repeat actions, manipulate components, and explore the system at their own
       pace, all of which support individualized learning.
     </p>
 
+    <h2>Why Is Virtual Dissection Especially Impactful for SEND Students?</h2>
     <p>
       This approach is especially impactful for students with Special
       Educational Needs and Disabilities (SEND). Research suggests that

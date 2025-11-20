@@ -40,7 +40,7 @@ export const content = (
       safe, consequence-free setting.
     </p>
 
-    <h3>Freedom to Fail: The Most Powerful Teacher</h3>
+    <h2>Freedom to Fail: The Most Powerful Teacher</h2>
 
     <p>
       At the heart of WhimsyLabs' sandbox philosophy is a simple but powerful
@@ -103,7 +103,7 @@ export const content = (
       flammable liquids.
     </p>
 
-    <h3>Beyond Step-by-Step: Authentic Scientific Inquiry</h3>
+    <h2>Beyond Step-by-Step: Authentic Scientific Inquiry</h2>
 
     <p>
       Traditional virtual labs often function as digital worksheets, guiding
@@ -158,7 +158,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Diverse Approaches, Diverse Learners</h3>
+    <h2>Diverse Approaches, Diverse Learners</h2>
 
     <p>
       One of the most powerful aspects of sandbox learning is its inherent
@@ -198,7 +198,7 @@ export const content = (
       ).
     </p>
 
-    <h3>Balancing Freedom with Guidance</h3>
+    <h2>Balancing Freedom with Guidance</h2>
 
     <p>
       While WhimsyLabs strongly advocates for experimental freedom, we recognize
@@ -242,7 +242,7 @@ export const content = (
       destructive.
     </p>
 
-    <h3>Real-World Impact: Sandbox Learning in Action</h3>
+    <h2>Real-World Impact: Sandbox Learning in Action</h2>
 
     <p>
       The effectiveness of WhimsyLabs' sandbox approach is demonstrated through
@@ -267,7 +267,7 @@ export const content = (
       problem-solving.
     </p>
 
-    <h3>Preparing Students for Scientific Careers</h3>
+    <h2>Preparing Students for Scientific Careers</h2>
 
     <p>
       The sandbox learning philosophy directly addresses a critical gap in
@@ -304,7 +304,7 @@ export const content = (
       findings; all essential capabilities for successful STEM careers.
     </p>
 
-    <h3>The Future of Science Education</h3>
+    <h2>The Future of Science Education</h2>
 
     <p>
       As we look toward the future of science education, the sandbox learning
