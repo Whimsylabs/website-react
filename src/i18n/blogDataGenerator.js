@@ -32,11 +32,11 @@ const blogPosts = ALL_POSTS.map((_, index) => `post${index + 1}`).filter((postId
   return post && post.slug && post.date;
 });
 
-const supportedLanguages = ['en', 'de', 'fr', 'es'];
+const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
 /**
  * Get translated blog post data for a specific language and post
- * @param {string} language - Language code (en, de, fr, es)
+ * @param {string} language - Language code (en, de, fr, es, ja)
  * @param {string} postNumber - Post number (post1, post2, etc.)
  * @returns {Object} Translated blog post data
  */

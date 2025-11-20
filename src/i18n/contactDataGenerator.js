@@ -5,17 +5,19 @@ const contactEn = require('./contact/en.js');
 const contactEs = require('./contact/es.js');
 const contactFr = require('./contact/fr.js');
 const contactDe = require('./contact/de.js');
+const contactJa = require('./contact/ja.js');
 
 const contactTranslations = {
   en: contactEn.default || contactEn,
   es: contactEs.default || contactEs,
   fr: contactFr.default || contactFr,
   de: contactDe.default || contactDe,
+  ja: contactJa.default || contactJa,
 };
 
 /**
  * Get contact translations for a specific language
- * @param {string} lang - Language code (en, es, fr, de)
+ * @param {string} lang - Language code (en, es, fr, de, ja)
  * @returns {Object} Contact translations for the specified language
  */
 function getContactTranslations(lang = 'en') {
