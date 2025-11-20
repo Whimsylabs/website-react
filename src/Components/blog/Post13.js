@@ -124,7 +124,7 @@ export const content = (
     </p>
 
     <p>
-      Most educational simulations prioritize accuracy over responsiveness, producing systems that are scientifically correct but feel laggy and unpleasant to use. WhimsyLabs achieves <50ms response times through aggressive optimization, ensuring that when students pour liquid, adjust equipment, or perform procedures, the system responds instantly with gaming-quality fluidity.
+      WhimsyLabs pursues the deepest possible simulation accuracy while maintaining gaming-quality responsiveness—a combination that others in the field find prohibitively costly and difficult to achieve. Through aggressive and novel optimizations embedded as a first principle of our engine, we achieve both scientifically rigorous physics and {"<50ms"} response times. When students pour liquid, adjust equipment, or perform procedures, the system responds instantly with gaming-quality fluidity without sacrificing simulation depth.
     </p>
 
     <p>
