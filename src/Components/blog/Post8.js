@@ -2,7 +2,7 @@ import React from "react";
 
 export const title =
   "How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective";
-export const date = "2025-08-20";
+export const date = "2025-07-02";
 export const slug = "virtual-labs-solve-stem-teacher-shortage-crisis";
 export const description =
   "Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.";

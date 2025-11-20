@@ -2,7 +2,7 @@ import React from "react";
 
 export const title =
   "How Virtual Reality Prepares Students for Real-World STEM Careers: The Only Platform Teaching Physical Laboratory Skills";
-export const date = "2025-12-15";
+export const date = "2025-09-15";
 export const slug = "virtual-reality-prepares-students-real-world-stem-careers";
 export const description =
   "Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.";
