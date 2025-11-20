@@ -277,6 +277,30 @@ export const content = (
       education technology for institutions worldwide.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          Meet WhimsyCat: The Revolutionary AI Tutor Transforming Science Education
+        </a>
+      </li>
+      <li>
+        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+          24/7 AI Tutoring: How Personalized Support Helps Students Never Fall Behind
+        </a>
+      </li>
+      <li>
+        <a href="/blog/stem-teacher-shortage-virtual-labs">
+          Addressing the STEM Teacher Shortage Crisis with Virtual Labs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/physicality-in-virtual-labs">
+          The Importance of Physicality in Virtual Labs
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

@@ -237,6 +237,25 @@ export const content = (
       Our vision is a future where every student, regardless of their school's resources or location, can develop professional-grade laboratory skills before entering the workforce. Where practical competency supplements theoretical knowledge, creating graduates who can immediately contribute to scientific research and innovation. Where the only platform teaching authentic physical laboratory skills through sandbox freedom becomes the standard for preparing the next generation of STEM professionals.
     </p>
 
+    <h2>Related Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/real-time-physics-simulations">
+          Real-Time Physics Simulations: The Technical Innovation Behind WhimsyLabs
+        </a>
+      </li>
+      <li>
+        <a href="/blog/physicality-in-virtual-labs">
+          The Importance of Physicality in Virtual Labs: A Step Beyond Traditional Simulations
+        </a>
+      </li>
+      <li>
+        <a href="/blog/sandbox-learning-revolution-stem-education">
+          The Sandbox Learning Revolution: Why Freedom to Fail is Essential for STEM Education
+        </a>
+      </li>
+    </ul>
+
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
