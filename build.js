@@ -21,9 +21,9 @@ const config = {
   publicDir: "./public",
   siteUrl: "https://whimsylabs.ai",
   // Set to ['en'] to build only English, or add/remove languages as needed
-  supportedLanguages: process.env.BUILD_LANGUAGES ? 
-    process.env.BUILD_LANGUAGES.split(',') : 
-    ['en', 'es', 'fr', 'de'],
+  supportedLanguages: process.env.BUILD_LANGUAGES ?
+    process.env.BUILD_LANGUAGES.split(',') :
+    ['en', 'es', 'fr', 'de', 'ja'],
   defaultLanguage: 'en'
 };
 
