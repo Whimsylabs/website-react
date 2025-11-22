@@ -5,11 +5,11 @@ import translations from './translations';
 // Get current language from URL path
 function getCurrentLanguage() {
   if (typeof window === 'undefined') return 'en';
-  
+
   const path = window.location.pathname;
   const langCode = path.split('/')[1];
 
-  return ['en', 'es', 'fr', 'de', 'ja'].includes(langCode) ? langCode : 'en';
+  return ['en', 'es', 'fr', 'de', 'ja', 'zh-HK'].includes(langCode) ? langCode : 'en';
 }
 
 i18n
