@@ -1,0 +1,30 @@
+{
+  "name": "whimsylabs-website-static",
+  "version": "2.0.0",
+  "description": "WhimsyLabs static site generator using Node.js and EJS",
+  "main": "build.js",
+  "scripts": {
+    "dev": "node build.js --watch",
+    "build": "node build.js",
+    "serve": "node dev-server.js",
+    "deploy": "npm run build && gh-pages -d dist",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "front-matter": "^4.0.2",
+    "markdown-it": "^13.0.2",
+    "chokidar": "^3.5.3",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

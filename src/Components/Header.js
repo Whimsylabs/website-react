@@ -1,58 +1,121 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './Header.css';
-import logo from './images/logo.png';
+import React, { useState } from "react";
+import "./Header.css";
+import LanguageSwitcher from "./LanguageSwitcher";
+import withTranslation from "./withTranslation";
+import { getLocalizedPath } from "../i18n";
+// Logo now served from public directory
 
-const Header = () => {
-    const location = useLocation();
-    const [menuOpen, setMenuOpen] = useState(false);
-    const pdfPath = 'https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440';
+const Header = ({ t, currentLang }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pdfPath =
+    "https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440";
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-    return (
-        <header className={`header-container ${menuOpen ? 'menu-active' : ''}`} aria-label="Main site navigation">
-            <div className="logo-container">
-                <img src={logo} alt="Whimsylabs Logo" className="logo" />
-            </div>
-            
-            <button className="burger-menu" onClick={toggleMenu} aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <ul className={`nav nav-pills ${menuOpen ? 'menu-open' : ''}`} aria-label="Primary navigation">
-                <li className="nav-item">
-                    <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} aria-current={location.pathname === '/' ? 'page' : undefined} onClick={() => setMenuOpen(false)}>
-                        Home
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <a href={pdfPath} download className="nav-link" aria-label="Download Features PDF" onClick={() => setMenuOpen(false)}>
-                        Features PDF
+  return (
+    <header
+      className={`header-container ${menuOpen ? "menu-active" : ""}`}
+      aria-label="Main site navigation"
+    >
+      <div className="logo-container">
+        <a
+          href={getLocalizedPath("/", currentLang)}
+          aria-label="Return to home page"
+        >
+          <img src="/images/logo.png" alt="Whimsylabs Logo" className="logo" />
+        </a>
+      </div>
+
+      <div className="mobile-controls">
+        <div className="mobile-language-switcher">
+          <LanguageSwitcher />
+        </div>
+        <button
+          className="burger-menu"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <ul
+        className={`nav nav-pills ${menuOpen ? "menu-open" : ""}`}
+        aria-label="Primary navigation"
+      >
+        <li className="nav-item">
+          <a
+            href={getLocalizedPath("/", currentLang)}
+            className="nav-link"
+            aria-label={t("nav.home")}
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.home")}
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href={pdfPath}
+            download
+            className="nav-link"
+            aria-label="Download Features PDF"
+            onClick={() => setMenuOpen(false)}
+          >
+            Features PDF
+          </a>
+        </li>
+        {/* Pricing temporarily disabled */}
+        {/* <li className="nav-item">
+                    <a href="/pricing/" className="nav-link" aria-label="View Pricing" onClick={() => setMenuOpen(false)}>
+                        Pricing
                     </a>
-                </li>
-                <li className="nav-item">
-                    <Link to="/contact" className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} aria-label="Contact Us" onClick={() => setMenuOpen(false)}>
-                        Contact
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/blog" className={`nav-link ${location.pathname === '/blog' ? 'active' : ''}`} aria-label="Read Our Blog" onClick={() => setMenuOpen(false)}>
-                        Blog
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/faq" className={`nav-link ${location.pathname === '/faq' ? 'active' : ''}`} aria-label="Frequently Asked Questions" onClick={() => setMenuOpen(false)}>
-                        FAQ
-                    </Link>
-                </li>
-            </ul>
-        </header>
-    );
+                </li> */}
+        <li className="nav-item">
+          <a
+            href={getLocalizedPath("/contact", currentLang)}
+            className="nav-link"
+            aria-label={t("nav.contact")}
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.contact")}
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href={getLocalizedPath("/blog", currentLang)}
+            className="nav-link"
+            aria-label={t("nav.blog")}
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.blog")}
+          </a>
+        </li>
+        {/* Ignite Pitch temporarily disabled */}
+        {/* <li className="nav-item">
+                    <a href="/ignite-pitch/" className="nav-link" aria-label="Ignite Pitch Deck" onClick={() => setMenuOpen(false)}>
+                        Ignite Pitch
+                    </a>
+                </li> */}
+        <li className="nav-item">
+          <a
+            href={getLocalizedPath("/faq", currentLang)}
+            className="nav-link"
+            aria-label={t("nav.faq")}
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.faq")}
+          </a>
+        </li>
+        <li className="nav-item language-switcher-nav">
+          <LanguageSwitcher />
+        </li>
+      </ul>
+    </header>
+  );
 };
 
-export default Header;
+export default withTranslation(Header);

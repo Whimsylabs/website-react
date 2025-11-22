@@ -1,0 +1,211 @@
+<div class="home-page">
+    <!-- Welcome Section -->
+    <section class="splash-container">
+        <div class="splash-content">
+            <div class="welcome-section">
+                <h1>Welcome to WhimsyLabs</h1>
+                <p class="lead">Award-winning virtual laboratory software for STEM education</p>
+                <p>WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Realistic Physics Simulations</h3>
+                    <p>Experience true-to-life physics in our virtual laboratory environment.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>AI-Driven Assessment</h3>
+                    <p>Intelligent assessment tools that adapt to student learning.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Cross-Platform Accessibility</h3>
+                    <p>Access from any device - desktop, tablet, or mobile.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Immersive STEM Experiments</h3>
+                    <p>Conduct experiments safely in a virtual environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>See WhimsyLabs in Action</h2>
+            <div class="video-container">
+                <video controls poster="/static/images/logo.png">
+                    <source src="/static/videos/placeholder.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Educators Say</h2>
+            <blockquote>
+                <p>"WhimsyLabs has transformed how we teach science. Students are more engaged and learn faster with hands-on virtual experiments."</p>
+                <cite>- Science Teacher, Edinburgh</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners-section">
+        <div class="container">
+            <h2>Our Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <a href="https://edinburgh-innovations.ed.ac.uk/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://edinburgh-innovations.ed.ac.uk/assets/img/logo/UOE.png" alt="University of Edinburgh logo" />
+                    </a>
+                </div>
+                <div class="partner-logo">
+                    <a href="https://www.ed.ac.uk/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://edinburgh-innovations.ed.ac.uk/assets/img/logo/EI.png" alt="Edinburgh Innovations logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want To Trial A Free Demo At Your School?</h2>
+            <a href="/contact" class="cta-button">Apply for a free trial here!</a>
+        </div>
+    </section>
+</div>
+
+<style>
+/* Basic styling for the home page */
+.home-page {
+    width: 100%;
+}
+
+.splash-container {
+    background: linear-gradient(135deg, #95CEF6 0%, #6BB6FF 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.features-section,
+.video-section,
+.testimonials-section,
+.partners-section,
+.cta-section {
+    padding: 3rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonials-section {
+    background: #f8f9fa;
+}
+
+.testimonials-section blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.partner-logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+.cta-section {
+    background: #95CEF6;
+    color: white;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: #95CEF6;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+    
+    .partners-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>

@@ -1,29 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import WelcomeSection from './WelcomeSection';
-import FeaturesSection from './FeaturesSection';
-import VideoPlayer from './VideoPlayer';
-import sampleVideo from './videos/placeholder.webm';
-import videoPoster from './images/logo.png';
-import './MainContent.css';
-import Testimonial from './Testimonial';
-import Partners from './Partners';
-import BubbleContainer from './BubbleContainer';
-import SplashSection from './SplashSection';
-import ContactUs from './ContactUs';
-import Header from './Header';
-import Footer from './Footer';
+import React from "react";
+import WelcomeSection from "./WelcomeSection";
+import FeaturesSection from "./FeaturesSection";
+import VideoPlayer from "./VideoPlayer";
+import withTranslation from "./withTranslation";
+// Video now served from public directory
+// Video poster now served from public directory
+import "./MainContent.css";
+import Testimonial from "./Testimonial";
+import Partners from "./Partners";
+import BubbleContainer from "./BubbleContainer";
+import SplashSection from "./SplashSection";
+import ContactUs from "./ContactUs";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const MainContent = () => {
+const MainContent = ({ t, language }) => {
   return (
-    
     <main className="container-fluid text-center p-0">
-      <Header/>
-      <WelcomeSection />
+      <Header language={language} />
+      <WelcomeSection language={language} />
       <BubbleContainer>
         <VideoPlayer
-          videoSrc={sampleVideo}
-          poster={videoPoster}
+          videoSrc="/videos/placeholder.webm"
+          poster="/images/logo.png"
         />
       </BubbleContainer>
       <SplashSection>
@@ -31,17 +30,32 @@ const MainContent = () => {
       </SplashSection>
       <BubbleContainer>
         <Testimonial />
-        <h1>Want To Trial A Free Demo At Your School?</h1>
-        <ContactUs buttonText='Apply for a free trial here!' />
+        <h1>{t("home.trialDemo")}</h1>
+        <ContactUs buttonText={t("home.applyTrial")} />
         <div className="faq-teaser">
-          <h2>Have Questions?</h2>
-          <p>Visit our <Link to="/faq" className="faq-link">FAQ page</Link> for answers to common questions, or check our our <Link to="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" className="faq-link">Features PDF</Link> for more details about our virtual lab software!</p>
+          <h2>{t("home.haveQuestions")}</h2>
+          <p>
+            {t("home.visitOur")}{" "}
+            <a href="./faq/index.html" className="faq-link">
+              {t("home.faqPage")}
+            </a>{" "}
+            {t("home.faqAnswers")}{" "}
+            <a
+              href="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440"
+              className="faq-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("home.featuresPDF")}
+            </a>{" "}
+            {t("home.pdfDetails")}
+          </p>
         </div>
       </BubbleContainer>
       <Partners />
-      <Footer />
+      <Footer language={language} />
     </main>
   );
 };
 
-export default MainContent;
+export default withTranslation(MainContent);

@@ -1,47 +1,85 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
 import { HelmetProvider } from "react-helmet-async";
 import MetaTags from "./Components/MetaTags";
 import SchemaMarkup from "./Components/SchemaMarkup";
 import MainContent from "./Components/MainContent";
 import Blog from "./Components/Blog";
-import BlogPost from "./Components/BlogPost";
 import Services from "./Components/Services";
 import Features from "./Components/FeaturesPage";
 import FAQPage from "./Components/FAQPage";
 import ContactPage from "./Components/ContactPage";
+import PrivacyPage from "./Components/PrivacyPage";
+import BlogPost from "./Components/BlogPost";
+import { getCurrentLanguage } from "./i18n";
+import "./i18n/i18n"; // Initialize i18next
+// import IgnitePitchDeck from "./Components/IgnitePitchDeck";
 
-function App({ initialPath = '/' }) {
-    // Use effect to ensure we're on the correct path after initial render
-    useEffect(() => {
-        // If we're not already on the initial path, navigate to it
-        if (window.location.pathname !== initialPath) {
-            window.history.replaceState({}, "", initialPath);
-        }
-    }, [initialPath]);
+// Private/unreleased components
+// import CashflowProjection from "./Components/CashflowProjection";
+// import PricingPage from "./Components/PricingPage";
 
-    return (
-        <HelmetProvider>
-            <BrowserRouter>
-                <MetaTags />
-                <SchemaMarkup />
-                <Routes>
-                    <Route path="/" element={<MainContent />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog/:slug" element={<BlogPost />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/services/*" element={<Navigate to="/services" />} />
-                    <Route path="/features" element={<Features />} />
-                    <Route path="/features/*" element={<Navigate to="/features" />} />
-                    <Route path="/faq" element={<FAQPage />} />
-                    <Route path="/faq/*" element={<Navigate to="/faq" />} />
-                    <Route path="/contact" element={<ContactPage />} />
-                    <Route path="/contact/*" element={<Navigate to="/contact" />} />
-                    <Route path="*" element={<Navigate to="/" />} />
-                </Routes>
-            </BrowserRouter>
-        </HelmetProvider>
-    );
+function App(props = {}) {
+  // Get language from props (for SSR) or detect from URL (for client-side)
+  const language = props.language || getCurrentLanguage();
+  
+  // Determine which component to render based on the current path
+  // Use the initial route set by the static build if available
+  const currentPath =
+    typeof window !== "undefined"
+      ? window.__INITIAL_ROUTE__ || window.location.pathname
+      : "/";
+
+  const getComponentForPath = (path) => {
+    // Remove language prefix to get the base path
+    const basePath = path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+
+    if (basePath === "/") return <MainContent language={language} />;
+    if (basePath === "/blog/" || basePath === "/blog") return <Blog language={language} />;
+    if (basePath === "/services/" || basePath === "/services")
+      return <Services language={language} />;
+    if (basePath === "/features/" || basePath === "/features")
+      return <Features language={language} />;
+    if (basePath === "/faq/" || basePath === "/faq") return <FAQPage language={language} />;
+    if (basePath === "/contact/" || basePath === "/contact")
+      return <ContactPage language={language} />;
+    if (basePath === "/privacy/" || basePath === "/privacy")
+      return <PrivacyPage language={language} />;
+    // Private/unreleased routes (disabled)
+    // if (basePath === "/ignite-pitch/" || basePath === "/ignite-pitch")
+    //   return <IgnitePitchDeck />;
+    // if (basePath === "/cashflow/" || basePath === "/cashflow")
+    //   return <CashflowProjection />;
+    // if (basePath === "/pricing/" || basePath === "/pricing")
+    //   return <PricingPage />;
+
+    // Handle blog posts
+    if (
+      basePath.startsWith("/blog/") &&
+      basePath !== "/blog/" &&
+      basePath !== "/blog"
+    ) {
+      let slug = basePath.replace("/blog/", "").replace(/\/$/, "");
+      // Handle both /slug/ and /slug/index.html patterns
+      if (slug.endsWith("/index.html")) {
+        slug = slug.replace("/index.html", "");
+      }
+      return <BlogPost slug={slug} language={language} />;
+    }
+
+    // Default to MainContent
+    return <MainContent language={language} />;
+  };
+
+  // Get current language for context
+  const currentLanguage = getCurrentLanguage();
+
+  return (
+    <HelmetProvider>
+      <MetaTags />
+      <SchemaMarkup />
+      {getComponentForPath(currentPath)}
+    </HelmetProvider>
+  );
 }
 
 export default App;

@@ -73,3 +73,122 @@
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 4px 16px rgba(20,183,255,0.15);
 }
+
+/* Technical Superiority Section */
+.technical-superiority-section {
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 3rem;
+}
+
+.tech-title {
+  margin-bottom: 3rem;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  75% {
+    background-position: 300% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tech-features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.tech-feature-bubble {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tech-feature-bubble:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.tech-feature-bubble h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1f1968;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tech-feature-bubble p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #333;
+}
+
+/* Animation Classes for Bubbles */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Technical Section */
+@media (max-width: 768px) {
+  .tech-title {
+    font-size: 2rem;
+  }
+  
+  .tech-features-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tech-feature-bubble {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .technical-superiority-section {
+    padding: 2rem 0;
+  }
+  
+  .tech-title {
+    font-size: 1.6rem;
+  }
+  
+  .tech-feature-bubble {
+    padding: 1.2rem;
+  }
+  
+  .tech-feature-bubble h3 {
+    font-size: 1.2rem;
+  }
+}

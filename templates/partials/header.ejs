@@ -1,0 +1,60 @@
+<header class="header-container" aria-label="Main site navigation">
+    <div class="logo-container">
+        <img src="/static/images/logo.png" alt="Whimsylabs Logo" class="logo" />
+    </div>
+    
+    <button class="burger-menu" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <ul class="nav nav-pills" aria-label="Primary navigation">
+        <li class="nav-item">
+            <a href="/" class="nav-link <%= currentPath === '/' ? 'active' : '' %>" aria-current="<%= currentPath === '/' ? 'page' : '' %>">
+                Home
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440" download class="nav-link" aria-label="Download Features PDF">
+                Features PDF
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/contact" class="nav-link <%= currentPath === '/contact' ? 'active' : '' %>" aria-label="Contact Us">
+                Contact
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/blog" class="nav-link <%= currentPath === '/blog' || currentPath.startsWith('/blog/') ? 'active' : '' %>" aria-label="Read Our Blog">
+                Blog
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/faq" class="nav-link <%= currentPath === '/faq' ? 'active' : '' %>" aria-label="Frequently Asked Questions">
+                FAQ
+            </a>
+        </li>
+    </ul>
+</header>
+
+<script>
+function toggleMenu() {
+    const header = document.querySelector('.header-container');
+    const nav = document.querySelector('.nav');
+    
+    header.classList.toggle('menu-active');
+    nav.classList.toggle('menu-open');
+}
+
+// Close menu when clicking on nav links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const header = document.querySelector('.header-container');
+        const nav = document.querySelector('.nav');
+        
+        header.classList.remove('menu-active');
+        nav.classList.remove('menu-open');
+    });
+});
+</script>

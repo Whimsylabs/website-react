@@ -3,7 +3,7 @@
     background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%),
                       linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%),
                       linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%),
-                      url("./images/tiled.png");
+                      url("../../public/images/tiled.png");
     background-blend-mode: darken, multiply, multiply;
     background-size: 500px;
     background-repeat: repeat;

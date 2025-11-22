@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// Removed React Router - using direct HTML links
 import { Helmet } from 'react-helmet-async';
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
@@ -7,26 +7,28 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogPreview from './BlogPreview';
 
-// Import all posts dynamically
-const postsContext = require.context('./blog', false, /Post\d+\.js$/);
-const posts = postsContext.keys().map((key) => {
-  const postModule = postsContext(key);
-  return {
-    id: postModule.slug,
-    title: postModule.title,
-    content: postModule.content,
-    date: postModule.date,
-    description: postModule.description,
-  };
-}).sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
-
-const Blog = () => {
+const Blog = (props = {}) => {
+  const { language, posts: propsPosts } = props;
   const [activePostId] = useState(null);
+
+  // Check for initial data from SSR (for hydration)
+  const initialData = typeof window !== 'undefined' && window.__INITIAL_DATA__;
+
+  // Use posts from props (SSR) or window data (hydration) or empty array
+  const posts = propsPosts || (initialData && initialData.posts) || [];
+  const currentLanguage = language || (initialData && initialData.language) || 'en';
+
+  // Get language prefix for URLs
+  let languagePrefix = '';
+  if (currentLanguage && currentLanguage !== 'en') {
+    languagePrefix = `/${currentLanguage}`;
+  }
+
   const postsPerPage = 10; // Set pagination limit
-  const totalPages = Math.ceil(posts.length / postsPerPage);
   const currentPage = 1; // For future pagination implementation
 
   // Get posts for current page
+  const totalPages = Math.ceil(posts.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
@@ -41,10 +43,17 @@ const Blog = () => {
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
           <div className="posts-section blog-index">
-            {currentPosts.map((post) => (
-              <BlogPreview key={post.id} post={post} />
-            ))}
-            
+            {currentPosts.length > 0 ? (
+              currentPosts.map((post) => (
+                <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} />
+              ))
+            ) : (
+              <div className="post-box">
+                <h2>No blog posts available</h2>
+                <p>Check back soon for new content!</p>
+              </div>
+            )}
+
             {/* Pagination placeholder - will be implemented when more posts are added */}
             {totalPages > 1 && (
               <div className="pagination-container">
@@ -61,7 +70,7 @@ const Blog = () => {
                   key={post.id}
                   className={activePostId === post.id ? 'active' : ''}
                 >
-                  <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                  <a href={`${languagePrefix}/blog/${post.id}/`}>{post.title}</a>
                 </li>
               ))}
             </ul>

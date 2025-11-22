@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic Meta Tags -->
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= typeof keywords !== 'undefined' ? keywords : '' %>">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:url" content="https://whimsylabs.ai<%= url %>">
+    <meta property="og:type" content="<%= typeof ogType !== 'undefined' ? ogType : 'website' %>">
+    <meta property="og:site_name" content="WhimsyLabs">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://whimsylabs.ai/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= description %>">
+    <meta name="twitter:image" content="https://whimsylabs.ai/logo.png">
+    
+    <!-- Bluesky Card Tags -->
+    <meta property="blueSky:card" content="summary_large_image">
+    <meta property="blueSky:title" content="<%= title %>">
+    <meta property="blueSky:description" content="<%= description %>">
+    <meta property="blueSky:image" content="https://whimsylabs.ai/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.webp" type="image/webp">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    
+    <!-- Additional head content -->
+    <% if (typeof additionalHead !== 'undefined') { %>
+        <%- additionalHead %>
+    <% } %>
+    
+    <!-- Dynamic head content -->
+    <% if (typeof headContent !== 'undefined') { %>
+        <%- headContent %>
+    <% } %>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WhimsyLabs",
+        "url": "https://whimsylabs.ai",
+        "logo": "https://whimsylabs.ai/logo.png",
+        "description": "WhimsyLabs provides award-winning virtual laboratory software for science education, used in schools, colleges, and universities worldwide.",
+        "sameAs": [
+            "https://www.youtube.com/@whimsylabs",
+            "https://bsky.app/profile/whimsylabs.bsky.social"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "inquiries@whimsylabs.ai",
+            "contactType": "customer service"
+        }
+    }
+    </script>
+    
+    <% if (typeof schema !== 'undefined') { %>
+        <script type="application/ld+json">
+        <%- JSON.stringify(schema, null, 2) %>
+        </script>
+    <% } %>
+</head>
+<body>
+    <!-- Header -->
+    <%- include('../partials/header') %>
+    
+    <!-- Main Content -->
+    <main class="container-fluid text-center p-0">
+        <%- content %>
+    </main>
+    
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+    
+    <!-- JavaScript -->
+    <script src="/static/js/main.js"></script>
+    
+    <!-- Additional scripts -->
+    <% if (typeof additionalScripts !== 'undefined') { %>
+        <%- additionalScripts %>
+    <% } %>
+    
+    <!-- No-script fallback -->
+    <noscript>
+        <style>
+            .js-only { display: none !important; }
+            .no-js { display: block !important; }
+        </style>
+    </noscript>
+</body>
+</html>

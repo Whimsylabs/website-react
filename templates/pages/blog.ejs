@@ -1,0 +1,127 @@
+<div class="blog-page">
+    <header class="page-header">
+        <h1>WhimsyLabs Blog</h1>
+        <p class="lead">Latest Virtual Laboratory Innovations & Teaching Resources</p>
+        <p>Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.</p>
+    </header>
+
+    <div class="container">
+        <% if (typeof posts !== 'undefined' && posts.length > 0) { %>
+            <div class="blog-posts">
+                <% posts.forEach(function(post) { %>
+                    <article class="blog-post-preview">
+                        <header class="post-header">
+                            <h2><a href="/blog/<%= post.slug %>"><%= post.title %></a></h2>
+                            <div class="post-meta">
+                                <time datetime="<%= post.date %>"><%= new Date(post.date).toLocaleDateString() %></time>
+                            </div>
+                        </header>
+                        <div class="post-excerpt">
+                            <p><%= post.description %></p>
+                        </div>
+                        <a href="/blog/<%= post.slug %>" class="read-more">Read More →</a>
+                    </article>
+                <% }); %>
+            </div>
+        <% } else { %>
+            <div class="no-posts">
+                <p>No blog posts available yet. Check back soon!</p>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<style>
+.blog-page {
+    width: 100%;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #95CEF6 0%, #6BB6FF 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.blog-post-preview {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #95CEF6;
+}
+
+.post-header h2 {
+    margin: 0 0 1rem 0;
+}
+
+.post-header h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-header h2 a:hover {
+    color: #95CEF6;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-excerpt {
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: #95CEF6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 2rem 1rem;
+    }
+    
+    .blog-post-preview {
+        padding: 1.5rem;
+    }
+}
+</style>

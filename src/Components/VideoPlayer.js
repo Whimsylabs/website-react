@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './VideoPlayer.css';
+import React, { useState } from "react";
+import "./VideoPlayer.css";
 
 const YOUTUBE_EMBED_URL =
-  "https://www.youtube.com/embed/9D2e2e2gzvk?autoplay=1"
+  "https://www.youtube.com/embed/9D2e2e2gzvk?autoplay=1&mute=1&vq=hd1080&hd=1";
 const VideoPlayer = ({ videoSrc, poster }) => {
   const [ytFailed, setYtFailed] = useState(false);
 
@@ -14,8 +14,8 @@ const VideoPlayer = ({ videoSrc, poster }) => {
             className="video-element"
             src={YOUTUBE_EMBED_URL}
             title="YouTube video player"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
+            style={{ border: "none" }}
+            allow="autoplay; encrypted-media; compute-pressure"
             allowFullScreen
             onError={() => setYtFailed(true)}
             aria-labelledby="video-title"
