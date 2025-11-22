@@ -17,7 +17,7 @@ export default {
   applyTrial: "यहां मुफ्त ट्रायल के लिए आवेदन करें!",
   haveQuestions: "प्रश्न हैं?",
   faqPage: "FAQ पेज",
-  featuresPDF: "Features PDF",
+  featuresPDF: "फीचर्स PDF",
   visitOur: "हमारे",
   faqAnswers: "सामान्य प्रश्नों के उत्तर के लिए देखें, या अधिक जानकारी के लिए हमारे",
   pdfDetails: "को देखें!",
