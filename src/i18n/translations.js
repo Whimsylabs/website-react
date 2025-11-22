@@ -372,6 +372,78 @@ const translations = {
       youtubeAlt: "YouTubeロゴ"
     },
   },
+
+  hi: {
+    // Navigation
+    nav: {
+      home: "होम",
+      blog: "ब्लॉग",
+      services: "सेवाएं",
+      features: "विशेषताएं",
+      faq: "FAQ",
+      contact: "संपर्क करें",
+    },
+
+    // Homepage - imported from separate file
+    home: homeTranslations.hi,
+
+    // Features
+    features: {
+      title: "WhimsyLabs विशेषताएं - अत्याधुनिक वर्चुअल लेबोरेटरी तकनीक",
+      description:
+        "WhimsyLabs की शक्तिशाली विशेषताओं का अन्वेषण करें जिसमें यथार्थवादी भौतिकी सिमुलेशन, AI-संचालित मूल्यांकन, क्रॉस-प्लेटफॉर्म पहुंच, और इमर्सिव STEM प्रयोग शामिल हैं।",
+      uniqueFeatures: "अद्वितीय विशेषताएं",
+      realisticSimulations: "यथार्थवादी भौतिकी सिमुलेशन",
+      realisticSimulationsDesc: "उन्नत तरल गतिशीलता, यथार्थवादी उपकरण संचालन, और प्रामाणिक प्रयोगशाला प्रक्रियाओं के साथ जीवंत भौतिकी सिमुलेशन का अनुभव करें जो वास्तविक मसल मेमोरी का निर्माण करते हैं।",
+      aiAssessment: "AI-संचालित मूल्यांकन",
+      aiAssessmentDesc: "हमारा बुद्धिमान मूल्यांकन प्रणाली व्यक्तिगत फीडबैक प्रदान करती है, छात्र प्रगति को ट्रैक करती है, और इष्टतम शैक्षिक परिणामों के लिए व्यक्तिगत सीखने की शैलियों के अनुकूल होती है।",
+      crossPlatform: "क्रॉस-प्लेटफॉर्म पहुंच",
+      crossPlatformDesc: "किसी भी डिवाइस पर हमारे वर्चुअल लैब्स तक पहुंचें - VR हेडसेट, कंप्यूटर, टैबलेट, या स्मार्टफोन - सभी प्लेटफॉर्मों पर सीखने की निरंतरता सुनिश्चित करते हुए।",
+      immersiveExperiments: "इमर्सिव STEM प्रयोग",
+      seeFullFeatures: "पूर्ण विशेषताएं PDF देखें",
+    },
+
+    // Contact - imported from separate file
+    contact: contactTranslations.hi,
+
+    // FAQ
+    faq: {
+      title: "अक्सर पूछे जाने वाले प्रश्न",
+      subtitle:
+        "हमारे वर्चुअल लैब सॉफ्टवेयर के बारे में सामान्य प्रश्नों के उत्तर खोजें और यह कैसे STEM शिक्षा को बदल सकता है",
+    },
+
+    // Common
+    common: {
+      readMore: "और पढ़ें",
+      backToHome: "होम पर वापस जाएं",
+      loading: "लोड हो रहा है...",
+      error: "त्रुटि",
+      tryAgain: "पुनः प्रयास करें",
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – वर्चुअल लेबोरेटरी समाधान",
+      navigation: "फुटर नेविगेशन",
+      home: "होम",
+      services: "सेवाएं",
+      contact: "संपर्क करें",
+      blog: "ब्लॉग",
+      faq: "FAQ",
+      privacy: "गोपनीयता",
+      homeLabel: "होम पर नेविगेट करें",
+      servicesLabel: "हमारी सेवाएं देखें",
+      contactLabel: "ईमेल के माध्यम से हमसे संपर्क करें",
+      blogLabel: "हमारा ब्लॉग देखें",
+      faqLabel: "अक्सर पूछे जाने वाले प्रश्न",
+      privacyLabel: "गोपनीयता नीति",
+      blueskyLabel: "हमारा Bluesky प्रोफाइल देखें",
+      youtubeLabel: "हमारा YouTube चैनल देखें",
+      blueskyAlt: "Bluesky लोगो",
+      youtubeAlt: "YouTube लोगो"
+    },
+  },
 };
 
 // Translation hook
