@@ -10,6 +10,7 @@ import BlogPreview from './BlogPreview';
 const Blog = (props = {}) => {
   const { language, posts: propsPosts } = props;
   const [activePostId] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   // Check for initial data from SSR (for hydration)
   const initialData = typeof window !== 'undefined' && window.__INITIAL_DATA__;
@@ -25,13 +26,43 @@ const Blog = (props = {}) => {
   }
 
   const postsPerPage = 10; // Set pagination limit
-  const currentPage = 1; // For future pagination implementation
 
   // Get posts for current page
   const totalPages = Math.ceil(posts.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Pagination handlers
+  const scrollToBlogSection = () => {
+    // Find the blog posts section and scroll to it
+    const blogSection = document.querySelector('.posts-section');
+    if (blogSection) {
+      blogSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      // Fallback to top if section not found
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+      scrollToBlogSection();
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      scrollToBlogSection();
+    }
+  };
+
+  const handlePageClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    scrollToBlogSection();
+  };
 
   return (
     <main className="container-fluid text-center p-0">
@@ -54,11 +85,36 @@ const Blog = (props = {}) => {
               </div>
             )}
 
-            {/* Pagination placeholder - will be implemented when more posts are added */}
+            {/* Pagination */}
             {totalPages > 1 && (
               <div className="pagination-container">
-                <p>Page {currentPage} of {totalPages}</p>
-                {/* Future pagination controls will go here */}
+                <button
+                  onClick={handlePrevPage}
+                  disabled={currentPage === 1}
+                  className="pagination-button"
+                >
+                  Previous
+                </button>
+
+                <div className="page-numbers">
+                  {[...Array(totalPages)].map((_, index) => (
+                    <button
+                      key={index + 1}
+                      onClick={() => handlePageClick(index + 1)}
+                      className={`page-number ${currentPage === index + 1 ? 'active' : ''}`}
+                    >
+                      {index + 1}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  onClick={handleNextPage}
+                  disabled={currentPage === totalPages}
+                  className="pagination-button"
+                >
+                  Next
+                </button>
               </div>
             )}
           </div>
