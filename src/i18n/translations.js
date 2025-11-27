@@ -372,6 +372,85 @@ const translations = {
       youtubeAlt: "YouTubeロゴ"
     },
   },
+
+  'zh-HK': {
+    // Navigation
+    nav: {
+      home: "主頁",
+      blog: "網誌",
+      services: "服務",
+      features: "功能",
+      faq: "常見問題",
+      contact: "聯絡",
+    },
+
+    // Homepage - imported from separate file
+    home: homeTranslations['zh-HK'],
+
+    // Features
+    features: {
+      title: "WhimsyLabs功能 - 尖端虛擬實驗室技術",
+      description:
+        "探索WhimsyLabs的強大功能，包括逼真的物理模擬、AI驅動的評估、跨平台可及性和沉浸式STEM實驗。",
+      uniqueFeatures: "獨特功能",
+      realisticSimulations: "逼真物理模擬",
+      realisticSimulationsDesc: "體驗逼真的物理模擬，包括先進的流體動力學、逼真的設備操作和真實的實驗室程序，建立真實的肌肉記憶。",
+      aiAssessment: "AI驅動評估",
+      aiAssessmentDesc: "我們的智能評估系統提供個性化反饋，追蹤學生進度，並適應個別學習風格以獲得最佳教育成果。",
+      crossPlatform: "跨平台可及性",
+      crossPlatformDesc: "在任何設備上訪問我們的虛擬實驗室 - VR頭戴設備、電腦、平板電腦或智能手機 - 確保所有平台的學習連續性。",
+      immersiveExperiments: "沉浸式STEM實驗",
+      seeFullFeatures: "查看完整功能PDF",
+    },
+
+    // Contact - imported from separate file
+    contact: contactTranslations['zh-HK'],
+
+    // FAQ
+    faq: {
+      title: "常見問題",
+      subtitle:
+        "查找有關我們虛擬實驗室軟件的常見問題的答案，以及它如何改變STEM教育",
+    },
+
+    // Privacy
+    privacy: {
+      title: "私隱政策",
+      subtitle:
+        "了解我們在使用虛擬實驗室軟件時如何收集、使用和保護您的個人資料",
+    },
+
+    // Common
+    common: {
+      readMore: "閱讀更多",
+      backToHome: "返回主頁",
+      loading: "載入中...",
+      error: "錯誤",
+      tryAgain: "重試",
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – 虛擬實驗室解決方案",
+      navigation: "頁腳導航",
+      home: "主頁",
+      services: "服務",
+      contact: "聯絡",
+      blog: "網誌",
+      faq: "常見問題",
+      privacy: "私隱",
+      homeLabel: "導航至主頁",
+      servicesLabel: "查看我們的服務",
+      contactLabel: "通過電郵聯絡我們",
+      blogLabel: "訪問我們的網誌",
+      faqLabel: "常見問題",
+      privacyLabel: "私隱政策",
+      blueskyLabel: "訪問我們的Bluesky檔案",
+      youtubeLabel: "訪問我們的YouTube頻道",
+      blueskyAlt: "Bluesky標誌",
+      youtubeAlt: "YouTube標誌"
+    },
+  },
 };
 
 // Translation hook

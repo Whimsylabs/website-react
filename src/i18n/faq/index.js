@@ -4,13 +4,15 @@ import es from './es.js';
 import fr from './fr.js';
 import de from './de.js';
 import ja from './ja.js';
+import zhHK from './zh-HK.js';
 
 const faqTranslations = {
   en,
   es,
   fr,
   de,
-  ja
+  ja,
+  'zh-HK': zhHK
 };
 
 export default faqTranslations;
