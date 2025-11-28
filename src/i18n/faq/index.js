@@ -4,13 +4,15 @@ import es from './es.js';
 import fr from './fr.js';
 import de from './de.js';
 import ja from './ja.js';
+import ko from './ko.js';
 
 const faqTranslations = {
   en,
   es,
   fr,
   de,
-  ja
+  ja,
+  ko
 };
 
 export default faqTranslations;

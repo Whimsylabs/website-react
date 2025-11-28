@@ -372,6 +372,85 @@ const translations = {
       youtubeAlt: "YouTubeロゴ"
     },
   },
+
+  ko: {
+    // Navigation
+    nav: {
+      home: "홈",
+      blog: "블로그",
+      services: "서비스",
+      features: "기능",
+      faq: "자주 묻는 질문",
+      contact: "문의하기",
+    },
+
+    // Homepage - imported from separate file
+    home: homeTranslations.ko,
+
+    // Features
+    features: {
+      title: "WhimsyLabs 기능 - 최첨단 가상 실험실 기술",
+      description:
+        "현실적인 물리학 시뮬레이션, AI 기반 평가, 크로스 플랫폼 접근성, 몰입형 STEM 실험을 포함한 WhimsyLabs의 강력한 기능을 탐색하세요.",
+      uniqueFeatures: "독특한 기능",
+      realisticSimulations: "현실적인 물리학 시뮬레이션",
+      realisticSimulationsDesc: "고급 유체 역학, 현실적인 장비 처리, 실제 근육 기억을 구축하는 진정한 실험실 절차를 갖춘 실물 같은 물리학 시뮬레이션을 경험하세요.",
+      aiAssessment: "AI 기반 평가",
+      aiAssessmentDesc: "저희의 지능형 평가 시스템은 개인화된 피드백을 제공하고, 학생 진행 상황을 추적하며, 최적의 교육 성과를 위해 개별 학습 스타일에 적응합니다.",
+      crossPlatform: "크로스 플랫폼 접근성",
+      crossPlatformDesc: "VR 헤드셋, 컴퓨터, 태블릿 또는 스마트폰 등 모든 장치에서 가상 실험실에 액세스하여 모든 플랫폼에서 학습 연속성을 보장합니다.",
+      immersiveExperiments: "몰입형 STEM 실험",
+      seeFullFeatures: "전체 기능 PDF 보기",
+    },
+
+    // Contact - imported from separate file
+    contact: contactTranslations.ko,
+
+    // FAQ
+    faq: {
+      title: "자주 묻는 질문",
+      subtitle:
+        "가상 실험실 소프트웨어에 대한 일반적인 질문과 STEM 교육을 어떻게 변화시킬 수 있는지에 대한 답변을 찾으세요",
+    },
+
+    // Privacy
+    privacy: {
+      title: "개인정보 처리방침",
+      subtitle:
+        "가상 실험실 소프트웨어를 사용할 때 개인 정보를 수집, 사용 및 보호하는 방법을 알아보세요",
+    },
+
+    // Common
+    common: {
+      readMore: "더 읽기",
+      backToHome: "홈으로 돌아가기",
+      loading: "로딩 중...",
+      error: "오류",
+      tryAgain: "다시 시도",
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – 가상 실험실 솔루션",
+      navigation: "푸터 탐색",
+      home: "홈",
+      services: "서비스",
+      contact: "문의하기",
+      blog: "블로그",
+      faq: "FAQ",
+      privacy: "개인정보",
+      homeLabel: "홈으로 이동",
+      servicesLabel: "서비스 보기",
+      contactLabel: "이메일로 문의하기",
+      blogLabel: "블로그 방문",
+      faqLabel: "자주 묻는 질문",
+      privacyLabel: "개인정보 처리방침",
+      blueskyLabel: "Bluesky 프로필 방문",
+      youtubeLabel: "YouTube 채널 방문",
+      blueskyAlt: "Bluesky 로고",
+      youtubeAlt: "YouTube 로고"
+    },
+  },
 };
 
 // Translation hook
