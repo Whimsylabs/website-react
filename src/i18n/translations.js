@@ -372,6 +372,85 @@ const translations = {
       youtubeAlt: "YouTubeロゴ"
     },
   },
+
+  th: {
+    // Navigation
+    nav: {
+      home: "หน้าแรก",
+      blog: "บล็อก",
+      services: "บริการ",
+      features: "คุณสมบัติ",
+      faq: "คำถามที่พบบ่อย",
+      contact: "ติดต่อ",
+    },
+
+    // Homepage - imported from separate file
+    home: homeTranslations.th,
+
+    // Features
+    features: {
+      title: "คุณสมบัติของ WhimsyLabs - เทคโนโลยีห้องปฏิบัติการเสมือนจริงล้ำสมัย",
+      description:
+        "สำรวจคุณสมบัติที่ทรงพลังของ WhimsyLabs รวมถึงการจำลองฟิสิกส์ที่สมจริง การประเมินที่ขับเคลื่อนด้วย AI การเข้าถึงข้ามแพลตฟอร์ม และการทดลอง STEM ที่ดื่มด่ำ",
+      uniqueFeatures: "คุณสมบัติเฉพาะตัว",
+      realisticSimulations: "การจำลองฟิสิกส์ที่สมจริง",
+      realisticSimulationsDesc: "สัมผัสการจำลองฟิสิกส์ที่สมจริงด้วยพลศาสตร์ของไหลขั้นสูง การจัดการอุปกรณ์ที่สมจริง และขั้นตอนห้องปฏิบัติการที่แท้จริงที่สร้างความจำของกล้ามเนื้อจริง",
+      aiAssessment: "การประเมินที่ขับเคลื่อนด้วย AI",
+      aiAssessmentDesc: "ระบบการประเมินอัจฉริยะของเรามอบคำติชมส่วนบุคคล ติดตามความคืบหน้าของนักเรียน และปรับให้เหมาะกับรูปแบบการเรียนรู้ของแต่ละบุคคลเพื่อผลลัพธ์ทางการศึกษาที่เหมาะสมที่สุด",
+      crossPlatform: "การเข้าถึงข้ามแพลตฟอร์ม",
+      crossPlatformDesc: "เข้าถึงแล็ปเสมือนจริงของเราบนอุปกรณ์ใดก็ได้ - ชุดหูฟัง VR คอมพิวเตอร์ แท็บเล็ต หรือสมาร์ทโฟน - รับประกันความต่อเนื่องในการเรียนรู้ในทุกแพลตฟอร์ม",
+      immersiveExperiments: "การทดลอง STEM ที่ดื่มด่ำ",
+      seeFullFeatures: "ดู PDF คุณสมบัติแบบเต็ม",
+    },
+
+    // Contact - imported from separate file
+    contact: contactTranslations.th,
+
+    // FAQ
+    faq: {
+      title: "คำถามที่พบบ่อย",
+      subtitle:
+        "ค้นหาคำตอบสำหรับคำถามทั่วไปเกี่ยวกับซอฟต์แวร์แล็ปเสมือนจริงของเราและวิธีที่มันสามารถเปลี่ยนแปลงการศึกษา STEM",
+    },
+
+    // Privacy
+    privacy: {
+      title: "นโยบายความเป็นส่วนตัว",
+      subtitle:
+        "เรียนรู้ว่าเรารวบรวม ใช้ และปกป้องข้อมูลส่วนบุคคลของคุณอย่างไรเมื่อใช้ซอฟต์แวร์ห้องปฏิบัติการเสมือนจริงของเรา",
+    },
+
+    // Common
+    common: {
+      readMore: "อ่านเพิ่มเติม",
+      backToHome: "กลับสู่หน้าแรก",
+      loading: "กำลังโหลด...",
+      error: "ข้อผิดพลาด",
+      tryAgain: "ลองอีกครั้ง",
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – โซลูชันห้องปฏิบัติการเสมือนจริง",
+      navigation: "การนำทางส่วนท้าย",
+      home: "หน้าแรก",
+      services: "บริการ",
+      contact: "ติดต่อ",
+      blog: "บล็อก",
+      faq: "คำถามที่พบบ่อย",
+      privacy: "ความเป็นส่วนตัว",
+      homeLabel: "ไปที่หน้าแรก",
+      servicesLabel: "ดูบริการของเรา",
+      contactLabel: "ติดต่อเราทางอีเมล",
+      blogLabel: "เยี่ยมชมบล็อกของเรา",
+      faqLabel: "คำถามที่พบบ่อย",
+      privacyLabel: "นโยบายความเป็นส่วนตัว",
+      blueskyLabel: "เยี่ยมชมโปรไฟล์ Bluesky ของเรา",
+      youtubeLabel: "เยี่ยมชมช่อง YouTube ของเรา",
+      blueskyAlt: "โลโก้ Bluesky",
+      youtubeAlt: "โลโก้ YouTube"
+    },
+  },
 };
 
 // Translation hook
