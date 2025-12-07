@@ -382,7 +382,8 @@ function getLanguageName(code) {
     en: 'English',
     de: 'Deutsch',
     fr: 'Français', 
-    es: 'Español'
+    es: 'Español',
+    jp: '日本語',
   };
   return names[code] || code;
 }

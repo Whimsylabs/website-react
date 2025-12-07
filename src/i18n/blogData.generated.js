@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2025-11-20T06:56:08.168Z
+// Generated on 2025-11-27T15:12:35.237Z
 
 module.exports = {
   "en": [
@@ -134,73 +134,73 @@ module.exports = {
     {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
-      "title": "[DE] Gamification in Science Education: How Points, Rewards, and Creative Expression Drive Engagement in WhimsyLabs",
-      "description": "[DE] Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.",
+      "title": "Gamification in der naturwissenschaftlichen Bildung: Wie Punkte, Belohnungen und kreativer Ausdruck das Engagement in WhimsyLabs fördern",
+      "description": "Eine Untersuchung des umfassenden, nicht-monetarisierten Gamification-Systems von WhimsyLabs – einschließlich Punkte für Bewertungen, personalisierte Laborempfehlungen, kosmetische Belohnungen, Laborpersonalisierung und Kunstkreation – das soziale Verbindungen stärkt, anstatt sie zu ersetzen.",
       "date": "2026-10-25",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post13",
       "slug": "science-real-time-physics-simulations-virtual-labs",
-      "title": "[DE] The Science Behind Real-Time Physics Simulations in Virtual Labs: Why Dynamic Simulations Make Learning Fun",
-      "description": "[DE] Discover how WhimsyLabs' groundbreaking real-time computational physics creates the most sophisticated and genuinely fun virtual laboratory platform, using gaming principles to make science education engaging.",
+      "title": "Die Wissenschaft hinter Echtzeit-Physiksimulationen in virtuellen Laboren: Warum dynamische Simulationen das Lernen zum Vergnügen machen",
+      "description": "Entdecken Sie, wie WhimsyLabs' bahnbrechende Echtzeit-Computerphysik die ausgefeilteste und wirklich unterhaltsame virtuelle Laborplattform schafft, die Gaming-Prinzipien nutzt, um naturwissenschaftliche Bildung ansprechend zu gestalten.",
       "date": "2026-10-02",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post12",
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
-      "title": "[DE] How Virtual Reality Prepares Students for Real-World STEM Careers: The Only Platform Teaching Physical Laboratory Skills",
-      "description": "[DE] Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.",
+      "title": "Wie Virtual Reality Studierende auf reale MINT-Karrieren vorbereitet: Die einzige Plattform, die physische Laborfähigkeiten lehrt",
+      "description": "Entdecken Sie, warum WhimsyLabs die einzige virtuelle Laborplattform ist, die authentische physische Bewegungen und experimentelle Designfähigkeiten durch vollständige Sandbox-Freiheit und fortschrittliche Flüssigkeitsphysik-Simulationen lehrt.",
       "date": "2025-09-15",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post11",
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
-      "title": "[DE] Virtual Labs vs. Physical Labs: A Cost-Benefit Analysis for Schools and Our Impact-Driven Mission",
-      "description": "[DE] Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.",
+      "title": "Virtuelle Labore vs. Physische Labore: Eine Kosten-Nutzen-Analyse für Schulen und unsere wirkungsorientierte Mission",
+      "description": "Umfassender Kosten-Nutzen-Vergleich zwischen traditionellen physischen Laboratorien und der virtuellen Lösung von WhimsyLabs, mit Einblick, wie unser wirkungsorientierter, gemeinnütziger Ansatz die MINT-Bildung demokratisiert.",
       "date": "2025-08-20",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post10",
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
-      "title": "[DE] Emotional Intelligence in AI Tutors: How WhimsyCat Detects and Responds to Student Frustration",
-      "description": "[DE] Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.",
+      "title": "Emotionale Intelligenz in KI-Tutoren: Wie WhimsyCat Frustration bei Schülern erkennt und darauf reagiert",
+      "description": "Erforschung von WhimsyCats bahnbrechendem Frustrationserken­nungssystem, das Spieleraktionen, Blickverfolgung und Engagement-Muster überwacht, um proaktive emotionale Unterstützung zu bieten, wenn Schüler Schwierigkeiten haben.",
       "date": "2025-08-12",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post9",
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
-      "title": "[DE] 24/7 AI Tutoring: How Personalized Daily Recommendations Keep Students from Falling Behind",
-      "description": "[DE] Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.",
+      "title": "24/7 KI-Nachhilfe: Wie personalisierte tägliche Empfehlungen verhindern, dass Schüler zurückfallen",
+      "description": "Entdecken Sie, wie WhimsyLabs' intelligente tägliche und wöchentliche Laborempfehlungen, unterstützt durch KI-Analyse, Schülern helfen, schwache Bereiche durch risikoarme gamifizierte Übungen zu meistern und zu verhindern, dass sie zurückfallen.",
       "date": "2025-07-25",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post8",
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
-      "title": "[DE] How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective",
-      "description": "[DE] Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.",
+      "title": "Wie virtuelle Labore die MINT-Lehrkräftemangel-Krise lösen: Eine britische und globale Perspektive",
+      "description": "Erkundung, wie WhimsyLabs' KI-gestützte virtuelle Labore den katastrophalen MINT-Lehrkräftemangel in Großbritannien und weltweit durch 24/7-Nachhilfe und automatisierte Bewertung angehen.",
       "date": "2025-07-02",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
       "id": "post7",
       "slug": "green-labs-sustainability-virtual-stem-education",
-      "title": "[DE] Green Labs, Greener Future: How Virtual Laboratories Are Transforming Sustainability in STEM Education",
-      "description": "[DE] Exploring how WhimsyLabs' virtual laboratory platform addresses the environmental crisis in traditional science education while advancing sustainable development goals.",
+      "title": "Grüne Labore, grünere Zukunft: Wie virtuelle Labore die Nachhaltigkeit in der MINT-Bildung transformieren",
+      "description": "Eine Untersuchung darüber, wie WhimsyLabs' virtuelle Laborplattform die Umweltkrise in der traditionellen naturwissenschaftlichen Bildung angeht und gleichzeitig nachhaltige Entwicklungsziele vorantreibt.",
       "date": "2025-06-18",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "de"
     },
     {
@@ -262,73 +262,73 @@ module.exports = {
     {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
-      "title": "[FR] Gamification in Science Education: How Points, Rewards, and Creative Expression Drive Engagement in WhimsyLabs",
-      "description": "[FR] Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.",
+      "title": "La gamification dans l'enseignement des sciences : Comment les points, les récompenses et l'expression créative stimulent l'engagement dans WhimsyLabs",
+      "description": "Explorer le système de gamification complet et non monétisé de WhimsyLabs – incluant des points pour les évaluations, des recommandations de laboratoire personnalisées, des récompenses cosmétiques, la personnalisation du laboratoire et la création artistique – qui renforce les connexions sociales au lieu de les remplacer.",
       "date": "2026-10-25",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post13",
       "slug": "science-real-time-physics-simulations-virtual-labs",
-      "title": "[FR] The Science Behind Real-Time Physics Simulations in Virtual Labs: Why Dynamic Simulations Make Learning Fun",
-      "description": "[FR] Discover how WhimsyLabs' groundbreaking real-time computational physics creates the most sophisticated and genuinely fun virtual laboratory platform, using gaming principles to make science education engaging.",
+      "title": "La science derrière les simulations physiques en temps réel dans les laboratoires virtuels : Pourquoi les simulations dynamiques rendent l'apprentissage amusant",
+      "description": "Découvrez comment la physique computationnelle en temps réel révolutionnaire de WhimsyLabs crée la plateforme de laboratoire virtuel la plus sophistiquée et véritablement amusante, utilisant les principes du gaming pour rendre l'enseignement scientifique captivant.",
       "date": "2026-10-02",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post12",
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
-      "title": "[FR] How Virtual Reality Prepares Students for Real-World STEM Careers: The Only Platform Teaching Physical Laboratory Skills",
-      "description": "[FR] Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.",
+      "title": "Comment la réalité virtuelle prépare les étudiants aux carrières STEM du monde réel : La seule plateforme enseignant les compétences physiques de laboratoire",
+      "description": "Découvrez pourquoi WhimsyLabs est la seule plateforme de laboratoire virtuel qui enseigne les mouvements physiques authentiques et les compétences de conception expérimentale grâce à une liberté sandbox complète et des simulations avancées de physique des liquides.",
       "date": "2025-09-15",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post11",
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
-      "title": "[FR] Virtual Labs vs. Physical Labs: A Cost-Benefit Analysis for Schools and Our Impact-Driven Mission",
-      "description": "[FR] Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.",
+      "title": "Laboratoires virtuels vs. laboratoires physiques : Une analyse coûts-avantages pour les écoles et notre mission axée sur l'impact",
+      "description": "Comparaison complète coûts-avantages entre les laboratoires physiques traditionnels et la solution virtuelle de WhimsyLabs, explorant comment notre approche axée sur l'impact et non sur le profit démocratise l'éducation STEM.",
       "date": "2025-08-20",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post10",
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
-      "title": "[FR] Emotional Intelligence in AI Tutors: How WhimsyCat Detects and Responds to Student Frustration",
-      "description": "[FR] Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.",
+      "title": "Intelligence émotionnelle dans les tuteurs IA : Comment WhimsyCat détecte et répond à la frustration des étudiants",
+      "description": "Explorer le système révolutionnaire de détection de frustration de WhimsyCat qui surveille les actions des joueurs, le suivi du regard et les modèles d'engagement pour fournir un soutien émotionnel proactif lorsque les étudiants rencontrent des difficultés.",
       "date": "2025-08-12",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post9",
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
-      "title": "[FR] 24/7 AI Tutoring: How Personalized Daily Recommendations Keep Students from Falling Behind",
-      "description": "[FR] Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.",
+      "title": "Tutorat IA 24h/24 et 7j/7 : Comment les recommandations quotidiennes personnalisées empêchent les élèves de prendre du retard",
+      "description": "Découvrez comment les recommandations de laboratoire quotidiennes et hebdomadaires intelligentes de WhimsyLabs, alimentées par l'analyse IA, aident les élèves à maîtriser les domaines faibles grâce à une pratique ludifiée à faible enjeu, empêchant les élèves de prendre du retard.",
       "date": "2025-07-25",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post8",
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
-      "title": "[FR] How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective",
-      "description": "[FR] Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.",
+      "title": "Comment les laboratoires virtuels résolvent la crise de pénurie d'enseignants STEM : Une perspective britannique et mondiale",
+      "description": "Exploration de la manière dont les laboratoires virtuels alimentés par l'IA de WhimsyLabs répondent à la pénurie catastrophique d'enseignants STEM affectant le Royaume-Uni et les écoles du monde entier grâce au tutorat 24h/24 et 7j/7 et à l'évaluation automatisée.",
       "date": "2025-07-02",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
       "id": "post7",
       "slug": "green-labs-sustainability-virtual-stem-education",
-      "title": "[FR] Green Labs, Greener Future: How Virtual Laboratories Are Transforming Sustainability in STEM Education",
-      "description": "[FR] Exploring how WhimsyLabs' virtual laboratory platform addresses the environmental crisis in traditional science education while advancing sustainable development goals.",
+      "title": "Laboratoires verts, avenir plus vert : Comment les laboratoires virtuels transforment la durabilité dans l'enseignement STEM",
+      "description": "Explorer comment la plateforme de laboratoire virtuel de WhimsyLabs répond à la crise environnementale dans l'enseignement scientifique traditionnel tout en faisant progresser les objectifs de développement durable.",
       "date": "2025-06-18",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "fr"
     },
     {
@@ -390,73 +390,73 @@ module.exports = {
     {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
-      "title": "[ES] Gamification in Science Education: How Points, Rewards, and Creative Expression Drive Engagement in WhimsyLabs",
-      "description": "[ES] Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.",
+      "title": "Gamificación en la educación científica: Cómo los puntos, las recompensas y la expresión creativa impulsan el compromiso en WhimsyLabs",
+      "description": "Explorando el sistema integral de gamificación no monetizado de WhimsyLabs, que incluye puntos por evaluaciones, recomendaciones de laboratorio personalizadas, recompensas cosméticas, personalización de laboratorio y creación artística, que mejora las conexiones sociales en lugar de reemplazarlas.",
       "date": "2026-10-25",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post13",
       "slug": "science-real-time-physics-simulations-virtual-labs",
-      "title": "[ES] The Science Behind Real-Time Physics Simulations in Virtual Labs: Why Dynamic Simulations Make Learning Fun",
-      "description": "[ES] Discover how WhimsyLabs' groundbreaking real-time computational physics creates the most sophisticated and genuinely fun virtual laboratory platform, using gaming principles to make science education engaging.",
+      "title": "La ciencia detrás de las simulaciones físicas en tiempo real en laboratorios virtuales: Por qué las simulaciones dinámicas hacen que el aprendizaje sea divertido",
+      "description": "Descubra cómo la física computacional en tiempo real revolucionaria de WhimsyLabs crea la plataforma de laboratorio virtual más sofisticada y genuinamente divertida, utilizando principios de gaming para hacer que la educación científica sea cautivadora.",
       "date": "2026-10-02",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post12",
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
-      "title": "[ES] How Virtual Reality Prepares Students for Real-World STEM Careers: The Only Platform Teaching Physical Laboratory Skills",
-      "description": "[ES] Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.",
+      "title": "Cómo la realidad virtual prepara a los estudiantes para carreras STEM del mundo real: La única plataforma que enseña habilidades físicas de laboratorio",
+      "description": "Descubra por qué WhimsyLabs es la única plataforma de laboratorio virtual que enseña movimientos físicos auténticos y habilidades de diseño experimental a través de libertad sandbox completa y simulaciones avanzadas de física de líquidos.",
       "date": "2025-09-15",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post11",
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
-      "title": "[ES] Virtual Labs vs. Physical Labs: A Cost-Benefit Analysis for Schools and Our Impact-Driven Mission",
-      "description": "[ES] Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.",
+      "title": "Laboratorios virtuales vs. laboratorios físicos: Un análisis de costo-beneficio para las escuelas y nuestra misión impulsada por el impacto",
+      "description": "Comparación completa de costo-beneficio entre laboratorios físicos tradicionales y la solución virtual de WhimsyLabs, explorando cómo nuestro enfoque centrado en el impacto y no en el lucro democratiza la educación STEM.",
       "date": "2025-08-20",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post10",
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
-      "title": "[ES] Emotional Intelligence in AI Tutors: How WhimsyCat Detects and Responds to Student Frustration",
-      "description": "[ES] Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.",
+      "title": "Inteligencia emocional en tutores de IA: Cómo WhimsyCat detecta y responde a la frustración de los estudiantes",
+      "description": "Explorando el revolucionario sistema de detección de frustración de WhimsyCat que monitorea las acciones de los jugadores, el seguimiento de la mirada y los patrones de participación para proporcionar apoyo emocional proactivo cuando los estudiantes tienen dificultades.",
       "date": "2025-08-12",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post9",
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
-      "title": "[ES] 24/7 AI Tutoring: How Personalized Daily Recommendations Keep Students from Falling Behind",
-      "description": "[ES] Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.",
+      "title": "Tutoría de IA 24/7: Cómo las recomendaciones diarias personalizadas evitan que los estudiantes se retrasen",
+      "description": "Descubra cómo las recomendaciones de laboratorio diarias y semanales inteligentes de WhimsyLabs, impulsadas por análisis de IA, ayudan a los estudiantes a dominar áreas débiles a través de práctica gamificada de bajo riesgo, evitando que los estudiantes se retrasen.",
       "date": "2025-07-25",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post8",
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
-      "title": "[ES] How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective",
-      "description": "[ES] Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.",
+      "title": "Cómo los laboratorios virtuales resuelven la crisis de escasez de docentes STEM: Una perspectiva británica y global",
+      "description": "Explorando cómo los laboratorios virtuales impulsados por IA de WhimsyLabs abordan la catastrófica escasez de docentes STEM que afecta al Reino Unido y a las escuelas de todo el mundo mediante tutoría 24/7 y evaluación automatizada.",
       "date": "2025-07-02",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
       "id": "post7",
       "slug": "green-labs-sustainability-virtual-stem-education",
-      "title": "[ES] Green Labs, Greener Future: How Virtual Laboratories Are Transforming Sustainability in STEM Education",
-      "description": "[ES] Exploring how WhimsyLabs' virtual laboratory platform addresses the environmental crisis in traditional science education while advancing sustainable development goals.",
+      "title": "Laboratorios verdes, futuro más verde: Cómo los laboratorios virtuales están transformando la sostenibilidad en la educación STEM",
+      "description": "Explorando cómo la plataforma de laboratorio virtual de WhimsyLabs aborda la crisis ambiental en la educación científica tradicional mientras avanza los objetivos de desarrollo sostenible.",
       "date": "2025-06-18",
-      "hasFullTranslation": false,
+      "hasFullTranslation": true,
       "language": "es"
     },
     {
