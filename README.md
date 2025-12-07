@@ -20,6 +20,8 @@ WhimsyLabs offers award-winning virtual labs for Biology, Chemistry, Physics, an
 - React Router for navigation
 - CSS3 with animations and responsive design
 - GitHub Pages for deployment
+- i18n for internationalization support
+- MPA (Multi-Page Application) structure for SEO optimization - SPA is not compatible at all!!
 
 ## Development Setup
 
@@ -73,6 +75,34 @@ This website uses a hybrid approach that combines React with static HTML generat
 - This approach improves SEO and allows direct access to URLs like [https://whimsylabs.ai/blog](https://whimsylabs.ai/blog)
 
 For more details on how this works, see [MPA-CONVERSION.md](MPA-CONVERSION.md).
+
+## Translations
+
+The i18n.js file configures i18next for translation management within the React application.
+
+### How it Works:
+
+ 1. Initialization: It imports i18next and react-i18next to set up the translation framework.
+ 2. Translation Resources: It loads translation data from ./translations.js, expecting an object where keys are language codes (e.g., en, es) and values are the corresponding translation        
+    objects.
+ 3. Language Detection: The getCurrentLanguage() function determines the initial language by:
+     * Checking if window is available (for browser environment).
+     * Extracting the language code from the URL path (e.g., /es/page -> es).
+     * Dynamically validating the extracted code against the keys present in the translations object, falling back to 'en' if not found.
+ 4. Configuration: It initializes i18next with:
+     * resources: The loaded translation data.
+     * lng: The language determined by getCurrentLanguage().
+     * fallbackLng: 'en' as the default if a translation is missing.
+     * interpolation: escapeValue: false because React handles escaping.
+     * react: useSuspense: false for SSR compatibility.
+ 5. Export: The configured i18n instance is exported for use in React components.
+
+Potential Improvements (Not critical errors but worth considering):
+
+ 1. Reliance on URL Path for Language Detection (SPA vs. MPA): The current setup is well-suited for Multi-Page Applications (MPA), given that we can't use a SPA router.
+ 2. Implicit Assumption of `translations` Structure: The code assumes that each language object within translations.js has a translation key (the default namespace for i18next). If
+    translations.js uses a different structure, i18next might not find the translations. It's crucial that src/i18n/translations.js adheres to the i18next resource structure (e.g., en: {        
+    translation: { ... } }).
 
 ## Project Structure
 

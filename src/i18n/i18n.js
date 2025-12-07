@@ -9,7 +9,9 @@ function getCurrentLanguage() {
   const path = window.location.pathname;
   const langCode = path.split('/')[1];
 
-  return ['en', 'es', 'fr', 'de', 'ja'].includes(langCode) ? langCode : 'en';
+  const supportedLanguages = Object.keys(translations);
+
+  return supportedLanguages.includes(langCode) ? langCode : 'en';
 }
 
 i18n
