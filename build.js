@@ -428,11 +428,7 @@ async function generatePageHTML(route, data = {}) {
     // Get critical CSS for inlining
     const criticalCSS = assetExtractor.extractCriticalCSSContent();
 
-    // Generate complete metadata
-    const completeMetadata = metadataInjector.generateCompleteMetadata(
-      route,
-      data
-    );
+    // Metadata generation moved to after component rendering to capture Helmet data and translated content
 
     // Create React element with props
     const props = {
@@ -504,11 +500,27 @@ async function generatePageHTML(route, data = {}) {
       }
     }
 
+    // Debug logging
+    if (route.includes('/blog/') && !route.endsWith('/blog')) {
+      console.log(`[DEBUG] Rendering ${route}. Title: "${props.title}"`);
+    }
+
     // Render component to string
     const renderResult = componentRenderer.renderComponent(
       Component,
       props,
       route
+    );
+
+    // Generate complete metadata using the rendered result (Helmet) and props
+    const completeMetadata = metadataInjector.generateCompleteMetadata(
+      route,
+      renderResult, 
+      { 
+        title: props.title, 
+        description: props.description,
+        // Add other props if needed for metadata
+      }
     );
 
     // Generate hreflang tags for SEO
@@ -540,6 +552,7 @@ async function generatePageHTML(route, data = {}) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
+    ${completeMetadata.title}
     ${completeMetadata.meta}
     ${hreflangTags}
     ${assets.preload}
