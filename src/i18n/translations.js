@@ -300,6 +300,78 @@ const translations = {
       youtubeAlt: "YouTube-Logo"
     },
   },
+
+  ja: {
+    // Navigation
+    nav: {
+      home: "ホーム",
+      blog: "ブログ",
+      services: "サービス",
+      features: "機能",
+      faq: "よくある質問",
+      contact: "お問い合わせ",
+    },
+
+    // Homepage - imported from separate file
+    home: homeTranslations.ja,
+
+    // Features
+    features: {
+      title: "WhimsyLabsの機能 - 最先端のシミュレーション教材技術",
+      description:
+        "リアルな物理シミュレーション、AI駆動の評価、クロスプラットフォームアクセシビリティ、没入型STEM実験など、WhimsyLabsの強力な機能をご覧ください。",
+      uniqueFeatures: "独自の機能",
+      realisticSimulations: "リアルな物理シミュレーション",
+      realisticSimulationsDesc: "高度な流体力学、リアルな機器操作、本物の実験手順により、実際の筋肉記憶を構築する実物に近い物理シミュレーションを体験してください。",
+      aiAssessment: "AI駆動の評価",
+      aiAssessmentDesc: "当社のインテリジェント評価システムは、パーソナライズされたフィードバックを提供し、生徒の進捗を追跡し、最適な教育成果のために個々の学習スタイルに適応します。",
+      crossPlatform: "クロスプラットフォームアクセシビリティ",
+      crossPlatformDesc: "VRヘッドセット、コンピューター、タブレット、スマートフォンなど、あらゆるデバイスでシミュレーション教材にアクセスでき、すべてのプラットフォームで学習の継続性を確保します。",
+      immersiveExperiments: "没入型STEM実験",
+      seeFullFeatures: "機能紹介PDFを見る",
+    },
+
+    // Contact - imported from separate file
+    contact: contactTranslations.ja,
+
+    // FAQ
+    faq: {
+      title: "よくあるご質問",
+      subtitle:
+        "当社のシミュレーション教材と、STEM教育をどのように変革できるかについてのよくある質問への回答をご覧ください",
+    },
+
+    // Common
+    common: {
+      readMore: "続きを読む",
+      backToHome: "ホームに戻る",
+      loading: "読み込み中...",
+      error: "エラー",
+      tryAgain: "再試行",
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2025 Whimsylabs – シミュレーション教材ソリューション",
+      navigation: "フッターナビゲーション",
+      home: "ホーム",
+      services: "サービス",
+      contact: "お問い合わせ",
+      blog: "ブログ",
+      faq: "よくある質問",
+      privacy: "プライバシー",
+      homeLabel: "ホームへ移動",
+      servicesLabel: "サービスを見る",
+      contactLabel: "メールでお問い合わせ",
+      blogLabel: "ブログを訪問",
+      faqLabel: "よくあるご質問",
+      privacyLabel: "プライバシーポリシー",
+      blueskyLabel: "Blueskyプロフィールを訪問",
+      youtubeLabel: "YouTubeチャンネルを訪問",
+      blueskyAlt: "Blueskyロゴ",
+      youtubeAlt: "YouTubeロゴ"
+    },
+  },
 };
 
 // Translation hook

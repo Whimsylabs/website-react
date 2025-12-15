@@ -24,6 +24,12 @@ const SUPPORTED_LANGUAGES = {
     flag: "🇩🇪",
     dir: "ltr",
   },
+  jp: {
+    code: "jp",
+    name: "日本語",
+    flag: "🇯🇵",
+    dir: "ltr",
+  },
 };
 
 const DEFAULT_LANGUAGE = "en";
