@@ -327,8 +327,16 @@ async function getBlogPosts(language = 'en') {
     const Post4 = require("./src/Components/blog/Post4.js");
     const Post5 = require("./src/Components/blog/Post5.js");
     const Post6 = require("./src/Components/blog/Post6.js");
+    const Post7 = require("./src/Components/blog/Post7.js");
+    const Post8 = require("./src/Components/blog/Post8.js");
+    const Post9 = require("./src/Components/blog/Post9.js");
+    const Post10 = require("./src/Components/blog/Post10.js");
+    const Post11 = require("./src/Components/blog/Post11.js");
+    const Post12 = require("./src/Components/blog/Post12.js");
+    const Post13 = require("./src/Components/blog/Post13.js");
+    const Post14 = require("./src/Components/blog/Post14.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -356,6 +364,14 @@ async function getBlogPosts(language = 'en') {
       const Post4 = require("./src/Components/blog/Post4.js");
       const Post5 = require("./src/Components/blog/Post5.js");
       const Post6 = require("./src/Components/blog/Post6.js");
+      const Post7 = require("./src/Components/blog/Post7.js");
+      const Post8 = require("./src/Components/blog/Post8.js");
+      const Post9 = require("./src/Components/blog/Post9.js");
+      const Post10 = require("./src/Components/blog/Post10.js");
+      const Post11 = require("./src/Components/blog/Post11.js");
+      const Post12 = require("./src/Components/blog/Post12.js");
+      const Post13 = require("./src/Components/blog/Post13.js");
+      const Post14 = require("./src/Components/blog/Post14.js");
 
       const fallbackPosts = [
         {
@@ -415,6 +431,86 @@ async function getBlogPosts(language = 'en') {
           description: Post6.description,
           content: Post6.content,
           path: `/blog/${Post6.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post7.slug,
+          title: Post7.title,
+          date: Post7.date,
+          description: Post7.description,
+          content: Post7.content,
+          path: `/blog/${Post7.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post8.slug,
+          title: Post8.title,
+          date: Post8.date,
+          description: Post8.description,
+          content: Post8.content,
+          path: `/blog/${Post8.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post9.slug,
+          title: Post9.title,
+          date: Post9.date,
+          description: Post9.description,
+          content: Post9.content,
+          path: `/blog/${Post9.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post10.slug,
+          title: Post10.title,
+          date: Post10.date,
+          description: Post10.description,
+          content: Post10.content,
+          path: `/blog/${Post10.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post11.slug,
+          title: Post11.title,
+          date: Post11.date,
+          description: Post11.description,
+          content: Post11.content,
+          path: `/blog/${Post11.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post12.slug,
+          title: Post12.title,
+          date: Post12.date,
+          description: Post12.description,
+          content: Post12.content,
+          path: `/blog/${Post12.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post13.slug,
+          title: Post13.title,
+          date: Post13.date,
+          description: Post13.description,
+          content: Post13.content,
+          path: `/blog/${Post13.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post14.slug,
+          title: Post14.title,
+          date: Post14.date,
+          description: Post14.description,
+          content: Post14.content,
+          path: `/blog/${Post14.slug}`,
           language: 'en',
           hasFullTranslation: true
         }

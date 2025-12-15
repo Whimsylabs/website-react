@@ -6,6 +6,13 @@ export const date = "2025-06-05";
 export const slug = "sandbox-learning-revolution-stem-education";
 export const description =
   "How WhimsyLabs' open-ended exploration approach transforms science education by embracing failure as a powerful learning tool and fostering authentic scientific thinking.";
+export const keywords = [
+  "sandbox learning",
+  "productive failure",
+  "STEM education",
+  "virtual laboratory",
+  "scientific inquiry"
+];
 
 export const content = (
   <div>

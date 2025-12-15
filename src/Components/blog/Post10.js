@@ -6,6 +6,13 @@ export const date = "2025-08-12";
 export const slug = "emotional-intelligence-ai-tutors-whimsycat-frustration-detection";
 export const description =
   "Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.";
+export const keywords = [
+  "emotional AI in education",
+  "frustration detection",
+  "WhimsyCat AI",
+  "student engagement monitoring",
+  "affective computing in learning"
+];
 
 export const content = (
   <div>

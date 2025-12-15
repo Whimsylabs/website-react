@@ -2,20 +2,29 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 // Import shared FAQ data
 import { getSchemaFAQItems } from "../data/faqData";
-import { extractSchemaFAQData } from "../utils/faqDataExtractor";
+import { extractSchemaFAQData } from "../i18n/faqDataExtractor.js";
 import { getCurrentLanguage } from "../i18n";
 // Import blog post data
-import * as Post1 from "./blog/Post1";
-import * as Post2 from "./blog/Post2";
-import * as Post3 from "./blog/Post3";
-import * as Post4 from "./blog/Post4";
-import * as Post5 from "./blog/Post5";
-import * as Post6 from "./blog/Post6";
+// Import blog post data dynamically
+const blogPostContext = require.context("./blog", false, /Post\d+\.js$/);
+const allBlogPosts = {};
+
+blogPostContext.keys().forEach((key) => {
+  const post = blogPostContext(key);
+  if (post.slug) {
+    allBlogPosts[`/blog/${post.slug}`] = {
+      title: post.title,
+      datePublished: post.date,
+      dateModified: post.date,
+      description: post.description,
+      slug: post.slug,
+      keywords: post.keywords || ["virtual laboratory", "STEM education"]
+    };
+  }
+});
 
 const SchemaMarkup = () => {
-  // Get current path from window.location instead of React Router
-  const currentPath =
-    typeof window !== "undefined" ? window.location.pathname : "/";
+  const currentPath = typeof window !== "undefined" ? window.location.pathname : "";
   const baseUrl = "https://whimsylabs.ai";
 
   // Get current language and extract FAQ data in that language
@@ -34,58 +43,7 @@ const SchemaMarkup = () => {
 
   // Extract blog post data dynamically
   const getBlogPostData = () => {
-    const blogPosts = {
-      "/blog/whimsylabs-education-revolution": {
-        title: Post1.title,
-        datePublished: Post1.date,
-        dateModified: Post1.date,
-        description: Post1.description,
-        slug: Post1.slug,
-        keywords: ["virtual laboratory history", "BETT 2025 winner", "STEM education innovation", "COVID-19 education solutions", "proprietary physics engine"]
-      },
-      "/blog/physicality-in-virtual-labs": {
-        title: Post2.title,
-        datePublished: Post2.date,
-        dateModified: Post2.date,
-        description: Post2.description,
-        slug: Post2.slug,
-        keywords: ["virtual lab physicality", "liquid physics simulation", "procedural training", "muscle memory development", "advanced virtual laboratory"]
-      },
-      "/blog/virtual-kidney-dissection-send-engagement": {
-        title: Post3.title,
-        datePublished: Post3.date,
-        dateModified: Post3.date,
-        description: Post3.description,
-        slug: Post3.slug,
-        keywords: ["virtual dissection", "SEND education", "kidney anatomy", "VR learning", "accessibility in education"]
-      },
-      [`/blog/${Post4.slug}`]: {
-        title: Post4.title,
-        datePublished: Post4.date,
-        dateModified: Post4.date,
-        description: Post4.description,
-        slug: Post4.slug,
-        keywords: ["AI-powered virtual labs", "STEM education crisis", "educational technology", "virtual laboratory", "science education"]
-      },
-      [`/blog/${Post5.slug}`]: {
-        title: Post5.title,
-        datePublished: Post5.date,
-        dateModified: Post5.date,
-        description: Post5.description,
-        slug: Post5.slug,
-        keywords: ["WhimsyCat AI tutor", "personalized learning", "AI in education", "virtual laboratory", "STEM education"]
-      },
-      [`/blog/${Post6.slug}`]: {
-        title: Post6.title,
-        datePublished: Post6.date,
-        dateModified: Post6.date,
-        description: Post6.description,
-        slug: Post6.slug,
-        keywords: ["sandbox learning", "productive failure", "STEM education", "virtual laboratory", "scientific inquiry"]
-      }
-    };
-
-    return blogPosts[currentPath] || {
+    return allBlogPosts[currentPath] || {
       title: "WhimsyLabs Blog - Virtual Laboratory Innovation",
       datePublished: "2025-01-01",
       dateModified: "2025-01-01",

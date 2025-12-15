@@ -1,0 +1,32 @@
+About WhimsyLabs
+
+WhimsyLabs is an award-winning, impact-driven virtual laboratory platform that transforms science education. Unlike traditional linear simulations, we offer a true sandbox environment where students can experiment freely, learn from productive failure, and develop genuine scientific inquiry skills.
+
+Powered by a proprietary real-time Biology-Chemistry-Physics engine, WhimsyLabs is the only platform that simulates fluid dynamics, molecular interactions and more with high accuracy, allowing students to develop authentic muscle memory and procedural fluency in both VR and web browsers.
+
+With a true sandbox environment we ensure that every student generates their own unique experimental data. By dynamically generating questions based on this data, we eliminate the possibility of copying answers, simultaneously guaranteeing assessment integrity and saving teachers hours of grading time though our automated AI grading.
+
+Live Demo avalible during Bett 2026!
+
+Why WhimsyLabs? (Key Differentiators)
+
+Dynamic Assessment Integrity: Because students work in a true sandbox, they generate unique experimental data based on their specific procedural choices. Our system generates personalized questions where the "correct" answer depends entirely on the data that specific student collected.
+Automated Grading & Analytics: We evaluate technique accuracy, safety compliance, and experimental design in real-time. Teachers save an average of 3.5 hours per week on grading while gaining deeper insights into student competency.
+Custom Experiment Builder: Need a specific practical? Our AI-powered builder allows teachers to create custom laboratory scenarios in minutes. This rapid content generation means we can support any client requirement or niche curriculum need instantly; you are never limited to a fixed library.
+True Sandbox Freedom: Unlike "on-rails" simulations, students have complete freedom to mix reagents, design protocols, and make mistakes. This freedom is what powers our dynamic assessment (and is why we're considered fun by students!).
+Ethical Gamification: Students earn points for completing practicals and mastering skills, which can be spent in our non-monetized in-game shop. Rewards include WhimsyCat skins, custom lab music tracks, and unlocking creative art extracurriculars, driving engagement through intrinsic motivation, not microtransactions.
+Authentic Physicality: Students must physically manipulate equipment with authentic hand movements, building genuine muscle memory and ensuring data collection is a result of physical skill and active recall.
+Inclusive by Design: Built for SEND accessibility with multisensory learning aids, supporting students with diverse learning needs through immersive, self-paced exploration.
+Offline-First: Full functionality with intermittent or no internet connectivity with laboratory preloading technology.
+
+Global Reach & Flexibility
+
+Global Curriculum Alignment: We support curriculum standards worldwide, covering 100% of required practicals for the UK, USA, China, India, Japan, South Korea, Canada, France, Germany, Spain, and Thailand. (And more these are just the markets we've integrated with atm)
+Seamless Web & VR Integration: Use WhimsyLabs your way. Our platform supports Web and VR simultaneously for all users. You can deploy on just VR, just Web, or a hybrid of both. Allowing students to build skills in immersive VR and review on laptops at home unlimited by hardware avaliblity. Perfect for introducing concepts in VR in school, and assigning web practicals as homework.
+Multi-Platform support: Seamless performance on VR headsets, Desktops, and Chromebooks with no loss of fidelity, depth or access. Tablet support coming by end of year.
+
+Winner of the BETT 2025 Kids Choice Award, WhimsyLabs is defining the next generation of science education. Visit our booth to experience the future of virtual labs, with a live VR and Desktop demo where failure is a learning tool, and curiosity has no limits.
+
+LIVE DEMO: Visit our booth to try the platform yourself! Experience our "Physicality-First" interactions on both VR headsets and standard laptops, and see how we turn "cheating-proof" assessment into a powerful learning tool.
+
+Keywords: Virtual Science Labs, AI Tutoring, STEM Education, Sandbox Learning, Virtual Reality Education, SEND Accessibility, Sustainable Science, EdTech Innovation.

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run generate-blog-data:*)",
+      "Bash(node scripts/generate-blog-data.js:*)"
+    ]
+  }
+}

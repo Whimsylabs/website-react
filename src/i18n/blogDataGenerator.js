@@ -5,11 +5,19 @@
 
 const blogPosts = [
   'post1',
-  'post2', 
+  'post2',
   'post3',
   'post4',
   'post5',
-  'post6'
+  'post6',
+  'post7',
+  'post8',
+  'post9',
+  'post10',
+  'post11',
+  'post12',
+  'post13',
+  'post14'
 ];
 
 const supportedLanguages = ['en', 'de', 'fr', 'es'];

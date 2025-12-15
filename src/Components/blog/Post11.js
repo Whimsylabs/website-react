@@ -6,6 +6,13 @@ export const date = "2025-08-20";
 export const slug = "virtual-labs-vs-physical-labs-cost-benefit-analysis";
 export const description =
   "Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.";
+export const keywords = [
+  "virtual vs physical labs",
+  "cost-benefit analysis",
+  "STEM education costs",
+  "educational equity",
+  "school budget optimization"
+];
 
 export const content = (
   <div>

@@ -52,9 +52,24 @@ The app will run in development mode at [http://localhost:3000](http://localhost
 
 ## Available Scripts
 
-- npm run build-static - Builds the website as deployed for github pages (I think npm run build doesn't work so don't use that)
-- node dev-server.js (I think, might actually be a npx command)
-- Actually it's npx serve -s build
+### Development
+- `npm start` - Run development server (port 3000)
+- `npm run dev` - Build and run dev server with auto-rebuild (port 3001)
+- `npx serve -s build` - Serve built site locally
+
+### Building
+- `npm run build-static` - **Primary build command** for production (builds React + static HTML)
+- `npm run build-english-only` - Build English-only version (faster for testing)
+- `npm run clean-build` - Clean build directory
+
+### Blog Management
+- `npm run generate-blog-data` - Generate blog metadata from translation files (run after adding/editing posts)
+- See [docs/ADDING_BLOG_POSTS.md](docs/ADDING_BLOG_POSTS.md) for detailed instructions on adding blog posts
+
+### Deployment
+- `npm run deploy` - Build and deploy to GitHub Pages
+
+**Note**: Do NOT use `npm run build` alone - it doesn't include static HTML generation. Always use `npm run build-static`.
 
 ## Deployment
 

@@ -6,6 +6,13 @@ export const date = "2025-05-10";
 export const slug = "whimsycat-ai-tutor-transforming-science-education";
 export const description =
   "How WhimsyLabs' advanced AI tutor provides personalized guidance, real-time feedback, and adaptive learning pathways to revolutionize laboratory education.";
+export const keywords = [
+  "WhimsyCat AI tutor",
+  "personalized learning",
+  "AI in education",
+  "virtual laboratory",
+  "STEM education"
+];
 
 export const content = (
   <div>

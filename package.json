@@ -34,6 +34,7 @@
     "build-static": "npm run build-spa && node build.js",
     "build-english-only": "npm run build-spa && node scripts/build-english-only.js",
     "clean-build": "node scripts/clean-build.js",
+    "generate-blog-data": "node scripts/generate-blog-data.js",
     "generate-faq-translations": "node scripts/generate-faq-translations.js",
     "validate-translations": "node scripts/validate-translations.js",
     "validate-faq-translations": "node scripts/validate-faq-translations.js",

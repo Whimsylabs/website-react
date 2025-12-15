@@ -6,6 +6,13 @@ export const date = "2026-10-25";
 export const slug = "gamification-science-education-points-rewards-engagement";
 export const description =
   "Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.";
+export const keywords = [
+  "gamification in education",
+  "STEM engagement",
+  "educational rewards",
+  "intrinsic motivation",
+  "game-based learning"
+];
 
 export const content = (
   <div>

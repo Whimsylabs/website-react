@@ -6,6 +6,13 @@ export const date = "2025-04-15";
 export const slug = "ai-powered-virtual-labs-solving-education-crisis";
 export const description =
   "WhimsyLabs' innovative virtual laboratory platform combines advanced AI assessment, realistic physics simulations, and sandbox learning to democratize high-quality science education globally.";
+export const keywords = [
+  "AI-powered virtual labs",
+  "STEM education crisis",
+  "educational technology",
+  "virtual laboratory",
+  "science education"
+];
 
 export const content = (
   <div>

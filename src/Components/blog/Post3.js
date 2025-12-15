@@ -5,6 +5,13 @@ export const date = "2025-03-19";
 export const slug = "virtual-kidney-dissection-send-engagement";
 export const description =
   "Exploring how WhimsyLabs' physical interaction in virtual environments significantly improves educational outcomes and engagement for SEND students.";
+export const keywords = [
+  "virtual dissection",
+  "SEND education",
+  "kidney anatomy",
+  "VR learning",
+  "accessibility in education"
+];
 
 export const content = (
   <div>

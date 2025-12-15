@@ -5,6 +5,13 @@ export const date = "2025-01-27";
 export const slug = "whimsylabs-education-revolution";
 export const description =
   "How Whimsylabs, founded by Marisa French, is addressing STEM challenges with fully simulated labs, impactful partnerships, and award-winning innovation.";
+export const keywords = [
+  "virtual laboratory history",
+  "BETT 2025 winner",
+  "STEM education innovation",
+  "COVID-19 education solutions",
+  "proprietary physics engine"
+];
 export const content = (
   <div>
     <p>

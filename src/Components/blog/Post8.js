@@ -6,6 +6,13 @@ export const date = "2025-07-02";
 export const slug = "virtual-labs-solve-stem-teacher-shortage-crisis";
 export const description =
   "Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.";
+export const keywords = [
+  "STEM teacher shortage",
+  "virtual labs for schools",
+  "automated assessment",
+  "AI tutoring support",
+  "teacher workload reduction"
+];
 
 export const content = (
   <div>

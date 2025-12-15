@@ -6,6 +6,13 @@ export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =
   "Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.";
+export const keywords = [
+  "24/7 AI tutoring",
+  "personalized learning recommendations",
+  "gamified education",
+  "STEM catch-up support",
+  "adaptive learning technology"
+];
 
 export const content = (
   <div>

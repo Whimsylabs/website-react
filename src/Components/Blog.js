@@ -15,6 +15,14 @@ import * as Post3 from './blog/Post3';
 import * as Post4 from "./blog/Post4";
 import * as Post5 from "./blog/Post5";
 import * as Post6 from "./blog/Post6";
+import * as Post7 from './blog/Post7';
+import * as Post8 from './blog/Post8';
+import * as Post9 from './blog/Post9';
+import * as Post10 from './blog/Post10';
+import * as Post11 from './blog/Post11';
+import * as Post12 from './blog/Post12';
+import * as Post13 from './blog/Post13';
+import * as Post14 from './blog/Post14';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -59,17 +67,81 @@ const fallbackPosts = [
     content: Post6.content,
     date: Post6.date,
     description: Post6.description,
+  },
+  {
+    id: Post7.slug,
+    title: Post7.title,
+    content: Post7.content,
+    date: Post7.date,
+    description: Post7.description,
+  },
+  {
+    id: Post8.slug,
+    title: Post8.title,
+    content: Post8.content,
+    date: Post8.date,
+    description: Post8.description,
+  },
+  {
+    id: Post9.slug,
+    title: Post9.title,
+    content: Post9.content,
+    date: Post9.date,
+    description: Post9.description,
+  },
+  {
+    id: Post10.slug,
+    title: Post10.title,
+    content: Post10.content,
+    date: Post10.date,
+    description: Post10.description,
+  },
+  {
+    id: Post11.slug,
+    title: Post11.title,
+    content: Post11.content,
+    date: Post11.date,
+    description: Post11.description,
+  },
+  {
+    id: Post12.slug,
+    title: Post12.title,
+    content: Post12.content,
+    date: Post12.date,
+    description: Post12.description,
+  },
+  {
+    id: Post13.slug,
+    title: Post13.title,
+    content: Post13.content,
+    date: Post13.date,
+    description: Post13.description,
+  },
+  {
+    id: Post14.slug,
+    title: Post14.title,
+    content: Post14.content,
+    date: Post14.date,
+    description: Post14.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
 // Mapping from old slugs to new post IDs
 const slugToPostId = {
   'whimsylabs-education-revolution': 'post1',
-  'physicality-in-virtual-labs': 'post2', 
+  'physicality-in-virtual-labs': 'post2',
   'virtual-kidney-dissection-send-engagement': 'post3',
   'ai-powered-virtual-labs-solving-education-crisis': 'post4',
   'whimsycat-ai-tutor-transforming-science-education': 'post5',
-  'sandbox-learning-revolution-stem-education': 'post6'
+  'sandbox-learning-revolution-stem-education': 'post6',
+  'green-labs-sustainability-virtual-stem-education': 'post7',
+  'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
+  '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
+  'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
+  'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
+  'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
+  'science-real-time-physics-simulations-virtual-labs': 'post13',
+  'gamification-science-education-points-rewards-engagement': 'post14'
 };
 
 // Reverse mapping from post IDs to slugs

@@ -6,6 +6,13 @@ export const date = "2025-09-15";
 export const slug = "virtual-reality-prepares-students-real-world-stem-careers";
 export const description =
   "Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.";
+export const keywords = [
+  "VR career preparation",
+  "STEM workforce training",
+  "virtual reality skills",
+  "laboratory safety training",
+  "future of work"
+];
 
 export const content = (
   <div>

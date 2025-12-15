@@ -6,6 +6,13 @@ export const date = "2025-02-03";
 export const slug = "physicality-in-virtual-labs";
 export const description =
   "Exploring how Whimsylabs' groundbreaking liquid physics and procedural training redefine science education.";
+export const keywords = [
+  "virtual lab physicality",
+  "liquid physics simulation",
+  "procedural training",
+  "muscle memory development",
+  "advanced virtual laboratory"
+];
 
 export const content = (
   <div>
