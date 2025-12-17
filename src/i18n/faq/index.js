@@ -10,7 +10,7 @@ const faqTranslations = {
   es,
   fr,
   de,
-  ja
+  jp: ja
 };
 
 export default faqTranslations;

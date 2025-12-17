@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Space between logos */
+    gap: 30px; /* Space between logos */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 

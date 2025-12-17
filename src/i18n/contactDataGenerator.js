@@ -12,12 +12,12 @@ const contactTranslations = {
   es: contactEs.default || contactEs,
   fr: contactFr.default || contactFr,
   de: contactDe.default || contactDe,
-  ja: contactJa.default || contactJa,
+  jp: contactJa.default || contactJa,
 };
 
 /**
  * Get contact translations for a specific language
- * @param {string} lang - Language code (en, es, fr, de, ja)
+ * @param {string} lang - Language code (en, es, fr, de, jp)
  * @returns {Object} Contact translations for the specified language
  */
 function getContactTranslations(lang = 'en') {

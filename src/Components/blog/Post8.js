@@ -121,6 +121,10 @@ export const content = (
     </p>
 
     <p>
+      In addition, we have taken notes from some of the most successful tutorialisation models, 
+    </p>
+
+    <p>
       This 24/7 accessibility is particularly crucial for addressing educational inequality. Students who miss school due to illness, have limited teacher access in underfunded schools, or require additional support outside classroom hours can continue learning without falling behind. The AI tutor never tires, never loses patience, and can simultaneously support unlimited students—something impossible with human teachers alone.
     </p>
 

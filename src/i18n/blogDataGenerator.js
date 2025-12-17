@@ -18,11 +18,12 @@ import * as Post11 from '../Components/blog/Post11';
 import * as Post12 from '../Components/blog/Post12';
 import * as Post13 from '../Components/blog/Post13';
 import * as Post14 from '../Components/blog/Post14';
+import * as Post15 from '../Components/blog/Post15';
 
 // Create dynamic mapping of all posts
 const ALL_POSTS = [
-  Post1, Post2, Post3, Post4, Post5, Post6, Post7, 
-  Post8, Post9, Post10, Post11, Post12, Post13, Post14
+  Post1, Post2, Post3, Post4, Post5, Post6, Post7,
+  Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15
 ];
 
 // Generate blog post IDs dynamically
@@ -32,11 +33,20 @@ const blogPosts = ALL_POSTS.map((_, index) => `post${index + 1}`).filter((postId
   return post && post.slug && post.date;
 });
 
-const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
+const supportedLanguages = ['en', 'de', 'fr', 'es', 'jp'];
+
+// Map language codes to file names (jp -> ja for file imports)
+const languageFileMap = {
+  'en': 'en',
+  'de': 'de',
+  'fr': 'fr',
+  'es': 'es',
+  'jp': 'ja'
+};
 
 /**
  * Get translated blog post data for a specific language and post
- * @param {string} language - Language code (en, de, fr, es, ja)
+ * @param {string} language - Language code (en, de, fr, es, jp)
  * @param {string} postNumber - Post number (post1, post2, etc.)
  * @returns {Object} Translated blog post data
  */
@@ -46,22 +56,39 @@ export async function getBlogPostTranslation(language = 'en', postNumber) {
     const postIndex = parseInt(postNumber.replace('post', '')) - 1;
     const originalPost = ALL_POSTS[postIndex];
 
-    // Try to import the specific language version
-    const postModule = await import(`./blog/${postNumber}/${language}.js`);
+    // Map language code to file name
+    const languageFile = languageFileMap[language] || language;
 
-    // If content is null, fall back to English
-    if (!postModule.content && language !== 'en') {
-      const englishModule = await import(`./blog/${postNumber}/en.js`);
-      return {
-        title: postModule.title || englishModule.title,
-        description: postModule.description || englishModule.description,
-        content: englishModule.content,
-        slug: originalPost?.slug,
-        date: originalPost?.date,
-        hasFullTranslation: false,
-        language: language,
-        fallbackLanguage: 'en'
-      };
+    // Try to import the specific language version
+    const postModule = await import(`./blog/${postNumber}/${languageFile}.js`);
+
+    // If content is null, fall back to original Component file (for English) or English translation (for other languages)
+    if (!postModule.content) {
+      if (language === 'en') {
+        // For English, use the original Component file content
+        return {
+          title: postModule.title || originalPost.title,
+          description: postModule.description || originalPost.description,
+          content: originalPost.content, // Use the Component file content
+          slug: originalPost?.slug,
+          date: originalPost?.date,
+          hasFullTranslation: true,
+          language: language
+        };
+      } else {
+        // For other languages, fall back to English
+        const englishModule = await import(`./blog/${postNumber}/en.js`);
+        return {
+          title: postModule.title || englishModule.title,
+          description: postModule.description || englishModule.description,
+          content: englishModule.content || originalPost.content, // Fall back to Component if English also null
+          slug: originalPost?.slug,
+          date: originalPost?.date,
+          hasFullTranslation: false,
+          language: language,
+          fallbackLanguage: 'en'
+        };
+      }
     }
 
     return {
@@ -77,22 +104,22 @@ export async function getBlogPostTranslation(language = 'en', postNumber) {
   } catch (error) {
     console.warn(`Could not load blog post ${postNumber} for language ${language}:`, error.message);
 
-    // Fallback to English
+    // Fallback to original Component file
     try {
       const postIndex = parseInt(postNumber.replace('post', '')) - 1;
       const originalPost = ALL_POSTS[postIndex];
-      const englishModule = await import(`./blog/${postNumber}/en.js`);
+
       return {
-        title: englishModule.title,
-        description: englishModule.description,
-        content: englishModule.content,
+        title: originalPost.title,
+        description: originalPost.description,
+        content: originalPost.content,
         slug: originalPost?.slug,
         date: originalPost?.date,
         hasFullTranslation: true,
         language: 'en',
         fallbackLanguage: 'en'
       };
-    } catch (englishError) {
+    } catch (fallbackError) {
       return {
         title: "Blog Post Not Found",
         description: "This blog post is not available.",

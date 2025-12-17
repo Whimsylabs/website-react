@@ -21,9 +21,9 @@ const config = {
   publicDir: "./public",
   siteUrl: "https://whimsylabs.ai",
   // Set to ['en'] to build only English, or add/remove languages as needed
-  supportedLanguages: process.env.BUILD_LANGUAGES ? 
-    process.env.BUILD_LANGUAGES.split(',') : 
-    ['en', 'es', 'fr', 'de'],
+  supportedLanguages: process.env.BUILD_LANGUAGES ?
+    process.env.BUILD_LANGUAGES.split(',') :
+    ['en', 'es', 'fr', 'de', 'jp'],
   defaultLanguage: 'en'
 };
 
@@ -335,8 +335,9 @@ async function getBlogPosts(language = 'en') {
     const Post12 = require("./src/Components/blog/Post12.js");
     const Post13 = require("./src/Components/blog/Post13.js");
     const Post14 = require("./src/Components/blog/Post14.js");
+    const Post15 = require("./src/Components/blog/Post15.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -372,6 +373,7 @@ async function getBlogPosts(language = 'en') {
       const Post12 = require("./src/Components/blog/Post12.js");
       const Post13 = require("./src/Components/blog/Post13.js");
       const Post14 = require("./src/Components/blog/Post14.js");
+      const Post15 = require("./src/Components/blog/Post15.js");
 
       const fallbackPosts = [
         {
@@ -511,6 +513,16 @@ async function getBlogPosts(language = 'en') {
           description: Post14.description,
           content: Post14.content,
           path: `/blog/${Post14.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post15.slug,
+          title: Post15.title,
+          date: Post15.date,
+          description: Post15.description,
+          content: Post15.content,
+          path: `/blog/${Post15.slug}`,
           language: 'en',
           hasFullTranslation: true
         }

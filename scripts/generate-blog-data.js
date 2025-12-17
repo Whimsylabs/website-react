@@ -9,9 +9,9 @@ const path = require('path');
 const blogPosts = [
   'post1', 'post2', 'post3', 'post4', 'post5', 'post6',
   'post7', 'post8', 'post9', 'post10', 'post11', 'post12',
-  'post13', 'post14'
+  'post13', 'post14', 'post15'
 ];
-const supportedLanguages = ['en', 'de', 'fr', 'es'];
+const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
 // Mapping from post IDs to slugs (from the original blog components)
 const postIdToSlug = {
@@ -28,25 +28,27 @@ const postIdToSlug = {
   'post11': 'virtual-labs-vs-physical-labs-cost-benefit-analysis',
   'post12': 'virtual-reality-prepares-students-real-world-stem-careers',
   'post13': 'science-real-time-physics-simulations-virtual-labs',
-  'post14': 'gamification-science-education-points-rewards-engagement'
+  'post14': 'gamification-science-education-points-rewards-engagement',
+  'post15': 'whimsylabs-bett-2026-exhibition-announcement'
 };
 
 // Dates from the original blog components
 const postDates = {
-  'post1': '2025-01-27',
-  'post2': '2025-02-03',
-  'post3': '2025-03-19',
-  'post4': '2025-04-15',
-  'post5': '2025-05-10',
-  'post6': '2025-06-05',
-  'post7': '2025-07-01',
-  'post8': '2025-07-15',
-  'post9': '2025-08-01',
-  'post10': '2025-08-15',
-  'post11': '2025-09-01',
-  'post12': '2025-09-15',
-  'post13': '2025-10-01',
-  'post14': '2025-10-15'
+  post1: "2025-01-27",
+  post2: "2025-02-03",
+  post3: "2025-03-19",
+  post4: "2025-04-15",
+  post5: "2025-05-10",
+  post6: "2025-06-05",
+  post7: "2025-07-01",
+  post8: "2025-07-15",
+  post9: "2025-08-01",
+  post10: "2025-08-15",
+  post11: "2025-09-01",
+  post12: "2025-09-15",
+  post13: "2025-10-01",
+  post14: "2025-10-15",
+  post15: "2025-12-05",
 };
 
 async function generateBlogData() {

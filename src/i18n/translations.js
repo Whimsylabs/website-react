@@ -301,7 +301,7 @@ const translations = {
     },
   },
 
-  ja: {
+  jp: {
     // Navigation
     nav: {
       home: "ホーム",
@@ -313,7 +313,7 @@ const translations = {
     },
 
     // Homepage - imported from separate file
-    home: homeTranslations.ja,
+    home: homeTranslations.jp,
 
     // Features
     features: {
@@ -332,7 +332,7 @@ const translations = {
     },
 
     // Contact - imported from separate file
-    contact: contactTranslations.ja,
+    contact: contactTranslations.jp,
 
     // FAQ
     faq: {

@@ -12,12 +12,12 @@ const homeTranslations = {
   es: homeEs.default || homeEs,
   fr: homeFr.default || homeFr,
   de: homeDe.default || homeDe,
-  ja: homeJa.default || homeJa,
+  jp: homeJa.default || homeJa,
 };
 
 /**
  * Get home translations for a specific language
- * @param {string} lang - Language code (en, es, fr, de, ja)
+ * @param {string} lang - Language code (en, es, fr, de, jp)
  * @returns {Object} Home translations for the specified language
  */
 function getHomeTranslations(lang = 'en') {
