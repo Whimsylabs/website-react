@@ -6,6 +6,7 @@ const homeEs = require('./home/es.js');
 const homeFr = require('./home/fr.js');
 const homeDe = require('./home/de.js');
 const homeJa = require('./home/ja.js');
+const homeAr = require('./home/ar.js');
 
 const homeTranslations = {
   en: homeEn.default || homeEn,
@@ -13,11 +14,12 @@ const homeTranslations = {
   fr: homeFr.default || homeFr,
   de: homeDe.default || homeDe,
   ja: homeJa.default || homeJa,
+  ar: homeAr.default || homeAr,
 };
 
 /**
  * Get home translations for a specific language
- * @param {string} lang - Language code (en, es, fr, de, ja)
+ * @param {string} lang - Language code (en, es, fr, de, ja, ar)
  * @returns {Object} Home translations for the specified language
  */
 function getHomeTranslations(lang = 'en') {
