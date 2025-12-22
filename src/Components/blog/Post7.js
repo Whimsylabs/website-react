@@ -40,7 +40,7 @@ export const content = (
       the need for physical chemicals, single-use plastics, energy-intensive
       equipment, and hazardous waste disposal, our virtual labs dramatically
       reduce the environmental footprint of science education while
-      maintaining—and in many ways exceeding—the educational effectiveness of
+      maintaining, and in many ways exceeding, the educational effectiveness of
       traditional laboratories.
     </p>
 
@@ -119,7 +119,7 @@ export const content = (
     />
     <p className="caption">
       WhimsyLabs enables unlimited experimentation without environmental
-      impact—this student is learning about flammable substances through safe,
+      impact: this student is learning about flammable substances through safe,
       waste-free virtual exploration.
     </p>
 
@@ -129,8 +129,8 @@ export const content = (
       The energy savings from WhimsyLabs extend beyond eliminating physical
       equipment. Traditional laboratories require constant ventilation, climate
       control, and specialized equipment that runs continuously regardless of
-      usage. Fume hoods alone—essential safety equipment in chemistry
-      labs—consume enormous amounts of energy through constant air circulation
+      usage. Fume hoods alone (essential safety equipment in chemistry
+      labs) consume enormous amounts of energy through constant air circulation
       and replacement.
     </p>
 
@@ -191,7 +191,7 @@ export const content = (
     <h2>Green Chemistry Principles in WhimsyLabs Design</h2>
 
     <p>
-      WhimsyLabs' platform embodies the core principles of green chemistry—
+      WhimsyLabs' platform embodies the core principles of green chemistry:
       waste prevention, atom economy, less hazardous chemical synthesis,
       designing safer chemicals, safer solvents and auxiliaries, energy
       efficiency, use of renewable feedstocks, and reduction of derivatives. By
@@ -350,7 +350,7 @@ export const content = (
       By choosing WhimsyLabs, educational institutions make a powerful
       statement: that we can inspire the next generation of scientists while
       protecting the planet they will inherit. This is not just sustainable
-      education—it is education for sustainability, preparing students to solve
+      education, it is education for sustainability, preparing students to solve
       the environmental challenges of tomorrow while minimizing our impact
       today.
     </p>

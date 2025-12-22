@@ -7,6 +7,13 @@ export const date = "2026-10-02";
 export const slug = "science-real-time-physics-simulations-virtual-labs";
 export const description =
   "Entdecken Sie, wie WhimsyLabs' bahnbrechende Echtzeit-Computerphysik die ausgefeilteste und wirklich unterhaltsame virtuelle Laborplattform schafft, die Gaming-Prinzipien nutzt, um naturwissenschaftliche Bildung ansprechend zu gestalten.";
+export const keywords = [
+  "Chemielabore für Schulen",
+  "Physiklabore für Schulen",
+  "virtuelle Biologielabore",
+  "sichere wissenschaftliche Experimente",
+  "lehrplanorientierte Labore"
+];
 
 export const content = (
   <div>

@@ -5,6 +5,13 @@ export const title =
   "Gamificación en la educación científica: Cómo los puntos, las recompensas y la expresión creativa impulsan el compromiso en WhimsyLabs";
 export const description =
   "Explorando el sistema integral de gamificación no monetizado de WhimsyLabs, que incluye puntos por evaluaciones, recomendaciones de laboratorio personalizadas, recompensas cosméticas, personalización de laboratorio y creación artística, que mejora las conexiones sociales en lugar de reemplazarlas.";
+export const keywords = [
+  "gamificación en educación",
+  "compromiso STEM",
+  "recompensas educativas",
+  "motivación intrínseca",
+  "aprendizaje basado en juegos"
+];
 
 export const content = (
   <div>

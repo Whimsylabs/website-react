@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Grüne Labore, grünere Zukunft: Wie virtuelle Labore die Nachhaltigkeit in der MINT-Bildung transformieren";
 export const description = "Eine Untersuchung darüber, wie WhimsyLabs' virtuelle Laborplattform die Umweltkrise in der traditionellen naturwissenschaftlichen Bildung angeht und gleichzeitig nachhaltige Entwicklungsziele vorantreibt.";
+export const keywords = [
+  "grüne Labore",
+  "nachhaltige STEM-Bildung",
+  "Umweltauswirkungen virtueller Labore",
+  "abfallfreie Wissenschaft",
+  "CO2-Fußabdruck-Reduktion"
+];
 
 export const content = (
   <div>

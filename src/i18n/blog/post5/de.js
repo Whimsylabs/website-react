@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Lernen Sie WhimsyCat kennen: Der revolutionäre KI-Tutor, der die wissenschaftliche Bildung transformiert";
 export const description = "Wie WhimsyLabs' fortschrittlicher KI-Tutor personalisierte Anleitung, Echtzeit-Feedback und adaptive Lernwege bietet, um die Laborausbildung zu revolutionieren.";
+export const keywords = [
+  "WhimsyCat KI-Tutor",
+  "personalisiertes Lernen",
+  "KI in der Bildung",
+  "virtuelles Labor",
+  "STEM-Bildung"
+];
 
 export const content = (
   <div>

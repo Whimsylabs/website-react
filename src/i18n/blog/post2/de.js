@@ -3,7 +3,13 @@ import React from "react";
 
 export const title = "Die Bedeutung von Physikalität in virtuellen Laboren: Ein Schritt über die traditionelle Simulationen hinaus";
 export const description = "Entdecken sie, wie Whimsylabs bahnbrechende Flüssigkeitsphysik und Verfahrensschulung die wissenschaftliche Bildung neu definiert.";
-
+export const keywords = [
+  "virtuelles Labor Physikalität",
+  "Flüssigkeitsphysik Simulation",
+  "Verfahrensschulung",
+  "Muskelgedächtnis Entwicklung",
+  "fortgeschrittenes virtuelles Labor"
+];
 export const content = (
   <div>
     <p>

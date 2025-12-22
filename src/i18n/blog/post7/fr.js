@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Laboratoires verts, avenir plus vert : Comment les laboratoires virtuels transforment la durabilité dans l'enseignement STEM";
 export const description = "Explorer comment la plateforme de laboratoire virtuel de WhimsyLabs répond à la crise environnementale dans l'enseignement scientifique traditionnel tout en faisant progresser les objectifs de développement durable.";
+export const keywords = [
+  "laboratoires verts",
+  "éducation STEM durable",
+  "impact environnemental des laboratoires virtuels",
+  "science zéro déchet",
+  "réduction de l'empreinte carbone"
+];
 
 export const content = (
   <div>

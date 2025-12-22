@@ -3,7 +3,17 @@ import React from "react";
 
 export const title = "Une brève histoire de WhimsyLabs : De nos débuts modestes à un gagnant BETT 2025";
 export const description = "Comment WhimsyLabs, fondé par Marisa French, aborde les défis STEM avec des laboratoires entièrement simulés, des partenariats impactants et une innovation primée.";
-
+export const keywords = [
+  "histoire laboratoire virtuel",
+  "BETT 2025 gagnant",
+  "innovation éducation STEM",
+  "solutions éducation COVID-19",
+  "moteur physique propriétaire",
+  "histoire fondation WhimsyLabs",
+  "Marisa French fondatrice",
+  "développement laboratoire virtuel",
+  "parcours startup EdTech"
+];
 export const content = (
   <div>
     <p>

@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Revolutionierung der STEM-Bildung: Wie WhimsyLabs' KI-gestützte virtuelle Labore die globale wissenschaftliche Bildungskrise lösen";
 export const description = "WhimsyLabs' innovative virtuelle Laborplattform kombiniert fortschrittliche KI-Bewertung, realistische Physiksimulationen und Sandbox-Lernen, um hochwertige wissenschaftliche Bildung global zu demokratisieren.";
+export const keywords = [
+  "KI-gestützte virtuelle Labore",
+  "STEM-Bildungskrise",
+  "Bildungstechnologie",
+  "virtuelles Labor",
+  "naturwissenschaftliche Bildung"
+];
 
 export const content = (
   <div>

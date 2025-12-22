@@ -5,6 +5,13 @@ export const title =
   "実践的学習：仮想腎臓解剖がSEND生徒の関与を高める";
 export const description =
   "WhimsyLabsの仮想環境における物理的相互作用が、SEND生徒の教育成果と関与をどのように大幅に改善するかを探ります。";
+export const keywords = [
+  "仮想解剖",
+  "特別支援教育",
+  "腎臓解剖学",
+  "VR学習",
+  "教育におけるアクセシビリティ"
+];
 
 export const content = (
   <div>

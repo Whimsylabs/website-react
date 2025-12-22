@@ -68,14 +68,31 @@ async function generateBlogData() {
           // Read the file content
           const fileContent = await fs.readFile(translationPath, 'utf8');
           
-          // Extract title and description using regex
+          // Extract title, description, and keywords using regex
           const titleMatch = fileContent.match(/export const title = ["'`](.*?)["'`];/s);
           const descriptionMatch = fileContent.match(/export const description = ["'`](.*?)["'`];/s);
+          const keywordsMatch = fileContent.match(/export const keywords = \[([\s\S]*?)\];/);
           const contentMatch = fileContent.match(/export const content = \(([\s\S]*?)\);$/);
-          
+
           const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;
           const description = descriptionMatch ? descriptionMatch[1] : 'Blog post description';
           const hasContent = !!contentMatch;
+
+          // Parse keywords array if it exists
+          let keywords = null;
+          if (keywordsMatch) {
+            try {
+              const keywordsString = keywordsMatch[1]
+                .split('\n')
+                .map(line => line.trim())
+                .filter(line => line && !line.startsWith('//'))
+                .map(line => line.replace(/^["']|["'],?$/g, ''))
+                .filter(k => k);
+              keywords = keywordsString;
+            } catch (e) {
+              console.warn(`Could not parse keywords for ${postId} in ${language}`);
+            }
+          }
           
           // For now, we'll mark that content exists but won't try to render it here
           // The BlogPost component will handle the actual content rendering
@@ -85,6 +102,7 @@ async function generateBlogData() {
             slug: postIdToSlug[postId],
             title: title,
             description: description,
+            keywords: keywords,
             date: postDates[postId],
             hasFullTranslation: hasContent,
             language: language
@@ -101,15 +119,33 @@ async function generateBlogData() {
               const englishContent = await fs.readFile(englishPath, 'utf8');
               const titleMatch = englishContent.match(/export const title = ["'`](.*?)["'`];/s);
               const descriptionMatch = englishContent.match(/export const description = ["'`](.*?)["'`];/s);
-              
+              const keywordsMatch = englishContent.match(/export const keywords = \[([\s\S]*?)\];/);
+
               const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;
               const description = descriptionMatch ? descriptionMatch[1] : 'Blog post description';
-              
+
+              // Parse keywords array if it exists
+              let keywords = null;
+              if (keywordsMatch) {
+                try {
+                  const keywordsString = keywordsMatch[1]
+                    .split('\n')
+                    .map(line => line.trim())
+                    .filter(line => line && !line.startsWith('//'))
+                    .map(line => line.replace(/^["']|["'],?$/g, ''))
+                    .filter(k => k);
+                  keywords = keywordsString;
+                } catch (e) {
+                  console.warn(`Could not parse keywords for ${postId} in English fallback`);
+                }
+              }
+
               blogData[language].push({
                 id: postId,
                 slug: postIdToSlug[postId],
                 title: title,
                 description: description,
+                keywords: keywords,
                 date: postDates[postId],
                 hasFullTranslation: false,
                 language: language,

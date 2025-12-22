@@ -5,6 +5,17 @@ export const title =
   "A Brief History of Whimsylabs: From our Humble Start to a BETT 2025 Winner";
 export const description =
   "How Whimsylabs, founded by Marisa French, is addressing STEM challenges with fully simulated labs, impactful partnerships, and award-winning innovation.";
+export const keywords = [
+  "virtual laboratory history",
+  "BETT 2025 winner",
+  "STEM education innovation",
+  "COVID-19 education solutions",
+  "proprietary physics engine",
+  "WhimsyLabs founding story",
+  "Marisa French founder",
+  "virtual lab development",
+  "EdTech startup journey"
+];
 export const content = (
   <div>
     <p>

@@ -339,6 +339,9 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
       <Helmet>
         <title>{post.title} | WhimsyLabs Blog</title>
         <meta name="description" content={post.description} />
+        {post.keywords && (
+          <meta name="keywords" content={Array.isArray(post.keywords) ? post.keywords.join(', ') : post.keywords} />
+        )}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
         <meta property="og:url" content={`https://whimsylabs.ai/blog/${post.id || post.slug}`} />

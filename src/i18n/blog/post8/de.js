@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Wie virtuelle Labore die MINT-Lehrkräftemangel-Krise lösen: Eine britische und globale Perspektive";
 export const description = "Erkundung, wie WhimsyLabs' KI-gestützte virtuelle Labore den katastrophalen MINT-Lehrkräftemangel in Großbritannien und weltweit durch 24/7-Nachhilfe und automatisierte Bewertung angehen.";
+export const keywords = [
+  "STEM-Lehrkräftemangel",
+  "virtuelle Labore für Schulen",
+  "automatisierte Bewertung",
+  "KI-Nachhilfeunterstützung",
+  "Reduzierung der Lehrerbelastung"
+];
 
 export const content = (
   <div>

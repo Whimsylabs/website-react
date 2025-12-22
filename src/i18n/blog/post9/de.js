@@ -7,6 +7,13 @@ export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =
   "Entdecken Sie, wie WhimsyLabs' intelligente tägliche und wöchentliche Laborempfehlungen, unterstützt durch KI-Analyse, Schülern helfen, schwache Bereiche durch risikoarme gamifizierte Übungen zu meistern und zu verhindern, dass sie zurückfallen.";
+export const keywords = [
+  "24/7 KI-Nachhilfe",
+  "Bildungsgerechtigkeit",
+  "personalisierte Lernunterstützung",
+  "ständig verfügbare Nachhilfe",
+  "adaptives Feedback"
+];
 
 export const content = (
   <div>

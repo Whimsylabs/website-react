@@ -5,6 +5,18 @@ export const title =
   "Nous exposons au Bett 2026 : Rejoignez-nous à Londres en janvier";
 export const description =
   "WhimsyLabs revient au Bett UK 2026 dans la Startup Zone pour présenter notre plateforme de laboratoire virtuel primée. Venez découvrir nos nouveautés au stand FS10.";
+export const keywords = [
+  "Bett 2026",
+  "Bett UK exposition",
+  "salon EdTech Londres",
+  "démo laboratoire virtuel",
+  "startup technologie éducative",
+  "WhimsyLabs Bett",
+  "ExCel Londres EdTech",
+  "innovation éducation STEM",
+  "plateforme laboratoire virtuel",
+  "technologie éducation scientifique"
+];
 export const content = (
   <div>
     <p>

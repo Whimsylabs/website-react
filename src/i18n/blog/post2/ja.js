@@ -3,7 +3,13 @@ import React from "react";
 
 export const title = "シミュレーション教材における身体性の重要性：従来のシミュレーションを超えた一歩";
 export const description = "Whimsylabsの画期的な液体物理学と手順トレーニングが、どのように理科教育を再定義しているかを探ります。";
-
+export const keywords = [
+  "仮想実験室 身体性",
+  "液体物理学 シミュレーション",
+  "手順トレーニング",
+  "筋肉記憶 発達",
+  "高度な仮想実験室"
+];
 export const content = (
   <div>
     <p>

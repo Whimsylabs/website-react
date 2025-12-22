@@ -5,6 +5,13 @@ export const title =
   "AIチューターにおける感情的知性:WhimsyCatが生徒のフラストレーションを検出し対応する方法";
 export const description =
   "生徒が困難に直面したときに、プレイヤーの行動、視線追跡、エンゲージメントパターンを監視し、積極的な感情サポートを提供するWhimsyCatの画期的なフラストレーション検出システムをご紹介します。";
+export const keywords = [
+  "感情的知性AI",
+  "感情的学習",
+  "生徒のウェルビーイング",
+  "AIチューターの共感",
+  "個別化された感情サポート"
+];
 
 export const content = (
   <div>

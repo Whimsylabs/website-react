@@ -5,6 +5,13 @@ export const title =
   "シミュレーション教材がSTEM教師不足の危機をどのように解決するか：英国および世界的視点";
 export const description =
   "WhimsyLabsのAI搭載シミュレーション教材が、24時間365日のチューターリングと自動評価を通じて、英国および世界中の学校に影響を与える壊滅的なSTEM教師不足にどのように対処しているかを探ります。";
+export const keywords = [
+  "STEM教師不足",
+  "学校向け仮想実験室",
+  "自動評価",
+  "AIチューターリングサポート",
+  "教師の作業負担軽減"
+];
 
 export const content = (
   <div>

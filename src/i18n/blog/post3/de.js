@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Praktisches Lernen: Virtuelle Sektion einer Niere verbessert Engagement von Studierenden mit besonderen Bedürfnissen ";
 export const description = "Entdecken sie, wie Whimsylabs physische Interaktion in der virtuellen Umgebung die Bildungsergebnisse und das Engagement für Studierende mit besonderen Bedürfnissen erheblich verbessert.";
+export const keywords = [
+  "virtuelle Sektion",
+  "Förderung besonderer Bildungsbedürfnisse",
+  "Nierenanatomie",
+  "VR-Lernen",
+  "Barrierefreiheit in der Bildung"
+];
 
 export const content = (
   <div>

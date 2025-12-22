@@ -3,7 +3,13 @@ import React from "react";
 
 export const title = "La importancia de la fisicalidad en laboratorios virtuales: Un paso más allá de las simulaciones tradicionales";
 export const description = "Explorando cómo la física de líquidos revolucionaria de WhimsyLabs y el entrenamiento procedimental redefinen la educación científica.";
-
+export const keywords = [
+  "laboratorio virtual fisicalidad",
+  "simulación física líquidos",
+  "entrenamiento procedimental",
+  "desarrollo memoria muscular",
+  "laboratorio virtual avanzado"
+];
 export const content = (
   <div>
     <p>

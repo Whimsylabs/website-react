@@ -5,6 +5,18 @@ export const title =
   "Bett 2026に出展いたします：1月にロンドンでお会いしましょう";
 export const description =
   "WhimsyLabsは、受賞歴のあるバーチャル実験室プラットフォームを展示するため、Bett UK 2026のスタートアップゾーンに戻ります。FS10ブースで新機能をご覧ください。";
+export const keywords = [
+  "Bett 2026",
+  "Bett UK 展示会",
+  "EdTech カンファレンス ロンドン",
+  "バーチャル実験室 デモ",
+  "教育テクノロジー スタートアップ",
+  "WhimsyLabs Bett",
+  "ExCel ロンドン EdTech",
+  "STEM教育 イノベーション",
+  "仮想実験室プラットフォーム",
+  "理科教育テクノロジー"
+];
 export const content = (
   <div>
     <p>

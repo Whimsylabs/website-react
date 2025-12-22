@@ -5,6 +5,13 @@ export const title =
   "La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial para la educación STEM";
 export const description =
   "Cómo el enfoque de exploración abierta de WhimsyLabs transforma la educación científica abrazando el fracaso como una herramienta de aprendizaje poderosa y fomentando el pensamiento científico auténtico.";
+export const keywords = [
+  "aprendizaje sandbox",
+  "fracaso productivo",
+  "educación STEM",
+  "laboratorio virtual",
+  "indagación científica"
+];
 
 export const content = (
   <div>

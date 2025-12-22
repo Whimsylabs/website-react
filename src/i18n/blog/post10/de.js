@@ -5,6 +5,13 @@ export const title =
   "Emotionale Intelligenz in KI-Tutoren: Wie WhimsyCat Frustration bei Schülern erkennt und darauf reagiert";
 export const description =
   "Erforschung von WhimsyCats bahnbrechendem Frustrationserken­nungssystem, das Spieleraktionen, Blickverfolgung und Engagement-Muster überwacht, um proaktive emotionale Unterstützung zu bieten, wenn Schüler Schwierigkeiten haben.";
+export const keywords = [
+  "emotionale Intelligenz KI",
+  "affektives Lernen",
+  "Schülerwohlbefinden",
+  "KI-Tutor-Empathie",
+  "personalisierte emotionale Unterstützung"
+];
 
 export const content = (
   <div>

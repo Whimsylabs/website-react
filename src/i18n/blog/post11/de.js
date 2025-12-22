@@ -7,6 +7,13 @@ export const date = "2025-08-20";
 export const slug = "virtual-labs-vs-physical-labs-cost-benefit-analysis";
 export const description =
   "Umfassender Kosten-Nutzen-Vergleich zwischen traditionellen physischen Laboratorien und der virtuellen Lösung von WhimsyLabs, mit Einblick, wie unser wirkungsorientierter, gemeinnütziger Ansatz die MINT-Bildung demokratisiert.";
+export const keywords = [
+  "Bildungsgerechtigkeit",
+  "zugängliche STEM-Bildung",
+  "Überbrückung von Leistungslücken",
+  "inklusives Lernen",
+  "Demokratisierung der naturwissenschaftlichen Bildung"
+];
 
 export const content = (
   <div>

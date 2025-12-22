@@ -3,6 +3,13 @@ import React from "react";
 
 export const title = "Conoce a WhimsyCat: El tutor de IA revolucionario transformando la educación científica";
 export const description = "Cómo el tutor de IA avanzado de WhimsyLabs proporciona orientación personalizada, retroalimentación en tiempo real y caminos de aprendizaje adaptativos para revolucionar la educación de laboratorio.";
+export const keywords = [
+  "tutor de IA WhimsyCat",
+  "aprendizaje personalizado",
+  "IA en educación",
+  "laboratorio virtual",
+  "educación STEM"
+];
 
 export const content = (
   <div>

@@ -59,7 +59,7 @@ export const content = (
       className="rounded shadow center limited-size"
     />
     <p className="caption">
-      Visit us at stand FS10 in the South Stand Startup Zone—we'll have live
+      Visit us at stand FS10 in the South Stand Startup Zone! We'll have live
       demos and hands-on experiences ready for you.
     </p>
 
@@ -79,8 +79,8 @@ export const content = (
       Our "Physicality-First" approach means that when you interact with our
       virtual lab, you're developing the same muscle memory and procedural
       fluency you'd gain in a physical laboratory. Research consistently
-      demonstrates that embodied learning—where physical actions are integrated
-      with cognitive processes—significantly enhances retention and
+      demonstrates that embodied learning; where physical actions are integrated
+      with cognitive processes, significantly enhances retention and
       understanding in science education (
       <a
         href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00625/full"
@@ -227,8 +227,8 @@ export const content = (
       Our virtual environment allows for customizable pacing, adjustable sensory
       inputs, and flexible interaction modes that adapt to individual student
       needs. Students who might struggle with the sensory overwhelm of a
-      physical laboratory—such as the chemical smells, the noise, the social
-      pressures, or the potential hazards—can learn at their own pace in
+      physical laboratory, such as the chemical smells, the noise, the social
+      pressures, or the potential hazards, can learn at their own pace in
       an environment they control. This isn't about lowering standards; it's
       about removing unnecessary barriers to learning while maintaining
       scientific rigor.
@@ -240,7 +240,7 @@ export const content = (
       We've written extensively about the environmental benefits of virtual
       laboratories, and this will be a major focus at our Bett 2026 booth.
       Traditional science labs consume enormous resources; up to 5 times more
-      energy and water than typical office spaces—and generate substantial
+      energy and water than typical office space, and generate substantial
       plastic waste through single-use consumables (
       <a
         href="https://pubs.rsc.org/en/content/articlehtml/2024/su/d4su00056k"
@@ -286,15 +286,6 @@ export const content = (
       WhimsyLabs feels like a real lab in ways that other virtual platforms
       don't, and why we're the one winning the student choice awards for a fun
       and educational platform.
-    </p>
-
-    <p>
-      We'll also have case studies from schools currently using WhimsyLabs,
-      including data on learning outcomes, time savings for teachers, and
-      student engagement metrics. These aren't cherry-picked success
-      stories—they're honest assessments from educators who've integrated our
-      platform into their teaching and can speak to both its strengths and areas
-      where we're still improving.
     </p>
 
     <h2>Why You Should Visit Us</h2>

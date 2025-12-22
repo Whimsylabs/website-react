@@ -7,6 +7,13 @@ export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =
   "Découvrez comment les recommandations de laboratoire quotidiennes et hebdomadaires intelligentes de WhimsyLabs, alimentées par l'analyse IA, aident les élèves à maîtriser les domaines faibles grâce à une pratique ludifiée à faible enjeu, empêchant les élèves de prendre du retard.";
+export const keywords = [
+  "tutorat IA 24/7",
+  "équité éducative",
+  "soutien d'apprentissage personnalisé",
+  "tutorat toujours disponible",
+  "rétroaction adaptative"
+];
 
 export const content = (
   <div>

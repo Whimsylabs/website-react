@@ -5,6 +5,13 @@ export const title =
   "Gamification in der naturwissenschaftlichen Bildung: Wie Punkte, Belohnungen und kreativer Ausdruck das Engagement in WhimsyLabs fördern";
 export const description =
   "Eine Untersuchung des umfassenden, nicht-monetarisierten Gamification-Systems von WhimsyLabs – einschließlich Punkte für Bewertungen, personalisierte Laborempfehlungen, kosmetische Belohnungen, Laborpersonalisierung und Kunstkreation – das soziale Verbindungen stärkt, anstatt sie zu ersetzen.";
+export const keywords = [
+  "Gamification in der Bildung",
+  "STEM-Engagement",
+  "Bildungsbelohnungen",
+  "intrinsische Motivation",
+  "spielbasiertes Lernen"
+];
 
 export const content = (
   <div>

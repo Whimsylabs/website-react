@@ -5,6 +5,13 @@ export const title =
   "Inteligencia emocional en tutores de IA: Cómo WhimsyCat detecta y responde a la frustración de los estudiantes";
 export const description =
   "Explorando el revolucionario sistema de detección de frustración de WhimsyCat que monitorea las acciones de los jugadores, el seguimiento de la mirada y los patrones de participación para proporcionar apoyo emocional proactivo cuando los estudiantes tienen dificultades.";
+export const keywords = [
+  "inteligencia emocional IA",
+  "aprendizaje afectivo",
+  "bienestar estudiantil",
+  "empatía del tutor IA",
+  "apoyo emocional personalizado"
+];
 
 export const content = (
   <div>

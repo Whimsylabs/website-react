@@ -70,6 +70,7 @@ export async function getBlogPostTranslation(language = 'en', postNumber) {
           title: postModule.title || originalPost.title,
           description: postModule.description || originalPost.description,
           content: originalPost.content, // Use the Component file content
+          keywords: postModule.keywords || originalPost.keywords,
           slug: originalPost?.slug,
           date: originalPost?.date,
           hasFullTranslation: true,
@@ -82,6 +83,7 @@ export async function getBlogPostTranslation(language = 'en', postNumber) {
           title: postModule.title || englishModule.title,
           description: postModule.description || englishModule.description,
           content: englishModule.content || originalPost.content, // Fall back to Component if English also null
+          keywords: postModule.keywords || englishModule.keywords || originalPost.keywords,
           slug: originalPost?.slug,
           date: originalPost?.date,
           hasFullTranslation: false,
@@ -95,6 +97,7 @@ export async function getBlogPostTranslation(language = 'en', postNumber) {
       title: postModule.title,
       description: postModule.description,
       content: postModule.content,
+      keywords: postModule.keywords,
       slug: originalPost?.slug,
       date: originalPost?.date,
       hasFullTranslation: !!postModule.content,
