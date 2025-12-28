@@ -1,0 +1,103 @@
+/* Scrolling Map Container */
+.scrolling-map-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.scrolling-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(31, 25, 104, 0.4),
+    0 0 40px rgba(218, 190, 255, 0.2),
+    inset 0 0 0 1px rgba(218, 190, 255, 0.3);
+  background: linear-gradient(135deg, rgba(31, 25, 104, 0.1) 0%, rgba(149, 206, 246, 0.1) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolling-map-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 25px 70px rgba(31, 25, 104, 0.5),
+    0 0 50px rgba(218, 190, 255, 0.3),
+    inset 0 0 0 1px rgba(218, 190, 255, 0.4);
+}
+
+.scrolling-map-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.scrolling-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* The Moving Dots/Tokens */
+.animated-dot {
+  fill: #f33ae4;
+  stroke: #f33ae4;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 12px rgba(243, 58, 228, 0.9))
+          drop-shadow(0 0 6px rgba(243, 58, 228, 0.8));
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.animated-dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.animated-dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.animated-dot:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    r: 10;
+    opacity: 1;
+  }
+  50% {
+    r: 12;
+    opacity: 0.8;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scrolling-map-wrapper {
+    border-radius: 12px;
+  }
+
+  .animated-dot {
+    r: 7;
+    stroke-width: 2;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% {
+      r: 7;
+      opacity: 1;
+    }
+    50% {
+      r: 9;
+      opacity: 0.8;
+    }
+  }
+}

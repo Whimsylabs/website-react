@@ -58,6 +58,11 @@ const getPageMetadata = (lang = 'en') => ({
     description: "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
     keywords: "virtual lab FAQ, lab software questions, STEM education help",
   },
+  "/bett": {
+    title: translations[lang]?.bett?.title || "Meet Us at BETT 2026 | WhimsyLabs Virtual Lab Software",
+    description: translations[lang]?.bett?.description || "Visit WhimsyLabs at BETT 2026 (ExCeL London, Jan 21-23). Book a demo at Booth FS10 and discover our award-winning virtual laboratory software.",
+    keywords: "BETT 2026, WhimsyLabs exhibition, virtual lab demo, education technology show, ExCeL London",
+  },
   "/contact": {
     title: translations[lang]?.contact?.title || "Contact Us | WhimsyLabs Virtual Lab Software",
     description: translations[lang]?.contact?.description || "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
@@ -79,6 +84,7 @@ const routeComponentMap = {
   "/faq": "FAQPage",
   "/contact": "ContactPage",
   "/privacy": "PrivacyPage",
+  "/bett": "BettPage",
   // "/ignite-pitch": "IgnitePitchDeck", // Disabled
 };
 
@@ -199,6 +205,9 @@ async function loadReactComponents() {
     ReactComponents.PrivacyPage =
       require("./src/Components/PrivacyPage.js").default;
     console.log("✅ Loaded PrivacyPage");
+
+    ReactComponents.BettPage = require("./src/Components/BettPage.js").default;
+    console.log("✅ Loaded BettPage");
 
     ReactComponents.BlogPost = require("./src/Components/BlogPost.js").default;
     console.log("✅ Loaded BlogPost");

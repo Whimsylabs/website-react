@@ -1,22 +1,20 @@
-// Spanish - post10: Inteligencia emocional en tutores de IA: Cómo WhimsyCat detecta y responde a la frustración de los estudiantes
+// Spanish - Post 10: Inteligencia emocional en tutores IA
 import React from "react";
 
-export const title =
-  "Inteligencia emocional en tutores de IA: Cómo WhimsyCat detecta y responde a la frustración de los estudiantes";
-export const description =
-  "Explorando el revolucionario sistema de detección de frustración de WhimsyCat que monitorea las acciones de los jugadores, el seguimiento de la mirada y los patrones de participación para proporcionar apoyo emocional proactivo cuando los estudiantes tienen dificultades.";
+export const title = "Inteligencia emocional en tutores IA: Cómo WhimsyCat detecta y responde a la frustración estudiantil";
+export const description = "Explorando el revolucionario sistema de detección de frustración de WhimsyCat que monitorea acciones del jugador, seguimiento de mirada y patrones de participación para proporcionar apoyo emocional proactivo cuando los estudiantes tienen dificultades.";
 export const keywords = [
-  "inteligencia emocional IA",
-  "aprendizaje afectivo",
-  "bienestar estudiantil",
-  "empatía del tutor IA",
-  "apoyo emocional personalizado"
+  "IA emocional en educación",
+  "detección de frustración",
+  "WhimsyCat IA",
+  "monitoreo de participación estudiantil",
+  "computación afectiva en aprendizaje"
 ];
 
 export const content = (
   <div>
     <p>
-      Las investigaciones muestran que las emociones negativas como la frustración están fuertemente correlacionadas negativamente con el rendimiento académico, con estudiantes frustrados experimentando resultados de aprendizaje significativamente peores (
+      La investigación muestra que las emociones negativas como la frustración están fuertemente correlacionadas negativamente con el rendimiento académico, con estudiantes frustrados experimentando resultados de aprendizaje significativamente peores (
       <a
         href="https://link.springer.com/article/10.1007/s10648-025-10086-4"
         target="_blank"
@@ -24,17 +22,17 @@ export const content = (
       >
         Educational Psychology Review, 2025
       </a>
-      ). Las aulas tradicionales tienen dificultades para identificar a los estudiantes con problemas lo suficientemente rápido como para intervenir antes de que la frustración se convierta en desconexión. WhimsyCat, el tutor de IA avanzado de WhimsyLabs, es pionero en un enfoque revolucionario: detectar la frustración en tiempo real a través del análisis multimodal de las acciones de los jugadores, los patrones de mirada y los comportamientos de participación, y luego proporcionar apoyo inmediato y empático que previene colapsos de aprendizaje antes de que ocurran.
+      ). Las aulas tradicionales luchan por identificar a los estudiantes con dificultades lo suficientemente rápido para intervenir antes de que la frustración se convierta en desvinculación. WhimsyCat, el tutor IA avanzado de WhimsyLabs, adopta un enfoque innovador: detectar la frustración en tiempo real mediante análisis multimodal de acciones del jugador, patrones de mirada y comportamientos de participación, luego proporcionar apoyo empático inmediato que previene el colapso del aprendizaje antes de que ocurra. Un ejemplo de esto es cuando los estudiantes sacuden vasos de precipitados virtuales por frustración cuando los experimentos salen mal: al analizar el vector del vaso de precipitados, se puede inferir si fue un accidente o una expresión de frustración.
     </p>
 
     <h2>¿Por qué es crítica la detección de frustración para el aprendizaje?</h2>
 
     <p>
-      La frustración representa un punto de inflexión crítico en el proceso de aprendizaje. Cuando los estudiantes encuentran desafíos manejables, experimentan una lucha productiva que profundiza la comprensión. Pero cuando los desafíos se vuelven abrumadores sin apoyo, la frustración desencadena una cascada de resultados negativos: motivación disminuida, procesamiento cognitivo deteriorado, persistencia reducida y potencialmente desconexión permanente de la materia.
+      La frustración representa un punto crítico de inflexión en el proceso de aprendizaje. Cuando los estudiantes encuentran desafíos manejables, experimentan una lucha productiva que profundiza la comprensión. Pero cuando los desafíos se vuelven abrumadores sin apoyo, la frustración desencadena una cascada de resultados negativos: motivación disminuida, procesamiento cognitivo deteriorado, persistencia reducida y potencialmente desvinculación permanente de la materia.
     </p>
 
     <p>
-      En entornos de laboratorio tradicionales con proporciones de clase que superan 30:1, los maestros no pueden monitorear continuamente el estado emocional de cada estudiante. Cuando aparecen señales visibles de frustración—estudiantes que se rinden, cometen errores repetidos o buscan distracción—la ventana de intervención óptima a menudo ya ha pasado. La investigación en psicología educativa demuestra que la intervención temprana ante las primeras señales de frustración es mucho más efectiva que intentar volver a involucrar a estudiantes ya desconectados (
+      En entornos de laboratorio tradicionales con proporciones de clase superiores a 30:1, los profesores no pueden monitorear continuamente el estado emocional de cada estudiante. Para cuando aparecen signos visibles de frustración, como estudiantes que se rinden, cometen errores repetidos o buscan distracción, la ventana óptima de intervención a menudo ya ha pasado. La investigación en psicología educativa demuestra que la intervención temprana a los primeros signos de frustración es mucho más efectiva que intentar reincorporar a estudiantes ya desvinculados (
       <a
         href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1387089/full"
         target="_blank"
@@ -46,7 +44,7 @@ export const content = (
     </p>
 
     <p>
-      Los sistemas de IA que pueden detectar la frustración en tiempo real ofrecen un potencial transformador. Un metaanálisis exhaustivo de 54 estudios publicados hasta 2025 encontró que las intervenciones de IA emocionales que detectan y regulan la ansiedad, el aburrimiento o la frustración pueden estabilizar las emociones de rendimiento y mejorar los resultados de aprendizaje (
+      Los sistemas de IA que pueden detectar frustración en tiempo real ofrecen un potencial transformador. Un metaanálisis completo de 54 estudios publicados hasta 2025 encontró que las intervenciones de IA emocional que detectan y regulan la ansiedad, el aburrimiento o la frustración pueden estabilizar las emociones de logro y mejorar los resultados de aprendizaje (
       <a
         href="https://link.springer.com/article/10.1007/s10648-025-10086-4"
         target="_blank"
@@ -54,7 +52,7 @@ export const content = (
       >
         Schmidt et al., 2025
       </a>
-      ). WhimsyCat encarna la vanguardia de esta investigación, implementando una sofisticada detección de frustración multimodal que identifica a los estudiantes con dificultades e interviene con apoyo precisamente calibrado.
+      ). WhimsyCat encarna la vanguardia de esta investigación, implementando una detección de frustración multimodal sofisticada que identifica a los estudiantes con dificultades e interviene con apoyo calibrado con precisión.
     </p>
 
     <h2>¿Cómo detecta WhimsyCat la frustración?</h2>
@@ -66,37 +64,25 @@ export const content = (
     <h3>Monitoreo de acciones del jugador</h3>
 
     <p>
-      WhimsyCat analiza continuamente cómo los estudiantes interactúan con el equipo de laboratorio virtual. Ciertos patrones de acción indican frustración de manera confiable: intentos repetidos con el mismo enfoque incorrecto, vacilación antes de tareas simples, movimientos erráticos, abandono de procedimientos a mitad de camino o cambio rápido entre herramientas sin completar acciones.
+      WhimsyCat analiza continuamente cómo los estudiantes interactúan con el equipo de laboratorio virtual. Ciertos patrones de acción indican de manera confiable frustración: intentos repetidos con el mismo enfoque incorrecto, vacilación antes de tareas simples, movimientos erráticos, abandono de procedimientos a mitad de camino, o cambio rápido entre herramientas sin completar acciones.
     </p>
 
     <p>
-      Por ejemplo, cuando un estudiante intenta repetidamente verter líquido pero no logra obtener el volumen correcto, hace múltiples correcciones rápidas y luego hace una pausa prolongada, este patrón señala una frustración creciente. WhimsyCat reconoce estas secuencias y puede intervenir de manera proactiva: "Noto que estás trabajando en la medición precisa del volumen—¡esto puede ser complicado! ¿Quieres que demuestre la técnica o que proporcione un ejercicio rápido para generar confianza?"
+      Por ejemplo, cuando un estudiante intenta repetidamente verter líquido pero no logra el volumen correcto, realiza múltiples correcciones rápidas y luego se detiene durante períodos prolongados, este patrón señala frustración creciente. WhimsyCat reconoce estas secuencias y puede intervenir proactivamente: "Cuando intentas medir exactamente 50ml, deberías usar la probeta graduada para mayor precisión." mientras emite un efecto de sonido de maullido y mira directamente la probeta graduada.
+    </p>
+
+    <h3>Seguimiento de mirada y patrones de atención</h3>
+
+    <p>
+      En entornos de RV, WhimsyCat analiza dónde miran los estudiantes y durante cuánto tiempo, un poderoso indicador de confusión y frustración. Cuando los estudiantes miran repetidamente entre procedimientos incompatibles, fijan la mirada en el mismo objeto durante largos períodos sin actuar, o escanean rápidamente el entorno sin enfoque, estos patrones de mirada señalan sobrecarga cognitiva o confusión.
     </p>
 
     <p>
-      La investigación en sistemas de tutoría inteligentes demuestra que analizar secuencias de acciones proporciona información rica sobre los estados cognitivos y emocionales de los estudiantes, con ciertos patrones prediciendo de manera confiable la frustración antes de que los estudiantes expresen explícitamente dificultad (
-      <a
-        href="https://slejournal.springeropen.com/articles/10.1186/s40561-025-00374-5"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Li et al., 2025
-      </a>
-      ).
-    </p>
-
-    <h3>Seguimiento de la mirada y patrones de atención</h3>
-
-    <p>
-      En entornos de RV, WhimsyCat analiza dónde miran los estudiantes y durante cuánto tiempo—un poderoso indicador de confusión y frustración. Cuando los estudiantes miran repetidamente entre procedimientos incompatibles, fijan la mirada en el mismo objeto durante períodos prolongados sin tomar acción, o escanean rápidamente el entorno sin enfoque, estos patrones de mirada señalan sobrecarga cognitiva o confusión.
+      El aprendizaje saludable implica atención enfocada en elementos relevantes con acción propositiva. Los estudiantes frustrados exhiben patrones distintamente diferentes: fijación sin comprensión, atención dispersa que refleja incertidumbre, o evitación de elementos clave que encuentran confusos. El análisis de mirada de WhimsyCat identifica estos patrones, permitiendo intervención antes de que la frustración se profundice.
     </p>
 
     <p>
-      El aprendizaje saludable implica atención enfocada en elementos relevantes con acción dirigida. Los estudiantes frustrados exhiben patrones distintamente diferentes: fijación sin comprensión, atención dispersa que refleja incertidumbre o evitación de elementos clave que encuentran confusos. El análisis de mirada de WhimsyCat identifica estos patrones en segundos, permitiendo la intervención antes de que la frustración se profundice.
-    </p>
-
-    <p>
-      Los estudios sobre el seguimiento de la atención durante el aprendizaje demuestran que los patrones de mirada proporcionan advertencias tempranas de dificultades de comprensión, a menudo antes de que los estudiantes reconozcan conscientemente su propia confusión (
+      Los estudios sobre seguimiento de atención durante el aprendizaje demuestran que los patrones de mirada proporcionan advertencias tempranas de dificultades de comprensión, a menudo antes de que los estudiantes reconozcan conscientemente su propia confusión (
       <a
         href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1628104/full"
         target="_blank"
@@ -110,15 +96,15 @@ export const content = (
     <h3>Análisis de actividad de participación</h3>
 
     <p>
-      WhimsyCat rastrea patrones de participación más amplios: cuánto tiempo pasan los estudiantes en las tareas, si progresan sistemáticamente a través de los procedimientos o saltan al azar, si leen la orientación de la IA o la ignoran, y si las tasas de interacción aumentan o disminuyen con el tiempo.
+      WhimsyCat rastrea patrones de participación más amplios: cuánto tiempo pasan los estudiantes en tareas, si progresan sistemáticamente a través de procedimientos o saltan aleatoriamente, si leen la guía de laboratorio o la ignoran, y si las tasas de interacción aumentan o disminuyen con el tiempo.
     </p>
 
     <p>
-      La disminución de la participación a menudo precede a la frustración explícita—los estudiantes gradualmente se ralentizan, toman más tiempo entre acciones, pasan más tiempo inactivos o comienzan a explorar elementos no relacionados del entorno. Estos cambios sutiles, invisibles para los observadores humanos que monitorean a muchos estudiantes simultáneamente, son precisamente lo que la IA sobresale en detectar mediante el análisis continuo de datos.
+      La disminución de la participación a menudo precede a la frustración explícita; los estudiantes gradualmente se vuelven más lentos, toman más tiempo entre acciones, pasan más tiempo inactivos, o comienzan a explorar elementos no relacionados del entorno.
     </p>
 
     <p>
-      Importante, WhimsyCat distingue entre lucha productiva (estudiantes comprometidos trabajando en tareas desafiantes pero manejables) y frustración improductiva (estudiantes experimentando sobrecarga cognitiva o confusión conceptual). Esta distinción es crítica—la lucha productiva debe ser apoyada pero no eliminada, mientras que la frustración improductiva requiere intervención. La investigación en pedagogía del fracaso productivo enfatiza que el aprendizaje óptimo ocurre cuando los estudiantes luchan con problemas apropiadamente desafiantes con apoyo disponible (
+      Importantemente, WhimsyCat distingue entre lucha productiva (estudiantes comprometidos trabajando en tareas desafiantes pero manejables) y frustración improductiva (estudiantes experimentando sobrecarga cognitiva o confusión conceptual). Esta distinción es crítica: la lucha productiva debe ser apoyada pero no eliminada, mientras que la frustración improductiva requiere intervención. La investigación en pedagogía del fracaso productivo enfatiza que el aprendizaje óptimo ocurre cuando los estudiantes luchan con problemas apropiadamente desafiantes con apoyo disponible (
       <a
         href="https://www.tandfonline.com/doi/10.1080/23735082.2015.1002195"
         target="_blank"
@@ -126,63 +112,17 @@ export const content = (
       >
         Kapur, 2015
       </a>
-      ).
-    </p>
-
-    <h3>Análisis multimodal integrado</h3>
-
-    <p>
-      El poder del enfoque de WhimsyCat radica en integrar estas múltiples señales. Un solo indicador podría reflejar variación normal en los estilos de aprendizaje, pero cuando los patrones de acción, el seguimiento de la mirada y las métricas de participación indican simultáneamente dificultad, la IA identifica con confianza la frustración genuina que requiere apoyo.
-    </p>
-
-    <p>
-      Este enfoque multimodal reduce significativamente los falsos positivos (identificar erróneamente a estudiantes comprometidos como frustrados) y los falsos negativos (pasar por alto a estudiantes genuinamente con dificultades). Las revisiones sistemáticas de la detección de emociones en IA educativa enfatizan que los enfoques multimodales superan sustancialmente a los sistemas de modalidad única (
-      <a
-        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11223560/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Liu et al., 2024
-      </a>
-      ).
-    </p>
-
-    <h2>¿Cómo responde WhimsyCat a la frustración detectada?</h2>
-
-    <p>
-      Detectar la frustración solo es valioso si la respuesta es efectiva. WhimsyCat emplea estrategias de intervención sofisticadas calibradas al tipo y gravedad de la frustración detectada:
-    </p>
-
-    <h3>Escalada gradual de apoyo</h3>
-
-    <p>
-      Para frustración leve (dificultad en etapa temprana), WhimsyCat proporciona pistas sutiles y aliento: "¡Lo estás haciendo muy bien! Recuerda verificar las burbujas de aire antes de comenzar la titulación." Este recordatorio suave a menudo es suficiente para redirigir a los estudiantes sin socavar su autonomía o confianza en la resolución de problemas.
-    </p>
-
-    <p>
-      Para frustración moderada (dificultad persistente con habilidades específicas), WhimsyCat ofrece apoyo más sustancial: demostraciones de la técnica correcta, ejercicios de práctica simplificados que se enfocan en el elemento desafiante o explicaciones alternativas de conceptos subyacentes. El objetivo es proporcionar suficiente andamiaje para restaurar la lucha productiva sin eliminar el desafío de aprendizaje por completo.
-    </p>
-
-    <p>
-      Para frustración severa (lucha prolongada que amenaza la desconexión), WhimsyCat puede sugerir descansos, ofrecer pausar el experimento actual y proporcionar práctica fundamental, o alertar a los maestros a través del panel de que un estudiante necesita intervención humana. La investigación muestra que cuando la IA detecta alta frustración, ofrecer inmediatamente aliento, recursos adicionales o sugerir descansos ayuda a los estudiantes a recargarse y volver a comprometerse (
-      <a
-        href="https://www.edlitera.com/blog/posts/emotional-artificial-intelligence-education"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Edlitera, 2024
-      </a>
-      ).
+      ). Manejamos esta interacción dirigiendo a los usuarios a herramientas más apropiadas cuando se usan mal repetidamente, recordando a los estudiantes información que pueden haber pasado por alto en la guía de laboratorio, y ayudando con la técnica práctica. Esto permite a los estudiantes cometer errores y tener ese error en sus datos, mientras se evita la trampa de "decirle al estudiante qué hacer" que reduce el aprendizaje, la retención y la participación.
     </p>
 
     <h3>Comunicación empática</h3>
 
     <p>
-      Las intervenciones de WhimsyCat están deliberadamente enmarcadas con empatía y normalización. En lugar de "Estás haciendo esto mal", la IA dice "Muchos estudiantes encuentran esto complicado al principio—déjame mostrarte un enfoque útil." En lugar de resaltar el fracaso, WhimsyCat enfatiza el progreso y el esfuerzo: "¡Veo que estás trabajando duro para dominar la técnica de pipeteo—tu persistencia es exactamente lo que hace a grandes científicos!"
+      Las intervenciones de WhimsyCat están deliberadamente enmarcadas con empatía y normalización. En lugar de "Estás haciendo esto mal", la IA dice "Muchos estudiantes encuentran esto difícil al principio; déjame mostrarte un enfoque útil al rayar tus placas de agar." En lugar de resaltar el fracaso, WhimsyCat enfatiza el progreso y el esfuerzo: "¡Has mejorado en pipeteo! ¡Bien!" por ejemplo, después de que la técnica de pipeteo mejora en múltiples sesiones.
     </p>
 
     <p>
-      Este encuadre empático se basa en la investigación sobre mentalidad de crecimiento y autoeficacia. Los estudiantes que reciben retroalimentación de apoyo y aliento durante la dificultad mantienen mayor motivación y logran mejores resultados que aquellos que reciben retroalimentación crítica o puramente correctiva (
+      Este encuadre empático está basado en investigación sobre mentalidad de crecimiento y autoeficacia. Los estudiantes que reciben retroalimentación de apoyo y alentadora durante las dificultades mantienen mayor motivación y logran mejores resultados que aquellos que reciben retroalimentación crítica o puramente correctiva (
       <a
         href="https://www.tandfonline.com/doi/abs/10.1207/S15327965PLI1104_01"
         target="_blank"
@@ -193,76 +133,44 @@ export const content = (
       ).
     </p>
 
-    <h3>Ajuste adaptativo de dificultad</h3>
-
-    <p>
-      Cuando WhimsyCat detecta frustración persistente a pesar de la intervención, puede ajustar adaptativamente la dificultad de la tarea—no reduciendo los estándares, sino proporcionando pasos intermedios, estructurando procedimientos complejos en trozos manejables u ofreciendo práctica dirigida en subhabilidades desafiantes antes de volver a la tarea principal.
-    </p>
-
-    <p>
-      Este ajuste dinámico asegura que los estudiantes permanezcan en su zona de desarrollo proximal—desafiados pero no abrumados. A medida que los estudiantes desarrollan competencia a través de práctica apropiadamente estructurada, la IA aumenta gradualmente los niveles de desafío, asegurando un crecimiento continuo sin frustración debilitante.
-    </p>
-
     <h2>¿Qué hace único el enfoque de WhimsyCat?</h2>
 
     <p>
-      Mientras múltiples sistemas de IA educativos ahora intentan la detección de frustración, la integración de WhimsyCat en laboratorios virtuales totalmente inmersivos y basados en física proporciona datos excepcionalmente ricos. Debido a que los estudiantes realizan acciones físicas auténticas en lugar de hacer clic en preguntas de opción múltiple, su comportamiento genera información mucho más detallada sobre sus estados cognitivos y emocionales.
+      Mientras que múltiples sistemas de IA educativa ahora intentan la detección de frustración, la integración de WhimsyCat en laboratorios virtuales completamente inmersivos e impulsados por física proporciona datos únicamente ricos. Porque los estudiantes realizan acciones físicas auténticas en lugar de hacer clic en preguntas de opción múltiple, su comportamiento genera información mucho más detallada sobre sus estados cognitivos y emocionales.
     </p>
 
     <p>
-      La combinación de seguimiento de mirada en RV, monitoreo de acciones físicas y análisis de participación en contextos de laboratorio realistas crea un sistema de inteligencia emocional integral sin igual por las plataformas tradicionales basadas en computadora. Los estudiantes interactúan naturalmente con el equipo virtual, y sus respuestas naturales al desafío—la forma en que manejan el equipo cuando están frustrados, dónde miran cuando están confundidos, cómo navegan el entorno cuando están abrumados—proporcionan conocimientos invaluables.
+      La combinación de seguimiento de mirada VR, monitoreo de acciones físicas y análisis de participación en contextos de laboratorio realistas crea un sistema de inteligencia emocional integral sin igual en plataformas tradicionales basadas en computadora. Los estudiantes interactúan naturalmente con equipos virtuales, y sus respuestas naturales al desafío - la forma en que manejan equipos cuando están frustrados, dónde miran cuando están confundidos, cómo navegan el entorno cuando están abrumados - proporcionan conocimientos invaluables.
     </p>
 
     <p>
-      Además, la integración de WhimsyCat con nuestra plataforma más amplia significa que las intervenciones pueden ser altamente específicas. En lugar de aliento genérico, la IA puede demostrar técnicas exactas con las que los estudiantes tienen dificultades, proporcionar práctica enfocada en habilidades específicas que causan frustración o ajustar las recomendaciones de laboratorio posteriores para reforzar áreas de dificultad a través de contextos variados.
-    </p>
-
-    <h2>¿Qué impacto tiene la IA emocional en los resultados de aprendizaje?</h2>
-
-    <p>
-      Las escuelas que están probando WhimsyLabs con la detección de frustración de WhimsyCat reportan mejoras significativas en la persistencia de los estudiantes, la participación y el dominio final. Los estudiantes que anteriormente podrían haberse rendido al encontrar dificultades en su lugar reciben apoyo oportuno que mantiene la motivación a través de contenido desafiante.
+      Además, muchos de estos conceptos se transfieren al modo de escritorio, donde WhimsyCat aún puede monitorear movimientos del mouse, patrones de clic, comportamiento de desplazamiento y tiempo dedicado a tareas para inferir frustración. La detección de frustración de WhimsyCat permanece efectiva en múltiples modos de acceso.
     </p>
 
     <p>
-      Los maestros aprecian especialmente el sistema de intervención proactiva, que reduce el número de estudiantes que alcanzan frustración aguda que requiere apoyo intensivo uno a uno. Al abordar automáticamente las dificultades en etapa temprana, WhimsyCat previene que muchas dificultades menores escalen a obstáculos importantes, haciendo que la gestión del aula sea más sostenible y permitiendo que los maestros se concentren en estudiantes con necesidades complejas que requieren juicio humano.
-    </p>
-
-    <p>
-      La investigación sobre inteligencia artificial emocional en educación encuentra consistentemente que los sistemas que detectan y responden a emociones negativas mejoran tanto los resultados cognitivos (aprendizaje, logro) como los afectivos (disfrute, motivación, autoeficacia). Un metaanálisis de 2025 encontró efectos positivos significativos en ambos dominios (
-      <a
-        href="https://link.springer.com/article/10.1007/s10648-025-10086-4"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Schmidt et al., 2025
-      </a>
-      ), validando el enfoque de WhimsyCat.
+      Además, la integración de WhimsyCat en nuestra plataforma más amplia significa que las intervenciones pueden ser altamente específicas. En lugar de aliento genérico, la IA puede demostrar técnicas exactas con las que los estudiantes tienen dificultades, proporcionar práctica enfocada en habilidades específicas que causan frustración, o ajustar recomendaciones de laboratorio posteriores para reforzar áreas de dificultad a través de contextos variados.
     </p>
 
     <h2>El futuro de la educación emocionalmente inteligente</h2>
 
     <p>
-      WhimsyCat representa solo el comienzo de la tecnología educativa emocionalmente inteligente. Los desarrollos futuros refinarán aún más la precisión de la detección de frustración, se expandirán para detectar estados emocionales más amplios (curiosidad, entusiasmo, aburrimiento, ansiedad), permitirán que WhimsyCat adapte los estilos de comunicación a las preferencias individuales de los estudiantes e integrarán señales biométricas para una evaluación aún más robusta del estado emocional.
+      WhimsyCat representa solo el comienzo de la tecnología educativa emocionalmente inteligente. Los desarrollos futuros refinarán aún más la precisión de detección de frustración, permitirán a WhimsyCat adaptar estilos de comunicación a preferencias y necesidades individuales de los estudiantes.
     </p>
 
     <p>
-      La visión son entornos de aprendizaje que realmente comprendan a los estudiantes como seres humanos completos—cognitivos, emocionales y sociales—y proporcionen apoyo integral que aborde todos los aspectos de la experiencia de aprendizaje. Al detectar cuando los estudiantes luchan emocionalmente e intervenir con apoyo apropiado, los tutores de IA como WhimsyCat ayudan a garantizar que cada estudiante pueda persistir a través de desafíos, construir competencia genuina y desarrollar la confianza y resiliencia esenciales para el éxito en STEM y más allá.
-    </p>
-
-    <p>
-      La educación siempre ha sido fundamentalmente sobre conexión humana y apoyo. WhimsyCat no reemplaza ese elemento humano irremplazable—lo extiende, asegurando que cada estudiante reciba el apoyo paciente, empático y oportuno que necesita para prosperar, independientemente de las proporciones de clase, la disponibilidad del maestro o la hora del día. Esta es la promesa de la IA emocionalmente inteligente en educación: amplificar el cuidado y la experiencia humanos para alcanzar a cada aprendiz cuando más lo necesita.
+      La educación siempre ha sido fundamentalmente sobre conexión humana y apoyo. WhimsyCat no reemplaza ese elemento humano irremplazable; lo extiende, asegurando que cada estudiante reciba el apoyo paciente, empático y oportuno que necesita para prosperar, independientemente de las proporciones de clase, disponibilidad de profesores o hora del día. Esta es la promesa de la IA emocionalmente inteligente en educación: amplificar el cuidado humano y la experiencia para alcanzar a cada aprendiz cuando más lo necesita.
     </p>
 
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
         <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
-          Conoce a WhimsyCat: El tutor de IA emocionalmente inteligente
+          Conoce a WhimsyCat: El tutor IA emocionalmente inteligente
         </a>
       </li>
       <li>
         <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
-          Tutoría de IA 24/7: Cómo el apoyo personalizado ayuda a los estudiantes a nunca quedarse atrás
+          Tutoría IA 24/7: Cómo el apoyo personalizado ayuda a los estudiantes a nunca quedarse atrás
         </a>
       </li>
       <li>
@@ -272,13 +180,13 @@ export const content = (
       </li>
       <li>
         <a href="/blog/virtual-kidney-dissection-send-engagement">
-          Disección virtual de riñón: Apoyando necesidades de aprendizaje diversas
+          Disección virtual de riñón: Apoyando diversas necesidades de aprendizaje
         </a>
       </li>
     </ul>
 
     <div className="references-section">
-      <h3>References</h3>
+      <h3>Referencias</h3>
       <ul className="references-list">
         <li key="ref-1">
           Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior.

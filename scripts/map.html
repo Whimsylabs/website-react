@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Whimsylabs at Bett</title>
+    <style>
+        body {
+            margin: 0;
+            background: #333;
+            font-family: sans-serif;
+        }
+
+        /* SCROLL CONTAINER */
+        /* This determines how long the scroll is. 
+           300vh = 3x screen height. Increase to 500vh to make the dot move slower. */
+        .scrolly-container {
+            height: 400vh;
+            position: relative;
+        }
+
+        .sticky-frame {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+            /* Dark background to make the map pop */
+        }
+
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            /* Limits max width on big screens */
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .map-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .overlay-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* We don't need to style the path stroke because it's baked into your image!
+           We just leave it invisible so the dot knows where to float. */
+        #motion-path {
+            fill: none;
+            stroke: transparent;
+            /* Invisible rail */
+        }
+
+        /* THE MOVING DOT STYLE */
+        #dot {
+            fill: #00ffff;
+            /* Cyan center to match your line */
+            stroke: #ff00ff;
+            /* Magenta border to match your line outline */
+            stroke-width: 3;
+            r: 10;
+            /* Size of the dot */
+            filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
+            /* Glowing effect */
+            transition: r 0.2s ease;
+        }
+
+        /* Instructions at the bottom */
+        .footer-note {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            border: 1px solid #444;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scrolly-container">
+        <div class="sticky-frame">
+            <div class="map-wrapper">
+
+                <!-- 1. YOUR BAKED IMAGE -->
+                <img src="map-final.png" class="map-image" alt="Map to Whimsylabs">
+
+                <!-- 2. SVG LAYER -->
+                <!-- IMPORTANT: Update viewBox to match your image dimensions 
+                     (Right click image -> Properties -> Details to find width/height) -->
+                <svg class="overlay-svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet">
+
+                    <!-- 3. PASTE YOUR PATH MAKER CODE HERE -->
+                    <path id="motion-path" d="M 0 0" />
+
+                    <circle id="dot" cx="0" cy="0" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">Scroll to follow the path 👇</div>
+
+    <script>
+        const container = document.querySelector('.scrolly-container');
+        const path = document.getElementById('motion-path');
+        const dot = document.getElementById('dot');
+
+        function moveDot() {
+            const pathLen = path.getTotalLength();
+
+            // Calculate scroll percentage
+            const rect = container.getBoundingClientRect();
+            const scrollDist = -rect.top;
+            const totalHeight = rect.height - window.innerHeight;
+
+            let percent = scrollDist / totalHeight;
+            percent = Math.max(0, Math.min(1, percent)); // Clamp 0-1
+
+            // Get point on the invisible rail
+            const point = path.getPointAtLength(percent * pathLen);
+
+            // Apply coordinates
+            dot.setAttribute("cx", point.x);
+            dot.setAttribute("cy", point.y);
+
+            // Optional: Make dot pulse when it reaches the end
+            if (percent > 0.99) {
+                dot.style.r = "15"; // Pulse bigger at the destination
+            } else {
+                dot.style.r = "10";
+            }
+        }
+
+        window.addEventListener('scroll', moveDot);
+        window.addEventListener('resize', moveDot);
+
+        // Initial set
+        // A tiny timeout helps ensure the image is loaded before calc
+        setTimeout(moveDot, 100); 
+    </script>
+</body>
+
+</html>

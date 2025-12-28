@@ -1,0 +1,575 @@
+/* BETT Page Styles */
+
+.bett-hero-section {
+  background: linear-gradient(135deg, #1f1968 0%, #2d2090 100%);
+  color: white;
+  padding: 2rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bett-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bett-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.bett-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #dabeff;
+  text-transform: uppercase;
+}
+
+.bett-hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #95CEF6;
+}
+
+.bett-info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.bett-info-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  min-width: 250px;
+  max-width: 300px;
+  border: 2px solid rgba(218, 190, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bett-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(218, 190, 255, 0.3);
+}
+
+.bett-info-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.bett-info-card h3 {
+  color: #dabeff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.bett-info-card p {
+  color: white;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Map Background */
+.bett-map-section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%);
+}
+
+.bett-hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.bett-map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1400px;
+  margin: 2rem auto 0;
+}
+
+.bett-map-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bett-info-card-large {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 2px solid rgba(218, 190, 255, 0.4);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.bett-info-card-large:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 40px rgba(218, 190, 255, 0.3);
+  border-color: rgba(218, 190, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.bett-info-card-large .bett-info-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.bett-info-card-large h3 {
+  color: #dabeff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.bett-info-large-text {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.bett-map-description {
+  color: #dabeff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0 0 0;
+  padding: 1.5rem;
+  background: rgba(218, 190, 255, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid #dabeff;
+}
+
+.bett-map-display {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+/* Video Section */
+.bett-video-section {
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bett-video-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1f1968;
+}
+
+.bett-video-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.bett-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.bett-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* About Section */
+.bett-about-section {
+  background: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.bett-about-section h2 {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 2rem;
+}
+
+.bett-about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bett-about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.bett-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.bett-feature-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.bett-feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.bett-feature-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.bett-feature-item h4 {
+  color: #1f1968;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.bett-feature-item p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Booking Section */
+.bett-booking-section {
+  padding: 4rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bett-booking-section h2 {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 1rem;
+}
+
+.bett-booking-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bett-calendly-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bett-calendly-note {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Contact Form Section */
+.bett-contact-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.bett-contact-section h2 {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 1rem;
+}
+
+.bett-contact-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bett-contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bett-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bett-form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.bett-form-group label {
+  display: block;
+  font-weight: 600;
+  color: #1f1968;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.bett-form-group input,
+.bett-form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.bett-form-group input:focus,
+.bett-form-group textarea:focus {
+  outline: none;
+  border-color: #dabeff;
+  box-shadow: 0 0 0 3px rgba(218, 190, 255, 0.2);
+}
+
+.bett-submit-btn {
+  background: linear-gradient(135deg, #1f1968 0%, #2d2090 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.bett-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(31, 25, 104, 0.3);
+}
+
+.bett-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bett-form-success {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.bett-form-error {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* CTA Section */
+.bett-cta-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.bett-cta-section h2 {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 1rem;
+}
+
+.bett-cta-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bett-cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bett-cta-primary,
+.bett-cta-secondary {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.bett-cta-primary {
+  background: linear-gradient(135deg, #1f1968 0%, #2d2090 100%);
+  color: white;
+}
+
+.bett-cta-secondary {
+  background: white;
+  color: #1f1968;
+  border: 2px solid #1f1968;
+}
+
+.bett-cta-primary:hover,
+.bett-cta-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: inherit;
+}
+
+.bett-cta-secondary:hover {
+  background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .bett-map-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bett-map-display {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bett-hero-title {
+    font-size: 2rem;
+  }
+
+  .bett-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .bett-info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bett-info-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .bett-map-section {
+    padding: 2rem 0;
+  }
+
+  .bett-map-display {
+    height: 350px;
+  }
+
+  .bett-info-card-large {
+    padding: 1.5rem;
+  }
+
+  .bett-info-card-large h3 {
+    font-size: 1.2rem;
+  }
+
+  .bett-info-large-text {
+    font-size: 1.1rem;
+  }
+
+  .bett-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bett-contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .bett-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bett-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bett-cta-primary,
+  .bett-cta-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

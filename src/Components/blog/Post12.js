@@ -143,20 +143,27 @@ export const content = (
     </h3>
 
     <p>
+      Procedural technique depends critically on understanding how liquids
+      behave, viscosity, surface tension, flow dynamics, mixing patterns, and
+      response to manipulation. While other platforms use pre-recorded
+      animations that always behave identically, WhimsyLabs fully simulates
+      fluid dynamics in real-time through coarse grained computational fluid
+      dynamics (CFD) modeling.
     </p>
 
     <p>
-      Our liquid physics engine processes thousands of interactions per second, producing realistic behavior: viscous liquids pour slowly, low-viscosity liquids splash if handled carelessly, mixing produces realistic turbulence patterns, temperature affects fluid properties, and chemical reactions generate visible changes in physical behavior. This realism is not aesthetic—it's pedagogically essential. Students learn to judge volume by visual inspection, control pour rates through technique, recognize mixing completion through observation, and detect procedural errors through unexpected fluid behavior.
+      Our chemistry engine processes thousands of interactions per second,
+      producing realistic behavior: viscous liquids pour slowly, low-viscosity
+      liquids splash if handled carelessly, mixing produces realistic turbulence
+      patterns, temperature affects fluid properties, and chemical reactions
+      generate visible changes in physical behavior. This simulation is not just
+      for aesthetics, it's also pedagogically critical. Students learn to judge
+      volume by visual inspection, control pour rates through technique,
+      recognize mixing completion through observation, and detect procedural
+      errors through unexpected fluid behavior.
     </p>
 
     <p>
-      Research in educational CFD demonstrates that interactive fluid dynamics simulations significantly improve student understanding of complex flow phenomena that are otherwise invisible or difficult to observe (
-      <a
-        href="https://www.tandfonline.com/doi/abs/10.1080/03043797.2019.1673460"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gavi et al., 2020
       All of this has been built with performance in mind. Our liquid physics
       simulation is highly optimized, running at 60+fps on consumer headsets
       (Quest 2+, Pico4+, etc). In addition, our desktop mode provides the same

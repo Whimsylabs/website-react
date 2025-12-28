@@ -1,13 +1,35 @@
 // Auto-generated blog data for build script
-// Generated on 2025-12-15T22:51:54.515Z
+// Generated on 2025-12-28T16:01:24.996Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post15",
+      "slug": "whimsylabs-bett-2026-exhibition-announcement",
+      "title": "Blog Post post15",
+      "description": "Blog post description",
+      "keywords": [
+        "Bett 2026",
+        "Bett UK exhibition",
+        "EdTech conference London",
+        "virtual laboratory demo",
+        "education technology startup",
+        "WhimsyLabs Bett",
+        "ExCel London EdTech",
+        "STEM education innovation",
+        "virtual lab platform",
+        "science education technology"
+      ],
+      "date": "2025-12-05",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
       "title": "Gamification in Science Education: How Points, Rewards, and Creative Expression Drive Engagement in WhimsyLabs",
       "description": "Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.",
+      "keywords": null,
       "date": "2025-10-15",
       "hasFullTranslation": false,
       "language": "en"
@@ -17,6 +39,7 @@ module.exports = {
       "slug": "science-real-time-physics-simulations-virtual-labs",
       "title": "The Science Behind Real-Time Physics Simulations in Virtual Labs: Why Dynamic Simulations Make Learning Fun",
       "description": "Discover how WhimsyLabs' groundbreaking real-time computational physics creates the most sophisticated and genuinely fun virtual laboratory platform, using gaming principles to make science education engaging.",
+      "keywords": null,
       "date": "2025-10-01",
       "hasFullTranslation": false,
       "language": "en"
@@ -26,6 +49,7 @@ module.exports = {
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
       "title": "How Virtual Reality Prepares Students for Real-World STEM Careers: The Only Platform Teaching Physical Laboratory Skills",
       "description": "Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.",
+      "keywords": null,
       "date": "2025-09-15",
       "hasFullTranslation": false,
       "language": "en"
@@ -35,6 +59,7 @@ module.exports = {
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
       "title": "Virtual Labs vs. Physical Labs: A Cost-Benefit Analysis for Schools and Our Impact-Driven Mission",
       "description": "Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.",
+      "keywords": null,
       "date": "2025-09-01",
       "hasFullTranslation": false,
       "language": "en"
@@ -44,6 +69,7 @@ module.exports = {
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
       "title": "Emotional Intelligence in AI Tutors: How WhimsyCat Detects and Responds to Student Frustration",
       "description": "Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.",
+      "keywords": null,
       "date": "2025-08-15",
       "hasFullTranslation": false,
       "language": "en"
@@ -53,6 +79,7 @@ module.exports = {
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
       "title": "24/7 AI Tutoring: How Personalized Daily Recommendations Keep Students from Falling Behind",
       "description": "Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.",
+      "keywords": null,
       "date": "2025-08-01",
       "hasFullTranslation": false,
       "language": "en"
@@ -62,6 +89,7 @@ module.exports = {
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
       "title": "How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective",
       "description": "Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.",
+      "keywords": null,
       "date": "2025-07-15",
       "hasFullTranslation": false,
       "language": "en"
@@ -71,6 +99,7 @@ module.exports = {
       "slug": "green-labs-sustainability-virtual-stem-education",
       "title": "Green Labs, Greener Future: How Virtual Laboratories Are Transforming Sustainability in STEM Education",
       "description": "Exploring how WhimsyLabs' virtual laboratory platform addresses the environmental crisis in traditional science education while advancing sustainable development goals.",
+      "keywords": null,
       "date": "2025-07-01",
       "hasFullTranslation": false,
       "language": "en"
@@ -80,6 +109,7 @@ module.exports = {
       "slug": "sandbox-learning-revolution-stem-education",
       "title": "The Sandbox Learning Revolution: Why Freedom to Fail is Essential for STEM Education",
       "description": "How WhimsyLabs' open-ended exploration approach transforms science education by embracing failure as a powerful learning tool and fostering authentic scientific thinking.",
+      "keywords": null,
       "date": "2025-06-05",
       "hasFullTranslation": true,
       "language": "en"
@@ -89,6 +119,7 @@ module.exports = {
       "slug": "whimsycat-ai-tutor-transforming-science-education",
       "title": "Meet WhimsyCat: The Revolutionary AI Tutor Transforming Science Education",
       "description": "How WhimsyLabs' advanced AI tutor provides personalized guidance, real-time feedback, and adaptive learning pathways to revolutionize laboratory education.",
+      "keywords": null,
       "date": "2025-05-10",
       "hasFullTranslation": true,
       "language": "en"
@@ -98,6 +129,7 @@ module.exports = {
       "slug": "ai-powered-virtual-labs-solving-education-crisis",
       "title": "Revolutionizing STEM Education: How WhimsyLabs' AI-Powered Virtual Labs Are Solving the Global Science Education Crisis",
       "description": "WhimsyLabs' innovative virtual laboratory platform combines advanced AI assessment, realistic physics simulations, and sandbox learning to democratize high-quality science education globally.",
+      "keywords": null,
       "date": "2025-04-15",
       "hasFullTranslation": true,
       "language": "en"
@@ -107,6 +139,7 @@ module.exports = {
       "slug": "virtual-kidney-dissection-send-engagement",
       "title": "Blog Post post3",
       "description": "Blog post description",
+      "keywords": null,
       "date": "2025-03-19",
       "hasFullTranslation": false,
       "language": "en"
@@ -116,6 +149,7 @@ module.exports = {
       "slug": "physicality-in-virtual-labs",
       "title": "The Importance of Physicality in Virtual Labs: A Step Beyond Traditional Simulations",
       "description": "Exploring how Whimsylabs' groundbreaking liquid physics and procedural training redefine science education.",
+      "keywords": null,
       "date": "2025-02-03",
       "hasFullTranslation": true,
       "language": "en"
@@ -125,6 +159,17 @@ module.exports = {
       "slug": "whimsylabs-education-revolution",
       "title": "Blog Post post1",
       "description": "Blog post description",
+      "keywords": [
+        "virtual laboratory history",
+        "BETT 2025 winner",
+        "STEM education innovation",
+        "COVID-19 education solutions",
+        "proprietary physics engine",
+        "WhimsyLabs founding story",
+        "Marisa French founder",
+        "virtual lab development",
+        "EdTech startup journey"
+      ],
       "date": "2025-01-27",
       "hasFullTranslation": false,
       "language": "en"
@@ -132,10 +177,38 @@ module.exports = {
   ],
   "de": [
     {
+      "id": "post15",
+      "slug": "whimsylabs-bett-2026-exhibition-announcement",
+      "title": "Blog Post post15",
+      "description": "Blog post description",
+      "keywords": [
+        "Bett 2026",
+        "Bett UK Ausstellung",
+        "EdTech Messe London",
+        "virtuelles Labor Demo",
+        "Bildungstechnologie Startup",
+        "WhimsyLabs Bett",
+        "ExCel London EdTech",
+        "MINT-Bildung Innovation",
+        "virtuelle Laborplattform",
+        "Naturwissenschaft Bildungstechnologie"
+      ],
+      "date": "2025-12-05",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
       "title": "Blog Post post14",
       "description": "Blog post description",
+      "keywords": [
+        "Gamification in der Bildung",
+        "STEM-Engagement",
+        "Bildungsbelohnungen",
+        "intrinsische Motivation",
+        "spielbasiertes Lernen"
+      ],
       "date": "2025-10-15",
       "hasFullTranslation": false,
       "language": "de"
@@ -145,6 +218,13 @@ module.exports = {
       "slug": "science-real-time-physics-simulations-virtual-labs",
       "title": "Blog Post post13",
       "description": "Blog post description",
+      "keywords": [
+        "Chemielabore für Schulen",
+        "Physiklabore für Schulen",
+        "virtuelle Biologielabore",
+        "sichere wissenschaftliche Experimente",
+        "lehrplanorientierte Labore"
+      ],
       "date": "2025-10-01",
       "hasFullTranslation": false,
       "language": "de"
@@ -154,6 +234,13 @@ module.exports = {
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
       "title": "Wie Virtual Reality Studierende auf reale MINT-Karrieren vorbereitet: Die einzige Plattform, die physische Laborfähigkeiten lehrt",
       "description": "Entdecken Sie, warum WhimsyLabs die einzige virtuelle Laborplattform ist, die authentische physische Bewegungen und experimentelle Designfähigkeiten durch vollständige Sandbox-Freiheit und fortschrittliche Flüssigkeitsphysik-Simulationen lehrt.",
+      "keywords": [
+        "VR-Labore für Hochschulen",
+        "virtuelle Universitätslabore",
+        "skalierbare Laborbildung",
+        "kosteneffektiver Laborzugang",
+        "forschungsgerechte Simulationen"
+      ],
       "date": "2025-09-15",
       "hasFullTranslation": false,
       "language": "de"
@@ -163,6 +250,13 @@ module.exports = {
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
       "title": "Blog Post post11",
       "description": "Blog post description",
+      "keywords": [
+        "Bildungsgerechtigkeit",
+        "zugängliche STEM-Bildung",
+        "Überbrückung von Leistungslücken",
+        "inklusives Lernen",
+        "Demokratisierung der naturwissenschaftlichen Bildung"
+      ],
       "date": "2025-09-01",
       "hasFullTranslation": false,
       "language": "de"
@@ -170,8 +264,15 @@ module.exports = {
     {
       "id": "post10",
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
-      "title": "Blog Post post10",
-      "description": "Blog post description",
+      "title": "Emotionale Intelligenz in KI-Tutoren: Wie WhimsyCat Frustration von Schülern erkennt und darauf reagiert",
+      "description": "Erkundung von WhimsyCats bahnbrechendem Frustrations-Erkennungssystem, das Spieleraktionen, Blickverfolgung und Engagement-Muster überwacht, um proaktive emotionale Unterstützung zu bieten, wenn Schüler Schwierigkeiten haben.",
+      "keywords": [
+        "emotionale KI in der Bildung",
+        "Frustrationserkennung",
+        "WhimsyCat KI",
+        "Schülerengagement-Überwachung",
+        "affektives Computing im Lernen"
+      ],
       "date": "2025-08-15",
       "hasFullTranslation": false,
       "language": "de"
@@ -181,6 +282,13 @@ module.exports = {
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
       "title": "Blog Post post9",
       "description": "Blog post description",
+      "keywords": [
+        "24/7 KI-Nachhilfe",
+        "Bildungsgerechtigkeit",
+        "personalisierte Lernunterstützung",
+        "ständig verfügbare Nachhilfe",
+        "adaptives Feedback"
+      ],
       "date": "2025-08-01",
       "hasFullTranslation": false,
       "language": "de"
@@ -190,6 +298,13 @@ module.exports = {
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
       "title": "Wie virtuelle Labore die MINT-Lehrkräftemangel-Krise lösen: Eine britische und globale Perspektive",
       "description": "Erkundung, wie WhimsyLabs' KI-gestützte virtuelle Labore den katastrophalen MINT-Lehrkräftemangel in Großbritannien und weltweit durch 24/7-Nachhilfe und automatisierte Bewertung angehen.",
+      "keywords": [
+        "STEM-Lehrkräftemangel",
+        "virtuelle Labore für Schulen",
+        "automatisierte Bewertung",
+        "KI-Nachhilfeunterstützung",
+        "Reduzierung der Lehrerbelastung"
+      ],
       "date": "2025-07-15",
       "hasFullTranslation": false,
       "language": "de"
@@ -197,8 +312,15 @@ module.exports = {
     {
       "id": "post7",
       "slug": "green-labs-sustainability-virtual-stem-education",
-      "title": "Grüne Labore, grünere Zukunft: Wie virtuelle Labore die Nachhaltigkeit in der MINT-Bildung transformieren",
-      "description": "Eine Untersuchung darüber, wie WhimsyLabs' virtuelle Laborplattform die Umweltkrise in der traditionellen naturwissenschaftlichen Bildung angeht und gleichzeitig nachhaltige Entwicklungsziele vorantreibt.",
+      "title": "Blog Post post7",
+      "description": "Blog post description",
+      "keywords": [
+        "grüne Labore",
+        "nachhaltige MINT-Bildung",
+        "Umweltauswirkungen virtueller Labore",
+        "abfallfreie Wissenschaft",
+        "Reduzierung des CO2-Fußabdrucks"
+      ],
       "date": "2025-07-01",
       "hasFullTranslation": false,
       "language": "de"
@@ -208,6 +330,13 @@ module.exports = {
       "slug": "sandbox-learning-revolution-stem-education",
       "title": "Die Sandbox-Lernrevolution: Warum die Freiheit zu scheitern für die STEM-Bildung wesentlich ist",
       "description": "Wie WhimsyLabs' offener Erkundungsansatz die wissenschaftliche Bildung transformiert, indem er das Scheitern als mächtiges Lernwerkzeug umarmt und authentisches wissenschaftliches Denken fördert.",
+      "keywords": [
+        "Sandbox-Lernen",
+        "produktives Scheitern",
+        "STEM-Bildung",
+        "virtuelles Labor",
+        "wissenschaftliche Forschung"
+      ],
       "date": "2025-06-05",
       "hasFullTranslation": true,
       "language": "de"
@@ -217,6 +346,13 @@ module.exports = {
       "slug": "whimsycat-ai-tutor-transforming-science-education",
       "title": "Lernen Sie WhimsyCat kennen: Der revolutionäre KI-Tutor, der die wissenschaftliche Bildung transformiert",
       "description": "Wie WhimsyLabs' fortschrittlicher KI-Tutor personalisierte Anleitung, Echtzeit-Feedback und adaptive Lernwege bietet, um die Laborausbildung zu revolutionieren.",
+      "keywords": [
+        "WhimsyCat KI-Tutor",
+        "personalisiertes Lernen",
+        "KI in der Bildung",
+        "virtuelles Labor",
+        "STEM-Bildung"
+      ],
       "date": "2025-05-10",
       "hasFullTranslation": true,
       "language": "de"
@@ -226,6 +362,13 @@ module.exports = {
       "slug": "ai-powered-virtual-labs-solving-education-crisis",
       "title": "Revolutionierung der STEM-Bildung: Wie WhimsyLabs' KI-gestützte virtuelle Labore die globale wissenschaftliche Bildungskrise lösen",
       "description": "WhimsyLabs' innovative virtuelle Laborplattform kombiniert fortschrittliche KI-Bewertung, realistische Physiksimulationen und Sandbox-Lernen, um hochwertige wissenschaftliche Bildung global zu demokratisieren.",
+      "keywords": [
+        "KI-gestützte virtuelle Labore",
+        "STEM-Bildungskrise",
+        "Bildungstechnologie",
+        "virtuelles Labor",
+        "naturwissenschaftliche Bildung"
+      ],
       "date": "2025-04-15",
       "hasFullTranslation": true,
       "language": "de"
@@ -235,6 +378,13 @@ module.exports = {
       "slug": "virtual-kidney-dissection-send-engagement",
       "title": "Praktisches Lernen: Virtuelle Sektion einer Niere verbessert Engagement von Studierenden mit besonderen Bedürfnissen ",
       "description": "Entdecken sie, wie Whimsylabs physische Interaktion in der virtuellen Umgebung die Bildungsergebnisse und das Engagement für Studierende mit besonderen Bedürfnissen erheblich verbessert.",
+      "keywords": [
+        "virtuelle Sektion",
+        "Förderung besonderer Bildungsbedürfnisse",
+        "Nierenanatomie",
+        "VR-Lernen",
+        "Barrierefreiheit in der Bildung"
+      ],
       "date": "2025-03-19",
       "hasFullTranslation": false,
       "language": "de"
@@ -244,6 +394,13 @@ module.exports = {
       "slug": "physicality-in-virtual-labs",
       "title": "Die Bedeutung von Physikalität in virtuellen Laboren: Ein Schritt über die traditionelle Simulationen hinaus",
       "description": "Entdecken sie, wie Whimsylabs bahnbrechende Flüssigkeitsphysik und Verfahrensschulung die wissenschaftliche Bildung neu definiert.",
+      "keywords": [
+        "virtuelles Labor Physikalität",
+        "Flüssigkeitsphysik Simulation",
+        "Verfahrensschulung",
+        "Muskelgedächtnis Entwicklung",
+        "fortgeschrittenes virtuelles Labor"
+      ],
       "date": "2025-02-03",
       "hasFullTranslation": false,
       "language": "de"
@@ -253,6 +410,17 @@ module.exports = {
       "slug": "whimsylabs-education-revolution",
       "title": "Eine kurze Geschichte von Whimsylabs: Von unserem bescheidenen Anfang zu einem BETT 2025 Gewinner",
       "description": "Wie Whimsylabs, gegründet von Dr. Marisa French, MINT-Herausforderungen mit vollständig simulierten Laboren, wirkungsvollen Partnerschaften und preisgekrönter Innovation angeht.",
+      "keywords": [
+        "virtuelles Labor Geschichte",
+        "BETT 2025 Gewinner",
+        "MINT-Bildung Innovation",
+        "COVID-19 Bildungslösungen",
+        "proprietäre Physik-Engine",
+        "WhimsyLabs Gründungsgeschichte",
+        "Marisa French Gründerin",
+        "virtuelle Laborentwicklung",
+        "EdTech Startup Reise"
+      ],
       "date": "2025-01-27",
       "hasFullTranslation": false,
       "language": "de"
@@ -260,10 +428,38 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post15",
+      "slug": "whimsylabs-bett-2026-exhibition-announcement",
+      "title": "Blog Post post15",
+      "description": "Blog post description",
+      "keywords": [
+        "Bett 2026",
+        "Bett UK exposition",
+        "salon EdTech Londres",
+        "démo laboratoire virtuel",
+        "startup technologie éducative",
+        "WhimsyLabs Bett",
+        "ExCel Londres EdTech",
+        "innovation éducation STEM",
+        "plateforme laboratoire virtuel",
+        "technologie éducation scientifique"
+      ],
+      "date": "2025-12-05",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
       "title": "Blog Post post14",
       "description": "Blog post description",
+      "keywords": [
+        "gamification dans l'éducation",
+        "engagement STEM",
+        "récompenses éducatives",
+        "motivation intrinsèque",
+        "apprentissage par le jeu"
+      ],
       "date": "2025-10-15",
       "hasFullTranslation": false,
       "language": "fr"
@@ -273,6 +469,13 @@ module.exports = {
       "slug": "science-real-time-physics-simulations-virtual-labs",
       "title": "Blog Post post13",
       "description": "Blog post description",
+      "keywords": [
+        "laboratoires de chimie pour les écoles",
+        "laboratoires de physique pour les écoles",
+        "laboratoires virtuels de biologie",
+        "expériences scientifiques sûres",
+        "laboratoires alignés sur le programme"
+      ],
       "date": "2025-10-01",
       "hasFullTranslation": false,
       "language": "fr"
@@ -282,6 +485,13 @@ module.exports = {
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
       "title": "Comment la réalité virtuelle prépare les étudiants aux carrières STEM du monde réel : La seule plateforme enseignant les compétences physiques de laboratoire",
       "description": "Découvrez pourquoi WhimsyLabs est la seule plateforme de laboratoire virtuel qui enseigne les mouvements physiques authentiques et les compétences de conception expérimentale grâce à une liberté sandbox complète et des simulations avancées de physique des liquides.",
+      "keywords": [
+        "laboratoires VR pour l'enseignement supérieur",
+        "laboratoires virtuels universitaires",
+        "éducation de laboratoire évolutive",
+        "accès aux laboratoires rentable",
+        "simulations de qualité recherche"
+      ],
       "date": "2025-09-15",
       "hasFullTranslation": false,
       "language": "fr"
@@ -291,6 +501,13 @@ module.exports = {
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
       "title": "Blog Post post11",
       "description": "Blog post description",
+      "keywords": [
+        "équité éducative",
+        "éducation STEM accessible",
+        "combler les écarts de réussite",
+        "apprentissage inclusif",
+        "démocratiser l'éducation scientifique"
+      ],
       "date": "2025-09-01",
       "hasFullTranslation": false,
       "language": "fr"
@@ -298,8 +515,15 @@ module.exports = {
     {
       "id": "post10",
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
-      "title": "Blog Post post10",
-      "description": "Blog post description",
+      "title": "Intelligence émotionnelle dans les tuteurs IA : Comment WhimsyCat détecte et répond à la frustration des étudiants",
+      "description": "Exploration du système révolutionnaire de détection de frustration de WhimsyCat qui surveille les actions des joueurs, le suivi du regard et les modèles d'engagement pour fournir un soutien émotionnel proactif lorsque les étudiants rencontrent des difficultés.",
+      "keywords": [
+        "IA émotionnelle dans l'éducation",
+        "détection de frustration",
+        "WhimsyCat IA",
+        "surveillance de l'engagement des étudiants",
+        "informatique affective dans l'apprentissage"
+      ],
       "date": "2025-08-15",
       "hasFullTranslation": false,
       "language": "fr"
@@ -309,6 +533,13 @@ module.exports = {
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
       "title": "Blog Post post9",
       "description": "Blog post description",
+      "keywords": [
+        "tutorat IA 24/7",
+        "équité éducative",
+        "soutien d'apprentissage personnalisé",
+        "tutorat toujours disponible",
+        "rétroaction adaptative"
+      ],
       "date": "2025-08-01",
       "hasFullTranslation": false,
       "language": "fr"
@@ -318,6 +549,13 @@ module.exports = {
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
       "title": "Comment les laboratoires virtuels résolvent la crise de pénurie d'enseignants STEM : Une perspective britannique et mondiale",
       "description": "Exploration de la manière dont les laboratoires virtuels alimentés par l'IA de WhimsyLabs répondent à la pénurie catastrophique d'enseignants STEM affectant le Royaume-Uni et les écoles du monde entier grâce au tutorat 24h/24 et 7j/7 et à l'évaluation automatisée.",
+      "keywords": [
+        "pénurie d'enseignants STEM",
+        "laboratoires virtuels pour les écoles",
+        "évaluation automatisée",
+        "soutien de tutorat IA",
+        "réduction de la charge de travail des enseignants"
+      ],
       "date": "2025-07-15",
       "hasFullTranslation": false,
       "language": "fr"
@@ -327,6 +565,13 @@ module.exports = {
       "slug": "green-labs-sustainability-virtual-stem-education",
       "title": "Laboratoires verts, avenir plus vert : Comment les laboratoires virtuels transforment la durabilité dans l'enseignement STEM",
       "description": "Explorer comment la plateforme de laboratoire virtuel de WhimsyLabs répond à la crise environnementale dans l'enseignement scientifique traditionnel tout en faisant progresser les objectifs de développement durable.",
+      "keywords": [
+        "laboratoires verts",
+        "éducation STEM durable",
+        "impact environnemental des laboratoires virtuels",
+        "science zéro déchet",
+        "réduction de l'empreinte carbone"
+      ],
       "date": "2025-07-01",
       "hasFullTranslation": false,
       "language": "fr"
@@ -336,6 +581,13 @@ module.exports = {
       "slug": "sandbox-learning-revolution-stem-education",
       "title": "La révolution de l'apprentissage sandbox : Pourquoi la liberté d'échouer est essentielle pour l'éducation STEM",
       "description": "Comment l'approche d'exploration ouverte de WhimsyLabs transforme l'éducation scientifique en embrassant l'échec comme un outil d'apprentissage puissant et en favorisant la pensée scientifique authentique.",
+      "keywords": [
+        "apprentissage sandbox",
+        "échec productif",
+        "éducation STEM",
+        "laboratoire virtuel",
+        "enquête scientifique"
+      ],
       "date": "2025-06-05",
       "hasFullTranslation": true,
       "language": "fr"
@@ -345,6 +597,13 @@ module.exports = {
       "slug": "whimsycat-ai-tutor-transforming-science-education",
       "title": "Blog Post post5",
       "description": "Blog post description",
+      "keywords": [
+        "tuteur IA WhimsyCat",
+        "apprentissage personnalisé",
+        "IA dans l'éducation",
+        "laboratoire virtuel",
+        "éducation STEM"
+      ],
       "date": "2025-05-10",
       "hasFullTranslation": false,
       "language": "fr"
@@ -354,6 +613,13 @@ module.exports = {
       "slug": "ai-powered-virtual-labs-solving-education-crisis",
       "title": "Révolutionner l'éducation STEM : Comment les laboratoires virtuels alimentés par IA de WhimsyLabs résolvent la crise mondiale de l'éducation scientifique",
       "description": "La plateforme de laboratoire virtuel innovante de WhimsyLabs combine évaluation IA avancée, simulations physiques réalistes et apprentissage sandbox pour démocratiser l'éducation scientifique de haute qualité globalement.",
+      "keywords": [
+        "laboratoires virtuels alimentés par IA",
+        "crise de l'éducation STEM",
+        "technologie éducative",
+        "laboratoire virtuel",
+        "éducation scientifique"
+      ],
       "date": "2025-04-15",
       "hasFullTranslation": true,
       "language": "fr"
@@ -363,6 +629,13 @@ module.exports = {
       "slug": "virtual-kidney-dissection-send-engagement",
       "title": "Apprentissage pratique : La dissection virtuelle de rein améliore l'engagement des étudiants SEND",
       "description": "Explorer comment l'interaction physique de WhimsyLabs dans les environnements virtuels améliore significativement les résultats éducatifs et l'engagement pour les étudiants SEND.",
+      "keywords": [
+        "dissection virtuelle",
+        "éducation SEND",
+        "anatomie rénale",
+        "apprentissage VR",
+        "accessibilité dans l'éducation"
+      ],
       "date": "2025-03-19",
       "hasFullTranslation": true,
       "language": "fr"
@@ -372,6 +645,13 @@ module.exports = {
       "slug": "physicality-in-virtual-labs",
       "title": "L'importance de la physicalité dans les laboratoires virtuels : Un pas au-delà des simulations traditionnelles",
       "description": "Explorer comment la physique des liquides révolutionnaire de WhimsyLabs et la formation procédurale redéfinissent l'éducation scientifique.",
+      "keywords": [
+        "laboratoire virtuel physicalité",
+        "simulation physique liquides",
+        "formation procédurale",
+        "développement mémoire musculaire",
+        "laboratoire virtuel avancé"
+      ],
       "date": "2025-02-03",
       "hasFullTranslation": true,
       "language": "fr"
@@ -381,6 +661,17 @@ module.exports = {
       "slug": "whimsylabs-education-revolution",
       "title": "Une brève histoire de WhimsyLabs : De nos débuts modestes à un gagnant BETT 2025",
       "description": "Comment WhimsyLabs, fondé par Marisa French, aborde les défis STEM avec des laboratoires entièrement simulés, des partenariats impactants et une innovation primée.",
+      "keywords": [
+        "histoire laboratoire virtuel",
+        "BETT 2025 gagnant",
+        "innovation éducation STEM",
+        "solutions éducation COVID-19",
+        "moteur physique propriétaire",
+        "histoire fondation WhimsyLabs",
+        "Marisa French fondatrice",
+        "développement laboratoire virtuel",
+        "parcours startup EdTech"
+      ],
       "date": "2025-01-27",
       "hasFullTranslation": true,
       "language": "fr"
@@ -388,10 +679,38 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post15",
+      "slug": "whimsylabs-bett-2026-exhibition-announcement",
+      "title": "Blog Post post15",
+      "description": "Blog post description",
+      "keywords": [
+        "Bett 2026",
+        "Bett UK exposición",
+        "feria EdTech Londres",
+        "demostración laboratorio virtual",
+        "startup tecnología educativa",
+        "WhimsyLabs Bett",
+        "ExCel Londres EdTech",
+        "innovación educación STEM",
+        "plataforma laboratorio virtual",
+        "tecnología educación científica"
+      ],
+      "date": "2025-12-05",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post14",
       "slug": "gamification-science-education-points-rewards-engagement",
       "title": "Blog Post post14",
       "description": "Blog post description",
+      "keywords": [
+        "gamificación en educación",
+        "compromiso STEM",
+        "recompensas educativas",
+        "motivación intrínseca",
+        "aprendizaje basado en juegos"
+      ],
       "date": "2025-10-15",
       "hasFullTranslation": false,
       "language": "es"
@@ -401,6 +720,13 @@ module.exports = {
       "slug": "science-real-time-physics-simulations-virtual-labs",
       "title": "Blog Post post13",
       "description": "Blog post description",
+      "keywords": [
+        "laboratorios de química para escuelas",
+        "laboratorios de física para escuelas",
+        "laboratorios virtuales de biología",
+        "experimentos científicos seguros",
+        "laboratorios alineados con el currículo"
+      ],
       "date": "2025-10-01",
       "hasFullTranslation": false,
       "language": "es"
@@ -410,6 +736,13 @@ module.exports = {
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
       "title": "Cómo la realidad virtual prepara a los estudiantes para carreras STEM del mundo real: La única plataforma que enseña habilidades físicas de laboratorio",
       "description": "Descubra por qué WhimsyLabs es la única plataforma de laboratorio virtual que enseña movimientos físicos auténticos y habilidades de diseño experimental a través de libertad sandbox completa y simulaciones avanzadas de física de líquidos.",
+      "keywords": [
+        "laboratorios VR para educación superior",
+        "laboratorios virtuales universitarios",
+        "educación de laboratorio escalable",
+        "acceso a laboratorio rentable",
+        "simulaciones de calidad de investigación"
+      ],
       "date": "2025-09-15",
       "hasFullTranslation": false,
       "language": "es"
@@ -419,6 +752,13 @@ module.exports = {
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
       "title": "Blog Post post11",
       "description": "Blog post description",
+      "keywords": [
+        "equidad educativa",
+        "educación STEM accesible",
+        "reducir brechas de rendimiento",
+        "aprendizaje inclusivo",
+        "democratizar educación científica"
+      ],
       "date": "2025-09-01",
       "hasFullTranslation": false,
       "language": "es"
@@ -426,8 +766,15 @@ module.exports = {
     {
       "id": "post10",
       "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
-      "title": "Blog Post post10",
-      "description": "Blog post description",
+      "title": "Inteligencia emocional en tutores IA: Cómo WhimsyCat detecta y responde a la frustración estudiantil",
+      "description": "Explorando el revolucionario sistema de detección de frustración de WhimsyCat que monitorea acciones del jugador, seguimiento de mirada y patrones de participación para proporcionar apoyo emocional proactivo cuando los estudiantes tienen dificultades.",
+      "keywords": [
+        "IA emocional en educación",
+        "detección de frustración",
+        "WhimsyCat IA",
+        "monitoreo de participación estudiantil",
+        "computación afectiva en aprendizaje"
+      ],
       "date": "2025-08-15",
       "hasFullTranslation": false,
       "language": "es"
@@ -437,6 +784,13 @@ module.exports = {
       "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
       "title": "Blog Post post9",
       "description": "Blog post description",
+      "keywords": [
+        "tutoría de IA 24/7",
+        "equidad educativa",
+        "soporte de aprendizaje personalizado",
+        "tutoría siempre disponible",
+        "retroalimentación adaptativa"
+      ],
       "date": "2025-08-01",
       "hasFullTranslation": false,
       "language": "es"
@@ -446,6 +800,13 @@ module.exports = {
       "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
       "title": "Cómo los laboratorios virtuales resuelven la crisis de escasez de docentes STEM: Una perspectiva británica y global",
       "description": "Explorando cómo los laboratorios virtuales impulsados por IA de WhimsyLabs abordan la catastrófica escasez de docentes STEM que afecta al Reino Unido y a las escuelas de todo el mundo mediante tutoría 24/7 y evaluación automatizada.",
+      "keywords": [
+        "escasez de docentes STEM",
+        "laboratorios virtuales para escuelas",
+        "evaluación automatizada",
+        "soporte de tutoría IA",
+        "reducción de carga de trabajo docente"
+      ],
       "date": "2025-07-15",
       "hasFullTranslation": false,
       "language": "es"
@@ -455,6 +816,13 @@ module.exports = {
       "slug": "green-labs-sustainability-virtual-stem-education",
       "title": "Laboratorios verdes, futuro más verde: Cómo los laboratorios virtuales están transformando la sostenibilidad en la educación STEM",
       "description": "Explorando cómo la plataforma de laboratorio virtual de WhimsyLabs aborda la crisis ambiental en la educación científica tradicional mientras avanza los objetivos de desarrollo sostenible.",
+      "keywords": [
+        "laboratorios verdes",
+        "educación STEM sostenible",
+        "impacto ambiental del laboratorio virtual",
+        "ciencia cero residuos",
+        "reducción de huella de carbono"
+      ],
       "date": "2025-07-01",
       "hasFullTranslation": false,
       "language": "es"
@@ -464,6 +832,13 @@ module.exports = {
       "slug": "sandbox-learning-revolution-stem-education",
       "title": "Blog Post post6",
       "description": "Blog post description",
+      "keywords": [
+        "aprendizaje sandbox",
+        "fracaso productivo",
+        "educación STEM",
+        "laboratorio virtual",
+        "indagación científica"
+      ],
       "date": "2025-06-05",
       "hasFullTranslation": false,
       "language": "es"
@@ -473,6 +848,13 @@ module.exports = {
       "slug": "whimsycat-ai-tutor-transforming-science-education",
       "title": "Conoce a WhimsyCat: El tutor de IA revolucionario transformando la educación científica",
       "description": "Cómo el tutor de IA avanzado de WhimsyLabs proporciona orientación personalizada, retroalimentación en tiempo real y caminos de aprendizaje adaptativos para revolucionar la educación de laboratorio.",
+      "keywords": [
+        "tutor de IA WhimsyCat",
+        "aprendizaje personalizado",
+        "IA en educación",
+        "laboratorio virtual",
+        "educación STEM"
+      ],
       "date": "2025-05-10",
       "hasFullTranslation": true,
       "language": "es"
@@ -482,6 +864,13 @@ module.exports = {
       "slug": "ai-powered-virtual-labs-solving-education-crisis",
       "title": "Revolucionando la educación STEM: Cómo los laboratorios virtuales impulsados por IA de WhimsyLabs están resolviendo la crisis global de educación científica",
       "description": "La plataforma de laboratorio virtual innovadora de WhimsyLabs combina evaluación de IA avanzada, simulaciones de física realistas y aprendizaje sandbox para democratizar la educación científica de alta calidad globalmente.",
+      "keywords": [
+        "laboratorios virtuales impulsados por IA",
+        "crisis de educación STEM",
+        "tecnología educativa",
+        "laboratorio virtual",
+        "educación científica"
+      ],
       "date": "2025-04-15",
       "hasFullTranslation": true,
       "language": "es"
@@ -491,6 +880,13 @@ module.exports = {
       "slug": "virtual-kidney-dissection-send-engagement",
       "title": "Aprendizaje práctico: La disección virtual de riñón mejora el compromiso de estudiantes SEND",
       "description": "Explorando cómo la interacción física de WhimsyLabs en entornos virtuales mejora significativamente los resultados educativos y el compromiso para estudiantes SEND.",
+      "keywords": [
+        "disección virtual",
+        "educación SEND",
+        "anatomía renal",
+        "aprendizaje VR",
+        "accesibilidad en educación"
+      ],
       "date": "2025-03-19",
       "hasFullTranslation": true,
       "language": "es"
@@ -500,6 +896,13 @@ module.exports = {
       "slug": "physicality-in-virtual-labs",
       "title": "La importancia de la fisicalidad en laboratorios virtuales: Un paso más allá de las simulaciones tradicionales",
       "description": "Explorando cómo la física de líquidos revolucionaria de WhimsyLabs y el entrenamiento procedimental redefinen la educación científica.",
+      "keywords": [
+        "laboratorio virtual fisicalidad",
+        "simulación física líquidos",
+        "entrenamiento procedimental",
+        "desarrollo memoria muscular",
+        "laboratorio virtual avanzado"
+      ],
       "date": "2025-02-03",
       "hasFullTranslation": true,
       "language": "es"
@@ -509,9 +912,271 @@ module.exports = {
       "slug": "whimsylabs-education-revolution",
       "title": "Una breve historia de WhimsyLabs: Desde nuestros humildes comienzos hasta ser ganador de BETT 2025",
       "description": "Cómo WhimsyLabs, fundado por Marisa French, está abordando los desafíos STEM con laboratorios completamente simulados, asociaciones impactantes e innovación galardonada.",
+      "keywords": [
+        "historia laboratorio virtual",
+        "BETT 2025 ganador",
+        "innovación educación STEM",
+        "soluciones educación COVID-19",
+        "motor físico propietario",
+        "historia fundación WhimsyLabs",
+        "Marisa French fundadora",
+        "desarrollo laboratorio virtual",
+        "viaje startup EdTech"
+      ],
       "date": "2025-01-27",
       "hasFullTranslation": true,
       "language": "es"
+    }
+  ],
+  "ja": [
+    {
+      "id": "post15",
+      "slug": "whimsylabs-bett-2026-exhibition-announcement",
+      "title": "Blog Post post15",
+      "description": "Blog post description",
+      "keywords": [
+        "Bett 2026",
+        "Bett UK 展示会",
+        "EdTech カンファレンス ロンドン",
+        "バーチャル実験室 デモ",
+        "教育テクノロジー スタートアップ",
+        "WhimsyLabs Bett",
+        "ExCel ロンドン EdTech",
+        "STEM教育 イノベーション",
+        "仮想実験室プラットフォーム",
+        "理科教育テクノロジー"
+      ],
+      "date": "2025-12-05",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post14",
+      "slug": "gamification-science-education-points-rewards-engagement",
+      "title": "Blog Post post14",
+      "description": "Blog post description",
+      "keywords": [
+        "教育におけるゲーミフィケーション",
+        "STEMエンゲージメント",
+        "教育的報酬",
+        "内発的動機づけ",
+        "ゲームベース学習"
+      ],
+      "date": "2025-10-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post13",
+      "slug": "science-real-time-physics-simulations-virtual-labs",
+      "title": "Blog Post post13",
+      "description": "Blog post description",
+      "keywords": [
+        "学校向け化学実験室",
+        "学校向け物理実験室",
+        "仮想生物実験室",
+        "安全な科学実験",
+        "カリキュラムに沿った実験室"
+      ],
+      "date": "2025-10-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post12",
+      "slug": "virtual-reality-prepares-students-real-world-stem-careers",
+      "title": "Blog Post post12",
+      "description": "Blog post description",
+      "keywords": [
+        "高等教育向けVR実験室",
+        "大学向け仮想実験室",
+        "スケーラブルな実験室教育",
+        "費用対効果の高い実験室アクセス",
+        "研究グレードのシミュレーション"
+      ],
+      "date": "2025-09-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post11",
+      "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
+      "title": "Blog Post post11",
+      "description": "Blog post description",
+      "keywords": [
+        "教育の公平性",
+        "アクセス可能なSTEM教育",
+        "達成格差の解消",
+        "包括的学習",
+        "理科教育の民主化"
+      ],
+      "date": "2025-09-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post10",
+      "slug": "emotional-intelligence-ai-tutors-whimsycat-frustration-detection",
+      "title": "AIチューターにおける感情的知性：WhimsyCatが学生のフラストレーションを検出し応答する方法",
+      "description": "WhimsyCatの画期的なフラストレーション検出システムを探求します。プレイヤーのアクション、視線追跡、エンゲージメントパターンを監視し、学生が困難に直面したときにプロアクティブな感情的サポートを提供します。",
+      "keywords": [
+        "教育におけるエモーショナルAI",
+        "フラストレーション検出",
+        "WhimsyCat AI",
+        "学生エンゲージメント監視",
+        "学習における感情コンピューティング"
+      ],
+      "date": "2025-08-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post9",
+      "slug": "24-7-ai-tutoring-personalized-daily-recommendations",
+      "title": "Blog Post post9",
+      "description": "Blog post description",
+      "keywords": [
+        "24時間対応AIチューター",
+        "教育の公平性",
+        "個別化学習サポート",
+        "常時利用可能なチューターリング",
+        "適応的フィードバック"
+      ],
+      "date": "2025-08-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post8",
+      "slug": "virtual-labs-solve-stem-teacher-shortage-crisis",
+      "title": "Blog Post post8",
+      "description": "Blog post description",
+      "keywords": [
+        "STEM教師不足",
+        "学校向け仮想実験室",
+        "自動評価",
+        "AIチューターリングサポート",
+        "教師の作業負担軽減"
+      ],
+      "date": "2025-07-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post7",
+      "slug": "green-labs-sustainability-virtual-stem-education",
+      "title": "Blog Post post7",
+      "description": "Blog post description",
+      "keywords": [
+        "グリーンラボ",
+        "持続可能なSTEM教育",
+        "仮想実験室の環境影響",
+        "ゼロウェイスト科学",
+        "炭素フットプリント削減"
+      ],
+      "date": "2025-07-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post6",
+      "slug": "sandbox-learning-revolution-stem-education",
+      "title": "サンドボックス学習革命：STEM教育において失敗する自由がなぜ不可欠なのか",
+      "description": "WhimsyLabsのオープンエンドの探索アプローチが、失敗を強力な学習ツールとして受け入れ、本物の科学的思考を育成することで、理科教育をどのように変革しているかをご紹介します。",
+      "keywords": [
+        "サンドボックス学習",
+        "生産的失敗",
+        "STEM教育",
+        "仮想実験室",
+        "科学的探究"
+      ],
+      "date": "2025-06-05",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post5",
+      "slug": "whimsycat-ai-tutor-transforming-science-education",
+      "title": "WhimsyCatとの出会い：理科教育を変革する革命的AIチューター",
+      "description": "WhimsyLabsの高度なAIチューターが、個別化されたガイダンス、リアルタイムフィードバック、適応的学習経路を提供し、実験室教育をどのように革命化しているかをご紹介します。",
+      "keywords": [
+        "WhimsyCat AIチューター",
+        "個別化学習",
+        "教育におけるAI",
+        "仮想実験室",
+        "STEM教育"
+      ],
+      "date": "2025-05-10",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post4",
+      "slug": "ai-powered-virtual-labs-solving-education-crisis",
+      "title": "STEM教育の革命：WhimsyLabsのAI搭載シミュレーション教材が世界的な理科教育の危機をどのように解決しているか",
+      "description": "WhimsyLabsの革新的な仮想実験室プラットフォームは、高度なAI評価、現実的な物理シミュレーション、サンドボックス学習を組み合わせて、世界中で質の高い理科教育へのアクセスを民主化します。",
+      "keywords": [
+        "AI搭載仮想実験室",
+        "STEM教育危機",
+        "教育技術",
+        "仮想実験室",
+        "理科教育"
+      ],
+      "date": "2025-04-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post3",
+      "slug": "virtual-kidney-dissection-send-engagement",
+      "title": "Blog Post post3",
+      "description": "Blog post description",
+      "keywords": [
+        "仮想解剖",
+        "特別支援教育",
+        "腎臓解剖学",
+        "VR学習",
+        "教育におけるアクセシビリティ"
+      ],
+      "date": "2025-03-19",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post2",
+      "slug": "physicality-in-virtual-labs",
+      "title": "シミュレーション教材における身体性の重要性：従来のシミュレーションを超えた一歩",
+      "description": "Whimsylabsの画期的な液体物理学と手順トレーニングが、どのように理科教育を再定義しているかを探ります。",
+      "keywords": [
+        "仮想実験室 身体性",
+        "液体物理学 シミュレーション",
+        "手順トレーニング",
+        "筋肉記憶 発達",
+        "高度な仮想実験室"
+      ],
+      "date": "2025-02-03",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post1",
+      "slug": "whimsylabs-education-revolution",
+      "title": "Blog Post post1",
+      "description": "Blog post description",
+      "keywords": [
+        "バーチャル実験室 歴史",
+        "BETT 2025 受賞",
+        "STEM教育 イノベーション",
+        "COVID-19 教育ソリューション",
+        "独自物理エンジン",
+        "WhimsyLabs 創業ストーリー",
+        "Marisa French 創業者",
+        "仮想実験室開発",
+        "EdTech スタートアップ"
+      ],
+      "date": "2025-01-27",
+      "hasFullTranslation": false,
+      "language": "ja"
     }
   ]
 };

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map Path Generator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #333; color: white; }
+        .canvas-wrapper { position: relative; display: inline-block; border: 2px solid #555; cursor: crosshair; }
+        img { display: block; max-width: 100%; }
+        svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        circle { fill: red; r: 4; }
+        path { fill: none; stroke: red; stroke-width: 2; }
+        textarea { width: 100%; height: 100px; margin-top: 20px; font-family: monospace; }
+        .controls { margin-bottom: 20px; background: #444; padding: 10px; border-radius: 8px;}
+        button { padding: 8px 16px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px; }
+        button:hover { background: #0056b3; }
+        input[type="file"] { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Step 1: Upload your "Blanked Out" Map</h1>
+    <div class="controls">
+        <input type="file" id="imgLoader" accept="image/*"><br>
+        <small>Click on the map to add points. The code below will update automatically.</small>
+        <br><br>
+        <button onclick="undoLast()">Undo Last Click</button>
+    </div>
+
+    <div class="canvas-wrapper" id="wrapper">
+        <img id="mapImage" src=""> <!-- Your image appears here -->
+        <svg id="svgLayer">
+            <path id="currentPath" d="" />
+            <!-- dots will be added here -->
+        </svg>
+    </div>
+
+    <h3>Step 2: Copy this Code</h3>
+    <p>Paste this into the <code>&lt;path d="..."&gt;</code> section of your main map.html file.</p>
+    <textarea id="outputCode" readonly placeholder="Path data will appear here..."></textarea>
+
+    <script>
+        const imgLoader = document.getElementById('imgLoader');
+        const mapImage = document.getElementById('mapImage');
+        const svgLayer = document.getElementById('svgLayer');
+        const currentPath = document.getElementById('currentPath');
+        const outputCode = document.getElementById('outputCode');
+        const wrapper = document.getElementById('wrapper');
+        
+        let points = [];
+        let originalWidth = 0;
+        let originalHeight = 0;
+
+        // Load Image
+        imgLoader.addEventListener('change', function(e) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                mapImage.src = event.target.result;
+                // Wait for image to load to get dimensions
+                mapImage.onload = function() {
+                    originalWidth = mapImage.naturalWidth;
+                    originalHeight = mapImage.naturalHeight;
+                    
+                    // Set SVG viewBox to match original image resolution
+                    svgLayer.setAttribute('viewBox', `0 0 ${originalWidth} ${originalHeight}`);
+                    
+                    // Update the main HTML template suggestion in the box
+                    updateOutput();
+                }
+            }
+            reader.readAsDataURL(e.target.files[0]);
+        });
+
+        // Handle Clicks
+        wrapper.addEventListener('click', function(e) {
+            if(!mapImage.src) return;
+
+            const rect = mapImage.getBoundingClientRect();
+            
+            // Calculate scale factor (in case image is resized on screen)
+            const scaleX = originalWidth / rect.width;
+            const scaleY = originalHeight / rect.height;
+
+            // Get X/Y relative to the image, scaled to original resolution
+            const x = Math.round((e.clientX - rect.left) * scaleX);
+            const y = Math.round((e.clientY - rect.top) * scaleY);
+
+            points.push({x, y});
+            draw();
+            updateOutput();
+        });
+
+        function undoLast() {
+            points.pop();
+            draw();
+            updateOutput();
+        }
+
+        function draw() {
+            // Remove old circles
+            const circles = svgLayer.querySelectorAll('circle');
+            circles.forEach(c => c.remove());
+
+            // Draw Path
+            if (points.length > 0) {
+                let d = `M ${points[0].x} ${points[0].y}`;
+                for (let i = 1; i < points.length; i++) {
+                    d += ` L ${points[i].x} ${points[i].y}`;
+                }
+                currentPath.setAttribute('d', d);
+
+                // Draw circles for visual feedback
+                points.forEach(p => {
+                    const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                    c.setAttribute('cx', p.x);
+                    c.setAttribute('cy', p.y);
+                    svgLayer.appendChild(c);
+                });
+            } else {
+                currentPath.setAttribute('d', '');
+            }
+        }
+
+        function updateOutput() {
+            if(points.length === 0) {
+                outputCode.value = "Click on the map to start generating code...";
+                return;
+            }
+            const dStr = currentPath.getAttribute('d');
+            outputCode.value = dStr;
+        }
+    </script>
+</body>
+</html>
