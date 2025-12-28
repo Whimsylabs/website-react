@@ -6,6 +6,7 @@ import BubbleContainer from "./BubbleContainer";
 import AnimatedTitle from "./AnimatedTitle";
 import withTranslation from "./withTranslation";
 import ScrollingMap from "./ScrollingMap";
+import SplashSection from "./SplashSection";
 
 const BettPage = ({ t, language }) => {
   const [formData, setFormData] = useState({
@@ -63,14 +64,12 @@ const BettPage = ({ t, language }) => {
       <Header language={language} />
 
       <section className="bett-hero-section">
-        <div className="bett-map-section-bg" style={{ backgroundImage: 'url(/images/tiled.png)' }}></div>
-        <div className="container py-5">
+        <div
+          className="bett-map-section-bg"
+          style={{ backgroundImage: "url(/images/tiled.png)" }}
+        ></div>
+        <div className="container">
           <div className="bett-hero-content">
-            <img
-              src="/images/logo.png"
-              alt="WhimsyLabs Logo"
-              className="bett-logo"
-            />
             <AnimatedTitle
               text={t("bett.heroTitle")}
               className="bett-hero-title"
@@ -78,7 +77,13 @@ const BettPage = ({ t, language }) => {
               darkMode={false}
               uppercase={true}
             />
-            <p className="bett-hero-subtitle">{t("bett.heroSubtitle")}</p>
+            <div className="bett-hero-badges">
+              <div className="bett-award-badge">
+                BETT 2025 Kids Judge Award Winner
+              </div>
+              <div className="bett-date-badge">21-23 January 2026</div>
+              <div className="bett-date-badge">Stand FS10</div>
+            </div>
           </div>
 
           <div className="bett-map-grid">
@@ -107,13 +112,35 @@ const BettPage = ({ t, language }) => {
               />
             </div>
           </div>
+          <div className="bett-hero-ctas">
+            <a href="#booking" className="bett-cta-button bett-cta-secondary">
+              Schedule Your BETT Meeting
+            </a>
+            <a href="#video" className="bett-cta-button bett-cta-secondary">
+              Discover WhimsyLabs
+            </a>
+            <a href="#contact" className="bett-cta-button bett-cta-secondary">
+              Connect After BETT
+            </a>
+          </div>
+        </div>
+        <div className="bett-wave-divider">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            {/* Set fill to #2C2170 */}
+            <path
+              d="M0,0 C150,80 350,0 600,50 C850,100 1050,20 1200,80 L1200,120 L0,120 Z"
+              fill="#201853"
+            />
+          </svg>
         </div>
       </section>
 
       <BubbleContainer>
-        <section className="bett-video-section">
+        <section id="video" className="bett-video-why-section">
           <h2>{t("bett.videoTitle")}</h2>
-          <p className="bett-video-description">{t("bett.videoDescription")}</p>
+          <p className="bett-section-description">
+            {t("bett.videoDescription")}
+          </p>
           <div className="bett-video-container">
             <iframe
               src="https://www.youtube.com/embed/9D2e2e2gzvk"
@@ -123,44 +150,57 @@ const BettPage = ({ t, language }) => {
               className="bett-video"
             ></iframe>
           </div>
-        </section>
-      </BubbleContainer>
 
-      <section className="bett-about-section">
-        <div className="container">
-          <h2>{t("bett.aboutTitle")}</h2>
-          <div className="bett-about-content">
-            <p>{t("bett.aboutText1")}</p>
-            <p>{t("bett.aboutText2")}</p>
+          <div className="bett-why-visit">
+            <h2>{t("bett.whyVisitTitle")}</h2>
+            <p className="bett-section-description">
+              {t("bett.whyVisitDescription")}
+            </p>
 
             <div className="bett-features-grid">
               <div className="bett-feature-item">
-                <span className="bett-feature-icon">🎮</span>
                 <h4>{t("bett.feature1Title")}</h4>
                 <p>{t("bett.feature1Desc")}</p>
               </div>
               <div className="bett-feature-item">
-                <span className="bett-feature-icon">🤖</span>
                 <h4>{t("bett.feature2Title")}</h4>
                 <p>{t("bett.feature2Desc")}</p>
               </div>
               <div className="bett-feature-item">
-                <span className="bett-feature-icon">🌍</span>
                 <h4>{t("bett.feature3Title")}</h4>
                 <p>{t("bett.feature3Desc")}</p>
               </div>
               <div className="bett-feature-item">
-                <span className="bett-feature-icon">⚡</span>
                 <h4>{t("bett.feature4Title")}</h4>
                 <p>{t("bett.feature4Desc")}</p>
               </div>
+              <div className="bett-feature-item">
+                <h4>{t("bett.feature5Title")}</h4>
+                <p>{t("bett.feature5Desc")}</p>
+              </div>
+              <div className="bett-feature-item">
+                <h4>{t("bett.feature6Title")}</h4>
+                <p>{t("bett.feature6Desc")}</p>
+              </div>
+              <div className="bett-feature-item">
+                <h4>{t("bett.feature7Title")}</h4>
+                <p>{t("bett.feature7Desc")}</p>
+              </div>
+              <div className="bett-feature-item">
+                <h4>{t("bett.feature8Title")}</h4>
+                <p>{t("bett.feature8Desc")}</p>
+              </div>
+              <div className="bett-feature-item">
+                <h4>{t("bett.feature9Title")}</h4>
+                <p>{t("bett.feature9Desc")}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </BubbleContainer>
 
-      <BubbleContainer>
-        <section className="bett-booking-section">
+      <SplashSection>
+        <section id="booking" className="bett-booking-section">
           <h2>{t("bett.bookingTitle")}</h2>
           <p className="bett-booking-description">
             {t("bett.bookingDescription")}
@@ -182,9 +222,9 @@ const BettPage = ({ t, language }) => {
 
           <p className="bett-calendly-note">{t("bett.calendlyNote")}</p>
         </section>
-      </BubbleContainer>
+      </SplashSection>
 
-      <section className="bett-contact-section">
+      <section id="contact" className="bett-contact-section">
         <div className="container">
           <h2>{t("bett.contactTitle")}</h2>
           <p className="bett-contact-description">

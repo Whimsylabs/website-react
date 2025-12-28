@@ -1,24 +1,73 @@
 /* BETT Page Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bett-hero-section {
-  background: linear-gradient(135deg, #1f1968 0%, #2d2090 100%);
+  /* Match gradient to wave color #2C2170 */
+  background-color: #2C2170;
+  background-image: linear-gradient(to bottom, #1f1968 0%, #2C2170 100%);
   color: white;
-  padding: 2rem 0;
+  padding: 0;
   min-height: 80vh;
   display: flex;
   align-items: center;
   position: relative;
 }
 
+.bett-wave-divider {
+  position: absolute;
+  /* CHANGED: Move UP by 1px to overlap the hero and close the gap */
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.bett-wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+  transform: scaleY(-1);
+}
+
+.bett-wave-divider svg path {
+  animation: wave-ripple 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes wave-ripple {
+  0%, 100% {
+    d: path("M0,0 C150,80 350,0 600,50 C850,100 1050,20 1200,80 L1200,120 L0,120 Z");
+  }
+  25% {
+    d: path("M0,20 C150,60 350,30 600,70 C850,80 1050,40 1200,60 L1200,120 L0,120 Z");
+  }
+  50% {
+    d: path("M0,40 C150,90 350,10 600,60 C850,110 1050,30 1200,90 L1200,120 L0,120 Z");
+  }
+  75% {
+    d: path("M0,10 C150,70 350,40 600,80 C850,70 1050,50 1200,50 L1200,120 L0,120 Z");
+  }
+}
+
 .bett-hero-content {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .bett-logo {
   width: 120px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -36,6 +85,53 @@
   color: #95CEF6;
 }
 
+.bett-hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.bett-award-badge,
+.bett-date-badge {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid rgba(218, 190, 255, 0.3);
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.bett-hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 100;
+  pointer-events: auto;
+}
+
+.bett-hero-ctas .bett-cta-button {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  z-index: 100;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 .bett-info-cards {
   display: flex;
   justify-content: center;
@@ -45,7 +141,7 @@
 }
 
 .bett-info-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1); 
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 2rem;
@@ -83,27 +179,44 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  /* CHANGED: Stop the texture 5px early so the very bottom edge is pure solid color */
+  bottom: 5px;
   background-repeat: repeat;
   background-size: auto;
   opacity: 0.5;
   pointer-events: none;
   z-index: 0;
   mask-image: linear-gradient(to bottom,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%);
+      transparent 0%,
+      black 25%,
+      black 60%,
+      transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom,
-    transparent 0%,
-    black 15%,
-    black 85%,
-    transparent 100%);
+      transparent 0%,
+      black 25%,
+      black 60%,
+      transparent 100%);
+}
+
+.bett-hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .bett-hero-section .container {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .bett-map-grid {
@@ -113,6 +226,8 @@
   align-items: center;
   max-width: 1400px;
   margin: 2rem auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 .bett-map-info {
@@ -175,11 +290,42 @@
   align-items: center;
 }
 
-/* Video Section */
-.bett-video-section {
-  padding: 3rem 0;
+/* Video & Why Visit Section */
+.bett-video-why-section {
+  padding: 8rem 0 4rem 0;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: -80px auto 0;
+  position: relative;
+  z-index: 10;
+}
+
+.bett-video-why-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1f1968;
+  position: relative;
+  z-index: 10;
+}
+
+.bett-section-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+  position: relative;
+  z-index: 10;
+}
+
+.bett-video-why-section .bett-video-container {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 4rem;
+}
+
+/* First section after hero - remove top padding/margin */
+.bett-hero-section + * {
+  margin-top: -80px;
+  position: relative;
+  z-index: 1;
 }
 
 .bett-video-section h2 {
@@ -215,67 +361,54 @@
   border: none;
 }
 
-/* About Section */
-.bett-about-section {
-  background: #f8f9fa;
-  padding: 4rem 0;
+/* Why Visit Section */
+.bett-why-visit {
+  margin-top: 3rem;
 }
 
-.bett-about-section h2 {
+.bett-why-visit h2 {
   font-size: 2.5rem;
   color: #1f1968;
-  margin-bottom: 2rem;
-}
-
-.bett-about-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.bett-about-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .bett-features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bett-feature-item {
   background: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  border-left: 3px solid #dabeff;
 }
 
 .bett-feature-item:hover {
-  transform: translateY(-5px);
-}
-
-.bett-feature-icon {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: 1rem;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(31, 25, 104, 0.15);
 }
 
 .bett-feature-item h4 {
   color: #1f1968;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .bett-feature-item p {
-  color: #666;
-  font-size: 1rem;
+  color: #555;
+  font-size: 0.95rem;
   margin: 0;
+  line-height: 1.6;
 }
 
 /* Booking Section */
@@ -456,7 +589,8 @@
 }
 
 .bett-cta-primary,
-.bett-cta-secondary {
+.bett-cta-secondary,
+.bett-cta-tertiary {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   font-weight: bold;
@@ -474,19 +608,36 @@
 .bett-cta-secondary {
   background: white;
   color: #1f1968;
-  border: 2px solid #1f1968;
+  border: 2px solid #dabeff;
+}
+
+.bett-cta-tertiary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .bett-cta-primary:hover,
-.bett-cta-secondary:hover {
+.bett-cta-secondary:hover,
+.bett-cta-tertiary:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  color: inherit;
+}
+
+.bett-cta-primary:hover {
+  color: white;
 }
 
 .bett-cta-secondary:hover {
   background: #f8f9fa;
+  color: #1f1968;
+}
+
+.bett-cta-tertiary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 
 /* Responsive Design */
@@ -494,20 +645,35 @@
   .bett-map-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .bett-map-display {
-    height: 400px;
+    height: 200px;
+    max-width: 450px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
+  .bett-hero-section {
+    padding: 2rem 0;
+  }
+
+  .bett-hero-content {
+    padding: 0 1rem;
+  }
+
   .bett-hero-title {
     font-size: 2rem;
   }
 
   .bett-hero-subtitle {
     font-size: 1.2rem;
+  }
+
+  .bett-wave-divider svg {
+    height: 50px;
   }
 
   .bett-info-cards {
@@ -520,12 +686,24 @@
     max-width: 400px;
   }
 
+  .bett-map-grid {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   .bett-map-section {
     padding: 2rem 0;
   }
 
   .bett-map-display {
-    height: 350px;
+    height: 160px;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .bett-map-description {
+    font-size: 0.95rem;
+    padding: 1rem;
   }
 
   .bett-info-card-large {
@@ -549,7 +727,19 @@
   }
 
   .bett-features-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .bett-hero-ctas {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bett-hero-ctas .bett-cta-button {
+    width: 100%;
+    max-width: 300px;
   }
 
   .bett-cta-buttons {
@@ -558,9 +748,35 @@
   }
 
   .bett-cta-primary,
-  .bett-cta-secondary {
+  .bett-cta-secondary,
+  .bett-cta-tertiary {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bett-map-display {
+    height: 140px;
+  }
+
+  .bett-hero-badges {
+    gap: 0.75rem;
+  }
+
+  .bett-award-badge,
+  .bett-date-badge {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .bett-hero-ctas .bett-cta-button {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .bett-features-grid {
+    grid-template-columns: 1fr;
   }
 }
 

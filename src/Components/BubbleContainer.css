@@ -1,10 +1,11 @@
 .gradient-section {
     position: relative;
-    overflow: visible; /* Allow content to flow outside */
+    overflow: hidden; /* Prevent bubbles from escaping */
     background: linear-gradient(180deg, #dabeff 0%, #95CEF6 100%);
     padding: 10px;
     min-height: 100px;
     z-index: 1; /* Lower z-index so welcome section shadow appears on top */
+    isolation: isolate; /* Create stacking context to contain bubbles */
 }
 
   
