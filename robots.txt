@@ -1,6 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
-# All search engines are allowed to crawl all content
+# Generated automatically based on build content
+# Last updated: 2026-01-02
 
 User-agent: *
 Allow: /
@@ -11,37 +12,162 @@ Sitemap: https://whimsylabs.ai/sitemap.xml
 # Crawl delay to prevent server overload
 Crawl-delay: 1
 
-# Disallow access to any temporary files that might exist
+# Disallow access to temporary and system files
 Disallow: /tmp/
 Disallow: /*.json$
 Disallow: /*.js$
 Disallow: /*.css$
+Disallow: /static/
+Disallow: /manifest.json
 
-# Allow important directories explicitly
+# Disallow phantom nested URLs (known issues)
+Disallow: /features/faq/
+Disallow: /features/contact/
+Disallow: /features/features/
+Disallow: /services/contact/
+Disallow: /*/features/faq/
+Disallow: /*/features/contact/
+Disallow: /*/features/features/
+Disallow: /*/services/contact/
+
+# Disallow email protection service
+Disallow: /cdn-cgi/
+
+# Explicitly allow all actual pages in build
+# This ensures Google can crawl all legitimate pages
+
+# Main page categories - explicitly allowed for crawling
+Allow: /bett/
 Allow: /blog/
-Allow: /services/
-Allow: /features/
-Allow: /faq/
 Allow: /contact/
-Allow: /sitemap
+Allow: /de/
+Allow: /demo/
+Allow: /es/
+Allow: /faq/
+Allow: /features/
+Allow: /fr/
+Allow: /jp/
+Allow: /privacy/
+Allow: /services/
 
-# Explicitly allow all blog posts for search engine crawling
-Allow: /blog/whimsylabs-bett-2026-exhibition-announcement/
-Allow: /blog/gamification-science-education-points-rewards-engagement/
-Allow: /blog/science-real-time-physics-simulations-virtual-labs/
-Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
-Allow: /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
-Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+# All valid pages - explicitly allowed for Google crawling
+Allow: /bett/
+Allow: /blog/
 Allow: /blog/24-7-ai-tutoring-personalized-daily-recommendations/
-Allow: /blog/virtual-labs-solve-stem-teacher-shortage-crisis/
-Allow: /blog/green-labs-sustainability-virtual-stem-education/
-Allow: /blog/sandbox-learning-revolution-stem-education/
-Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
-Allow: /blog/virtual-kidney-dissection-send-engagement/
+Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+Allow: /blog/gamification-science-education-points-rewards-engagement/
+Allow: /blog/green-labs-sustainability-virtual-stem-education/
 Allow: /blog/physicality-in-virtual-labs/
+Allow: /blog/sandbox-learning-revolution-stem-education/
+Allow: /blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /blog/virtual-kidney-dissection-send-engagement/
+Allow: /blog/virtual-labs-solve-stem-teacher-shortage-crisis/
+Allow: /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
+Allow: /blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /blog/whimsylabs-education-revolution/
+Allow: /contact/
+Allow: /de/
+Allow: /de/bett/
+Allow: /de/blog/
+Allow: /de/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+Allow: /de/blog/gamification-science-education-points-rewards-engagement/
+Allow: /de/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /de/blog/physicality-in-virtual-labs/
+Allow: /de/blog/sandbox-learning-revolution-stem-education/
+Allow: /de/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /de/blog/virtual-kidney-dissection-send-engagement/
+Allow: /de/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
+Allow: /de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /de/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /de/blog/whimsycat-ai-tutor-transforming-science-education/
+Allow: /de/blog/whimsylabs-bett-2026-exhibition-announcement/
+Allow: /de/blog/whimsylabs-education-revolution/
+Allow: /de/contact/
+Allow: /de/faq/
+Allow: /de/features/
+Allow: /de/privacy/
+Allow: /de/services/
+Allow: /demo/
+Allow: /es/
+Allow: /es/bett/
+Allow: /es/blog/
+Allow: /es/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+Allow: /es/blog/gamification-science-education-points-rewards-engagement/
+Allow: /es/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /es/blog/physicality-in-virtual-labs/
+Allow: /es/blog/sandbox-learning-revolution-stem-education/
+Allow: /es/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /es/blog/virtual-kidney-dissection-send-engagement/
+Allow: /es/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
+Allow: /es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /es/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /es/blog/whimsycat-ai-tutor-transforming-science-education/
+Allow: /es/blog/whimsylabs-bett-2026-exhibition-announcement/
+Allow: /es/blog/whimsylabs-education-revolution/
+Allow: /es/contact/
+Allow: /es/faq/
+Allow: /es/features/
+Allow: /es/privacy/
+Allow: /es/services/
+Allow: /faq/
+Allow: /features/
+Allow: /fr/
+Allow: /fr/bett/
+Allow: /fr/blog/
+Allow: /fr/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
+Allow: /fr/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /fr/blog/physicality-in-virtual-labs/
+Allow: /fr/blog/sandbox-learning-revolution-stem-education/
+Allow: /fr/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /fr/blog/virtual-kidney-dissection-send-engagement/
+Allow: /fr/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
+Allow: /fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /fr/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /fr/blog/whimsycat-ai-tutor-transforming-science-education/
+Allow: /fr/blog/whimsylabs-bett-2026-exhibition-announcement/
+Allow: /fr/blog/whimsylabs-education-revolution/
+Allow: /fr/contact/
+Allow: /fr/faq/
+Allow: /fr/features/
+Allow: /fr/privacy/
+Allow: /fr/services/
+Allow: /jp/
+Allow: /jp/bett/
+Allow: /jp/blog/
+Allow: /jp/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
+Allow: /jp/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /jp/blog/physicality-in-virtual-labs/
+Allow: /jp/blog/sandbox-learning-revolution-stem-education/
+Allow: /jp/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /jp/blog/virtual-kidney-dissection-send-engagement/
+Allow: /jp/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
+Allow: /jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /jp/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /jp/blog/whimsycat-ai-tutor-transforming-science-education/
+Allow: /jp/blog/whimsylabs-bett-2026-exhibition-announcement/
+Allow: /jp/blog/whimsylabs-education-revolution/
+Allow: /jp/contact/
+Allow: /jp/faq/
+Allow: /jp/features/
+Allow: /jp/privacy/
+Allow: /jp/services/
+Allow: /privacy/
+Allow: /services/
 
-# All blog posts are explicitly allowed above
-# Total blog posts: 15
-# FAQ page is allowed at /faq/
+# Blog posts summary: 75 total (included above)
+
+# Total pages in build: 115
+# This file is generated automatically - do not edit manually

@@ -330,6 +330,116 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/contact/"/>
         <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/contact/"/>
     </url>
+    <url>
+        <loc>https://whimsylabs.ai/privacy/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/privacy/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/privacy/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/privacy/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/privacy/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/privacy/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/privacy/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/privacy/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/jp/privacy/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/privacy/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/bett/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/bett/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/bett/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/bett/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/bett/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/bett/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/es/bett/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/bett/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/bett/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/bett/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/bett/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/bett/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/fr/bett/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/bett/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/bett/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/bett/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/bett/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/bett/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/de/bett/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/bett/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/bett/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/bett/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/bett/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/bett/"/>
+    </url>
+    <url>
+        <loc>https://whimsylabs.ai/jp/bett/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whimsylabs.ai/bett/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://whimsylabs.ai/es/bett/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://whimsylabs.ai/fr/bett/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://whimsylabs.ai/de/bett/"/>
+        <xhtml:link rel="alternate" hreflang="jp" href="https://whimsylabs.ai/jp/bett/"/>
+    </url>
     <!-- Blog posts (15 total, 5 languages each) -->
     <url>
         <loc>https://whimsylabs.ai/blog/whimsylabs-bett-2026-exhibition-announcement/</loc>
