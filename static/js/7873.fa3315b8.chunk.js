@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[7873],{7873:(t,e,s)=>{s.r(e),s.d(e,{content:()=>o,description:()=>i,title:()=>n});s(5043);const n="Emotional Intelligence in AI Tutors: How WhimsyCat Detects and Responds to Student Frustration",i="Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.",o=null}}]);
+//# sourceMappingURL=7873.fa3315b8.chunk.js.map

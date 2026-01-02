@@ -26,6 +26,15 @@ Allow: /contact/
 Allow: /sitemap
 
 # Explicitly allow all blog posts for search engine crawling
+Allow: /blog/whimsylabs-bett-2026-exhibition-announcement/
+Allow: /blog/gamification-science-education-points-rewards-engagement/
+Allow: /blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
+Allow: /blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /blog/virtual-labs-solve-stem-teacher-shortage-crisis/
+Allow: /blog/green-labs-sustainability-virtual-stem-education/
 Allow: /blog/sandbox-learning-revolution-stem-education/
 Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
@@ -34,5 +43,5 @@ Allow: /blog/physicality-in-virtual-labs/
 Allow: /blog/whimsylabs-education-revolution/
 
 # All blog posts are explicitly allowed above
-# Total blog posts: 6
+# Total blog posts: 15
 # FAQ page is allowed at /faq/

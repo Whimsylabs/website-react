@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[3488],{3488:(s,e,i)=>{i.r(e),i.d(e,{config:()=>c});const c={formScriptUrl:"https://script.google.com/macros/s/AKfycbxpSza6Nhw-dO9RkWH2tvjgtlyppeKYElSsYD0tU0IM5N7hVj_0PhpASXAmC4XN8JdD8Q/exec",contactEmail:"inquiries@whimsylabs.ai",companyName:"WhimsyLabs"}}}]);
+//# sourceMappingURL=3488.fb40aa48.chunk.js.map

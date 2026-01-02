@@ -3,7 +3,7 @@
 (function() {
   'use strict';
   
-  const SUPPORTED_LANGUAGES = ["en","es","fr","de"];
+  const SUPPORTED_LANGUAGES = ["en","es","fr","de","jp"];
   const DEFAULT_LANGUAGE = 'en';
   
   function getCurrentLanguageFromPath() {
