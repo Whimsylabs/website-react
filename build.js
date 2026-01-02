@@ -766,7 +766,7 @@ async function generateSitemap() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
 
     // Generate URLs for each language
-    const staticPages = ['/', '/blog/', '/services/', '/features/', '/faq/', '/contact/'];
+    const staticPages = ['/', '/blog/', '/services/', '/features/', '/faq/', '/contact/', '/privacy/', '/bett/'];
     
     for (const page of staticPages) {
       for (const lang of config.supportedLanguages) {
@@ -843,88 +843,37 @@ async function generateSitemap() {
 // Generate robots.txt
 async function generateRobotsTxt() {
   try {
+    const BuildValidator = require('./scripts/build-validator.js');
+    const validator = new BuildValidator(config.distDir, config.siteUrl);
+    
     const posts = await getBlogPosts('en'); // Use English posts for robots.txt structure
+    const robotsTxtContent = await validator.generateRobotsTxt(posts);
 
-    let robotsTxt = `# https://www.robotstxt.org/robotstxt.html
-# WhimsyLabs Virtual Laboratory Software
-# All search engines are allowed to crawl all content
-
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: ${config.siteUrl}/sitemap.xml
-
-# Crawl delay to prevent server overload
-Crawl-delay: 1
-
-# Disallow access to any temporary files that might exist
-Disallow: /tmp/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
-
-# Allow important directories explicitly
-Allow: /blog/
-Allow: /services/
-Allow: /features/
-Allow: /faq/
-Allow: /contact/
-Allow: /sitemap
-
-# Explicitly allow all blog posts for search engine crawling`;
-
-    // Add explicit Allow entries for all blog posts
-    for (const post of posts) {
-      robotsTxt += `\nAllow: /blog/${post.id}/`;
-    }
-
-    // Add a comment section for clarity
-    robotsTxt += `\n\n# All blog posts are explicitly allowed above`;
-    robotsTxt += `\n# Total blog posts: ${posts.length}`;
-    robotsTxt += `\n# FAQ page is allowed at /faq/`;
-
-    await fs.writeFile(`${config.distDir}/robots.txt`, robotsTxt);
-    console.log(`✅ Generated robots.txt with ${posts.length} blog posts explicitly allowed`);
+    await fs.writeFile(`${config.distDir}/robots.txt`, robotsTxtContent);
+    console.log(`✅ Generated robots.txt automatically based on build content`);
   } catch (error) {
     console.error("❌ Error generating robots.txt:", error);
   }
 }
 
-// Log all generated URLs for verification
-async function logGeneratedUrls() {
+// Validate build consistency
+async function validateBuild() {
   try {
-    const posts = await getBlogPosts('en'); // Use English posts for URL logging
+    console.log("🔍 Validating build consistency...");
+    const BuildValidator = require('./scripts/build-validator.js');
+    const validator = new BuildValidator(config.distDir, config.siteUrl);
     
-    console.log("\n📋 Generated URLs Summary:");
-    console.log("========================");
+    const result = await validator.validate();
     
-    // Static pages
-    const staticPages = [
-      { url: "/", description: "Homepage" },
-      { url: "/blog/", description: "Blog index" },
-      { url: "/services/", description: "Services page" },
-      { url: "/features/", description: "Features page" },
-      { url: "/faq/", description: "FAQ page" },
-      { url: "/contact/", description: "Contact page" }
-    ];
+    if (!result.success) {
+      console.warn("⚠️ Build validation found issues - see details above");
+      return false;
+    }
     
-    console.log("\n🏠 Static Pages:");
-    staticPages.forEach(page => {
-      console.log(`   ${config.siteUrl}${page.url} - ${page.description}`);
-    });
-    
-    console.log(`\n📝 Blog Posts (${posts.length} total):`);
-    const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-    sortedPosts.forEach(post => {
-      console.log(`   ${config.siteUrl}/blog/${post.id}/ - ${post.title} (${post.date})`);
-    });
-    
-    console.log(`\n📊 Total URLs: ${staticPages.length + posts.length}`);
-    console.log("========================\n");
-    
+    return true;
   } catch (error) {
-    console.warn("⚠️ Could not log URLs:", error.message);
+    console.error("❌ Error during build validation:", error);
+    return false;
   }
 }
 
@@ -1003,10 +952,16 @@ async function build() {
     await generateSitemap();
     await generateRobotsTxt();
     await generateLanguageDetection();
-    await logGeneratedUrls();
+    
+    // Final validation step
+    const validationPassed = await validateBuild();
 
     console.log("✅ Static site generation complete!");
     console.log(`📊 Generated static files for ${config.supportedLanguages.length} languages`);
+    
+    if (!validationPassed) {
+      console.log("⚠️ Note: Some validation issues were found (see details above)");
+    }
   } catch (error) {
     console.error("❌ Build failed:", error);
     process.exit(1);

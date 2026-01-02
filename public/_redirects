@@ -1,0 +1,67 @@
+# Domain canonicalization (handle www and protocol variants)
+https://www.whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
+http://www.whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
+http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
+
+# Force trailing slash for clean URLs (this is the main issue)
+# Language-specific pages without trailing slash → with trailing slash
+/de/faq /de/faq/ 301!
+/de/contact /de/contact/ 301!
+/de/services /de/services/ 301!
+/de/blog /de/blog/ 301!
+/de/features /de/features/ 301!
+/de/privacy /de/privacy/ 301!
+
+/es/faq /es/faq/ 301!
+/es/contact /es/contact/ 301!
+/es/services /es/services/ 301!
+/es/blog /es/blog/ 301!
+/es/features /es/features/ 301!
+/es/privacy /es/privacy/ 301!
+
+/fr/faq /fr/faq/ 301!
+/fr/contact /fr/contact/ 301!
+/fr/services /fr/services/ 301!
+/fr/blog /fr/blog/ 301!
+/fr/features /fr/features/ 301!
+/fr/privacy /fr/privacy/ 301!
+
+/jp/faq /jp/faq/ 301!
+/jp/contact /jp/contact/ 301!
+/jp/services /jp/services/ 301!
+/jp/blog /jp/blog/ 301!
+/jp/features /jp/features/ 301!
+/jp/privacy /jp/privacy/ 301!
+
+# Main English pages without trailing slash → with trailing slash  
+/faq /faq/ 301!
+/contact /contact/ 301!
+/services /services/ 301!
+/blog /blog/ 301!
+/features /features/ 301!
+/privacy /privacy/ 301!
+
+# Redirect phantom nested URLs to correct pages
+/features/faq/ /faq/ 301!
+/features/contact/ /contact/ 301!
+/features/features/ /features/ 301!
+/services/contact/ /contact/ 301!
+
+# Handle language-specific phantom URLs
+/de/features/faq/ /de/faq/ 301!
+/de/features/contact/ /de/contact/ 301!
+/de/features/features/ /de/features/ 301!
+/de/services/contact/ /de/contact/ 301!
+
+/es/features/faq/ /es/faq/ 301!
+/es/features/contact/ /es/contact/ 301!
+/es/features/features/ /es/features/ 301!
+/es/services/contact/ /es/contact/ 301!
+
+/fr/features/faq/ /fr/faq/ 301!
+/fr/features/contact/ /fr/contact/ 301!
+/fr/features/features/ /fr/features/ 301!
+/fr/services/contact/ /fr/contact/ 301!
+
+# Block email protection service and other problematic paths
+/cdn-cgi/* /404.html 404!

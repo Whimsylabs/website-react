@@ -70,7 +70,59 @@ class MetadataInjector {
   }
 
   /**
-   * Generate basic meta tags for a route
+   * Generate canonical and hreflang tags
+   * @param {string} route - The route path
+   * @returns {string} - HTML canonical and hreflang tags
+   */
+  generateCanonicalAndHreflangTags(route) {
+    // Extract language from route
+    const langMatch = route.match(/^\/([a-z]{2})\//);
+    const language = langMatch ? langMatch[1] : null;
+    
+    let baseRoute;
+    
+    if (language) {
+      // For language-specific routes, extract base route without language
+      baseRoute = route.replace(`/${language}`, '');
+    } else {
+      // For main English routes
+      baseRoute = route;
+    }
+    
+    // Ensure trailing slash consistency
+    if (baseRoute !== '/' && !baseRoute.endsWith('/')) {
+      baseRoute += '/';
+    }
+    
+    // Canonical points to self (each language page is canonical for its language)
+    let canonicalRoute = route;
+    if (canonicalRoute !== '/' && !canonicalRoute.endsWith('/')) {
+      canonicalRoute += '/';
+    }
+    
+    let tags = `
+    <link rel="canonical" href="${this.baseUrl}${canonicalRoute}">`;
+    
+    // Add hreflang tags for international versions
+    const languages = ['en', 'de', 'es', 'fr', 'ja'];
+    const languageMap = { 'en': '', 'de': '/de', 'es': '/es', 'fr': '/fr', 'ja': '/jp' };
+    
+    for (const lang of languages) {
+      const langPrefix = languageMap[lang];
+      const hreflangUrl = `${this.baseUrl}${langPrefix}${baseRoute}`;
+      tags += `
+    <link rel="alternate" hreflang="${lang}" href="${hreflangUrl}">`;
+    }
+    
+    // Add x-default hreflang pointing to English
+    tags += `
+    <link rel="alternate" hreflang="x-default" href="${this.baseUrl}${baseRoute}">`;
+    
+    return tags;
+  }
+
+  /**
+   * Generate basic meta tags
    * @param {string} route - The route path
    * @param {Object} customMeta - Custom metadata to override defaults
    * @returns {string} - HTML meta tags
@@ -85,8 +137,7 @@ class MetadataInjector {
     <meta name="keywords" content="${meta.keywords}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="WhimsyLabs">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="${this.baseUrl}${route}">`;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">${this.generateCanonicalAndHreflangTags(route)}`;
   }
 
   /**

@@ -318,7 +318,7 @@ const BlogPost = (props = {}) => {
               <div className="post-box not-found-box">
                 <h2>Post Not Found</h2>
                 <p>Sorry, the blog post you're looking for doesn't exist.</p>
-                <a href="../index.html" className="btn-primary post-nav-button">Back to Blog</a>
+                <a href="/blog/" className="btn-primary post-nav-button">Back to Blog</a>
               </div>
             </div>
           </div>

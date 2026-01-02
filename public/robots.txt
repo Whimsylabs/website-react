@@ -17,6 +17,19 @@ Disallow: /*.json$
 Disallow: /*.js$
 Disallow: /*.css$
 
+# Disallow phantom nested URLs
+Disallow: /features/faq/
+Disallow: /features/contact/
+Disallow: /features/features/
+Disallow: /services/contact/
+Disallow: /*/features/faq/
+Disallow: /*/features/contact/
+Disallow: /*/features/features/
+Disallow: /*/services/contact/
+
+# Disallow email protection service
+Disallow: /cdn-cgi/
+
 # Allow important directories explicitly
 Allow: /blog/
 Allow: /services/
