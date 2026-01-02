@@ -165,9 +165,9 @@ const Blog = (props = {}) => {
   const [loading, setLoading] = useState(true);
   const [currentLanguage, setCurrentLanguage] = useState('en');
   const [languagePrefix, setLanguagePrefix] = useState('');
-  
+  const [currentPage, setCurrentPage] = useState(1);
+
   const postsPerPage = 10; // Set pagination limit
-  const currentPage = 1; // For future pagination implementation
 
   useEffect(() => {
     const loadBlogPosts = async () => {
@@ -239,6 +239,26 @@ const Blog = (props = {}) => {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
+  // Pagination handlers
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handlePageClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   if (loading) {
     return (
       <main className="container-fluid text-center p-0">
@@ -271,12 +291,37 @@ const Blog = (props = {}) => {
             {currentPosts.map((post) => (
               <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} />
             ))}
-            
-            {/* Pagination placeholder - will be implemented when more posts are added */}
+
+            {/* Pagination controls */}
             {totalPages > 1 && (
               <div className="pagination-container">
-                <p>Page {currentPage} of {totalPages}</p>
-                {/* Future pagination controls will go here */}
+                <button
+                  className="pagination-button"
+                  onClick={handlePrevPage}
+                  disabled={currentPage === 1}
+                >
+                  ← Previous
+                </button>
+
+                <div className="pagination-numbers">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                    <button
+                      key={pageNum}
+                      className={`pagination-number ${currentPage === pageNum ? 'active' : ''}`}
+                      onClick={() => handlePageClick(pageNum)}
+                    >
+                      {pageNum}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  className="pagination-button"
+                  onClick={handleNextPage}
+                  disabled={currentPage === totalPages}
+                >
+                  Next →
+                </button>
               </div>
             )}
           </div>

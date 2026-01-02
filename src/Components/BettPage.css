@@ -9,11 +9,12 @@ html {
   background-color: #2C2170;
   background-image: linear-gradient(to bottom, #1f1968 0%, #2C2170 100%);
   color: white;
-  padding: 0;
+  padding: 0 0 2rem 0;
   min-height: 80vh;
   display: flex;
   align-items: center;
   position: relative;
+  overflow: visible;
 }
 
 .bett-wave-divider {
@@ -77,6 +78,8 @@ html {
   margin-bottom: 0.5rem;
   color: #dabeff;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
 
 .bett-hero-subtitle {
@@ -420,7 +423,7 @@ html {
 
 .bett-booking-section h2 {
   font-size: 2.5rem;
-  color: #1f1968;
+  color: #e417bb;
   margin-bottom: 1rem;
 }
 
@@ -644,20 +647,22 @@ html {
 @media (max-width: 1024px) {
   .bett-map-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .bett-map-display {
-    height: 200px;
-    max-width: 450px;
+    height: 180px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
   .bett-hero-section {
-    padding: 2rem 0;
+    padding: 2rem 0 6rem 0;
+    min-height: auto;
   }
 
   .bett-hero-content {
@@ -687,18 +692,25 @@ html {
   }
 
   .bett-map-grid {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    gap: 1rem;
   }
 
   .bett-map-section {
-    padding: 2rem 0;
+    padding: 0.5rem 0;
   }
 
   .bett-map-display {
-    height: 160px;
-    max-width: 100%;
+    height: 120px;
+    max-width: 90%;
     padding: 0 1rem;
+    margin: 1rem auto 2rem;
+  }
+
+  .bett-map-info {
+    margin-bottom: 1.5rem;
   }
 
   .bett-map-description {
@@ -735,6 +747,7 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 4rem;
   }
 
   .bett-hero-ctas .bett-cta-button {
@@ -756,8 +769,19 @@ html {
 }
 
 @media (max-width: 480px) {
+  .bett-hero-section {
+    padding: 1.5rem 0 8rem 0;
+  }
+
+  .bett-map-grid {
+    margin-bottom: 6rem;
+    padding-bottom: 5rem;
+  }
+
   .bett-map-display {
-    height: 140px;
+    height: 100px;
+    max-width: 85%;
+    margin: 0.5rem auto 4rem;
   }
 
   .bett-hero-badges {

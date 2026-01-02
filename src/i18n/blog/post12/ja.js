@@ -45,7 +45,9 @@ export const content = (
       ）。しかし、プロのSTEMキャリアは、まさにその逆を要求します。創造的な問題解決、実験的革新、新しい課題への適応力です。教育経験とキャリア要件の間の断絶により、卒業生は実世界の科学的作業に対して準備不足のままです。
     </p>
 
-    <h2>WhimsyLabsが物理的な実験技術を教える唯一のプラットフォームである理由</h2>
+    <h2>
+      WhimsyLabsが物理的な実験技術を教える唯一のプラットフォームである理由
+    </h2>
 
     <p>
       ほとんどのシミュレーション教材プラットフォームは、アニメーションデモンストレーションや、学生がボタンをクリックして事前にスクリプト化された結果を見る簡略化されたシミュレーションに過ぎません。これらのプラットフォームは概念を教えますが、技術は教えません。学生は滴定について学びますが、正確に実行するために必要な物理的技術を開発することはありません。
@@ -58,7 +60,22 @@ export const content = (
     <h3>本物の物理的動作と筋肉記憶の育成</h3>
 
     <p>
-      WhimsyLabsでは、学生は「液体を注ぐ」をクリックするのではなく、物理的に仮想ガラス器具をつかみ、適切な角度に傾け、手首の動きで流量を制御し、動作を実行しながら視覚的に体積を判断します。彼らは適切なグリップと姿勢でピペットを物理的に操作し、本物の手の協調でビュレット滴定を実行し、適切な注意を払って繊細なガラス器具を扱い、協調した物理的動作を通じて複雑な多段階手順を実行します。
+      WhimsyLabsでは、学生は「液体を注ぐ」をクリックするのではなく、物理的に仮想ガラス器具をつかみ、適切な角度に傾け、手首の動きで流量を制御し、動作を実行しながら視角的に体積を判断します。彼らは適切なグリップと姿勢でピペットを物理的に操作し、本物の手の協調でビューレット滴定を実行し、適切な注意を払って繊細なガラス器具を扱い、協調した物理的動作を通じて複雑な多段階手順を実行します。
+    </p>
+
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Onions! Under the microscope! Featuring phase contrast and confocal microscopy!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
+    <p className="caption">
+      学生はVRで顕微鏡技術を探索し、実際の研究室でそれらを実行するために必要な物理的スキルを開発できます。これは、本物の手の動きを通じて焦点、照明、レンズ設定、サンプルの位置を調整することを意味します。これは、学生が物理的な手の動きで細胞を明確に焦点に合わせるためにダイアルを調整している間、タマネギ細胞サンプルを調べる際の顕微鏡を通しての眺めです。
     </p>
 
     <p>
@@ -82,6 +99,18 @@ export const content = (
     <p>
       手順技術は、液体がどのように振る舞うか（粘度、表面張力、流動力学、混合パターン、操作への応答）を理解することに批判的に依存しています。他のプラットフォームが常に同じように振る舞う事前録画アニメーションを使用する一方で、WhimsyLabsは計算流体力学（CFD）モデリングを通じてリアルタイムで流体力学を完全にシミュレートします。
     </p>
+
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
 
     <p>
       私たちの液体物理エンジンは、毎秒数千の相互作用を処理し、現実的な振る舞いを生成します。粘性液体はゆっくり注がれ、低粘度液体は不注意に扱うと飛び散り、混合は現実的な乱流パターンを生成し、温度は流体特性に影響を与え、化学反応は物理的振る舞いに目に見える変化を生成します。この現実性は美的ではなく、教育的に不可欠です。学生は視覚検査で体積を判断し、技術で注ぐ速度を制御し、観察を通じて混合完了を認識し、予期しない流体振る舞いを通じて手順エラーを検出することを学びます。
@@ -166,15 +195,18 @@ export const content = (
     </p>
 
     <p>
-      <strong>アニメーションデモンストレーション：</strong>学生は物理的相互作用なしで事前録画手順を視聴します。これらは概念を教えますが、実践技術を育成しません。
+      <strong>アニメーションデモンストレーション：</strong>
+      学生は物理的相互作用なしで事前録画手順を視聴します。これらは概念を教えますが、実践技術を育成しません。
     </p>
 
     <p>
-      <strong>簡略化されたシミュレーション：</strong>学生はボタンをクリックして簡略化された反応をトリガーします。これらは物理的忠実度を欠き、実験室作業について非現実的な期待を教えます。
+      <strong>簡略化されたシミュレーション：</strong>
+      学生はボタンをクリックして簡略化された反応をトリガーします。これらは物理的忠実度を欠き、実験室作業について非現実的な期待を教えます。
     </p>
 
     <p>
-      <strong>手順的ウォークスルー：</strong>学生は逸脱する自由なく厳格な段階的指示に従います。これらは手順記憶を育成しますが、実験デザインや問題解決技術は育成しません。
+      <strong>手順的ウォークスルー：</strong>
+      学生は逸脱する自由なく厳格な段階的指示に従います。これらは手順記憶を育成しますが、実験デザインや問題解決技術は育成しません。
     </p>
 
     <p>
@@ -188,23 +220,28 @@ export const content = (
     </p>
 
     <p>
-      <strong>批判的思考：</strong>仮説を検証するための実験をデザインすることは、証拠を評価し、交絡変数を特定し、因果関係について推論することを必要とします。これらは科学的キャリアの中心となる技術です。
+      <strong>批判的思考：</strong>
+      仮説を検証するための実験をデザインすることは、証拠を評価し、交絡変数を特定し、因果関係について推論することを必要とします。これらは科学的キャリアの中心となる技術です。
     </p>
 
     <p>
-      <strong>問題解決：</strong>実験が失敗したとき（よくあることです）、学生は問題を診断し、代替アプローチを生成し、手順を反復的に洗練する必要があります。これはプロの科学研究を反映しています。
+      <strong>問題解決：</strong>
+      実験が失敗したとき（よくあることです）、学生は問題を診断し、代替アプローチを生成し、手順を反復的に洗練する必要があります。これはプロの科学研究を反映しています。
     </p>
 
     <p>
-      <strong>回復力と適応力：</strong>プロの科学には頻繁な失敗と予期しない結果が含まれます。WhimsyLabsは、学生にこれらを敗北ではなく、適応を必要とする学習機会として見ることを教えます。
+      <strong>回復力と適応力：</strong>
+      プロの科学には頻繁な失敗と予期しない結果が含まれます。WhimsyLabsは、学生にこれらを敗北ではなく、適応を必要とする学習機会として見ることを教えます。
     </p>
 
     <p>
-      <strong>安全意識：</strong>安全な仮想環境で安全違反の現実的な結果を経験することで、学生は理解なしにルールを暗記するのではなく、なぜプロトコルが重要かを本当に理解します。
+      <strong>安全意識：</strong>
+      安全な仮想環境で安全違反の現実的な結果を経験することで、学生は理解なしにルールを暗記するのではなく、なぜプロトコルが重要かを本当に理解します。
     </p>
 
     <p>
-      <strong>独立学習：</strong>24時間年中無休のAIサポートにより、学生は適切に助けを求め、独立してトラブルシューティングし、課題を通じて持続することを学びます。これは自己主導的なプロの開発に不可欠な技術です。
+      <strong>独立学習：</strong>
+      24時間年中無休のAIサポートにより、学生は適切に助けを求め、独立してトラブルシューティングし、課題を通じて持続することを学びます。これは自己主導的なプロの開発に不可欠な技術です。
     </p>
 
     <p>
@@ -266,15 +303,21 @@ export const content = (
       <h3>参考文献</h3>
       <ul className="references-list">
         <li key="ref-1">
-          Anderson, W. A., Banerjee, U., Drennan, C. L., Elgin, S. C., Epstein, I. R., Handelsman, J., ... & Warner, I. M. (2021). Changing the culture of science education at research universities.
+          Anderson, W. A., Banerjee, U., Drennan, C. L., Elgin, S. C., Epstein,
+          I. R., Handelsman, J., ... & Warner, I. M. (2021). Changing the
+          culture of science education at research universities.
           <em> Science</em>, 331(6014), 152-153.
         </li>
         <li key="ref-2">
-          Gavi, H., Hahad, O., Daiber, A., & Münzel, T. (2020). Computational fluid dynamics in cardiovascular disease.
-          <em> European Journal of Preventive Cardiology</em>, 27(18), 1946-1956.
+          Gavi, H., Hahad, O., Daiber, A., & Münzel, T. (2020). Computational
+          fluid dynamics in cardiovascular disease.
+          <em> European Journal of Preventive Cardiology</em>, 27(18),
+          1946-1956.
         </li>
         <li key="ref-3">
-          Hmelo-Silver, C. E., Duncan, R. G., & Chinn, C. A. (2007). Scaffolding and achievement in problem-based and inquiry learning: A response to Kirschner, Sweller, and Clark (2006).
+          Hmelo-Silver, C. E., Duncan, R. G., & Chinn, C. A. (2007). Scaffolding
+          and achievement in problem-based and inquiry learning: A response to
+          Kirschner, Sweller, and Clark (2006).
           <em> Educational Psychologist</em>, 42(2), 99-107.
         </li>
         <li key="ref-4">
@@ -282,15 +325,19 @@ export const content = (
           <em> Learning: Research and Practice</em>, 1(1), 51-65.
         </li>
         <li key="ref-5">
-          Lazonder, A. W., & Harmsen, R. (2016). Meta-analysis of inquiry-based learning: Effects of guidance.
+          Lazonder, A. W., & Harmsen, R. (2016). Meta-analysis of inquiry-based
+          learning: Effects of guidance.
           <em> Review of Educational Research</em>, 86(3), 681-718.
         </li>
         <li key="ref-6">
-          Levac, D. E., Huber, M. E., & Sternad, D. (2019). Learning and transfer of complex motor skills in virtual reality: a perspective review.
+          Levac, D. E., Huber, M. E., & Sternad, D. (2019). Learning and
+          transfer of complex motor skills in virtual reality: a perspective
+          review.
           <em> Journal of NeuroEngineering and Rehabilitation</em>, 16, 121.
         </li>
         <li key="ref-7">
-          World Economic Forum. (2025). <em>The Future of Jobs Report 2025</em>. World Economic Forum.
+          World Economic Forum. (2025). <em>The Future of Jobs Report 2025</em>.
+          World Economic Forum.
         </li>
       </ul>
     </div>

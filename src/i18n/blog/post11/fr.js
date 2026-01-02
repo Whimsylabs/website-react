@@ -99,6 +99,16 @@ export const content = (
       ).
     </p>
 
+    <img
+      src="/images/Ethanolsafety.jpg"
+      alt="Informations de sécurité de l'éthanol dans le laboratoire virtuel"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      Démonstration des fonctionnalités de sécurité dans WhimsyLabs pour la manipulation de matériaux dangereux comme l'éthanol. Les étudiants peuvent expérimenter avec des produits chimiques dans un environnement virtuel complètement sûr qui serait trop risqué dans les laboratoires scolaires physiques.
+    </p>
+
     <h3>Disponibilité 24/7 et apprentissage flexible</h3>
 
     <p>

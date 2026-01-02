@@ -49,3 +49,11 @@
     color: white;
     text-align: center;
 }
+
+.splash-content h2,
+.splash-content p,
+.splash-content h3,
+.splash-content h4,
+.splash-content div {
+    color: white;
+}

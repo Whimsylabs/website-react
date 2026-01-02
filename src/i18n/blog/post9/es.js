@@ -73,8 +73,15 @@ export const content = (
 
     <p>
       La característica más innovadora de WhimsyLabs es nuestro sistema de recomendación inteligente, que analiza el rendimiento de cada estudiante en todos los experimentos para generar sugerencias de laboratorio diarias y semanales personalizadas. A diferencia de las tareas genéricas, estas recomendaciones están adaptadas individualmente para abordar brechas de conocimiento específicas y reforzar habilidades en desarrollo.
+    </p>    <img
+      src="/images/Challenges.jpg"
+      alt="Panel de estudiantes mostrando la sección de desafíos con recomendaciones de laboratorio personalizadas"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      La sección de Desafíos del panel de estudiantes muestra recomendaciones de laboratorio personalizadas dirigidas a las áreas más débiles de cada estudiante. Cada recomendación está diseñada para reforzar las habilidades en desarrollo y abordar brechas de conocimiento específicas.
     </p>
-
     <h3>Cómo funciona el sistema de recomendación</h3>
 
     <p>

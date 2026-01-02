@@ -79,7 +79,7 @@ const translations = {
       feature7Title: "Inclusive by Design",
       feature7Desc: "Built for SEND accessibility and self-paced exploration.",
       feature8Title: "Offline-Capable",
-      feature8Desc: "Full functionality with weak internet with Lab-Preloading.",
+      feature8Desc: "Offline capable functionality with weak internet with Lab-Preloading.",
       feature9Title: "Global Reach & Flexibility",
       feature9Desc: "Supports curriculum standards worldwide, with seamless Web (Chromebooks) & VR integration.",
       bookingTitle: "Book Your BETT 2026 Appointment",
@@ -103,6 +103,7 @@ const translations = {
       ctaText: "Don't miss this opportunity to see WhimsyLabs in person at BETT 2026. Book your appointment or request a call today!",
       ctaBooking: "Book BETT Appointment",
       ctaContact: "Request a Call",
+      blogButtonText: "Read Our Full BETT 2026 Blog Post",
     },
 
     // Common
@@ -230,6 +231,7 @@ const translations = {
       ctaText: "¡No pierdas esta oportunidad de ver WhimsyLabs en persona en BETT 2026! Reserva tu cita o solicita una llamada hoy.",
       ctaBooking: "Reservar Cita en BETT",
       ctaContact: "Solicitar una Llamada",
+      blogButtonText: "Lee Nuestro Artículo Completo de BETT 2026",
     },
 
     // Common
@@ -261,6 +263,13 @@ const translations = {
       youtubeLabel: "Visita nuestro canal de YouTube",
       blueskyAlt: "Logo de Bluesky",
       youtubeAlt: "Logo de YouTube"
+    },
+
+    // Blog
+    blog: {
+      post10: {
+        whimsyrambleAlt: "Tutor de IA WhimsyCat mostrando un mensaje de prueba para demostrar sus capacidades de comunicación"
+      }
     },
   },
 
@@ -357,6 +366,7 @@ const translations = {
       ctaText: "Ne manquez pas cette opportunité de voir WhimsyLabs en personne au BETT 2026. Réservez votre rendez-vous ou demandez un appel aujourd'hui!",
       ctaBooking: "Réserver Rendez-vous BETT",
       ctaContact: "Demander un Appel",
+      blogButtonText: "Lisez Notre Article Complet sur BETT 2026",
     },
 
     // Common
@@ -388,6 +398,13 @@ const translations = {
       youtubeLabel: "Visitez notre chaîne YouTube",
       blueskyAlt: "Logo Bluesky",
       youtubeAlt: "Logo YouTube"
+    },
+
+    // Blog
+    blog: {
+      post10: {
+        whimsyrambleAlt: "Tuteur IA WhimsyCat affichant un message de test pour d\u00e9montrer ses capacit\u00e9s de communication"
+      }
     },
   },
 
@@ -483,6 +500,7 @@ const translations = {
       ctaText: "Verpassen Sie nicht diese Gelegenheit, WhimsyLabs persönlich auf der BETT 2026 zu sehen. Buchen Sie noch heute Ihren Termin oder fordern Sie einen Anruf an!",
       ctaBooking: "BETT-Termin Buchen",
       ctaContact: "Anruf Anfordern",
+      blogButtonText: "Lesen Sie Unseren Vollständigen BETT 2026 Blog-Artikel",
     },
 
     // Common
@@ -514,6 +532,13 @@ const translations = {
       youtubeLabel: "Besuchen Sie unseren YouTube-Kanal",
       blueskyAlt: "Bluesky-Logo",
       youtubeAlt: "YouTube-Logo"
+    },
+
+    // Blog
+    blog: {
+      post10: {
+        whimsyrambleAlt: "WhimsyCat AI-Tutor zeigt eine Testnachricht zur Demonstration seiner Kommunikationsf\u00e4higkeiten"
+      }
     },
   },
 
@@ -609,6 +634,7 @@ const translations = {
       ctaText: "BETT 2026でWhimsyLabsを直接ご覧になる機会をお見逃しなく。今すぐご予約またはお電話をリクエストしてください！",
       ctaBooking: "BETTの予約",
       ctaContact: "電話をリクエスト",
+      blogButtonText: "BETT 2026の完全なブログ記事を読む",
     },
 
     // Common
@@ -640,6 +666,13 @@ const translations = {
       youtubeLabel: "YouTubeチャンネルを訪問",
       blueskyAlt: "Blueskyロゴ",
       youtubeAlt: "YouTubeロゴ"
+    },
+
+    // Blog
+    blog: {
+      post10: {
+        whimsyrambleAlt: "WhimsyCat AIチューターがコミュニケーション能力を示すためのテストメッセージを表示"
+      }
     },
   },
 };

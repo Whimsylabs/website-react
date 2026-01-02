@@ -1,5 +1,6 @@
 // Spanish - Post 15: We're Exhibiting at Bett 2026
 import React from "react";
+import ScrollingMap from "../../../Components/ScrollingMap";
 
 export const title =
   "Expondremos en Bett 2026: Únete a nosotros en Londres este enero";
@@ -52,12 +53,30 @@ export const content = (
     </p>
 
     <img
-      src="/images/bett-stand.jpg"
-      alt="Stand de WhimsyLabs en la exposición Bett"
+      src="/images/bett map.jpg"
+      alt="Mapa al stand de WhimsyLabs en la exposición Bett"
       className="rounded shadow center limited-size"
+      style={{
+        width: "0px",
+        height: "0px",
+        margin: "0",
+        padding: "0",
+        border: "none",
+        position: "absolute",
+        visibility: "hidden",
+      }}
     />
+    <div style={{ margin: "2rem 0" }}>
+      <ScrollingMap
+        imagePath="/images/bett map.jpg"
+        pathData="M 404 96 L 404 185 L 360 185 L 360 646 L 418 646 L 419 679 L 397 681"
+        viewBox="0 0 938 785"
+        speed={0.0003}
+        numTokens={3}
+      />
+    </div>
     <p className="caption">
-      Visítanos en el stand FS10 en la Zona de Startups del South Stand –
+      Sigue la ruta animada para encontrar nuestro stand FS10 en la Zona de Startups del South Stand –
       tendremos demos en vivo y experiencias prácticas listas para ti.
     </p>
 

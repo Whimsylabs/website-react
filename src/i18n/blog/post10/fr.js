@@ -133,6 +133,16 @@ export const content = (
       ).
     </p>
 
+    <img
+      src="/images/Whimsyramble.png"
+      alt="Tuteur IA WhimsyCat affichant un message de test pour démontrer ses capacités de communication"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      Un exemple de message de WhimsyCat, démontrant sa capacité à communiquer avec les étudiants d'une manière qui n'est pas intrusive ou gênante. Les étudiants peuvent cliquer sur le message pour le fermer.
+    </p>
+
     <h2>Qu'est-ce qui rend l'approche de WhimsyCat unique ?</h2>
 
     <p>

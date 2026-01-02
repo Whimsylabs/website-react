@@ -35,9 +35,7 @@ export const content = (
       providing unlimited low-stakes practice opportunities with gamified
       rewards that make skill development genuinely engaging.
     </p>
-
     <h2>Why Do Students Fall Behind in STEM Education?</h2>
-
     <p>
       The problem is structural. With classroom ratios averaging 30:1 in UK
       schools and often higher in under-resourced areas, teachers cannot provide
@@ -48,7 +46,6 @@ export const content = (
       a single misunderstood concept becomes the foundation for subsequent
       learning, the knowledge gap compounds rapidly.
     </p>
-
     <p>
       Research in educational psychology demonstrates that immediate,
       personalized intervention is critical for preventing learning gaps from
@@ -65,9 +62,7 @@ export const content = (
       ). Traditional educational systems struggle to provide this support at
       scale, but WhimsyCat-powered platforms can.
     </p>
-
     <h2>How Does WhimsyCat Provide 24/7 Personalized Support?</h2>
-
     <p>
       WhimsyCat, our AI tutor, operates as an always-available, infinitely
       patient laboratory teaching assistant. Unlike basic chatbots that simply
@@ -75,7 +70,6 @@ export const content = (
       experiments, identifying confusion, hesitation, or incorrect technique in
       real-time and providing proactive, contextual guidance.
     </p>
-
     <p>
       When a student struggles with acid-base titrations at 10 PM on a Sunday
       evening, WhimsyCat is there! Explaining concepts, detailing procedures,
@@ -84,7 +78,6 @@ export const content = (
       being "stuck" and enabling continuous progress regardless of teacher
       availability.
     </p>
-
     <p>
       Even better is the way students communicate to whimsycat; isntead of
       relying on spoken or written language, students can point to specific
@@ -105,7 +98,6 @@ export const content = (
       truly effective lab tutor, and letting the Teacher focus on inspiring
       curiosity and facilitating deeper understanding.
     </p>
-
     <p>
       Tihs synergistic by design system works with teachers, rather than
       building a model that attempts to replace them. By handling routine skill
@@ -115,7 +107,6 @@ export const content = (
       passion for science, and free them of the administrative and repetitive
       burdens that detract from their core mission.
     </p>
-
     <p>
       Studies on AI-enabled personalized learning demonstrate that intelligent
       tutoring systems can help build sustainable education systems while being
@@ -131,9 +122,7 @@ export const content = (
       systems, identifying struggling students before they become discouraged
       and intervening with precisely targeted support.
     </p>
-
     <h2>What Are Daily and Weekly Lab Recommendations?</h2>
-
     <p>
       WhimsyLabs' most innovative feature is our intelligent recommendation
       system, which analyzes each student's performance across all experiments
@@ -142,9 +131,18 @@ export const content = (
       tailored to address specific knowledge gaps and reinforce developing
       skills.
     </p>
+    <img
+      src="/images/Challenges.jpg"
+      alt={"Student dashboard showing the challenges section with personalized lab recommendations"}
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      The Challenges section of the student dashboard displays personalized lab
+      recommendations targeting each student's weakest areas. Each recommendation is designed to reinforce developing skills and address specific knowledge gaps. 
+    </p>
 
     <h3>How the Recommendation System Works</h3>
-
     <p>
       Our AI continuously analyzes the state of the student's understanding and
       laboratory work: which concepts they struggle with, which techniques need
@@ -153,7 +151,6 @@ export const content = (
       the system generates three individualized lab recommendations per week
       specifically targeting each student's weakest areas.
     </p>
-
     <p>
       For example, if a student struggles with pipetting accuracy in their
       titration assignment, the weekly recommendations might include: (1) a
@@ -163,14 +160,12 @@ export const content = (
       context. This varied practice ensures that students master skills through
       multiple applications rather than rote repetition in a single context.
     </p>
-
     <p>
       This coupled with our custom experiment builder allows the student to
       experience their daily practical skills in a wide range of contexts. All
       supported by the teachers around the world shairing their own custom
       experiments to help students learn in new and exciting ways.
     </p>
-
     <p>
       Research in cognitive psychology demonstrates that practicing skills
       across varied contexts significantly improves retention and transfer
@@ -186,9 +181,7 @@ export const content = (
       experimental frameworks, WhimsyLabs ensures genuine understanding rather
       than surface-level memorization.
     </p>
-
     <h3>Targeting Student Weaknesses Intelligently</h3>
-
     <p>
       The recommendation system identifies not just what students got wrong, but
       why they struggled. Did they misunderstand the underlying chemistry? Was
@@ -196,7 +189,6 @@ export const content = (
       analytical reasoning gap? Each type of difficulty triggers different
       recommended labs designed to address the specific root cause.
     </p>
-
     <p>
       This diagnostic precision is impossible in traditional classroom settings
       where teachers cannot continuously monitor and analyze every student
@@ -204,9 +196,7 @@ export const content = (
       experiment, building a comprehensive skill profile that informs
       increasingly accurate recommendations over time.
     </p>
-
     <h2>How Does Gamification Make Practice Engaging?</h2>
-
     <p>
       Critically, these recommended labs are presented not as remedial work but
       as opportunities to earn points through our gamification system. Students
@@ -214,7 +204,6 @@ export const content = (
       for tackling their weakest areas. This transforms areas of difficulty into
       achievement opportunities rather than sources of anxiety.
     </p>
-
     <p>
       This gamified approach aligns with research in motivation psychology,
       which demonstrates that autonomy-supportive learning environments
@@ -229,7 +218,6 @@ export const content = (
       ). Students choose which recommended labs to complete and when,
       maintaining agency while receiving structured guidance.
     </p>
-
     <p>
       The points system creates a positive feedback loop: struggling areas
       generate personalized recommendations, completing recommendations builds
@@ -238,9 +226,7 @@ export const content = (
       environments like our art department), and visible progress through points
       and unlocked rewards sustains motivation to continue improving.
     </p>
-
     <h2>Why Is Low-Stakes Practice So Effective?</h2>
-
     <p>
       One of the most powerful aspects of our recommendation system is that it
       provides low-stakes environments for skill development. When students
@@ -248,9 +234,10 @@ export const content = (
       to perform correctly can induce anxiety that impairs learning. Our
       recommended labs remove this pressure; students can experiment, make
       mistakes, try alternative approaches, and gradually build competency
-      without fear of failure affecting their grades. And once they've found their footing, they can return to the original assignment with greater confidence and skill.
+      without fear of failure affecting their grades. And once they've found
+      their footing, they can return to the original assignment with greater
+      confidence and skill.
     </p>
-
     <p>
       Research in productive failure pedagogy demonstrates that allowing
       students to struggle with complex problems in low-stakes environments
@@ -267,7 +254,6 @@ export const content = (
       skills through authentic challenge without the anxiety of high-stakes
       evaluation.
     </p>
-
     <p>
       Teachers appreciate this system because it reduces the need for
       supplementary assignments and remedial instruction. Students who complete
@@ -275,16 +261,15 @@ export const content = (
       confident, and with fewer knowledge gapsmaking classroom time more
       productive for everyone.
     </p>
-
     <h2>How Does This System Improve Skill Retention?</h2>
-
     <p>
       A critical educational challenge is ensuring that skills learned in one
       context transfer to new situations and remain accessible over time.
-      Traditional education often teaches concepts in isolation: one titration in
-      Chemistry, then never revisited. WhimsyLabs' recommendation system ensures
-      distributed practice across time and contexts, which research consistently
-      identifies as the most effective approach for long-term retention (
+      Traditional education often teaches concepts in isolation: one titration
+      in Chemistry, then never revisited. WhimsyLabs' recommendation system
+      ensures distributed practice across time and contexts, which research
+      consistently identifies as the most effective approach for long-term
+      retention (
       <a
         href="https://pubmed.ncbi.nlm.nih.gov/26173288/"
         target="_blank"
@@ -294,16 +279,14 @@ export const content = (
       </a>
       ).
     </p>
-
     <p>
       By recommending labs that reinforce earlier concepts in new experimental
       frameworks weeks or months after initial instruction, our system combats
       the forgetting curve. Students encounter acid-base chemistry in
       titrations, then again in buffer preparation, then in pH-dependent enzyme
-      assays, then later in environmental water testing. Each application deepening
-      understanding and strengthening neural pathways.
+      assays, then later in environmental water testing. Each application
+      deepening understanding and strengthening neural pathways.
     </p>
-
     <p>
       This distributed, varied practice produces the kind of flexible,
       transferable knowledge that enables students to apply scientific concepts
@@ -312,9 +295,7 @@ export const content = (
       understanding acid-base equilibria well enough to design novel
       experiments.
     </p>
-
     <h2>What Happens When Students Miss Class?</h2>
-
     <p>
       The 24/7 availability of WhimsyLabs combined with intelligent
       recommendations transforms what happens when students miss school. Instead
@@ -325,7 +306,6 @@ export const content = (
       when they have fully recovered, free of the brain fog an illness can
       bring.
     </p>
-
     <p>
       For students who struggle with specific concepts even when present in
       class, the recommendation system provides unlimited additional practice
@@ -333,7 +313,6 @@ export const content = (
       students can reinforce weak areas through engaging, points-earning
       activities until mastery is achieved.
     </p>
-
     <h2>Related Articles</h2>
     <ul>
       <li>
@@ -358,7 +337,6 @@ export const content = (
         </a>
       </li>
     </ul>
-
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

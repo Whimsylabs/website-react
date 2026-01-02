@@ -1,5 +1,6 @@
 // Japanese - Post 15: We're Exhibiting at Bett 2026
 import React from "react";
+import ScrollingMap from "../../../Components/ScrollingMap";
 
 export const title =
   "Bett 2026に出展いたします：1月にロンドンでお会いしましょう";
@@ -20,9 +21,12 @@ export const keywords = [
 export const content = (
   <div>
     <p>
-      WhimsyLabsが2026年1月にBett UKに戻ることをお知らせできることを大変嬉しく思います。2025年のBettでKids Judge
+      WhimsyLabsが2026年1月にBett
+      UKに戻ることをお知らせできることを大変嬉しく思います。2025年のBettでKids
+      Judge
       Bett賞の認定を受けた素晴らしい経験の後、私たちが構築してきたものを披露するためにExCel
-      Londonに戻ります。今回はSouth StandのスタートアップゾーンのFS10ブースに出展し、STEM教育の変革への情熱を共有する教育者、学生、そしてイノベーターの皆様にお会いできることを心待ちにしております。
+      Londonに戻ります。今回はSouth
+      StandのスタートアップゾーンのFS10ブースに出展し、STEM教育の変革への情熱を共有する教育者、学生、そしてイノベーターの皆様にお会いできることを心待ちにしております。
     </p>
 
     <h2>Bett 2026が私たちにとって重要な理由</h2>
@@ -36,13 +40,31 @@ export const content = (
     </p>
 
     <img
-      src="/images/bett-stand.jpg"
-      alt="Bett展示会のWhimsyLabsブース"
+      src="/images/bett map.jpg"
+      alt="Bett展示会のWhimsyLabsブースへの地図"
       className="rounded shadow center limited-size"
+      style={{
+        width: "0px",
+        height: "0px",
+        margin: "0",
+        padding: "0",
+        border: "none",
+        position: "absolute",
+        visibility: "hidden",
+      }}
     />
+    <div style={{ margin: "2rem 0" }}>
+      <ScrollingMap
+        imagePath="/images/bett map.jpg"
+        pathData="M 404 96 L 404 185 L 360 185 L 360 646 L 418 646 L 419 679 L 397 681"
+        viewBox="0 0 938 785"
+        speed={0.0003}
+        numTokens={3}
+      />
+    </div>
     <p className="caption">
-      South
-      StandのスタートアップゾーンFS10ブースにお越しください。ライブデモと実践的な体験をご用意してお待ちしております。
+      アニメーションパスに従って、South
+      StandのスタートアップゾーンFS10ブースをお探しください。ライブデモと実践的な体験をご用意してお待ちしております。
     </p>
 
     <h2>今年展示する内容</h2>

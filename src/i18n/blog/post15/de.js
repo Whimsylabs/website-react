@@ -1,5 +1,6 @@
 // German - Post 15: We're Exhibiting at Bett 2026
 import React from "react";
+import ScrollingMap from "../../../Components/ScrollingMap";
 
 export const title =
   "Wir stellen auf der Bett 2026 aus: Besuchen Sie uns im Januar in London";
@@ -43,23 +44,42 @@ export const content = (
 
     <p>
       Die letztjährige Bett war transformativ für WhimsyLabs. Wir trafen Lehrer,
-      die nach der Pandemie mit dem Laborzugang zu kämpfen hatten,
-      Schulleiter, die versuchten, Nachhaltigkeitsverpflichtungen mit
-      praxisorientierter naturwissenschaftlicher Bildung in Einklang zu bringen,
-      und Schüler, die auflebten, als sie erkannten, dass sie echte Experimente
-      in unserer virtuellen Umgebung durchführen konnten. Diese Gespräche
-      bestätigten alles, woran wir gearbeitet haben, und inspirierten uns, unsere
-      Plattform noch weiter voranzutreiben.
+      die nach der Pandemie mit dem Laborzugang zu kämpfen hatten, Schulleiter,
+      die versuchten, Nachhaltigkeitsverpflichtungen mit praxisorientierter
+      naturwissenschaftlicher Bildung in Einklang zu bringen, und Schüler, die
+      auflebten, als sie erkannten, dass sie echte Experimente in unserer
+      virtuellen Umgebung durchführen konnten. Diese Gespräche bestätigten
+      alles, woran wir gearbeitet haben, und inspirierten uns, unsere Plattform
+      noch weiter voranzutreiben.
     </p>
 
     <img
-      src="/images/bett-stand.jpg"
-      alt="WhimsyLabs-Stand auf der Bett-Ausstellung"
+      src="/images/bett map.jpg"
+      alt="Karte zum WhimsyLabs-Stand auf der Bett-Ausstellung"
       className="rounded shadow center limited-size"
+      style={{
+        width: "0px",
+        height: "0px",
+        margin: "0",
+        padding: "0",
+        border: "none",
+        position: "absolute",
+        visibility: "hidden",
+      }}
     />
+    <div style={{ margin: "2rem 0" }}>
+      <ScrollingMap
+        imagePath="/images/bett map.jpg"
+        pathData="M 404 96 L 404 185 L 360 185 L 360 646 L 418 646 L 419 679 L 397 681"
+        viewBox="0 0 938 785"
+        speed={0.0003}
+        numTokens={3}
+      />
+    </div>
     <p className="caption">
-      Besuchen Sie uns am Stand FS10 in der South Stand Startup Zone – wir haben
-      Live-Demos und praktische Erfahrungen für Sie bereit.
+      Folgen Sie dem animierten Pfad, um unseren Stand FS10 in der South Stand
+      Startup Zone zu finden – wir haben Live-Demos und praktische Erfahrungen
+      für Sie bereit.
     </p>
 
     <h2>Was wir dieses Jahr präsentieren</h2>
@@ -87,15 +107,16 @@ export const content = (
     </p>
 
     <p>
-      Wir werden auch unsere plattformübergreifende Kompatibilität demonstrieren.
-      Egal, ob Sie VR-Headsets, Laptops oder Chromebooks verwenden, WhimsyLabs
-      bietet ein nahtloses Erlebnis, das für Ihre Hardware optimiert ist. Diese
-      Flexibilität ist entscheidend für Schulen mit vielfältigen
-      Technologie-Ökosystemen und stellt sicher, dass alle Schüler Zugang zu
-      hochwertigen Laborerfahrungen haben, unabhängig von den ihnen zur
-      Verfügung stehenden Geräten. Probieren Sie die Desktop/Chromebooks-Version
-      der Software aus und sehen Sie, wie sie das Lernerlebnis Ihrer Schüler
-      transformiert, ohne Kompromisse bei Interaktivität oder Immersion.
+      Wir werden auch unsere plattformübergreifende Kompatibilität
+      demonstrieren. Egal, ob Sie VR-Headsets, Laptops oder Chromebooks
+      verwenden, WhimsyLabs bietet ein nahtloses Erlebnis, das für Ihre Hardware
+      optimiert ist. Diese Flexibilität ist entscheidend für Schulen mit
+      vielfältigen Technologie-Ökosystemen und stellt sicher, dass alle Schüler
+      Zugang zu hochwertigen Laborerfahrungen haben, unabhängig von den ihnen
+      zur Verfügung stehenden Geräten. Probieren Sie die
+      Desktop/Chromebooks-Version der Software aus und sehen Sie, wie sie das
+      Lernerlebnis Ihrer Schüler transformiert, ohne Kompromisse bei
+      Interaktivität oder Immersion.
     </p>
 
     <h2>Innovationen, die wir gerne demonstrieren</h2>
@@ -105,8 +126,8 @@ export const content = (
       bin, einschließlich unserer erweiterten Bewertungsfähigkeiten. Eine der
       größten Herausforderungen für Pädagogen besteht darin, praktische
       Laborfähigkeiten auf authentische und skalierbare Weise zu bewerten.
-      Traditionelle Laborberichte erfassen oft nicht die tatsächliche
-      Kompetenz eines Schülers in Labortechniken.
+      Traditionelle Laborberichte erfassen oft nicht die tatsächliche Kompetenz
+      eines Schülers in Labortechniken.
     </p>
     <p>
       Zusätzlich zu diesem Problem werden wissenschaftliche Prüfungen und
@@ -151,10 +172,10 @@ export const content = (
       sterilisiert? Haben sie zu schnell titriert? Die Handlungen, die
       Problemlösungsfähigkeiten und der einzigartige Ansatz des Schülers werden
       gemessen. Und wie Ihnen jeder Wissenschaftler sagen wird, sind Daten
-      verrauscht. Unser System ist so konzipiert, dass es Hintergrundrauschen und
-      Zufälligkeit aufweist, wie z. B. wechselnde Luftfeuchtigkeit, Temperatur,
-      Kontamination, Lichtverhältnisse und andere Faktoren, wodurch es
-      realistischer und schwerer zu „manipulieren" ist als traditionelle
+      verrauscht. Unser System ist so konzipiert, dass es Hintergrundrauschen
+      und Zufälligkeit aufweist, wie z. B. wechselnde Luftfeuchtigkeit,
+      Temperatur, Kontamination, Lichtverhältnisse und andere Faktoren, wodurch
+      es realistischer und schwerer zu „manipulieren" ist als traditionelle
       Multiple-Choice-Fragen.
     </p>
 
@@ -165,8 +186,8 @@ export const content = (
       Laborszenarien entwerfen, die ihren spezifischen Lehrplananforderungen
       entsprechen, egal ob sie GCSE-Chemie, IB-Biologie oder Advanced Placement
       Physics unterrichten. Die Flexibilität hier ist wirklich beispiellos;
-      schauen Sie unbedingt vorbei und sehen Sie sich unsere
-      Videodemonstration dieser neuen Funktion an!
+      schauen Sie unbedingt vorbei und sehen Sie sich unsere Videodemonstration
+      dieser neuen Funktion an!
     </p>
 
     <h2>Warum die Startup Zone für uns gemütlich ist</h2>
@@ -235,13 +256,13 @@ export const content = (
       Da sich Schulen weltweit zu Kohlenstoffneutralitätszielen verpflichten,
       kämpfen viele damit, wie sie qualitativ hochwertige MINT-Bildung
       aufrechterhalten und gleichzeitig ihre Umweltauswirkungen reduzieren
-      können. WhimsyLabs bietet eine konkrete Lösung: unbegrenzte
-      Experimente mit null physischem Abfall, 98% Reduzierung des
-      Energieverbrauchs im Vergleich zu traditionellen Laboren und keine
-      laufenden Kosten für Verbrauchsmaterialien oder Entsorgung gefährlicher
-      Abfälle. Auf der Bett haben wir detaillierte Auswirkungsberechnungen
-      verfügbar, damit Sie genau sehen können, wie WhimsyLabs zu den
-      Nachhaltigkeitszielen Ihrer Einrichtung beitragen könnte.
+      können. WhimsyLabs bietet eine konkrete Lösung: unbegrenzte Experimente
+      mit null physischem Abfall, 98% Reduzierung des Energieverbrauchs im
+      Vergleich zu traditionellen Laboren und keine laufenden Kosten für
+      Verbrauchsmaterialien oder Entsorgung gefährlicher Abfälle. Auf der Bett
+      haben wir detaillierte Auswirkungsberechnungen verfügbar, damit Sie genau
+      sehen können, wie WhimsyLabs zu den Nachhaltigkeitszielen Ihrer
+      Einrichtung beitragen könnte.
     </p>
 
     <h2>Was Sie am Stand FS10 erwarten können</h2>
@@ -268,8 +289,9 @@ export const content = (
       sezieren. Das Ziel ist, dass Sie viszerall verstehen, was unseren Ansatz
       anders macht; warum unsere Schüler berichten, dass sich WhimsyLabs wie ein
       echtes Labor anfühlt, auf eine Weise, wie es andere virtuelle Plattformen
-      nicht tun, und warum wir diejenigen sind, die die Schülerwahl-Auszeichnungen
-      für eine unterhaltsame und lehrreiche Plattform gewinnen.
+      nicht tun, und warum wir diejenigen sind, die die
+      Schülerwahl-Auszeichnungen für eine unterhaltsame und lehrreiche Plattform
+      gewinnen.
     </p>
 
     <p>
@@ -324,8 +346,8 @@ export const content = (
       melden Sie sich bitte im Voraus. Wir nehmen uns gerne Zeit für
       tiefergehende Diskussionen über Implementierung, Lehrplanintegration,
       technische Anforderungen oder alles andere, das für Ihren
-      Entscheidungsprozess wichtig ist. Sie können uns unter
-      hello@whimsylabs.ai kontaktieren.
+      Entscheidungsprozess wichtig ist. Sie können uns unter hello@whimsylabs.ai
+      kontaktieren.
     </p>
 
     <p>

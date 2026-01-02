@@ -98,6 +98,15 @@ export const content = (
     <p>
       Lehrkräfte behalten die volle Kontrolle durch unser umfassendes Dashboard, das Schüleraktionen, KI-generierte Bewertungen anzeigt und einfache Überschreibungsmöglichkeiten bietet. Dieser Human-in-the-Loop-Ansatz stellt sicher, dass Bildungsentscheidungen in den Händen qualifizierter Pädagogen bleiben, während ihre administrative Belastung dramatisch reduziert wird.
     </p>
+    <img
+      src="/images/teachdash.jpg"
+      alt="Lehrer-Dashboard im hellen Modus"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      Die Startseite des WhimsyLabs Lehrer-Dashboards zeigt Klassenübersicht, Schülerfortschritt und Bewertungsmetriken. Das Dashboard ist intuitiv und benutzerfreundlich gestaltet, mit einer sauberen und modernen Oberfläche und ist sowohl im hellen als auch im dunklen Modus verfügbar.
+    </p>
 
     <h3>24/7 KI-Nachhilfeunterstützung</h3>
 

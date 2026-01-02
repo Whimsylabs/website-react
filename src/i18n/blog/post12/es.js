@@ -59,6 +59,21 @@ export const content = (
       En WhimsyLabs, los estudiantes no hacen clic en "verter líquido"—agarran físicamente cristalería virtual, la inclinan en el ángulo apropiado, controlan la velocidad de flujo mediante movimiento de muñeca y juzgan el volumen visualmente mientras realizan la acción. Manipulan físicamente pipetas con agarre y postura correctos, realizan titulaciones con bureta con coordinación manual auténtica, manejan cristalería delicada con el cuidado apropiado y ejecutan procedimientos complejos de múltiples pasos mediante acciones físicas coordinadas.
     </p>
 
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Onions! Under the microscope! Featuring phase contrast and confocal microscopy!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
+    <p className="caption">
+      Los estudiantes pueden explorar técnicas de microscopía en VR, desarrollando las habilidades físicas necesarias para realizarlas en laboratorios reales. Esto significa ajustar el enfoque, la iluminación, la configuración de la lente y el posicionamiento de la muestra a través de movimientos auténticos de la mano. Esta es la vista a través del microscopio al examinar una muestra de células de cebolla, mientras un estudiante ajusta los diales para enfocar claramente las células con movimientos físicos de las manos.
+    </p>
+
     <p>
       Esta interacción física es crítica para la transferencia de habilidades. Los estudios en adquisición de habilidades motoras demuestran que la práctica virtual se transfiere efectivamente al desempeño del mundo real solo cuando el entorno virtual mantiene alta fidelidad física y requiere movimientos auténticos (
       <a
@@ -80,6 +95,18 @@ export const content = (
     <p>
       La técnica procedimental depende críticamente de comprender cómo se comportan los líquidos—viscosidad, tensión superficial, dinámica de flujo, patrones de mezclado y respuesta a la manipulación. Mientras que otras plataformas usan animaciones pregrabadas que siempre se comportan de manera idéntica, WhimsyLabs simula completamente la dinámica de fluidos en tiempo real mediante modelado de dinámica de fluidos computacional (CFD).
     </p>
+
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
 
     <p>
       Nuestro motor de física de líquidos procesa miles de interacciones por segundo, produciendo comportamiento realista: los líquidos viscosos se vierten lentamente, los líquidos de baja viscosidad salpican si se manejan descuidadamente, el mezclado produce patrones de turbulencia realistas, la temperatura afecta las propiedades del fluido y las reacciones químicas generan cambios visibles en el comportamiento físico. Este realismo no es estético—es pedagógicamente esencial. Los estudiantes aprenden a juzgar el volumen mediante inspección visual, controlar las velocidades de vertido mediante técnica, reconocer la finalización del mezclado mediante observación y detectar errores procedimentales mediante comportamiento fluido inesperado.

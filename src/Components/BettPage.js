@@ -196,10 +196,20 @@ const BettPage = ({ t, language }) => {
               </div>
             </div>
           </div>
+          
+          <div className="bett-blog-link-section" style={{ display: "flex", justifyContent: "center", margin: "30px 0" }}>
+            <a 
+              href="/blog/whimsylabs-bett-2026-exhibition-announcement" 
+              className="bett-cta-button bett-cta-primary"
+
+            >
+              {t("bett.blogButtonText")}
+            </a>
+          </div>
         </section>
       </BubbleContainer>
 
-      <SplashSection>
+      <SplashSection bottomColor="#F7F8F9">
         <section id="booking" className="bett-booking-section">
           <h2>{t("bett.bookingTitle")}</h2>
           <p className="bett-booking-description">
@@ -210,7 +220,7 @@ const BettPage = ({ t, language }) => {
             {/* Calendly inline widget */}
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/your-calendly-username/bett-2026-meeting"
+              data-url="https://calendly.com/whimsylaboratories/bett-2026?month=2026-01"
               style={{ minWidth: "320px", height: "700px" }}
             ></div>
             <script

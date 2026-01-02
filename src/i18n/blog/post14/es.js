@@ -103,8 +103,15 @@ export const content = (
 
     <p>
       Los estudiantes pueden comprar atuendos cosméticos para WhimsyCat, nuestra mascota tutora de IA – desde batas de laboratorio y gafas de seguridad hasta disfraces estacionales y accesorios caprichosos. Estas recompensas cosméticas proporcionan personalización visible sin afectar los resultados de aprendizaje, satisfaciendo el deseo de los estudiantes de autoexpresión y exhibición de logros.
+    </p>    <img
+      src="/images/basicskins.jpg"
+      alt="Tutor de IA WhimsyCat con varios atuendos cosméticos"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      WhimsyCat adornado con un shader raster personalizado con colores y patrones personalizables. Se muestran los estilos de limonada de fresa y logo clásico.
     </p>
-
     <p>
       La personalización cosmética es particularmente popular entre los estudiantes más jóvenes, quienes disfrutan viendo a WhimsyCat reflejar su personalidad y logros. Los maestros informan que los estudiantes se enorgullecen de "ganar" nuevos atuendos a través de la competencia demostrada, creando conexiones tangibles entre el esfuerzo de aprendizaje y los resultados gratificantes.
     </p>

@@ -42,9 +42,7 @@ export const content = (
       that provide 24/7 intelligent tutoring and automated assessment,
       dramatically reducing teacher workload while improving learning outcomes.
     </p>
-
     <h2>What Is Causing the STEM Teacher Shortage Crisis?</h2>
-
     <p>
       The scale of the crisis is staggering. In the UK, specialist teacher
       vacancies in computing and mathematics have more than tripled since 2010,
@@ -60,7 +58,6 @@ export const content = (
       </a>
       ).
     </p>
-
     <p>
       The shortage stems from multiple interconnected factors. Approximately 50%
       of teachers planning to leave the profession in 2024/25 cited high levels
@@ -81,7 +78,6 @@ export const content = (
       </a>
       ).
     </p>
-
     <p>
       Globally, the situation is similarly dire. The United States faces 411,500
       vacant or uncertified teaching positions, with 45 states reporting
@@ -99,9 +95,7 @@ export const content = (
       educational deserts where students have minimal access to qualified STEM
       instruction.
     </p>
-
     <h2>How Do Virtual Labs Reduce Teacher Workload?</h2>
-
     <p>
       WhimsyLabs addresses the teacher shortage crisis not by replacing
       teachers, but by amplifying their effectiveness through intelligent
@@ -109,9 +103,19 @@ export const content = (
       unprecedented access to personalized support. Our platform tackles the
       workload crisis through three primary mechanisms:
     </p>
+    <img
+      src="/images/teachdash.jpg"
+      alt={
+        "Teacher dashboard in light mode"
+      }
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      The front page of the WhimsyLabs teacher dashboard, showing class overview, student progress, and assessment metrics. The dashboard is designed to be intuitive and easy to use, with a clean and modern interface, and is available in both light and dark mode.
+    </p>
 
     <h3>Automated Intelligent Assessment</h3>
-
     <p>
       Laboratory assessment is notoriously time-intensive, requiring teachers to
       evaluate not just final results but also procedural technique, safety
@@ -119,7 +123,6 @@ export const content = (
       analyzes thousands of student actions per experiment, providing detailed,
       personalized feedback that would typically require one-on-one observation.
     </p>
-
     <p>
       Our system reduces grading time by an estimated 3.5 hours per week per
       teacher while simultaneously providing more comprehensive feedback than
@@ -136,7 +139,6 @@ export const content = (
       </a>
       ).
     </p>
-
     <p>
       Teachers retain full control through our comprehensive dashboard, which
       shows student actions, AI-generated assessments, and provides easy
@@ -144,9 +146,7 @@ export const content = (
       decisions remain in the hands of qualified educators while dramatically
       reducing their administrative burden.
     </p>
-
     <h3>24/7 AI Tutoring Support</h3>
-
     <p>
       With classroom ratios exceeding 30:1 in most UK schools, teachers can
       spend only 2-3 minutes per student per lesson, creating a critical
@@ -154,7 +154,6 @@ export const content = (
       one-on-one support, answering questions, providing hints, and guiding
       students through complex procedures at any time, from anywhere.
     </p>
-
     <p>
       Unlike basic chatbots, WhimsyCat monitors student behavior in real-time,
       proactively identifying struggling students through behavioral pattern
@@ -172,7 +171,6 @@ export const content = (
       </a>
       ).
     </p>
-
     <p>
       In addition, we have taken notes from some of the most successful
       tutorialisation models in games, with one example drawn from how Link
@@ -182,7 +180,6 @@ export const content = (
       students focus on critical aspects of the experiment without constant
       teacher supervision.
     </p>
-
     <p>
       This 24/7 accessibility is particularly crucial for addressing educational
       inequality. Students who miss school due to illness, have limited teacher
@@ -193,9 +190,7 @@ export const content = (
       leaves the teacher free to focus on high-value tasks that require human
       judgment and empathy.
     </p>
-
     <h3>Zero Laboratory Preparation and Maintenance</h3>
-
     <p>
       Physical laboratories require extensive preparation: ordering chemicals,
       setting up equipment, creating safety protocols, and post-experiment
@@ -205,7 +200,6 @@ export const content = (
       immediately without any physical setup, safety concerns, or cleanup
       requirements.
     </p>
-
     <p>
       This time savings is particularly significant for schools struggling with
       teacher shortages. A single qualified teacher can now effectively support
@@ -213,9 +207,7 @@ export const content = (
       supplemented by AI tutoring, extending their impact far beyond what
       traditional laboratory instruction allows.
     </p>
-
     <h2>Why Is This Approach More Effective Than Traditional Alternatives?</h2>
-
     <p>
       Unlike video demonstrations or static simulations that simply present
       information, WhimsyLabs provides authentic learning experiences where
@@ -224,7 +216,6 @@ export const content = (
       laboratory work with the scalability and personalization of digital
       technology.
     </p>
-
     <p>
       Research in virtual reality motor skill learning demonstrates that virtual
       practice can effectively transfer to real-world performance when the
@@ -242,7 +233,6 @@ export const content = (
       laboratories; all without requiring scarce teacher time for one-on-one
       supervision.
     </p>
-
     <p>
       For schools facing teacher shortages, this means students no longer have
       reduced practical work or eliminated laboratory experiences. Instead, they
@@ -251,9 +241,7 @@ export const content = (
       on high-value pedagogical activities like curriculum design, individual
       student mentorship, and addressing complex conceptual difficulties.
     </p>
-
     <h2>What Impact Does This Have on Global Education?</h2>
-
     <p>
       Globally, our platform addresses critical access inequalities. Rural
       schools without qualified STEM teachers can provide world-class laboratory
@@ -263,7 +251,6 @@ export const content = (
       teacher shortages can access personalized instruction that would otherwise
       be completely unavailable.
     </p>
-
     <p>
       The World Economic Forum identifies collaborative problem-solving skills
       and leadership as critical for career success in STEM fields, ranking
@@ -281,9 +268,7 @@ export const content = (
       scientific practice that teacher shortages often prevent in traditional
       settings.
     </p>
-
     <h2>How Does WhimsyLabs Support Rather Than Replace Teachers?</h2>
-
     <p>
       A critical distinction of our approach is that we enhance rather than
       replace teacher expertise. WhimsyLabs handles routine tasks: grading,
@@ -291,7 +276,6 @@ export const content = (
       best: inspire curiosity, guide complex thinking, provide emotional
       support, and build meaningful relationships with students.
     </p>
-
     <p>
       Our comprehensive teacher dashboard provides unprecedented insights into
       individual and class performance, highlighting specific areas where
@@ -300,7 +284,6 @@ export const content = (
       students who need human judgment, encouragement, or advanced guidance that
       AI cannot provide.
     </p>
-
     <p>
       For trainee teachers, WhimsyLabs reduces the overwhelming workload that
       drives 30% to leave within five years. By automating time-consuming
@@ -308,9 +291,7 @@ export const content = (
       teaching more sustainable and rewarding, potentially improving retention
       rates and making STEM teaching careers more attractive to new entrants.
     </p>
-
     <h2>What Does the Future Hold for Teacher-Technology Partnerships?</h2>
-
     <p>
       The STEM teacher shortage will not resolve quickly through traditional
       recruitment alone. Teaching remains one of the most demanding professions,
@@ -322,11 +303,11 @@ export const content = (
       >
         Teacher Magazine, 2019
       </a>
-      ). With "Retention is linked to teachers’ sense of being effective." (Mayer et. al 2015). Our
-      platform addresses this crisis by making teaching more sustainable and more effective while
-      providing students with experiences that would otherwise be impossible.
+      ). With "Retention is linked to teachers’ sense of being effective."
+      (Mayer et. al 2015). Our platform addresses this crisis by making teaching
+      more sustainable and more effective while providing students with
+      experiences that would otherwise be impossible.
     </p>
-
     <p>
       WhimsyLabs envisions a future where every student has access to unlimited,
       high-quality laboratory experiences regardless of their school's teacher
@@ -336,17 +317,14 @@ export const content = (
       Where geographical location, school funding, or teacher shortages no
       longer determine whether students can pursue STEM careers.
     </p>
-
     <p>
-      Based in Edinburgh, we are committed to
-      democratizing access to premium science education technology for all
-      institutions, addressing the global crisis in STEM education through
-      thoughtful integration of AI and virtual reality. Our mission is not to
-      replace the irreplaceable human connection at the heart of great teaching,
-      but to amplify its reach and effectiveness in an era of unprecedented
-      challenges.
+      Based in Edinburgh, we are committed to democratizing access to premium
+      science education technology for all institutions, addressing the global
+      crisis in STEM education through thoughtful integration of AI and virtual
+      reality. Our mission is not to replace the irreplaceable human connection
+      at the heart of great teaching, but to amplify its reach and effectiveness
+      in an era of unprecedented challenges.
     </p>
-
     <p>
       The teacher shortage crisis demands bold, innovative solutions. WhimsyLabs
       offers a proven approach that makes teaching more sustainable, learning
@@ -356,7 +334,6 @@ export const content = (
       circumstances, can develop the scientific skills and knowledge to succeed
       in an increasingly technological world.
     </p>
-
     <h2>Related Articles</h2>
     <ul>
       <li>
@@ -381,7 +358,6 @@ export const content = (
         </a>
       </li>
     </ul>
-
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

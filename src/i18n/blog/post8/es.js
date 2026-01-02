@@ -98,6 +98,15 @@ export const content = (
     <p>
       Los docentes retienen el control total a través de nuestro panel integral, que muestra acciones de estudiantes, evaluaciones generadas por IA y proporciona capacidades de anulación fáciles. Este enfoque de humano en el ciclo asegura que las decisiones educativas permanezcan en manos de educadores calificados mientras se reduce drásticamente su carga administrativa.
     </p>
+    <img
+      src="/images/teachdash.jpg"
+      alt="Panel del profesor en modo claro"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      La página principal del panel de WhimsyLabs para profesores, mostrando el resumen de la clase, el progreso de los estudiantes y las métricas de evaluación. El panel está diseñado para ser intuitivo y fácil de usar, con una interfaz limpia y moderna, y está disponible en modo claro y oscuro.
+    </p>
 
     <h3>Apoyo de tutoría de IA 24/7</h3>
 

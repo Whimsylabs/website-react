@@ -103,8 +103,15 @@ export const content = (
 
     <p>
       Les étudiants peuvent acheter des tenues cosmétiques pour WhimsyCat, notre mascotte tuteur IA – des blouses de laboratoire et lunettes de sécurité aux costumes saisonniers et accessoires fantaisistes. Ces récompenses cosmétiques offrent une personnalisation visible sans affecter les résultats d'apprentissage, satisfaisant le désir des étudiants d'expression personnelle et d'affichage de réalisation.
+    </p>    <img
+      src="/images/basicskins.jpg"
+      alt="Tuteur IA WhimsyCat avec diverses tenues cosmétiques"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      WhimsyCat orné d'un shader raster personnalisé avec des couleurs et motifs personnalisables. Les styles limonade à la fraise et logo classique sont montrés.
     </p>
-
     <p>
       La personnalisation cosmétique est particulièrement populaire auprès des jeunes étudiants, qui apprécient de voir WhimsyCat refléter leur personnalité et leurs réalisations. Les enseignants rapportent que les étudiants sont fiers de "gagner" de nouvelles tenues par la compétence démontrée, créant des connexions tangibles entre l'effort d'apprentissage et les résultats gratifiants.
     </p>

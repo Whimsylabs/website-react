@@ -1,8 +1,9 @@
 import React from "react";
+import ScrollingMap from "../ScrollingMap";
 
 export const title =
   "We're Exhibiting at Bett 2026: Join Us in London This January";
-export const date = "2025-12-05";
+export const date = "2026-01-02";
 export const slug = "whimsylabs-bett-2026-exhibition-announcement";
 export const description =
   "WhimsyLabs returns to Bett UK 2026 in the Startup Zone to showcase our award-winning virtual laboratory platform. Come see what's new at stand FS10.";
@@ -54,12 +55,30 @@ export const content = (
     </p>
 
     <img
-      src="/images/bett-stand.jpg"
-      alt="WhimsyLabs booth at Bett exhibition"
+      src="/images/bett map.jpg"
+      alt="Map to WhimsyLabs booth at Bett exhibition"
       className="rounded shadow center limited-size"
+      style={{ 
+        width: "0px", 
+        height: "0px", 
+        margin: "0", 
+        padding: "0", 
+        border: "none",
+        position: "absolute",
+        visibility: "hidden"
+      }}
     />
+    <div style={{ margin: "2rem 0" }}>
+      <ScrollingMap
+        imagePath="/images/bett map.jpg"
+        pathData="M 404 96 L 404 185 L 360 185 L 360 646 L 418 646 L 419 679 L 397 681"
+        viewBox="0 0 938 785"
+        speed={0.0003}
+        numTokens={3}
+      />
+    </div>
     <p className="caption">
-      Visit us at stand FS10 in the South Stand Startup Zone! We'll have live
+      Follow the animated path to find our booth at stand FS10 in the South Stand Startup Zone! We'll have live
       demos and hands-on experiences ready for you.
     </p>
 

@@ -106,19 +106,15 @@ export const content = (
       style={{ margin: "20px 0", textAlign: "center" }}
     >
       <bsky-embed
-        search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
+        search="Onions! Under the microscope! Featuring phase contrast and confocal microscopy!"
         limit="1"
         link-target="_blank"
         custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
       ></bsky-embed>
     </div>
     <p className="caption">
-      Whimsylabs repesents liquids as they are in reality; mobile fluids that
-      respond to physical manipulation. Students learn to judge volume by sight,
-      control pour rates through wrist movement, and develop the tactile skills
-      essential for accurate laboratory work. This liquid physics simulation is
-      at the heart of whimsylabs - allowing for authentic muscle memory
-      development.
+      students can explore microscopy techniques in VR, developing the physical
+      skills needed to perform them in real labs. This means adjusting focus, lighting, lens settings, and sample positioning through authentic hand movements. This is the view down the microscope when examining an onion cell sample. while a student adjusts the dials to bring the cells into clear focus with physical hand movements.
     </p>
 
     <p>
@@ -150,6 +146,18 @@ export const content = (
       fluid dynamics in real-time through coarse grained computational fluid
       dynamics (CFD) modeling.
     </p>
+
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
 
     <p>
       Our chemistry engine processes thousands of interactions per second,
@@ -318,7 +326,9 @@ export const content = (
       authentic laboratory technique), advanced liquid physics (providing
       realistic chemical behavior), and complete sandbox freedom (developing
       experimental design and problem-solving abilities). No other platform
-      offers this comprehensive preparation for professional STEM careers. This is why we're considered the "best-in-class" virtual laboratory solution by educators and industry partners alike.
+      offers this comprehensive preparation for professional STEM careers. This
+      is why we're considered the "best-in-class" virtual laboratory solution by
+      educators and industry partners alike.
     </p>
 
     <h2>What Career Skills Does WhimsyLabs Develop?</h2>
@@ -382,10 +392,10 @@ export const content = (
     <p>
       As STEM careers become increasingly specialized and technically demanding,
       the gap between educational preparation and professional requirements
-      widens. Traditional approaches cannot address this gap, physical laboratory
-      constraints prevent the extensive practice needed for true mastery, while
-      safety and cost concerns eliminate exposure to many important techniques
-      and chemicals.
+      widens. Traditional approaches cannot address this gap, physical
+      laboratory constraints prevent the extensive practice needed for true
+      mastery, while safety and cost concerns eliminate exposure to many
+      important techniques and chemicals.
     </p>
 
     <p>

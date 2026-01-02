@@ -132,7 +132,15 @@ export const content = (
       </a>
       ）。
     </p>
-
+    <img
+      src="/images/Whimsyramble.png"
+      alt="WhimsyCat AIチューターがコミュニケーション能力を示すためのテストメッセージを表示"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      WhimsyCatからのメッセージの例で、学生と邪魔にならず、邪魔にならない方法でコミュニケーションを取る能力を実証しています。学生はメッセージをクリックして閉じることができます。
+    </p>
     <h2>WhimsyCatのアプローチが独自である理由は？</h2>
 
     <p>

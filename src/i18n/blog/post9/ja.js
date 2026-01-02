@@ -67,10 +67,31 @@ export const content = (
       )。WhimsyCatの積極的な関与は、従来の受動的なシステムを超えて、生徒が意欲を失う前に苦しんでいる生徒を特定し、正確に的を絞った支援で介入します。
     </p>
 
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Not only am I a scientist thanks to Whimsylabs, I'm also a professional beaker inspector!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
+
     <h2>日次・週次の実験推薦とは何ですか?</h2>
 
     <p>
       WhimsyLabsの最も革新的な機能は、すべての実験における各生徒のパフォーマンスを分析して、個別化された日次・週次の実験提案を生成するインテリジェント推薦システムです。一般的な宿題とは異なり、これらの推薦は、特定の知識のギャップに対処し、発展途上のスキルを強化するために個別に調整されています。
+    </p>
+    <img
+      src="/images/Challenges.jpg"
+      alt="個別化された実験推薦を表示する生徒のダッシュボードのチャレンジセクション"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      生徒ダッシュボードのチャレンジセクションは、各生徒の最も弱い領域を対象とした個別化された実験推薦を表示します。各推薦は、発展中のスキルを強化し、特定の知識のギャップに対処するために設計されています。
     </p>
 
     <h3>推薦システムの仕組み</h3>
@@ -271,38 +292,56 @@ export const content = (
       <h3>参考文献</h3>
       <ul className="references-list">
         <li key="ref-1">
-          Bjork, E. L., & Bjork, R. A. (2020). Desirable difficulties in theory and practice.
-          <em> Journal of Applied Research in Memory and Cognition</em>, 9(4), 475-479.
+          Bjork, E. L., & Bjork, R. A. (2020). Desirable difficulties in theory
+          and practice.
+          <em> Journal of Applied Research in Memory and Cognition</em>, 9(4),
+          475-479.
         </li>
         <li key="ref-2">
-          Chen, C. H., & Xie, H. (2020). Impacts of flipped classroom in high school students' academic achievement.
+          Chen, C. H., & Xie, H. (2020). Impacts of flipped classroom in high
+          school students' academic achievement.
           <em> Interactive Learning Environments</em>, 28(5), 550-562.
         </li>
         <li key="ref-3">
-          Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior.
+          Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal
+          pursuits: Human needs and the self-determination of behavior.
           <em> Psychological Inquiry</em>, 11(4), 227-268.
         </li>
         <li key="ref-4">
-          Grand View Research. (2024). <em>AI Tutors Market Size, Share & Trends Analysis Report 2024-2030</em>. Retrieved from
+          Grand View Research. (2024).{" "}
+          <em>
+            AI Tutors Market Size, Share & Trends Analysis Report 2024-2030
+          </em>
+          . Retrieved from
           https://www.grandviewresearch.com/industry-analysis/ai-tutors-market-report
         </li>
         <li key="ref-5">
-          Hwang, G. J., Xie, H., Wah, B. W., & Gašević, D. (2023). Artificial intelligence in intelligent tutoring systems toward sustainable education: a systematic review.
+          Hwang, G. J., Xie, H., Wah, B. W., & Gašević, D. (2023). Artificial
+          intelligence in intelligent tutoring systems toward sustainable
+          education: a systematic review.
           <em> Smart Learning Environments</em>, 10, 41.
         </li>
         <li key="ref-6">
-          Kang, S. H. (2016). Spaced repetition promotes efficient and effective learning: Policy implications for instruction.
-          <em> Policy Insights from the Behavioral and Brain Sciences</em>, 3(1), 12-19.
+          Kang, S. H. (2016). Spaced repetition promotes efficient and effective
+          learning: Policy implications for instruction.
+          <em> Policy Insights from the Behavioral and Brain Sciences</em>,
+          3(1), 12-19.
         </li>
         <li key="ref-7">
           Kapur, M. (2015). Learning from productive failure.
           <em> Learning: Research and Practice</em>, 1(1), 51-65.
         </li>
         <li key="ref-8">
-          Rose, D., & Meyer, A. (2002). <em>Teaching every student in the digital age: Universal design for learning</em>. Association for Supervision and Curriculum Development.
+          Rose, D., & Meyer, A. (2002).{" "}
+          <em>
+            Teaching every student in the digital age: Universal design for
+            learning
+          </em>
+          . Association for Supervision and Curriculum Development.
         </li>
         <li key="ref-9">
-          Sailer, M., & Homner, L. (2022). The gamification of learning: A meta-analysis.
+          Sailer, M., & Homner, L. (2022). The gamification of learning: A
+          meta-analysis.
           <em> Frontiers in Education</em>, 7, 1039541.
         </li>
       </ul>

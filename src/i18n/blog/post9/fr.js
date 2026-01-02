@@ -73,8 +73,15 @@ export const content = (
 
     <p>
       La fonctionnalité la plus innovante de WhimsyLabs est notre système de recommandation intelligent, qui analyse les performances de chaque élève dans toutes les expériences pour générer des suggestions de laboratoire quotidiennes et hebdomadaires personnalisées. Contrairement aux devoirs génériques, ces recommandations sont individuellement adaptées pour combler les lacunes de connaissances spécifiques et renforcer les compétences en développement.
+    </p>    <img
+      src="/images/Challenges.jpg"
+      alt="Tableau de bord étudiant montrant la section défis avec des recommandations de laboratoire personnalisées"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      La section Défis du tableau de bord étudiant affiche des recommandations de laboratoire personnalisées ciblant les domaines les plus faibles de chaque étudiant. Chaque recommandation est conçue pour renforcer les compétences en développement et combler des lacunes de connaissance spécifiques.
     </p>
-
     <h3>Comment fonctionne le système de recommandation</h3>
 
     <p>

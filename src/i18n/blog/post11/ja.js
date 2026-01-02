@@ -97,6 +97,16 @@ export const content = (
       )。
     </p>
 
+    <img
+      src="/images/Ethanolsafety.jpg"
+      alt="エタノールなどの危険物の取り扱いに関する安全ラベルが表示された WhimsyLabs 仮想実験室"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      WhimsyLabsは、仮想化学容器に実際の安全ラベルを提供することで、化学的危険物の処理をシミュレートしています。これにより、生徒は安全な環境で COSHH フォームと安全手順について学んだことを適用することができます。
+    </p>
+
     <h3>24時間対応と柔軟な学習</h3>
 
     <p>

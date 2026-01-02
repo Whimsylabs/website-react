@@ -74,6 +74,15 @@ export const content = (
     <p>
       WhimsyLabs' innovativstes Merkmal ist unser intelligentes Empfehlungssystem, das die Leistung jedes Schülers über alle Experimente hinweg analysiert, um personalisierte tägliche und wöchentliche Laborvorschläge zu generieren. Im Gegensatz zu generischen Hausaufgaben sind diese Empfehlungen individuell zugeschnitten, um spezifische Wissenslücken zu beheben und sich entwickelnde Fähigkeiten zu verstärken.
     </p>
+    <img
+      src="/images/Challenges.jpg"
+      alt="Schüler-Dashboard mit dem Herausforderungen-Bereich und personalisierten Laborempfehlungen"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      Der Herausforderungen-Bereich des Schüler-Dashboards zeigt personalisierte Laborempfehlungen, die auf die schwächsten Bereiche jedes Schülers abzielen. Jede Empfehlung ist darauf ausgelegt, sich entwickelnde Fähigkeiten zu verstärken und spezifische Wissenslücken zu schließen.
+    </p>
 
     <h3>Wie das Empfehlungssystem funktioniert</h3>
 

@@ -132,7 +132,15 @@ export const content = (
       </a>
       ).
     </p>
-
+    <img
+      src="/images/Whimsyramble.png"
+      alt="WhimsyCat KI-Tutor zeigt eine Testnachricht zur Demonstration seiner Kommunikationsfähigkeiten"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      Ein Beispiel einer Nachricht von WhimsyCat, die seine Fähigkeit demonstriert, mit Schülern auf eine Weise zu kommunizieren, die nicht störend oder hinderlich ist. Schüler können auf die Nachricht klicken, um sie zu schließen.
+    </p>
     <h2>Was macht WhimsyCats Ansatz einzigartig?</h2>
 
     <p>

@@ -83,14 +83,14 @@ export const content = (
     <h3>Unlimited Practice and Mastery</h3>
 
     <p>
-      Traditional labs ration experiments due to cost and time
-      constraints, students might perform a titration once or twice before
-      assessment. WhimsyLabs enables unlimited repetition: students can practice
-      titrations until genuine mastery is achieved, exploring how technique
-      variations affect results, testing hypotheses through experimentation, and
-      building muscle memory through repeated physical performance. Research
-      demonstrates that skill mastery requires extensive practice, which
-      traditional laboratory constraints make economically impossible (
+      Traditional labs ration experiments due to cost and time constraints,
+      students might perform a titration once or twice before assessment.
+      WhimsyLabs enables unlimited repetition: students can practice titrations
+      until genuine mastery is achieved, exploring how technique variations
+      affect results, testing hypotheses through experimentation, and building
+      muscle memory through repeated physical performance. Research demonstrates
+      that skill mastery requires extensive practice, which traditional
+      laboratory constraints make economically impossible (
       <a
         href="https://journals.sagepub.com/doi/10.1177/1541931213601477"
         target="_blank"
@@ -120,6 +120,16 @@ export const content = (
         Zhang et al., 2024
       </a>
       ).
+    </p>
+
+    <img
+      src="/images/Ethanolsafety.jpg"
+      alt={"Whimsylabs virtual lab demonstrating chemical hazard handling with safety labels on chemical containers"}
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      Whimsylabs simulates chemical hazzard handling by providing true to life safety labels on virtual chemical containers. This lets students apply what they've learnt about COSHH forms and safety procedures in a safe environment.
     </p>
 
     <h3>24/7 Availability and Flexible Learning</h3>
@@ -187,9 +197,10 @@ export const content = (
       development, new experiments, and enhanced features rather than
       distributing profits to shareholders. We provide free trials and pilot
       programs to demonstrate value without financial barriers. We actively
-      develop partnerships with educational charities and nonprofit organizations advancing
-      STEM education equity, and we commit to maintaining affordability as we
-      scale rather than maximizing revenue extraction.
+      develop partnerships with educational charities and nonprofit
+      organizations advancing STEM education equity, and we commit to
+      maintaining affordability as we scale rather than maximizing revenue
+      extraction.
     </p>
 
     <p>
@@ -257,7 +268,9 @@ export const content = (
       eliminated practical work due to budget constraints can now offer
       unlimited virtual experiments. Rural schools without qualified STEM
       teachers can provide comprehensive laboratory education through AI-guided
-      virtual environments with WhimsyLabs supporting them. Students in developing nations can access the same premium educational resources as elite institutions in wealthy countries.
+      virtual environments with WhimsyLabs supporting them. Students in
+      developing nations can access the same premium educational resources as
+      elite institutions in wealthy countries.
     </p>
 
     <p>

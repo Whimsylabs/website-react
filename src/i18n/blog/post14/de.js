@@ -104,6 +104,15 @@ export const content = (
     <p>
       Studierende können kosmetische Outfits für WhimsyCat, unser KI-Tutor-Maskottchen, kaufen – von Laborkitteln und Schutzbrillen bis zu saisonalen Kostümen und skurrilen Accessoires. Diese kosmetischen Belohnungen bieten sichtbare Personalisierung ohne Auswirkung auf Lernergebnisse und befriedigen das Bedürfnis der Studierenden nach Selbstausdruck und Leistungsdarstellung.
     </p>
+    <img
+      src="/images/basicskins.jpg"
+      alt="WhimsyCat KI-Tutor mit verschiedenen kosmetischen Outfits"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      WhimsyCat geschmückt mit einem benutzerdefinierten Raster-Shader mit anpassbaren Farben und Mustern. Erdbeeren-Limonaden- und klassische Logo-Stile werden gezeigt.
+    </p>
 
     <p>
       Kosmetische Anpassung ist besonders beliebt bei jüngeren Studierenden, die es genießen, WhimsyCat ihre Persönlichkeit und Erfolge widerspiegeln zu sehen. Lehrkräfte berichten, dass Studierende stolz darauf sind, neue Outfits durch demonstrierte Kompetenz zu "verdienen", was greifbare Verbindungen zwischen Lernbemühungen und belohnenden Ergebnissen schafft.

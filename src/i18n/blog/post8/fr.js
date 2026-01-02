@@ -97,8 +97,15 @@ export const content = (
 
     <p>
       Les enseignants conservent le contrôle total grâce à notre tableau de bord complet, qui affiche les actions des élèves, les évaluations générées par l'IA et offre des capacités de remplacement faciles. Cette approche humain-dans-la-boucle garantit que les décisions éducatives restent entre les mains d'éducateurs qualifiés tout en réduisant considérablement leur charge administrative.
+    </p>    <img
+      src="/images/teachdash.jpg"
+      alt="Tableau de bord des enseignants en mode clair"
+      className="rounded shadow center limited-size"
+      style={{ maxWidth: "600px", width: "100%" }}
+    />
+    <p className="caption">
+      La page d'accueil du tableau de bord enseignant WhimsyLabs, montrant l'aperçu de la classe, le progrès des étudiants et les métriques d'évaluation. Le tableau de bord est conçu pour être intuitif et facile à utiliser, avec une interface propre et moderne, et est disponible en mode clair et sombre.
     </p>
-
     <h3>Support de tutorat IA 24h/24 et 7j/7</h3>
 
     <p>
