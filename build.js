@@ -39,13 +39,13 @@ const getPageMetadata = (lang = 'en') => ({
       "virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology",
   },
   "/blog": {
-    title: "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources",
-    description: "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.",
+    title: translations[lang]?.blog?.title || "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources",
+    description: translations[lang]?.blog?.description || "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.",
     keywords: "virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching",
   },
   "/services": {
-    title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
-    description: "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
+    title: translations[lang]?.services?.title || "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
+    description: translations[lang]?.services?.description || "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
     keywords: "custom virtual labs, educational simulations, STEM lab development, virtual lab consulting",
   },
   "/features": {
@@ -54,8 +54,8 @@ const getPageMetadata = (lang = 'en') => ({
     keywords: "virtual lab features, physics simulations, AI assessment, cross-platform labs",
   },
   "/faq": {
-    title: "Frequently Asked Questions | WhimsyLabs Virtual Lab Software",
-    description: "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
+    title: translations[lang]?.faq?.title || "Frequently Asked Questions | WhimsyLabs Virtual Lab Software",
+    description: translations[lang]?.faq?.description || "Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.",
     keywords: "virtual lab FAQ, lab software questions, STEM education help",
   },
   "/bett": {
@@ -279,6 +279,8 @@ async function copyAssets() {
     // Since distDir is the same as buildDir, we don't need to copy public assets
     // They're already in the right place from the React build
     console.log("✅ Public assets already in place (distDir same as buildDir)");
+
+    // IndexNow key file is automatically copied from public directory
 
   } catch (error) {
     console.error("❌ Error copying assets:", error.message);

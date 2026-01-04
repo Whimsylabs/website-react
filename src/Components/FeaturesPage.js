@@ -227,7 +227,7 @@ const FeaturesPage = ({ language }) => {
 
       {/* Final CTA Section with Bubble Background */}
       <BubbleContainer>
-        <h1>Ready to Experience the Future of Science Education?</h1>
+        <h2>Ready to Experience the Future of Science Education?</h2>
         <ContactUs buttonText="Schedule Your Premium Demo" />
         <div className="faq-teaser">
           <h2>Have Questions?</h2>

@@ -18,7 +18,7 @@ const Partners = () => {
                 aria-label="Visit Edinburgh Innovations"
               >
                 <img
-                  src="https://edinburgh-innovations.ed.ac.uk/assets/img/logo/UOE.png"
+                  src="https://www.ed.ac.uk/themes/upstream/wpp_theme/images/logo.png"
                   className="img-fluid"
                   alt="University of Edinburgh logo"
                 />
@@ -32,7 +32,7 @@ const Partners = () => {
                 aria-label="Visit University of Edinburgh"
               >
                 <img
-                  src="https://edinburgh-innovations.ed.ac.uk/assets/img/logo/EI.png"
+                  src="https://www.ed.ac.uk/themes/upstream/wpp_theme/images/logo.png"
                   className="img-fluid"
                   alt="Edinburgh Innovations logo"
                 />

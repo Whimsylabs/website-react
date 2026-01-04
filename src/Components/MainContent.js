@@ -30,7 +30,7 @@ const MainContent = ({ t, language }) => {
       </SplashSection>
       <BubbleContainer>
         <Testimonial />
-        <h1>{t("home.trialDemo")}</h1>
+        <h2>{t("home.trialDemo")}</h2>
         <ContactUs buttonText={t("home.applyTrial")} />
         <div className="faq-teaser">
           <h2>{t("home.haveQuestions")}</h2>

@@ -39,9 +39,22 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Frequently Asked Questions",
+      title: "Frequently Asked Questions - WhimsyLabs Virtual Lab Software",
+      description: "Get expert answers to common questions about WhimsyLabs virtual laboratory software, implementation, pricing, and how our STEM simulations enhance education.",
       subtitle:
         "Find answers to common questions about our virtual lab software and how it can transform STEM education",
+    },
+
+    // Blog
+    blog: {
+      title: "WhimsyLabs Blog - Virtual Lab Innovation & STEM Education Insights",
+      description: "Stay updated with the latest in virtual laboratory technology, STEM education trends, teaching strategies, and WhimsyLabs platform developments.",
+    },
+
+    // Services
+    services: {
+      title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education",
+      description: "Comprehensive virtual laboratory services including custom lab development, curriculum integration, teacher training, and technical support for schools.",
     },
 
     // Privacy
@@ -174,9 +187,22 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Preguntas Frecuentes",
+      title: "Preguntas Frecuentes - Software de Laboratorio Virtual WhimsyLabs",
+      description: "Obtén respuestas expertas a preguntas comunes sobre el software de laboratorio virtual WhimsyLabs, implementación, precios y cómo nuestras simulaciones STEM mejoran la educación.",
       subtitle:
         "Encuentra respuestas a preguntas comunes sobre nuestro software de laboratorio virtual y cómo puede transformar la educación STEM",
+    },
+
+    // Blog
+    blog: {
+      title: "Blog WhimsyLabs - Innovación en Laboratorios Virtuales y Educación STEM",
+      description: "Mantente actualizado con lo último en tecnología de laboratorio virtual, tendencias de educación STEM, estrategias de enseñanza y desarrollos de la plataforma WhimsyLabs.",
+    },
+
+    // Services
+    services: {
+      title: "Servicios WhimsyLabs - Soluciones de Laboratorio Virtual Personalizadas",
+      description: "Servicios integrales de laboratorio virtual incluyendo desarrollo de laboratorios personalizados, integración curricular, capacitación docente y soporte técnico para escuelas.",
     },
 
     // BETT Page
@@ -309,9 +335,22 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Questions Fréquemment Posées",
+      title: "Questions Fréquemment Posées - Logiciel de Laboratoire Virtuel WhimsyLabs",
+      description: "Obtenez des réponses d'experts aux questions courantes sur le logiciel de laboratoire virtuel WhimsyLabs, l'implémentation, les prix et comment nos simulations STEM améliorent l'éducation.",
       subtitle:
         "Trouvez des réponses aux questions courantes sur notre logiciel de laboratoire virtuel et comment il peut transformer l'éducation STEM",
+    },
+
+    // Blog
+    blog: {
+      title: "Blog WhimsyLabs - Innovation en Laboratoires Virtuels et Perspectives Éducation STEM",
+      description: "Restez informé des dernières innovations en technologie de laboratoire virtuel, tendances de l'éducation STEM, stratégies pédagogiques et développements de la plateforme WhimsyLabs.",
+    },
+
+    // Services
+    services: {
+      title: "Services WhimsyLabs - Solutions de Laboratoire Virtuel Personnalisées",
+      description: "Services complets de laboratoire virtuel incluant développement de laboratoires personnalisés, intégration curriculaire, formation des enseignants et support technique pour les écoles.",
     },
 
     // BETT Page
@@ -443,9 +482,22 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Häufig Gestellte Fragen",
+      title: "Häufig Gestellte Fragen - WhimsyLabs Virtuelles Labor Software",
+      description: "Erhalten Sie Expertenantworten auf häufige Fragen über WhimsyLabs virtuelle Labor-Software, Implementierung, Preise und wie unsere STEM-Simulationen die Bildung verbessern.",
       subtitle:
         "Finden Sie Antworten auf häufige Fragen zu unserer virtuellen Labor-Software und wie sie die STEM-Bildung transformieren kann",
+    },
+
+    // Blog
+    blog: {
+      title: "WhimsyLabs Blog - Innovation in Virtuellen Laboren & STEM-Bildung Einblicke",
+      description: "Bleiben Sie auf dem Laufenden mit den neuesten Entwicklungen in der virtuellen Labor-Technologie, STEM-Bildungstrends, Unterrichtsstrategien und WhimsyLabs Plattform-Entwicklungen.",
+    },
+
+    // Services
+    services: {
+      title: "WhimsyLabs Dienstleistungen - Maßgeschneiderte Virtuelle Labor-Lösungen",
+      description: "Umfassende virtuelle Labor-Dienstleistungen einschließlich benutzerdefinierter Labor-Entwicklung, Lehrplan-Integration, Lehrerfortbildung und technischem Support für Schulen.",
     },
 
     // BETT Page
@@ -577,9 +629,22 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "よくあるご質問",
+      title: "よくあるご質問 - WhimsyLabsバーチャルラボソフトウェア",
+      description: "WhimsyLabsバーチャルラボソフトウェア、実装、価格設定、そしてSTEMシミュレーションが教育をどのように向上させるかについてのよくある質問への専門的な回答をご覧ください。",
       subtitle:
         "当社のシミュレーション教材と、STEM教育をどのように変革できるかについてのよくある質問への回答をご覧ください",
+    },
+
+    // Blog
+    blog: {
+      title: "WhimsyLabsブログ - バーチャルラボ革新とSTEM教育の洞察",
+      description: "バーチャルラボ技術、STEM教育トレンド、教授戦略、WhimsyLabsプラットフォーム開発の最新情報をお届けします。",
+    },
+
+    // Services
+    services: {
+      title: "WhimsyLabsサービス - カスタムバーチャルラボソリューション",
+      description: "カスタムラボ開発、カリキュラム統合、教師研修、学校向け技術サポートを含む包括的なバーチャルラボサービス。",
     },
 
     // BETT Page
