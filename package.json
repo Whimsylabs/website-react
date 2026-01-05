@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "build-spa": "react-scripts build",
     "generate-sitemap": "node generate-sitemap.js",
-    "build-static": "npm run build-spa && node build.js",
+    "build-static": "npm run build-spa && node build.js && npm run validate-meta-tags && npm run validate-title-length && npm run validate-redirects-metadata",
     "build-static-host": "npm run build-static && npx serve build",
     "build-english-only": "npm run build-spa && node scripts/build-english-only.js",
     "clean-build": "node scripts/clean-build.js",
@@ -40,6 +40,9 @@
     "validate-translations": "node scripts/validate-translations.js",
     "validate-faq-translations": "node scripts/validate-faq-translations.js",
     "validate-blog-translations": "node scripts/validate-blog-translations.js",
+    "validate-meta-tags": "node scripts/validate-meta-tags.js",
+    "validate-title-length": "node scripts/validate-title-length.js",
+    "validate-redirects-metadata": "node scripts/validate-redirects-and-metadata.js",
     "generate-blog-structure": "node scripts/generate-blog-structure.js",
     "apply-faq-translations": "node scripts/apply-faq-translations.js",
     "complete-faq-translations": "node scripts/complete-faq-translations.js",
@@ -51,7 +54,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build-static",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build && powershell -Command \"Write-Host 'Waiting 3 minutes for server to update...'; Start-Sleep -Seconds 180; Write-Host 'Starting IndexNow submission...'\" && npm run indexnow-submit"
   },
   "eslintConfig": {
     "extends": [

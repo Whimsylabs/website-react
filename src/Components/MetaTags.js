@@ -13,12 +13,12 @@ const MetaTags = () => {
             keywords: "virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology",
         },
         "/blog": {
-            title: "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources",
+            title: "WhimsyLabs Blog - Virtual Laboratory Innovations & STEM Education",
             description: "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.",
             keywords: "virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching",
         },
         "/services": {
-            title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
+            title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education",
             description: "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
             keywords: "virtual lab solutions, science education technology, remote laboratory learning, interactive science experiments",
         },

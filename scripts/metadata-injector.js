@@ -40,12 +40,12 @@ class MetadataInjector {
         keywords: 'virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology',
       },
       '/blog': {
-        title: 'WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources',
+        title: 'WhimsyLabs Blog - Virtual Laboratory Innovations & STEM Education',
         description: 'Stay updated with WhimsyLabs\' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.',
         keywords: 'virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching',
       },
       '/services': {
-        title: 'WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry',
+        title: 'WhimsyLabs Services - Custom Virtual Lab Solutions for Education',
         description: 'Discover WhimsyLabs\' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.',
         keywords: 'virtual lab solutions, science education technology, remote laboratory learning, interactive science experiments',
       },
@@ -63,6 +63,26 @@ class MetadataInjector {
         title: 'Contact Us | WhimsyLabs Virtual Lab Software',
         description: 'Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.',
         keywords: 'contact WhimsyLabs, virtual lab trial, STEM education contact',
+      },
+      '/bett': {
+        title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
+        description: 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
+        keywords: 'virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology',
+      },
+      '/demo': {
+        title: 'Demo | WhimsyLabs Virtual Lab Software',
+        description: 'Try WhimsyLabs virtual laboratory software with our interactive demo. Experience our STEM education platform and see how virtual labs enhance science learning.',
+        keywords: 'virtual lab demo, online lab simulation trial, STEM education demo, science laboratory software demo',
+      },
+      '/privacy': {
+        title: 'Privacy Policy | WhimsyLabs Virtual Lab Software',
+        description: 'Read WhimsyLabs privacy policy to understand how we protect your data and privacy when using our virtual laboratory software for STEM education.',
+        keywords: 'WhimsyLabs privacy policy, virtual lab data protection, STEM education privacy, online lab security',
+      },
+      '/spa': {
+        title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
+        description: 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
+        keywords: 'virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology',
       }
     };
 
@@ -89,7 +109,7 @@ class MetadataInjector {
       baseRoute = route;
     }
     
-    // Ensure trailing slash consistency
+    // Ensure trailing slash consistency - always add trailing slash except for root
     if (baseRoute !== '/' && !baseRoute.endsWith('/')) {
       baseRoute += '/';
     }
@@ -103,20 +123,38 @@ class MetadataInjector {
     let tags = `
     <link rel="canonical" href="${this.baseUrl}${canonicalRoute}">`;
     
-    // Add hreflang tags for international versions
+    // Add hreflang tags for international versions - ensure consistent trailing slash handling
     const languages = ['en', 'de', 'es', 'fr', 'ja'];
     const languageMap = { 'en': '', 'de': '/de', 'es': '/es', 'fr': '/fr', 'ja': '/jp' };
     
     for (const lang of languages) {
       const langPrefix = languageMap[lang];
-      const hreflangUrl = `${this.baseUrl}${langPrefix}${baseRoute}`;
+      // Build the full URL ensuring no double slashes and consistent trailing slashes
+      let hreflangUrl;
+      if (baseRoute === '/') {
+        // Root case: /en => /, /de => /de/, etc.
+        hreflangUrl = langPrefix === '' ? `${this.baseUrl}/` : `${this.baseUrl}${langPrefix}/`;
+      } else {
+        // Non-root case: ensure baseRoute has trailing slash and combine properly
+        const normalizedBaseRoute = baseRoute.endsWith('/') ? baseRoute : baseRoute + '/';
+        hreflangUrl = `${this.baseUrl}${langPrefix}${normalizedBaseRoute}`;
+      }
+      
       tags += `
     <link rel="alternate" hreflang="${lang}" href="${hreflangUrl}">`;
     }
     
-    // Add x-default hreflang pointing to English
+    // Add x-default hreflang pointing to English with consistent format
+    let xDefaultUrl;
+    if (baseRoute === '/') {
+      xDefaultUrl = `${this.baseUrl}/`;
+    } else {
+      const normalizedBaseRoute = baseRoute.endsWith('/') ? baseRoute : baseRoute + '/';
+      xDefaultUrl = `${this.baseUrl}${normalizedBaseRoute}`;
+    }
+    
     tags += `
-    <link rel="alternate" hreflang="x-default" href="${this.baseUrl}${baseRoute}">`;
+    <link rel="alternate" hreflang="x-default" href="${xDefaultUrl}">`;
     
     return tags;
   }
@@ -136,8 +174,7 @@ class MetadataInjector {
     <meta name="description" content="${meta.description}">
     <meta name="keywords" content="${meta.keywords}">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="WhimsyLabs">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">${this.generateCanonicalAndHreflangTags(route)}`;
+    <meta name="author" content="WhimsyLabs">${this.generateCanonicalAndHreflangTags(route)}`;
   }
 
   /**
@@ -150,10 +187,13 @@ class MetadataInjector {
     const defaultMeta = this.getDefaultMetadata(route);
     const meta = { ...defaultMeta, ...customMeta };
     
+    // Ensure consistent trailing slash for og:url to match canonical URL
+    const normalizedRoute = route.endsWith('/') ? route : route + '/';
+    
     return `
     <meta property="og:title" content="${meta.title}">
     <meta property="og:description" content="${meta.description}">
-    <meta property="og:url" content="${this.baseUrl}${route}">
+    <meta property="og:url" content="${this.baseUrl}${normalizedRoute}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WhimsyLabs">
     <meta property="og:locale" content="en_GB">

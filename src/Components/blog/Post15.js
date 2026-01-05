@@ -2,7 +2,7 @@ import React from "react";
 import ScrollingMap from "../ScrollingMap";
 
 export const title =
-  "We're Exhibiting at Bett 2026: Join Us in London This January";
+  "We're Exhibiting at Bett 2026: Join Us in London";
 export const date = "2026-01-02";
 export const slug = "whimsylabs-bett-2026-exhibition-announcement";
 export const description =

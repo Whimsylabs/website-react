@@ -68,9 +68,9 @@ async function generateBlogData() {
           // Read the file content
           const fileContent = await fs.readFile(translationPath, 'utf8');
           
-          // Extract title, description, and keywords using regex
-          const titleMatch = fileContent.match(/export const title = ["'`](.*?)["'`];/s);
-          const descriptionMatch = fileContent.match(/export const description = ["'`](.*?)["'`];/s);
+          // Extract title, description, and keywords using regex (handle multi-line exports)
+          const titleMatch = fileContent.match(/export const title\s*=\s*["'`](.*?)["'`];/s);
+          const descriptionMatch = fileContent.match(/export const description\s*=\s*["'`](.*?)["'`];/s);
           const keywordsMatch = fileContent.match(/export const keywords = \[([\s\S]*?)\];/);
           const contentMatch = fileContent.match(/export const content = \(([\s\S]*?)\);$/);
 
@@ -117,8 +117,8 @@ async function generateBlogData() {
             const englishPath = path.join(__dirname, '..', 'src', 'i18n', 'blog', postId, 'en.js');
             if (await fs.pathExists(englishPath)) {
               const englishContent = await fs.readFile(englishPath, 'utf8');
-              const titleMatch = englishContent.match(/export const title = ["'`](.*?)["'`];/s);
-              const descriptionMatch = englishContent.match(/export const description = ["'`](.*?)["'`];/s);
+              const titleMatch = englishContent.match(/export const title\s*=\s*["'`](.*?)["'`];/s);
+              const descriptionMatch = englishContent.match(/export const description\s*=\s*["'`](.*?)["'`];/s);
               const keywordsMatch = englishContent.match(/export const keywords = \[([\s\S]*?)\];/);
 
               const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;

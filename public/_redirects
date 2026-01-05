@@ -40,6 +40,9 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /blog /blog/ 301!
 /features /features/ 301!
 /privacy /privacy/ 301!
+/bett /bett/ 301!
+/demo /demo/ 301!
+/spa /spa/ 301!
 
 # Redirect phantom nested URLs to correct pages
 /features/faq/ /faq/ 301!

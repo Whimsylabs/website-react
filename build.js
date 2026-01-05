@@ -39,12 +39,12 @@ const getPageMetadata = (lang = 'en') => ({
       "virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology",
   },
   "/blog": {
-    title: translations[lang]?.blog?.title || "WhimsyLabs Blog - Latest Virtual Laboratory Innovations & Teaching Resources",
+    title: translations[lang]?.blog?.title || "WhimsyLabs Blog - Virtual Laboratory Innovations & STEM Education",
     description: translations[lang]?.blog?.description || "Stay updated with WhimsyLabs' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.",
     keywords: "virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching",
   },
   "/services": {
-    title: translations[lang]?.services?.title || "WhimsyLabs Services - Custom Virtual Lab Solutions for Education & Industry",
+    title: translations[lang]?.services?.title || "WhimsyLabs Services - Custom Virtual Lab Solutions for Education",
     description: translations[lang]?.services?.description || "Discover WhimsyLabs' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.",
     keywords: "custom virtual labs, educational simulations, STEM lab development, virtual lab consulting",
   },
@@ -623,27 +623,7 @@ async function generatePageHTML(route, data = {}) {
       route
     );
 
-    // Generate hreflang tags for SEO
-    const generateHreflangTags = (currentRoute, currentLang) => {
-      let hreflangTags = '';
-      
-      config.supportedLanguages.forEach(lang => {
-        const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
-        const localizedRoute = currentRoute.replace(/^\/[a-z]{2}(?=\/|$)/, '');
-        const hrefUrl = `${config.siteUrl}${langPrefix}${localizedRoute}`;
-        
-        hreflangTags += `    <link rel="alternate" hreflang="${lang}" href="${hrefUrl}">\n`;
-      });
-      
-      // Add x-default for default language
-      const defaultRoute = currentRoute.replace(/^\/[a-z]{2}(?=\/|$)/, '');
-      hreflangTags += `    <link rel="alternate" hreflang="x-default" href="${config.siteUrl}${defaultRoute}">`;
-      
-      return hreflangTags;
-    };
-
     const currentLang = data.language || config.defaultLanguage;
-    const hreflangTags = generateHreflangTags(route, currentLang);
 
     // Generate complete HTML document
     const html = `<!DOCTYPE html>
@@ -653,7 +633,6 @@ async function generatePageHTML(route, data = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
     ${completeMetadata.meta}
-    ${hreflangTags}
     ${assets.preload}
     ${assets.css}
     ${completeMetadata.script}
