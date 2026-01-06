@@ -222,9 +222,10 @@ class MetadataInjector {
   /**
    * Generate structured data (JSON-LD) for a route
    * @param {string} route - The route path
+   * @param {Object} data - Optional data object (for blog posts, etc.)
    * @returns {string} - JSON-LD structured data script tags
    */
-  generateStructuredData(route) {
+  generateStructuredData(route, data = {}) {
     const organizationSchema = {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -295,7 +296,115 @@ class MetadataInjector {
       schemas.push(faqSchema);
     }
 
-    return schemas.map(schema => 
+    // Generate BlogPosting schema for blog posts
+    if (route.includes('/blog/') && route !== '/blog' && !route.endsWith('/blog/')) {
+      // Extract language from route
+      const langMatch = route.match(/^\/([a-z]{2})\//);
+      const language = langMatch ? langMatch[1] : 'en';
+      const inLanguage = language === 'en' ? 'en-GB' : language;
+
+      // Calculate estimated reading time (assuming 200 words per minute)
+      const description = data.description || '';
+      const wordCount = description ? description.split(/\s+/).length * 10 : 1000;
+      const readingMinutes = Math.max(3, Math.ceil(wordCount / 200));
+
+      const blogPostSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": data.title || "WhimsyLabs Blog Post",
+        "description": data.description || "",
+        "image": {
+          "@type": "ImageObject",
+          "url": `${this.baseUrl}/logo.png`,
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": data.date || data.datePublished || new Date().toISOString().split('T')[0],
+        "dateModified": data.dateModified || data.date || data.datePublished || new Date().toISOString().split('T')[0],
+        "author": {
+          "@type": "Person",
+          "name": "Marisa French",
+          "url": "https://www.linkedin.com/in/drmarisafrench/",
+          "sameAs": [
+            "https://www.linkedin.com/in/drmarisafrench/"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "WhimsyLabs",
+          "url": this.baseUrl,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${this.baseUrl}/logo.png`,
+            "width": 1200,
+            "height": 630
+          }
+        },
+        "url": `${this.baseUrl}${route}`,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `${this.baseUrl}${route}`
+        },
+        "timeRequired": `PT${readingMinutes}M`,
+        "articleSection": "STEM Education Technology",
+        "wordCount": wordCount,
+        "inLanguage": inLanguage,
+        "isAccessibleForFree": true,
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Virtual Laboratory Technology"
+          },
+          {
+            "@type": "Thing",
+            "name": "STEM Education"
+          },
+          {
+            "@type": "Thing",
+            "name": "Educational Technology"
+          }
+        ]
+      };
+
+      // Add keywords if available
+      if (data.keywords) {
+        blogPostSchema.keywords = Array.isArray(data.keywords) ? data.keywords.join(", ") : data.keywords;
+      }
+
+      schemas.push(blogPostSchema);
+
+      // Also add breadcrumb schema for blog posts
+      const breadcrumbItems = [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": this.baseUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": `${this.baseUrl}${language === 'en' ? '' : '/' + language}/blog/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": data.title || "Blog Post",
+          "item": `${this.baseUrl}${route}`
+        }
+      ];
+
+      const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbItems
+      };
+
+      schemas.push(breadcrumbSchema);
+    }
+
+    return schemas.map(schema =>
       `<script type="application/ld+json">${JSON.stringify(schema)}</script>`
     ).join('\n    ');
   }
@@ -316,7 +425,7 @@ class MetadataInjector {
         title: helmetMeta.title,
         meta: helmetMeta.meta,
         link: helmetMeta.link,
-        script: blueskyScript + '\n    ' + helmetMeta.script + '\n    ' + this.generateStructuredData(route),
+        script: blueskyScript + '\n    ' + helmetMeta.script + '\n    ' + this.generateStructuredData(route, customMeta),
         style: helmetMeta.style
       };
     }
@@ -325,7 +434,7 @@ class MetadataInjector {
     const basicMeta = this.generateBasicMetaTags(route, customMeta);
     const ogMeta = this.generateOpenGraphTags(route, customMeta);
     const twitterMeta = this.generateTwitterCardTags(route, customMeta);
-    const structuredData = this.generateStructuredData(route);
+    const structuredData = this.generateStructuredData(route, customMeta);
     const blueskyScript = '<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>';
 
     return {

@@ -220,39 +220,56 @@ const SchemaMarkup = () => {
   // Blog post schema generated dynamically from blog post data
   const generateBlogPostSchema = () => {
     const postData = getBlogPostData();
-    
+
+    // Calculate estimated reading time (assuming 200 words per minute)
+    const wordCount = postData.description ? postData.description.split(/\s+/).length * 10 : 1000; // Rough estimate
+    const readingMinutes = Math.max(3, Math.ceil(wordCount / 200));
+
     return {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: postData.title,
-      image: `${baseUrl}/logo.png`,
+      description: postData.description,
+      // Enhanced ImageObject with dimensions
+      image: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/logo.png`,
+        width: 1200,
+        height: 630
+      },
       datePublished: postData.datePublished,
-      dateModified: postData.dateModified,
+      dateModified: postData.dateModified || postData.datePublished,
+      // Enhanced Author as Person (not Organization)
       author: {
-        "@type": "Organization",
-        name: "WhimsyLabs",
-        url: baseUrl
+        "@type": "Person",
+        name: "Marisa French",
+        url: "https://www.linkedin.com/in/drmarisafrench/",
+        sameAs: [
+          "https://www.linkedin.com/in/drmarisafrench/"
+        ]
       },
       publisher: {
         "@type": "Organization",
         name: "WhimsyLabs",
+        url: baseUrl,
         logo: {
           "@type": "ImageObject",
           url: `${baseUrl}/logo.png`,
           width: 1200,
           height: 630
-        },
+        }
       },
       url: `${baseUrl}${currentPath}`,
-      description: postData.description,
-      keywords: postData.keywords,
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id": `${baseUrl}${currentPath}`
       },
+      // Add reading time in ISO 8601 duration format
+      timeRequired: `PT${readingMinutes}M`,
+      // Add article section/category
       articleSection: "STEM Education Technology",
-      wordCount: 2000, // Approximate word count
-      inLanguage: "en-GB",
+      wordCount: wordCount,
+      inLanguage: currentLanguage === 'en' ? 'en-GB' : currentLanguage,
       isAccessibleForFree: true,
       about: [
         {
@@ -260,7 +277,7 @@ const SchemaMarkup = () => {
           name: "Virtual Laboratory Technology"
         },
         {
-          "@type": "Thing", 
+          "@type": "Thing",
           name: "STEM Education"
         },
         {
@@ -414,8 +431,51 @@ const SchemaMarkup = () => {
     };
   };
 
+  // Generate Breadcrumb schema based on current path
+  const generateBreadcrumbSchema = () => {
+    const breadcrumbItems = [];
+
+    // Always start with Home
+    breadcrumbItems.push({
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: baseUrl
+    });
+
+    // Parse path for breadcrumbs
+    const pathParts = currentPath.split('/').filter(p => p);
+    let currentUrl = baseUrl;
+
+    pathParts.forEach((part, index) => {
+      // Skip language codes
+      if (['de', 'es', 'fr', 'jp'].includes(part)) return;
+
+      currentUrl += `/${part}`;
+      const name = part.charAt(0).toUpperCase() + part.slice(1).replace(/-/g, ' ');
+
+      breadcrumbItems.push({
+        "@type": "ListItem",
+        position: breadcrumbItems.length + 1,
+        name: name,
+        item: currentUrl
+      });
+    });
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbItems
+    };
+  };
+
   // Determine which schemas to include based on the current page
   let schemasToInclude = [organizationSchema, websiteSchema]; // Include organization and website schema on all pages
+
+  // Add breadcrumb to non-home pages
+  if (currentPath !== "/") {
+    schemasToInclude.push(generateBreadcrumbSchema());
+  }
 
   if (currentPath === "/") {
     schemasToInclude.push(productSchema, reviewsSchema, faqSchema, howToSchema);
