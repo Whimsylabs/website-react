@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WhimsyLabs - Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect handler
+      // This script handles 404 errors by redirecting to the correct page
+
+      (function() {
+        var path = window.location.pathname;
+        var hash = window.location.hash;
+        var search = window.location.search;
+
+        // Redirect www to non-www
+        if (window.location.hostname === 'www.whimsylabs.ai') {
+          window.location.replace('https://whimsylabs.ai' + path + search + hash);
+          return;
+        }
+
+        // Redirect http to https
+        if (window.location.protocol === 'http:') {
+          window.location.replace('https://whimsylabs.ai' + path + search + hash);
+          return;
+        }
+
+        // Handle trailing slash redirects
+        // If path doesn't end with / and isn't a file, add trailing slash
+        if (!path.endsWith('/') && !path.includes('.')) {
+          // Check if this is a valid page that should have a trailing slash
+          var validPaths = [
+            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa',
+            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett',
+            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett',
+            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett',
+            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett'
+          ];
+
+          if (validPaths.indexOf(path) !== -1) {
+            window.location.replace(path + '/' + search + hash);
+            return;
+          }
+        }
+
+        // For true 404s (typos, invalid paths), show a proper 404 page
+        // Don't redirect to home - this is an MPA, not an SPA
+        console.log('404: Path not found -', path);
+
+        // Store the attempted path for analytics if needed
+        sessionStorage.setItem('404_path', path);
+
+        // Show the 404 page instead of redirecting
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('error-message').style.display = 'block';
+      })();
+    </script>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        padding: 40px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #1f1968 0%, #dabeff 100%);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loader {
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        opacity: 0.9;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 20px 0 10px;
+      }
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <div>
+      <h1>WhimsyLabs</h1>
+      <div class="loader" id="loader"></div>
+      <div id="error-message" style="display: none;">
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you're looking for doesn't exist.</p>
+        <p><a href="/" style="color: white; text-decoration: underline;">Return to Home</a></p>
+      </div>
+      <p id="redirect-text">Redirecting you to the correct page...</p>
+    </div>
+</body>
+</html>

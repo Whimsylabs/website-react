@@ -1,43 +1,38 @@
-import en from "./faq/en";
-import es from "./faq/es";
-import fr from "./faq/fr";
-import de from "./faq/de";
-
+// Use CommonJS for Node.js compatibility during build
 const translations = {
-  en,
-  es,
-  fr,
-  de,
+  en: require("./faq/en").default || require("./faq/en"),
+  es: require("./faq/es").default || require("./faq/es"),
+  fr: require("./faq/fr").default || require("./faq/fr"),
+  de: require("./faq/de").default || require("./faq/de"),
 };
 
-// Keys corresponding to the items selected in getSchemaFAQItems in src/data/faqData.js
-const schemaFAQKeys = [
-  "what-is-whimsylabs-virtual-lab-software",
-  "what-makes-whimsylabs-different-from-other-virtual",
-  "how-do-virtual-labs-help-students-learn",
-  "how-does-whimsylabs-compare-to-traditional-labs",
-  "how-accurate-are-the-simulations-in-whimsylabs",
-  "how-does-whimsylabs-web-and-vr-environment-work",
-  "what-subjects-do-whimsylabs-virtual-labs-cover",
-  "can-whimsylabs-virtual-labs-be-used-for-remote-tea",
-];
-
-export const extractSchemaFAQData = (language) => {
+const extractSchemaFAQData = (language) => {
   // Default to English if language not found, or use the provided language
   const targetLang = translations[language] ? language : 'en';
   const langData = translations[targetLang];
-  
+
   if (!langData || !langData.faqs) {
     // Should not happen if en is present, but good for safety
     throw new Error(`Translations not found for language: ${targetLang}`);
   }
 
-  return schemaFAQKeys.map((key) => {
+  // Get ALL FAQ keys from the translations
+  const allFAQKeys = Object.keys(langData.faqs);
+
+  // Map all FAQ items for schema
+  return allFAQKeys.map((key) => {
     const item = langData.faqs[key];
     if (!item) {
       // Fallback to English if specific item is missing in target language
       return translations.en.faqs[key];
     }
     return item;
-  });
+  }).filter(item => item && item.question && item.answer); // Filter out any invalid items
 };
+
+// Export for both CommonJS (build.js) and ES modules (React)
+module.exports = { extractSchemaFAQData };
+// ES6 export for React components (handled by Babel)
+if (typeof exports !== 'undefined') {
+  exports.extractSchemaFAQData = extractSchemaFAQData;
+}

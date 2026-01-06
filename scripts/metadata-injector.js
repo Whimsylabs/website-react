@@ -268,20 +268,29 @@ class MetadataInjector {
       schemas.push(productSchema);
     }
 
-    if (route === '/faq') {
+    // Generate FAQ schema for all language versions of FAQ page
+    if (route === '/faq' || route.endsWith('/faq')) {
+      // Dynamically load ALL FAQ items
+      const { getAllFAQItems } = require('../src/data/faqData.js');
+      const allFAQs = getAllFAQItems();
+
+      // Helper to strip HTML tags
+      const stripHtml = (html) => {
+        if (!html) return '';
+        return html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+      };
+
       const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is WhimsyLabs virtual lab software?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "WhimsyLabs is a sandbox virtual laboratory simulation that gives you the freedom to explore, play and learn scientific concepts firsthand."
-            }
+        "mainEntity": allFAQs.map(faq => ({
+          "@type": "Question",
+          "name": stripHtml(faq.question),
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": stripHtml(faq.answer)
           }
-        ]
+        }))
       };
       schemas.push(faqSchema);
     }

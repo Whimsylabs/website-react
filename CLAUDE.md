@@ -26,29 +26,58 @@ WhimsyLabs is a React-based multilingual website for a virtual laboratory softwa
 - `npm run validate-faq-translations` - Validate FAQ translation files
 - `npm run generate-faq-translations` - Generate FAQ translation files
 
-### Testing & Deployment
+### Validation & Testing
+- `npm run validate-translations` - Validate all translation files
+- `npm run validate-meta-tags` - Validate meta tags in build output
+- `npm run validate-title-length` - Validate SEO title lengths
+- `npm run validate-redirects-metadata` - Validate redirect rules and metadata
+- `npm run validate-404-redirects` - **Validate 404.html paths match build output**
+- `npm run validate-faq-schema` - **Validate FAQ schema has all questions (min 30)**
 - `npm test` - Run tests
+
+### Deployment
 - `npm run deploy` - Build and deploy to GitHub Pages
 
 ## Architecture Overview
 
 ### Hybrid Multi-Page Application (MPA)
 
+**CRITICAL: This site MUST be a Multi-Page Application (MPA), NOT a Single-Page Application (SPA)**
+
+**Why MPA is required:**
+- GitHub Pages free tier requires separate HTML files for proper page tracking and SEO
+- Each page needs its own static HTML file for search engines to index correctly
+- MPA structure ensures each language version has its own crawlable pages
+- Cannot use client-side routing exclusively - each route must be a real HTML file
+
+**URL Structure Convention:**
+- **English pages:** `/blog/`, `/services/`, `/features/` (NO `/en/` prefix)
+- **Other languages:** `/es/blog/`, `/fr/services/`, `/de/features/` (WITH language prefix)
+- English is the default language and does NOT use `/en/` prefix
+- This is intentional and correct - do NOT add `/en/` prefix to English pages
+
 This project uses a unique hybrid approach that combines React SPA with static HTML generation:
 
 1. **Build Process**: `build.js` orchestrates the entire build
    - Builds React SPA using Create React App
    - Generates static HTML files for each route and language using server-side rendering
-   - Creates language-specific directories (e.g., `/en/`, `/es/`, `/fr/`, `/de/`)
+   - Creates language-specific directories: `/es/`, `/fr/`, `/de/` (English has no prefix)
+   - Each language gets separate static HTML files (required for MPA structure)
    - Injects metadata and schema markup into each HTML file
    - Copies assets to each route directory
 
 2. **Rendering System**: Uses custom Node.js utilities for SSR
    - `ComponentRenderer` - Renders React components to static HTML
    - `AssetExtractor` - Extracts and copies assets to route directories
-   - `MetadataInjector` - Injects SEO metadata, Open Graph tags, and schema markup
+   - `MetadataInjector` (`scripts/metadata-injector.js`) - Injects SEO metadata, Open Graph tags, and schema markup
+     - **CRITICAL**: Schema markup (FAQPage, Organization, Product) is generated here during build, NOT by React components
+     - FAQ schema dynamically loads ALL FAQ items from `src/data/faqData.js` and strips HTML
+     - Adds canonical URLs, hreflang tags, and language-specific metadata
+     - Each route can have custom schema markup injected during SSR
 
 3. **Client-Side Routing**: `App.js` handles routing without React Router
+   - Each page loads its own static HTML file first (MPA behavior)
+   - React hydrates the page for interactivity after initial HTML load
    - Checks `window.__INITIAL_ROUTE__` set by static HTML
    - Path-based component rendering using `getComponentForPath()`
    - Supports both static routes and dynamic blog post routes
@@ -128,12 +157,99 @@ The site implements comprehensive SEO:
    - Bluesky Card metadata
 
 2. **Schema Markup**: Structured data for rich search results
-   - Organization schema
-   - Website schema
+   - **Generated during build by `scripts/metadata-injector.js`**, NOT React components
+   - Organization schema (on all pages)
+   - Website schema (on all pages)
+   - Product/SoftwareApplication schema (homepage)
    - Blog post schema with author and publication date
-   - FAQ schema
+   - **FAQPage schema** (on `/faq/` route):
+     - Dynamically loads ALL FAQ items from `src/data/faqData.js`
+     - Strips HTML tags from questions/answers for proper schema format
+     - Currently includes 35+ FAQ questions
+     - **IMPORTANT**: When adding/editing FAQs in `src/data/faqData.js`, the schema updates automatically on next build
 
 3. **Sitemap**: Generated via `generate-sitemap.js`
+
+## Debugging & Troubleshooting
+
+### Diagnosing SEO and Indexing Errors
+
+When troubleshooting SEO issues, indexing problems, or metadata errors, **always fetch the live website** to see what search engines actually see:
+
+1. **Use WebFetch to retrieve live pages**: Don't assume the local build matches production
+   ```
+   WebFetch: https://whimsylabs.io/en/blog/post-slug/
+   ```
+
+2. **Check what you're looking for**:
+   - Meta tags (title, description, Open Graph, Twitter Card)
+   - Schema markup (JSON-LD structured data)
+   - Canonical URLs and language alternates
+   - HTTP status codes and redirects
+   - Content rendering and JavaScript execution
+
+3. **Compare with expectations**:
+   - Cross-reference with local build output
+   - Verify against Google Search Console error messages
+   - Check if content matches translation files
+
+4. **Common issues to look for**:
+   - Missing or incorrect meta tags
+   - Broken schema markup (invalid JSON-LD)
+   - 404 errors or redirect chains
+   - Missing language alternates (hreflang)
+   - Duplicate or missing content
+
+### Google Search Console Indexing Error Mode
+
+**Important Context:**
+- This site is an MPA (Multi-Page Application) deployed on GitHub Pages
+- English pages intentionally have NO `/en/` prefix (e.g., `/blog/`, `/services/`)
+- Other languages have prefixes (e.g., `/es/blog/`, `/fr/services/`)
+- Typo URLs and truncated paths in Search Console can be ignored - they correctly return 404s
+- GitHub Pages does NOT support `_redirects` files - redirects are handled via `404.html`
+
+When working on Google Search Console indexing errors, follow this systematic approach:
+
+**Step 1: Gather Error Information**
+- Ask user for specific URLs or error types from Search Console
+- Common error types: "Crawled - currently not indexed", "Duplicate without canonical", "Soft 404", "Page with redirect"
+
+**Step 2: Fetch and Analyze Live Pages**
+- Use WebFetch to retrieve each problematic URL
+- Extract and examine:
+  - HTTP status code
+  - Meta tags (especially canonical, robots)
+  - Schema markup
+  - Content quality and uniqueness
+  - Internal linking structure
+
+**Step 3: Identify Root Cause**
+- Compare live output with build script expectations
+- Check if issue is in:
+  - `build.js` metadata generation
+  - Component-level meta tags
+  - Translation content
+  - Sitemap generation
+  - Redirect configuration
+
+**Step 4: Fix and Verify**
+- Make necessary code changes
+- Build locally and verify fix
+- Deploy and re-fetch live URL to confirm
+- Document changes for user to submit to Search Console
+
+**Example Workflow**:
+```
+User: "Google Search Console shows 'Duplicate without canonical' for /en/blog/ai-safety/"
+
+1. WebFetch: https://whimsylabs.io/en/blog/ai-safety/
+2. Check for canonical tag in response
+3. If missing/incorrect, check build.js getPageMetadata()
+4. Fix canonical URL generation
+5. Rebuild and verify locally
+6. Provide fix explanation to user
+```
 
 ## Key Development Patterns
 
@@ -193,9 +309,20 @@ Quick steps:
 
 ### GitHub Pages Deployment
 
-- Custom domain configured via `CNAME` file
+**Critical Deployment Constraints:**
+- Deployed to GitHub Pages using `gh-pages` package
+- Custom domain configured via `CNAME` file: `whimsylabs.ai`
 - Deploy script runs `predeploy` hook which builds everything
-- 404 handling redirects valid routes to appropriate static HTML
+- **GitHub Pages does NOT support `_redirects` files** - that's Netlify-only
+- Redirects handled via `404.html` JavaScript (www→non-www, http→https, trailing slashes)
+
+**404.html Redirect Handler:**
+- `public/404.html` provides redirect functionality since `_redirects` doesn't work
+- Handles: `www.whimsylabs.ai` → `whimsylabs.ai`
+- Handles: `http://` → `https://`
+- Handles: Missing trailing slashes (e.g., `/es/blog` → `/es/blog/`)
+- Shows proper 404 page for truly invalid URLs (preserves MPA structure)
+- Does NOT aggressively redirect to home page (this is MPA, not SPA)
 
 ### Styling
 
@@ -211,10 +338,25 @@ Quick steps:
 
 To test a specific language without building all languages:
 ```bash
+# Test English only (no language prefix)
 BUILD_LANGUAGES=en npm run build-static
 npx serve -s build
+# Navigate to http://localhost:3000/ (English is at root, no /en/ prefix)
+
+# Test Spanish only
+BUILD_LANGUAGES=es npm run build-static
+npx serve -s build
+# Navigate to http://localhost:3000/es/
+
+# Test all languages
+npm run build-static
+npx serve -s build
+# Navigate to:
+# - http://localhost:3000/ (English)
+# - http://localhost:3000/es/ (Spanish)
+# - http://localhost:3000/fr/ (French)
+# - http://localhost:3000/de/ (German)
 ```
-Navigate to `http://localhost:3000/en/` to see the English version.
 
 ## Common Pitfalls
 
@@ -223,3 +365,8 @@ Navigate to `http://localhost:3000/en/` to see the English version.
 3. **Asset paths**: Use public paths (`/images/`) not relative imports for static assets
 4. **Language routing**: Remember to handle language prefix in all route checks
 5. **Build caching**: Run `npm run clean-build` if you encounter stale build issues
+6. **MPA vs SPA confusion**: This is an MPA, NOT an SPA - do NOT implement SPA-style client-side routing or aggressive 404 redirects
+7. **English URL prefix**: English pages do NOT use `/en/` prefix - this is intentional, do NOT add it
+8. **GitHub Pages redirects**: The `_redirects` file doesn't work on GitHub Pages - use `404.html` for redirects instead
+9. **Google Search Console typo URLs**: Invalid URLs (typos, truncated paths) in Search Console are expected and can be ignored - they correctly return 404s
+10. **404.html out of sync**: When adding new pages/routes, update the `validPaths` array in `public/404.html` - the build will validate this automatically

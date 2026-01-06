@@ -181,6 +181,23 @@ const SchemaMarkup = () => {
     ],
   };
 
+  // Helper function to strip HTML tags from text
+  const stripHtml = (html) => {
+    if (!html) return '';
+    // Remove HTML tags
+    let text = html.replace(/<[^>]*>/g, ' ');
+    // Replace multiple spaces with single space
+    text = text.replace(/\s+/g, ' ');
+    // Decode HTML entities
+    text = text.replace(/&nbsp;/g, ' ');
+    text = text.replace(/&amp;/g, '&');
+    text = text.replace(/&lt;/g, '<');
+    text = text.replace(/&gt;/g, '>');
+    text = text.replace(/&quot;/g, '"');
+    text = text.replace(/&#x27;/g, "'");
+    return text.trim();
+  };
+
   // FAQ Schema generated dynamically from FAQ component data
   const generateFAQSchema = () => {
     const faqData = extractFAQData();
@@ -189,10 +206,10 @@ const SchemaMarkup = () => {
       "@type": "FAQPage",
       mainEntity: faqData.map(item => ({
         "@type": "Question",
-        name: item.question,
+        name: stripHtml(item.question),
         acceptedAnswer: {
           "@type": "Answer",
-          text: item.answer
+          text: stripHtml(item.answer)
         }
       }))
     };

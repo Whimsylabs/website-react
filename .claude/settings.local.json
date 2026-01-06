@@ -5,7 +5,12 @@
       "Bash(node scripts/generate-blog-data.js:*)",
       "WebFetch(domain:uk.bettshow.com)",
       "Bash(done)",
-      "Bash(git status:*)"
+      "Bash(git status:*)",
+      "WebFetch(domain:whimsylabs.ai)",
+      "WebFetch(domain:www.whimsylabs.ai)",
+      "Bash(node scripts/validate-404-redirects.js:*)",
+      "Bash(npm run validate-404-redirects:*)",
+      "Bash(npm run validate-faq-schema:*)"
     ]
   }
 }

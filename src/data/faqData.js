@@ -209,17 +209,8 @@ export const getAllFAQItems = () => {
   return allItems;
 };
 
-// Helper function to get FAQ items for schema markup (top priority items)
+// Helper function to get ALL FAQ items for schema markup
 export const getSchemaFAQItems = () => {
-  return [
-    // Most important questions for schema markup
-    faqCategories["About Whimsylabs"][0], // What is WhimsyLabs
-    faqCategories["About Whimsylabs"][2], // What makes different
-    faqCategories["Educational Benefits"][0], // How do virtual labs help
-    faqCategories["Educational Benefits"][1], // How compare to traditional
-    faqCategories["Technical Features"][2], // How accurate are simulations
-    faqCategories["Technical Features"][0], // Web and VR environment
-    faqCategories["Curriculum & Content"][0], // What subjects covered
-    faqCategories["Teaching & Assessment"][4], // Remote teaching
-  ];
+  // Get all FAQ items from all categories
+  return getAllFAQItems();
 };
