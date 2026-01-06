@@ -13,6 +13,7 @@ const BettPage = ({ t, language }) => {
     name: "",
     school: "",
     email: "",
+    phone: "",
     message: ""
   });
   const [formStatus, setFormStatus] = useState("");
@@ -42,6 +43,7 @@ const BettPage = ({ t, language }) => {
           name: formData.name,
           school: formData.school,
           email: formData.email,
+          phone: formData.phone,
           message: formData.message,
           subject: "BETT 2026 Meeting Request from WhimsyLabs Website",
         }),
@@ -280,6 +282,18 @@ const BettPage = ({ t, language }) => {
                 onChange={handleInputChange}
                 required
                 placeholder={t("bett.formEmailPlaceholder")}
+              />
+            </div>
+
+            <div className="bett-form-group">
+              <label htmlFor="phone">{t("bett.formPhone")}</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder={t("bett.formPhonePlaceholder")}
               />
             </div>
 
