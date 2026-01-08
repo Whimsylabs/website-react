@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[5865],{5865:(e,s,i)=>{i.r(s),i.d(s,{content:()=>a,description:()=>t,title:()=>n});i(5043);const n="24/7 AI Tutoring: How Personalized Daily Recommendations Keep Students from Falling Behind",t="Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.",a=null}}]);
-//# sourceMappingURL=5865.63c428c9.chunk.js.map

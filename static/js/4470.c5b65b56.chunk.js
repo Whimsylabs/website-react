@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[4470],{4470:(e,i,s)=>{s.r(i),s.d(i,{content:()=>t,description:()=>a,title:()=>n});s(5043);const n="Real-Time Physics: Why Dynamic Simulations Make Learning Fun",a="Discover how WhimsyLabs' groundbreaking real-time computational physics creates the most sophisticated and genuinely fun virtual laboratory platform, using gaming principles to make science education engaging.",t=null}}]);
+//# sourceMappingURL=4470.c5b65b56.chunk.js.map

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[7779],{7779:(e,i,s)=>{s.r(i),s.d(i,{content:()=>t,description:()=>n,title:()=>a});s(5043);const a="Green Labs, Greener Future: How Virtual Laboratories Are Transforming Sustainability in STEM Education",n="Exploring how WhimsyLabs' virtual laboratory platform addresses the environmental crisis in traditional science education while advancing sustainable development goals.",t=null}}]);
-//# sourceMappingURL=7779.84cacab9.chunk.js.map

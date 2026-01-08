@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[920],{920:(e,s,t)=>{t.r(s),t.d(s,{content:()=>o,description:()=>i,title:()=>a});t(5043);const a="How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective",i="Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.",o=null}}]);
-//# sourceMappingURL=920.575bca15.chunk.js.map
