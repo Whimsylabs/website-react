@@ -25,20 +25,20 @@ export const content = (
       students lack essential practical skills, often attributing this to the
       "game-like" nature of preparatory software (
       <a
-        href="https://pubs.acs.org/doi/10.1021/ed5009007"
+        href="https://pubs.acs.org/doi/10.1021/acs.jchemed.2c00710"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Breton et al., 2023
+        Accettone et al., 2023
       </a>
       ). Authentic scientific inquiry requires more than watching an animation;
       it requires the chaotic, noisy, and unforgiving nature of the real world.
     </p>
 
     <p>
-      The current market of virtual labs is dominated by "scripted
-      experiences": linear, animated walk-throughs that prioritize ease of use
-      over educational rigour. Validating skills in these environments is often
+      The current market of virtual labs is dominated by "scripted experiences":
+      linear, animated walk-throughs that prioritize ease of use over
+      educational rigour. Validating skills in these environments is often
       misleading, as they test a student's ability to follow instructions rather
       than their ability to think scientifically. WhimsyLabs has engineered the
       world's first High-Fidelity Synthetic Lab to address these specific
@@ -54,20 +54,22 @@ export const content = (
       regardless of the student's input speed, angle, or hesitation.
     </p>
     <p>
-      <strong>The Deficit:</strong> This removes the feedback loop essential for
-      psychomotor learning. Students do not learn "how" to pour; they learn
-      "that" pouring happens when they click.
+      <strong>The Deficit:</strong> This severs the feedback loop essential for{" "}
+      <strong>motor-neuronal procedural fluency</strong>. By removing the
+      physical consequences of failure, students fail to encode the neurological
+      sequence of movements required to execute complex tasks. They do not learn
+      "how" to pour; they learn "that" pouring happens when they click.
     </p>
     <p>
-      <strong>The WhimsyLabs Solution:</strong> We utilize real-time Stochastic
-      Fluid Dynamics Engine (SFDE). In our environment, liquid volume,
-      viscosity, surface tension, and momentum are calculated 60+ times per
-      second. If a student's hand shakes (in VR) or they drag the mouse too
+      <strong>The WhimsyLabs Solution:</strong> We utilize a real-time
+      Stochastic Fluid Dynamics Engine (SFDE). In our environment, liquid
+      volume, viscosity, surface tension, and momentum are calculated 60+ times
+      per second. If a student's hand shakes (in VR) or they drag the mouse too
       aggressively, the liquid <em>will</em> spill. This forces students to
       develop fine motor control and situational awareness, effectively bridging
       the gap between theory and practice (
       <a
-        href="https://journals.sagepub.com/doi/10.1177/1541931213601477"
+        href="https://link.springer.com/article/10.3758/s13423-012-0333-8"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -86,7 +88,7 @@ export const content = (
       samples degrade, and temperature fluctuates. By presenting students with
       perfect data, traditional simulators deny them the opportunity to learn
       critical data analysis skills: noise reduction, outlier identification,
-      and error propagation analysis. A study by Holmes et al. (2018)
+      and error propagation analysis. A study by Holmes et al. (2015)
       highlighted that learning to grapple with experimental uncertainty is
       arguably the most critical component of physics education.
     </p>
@@ -95,7 +97,8 @@ export const content = (
       <strong>emergent</strong>. We simulate environmental variables—temperature
       fluctuations, humidity, and impurities—that interact with the physics
       engine. A student's result is generated <em>de novo</em> based on their
-      specific actions and environmental conditions full of noise and artifacts, just like in a real lab.
+      specific actions and environmental conditions—full of noise and artifacts,
+      just like in a real lab.
     </p>
     <ul>
       <li>Did they wait too long? The sample may have degraded.</li>
@@ -108,11 +111,11 @@ export const content = (
         and their pH will be more alkaline than expected.
       </li>
       <li>
-        Did their innoculating loop touch the side of the flask? Their sample
+        Did their inoculating loop touch the side of the flask? Their sample
         will be contaminated with other bacteria.
       </li>
-        </ul>
-        
+    </ul>
+
     <h2>Cheat-Proof Assessment: Why Context Beats AI</h2>
     <p>
       This emergent system powers our dynamic assessment engine. Because the
@@ -158,14 +161,14 @@ export const content = (
       productive failure strategies can result in effect sizes nearly double
       that of direct instruction alone (
       <a
-        href="https://www.tandfonline.com/doi/10.1080/23735082.2015.1002195"
+        href="https://www.tandfonline.com/doi/abs/10.1080/23735082.2015.1002195"
         target="_blank"
         rel="noopener noreferrer"
       >
         Kapur, 2015
       </a>
-      ). Only WhimsyLabs offers this degree of non-linear freedom in a
-      browser and VR-based environment.
+      ). Only WhimsyLabs offers this degree of non-linear freedom in a browser
+      and VR-based environment.
     </p>
 
     <h2>Conclusion: The Only Viable Path Forward</h2>
@@ -207,15 +210,18 @@ export const content = (
       <h3>References</h3>
       <ul className="references-list">
         <li key="ref-1">
-          Breton, T., & Ndiaye, A. (2023). The practical skills gap in
-          undergraduate chemistry. <em>Journal of Chemical Education, 100</em>
-          (2), 540-548.
+          Accettone, S. L., DeFrancesco, C., King, C. A., & Lariviere, M. K.
+          (2023). Laboratory Skills Assignments as a Teaching Tool to Develop
+          Undergraduate Chemistry Students' Conceptual Understanding of
+          Practical Laboratory Skills.{" "}
+          <em>Journal of Chemical Education, 100</em>
+          (3), 1138-1148.
         </li>
         <li key="ref-2">
-          Holmes, N. G., Wieman, C. E., & Bonn, D. A. (2018). Teaching critical
-          thinking in physics.{" "}
-          <em>International Journal of Science Education, 40</em>(14),
-          1764-1783.
+          Holmes, N. G., Wieman, C. E., & Bonn, D. A. (2015). Teaching critical
+          thinking.{" "}
+          <em>Proceedings of the National Academy of Sciences, 112</em>
+          (36), 11199–11204.
         </li>
         <li key="ref-3">
           Kapur, M. (2015). Learning from productive failure.{" "}
