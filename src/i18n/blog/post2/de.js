@@ -1,7 +1,7 @@
 // German - Post 2: Die Bedeutung der Physikalität in virtuellen Laboren
 import React from "react";
 
-export const title = "Die Bedeutung von Physikalität in virtuellen Laboren: Ein Schritt über die traditionelle Simulationen hinaus";
+export const title = "Physikalität in Virtuellen Laboren: Jenseits Simulationen";
 export const description = "Entdecken sie, wie Whimsylabs bahnbrechende Flüssigkeitsphysik und Verfahrensschulung die wissenschaftliche Bildung neu definiert.";
 export const keywords = [
   "virtuelles Labor Physikalität",

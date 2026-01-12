@@ -9,8 +9,8 @@ const path = require('path');
 
 async function validateBlogTranslations() {
   const blogDir = './src/i18n/blog';
-  const languages = ['en', 'de', 'fr', 'es'];
-  const posts = ['post1', 'post2', 'post3', 'post4', 'post5', 'post6'];
+  const languages = ['en', 'de', 'fr', 'es', 'ja'];
+  const posts = ['post1', 'post2', 'post3', 'post4', 'post5', 'post6', 'post7', 'post8', 'post9', 'post10', 'post11', 'post12', 'post13', 'post14', 'post15'];
   
   console.log('🔍 Validating blog translations...\n');
   

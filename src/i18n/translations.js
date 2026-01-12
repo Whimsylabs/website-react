@@ -62,6 +62,7 @@ const translations = {
       title: "Privacy Policy",
       subtitle:
         "Learn how we collect, use, and protect your personal information when using our virtual laboratory software",
+      description: "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
     },
 
     // BETT Page
@@ -170,7 +171,7 @@ const translations = {
     // Features
     features: {
       title:
-        "Características de WhimsyLabs - Tecnología de Laboratorio Virtual de Vanguardia",
+        "Características WhimsyLabs - Tecnología de Laboratorio Virtual",
       description:
         "Explora las potentes características de WhimsyLabs incluyendo simulaciones físicas realistas, evaluación impulsada por IA, accesibilidad multiplataforma y experimentos STEM inmersivos.",
       uniqueFeatures: "Características Únicas",
@@ -197,19 +198,30 @@ const translations = {
 
     // Blog
     blog: {
-      title: "Blog WhimsyLabs - Innovación en Laboratorios Virtuales y Educación STEM",
+      title: "Blog WhimsyLabs - Innovación en Laboratorios Virtuales y STEM",
       description: "Mantente actualizado con lo último en tecnología de laboratorio virtual, tendencias de educación STEM, estrategias de enseñanza y desarrollos de la plataforma WhimsyLabs.",
+      post10: {
+        whimsyrambleAlt: "Tutor de IA WhimsyCat mostrando un mensaje de prueba para demostrar sus capacidades de comunicación"
+      }
     },
 
     // Services
     services: {
-      title: "Servicios WhimsyLabs - Soluciones de Laboratorio Virtual Personalizadas",
+      title: "Servicios WhimsyLabs - Soluciones de Laboratorio Virtual",
       description: "Servicios integrales de laboratorio virtual incluyendo desarrollo de laboratorios personalizados, integración curricular, capacitación docente y soporte técnico para escuelas.",
+    },
+
+    // Privacy
+    privacy: {
+      title: "Política de Privacidad",
+      subtitle:
+        "Aprende cómo recopilamos, usamos y protegemos tu información personal al usar nuestro software de laboratorio virtual",
+      description: "Lee la política de privacidad de WhimsyLabs para entender cómo recopilamos, usamos y protegemos tus datos personales al usar nuestro software de laboratorio virtual para educación STEM.",
     },
 
     // BETT Page
     bett: {
-      title: "Encuéntranos en BETT 2026 | Software de Laboratorio Virtual WhimsyLabs",
+      title: "Encuéntranos en BETT 2026 | WhimsyLabs Laboratorio Virtual",
       description: "Visita WhimsyLabs en BETT 2026 (ExCeL Londres, 21-23 enero). Reserva una demo en el Stand FS10 y descubre nuestro premiado software de laboratorio virtual.",
       heroTitle: "Visítanos en BETT 2026",
       heroSubtitle: "Experimenta el Futuro de la Educación Científica en el Stand FS10",
@@ -294,13 +306,6 @@ const translations = {
       blueskyAlt: "Logo de Bluesky",
       youtubeAlt: "Logo de YouTube"
     },
-
-    // Blog
-    blog: {
-      post10: {
-        whimsyrambleAlt: "Tutor de IA WhimsyCat mostrando un mensaje de prueba para demostrar sus capacidades de comunicación"
-      }
-    },
   },
 
   fr: {
@@ -320,7 +325,7 @@ const translations = {
     // Features
     features: {
       title:
-        "Fonctionnalités WhimsyLabs - Technologie de Laboratoire Virtuel de Pointe",
+        "Fonctionnalités WhimsyLabs - Technologie de Laboratoire Virtuel",
       description:
         "Explorez les fonctionnalités puissantes de WhimsyLabs incluant des simulations physiques réalistes, une évaluation pilotée par IA, une accessibilité multiplateforme et des expériences STEM immersives.",
       uniqueFeatures: "Fonctionnalités Uniques",
@@ -339,7 +344,7 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Questions Fréquemment Posées - Logiciel de Laboratoire Virtuel WhimsyLabs",
+      title: "Questions Fréquentes - Logiciel Laboratoire Virtuel WhimsyLabs",
       description: "Obtenez des réponses d'experts aux questions courantes sur le logiciel de laboratoire virtuel WhimsyLabs, l'implémentation, les prix et comment nos simulations STEM améliorent l'éducation.",
       subtitle:
         "Trouvez des réponses aux questions courantes sur notre logiciel de laboratoire virtuel et comment il peut transformer l'éducation STEM",
@@ -347,8 +352,11 @@ const translations = {
 
     // Blog
     blog: {
-      title: "Blog WhimsyLabs - Innovation en Laboratoires Virtuels et Perspectives Éducation STEM",
+      title: "Blog WhimsyLabs - Innovation en Laboratoires Virtuels & STEM",
       description: "Restez informé des dernières innovations en technologie de laboratoire virtuel, tendances de l'éducation STEM, stratégies pédagogiques et développements de la plateforme WhimsyLabs.",
+      post10: {
+        whimsyrambleAlt: "Tuteur IA WhimsyCat affichant un message de test pour démontrer ses capacités de communication"
+      }
     },
 
     // Services
@@ -357,9 +365,17 @@ const translations = {
       description: "Services complets de laboratoire virtuel incluant développement de laboratoires personnalisés, intégration curriculaire, formation des enseignants et support technique pour les écoles.",
     },
 
+    // Privacy
+    privacy: {
+      title: "Politique de Confidentialité",
+      subtitle:
+        "Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles lors de l'utilisation de notre logiciel de laboratoire virtuel",
+      description: "Lisez la politique de confidentialité de WhimsyLabs pour comprendre comment nous collectons, utilisons et protégeons vos données lors de l'utilisation de notre logiciel de laboratoire virtuel pour l'éducation STEM.",
+    },
+
     // BETT Page
     bett: {
-      title: "Rencontrez-nous au BETT 2026 | Logiciel de Laboratoire Virtuel WhimsyLabs",
+      title: "Rencontrez-nous au BETT 2026 | WhimsyLabs Laboratoire Virtuel",
       description: "Visitez WhimsyLabs au BETT 2026 (ExCeL Londres, 21-23 janvier). Réservez une démo au Stand FS10 et découvrez notre logiciel de laboratoire virtuel primé.",
       heroTitle: "Visitez-nous au BETT 2026",
       heroSubtitle: "Découvrez l'Avenir de l'Éducation Scientifique au Stand FS10!",
@@ -444,13 +460,6 @@ const translations = {
       blueskyAlt: "Logo Bluesky",
       youtubeAlt: "Logo YouTube"
     },
-
-    // Blog
-    blog: {
-      post10: {
-        whimsyrambleAlt: "Tuteur IA WhimsyCat affichant un message de test pour d\u00e9montrer ses capacit\u00e9s de communication"
-      }
-    },
   },
 
   de: {
@@ -496,19 +505,30 @@ const translations = {
 
     // Blog
     blog: {
-      title: "WhimsyLabs Blog - Innovation in Virtuellen Laboren & STEM-Bildung Einblicke",
+      title: "WhimsyLabs Blog - Innovation & STEM-Bildung Einblicke",
       description: "Bleiben Sie auf dem Laufenden mit den neuesten Entwicklungen in der virtuellen Labor-Technologie, STEM-Bildungstrends, Unterrichtsstrategien und WhimsyLabs Plattform-Entwicklungen.",
+      post10: {
+        whimsyrambleAlt: "WhimsyCat AI-Tutor zeigt eine Testnachricht zur Demonstration seiner Kommunikationsfähigkeiten"
+      }
     },
 
     // Services
     services: {
-      title: "WhimsyLabs Dienstleistungen - Maßgeschneiderte Virtuelle Labor-Lösungen",
+      title: "WhimsyLabs Dienstleistungen - Virtuelle Labor-Lösungen",
       description: "Umfassende virtuelle Labor-Dienstleistungen einschließlich benutzerdefinierter Labor-Entwicklung, Lehrplan-Integration, Lehrerfortbildung und technischem Support für Schulen.",
+    },
+
+    // Privacy
+    privacy: {
+      title: "Datenschutzrichtlinie",
+      subtitle:
+        "Erfahren Sie, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software verwenden",
+      description: "Lesen Sie die Datenschutzrichtlinie von WhimsyLabs, um zu verstehen, wie wir Ihre Daten sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software für die STEM-Bildung verwenden.",
     },
 
     // BETT Page
     bett: {
-      title: "Treffen Sie uns auf der BETT 2026 | WhimsyLabs Virtuelles Labor Software",
+      title: "Treffen Sie uns auf der BETT 2026 | WhimsyLabs Labor",
       description: "Besuchen Sie WhimsyLabs auf der BETT 2026 (ExCeL London, 21.-23. Januar). Buchen Sie eine Demo am Stand FS10 und entdecken Sie unsere preisgekrönte virtuelle Labor-Software.",
       heroTitle: "Besuchen Sie uns auf der BETT 2026",
       heroSubtitle: "Erleben Sie die Zukunft der Naturwissenschaftlichen Bildung am Stand FS10!",
@@ -593,13 +613,6 @@ const translations = {
       blueskyAlt: "Bluesky-Logo",
       youtubeAlt: "YouTube-Logo"
     },
-
-    // Blog
-    blog: {
-      post10: {
-        whimsyrambleAlt: "WhimsyCat AI-Tutor zeigt eine Testnachricht zur Demonstration seiner Kommunikationsf\u00e4higkeiten"
-      }
-    },
   },
 
   jp: {
@@ -620,7 +633,7 @@ const translations = {
     features: {
       title: "WhimsyLabsの機能 - 最先端のシミュレーション教材技術",
       description:
-        "リアルな物理シミュレーション、AI駆動の評価、クロスプラットフォームアクセシビリティ、没入型STEM実験など、WhimsyLabsの強力な機能をご覧ください。",
+        "WhimsyLabsの強力な機能をご覧ください。リアルな物理シミュレーション、AI駆動の自動評価システム、VRとウェブ対応のクロスプラットフォームアクセシビリティ、そして生徒の探究心を刺激する没入型STEM実験環境を提供します。教育現場の課題解決に最適な機能を搭載しています。",
       uniqueFeatures: "独自の機能",
       realisticSimulations: "リアルな物理シミュレーション",
       realisticSimulationsDesc: "高度な流体力学、リアルな機器操作、本物の実験手順により、実際の筋肉記憶を構築する実物に近い物理シミュレーションを体験してください。",
@@ -638,7 +651,7 @@ const translations = {
     // FAQ
     faq: {
       title: "よくあるご質問 - WhimsyLabsバーチャルラボソフトウェア",
-      description: "WhimsyLabsバーチャルラボソフトウェア、実装、価格設定、そしてSTEMシミュレーションが教育をどのように向上させるかについてのよくある質問への専門的な回答をご覧ください。",
+      description: "WhimsyLabsバーチャルラボソフトウェアに関するよくある質問への専門的な回答をご覧ください。導入方法、価格プラン、技術要件、カリキュラムへの統合方法、そしてSTEMシミュレーションが学校教育をどのように向上させるかについて詳しくご説明します。",
       subtitle:
         "当社のシミュレーション教材と、STEM教育をどのように変革できるかについてのよくある質問への回答をご覧ください",
     },
@@ -646,19 +659,30 @@ const translations = {
     // Blog
     blog: {
       title: "WhimsyLabsブログ - バーチャルラボ革新とSTEM教育の洞察",
-      description: "バーチャルラボ技術、STEM教育トレンド、教授戦略、WhimsyLabsプラットフォーム開発の最新情報をお届けします。",
+      description: "WhimsyLabsの最新情報をご覧ください。バーチャルラボ技術の革新的な開発、STEM教育のトレンド、効果的な教授戦略、プラットフォームの開発状況など、教育者の皆様に役立つ情報を定期的にお届けします。科学教育の未来を一緒に探求しましょう。",
+      post10: {
+        whimsyrambleAlt: "WhimsyCat AIチューターがコミュニケーション能力を示すためのテストメッセージを表示"
+      }
     },
 
     // Services
     services: {
       title: "WhimsyLabsサービス - カスタムバーチャルラボソリューション",
-      description: "カスタムラボ開発、カリキュラム統合、教師研修、学校向け技術サポートを含む包括的なバーチャルラボサービス。",
+      description: "学校向けの包括的なバーチャルラボサービスをご提供します。カスタム実験開発、カリキュラムへの統合支援、教師向けトレーニングプログラム、継続的な技術サポートなど、STEM教育の質を向上させるための充実したサービスをご利用いただけます。導入から運用まで、全面的にサポートいたします。",
+    },
+
+    // Privacy
+    privacy: {
+      title: "プライバシーポリシー",
+      subtitle:
+        "シミュレーション教材をご利用の際に、お客様の個人情報をどのように収集、使用、保護しているかをご確認ください",
+      description: "WhimsyLabsのプライバシーポリシーをお読みいただき、STEM教育向けシミュレーション教材をご利用の際に、お客様の個人情報とデータをどのように収集、使用、保護しているかをご理解ください。個人情報保護に関する当社の取り組みをご確認いただけます。",
     },
 
     // BETT Page
     bett: {
       title: "BETT 2026でお会いしましょう | WhimsyLabs シミュレーション教材",
-      description: "BETT 2026（ExCeL ロンドン、1月21-23日）でWhimsyLabsをご訪問ください。ブースFS10でデモを予約し、受賞歴のあるシミュレーション教材をご覧ください。",
+      description: "BETT 2026（ExCeL ロンドン、1月21-23日）でWhimsyLabsをご訪問ください。ブースFS10で個別デモのご予約を承っております。BETT UK 2025で受賞した革新的なバーチャルラボプラットフォームの実演をぜひご体験ください。",
       heroTitle: "BETT 2026でお会いしましょう",
       heroSubtitle: "理科教育の未来を体験しましょう！ブースFS10へようこそ",
       dates: "イベント日程",
@@ -741,13 +765,6 @@ const translations = {
       youtubeLabel: "YouTubeチャンネルを訪問",
       blueskyAlt: "Blueskyロゴ",
       youtubeAlt: "YouTubeロゴ"
-    },
-
-    // Blog
-    blog: {
-      post10: {
-        whimsyrambleAlt: "WhimsyCat AIチューターがコミュニケーション能力を示すためのテストメッセージを表示"
-      }
     },
   },
 };

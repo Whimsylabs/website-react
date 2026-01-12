@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Die Wissenschaft hinter Echtzeit-Physiksimulationen in virtuellen Laboren: Warum dynamische Simulationen das Lernen zum Vergnügen machen";
+  "Echtzeit-Physiksimulationen: Dynamisches Lernen macht Spaß";
 export const date = "2026-10-02";
 export const slug = "science-real-time-physics-simulations-virtual-labs";
 export const description =

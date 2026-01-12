@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Laboratorios virtuales vs. laboratorios físicos: Un análisis de costo-beneficio para las escuelas y nuestra misión impulsada por el impacto";
+  "Laboratorios Virtuales vs. Físicos: Análisis Costo-Beneficio";
 export const date = "2025-08-20";
 export const slug = "virtual-labs-vs-physical-labs-cost-benefit-analysis";
 export const description =

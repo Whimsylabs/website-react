@@ -1,3 +1,13 @@
+// Configure Babel to transpile ES6 modules
+require('@babel/register')({
+  presets: [
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    '@babel/preset-react'
+  ],
+  extensions: ['.js', '.jsx'],
+  ignore: [/node_modules/]
+});
+
 const fs = require("fs-extra");
 const path = require("path");
 const React = require("react");
@@ -70,7 +80,7 @@ const getPageMetadata = (lang = 'en') => ({
   },
   "/privacy": {
     title: translations[lang]?.privacy?.title || "Privacy Policy | WhimsyLabs Virtual Lab Software",
-    description: translations[lang]?.privacy?.subtitle || "Learn how we collect, use, and protect your personal information when using our virtual laboratory software.",
+    description: translations[lang]?.privacy?.description || "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
     keywords: "WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy",
   },
 });
@@ -153,7 +163,7 @@ async function generateRouteConfigs() {
           path: localizedPath,
           component: "BlogPost",
           metadata: {
-            title: `${post.title} | WhimsyLabs Blog`,
+            title: post.title,
             description: post.description || post.excerpt || "Read more on WhimsyLabs Blog",
             keywords: post.keywords || "virtual lab, STEM education, science",
           },
@@ -327,9 +337,12 @@ async function getBlogPosts(language = 'en') {
   try {
     // Import the generated blog data
     const blogData = require('./src/i18n/blogData.generated.js');
-    
+
+    // Map language codes: 'jp' -> 'ja' (config uses 'jp', translation files use 'ja')
+    const blogLang = language === 'jp' ? 'ja' : language;
+
     // Get translated blog posts for the specified language
-    const translatedPosts = blogData[language] || blogData['en'];
+    const translatedPosts = blogData[blogLang] || blogData['en'];
     
     // Import English blog post components for fallback metadata
     const Post1 = require("./src/Components/blog/Post1.js");
@@ -357,6 +370,7 @@ async function getBlogPosts(language = 'en') {
         title: translatedPost.title,
         date: translatedPost.date,
         description: translatedPost.description,
+        keywords: translatedPost.keywords,
         content: null, // Content will be loaded by the BlogPost component
         path: `/blog/${translatedPost.slug}`,
         language: language,
@@ -692,9 +706,10 @@ async function generatePages() {
     const routes = await generateRouteConfigs();
 
     for (const route of routes) {
-      const result = await generatePageHTML(route.path, { 
-        ...route.data, 
-        language: route.language 
+      const result = await generatePageHTML(route.path, {
+        ...route.data,
+        ...route.metadata,
+        language: route.language
       });
 
       // Determine output path
@@ -746,24 +761,29 @@ async function generateSitemap() {
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
 
-    // Generate URLs for each language
-    const staticPages = ['/', '/blog/', '/services/', '/features/', '/faq/', '/contact/', '/privacy/', '/bett/'];
-    
+    // Generate URLs for each language with intelligent priority and changefreq
+    const staticPages = [
+      { path: '/', priority: '1.0', changefreq: 'daily' },
+      { path: '/blog/', priority: '0.9', changefreq: 'daily' },
+      { path: '/services/', priority: '0.6', changefreq: 'weekly' },
+      { path: '/features/', priority: '0.8', changefreq: 'weekly' },
+      { path: '/bett/', priority: '0.9', changefreq: 'weekly' }, // High priority for event page
+      { path: '/faq/', priority: '0.9', changefreq: 'monthly' },
+      { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
+      { path: '/privacy/', priority: '0.3', changefreq: 'yearly' }
+    ];
+
     for (const page of staticPages) {
       for (const lang of config.supportedLanguages) {
         const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
-        const url = `${config.siteUrl}${langPrefix}${page}`;
-        
-        let priority = '0.8';
-        if (page === '/') priority = '1.0';
-        if (page === '/blog/') priority = '0.9';
-        
+        const url = `${config.siteUrl}${langPrefix}${page.path}`;
+
         sitemap += `
     <url>
         <loc>${url}</loc>
         <lastmod>${currentDate}</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>${priority}</priority>`;
+        <changefreq>${page.changefreq}</changefreq>
+        <priority>${page.priority}</priority>`;
         
         // Add alternate language links
         for (const altLang of config.supportedLanguages) {

@@ -3,7 +3,7 @@ import React from "react";
 import ScrollingMap from "../../../Components/ScrollingMap";
 
 export const title =
-  "Wir stellen auf der Bett 2026 aus: Besuchen Sie uns im Januar in London";
+  "Bett 2026: WhimsyLabs lädt Sie nach London ein";
 export const description =
   "WhimsyLabs kehrt zur Bett UK 2026 in die Startup Zone zurück, um unsere preisgekrönte virtuelle Laborplattform zu präsentieren. Besuchen Sie uns am Stand FS10.";
 export const keywords = [

@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "La ciencia detrás de las simulaciones físicas en tiempo real en laboratorios virtuales: Por qué las simulaciones dinámicas hacen que el aprendizaje sea divertido";
+  "Simulaciones Físicas en Tiempo Real: Aprendizaje Dinámico";
 export const date = "2026-10-02";
 export const slug = "science-real-time-physics-simulations-virtual-labs";
 export const description =

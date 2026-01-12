@@ -1,8 +1,8 @@
 // Japanese - Post 2: シミュレーション教材における身体性の重要性
 import React from "react";
 
-export const title = "シミュレーション教材における身体性の重要性：従来のシミュレーションを超えた一歩";
-export const description = "Whimsylabsの画期的な液体物理学と手順トレーニングが、どのように理科教育を再定義しているかを探ります。";
+export const title = "仮想実験室における身体性：従来のシミュレーションを超えて";
+export const description = "WhimsyLabsの画期的な液体物理学と手順トレーニングが、没入型の仮想体験を通じて理科教育をどのように再定義しているかを探ります。";
 export const keywords = [
   "仮想実験室 身体性",
   "液体物理学 シミュレーション",

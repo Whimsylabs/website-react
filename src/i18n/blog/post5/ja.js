@@ -1,7 +1,7 @@
 // Japanese - post5: WhimsyCatとの出会い：理科教育を変革する革命的AIチューター
 import React from "react";
 
-export const title = "WhimsyCatとの出会い：理科教育を変革する革命的AIチューター";
+export const title = "WhimsyCat：理科教育を変革するAIチューター";
 export const description = "WhimsyLabsの高度なAIチューターが、個別化されたガイダンス、リアルタイムフィードバック、適応的学習経路を提供し、実験室教育をどのように革命化しているかをご紹介します。";
 export const keywords = [
   "WhimsyCat AIチューター",

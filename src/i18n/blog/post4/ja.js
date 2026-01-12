@@ -1,7 +1,7 @@
 // Japanese - post4: STEM教育の革命：WhimsyLabsのAI搭載シミュレーション教材が世界的な理科教育の危機をどのように解決しているか
 import React from "react";
 
-export const title = "STEM教育の革命：WhimsyLabsのAI搭載シミュレーション教材が世界的な理科教育の危機をどのように解決しているか";
+export const title = "WhimsyLabsのAI仮想実験室が教育危機を解決";
 export const description = "WhimsyLabsの革新的な仮想実験室プラットフォームは、高度なAI評価、現実的な物理シミュレーション、サンドボックス学習を組み合わせて、世界中で質の高い理科教育へのアクセスを民主化します。";
 export const keywords = [
   "AI搭載仮想実験室",

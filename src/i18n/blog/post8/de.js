@@ -1,7 +1,7 @@
 // German - post8: Wie virtuelle Labore die MINT-Lehrkräftemangel-Krise lösen: Eine britische und globale Perspektive
 import React from "react";
 
-export const title = "Wie virtuelle Labore die MINT-Lehrkräftemangel-Krise lösen: Eine britische und globale Perspektive";
+export const title = "Virtuelle Labore lösen MINT-Lehrermangel: UK & Global";
 export const description = "Erkundung, wie WhimsyLabs' KI-gestützte virtuelle Labore den katastrophalen MINT-Lehrkräftemangel in Großbritannien und weltweit durch 24/7-Nachhilfe und automatisierte Bewertung angehen.";
 export const keywords = [
   "STEM-Lehrkräftemangel",

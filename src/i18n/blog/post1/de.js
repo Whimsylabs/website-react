@@ -1,7 +1,7 @@
 // German - Post 1: Eine kurze Geschichte von Whimsylabs
 import React from "react";
 
-export const title = "Eine kurze Geschichte von Whimsylabs: Von unserem bescheidenen Anfang zu einem BETT 2025 Gewinner";
+export const title = "Whimsylabs Geschichte: Von Bescheidenen Anfängen zu BETT 2025";
 export const description = "Wie Whimsylabs, gegründet von Dr. Marisa French, MINT-Herausforderungen mit vollständig simulierten Laboren, wirkungsvollen Partnerschaften und preisgekrönter Innovation angeht.";
 export const keywords = [
   "virtuelles Labor Geschichte",

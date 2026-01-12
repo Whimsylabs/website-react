@@ -33,6 +33,10 @@ class MetadataInjector {
    * @returns {Object} - Default metadata
    */
   getDefaultMetadata(route) {
+    // Normalize route by stripping language prefix (e.g., /jp/blog/ → /blog/, /es/services/ → /services/)
+    // This allows all language versions to use the same base metadata structure
+    const normalizedRoute = route.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
+
     const metaInfo = {
       '/': {
         title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
@@ -86,7 +90,7 @@ class MetadataInjector {
       }
     };
 
-    return metaInfo[route] || metaInfo['/'];
+    return metaInfo[normalizedRoute] || metaInfo['/'];
   }
 
   /**
@@ -226,6 +230,107 @@ class MetadataInjector {
    * @returns {string} - JSON-LD structured data script tags
    */
   generateStructuredData(route, data = {}) {
+    // Extract language from route
+    const langMatch = route.match(/^\/([a-z]{2})\//);
+    const language = langMatch ? langMatch[1] : 'en';
+    const langCode = language === 'jp' ? 'ja' : language;
+
+    // Schema translations for Course and LearningResource
+    const schemaTranslations = {
+      en: {
+        courseName: "WhimsyLabs Virtual Laboratory - Interactive STEM Education",
+        courseDescription: "Learn biology, chemistry, and physics through interactive virtual laboratory simulations. Hands-on experimentation in a safe, engaging virtual environment with AI-powered tutoring and automated assessment.",
+        teaches: [
+          "Biology laboratory techniques",
+          "Chemistry experimental procedures",
+          "Physics simulation and experimentation",
+          "Scientific method and inquiry",
+          "Laboratory safety protocols",
+          "Data collection and analysis"
+        ],
+        educationalUse: [
+          "Professional development",
+          "Self-study",
+          "Research",
+          "Teaching resource"
+        ]
+      },
+      es: {
+        courseName: "Laboratorio Virtual WhimsyLabs - Educación STEM Interactiva",
+        courseDescription: "Aprende biología, química y física a través de simulaciones interactivas de laboratorio virtual. Experimentación práctica en un entorno virtual seguro y atractivo con tutoría impulsada por IA y evaluación automatizada.",
+        teaches: [
+          "Técnicas de laboratorio de biología",
+          "Procedimientos experimentales de química",
+          "Simulación y experimentación de física",
+          "Método científico e investigación",
+          "Protocolos de seguridad en el laboratorio",
+          "Recopilación y análisis de datos"
+        ],
+        educationalUse: [
+          "Desarrollo profesional",
+          "Autoestudio",
+          "Investigación",
+          "Recurso didáctico"
+        ]
+      },
+      fr: {
+        courseName: "Laboratoire Virtuel WhimsyLabs - Éducation STEM Interactive",
+        courseDescription: "Apprenez la biologie, la chimie et la physique grâce à des simulations interactives de laboratoire virtuel. Expérimentation pratique dans un environnement virtuel sûr et engageant avec tutorat alimenté par IA et évaluation automatisée.",
+        teaches: [
+          "Techniques de laboratoire de biologie",
+          "Procédures expérimentales de chimie",
+          "Simulation et expérimentation de physique",
+          "Méthode scientifique et recherche",
+          "Protocoles de sécurité en laboratoire",
+          "Collecte et analyse de données"
+        ],
+        educationalUse: [
+          "Développement professionnel",
+          "Auto-apprentissage",
+          "Recherche",
+          "Ressource pédagogique"
+        ]
+      },
+      de: {
+        courseName: "WhimsyLabs Virtuelles Labor - Interaktive STEM-Bildung",
+        courseDescription: "Lernen Sie Biologie, Chemie und Physik durch interaktive virtuelle Laborsimulationen. Praktisches Experimentieren in einer sicheren, ansprechenden virtuellen Umgebung mit KI-gestütztem Tutoring und automatisierter Bewertung.",
+        teaches: [
+          "Biologische Labortechniken",
+          "Chemische experimentelle Verfahren",
+          "Physiksimulation und Experimente",
+          "Wissenschaftliche Methode und Forschung",
+          "Laborsicherheitsprotokolle",
+          "Datenerfassung und -analyse"
+        ],
+        educationalUse: [
+          "Berufliche Entwicklung",
+          "Selbststudium",
+          "Forschung",
+          "Lehrmittel"
+        ]
+      },
+      ja: {
+        courseName: "WhimsyLabs バーチャル実験室 - インタラクティブSTEM教育",
+        courseDescription: "インタラクティブなバーチャル実験室シミュレーションを通じて、生物学、化学、物理学を学びます。AI搭載の個別指導と自動評価を備えた、安全で魅力的な仮想環境での実践的な実験。",
+        teaches: [
+          "生物学の実験技術",
+          "化学の実験手順",
+          "物理学のシミュレーションと実験",
+          "科学的方法と探究",
+          "実験室の安全プロトコル",
+          "データ収集と分析"
+        ],
+        educationalUse: [
+          "専門能力開発",
+          "自己学習",
+          "研究",
+          "教育リソース"
+        ]
+      }
+    };
+
+    const t = schemaTranslations[langCode] || schemaTranslations.en;
+
     const organizationSchema = {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -247,7 +352,7 @@ class MetadataInjector {
     let schemas = [organizationSchema];
 
     // Add route-specific schemas
-    if (route === '/') {
+    if (route === '/' || route.match(/^\/[a-z]{2}\/?$/)) {
       const productSchema = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -267,6 +372,97 @@ class MetadataInjector {
         }
       };
       schemas.push(productSchema);
+
+      // Add Course schema for educational platform
+      const courseSchema = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": t.courseName,
+        "description": t.courseDescription,
+        "provider": {
+          "@type": "Organization",
+          "name": "WhimsyLabs",
+          "url": this.baseUrl
+        },
+        "educationalLevel": "Secondary Education, Higher Education",
+        "coursePrerequisites": "None - suitable for students ages 11+",
+        "teaches": t.teaches,
+        "availableLanguage": ["en", "es", "fr", "de", "ja"],
+        "inLanguage": langCode,
+        "isAccessibleForFree": false,
+        "hasCourseInstance": {
+          "@type": "CourseInstance",
+          "courseMode": "online",
+          "courseWorkload": "PT1H"
+        },
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        "competencyRequired": "Basic scientific literacy",
+        "educationalCredentialAwarded": "Completion certificate available",
+        "timeRequired": "PT1H",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "STEM Education"
+          },
+          {
+            "@type": "Thing",
+            "name": "Virtual Laboratory"
+          },
+          {
+            "@type": "Thing",
+            "name": "Science Education"
+          }
+        ]
+      };
+      schemas.push(courseSchema);
+    }
+
+    // Generate Event schema for BETT 2026 page
+    if (route === '/bett' || route.endsWith('/bett')) {
+      const eventSchema = {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "WhimsyLabs at BETT 2026",
+        "description": "Visit WhimsyLabs at BETT 2026 to experience our award-winning virtual laboratory software. Book a demo at our booth and discover how we're transforming STEM education.",
+        "startDate": "2026-01-21T09:00:00+00:00",
+        "endDate": "2026-01-23T17:00:00+00:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "ExCeL London",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "One Western Gateway, Royal Victoria Dock",
+            "addressLocality": "London",
+            "postalCode": "E16 1XL",
+            "addressCountry": "GB"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "WhimsyLabs",
+          "url": this.baseUrl
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": `${this.baseUrl}/bett`,
+          "price": "0",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2025-01-01T00:00:00+00:00"
+        },
+        "performer": {
+          "@type": "Organization",
+          "name": "WhimsyLabs"
+        },
+        "image": `${this.baseUrl}/logo.png`,
+        "url": `${this.baseUrl}/bett`
+      };
+      schemas.push(eventSchema);
     }
 
     // Generate FAQ schema for all language versions of FAQ page
@@ -298,10 +494,8 @@ class MetadataInjector {
 
     // Generate BlogPosting schema for blog posts
     if (route.includes('/blog/') && route !== '/blog' && !route.endsWith('/blog/')) {
-      // Extract language from route
-      const langMatch = route.match(/^\/([a-z]{2})\//);
-      const language = langMatch ? langMatch[1] : 'en';
-      const inLanguage = language === 'en' ? 'en-GB' : language;
+      // Language was already extracted at the top of the function
+      const inLanguage = langCode === 'en' ? 'en-GB' : langCode;
 
       // Calculate estimated reading time (assuming 200 words per minute)
       const description = data.description || '';
@@ -367,11 +561,63 @@ class MetadataInjector {
       };
 
       // Add keywords if available
-      if (data.keywords) {
-        blogPostSchema.keywords = Array.isArray(data.keywords) ? data.keywords.join(", ") : data.keywords;
+      if (data.keywords && Array.isArray(data.keywords) && data.keywords.length > 0) {
+        blogPostSchema.keywords = data.keywords.join(", ");
+      } else if (data.keywords && typeof data.keywords === 'string') {
+        blogPostSchema.keywords = data.keywords;
+      } else {
+        // Fallback keywords
+        blogPostSchema.keywords = "virtual laboratory, STEM education, science education technology";
       }
 
       schemas.push(blogPostSchema);
+
+      // Add LearningResource schema for educational blog content
+      const learningResourceSchema = {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": data.title || "WhimsyLabs Educational Article",
+        "description": data.description || "",
+        "url": `${this.baseUrl}${route}`,
+        "author": {
+          "@type": "Person",
+          "name": "Marisa French",
+          "url": "https://www.linkedin.com/in/drmarisafrench/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "WhimsyLabs",
+          "url": this.baseUrl
+        },
+        "datePublished": data.date || data.datePublished || new Date().toISOString().split('T')[0],
+        "educationalLevel": "Secondary Education, Higher Education",
+        "learningResourceType": "Article",
+        "inLanguage": inLanguage,
+        "isAccessibleForFree": true,
+        "timeRequired": `PT${readingMinutes}M`,
+        "educationalUse": t.educationalUse,
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": ["teacher", "student", "administrator"]
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "STEM Education"
+          },
+          {
+            "@type": "Thing",
+            "name": "Virtual Laboratory"
+          },
+          {
+            "@type": "Thing",
+            "name": "Educational Technology"
+          }
+        ],
+        "teaches": "STEM education best practices and virtual laboratory technology",
+        "assesses": "Understanding of modern educational technology and virtual learning environments"
+      };
+      schemas.push(learningResourceSchema);
 
       // Also add breadcrumb schema for blog posts
       const breadcrumbItems = [
@@ -412,11 +658,16 @@ class MetadataInjector {
   /**
    * Generate complete metadata for a route
    * @param {string} route - The route path
-   * @param {Object} helmetContext - Helmet context from SSR
-   * @param {Object} customMeta - Custom metadata
+   * @param {Object} dataOrHelmetContext - Either route data object or Helmet context from SSR
+   * @param {Object} customMeta - Custom metadata (optional, for backwards compatibility)
    * @returns {Object} - Complete metadata object
    */
-  generateCompleteMetadata(route, helmetContext = null, customMeta = {}) {
+  generateCompleteMetadata(route, dataOrHelmetContext = null, customMeta = {}) {
+    // Check if second parameter is helmet context (has .helmet property) or route data
+    const isHelmetContext = dataOrHelmetContext && dataOrHelmetContext.helmet;
+    const data = isHelmetContext ? customMeta : dataOrHelmetContext || {};
+    const helmetContext = isHelmetContext ? dataOrHelmetContext : null;
+
     // If we have helmet context, use it; otherwise generate default metadata
     if (helmetContext && helmetContext.helmet) {
       const helmetMeta = this.extractHelmetMetadata(helmetContext);
@@ -425,16 +676,16 @@ class MetadataInjector {
         title: helmetMeta.title,
         meta: helmetMeta.meta,
         link: helmetMeta.link,
-        script: blueskyScript + '\n    ' + helmetMeta.script + '\n    ' + this.generateStructuredData(route, customMeta),
+        script: blueskyScript + '\n    ' + helmetMeta.script + '\n    ' + this.generateStructuredData(route, data),
         style: helmetMeta.style
       };
     }
 
     // Generate default metadata
-    const basicMeta = this.generateBasicMetaTags(route, customMeta);
-    const ogMeta = this.generateOpenGraphTags(route, customMeta);
-    const twitterMeta = this.generateTwitterCardTags(route, customMeta);
-    const structuredData = this.generateStructuredData(route, customMeta);
+    const basicMeta = this.generateBasicMetaTags(route, data);
+    const ogMeta = this.generateOpenGraphTags(route, data);
+    const twitterMeta = this.generateTwitterCardTags(route, data);
+    const structuredData = this.generateStructuredData(route, data);
     const blueskyScript = '<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>';
 
     return {

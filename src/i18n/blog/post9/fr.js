@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Tutorat IA 24h/24 et 7j/7 : Comment les recommandations quotidiennes personnalisées empêchent les élèves de prendre du retard";
+  "Tutorat IA 24/7 : Recommandations Personnalisées Maintiennent le Cap";
 export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =

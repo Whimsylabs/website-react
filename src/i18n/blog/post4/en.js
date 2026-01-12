@@ -1,7 +1,7 @@
 // English - post4: Revolutionizing STEM Education: How WhimsyLabs' AI-Powered Virtual Labs Are Solving the Global Science Education Crisis
 import React from "react";
 
-export const title = "Revolutionizing STEM Education: How WhimsyLabs' AI-Powered Virtual Labs Are Solving the Global Science Education Crisis";
+export const title = "WhimsyLabs' AI Virtual Labs Solving Global Science Education Crisis";
 export const description = "WhimsyLabs' innovative virtual laboratory platform combines advanced AI assessment, realistic physics simulations, and sandbox learning to democratize high-quality science education globally.";
 
 export const content = (

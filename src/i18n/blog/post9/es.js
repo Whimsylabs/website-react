@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Tutoría de IA 24/7: Cómo las recomendaciones diarias personalizadas evitan que los estudiantes se retrasen";
+  "Tutoría IA 24/7: Recomendaciones Personalizadas Mantienen el Ritmo";
 export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =

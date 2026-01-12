@@ -60,7 +60,7 @@ export default {
     },
     "can-whimsylabs-be-used-offline-or-with-weak-intern": {
       "question": "Can Whimsylabs be used offline or with weak internet?",
-      "answer": "Absolutely. Whimsylabs features advanced caching technology, enabling students to perform complete laboratory experiments offline or with internet connections as slow as 1 Mbps. Once the initial setup is complete, individual labs load in just 18.3 seconds on average, ensuring a seamless experience even in bandwidth-limited environments. Performance testing confirms full functionality with intermittent connectivity, supporting equitable access across diverse geographical and technological landscapes. Whimsylabs also supports being exported as A PWA (Progressive web app) to maximise offline accessibility."
+      "answer": "Absolutely. Whimsylabs features advanced caching technology, enabling students to perform complete laboratory experiments offline or with internet connections as slow as 1 Mbps. Once the initial setup is complete, individual labs load in just 30 seconds on average, ensuring a seamless experience even in bandwidth-limited environments. Performance testing confirms full functionality with intermittent connectivity, supporting equitable access across diverse geographical and technological landscapes. Whimsylabs also supports being exported as A PWA (Progressive web app) to maximise offline accessibility."
     },
     "how-does-whimsylabs-ensure-assessment-integrity": {
       "question": "How does Whimsylabs ensure assessment integrity?",
@@ -68,7 +68,7 @@ export default {
     },
     "what-makes-whimsylabs-fast-and-efficient": {
       "question": "What makes Whimsylabs fast and efficient?",
-      "answer": "Whimsylabs is engineered with an optimized <50MB payload and intelligent caching architecture, ensuring lightning-fast load times averaging 18.3 seconds and minimal resource usage during operation. Our advanced compression algorithms reduce bandwidth requirements by dynamically responding to network availability, and enabling traditional virtual lab platforms. Following Google Web Fundamentals Performance Best Practices, we implement advanced optimization techniques including resource preloading, efficient caching strategies, and progressive loading to maximize performance across all devices. This optimization enables seamless learning experiences even on older devices and in bandwidth-limited environments."
+      "answer": "Whimsylabs is engineered with an optimized <100MB payload and intelligent caching architecture, ensuring lightning-fast load times averaging 30 seconds and minimal resource usage during operation. Our advanced compression algorithms reduce bandwidth requirements by dynamically responding to network availability, and enabling traditional virtual lab platforms. Following Google Web Fundamentals Performance Best Practices, we implement advanced optimization techniques including resource preloading, efficient caching strategies, and progressive loading to maximize performance across all devices. This optimization enables seamless learning experiences even on older devices and in bandwidth-limited environments."
     },
     "how-does-whimsylabs-support-flexible-learning": {
       "question": "How does Whimsylabs support flexible learning?",

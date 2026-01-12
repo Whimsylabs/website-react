@@ -1,7 +1,7 @@
 // Spanish - post12: Cómo la realidad virtual prepara a los estudiantes para carreras STEM del mundo real: La única plataforma que enseña habilidades físicas de laboratorio
 import React from "react";
 
-export const title = "Cómo la realidad virtual prepara a los estudiantes para carreras STEM del mundo real: La única plataforma que enseña habilidades físicas de laboratorio";
+export const title = "VR Prepara Estudiantes para Carreras STEM con Habilidades Lab";
 export const description = "Descubra por qué WhimsyLabs es la única plataforma de laboratorio virtual que enseña movimientos físicos auténticos y habilidades de diseño experimental a través de libertad sandbox completa y simulaciones avanzadas de física de líquidos.";
 export const keywords = [
   "laboratorios VR para educación superior",

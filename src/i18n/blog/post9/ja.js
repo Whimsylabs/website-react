@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "24時間対応AIチューター:個別化された日次推薦が生徒の遅れを防ぐ方法";
+  "24時間AIチューター：個別推薦で生徒を軌道に維持";
 export const description =
   "WhimsyLabsのAI分析による日次・週次の実験推薦が、ゲーム要素を取り入れた低リスクの練習を通じて、生徒の弱点克服を支援し、学習の遅れを防ぐ仕組みをご紹介します。";
 export const keywords = [

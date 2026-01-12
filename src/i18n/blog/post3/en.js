@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Hands-On Learning: Virtual Kidney Dissection Enhances SEND Student Engagement";
+  "Virtual Kidney Dissection Enhances SEND Student Engagement";
 export const description =
   "Exploring how WhimsyLabs' physical interaction in virtual environments significantly improves educational outcomes and engagement for SEND students.";
 

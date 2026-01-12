@@ -142,12 +142,20 @@ function validateHreflang() {
   let totalErrors = 0;
   let totalWarnings = 0;
 
+  // Pages to skip validation (special pages that don't need hreflang)
+  const skipPages = ['/spa/', '/demo/'];
+
   // Validate each HTML file
   htmlFiles.forEach(filePath => {
     // Extract expected path from file location
     const relativePath = path.relative(buildDir, path.dirname(filePath));
     const expectedPath = '/' + relativePath.replace(/\\/g, '/') + '/';
     const normalizedPath = expectedPath.replace(/\/+/g, '/').replace(/\/$/, '/');
+
+    // Skip special pages that don't need hreflang tags
+    if (skipPages.includes(normalizedPath)) {
+      return;
+    }
 
     const pageName = normalizedPath === '/' ? 'Homepage' : normalizedPath;
 

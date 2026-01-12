@@ -1,8 +1,8 @@
 // English - Post 2: The Importance of Physicality in Virtual Labs
 import React from "react";
 
-export const title = "The Importance of Physicality in Virtual Labs: A Step Beyond Traditional Simulations";
-export const description = "Exploring how Whimsylabs' groundbreaking liquid physics and procedural training redefine science education.";
+export const title = "Physicality in Virtual Labs: Beyond Traditional Simulations";
+export const description = "Exploring how WhimsyLabs' groundbreaking liquid physics and procedural training redefine science education through immersive virtual experiences.";
 
 export const content = (
   <div>

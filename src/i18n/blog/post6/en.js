@@ -1,7 +1,7 @@
 // English - post6: The Sandbox Learning Revolution: Why Freedom to Fail is Essential for STEM Education
 import React from "react";
 
-export const title = "The Sandbox Learning Revolution: Why Freedom to Fail is Essential for STEM Education";
+export const title = "Sandbox Learning: Why Freedom to Fail is Essential for STEM";
 export const description = "How WhimsyLabs' open-ended exploration approach transforms science education by embracing failure as a powerful learning tool and fostering authentic scientific thinking.";
 
 export const content = (

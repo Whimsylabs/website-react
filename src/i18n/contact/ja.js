@@ -1,7 +1,7 @@
 // Japanese - Contact page translations
 export default {
   title: "お問い合わせ | WhimsyLabs シミュレーション教材",
-  description: "学校での無料トライアルのリクエストや、STEM教育向けシミュレーション教材に関するご質問は、WhimsyLabsまでお気軽にお問い合わせください。",
+  description: "WhimsyLabsへのお問い合わせはこちらから。学校での無料トライアルのリクエスト、製品の詳細情報、価格プラン、導入サポート、技術的なご質問など、STEM教育向けシミュレーション教材に関することは何でもお気軽にお問い合わせください。専門スタッフが丁寧に対応いたします。",
   getInTouch: "お問い合わせ",
   email: "メールアドレス",
   requestTrial: "トライアルをリクエスト",

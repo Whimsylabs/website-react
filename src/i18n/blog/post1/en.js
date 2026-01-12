@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "A Brief History of Whimsylabs: From our Humble Start to a BETT 2025 Winner";
+  "WhimsyLabs History: From Humble Start to BETT 2025 Winner";
 export const description =
   "How Whimsylabs, founded by Marisa French, is addressing STEM challenges with fully simulated labs, impactful partnerships, and award-winning innovation.";
 export const keywords = [

@@ -1,7 +1,7 @@
 // French - Home page translations
 export default {
   title:
-    "WhimsyLabs - Logiciel de Laboratoire Virtuel Primé pour l'Éducation STEM",
+    "WhimsyLabs - Logiciel de Laboratoire Virtuel pour l'Éducation STEM",
   description:
     "WhimsyLabs fournit un logiciel de laboratoire virtuel interactif pour la Biologie, la Chimie et la Physique. Nos simulations de laboratoire en ligne améliorent l'éducation STEM dans les écoles de l'UE.",
   heroTitle: "Logiciel de Laboratoire Virtuel Révolutionnaire",

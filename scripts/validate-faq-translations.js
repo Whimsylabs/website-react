@@ -9,7 +9,7 @@ const path = require('path');
 
 async function validateTranslations() {
   const faqDir = './src/i18n/faq';
-  const languages = ['en', 'es', 'fr', 'de'];
+  const languages = ['en', 'es', 'fr', 'de', 'ja'];
   
   console.log('🔍 Validating FAQ translations...\n');
   

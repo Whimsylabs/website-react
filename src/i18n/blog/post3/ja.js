@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "実践的学習：仮想腎臓解剖がSEND生徒の関与を高める";
+  "仮想腎臓解剖がSEND生徒のエンゲージメントを向上";
 export const description =
   "WhimsyLabsの仮想環境における物理的相互作用が、SEND生徒の教育成果と関与をどのように大幅に改善するかを探ります。";
 export const keywords = [

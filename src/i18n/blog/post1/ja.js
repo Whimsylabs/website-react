@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Whimsylabsの歩み：草創期からBETT 2025受賞まで";
+  "WhimsyLabsの歩み：草創期からBETT 2025受賞まで";
 export const description =
   "Marisa French氏によって設立されたWhimsylabsが、フルシミュレーション型教材、影響力のあるパートナーシップ、そして受賞歴のあるイノベーションでSTEM教育の課題にどのように取り組んでいるかをご紹介します。";
 export const keywords = [

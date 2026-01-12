@@ -1,7 +1,7 @@
 // German - post3: Praktisches Lernen: Virtuelle Nierendisskussion verbessert SEND-Studentenengagement
 import React from "react";
 
-export const title = "Praktisches Lernen: Virtuelle Sektion einer Niere verbessert Engagement von Studierenden mit besonderen Bedürfnissen ";
+export const title = "Virtuelle Nierensektion verbessert Engagement von SEND-Studierenden";
 export const description = "Entdecken sie, wie Whimsylabs physische Interaktion in der virtuellen Umgebung die Bildungsergebnisse und das Engagement für Studierende mit besonderen Bedürfnissen erheblich verbessert.";
 export const keywords = [
   "virtuelle Sektion",

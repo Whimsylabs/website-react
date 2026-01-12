@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "グリーンラボ、グリーンな未来：シミュレーション教材がSTEM教育における持続可能性をどのように変革しているか";
+  "グリーンラボ：STEM教育における持続可能性の変革";
 export const description =
   "WhimsyLabsのシミュレーション教材プラットフォームが、従来の理科教育における環境危機にどのように対処し、持続可能な開発目標を前進させているかを探ります。";
 export const keywords = [

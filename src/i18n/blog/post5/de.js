@@ -1,7 +1,7 @@
 // German - post5: Lernen Sie WhimsyCat kennen: Der revolutionäre KI-Tutor, der die wissenschaftliche Bildung transformiert
 import React from "react";
 
-export const title = "Lernen Sie WhimsyCat kennen: Der revolutionäre KI-Tutor, der die wissenschaftliche Bildung transformiert";
+export const title = "WhimsyCat: Der KI-Tutor für wissenschaftliche Bildung";
 export const description = "Wie WhimsyLabs' fortschrittlicher KI-Tutor personalisierte Anleitung, Echtzeit-Feedback und adaptive Lernwege bietet, um die Laborausbildung zu revolutionieren.";
 export const keywords = [
   "WhimsyCat KI-Tutor",

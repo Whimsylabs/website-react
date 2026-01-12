@@ -1,7 +1,7 @@
 // German - post6: Die Sandbox-Lernrevolution: Warum die Freiheit zu scheitern für die STEM-Bildung wesentlich ist
 import React from "react";
 
-export const title = "Die Sandbox-Lernrevolution: Warum die Freiheit zu scheitern für die STEM-Bildung wesentlich ist";
+export const title = "Sandbox-Lernen: Warum Scheitern für STEM wesentlich ist";
 export const description = "Wie WhimsyLabs' offener Erkundungsansatz die wissenschaftliche Bildung transformiert, indem er das Scheitern als mächtiges Lernwerkzeug umarmt und authentisches wissenschaftliches Denken fördert.";
 export const keywords = [
   "Sandbox-Lernen",

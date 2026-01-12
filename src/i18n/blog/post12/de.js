@@ -1,7 +1,7 @@
 // German - post12: Wie Virtual Reality Studierende auf reale MINT-Karrieren vorbereitet: Die einzige Plattform, die physische Laborfähigkeiten lehrt
 import React from "react";
 
-export const title = "Wie Virtual Reality Studierende auf reale MINT-Karrieren vorbereitet: Die einzige Plattform, die physische Laborfähigkeiten lehrt";
+export const title = "VR bereitet Studierende auf MINT-Karrieren mit Laborfähigkeiten";
 export const description = "Entdecken Sie, warum WhimsyLabs die einzige virtuelle Laborplattform ist, die authentische physische Bewegungen und experimentelle Designfähigkeiten durch vollständige Sandbox-Freiheit und fortschrittliche Flüssigkeitsphysik-Simulationen lehrt.";
 export const keywords = [
   "VR-Labore für Hochschulen",

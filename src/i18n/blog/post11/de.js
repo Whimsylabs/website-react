@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Virtuelle Labore vs. Physische Labore: Eine Kosten-Nutzen-Analyse für Schulen und unsere wirkungsorientierte Mission";
+  "Virtuelle vs. Physische Labore: Kosten-Nutzen-Analyse";
 export const date = "2025-08-20";
 export const slug = "virtual-labs-vs-physical-labs-cost-benefit-analysis";
 export const description =

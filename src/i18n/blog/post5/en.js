@@ -1,7 +1,7 @@
 // English - post5: Meet WhimsyCat: The Revolutionary AI Tutor Transforming Science Education
 import React from "react";
 
-export const title = "Meet WhimsyCat: The Revolutionary AI Tutor Transforming Science Education";
+export const title = "WhimsyCat: The AI Tutor Transforming Science Education";
 export const description = "How WhimsyLabs' advanced AI tutor provides personalized guidance, real-time feedback, and adaptive learning pathways to revolutionize laboratory education.";
 
 export const content = (

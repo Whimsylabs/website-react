@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "24/7 KI-Nachhilfe: Wie personalisierte tägliche Empfehlungen verhindern, dass Schüler zurückfallen";
+  "24/7 KI-Nachhilfe: Personalisierte Empfehlungen für Schüler";
 export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =

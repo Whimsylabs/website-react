@@ -1,7 +1,7 @@
 // Japanese - post6: サンドボックス学習革命：STEM教育において失敗する自由がなぜ不可欠なのか
 import React from "react";
 
-export const title = "サンドボックス学習革命：STEM教育において失敗する自由がなぜ不可欠なのか";
+export const title = "サンドボックス学習：失敗する自由がSTEMに不可欠な理由";
 export const description = "WhimsyLabsのオープンエンドの探索アプローチが、失敗を強力な学習ツールとして受け入れ、本物の科学的思考を育成することで、理科教育をどのように変革しているかをご紹介します。";
 export const keywords = [
   "サンドボックス学習",

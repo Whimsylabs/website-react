@@ -1,7 +1,7 @@
 // French - post8: Comment les laboratoires virtuels résolvent la crise de pénurie d'enseignants STEM : Une perspective britannique et mondiale
 import React from "react";
 
-export const title = "Comment les laboratoires virtuels résolvent la crise de pénurie d'enseignants STEM : Une perspective britannique et mondiale";
+export const title = "Labos Virtuels Résolvent la Pénurie d'Enseignants STEM";
 export const description = "Exploration de la manière dont les laboratoires virtuels alimentés par l'IA de WhimsyLabs répondent à la pénurie catastrophique d'enseignants STEM affectant le Royaume-Uni et les écoles du monde entier grâce au tutorat 24h/24 et 7j/7 et à l'évaluation automatisée.";
 export const keywords = [
   "pénurie d'enseignants STEM",

@@ -1,7 +1,7 @@
 // Spanish - Post 7: Laboratorios verdes, futuro más verde
 import React from "react";
 
-export const title = "Laboratorios verdes, futuro más verde: Cómo los laboratorios virtuales están transformando la sostenibilidad en la educación STEM";
+export const title = "Laboratorios Verdes: Transformando la Sostenibilidad en STEM";
 export const description = "Explorando cómo la plataforma de laboratorio virtual de WhimsyLabs aborda la crisis ambiental en la educación científica tradicional mientras avanza los objetivos de desarrollo sostenible.";
 export const keywords = [
   "laboratorios verdes",
