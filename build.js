@@ -360,8 +360,9 @@ async function getBlogPosts(language = 'en') {
     const Post13 = require("./src/Components/blog/Post13.js");
     const Post14 = require("./src/Components/blog/Post14.js");
     const Post15 = require("./src/Components/blog/Post15.js");
+    const Post16 = require("./src/Components/blog/Post16.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -399,6 +400,7 @@ async function getBlogPosts(language = 'en') {
       const Post13 = require("./src/Components/blog/Post13.js");
       const Post14 = require("./src/Components/blog/Post14.js");
       const Post15 = require("./src/Components/blog/Post15.js");
+      const Post16 = require("./src/Components/blog/Post16.js");
 
       const fallbackPosts = [
         {
@@ -550,6 +552,16 @@ async function getBlogPosts(language = 'en') {
           path: `/blog/${Post15.slug}`,
           language: 'en',
           hasFullTranslation: true
+        },
+        {
+          id: Post16.slug,
+          title: Post16.title,
+          date: Post16.date,
+          description: Post16.description,
+          content: Post16.content,
+          path: `/blog/${Post16.slug}`,
+          language: 'en',
+          hasFullTranslation: true
         }
       ];
 
@@ -596,8 +608,30 @@ async function generatePageHTML(route, data = {}) {
       language: data.language || 'en',
     };
 
+    // For blog listing page, load all posts for SSR
+    if (route.endsWith('/blog') || route.endsWith('/blog/')) {
+      try {
+        const language = data.language || 'en';
+        const allPosts = await getBlogPosts(language);
+
+        // Format posts for the Blog component
+        props.posts = allPosts.map(post => ({
+          id: post.id,
+          title: post.title,
+          date: post.date,
+          description: post.description,
+          content: null // Content loaded on individual post pages
+        })).sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        console.log(`✅ Loaded ${props.posts.length} posts for blog listing in ${language}`);
+      } catch (postsError) {
+        console.warn(`⚠️ Could not load posts for blog listing:`, postsError.message);
+        props.posts = [];
+      }
+    }
+
     // For blog posts, load the full translated content
-    if (route.includes('/blog/') && !route.endsWith('/blog') && data.slug) {
+    if (route.includes('/blog/') && !route.endsWith('/blog') && !route.endsWith('/blog/') && data.slug) {
       try {
         const language = data.language || 'en';
         const { loadBlogPostContent } = require('./scripts/blog-content-loader.js');
@@ -654,6 +688,7 @@ async function generatePageHTML(route, data = {}) {
         // Set initial route and language for React Router
         window.__INITIAL_ROUTE__ = "${route}";
         window.__INITIAL_LANGUAGE__ = "${currentLang}";
+        ${props.posts ? `window.__INITIAL_POSTS__ = ${JSON.stringify(props.posts)};` : ''}
     </script>
 </head>
 <body>

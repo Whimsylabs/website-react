@@ -10,7 +10,8 @@
       "WebFetch(domain:www.whimsylabs.ai)",
       "Bash(node scripts/validate-404-redirects.js:*)",
       "Bash(npm run validate-404-redirects:*)",
-      "Bash(npm run validate-faq-schema:*)"
+      "Bash(npm run validate-faq-schema:*)",
+      "Bash(node scripts/validate-blog-ssr.js:*)"
     ]
   }
 }

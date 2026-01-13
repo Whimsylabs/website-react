@@ -23,6 +23,7 @@ import * as Post12 from './blog/Post12';
 import * as Post13 from './blog/Post13';
 import * as Post14 from './blog/Post14';
 import * as Post15 from './blog/Post15';
+import * as Post16 from './blog/Post16';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -130,6 +131,13 @@ const fallbackPosts = [
     content: Post15.content,
     date: Post15.date,
     description: Post15.description,
+  },
+  {
+    id: Post16.slug,
+    title: Post16.title,
+    content: Post16.content,
+    date: Post16.date,
+    description: Post16.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -149,7 +157,8 @@ const slugToPostId = {
   'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
   'science-real-time-physics-simulations-virtual-labs': 'post13',
   'gamification-science-education-points-rewards-engagement': 'post14',
-  'whimsylabs-bett-2026-exhibition-announcement': 'post15'
+  'whimsylabs-bett-2026-exhibition-announcement': 'post15',
+  'why-traditional-virtual-labs-fail-physics-engine': 'post16'
 };
 
 const BlogPost = (props = {}) => {

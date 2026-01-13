@@ -24,6 +24,7 @@ import * as Post12 from './blog/Post12';
 import * as Post13 from './blog/Post13';
 import * as Post14 from './blog/Post14';
 import * as Post15 from './blog/Post15';
+import * as Post16 from './blog/Post16';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -131,6 +132,13 @@ const fallbackPosts = [
     content: Post15.content,
     date: Post15.date,
     description: Post15.description,
+  },
+  {
+    id: Post16.slug,
+    title: Post16.title,
+    content: Post16.content,
+    date: Post16.date,
+    description: Post16.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -150,7 +158,8 @@ const slugToPostId = {
   'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
   'science-real-time-physics-simulations-virtual-labs': 'post13',
   'gamification-science-education-points-rewards-engagement': 'post14',
-  'whimsylabs-bett-2026-exhibition-announcement': 'post15'
+  'whimsylabs-bett-2026-exhibition-announcement': 'post15',
+  'why-traditional-virtual-labs-fail-physics-engine': 'post16'
 };
 
 // Reverse mapping from post IDs to slugs
@@ -161,8 +170,17 @@ const postIdToSlug = Object.fromEntries(
 const Blog = (props = {}) => {
   const { language } = props;
   const [activePostId] = useState(null);
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+
+  // Get initial posts: props.posts (SSR) > window.__INITIAL_POSTS__ (hydration) > empty array
+  const getInitialPosts = () => {
+    if (props.posts && props.posts.length > 0) return props.posts;
+    if (typeof window !== 'undefined' && window.__INITIAL_POSTS__) return window.__INITIAL_POSTS__;
+    return [];
+  };
+
+  const initialPosts = getInitialPosts();
+  const [posts, setPosts] = useState(initialPosts);
+  const [loading, setLoading] = useState(initialPosts.length === 0);
   const [currentLanguage, setCurrentLanguage] = useState('en');
   const [languagePrefix, setLanguagePrefix] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -170,68 +188,70 @@ const Blog = (props = {}) => {
   const postsPerPage = 10; // Set pagination limit
 
   useEffect(() => {
+    // Set language prefix based on props or URL
+    let language = props.language || 'en';
+    let langPrefix = '';
+
+    if (!props.language && typeof window !== 'undefined') {
+      const currentPath = window.location.pathname;
+      const pathParts = currentPath.split('/').filter(part => part);
+      if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
+        language = pathParts[0];
+      }
+    }
+
+    if (language !== 'en') {
+      langPrefix = `/${language}`;
+    }
+
+    setCurrentLanguage(language);
+    setLanguagePrefix(langPrefix);
+
+    // Skip loading if we already have posts from SSR or hydration data
+    if ((props.posts && props.posts.length > 0) ||
+        (typeof window !== 'undefined' && window.__INITIAL_POSTS__ && window.__INITIAL_POSTS__.length > 0)) {
+      const ssrPosts = props.posts || window.__INITIAL_POSTS__;
+      console.log('Blog: Using SSR/hydration posts:', ssrPosts.length);
+      setPosts(ssrPosts);
+      setLoading(false);
+      return;
+    }
+
+    // Client-side loading (fallback if no SSR posts)
     const loadBlogPosts = async () => {
+      console.log('Blog: Loading posts client-side for language:', language);
+
       try {
-        // Get current language from props (for SSR) or URL path (for client-side)
-        let language = props.language || 'en'; // Use props.language if available (SSR)
-        let langPrefix = '';
-        
-        if (!props.language && typeof window !== 'undefined') {
-          // Client-side: detect from URL path
-          const currentPath = window.location.pathname;
-          const pathParts = currentPath.split('/').filter(part => part);
-          if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
-            language = pathParts[0];
-          }
-        }
-        
-        if (language !== 'en') {
-          langPrefix = `/${language}`;
-        }
-        
-        setCurrentLanguage(language);
-        setLanguagePrefix(langPrefix);
-        
-        console.log('Blog: Using language:', language, props.language ? '(from props)' : '(detected)');
-        
-        // Try to load translated blog posts
-        try {
-          const blogPosts = await getAllBlogPosts(language);
-          
-          if (blogPosts && blogPosts.length > 0) {
-            // Convert to the format expected by the component and use correct dates
-            const formattedPosts = blogPosts.map(post => {
-              // Get the correct date from fallback posts
-              const fallbackPost = fallbackPosts.find(p => p.id === (postIdToSlug[post.id] || post.id));
-              return {
-                id: postIdToSlug[post.id] || post.id, // Convert back to slug for URLs
-                postId: post.id, // Keep the post ID for reference
-                title: post.title,
-                content: post.content,
-                date: fallbackPost?.date || post.date, // Use fallback date if available
-                description: post.description
-              };
-            }).sort((a, b) => new Date(b.date) - new Date(a.date));
-            
-            setPosts(formattedPosts);
-          } else {
-            console.log('Blog: No translated posts found, using fallback');
-            setPosts(fallbackPosts);
-          }
-        } catch (translationError) {
-          console.warn('Blog: Error loading translated posts:', translationError);
+        const blogPosts = await getAllBlogPosts(language);
+
+        if (blogPosts && blogPosts.length > 0) {
+          const formattedPosts = blogPosts.map(post => {
+            const fallbackPost = fallbackPosts.find(p => p.id === (postIdToSlug[post.id] || post.id));
+            return {
+              id: postIdToSlug[post.id] || post.id,
+              postId: post.id,
+              title: post.title,
+              content: post.content,
+              date: fallbackPost?.date || post.date,
+              description: post.description
+            };
+          }).sort((a, b) => new Date(b.date) - new Date(a.date));
+
+          setPosts(formattedPosts);
+        } else {
+          console.log('Blog: No translated posts found, using fallback');
           setPosts(fallbackPosts);
         }
       } catch (error) {
         console.error('Blog: Error loading posts:', error);
         setPosts(fallbackPosts);
       }
-      
+
       setLoading(false);
     };
 
     loadBlogPosts();
-  }, []);
+  }, [props.posts, props.language]);
 
   // Get posts for current page
   const totalPages = Math.ceil(posts.length / postsPerPage);

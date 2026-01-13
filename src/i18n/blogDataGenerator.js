@@ -19,11 +19,12 @@ import * as Post12 from '../Components/blog/Post12';
 import * as Post13 from '../Components/blog/Post13';
 import * as Post14 from '../Components/blog/Post14';
 import * as Post15 from '../Components/blog/Post15';
+import * as Post16 from '../Components/blog/Post16';
 
 // Create dynamic mapping of all posts
 const ALL_POSTS = [
   Post1, Post2, Post3, Post4, Post5, Post6, Post7,
-  Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15
+  Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16
 ];
 
 // Generate blog post IDs dynamically

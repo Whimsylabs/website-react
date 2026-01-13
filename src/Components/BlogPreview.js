@@ -25,12 +25,23 @@ const extractFirstImage = (content) => {
     
     // Find the first image element
     let firstImage = null;
-    
+
     // First check for direct img elements
     for (const child of children) {
       if (React.isValidElement(child) && child.type === 'img') {
         firstImage = child;
         break;
+      }
+      // Also check inside figure elements
+      if (React.isValidElement(child) && child.type === 'figure') {
+        const figureChildren = React.Children.toArray(child.props?.children || []);
+        for (const figChild of figureChildren) {
+          if (React.isValidElement(figChild) && figChild.type === 'img') {
+            firstImage = figChild;
+            break;
+          }
+        }
+        if (firstImage) break;
       }
     }
     

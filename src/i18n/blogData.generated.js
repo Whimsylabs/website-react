@@ -1,8 +1,25 @@
 // Auto-generated blog data for build script
-// Generated on 2026-01-08T16:37:09.834Z
+// Generated on 2026-01-13T22:47:41.725Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post16",
+      "slug": "why-traditional-virtual-labs-fail-physics-engine",
+      "title": "Why Other Virtual Labs Fail: The Physics Engine Solution",
+      "description": "Why scripted virtual labs fail to build real skills, and how WhimsyLabs' physics engine delivers authentic STEM learning.",
+      "keywords": [
+        "virtual lab limitations",
+        "physics engine simulation",
+        "emergent data vs canned data",
+        "high-fidelity synthetic lab",
+        "STEM skill gap",
+        "active learning technology"
+      ],
+      "date": "2026-01-12",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post15",
       "slug": "whimsylabs-bett-2026-exhibition-announcement",
@@ -176,6 +193,23 @@ module.exports = {
     }
   ],
   "de": [
+    {
+      "id": "post16",
+      "slug": "why-traditional-virtual-labs-fail-physics-engine",
+      "title": "Warum andere virtuelle Labore scheitern: Die Physik-Engine-Lösung",
+      "description": "Warum skriptbasierte virtuelle Labore keine echten Fähigkeiten vermitteln und wie die Physik-Engine von WhimsyLabs authentisches MINT-Lernen ermöglicht.",
+      "keywords": [
+        "Einschränkungen virtueller Labore",
+        "Physik-Engine-Simulation",
+        "emergente Daten vs. vorgefertigte Daten",
+        "hochpräzises synthetisches Labor",
+        "MINT-Kompetenzlücke",
+        "aktive Lerntechnologie"
+      ],
+      "date": "2026-01-12",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
     {
       "id": "post15",
       "slug": "whimsylabs-bett-2026-exhibition-announcement",
@@ -428,6 +462,23 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post16",
+      "slug": "why-traditional-virtual-labs-fail-physics-engine",
+      "title": "Pourquoi les labos virtuels échouent : La solution physique",
+      "description": "Pourquoi les labos virtuels scriptés ne développent pas de vraies compétences et comment le moteur physique de WhimsyLabs offre un apprentissage STEM authentique.",
+      "keywords": [
+        "limites des laboratoires virtuels",
+        "simulation par moteur physique",
+        "données émergentes vs données préenregistrées",
+        "laboratoire synthétique haute fidélité",
+        "déficit de compétences STEM",
+        "technologie d'apprentissage actif"
+      ],
+      "date": "2026-01-12",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post15",
       "slug": "whimsylabs-bett-2026-exhibition-announcement",
       "title": "Nous exposons au Bett 2026 : Rejoignez-nous à Londres en janvier",
@@ -679,6 +730,23 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post16",
+      "slug": "why-traditional-virtual-labs-fail-physics-engine",
+      "title": "Por qué fallan los laboratorios virtuales: Solución física",
+      "description": "Por qué los laboratorios virtuales con scripts no desarrollan habilidades reales y cómo el motor de física de WhimsyLabs ofrece aprendizaje STEM auténtico.",
+      "keywords": [
+        "limitaciones de laboratorios virtuales",
+        "simulación con motor de física",
+        "datos emergentes vs datos predefinidos",
+        "laboratorio sintético de alta fidelidad",
+        "brecha de habilidades STEM",
+        "tecnología de aprendizaje activo"
+      ],
+      "date": "2026-01-12",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post15",
       "slug": "whimsylabs-bett-2026-exhibition-announcement",
       "title": "Expondremos en Bett 2026: Únete a nosotros en Londres este enero",
@@ -929,6 +997,23 @@ module.exports = {
     }
   ],
   "ja": [
+    {
+      "id": "post16",
+      "slug": "why-traditional-virtual-labs-fail-physics-engine",
+      "title": "他の仮想実験室が失敗する理由：物理エンジンによる解決策",
+      "description": "スクリプト型仮想実験室が実践的スキルを育成できない理由と、WhimsyLabsの物理エンジンが本格的なSTEM学習を実現する方法。",
+      "keywords": [
+        "仮想実験室の限界",
+        "物理エンジンシミュレーション",
+        "創発データ vs 定型データ",
+        "高精度合成実験室",
+        "STEMスキルギャップ",
+        "アクティブラーニング技術"
+      ],
+      "date": "2026-01-12",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
     {
       "id": "post15",
       "slug": "whimsylabs-bett-2026-exhibition-announcement",

@@ -9,7 +9,7 @@ const path = require('path');
 const blogPosts = [
   'post1', 'post2', 'post3', 'post4', 'post5', 'post6',
   'post7', 'post8', 'post9', 'post10', 'post11', 'post12',
-  'post13', 'post14', 'post15'
+  'post13', 'post14', 'post15', 'post16'
 ];
 const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
@@ -29,7 +29,8 @@ const postIdToSlug = {
   'post12': 'virtual-reality-prepares-students-real-world-stem-careers',
   'post13': 'science-real-time-physics-simulations-virtual-labs',
   'post14': 'gamification-science-education-points-rewards-engagement',
-  'post15': 'whimsylabs-bett-2026-exhibition-announcement'
+  'post15': 'whimsylabs-bett-2026-exhibition-announcement',
+  'post16': 'why-traditional-virtual-labs-fail-physics-engine'
 };
 
 // Dates from the original blog components
@@ -49,6 +50,7 @@ const postDates = {
   post13: "2025-10-01",
   post14: "2025-10-15",
   post15: "2025-12-05",
+  post16: "2026-01-12",
 };
 
 async function generateBlogData() {
