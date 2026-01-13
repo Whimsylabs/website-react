@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-01-08
+# Last updated: 2026-01-13
 
 User-agent: *
 Allow: /
@@ -68,6 +68,7 @@ Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /blog/whimsylabs-education-revolution/
+Allow: /blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /contact/
 Allow: /de/
 Allow: /de/bett/
@@ -87,6 +88,7 @@ Allow: /de/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /de/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /de/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /de/blog/whimsylabs-education-revolution/
+Allow: /de/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /de/contact/
 Allow: /de/faq/
 Allow: /de/features/
@@ -111,6 +113,7 @@ Allow: /es/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /es/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /es/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /es/blog/whimsylabs-education-revolution/
+Allow: /es/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /es/contact/
 Allow: /es/faq/
 Allow: /es/features/
@@ -136,6 +139,7 @@ Allow: /fr/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /fr/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /fr/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /fr/blog/whimsylabs-education-revolution/
+Allow: /fr/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /fr/contact/
 Allow: /fr/faq/
 Allow: /fr/features/
@@ -159,6 +163,7 @@ Allow: /jp/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /jp/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /jp/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /jp/blog/whimsylabs-education-revolution/
+Allow: /jp/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /jp/contact/
 Allow: /jp/faq/
 Allow: /jp/features/
@@ -167,7 +172,7 @@ Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 75 total (included above)
+# Blog posts summary: 80 total (included above)
 
-# Total pages in build: 115
+# Total pages in build: 120
 # This file is generated automatically - do not edit manually
