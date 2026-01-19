@@ -451,6 +451,21 @@ html {
   font-style: italic;
 }
 
+.bett-calendly-fallback {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bett-calendly-fallback a {
+  color: #1f1968;
+  text-decoration: underline;
+}
+
+.bett-calendly-fallback a:hover {
+  color: #dabeff;
+}
+
 /* Contact Form Section */
 .bett-contact-section {
   padding: 4rem 0;

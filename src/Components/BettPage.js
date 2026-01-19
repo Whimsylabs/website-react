@@ -219,6 +219,16 @@ const BettPage = ({ t, language }) => {
           </p>
 
           <div className="bett-calendly-container">
+            <p className="bett-calendly-fallback">
+              {t("bett.calendlyFallback")}{" "}
+              <a
+                href="https://calendly.com/whimsylaboratories/bett-2026"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("bett.calendlyFallbackLink")}
+              </a>
+            </p>
             {/* Calendly inline widget */}
             <div
               className="calendly-inline-widget"

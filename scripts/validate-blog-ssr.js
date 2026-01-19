@@ -6,8 +6,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Minimum number of blog posts expected
-const MIN_BLOG_POSTS = 10;
+// Minimum number of blog posts expected (all posts should be rendered for SSR/bots)
+const MIN_BLOG_POSTS = 16;
 
 function validateBlogSSR() {
   console.log('🔍 Validating blog SSR rendering...');
@@ -94,8 +94,8 @@ function validateBlogPage(html, lang, pagePath) {
   }
 
   // 2. Count blog post previews in the root content only (not noscript)
-  // Match both "post-preview" and "post-box post-preview" class patterns
-  const postPreviews = (rootContent.match(/class="[^"]*post-preview[^"]*"/g) || []).length;
+  // Match "post-box post-preview" specifically (not "post-preview-content")
+  const postPreviews = (rootContent.match(/class="post-box post-preview"/g) || []).length;
   if (postPreviews < MIN_BLOG_POSTS) {
     errors.push(`${pagePath}: Only ${postPreviews} posts rendered, expected at least ${MIN_BLOG_POSTS}`);
   }

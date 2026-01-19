@@ -11,7 +11,10 @@
       "Bash(node scripts/validate-404-redirects.js:*)",
       "Bash(npm run validate-404-redirects:*)",
       "Bash(npm run validate-faq-schema:*)",
-      "Bash(node scripts/validate-blog-ssr.js:*)"
+      "Bash(node scripts/validate-blog-ssr.js:*)",
+      "WebSearch",
+      "Bash(dir \"C:\\\\Github\\\\website-react\" /b)",
+      "Bash(findstr:*)"
     ]
   }
 }

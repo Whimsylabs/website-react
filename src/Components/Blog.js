@@ -253,11 +253,13 @@ const Blog = (props = {}) => {
     loadBlogPosts();
   }, [props.posts, props.language]);
 
-  // Get posts for current page
+  // For SSR (bots), show all posts; for client-side, use pagination
+  const isSSR = typeof window === 'undefined';
   const totalPages = Math.ceil(posts.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  // Show all posts for SSR/bots, paginated for client
+  const currentPosts = isSSR ? posts : posts.slice(indexOfFirstPost, indexOfLastPost);
 
   // Pagination handlers
   const handleNextPage = () => {
