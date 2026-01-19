@@ -14,7 +14,9 @@
       "Bash(node scripts/validate-blog-ssr.js:*)",
       "WebSearch",
       "Bash(dir \"C:\\\\Github\\\\website-react\" /b)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(node scripts/seo-automation/orchestrator.js:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

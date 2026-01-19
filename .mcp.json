@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "whimsylabs-geo": {
+      "command": "node",
+      "args": ["./mcp-servers/geo-mcp/index.js"]
+    },
+    "gsc": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-gsc"],
+      "env": {
+        "GOOGLE_CLIENT_ID_PATH": "./secret/client_secret_WL_CC_Analy.json"
+      }
+    }
+  }
+}

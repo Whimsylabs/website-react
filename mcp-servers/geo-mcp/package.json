@@ -1,0 +1,21 @@
+{
+  "name": "whimsylabs-geo-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for WhimsyLabs SEO/GEO metrics analysis",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "seo",
+    "geo",
+    "analytics"
+  ],
+  "author": "WhimsyLabs",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

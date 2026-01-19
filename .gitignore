@@ -66,3 +66,21 @@ public/static/js/
 public/static/js/main.0ecdd253.js
 IndexNowKey.txt
 tmpclaude-*
+
+# SEO/GEO automation data files (keep structure, exclude data)
+data/seo-metrics/queries/*.json
+data/seo-metrics/pages/*.json
+data/geo-metrics/imports/*.csv
+data/geo-metrics/normalized/*.json
+data/reports/*.json
+data/reports/*.md
+data/reports/*.html
+
+# MCP server dependencies
+mcp-servers/*/node_modules/
+
+# GSC credentials (NEVER commit these)
+*credentials*.json
+*client_secret*.json
+.gsc-token.json
+secret/*

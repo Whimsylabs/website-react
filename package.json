@@ -64,7 +64,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build-static",
-    "deploy": "gh-pages -d build && powershell -Command \"Write-Host 'Waiting 3 minutes for server to update...'; Start-Sleep -Seconds 180; Write-Host 'Starting IndexNow submission...'\" && npm run indexnow-submit"
+    "deploy": "gh-pages -d build && powershell -Command \"Write-Host 'Waiting 3 minutes for server to update...'; Start-Sleep -Seconds 180; Write-Host 'Starting IndexNow submission...'\" && npm run indexnow-submit",
+    "seo:fetch": "node scripts/seo-automation/gsc-data-fetcher.js",
+    "seo:import-geo": "node scripts/seo-automation/geo-csv-importer.js",
+    "seo:analyze": "node scripts/seo-automation/analyze-opportunities.js",
+    "seo:report": "node scripts/seo-automation/generate-report.js",
+    "seo:full": "node scripts/seo-automation/orchestrator.js full",
+    "seo:status": "node scripts/seo-automation/orchestrator.js status",
+    "mcp:geo": "node mcp-servers/geo-mcp/index.js"
   },
   "eslintConfig": {
     "extends": [
