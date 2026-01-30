@@ -83,6 +83,11 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.privacy?.description || "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
     keywords: "WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy",
   },
+  "/landing-demo": {
+    title: "WhimsyLabs: The Practical Solution for Science | Demo Landing Page",
+    description: "Experience WhimsyLabs' physics-first virtual lab engine with AI-driven assessment. Build true muscle memory while saving teachers hours of grading time.",
+    keywords: "virtual lab software, physics simulation, AI assessment, STEM education, science lab software, VR education",
+  },
 });
 
 // Route to component mapping
@@ -95,6 +100,7 @@ const routeComponentMap = {
   "/contact": "ContactPage",
   "/privacy": "PrivacyPage",
   "/bett": "BettPage",
+  "/landing-demo": "LandingDemo",
   // "/ignite-pitch": "IgnitePitchDeck", // Disabled
 };
 
@@ -218,6 +224,9 @@ async function loadReactComponents() {
 
     ReactComponents.BettPage = require("./src/Components/BettPage.js").default;
     console.log("✅ Loaded BettPage");
+
+    ReactComponents.LandingDemo = require("./src/Components/LandingDemo.js").default;
+    console.log("✅ Loaded LandingDemo");
 
     ReactComponents.BlogPost = require("./src/Components/BlogPost.js").default;
     console.log("✅ Loaded BlogPost");
@@ -677,6 +686,31 @@ async function generatePageHTML(route, data = {}) {
     const html = `<!DOCTYPE html>
 <html lang="${currentLang}">
 <head>
+    <!-- Cookie Consent & Conditional GTM -->
+    <script>
+    (function(){
+      var consent = localStorage.getItem('cookie_consent');
+      if (consent === 'granted') {
+        // Load GTM only if consent was granted
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K2SGJ8JF');
+      }
+      window.loadGTM = function() {
+        if (!window.gtmLoaded) {
+          window.gtmLoaded = true;
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K2SGJ8JF');
+        }
+      };
+    })();
+    </script>
+    <!-- End Cookie Consent & Conditional GTM -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
@@ -692,6 +726,7 @@ async function generatePageHTML(route, data = {}) {
     </script>
 </head>
 <body>
+    <!-- GTM noscript is intentionally omitted - requires consent -->
     <noscript>
         ${renderResult.html}
         <style>
@@ -720,6 +755,37 @@ async function generatePageHTML(route, data = {}) {
     </noscript>
     <div id="root">${renderResult.html}</div>
     ${assets.js}
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1f1968;color:#fff;padding:16px 20px;z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
+      <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+        <p style="margin:0;flex:1;min-width:200px;font-size:14px;line-height:1.5;">
+          We use cookies to analyse site traffic and improve your experience.
+          <a href="/privacy/" style="color:#dabeff;text-decoration:underline;">Learn more</a>
+        </p>
+        <div style="display:flex;gap:10px;flex-shrink:0;">
+          <button onclick="acceptCookies()" style="background:#dabeff;color:#1f1968;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:14px;">Accept</button>
+          <button onclick="rejectCookies()" style="background:transparent;color:#dabeff;border:2px solid #dabeff;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:600;font-size:14px;">Reject</button>
+        </div>
+      </div>
+    </div>
+    <script>
+    (function(){
+      var consent = localStorage.getItem('cookie_consent');
+      if (!consent) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+    })();
+    function acceptCookies() {
+      localStorage.setItem('cookie_consent', 'granted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      window.loadGTM();
+    }
+    function rejectCookies() {
+      localStorage.setItem('cookie_consent', 'denied');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    </script>
+    <!-- End Cookie Consent Banner -->
 </body>
 </html>`;
 

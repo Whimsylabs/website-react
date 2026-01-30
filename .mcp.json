@@ -8,7 +8,7 @@
       "command": "npx",
       "args": ["-y", "mcp-server-gsc"],
       "env": {
-        "GOOGLE_CLIENT_ID_PATH": "./secret/client_secret_WL_CC_Analy.json"
+        "GOOGLE_APPLICATION_CREDENTIALS": "./secret/gsc-service-account.json"
       }
     }
   }

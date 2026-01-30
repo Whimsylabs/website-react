@@ -16,7 +16,19 @@
       "Bash(dir \"C:\\\\Github\\\\website-react\" /b)",
       "Bash(findstr:*)",
       "Bash(node scripts/seo-automation/orchestrator.js:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run seo:status:*)",
+      "Bash(node scripts/seo-automation/gsc-data-fetcher.js:*)",
+      "Bash(node scripts/seo-automation/analyze-opportunities.js:*)",
+      "Bash(node scripts/seo-automation/geo-csv-importer.js:*)",
+      "Bash(node scripts/seo-automation/generate-report.js:*)",
+      "Bash(npx:*)",
+      "Bash(npm search:*)",
+      "Bash(ls:*)",
+      "Bash(node -e:*)",
+      "Bash(node scripts/seo-automation/test-gsc-connection.js:*)",
+      "Bash(node scripts/seo-automation/fetch-live-gsc.js:*)",
+      "Bash(node scripts/seo-automation/geo-tracker.js:*)"
     ]
   }
 }

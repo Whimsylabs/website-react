@@ -10,6 +10,7 @@ import FAQPage from "./Components/FAQPage";
 import ContactPage from "./Components/ContactPage";
 import PrivacyPage from "./Components/PrivacyPage";
 import BettPage from "./Components/BettPage";
+import LandingDemo from "./Components/LandingDemo";
 import BlogPost from "./Components/BlogPost";
 import { getCurrentLanguage } from "./i18n";
 import "./i18n/i18n"; // Initialize i18next
@@ -47,6 +48,8 @@ function App(props = {}) {
       return <PrivacyPage language={language} />;
     if (basePath === "/bett/" || basePath === "/bett")
       return <BettPage language={language} />;
+    if (basePath === "/landing-demo/" || basePath === "/landing-demo")
+      return <LandingDemo language={language} />;
     // Private/unreleased routes (disabled)
     // if (basePath === "/ignite-pitch/" || basePath === "/ignite-pitch")
     //   return <IgnitePitchDeck />;
