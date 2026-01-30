@@ -45,9 +45,14 @@ class AssetExtractor {
     }
     
     // Get any other CSS files from entrypoints
+    // Note: entrypoints use relative paths (no leading /), so normalize them
     this.assetManifest.entrypoints?.forEach(entrypoint => {
-      if (entrypoint.endsWith('.css') && !cssFiles.includes(entrypoint)) {
-        cssFiles.push(entrypoint);
+      if (entrypoint.endsWith('.css')) {
+        // Normalize to absolute path for comparison
+        const absolutePath = entrypoint.startsWith('/') ? entrypoint : '/' + entrypoint;
+        if (!cssFiles.includes(absolutePath)) {
+          cssFiles.push(absolutePath);
+        }
       }
     });
     
