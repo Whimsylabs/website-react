@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import BubbleContainer from './BubbleContainer';
+import SplashSection from './SplashSection';
 import ContactUs from './ContactUs';
 import './LandingDemo.css';
 
@@ -240,14 +241,11 @@ const LandingDemo = ({ language = 'en' }) => {
 
   return (
     <main className="landing-demo">
-      {/* Floating decorations for wide screens */}
+      {/* Floating decorations for wide screens - random selection */}
       <div className="floating-decorations">
-        <img src="/images/molecule.webp" alt="" className="floating-deco left-1" aria-hidden="true" />
-        <img src="/images/bubble beaker.webp" alt="" className="floating-deco left-2" aria-hidden="true" />
-        <img src="/images/beaker.png" alt="" className="floating-deco left-3" aria-hidden="true" />
-        <img src="/images/molecule.webp" alt="" className="floating-deco right-1" aria-hidden="true" />
-        <img src="/images/cat_beaker.png" alt="" className="floating-deco right-2" aria-hidden="true" />
-        <img src="/images/bubble beaker.webp" alt="" className="floating-deco right-3" aria-hidden="true" />
+        <img src="/images/microscope.webp" alt="" className="floating-deco left-1" aria-hidden="true" />
+        <img src="/images/molecule.webp" alt="" className="floating-deco left-2" aria-hidden="true" />
+        <img src="/images/bubble beaker.webp" alt="" className="floating-deco right-1" aria-hidden="true" />
       </div>
       
       <Header language={language} />
@@ -278,7 +276,7 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="hero-content container">
           <div className="hero-logo">
             <img
-              src="/logo512.png"
+              src="/logo.png"
               alt="WhimsyLabs"
               className="hero-logo-img"
             />
@@ -301,25 +299,11 @@ const LandingDemo = ({ language = 'en' }) => {
           </p>
           <div className="hero-platforms">
             <span className="platform-badge">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
-              </svg>
+              <img src="/images/cat_vr.png" alt="" className="platform-icon" />
               VR Headsets
             </span>
             <span className="platform-badge">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
-              </svg>
+              <img src="/images/cat_vr.png" alt="" className="platform-icon desktop-icon" />
               Desktop (Chromebook/Mac/PC)
             </span>
           </div>
@@ -406,8 +390,9 @@ const LandingDemo = ({ language = 'en' }) => {
         </section>
       </BubbleContainer>
 
-      {/* Assessment Section */}
-      <section className="assessment-section">
+      {/* Assessment Section - in SplashSection */}
+      <SplashSection topColor="#95CEF6" bottomColor="#f8f9fc">
+      <section className="assessment-section splash-inner">
         <div className="container">
           <div className="section-grid reverse">
             <div className="section-visual animate-on-scroll">
@@ -491,9 +476,8 @@ const LandingDemo = ({ language = 'en' }) => {
         </div>
       </section>
 
-      {/* Time Saving Section */}
-      <BubbleContainer>
-        <section className="time-saving-section container">
+      {/* Time Saving Section - also in SplashSection */}
+        <section className="time-saving-section container splash-inner">
           <div className="time-saving-content animate-on-scroll">
             <div className="time-badge">
               <span className="time-number">3.5</span>
@@ -512,7 +496,7 @@ const LandingDemo = ({ language = 'en' }) => {
             </div>
           </div>
         </section>
-      </BubbleContainer>
+      </SplashSection>
 
       {/* Curriculum Labs Section */}
       <section className="curriculum-section">
@@ -761,12 +745,13 @@ const LandingDemo = ({ language = 'en' }) => {
         </div>
       </section>
 
-      {/* Three Features Grid */}
-      <BubbleContainer>
-        <section className="features-grid-section container">
+      {/* Three Features Grid - Gassy Section */}
+      <section className="gassy-section">
+        <div className="gassy-bubbles"></div>
+        <div className="features-grid-section container">
           <div className="features-grid animate-on-scroll">
             <article className="feature-block">
-              <div className="feature-icon">🔬</div>
+              <img src="/images/meowdy.png" alt="" className="feature-icon-img" aria-hidden="true" />
               <h3>Freedom to Explore</h3>
               <p>
                 Students aren't limited to following instructions. They can mix
@@ -776,7 +761,7 @@ const LandingDemo = ({ language = 'en' }) => {
               </p>
             </article>
             <article className="feature-block">
-              <div className="feature-icon">♿</div>
+              <img src="/images/cat_beaker.png" alt="" className="feature-icon-img" aria-hidden="true" />
               <h3>Science for Everyone</h3>
               <p>
                 Inclusive by default. We support full control remapping,
@@ -786,7 +771,7 @@ const LandingDemo = ({ language = 'en' }) => {
               </p>
             </article>
             <article className="feature-block">
-              <div className="feature-icon">🏆</div>
+              <img src="/images/cat_brain.png" alt="" className="feature-icon-img" aria-hidden="true" />
               <h3>Rewarding Mastery</h3>
               <p>
                 We use gamification to drive understanding, not screen time.
@@ -797,8 +782,8 @@ const LandingDemo = ({ language = 'en' }) => {
               </p>
             </article>
           </div>
-        </section>
-      </BubbleContainer>
+        </div>
+      </section>
 
       {/* Pioneer Program CTA */}
       <section className="pioneer-section">
