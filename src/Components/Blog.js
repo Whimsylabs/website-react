@@ -171,11 +171,10 @@ const Blog = (props = {}) => {
   const { language } = props;
   const [activePostId] = useState(null);
 
-  // Get initial posts: props.posts (SSR) > window.__INITIAL_POSTS__ (hydration) > empty array
+  // Always use fallbackPosts for blog listing since they have actual content
+  // The server-rendered HTML uses fallbackPosts, so client should too for consistency
   const getInitialPosts = () => {
-    if (props.posts && props.posts.length > 0) return props.posts;
-    if (typeof window !== 'undefined' && window.__INITIAL_POSTS__) return window.__INITIAL_POSTS__;
-    return [];
+    return fallbackPosts;
   };
 
   const initialPosts = getInitialPosts();
@@ -255,11 +254,16 @@ const Blog = (props = {}) => {
 
   // For SSR (bots), show all posts; for client-side, use pagination
   const isSSR = typeof window === 'undefined';
-  const totalPages = Math.ceil(posts.length / postsPerPage);
+  
+  // Always use fallbackPosts for listing since they have actual content for previews
+  // The posts state is still used for language-specific translations when loaded
+  const postsToDisplay = posts.length > 0 && posts[0].content ? posts : fallbackPosts;
+  
+  const totalPages = Math.ceil(postsToDisplay.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   // Show all posts for SSR/bots, paginated for client
-  const currentPosts = isSSR ? posts : posts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = isSSR ? postsToDisplay : postsToDisplay.slice(indexOfFirstPost, indexOfLastPost);
 
   // Pagination handlers
   const handleNextPage = () => {

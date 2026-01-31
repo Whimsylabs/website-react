@@ -4,6 +4,7 @@ import Footer from './Footer';
 import BubbleContainer from './BubbleContainer';
 import SplashSection from './SplashSection';
 import ContactUs from './ContactUs';
+import Testimonial from './Testimonial';
 import './LandingDemo.css';
 
 // ============================================
@@ -293,16 +294,17 @@ const LandingDemo = ({ language = 'en' }) => {
             assessment to deliver the only virtual lab that builds true muscle
             memory while saving teachers hours of marking time.
           </p>
-          <p className="hero-subtext">
-            You're the expert at teaching. We're just the tool that makes labs
-            work — in class or as homework.
+          <p className="hero-subtext hero-dual-focus">
+            <strong>One platform, two ways to learn:</strong> Immersive VR for the classroom 
+            <em>and</em> desktop access for homework — practical science that works anywhere.
           </p>
           <div className="hero-platforms">
-            <span className="platform-badge">
+            <span className="platform-badge vr-badge">
               <img src="/images/cat_vr.png" alt="" className="platform-icon" />
               VR Headsets
             </span>
-            <span className="platform-badge">
+            <span className="platform-plus">+</span>
+            <span className="platform-badge desktop-badge">
               <img src="/images/cat_vr.png" alt="" className="platform-icon desktop-icon" />
               Desktop (Chromebook/Mac/PC)
             </span>
@@ -749,6 +751,12 @@ const LandingDemo = ({ language = 'en' }) => {
       <section className="gassy-section">
         <div className="gassy-bubbles"></div>
         <div className="features-grid-section container">
+          <div className="gassy-header">
+            <h2 className="gassy-title">Why Students Love WhimsyLabs</h2>
+            <div className="bett-award-badge">
+              <span className="award-text">🏆 Winner of the BETT 2025 Kids Judge Award</span>
+            </div>
+          </div>
           <div className="features-grid animate-on-scroll">
             <article className="feature-block">
               <img src="/images/meowdy.png" alt="" className="feature-icon-img" aria-hidden="true" />
@@ -819,17 +827,10 @@ const LandingDemo = ({ language = 'en' }) => {
         </div>
       </section>
 
-      {/* Award Banner */}
-      <section className="award-section">
-        <div className="container">
-          <div className="award-content">
-            <h2>Join the Science Education Revolution</h2>
-            <p className="award-badge">
-              Winner of the BETT 2025 Kids Judge Award
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Testimonials Section */}
+      <BubbleContainer>
+        <Testimonial />
+      </BubbleContainer>
 
       {/* Subjects Footer Banner */}
       <section className="subjects-banner">
