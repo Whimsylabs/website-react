@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.87d5c7df.css",
-    "main.js": "/static/js/main.08a7672f.js",
+    "main.css": "/static/css/main.b43b78e4.css",
+    "main.js": "/static/js/main.c1ecb593.js",
     "static/js/3929.086a7845.chunk.js": "/static/js/3929.086a7845.chunk.js",
     "static/js/4017.775bebb4.chunk.js": "/static/js/4017.775bebb4.chunk.js",
     "static/js/9574.97d5bb52.chunk.js": "/static/js/9574.97d5bb52.chunk.js",
@@ -86,11 +86,13 @@
     "static/js/6453.057e257b.chunk.js": "/static/js/6453.057e257b.chunk.js",
     "static/media/tiled.png": "/static/media/tiled.f61b4dad43f2e0e26fee.png",
     "index.html": "/index.html",
+    "static/media/bubble beaker.webp": "/static/media/bubble beaker.dbd70ffa2afe6375107c.webp",
+    "static/media/molecule.webp": "/static/media/molecule.584729a444c98da52a43.webp",
     "static/media/wave_tall.svg": "/static/media/wave_tall.ddc516966a78291cf15f.svg",
-    "static/media/left-arrow.svg": "/static/media/left-arrow.a85062204305d88a602d.svg",
-    "static/media/right-arrow.svg": "/static/media/right-arrow.6c8c62cc08d9508c78dd.svg",
-    "main.87d5c7df.css.map": "/static/css/main.87d5c7df.css.map",
-    "main.08a7672f.js.map": "/static/js/main.08a7672f.js.map",
+    "static/media/left-arrow.svg": "/static/media/left-arrow.e39498e93de92f69f8f9.svg",
+    "static/media/right-arrow.svg": "/static/media/right-arrow.6b0cf1d989325dc050c5.svg",
+    "main.b43b78e4.css.map": "/static/css/main.b43b78e4.css.map",
+    "main.c1ecb593.js.map": "/static/js/main.c1ecb593.js.map",
     "3929.086a7845.chunk.js.map": "/static/js/3929.086a7845.chunk.js.map",
     "4017.775bebb4.chunk.js.map": "/static/js/4017.775bebb4.chunk.js.map",
     "9574.97d5bb52.chunk.js.map": "/static/js/9574.97d5bb52.chunk.js.map",
@@ -175,7 +177,7 @@
     "6453.057e257b.chunk.js.map": "/static/js/6453.057e257b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87d5c7df.css",
-    "static/js/main.08a7672f.js"
+    "static/css/main.b43b78e4.css",
+    "static/js/main.c1ecb593.js"
   ]
 }
