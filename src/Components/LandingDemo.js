@@ -240,6 +240,16 @@ const LandingDemo = ({ language = 'en' }) => {
 
   return (
     <main className="landing-demo">
+      {/* Floating decorations for wide screens */}
+      <div className="floating-decorations">
+        <img src="/images/molecule.webp" alt="" className="floating-deco left-1" aria-hidden="true" />
+        <img src="/images/bubble beaker.webp" alt="" className="floating-deco left-2" aria-hidden="true" />
+        <img src="/images/beaker.png" alt="" className="floating-deco left-3" aria-hidden="true" />
+        <img src="/images/molecule.webp" alt="" className="floating-deco right-1" aria-hidden="true" />
+        <img src="/images/cat_beaker.png" alt="" className="floating-deco right-2" aria-hidden="true" />
+        <img src="/images/bubble beaker.webp" alt="" className="floating-deco right-3" aria-hidden="true" />
+      </div>
+      
       <Header language={language} />
 
       {/* Hero Section */}
