@@ -178,9 +178,9 @@ const SolutionAnalysis = () => (
         </div>
 
         <div className="actual-row">
-          <span className="actual-property">Temperature</span>
+          <span className="actual-property">Room Temp</span>
           <span className="actual-value">21.3°C</span>
-          <span className="actual-deviation">+1.3°C</span>
+          <span className="actual-deviation subtle">ambient</span>
         </div>
 
         <div className="actual-row">
