@@ -5,6 +5,7 @@ import BubbleContainer from './BubbleContainer';
 import SplashSection from './SplashSection';
 import ContactUs from './ContactUs';
 import Testimonial from './Testimonial';
+import Partners from './Partners';
 import './LandingDemo.css';
 
 // ============================================
@@ -119,7 +120,7 @@ const QuestionPreview = ({ questionNum, total, type, context, question }) => (
     </div>
     {context && (
       <div className="question-context">
-        <span className="context-icon">📋</span>
+        <span className="context-icon">📊</span>
         <span className="context-label">Your Lab Data:</span>
         <p className="context-text">{context}</p>
       </div>
@@ -129,6 +130,11 @@ const QuestionPreview = ({ questionNum, total, type, context, question }) => (
       <div className="question-input">
         <input type="text" placeholder="e.g., 8.2" className="numeric-input" readOnly />
         <span className="input-unit">pH</span>
+      </div>
+    )}
+    {type === 'Calculation' && (
+      <div className="question-input calculation">
+        <textarea placeholder="Volume of NaOH = 24.80 - 0.50 = 24.30 mL..." className="calc-input" readOnly rows={3} />
       </div>
     )}
   </div>
@@ -295,8 +301,7 @@ const LandingDemo = ({ language = 'en' }) => {
             memory while saving teachers hours of marking time.
           </p>
           <p className="hero-subtext hero-dual-focus">
-            <strong>One platform, two ways to learn:</strong> Immersive VR for the classroom 
-            <em>and</em> desktop access for homework — practical science that works anywhere.
+            <strong>One platform, two ways to learn:</strong> 
           </p>
           <div className="hero-platforms">
             <span className="platform-badge vr-badge">
@@ -305,12 +310,12 @@ const LandingDemo = ({ language = 'en' }) => {
             </span>
             <span className="platform-plus">+</span>
             <span className="platform-badge desktop-badge">
-              <img src="/images/cat_vr.png" alt="" className="platform-icon desktop-icon" />
+              <img src="/images/cat_desktop.png" alt="" className="platform-icon desktop-icon" />
               Desktop (Chromebook/Mac/PC)
             </span>
           </div>
           <div className="hero-cta">
-            <ContactUs language={language} />
+            <ContactUs language={language} buttonText="Join the Pioneer Program" />
           </div>
         </div>
       </section>
@@ -330,7 +335,7 @@ const LandingDemo = ({ language = 'en' }) => {
                 impurities and deviation between samples. Whether pouring
                 titration fluids in VR or adjusting microscope focus on a
                 Chromebook, students must use fine motor skills and procedural
-                accuracy.
+                accuracy.<sup><a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-019-0587-8" target="_blank" rel="noopener noreferrer" className="citation-link">[1]</a></sup>
               </p>
               <p className="section-text highlight-text">
                 If they drop a beaker, it breaks. If they overheat a compound,
@@ -468,9 +473,9 @@ const LandingDemo = ({ language = 'en' }) => {
                 <QuestionPreview
                   questionNum={5}
                   total={10}
-                  type="Numeric Answer"
-                  context="You used phenolphthalein as your indicator. Note: Some students used methyl orange - their answer will be different!"
-                  question="At what pH did your indicator change colour during YOUR experiment?"
+                  type="Calculation"
+                  context="Your titration data: Initial burette reading: 0.50 mL | Final reading: 24.80 mL | NaOH concentration: 0.10 M"
+                  question="Using YOUR experimental values, calculate the concentration of the HCl solution in mol/L. Show your working."
                 />
               </div>
             </div>
@@ -488,7 +493,7 @@ const LandingDemo = ({ language = 'en' }) => {
             </div>
             <div className="time-text">
               <h2 className="section-title">
-                Save 3.5 Hours of Grading Per Week.
+                Save 3.5 Hours of Grading Per Week.<sup><a href="https://journals.sagepub.com/doi/10.3102/0034654314564881" target="_blank" rel="noopener noreferrer" className="citation-link">[2]</a></sup>
               </h2>
               <p className="section-text">
                 Stop ticking boxes and start teaching. WhimsyLabs assesses skill
@@ -520,6 +525,12 @@ const LandingDemo = ({ language = 'en' }) => {
                 Need something completely custom? Our AI Experiment Builder lets
                 you paste any protocol and generate a full lab scenario in
                 minutes.
+              </p>
+              <p className="section-text">
+                <strong>Access the Worldwide Lab Library:</strong> Labs created by educators 
+                are shared across the entire WhimsyLabs community. Browse practicals from 
+                teachers around the globe, adapt them for your students, and contribute 
+                your own creations back to the community.
               </p>
               {/* Code-based UI mockup: Protocol Parser */}
               <div className="mockup-container protocol-mockup">
@@ -571,6 +582,11 @@ const LandingDemo = ({ language = 'en' }) => {
                 <div className="mockup-header">
                   <span className="mockup-title">Lab Library</span>
                   <span className="mockup-badge">Chemistry</span>
+                </div>
+                <div className="library-tabs">
+                  <button className="library-tab active">My School</button>
+                  <button className="library-tab">🌍 Community</button>
+                  <button className="library-tab">WhimsyLabs</button>
                 </div>
                 <div className="mockup-content">
                   <div className="lab-card">
@@ -752,9 +768,14 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="gassy-bubbles"></div>
         <div className="features-grid-section container">
           <div className="gassy-header">
-            <h2 className="gassy-title">Why Students Love WhimsyLabs</h2>
-            <div className="bett-award-badge">
-              <span className="award-text">🏆 Winner of the BETT 2025 Kids Judge Award</span>
+            <h2 className="gassy-title">Why Students Love WhimsyLabs<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer" className="citation-link">[3]</a></sup></h2>
+            <div className="bett-award-badges">
+              <div className="bett-award-badge">
+                <span className="award-text">🏆 BETT 2025 Kids Judge Award Winner</span>
+              </div>
+              <div className="bett-award-badge techlearning">
+                <span className="award-text">⭐ TechLearning's #1 Best of BETT 2026</span>
+              </div>
             </div>
           </div>
           <div className="features-grid animate-on-scroll">
@@ -838,6 +859,30 @@ const LandingDemo = ({ language = 'en' }) => {
           <p className="subjects-list">
             Biology • Chemistry • Physics • Electronics
           </p>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <Partners />
+
+      {/* References Section */}
+      <section className="references-section">
+        <div className="container">
+          <h3 className="references-title">References</h3>
+          <ol className="references-list">
+            <li id="ref-1">
+              Levac, D.E., Huber, M.E., & Sternad, D. (2019). Learning and transfer of complex motor skills in virtual reality: a perspective review. <em>Journal of NeuroEngineering and Rehabilitation</em>, 16, 121. 
+              <a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-019-0587-8" target="_blank" rel="noopener noreferrer">doi:10.1186/s12984-019-0587-8</a>
+            </li>
+            <li id="ref-2">
+              Van der Kleij, F.M., Feskens, R.C.W., & Eggen, T.J.H.M. (2015). Effects of Feedback in a Computer-Based Learning Environment on Students' Learning Outcomes: A Meta-Analysis. <em>Review of Educational Research</em>, 85(4), 475-511.
+              <a href="https://journals.sagepub.com/doi/10.3102/0034654314564881" target="_blank" rel="noopener noreferrer">doi:10.3102/0034654314564881</a>
+            </li>
+            <li id="ref-3">
+              Shu, Y., et al. (2024). Effectiveness of virtual laboratory in engineering education: A meta-analysis. <em>PLoS ONE</em>, 19(12). Effect sizes: motivation (3.571), engagement (2.888).
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer">doi:10.1371/journal.pone.0316269</a>
+            </li>
+          </ol>
         </div>
       </section>
 

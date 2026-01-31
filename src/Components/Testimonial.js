@@ -65,8 +65,8 @@ const Testimonial = () => {
             <h2 id="testimonial-heading" className="testimonial-header">What Educators Say About Our Virtual Lab Software</h2>
             <div className="testimonial-container">
                 <button className="carousel-control prev-icon" onClick={handlePrev} aria-label="Previous testimonial"></button>
-                <div className="testimonial-box" itemScope itemType="https://schema.org/Review">
-                    <div className={`testimonial-content ${animationClass}`}>
+                <div className={`testimonial-box ${animationClass}`} itemScope itemType="https://schema.org/Review">
+                    <div className="testimonial-content">
                         <meta itemProp="reviewRating" content="5" />
                         <blockquote className="testimonial-text" itemProp="reviewBody">
                             "{testimonials[currentIndex].text}"

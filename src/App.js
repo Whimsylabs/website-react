@@ -35,7 +35,7 @@ function App(props = {}) {
     // Remove language prefix to get the base path
     const basePath = path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 
-    if (basePath === "/") return <MainContent language={language} />;
+    if (basePath === "/") return <LandingDemo language={language} />;
     if (basePath === "/blog/" || basePath === "/blog") return <Blog language={language} />;
     if (basePath === "/services/" || basePath === "/services")
       return <Services language={language} />;
@@ -48,8 +48,9 @@ function App(props = {}) {
       return <PrivacyPage language={language} />;
     if (basePath === "/bett/" || basePath === "/bett")
       return <BettPage language={language} />;
-    if (basePath === "/landing-demo/" || basePath === "/landing-demo")
-      return <LandingDemo language={language} />;
+    // landing-demo is now the homepage
+    // if (basePath === "/landing-demo/" || basePath === "/landing-demo")
+    //   return <LandingDemo language={language} />;
     // Private/unreleased routes (disabled)
     // if (basePath === "/ignite-pitch/" || basePath === "/ignite-pitch")
     //   return <IgnitePitchDeck />;
@@ -72,8 +73,8 @@ function App(props = {}) {
       return <BlogPost slug={slug} language={language} />;
     }
 
-    // Default to MainContent
-    return <MainContent language={language} />;
+    // Default to LandingDemo (homepage)
+    return <LandingDemo language={language} />;
   };
 
   // Get current language for context

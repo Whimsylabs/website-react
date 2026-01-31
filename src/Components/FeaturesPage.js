@@ -222,6 +222,18 @@ const FeaturesPage = ({ language }) => {
               ventures
             </p>
           </div>
+          <div
+            className="award-item"
+            style={{ textAlign: "center", maxWidth: "250px" }}
+          >
+            <div className="award-icon" style={{ marginBottom: "1rem" }}>
+              <span style={{ fontSize: "4rem" }}>⭐</span>
+            </div>
+            <h4 style={{ margin: "0.5rem 0" }}>TechLearning's #1 Best of BETT 2026</h4>
+            <p style={{ fontSize: "0.9rem" }}>
+              Featured as the top pick from TechLearning's coverage of the BETT 2026 show floor
+            </p>
+          </div>
         </div>
       </div>
 

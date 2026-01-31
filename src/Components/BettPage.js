@@ -81,7 +81,10 @@ const BettPage = ({ t, language }) => {
             />
             <div className="bett-hero-badges">
               <div className="bett-award-badge">
-                BETT 2025 Kids Judge Award Winner
+                🏆 BETT 2025 Kids Judge Award Winner
+              </div>
+              <div className="bett-award-badge techlearning">
+                ⭐ TechLearning's #1 Best of BETT 2026
               </div>
               <div className="bett-date-badge">21-23 January 2026</div>
               <div className="bett-date-badge">Stand FS10</div>

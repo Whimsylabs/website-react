@@ -124,6 +124,12 @@ const translations = {
       blogButtonText: "Read Our Full BETT 2026 Blog Post",
     },
 
+    // Landing Demo (Homepage)
+    landingDemo: {
+      title: "WhimsyLabs: The Practical Solution for Science | Virtual Lab Software",
+      description: "Experience WhimsyLabs' physics-first virtual lab engine with AI-driven assessment. Build true muscle memory while saving teachers hours of grading time.",
+    },
+
     // Common
     common: {
       readMore: "Read More",
@@ -278,6 +284,12 @@ const translations = {
       ctaBooking: "Reservar Cita en BETT",
       ctaContact: "Solicitar una Llamada",
       blogButtonText: "Lee Nuestro Artículo Completo de BETT 2026",
+    },
+
+    // Landing Demo (Homepage)
+    landingDemo: {
+      title: "WhimsyLabs: La Solución Práctica para la Ciencia | Software de Laboratorio Virtual",
+      description: "Experimenta el motor de laboratorio virtual de WhimsyLabs con evaluación impulsada por IA. Desarrolla memoria muscular real mientras ahorras horas de calificación.",
     },
 
     // Common
@@ -436,6 +448,12 @@ const translations = {
       blogButtonText: "Lisez Notre Article Complet sur BETT 2026",
     },
 
+    // Landing Demo (Homepage)
+    landingDemo: {
+      title: "WhimsyLabs: La Solution Pratique pour les Sciences | Logiciel de Laboratoire Virtuel",
+      description: "Découvrez le moteur de laboratoire virtuel de WhimsyLabs avec évaluation pilotée par IA. Développez une vraie mémoire musculaire tout en économisant des heures de correction.",
+    },
+
     // Common
     common: {
       readMore: "Lire Plus",
@@ -591,6 +609,12 @@ const translations = {
       blogButtonText: "Lesen Sie Unseren Vollständigen BETT 2026 Blog-Artikel",
     },
 
+    // Landing Demo (Homepage)
+    landingDemo: {
+      title: "WhimsyLabs: Die Praktische Lösung für Wissenschaft | Virtuelle Labor-Software",
+      description: "Erleben Sie die Physik-basierte virtuelle Labor-Engine von WhimsyLabs mit KI-gesteuerter Bewertung. Entwickeln Sie echtes Muskelgedächtnis und sparen Sie Stunden bei der Benotung.",
+    },
+
     // Common
     common: {
       readMore: "Mehr Lesen",
@@ -744,6 +768,12 @@ const translations = {
       ctaBooking: "BETTの予約",
       ctaContact: "電話をリクエスト",
       blogButtonText: "BETT 2026の完全なブログ記事を読む",
+    },
+
+    // Landing Demo (Homepage)
+    landingDemo: {
+      title: "WhimsyLabs: 科学のための実践的ソリューション | バーチャルラボソフトウェア",
+      description: "WhimsyLabsの物理ベースのバーチャルラボエンジンをAI駆動評価で体験。本物の筋肉記憶を構築しながら、採点時間を節約できます。",
     },
 
     // Common

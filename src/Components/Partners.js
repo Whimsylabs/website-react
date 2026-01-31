@@ -18,9 +18,9 @@ const Partners = () => {
                 aria-label="Visit Edinburgh Innovations"
               >
                 <img
-                  src="https://www.ed.ac.uk/themes/upstream/wpp_theme/images/logo.png"
+                  src="https://edinburgh-innovations.ed.ac.uk/assets/img/logo/EI.png?v=1"
                   className="img-fluid"
-                  alt="University of Edinburgh logo"
+                  alt="Edinburgh Innovations logo"
                 />
               </a>
             </div>
