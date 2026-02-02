@@ -41,7 +41,6 @@ Allow: /bett/
 Allow: /blog/
 Allow: /contact/
 Allow: /de/
-Allow: /demo/
 Allow: /es/
 Allow: /faq/
 Allow: /features/
@@ -100,7 +99,6 @@ Allow: /de/faq/
 Allow: /de/features/
 Allow: /de/privacy/
 Allow: /de/services/
-Allow: /demo/
 Allow: /es/
 Allow: /es/bett/
 Allow: /es/blog/
@@ -189,5 +187,5 @@ Allow: /services/
 
 # Blog posts summary: 95 total (included above)
 
-# Total pages in build: 135
+# Total pages in build: 134
 # This file is generated automatically - do not edit manually
