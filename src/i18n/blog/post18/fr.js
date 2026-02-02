@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Hiver de la RV ? Pourquoi les Laboratoires Virtuels Web-First Sont l'Investissement Intelligent pour les Écoles";
+  "Hiver de la RV ? Pourquoi les Labos Web-First Sont le Bon Choix";
 export const description =
   "Avec la baisse des ventes de casques RV et les coupes de Meta dans Reality Labs, les écoles ont besoin de technologie éducative indépendante des cycles matériels. Voici pourquoi les laboratoires virtuels web-first sont le choix durable.";
 export const keywords = [
@@ -32,11 +32,11 @@ export const content = (
     <p>
       Les récents gros titres ont provoqué des remous dans le secteur de la technologie éducative : Meta aurait réduit de 10-15% ses effectifs chez Reality Labs, les livraisons de casques RV ont chuté de 42,8% en 2025 par rapport à l'année précédente, et les analystes de l'industrie utilisent des expressions comme « hiver de la RV » pour décrire les conditions actuelles du marché (
       <a
-        href="https://www.theverge.com/2024/12/10/meta-reality-labs-layoffs-vr"
+        href="https://www.cnbc.com/2026/01/24/metas-reality-labs-cuts-sparked-fears-of-a-vr-winter.html"
         target="_blank"
         rel="noopener noreferrer"
       >
-        The Verge, 2025
+        CNBC, 2026
       </a>
       ). Pour les écoles qui ont investi massivement dans le matériel RV pour l'enseignement des sciences, ces développements soulèvent des questions inconfortables sur la durabilité et le support futur.
     </p>

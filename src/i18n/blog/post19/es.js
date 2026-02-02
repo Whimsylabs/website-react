@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "La IA Mejoró las Calificaciones un 127%. Luego los Estudiantes No Podían Pensar Sin Ella.";
+  "La IA Subió Notas 127%. Luego los Alumnos No Pensaban Sin Ella.";
 export const description =
   "Nueva investigación de la OCDE revela un patrón preocupante: los tutores de IA mejoran drásticamente las calificaciones, pero los estudiantes pierden la capacidad de resolver problemas de forma independiente. Aquí explicamos por qué los laboratorios virtuales prácticos ofrecen un mejor camino.";
 export const keywords = [

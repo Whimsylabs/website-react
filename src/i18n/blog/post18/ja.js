@@ -32,7 +32,7 @@ export const content = (
     <p>
       最近のニュースは教育テクノロジー業界に波紋を広げています。MetaがReality Labsの従業員を10-15%削減したと報じられ、VRヘッドセットの出荷台数は2025年に前年比42.8%減少し、業界アナリストは現在の市場状況を「VRの冬」という表現で説明しています（
       <a
-        href="https://www.theverge.com/2024/12/10/meta-reality-labs-layoffs-vr"
+        href="https://www.cnbc.com/2026/01/24/metas-reality-labs-cuts-sparked-fears-of-a-vr-winter.html"
         target="_blank"
         rel="noopener noreferrer"
       >

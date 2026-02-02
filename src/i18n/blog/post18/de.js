@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "VR-Winter? Warum Web-First Virtuelle Labore die Kluge Investition für Schulen Sind";
+  "VR-Winter? Warum Web-First Virtuelle Labore die Kluge Wahl Sind";
 export const description =
   "Mit sinkenden VR-Headset-Verkäufen und Metas Kürzungen bei Reality Labs brauchen Schulen Bildungstechnologie, die nicht von Hardware-Zyklen abhängig ist. Erfahren Sie, warum Web-First virtuelle Labore die nachhaltige Wahl sind.";
 export const keywords = [
@@ -32,11 +32,11 @@ export const content = (
     <p>
       Aktuelle Schlagzeilen haben Wellen durch den Bildungstechnologie-Sektor geschickt: Meta hat Berichten zufolge 10-15% seiner Reality Labs-Belegschaft abgebaut, die VR-Headset-Lieferungen sind 2025 im Vergleich zum Vorjahr um 42,8% gesunken, und Branchenanalysten verwenden Begriffe wie „VR-Winter", um die aktuellen Marktbedingungen zu beschreiben (
       <a
-        href="https://www.theverge.com/2024/12/10/meta-reality-labs-layoffs-vr"
+        href="https://www.cnbc.com/2026/01/24/metas-reality-labs-cuts-sparked-fears-of-a-vr-winter.html"
         target="_blank"
         rel="noopener noreferrer"
       >
-        The Verge, 2025
+        CNBC, 2026
       </a>
       ). Für Schulen, die stark in VR-Hardware für den naturwissenschaftlichen Unterricht investiert haben, werfen diese Entwicklungen unbequeme Fragen zur Nachhaltigkeit und zukünftigen Unterstützung auf.
     </p>

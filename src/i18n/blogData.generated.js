@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-02T14:43:59.201Z
+// Generated on 2026-02-02T15:19:26.255Z
 
 module.exports = {
   "en": [
@@ -45,7 +45,7 @@ module.exports = {
     {
       "id": "post18",
       "slug": "vr-winter-web-first-virtual-labs",
-      "title": "VR Winter? Why Web-First Virtual Labs Are the Smart Investment for Schools",
+      "title": "VR Winter? Why Web-First Virtual Labs Are Smart for Schools",
       "description": "As VR headset sales decline and Meta cuts Reality Labs staff, schools need education technology that isn't dependent on hardware cycles. Here's why web-first virtual labs are the sustainable choice.",
       "keywords": [
         "VR winter",
@@ -254,7 +254,7 @@ module.exports = {
     {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
-      "title": "KI Steigerte Testergebnisse um 127%. Dann Konnten Schüler Nicht Mehr Ohne Sie Denken.",
+      "title": "KI Steigerte Noten um 127%. Dann Dachten Schüler Nicht Mehr Allein.",
       "description": "Neue OECD-Forschung enthüllt ein beunruhigendes Muster: KI-Tutoren verbessern die Noten dramatisch, aber Schüler verlieren die Fähigkeit, eigenständig Probleme zu lösen. Hier erfahren Sie, warum praktische virtuelle Labore einen besseren Weg bieten.",
       "keywords": [
         "OECD KI Bildung",
@@ -293,7 +293,7 @@ module.exports = {
     {
       "id": "post18",
       "slug": "vr-winter-web-first-virtual-labs",
-      "title": "VR-Winter? Warum Web-First Virtuelle Labore die Kluge Investition für Schulen Sind",
+      "title": "VR-Winter? Warum Web-First Virtuelle Labore die Kluge Wahl Sind",
       "description": "Mit sinkenden VR-Headset-Verkäufen und Metas Kürzungen bei Reality Labs brauchen Schulen Bildungstechnologie, die nicht von Hardware-Zyklen abhängig ist. Erfahren Sie, warum Web-First virtuelle Labore die nachhaltige Wahl sind.",
       "keywords": [
         "VR Winter",
@@ -580,7 +580,7 @@ module.exports = {
     {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
-      "title": "L'IA a Amélioré les Notes de 127%. Puis les Étudiants Ne Pouvaient Plus Penser Sans Elle.",
+      "title": "L'IA a Boosté les Notes de 127%. Puis les Élèves Ne Pensaient Plus.",
       "description": "Une nouvelle recherche de l'OCDE révèle une tendance préoccupante : les tuteurs IA améliorent considérablement les notes, mais les étudiants perdent leur capacité à résoudre des problèmes de manière autonome. Voici pourquoi les laboratoires virtuels pratiques offrent une meilleure voie.",
       "keywords": [
         "OCDE éducation IA",
@@ -619,7 +619,7 @@ module.exports = {
     {
       "id": "post18",
       "slug": "vr-winter-web-first-virtual-labs",
-      "title": "Hiver de la RV ? Pourquoi les Laboratoires Virtuels Web-First Sont l'Investissement Intelligent pour les Écoles",
+      "title": "Hiver de la RV ? Pourquoi les Labos Web-First Sont le Bon Choix",
       "description": "Avec la baisse des ventes de casques RV et les coupes de Meta dans Reality Labs, les écoles ont besoin de technologie éducative indépendante des cycles matériels. Voici pourquoi les laboratoires virtuels web-first sont le choix durable.",
       "keywords": [
         "hiver RV",
@@ -906,7 +906,7 @@ module.exports = {
     {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
-      "title": "La IA Mejoró las Calificaciones un 127%. Luego los Estudiantes No Podían Pensar Sin Ella.",
+      "title": "La IA Subió Notas 127%. Luego los Alumnos No Pensaban Sin Ella.",
       "description": "Nueva investigación de la OCDE revela un patrón preocupante: los tutores de IA mejoran drásticamente las calificaciones, pero los estudiantes pierden la capacidad de resolver problemas de forma independiente. Aquí explicamos por qué los laboratorios virtuales prácticos ofrecen un mejor camino.",
       "keywords": [
         "OCDE educación IA",
@@ -945,7 +945,7 @@ module.exports = {
     {
       "id": "post18",
       "slug": "vr-winter-web-first-virtual-labs",
-      "title": "¿Invierno de RV? Por Qué los Laboratorios Virtuales Web-First Son la Inversión Inteligente para Escuelas",
+      "title": "¿Invierno de RV? Por Qué los Labos Web-First Son la Mejor Opción",
       "description": "Con la caída de ventas de cascos de RV y los recortes de Meta en Reality Labs, las escuelas necesitan tecnología educativa que no dependa de ciclos de hardware. Descubre por qué los laboratorios virtuales web-first son la opción sostenible.",
       "keywords": [
         "invierno RV",

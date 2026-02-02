@@ -233,17 +233,7 @@ const Blog = (props = {}) => {
     setCurrentLanguage(language);
     setLanguagePrefix(langPrefix);
 
-    // Skip loading if we already have posts from SSR or hydration data
-    if ((props.posts && props.posts.length > 0) ||
-        (typeof window !== 'undefined' && window.__INITIAL_POSTS__ && window.__INITIAL_POSTS__.length > 0)) {
-      const ssrPosts = props.posts || window.__INITIAL_POSTS__;
-      console.log('Blog: Using SSR/hydration posts:', ssrPosts.length);
-      setPosts(ssrPosts);
-      setLoading(false);
-      return;
-    }
-
-    // Client-side loading (fallback if no SSR posts)
+    // Client-side loading - always load translated posts for non-English languages
     const loadBlogPosts = async () => {
       console.log('Blog: Loading posts client-side for language:', language);
 
@@ -282,9 +272,17 @@ const Blog = (props = {}) => {
   // For SSR (bots), show all posts; for client-side, use pagination
   const isSSR = typeof window === 'undefined';
   
-  // Always use fallbackPosts for listing since they have actual content for previews
-  // The posts state is still used for language-specific translations when loaded
-  const postsToDisplay = posts.length > 0 && posts[0].content ? posts : fallbackPosts;
+  // Merge translated metadata (title, description) with fallback content for preview cards
+  // This ensures translated titles show while content extraction still works
+  const postsToDisplay = posts.length > 0 ? posts.map(post => {
+    // Find the corresponding fallback post for content if translated content is missing
+    const fallbackPost = fallbackPosts.find(fp => fp.id === post.id);
+    return {
+      ...post,
+      // Use translated content if available, otherwise fallback to English content for preview extraction
+      content: post.content || (fallbackPost ? fallbackPost.content : null)
+    };
+  }) : fallbackPosts;
   
   const totalPages = Math.ceil(postsToDisplay.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;

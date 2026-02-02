@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "VR Winter? Why Web-First Virtual Labs Are the Smart Investment for Schools";
+  "VR Winter? Why Web-First Virtual Labs Are Smart for Schools";
 export const description =
   "As VR headset sales decline and Meta cuts Reality Labs staff, schools need education technology that isn't dependent on hardware cycles. Here's why web-first virtual labs are the sustainable choice.";
 export const keywords = [

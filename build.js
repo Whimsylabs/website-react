@@ -670,38 +670,14 @@ async function generatePageHTML(route, data = {}) {
       }
     }
 
-    // For blog posts, load the full translated content
+    // For blog posts, pass the slug so BlogPost can load content client-side
+    // Note: SSR content loading was disabled due to JSX escaping issues
+    // Content loads via client-side hydration which works correctly
     if (route.includes('/blog/') && !route.endsWith('/blog') && !route.endsWith('/blog/') && data.slug) {
-      try {
-        const language = data.language || 'en';
-        const { loadBlogPostContent } = require('./scripts/blog-content-loader.js');
-        
-        // Map slug back to post ID
-        const slugToPostId = {
-          'whimsylabs-education-revolution': 'post1',
-          'physicality-in-virtual-labs': 'post2', 
-          'virtual-kidney-dissection-send-engagement': 'post3',
-          'ai-powered-virtual-labs-solving-education-crisis': 'post4',
-          'whimsycat-ai-tutor-transforming-science-education': 'post5',
-          'sandbox-learning-revolution-stem-education': 'post6'
-        };
-        
-        const postId = slugToPostId[data.slug];
-        if (postId) {
-          const translatedPost = await loadBlogPostContent(language, postId);
-          if (translatedPost) {
-            // Add the translated content to props
-            props.content = translatedPost.content;
-            props.title = translatedPost.title;
-            props.description = translatedPost.description;
-            props.hasFullTranslation = translatedPost.hasFullTranslation;
-            props.date = data.date; // Keep the original date
-            console.log(`✅ Loaded translated content for ${data.slug} in ${language}`);
-          }
-        }
-      } catch (contentError) {
-        console.warn(`⚠️ Could not load translated content for ${data.slug}:`, contentError.message);
-      }
+      props.slug = data.slug;
+      props.title = data.title;
+      props.description = data.description;
+      props.date = data.date;
     }
 
     // Render component to string

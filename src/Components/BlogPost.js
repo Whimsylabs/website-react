@@ -391,7 +391,9 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
             <div className="post-box" id={`post-${post.id || post.slug}`}>
               <h1 className="post-title">{post.title}</h1>
               <span className="post-date">{formatDate(post.date)}</span>
-              <div className="post-content">{post.content}</div>
+              {typeof post.content === 'string' 
+                ? <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+                : <div className="post-content">{post.content}</div>}
               
               <div className="post-navigation">
                 <div className="post-nav-links">

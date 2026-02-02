@@ -1,7 +1,7 @@
 import React from "react";
 
 export const title =
-  "VR Winter? Why Web-First Virtual Labs Are the Smart Investment for Schools";
+  "VR Winter? Why Web-First Virtual Labs Are Smart for Schools";
 export const date = "2026-02-01";
 export const slug = "vr-winter-web-first-virtual-labs";
 export const description =
@@ -31,15 +31,23 @@ export const content = (
     </figure>
 
     <p>
-      Recent headlines have sent ripples through the education technology sector: Meta has reportedly cut 10-15% of its Reality Labs workforce, VR headset shipments dropped 42.8% in 2025 compared to the previous year, and industry analysts are using phrases like "VR winter" to describe the current market conditions (
+      Recent headlines have sent ripples through the education technology sector: Meta has reportedly cut around 10% of its Reality Labs workforce (
       <a
-        href="https://www.theverge.com/2024/12/10/meta-reality-labs-layoffs-vr"
+        href="https://www.uploadvr.com/meta-reportedly-laying-off-over-10-of-reality-labs/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        The Verge, 2025
+        UploadVR, 2026
       </a>
-      ). For schools that invested heavily in VR hardware for science education, these developments raise uncomfortable questions about sustainability and future support.
+      ), the VR market shrank 12% in 2024 marking the third consecutive year of decline (
+      <a
+        href="https://www.cnbc.com/2026/01/24/metas-reality-labs-cuts-sparked-fears-of-a-vr-winter.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CNBC, 2026
+      </a>
+      ), and industry analysts are now using phrases like "VR winter" to describe the current market conditions. For schools that invested heavily in VR hardware for science education, these developments raise uncomfortable questions about sustainability and future support.
     </p>
 
     <p>
@@ -151,5 +159,32 @@ export const content = (
     <p>
       Ready to see physics-first virtual labs that work on any device? <a href="/contact">Get in touch</a> to schedule a demonstration.
     </p>
+
+    <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />
+    <p style={{ fontSize: '0.9rem', color: '#666' }}>
+      <strong>Sources:</strong>
+    </p>
+    <ul style={{ fontSize: '0.9rem', color: '#666' }}>
+      <li>
+        <a href="https://www.uploadvr.com/meta-reportedly-laying-off-over-10-of-reality-labs/" target="_blank" rel="noopener noreferrer">
+          UploadVR: "Meta Reportedly Laying Off More Than 10% Of Reality Labs" (January 2026)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.cnbc.com/2026/01/24/metas-reality-labs-cuts-sparked-fears-of-a-vr-winter.html" target="_blank" rel="noopener noreferrer">
+          CNBC: "Meta's Reality Labs cuts sparked fears of a 'VR winter'" (January 2026)
+        </a>
+      </li>
+      <li>
+        <a href="https://finance.yahoo.com/news/meta-makes-drastic-workforce-decision-181700636.html" target="_blank" rel="noopener noreferrer">
+          Yahoo Finance: "Meta Quest VR headset shipments declined 16% in 2025" (January 2026)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.trendforce.com/news/2026/01/27/news-meta-reportedly-scales-back-vr-with-10-reality-labs-layoffs-pivots-to-ai-and-wearables/" target="_blank" rel="noopener noreferrer">
+          TrendForce: "Meta Reportedly Scales Back VR With Reality Labs Layoffs" (January 2026)
+        </a>
+      </li>
+    </ul>
   </div>
 );
