@@ -107,79 +107,66 @@ const SchemaMarkup = () => {
     ],
   };
 
-  // Testimonials as Review schema
-  const reviewsSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        item: {
-          "@type": "Review",
-          itemReviewed: {
-            "@type": "SoftwareApplication",
-            name: "WhimsyLabs Virtual Laboratory",
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: "5",
-            bestRating: "5",
-          },
-          author: {
-            "@type": "Person",
-            name: "Kids Judge Bett",
-          },
-          reviewBody:
-            "Very fun and engaging, and will cater fun for all children!",
-        },
+  // Testimonials as individual Review schemas (flat array for Google compatibility)
+  const reviewsSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      itemReviewed: {
+        "@type": "SoftwareApplication",
+        name: "WhimsyLabs Virtual Laboratory",
       },
-      {
-        "@type": "ListItem",
-        position: 2,
-        item: {
-          "@type": "Review",
-          itemReviewed: {
-            "@type": "SoftwareApplication",
-            name: "WhimsyLabs Virtual Laboratory",
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: "5",
-            bestRating: "5",
-          },
-          author: {
-            "@type": "Person",
-            name: "Bett2025 Lab Manager",
-          },
-          reviewBody:
-            "The feeling of the lab was amazing. Being able to train students in practicals remotely not only saves our glassware/equipment but gives students an extra space to learn lab skills effectively.",
-        },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
       },
-      {
-        "@type": "ListItem",
-        position: 3,
-        item: {
-          "@type": "Review",
-          itemReviewed: {
-            "@type": "SoftwareApplication",
-            name: "WhimsyLabs Virtual Laboratory",
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: "5",
-            bestRating: "5",
-          },
-          author: {
-            "@type": "Person",
-            name: "Bett2025 Teacher",
-          },
-          reviewBody:
-            "The automated grading on a curve with a wide range of student outcomes is incredible. It saves me so much time and targets our learning objectives perfectly.",
-        },
+      author: {
+        "@type": "Person",
+        name: "Kids Judge Bett",
       },
-    ],
-  };
+      reviewBody:
+        "Very fun and engaging, and will cater fun for all children!",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      itemReviewed: {
+        "@type": "SoftwareApplication",
+        name: "WhimsyLabs Virtual Laboratory",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: {
+        "@type": "Person",
+        name: "Bett2025 Lab Manager",
+      },
+      reviewBody:
+        "The feeling of the lab was amazing. Being able to train students in practicals remotely not only saves our glassware/equipment but gives students an extra space to learn lab skills effectively.",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      itemReviewed: {
+        "@type": "SoftwareApplication",
+        name: "WhimsyLabs Virtual Laboratory",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: {
+        "@type": "Person",
+        name: "Bett2025 Teacher",
+      },
+      reviewBody:
+        "The automated grading on a curve with a wide range of student outcomes is incredible. It saves me so much time and targets our learning objectives perfectly.",
+    },
+  ];
 
   // Helper function to strip HTML tags from text
   const stripHtml = (html) => {
@@ -478,7 +465,7 @@ const SchemaMarkup = () => {
   }
 
   if (currentPath === "/") {
-    schemasToInclude.push(productSchema, reviewsSchema, faqSchema, howToSchema);
+    schemasToInclude.push(productSchema, ...reviewsSchema, faqSchema, howToSchema);
   } else if (currentPath === "/services") {
     schemasToInclude.push(productSchema, courseSchema, howToSchema);
   } else if (currentPath === "/features") {

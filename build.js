@@ -948,7 +948,7 @@ async function generateSitemap() {
         // Add alternate language links
         for (const altLang of config.supportedLanguages) {
           const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
-          const altUrl = `${config.siteUrl}${altLangPrefix}${page}`;
+          const altUrl = `${config.siteUrl}${altLangPrefix}${page.path}`;
           sitemap += `
         <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}"/>`;
         }
