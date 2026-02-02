@@ -16,31 +16,58 @@ const path = require('path');
 
 const BUILD_DIR = path.join(__dirname, '..', 'build');
 
-// Load blog post metadata from blogData.generated.js (the source of truth for rendered content)
+// Load blog post metadata AND content snippets from source files
 let blogPostsMetadata = {};
 try {
-  const blogDataPath = path.join(__dirname, '..', 'src', 'i18n', 'blogData.generated.js');
-  const blogDataContent = fs.readFileSync(blogDataPath, 'utf8');
+  const blogDir = path.join(__dirname, '..', 'src', 'Components', 'blog');
+  const postFiles = fs.readdirSync(blogDir).filter(f => f.match(/^Post\d+\.js$/));
   
-  // Parse the English posts from the generated data
-  // Format: { "id": "postN", "slug": "...", "title": "...", "description": "..." }
-  const postRegex = /"id":\s*"post\d+",\s*"slug":\s*"([^"]+)",\s*"title":\s*"([^"]+)",\s*"description":\s*"([^"]*)"/g;
-  let match;
-  while ((match = postRegex.exec(blogDataContent)) !== null) {
-    const slug = match[1];
-    const title = match[2];
-    const description = match[3];
-    
-    // Only add if not already present (first occurrence is English)
-    if (!blogPostsMetadata[slug]) {
+  for (const file of postFiles) {
+    try {
+      const content = fs.readFileSync(path.join(blogDir, file), 'utf8');
+      
+      // Extract slug
+      const slugMatch = content.match(/export const slug\s*=\s*["'`]([^"'`]+)["'`]/);
+      if (!slugMatch) continue;
+      const slug = slugMatch[1];
+      
+      // Extract title
+      const titleMatch = content.match(/export const title\s*=[\s\n]*["'`]([^"'`]+)["'`]/s);
+      const title = titleMatch ? titleMatch[1].replace(/\s+/g, ' ').trim() : '';
+      
+      // Extract a content snippet - find first paragraph text
+      // Look for text between <p> tags that's at least 30 chars
+      const paragraphMatches = content.match(/<p[^>]*>\s*([^<]{30,})/g) || [];
+      let contentSnippet = '';
+      
+      for (const para of paragraphMatches) {
+        // Extract just the text content
+        const textMatch = para.match(/<p[^>]*>\s*([^<]+)/);
+        if (textMatch && textMatch[1].trim().length > 30) {
+          // Get first 50 chars of clean text as our verification snippet
+          contentSnippet = textMatch[1].trim()
+            .replace(/\s+/g, ' ')
+            .substring(0, 50);
+          break;
+        }
+      }
+      
       blogPostsMetadata[slug] = {
         title: title,
-        description: description,
+        contentSnippet: contentSnippet,
         keyPhrases: extractKeyPhrases(title)
       };
+      
+    } catch (e) {
+      // Skip posts that fail to load
     }
   }
   console.log(`📚 Loaded metadata for ${Object.keys(blogPostsMetadata).length} blog posts`);
+  
+  // Debug: show what snippets we found
+  const withSnippets = Object.values(blogPostsMetadata).filter(m => m.contentSnippet).length;
+  console.log(`📝 Found content snippets for ${withSnippets} posts`);
+  
 } catch (e) {
   console.warn('⚠️ Could not load blog post metadata:', e.message);
 }
@@ -345,42 +372,39 @@ function validateFile(filePath, relativePath) {
     }
   }
 
-  // 11. For blog posts, verify actual content from the source post appears
+  // 11. For blog posts, verify CONTENT from the source post appears in the HTML
   if (expectations.verifyBlogContent) {
     const slug = extractBlogSlug(relativePath);
-    if (slug && blogPostsMetadata[slug]) {
+    const lang = getExpectedLanguage(relativePath);
+    
+    // Check that post-title element exists
+    const postTitleMatch = html.match(/<h1[^>]*class="post-title"[^>]*>([^<]+)</i);
+    if (!postTitleMatch) {
+      errors.push('Blog post missing <h1 class="post-title"> element');
+    }
+    
+    // CRITICAL: For English pages, verify actual paragraph content from source appears in HTML
+    if (lang === 'en' && slug && blogPostsMetadata[slug]) {
       const postMeta = blogPostsMetadata[slug];
       
-      // Check that the post title appears in the rendered content
-      // Note: For non-English pages, the title might be translated, so we check key phrases
-      const titleInContent = rootContent.toLowerCase().includes(postMeta.title.toLowerCase());
-      const titleInHtml = html.toLowerCase().includes(postMeta.title.toLowerCase());
-      
-      if (!titleInContent && !titleInHtml) {
-        // For non-English, check if at least some key phrases appear
-        const lang = getExpectedLanguage(relativePath);
-        if (lang === 'en') {
-          errors.push(`Blog post title not found in rendered content: "${postMeta.title.substring(0, 50)}..."`);
-        } else {
-          // For translated pages, check key phrases as a softer check
-          const foundPhrases = postMeta.keyPhrases.filter(phrase => 
-            rootContent.toLowerCase().includes(phrase) || html.toLowerCase().includes(phrase)
-          );
-          if (foundPhrases.length === 0) {
-            warnings.push(`No key phrases from title found in ${lang} content (may need translation check)`);
-          }
+      if (postMeta.contentSnippet && postMeta.contentSnippet.length > 20) {
+        // Normalize the snippet and HTML for comparison
+        const normalizeText = (t) => t
+          .replace(/&#x27;/g, "'")
+          .replace(/&amp;/g, '&')
+          .replace(/&quot;/g, '"')
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/\s+/g, ' ')
+          .toLowerCase();
+        
+        const snippetNorm = normalizeText(postMeta.contentSnippet);
+        const htmlNorm = normalizeText(html);
+        
+        // Check if the content snippet appears in the HTML
+        if (!htmlNorm.includes(snippetNorm.substring(0, 30))) {
+          errors.push(`CONTENT MISSING: Blog post content not found in HTML! Expected text: "${postMeta.contentSnippet.substring(0, 40)}..."`);
         }
-      }
-      
-      // Check that the post-title element contains the title (or a translation)
-      const postTitleMatch = rootContent.match(/<h1[^>]*class="post-title"[^>]*>([^<]+)</i);
-      if (postTitleMatch) {
-        const renderedTitle = postTitleMatch[1].trim();
-        if (renderedTitle.length < 10) {
-          errors.push(`Post title element appears empty or too short: "${renderedTitle}"`);
-        }
-      } else {
-        errors.push('Could not find post-title element in blog post');
       }
     }
   }
@@ -396,9 +420,12 @@ function validateFile(filePath, relativePath) {
  * Extract blog slug from file path
  * e.g., "blog/my-post/index.html" -> "my-post"
  * e.g., "es/blog/my-post/index.html" -> "my-post"
+ * Handles both forward and back slashes (Windows vs Linux)
  */
 function extractBlogSlug(relativePath) {
-  const match = relativePath.match(/(?:^|\/)(blog\/([^/]+))\/index\.html$/);
+  // Normalize to forward slashes
+  const normalized = relativePath.replace(/\\/g, '/');
+  const match = normalized.match(/(?:^|\/)(blog\/([^/]+))\/index\.html$/);
   return match ? match[2] : null;
 }
 
@@ -409,8 +436,9 @@ function extractRootContent(html) {
 }
 
 function getPageType(relativePath) {
-  // Normalize path: remove language prefix and index.html
+  // Normalize path: convert backslashes, remove language prefix and index.html
   let normalized = relativePath
+    .replace(/\\/g, '/')  // Windows -> Unix paths
     .replace(/^(es|fr|de|jp)\//, '/')
     .replace(/index\.html$/, '')
     .replace(/\/$/, '');
@@ -419,8 +447,8 @@ function getPageType(relativePath) {
     return '/';
   }
 
-  // Check for blog post pattern
-  if (normalized.match(/^\/?(blog\/[^/]+)/)) {
+  // Check for blog post pattern (not the blog listing itself)
+  if (normalized.match(/^\/?(blog\/[^/]+)/) && normalized !== '/blog' && normalized !== 'blog') {
     return '/blog/*';
   }
 
@@ -439,10 +467,12 @@ function getPageType(relativePath) {
 }
 
 function getExpectedLanguage(relativePath) {
-  if (relativePath.startsWith('es/')) return 'es';
-  if (relativePath.startsWith('fr/')) return 'fr';
-  if (relativePath.startsWith('de/')) return 'de';
-  if (relativePath.startsWith('jp/')) return 'jp';
+  // Handle both forward and back slashes (Windows vs Linux)
+  const normalized = relativePath.replace(/\\/g, '/');
+  if (normalized.startsWith('es/')) return 'es';
+  if (normalized.startsWith('fr/')) return 'fr';
+  if (normalized.startsWith('de/')) return 'de';
+  if (normalized.startsWith('jp/')) return 'jp';
   return 'en';
 }
 
