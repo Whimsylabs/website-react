@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-01
+# Last updated: 2026-02-02
 
 User-agent: *
 Allow: /
@@ -58,6 +58,7 @@ Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /blog/gamification-science-education-points-rewards-engagement/
 Allow: /blog/green-labs-sustainability-virtual-stem-education/
+Allow: /blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /blog/physicality-in-virtual-labs/
 Allow: /blog/sandbox-learning-revolution-stem-education/
 Allow: /blog/science-real-time-physics-simulations-virtual-labs/
@@ -65,9 +66,11 @@ Allow: /blog/virtual-kidney-dissection-send-engagement/
 Allow: /blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /blog/vr-winter-web-first-virtual-labs/
 Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /blog/whimsylabs-education-revolution/
+Allow: /blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /contact/
 Allow: /de/
@@ -78,6 +81,7 @@ Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /de/blog/gamification-science-education-points-rewards-engagement/
 Allow: /de/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /de/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /de/blog/physicality-in-virtual-labs/
 Allow: /de/blog/sandbox-learning-revolution-stem-education/
 Allow: /de/blog/science-real-time-physics-simulations-virtual-labs/
@@ -85,9 +89,11 @@ Allow: /de/blog/virtual-kidney-dissection-send-engagement/
 Allow: /de/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /de/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /de/blog/vr-winter-web-first-virtual-labs/
 Allow: /de/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /de/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /de/blog/whimsylabs-education-revolution/
+Allow: /de/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /de/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /de/contact/
 Allow: /de/faq/
@@ -103,6 +109,7 @@ Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /es/blog/gamification-science-education-points-rewards-engagement/
 Allow: /es/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /es/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /es/blog/physicality-in-virtual-labs/
 Allow: /es/blog/sandbox-learning-revolution-stem-education/
 Allow: /es/blog/science-real-time-physics-simulations-virtual-labs/
@@ -110,9 +117,11 @@ Allow: /es/blog/virtual-kidney-dissection-send-engagement/
 Allow: /es/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /es/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /es/blog/vr-winter-web-first-virtual-labs/
 Allow: /es/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /es/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /es/blog/whimsylabs-education-revolution/
+Allow: /es/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /es/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /es/contact/
 Allow: /es/faq/
@@ -129,6 +138,7 @@ Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
 Allow: /fr/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /fr/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /fr/blog/physicality-in-virtual-labs/
 Allow: /fr/blog/sandbox-learning-revolution-stem-education/
 Allow: /fr/blog/science-real-time-physics-simulations-virtual-labs/
@@ -136,9 +146,11 @@ Allow: /fr/blog/virtual-kidney-dissection-send-engagement/
 Allow: /fr/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /fr/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /fr/blog/vr-winter-web-first-virtual-labs/
 Allow: /fr/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /fr/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /fr/blog/whimsylabs-education-revolution/
+Allow: /fr/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /fr/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /fr/contact/
 Allow: /fr/faq/
@@ -153,6 +165,7 @@ Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
 Allow: /jp/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /jp/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /jp/blog/physicality-in-virtual-labs/
 Allow: /jp/blog/sandbox-learning-revolution-stem-education/
 Allow: /jp/blog/science-real-time-physics-simulations-virtual-labs/
@@ -160,9 +173,11 @@ Allow: /jp/blog/virtual-kidney-dissection-send-engagement/
 Allow: /jp/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /jp/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /jp/blog/vr-winter-web-first-virtual-labs/
 Allow: /jp/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /jp/blog/whimsylabs-bett-2026-exhibition-announcement/
 Allow: /jp/blog/whimsylabs-education-revolution/
+Allow: /jp/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /jp/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /jp/contact/
 Allow: /jp/faq/
@@ -172,7 +187,7 @@ Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 80 total (included above)
+# Blog posts summary: 95 total (included above)
 
-# Total pages in build: 120
+# Total pages in build: 135
 # This file is generated automatically - do not edit manually
