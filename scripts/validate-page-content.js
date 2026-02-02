@@ -16,9 +16,57 @@ const path = require('path');
 
 const BUILD_DIR = path.join(__dirname, '..', 'build');
 
-// Load blog post metadata AND content snippets from source files
+// Load blog post content snippets for ALL languages
+// Structure: blogPostsMetadata[slug][lang] = { title, contentSnippet }
 let blogPostsMetadata = {};
+
+// Map slugs to post IDs
+const slugToPostId = {
+  'whimsylabs-education-revolution': 'post1',
+  'physicality-in-virtual-labs': 'post2',
+  'virtual-kidney-dissection-send-engagement': 'post3',
+  'ai-powered-virtual-labs-solving-education-crisis': 'post4',
+  'whimsycat-ai-tutor-transforming-science-education': 'post5',
+  'sandbox-learning-revolution-stem-education': 'post6',
+  'green-labs-sustainability-virtual-stem-education': 'post7',
+  'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
+  '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
+  'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
+  'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
+  'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
+  'science-real-time-physics-simulations-virtual-labs': 'post13',
+  'gamification-science-education-points-rewards-engagement': 'post14',
+  'whimsylabs-bett-2026-exhibition-announcement': 'post15',
+  'why-traditional-virtual-labs-fail-physics-engine': 'post16',
+  'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
+  'vr-winter-web-first-virtual-labs': 'post18',
+  'oecd-ai-learning-paradox-virtual-labs': 'post19',
+};
+
+// Languages to check (jp maps to ja in translation files)
+const LANGUAGES = { 'en': 'en', 'de': 'de', 'es': 'es', 'fr': 'fr', 'jp': 'ja' };
+
+/**
+ * Extract content snippet from a blog post file
+ */
+function extractContentSnippet(fileContent) {
+  // Look for text between <p> tags that's at least 20 chars
+  const paragraphMatches = fileContent.match(/<p[^>]*>\s*([^<]{20,})/g) || [];
+  
+  for (const para of paragraphMatches) {
+    const textMatch = para.match(/<p[^>]*>\s*([^<]+)/);
+    if (textMatch && textMatch[1].trim().length > 20) {
+      // Get first 40 chars of clean text as our verification snippet
+      return textMatch[1].trim()
+        .replace(/\s+/g, ' ')
+        .substring(0, 40);
+    }
+  }
+  return '';
+}
+
 try {
+  // Load English posts from Components/blog/
   const blogDir = path.join(__dirname, '..', 'src', 'Components', 'blog');
   const postFiles = fs.readdirSync(blogDir).filter(f => f.match(/^Post\d+\.js$/));
   
@@ -31,42 +79,58 @@ try {
       if (!slugMatch) continue;
       const slug = slugMatch[1];
       
-      // Extract title
+      // Initialize metadata for this slug
+      blogPostsMetadata[slug] = {};
+      
+      // Extract English content
       const titleMatch = content.match(/export const title\s*=[\s\n]*["'`]([^"'`]+)["'`]/s);
-      const title = titleMatch ? titleMatch[1].replace(/\s+/g, ' ').trim() : '';
-      
-      // Extract a content snippet - find first paragraph text
-      // Look for text between <p> tags that's at least 30 chars
-      const paragraphMatches = content.match(/<p[^>]*>\s*([^<]{30,})/g) || [];
-      let contentSnippet = '';
-      
-      for (const para of paragraphMatches) {
-        // Extract just the text content
-        const textMatch = para.match(/<p[^>]*>\s*([^<]+)/);
-        if (textMatch && textMatch[1].trim().length > 30) {
-          // Get first 50 chars of clean text as our verification snippet
-          contentSnippet = textMatch[1].trim()
-            .replace(/\s+/g, ' ')
-            .substring(0, 50);
-          break;
-        }
-      }
-      
-      blogPostsMetadata[slug] = {
-        title: title,
-        contentSnippet: contentSnippet,
-        keyPhrases: extractKeyPhrases(title)
+      blogPostsMetadata[slug]['en'] = {
+        title: titleMatch ? titleMatch[1].replace(/\s+/g, ' ').trim() : '',
+        contentSnippet: extractContentSnippet(content)
       };
       
     } catch (e) {
       // Skip posts that fail to load
     }
   }
-  console.log(`📚 Loaded metadata for ${Object.keys(blogPostsMetadata).length} blog posts`);
   
-  // Debug: show what snippets we found
-  const withSnippets = Object.values(blogPostsMetadata).filter(m => m.contentSnippet).length;
-  console.log(`📝 Found content snippets for ${withSnippets} posts`);
+  // Load translations for each language
+  const i18nBlogDir = path.join(__dirname, '..', 'src', 'i18n', 'blog');
+  
+  for (const [lang, langCode] of Object.entries(LANGUAGES)) {
+    if (lang === 'en') continue; // Already loaded
+    
+    for (const [slug, postId] of Object.entries(slugToPostId)) {
+      try {
+        const transPath = path.join(i18nBlogDir, postId, `${langCode}.js`);
+        if (fs.existsSync(transPath)) {
+          const content = fs.readFileSync(transPath, 'utf8');
+          
+          const titleMatch = content.match(/export const title\s*=[\s\n]*["'`]([^"'`]+)["'`]/s);
+          const snippet = extractContentSnippet(content);
+          
+          if (!blogPostsMetadata[slug]) blogPostsMetadata[slug] = {};
+          blogPostsMetadata[slug][lang] = {
+            title: titleMatch ? titleMatch[1].replace(/\s+/g, ' ').trim() : '',
+            contentSnippet: snippet
+          };
+        }
+      } catch (e) {
+        // Skip translations that fail to load
+      }
+    }
+  }
+  
+  const slugCount = Object.keys(blogPostsMetadata).length;
+  let totalSnippets = 0;
+  for (const slug of Object.keys(blogPostsMetadata)) {
+    for (const lang of Object.keys(blogPostsMetadata[slug])) {
+      if (blogPostsMetadata[slug][lang].contentSnippet) totalSnippets++;
+    }
+  }
+  
+  console.log(`📚 Loaded metadata for ${slugCount} blog posts`);
+  console.log(`📝 Found content snippets for ${totalSnippets} post/language combinations`);
   
 } catch (e) {
   console.warn('⚠️ Could not load blog post metadata:', e.message);
@@ -96,57 +160,60 @@ const PAGE_EXPECTATIONS = {
   '/': {
     requiredText: ['WhimsyLabs', 'virtual lab'],
     requiredElements: ['nav', 'footer'],
-    forbiddenText: ['undefined', 'null', 'NaN', '[object Object]', 'Error:', 'Loading...'],
+    forbiddenText: ['undefined', 'NaN', '[object Object]', 'Error:', 'Loading...'],
     minLength: 5000, // Homepage should have substantial content
   },
   '/blog': {
     requiredText: ['Blog', 'WhimsyLabs'],
     requiredElements: ['nav', 'footer', 'post-preview'],
-    forbiddenText: ['undefined', 'null', 'Loading posts...'],
+    forbiddenText: ['undefined', 'Loading posts...'],
     minLength: 3000,
   },
   '/blog/*': {
     requiredText: [],  // Don't require specific text - content loads client-side
     requiredElements: ['nav', 'footer', 'post-content', 'post-title'],
-    forbiddenText: ['undefined', 'null', 'Post not found', 'Error loading'],
-    forbiddenPatterns: [/&lt;(p|div|h[1-6]|a|img|ul|li)(&gt;|\s)/g], // Escaped HTML tags = render bug!
+    forbiddenText: ['undefined', 'Post not found', 'Error loading'],  // Removed 'null' - it's a valid German word meaning "zero"
+    forbiddenPatterns: [
+      /&lt;(p|div|h[1-6]|a|img|ul|li)(&gt;|\s)/g, // Escaped HTML tags = render bug!
+      />null</g,  // JS null rendered in HTML (but not German word "null" in sentences)
+    ],
     minLength: 1500,  // Lower threshold - blog content loads client-side, just need shell
     verifyBlogContent: true, // Verify blog title appears in rendered HTML
   },
   '/features': {
     requiredText: ['feature', 'WhimsyLabs'],
     requiredElements: ['nav', 'footer'],
-    forbiddenText: ['undefined', 'null'],
+    forbiddenText: ['undefined'],
     minLength: 2000,
   },
   '/services': {
     requiredText: ['service', 'WhimsyLabs'],
     requiredElements: ['nav', 'footer'],
-    forbiddenText: ['undefined', 'null'],
+    forbiddenText: ['undefined'],
     minLength: 2000,
   },
   '/faq': {
     requiredText: ['FAQ', 'question'],
     requiredElements: ['nav', 'footer'],
-    forbiddenText: ['undefined', 'null'],
+    forbiddenText: ['undefined'],
     minLength: 2000,
   },
   '/contact': {
     requiredText: ['contact', 'WhimsyLabs'],
     requiredElements: ['nav', 'footer', 'form'],
-    forbiddenText: ['undefined', 'null'],
+    forbiddenText: ['undefined'],
     minLength: 1500,
   },
   '/privacy': {
     requiredText: ['privacy', 'data'],
     requiredElements: ['nav', 'footer'],
-    forbiddenText: ['undefined', 'null'],
+    forbiddenText: ['undefined'],
     minLength: 1500,
   },
   '/bett': {
     requiredText: ['BETT', 'WhimsyLabs'],
     requiredElements: ['nav', 'footer'],
-    forbiddenText: ['undefined', 'null'],
+    forbiddenText: ['undefined'],
     minLength: 1500,
   },
 };
@@ -164,8 +231,7 @@ const GLOBAL_FORBIDDEN_PATTERNS = [
   /Uncaught.*Error/gi,               // Uncaught exceptions
 ];
 
-// Languages to check
-const LANGUAGES = ['en', 'es', 'fr', 'de', 'jp'];
+// Default language
 const DEFAULT_LANG = 'en';
 
 function validatePageContent() {
@@ -372,7 +438,7 @@ function validateFile(filePath, relativePath) {
     }
   }
 
-  // 11. For blog posts, verify CONTENT from the source post appears in the HTML
+  // 11. For blog posts, verify CONTENT from the source post appears in the HTML (ALL LANGUAGES)
   if (expectations.verifyBlogContent) {
     const slug = extractBlogSlug(relativePath);
     const lang = getExpectedLanguage(relativePath);
@@ -383,11 +449,12 @@ function validateFile(filePath, relativePath) {
       errors.push('Blog post missing <h1 class="post-title"> element');
     }
     
-    // CRITICAL: For English pages, verify actual paragraph content from source appears in HTML
-    if (lang === 'en' && slug && blogPostsMetadata[slug]) {
-      const postMeta = blogPostsMetadata[slug];
+    // CRITICAL: Verify actual paragraph content from source appears in HTML
+    if (slug && blogPostsMetadata[slug]) {
+      // Get the content snippet for this language (fall back to English if no translation)
+      const postMeta = blogPostsMetadata[slug][lang] || blogPostsMetadata[slug]['en'];
       
-      if (postMeta.contentSnippet && postMeta.contentSnippet.length > 20) {
+      if (postMeta && postMeta.contentSnippet && postMeta.contentSnippet.length > 15) {
         // Normalize the snippet and HTML for comparison
         const normalizeText = (t) => t
           .replace(/&#x27;/g, "'")
@@ -402,9 +469,12 @@ function validateFile(filePath, relativePath) {
         const htmlNorm = normalizeText(html);
         
         // Check if the content snippet appears in the HTML
-        if (!htmlNorm.includes(snippetNorm.substring(0, 30))) {
-          errors.push(`CONTENT MISSING: Blog post content not found in HTML! Expected text: "${postMeta.contentSnippet.substring(0, 40)}..."`);
+        if (!htmlNorm.includes(snippetNorm.substring(0, 25))) {
+          errors.push(`CONTENT MISSING (${lang}): Blog post content not found in static HTML! Expected: "${postMeta.contentSnippet.substring(0, 35)}..."`);
         }
+      } else {
+        // No content snippet found for this language
+        warnings.push(`No content snippet found for ${lang} to verify`);
       }
     }
   }

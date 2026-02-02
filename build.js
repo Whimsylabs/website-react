@@ -670,14 +670,79 @@ async function generatePageHTML(route, data = {}) {
       }
     }
 
-    // For blog posts, pass the slug so BlogPost can load content client-side
-    // Note: SSR content loading was disabled due to JSX escaping issues
-    // Content loads via client-side hydration which works correctly
+    // For blog posts, render content to HTML string for SSR (ALL languages)
     if (route.includes('/blog/') && !route.endsWith('/blog') && !route.endsWith('/blog/') && data.slug) {
       props.slug = data.slug;
       props.title = data.title;
       props.description = data.description;
       props.date = data.date;
+      
+      // SSR: Render blog content to HTML string
+      try {
+        const ReactDOMServer = require('react-dom/server');
+        const language = data.language || 'en';
+        
+        // Map slug to post ID (post1, post2, etc.)
+        const slugToPostId = {
+          'whimsylabs-education-revolution': 'post1',
+          'physicality-in-virtual-labs': 'post2',
+          'virtual-kidney-dissection-send-engagement': 'post3',
+          'ai-powered-virtual-labs-solving-education-crisis': 'post4',
+          'whimsycat-ai-tutor-transforming-science-education': 'post5',
+          'sandbox-learning-revolution-stem-education': 'post6',
+          'green-labs-sustainability-virtual-stem-education': 'post7',
+          'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
+          '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
+          'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
+          'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
+          'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
+          'science-real-time-physics-simulations-virtual-labs': 'post13',
+          'gamification-science-education-points-rewards-engagement': 'post14',
+          'whimsylabs-bett-2026-exhibition-announcement': 'post15',
+          'why-traditional-virtual-labs-fail-physics-engine': 'post16',
+          'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
+          'vr-winter-web-first-virtual-labs': 'post18',
+          'oecd-ai-learning-paradox-virtual-labs': 'post19',
+        };
+        
+        const postId = slugToPostId[data.slug];
+        let postModule = null;
+        
+        if (postId) {
+          // Map language codes: config uses 'jp', translation files use 'ja'
+          const langCode = language === 'jp' ? 'ja' : language;
+          
+          // Try to load translated content first, fall back to English
+          try {
+            if (language !== 'en') {
+              postModule = require(`./src/i18n/blog/${postId}/${langCode}.js`);
+            }
+          } catch (e) {
+            // Translation not found, will fall back to English
+          }
+          
+          // Fall back to English if no translation
+          if (!postModule || !postModule.content) {
+            const postNum = postId.replace('post', '');
+            postModule = require(`./src/Components/blog/Post${postNum}.js`);
+          }
+          
+          if (postModule && postModule.content) {
+            // Render JSX content to HTML string
+            const contentHtml = ReactDOMServer.renderToStaticMarkup(postModule.content);
+            props.content = contentHtml;
+            
+            // Also use translated title if available
+            if (postModule.title) {
+              props.title = postModule.title;
+            }
+            
+            console.log(`✅ SSR rendered ${language} content for ${data.slug}`);
+          }
+        }
+      } catch (ssrError) {
+        console.warn(`⚠️ Could not SSR blog content for ${data.slug}:`, ssrError.message);
+      }
     }
 
     // Render component to string
