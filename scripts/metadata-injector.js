@@ -465,8 +465,112 @@ class MetadataInjector {
       schemas.push(eventSchema);
     }
 
+    // Generate Breadcrumb schema for non-home pages (except blog posts which have their own)
+    const normalizedRoute = route.replace(/\/$/, ''); // Remove trailing slash
+    const isBlogPost = route.includes('/blog/') && route !== '/blog' && !route.endsWith('/blog/') && !route.endsWith('/blog');
+    const isHomePage = route === '/' || route.match(/^\/[a-z]{2}\/?$/);
+    
+    if (!isHomePage && !isBlogPost) {
+      // Extract language and base path
+      const langMatch = route.match(/^\/([a-z]{2})\//);
+      const routeLang = langMatch ? langMatch[1] : 'en';
+      const basePath = langMatch ? route.replace(`/${langMatch[1]}`, '') : route;
+      const langPrefix = routeLang === 'en' ? '' : `/${routeLang}`;
+      
+      // Build breadcrumb items
+      const breadcrumbItems = [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${this.baseUrl}${langPrefix}/`
+      }];
+      
+      // Parse path parts (excluding language)
+      const pathParts = basePath.split('/').filter(p => p && !['de', 'es', 'fr', 'jp'].includes(p));
+      let currentUrl = `${this.baseUrl}${langPrefix}`;
+      
+      pathParts.forEach((part, index) => {
+        currentUrl += `/${part}`;
+        const name = part.charAt(0).toUpperCase() + part.slice(1).replace(/-/g, ' ');
+        breadcrumbItems.push({
+          "@type": "ListItem",
+          "position": breadcrumbItems.length + 1,
+          "name": name,
+          "item": currentUrl + '/'
+        });
+      });
+      
+      const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbItems
+      };
+      schemas.push(breadcrumbSchema);
+    }
+
+    // Generate Review snippets for homepage
+    if (isHomePage) {
+      const reviewSchemas = [
+        {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "SoftwareApplication",
+            "name": "WhimsyLabs Virtual Laboratory"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Kids Judge Bett"
+          },
+          "reviewBody": "Very fun and engaging, and will cater fun for all children!"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "SoftwareApplication",
+            "name": "WhimsyLabs Virtual Laboratory"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Bett2025 Lab Manager"
+          },
+          "reviewBody": "The feeling of the lab was amazing. Being able to train students in practicals remotely not only saves our glassware/equipment but gives students an extra space to learn lab skills effectively."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "SoftwareApplication",
+            "name": "WhimsyLabs Virtual Laboratory"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Bett2025 Teacher"
+          },
+          "reviewBody": "The automated grading on a curve with a wide range of student outcomes is incredible. It saves me so much time and targets our learning objectives perfectly."
+        }
+      ];
+      schemas.push(...reviewSchemas);
+    }
+
     // Generate FAQ schema for all language versions of FAQ page
-    if (route === '/faq' || route.endsWith('/faq')) {
+    if (route === '/faq' || route === '/faq/' || route.includes('/faq/') || route.endsWith('/faq')) {
       // Dynamically load ALL FAQ items
       const { getAllFAQItems } = require('../src/data/faqData.js');
       const allFAQs = getAllFAQItems();
