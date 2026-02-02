@@ -508,6 +508,37 @@ class MetadataInjector {
       schemas.push(breadcrumbSchema);
     }
 
+    // Generate VideoObject schema for homepage video
+    if (isHomePage) {
+      const videoSchema = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "WhimsyLabs Virtual Laboratory Demo",
+        "description": "Experience the world's most advanced virtual laboratory platform. See how WhimsyLabs transforms STEM education with realistic physics simulations, AI-powered tutoring, and hands-on virtual experiments.",
+        "thumbnailUrl": `${this.baseUrl}/logo.png`,
+        "uploadDate": "2025-01-01",
+        "duration": "PT2M30S",
+        "contentUrl": `${this.baseUrl}/videos/placeholder.webm`,
+        "embedUrl": `${this.baseUrl}/`,
+        "publisher": {
+          "@type": "Organization",
+          "name": "WhimsyLabs",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${this.baseUrl}/logo.png`
+          }
+        },
+        "educationalLevel": "Secondary Education, Higher Education",
+        "learningResourceType": "Video",
+        "teaches": [
+          "Virtual laboratory techniques",
+          "STEM education technology",
+          "Interactive science simulations"
+        ]
+      };
+      schemas.push(videoSchema);
+    }
+
     // Generate Review snippets for homepage
     if (isHomePage) {
       const reviewSchemas = [
