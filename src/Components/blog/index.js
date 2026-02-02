@@ -12,6 +12,11 @@ import * as Post11 from "./Post11";
 import * as Post12 from "./Post12";
 import * as Post13 from "./Post13";
 import * as Post14 from "./Post14";
+import * as Post15 from "./Post15";
+import * as Post16 from "./Post16";
+import * as Post17 from "./Post17";
+import * as Post18 from "./Post18";
+import * as Post19 from "./Post19";
 
 export default {
   Post1,
@@ -28,4 +33,9 @@ export default {
   Post12,
   Post13,
   Post14,
+  Post15,
+  Post16,
+  Post17,
+  Post18,
+  Post19,
 };

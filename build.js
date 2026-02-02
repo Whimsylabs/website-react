@@ -43,10 +43,9 @@ const { translations } = require('./src/i18n/translations.js');
 // Page metadata for SEO (multilingual)
 const getPageMetadata = (lang = 'en') => ({
   "/": {
-    title: translations[lang]?.home?.title || "WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education",
-    description: translations[lang]?.home?.description || "WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.",
-    keywords:
-      "virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology",
+    title: translations[lang]?.landingDemo?.title || "WhimsyLabs: The Practical Solution for Science | Virtual Lab Software",
+    description: translations[lang]?.landingDemo?.description || "Experience WhimsyLabs' physics-first virtual lab engine with AI-driven assessment. Build true muscle memory while saving teachers hours of grading time.",
+    keywords: "virtual lab software, physics simulation, AI assessment, STEM education, science lab software, VR education, unlimited practicals",
   },
   "/blog": {
     title: translations[lang]?.blog?.title || "WhimsyLabs Blog - Virtual Laboratory Innovations & STEM Education",
@@ -83,16 +82,12 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.privacy?.description || "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
     keywords: "WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy",
   },
-  "/landing-demo": {
-    title: "WhimsyLabs: The Practical Solution for Science | Demo Landing Page",
-    description: "Experience WhimsyLabs' physics-first virtual lab engine with AI-driven assessment. Build true muscle memory while saving teachers hours of grading time.",
-    keywords: "virtual lab software, physics simulation, AI assessment, STEM education, science lab software, VR education",
-  },
+  // "/landing-demo" is now the homepage at "/"
 });
 
 // Route to component mapping
 const routeComponentMap = {
-  "/": "MainContent",
+  "/": "LandingDemo",
   "/blog": "Blog",
   "/services": "Services",
   "/features": "Features",
@@ -100,7 +95,7 @@ const routeComponentMap = {
   "/contact": "ContactPage",
   "/privacy": "PrivacyPage",
   "/bett": "BettPage",
-  "/landing-demo": "LandingDemo",
+  // "/landing-demo": "LandingDemo", // Now the homepage
   // "/ignite-pitch": "IgnitePitchDeck", // Disabled
 };
 
@@ -370,8 +365,11 @@ async function getBlogPosts(language = 'en') {
     const Post14 = require("./src/Components/blog/Post14.js");
     const Post15 = require("./src/Components/blog/Post15.js");
     const Post16 = require("./src/Components/blog/Post16.js");
+    const Post17 = require("./src/Components/blog/Post17.js");
+    const Post18 = require("./src/Components/blog/Post18.js");
+    const Post19 = require("./src/Components/blog/Post19.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -410,6 +408,9 @@ async function getBlogPosts(language = 'en') {
       const Post14 = require("./src/Components/blog/Post14.js");
       const Post15 = require("./src/Components/blog/Post15.js");
       const Post16 = require("./src/Components/blog/Post16.js");
+      const Post17 = require("./src/Components/blog/Post17.js");
+      const Post18 = require("./src/Components/blog/Post18.js");
+      const Post19 = require("./src/Components/blog/Post19.js");
 
       const fallbackPosts = [
         {
@@ -571,6 +572,36 @@ async function getBlogPosts(language = 'en') {
           path: `/blog/${Post16.slug}`,
           language: 'en',
           hasFullTranslation: true
+        },
+        {
+          id: Post17.slug,
+          title: Post17.title,
+          date: Post17.date,
+          description: Post17.description,
+          content: Post17.content,
+          path: `/blog/${Post17.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post18.slug,
+          title: Post18.title,
+          date: Post18.date,
+          description: Post18.description,
+          content: Post18.content,
+          path: `/blog/${Post18.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post19.slug,
+          title: Post19.title,
+          date: Post19.date,
+          description: Post19.description,
+          content: Post19.content,
+          path: `/blog/${Post19.slug}`,
+          language: 'en',
+          hasFullTranslation: true
         }
       ];
 
@@ -728,30 +759,16 @@ async function generatePageHTML(route, data = {}) {
 <body>
     <!-- GTM noscript is intentionally omitted - requires consent -->
     <noscript>
-        ${renderResult.html}
-        <style>
-            /* Basic styling for noscript fallback */
-            .container-fluid { max-width: 1200px; margin: 0 auto; padding: 20px; }
-            .text-center { text-align: center; }
-            .btn { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin: 10px; }
-            .btn:hover { background: #0056b3; }
-            nav ul { list-style: none; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
-            nav li { margin: 0 15px; }
-            nav a { text-decoration: none; color: #007bff; font-weight: bold; }
-            nav a:hover { text-decoration: underline; }
-            .faq-link { color: #007bff; text-decoration: none; }
-            .faq-link:hover { text-decoration: underline; }
-        </style>
-        <nav style="margin-top: 20px; padding: 20px; border-top: 1px solid #eee;">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/features">Features</a></li>
-                <li><a href="/faq">FAQ</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; text-align: center; font-family: system-ui, sans-serif;">
+            <p style="font-size: 1.5rem; font-weight: bold;">WhimsyLabs - Virtual Laboratory Software</p>
+            <p>Please enable JavaScript to use this website.</p>
+            <nav style="margin-top: 20px;">
+                <a href="/" style="margin: 0 10px;">Home</a>
+                <a href="/blog" style="margin: 0 10px;">Blog</a>
+                <a href="/contact" style="margin: 0 10px;">Contact</a>
+                <a href="/faq" style="margin: 0 10px;">FAQ</a>
+            </nav>
+        </div>
     </noscript>
     <div id="root">${renderResult.html}</div>
     ${assets.js}
@@ -871,7 +888,8 @@ async function generateSitemap() {
       { path: '/bett/', priority: '0.9', changefreq: 'weekly' }, // High priority for event page
       { path: '/faq/', priority: '0.9', changefreq: 'monthly' },
       { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
-      { path: '/privacy/', priority: '0.3', changefreq: 'yearly' }
+      { path: '/privacy/', priority: '0.3', changefreq: 'yearly' },
+      // landing-demo is now the homepage
     ];
 
     for (const page of staticPages) {

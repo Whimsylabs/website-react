@@ -8,7 +8,7 @@ import { getLocalizedPath } from "../i18n";
 const Header = ({ t, currentLang }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pdfPath =
-    "https://storage.googleapis.com/phoenix-application-storage-fine-grained/Hyve/Bett/Bett2025/assets/USER_INPUT/d4ad42d1-e67a-44ff-9c8f-46d4b26622ea?ts=1734104814440";
+    "https://d3w5afnqqrsdxl.cloudfront.net/api-bett.expoplatform.co.uk/media/MTc2ODgzNDM3NjY5NmU0NTQ4NjNjY2I=.pdf";
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

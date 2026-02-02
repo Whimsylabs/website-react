@@ -1,8 +1,66 @@
 // Auto-generated blog data for build script
-// Generated on 2026-01-28T22:36:50.722Z
+// Generated on 2026-02-02T14:43:59.201Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post19",
+      "slug": "oecd-ai-learning-paradox-virtual-labs",
+      "title": "AI Boosted Test Scores 127%. Then Students Couldn't Think Without It.",
+      "description": "New OECD research reveals a troubling pattern: AI tutors dramatically improve test scores, but students lose the ability to problem-solve independently. Here's why hands-on virtual labs offer a better path forward.",
+      "keywords": [
+        "OECD AI education",
+        "AI learning paradox",
+        "false mastery",
+        "virtual laboratory",
+        "hands-on learning",
+        "STEM education",
+        "AI in schools",
+        "cognitive skills",
+        "science education"
+      ],
+      "date": "2026-02-02",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Wins Tech&Learning #1 Best of BETT 2026",
+      "description": "WhimsyLabs has been awarded Tech&Learning's #1 Best of BETT 2026, recognising our physics-first virtual laboratory as the top educational technology product at the world's largest edtech event.",
+      "keywords": [
+        "BETT 2026",
+        "Tech and Learning Award",
+        "Best of BETT",
+        "virtual laboratory",
+        "edtech award",
+        "WhimsyLabs award",
+        "physics simulation",
+        "STEM education innovation"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post18",
+      "slug": "vr-winter-web-first-virtual-labs",
+      "title": "VR Winter? Why Web-First Virtual Labs Are the Smart Investment for Schools",
+      "description": "As VR headset sales decline and Meta cuts Reality Labs staff, schools need education technology that isn't dependent on hardware cycles. Here's why web-first virtual labs are the sustainable choice.",
+      "keywords": [
+        "VR winter",
+        "virtual reality education",
+        "Meta Reality Labs",
+        "web-based virtual lab",
+        "Chromebook science lab",
+        "hardware-agnostic education",
+        "sustainable edtech investment",
+        "VR headset decline"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post16",
       "slug": "why-traditional-virtual-labs-fail-physics-engine",
@@ -193,6 +251,64 @@ module.exports = {
     }
   ],
   "de": [
+    {
+      "id": "post19",
+      "slug": "oecd-ai-learning-paradox-virtual-labs",
+      "title": "KI Steigerte Testergebnisse um 127%. Dann Konnten Schüler Nicht Mehr Ohne Sie Denken.",
+      "description": "Neue OECD-Forschung enthüllt ein beunruhigendes Muster: KI-Tutoren verbessern die Noten dramatisch, aber Schüler verlieren die Fähigkeit, eigenständig Probleme zu lösen. Hier erfahren Sie, warum praktische virtuelle Labore einen besseren Weg bieten.",
+      "keywords": [
+        "OECD KI Bildung",
+        "KI Lernparadoxon",
+        "Scheinbeherrschung",
+        "virtuelles Labor",
+        "praktisches Lernen",
+        "MINT-Bildung",
+        "KI in Schulen",
+        "kognitive Fähigkeiten",
+        "naturwissenschaftliche Bildung"
+      ],
+      "date": "2026-02-02",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Gewinnt Tech&Learning #1 Best of BETT 2026",
+      "description": "WhimsyLabs wurde mit dem Tech&Learning #1 Best of BETT 2026 ausgezeichnet, der unser physikbasiertes virtuelles Labor als das beste Bildungstechnologieprodukt auf der weltweit größten EdTech-Veranstaltung anerkennt.",
+      "keywords": [
+        "BETT 2026",
+        "Tech and Learning Auszeichnung",
+        "Best of BETT",
+        "virtuelles Labor",
+        "EdTech Auszeichnung",
+        "WhimsyLabs Auszeichnung",
+        "Physiksimulation",
+        "MINT-Bildung Innovation"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post18",
+      "slug": "vr-winter-web-first-virtual-labs",
+      "title": "VR-Winter? Warum Web-First Virtuelle Labore die Kluge Investition für Schulen Sind",
+      "description": "Mit sinkenden VR-Headset-Verkäufen und Metas Kürzungen bei Reality Labs brauchen Schulen Bildungstechnologie, die nicht von Hardware-Zyklen abhängig ist. Erfahren Sie, warum Web-First virtuelle Labore die nachhaltige Wahl sind.",
+      "keywords": [
+        "VR Winter",
+        "Virtual Reality Bildung",
+        "Meta Reality Labs",
+        "webbasiertes virtuelles Labor",
+        "Chromebook Wissenschaftslabor",
+        "hardwareunabhängige Bildung",
+        "nachhaltige EdTech Investition",
+        "VR Headset Rückgang"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
     {
       "id": "post16",
       "slug": "why-traditional-virtual-labs-fail-physics-engine",
@@ -462,6 +578,64 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post19",
+      "slug": "oecd-ai-learning-paradox-virtual-labs",
+      "title": "L'IA a Amélioré les Notes de 127%. Puis les Étudiants Ne Pouvaient Plus Penser Sans Elle.",
+      "description": "Une nouvelle recherche de l'OCDE révèle une tendance préoccupante : les tuteurs IA améliorent considérablement les notes, mais les étudiants perdent leur capacité à résoudre des problèmes de manière autonome. Voici pourquoi les laboratoires virtuels pratiques offrent une meilleure voie.",
+      "keywords": [
+        "OCDE éducation IA",
+        "paradoxe d'apprentissage IA",
+        "fausse maîtrise",
+        "laboratoire virtuel",
+        "apprentissage pratique",
+        "éducation STEM",
+        "IA dans les écoles",
+        "compétences cognitives",
+        "éducation scientifique"
+      ],
+      "date": "2026-02-02",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Remporte le #1 Meilleur de BETT 2026 de Tech&Learning",
+      "description": "WhimsyLabs a reçu le prix #1 Meilleur de BETT 2026 de Tech&Learning, reconnaissant notre laboratoire virtuel basé sur la physique comme le meilleur produit de technologie éducative au plus grand événement edtech du monde.",
+      "keywords": [
+        "BETT 2026",
+        "Prix Tech and Learning",
+        "Meilleur de BETT",
+        "laboratoire virtuel",
+        "prix edtech",
+        "prix WhimsyLabs",
+        "simulation physique",
+        "innovation éducation STEM"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post18",
+      "slug": "vr-winter-web-first-virtual-labs",
+      "title": "Hiver de la RV ? Pourquoi les Laboratoires Virtuels Web-First Sont l'Investissement Intelligent pour les Écoles",
+      "description": "Avec la baisse des ventes de casques RV et les coupes de Meta dans Reality Labs, les écoles ont besoin de technologie éducative indépendante des cycles matériels. Voici pourquoi les laboratoires virtuels web-first sont le choix durable.",
+      "keywords": [
+        "hiver RV",
+        "réalité virtuelle éducation",
+        "Meta Reality Labs",
+        "laboratoire virtuel web",
+        "laboratoire sciences Chromebook",
+        "éducation agnostique matériel",
+        "investissement edtech durable",
+        "déclin casques RV"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post16",
       "slug": "why-traditional-virtual-labs-fail-physics-engine",
       "title": "Pourquoi les labos virtuels échouent : La solution physique",
@@ -730,6 +904,64 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post19",
+      "slug": "oecd-ai-learning-paradox-virtual-labs",
+      "title": "La IA Mejoró las Calificaciones un 127%. Luego los Estudiantes No Podían Pensar Sin Ella.",
+      "description": "Nueva investigación de la OCDE revela un patrón preocupante: los tutores de IA mejoran drásticamente las calificaciones, pero los estudiantes pierden la capacidad de resolver problemas de forma independiente. Aquí explicamos por qué los laboratorios virtuales prácticos ofrecen un mejor camino.",
+      "keywords": [
+        "OCDE educación IA",
+        "paradoja de aprendizaje IA",
+        "dominio falso",
+        "laboratorio virtual",
+        "aprendizaje práctico",
+        "educación STEM",
+        "IA en escuelas",
+        "habilidades cognitivas",
+        "educación científica"
+      ],
+      "date": "2026-02-02",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Gana el #1 Mejor de BETT 2026 de Tech&Learning",
+      "description": "WhimsyLabs ha sido galardonado con el #1 Mejor de BETT 2026 de Tech&Learning, reconociendo nuestro laboratorio virtual basado en física como el mejor producto de tecnología educativa en el evento de edtech más grande del mundo.",
+      "keywords": [
+        "BETT 2026",
+        "Premio Tech and Learning",
+        "Mejor de BETT",
+        "laboratorio virtual",
+        "premio edtech",
+        "premio WhimsyLabs",
+        "simulación física",
+        "innovación educación STEM"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post18",
+      "slug": "vr-winter-web-first-virtual-labs",
+      "title": "¿Invierno de RV? Por Qué los Laboratorios Virtuales Web-First Son la Inversión Inteligente para Escuelas",
+      "description": "Con la caída de ventas de cascos de RV y los recortes de Meta en Reality Labs, las escuelas necesitan tecnología educativa que no dependa de ciclos de hardware. Descubre por qué los laboratorios virtuales web-first son la opción sostenible.",
+      "keywords": [
+        "invierno RV",
+        "realidad virtual educación",
+        "Meta Reality Labs",
+        "laboratorio virtual web",
+        "laboratorio ciencias Chromebook",
+        "educación agnóstica hardware",
+        "inversión edtech sostenible",
+        "declive cascos RV"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post16",
       "slug": "why-traditional-virtual-labs-fail-physics-engine",
       "title": "Por qué fallan los laboratorios virtuales: Solución física",
@@ -997,6 +1229,64 @@ module.exports = {
     }
   ],
   "ja": [
+    {
+      "id": "post19",
+      "slug": "oecd-ai-learning-paradox-virtual-labs",
+      "title": "AIがテストの点数を127%向上させた。その後、学生はAIなしでは考えられなくなった。",
+      "description": "OECDの新しい研究が懸念すべきパターンを明らかにしました：AIチューターは劇的にテストの点数を向上させますが、学生は自力で問題を解決する能力を失います。実践的なバーチャルラボがより良い道を提供する理由をご説明します。",
+      "keywords": [
+        "OECD AI教育",
+        "AI学習パラドックス",
+        "偽りの習熟",
+        "バーチャルラボ",
+        "実践的学習",
+        "STEM教育",
+        "学校でのAI",
+        "認知スキル",
+        "科学教育"
+      ],
+      "date": "2026-02-02",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabsがTech&Learning #1 Best of BETT 2026を受賞",
+      "description": "WhimsyLabsは、世界最大のエドテックイベントでTech&Learningの#1 Best of BETT 2026を受賞し、物理ファーストの仮想実験室が最高の教育テクノロジー製品として認められました。",
+      "keywords": [
+        "BETT 2026",
+        "Tech and Learning Award",
+        "Best of BETT",
+        "仮想実験室",
+        "エドテック賞",
+        "WhimsyLabs受賞",
+        "物理シミュレーション",
+        "STEM教育イノベーション"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post18",
+      "slug": "vr-winter-web-first-virtual-labs",
+      "title": "VRの冬？ウェブファーストの仮想実験室が学校にとって賢明な投資である理由",
+      "description": "VRヘッドセットの販売が減少し、MetaがReality Labsのスタッフを削減する中、学校はハードウェアサイクルに依存しない教育テクノロジーを必要としています。ウェブファーストの仮想実験室が持続可能な選択である理由をご紹介します。",
+      "keywords": [
+        "VRの冬",
+        "仮想現実教育",
+        "Meta Reality Labs",
+        "ウェブベース仮想実験室",
+        "Chromebook科学実験室",
+        "ハードウェア非依存教育",
+        "持続可能なエドテック投資",
+        "VRヘッドセット衰退"
+      ],
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
     {
       "id": "post16",
       "slug": "why-traditional-virtual-labs-fail-physics-engine",

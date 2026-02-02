@@ -59,7 +59,7 @@ const translations = {
 
     // Privacy
     privacy: {
-      title: "Privacy Policy",
+      title: "Privacy Policy | WhimsyLabs Data Protection",
       subtitle:
         "Learn how we collect, use, and protect your personal information when using our virtual laboratory software",
       description: "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
@@ -221,7 +221,7 @@ const translations = {
 
     // Privacy
     privacy: {
-      title: "Política de Privacidad",
+      title: "Política de Privacidad | Protección de Datos WhimsyLabs",
       subtitle:
         "Aprende cómo recopilamos, usamos y protegemos tu información personal al usar nuestro software de laboratorio virtual",
       description: "Lee la política de privacidad de WhimsyLabs para entender cómo recopilamos, usamos y protegemos tus datos personales al usar nuestro software de laboratorio virtual para educación STEM.",
@@ -288,7 +288,7 @@ const translations = {
 
     // Landing Demo (Homepage)
     landingDemo: {
-      title: "WhimsyLabs: La Solución Práctica para la Ciencia | Software de Laboratorio Virtual",
+      title: "WhimsyLabs | Software de Laboratorio Virtual para Ciencias",
       description: "Experimenta el motor de laboratorio virtual de WhimsyLabs con evaluación impulsada por IA. Desarrolla memoria muscular real mientras ahorras horas de calificación.",
     },
 
@@ -383,7 +383,7 @@ const translations = {
 
     // Privacy
     privacy: {
-      title: "Politique de Confidentialité",
+      title: "Politique de Confidentialité | WhimsyLabs",
       subtitle:
         "Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles lors de l'utilisation de notre logiciel de laboratoire virtuel",
       description: "Lisez la politique de confidentialité de WhimsyLabs pour comprendre comment nous collectons, utilisons et protégeons vos données lors de l'utilisation de notre logiciel de laboratoire virtuel pour l'éducation STEM.",
@@ -450,7 +450,7 @@ const translations = {
 
     // Landing Demo (Homepage)
     landingDemo: {
-      title: "WhimsyLabs: La Solution Pratique pour les Sciences | Logiciel de Laboratoire Virtuel",
+      title: "WhimsyLabs | Logiciel de Laboratoire Virtuel pour Sciences",
       description: "Découvrez le moteur de laboratoire virtuel de WhimsyLabs avec évaluation pilotée par IA. Développez une vraie mémoire musculaire tout en économisant des heures de correction.",
     },
 
@@ -544,7 +544,7 @@ const translations = {
 
     // Privacy
     privacy: {
-      title: "Datenschutzrichtlinie",
+      title: "Datenschutzrichtlinie | WhimsyLabs Datenschutz",
       subtitle:
         "Erfahren Sie, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software verwenden",
       description: "Lesen Sie die Datenschutzrichtlinie von WhimsyLabs, um zu verstehen, wie wir Ihre Daten sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software für die STEM-Bildung verwenden.",
@@ -611,7 +611,7 @@ const translations = {
 
     // Landing Demo (Homepage)
     landingDemo: {
-      title: "WhimsyLabs: Die Praktische Lösung für Wissenschaft | Virtuelle Labor-Software",
+      title: "WhimsyLabs | Virtuelle Labor-Software für Wissenschaft",
       description: "Erleben Sie die Physik-basierte virtuelle Labor-Engine von WhimsyLabs mit KI-gesteuerter Bewertung. Entwickeln Sie echtes Muskelgedächtnis und sparen Sie Stunden bei der Benotung.",
     },
 
@@ -705,7 +705,7 @@ const translations = {
 
     // Privacy
     privacy: {
-      title: "プライバシーポリシー",
+      title: "プライバシーポリシー | WhimsyLabs 個人情報保護",
       subtitle:
         "シミュレーション教材をご利用の際に、お客様の個人情報をどのように収集、使用、保護しているかをご確認ください",
       description: "WhimsyLabsのプライバシーポリシーをお読みいただき、STEM教育向けシミュレーション教材をご利用の際に、お客様の個人情報とデータをどのように収集、使用、保護しているかをご理解ください。個人情報保護に関する当社の取り組みをご確認いただけます。",

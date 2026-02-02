@@ -24,6 +24,9 @@ import * as Post13 from './blog/Post13';
 import * as Post14 from './blog/Post14';
 import * as Post15 from './blog/Post15';
 import * as Post16 from './blog/Post16';
+import * as Post17 from './blog/Post17';
+import * as Post18 from './blog/Post18';
+import * as Post19 from './blog/Post19';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -138,6 +141,27 @@ const fallbackPosts = [
     content: Post16.content,
     date: Post16.date,
     description: Post16.description,
+  },
+  {
+    id: Post17.slug,
+    title: Post17.title,
+    content: Post17.content,
+    date: Post17.date,
+    description: Post17.description,
+  },
+  {
+    id: Post18.slug,
+    title: Post18.title,
+    content: Post18.content,
+    date: Post18.date,
+    description: Post18.description,
+  },
+  {
+    id: Post19.slug,
+    title: Post19.title,
+    content: Post19.content,
+    date: Post19.date,
+    description: Post19.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -158,7 +182,10 @@ const slugToPostId = {
   'science-real-time-physics-simulations-virtual-labs': 'post13',
   'gamification-science-education-points-rewards-engagement': 'post14',
   'whimsylabs-bett-2026-exhibition-announcement': 'post15',
-  'why-traditional-virtual-labs-fail-physics-engine': 'post16'
+  'why-traditional-virtual-labs-fail-physics-engine': 'post16',
+  'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
+  'vr-winter-web-first-virtual-labs': 'post18',
+  'oecd-ai-learning-paradox-virtual-labs': 'post19'
 };
 
 const BlogPost = (props = {}) => {

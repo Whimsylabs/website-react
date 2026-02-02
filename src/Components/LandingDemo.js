@@ -6,6 +6,7 @@ import SplashSection from './SplashSection';
 import ContactUs from './ContactUs';
 import Testimonial from './Testimonial';
 import Partners from './Partners';
+import { useTranslation } from '../i18n/translations';
 import './LandingDemo.css';
 
 // ============================================
@@ -54,11 +55,11 @@ const StatCard = ({ label, value, icon, subtext, trend, highlight }) => (
 );
 
 // Class Performance Row - matches Teacher Analytics
-const ClassRow = ({ name, students, avgScore, trend, atRisk }) => (
+const ClassRow = ({ name, students, avgScore, trend, atRisk, studentsLabel, atRiskLabel }) => (
   <div className="class-row">
     <div className="class-info">
       <span className="class-name">{name}</span>
-      <span className="class-students">{students} students</span>
+      <span className="class-students">{students} {studentsLabel}</span>
     </div>
     <div className="class-metrics">
       <div className="class-score">
@@ -71,7 +72,7 @@ const ClassRow = ({ name, students, avgScore, trend, atRisk }) => (
         {trend > 0 ? '+' : ''}{trend}%
       </span>
       {atRisk > 0 && (
-        <span className="at-risk-badge">{atRisk} at risk</span>
+        <span className="at-risk-badge">{atRisk} {atRiskLabel}</span>
       )}
     </div>
   </div>
@@ -112,16 +113,16 @@ const AssignmentRow = ({ name, className, submitted, total, avgScore, status }) 
 );
 
 // Student Question UI - matches Student Assessment
-const QuestionPreview = ({ questionNum, total, type, context, question }) => (
+const QuestionPreview = ({ questionNum, total, type, context, question, t }) => (
   <div className="question-preview">
     <div className="question-header">
-      <span className="question-num">Question {questionNum} of {total}</span>
+      <span className="question-num">{t('home.demo.mockups.questionOf').replace('{num}', questionNum).replace('{total}', total)}</span>
       <span className={`question-type type-${type}`}>{type}</span>
     </div>
     {context && (
       <div className="question-context">
         <span className="context-icon">📊</span>
-        <span className="context-label">Your Lab Data:</span>
+        <span className="context-label">{t('home.demo.mockups.yourLabData')}</span>
         <p className="context-text">{context}</p>
       </div>
     )}
@@ -152,19 +153,19 @@ const ActionLogEntry = ({ time, category, action, isHighlighted }) => (
 );
 
 // Solution Analysis Mockup - shows realistic variability
-const SolutionAnalysis = () => (
+const SolutionAnalysis = ({ t }) => (
   <div className="solution-analysis">
     <div className="solution-header">
       <span className="solution-icon">🧪</span>
-      <span className="solution-title">Solution Analysis</span>
-      <span className="solution-badge live">Simulated</span>
+      <span className="solution-title">{t('home.demo.mockups.solutionAnalysis')}</span>
+      <span className="solution-badge live">{t('home.demo.mockups.simulated')}</span>
     </div>
 
     <div className="solution-main">
       <div className="solution-bottle">
         <div className="bottle-label">
-          <span className="bottle-name">Hydrochloric Acid</span>
-          <span className="bottle-nominal">Labelled: 0.100 M</span>
+          <span className="bottle-name">{t('home.demo.mockups.hydrochloricAcid')}</span>
+          <span className="bottle-nominal">{t('home.demo.mockups.labelledConc')}</span>
         </div>
         <div className="bottle-visual">
           <div className="bottle-liquid"></div>
@@ -175,30 +176,30 @@ const SolutionAnalysis = () => (
 
       <div className="solution-actual">
         <div className="actual-header">
-          <span className="actual-label">Actual Properties</span>
-          <span className="actual-note">Like real lab reagents</span>
+          <span className="actual-label">{t('home.demo.mockups.actualProperties')}</span>
+          <span className="actual-note">{t('home.demo.mockups.likeRealReagents')}</span>
         </div>
 
         <div className="actual-row">
-          <span className="actual-property">Concentration</span>
+          <span className="actual-property">{t('home.demo.mockups.concentration')}</span>
           <span className="actual-value highlight">0.0987 M</span>
           <span className="actual-deviation">-1.3%</span>
         </div>
 
         <div className="actual-row">
-          <span className="actual-property">Room Temp</span>
+          <span className="actual-property">{t('home.demo.mockups.roomTemp')}</span>
           <span className="actual-value">21.3°C</span>
-          <span className="actual-deviation subtle">ambient</span>
+          <span className="actual-deviation subtle">{t('home.demo.mockups.ambient')}</span>
         </div>
 
         <div className="actual-row">
-          <span className="actual-property">Purity</span>
+          <span className="actual-property">{t('home.demo.mockups.purity')}</span>
           <span className="actual-value">99.2%</span>
           <span className="actual-deviation">-0.8%</span>
         </div>
 
         <div className="impurities-section">
-          <span className="impurities-label">Trace Impurities</span>
+          <span className="impurities-label">{t('home.demo.mockups.traceImpurities')}</span>
           <div className="impurities-list">
             <span className="impurity">Fe³⁺ 0.3ppm</span>
             <span className="impurity">SO₄²⁻ 0.5ppm</span>
@@ -210,7 +211,7 @@ const SolutionAnalysis = () => (
 
     <div className="solution-footer">
       <span className="footer-icon">⚡</span>
-      <span className="footer-text">Each student's solution is unique — just like in a real lab</span>
+      <span className="footer-text">{t('home.demo.mockups.uniqueSolution')}</span>
     </div>
   </div>
 );
@@ -220,6 +221,7 @@ const SolutionAnalysis = () => (
 // ============================================
 
 const LandingDemo = ({ language = 'en' }) => {
+  const { t } = useTranslation(language);
   const observerRef = useRef(null);
 
   useEffect(() => {
@@ -288,34 +290,35 @@ const LandingDemo = ({ language = 'en' }) => {
               className="hero-logo-img"
             />
           </div>
-          <h1 className="hero-title">
-            WhimsyLabs: The <em>Practical</em> Solution for Science.
-          </h1>
+          <h1 className="hero-title" dangerouslySetInnerHTML={{ __html: t('home.demo.heroTitle') }} />
           <p className="hero-tagline">
-            Stop clicking 'Next.' Start doing science.
+            {t('home.demo.heroTagline')}
           </p>
           <p className="hero-description">
-            WhimsyLabs isn't just a simulator; it's a playground of particles.
-            We combine a best-in-class Physicality-First engine with AI-driven
-            assessment to deliver the only virtual lab that builds true muscle
-            memory while saving teachers hours of marking time.
+            {t('home.demo.heroDescription')}
           </p>
           <p className="hero-subtext hero-dual-focus">
-            <strong>One platform, two ways to learn:</strong> 
+            <strong>{t('home.demo.heroDualFocus')}</strong>{' '}
+            <span dangerouslySetInnerHTML={{ __html: t('home.demo.heroDualFocusText') }} />
           </p>
-          <div className="hero-platforms">
-            <span className="platform-badge vr-badge">
-              <img src="/images/cat_vr.png" alt="" className="platform-icon" />
-              VR Headsets
+          <div className="hero-platforms-wrapper">
+            <span className="hero-splash-sticker platforms-sticker">
+              {t('home.demo.splashSticker') || 'No VR required!'}
             </span>
-            <span className="platform-plus">+</span>
-            <span className="platform-badge desktop-badge">
-              <img src="/images/cat_desktop.png" alt="" className="platform-icon desktop-icon" />
-              Desktop (Chromebook/Mac/PC)
-            </span>
+            <div className="hero-platforms">
+              <span className="platform-badge vr-badge">
+                <img src="/images/cat_vr.png" alt="" className="platform-icon" />
+                {t('home.demo.vrHeadsets')}
+              </span>
+              <span className="platform-plus">+</span>
+              <span className="platform-badge desktop-badge">
+                <img src="/images/cat_desktop.png" alt="" className="platform-icon desktop-icon" />
+                {t('home.demo.desktop')}
+              </span>
+            </div>
           </div>
           <div className="hero-cta">
-            <ContactUs language={language} buttonText="Join the Pioneer Program" />
+            <ContactUs language={language} buttonText={t('home.demo.joinPioneer')} />
           </div>
         </div>
       </section>
@@ -326,29 +329,21 @@ const LandingDemo = ({ language = 'en' }) => {
           <div className="section-grid">
             <div className="section-content animate-on-scroll">
               <h2 className="section-title">
-                Muscle Memory Forged In Simulations, Not Just Mouse Driven
-                Animations.
+                {t('home.demo.muscleMemoryTitle')}
               </h2>
               <p className="section-text">
-                Unlike "slide-show" simulators, our engine replicates the chaos
-                and weight of the real world, down to temperature perturbations,
-                impurities and deviation between samples. Whether pouring
-                titration fluids in VR or adjusting microscope focus on a
-                Chromebook, students must use fine motor skills and procedural
-                accuracy.<sup><a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-019-0587-8" target="_blank" rel="noopener noreferrer" className="citation-link">[1]</a></sup>
+                {t('home.demo.muscleMemoryText1')}<sup><a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-019-0587-8" target="_blank" rel="noopener noreferrer" className="citation-link">[1]</a></sup>
               </p>
               <p className="section-text highlight-text">
-                If they drop a beaker, it breaks. If they overheat a compound,
-                it reacts.
+                {t('home.demo.muscleMemoryHighlight')}
               </p>
               <p className="section-text">
-                This "freedom to fail" builds resilience and genuine
-                understanding of laboratory risks.
+                {t('home.demo.muscleMemoryText2')}
               </p>
             </div>
             <div className="section-visual animate-on-scroll">
               {/* Code-based UI mockup: Solution Variability */}
-              <SolutionAnalysis />
+              <SolutionAnalysis t={t} />
 
               {/* Code-based UI mockup: Action Log */}
               <div
@@ -356,38 +351,38 @@ const LandingDemo = ({ language = 'en' }) => {
                 style={{ marginTop: "20px" }}
               >
                 <div className="mockup-header">
-                  <span className="mockup-title">Lab Session Log</span>
-                  <span className="mockup-badge">Live</span>
+                  <span className="mockup-title">{t('home.demo.mockups.labSessionLog')}</span>
+                  <span className="mockup-badge">{t('home.demo.mockups.live')}</span>
                 </div>
                 <div className="mockup-content">
                   <ActionLogEntry
                     time="0:05"
-                    category="Safety"
-                    action="Put on safety goggles"
+                    category={t('home.demo.mockups.safety')}
+                    action={t('home.demo.mockups.putOnGoggles')}
                     isHighlighted={false}
                   />
                   <ActionLogEntry
                     time="0:22"
-                    category="Equipment"
-                    action="Picked up 250mL conical flask"
+                    category={t('home.demo.mockups.equipment')}
+                    action={t('home.demo.mockups.pickedUpFlask')}
                     isHighlighted={false}
                   />
                   <ActionLogEntry
                     time="1:08"
-                    category="Transfer"
-                    action="Pipetted 25.00mL HCl into flask"
+                    category={t('home.demo.mockups.transfer')}
+                    action={t('home.demo.mockups.pipettedHCl')}
                     isHighlighted={true}
                   />
                   <ActionLogEntry
                     time="1:35"
-                    category="Reagent"
-                    action="Added 3 drops phenolphthalein"
+                    category={t('home.demo.mockups.reagent')}
+                    action={t('home.demo.mockups.addedIndicator')}
                     isHighlighted={false}
                   />
                   <ActionLogEntry
                     time="3:00"
-                    category="Reaction"
-                    action="Neutralization reaction detected"
+                    category={t('home.demo.mockups.reaction')}
+                    action={t('home.demo.mockups.neutralization')}
                     isHighlighted={false}
                   />
                 </div>
@@ -407,75 +402,68 @@ const LandingDemo = ({ language = 'en' }) => {
               <div className="assessment-grid">
                 <AssessmentCard
                   icon="🧪"
-                  title="Experimental Procedure"
+                  title={t('home.demo.mockups.experimentalProcedure')}
                   score={88}
                   color="purple"
                   items={[
-                    "Good pipetting technique",
-                    "Minor inconsistency in swirling",
-                    "Consistent results achieved",
+                    t('home.demo.mockups.goodPipetting'),
+                    t('home.demo.mockups.minorSwirling'),
+                    t('home.demo.mockups.consistentResults'),
                   ]}
                 />
                 <AssessmentCard
                   icon="🛡️"
-                  title="Lab Safety & Cleanup"
+                  title={t('home.demo.mockups.labSafety')}
                   score={95}
                   color="red"
                   items={[
-                    "All PPE worn correctly",
-                    "Bench spillage cleaned promptly",
+                    t('home.demo.mockups.ppeWorn'),
+                    t('home.demo.mockups.spillageCleaned'),
                   ]}
                 />
                 <AssessmentCard
                   icon="📊"
-                  title="Data Collection & Analysis"
+                  title={t('home.demo.mockups.dataCollection')}
                   score={85}
                   color="blue"
                   items={[
-                    "Burette readings recorded",
-                    "Calculation method correct",
-                    "Minor rounding errors",
+                    t('home.demo.mockups.buretteRecorded'),
+                    t('home.demo.mockups.calculationCorrect'),
+                    t('home.demo.mockups.roundingErrors'),
                   ]}
                 />
                 <AssessmentCard
                   icon="📝"
-                  title="Scientific Communication"
+                  title={t('home.demo.mockups.scientificComm')}
                   score={82}
                   color="green"
                   items={[
-                    "Lab report adequate but lacks detail",
-                    "Error analysis shows understanding",
+                    t('home.demo.mockups.labReportAdequate'),
+                    t('home.demo.mockups.errorAnalysis'),
                   ]}
                 />
               </div>
             </div>
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">Assessment Beyond Text.</h2>
+              <h2 className="section-title">{t('home.demo.assessmentTitle')}</h2>
               <p className="section-text">
-                WhimsyLabs AI-proofs assessments by grading the process, not
-                just the result. We track physical inputs within our virtual
-                labs, like equipment handling and reaction times, which AI
-                cannot simulate.
+                {t('home.demo.assessmentText1')}
               </p>
               <p className="section-text">
-                Every student's reagents have slightly different concentrations
-                and impurities — so every student has a different correct
-                answer. ChatGPT assumes perfect 0.1M reagents. Your HCl was
-                0.0987M with trace iron. Its "correct" answer will get you
-                marked wrong.
+                {t('home.demo.assessmentText2')}
               </p>
               <p className="section-text callout-text">
-                💡 This makes WhimsyLabs perfect for homework — students can't
-                share answers or use AI to cheat.
+                {t('home.demo.assessmentCallout')}
               </p>
               {/* Code-based UI mockup: Question Preview */}
               <div className="question-mockup-wrapper">
                 <QuestionPreview
                   questionNum={5}
                   total={10}
-                  type="Calculation"
-                  context="Your titration data: Initial burette reading: 0.50 mL | Final reading: 24.80 mL | NaOH concentration: 0.10 M"
-                  question="Using YOUR experimental values, calculate the concentration of the HCl solution in mol/L. Show your working."
+                  type={t('home.demo.mockups.calculation')}
+                  context={t('home.demo.mockups.titrationData')}
+                  question={t('home.demo.mockups.calculateConc')}
+                  t={t}
                 />
               </div>
             </div>
@@ -488,17 +476,15 @@ const LandingDemo = ({ language = 'en' }) => {
           <div className="time-saving-content animate-on-scroll">
             <div className="time-badge">
               <span className="time-number">3.5</span>
-              <span className="time-unit">Hours</span>
-              <span className="time-label">Saved Per Week</span>
+              <span className="time-unit">{t('home.demo.mockups.hours')}</span>
+              <span className="time-label">{t('home.demo.mockups.savedPerWeek')}</span>
             </div>
             <div className="time-text">
               <h2 className="section-title">
-                Save 3.5 Hours of Grading Per Week.<sup><a href="https://journals.sagepub.com/doi/10.3102/0034654314564881" target="_blank" rel="noopener noreferrer" className="citation-link">[2]</a></sup>
+                {t('home.demo.timeSavingTitle')}<sup><a href="https://journals.sagepub.com/doi/10.3102/0034654314564881" target="_blank" rel="noopener noreferrer" className="citation-link">[2]</a></sup>
               </h2>
               <p className="section-text">
-                Stop ticking boxes and start teaching. WhimsyLabs assesses skill
-                mastery and safety in real-time, providing automatic grading on
-                students' capabilities for you to review.
+                {t('home.demo.timeSavingText')}
               </p>
             </div>
           </div>
@@ -510,65 +496,55 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="container">
           <div className="section-grid">
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">Labs Built for Your Curriculum</h2>
+              <h2 className="section-title">{t('home.demo.curriculumTitle')}</h2>
               <p className="section-text">
-                Planning a course means matching labs to curriculum
-                expectations. We've built labs specifically for what you need to
-                teach — stoichiometry, titrations, electrolysis, and more.
+                {t('home.demo.curriculumText1')}
               </p>
               <p className="section-text">
-                Use them as-is, or customize the pre-lab and discussion
-                questions to fit your lesson plan. Most teachers modify existing
-                labs slightly — we make that easy.
+                {t('home.demo.curriculumText2')}
               </p>
               <p className="section-text">
-                Need something completely custom? Our AI Experiment Builder lets
-                you paste any protocol and generate a full lab scenario in
-                minutes.
+                {t('home.demo.curriculumText3')}
               </p>
               <p className="section-text">
-                <strong>Access the Worldwide Lab Library:</strong> Labs created by educators 
-                are shared across the entire WhimsyLabs community. Browse practicals from 
-                teachers around the globe, adapt them for your students, and contribute 
-                your own creations back to the community.
+                {t('home.demo.curriculumText4')}
               </p>
               {/* Code-based UI mockup: Protocol Parser */}
               <div className="mockup-container protocol-mockup">
                 <div className="mockup-header">
-                  <span className="mockup-title">Parse Lab Protocol</span>
-                  <button className="parse-btn">✨ Parse with AI</button>
+                  <span className="mockup-title">{t('home.demo.mockups.parseLabProtocol')}</span>
+                  <button className="parse-btn">{t('home.demo.mockups.parseWithAI')}</button>
                 </div>
                 <div className="protocol-content">
                   <div className="protocol-input">
                     <p className="protocol-text">
-                      Acid-Base Titration Practical
+                      {t('home.demo.mockups.acidBaseTitration')}
                     </p>
                     <p className="protocol-objective">
-                      Objective: Determine the concentration of an unknown HCl
-                      solution using standardized NaOH.
+                      {t('home.demo.mockups.objectiveDetermine')}
                     </p>
                   </div>
                   <div className="protocol-result">
                     <span className="result-badge success">
-                      ✓ Protocol Parsed Successfully
+                      {t('home.demo.mockups.protocolParsed')}
                     </span>
                     <div className="parsed-items">
                       <div className="parsed-group">
-                        <span className="group-label">Equipment (5)</span>
+                        <span className="group-label">{t('home.demo.mockups.equipment5')}</span>
                         <span className="group-items">
-                          Burette, Pipette, Conical Flask...
+                          {t('home.demo.mockups.equipmentItems')}
                         </span>
                       </div>
                       <div className="parsed-group">
-                        <span className="group-label">Reagents (3)</span>
+                        <span className="group-label">{t('home.demo.mockups.reagents3')}</span>
                         <span className="group-items">
-                          HCl (0.1M), NaOH (0.1M), Phenolphthalein
+                          {t('home.demo.mockups.reagentItems')}
                         </span>
                       </div>
                       <div className="parsed-group">
-                        <span className="group-label">Reactions (1)</span>
+                        <span className="group-label">{t('home.demo.mockups.reactions1')}</span>
                         <span className="group-items">
-                          Acid-Base Neutralization
+                          {t('home.demo.mockups.reactionItem')}
                         </span>
                       </div>
                     </div>
@@ -580,68 +556,68 @@ const LandingDemo = ({ language = 'en' }) => {
               {/* Code-based UI mockup: Lab Library */}
               <div className="mockup-container lab-library-mockup">
                 <div className="mockup-header">
-                  <span className="mockup-title">Lab Library</span>
-                  <span className="mockup-badge">Chemistry</span>
+                  <span className="mockup-title">{t('home.demo.mockups.labLibrary')}</span>
+                  <span className="mockup-badge">{t('home.demo.mockups.chemistry')}</span>
                 </div>
                 <div className="library-tabs">
-                  <button className="library-tab active">My School</button>
-                  <button className="library-tab">🌍 Community</button>
-                  <button className="library-tab">WhimsyLabs</button>
+                  <button className="library-tab active">{t('home.demo.mockups.mySchool')}</button>
+                  <button className="library-tab">{t('home.demo.mockups.community')}</button>
+                  <button className="library-tab">{t('home.demo.mockups.whimsylabs')}</button>
                 </div>
                 <div className="mockup-content">
                   <div className="lab-card">
                     <div className="lab-card-header">
                       <span className="lab-icon">🧪</span>
                       <div className="lab-info">
-                        <span className="lab-name">Acid-Base Titration</span>
+                        <span className="lab-name">{t('home.demo.mockups.acidBaseTitrationLab')}</span>
                         <span className="lab-tags">
-                          Stoichiometry • Year 9-10
+                          {t('home.demo.mockups.stoichiometryYear')}
                         </span>
                       </div>
-                      <span className="lab-status ready">Ready</span>
+                      <span className="lab-status ready">{t('home.demo.mockups.ready')}</span>
                     </div>
                     <div className="lab-card-actions">
-                      <button className="lab-btn primary">Assign</button>
-                      <button className="lab-btn secondary">Customize</button>
+                      <button className="lab-btn primary">{t('home.demo.mockups.assign')}</button>
+                      <button className="lab-btn secondary">{t('home.demo.mockups.customize')}</button>
                     </div>
                   </div>
                   <div className="lab-card">
                     <div className="lab-card-header">
                       <span className="lab-icon">⚡</span>
                       <div className="lab-info">
-                        <span className="lab-name">Electrolysis of Water</span>
-                        <span className="lab-tags">Redox • Year 10-11</span>
+                        <span className="lab-name">{t('home.demo.mockups.electrolysisWater')}</span>
+                        <span className="lab-tags">{t('home.demo.mockups.redoxYear')}</span>
                       </div>
-                      <span className="lab-status ready">Ready</span>
+                      <span className="lab-status ready">{t('home.demo.mockups.ready')}</span>
                     </div>
                     <div className="lab-card-actions">
-                      <button className="lab-btn primary">Assign</button>
-                      <button className="lab-btn secondary">Customize</button>
+                      <button className="lab-btn primary">{t('home.demo.mockups.assign')}</button>
+                      <button className="lab-btn secondary">{t('home.demo.mockups.customize')}</button>
                     </div>
                   </div>
                   <div className="lab-card">
                     <div className="lab-card-header">
                       <span className="lab-icon">🔥</span>
                       <div className="lab-info">
-                        <span className="lab-name">Enthalpy of Combustion</span>
+                        <span className="lab-name">{t('home.demo.mockups.enthalpyCombustion')}</span>
                         <span className="lab-tags">
-                          Thermodynamics • Year 11-12
+                          {t('home.demo.mockups.thermoYear')}
                         </span>
                       </div>
-                      <span className="lab-status ready">Ready</span>
+                      <span className="lab-status ready">{t('home.demo.mockups.ready')}</span>
                     </div>
                     <div className="lab-card-actions">
-                      <button className="lab-btn primary">Assign</button>
-                      <button className="lab-btn secondary">Customize</button>
+                      <button className="lab-btn primary">{t('home.demo.mockups.assign')}</button>
+                      <button className="lab-btn secondary">{t('home.demo.mockups.customize')}</button>
                     </div>
                   </div>
                   <div className="lab-card custom">
                     <div className="lab-card-header">
                       <span className="lab-icon">✨</span>
                       <div className="lab-info">
-                        <span className="lab-name">Create Custom Lab</span>
+                        <span className="lab-name">{t('home.demo.mockups.createCustomLab')}</span>
                         <span className="lab-tags">
-                          Use AI to build from your protocol
+                          {t('home.demo.mockups.useAIBuild')}
                         </span>
                       </div>
                     </div>
@@ -658,15 +634,12 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="container">
           <div className="section-grid">
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">Data That Drives Intervention</h2>
+              <h2 className="section-title">{t('home.demo.dashboardTitle')}</h2>
               <p className="section-text">
-                Our dashboard offers a real-time view of student performance,
-                not just grades. Instantly identify struggling students for
-                timely intervention before they fall behind.
+                {t('home.demo.dashboardText1')}
               </p>
               <p className="section-text">
-                Export reports easily or integrate directly with your LMS to
-                track progress from individual students to entire regions.
+                {t('home.demo.dashboardText2')}
               </p>
             </div>
             <div className="section-visual animate-on-scroll">
@@ -674,84 +647,90 @@ const LandingDemo = ({ language = 'en' }) => {
               <div className="mockup-container dashboard-mockup">
                 <div className="mockup-header">
                   <span className="mockup-title">
-                    Teacher Analytics Dashboard
+                    {t('home.demo.mockups.teacherDashboard')}
                   </span>
-                  <span className="mockup-badge">This Term</span>
+                  <span className="mockup-badge">{t('home.demo.mockups.thisTerm')}</span>
                 </div>
                 <div className="mockup-content">
                   {/* Stats Row */}
                   <div className="stats-grid">
                     <StatCard
-                      label="Total Students"
+                      label={t('home.demo.mockups.totalStudents')}
                       value="78"
                       icon={<span>👥</span>}
-                      subtext="Across 3 classes"
+                      subtext={t('home.demo.mockups.across3Classes')}
                     />
                     <StatCard
-                      label="Average Score"
+                      label={t('home.demo.mockups.averageScore')}
                       value="77%"
                       icon={<span>🎯</span>}
                       trend={4}
                     />
                     <StatCard
-                      label="Labs Completed"
+                      label={t('home.demo.mockups.labsCompleted')}
                       value="247"
                       icon={<span>🧪</span>}
-                      subtext="This term"
+                      subtext={t('home.demo.mockups.thisTerm')}
                     />
                     <StatCard
-                      label="At-Risk Students"
+                      label={t('home.demo.mockups.atRiskStudents')}
                       value="3"
                       icon={<span>⚠️</span>}
                       highlight={true}
-                      subtext="Need attention"
+                      subtext={t('home.demo.mockups.needAttention')}
                     />
                   </div>
 
                   {/* Class Performance */}
                   <div className="classes-section">
-                    <h4 className="section-subtitle">Class Performance</h4>
+                    <h4 className="section-subtitle">{t('home.demo.mockups.classPerformance')}</h4>
                     <ClassRow
-                      name="Year 9 Chemistry A"
+                      name={t('home.demo.mockups.year9ChemistryA')}
                       students={28}
                       avgScore={78}
                       trend={5}
                       atRisk={3}
+                      studentsLabel={t('home.demo.mockups.students')}
+                      atRiskLabel={t('home.demo.mockups.atRisk')}
                     />
                     <ClassRow
-                      name="Year 9 Chemistry B"
+                      name={t('home.demo.mockups.year9ChemistryB')}
                       students={26}
                       avgScore={72}
                       trend={-2}
                       atRisk={5}
+                      studentsLabel={t('home.demo.mockups.students')}
+                      atRiskLabel={t('home.demo.mockups.atRisk')}
                     />
                     <ClassRow
-                      name="Year 10 Chemistry"
+                      name={t('home.demo.mockups.year10Chemistry')}
                       students={24}
                       avgScore={81}
                       trend={8}
                       atRisk={1}
+                      studentsLabel={t('home.demo.mockups.students')}
+                      atRiskLabel={t('home.demo.mockups.atRisk')}
                     />
                   </div>
 
                   {/* Skills Breakdown */}
                   <div className="skills-section">
                     <h4 className="section-subtitle">
-                      Skills Assessment (All Classes)
+                      {t('home.demo.mockups.skillsAssessment')}
                     </h4>
-                    <SkillBar skill="Lab Safety" avgScore={88} benchmark={85} />
+                    <SkillBar skill={t('home.demo.mockups.labSafety')} avgScore={88} benchmark={85} />
                     <SkillBar
-                      skill="Measurement Accuracy"
+                      skill={t('home.demo.mockups.measurementAccuracy')}
                       avgScore={72}
                       benchmark={80}
                     />
                     <SkillBar
-                      skill="Data Recording"
+                      skill={t('home.demo.mockups.dataRecording')}
                       avgScore={81}
                       benchmark={75}
                     />
                     <SkillBar
-                      skill="Practical Technique"
+                      skill={t('home.demo.mockups.practicalTechnique')}
                       avgScore={69}
                       benchmark={75}
                     />
@@ -768,46 +747,36 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="gassy-bubbles"></div>
         <div className="features-grid-section container">
           <div className="gassy-header">
-            <h2 className="gassy-title">Why Students Love WhimsyLabs<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer" className="citation-link">[3]</a></sup></h2>
+            <h2 className="gassy-title">{t('home.demo.whyStudentsLove')}<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer" className="citation-link">[3]</a></sup></h2>
             <div className="bett-award-badges">
-              <div className="bett-award-badge">
-                <span className="award-text">🏆 BETT 2025 Kids Judge Award Winner</span>
-              </div>
-              <div className="bett-award-badge techlearning">
-                <span className="award-text">⭐ TechLearning's #1 Best of BETT 2026</span>
-              </div>
+              <a href="/blog/whimsylabs-education-revolution" className="bett-award-badge">
+                <span className="award-text">{t('home.demo.mockups.bettAward')}</span>
+              </a>
+              <a href="https://www.techlearning.com/learning/classroom-tools/best-of-bett-2026-the-floor-of-bett-uk-reveals-the-future-of-education-tech" target="_blank" rel="noopener noreferrer" className="bett-award-badge techlearning">
+                <span className="award-text">{t('home.demo.mockups.techLearningAward')}</span>
+              </a>
             </div>
           </div>
           <div className="features-grid animate-on-scroll">
             <article className="feature-block">
               <img src="/images/meowdy.png" alt="" className="feature-icon-img" aria-hidden="true" />
-              <h3>Freedom to Explore</h3>
+              <h3>{t('home.demo.freedomToExplore')}</h3>
               <p>
-                Students aren't limited to following instructions. They can mix
-                any reagent with any equipment to test their own hypotheses —
-                and see real consequences. Curiosity-driven learning, safely
-                contained in a virtual environment.
+                {t('home.demo.freedomToExploreText')}
               </p>
             </article>
             <article className="feature-block">
               <img src="/images/cat_beaker.png" alt="" className="feature-icon-img" aria-hidden="true" />
-              <h3>Science for Everyone</h3>
+              <h3>{t('home.demo.scienceForEveryone')}</h3>
               <p>
-                Inclusive by default. We support full control remapping,
-                text-to-speech, and self-paced modes for SEND learners. Plus,
-                our low-bandwidth mode ensures smooth operation even on unstable
-                school internet connections.
+                {t('home.demo.scienceForEveryoneText')}
               </p>
             </article>
             <article className="feature-block">
               <img src="/images/cat_brain.png" alt="" className="feature-icon-img" aria-hidden="true" />
-              <h3>Rewarding Mastery</h3>
+              <h3>{t('home.demo.rewardingMastery')}</h3>
               <p>
-                We use gamification to drive understanding, not screen time.
-                Students earn free Lab Points for safety and accuracy to
-                customize their virtual workspace. This builds intrinsic
-                motivation to improve skills without using predatory engagement
-                tactics.
+                {t('home.demo.rewardingMasteryText')}
               </p>
             </article>
           </div>
@@ -818,27 +787,22 @@ const LandingDemo = ({ language = 'en' }) => {
       <section className="pioneer-section">
         <div className="container">
           <div className="pioneer-content animate-on-scroll">
-            <h2 className="section-title">WhimsyLabs Pioneer Program</h2>
+            <h2 className="section-title">{t('home.demo.pioneerTitle')}</h2>
             <p className="pioneer-intro">
-              Launching globally in September 2026, but schools and institutions
-              can get early access starting this April (Summer Term).
+              {t('home.demo.pioneerIntro')}
             </p>
             <p className="pioneer-cta-text">
-              Sign up now to become a WhimsyLabs Pioneer School and receive
-              exclusive benefits:
+              {t('home.demo.pioneerCtaText')}
             </p>
             <ul className="pioneer-benefits">
               <li>
-                Get full access to the Beta AI Grading and Early Modules for the
-                Summer Term.
+                {t('home.demo.pioneerBenefit1')}
               </li>
               <li>
-                Secure the 2026/27 Academic Year license at our introductory
-                BETT rate.
+                {t('home.demo.pioneerBenefit2')}
               </li>
               <li>
-                Direct access to our dev team to request specific apparatus for
-                the September launch.
+                {t('home.demo.pioneerBenefit3')}
               </li>
             </ul>
             <div className="pioneer-cta">
@@ -857,7 +821,7 @@ const LandingDemo = ({ language = 'en' }) => {
       <section className="subjects-banner">
         <div className="container">
           <p className="subjects-list">
-            Biology • Chemistry • Physics • Electronics
+            {t('home.demo.subjectsBanner')}
           </p>
         </div>
       </section>
@@ -868,7 +832,7 @@ const LandingDemo = ({ language = 'en' }) => {
       {/* References Section */}
       <section className="references-section">
         <div className="container">
-          <h3 className="references-title">References</h3>
+          <h3 className="references-title">{t('home.demo.referencesTitle')}</h3>
           <ol className="references-list">
             <li id="ref-1">
               Levac, D.E., Huber, M.E., & Sternad, D. (2019). Learning and transfer of complex motor skills in virtual reality: a perspective review. <em>Journal of NeuroEngineering and Rehabilitation</em>, 16, 121. 
