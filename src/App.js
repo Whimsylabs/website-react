@@ -9,6 +9,7 @@ import Features from "./Components/FeaturesPage";
 import FAQPage from "./Components/FAQPage";
 import ContactPage from "./Components/ContactPage";
 import PrivacyPage from "./Components/PrivacyPage";
+import DataSecurityPage from "./Components/DataSecurityPage";
 import BettPage from "./Components/BettPage";
 import LandingDemo from "./Components/LandingDemo";
 import BlogPost from "./Components/BlogPost";
@@ -46,6 +47,8 @@ function App(props = {}) {
       return <ContactPage language={language} />;
     if (basePath === "/privacy/" || basePath === "/privacy")
       return <PrivacyPage language={language} />;
+    if (basePath === "/data-security/" || basePath === "/data-security")
+      return <DataSecurityPage language={language} />;
     if (basePath === "/bett/" || basePath === "/bett")
       return <BettPage language={language} />;
     // landing-demo is now the homepage

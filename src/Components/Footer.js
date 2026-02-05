@@ -14,6 +14,7 @@ const Footer = ({ t }) => {
                 <li><a href="/blog/" className="nav-link" aria-label={t('footer.blogLabel')}>{t('footer.blog')}</a></li>
                 <li><a href="/faq/" className="nav-link" aria-label={t('footer.faqLabel')}>{t('footer.faq')}</a></li>
                 <li><a href="/privacy/" className="nav-link" aria-label={t('footer.privacyLabel')}>{t('footer.privacy')}</a></li>
+                <li><a href="/data-security/" className="nav-link" aria-label="Data Security">Data Security</a></li>
             </ul>
             
             {/* Social Media Icons */}

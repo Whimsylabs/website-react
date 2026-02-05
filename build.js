@@ -82,6 +82,11 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.privacy?.description || "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
     keywords: "WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy",
   },
+  "/data-security": {
+    title: translations[lang]?.dataSecurity?.title || "Student Data Security | WhimsyLabs Virtual Lab Software",
+    description: translations[lang]?.dataSecurity?.description || "How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.",
+    keywords: "student data privacy, EdTech security, FERPA compliance, GDPR education, virtual lab data protection, school data security",
+  },
   // "/landing-demo" is now the homepage at "/"
 });
 
@@ -94,6 +99,7 @@ const routeComponentMap = {
   "/faq": "FAQPage",
   "/contact": "ContactPage",
   "/privacy": "PrivacyPage",
+  "/data-security": "DataSecurityPage",
   "/bett": "BettPage",
   // "/landing-demo": "LandingDemo", // Now the homepage
   // "/ignite-pitch": "IgnitePitchDeck", // Disabled
@@ -216,6 +222,10 @@ async function loadReactComponents() {
     ReactComponents.PrivacyPage =
       require("./src/Components/PrivacyPage.js").default;
     console.log("✅ Loaded PrivacyPage");
+
+    ReactComponents.DataSecurityPage =
+      require("./src/Components/DataSecurityPage.js").default;
+    console.log("✅ Loaded DataSecurityPage");
 
     ReactComponents.BettPage = require("./src/Components/BettPage.js").default;
     console.log("✅ Loaded BettPage");
@@ -368,8 +378,9 @@ async function getBlogPosts(language = 'en') {
     const Post17 = require("./src/Components/blog/Post17.js");
     const Post18 = require("./src/Components/blog/Post18.js");
     const Post19 = require("./src/Components/blog/Post19.js");
+    const Post20 = require("./src/Components/blog/Post20.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -411,6 +422,7 @@ async function getBlogPosts(language = 'en') {
       const Post17 = require("./src/Components/blog/Post17.js");
       const Post18 = require("./src/Components/blog/Post18.js");
       const Post19 = require("./src/Components/blog/Post19.js");
+      const Post20 = require("./src/Components/blog/Post20.js");
 
       const fallbackPosts = [
         {
@@ -602,6 +614,16 @@ async function getBlogPosts(language = 'en') {
           path: `/blog/${Post19.slug}`,
           language: 'en',
           hasFullTranslation: true
+        },
+        {
+          id: Post20.slug,
+          title: Post20.title,
+          date: Post20.date,
+          description: Post20.description,
+          content: Post20.content,
+          path: `/blog/${Post20.slug}`,
+          language: 'en',
+          hasFullTranslation: true
         }
       ];
 
@@ -703,6 +725,7 @@ async function generatePageHTML(route, data = {}) {
           'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
           'vr-winter-web-first-virtual-labs': 'post18',
           'oecd-ai-learning-paradox-virtual-labs': 'post19',
+          'ai-assessment-crisis-solution': 'post20',
         };
         
         const postId = slugToPostId[data.slug];
@@ -930,6 +953,7 @@ async function generateSitemap() {
       { path: '/faq/', priority: '0.9', changefreq: 'monthly' },
       { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
       { path: '/privacy/', priority: '0.3', changefreq: 'yearly' },
+      { path: '/data-security/', priority: '0.4', changefreq: 'yearly' },
       // landing-demo is now the homepage
     ];
 

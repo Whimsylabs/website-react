@@ -2,7 +2,7 @@
 export default {
   // Landing Demo page
   demo: {
-    heroTitle: "WhimsyLabs: La Solución <em>Práctica</em> para la Ciencia.",
+    heroTitle: "El Laboratorio Virtual para una <em>Verdadera</em> Educación STEM",
     heroTagline: "Deja de hacer clic en 'Siguiente'. Empieza a hacer ciencia.",
     heroDescription: "WhimsyLabs no es solo un simulador; es un campo de juego de partículas. Combinamos un motor de Física-Primero de primera clase con evaluación impulsada por IA para ofrecer el único laboratorio virtual que desarrolla verdadera memoria muscular mientras ahorra horas de corrección a los profesores.",
     splashSticker: "¡Sin VR requerido!",
@@ -151,7 +151,7 @@ export default {
     "Transforma la educación STEM con experiencias inmersivas de laboratorio virtual",
   getStarted: "Comenzar",
   learnMore: "Saber Más",
-  welcomeTitle: "¡Bienvenido al Software de Laboratorio Virtual WhimsyLabs!",
+  welcomeTitle: "Software de Laboratorio Virtual para Educación STEM",
   welcomeText:
     "WhimsyLabs proporciona software de laboratorio virtual galardonado que da a educadores y estudiantes la libertad de explorar, jugar y aprender conceptos científicos de primera mano. A diferencia de las simulaciones tradicionales limitadas a una biblioteca fija de 200-300 prácticas, nuestro entorno sandbox permite experimentos ilimitados. Diseña cualquier práctica para cualquier currículo, no solo escenarios predefinidos. Ya sea que estés enseñando Biología, Química o Física, nuestras simulaciones de laboratorio en línea permiten a los estudiantes experimentar con fenómenos científicos y equipos sin las limitaciones y riesgos de un laboratorio físico. Nuestros laboratorios virtuales STEM para escuelas ayudan a los estudiantes a desarrollar habilidades de laboratorio de manera segura mientras proporcionan a los educadores herramientas de evaluación poderosas.",
   joinPilot: "¡Únete al piloto!",

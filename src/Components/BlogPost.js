@@ -27,6 +27,7 @@ import * as Post16 from './blog/Post16';
 import * as Post17 from './blog/Post17';
 import * as Post18 from './blog/Post18';
 import * as Post19 from './blog/Post19';
+import * as Post20 from './blog/Post20';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -162,6 +163,13 @@ const fallbackPosts = [
     content: Post19.content,
     date: Post19.date,
     description: Post19.description,
+  },
+  {
+    id: Post20.slug,
+    title: Post20.title,
+    content: Post20.content,
+    date: Post20.date,
+    description: Post20.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -185,7 +193,8 @@ const slugToPostId = {
   'why-traditional-virtual-labs-fail-physics-engine': 'post16',
   'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
   'vr-winter-web-first-virtual-labs': 'post18',
-  'oecd-ai-learning-paradox-virtual-labs': 'post19'
+  'oecd-ai-learning-paradox-virtual-labs': 'post19',
+  'ai-assessment-crisis-solution': 'post20'
 };
 
 const BlogPost = (props = {}) => {

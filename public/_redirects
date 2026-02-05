@@ -11,6 +11,7 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /de/blog /de/blog/ 301!
 /de/features /de/features/ 301!
 /de/privacy /de/privacy/ 301!
+/de/data-security /de/data-security/ 301!
 
 /es/faq /es/faq/ 301!
 /es/contact /es/contact/ 301!
@@ -18,6 +19,7 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /es/blog /es/blog/ 301!
 /es/features /es/features/ 301!
 /es/privacy /es/privacy/ 301!
+/es/data-security /es/data-security/ 301!
 
 /fr/faq /fr/faq/ 301!
 /fr/contact /fr/contact/ 301!
@@ -25,6 +27,7 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /fr/blog /fr/blog/ 301!
 /fr/features /fr/features/ 301!
 /fr/privacy /fr/privacy/ 301!
+/fr/data-security /fr/data-security/ 301!
 
 /jp/faq /jp/faq/ 301!
 /jp/contact /jp/contact/ 301!
@@ -32,14 +35,16 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /jp/blog /jp/blog/ 301!
 /jp/features /jp/features/ 301!
 /jp/privacy /jp/privacy/ 301!
+/jp/data-security /jp/data-security/ 301!
 
-# Main English pages without trailing slash → with trailing slash  
+# Main English pages without trailing slash → with trailing slash
 /faq /faq/ 301!
 /contact /contact/ 301!
 /services /services/ 301!
 /blog /blog/ 301!
 /features /features/ 301!
 /privacy /privacy/ 301!
+/data-security /data-security/ 301!
 /bett /bett/ 301!
 /demo /demo/ 301!
 /spa /spa/ 301!

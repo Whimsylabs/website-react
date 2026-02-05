@@ -1,8 +1,29 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-02T23:55:23.767Z
+// Generated on 2026-02-03T22:12:43.138Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post20",
+      "slug": "ai-assessment-crisis-solution",
+      "title": "AI Detection Doesn't Work. Process-Based Assessment Does.",
+      "description": "82% of educators fear AI cheating, but detection tools fail. Process-based practical assessment offers a better path forward.",
+      "keywords": [
+        "AI assessment",
+        "formative assessment AI",
+        "AI detection education",
+        "Pearson assessment research",
+        "virtual lab grading",
+        "process-based assessment",
+        "AI-resistant assessment",
+        "science education AI",
+        "practical assessment",
+        "teacher AI grading"
+      ],
+      "date": "2026-02-04",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
@@ -251,6 +272,28 @@ module.exports = {
     }
   ],
   "de": [
+    {
+      "id": "post20",
+      "slug": "ai-assessment-crisis-solution",
+      "title": "AI Detection Doesn't Work. Process-Based Assessment Does.",
+      "description": "82% of educators fear AI cheating, but detection tools fail. Process-based practical assessment offers a better path forward.",
+      "keywords": [
+        "AI assessment",
+        "formative assessment AI",
+        "AI detection education",
+        "Pearson assessment research",
+        "virtual lab grading",
+        "process-based assessment",
+        "AI-resistant assessment",
+        "science education AI",
+        "practical assessment",
+        "teacher AI grading"
+      ],
+      "date": "2026-02-04",
+      "hasFullTranslation": false,
+      "language": "de",
+      "fallbackLanguage": "en"
+    },
     {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
@@ -578,6 +621,28 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post20",
+      "slug": "ai-assessment-crisis-solution",
+      "title": "AI Detection Doesn't Work. Process-Based Assessment Does.",
+      "description": "82% of educators fear AI cheating, but detection tools fail. Process-based practical assessment offers a better path forward.",
+      "keywords": [
+        "AI assessment",
+        "formative assessment AI",
+        "AI detection education",
+        "Pearson assessment research",
+        "virtual lab grading",
+        "process-based assessment",
+        "AI-resistant assessment",
+        "science education AI",
+        "practical assessment",
+        "teacher AI grading"
+      ],
+      "date": "2026-02-04",
+      "hasFullTranslation": false,
+      "language": "fr",
+      "fallbackLanguage": "en"
+    },
+    {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
       "title": "L'IA a Boosté les Notes de 127%. Puis les Élèves Ne Pensaient Plus.",
@@ -904,6 +969,28 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post20",
+      "slug": "ai-assessment-crisis-solution",
+      "title": "AI Detection Doesn't Work. Process-Based Assessment Does.",
+      "description": "82% of educators fear AI cheating, but detection tools fail. Process-based practical assessment offers a better path forward.",
+      "keywords": [
+        "AI assessment",
+        "formative assessment AI",
+        "AI detection education",
+        "Pearson assessment research",
+        "virtual lab grading",
+        "process-based assessment",
+        "AI-resistant assessment",
+        "science education AI",
+        "practical assessment",
+        "teacher AI grading"
+      ],
+      "date": "2026-02-04",
+      "hasFullTranslation": false,
+      "language": "es",
+      "fallbackLanguage": "en"
+    },
+    {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",
       "title": "La IA Subió Notas 127%. Luego los Alumnos No Pensaban Sin Ella.",
@@ -1229,6 +1316,28 @@ module.exports = {
     }
   ],
   "ja": [
+    {
+      "id": "post20",
+      "slug": "ai-assessment-crisis-solution",
+      "title": "AI Detection Doesn't Work. Process-Based Assessment Does.",
+      "description": "82% of educators fear AI cheating, but detection tools fail. Process-based practical assessment offers a better path forward.",
+      "keywords": [
+        "AI assessment",
+        "formative assessment AI",
+        "AI detection education",
+        "Pearson assessment research",
+        "virtual lab grading",
+        "process-based assessment",
+        "AI-resistant assessment",
+        "science education AI",
+        "practical assessment",
+        "teacher AI grading"
+      ],
+      "date": "2026-02-04",
+      "hasFullTranslation": false,
+      "language": "ja",
+      "fallbackLanguage": "en"
+    },
     {
       "id": "post19",
       "slug": "oecd-ai-learning-paradox-virtual-labs",

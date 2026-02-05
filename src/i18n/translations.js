@@ -20,7 +20,7 @@ const translations = {
 
     // Features
     features: {
-      title: "WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology",
+      title: "Physics Simulation & AI Tutor Features | WhimsyLabs Virtual Lab",
       description:
         "Explore WhimsyLabs' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.",
       uniqueFeatures: "Unique Features",
@@ -53,7 +53,7 @@ const translations = {
 
     // Services
     services: {
-      title: "WhimsyLabs Services - Custom Virtual Lab Solutions for Education",
+      title: "Virtual Lab Services for Schools & Education | WhimsyLabs",
       description: "Comprehensive virtual laboratory services including custom lab development, curriculum integration, teacher training, and technical support for schools.",
     },
 
@@ -63,6 +63,12 @@ const translations = {
       subtitle:
         "Learn how we collect, use, and protect your personal information when using our virtual laboratory software",
       description: "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
+    },
+
+    // Data Security
+    dataSecurity: {
+      title: "Student Data Security | WhimsyLabs Virtual Lab Software",
+      description: "How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.",
     },
 
     // BETT Page
@@ -126,8 +132,8 @@ const translations = {
 
     // Landing Demo (Homepage)
     landingDemo: {
-      title: "WhimsyLabs: The Practical Solution for Science | Virtual Lab Software",
-      description: "Experience WhimsyLabs' physics-first virtual lab engine with AI-driven assessment. Build true muscle memory while saving teachers hours of grading time.",
+      title: "WhimsyLabs Virtual Laboratory Software | STEM Education Platform",
+      description: "WhimsyLabs virtual laboratory software transforms STEM education with physics-first simulations and AI-driven assessment. Build real lab skills safely.",
     },
 
     // Common
@@ -225,6 +231,12 @@ const translations = {
       subtitle:
         "Aprende cómo recopilamos, usamos y protegemos tu información personal al usar nuestro software de laboratorio virtual",
       description: "Lee la política de privacidad de WhimsyLabs para entender cómo recopilamos, usamos y protegemos tus datos personales al usar nuestro software de laboratorio virtual para educación STEM.",
+    },
+
+    // Data Security
+    dataSecurity: {
+      title: "Seguridad de Datos Estudiantiles | WhimsyLabs Laboratorio Virtual",
+      description: "Cómo WhimsyLabs protege los datos estudiantiles: despliegues aislados por escuela, sin entrenamiento de IA, cumplimiento total GDPR/FERPA/COPPA.",
     },
 
     // BETT Page
@@ -389,6 +401,12 @@ const translations = {
       description: "Lisez la politique de confidentialité de WhimsyLabs pour comprendre comment nous collectons, utilisons et protégeons vos données lors de l'utilisation de notre logiciel de laboratoire virtuel pour l'éducation STEM.",
     },
 
+    // Data Security
+    dataSecurity: {
+      title: "Sécurité des Données Étudiantes | WhimsyLabs Laboratoire Virtuel",
+      description: "Comment WhimsyLabs protège les données étudiantes : déploiements isolés par école, pas d'entraînement IA, conformité GDPR/FERPA/COPPA.",
+    },
+
     // BETT Page
     bett: {
       title: "Rencontrez-nous au BETT 2026 | WhimsyLabs Laboratoire Virtuel",
@@ -550,6 +568,12 @@ const translations = {
       description: "Lesen Sie die Datenschutzrichtlinie von WhimsyLabs, um zu verstehen, wie wir Ihre Daten sammeln, verwenden und schützen, wenn Sie unsere virtuelle Labor-Software für die STEM-Bildung verwenden.",
     },
 
+    // Data Security
+    dataSecurity: {
+      title: "Schülerdatensicherheit | WhimsyLabs Virtuelles Labor",
+      description: "Wie WhimsyLabs Schülerdaten schützt: isolierte Bereitstellungen pro Schule, kein KI-Training, volle DSGVO/FERPA/COPPA-Konformität.",
+    },
+
     // BETT Page
     bett: {
       title: "Treffen Sie uns auf der BETT 2026 | WhimsyLabs Labor",
@@ -709,6 +733,12 @@ const translations = {
       subtitle:
         "シミュレーション教材をご利用の際に、お客様の個人情報をどのように収集、使用、保護しているかをご確認ください",
       description: "WhimsyLabsのプライバシーポリシーをお読みいただき、STEM教育向けシミュレーション教材をご利用の際に、お客様の個人情報とデータをどのように収集、使用、保護しているかをご理解ください。個人情報保護に関する当社の取り組みをご確認いただけます。",
+    },
+
+    // Data Security
+    dataSecurity: {
+      title: "生徒データセキュリティ | WhimsyLabs バーチャルラボ",
+      description: "WhimsyLabsが生徒データを保護する方法：学校ごとの分離環境、AIトレーニングなし、GDPR/FERPA/COPPA完全準拠。",
     },
 
     // BETT Page

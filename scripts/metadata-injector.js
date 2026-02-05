@@ -83,6 +83,11 @@ class MetadataInjector {
         description: 'Read WhimsyLabs privacy policy to understand how we protect your data and privacy when using our virtual laboratory software for STEM education.',
         keywords: 'WhimsyLabs privacy policy, virtual lab data protection, STEM education privacy, online lab security',
       },
+      '/data-security': {
+        title: 'Student Data Security | WhimsyLabs Virtual Lab Software',
+        description: 'How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.',
+        keywords: 'student data privacy, EdTech security, FERPA compliance, GDPR education, virtual lab data protection, school data security',
+      },
       '/spa': {
         title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
         description: 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
