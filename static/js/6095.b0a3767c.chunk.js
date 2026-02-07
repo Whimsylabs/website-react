@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[6095],{6095(s,e,t){t.d(e,{content:()=>l,description:()=>a,title:()=>i});t(5043);const i="VR Prepares Students for STEM Careers with Physical Lab Skills",a="Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.",l=null}}]);
+//# sourceMappingURL=6095.b0a3767c.chunk.js.map

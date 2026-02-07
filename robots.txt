@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-02
+# Last updated: 2026-02-07
 
 User-agent: *
 Allow: /
@@ -40,11 +40,13 @@ Disallow: /cdn-cgi/
 Allow: /bett/
 Allow: /blog/
 Allow: /contact/
+Allow: /data-security/
 Allow: /de/
 Allow: /es/
 Allow: /faq/
 Allow: /features/
 Allow: /fr/
+Allow: /grants/
 Allow: /jp/
 Allow: /privacy/
 Allow: /services/
@@ -53,12 +55,14 @@ Allow: /services/
 Allow: /bett/
 Allow: /blog/
 Allow: /blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /blog/ai-assessment-crisis-solution/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /blog/gamification-science-education-points-rewards-engagement/
 Allow: /blog/green-labs-sustainability-virtual-stem-education/
 Allow: /blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /blog/physicality-in-virtual-labs/
+Allow: /blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /blog/sandbox-learning-revolution-stem-education/
 Allow: /blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /blog/virtual-kidney-dissection-send-engagement/
@@ -72,16 +76,19 @@ Allow: /blog/whimsylabs-education-revolution/
 Allow: /blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /contact/
+Allow: /data-security/
 Allow: /de/
 Allow: /de/bett/
 Allow: /de/blog/
 Allow: /de/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /de/blog/ai-assessment-crisis-solution/
 Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /de/blog/gamification-science-education-points-rewards-engagement/
 Allow: /de/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /de/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /de/blog/physicality-in-virtual-labs/
+Allow: /de/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /de/blog/sandbox-learning-revolution-stem-education/
 Allow: /de/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /de/blog/virtual-kidney-dissection-send-engagement/
@@ -95,20 +102,25 @@ Allow: /de/blog/whimsylabs-education-revolution/
 Allow: /de/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /de/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /de/contact/
+Allow: /de/data-security/
 Allow: /de/faq/
 Allow: /de/features/
+Allow: /de/grants/
+Allow: /de/grants/royal-society/
 Allow: /de/privacy/
 Allow: /de/services/
 Allow: /es/
 Allow: /es/bett/
 Allow: /es/blog/
 Allow: /es/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /es/blog/ai-assessment-crisis-solution/
 Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /es/blog/gamification-science-education-points-rewards-engagement/
 Allow: /es/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /es/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /es/blog/physicality-in-virtual-labs/
+Allow: /es/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /es/blog/sandbox-learning-revolution-stem-education/
 Allow: /es/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /es/blog/virtual-kidney-dissection-send-engagement/
@@ -122,8 +134,11 @@ Allow: /es/blog/whimsylabs-education-revolution/
 Allow: /es/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /es/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /es/contact/
+Allow: /es/data-security/
 Allow: /es/faq/
 Allow: /es/features/
+Allow: /es/grants/
+Allow: /es/grants/royal-society/
 Allow: /es/privacy/
 Allow: /es/services/
 Allow: /faq/
@@ -132,12 +147,14 @@ Allow: /fr/
 Allow: /fr/bett/
 Allow: /fr/blog/
 Allow: /fr/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /fr/blog/ai-assessment-crisis-solution/
 Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
 Allow: /fr/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /fr/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /fr/blog/physicality-in-virtual-labs/
+Allow: /fr/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /fr/blog/sandbox-learning-revolution-stem-education/
 Allow: /fr/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /fr/blog/virtual-kidney-dissection-send-engagement/
@@ -151,20 +168,27 @@ Allow: /fr/blog/whimsylabs-education-revolution/
 Allow: /fr/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /fr/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /fr/contact/
+Allow: /fr/data-security/
 Allow: /fr/faq/
 Allow: /fr/features/
+Allow: /fr/grants/
+Allow: /fr/grants/royal-society/
 Allow: /fr/privacy/
 Allow: /fr/services/
+Allow: /grants/
+Allow: /grants/royal-society/
 Allow: /jp/
 Allow: /jp/bett/
 Allow: /jp/blog/
 Allow: /jp/blog/24-7-ai-tutoring-personalized-daily-recommendations/
+Allow: /jp/blog/ai-assessment-crisis-solution/
 Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
 Allow: /jp/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /jp/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /jp/blog/physicality-in-virtual-labs/
+Allow: /jp/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /jp/blog/sandbox-learning-revolution-stem-education/
 Allow: /jp/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /jp/blog/virtual-kidney-dissection-send-engagement/
@@ -178,14 +202,17 @@ Allow: /jp/blog/whimsylabs-education-revolution/
 Allow: /jp/blog/whimsylabs-wins-techlearning-best-of-bett-2026/
 Allow: /jp/blog/why-traditional-virtual-labs-fail-physics-engine/
 Allow: /jp/contact/
+Allow: /jp/data-security/
 Allow: /jp/faq/
 Allow: /jp/features/
+Allow: /jp/grants/
+Allow: /jp/grants/royal-society/
 Allow: /jp/privacy/
 Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 95 total (included above)
+# Blog posts summary: 105 total (included above)
 
-# Total pages in build: 134
+# Total pages in build: 159
 # This file is generated automatically - do not edit manually

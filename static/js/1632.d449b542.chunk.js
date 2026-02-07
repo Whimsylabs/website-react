@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[1632],{1632(s,e,i){i.d(e,{content:()=>a,description:()=>t,title:()=>o});i(5043);const o="Virtual vs. Physical Labs: Cost-Benefit Analysis for Schools",t="Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.",a=null}}]);
+//# sourceMappingURL=1632.d449b542.chunk.js.map

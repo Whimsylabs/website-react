@@ -53,15 +53,21 @@
         if (!path.endsWith('/') && !path.includes('.')) {
           // Check if this is a valid page that should have a trailing slash
           var validPaths = [
-            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa', '/landing-demo',
-            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett', '/de/landing-demo',
-            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett', '/es/landing-demo',
-            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett', '/fr/landing-demo',
-            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett', '/jp/landing-demo'
+            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa', '/landing-demo', '/data-security', '/grants', '/grants/royal-society',
+            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett', '/de/landing-demo', '/de/data-security', '/de/grants', '/de/grants/royal-society',
+            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett', '/es/landing-demo', '/es/data-security', '/es/grants', '/es/grants/royal-society',
+            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett', '/fr/landing-demo', '/fr/data-security', '/fr/grants', '/fr/grants/royal-society',
+            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett', '/jp/landing-demo', '/jp/data-security', '/jp/grants', '/jp/grants/royal-society'
           ];
 
           if (validPaths.indexOf(path) !== -1) {
-            window.location.replace(path + '/' + search + hash);
+            var targetUrl = path + '/' + search + hash;
+            // Update manual redirect link with correct URL
+            var manualLink = document.getElementById('manual-redirect');
+            if (manualLink) {
+              manualLink.innerHTML = 'If you\'re not redirected automatically, <a href="' + targetUrl + '" style="color: white;">click here</a>.';
+            }
+            window.location.replace(targetUrl);
             return;
           }
         }
@@ -75,6 +81,8 @@
 
         // Show the 404 page instead of redirecting
         document.getElementById('loader').style.display = 'none';
+        document.getElementById('redirect-text').style.display = 'none';
+        document.getElementById('manual-redirect').style.display = 'none';
         document.getElementById('error-message').style.display = 'block';
       })();
     </script>
@@ -140,6 +148,7 @@
         <p><a href="/" style="color: white; text-decoration: underline;">Return to Home</a></p>
       </div>
       <p id="redirect-text">Redirecting you to the correct page...</p>
+      <p id="manual-redirect" style="margin-top: 15px; font-size: 14px; opacity: 0.8;">If you're not redirected automatically, <a href="/" style="color: white;">click here to go to the homepage</a>.</p>
     </div>
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1f1968;color:#fff;padding:16px 20px;z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
