@@ -53,11 +53,11 @@
         if (!path.endsWith('/') && !path.includes('.')) {
           // Check if this is a valid page that should have a trailing slash
           var validPaths = [
-            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa', '/landing-demo', '/data-security', '/grants', '/grants/royal-society',
-            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett', '/de/landing-demo', '/de/data-security', '/de/grants', '/de/grants/royal-society',
-            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett', '/es/landing-demo', '/es/data-security', '/es/grants', '/es/grants/royal-society',
-            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett', '/fr/landing-demo', '/fr/data-security', '/fr/grants', '/fr/grants/royal-society',
-            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett', '/jp/landing-demo', '/jp/data-security', '/jp/grants', '/jp/grants/royal-society'
+            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa', '/landing-demo', '/data-security', '/grants', '/grants/royal-society', '/chemistry', '/biology', '/physics',
+            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett', '/de/landing-demo', '/de/data-security', '/de/grants', '/de/grants/royal-society', '/de/chemistry', '/de/biology', '/de/physics',
+            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett', '/es/landing-demo', '/es/data-security', '/es/grants', '/es/grants/royal-society', '/es/chemistry', '/es/biology', '/es/physics',
+            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett', '/fr/landing-demo', '/fr/data-security', '/fr/grants', '/fr/grants/royal-society', '/fr/chemistry', '/fr/biology', '/fr/physics',
+            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett', '/jp/landing-demo', '/jp/data-security', '/jp/grants', '/jp/grants/royal-society', '/jp/chemistry', '/jp/biology', '/jp/physics'
           ];
 
           if (validPaths.indexOf(path) !== -1) {
@@ -80,10 +80,24 @@
         sessionStorage.setItem('404_path', path);
 
         // Show the 404 page instead of redirecting
-        document.getElementById('loader').style.display = 'none';
-        document.getElementById('redirect-text').style.display = 'none';
-        document.getElementById('manual-redirect').style.display = 'none';
-        document.getElementById('error-message').style.display = 'block';
+        // Wait for DOM to be ready since this script runs in <head>
+        function show404Page() {
+          var loader = document.getElementById('loader');
+          var redirectText = document.getElementById('redirect-text');
+          var manualRedirect = document.getElementById('manual-redirect');
+          var errorMessage = document.getElementById('error-message');
+          
+          if (loader) loader.style.display = 'none';
+          if (redirectText) redirectText.style.display = 'none';
+          if (manualRedirect) manualRedirect.style.display = 'none';
+          if (errorMessage) errorMessage.style.display = 'block';
+        }
+        
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', show404Page);
+        } else {
+          show404Page();
+        }
       })();
     </script>
     <style>
