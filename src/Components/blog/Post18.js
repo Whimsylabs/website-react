@@ -5,7 +5,7 @@ export const title =
 export const date = "2026-02-01";
 export const slug = "vr-winter-web-first-virtual-labs";
 export const description =
-  "As VR headset sales decline and Meta cuts Reality Labs staff, schools need education technology that isn't dependent on hardware cycles. Here's why web-first virtual labs are the sustainable choice.";
+  "VR headset sales are declining. Schools need edtech that isn't hardware-dependent. Web-first virtual labs are the sustainable choice.";
 export const keywords = [
   "VR winter",
   "virtual reality education",

@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "Virtual Labs vs. Physical Labs: A Cost-Benefit Analysis for Schools and Our Impact-Driven Mission";
+  "Virtual vs Physical Labs: A Cost-Benefit Analysis";
 export const date = "2025-08-20";
 export const slug = "virtual-labs-vs-physical-labs-cost-benefit-analysis";
 export const description =
-  "Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.";
+  "Compare traditional labs vs WhimsyLabs' virtual solution and how our impact-focused approach democratizes STEM education.";
 export const keywords = [
   "virtual vs physical labs",
   "cost-benefit analysis",

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const title =
-  "The Importance of Physicality in Virtual Labs: A Step Beyond Traditional Simulations";
+  "Physicality in Virtual Labs: Beyond Simulations";
 export const date = "2025-02-03";
 export const slug = "physicality-in-virtual-labs";
 export const description =
@@ -202,12 +202,12 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/real-time-physics-simulations">
+        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
           Real-Time Physics Simulations: The Technical Innovation Behind WhimsyLabs
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Preparing Industry-Ready STEM Graduates Through Virtual Laboratory Training
         </a>
       </li>

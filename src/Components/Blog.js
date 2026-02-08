@@ -29,6 +29,9 @@ import * as Post17 from './blog/Post17';
 import * as Post18 from './blog/Post18';
 import * as Post19 from './blog/Post19';
 import * as Post20 from './blog/Post20';
+import * as Post21 from './blog/Post21';
+import * as Post22 from './blog/Post22';
+import * as Post23 from './blog/Post23';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -171,6 +174,27 @@ const fallbackPosts = [
     content: Post20.content,
     date: Post20.date,
     description: Post20.description,
+  },
+  {
+    id: Post21.slug,
+    title: Post21.title,
+    content: Post21.content,
+    date: Post21.date,
+    description: Post21.description,
+  },
+  {
+    id: Post22.slug,
+    title: Post22.title,
+    content: Post22.content,
+    date: Post22.date,
+    description: Post22.description,
+  },
+  {
+    id: Post23.slug,
+    title: Post23.title,
+    content: Post23.content,
+    date: Post23.date,
+    description: Post23.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -195,7 +219,10 @@ const slugToPostId = {
   'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
   'vr-winter-web-first-virtual-labs': 'post18',
   'oecd-ai-learning-paradox-virtual-labs': 'post19',
-  'ai-assessment-crisis-solution': 'post20'
+  'ai-assessment-crisis-solution': 'post20',
+  'royal-society-partnership-grants-vr-science-labs': 'post21',
+  'edtech-vendor-security-questions-powerschool': 'post22',
+  'teachers-are-experts-custom-experiment-designer': 'post23'
 };
 
 // Reverse mapping from post IDs to slugs
@@ -216,8 +243,10 @@ const Blog = (props = {}) => {
   const initialPosts = getInitialPosts();
   const [posts, setPosts] = useState(initialPosts);
   const [loading, setLoading] = useState(initialPosts.length === 0);
-  const [currentLanguage, setCurrentLanguage] = useState('en');
-  const [languagePrefix, setLanguagePrefix] = useState('');
+  const [currentLanguage, setCurrentLanguage] = useState(props.language || 'en');
+  const [languagePrefix, setLanguagePrefix] = useState(
+    props.language && props.language !== 'en' ? `/${props.language}` : ''
+  );
   const [currentPage, setCurrentPage] = useState(1);
 
   const postsPerPage = 10; // Set pagination limit
@@ -230,7 +259,7 @@ const Blog = (props = {}) => {
     if (!props.language && typeof window !== 'undefined') {
       const currentPath = window.location.pathname;
       const pathParts = currentPath.split('/').filter(part => part);
-      if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
+      if (pathParts.length > 0 && ['en', 'de', 'fr', 'es', 'jp'].includes(pathParts[0])) {
         language = pathParts[0];
       }
     }
@@ -322,7 +351,7 @@ const Blog = (props = {}) => {
   if (loading) {
     return (
       <main className="container-fluid text-center p-0">
-        <Header />
+        <Header currentLang={currentLanguage} />
         <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
           <div className="blog-container">
             <div className="posts-section">
@@ -344,10 +373,10 @@ const Blog = (props = {}) => {
         <title>WhimsyLabs Blog | Virtual Lab & STEM Education Insights</title>
         <meta name="description" content="Stay updated with Whimsylabs' latest news on virtual laboratory technology and STEM education." />
       </Helmet>
-      <Header />
+      <Header currentLang={currentLanguage} />
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
-          <h1 className="blog-page-title">WhimsyLabs Blog</h1>
+          <h1 className="blog-page-title">Science Education Blog | WhimsyLabs</h1>
           <div className="posts-section blog-index">
             {currentPosts.map((post) => (
               <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} />

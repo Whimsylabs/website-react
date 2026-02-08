@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "24/7 AI Tutoring: How Personalized Daily Recommendations Keep Students from Falling Behind";
+  "24/7 AI Tutoring: Keeping Students on Track";
 export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =
-  "Discover how WhimsyLabs' intelligent daily and weekly lab recommendations, powered by AI analysis, help students master weak areas through low-stakes gamified practice, preventing students from falling behind.";
+  "WhimsyLabs' AI-powered daily lab recommendations help students master weak areas through gamified practice.";
 export const keywords = [
   "24/7 AI tutoring",
   "personalized learning recommendations",
@@ -321,7 +321,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>

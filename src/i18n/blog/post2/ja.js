@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "仮想実験室における身体性：従来のシミュレーションを超えて";
-export const description = "WhimsyLabsの画期的な液体物理学と手順トレーニングが、没入型の仮想体験を通じて理科教育をどのように再定義しているかを探ります。";
+export const description = "WhimsyLabsの画期的な液体物理学シミュレーションと手順トレーニングが、高精度VRによる没入型仮想実験室体験を通じて理科教育をどのように再定義し、生徒の筋肉記憶と実世界のSTEMキャリアで活かせる実践的なスキルを育成するかを探ります。";
 export const keywords = [
   "仮想実験室 身体性",
   "液体物理学 シミュレーション",

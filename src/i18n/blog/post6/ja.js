@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "サンドボックス学習：失敗する自由がSTEMに不可欠な理由";
-export const description = "WhimsyLabsのオープンエンドの探索アプローチが、失敗を強力な学習ツールとして受け入れ、本物の科学的思考を育成することで、理科教育をどのように変革しているかをご紹介します。";
+export const description = "WhimsyLabsのサンドボックス型探究学習が、安全な仮想実験環境での生産的失敗を通じて本物の科学的思考力を育成。オープンエンドの自由な実験環境で生徒が自由に探索し、試行錯誤から真の学びを得る革新的なSTEM教育アプローチをご紹介します。";
 export const keywords = [
   "サンドボックス学習",
   "生産的失敗",

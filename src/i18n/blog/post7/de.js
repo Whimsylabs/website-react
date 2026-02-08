@@ -1,9 +1,9 @@
 import React from "react";
 
 export const title =
-  "Grüne Labore: Nachhaltigkeit in der MINT-Bildung transformieren";
+  "Grüne Labore: Nachhaltigkeit in der MINT-Bildung";
 export const description =
-  "Erforschung, wie WhimsyLabs' virtuelle Laborplattform die Umweltkrise in der traditionellen naturwissenschaftlichen Bildung angeht und gleichzeitig nachhaltige Entwicklungsziele vorantreibt.";
+  "Erfahren Sie, wie WhimsyLabs' virtuelle Labore die Umweltkrise in der Bildung angehen und Nachhaltigkeitsziele vorantreiben.";
 export const keywords = [
   "grüne Labore",
   "nachhaltige MINT-Bildung",

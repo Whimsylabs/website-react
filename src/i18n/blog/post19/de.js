@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "KI Steigerte Noten um 127%. Dann Dachten Schüler Nicht Mehr Allein.";
+  "KI Steigerte Noten um 127%. Dann Dachten Schüler Nicht Mehr.";
 export const description =
-  "Neue OECD-Forschung enthüllt ein beunruhigendes Muster: KI-Tutoren verbessern die Noten dramatisch, aber Schüler verlieren die Fähigkeit, eigenständig Probleme zu lösen. Hier erfahren Sie, warum praktische virtuelle Labore einen besseren Weg bieten.";
+  "OECD-Forschung zeigt: KI-Tutoren steigern Noten, aber Schüler verlieren Problemlösungsfähigkeiten. Praktische Labore helfen.";
 export const keywords = [
   "OECD KI Bildung",
   "KI Lernparadoxon",

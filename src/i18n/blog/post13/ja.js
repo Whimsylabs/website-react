@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "シミュレーション教材におけるリアルタイム物理演算の科学：動的シミュレーションが学習を楽しくする理由";
 export const description =
-  "WhimsyLabsの画期的なリアルタイム計算物理学が、ゲーム原理を使用して理科教育を魅力的にし、最も洗練された本当に楽しいシミュレーション教材プラットフォームを作成する方法をご紹介します。";
+  "従来の学術シミュレーションは計算に数時間かかりますが、WhimsyLabsは基本的なChromebookでもリアルタイム物理シミュレーションを実現。ゲーム品質の応答性と科学的正確性を両立し、生徒が本当に楽しめる唯一の教育プラットフォームです。";
 export const keywords = [
   "学校向け化学実験室",
   "学校向け物理実験室",
@@ -253,7 +253,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           シミュレーション教材訓練を通じて業界対応のSTEM卒業生を準備する
         </a>
       </li>

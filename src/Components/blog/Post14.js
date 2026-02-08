@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "Gamification in Science Education: How Points, Rewards, and Creative Expression Drive Engagement in WhimsyLabs";
+  "Gamification in Science: How WhimsyLabs Engages";
 export const date = "2025-11-25";
 export const slug = "gamification-science-education-points-rewards-engagement";
 export const description =
-  "Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.";
+  "WhimsyLabs' gamification uses points, rewards, and creativity to enhance engagement and social connections in science education.";
 export const keywords = [
   "gamification in education",
   "STEM engagement",
@@ -397,7 +397,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>

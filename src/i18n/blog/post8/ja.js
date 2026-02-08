@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "仮想実験室がSTEM教師不足を解決：英国と世界の視点";
 export const description =
-  "WhimsyLabsのAI搭載シミュレーション教材が、24時間365日のチューターリングと自動評価を通じて、英国および世界中の学校に影響を与える壊滅的なSTEM教師不足にどのように対処しているかを探ります。";
+  "英国では物理教師の採用率がわずか17%、教師の30%が5年以内に辞職。WhimsyLabsのAI搭載シミュレーション教材が、24時間対応チューターリングと自動評価で週3.5時間の教師負担を軽減し、STEM教師不足危機に対処する方法を探ります。";
 export const keywords = [
   "STEM教師不足",
   "学校向け仮想実験室",

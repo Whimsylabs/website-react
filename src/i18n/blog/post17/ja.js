@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "WhimsyLabsがTech&Learning #1 Best of BETT 2026を受賞";
 export const description =
-  "WhimsyLabsは、世界最大のエドテックイベントでTech&Learningの#1 Best of BETT 2026を受賞し、物理ファーストの仮想実験室が最高の教育テクノロジー製品として認められました。";
+  "WhimsyLabsがTech&Learning誌の「#1 Best of BETT 2026」を受賞！600社以上の出展者から第1位に選出され、物理ファーストの仮想実験室アプローチが世界最大のエドテックイベントで最高の教育テクノロジー製品として認められました。";
 export const keywords = [
   "BETT 2026",
   "Tech and Learning Award",

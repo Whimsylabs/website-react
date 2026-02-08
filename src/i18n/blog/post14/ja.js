@@ -284,7 +284,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           学習の未来：AIチューターにおける感情的知性
         </a>
       </li>

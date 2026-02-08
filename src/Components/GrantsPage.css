@@ -1,0 +1,425 @@
+/* Grants Page Styles */
+
+/* Hero Section */
+.grants-hero-section {
+  background-color: #2C2170;
+  background-image: linear-gradient(to bottom, #1f1968 0%, #2C2170 100%);
+  color: white;
+  padding: 6rem 0 4rem 0;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  margin-bottom: -1px;
+}
+
+.grants-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 25%,
+      black 60%,
+      transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 25%,
+      black 60%,
+      transparent 100%);
+}
+
+.grants-hero-section .container {
+  position: relative;
+  z-index: 10;
+}
+
+.grants-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.grants-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #dabeff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.grants-hero-subtitle {
+  font-size: 1.4rem;
+  color: #95CEF6;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.grants-wave-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.grants-wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.grants-wave-divider svg path {
+  animation: grants-wave-ripple 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes grants-wave-ripple {
+  0%, 100% {
+    d: path("M0,0 C150,80 350,0 600,50 C850,100 1050,20 1200,80 L1200,120 L0,120 Z");
+  }
+  25% {
+    d: path("M0,20 C150,60 350,30 600,70 C850,80 1050,40 1200,60 L1200,120 L0,120 Z");
+  }
+  50% {
+    d: path("M0,40 C150,90 350,10 600,60 C850,110 1050,30 1200,90 L1200,120 L0,120 Z");
+  }
+  75% {
+    d: path("M0,10 C150,70 350,40 600,80 C850,70 1050,50 1200,50 L1200,120 L0,120 Z");
+  }
+}
+
+/* Introduction Section */
+.grants-intro-section {
+  padding: 6rem 1rem 4rem 1rem;
+  max-width: 900px;
+  margin: -80px auto 0;
+  position: relative;
+  z-index: 10;
+}
+
+.grants-intro-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(31, 25, 104, 0.15);
+}
+
+.grants-intro-section h2 {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 1.5rem;
+}
+
+.grants-intro-text {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grants-intro-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Grid Section */
+.grants-grid-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.grants-grid-title {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.grants-grid-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.grants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Grant Cards */
+.grants-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+}
+
+.grants-card-available {
+  cursor: pointer;
+}
+
+.grants-card-available:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(31, 25, 104, 0.2);
+  border-color: #dabeff;
+  text-decoration: none;
+  color: inherit;
+}
+
+.grants-card-unavailable {
+  opacity: 0.75;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.grants-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.grants-card-flag {
+  font-size: 1.5rem;
+}
+
+.grants-card-country {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.grants-card-title {
+  font-size: 1.3rem;
+  color: #1f1968;
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.grants-card-amount {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2C2170;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.grants-card-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.grants-card-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #1f1968 0%, #2d2090 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grants-card-available:hover .grants-card-button {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(31, 25, 104, 0.3);
+}
+
+.grants-card-coming-soon {
+  display: inline-block;
+  background: #e9ecef;
+  color: #666;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  border: 2px dashed #ccc;
+}
+
+/* Support Section */
+.grants-support-section {
+  padding: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 25, 104, 0.15);
+}
+
+.grants-support-section h2 {
+  font-size: 2.5rem;
+  color: #1f1968;
+  margin-bottom: 1.5rem;
+}
+
+.grants-support-text {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.grants-cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grants-cta-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.grants-cta-primary {
+  background: linear-gradient(135deg, #1f1968 0%, #2d2090 100%);
+  color: white;
+}
+
+.grants-cta-secondary {
+  background: white;
+  color: #1f1968;
+  border: 2px solid #dabeff;
+}
+
+.grants-cta-primary:hover,
+.grants-cta-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.grants-cta-primary:hover {
+  color: white;
+}
+
+.grants-cta-secondary:hover {
+  background: #f8f9fa;
+  color: #1f1968;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grants-hero-section {
+    padding: 4rem 0 3rem 0;
+    min-height: auto;
+  }
+
+  .grants-hero-title {
+    font-size: 2rem;
+  }
+
+  .grants-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .grants-wave-divider svg {
+    height: 50px;
+  }
+
+  .grants-intro-section {
+    padding: 5rem 1rem 3rem 1rem;
+  }
+
+  .grants-intro-section h2,
+  .grants-grid-title,
+  .grants-support-section h2 {
+    font-size: 2rem;
+  }
+
+  .grants-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grants-card {
+    padding: 1.5rem;
+  }
+
+  .grants-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grants-cta-button {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .grants-hero-section {
+    padding: 3rem 0 2.5rem 0;
+  }
+
+  .grants-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .grants-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .grants-card-title {
+    font-size: 1.1rem;
+  }
+
+  .grants-card-amount {
+    font-size: 1.5rem;
+  }
+
+  .grants-intro-section h2,
+  .grants-grid-title,
+  .grants-support-section h2 {
+    font-size: 1.75rem;
+  }
+}

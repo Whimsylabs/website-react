@@ -282,7 +282,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           El futuro del aprendizaje: Inteligencia emocional en tutores de IA
         </a>
       </li>

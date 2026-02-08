@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "Laboratorios Verdes: Transformando la Sostenibilidad en STEM";
-export const description = "Explorando cómo la plataforma de laboratorio virtual de WhimsyLabs aborda la crisis ambiental en la educación científica tradicional mientras avanza los objetivos de desarrollo sostenible.";
+export const description = "Cómo los laboratorios virtuales de WhimsyLabs abordan la crisis ambiental en educación científica y avanzan objetivos sostenibles.";
 export const keywords = [
   "laboratorios verdes",
   "educación STEM sostenible",

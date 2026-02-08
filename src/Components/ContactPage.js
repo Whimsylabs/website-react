@@ -125,7 +125,7 @@ const ContactPage = ({ language }) => {
         <meta name="description" content="Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education." />
         <meta name="keywords" content="contact WhimsyLabs, virtual lab trial, STEM education software, school lab simulation" />
       </Helmet>
-      <Header />
+      <Header currentLang={language} />
       <div id="contact-page-background">
         <div className="container py-5">
           <div className="contact-header-container">

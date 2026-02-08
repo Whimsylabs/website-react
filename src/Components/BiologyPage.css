@@ -1,0 +1,351 @@
+/* Biology Page Styles */
+
+/* Decorative Background Elements */
+.biology-page {
+  position: relative;
+}
+
+/* Hero Section */
+.biology-hero-section {
+  background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 50%, #40916c 100%);
+  padding: 120px 20px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero decoration */
+.biology-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  width: 300px;
+  height: 200px;
+  background: url('../../public/images/subject-biology-decorations.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.15;
+  pointer-events: none;
+  filter: brightness(0) invert(1);
+}
+
+.biology-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.biology-brand-tag {
+  display: inline-block;
+  background: rgba(180, 230, 190, 0.2);
+  color: #b7e4c7;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.biology-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.biology-hero-subtitle {
+  font-size: 1.4rem;
+  color: #b7e4c7;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.biology-hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.biology-btn-primary {
+  background: linear-gradient(135deg, #b7e4c7 0%, #95d5b2 100%);
+  color: #1a4d2e;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(183, 228, 199, 0.4);
+}
+
+.biology-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(183, 228, 199, 0.6);
+  color: #1a4d2e;
+}
+
+.biology-btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border: 2px solid #b7e4c7;
+  transition: all 0.3s ease;
+}
+
+.biology-btn-secondary:hover {
+  background: rgba(183, 228, 199, 0.2);
+  color: #ffffff;
+}
+
+.biology-btn-large {
+  padding: 18px 45px;
+  font-size: 1.2rem;
+}
+
+.biology-wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.biology-wave-divider svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Container */
+.biology-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Styles */
+.biology-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.biology-section-subtitle {
+  font-size: 1.2rem;
+  color: #b7e4c7;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Intro Section */
+.biology-intro-section {
+  padding: 80px 0;
+}
+
+.biology-intro-text {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+/* Experiments Section */
+.biology-experiments-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.biology-experiments-section::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 3%;
+  width: 200px;
+  height: 150px;
+  background: url('../../public/images/subject-biology-decorations.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.06;
+  pointer-events: none;
+  transform: rotate(-10deg);
+}
+
+.biology-experiments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.biology-experiment-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(183, 228, 199, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.biology-experiment-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(183, 228, 199, 0.4);
+}
+
+.biology-experiment-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.biology-experiment-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.biology-experiment-desc {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+/* Benefits Section */
+.biology-benefits-section {
+  padding: 80px 0;
+  background: rgba(26, 77, 46, 0.3);
+}
+
+.biology-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.biology-benefit-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.biology-benefit-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.biology-benefit-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.biology-benefit-desc {
+  font-size: 1rem;
+  color: #c0c0c0;
+  line-height: 1.6;
+}
+
+/* Curriculum Section */
+.biology-curriculum-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.biology-curriculum-text {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.biology-curriculum-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.biology-badge {
+  background: linear-gradient(135deg, rgba(183, 228, 199, 0.2) 0%, rgba(149, 213, 178, 0.2) 100%);
+  border: 1px solid rgba(183, 228, 199, 0.4);
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* CTA Section */
+.biology-cta-section {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(45, 106, 79, 0.5) 0%, rgba(64, 145, 108, 0.5) 100%);
+}
+
+.biology-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.biology-cta-text {
+  font-size: 1.2rem;
+  color: #b7e4c7;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .biology-hero-section {
+    padding: 100px 15px 60px;
+  }
+
+  .biology-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .biology-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .biology-section-title {
+    font-size: 1.8rem;
+  }
+
+  .biology-experiments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .biology-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .biology-intro-section,
+  .biology-experiments-section,
+  .biology-benefits-section,
+  .biology-curriculum-section,
+  .biology-cta-section {
+    padding: 50px 0;
+  }
+
+  /* Hide decorations on mobile */
+  .biology-hero-section::before,
+  .biology-experiments-section::after {
+    display: none;
+  }
+}

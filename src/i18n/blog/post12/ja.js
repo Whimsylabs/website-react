@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "VRシミュレーション教材が実世界のSTEMキャリアに備える学生を育成：物理的な実験技術を教える唯一のプラットフォーム";
 export const description =
-  "WhimsyLabsが、完全な探究学習の自由と高度な液体物理シミュレーションを通じて、本物の物理的動作と実験デザイン技術を教える唯一のシミュレーション教材プラットフォームである理由をご紹介します。";
+  "雇用主の70%以上が理科系卒業生の実践スキル不足を報告。WhimsyLabsが高精度VR物理シミュレーションと完全な探究学習の自由を通じて、実世界のSTEMキャリアに直結する筋肉記憶・手順的流暢さ・実験デザイン能力を育成する方法をご紹介します。";
 export const keywords = [
   "高等教育向けVR実験室",
   "大学向け仮想実験室",
@@ -283,7 +283,7 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/real-time-physics-simulations">
+        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
           リアルタイム物理シミュレーション：WhimsyLabsの背後にある技術革新
         </a>
       </li>

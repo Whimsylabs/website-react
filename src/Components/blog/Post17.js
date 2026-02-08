@@ -5,7 +5,7 @@ export const title =
 export const date = "2026-01-28";
 export const slug = "whimsylabs-wins-techlearning-best-of-bett-2026";
 export const description =
-  "WhimsyLabs has been awarded Tech&Learning's #1 Best of BETT 2026, recognising our physics-first virtual laboratory as the top educational technology product at the world's largest edtech event.";
+  "WhimsyLabs won Tech&Learning's #1 Best of BETT 2026, named top edtech product at the world's largest education technology event.";
 export const keywords = [
   "BETT 2026",
   "Tech and Learning Award",

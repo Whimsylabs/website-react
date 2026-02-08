@@ -11,6 +11,11 @@ import ContactPage from "./Components/ContactPage";
 import PrivacyPage from "./Components/PrivacyPage";
 import DataSecurityPage from "./Components/DataSecurityPage";
 import BettPage from "./Components/BettPage";
+import GrantsPage from "./Components/GrantsPage";
+import RoyalSocietyGrantPage from "./Components/RoyalSocietyGrantPage";
+import ChemistryPage from "./Components/ChemistryPage";
+import BiologyPage from "./Components/BiologyPage";
+import PhysicsPage from "./Components/PhysicsPage";
 import LandingDemo from "./Components/LandingDemo";
 import BlogPost from "./Components/BlogPost";
 import { getCurrentLanguage } from "./i18n";
@@ -51,6 +56,16 @@ function App(props = {}) {
       return <DataSecurityPage language={language} />;
     if (basePath === "/bett/" || basePath === "/bett")
       return <BettPage language={language} />;
+    if (basePath === "/grants/" || basePath === "/grants")
+      return <GrantsPage language={language} />;
+    if (basePath === "/grants/royal-society/" || basePath === "/grants/royal-society")
+      return <RoyalSocietyGrantPage language={language} />;
+    if (basePath === "/chemistry/" || basePath === "/chemistry")
+      return <ChemistryPage language={language} />;
+    if (basePath === "/biology/" || basePath === "/biology")
+      return <BiologyPage language={language} />;
+    if (basePath === "/physics/" || basePath === "/physics")
+      return <PhysicsPage language={language} />;
     // landing-demo is now the homepage
     // if (basePath === "/landing-demo/" || basePath === "/landing-demo")
     //   return <LandingDemo language={language} />;

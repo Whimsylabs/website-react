@@ -8,6 +8,16 @@ class TitleLengthValidator {
     this.errors = [];
     this.warnings = [];
     this.maxTitleLength = 70;
+    
+    // Japanese titles are intentionally shorter (characters pack more meaning)
+    // Skip "too short" warnings for these paths
+    this.shortTitleWhitelist = [
+      /^jp\//,  // All Japanese pages
+    ];
+  }
+  
+  isWhitelistedForShortTitle(relativePath) {
+    return this.shortTitleWhitelist.some(pattern => pattern.test(relativePath));
   }
 
   async validateAllFiles() {
@@ -50,7 +60,8 @@ class TitleLengthValidator {
         }
 
         // Also check for very short titles (less than 30 characters)
-        if (titleLength < 30) {
+        // Skip for whitelisted paths (e.g., Japanese - characters pack more meaning)
+        if (titleLength < 30 && !this.isWhitelistedForShortTitle(relativePath)) {
           this.warnings.push({
             type: 'title_too_short',
             file: relativePath,

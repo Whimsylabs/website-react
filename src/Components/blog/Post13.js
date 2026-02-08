@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "The Science Behind Real-Time Physics Simulations in Virtual Labs: Why Dynamic Simulations Make Learning Fun";
+  "Real-Time Physics in Virtual Labs: Making Learning Fun";
 export const date = "2025-10-02";
 export const slug = "science-real-time-physics-simulations-virtual-labs";
 export const description =
-  "Discover how WhimsyLabs' groundbreaking real-time computational physics creates the most sophisticated and genuinely fun virtual laboratory platform, using gaming principles to make science education engaging.";
+  "WhimsyLabs' real-time physics engine uses gaming principles to make virtual science labs fun and engaging.";
 export const keywords = [
   "real-time physics",
   "educational simulations",
@@ -367,7 +367,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Preparing Industry-Ready STEM Graduates Through Virtual Laboratory
           Training
         </a>

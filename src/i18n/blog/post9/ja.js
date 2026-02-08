@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "24時間AIチューター：個別推薦で生徒を軌道に維持";
+  "24時間対応AIチューター：パーソナライズされた日次推薦で生徒の学習を軌道に維持";
 export const description =
-  "WhimsyLabsのAI分析による日次・週次の実験推薦が、ゲーム要素を取り入れた低リスクの練習を通じて、生徒の弱点克服を支援し、学習の遅れを防ぐ仕組みをご紹介します。";
+  "STEMで遅れた生徒の58%は完全に回復しません。WhimsyLabsの24時間対応AIチューターWhimsyCatと週次の個別化された実験推薦が、ポイント獲得ゲーミフィケーションを活用した低リスク練習で生徒の弱点を克服し、学習遅延を防ぐ仕組みをご紹介。";
 export const keywords = [
   "24時間対応AIチューター",
   "教育の公平性",
@@ -272,7 +272,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           学習の未来:AIチューターにおける感情的知性
         </a>
       </li>

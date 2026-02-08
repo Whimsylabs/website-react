@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "Green Labs, Greener Future: How Virtual Laboratories Are Transforming Sustainability in STEM Education";
+  "Green Labs: Virtual Labs for Sustainable STEM";
 export const date = "2025-06-18";
 export const slug = "green-labs-sustainability-virtual-stem-education";
 export const description =
-  "Exploring how WhimsyLabs' virtual laboratory platform addresses the environmental crisis in traditional science education while advancing sustainable development goals.";
+  "WhimsyLabs addresses the environmental crisis in science education while advancing sustainability goals.";
 export const keywords = [
   "green labs",
   "sustainable STEM education",

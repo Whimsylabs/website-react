@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "WhimsyCat：理科教育を変革するAIチューター";
-export const description = "WhimsyLabsの高度なAIチューターが、個別化されたガイダンス、リアルタイムフィードバック、適応的学習経路を提供し、実験室教育をどのように革命化しているかをご紹介します。";
+export const description = "WhimsyLabsの高度なAIチューター「WhimsyCat」が、生徒一人ひとりに個別化されたプロアクティブなガイダンスとリアルタイムフィードバックを24時間365日無制限で提供。適応的な学習経路で実験室教育を革新する仕組みをご紹介します。";
 export const keywords = [
   "WhimsyCat AIチューター",
   "個別化学習",

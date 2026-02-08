@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "AI Boosted Test Scores 127%. Then Students Couldn't Think Without It.";
+  "AI Boosted Scores 127%. Then Students Couldn't Think.";
 export const date = "2026-02-02";
 export const slug = "oecd-ai-learning-paradox-virtual-labs";
 export const description =
-  "New OECD research reveals a troubling pattern: AI tutors dramatically improve test scores, but students lose the ability to problem-solve independently. Here's why hands-on virtual labs offer a better path forward.";
+  "OECD research shows AI tutors boost scores but hurt problem-solving. Hands-on virtual labs offer a better path forward.";
 export const keywords = [
   "OECD AI education",
   "AI learning paradox",

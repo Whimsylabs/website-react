@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "WhimsyLabsの歩み：草創期からBETT 2025受賞まで";
 export const description =
-  "Marisa French氏によって設立されたWhimsylabsが、フルシミュレーション型教材、影響力のあるパートナーシップ、そして受賞歴のあるイノベーションでSTEM教育の課題にどのように取り組んでいるかをご紹介します。";
+  "2020年にMarisa French博士が設立したWhimsyLabsの創業ストーリー。COVID-19パンデミック中の理科教育危機から生まれ、独自物理エンジンとフルシミュレーション型教材でBETT 2025受賞へと成長した軌跡をご紹介します。";
 export const keywords = [
   "バーチャル実験室 歴史",
   "BETT 2025 受賞",

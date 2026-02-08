@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "Hiver de la RV ? Pourquoi les Labos Web-First Sont le Bon Choix";
+  "Hiver de la RV ? Pourquoi les Labos Web-First Gagnent";
 export const description =
-  "Avec la baisse des ventes de casques RV et les coupes de Meta dans Reality Labs, les écoles ont besoin de technologie éducative indépendante des cycles matériels. Voici pourquoi les laboratoires virtuels web-first sont le choix durable.";
+  "Avec la baisse des ventes de casques RV, les écoles ont besoin de technologie indépendante du matériel. Les labos web-first sont durables.";
 export const keywords = [
   "hiver RV",
   "réalité virtuelle éducation",

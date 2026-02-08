@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "L'IA a Boosté les Notes de 127%. Puis les Élèves Ne Pensaient Plus.";
+  "L'IA a Boosté les Notes de 127%. Puis Plus de Pensée.";
 export const description =
-  "Une nouvelle recherche de l'OCDE révèle une tendance préoccupante : les tuteurs IA améliorent considérablement les notes, mais les étudiants perdent leur capacité à résoudre des problèmes de manière autonome. Voici pourquoi les laboratoires virtuels pratiques offrent une meilleure voie.";
+  "L'OCDE révèle que les tuteurs IA améliorent les notes mais les élèves perdent leur autonomie. Les labos virtuels offrent mieux.";
 export const keywords = [
   "OCDE éducation IA",
   "paradoxe d'apprentissage IA",

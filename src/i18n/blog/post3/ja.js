@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "仮想腎臓解剖がSEND生徒のエンゲージメントを向上";
 export const description =
-  "WhimsyLabsの仮想環境における物理的相互作用が、SEND生徒の教育成果と関与をどのように大幅に改善するかを探ります。";
+  "WhimsyLabsの仮想腎臓解剖VRシミュレーションが、視覚・聴覚・運動感覚を統合したマルチセンサリー学習環境と自己ペースでの自由な探索を通じて、SEND（特別支援教育ニーズ）生徒の教育成果とエンゲージメントを大幅に改善する方法を探ります。";
 export const keywords = [
   "仮想解剖",
   "特別支援教育",

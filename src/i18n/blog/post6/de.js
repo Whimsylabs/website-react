@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "Sandbox-Lernen: Warum Scheitern für STEM wesentlich ist";
-export const description = "Wie WhimsyLabs' offener Erkundungsansatz die wissenschaftliche Bildung transformiert, indem er das Scheitern als mächtiges Lernwerkzeug umarmt und authentisches wissenschaftliches Denken fördert.";
+export const description = "Erfahren Sie, wie WhimsyLabs' offener Ansatz die MINT-Bildung transformiert, indem Scheitern als Lernwerkzeug genutzt wird.";
 export const keywords = [
   "Sandbox-Lernen",
   "produktives Scheitern",

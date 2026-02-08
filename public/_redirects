@@ -3,6 +3,70 @@ https://www.whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 http://www.whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 
+# Remove explicit index.html from URLs (canonical cleanup)
+/index.html / 301!
+/faq/index.html /faq/ 301!
+/contact/index.html /contact/ 301!
+/services/index.html /services/ 301!
+/features/index.html /features/ 301!
+/blog/index.html /blog/ 301!
+/privacy/index.html /privacy/ 301!
+/bett/index.html /bett/ 301!
+/grants/index.html /grants/ 301!
+/data-security/index.html /data-security/ 301!
+/chemistry/index.html /chemistry/ 301!
+/biology/index.html /biology/ 301!
+/physics/index.html /physics/ 301!
+
+# Language-specific index.html redirects
+/de/index.html /de/ 301!
+/de/faq/index.html /de/faq/ 301!
+/de/contact/index.html /de/contact/ 301!
+/de/services/index.html /de/services/ 301!
+/de/features/index.html /de/features/ 301!
+/de/blog/index.html /de/blog/ 301!
+/de/privacy/index.html /de/privacy/ 301!
+/de/bett/index.html /de/bett/ 301!
+/de/chemistry/index.html /de/chemistry/ 301!
+/de/biology/index.html /de/biology/ 301!
+/de/physics/index.html /de/physics/ 301!
+
+/es/index.html /es/ 301!
+/es/faq/index.html /es/faq/ 301!
+/es/contact/index.html /es/contact/ 301!
+/es/services/index.html /es/services/ 301!
+/es/features/index.html /es/features/ 301!
+/es/blog/index.html /es/blog/ 301!
+/es/privacy/index.html /es/privacy/ 301!
+/es/bett/index.html /es/bett/ 301!
+/es/chemistry/index.html /es/chemistry/ 301!
+/es/biology/index.html /es/biology/ 301!
+/es/physics/index.html /es/physics/ 301!
+
+/fr/index.html /fr/ 301!
+/fr/faq/index.html /fr/faq/ 301!
+/fr/contact/index.html /fr/contact/ 301!
+/fr/services/index.html /fr/services/ 301!
+/fr/features/index.html /fr/features/ 301!
+/fr/blog/index.html /fr/blog/ 301!
+/fr/privacy/index.html /fr/privacy/ 301!
+/fr/bett/index.html /fr/bett/ 301!
+/fr/chemistry/index.html /fr/chemistry/ 301!
+/fr/biology/index.html /fr/biology/ 301!
+/fr/physics/index.html /fr/physics/ 301!
+
+/jp/index.html /jp/ 301!
+/jp/faq/index.html /jp/faq/ 301!
+/jp/contact/index.html /jp/contact/ 301!
+/jp/services/index.html /jp/services/ 301!
+/jp/features/index.html /jp/features/ 301!
+/jp/blog/index.html /jp/blog/ 301!
+/jp/privacy/index.html /jp/privacy/ 301!
+/jp/bett/index.html /jp/bett/ 301!
+/jp/chemistry/index.html /jp/chemistry/ 301!
+/jp/biology/index.html /jp/biology/ 301!
+/jp/physics/index.html /jp/physics/ 301!
+
 # Force trailing slash for clean URLs (this is the main issue)
 # Language-specific pages without trailing slash → with trailing slash
 /de/faq /de/faq/ 301!
@@ -12,6 +76,11 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /de/features /de/features/ 301!
 /de/privacy /de/privacy/ 301!
 /de/data-security /de/data-security/ 301!
+/de/grants /de/grants/ 301!
+/de/grants/royal-society /de/grants/royal-society/ 301!
+/de/chemistry /de/chemistry/ 301!
+/de/biology /de/biology/ 301!
+/de/physics /de/physics/ 301!
 
 /es/faq /es/faq/ 301!
 /es/contact /es/contact/ 301!
@@ -20,6 +89,11 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /es/features /es/features/ 301!
 /es/privacy /es/privacy/ 301!
 /es/data-security /es/data-security/ 301!
+/es/grants /es/grants/ 301!
+/es/grants/royal-society /es/grants/royal-society/ 301!
+/es/chemistry /es/chemistry/ 301!
+/es/biology /es/biology/ 301!
+/es/physics /es/physics/ 301!
 
 /fr/faq /fr/faq/ 301!
 /fr/contact /fr/contact/ 301!
@@ -28,6 +102,11 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /fr/features /fr/features/ 301!
 /fr/privacy /fr/privacy/ 301!
 /fr/data-security /fr/data-security/ 301!
+/fr/grants /fr/grants/ 301!
+/fr/grants/royal-society /fr/grants/royal-society/ 301!
+/fr/chemistry /fr/chemistry/ 301!
+/fr/biology /fr/biology/ 301!
+/fr/physics /fr/physics/ 301!
 
 /jp/faq /jp/faq/ 301!
 /jp/contact /jp/contact/ 301!
@@ -36,6 +115,11 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /jp/features /jp/features/ 301!
 /jp/privacy /jp/privacy/ 301!
 /jp/data-security /jp/data-security/ 301!
+/jp/grants /jp/grants/ 301!
+/jp/grants/royal-society /jp/grants/royal-society/ 301!
+/jp/chemistry /jp/chemistry/ 301!
+/jp/biology /jp/biology/ 301!
+/jp/physics /jp/physics/ 301!
 
 # Main English pages without trailing slash → with trailing slash
 /faq /faq/ 301!
@@ -46,6 +130,11 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /privacy /privacy/ 301!
 /data-security /data-security/ 301!
 /bett /bett/ 301!
+/grants /grants/ 301!
+/grants/royal-society /grants/royal-society/ 301!
+/chemistry /chemistry/ 301!
+/biology /biology/ 301!
+/physics /physics/ 301!
 /demo /demo/ 301!
 /spa /spa/ 301!
 
@@ -70,6 +159,20 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /fr/features/contact/ /fr/contact/ 301!
 /fr/features/features/ /fr/features/ 301!
 /fr/services/contact/ /fr/contact/ 301!
+
+# Old/renamed blog post redirects (Google has these cached)
+/blog/real-time-physics-simulations /blog/science-real-time-physics-simulations-virtual-labs/ 301!
+/blog/real-time-physics-simulations/ /blog/science-real-time-physics-simulations-virtual-labs/ 301!
+/blog/industry-ready-stem-graduates /blog/virtual-reality-prepares-students-real-world-stem-careers/ 301!
+/blog/industry-ready-stem-graduates/ /blog/virtual-reality-prepares-students-real-world-stem-careers/ 301!
+/blog/emotional-intelligence-ai-tutors /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/ 301!
+/blog/emotional-intelligence-ai-tutors/ /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/ 301!
+/blog/virtual-vs-physical-labs-cost-analysis /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/ 301!
+/blog/virtual-vs-physical-labs-cost-analysis/ /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/ 301!
+
+# Handle the [object Object] bug (redirect jp[object Object] to jp/)
+/jp[object%20Object] /jp/ 301!
+/jp%5Bobject%20Object%5D /jp/ 301!
 
 # Block email protection service and other problematic paths
 /cdn-cgi/* /404.html 404!

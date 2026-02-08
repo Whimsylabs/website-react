@@ -23,8 +23,8 @@ export const content = (
   <div>
     <figure className="blog-image">
       <img
-        src="https://res.cloudinary.com/dgrrhld5t/image/upload/v1770038801/lab_wide_senxx0.png"
-        alt="Student performing practical assessment in virtual lab"
+        src="/images/potato.jpg"
+        alt="Student performing practical assessment in virtual lab, in this example the student is cutting a potato for use with microbiology experiments"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />
       <figcaption style={{ textAlign: 'center', fontStyle: 'italic', color: '#666', marginBottom: '1.5rem' }}>
@@ -106,6 +106,18 @@ export const content = (
     <p>
       For science education, this is actually good news. The subjects that require hands-on practical work are exactly the subjects where AI shortcuts fail. We don't need to fight the technology. We need to lean into what makes science education different from essay writing.
     </p>
+
+    <div
+      className="bluesky-embed-container"
+      style={{ margin: "20px 0", textAlign: "center" }}
+    >
+      <bsky-embed
+        search="Looking through the microscope in our VR science lab!"
+        limit="1"
+        link-target="_blank"
+        custom-styles=".border-slate-300 { border-color: #e1e8ed; border-radius: 12px; max-width: 600px; margin: 0 auto; }"
+      ></bsky-embed>
+    </div>
 
     <h2>The Real Problem</h2>
     <p>

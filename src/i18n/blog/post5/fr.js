@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "WhimsyCat : Le Tuteur IA Transformant l'Éducation Scientifique";
+  "WhimsyCat : Le Tuteur IA pour l'Éducation Scientifique";
 export const description =
-  "Comment le tuteur IA avancé de WhimsyLabs fournit des conseils personnalisés, des commentaires en temps réel et des parcours d'apprentissage adaptatifs pour révolutionner l'éducation de laboratoire.";
+  "Découvrez comment WhimsyCat fournit des conseils personnalisés, des commentaires en temps réel et des parcours adaptatifs pour l'éducation.";
 export const keywords = [
   "tuteur IA WhimsyCat",
   "apprentissage personnalisé",

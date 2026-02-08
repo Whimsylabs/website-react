@@ -1,8 +1,8 @@
 // French - Post 7: Laboratoires verts, avenir plus vert
 import React from "react";
 
-export const title = "Labos Verts : Transformer la Durabilité dans l'Enseignement STEM";
-export const description = "Explorer comment la plateforme de laboratoire virtuel de WhimsyLabs répond à la crise environnementale dans l'enseignement scientifique traditionnel tout en faisant progresser les objectifs de développement durable.";
+export const title = "Labos Verts : Durabilité dans l'Enseignement STEM";
+export const description = "Comment WhimsyLabs répond à la crise environnementale des labos traditionnels et fait progresser le développement durable.";
 export const keywords = [
   "laboratoires verts",
   "éducation STEM durable",

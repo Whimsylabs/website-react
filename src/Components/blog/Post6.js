@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "The Sandbox Learning Revolution: Why Freedom to Fail is Essential for STEM Education";
+  "Sandbox Learning: Why Freedom to Fail Matters";
 export const date = "2025-06-05";
 export const slug = "sandbox-learning-revolution-stem-education";
 export const description =
-  "How WhimsyLabs' open-ended exploration approach transforms science education by embracing failure as a powerful learning tool and fostering authentic scientific thinking.";
+  "WhimsyLabs embraces failure as a learning tool, transforming science education through open-ended exploration.";
 export const keywords = [
   "sandbox learning",
   "productive failure",
@@ -357,12 +357,12 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Preparing Industry-Ready STEM Graduates Through Virtual Laboratory Training
         </a>
       </li>
       <li>
-        <a href="/blog/real-time-physics-simulations">
+        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
           Real-Time Physics Simulations: The Technical Innovation Behind WhimsyLabs
         </a>
       </li>

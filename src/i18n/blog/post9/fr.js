@@ -2,11 +2,11 @@
 import React from "react";
 
 export const title =
-  "Tutorat IA 24/7 : Recommandations Personnalisées Maintiennent le Cap";
+  "Tutorat IA 24/7 : Recommandations Personnalisées";
 export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =
-  "Découvrez comment les recommandations de laboratoire quotidiennes et hebdomadaires intelligentes de WhimsyLabs, alimentées par l'analyse IA, aident les élèves à maîtriser les domaines faibles grâce à une pratique ludifiée à faible enjeu, empêchant les élèves de prendre du retard.";
+  "Découvrez comment les recommandations IA de WhimsyLabs aident les élèves à maîtriser leurs faiblesses par la pratique ludifiée.";
 export const keywords = [
   "tutorat IA 24/7",
   "équité éducative",
@@ -260,7 +260,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           L'avenir de l'apprentissage : l'intelligence émotionnelle dans les tuteurs IA
         </a>
       </li>

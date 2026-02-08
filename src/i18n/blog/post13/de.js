@@ -6,7 +6,7 @@ export const title =
 export const date = "2026-10-02";
 export const slug = "science-real-time-physics-simulations-virtual-labs";
 export const description =
-  "Entdecken Sie, wie WhimsyLabs' bahnbrechende Echtzeit-Computerphysik die ausgefeilteste und wirklich unterhaltsame virtuelle Laborplattform schafft, die Gaming-Prinzipien nutzt, um naturwissenschaftliche Bildung ansprechend zu gestalten.";
+  "Entdecken Sie, wie WhimsyLabs' Echtzeit-Physik die weltweit ausgefeilteste virtuelle Laborplattform mit Gaming-Prinzipien schafft.";
 export const keywords = [
   "Chemielabore für Schulen",
   "Physiklabore für Schulen",
@@ -255,7 +255,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Vorbereitung industriereifer MINT-Absolventen durch virtuelles Labortraining
         </a>
       </li>

@@ -78,7 +78,7 @@ const FeaturesPage = ({ language }) => {
 
   return (
     <main className="container-fluid text-center p-0">
-      <Header />
+      <Header currentLang={language} />
       <section id="tiled-1" className="features-welcome-section">
         <div className="container py-3 d-flex align-items-center justify-content-center">
           <img
@@ -245,14 +245,20 @@ const FeaturesPage = ({ language }) => {
           <h2>Have Questions?</h2>
           <p>
             Visit our{" "}
-            <a href="./faq/" className="faq-link">
+            <a href="/faq/" className="faq-link">
               FAQ page
             </a>{" "}
             for answers to common questions, or explore our{" "}
-            <a href="./features/" className="faq-link">
-              Advanced Features
+            <a href="/services/" className="faq-link">
+              Services
             </a>{" "}
-            to discover our industry-leading capabilities!
+            to see how we can help your school!
+          </p>
+          <p style={{ marginTop: '15px' }}>
+            Coming to BETT 2026?{" "}
+            <a href="/bett/" className="faq-link">
+              Book a demo at our booth
+            </a>!
           </p>
         </div>
       </BubbleContainer>

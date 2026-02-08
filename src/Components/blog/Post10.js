@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "Emotional Intelligence in AI Tutors: How WhimsyCat Detects and Responds to Student Frustration";
+  "WhimsyCat: Detecting Student Frustration with AI";
 export const date = "2025-08-12";
 export const slug = "emotional-intelligence-ai-tutors-whimsycat-frustration-detection";
 export const description =
-  "Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.";
+  "WhimsyCat monitors actions and engagement to detect frustration and provide emotional support when students struggle.";
 export const keywords = [
   "emotional AI in education",
   "frustration detection",

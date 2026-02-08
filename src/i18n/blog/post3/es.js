@@ -1,8 +1,8 @@
 // Spanish - post3: Aprendizaje práctico: La disección virtual de riñón mejora el compromiso de estudiantes SEND
 import React from "react";
 
-export const title = "Disección Virtual de Riñón Mejora el Compromiso de Estudiantes SEND";
-export const description = "Explorando cómo la interacción física de WhimsyLabs en entornos virtuales mejora significativamente los resultados educativos y el compromiso para estudiantes SEND.";
+export const title = "Disección Virtual Mejora Compromiso de Estudiantes SEND";
+export const description = "Descubre cómo la interacción física en entornos virtuales de WhimsyLabs mejora los resultados educativos para estudiantes SEND.";
 export const keywords = [
   "disección virtual",
   "educación SEND",

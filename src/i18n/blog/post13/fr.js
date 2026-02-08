@@ -2,11 +2,11 @@
 import React from "react";
 
 export const title =
-  "Simulations Physiques en Temps Réel: Apprentissage Dynamique";
+  "Simulations Physiques Temps Réel : Apprentissage Dynamique";
 export const date = "2026-10-02";
 export const slug = "science-real-time-physics-simulations-virtual-labs";
 export const description =
-  "Découvrez comment la physique computationnelle en temps réel révolutionnaire de WhimsyLabs crée la plateforme de laboratoire virtuel la plus sophistiquée et véritablement amusante, utilisant les principes du gaming pour rendre l'enseignement scientifique captivant.";
+  "Comment la physique temps réel de WhimsyLabs crée des labos virtuels sophistiqués et amusants avec les principes du gaming.";
 export const keywords = [
   "laboratoires de chimie pour les écoles",
   "laboratoires de physique pour les écoles",
@@ -255,7 +255,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Préparer des diplômés STEM prêts pour l'industrie grâce à la formation en laboratoire virtuel
         </a>
       </li>

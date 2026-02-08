@@ -29,7 +29,9 @@
       "Bash(node scripts/seo-automation/test-gsc-connection.js:*)",
       "Bash(node scripts/seo-automation/fetch-live-gsc.js:*)",
       "Bash(node scripts/seo-automation/geo-tracker.js:*)",
-      "Bash(npm run build-static:*)"
+      "Bash(npm run build-static:*)",
+      "Bash(xargs -I {} sh -c 'echo \"\"=== {} ===\"\" && head -40 \"\"{}\"\"')",
+      "WebFetch(domain:www.frontiersin.org)"
     ]
   }
 }

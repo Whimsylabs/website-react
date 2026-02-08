@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "VR-Winter? Warum Web-First Virtuelle Labore die Kluge Wahl Sind";
+  "VR-Winter? Warum Web-First Labore die Kluge Wahl Sind";
 export const description =
-  "Mit sinkenden VR-Headset-Verkäufen und Metas Kürzungen bei Reality Labs brauchen Schulen Bildungstechnologie, die nicht von Hardware-Zyklen abhängig ist. Erfahren Sie, warum Web-First virtuelle Labore die nachhaltige Wahl sind.";
+  "Schulen brauchen zuverlässige EdTech unabhängig von Hardware-Zyklen. Web-First virtuelle Labore sind die nachhaltige Wahl.";
 export const keywords = [
   "VR Winter",
   "Virtual Reality Bildung",

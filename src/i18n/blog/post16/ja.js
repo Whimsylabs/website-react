@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "他の仮想実験室が失敗する理由：物理エンジンによる解決策";
 export const description =
-  "スクリプト型仮想実験室が実践的スキルを育成できない理由と、WhimsyLabsの物理エンジンが本格的なSTEM学習を実現する方法。";
+  "65%以上の大学教授が新入生の実践的スキル不足を報告しています。クリックスルー型スクリプト仮想実験室の根本的な限界と、WhimsyLabsのリアルタイム物理エンジンが創発的データと生産的失敗を通じて本格的なSTEM学習を実現する方法を解説。";
 export const keywords = [
   "仮想実験室の限界",
   "物理エンジンシミュレーション",

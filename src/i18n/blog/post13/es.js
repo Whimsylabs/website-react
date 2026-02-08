@@ -255,7 +255,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/industry-ready-stem-graduates">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Preparando graduados STEM listos para la industria mediante capacitación en laboratorio virtual
         </a>
       </li>

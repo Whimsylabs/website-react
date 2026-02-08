@@ -1,8 +1,8 @@
 // French - post6: La révolution de l'apprentissage sandbox : Pourquoi la liberté d'échouer est essentielle pour l'éducation STEM
 import React from "react";
 
-export const title = "Apprentissage Sandbox : Pourquoi la Liberté d'Échouer est Essentielle";
-export const description = "Comment l'approche d'exploration ouverte de WhimsyLabs transforme l'éducation scientifique en embrassant l'échec comme un outil d'apprentissage puissant et en favorisant la pensée scientifique authentique.";
+export const title = "Apprentissage Sandbox : La Liberté d'Échouer en STEM";
+export const description = "L'approche d'exploration ouverte de WhimsyLabs transforme l'éducation en embrassant l'échec comme outil d'apprentissage.";
 export const keywords = [
   "apprentissage sandbox",
   "échec productif",

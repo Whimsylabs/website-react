@@ -14,7 +14,7 @@ const FAQPage = ({ t, currentLang, language }) => {
         <meta name="description" content="Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators." />
         <meta name="keywords" content="virtual lab software FAQ, online lab simulations help, STEM virtual labs questions, virtual laboratory software support" />
       </Helmet>
-      <Header />
+      <Header currentLang={language || currentLang} />
       <div id="faq-tiled-background">
         <div className="container py-5">
           <div className="faq-header-container">

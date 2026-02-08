@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "Labos Virtuels Résolvent la Pénurie d'Enseignants STEM";
-export const description = "Exploration de la manière dont les laboratoires virtuels alimentés par l'IA de WhimsyLabs répondent à la pénurie catastrophique d'enseignants STEM affectant le Royaume-Uni et les écoles du monde entier grâce au tutorat 24h/24 et 7j/7 et à l'évaluation automatisée.";
+export const description = "Comment les labos virtuels IA de WhimsyLabs répondent à la pénurie d'enseignants STEM avec tutorat 24/7 et évaluation automatisée.";
 export const keywords = [
   "pénurie d'enseignants STEM",
   "laboratoires virtuels pour les écoles",

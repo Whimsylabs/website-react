@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "How Virtual Labs Solve the STEM Teacher Shortage Crisis: A UK and Global Perspective";
+  "Virtual Labs Solve the STEM Teacher Shortage";
 export const date = "2025-07-02";
 export const slug = "virtual-labs-solve-stem-teacher-shortage-crisis";
 export const description =
-  "Exploring how WhimsyLabs' AI-powered virtual laboratories address the catastrophic STEM teacher shortage affecting the UK and schools worldwide through 24/7 tutoring and automated assessment.";
+  "WhimsyLabs' AI virtual labs address the STEM teacher shortage with 24/7 tutoring and automated assessment for UK and global schools.";
 export const keywords = [
   "STEM teacher shortage",
   "virtual labs for schools",

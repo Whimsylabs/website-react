@@ -150,7 +150,7 @@ export default {
     "Transform STEM education with immersive virtual lab experiences",
   getStarted: "Get Started",
   learnMore: "Learn More",
-  welcomeTitle: "Virtual Laboratory Software for STEM Education",
+  welcomeTitle: "Virtual Science Lab Software for STEM Education",
   welcomeText:
     "WhimsyLabs provides award-winning virtual laboratory software that gives educators and students the freedom to explore, play and learn scientific concepts firsthand. Unlike traditional simulations limited to a fixed library of 200-300 practicals, our sandbox environment enables unlimited experiments. Design any practical for any curriculum, not just pre-built scenarios. Whether you're teaching Biology, Chemistry, or Physics, our online lab simulations let students experiment with scientific phenomena and equipment without the limitations and risks of a physical lab. Our STEM virtual labs for schools help students build laboratory skills safely while providing educators with powerful assessment tools.",
   joinPilot: "Join the pilot!",

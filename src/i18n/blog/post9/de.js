@@ -6,7 +6,7 @@ export const title =
 export const date = "2025-07-25";
 export const slug = "24-7-ai-tutoring-personalized-daily-recommendations";
 export const description =
-  "Entdecken Sie, wie WhimsyLabs' intelligente tägliche und wöchentliche Laborempfehlungen, unterstützt durch KI-Analyse, Schülern helfen, schwache Bereiche durch risikoarme gamifizierte Übungen zu meistern und zu verhindern, dass sie zurückfallen.";
+  "Erfahren Sie, wie WhimsyLabs' KI-Laborempfehlungen Schülern helfen, ihre Schwächen durch gamifizierte Übungen zu meistern.";
 export const keywords = [
   "24/7 KI-Nachhilfe",
   "Bildungsgerechtigkeit",
@@ -262,7 +262,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           Die Zukunft des Lernens: Emotionale Intelligenz in KI-Tutoren
         </a>
       </li>

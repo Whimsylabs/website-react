@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "Gamification: Punkte, Belohnungen und kreativer Ausdruck";
 export const description =
-  "Eine Untersuchung des umfassenden, nicht-monetarisierten Gamification-Systems von WhimsyLabs – einschließlich Punkte für Bewertungen, personalisierte Laborempfehlungen, kosmetische Belohnungen, Laborpersonalisierung und Kunstkreation – das soziale Verbindungen stärkt, anstatt sie zu ersetzen.";
+  "WhimsyLabs' nicht-monetarisiertes Gamification-System mit Punkten, Belohnungen und Kunstkreation stärkt soziale Verbindungen.";
 export const keywords = [
   "Gamification in der Bildung",
   "STEM-Engagement",
@@ -284,7 +284,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           Die Zukunft des Lernens: Emotionale Intelligenz in KI-Tutoren
         </a>
       </li>

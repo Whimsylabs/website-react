@@ -1,0 +1,31 @@
+.services-hero {
+    background: linear-gradient(135deg, #6a4c93 0%, #8b5cf6 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.services-subtitle {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 1.8rem;
+    }
+    
+    .services-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}

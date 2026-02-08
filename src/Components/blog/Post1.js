@@ -1,6 +1,6 @@
 import React from "react";
 export const title =
-  "A Brief History of Whimsylabs: From our Humble Start to a BETT 2025 Winner ";
+  "WhimsyLabs Story: From Startup to BETT 2025 Winner";
 export const date = "2025-01-27";
 export const slug = "whimsylabs-education-revolution";
 export const description =

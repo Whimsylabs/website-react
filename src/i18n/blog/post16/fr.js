@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "Pourquoi les labos virtuels échouent : La solution physique";
 export const description =
-  "Pourquoi les labos virtuels scriptés ne développent pas de vraies compétences et comment le moteur physique de WhimsyLabs offre un apprentissage STEM authentique.";
+  "Les labos virtuels scriptés ne développent pas de vraies compétences pratiques. Le moteur physique WhimsyLabs offre une meilleure solution.";
 export const keywords = [
   "limites des laboratoires virtuels",
   "simulation par moteur physique",

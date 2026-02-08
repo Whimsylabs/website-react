@@ -110,6 +110,16 @@ const Header = ({ t, currentLang }) => {
             {t("nav.faq")}
           </a>
         </li>
+        <li className="nav-item">
+          <a
+            href={getLocalizedPath("/grants", currentLang)}
+            className="nav-link"
+            aria-label={t("nav.grants")}
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.grants")}
+          </a>
+        </li>
         <li className="nav-item language-switcher-nav">
           <LanguageSwitcher />
         </li>

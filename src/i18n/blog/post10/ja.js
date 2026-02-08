@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "AIチューターにおける感情的知性：WhimsyCatが学生のフラストレーションを検出し応答する方法";
-export const description = "WhimsyCatの画期的なフラストレーション検出システムを探求します。プレイヤーのアクション、視線追跡、エンゲージメントパターンを監視し、学生が困難に直面したときにプロアクティブな感情的サポートを提供します。";
+export const description = "WhimsyLabsのAIチューターWhimsyCatに搭載された革新的なフラストレーション検出システムを探求。プレイヤーのアクション分析、VR視線追跡、エンゲージメントパターン監視を通じて、生徒が困難に直面した際にプロアクティブで共感的な感情サポートを提供。";
 export const keywords = [
   "教育におけるエモーショナルAI",
   "フラストレーション検出",

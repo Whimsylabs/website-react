@@ -9,13 +9,40 @@ const glob = require('glob');
 
 const BUILD_DIR = path.join(__dirname, '../build');
 
-// Target keywords for key pages
+// Target keywords for key pages (expanded 2026)
 const PAGE_KEYWORDS = {
-  '/index.html': ['virtual lab', 'virtual laboratory', 'stem education', 'whimsylabs'],
-  '/features/index.html': ['virtual lab', 'features', 'physics simulation', 'ai tutor'],
-  '/services/index.html': ['virtual lab', 'education', 'schools', 'training'],
-  '/faq/index.html': ['virtual lab', 'faq', 'questions'],
-  '/blog/index.html': ['virtual lab', 'blog', 'stem education'],
+  // Homepage - broad coverage
+  '/index.html': [
+    'virtual lab', 'virtual laboratory', 'virtual science lab', 'stem education', 
+    'whimsylabs', 'online lab simulation', 'science simulation software',
+    'virtual lab for schools', 'AI science tutor', 'VR science lab'
+  ],
+  // Features - product-specific
+  '/features/index.html': [
+    'virtual lab', 'physics simulation', 'ai tutor', 'AI science tutor',
+    'hands-on virtual learning', 'interactive lab simulation', 'VR science lab',
+    'real-time physics', 'automated assessment'
+  ],
+  // Services - audience-focused
+  '/services/index.html': [
+    'virtual lab', 'virtual lab for schools', 'classroom lab software', 
+    'K-12 virtual lab', 'virtual lab for teachers', 'school science software',
+    'STEM teacher shortage solution', 'lab equipment cost reduction'
+  ],
+  // FAQ - problem/solution keywords
+  '/faq/index.html': [
+    'virtual lab', 'virtual science lab', 'online lab simulation',
+    'safe lab experiments', 'virtual dissection', 'VR lab'
+  ],
+  // Blog - content/educational
+  '/blog/index.html': [
+    'virtual lab', 'stem education', 'science education',
+    'AI in science education', 'VR STEM learning', 'gamified science learning'
+  ],
+  // Subject-specific pages (if they exist)
+  '/chemistry/index.html': ['virtual chemistry lab', 'chemistry simulation', 'online chemistry lab'],
+  '/biology/index.html': ['virtual biology lab', 'virtual dissection', 'online biology lab'],
+  '/physics/index.html': ['virtual physics lab', 'physics simulation', 'online physics lab'],
 };
 
 // Check for keyword presence in important locations

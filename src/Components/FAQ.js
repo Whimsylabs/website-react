@@ -34,7 +34,7 @@ const FAQ = ({ t, currentLang }) => {
   return (
     <section className="faq-section" aria-labelledby="faq-heading">
       <h2 id="faq-heading" className="faq-heading">
-        {t('nav.faq')}
+        {t('faq.heading') || 'Virtual Science Lab: Frequently Asked Questions'}
       </h2>
       <div className="faq-container">
         {Object.entries(localizedFAQCategories).map(

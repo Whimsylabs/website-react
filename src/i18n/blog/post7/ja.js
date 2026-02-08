@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "グリーンラボ：STEM教育における持続可能性の変革";
 export const description =
-  "WhimsyLabsのシミュレーション教材プラットフォームが、従来の理科教育における環境危機にどのように対処し、持続可能な開発目標を前進させているかを探ります。";
+  "従来の理科実験室は大学全体のエネルギー消費の60〜65%を占め、年間約550万トンものプラスチック廃棄物を生成。WhimsyLabsのシミュレーション教材が廃棄物ゼロ、エネルギー消費95%削減で国連SDGs目標達成に貢献する方法を探ります。";
 export const keywords = [
   "グリーンラボ",
   "持続可能なSTEM教育",

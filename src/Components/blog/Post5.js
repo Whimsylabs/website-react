@@ -1,7 +1,7 @@
 import React from "react";
 
 export const title =
-  "Meet WhimsyCat: The Revolutionary AI Tutor Transforming Science Education";
+  "Meet WhimsyCat: AI Tutor for Science Education";
 export const date = "2025-05-10";
 export const slug = "whimsycat-ai-tutor-transforming-science-education";
 export const description =
@@ -295,7 +295,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>

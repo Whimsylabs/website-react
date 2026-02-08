@@ -28,6 +28,9 @@ import * as Post17 from './blog/Post17';
 import * as Post18 from './blog/Post18';
 import * as Post19 from './blog/Post19';
 import * as Post20 from './blog/Post20';
+import * as Post21 from './blog/Post21';
+import * as Post22 from './blog/Post22';
+import * as Post23 from './blog/Post23';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -170,6 +173,27 @@ const fallbackPosts = [
     content: Post20.content,
     date: Post20.date,
     description: Post20.description,
+  },
+  {
+    id: Post21.slug,
+    title: Post21.title,
+    content: Post21.content,
+    date: Post21.date,
+    description: Post21.description,
+  },
+  {
+    id: Post22.slug,
+    title: Post22.title,
+    content: Post22.content,
+    date: Post22.date,
+    description: Post22.description,
+  },
+  {
+    id: Post23.slug,
+    title: Post23.title,
+    content: Post23.content,
+    date: Post23.date,
+    description: Post23.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -194,7 +218,10 @@ const slugToPostId = {
   'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
   'vr-winter-web-first-virtual-labs': 'post18',
   'oecd-ai-learning-paradox-virtual-labs': 'post19',
-  'ai-assessment-crisis-solution': 'post20'
+  'ai-assessment-crisis-solution': 'post20',
+  'royal-society-partnership-grants-vr-science-labs': 'post21',
+  'edtech-vendor-security-questions-powerschool': 'post22',
+  'teachers-are-experts-custom-experiment-designer': 'post23'
 };
 
 const BlogPost = (props = {}) => {
@@ -337,7 +364,7 @@ const BlogPost = (props = {}) => {
   if (!isSSR && loading) {
     return (
       <main className="container-fluid text-center p-0">
-        <Header />
+        <Header currentLang={language} />
         <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
           <div className="blog-container">
             <div className="posts-section">
@@ -356,7 +383,7 @@ const BlogPost = (props = {}) => {
   if (!isSSR && !post) {
     return (
       <main className="container-fluid text-center p-0">
-        <Header />
+        <Header currentLang={language} />
         <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
           <div className="blog-container">
             <div className="posts-section">
@@ -393,13 +420,18 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
       </Helmet>
-      <Header />
+      <Header currentLang={language} />
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
           <div className="posts-section single-post">
             <div className="post-box" id={`post-${post.id || post.slug}`}>
               <h1 className="post-title">{post.title}</h1>
-              <span className="post-date">{formatDate(post.date)}</span>
+              <div className="post-meta">
+                <span className="post-date">{formatDate(post.date)}</span>
+                <span className="post-author">
+                  By <a href="https://www.linkedin.com/in/drmarisafrench/" target="_blank" rel="noopener noreferrer">Dr Marisa French</a>
+                </span>
+              </div>
               {typeof post.content === 'string' 
                 ? <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
                 : <div className="post-content">{post.content}</div>}

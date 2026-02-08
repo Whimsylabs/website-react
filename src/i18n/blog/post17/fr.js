@@ -2,9 +2,9 @@
 import React from "react";
 
 export const title =
-  "WhimsyLabs Remporte le #1 Meilleur de BETT 2026 de Tech&Learning";
+  "WhimsyLabs Remporte le #1 Meilleur de BETT 2026";
 export const description =
-  "WhimsyLabs a reçu le prix #1 Meilleur de BETT 2026 de Tech&Learning, reconnaissant notre laboratoire virtuel basé sur la physique comme le meilleur produit de technologie éducative au plus grand événement edtech du monde.";
+  "WhimsyLabs reçoit le prestigieux prix #1 Meilleur de BETT 2026 de Tech&Learning pour son laboratoire virtuel basé sur la physique.";
 export const keywords = [
   "BETT 2026",
   "Prix Tech and Learning",

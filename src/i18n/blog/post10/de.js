@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "Emotionale KI: WhimsyCat erkennt Schüler-Frustration";
-export const description = "Erkundung von WhimsyCats bahnbrechendem Frustrations-Erkennungssystem, das Spieleraktionen, Blickverfolgung und Engagement-Muster überwacht, um proaktive emotionale Unterstützung zu bieten, wenn Schüler Schwierigkeiten haben.";
+export const description = "Erfahren Sie, wie WhimsyCats Frustrations-Erkennung Aktionen und Blickmuster überwacht, um proaktive Unterstützung zu bieten.";
 export const keywords = [
   "emotionale KI in der Bildung",
   "Frustrationserkennung",

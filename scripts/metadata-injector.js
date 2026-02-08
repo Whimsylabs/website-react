@@ -1,6 +1,10 @@
 /**
  * Metadata Injection System - Extracts and injects SEO metadata into static HTML
  */
+
+// Import translations for multilingual metadata
+const { translations } = require('../src/i18n/translations.js');
+
 class MetadataInjector {
   constructor() {
     this.baseUrl = 'https://whimsylabs.ai';
@@ -33,65 +37,99 @@ class MetadataInjector {
    * @returns {Object} - Default metadata
    */
   getDefaultMetadata(route) {
+    // Extract language from route (e.g., /es/blog/ → es, /jp/faq/ → jp)
+    const langMatch = route.match(/^\/([a-z]{2})(?=\/|$)/);
+    const routeLang = langMatch ? langMatch[1] : 'en';
+    // Map jp to ja for translations lookup (Japanese uses 'jp' in URLs but 'ja' internally might vary)
+    const lang = routeLang === 'jp' ? 'jp' : routeLang;
+    
+    // Get translations for this language, fallback to English
+    const t = translations[lang] || translations.en;
+    
     // Normalize route by stripping language prefix (e.g., /jp/blog/ → /blog/, /es/services/ → /services/)
-    // This allows all language versions to use the same base metadata structure
     const normalizedRoute = route.replace(/^\/[a-z]{2}(?=\/|$)/, '') || '/';
 
+    // Use translated metadata where available, with English fallbacks
     const metaInfo = {
       '/': {
-        title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
-        description: 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
-        keywords: 'virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology',
+        title: t.landingDemo?.title || 'WhimsyLabs Virtual Science Lab | Award-Winning Software for STEM Education',
+        description: t.landingDemo?.description || 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
+        keywords: 'virtual lab software, virtual science lab, online lab simulation, science simulation software, STEM virtual labs for schools, virtual lab for schools, AI science tutor, VR science lab, interactive lab simulation, physics-first virtual lab',
       },
       '/blog': {
-        title: 'WhimsyLabs Blog - Virtual Laboratory Innovations & STEM Education',
-        description: 'Stay updated with WhimsyLabs\' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.',
-        keywords: 'virtual laboratory technology, STEM education resources, science teaching tools, online lab teaching',
+        title: t.blog?.title || 'Science Education Blog | WhimsyLabs Virtual Lab Insights',
+        description: t.blog?.description || 'Stay updated with WhimsyLabs\' latest developments in virtual laboratory technology, teaching strategies, and STEM education resources for educators.',
+        keywords: 'virtual laboratory technology, STEM education resources, AI in science education, VR STEM learning, gamified science learning, science teaching tools, EdTech blog, science education',
       },
       '/services': {
-        title: 'WhimsyLabs Services - Custom Virtual Lab Solutions for Education',
-        description: 'Discover WhimsyLabs\' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.',
-        keywords: 'virtual lab solutions, science education technology, remote laboratory learning, interactive science experiments',
+        title: t.services?.title || 'Virtual Lab for Schools | WhimsyLabs Education Services',
+        description: t.services?.description || 'Discover WhimsyLabs\' customizable virtual lab solutions for enhancing science education through AI-driven simulations, remote learning, and interactive experiments.',
+        keywords: 'virtual lab for schools, classroom lab software, K-12 virtual lab, virtual lab for teachers, school science software, STEM teacher shortage solution, lab equipment cost reduction, custom virtual lab',
       },
       '/features': {
-        title: 'WhimsyLabs Features - Cutting-Edge Virtual Laboratory Technology',
-        description: 'Explore WhimsyLabs\' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.',
-        keywords: 'virtual laboratory features, science simulation software, AI assessment tools, immersive STEM learning',
+        title: t.features?.title || 'AI Science Tutor & Virtual Lab Features | WhimsyLabs',
+        description: t.features?.description || 'Explore WhimsyLabs\' powerful features including realistic physics simulations, AI-driven assessment, cross-platform accessibility, and immersive STEM experiments.',
+        keywords: 'physics simulation, AI science tutor, hands-on virtual learning, interactive lab simulation, VR science lab, real-time physics simulation, automated lab assessment, virtual laboratory features',
       },
       '/faq': {
-        title: 'Frequently Asked Questions | WhimsyLabs Virtual Lab Software',
-        description: 'Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.',
-        keywords: 'virtual lab software FAQ, online lab simulations help, STEM virtual labs questions, virtual laboratory software support',
+        title: t.faq?.title || 'Virtual Science Lab FAQ | WhimsyLabs Questions & Answers',
+        description: t.faq?.description || 'Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators.',
+        keywords: 'virtual lab FAQ, virtual science lab questions, online lab simulation help, safe lab experiments, virtual dissection, VR lab for schools',
       },
       '/contact': {
-        title: 'Contact Us | WhimsyLabs Virtual Lab Software',
-        description: 'Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.',
-        keywords: 'contact WhimsyLabs, virtual lab trial, STEM education contact',
+        title: t.contact?.title || 'Contact Us | WhimsyLabs Virtual Lab Software',
+        description: t.contact?.description || 'Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.',
+        keywords: 'contact WhimsyLabs, virtual lab trial, virtual lab demo request, school science software inquiry',
       },
       '/bett': {
-        title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
-        description: 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
-        keywords: 'virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology',
+        title: t.bett?.title || 'WhimsyLabs at BETT 2026 | Award-Winning Virtual Lab Software',
+        description: t.bett?.description || 'Visit WhimsyLabs at BETT 2026 to experience our award-winning virtual science lab. Book a demo of our AI-powered lab simulation software.',
+        keywords: 'BETT 2026, EdTech exhibition, virtual lab demo, science education technology, WhimsyLabs BETT, education technology show',
       },
       '/demo': {
         title: 'Demo | WhimsyLabs Virtual Lab Software',
         description: 'Try WhimsyLabs virtual laboratory software with our interactive demo. Experience our STEM education platform and see how virtual labs enhance science learning.',
-        keywords: 'virtual lab demo, online lab simulation trial, STEM education demo, science laboratory software demo',
+        keywords: 'virtual lab demo, online lab simulation trial, free virtual lab, science lab software demo, try virtual lab',
       },
       '/privacy': {
-        title: 'Privacy Policy | WhimsyLabs Virtual Lab Software',
-        description: 'Read WhimsyLabs privacy policy to understand how we protect your data and privacy when using our virtual laboratory software for STEM education.',
-        keywords: 'WhimsyLabs privacy policy, virtual lab data protection, STEM education privacy, online lab security',
+        title: t.privacy?.title || 'Privacy Policy | WhimsyLabs Virtual Lab Software',
+        description: t.privacy?.description || 'Read WhimsyLabs privacy policy to understand how we protect your data and privacy when using our virtual laboratory software for STEM education.',
+        keywords: 'WhimsyLabs privacy policy, virtual lab data protection, student data privacy, EdTech privacy',
       },
       '/data-security': {
-        title: 'Student Data Security | WhimsyLabs Virtual Lab Software',
-        description: 'How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.',
-        keywords: 'student data privacy, EdTech security, FERPA compliance, GDPR education, virtual lab data protection, school data security',
+        title: t.dataSecurity?.title || 'Student Data Security | WhimsyLabs Virtual Lab Software',
+        description: t.dataSecurity?.description || 'How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.',
+        keywords: 'student data privacy, EdTech security, FERPA compliance, GDPR education, COPPA compliance, school data security, virtual lab data protection',
+      },
+      '/grants': {
+        title: 'STEM Education Grants & Funding Support | WhimsyLabs',
+        description: 'Find grants for VR science labs in schools. WhimsyLabs helps you apply for STEM education funding with free demo access.',
+        keywords: 'STEM grants, education funding, school grants, VR equipment funding, science lab grants, virtual lab funding',
+      },
+      '/grants/royal-society': {
+        title: 'Royal Society Partnership Grants | WhimsyLabs',
+        description: 'UK schools can get up to £3,000 for VR science projects. WhimsyLabs offers free virtual lab software and full application support.',
+        keywords: 'Royal Society Partnership Grants, UK school grants, STEM funding UK, VR lab grants, science education grants',
+      },
+      '/chemistry': {
+        title: t.chemistry?.title || 'Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs',
+        description: t.chemistry?.description || 'Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.',
+        keywords: 'virtual chemistry lab, chemistry simulations, online chemistry experiments, titration simulation, molecular modelling, GCSE chemistry, A-level chemistry, IB chemistry, AP chemistry',
+      },
+      '/biology': {
+        title: t.biology?.title || 'Virtual Biology Lab | Interactive Biology Simulations | WhimsyLabs',
+        description: t.biology?.description || 'Explore interactive virtual biology experiments with realistic simulations. Dissections, microscopy, and cellular biology without ethical concerns.',
+        keywords: 'virtual biology lab, biology simulations, online biology experiments, virtual dissection, microscopy simulation, GCSE biology, A-level biology, IB biology, AP biology',
+      },
+      '/physics': {
+        title: t.physics?.title || 'Virtual Physics Lab | Interactive Physics Simulations | WhimsyLabs',
+        description: t.physics?.description || 'Explore interactive virtual physics experiments with realistic simulations. Mechanics, electricity, waves, and more with real-time data collection.',
+        keywords: 'virtual physics lab, physics simulations, online physics experiments, circuit simulation, mechanics simulation, GCSE physics, A-level physics, IB physics, AP physics',
       },
       '/spa': {
-        title: 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
-        description: 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
-        keywords: 'virtual lab software, online lab simulations, STEM virtual labs for schools, science education technology',
+        title: t.landingDemo?.title || 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
+        description: t.landingDemo?.description || 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
+        keywords: 'virtual lab software, virtual science lab, online lab simulation, science simulation software, STEM virtual labs for schools',
       }
     };
 

@@ -41,6 +41,8 @@ const slugToPostId = {
   'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
   'vr-winter-web-first-virtual-labs': 'post18',
   'oecd-ai-learning-paradox-virtual-labs': 'post19',
+  'ai-assessment-crisis-solution': 'post20',
+  'royal-society-partnership-grants-vr-science-labs': 'post21',
 };
 
 // Languages to check (jp maps to ja in translation files)
@@ -215,6 +217,18 @@ const PAGE_EXPECTATIONS = {
     requiredElements: ['nav', 'footer'],
     forbiddenText: ['undefined'],
     minLength: 1500,
+  },
+  '/grants': {
+    requiredText: ['grant', 'WhimsyLabs'],
+    requiredElements: ['nav', 'footer'],
+    forbiddenText: ['undefined'],
+    minLength: 1500,
+  },
+  '/grants/royal-society': {
+    requiredText: ['Royal Society', 'WhimsyLabs'],
+    requiredElements: ['nav', 'footer'],
+    forbiddenText: ['undefined'],
+    minLength: 2000,
   },
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const title = "Hands-On Learning: Virtual Kidney Dissection Enhances SEND Student Engagement";
+export const title = "Virtual Kidney Dissection Boosts SEND Engagement";
 export const date = "2025-03-19";
 export const slug = "virtual-kidney-dissection-send-engagement";
 export const description =

@@ -4,7 +4,7 @@ import React from "react";
 export const title =
   "VRの冬？ウェブファーストの仮想実験室が学校にとって賢明な投資である理由";
 export const description =
-  "VRヘッドセットの販売が減少し、MetaがReality Labsのスタッフを削減する中、学校はハードウェアサイクルに依存しない教育テクノロジーを必要としています。ウェブファーストの仮想実験室が持続可能な選択である理由をご紹介します。";
+  "VRヘッドセット出荷台数が42.8%減少し「VRの冬」が到来。MetaがReality Labsスタッフを削減する中、学校はハードウェアサイクルに依存しない教育テクノロジーを必要としています。WhimsyLabsのウェブファースト仮想実験室が持続可能な選択である理由を解説。";
 export const keywords = [
   "VRの冬",
   "仮想現実教育",

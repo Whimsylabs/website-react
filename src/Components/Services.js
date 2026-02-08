@@ -3,14 +3,19 @@ import Header from './Header';
 import Footer from './Footer';
 import BubbleContainer from './BubbleContainer';
 import ContactUs from './ContactUs';
-import WelcomeSection from './WelcomeSection';
+import './Services.css';
 
 const Services = ({ language }) => {
     return (
             <main className="container-fluid text-center p-0">
             <Header language={language} />
 
-                <WelcomeSection titleText="Virtual Lab Services for Schools & Education" bodyText="WhimsyLabs provides comprehensive virtual laboratory solutions for educational institutions of all sizes. From ready-to-use curriculum-aligned labs to fully customized experiments, we make hands-on science accessible and affordable."/>
+                <section className="services-hero">
+                    <div className="container py-4">
+                        <h1 className="services-title">Virtual Lab for Schools: Educational Services</h1>
+                        <p className="services-subtitle">WhimsyLabs provides comprehensive virtual laboratory solutions for educational institutions of all sizes. From ready-to-use curriculum-aligned labs to fully customized experiments, we make hands-on science accessible and affordable.</p>
+                    </div>
+                </section>
                 <BubbleContainer>
 
                     <h2>AI-Powered Experiment Creator</h2>
@@ -59,6 +64,12 @@ const Services = ({ language }) => {
                         WhimsyLabs has a solution that fits your budget. Contact us for a free demo and personalized quote.
                     </p>
 
+                    <div style={{ textAlign: 'center', marginTop: '30px', marginBottom: '30px' }}>
+                        <p>
+                            Explore our <a href="/features/" style={{ color: '#6B4EAA', fontWeight: 'bold' }}>full feature set</a> or 
+                            <a href="/bett/" style={{ color: '#6B4EAA', fontWeight: 'bold', marginLeft: '5px' }}>meet us at BETT 2026</a> for a live demo!
+                        </p>
+                    </div>
 
                 <ContactUs />
             </BubbleContainer>

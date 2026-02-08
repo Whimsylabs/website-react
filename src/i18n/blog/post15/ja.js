@@ -5,7 +5,7 @@ import ScrollingMap from "../../../Components/ScrollingMap";
 export const title =
   "Bett 2026に出展いたします：1月にロンドンでお会いしましょう";
 export const description =
-  "WhimsyLabsは、受賞歴のあるバーチャル実験室プラットフォームを展示するため、Bett UK 2026のスタートアップゾーンに戻ります。FS10ブースで新機能をご覧ください。";
+  "WhimsyLabsがBett UK 2026に出展！Kids Judge Bett受賞の翌年、さらに進化したバーチャル実験室プラットフォームをスタートアップゾーンFS10ブースで展示。1月21〜23日、ExCeL Londonでお会いしましょう。";
 export const keywords = [
   "Bett 2026",
   "Bett UK 展示会",

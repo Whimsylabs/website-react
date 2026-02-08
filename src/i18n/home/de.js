@@ -150,7 +150,7 @@ export default {
     "Transformieren Sie MINT-Bildung mit immersiven, virtuellen Laborerfahrungen",
   getStarted: "Loslegen",
   learnMore: "Mehr erfahren",
-  welcomeTitle: "Virtuelles Labor Software für MINT-Bildung",
+  welcomeTitle: "Virtuelles Wissenschaftslabor Software für MINT-Bildung",
   welcomeText:
     "Whimsylabs ist eine preisgekrönte, virtuelle Labor-Software, die Pädagogen und Schülern die Freiheit gibt, wissenschaftliche Konzepte eigenständig zu erkunden und spielend zu lernen. Im Gegensatz zu herkömmlichen Simulationen, die auf eine feste Bibliothek von 200-300 Praktika beschränkt sind, ermöglicht unsere Sandbox-Umgebung unbegrenzte Experimente. Entwerfen Sie jedes Praktikum für jeden Lehrplan, nicht nur vorgefertigte Szenarien. Ob Biologie, Chemie oder Physik, unsere Online-Laborsimulationen ermöglichen es Schülern, mit wissenschaftlichen Phänomenen und Geräten zu experimentieren, ohne die Einschränkungen und Risiken eines physischen Labors. Unsere virtuellen MINT-Labore für Schulen helfen Schülern, Laborfähigkeiten sicher zu entwickeln, während sie Pädagogen leistungsstarke Bewertungstools bieten.",
   joinPilot: "Dem Pilotprojekt beitreten!",

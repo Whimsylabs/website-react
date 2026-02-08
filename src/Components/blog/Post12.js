@@ -1,11 +1,11 @@
 import React from "react";
 
 export const title =
-  "How Virtual Reality Prepares Students for Real-World STEM Careers: The Only Platform Teaching Physical Laboratory Skills";
+  "VR Labs That Teach Real Physical Lab Skills";
 export const date = "2025-09-15";
 export const slug = "virtual-reality-prepares-students-real-world-stem-careers";
 export const description =
-  "Discover why WhimsyLabs is the only virtual laboratory platform that teaches authentic physical movements and experimental design skills through full sandbox freedom and advanced liquid physics simulations.";
+  "WhimsyLabs teaches authentic lab skills through sandbox freedom and advanced liquid physics simulations.";
 export const keywords = [
   "VR career preparation",
   "STEM workforce training",
@@ -422,7 +422,7 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/real-time-physics-simulations">
+        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
           Real-Time Physics Simulations: The Technical Innovation Behind
           WhimsyLabs
         </a>

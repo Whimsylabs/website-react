@@ -13,7 +13,7 @@ const PrivacyPage = ({ t, currentLang, language }) => {
         <meta name="description" content="WhimsyLabs Privacy Policy - Learn how we collect, use, and protect your personal information when using our virtual laboratory software." />
         <meta name="keywords" content="WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy" />
       </Helmet>
-      <Header />
+      <Header currentLang={language} />
       <div className="privacy-page">
         <div className="container py-5">
           <div className="privacy-header">

@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "WhimsyLabsのAI仮想実験室が教育危機を解決";
-export const description = "WhimsyLabsの革新的な仮想実験室プラットフォームは、高度なAI評価、現実的な物理シミュレーション、サンドボックス学習を組み合わせて、世界中で質の高い理科教育へのアクセスを民主化します。";
+export const description = "WhimsyLabsの革新的な仮想実験室プラットフォームは、高度なAI自動評価システム、リアルタイム物理シミュレーション、サンドボックス型探究学習を統合。世界中の生徒に質の高いSTEM教育へのアクセスを提供し、グローバルな教育格差の解消に貢献します。";
 export const keywords = [
   "AI搭載仮想実験室",
   "STEM教育危機",

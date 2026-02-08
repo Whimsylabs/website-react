@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title =
-  "Warum andere virtuelle Labore scheitern: Die Physik-Engine-Lösung";
+  "Warum andere virtuelle Labore scheitern";
 export const description =
   "Warum skriptbasierte virtuelle Labore keine echten Fähigkeiten vermitteln und wie die Physik-Engine von WhimsyLabs authentisches MINT-Lernen ermöglicht.";
 export const keywords = [
