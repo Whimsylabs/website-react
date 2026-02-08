@@ -9,7 +9,7 @@ export const content = (
   <>
     <figure className="blog-image">
       <img
-        src="/images/blog/edtech-security-checklist.jpg"
+        src="/images/seccenter.jpg"
         alt="School administrator reviewing EdTech vendor security documentation"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />

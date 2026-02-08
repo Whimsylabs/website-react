@@ -9,7 +9,7 @@ export const content = (
   <>
     <figure className="blog-image">
       <img
-        src="/images/blog/teacher-experiment-designer.jpg"
+        src="/images/custom.jpg"
         alt="Science teacher using WhimsyLabs custom experiment designer on tablet"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />
