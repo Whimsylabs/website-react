@@ -94,9 +94,9 @@ export const content = (
       We've seen enough successful (and unsuccessful) grant applications to know what works. Our team can review your draft, suggest improvements, and help you frame the educational case for virtual labs. This isn't ghostwriting. It's the kind of support that peer reviewers and grant officers actually find valuable.
     </p>
 
-    <h3>Finding STEM Partners</h3>
+    <h3>WhimsyLabs: Your STEM Partner</h3>
     <p>
-      Some grants, like the Royal Society Partnership Grants, require a STEM partner from industry or academia. If you don't already know someone, we can connect you with university researchers who are keen to work with schools. We've built relationships specifically for this purpose.
+      Some grants, like the Royal Society Partnership Grants, require a STEM partner from industry or academia. <strong>WhimsyLabs fulfils this requirement.</strong> Our team includes PhD scientists and researchers who can serve as your official STEM partner, making your application complete without needing to find external contacts.
     </p>
 
     <h3>Free Software for Funded Projects</h3>
@@ -159,7 +159,7 @@ export const content = (
       Most schools have access to some form of grant funding for educational technology. The question is which funding streams apply to your specific situation.
     </p>
     <p>
-      UK state schools are almost always eligible for Royal Society Partnership Grants. If you can find a STEM partner and design an investigative project, you have a strong shot at funding.
+      UK state schools are almost always eligible for Royal Society Partnership Grants. With WhimsyLabs as your STEM partner and a well-designed investigative project, you have a strong shot at funding.
     </p>
     <p>
       International schools should check with their national education ministry, local foundations, and any international school networks they belong to. Many have innovation funds specifically for technology adoption.
