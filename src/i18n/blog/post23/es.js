@@ -11,149 +11,149 @@ export const content = (
     <figure className="blog-image">
       <img
         src="/images/custom.jpg"
-        alt="Science teacher using WhimsyLabs custom experiment designer on tablet"
+        alt="Profesora de ciencias usando el diseñador de experimentos de WhimsyLabs en una tablet"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />
       <figcaption style={{ textAlign: 'center', fontStyle: 'italic', color: '#666', marginBottom: '1.5rem' }}>
-        Teachers design the experiments. WhimsyLabs provides the virtual lab to run them.
+        Los profesores diseñan los experimentos. WhimsyLabs proporciona el laboratorio virtual para ejecutarlos.
       </figcaption>
     </figure>
 
     <p>
-      There's a concerning narrative in EdTech right now. New platforms promise to "revolutionise" education by automating what teachers do. AI will write your lessons. AI will grade your students. AI will personalise learning. The unspoken message is that teachers are the bottleneck, and technology is the solution.
+      Hay una narrativa preocupante en el sector EdTech actualmente. Las nuevas plataformas prometen "revolucionar" la educación automatizando lo que hacen los profesores. La IA escribirá tus clases. La IA calificará a tus estudiantes. La IA personalizará el aprendizaje. El mensaje implícito es que los profesores son el cuello de botella, y la tecnología es la solución.
     </p>
     <p>
-      We think that's backwards.
+      Nosotros pensamos que eso está al revés.
     </p>
     <p>
-      Teachers aren't the problem to be solved. They're professionals who understand their students, their curriculum, and their classroom in ways no algorithm can match. Educational research consistently shows that teacher quality is the single most important in-school factor affecting student achievement (<a href="https://www.rand.org/pubs/research_reports/RR4312.html" target="_blank" rel="noopener noreferrer">Opper, 2019</a>). What teachers often lack isn't intelligence or creativity. It's time, resources, and the right tools.
+      Los profesores no son el problema a resolver. Son profesionales que entienden a sus estudiantes, su currículo y su aula de maneras que ningún algoritmo puede igualar. La investigación educativa muestra consistentemente que la calidad del profesor es el factor escolar más importante que afecta el logro estudiantil (<a href="https://www.rand.org/pubs/research_reports/RR4312.html" target="_blank" rel="noopener noreferrer">Opper, 2019</a>). Lo que a menudo les falta a los profesores no es inteligencia o creatividad. Es tiempo, recursos y las herramientas adecuadas.
     </p>
     <p>
-      That's why we built WhimsyLabs the way we did. We provide a library of handcrafted virtual experiments ready to use out of the box, AND we give teachers the tools to create exactly what their students need.
-    </p>
-
-    <h2>Ready-Made Labs for Every Curriculum</h2>
-    <p>
-      Not every teacher wants to build their own experiments, and that's perfectly fine. WhimsyLabs comes with a comprehensive library of pre-built virtual practicals, each designed by science educators and aligned to major exam boards including AQA, OCR, Edexcel, and international curricula.
-    </p>
-    <p>
-      These aren't basic simulations. Each experiment runs on our physics-accurate engine, so students experience realistic equipment behaviour, proper technique requirements, and genuine scientific outcomes. Research shows that physics-based simulations significantly improve conceptual understanding compared to simplified animations (<a href="https://doi.org/10.1103/PhysRevSTPER.6.020108" target="_blank" rel="noopener noreferrer">Finkelstein et al., 2010</a>). You can assign them as-is, confident that students are getting a quality practical experience.
+      Por eso construimos WhimsyLabs de la manera que lo hicimos. Proporcionamos una biblioteca de experimentos virtuales artesanales listos para usar, Y damos a los profesores las herramientas para crear exactamente lo que sus estudiantes necesitan.
     </p>
 
-    <h2>The Problem with Only Pre-Packaged Experiments</h2>
+    <h2>Laboratorios listos para cada currículo</h2>
     <p>
-      Ready-made labs cover the core curriculum well. But teachers tell us they sometimes need something different:
+      No todos los profesores quieren crear sus propios experimentos, y eso está perfectamente bien. WhimsyLabs viene con una biblioteca completa de prácticas virtuales prediseñadas, cada una diseñada por educadores de ciencias y alineada con los principales organismos de examinación incluyendo AQA, OCR, Edexcel y currículos internacionales.
+    </p>
+    <p>
+      Estas no son simulaciones básicas. Cada experimento funciona en nuestro motor con precisión física, para que los estudiantes experimenten comportamiento realista del equipo, requisitos de técnica apropiados y resultados científicos genuinos. La investigación muestra que las simulaciones basadas en física mejoran significativamente la comprensión conceptual comparadas con animaciones simplificadas (<a href="https://doi.org/10.1103/PhysRevSTPER.6.020108" target="_blank" rel="noopener noreferrer">Finkelstein et al., 2010</a>). Puedes asignarlas tal como están, con la confianza de que los estudiantes obtienen una experiencia práctica de calidad.
+    </p>
+
+    <h2>El problema de tener solo experimentos prediseñados</h2>
+    <p>
+      Los laboratorios listos cubren bien el currículo básico. Pero los profesores nos dicen que a veces necesitan algo diferente:
     </p>
     <ul>
-      <li><strong>A specific context.</strong> You want to teach titration using examples relevant to your local water supply, not a generic acid-base scenario.</li>
-      <li><strong>Extra scaffolding.</strong> Your Year 10s need more support than the standard version provides.</li>
-      <li><strong>Extended challenge.</strong> Your gifted students finished early and need something harder.</li>
-      <li><strong>A unique practical.</strong> You've designed a brilliant experiment that doesn't exist in any textbook.</li>
+      <li><strong>Un contexto específico.</strong> Quieres enseñar titulación usando ejemplos relevantes para el suministro de agua local, no un escenario genérico de ácido-base.</li>
+      <li><strong>Apoyo adicional.</strong> Tus estudiantes de secundaria necesitan más ayuda de la que proporciona la versión estándar.</li>
+      <li><strong>Desafío extendido.</strong> Tus estudiantes más avanzados terminaron temprano y necesitan algo más difícil.</li>
+      <li><strong>Una práctica única.</strong> Has diseñado un experimento brillante que no existe en ningún libro de texto.</li>
     </ul>
     <p>
-      Studies on teacher autonomy consistently find that when teachers have control over instructional decisions, both job satisfaction and student outcomes improve (<a href="https://doi.org/10.1016/j.tate.2015.02.003" target="_blank" rel="noopener noreferrer">Pearson & Moomaw, 2005</a>). Sometimes you need the flexibility to do things your way.
+      Los estudios sobre autonomía docente encuentran consistentemente que cuando los profesores tienen control sobre las decisiones de instrucción, tanto la satisfacción laboral como los resultados estudiantiles mejoran (<a href="https://doi.org/10.1016/j.tate.2015.02.003" target="_blank" rel="noopener noreferrer">Pearson & Moomaw, 2005</a>). A veces necesitas la flexibilidad de hacer las cosas a tu manera.
     </p>
 
-    <h2>The Custom Experiment Designer</h2>
+    <h2>El diseñador de experimentos personalizado</h2>
     <p>
-      This is where our experiment designer comes in. The process is straightforward: paste in your existing lab protocol, or simply provide a list of equipment and learning objectives. Our AI generates the rest.
+      Aquí es donde entra nuestro diseñador de experimentos. El proceso es sencillo: pega tu protocolo de laboratorio existente, o simplemente proporciona una lista de equipos y objetivos de aprendizaje. Nuestra IA genera el resto.
     </p>
     <p>
-      You get a complete virtual experiment with:
+      Obtienes un experimento virtual completo con:
     </p>
     <ul>
-      <li><strong>Theory and background</strong> section introducing the science</li>
-      <li><strong>Step-by-step lab guide</strong> walking students through the practical</li>
-      <li><strong>Assessment questions</strong> testing understanding</li>
+      <li><strong>Sección de teoría y contexto</strong> que introduce la ciencia</li>
+      <li><strong>Guía de laboratorio paso a paso</strong> que guía a los estudiantes a través de la práctica</li>
+      <li><strong>Preguntas de evaluación</strong> que comprueban la comprensión</li>
     </ul>
     <p>
-      Here's the key: you can edit any of these. Accept what the AI generates, tweak the parts that don't quite fit your teaching style, or rewrite sections entirely. The AI handles the heavy lifting; you make the pedagogical decisions.
+      Aquí está la clave: puedes editar cualquiera de estos. Acepta lo que la IA genera, ajusta las partes que no encajan del todo con tu estilo de enseñanza, o reescribe secciones por completo. La IA hace el trabajo pesado; tú tomas las decisiones pedagógicas.
     </p>
     <p>
-      The physics engine does the rest. Whatever equipment and reagents you specify, the virtual lab simulates them accurately. Students get realistic measurements, proper technique feedback, and the authentic feel of lab work.
+      El motor de física hace el resto. Sea cual sea el equipo y los reactivos que especifiques, el laboratorio virtual los simula con precisión. Los estudiantes obtienen mediciones realistas, retroalimentación apropiada sobre la técnica y la sensación auténtica del trabajo de laboratorio.
     </p>
 
-    <h2>Why Teacher Control Matters</h2>
+    <h2>Por qué importa el control del profesor</h2>
     <p>
-      Research on effective teaching consistently emphasises the importance of pedagogical content knowledge, the specialised understanding that teachers develop about how to teach specific topics to specific students (<a href="https://doi.org/10.1177/0022487108324554" target="_blank" rel="noopener noreferrer">Ball et al., 2008</a>). When teachers can adapt their tools to their context, good things happen:
+      La investigación sobre enseñanza efectiva enfatiza consistentemente la importancia del conocimiento pedagógico del contenido—la comprensión especializada que los profesores desarrollan sobre cómo enseñar temas específicos a estudiantes específicos (<a href="https://doi.org/10.1177/0022487108324554" target="_blank" rel="noopener noreferrer">Ball et al., 2008</a>). Cuando los profesores pueden adaptar sus herramientas a su contexto, suceden cosas buenas:
     </p>
     <ul>
-      <li><strong>Lessons connect to what came before.</strong> You can design an experiment that builds on last week's topic, using the same terminology you've been developing.</li>
-      <li><strong>You can respond to your students.</strong> If half the class struggled with a concept, you can create a targeted practical to address it that day, not next term when a vendor releases an update.</li>
-      <li><strong>Assessment aligns with teaching.</strong> The questions you ask can match exactly what you taught, not what someone in a product team decided was "typical."</li>
-      <li><strong>You stay the expert.</strong> Technology supports your professional judgement instead of overriding it.</li>
+      <li><strong>Las lecciones conectan con lo anterior.</strong> Puedes diseñar un experimento que se base en el tema de la semana pasada, usando la misma terminología que has estado desarrollando.</li>
+      <li><strong>Puedes responder a tus estudiantes.</strong> Si la mitad de la clase tuvo dificultades con un concepto, puedes crear una práctica específica para abordarlo ese mismo día, no el próximo trimestre cuando un proveedor lance una actualización.</li>
+      <li><strong>La evaluación se alinea con la enseñanza.</strong> Las preguntas que haces pueden coincidir exactamente con lo que enseñaste, no con lo que alguien en un equipo de producto decidió que era "típico".</li>
+      <li><strong>Sigues siendo el experto.</strong> La tecnología apoya tu juicio profesional en lugar de anularlo.</li>
     </ul>
     <p>
-      Teachers consistently tell us they want more customisation options in their EdTech tools. We're building what teachers actually ask for.
+      Los profesores nos dicen consistentemente que quieren más opciones de personalización en sus herramientas EdTech. Estamos construyendo lo que los profesores realmente piden.
     </p>
 
-    <h2>AI as Assistant, Not Replacement</h2>
+    <h2>IA como asistente, no como reemplazo</h2>
     <p>
-      We do use AI in WhimsyLabs. Our AI tutor, WhimsyCat, watches what students do in the virtual lab and offers guidance when they're stuck. Our grading system uses AI to assess practical technique, not just final answers.
+      Sí usamos IA en WhimsyLabs. Nuestro tutor de IA, WhimsyCat, observa lo que hacen los estudiantes en el laboratorio virtual y ofrece orientación cuando están atascados. Nuestro sistema de calificación usa IA para evaluar la técnica práctica, no solo las respuestas finales.
     </p>
     <p>
-      But here's the difference: the AI works for you, not instead of you. Research on AI in education emphasises the importance of keeping teachers in the loop for pedagogical decisions (<a href="https://doi.org/10.18608/jla.2019.62.3" target="_blank" rel="noopener noreferrer">Holstein et al., 2019</a>).
+      Pero aquí está la diferencia: la IA trabaja para ti, no en lugar de ti. La investigación sobre IA en educación enfatiza la importancia de mantener a los profesores involucrados en las decisiones pedagógicas (<a href="https://doi.org/10.18608/jla.2019.62.3" target="_blank" rel="noopener noreferrer">Holstein et al., 2019</a>).
     </p>
     <ul>
-      <li><strong>You set what it teaches.</strong> WhimsyCat follows the learning objectives you defined.</li>
-      <li><strong>You review its feedback.</strong> AI-generated grades are suggestions. You have full override.</li>
-      <li><strong>You decide when it intervenes.</strong> Want students to struggle productively before getting hints? You can set that.</li>
-      <li><strong>It handles the tedious parts.</strong> Watching thirty students' titration technique is exhausting. AI can flag the ones who need your attention.</li>
+      <li><strong>Tú estableces lo que enseña.</strong> WhimsyCat sigue los objetivos de aprendizaje que definiste.</li>
+      <li><strong>Tú revisas su retroalimentación.</strong> Las calificaciones generadas por IA son sugerencias. Tienes control total.</li>
+      <li><strong>Tú decides cuándo interviene.</strong> ¿Quieres que los estudiantes luchen productivamente antes de recibir pistas? Puedes configurar eso.</li>
+      <li><strong>Ella maneja las partes tediosas.</strong> Observar la técnica de titulación de treinta estudiantes es agotador. La IA puede señalar los que necesitan tu atención.</li>
     </ul>
     <p>
-      Think of it like a teaching assistant who never gets tired, never misses a step, but always defers to your judgement. That's the role technology should play.
+      Piénsalo como un asistente de enseñanza que nunca se cansa, nunca se pierde un paso, pero siempre se remite a tu juicio. Ese es el papel que la tecnología debería desempeñar.
     </p>
 
-    <h2>What This Looks Like in Practice</h2>
+    <h2>Cómo se ve esto en la práctica</h2>
     <p>
-      Here's a real example. A chemistry teacher we work with teaches in a school where many students have English as a second language. The standard titration experiment assumes students understand terms like "endpoint" and "burette reading" without support.
+      Aquí hay un ejemplo real. Una profesora de química con la que trabajamos enseña en una escuela donde muchos estudiantes tienen el inglés como segunda lengua. El experimento estándar de titulación asume que los estudiantes entienden términos como "punto final" y "lectura de bureta" sin apoyo.
     </p>
     <p>
-      Using our experiment designer, she:
+      Usando nuestro diseñador de experimentos, ella:
     </p>
     <ul>
-      <li>Pasted in her existing paper-based lab protocol</li>
-      <li>Reviewed the AI-generated content and simplified the language</li>
-      <li>Added visual glossary popups for key vocabulary</li>
-      <li>Created scaffolded checkpoints ("Before you add more acid, check: is the solution still pink?")</li>
-      <li>Wrote assessment questions using simplified language</li>
+      <li>Pegó su protocolo de laboratorio existente en papel</li>
+      <li>Revisó el contenido generado por IA y simplificó el lenguaje</li>
+      <li>Añadió ventanas emergentes de glosario visual para vocabulario clave</li>
+      <li>Creó puntos de control escalonados ("Antes de añadir más ácido, comprueba: ¿la solución sigue rosa?")</li>
+      <li>Escribió preguntas de evaluación usando lenguaje simplificado</li>
     </ul>
     <p>
-      The core experiment is the same. The learning experience is transformed. Her students now consistently outperform in practical assessments, not because of better technology, but because she could adapt the technology to their needs. This aligns with research showing that scaffolding is particularly effective for English language learners in science education (<a href="https://doi.org/10.3102/0013189x13480524" target="_blank" rel="noopener noreferrer">Lee et al., 2013</a>).
+      El experimento central es el mismo. La experiencia de aprendizaje está transformada. Sus estudiantes ahora superan consistentemente en evaluaciones prácticas, no por mejor tecnología, sino porque ella pudo adaptar la tecnología a sus necesidades. Esto se alinea con la investigación que muestra que el andamiaje es particularmente efectivo para estudiantes de inglés como segunda lengua en educación científica (<a href="https://doi.org/10.3102/0013189x13480524" target="_blank" rel="noopener noreferrer">Lee et al., 2013</a>).
     </p>
 
-    <h2>Choose Your Level of Involvement</h2>
+    <h2>Elige tu nivel de participación</h2>
     <p>
-      To be clear: you can use WhimsyLabs without ever touching the experiment designer. Our ready-made library covers the full science curriculum, and many teachers are perfectly happy using those.
+      Para ser claros: puedes usar WhimsyLabs sin tocar nunca el diseñador de experimentos. Nuestra biblioteca lista cubre todo el currículo de ciencias, y muchos profesores están perfectamente contentos usando esos.
     </p>
     <p>
-      But if you want more control, the tools are there. Whether you tweak one question in an existing experiment or build something entirely new, we support both approaches. The goal is flexibility, not complexity.
-    </p>
-
-    <h2>Sharing What Works</h2>
-    <p>
-      When teachers create effective experiments, that knowledge shouldn't stay locked in one classroom. WhimsyLabs includes a sharing system where teachers can publish their custom experiments to a community library.
-    </p>
-    <p>
-      You can browse experiments created by other teachers, see what worked for them, and adapt those designs for your own context. Research on teacher professional learning communities shows that sharing pedagogical resources improves outcomes across schools (<a href="https://doi.org/10.1016/j.tate.2007.01.004" target="_blank" rel="noopener noreferrer">Vescio et al., 2008</a>). It's not about replacing your expertise with someone else's. It's about building on each other's work the way professionals in any field do.
+      Pero si quieres más control, las herramientas están ahí. Ya sea que ajustes una pregunta en un experimento existente o construyas algo completamente nuevo, apoyamos ambos enfoques. El objetivo es flexibilidad, no complejidad.
     </p>
 
-    <h2>The Future of EdTech Should Amplify Teachers</h2>
+    <h2>Compartir lo que funciona</h2>
     <p>
-      We're not naive. We know why some EdTech companies push the "AI replaces teachers" narrative. It's easier to sell automation than to support human expertise. It's cheaper to build one-size-fits-all than to enable customisation.
+      Cuando los profesores crean experimentos efectivos, ese conocimiento no debería quedarse encerrado en un aula. WhimsyLabs incluye un sistema de compartición donde los profesores pueden publicar sus experimentos personalizados en una biblioteca comunitaria.
     </p>
     <p>
-      But education isn't a factory process. Learning happens between people. Technology can make those interactions richer, remove friction, save time, provide data. What it can't do is replace the human understanding that great teaching requires.
+      Puedes explorar experimentos creados por otros profesores, ver qué funcionó para ellos y adaptar esos diseños para tu propio contexto. La investigación sobre comunidades de aprendizaje profesional docente muestra que compartir recursos pedagógicos mejora los resultados en todas las escuelas (<a href="https://doi.org/10.1016/j.tate.2007.01.004" target="_blank" rel="noopener noreferrer">Vescio et al., 2008</a>). No se trata de reemplazar tu experiencia con la de otro. Se trata de construir sobre el trabajo del otro como lo hacen los profesionales en cualquier campo.
+    </p>
+
+    <h2>El futuro de EdTech debería potenciar a los profesores</h2>
+    <p>
+      No somos ingenuos. Sabemos por qué algunas empresas EdTech impulsan la narrativa de "la IA reemplaza a los profesores". Es más fácil vender automatización que apoyar la experiencia humana. Es más barato construir soluciones únicas que permitir la personalización.
     </p>
     <p>
-      So we built WhimsyLabs on a different premise: teachers are the experts at teaching. We're just experts at building virtual laboratories. When we stay in our lane and give you control, students get the best of both.
+      Pero la educación no es un proceso de fábrica. El aprendizaje ocurre entre personas. La tecnología puede hacer esas interacciones más ricas, eliminar fricciones, ahorrar tiempo, proporcionar datos. Lo que no puede hacer es reemplazar la comprensión humana que requiere la gran enseñanza.
     </p>
     <p>
-      If you're a teacher who wants virtual labs that work the way you do, we'd love to show you what that looks like. <a href="/contact">Get in touch</a> and we'll set up a demo.
+      Así que construimos WhimsyLabs sobre una premisa diferente: los profesores son los expertos en enseñar. Nosotros solo somos expertos en construir laboratorios virtuales. Cuando nos mantenemos en nuestro carril y te damos el control, los estudiantes obtienen lo mejor de ambos mundos.
+    </p>
+    <p>
+      Si eres un profesor que quiere laboratorios virtuales que funcionen como tú, nos encantaría mostrarte cómo se ve eso. <a href="/contact">Ponte en contacto</a> y programaremos una demostración.
     </p>
 
     <div className="references-section">
-      <h3>References</h3>
+      <h3>Referencias</h3>
       <ul className="references-list">
         <li key="ref-1">
           Ball, D. L., Thames, M. H., & Phelps, G. (2008). Content knowledge for teaching: What makes it special?
@@ -193,13 +193,14 @@ export const content = (
       </ul>
     </div>
 
-    <h2>Further Reading</h2>
+    <h2>Lectura adicional</h2>
     <ul>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">The Sandbox Learning Revolution: Why Freedom to Fail is Essential</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: AI That Supports, Not Replaces</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 Questions to Ask EdTech Vendors After the PowerSchool Breach</a></li>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
+      <li><a href="/blog/sandbox-learning-revolution-stem-education">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: IA que apoya, no reemplaza</a></li>
+      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 preguntas para proveedores EdTech después de la brecha de PowerSchool</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias VR</a></li>
     </ul>
   </>
 );
 
+export default { title, date, slug, description, keywords, content };
