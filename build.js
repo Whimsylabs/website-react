@@ -1145,6 +1145,7 @@ async function generateSitemap() {
       { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
       { path: '/privacy/', priority: '0.3', changefreq: 'yearly' },
       { path: '/data-security/', priority: '0.4', changefreq: 'yearly' },
+      { path: '/documents/dpa/', priority: '0.3', changefreq: 'yearly' }, // Data Processing Agreement
       // TEMPORARILY DISABLED - Subject pages need more work
       // { path: '/chemistry/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
       // { path: '/biology/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
