@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "AI Science Tutors in the Classroom: What Actually Works";
 export const date = "2026-02-17";

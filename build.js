@@ -72,6 +72,16 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.bett?.description || "Visit WhimsyLabs at BETT 2026 (ExCeL London, Jan 21-23). Book a demo at Booth FS10 and discover our award-winning virtual laboratory software.",
     keywords: "BETT 2026, WhimsyLabs exhibition, virtual lab demo, education technology show, ExCeL London",
   },
+  "/grants": {
+    title: "STEM Education Grants & Funding Support | WhimsyLabs",
+    description: "Find grants for VR science labs in schools. WhimsyLabs helps you apply for STEM education funding with free demo access.",
+    keywords: "STEM grants, education funding, school grants, VR equipment funding, science lab grants, WhimsyLabs grants",
+  },
+  "/grants/royal-society": {
+    title: "Royal Society Partnership Grants | WhimsyLabs",
+    description: "UK schools can get up to £3,000 for VR science projects. WhimsyLabs offers free virtual lab software and full application support.",
+    keywords: "Royal Society Partnership Grants, UK school grants, STEM funding UK, science project funding, VR lab grants, WhimsyLabs Royal Society",
+  },
   "/contact": {
     title: translations[lang]?.contact?.title || "Contact Us | WhimsyLabs Virtual Lab Software",
     description: translations[lang]?.contact?.description || "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
@@ -87,6 +97,22 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.dataSecurity?.description || "How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.",
     keywords: "student data privacy, EdTech security, FERPA compliance, GDPR education, virtual lab data protection, school data security",
   },
+  // TEMPORARILY DISABLED - Subject pages need more work
+  // "/chemistry": {
+  //   title: translations[lang]?.chemistry?.title || "Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs",
+  //   description: translations[lang]?.chemistry?.description || "Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.",
+  //   keywords: "virtual chemistry lab, chemistry simulations, online chemistry experiments, titration simulation, molecular modelling, GCSE chemistry, A-level chemistry",
+  // },
+  // "/biology": {
+  //   title: translations[lang]?.biology?.title || "Virtual Biology Lab | Interactive Biology Simulations | WhimsyLabs",
+  //   description: translations[lang]?.biology?.description || "Explore interactive virtual biology experiments with realistic simulations. Dissections, microscopy, and cellular biology without ethical concerns.",
+  //   keywords: "virtual biology lab, biology simulations, online biology experiments, virtual dissection, microscopy simulation, GCSE biology, A-level biology",
+  // },
+  // "/physics": {
+  //   title: translations[lang]?.physics?.title || "Virtual Physics Lab | Interactive Physics Simulations | WhimsyLabs",
+  //   description: translations[lang]?.physics?.description || "Explore interactive virtual physics experiments with realistic simulations. Mechanics, electricity, waves, and more with real-time data collection.",
+  //   keywords: "virtual physics lab, physics simulations, online physics experiments, circuit simulation, mechanics simulation, GCSE physics, A-level physics",
+  // },
   // "/landing-demo" is now the homepage at "/"
 });
 
@@ -101,6 +127,12 @@ const routeComponentMap = {
   "/privacy": "PrivacyPage",
   "/data-security": "DataSecurityPage",
   "/bett": "BettPage",
+  "/grants": "GrantsPage",
+  "/grants/royal-society": "RoyalSocietyGrantPage",
+  // TEMPORARILY DISABLED - Subject pages need more work
+  // "/chemistry": "ChemistryPage",
+  // "/biology": "BiologyPage",
+  // "/physics": "PhysicsPage",
   // "/landing-demo": "LandingDemo", // Now the homepage
   // "/ignite-pitch": "IgnitePitchDeck", // Disabled
 };
@@ -229,6 +261,20 @@ async function loadReactComponents() {
 
     ReactComponents.BettPage = require("./src/Components/BettPage.js").default;
     console.log("✅ Loaded BettPage");
+
+    ReactComponents.GrantsPage = require("./src/Components/GrantsPage.js").default;
+    console.log("✅ Loaded GrantsPage");
+
+    ReactComponents.RoyalSocietyGrantPage = require("./src/Components/RoyalSocietyGrantPage.js").default;
+    console.log("✅ Loaded RoyalSocietyGrantPage");
+
+    // TEMPORARILY DISABLED - Subject pages need more work
+    // ReactComponents.ChemistryPage = require("./src/Components/ChemistryPage.js").default;
+    // console.log("✅ Loaded ChemistryPage");
+    // ReactComponents.BiologyPage = require("./src/Components/BiologyPage.js").default;
+    // console.log("✅ Loaded BiologyPage");
+    // ReactComponents.PhysicsPage = require("./src/Components/PhysicsPage.js").default;
+    // console.log("✅ Loaded PhysicsPage");
 
     ReactComponents.LandingDemo = require("./src/Components/LandingDemo.js").default;
     console.log("✅ Loaded LandingDemo");
@@ -379,8 +425,19 @@ async function getBlogPosts(language = 'en') {
     const Post18 = require("./src/Components/blog/Post18.js");
     const Post19 = require("./src/Components/blog/Post19.js");
     const Post20 = require("./src/Components/blog/Post20.js");
+    const Post21 = require("./src/Components/blog/Post21.js");
+    const Post22 = require("./src/Components/blog/Post22.js");
+    const Post23 = require("./src/Components/blog/Post23.js");
+    const Post24 = require("./src/Components/blog/Post24.js");
+    const Post25 = require("./src/Components/blog/Post25.js");
+    const Post26 = require("./src/Components/blog/Post26.js");
+    const Post27 = require("./src/Components/blog/Post27.js");
+    const Post28 = require("./src/Components/blog/Post28.js");
+    const Post29 = require("./src/Components/blog/Post29.js");
+    const Post30 = require("./src/Components/blog/Post30.js");
+    const Post31 = require("./src/Components/blog/Post31.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30, Post31];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -423,6 +480,17 @@ async function getBlogPosts(language = 'en') {
       const Post18 = require("./src/Components/blog/Post18.js");
       const Post19 = require("./src/Components/blog/Post19.js");
       const Post20 = require("./src/Components/blog/Post20.js");
+      const Post21 = require("./src/Components/blog/Post21.js");
+      const Post22 = require("./src/Components/blog/Post22.js");
+      const Post23 = require("./src/Components/blog/Post23.js");
+      const Post24 = require("./src/Components/blog/Post24.js");
+      const Post25 = require("./src/Components/blog/Post25.js");
+      const Post26 = require("./src/Components/blog/Post26.js");
+      const Post27 = require("./src/Components/blog/Post27.js");
+      const Post28 = require("./src/Components/blog/Post28.js");
+      const Post29 = require("./src/Components/blog/Post29.js");
+      const Post30 = require("./src/Components/blog/Post30.js");
+      const Post31 = require("./src/Components/blog/Post31.js");
 
       const fallbackPosts = [
         {
@@ -624,6 +692,116 @@ async function getBlogPosts(language = 'en') {
           path: `/blog/${Post20.slug}`,
           language: 'en',
           hasFullTranslation: true
+        },
+        {
+          id: Post21.slug,
+          title: Post21.title,
+          date: Post21.date,
+          description: Post21.description,
+          content: Post21.content,
+          path: `/blog/${Post21.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post22.slug,
+          title: Post22.title,
+          date: Post22.date,
+          description: Post22.description,
+          content: Post22.content,
+          path: `/blog/${Post22.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post23.slug,
+          title: Post23.title,
+          date: Post23.date,
+          description: Post23.description,
+          content: Post23.content,
+          path: `/blog/${Post23.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post24.slug,
+          title: Post24.title,
+          date: Post24.date,
+          description: Post24.description,
+          content: Post24.content,
+          path: `/blog/${Post24.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post25.slug,
+          title: Post25.title,
+          date: Post25.date,
+          description: Post25.description,
+          content: Post25.content,
+          path: `/blog/${Post25.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post26.slug,
+          title: Post26.title,
+          date: Post26.date,
+          description: Post26.description,
+          content: Post26.content,
+          path: `/blog/${Post26.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post27.slug,
+          title: Post27.title,
+          date: Post27.date,
+          description: Post27.description,
+          content: Post27.content,
+          path: `/blog/${Post27.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post28.slug,
+          title: Post28.title,
+          date: Post28.date,
+          description: Post28.description,
+          content: Post28.content,
+          path: `/blog/${Post28.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post29.slug,
+          title: Post29.title,
+          date: Post29.date,
+          description: Post29.description,
+          content: Post29.content,
+          path: `/blog/${Post29.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post30.slug,
+          title: Post30.title,
+          date: Post30.date,
+          description: Post30.description,
+          content: Post30.content,
+          path: `/blog/${Post30.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post31.slug,
+          title: Post31.title,
+          date: Post31.date,
+          description: Post31.description,
+          content: Post31.content,
+          path: `/blog/${Post31.slug}`,
+          language: 'en',
+          hasFullTranslation: true
         }
       ];
 
@@ -726,6 +904,17 @@ async function generatePageHTML(route, data = {}) {
           'vr-winter-web-first-virtual-labs': 'post18',
           'oecd-ai-learning-paradox-virtual-labs': 'post19',
           'ai-assessment-crisis-solution': 'post20',
+          'royal-society-partnership-grants-vr-science-labs': 'post21',
+          'edtech-vendor-security-questions-powerschool': 'post22',
+          'teachers-are-experts-custom-experiment-designer': 'post23',
+          'how-to-choose-virtual-lab-software-school': 'post24',
+          'virtual-chemistry-lab-teachers-guide': 'post25',
+          'virtual-lab-software-guide-2026': 'post26',
+          'ai-science-tutor-classroom-what-works': 'post27',
+          'virtual-biology-lab-dissections-microscopy': 'post28',
+          'virtual-physics-lab-simulations-teach': 'post29',
+          'premium-science-education-accessible-grants': 'post30',
+          'uk-government-ai-education-funding-2026': 'post31',
         };
         
         const postId = slugToPostId[data.slug];
@@ -950,10 +1139,16 @@ async function generateSitemap() {
       { path: '/services/', priority: '0.6', changefreq: 'weekly' },
       { path: '/features/', priority: '0.8', changefreq: 'weekly' },
       { path: '/bett/', priority: '0.9', changefreq: 'weekly' }, // High priority for event page
+      { path: '/grants/', priority: '0.7', changefreq: 'weekly' }, // Grants index
+      { path: '/grants/royal-society/', priority: '0.8', changefreq: 'weekly' }, // Royal Society grants - high priority for UK schools
       { path: '/faq/', priority: '0.9', changefreq: 'monthly' },
       { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
       { path: '/privacy/', priority: '0.3', changefreq: 'yearly' },
       { path: '/data-security/', priority: '0.4', changefreq: 'yearly' },
+      // TEMPORARILY DISABLED - Subject pages need more work
+      // { path: '/chemistry/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
+      // { path: '/biology/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
+      // { path: '/physics/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
       // landing-demo is now the homepage
     ];
 

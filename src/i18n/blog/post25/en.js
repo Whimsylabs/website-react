@@ -1,3 +1,4 @@
+import React from "react";
 export const title = "Virtual Chemistry Lab: A Teacher's Complete Guide";
 export const date = "2026-02-11";
 export const slug = "virtual-chemistry-lab-teachers-guide";

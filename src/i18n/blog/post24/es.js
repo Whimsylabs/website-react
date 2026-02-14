@@ -1,3 +1,4 @@
+import React from "react";
 export const title = "Cómo elegir software de laboratorio virtual para tu centro educativo";
 export const date = "2026-02-09";
 export const slug = "how-to-choose-virtual-lab-software-school";

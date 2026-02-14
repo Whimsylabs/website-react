@@ -1,3 +1,4 @@
+import React from "react";
 export const title = "Virtual Physics Lab: Simulations That Actually Teach";
 export const date = "2026-02-23";
 export const slug = "virtual-physics-lab-simulations-teach";

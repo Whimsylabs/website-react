@@ -1,3 +1,4 @@
+import React from "react";
 export const title = "学校向け仮想実験室ソフトウェアの選び方";
 export const date = "2026-02-09";
 export const slug = "how-to-choose-virtual-lab-software-school";

@@ -1,3 +1,4 @@
+import React from "react";
 export const title = "UK Schools: Get £3,000 for VR Science Labs | Royal Society Grants";
 export const description = "Royal Society Partnership Grants offer UK schools up to £3,000 for STEM projects. WhimsyLabs helps you apply and provides free VR science lab software.";
 export const keywords = "Royal Society Partnership Grants, UK school grants, STEM funding for schools, VR science labs, science education funding, WhimsyLabs grants, free VR lab software, school science equipment";

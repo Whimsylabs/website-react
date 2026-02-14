@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "教師が専門家です。私たちはツールを作るだけです。";
 export const date = "2026-02-08";

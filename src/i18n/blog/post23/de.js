@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.";
 export const date = "2026-02-08";

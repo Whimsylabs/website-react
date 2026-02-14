@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "Teachers Are the Experts. We Just Build the Tools.";
 export const date = "2026-02-08";

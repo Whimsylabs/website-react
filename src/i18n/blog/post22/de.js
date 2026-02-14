@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "10 Fragen an EdTech-Anbieter nach PowerSchool-Leck";
 export const date = "2026-02-07";

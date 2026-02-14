@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "10 Questions to Ask EdTech Vendors After the PowerSchool Breach";
 export const date = "2026-02-07";

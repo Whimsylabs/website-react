@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "PowerSchool侵害後にEdTechベンダーに尋ねるべき10の質問";
 export const date = "2026-02-07";

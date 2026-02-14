@@ -43,6 +43,16 @@ const slugToPostId = {
   'oecd-ai-learning-paradox-virtual-labs': 'post19',
   'ai-assessment-crisis-solution': 'post20',
   'royal-society-partnership-grants-vr-science-labs': 'post21',
+  'edtech-vendor-security-questions-powerschool': 'post22',
+  'teachers-are-experts-custom-experiment-designer': 'post23',
+  'how-to-choose-virtual-lab-software-school': 'post24',
+  'virtual-chemistry-lab-teachers-guide': 'post25',
+  'virtual-lab-software-guide-2026': 'post26',
+  'ai-science-tutor-classroom-what-works': 'post27',
+  'virtual-biology-lab-dissections-microscopy': 'post28',
+  'virtual-physics-lab-simulations-teach': 'post29',
+  'premium-science-education-accessible-grants': 'post30',
+  'uk-government-ai-education-funding-2026': 'post31',
 };
 
 // Languages to check (jp maps to ja in translation files)

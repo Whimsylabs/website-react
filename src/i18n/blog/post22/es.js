@@ -1,3 +1,4 @@
+import React from "react";
 
 export const title = "10 Preguntas de Seguridad para Proveedores EdTech";
 export const date = "2026-02-07";
