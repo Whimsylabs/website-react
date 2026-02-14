@@ -72,16 +72,16 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
         <div className="container">
           <div className="rsg-hero-content">
             <AnimatedTitle
-              text="Your Partnership Grant Partner"
+              text="Royal Society Partnership Grants"
               className="rsg-hero-title"
               delay={0}
               darkMode={false}
               uppercase={true}
             />
             <p className="rsg-hero-subtitle">
-              <strong>WhimsyLabs is your Royal Society Partnership Grant solution.</strong>
+              <strong>Get up to £3,000 for VR science labs in your school.</strong>
               <br />
-              Free VR science software. Application support. Everything you need.
+              WhimsyLabs provides free software + application support.
             </p>
             <div className="rsg-hero-badges">
               <div className="rsg-badge rsg-badge-primary">
