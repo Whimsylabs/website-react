@@ -558,6 +558,7 @@ const Blog = (props = {}) => {
       <Header currentLang={currentLanguage} />
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
+          {/* Full-width header */}
           <header className="blog-header">
             <h1 className="blog-page-title">STEM Education Blog | WhimsyLabs</h1>
             <p className="blog-intro">
@@ -566,7 +567,7 @@ const Blog = (props = {}) => {
             </p>
           </header>
           
-          {/* Featured Posts Section - Internal Linking */}
+          {/* Full-width Featured Posts Section */}
           {featuredPosts.length > 0 && activeCategory === 'all' && (
             <section className="featured-posts-section" aria-label="Featured articles">
               <h2 className="featured-posts-heading">Featured Articles</h2>
@@ -585,25 +586,28 @@ const Blog = (props = {}) => {
             </section>
           )}
           
-          {/* Category Filters */}
-          <nav className="blog-categories" aria-label="Blog categories">
-            <h2 className="visually-hidden">Filter by Topic</h2>
-            <ul className="category-filter-list">
-              {Object.entries(BLOG_CATEGORIES).map(([key, { label }]) => (
-                <li key={key}>
-                  <button
-                    className={`category-filter-btn ${activeCategory === key ? 'active' : ''}`}
-                    onClick={() => setActiveCategory(key)}
-                    aria-pressed={activeCategory === key}
-                  >
-                    {label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          
-          <section className="posts-section blog-index" aria-label="Blog posts">
+          {/* Main content area: filters + posts + sidebar */}
+          <div className="blog-main-content">
+            <div className="blog-posts-wrapper">
+              {/* Category Filters */}
+              <nav className="blog-categories" aria-label="Blog categories">
+                <h2 className="visually-hidden">Filter by Topic</h2>
+                <ul className="category-filter-list">
+                  {Object.entries(BLOG_CATEGORIES).map(([key, { label }]) => (
+                    <li key={key}>
+                      <button
+                        className={`category-filter-btn ${activeCategory === key ? 'active' : ''}`}
+                        onClick={() => setActiveCategory(key)}
+                        aria-pressed={activeCategory === key}
+                      >
+                        {label}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              
+              <section className="posts-section blog-index" aria-label="Blog posts">
             <h2 className="visually-hidden">
               {activeCategory === 'all' ? 'All Blog Posts' : `${BLOG_CATEGORIES[activeCategory]?.label} Articles`}
             </h2>
@@ -647,20 +651,25 @@ const Blog = (props = {}) => {
                 </button>
               </div>
             )}
-          </section>
-          <div className="sidebar">
-            <h2>Blog Posts</h2>
-            <ul>
-              {posts.map((post) => (
-                <li
-                  key={post.id}
-                  className={activePostId === post.id ? 'active' : ''}
-                >
-                  <a href={`${languagePrefix}/blog/${post.id}/`}>{post.title}</a>
-                </li>
-              ))}
-            </ul>
+              </section>
+            </div>
+            {/* End blog-posts-wrapper */}
+          
+            <div className="sidebar">
+              <h2>Blog Posts</h2>
+              <ul>
+                {posts.map((post) => (
+                  <li
+                    key={post.id}
+                    className={activePostId === post.id ? 'active' : ''}
+                  >
+                    <a href={`${languagePrefix}/blog/${post.id}/`}>{post.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+          {/* End blog-main-content */}
         </div>
       </BubbleContainer>
       <Footer />
