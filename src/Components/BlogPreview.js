@@ -133,26 +133,38 @@ const BlogPreview = ({ post, languagePrefix = '' }) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
+  
+  // Create a short title for the read more link (first 50 chars)
+  const shortTitle = post.title.length > 50 
+    ? post.title.substring(0, 47) + '...' 
+    : post.title;
 
   return (
-    <a href={`${languagePrefix}/blog/${post.id}/`} className="blog-preview-link">
-      <div className="post-box post-preview" id={`post-${post.id}`}>
-        {/* Extract and display the first image as a header */}
-        {extractFirstImage(post.content)}
-        
-        <h2>
-          <span className="post-title">{post.title}</span>
-        </h2>
-        <span className="post-date">{formatDate(post.date)}</span>
-        
-        {extractPreview(post.content)}
-        
-        <span className="read-more-link">
-          Read More
-        </span>
-        
-      </div>
-    </a>
+    <article className="blog-preview-article">
+      <a href={`${languagePrefix}/blog/${post.id}/`} className="blog-preview-link">
+        <div className="post-box post-preview" id={`post-${post.id}`}>
+          {/* Extract and display the first image as a header */}
+          {extractFirstImage(post.content)}
+          
+          <h3 className="post-heading">
+            <span className="post-title">{post.title}</span>
+          </h3>
+          <time className="post-date" dateTime={post.date}>{formatDate(post.date)}</time>
+          
+          {/* Description for SEO - shows meta description if available */}
+          {post.description && (
+            <p className="post-description-text">{post.description}</p>
+          )}
+          
+          {extractPreview(post.content)}
+          
+          <span className="read-more-link" aria-label={`Read full article: ${shortTitle}`}>
+            Continue reading "{shortTitle}" →
+          </span>
+          
+        </div>
+      </a>
+    </article>
   );
 };
 

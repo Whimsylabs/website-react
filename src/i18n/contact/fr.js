@@ -7,6 +7,13 @@ export default {
   requestTrial: "Demander un Essai",
   mainHeading: "Contacter WhimsyLabs",
   subheading: "Nous aimerions avoir de vos nouvelles ! Que vous soyez intéressé à essayer nos laboratoires virtuels dans votre école ou que vous ayez des questions générales, nous sommes là pour vous aider.",
+  // Trust signals
+  trustBettAward: "Lauréat du Prix BETT 2025",
+  trustSchools: "Adopté par des Écoles à Travers le Royaume-Uni",
+  trustResponse: "Réponse Sous 24 Heures",
+  // Testimonial
+  testimonialQuote: "WhimsyLabs a transformé la façon dont nos élèves s'engagent avec les travaux pratiques de sciences. Les expériences virtuelles sont vraiment concrètes, et les retours de l'IA aident les élèves à apprendre de leurs erreurs en toute sécurité.",
+  testimonialAuthor: "— Chef de Département Sciences, École Secondaire",
   requestTrialTab: "Demander un Essai pour votre École",
   generalInquiriesTab: "Demandes Générales",
   thankYou: "Merci !",

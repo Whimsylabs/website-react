@@ -6,6 +6,14 @@ import ContactUs from './ContactUs';
 import './Services.css';
 
 const Services = ({ language }) => {
+    // Helper for localized paths
+    const getLocalizedPath = (path) => {
+        if (language && language !== 'en') {
+            return `/${language}${path}`;
+        }
+        return path;
+    };
+
     return (
             <main className="container-fluid text-center p-0">
             <Header language={language} />
@@ -31,6 +39,16 @@ const Services = ({ language }) => {
                         <li><strong>Community Library:</strong> Access thousands of labs created by educators worldwide, or contribute your own.</li>
                     </ul>
 
+                    {/* CTA after AI-Powered Experiment Creator */}
+                    <div className="services-cta-section">
+                        <h3>See the AI Experiment Builder in Action</h3>
+                        <p>Watch how teachers create custom labs in minutes — no coding required.</p>
+                        <div className="services-cta-buttons">
+                            <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Book a Demo</a>
+                            <a href={getLocalizedPath("/features/")} className="services-cta-button secondary">See Features</a>
+                        </div>
+                    </div>
+
                     <h2>Ready-to-Use Lab Library</h2>
                     <p style={{ textAlign: 'left', maxWidth: '800px', margin: 'auto', marginBottom: '20px' }}>
                         Get started immediately with our extensive library of pre-built experiments covering Biology, Chemistry, Physics,
@@ -46,6 +64,16 @@ const Services = ({ language }) => {
                         <li><strong>Offline Capability:</strong> Labs work without internet — perfect for schools with unreliable connectivity.</li>
                     </ul>
 
+                    {/* CTA after School-Wide Solutions */}
+                    <div className="services-cta-section">
+                        <h3>Ready to Transform Your Science Department?</h3>
+                        <p>Get a personalized quote for your school or district — pricing that fits any budget.</p>
+                        <div className="services-cta-buttons">
+                            <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Request a Free Trial</a>
+                            <a href={getLocalizedPath("/bett/")} className="services-cta-button secondary">See It In Action</a>
+                        </div>
+                    </div>
+
                     <h2>Custom Development Services</h2>
                     <p style={{ textAlign: 'left', maxWidth: '800px', margin: 'auto', marginBottom: '20px' }}>
                         Need something truly unique? Our development team can create fully bespoke simulations for specialized
@@ -57,6 +85,15 @@ const Services = ({ language }) => {
                         <li><strong>VR & AR Ready:</strong> Full compatibility with Meta Quest, HTC Vive, and other VR/AR platforms.</li>
                         <li><strong>Enterprise Deployment:</strong> On-premises hosting options for organizations with strict data requirements.</li>
                     </ul>
+
+                    {/* CTA after Custom Development */}
+                    <div className="services-cta-section">
+                        <h3>Need a Custom Solution?</h3>
+                        <p>Tell us about your project — our team will design a solution tailored to your needs.</p>
+                        <div className="services-cta-buttons">
+                            <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Contact Us</a>
+                        </div>
+                    </div>
 
                     <h2>Get Started Today</h2>
                     <p style={{ textAlign: 'left', maxWidth: '800px', margin: 'auto' }}>

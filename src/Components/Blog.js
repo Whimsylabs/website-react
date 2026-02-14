@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 // Removed React Router - using direct HTML links
 import { Helmet } from 'react-helmet-async';
 import './Blog.css';
@@ -40,6 +40,46 @@ import * as Post28 from './blog/Post28';
 import * as Post29 from './blog/Post29';
 import * as Post30 from './blog/Post30';
 import * as Post31 from './blog/Post31';
+
+// Blog categories for filtering
+const BLOG_CATEGORIES = {
+  all: { label: 'All Posts', keywords: [] },
+  'ai-education': { 
+    label: 'AI Education', 
+    keywords: ['AI tutor', 'artificial intelligence', 'WhimsyCat', 'machine learning', 'personalized learning', 'AI-powered']
+  },
+  'virtual-labs': { 
+    label: 'Virtual Labs', 
+    keywords: ['virtual lab', 'simulation', 'physics engine', 'sandbox', 'online lab', 'digital lab']
+  },
+  'teaching-resources': { 
+    label: 'Teaching Resources', 
+    keywords: ['teacher', 'classroom', 'curriculum', 'lesson', 'educator', 'teaching']
+  },
+  'stem-careers': { 
+    label: 'STEM Careers', 
+    keywords: ['career', 'workforce', 'industry', 'professional', 'job', 'employment']
+  },
+  'research': { 
+    label: 'Research & Studies', 
+    keywords: ['research', 'study', 'OECD', 'data', 'statistics', 'evidence']
+  }
+};
+
+// Map posts to categories based on content/keywords
+const categorizePost = (post) => {
+  const searchText = `${post.title} ${post.description || ''}`.toLowerCase();
+  const categories = [];
+  
+  Object.entries(BLOG_CATEGORIES).forEach(([key, { keywords }]) => {
+    if (key === 'all') return;
+    if (keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
+      categories.push(key);
+    }
+  });
+  
+  return categories.length > 0 ? categories : ['teaching-resources']; // Default category
+};
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -320,8 +360,17 @@ const Blog = (props = {}) => {
     props.language && props.language !== 'en' ? `/${props.language}` : ''
   );
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeCategory, setActiveCategory] = useState('all');
 
   const postsPerPage = 10; // Set pagination limit
+  
+  // Featured posts for internal linking (manually curated key articles)
+  const featuredPostIds = [
+    'virtual-lab-software-guide-2026',           // Comprehensive guide
+    'ai-science-tutor-classroom-what-works',     // AI education
+    'how-to-choose-virtual-lab-software-school', // Buying guide
+    'whimsylabs-wins-techlearning-best-of-bett-2026' // Award/credibility
+  ];
 
   useEffect(() => {
     // Set language prefix based on props or URL
@@ -384,21 +433,77 @@ const Blog = (props = {}) => {
   
   // Merge translated metadata (title, description) with fallback content for preview cards
   // This ensures translated titles show while content extraction still works
-  const postsToDisplay = posts.length > 0 ? posts.map(post => {
-    // Find the corresponding fallback post for content if translated content is missing
-    const fallbackPost = fallbackPosts.find(fp => fp.id === post.id);
-    return {
+  const postsWithCategories = useMemo(() => {
+    const displayPosts = posts.length > 0 ? posts.map(post => {
+      const fallbackPost = fallbackPosts.find(fp => fp.id === post.id);
+      return {
+        ...post,
+        content: post.content || (fallbackPost ? fallbackPost.content : null),
+        categories: categorizePost(post)
+      };
+    }) : fallbackPosts.map(post => ({
       ...post,
-      // Use translated content if available, otherwise fallback to English content for preview extraction
-      content: post.content || (fallbackPost ? fallbackPost.content : null)
-    };
-  }) : fallbackPosts;
+      categories: categorizePost(post)
+    }));
+    return displayPosts;
+  }, [posts]);
   
-  const totalPages = Math.ceil(postsToDisplay.length / postsPerPage);
+  // Filter posts by category
+  const filteredPosts = useMemo(() => {
+    if (activeCategory === 'all') return postsWithCategories;
+    return postsWithCategories.filter(post => 
+      post.categories.includes(activeCategory)
+    );
+  }, [postsWithCategories, activeCategory]);
+  
+  // Get featured posts for internal linking
+  const featuredPosts = useMemo(() => {
+    return postsWithCategories.filter(post => 
+      featuredPostIds.includes(post.id)
+    ).slice(0, 4);
+  }, [postsWithCategories]);
+  
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   // Show all posts for SSR/bots, paginated for client
-  const currentPosts = isSSR ? postsToDisplay : postsToDisplay.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = isSSR ? filteredPosts : filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+  
+  // Reset to page 1 when category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeCategory]);
+  
+  // Generate Blog schema markup
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "WhimsyLabs Blog",
+    "description": "Virtual laboratory innovations, AI-powered STEM education resources, and teaching guides for science educators",
+    "url": `https://whimsylabs.ai${languagePrefix}/blog/`,
+    "inLanguage": currentLanguage === 'jp' ? 'ja' : currentLanguage,
+    "publisher": {
+      "@type": "Organization",
+      "name": "WhimsyLabs",
+      "url": "https://whimsylabs.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://whimsylabs.ai/whimsylabs-logo.png"
+      }
+    },
+    "blogPost": postsWithCategories.slice(0, 10).map(post => ({
+      "@type": "BlogPosting",
+      "@id": `https://whimsylabs.ai${languagePrefix}/blog/${post.id}/`,
+      "headline": post.title,
+      "description": post.description || post.title,
+      "datePublished": post.date,
+      "url": `https://whimsylabs.ai${languagePrefix}/blog/${post.id}/`,
+      "author": {
+        "@type": "Organization",
+        "name": "WhimsyLabs"
+      }
+    }))
+  };
 
   // Pagination handlers
   const handleNextPage = () => {
@@ -442,15 +547,71 @@ const Blog = (props = {}) => {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
-        <title>WhimsyLabs Blog | Virtual Lab & STEM Education Insights</title>
-        <meta name="description" content="Stay updated with Whimsylabs' latest news on virtual laboratory technology and STEM education." />
+        <title>WhimsyLabs Blog | Virtual Lab & AI-Powered STEM Education Resources</title>
+        <meta name="description" content="Explore expert insights on virtual science labs, AI tutoring, and STEM education innovation. Guides for teachers on virtual chemistry, physics, and biology labs. Award-winning EdTech resources." />
+        <meta name="keywords" content="virtual lab software, AI science tutor, STEM education blog, virtual chemistry lab, virtual physics lab, science education resources, EdTech blog" />
+        <link rel="canonical" href={`https://whimsylabs.ai${languagePrefix}/blog/`} />
+        <script type="application/ld+json">
+          {JSON.stringify(blogSchema)}
+        </script>
       </Helmet>
       <Header currentLang={currentLanguage} />
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
-          <h1 className="blog-page-title">STEM Education Blog | WhimsyLabs</h1>
-          <div className="posts-section blog-index">
-            {currentPosts.map((post) => (
+          <header className="blog-header">
+            <h1 className="blog-page-title">STEM Education Blog | WhimsyLabs</h1>
+            <p className="blog-intro">
+              Expert insights on virtual laboratories, AI-powered learning, and innovative STEM education. 
+              Discover research-backed strategies and practical guides for science educators.
+            </p>
+          </header>
+          
+          {/* Featured Posts Section - Internal Linking */}
+          {featuredPosts.length > 0 && activeCategory === 'all' && (
+            <section className="featured-posts-section" aria-label="Featured articles">
+              <h2 className="featured-posts-heading">Featured Articles</h2>
+              <div className="featured-posts-grid">
+                {featuredPosts.map((post) => (
+                  <a 
+                    key={post.id} 
+                    href={`${languagePrefix}/blog/${post.id}/`}
+                    className="featured-post-card"
+                  >
+                    <h3 className="featured-post-title">{post.title}</h3>
+                    <p className="featured-post-desc">{post.description}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+          
+          {/* Category Filters */}
+          <nav className="blog-categories" aria-label="Blog categories">
+            <h2 className="visually-hidden">Filter by Topic</h2>
+            <ul className="category-filter-list">
+              {Object.entries(BLOG_CATEGORIES).map(([key, { label }]) => (
+                <li key={key}>
+                  <button
+                    className={`category-filter-btn ${activeCategory === key ? 'active' : ''}`}
+                    onClick={() => setActiveCategory(key)}
+                    aria-pressed={activeCategory === key}
+                  >
+                    {label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          
+          <section className="posts-section blog-index" aria-label="Blog posts">
+            <h2 className="visually-hidden">
+              {activeCategory === 'all' ? 'All Blog Posts' : `${BLOG_CATEGORIES[activeCategory]?.label} Articles`}
+            </h2>
+            {currentPosts.length === 0 ? (
+              <div className="no-posts-message">
+                <p>No posts found in this category. <button onClick={() => setActiveCategory('all')} className="link-button">View all posts</button></p>
+              </div>
+            ) : currentPosts.map((post) => (
               <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} />
             ))}
 
@@ -486,7 +647,7 @@ const Blog = (props = {}) => {
                 </button>
               </div>
             )}
-          </div>
+          </section>
           <div className="sidebar">
             <h2>Blog Posts</h2>
             <ul>

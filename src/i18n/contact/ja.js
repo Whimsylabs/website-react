@@ -7,6 +7,13 @@ export default {
   requestTrial: "トライアルをリクエスト",
   mainHeading: "WhimsyLabsへのお問い合わせ",
   subheading: "学校でのシミュレーション教材の導入をご検討の方、または一般的なご質問がある方は、お気軽にお問い合わせください。",
+  // Trust signals
+  trustBettAward: "BETT 2025 受賞",
+  trustSchools: "英国全土の学校で採用",
+  trustResponse: "24時間以内にご返信",
+  // Testimonial
+  testimonialQuote: "WhimsyLabsは、生徒たちの理科実験への取り組み方を一変させました。バーチャル実験は本当に実践的で、AIフィードバックにより生徒は安全に失敗から学ぶことができます。",
+  testimonialAuthor: "— 理科主任、中等学校",
   requestTrialTab: "学校向け無料トライアルのリクエスト",
   generalInquiriesTab: "一般的なお問い合わせ",
   thankYou: "ありがとうございます！",

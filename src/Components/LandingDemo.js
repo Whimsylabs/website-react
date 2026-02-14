@@ -252,9 +252,9 @@ const LandingDemo = ({ language = 'en' }) => {
     <main className="landing-demo">
       {/* Floating decorations for wide screens - random selection */}
       <div className="floating-decorations">
-        <img src="/images/microscope.webp" alt="" className="floating-deco left-1" aria-hidden="true" />
-        <img src="/images/molecule.webp" alt="" className="floating-deco left-2" aria-hidden="true" />
-        <img src="/images/bubble beaker.webp" alt="" className="floating-deco right-1" aria-hidden="true" />
+        <img src="/images/microscope.webp" alt="Microscope illustration representing biology virtual labs" className="floating-deco left-1" aria-hidden="true" />
+        <img src="/images/molecule.webp" alt="Molecular structure illustration for chemistry simulations" className="floating-deco left-2" aria-hidden="true" />
+        <img src="/images/bubble beaker.webp" alt="Laboratory beaker with bubbling reaction" className="floating-deco right-1" aria-hidden="true" />
       </div>
       
       <Header language={language} />
@@ -307,18 +307,30 @@ const LandingDemo = ({ language = 'en' }) => {
             </span>
             <div className="hero-platforms">
               <span className="platform-badge vr-badge">
-                <img src="/images/cat_vr.png" alt="" className="platform-icon" />
+                <img src="/images/cat_vr.png" alt="WhimsyCat mascot wearing VR headset" className="platform-icon" />
                 {t('home.demo.vrHeadsets')}
               </span>
               <span className="platform-plus">+</span>
               <span className="platform-badge desktop-badge">
-                <img src="/images/cat_desktop.png" alt="" className="platform-icon desktop-icon" />
+                <img src="/images/cat_desktop.png" alt="WhimsyCat mascot at desktop computer" className="platform-icon desktop-icon" />
                 {t('home.demo.desktop')}
               </span>
             </div>
           </div>
           <div className="hero-cta">
             <ContactUs language={language} buttonText={t('home.demo.joinPioneer')} />
+          </div>
+        </div>
+      </section>
+
+      {/* What is WhimsyLabs? - Definitional Section for GEO */}
+      <section className="definition-section">
+        <div className="container">
+          <div className="definition-content animate-on-scroll">
+            <h2 className="section-title">{t('home.demo.whatIsTitle')}</h2>
+            <p className="section-text definition-text">
+              {t('home.demo.whatIsText')}
+            </p>
           </div>
         </div>
       </section>
@@ -759,21 +771,21 @@ const LandingDemo = ({ language = 'en' }) => {
           </div>
           <div className="features-grid animate-on-scroll">
             <article className="feature-block">
-              <img src="/images/meowdy.png" alt="" className="feature-icon-img" aria-hidden="true" />
+              <img src="/images/meowdy.png" alt="WhimsyCat mascot exploring with curiosity" className="feature-icon-img" />
               <h3>{t('home.demo.freedomToExplore')}</h3>
               <p>
                 {t('home.demo.freedomToExploreText')}
               </p>
             </article>
             <article className="feature-block">
-              <img src="/images/cat_beaker.png" alt="" className="feature-icon-img" aria-hidden="true" />
+              <img src="/images/cat_beaker.png" alt="WhimsyCat mascot with science beaker representing inclusive education" className="feature-icon-img" />
               <h3>{t('home.demo.scienceForEveryone')}</h3>
               <p>
                 {t('home.demo.scienceForEveryoneText')}
               </p>
             </article>
             <article className="feature-block">
-              <img src="/images/cat_brain.png" alt="" className="feature-icon-img" aria-hidden="true" />
+              <img src="/images/cat_brain.png" alt="WhimsyCat mascot with brain icon representing mastery-based learning" className="feature-icon-img" />
               <h3>{t('home.demo.rewardingMastery')}</h3>
               <p>
                 {t('home.demo.rewardingMasteryText')}

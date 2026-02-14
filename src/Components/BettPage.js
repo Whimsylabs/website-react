@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import BubbleContainer from "./BubbleContainer";
 import AnimatedTitle from "./AnimatedTitle";
 import withTranslation from "./withTranslation";
-import ScrollingMap from "./ScrollingMap";
 import SplashSection from "./SplashSection";
 
 const BettPage = ({ t, language }) => {
@@ -45,7 +44,7 @@ const BettPage = ({ t, language }) => {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          subject: "BETT 2026 Meeting Request from WhimsyLabs Website",
+          subject: "Post-BETT 2026 Demo Request from WhimsyLabs Website",
         }),
       });
 
@@ -79,53 +78,28 @@ const BettPage = ({ t, language }) => {
               darkMode={false}
               uppercase={true}
             />
+            <p className="bett-hero-subtitle">{t("bett.heroSubtitle")}</p>
             <div className="bett-hero-badges">
               <div className="bett-award-badge">
                 🏆 BETT 2025 Kids Judge Award Winner
               </div>
               <div className="bett-award-badge techlearning">
-                ⭐ TechLearning's #1 Best of BETT 2026
+                🥇 Tech&Learning Best of BETT 2026 Winner
               </div>
               <div className="bett-date-badge">21-23 January 2026</div>
               <div className="bett-date-badge">Stand FS10</div>
             </div>
           </div>
 
-          <div className="bett-map-grid">
-            <div className="bett-map-info">
-              <div className="bett-info-card-large">
-                <div className="bett-info-icon">📍</div>
-                <h3>{t("bett.location")}</h3>
-                <p className="bett-info-large-text">
-                  ExCeL London
-                  <br />
-                  South Stand, Booth FS10
-                </p>
-              </div>
-              <p className="bett-map-description">
-                Follow the animated path to find our booth at the exhibition!
-              </p>
-            </div>
-
-            <div className="bett-map-display">
-              <ScrollingMap
-                imagePath="/images/bett map.jpg"
-                pathData="M 404 96 L 404 185 L 360 185 L 360 646 L 418 646 L 419 679 L 397 681"
-                viewBox="0 0 938 785"
-                speed={0.0003}
-                numTokens={3}
-              />
-            </div>
-          </div>
           <div className="bett-hero-ctas">
-            <a href="#booking" className="bett-cta-button bett-cta-secondary">
-              Schedule Your BETT Meeting
+            <a href="#booking" className="bett-cta-button bett-cta-primary">
+              {t("bett.missedCtaButton")}
             </a>
             <a href="#video" className="bett-cta-button bett-cta-secondary">
-              Discover WhimsyLabs
+              {t("bett.discoverButton")}
             </a>
             <a href="#contact" className="bett-cta-button bett-cta-secondary">
-              Connect After BETT
+              {t("bett.contactButton")}
             </a>
           </div>
         </div>
@@ -225,7 +199,7 @@ const BettPage = ({ t, language }) => {
             <p className="bett-calendly-fallback">
               {t("bett.calendlyFallback")}{" "}
               <a
-                href="https://calendly.com/whimsylaboratories/bett-2026"
+                href="https://calendly.com/whimsylaboratories/virtual-demo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -235,7 +209,7 @@ const BettPage = ({ t, language }) => {
             {/* Calendly inline widget */}
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/whimsylaboratories/bett-2026?month=2026-01"
+              data-url="https://calendly.com/whimsylaboratories/virtual-demo"
               style={{ minWidth: "320px", height: "700px" }}
             ></div>
             <script
@@ -244,8 +218,6 @@ const BettPage = ({ t, language }) => {
               async
             ></script>
           </div>
-
-          <p className="bett-calendly-note">{t("bett.calendlyNote")}</p>
         </section>
       </SplashSection>
 

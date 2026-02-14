@@ -472,7 +472,7 @@ class MetadataInjector {
         "description": "Visit WhimsyLabs at BETT 2026 to experience our award-winning virtual laboratory software. Book a demo at our booth and discover how we're transforming STEM education.",
         "startDate": "2026-01-21T09:00:00+00:00",
         "endDate": "2026-01-23T17:00:00+00:00",
-        "eventStatus": "https://schema.org/EventScheduled",
+        "eventStatus": "https://schema.org/EventEnded",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "location": {
           "@type": "Place",

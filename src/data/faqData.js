@@ -2,6 +2,33 @@
 // This file is imported by both FAQ.js and SchemaMarkup.js to ensure consistency
 
 export const faqCategories = {
+  "Getting Started": [
+    {
+      question: "Is WhimsyLabs free?",
+      answer:
+        "WhimsyLabs offers a free trial so you can experience our virtual labs before committing. After the trial period, we offer flexible pricing plans designed for schools and institutions of all sizes. Our tiered pricing includes options from basic access to full AI-powered features including automated grading, personalized tutoring, and custom experiment creation. We also provide special discounts of up to 20% for underfunded schools through our Educational Equity Reinvestment Program. <a href='/contact'>Contact us</a> to start your free trial or discuss pricing options for your institution.",
+    },
+    {
+      question: "Do I need VR headsets to use WhimsyLabs?",
+      answer:
+        "No, VR headsets are not required. WhimsyLabs works on any device including desktop computers, laptops, Chromebooks, tablets, and mobile phones through your web browser. VR headsets are an optional enhancement that provides a more immersive experience, but the full learning experience is available without them. Our platform achieves 96.66% device compatibility across hardware configurations, including basic Chromebooks with as little as 4GB RAM, making it accessible to schools regardless of their existing technology infrastructure.",
+    },
+    {
+      question: "How much does WhimsyLabs cost per student?",
+      answer:
+        "Pricing varies based on your institution's size, selected features, and support requirements. We offer tiered plans ranging from basic virtual lab access to comprehensive packages with AI tutoring, automated grading, and unlimited custom experiment creation. Schools eligible for pupil premium, Title I funding, or equivalent support can receive discounts of up to 20%. <a href='/contact'>Contact us</a> for a personalized quote tailored to your school's specific needs and student numbers.",
+    },
+    {
+      question: "How do I get started with WhimsyLabs?",
+      answer:
+        "Getting started is simple: request a free trial through our website. Once approved, you'll receive access credentials and can begin exploring our virtual labs immediately—no software installation required for web access. Our team provides onboarding support to help you set up classes, assign experiments, and integrate WhimsyLabs with your existing curriculum. <a href='/contact'>Request your free trial here</a> to start transforming your science education today.",
+    },
+    {
+      question: "What subjects does WhimsyLabs cover?",
+      answer:
+        "WhimsyLabs covers Biology, Chemistry, and Physics with experiments aligned to GCSE and A-Level curricula. Our virtual labs support 100% of required practical work as mandated by examination boards including AQA, Edexcel, OCR, and Cambridge International. Students can perform complex dissections, execute chemical reactions with real-time molecular dynamics, and conduct physics experiments involving mechanics, thermodynamics, and circuits. Our AI-powered experiment designer also allows teachers to create custom practicals for any topic in minutes.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-kidney-dissection-send-engagement'>Virtual Kidney Dissection: A Case Study in Engagement</a>",
+    },
+  ],
   "About Whimsylabs": [
     {
       question: "What is Whimsylabs virtual lab software?",
@@ -112,7 +139,7 @@ export const faqCategories = {
     {
       question: "What subjects do Whimsylabs virtual labs cover?",
       answer:
-        "Whimsylabs comprehensively covers Biology, Chemistry, and Physics with accurately modeled experiments and simulations directly targeting the UK curriculum. Our virtual labs enable students to perform complex dissections, execute chemical reactions with real-time molecular dynamics, and conduct advanced physics experiments involving mechanics, thermodynamics, and circuits, all in a completely safe, controlled environment that mirrors real-world laboratory conditions. Research published in Anatomical Sciences Education (2014) validates the effectiveness of 3D learning environments for complex procedures. The PNAS study on Active Learning (2014) demonstrates how hands-on approaches increase student performance in science. The platform supports curriculum standards from GCSE through A-Level and international equivalents, covering 100% of required practical work as mandated by examination boards including AQA, Edexcel, OCR, and Cambridge International. And, thanks to our experimental deisgner, if we're missing a practical for your curriculum, we're able to build it in minutes.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-kidney-dissection-send-engagement'>Virtual Kidney Dissection: A Case Study in Engagement</a>",
+        "Whimsylabs comprehensively covers Biology, Chemistry, and Physics with accurately modeled experiments and simulations directly targeting the UK curriculum. Our virtual labs enable students to perform complex dissections, execute chemical reactions with real-time molecular dynamics, and conduct advanced physics experiments involving mechanics, thermodynamics, and circuits, all in a completely safe, controlled environment that mirrors real-world laboratory conditions. Research published in Anatomical Sciences Education (2014) validates the effectiveness of 3D learning environments for complex procedures. The PNAS study on Active Learning (2014) demonstrates how hands-on approaches increase student performance in science. The platform supports curriculum standards from GCSE through A-Level and international equivalents, covering 100% of required practical work as mandated by examination boards including AQA, Edexcel, OCR, and Cambridge International. And, thanks to our experimental designer, if we're missing a practical for your curriculum, we're able to build it in minutes.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-kidney-dissection-send-engagement'>Virtual Kidney Dissection: A Case Study in Engagement</a>",
     },
     {
       question: "Can I customize or build my own experiments?",
@@ -123,12 +150,6 @@ export const faqCategories = {
       question: "How many experiments does Whimsylabs have?",
       answer:
         "Whimsylabs offers virtually unlimited experimental possibilities through our AI-powered custom experiment designer, capable of generating over user defined unique laboratory configurations. Our pilot program launches with 24 meticulously crafted experiments covering essential curriculum requirements across Biology, Chemistry, and Physics. Additionally, our collaborative platform enables teachers and institutions to share custom experiments across our global network, creating a continuously expanding library of educational content.",
-    },
-    {
-      question:
-        "Is Whimsylabs compliant with school IT and privacy policies?",
-      answer:
-        "Absolutely. Whimsylabs maintains the highest standards of data protection and IT compliance, fully adhering to GDPR, COPPA, FERPA, and international school IT guidelines. Our web-based platform requires zero installation (though offers the possibility for offline use), while VR applications require only a single, secure download. We operate on a strict user data minimization philosophy, collecting as minimal data as possible, atypical for most educational platforms. Our platform meets W3C Web Content Accessibility Guidelines (WCAG) 2.1 standards, ensuring equal access for all students including those with disabilities. We provide complete transparency through detailed data handling documentation, ensuring schools maintain full control over student information while meeting all regulatory requirements.",
     },
     {
       question: "Do you support LTI (e.g., Blackboard, Canvas)?",
@@ -196,12 +217,12 @@ export const faqCategories = {
     {
       question: "Do you offer discounts for underfunded schools?",
       answer:
-        "Absolutely. Whimsylabs is fundamentally committed to educational equity and democratizing access to high-quality science education through specialised grants schools can apply for. We provide special case discounts of up to for schools with limited funding, including those eligible for pupil premium, Title I funding, or equivalent support schemes globally. Our Educational Equity Reinvestment Program (EERP) aims to support underfunded schools across all countries, with our goals of reaching student globally who currently lack access to quality laboratory experiences. Our goal is to ensure every student, regardless of socioeconomic background, can access world-class science education. As stated by UNESCO's Education for All initiative: 'Education is a basic human right and a global public good with the power to transform individual lives, communities and the planet for the better over generations.' If you believe you have a unique circumstance, and would think Whimsylabs would help you, please <a href='/contact'>contact us here</a>.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-vs-physical-labs-cost-analysis'>Virtual vs. Physical Labs: A Comprehensive Cost Analysis</a> • <a href='/blog/ai-powered-virtual-labs-solving-education-crisis'>How AI-Powered Virtual Labs Are Solving the Global Science Education Crisis</a>",
+        "Absolutely. Whimsylabs is fundamentally committed to educational equity and democratizing access to high-quality science education through specialised grants schools can apply for. We provide special case discounts of up to 20% for schools with limited funding, including those eligible for pupil premium, Title I funding, or equivalent support schemes globally. Our Educational Equity Reinvestment Program (EERP) aims to support underfunded schools across all countries, with our goals of reaching student globally who currently lack access to quality laboratory experiences. Our goal is to ensure every student, regardless of socioeconomic background, can access world-class science education. As stated by UNESCO's Education for All initiative: 'Education is a basic human right and a global public good with the power to transform individual lives, communities and the planet for the better over generations.' If you believe you have a unique circumstance, and would think Whimsylabs would help you, please <a href='/contact'>contact us here</a>.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-vs-physical-labs-cost-analysis'>Virtual vs. Physical Labs: A Comprehensive Cost Analysis</a> • <a href='/blog/ai-powered-virtual-labs-solving-education-crisis'>How AI-Powered Virtual Labs Are Solving the Global Science Education Crisis</a>",
     },
     {
       question: "What pricing options are available for schools?",
       answer:
-        "Whimsylabs offers premium virtual laboratory solutions with flexible enterprise pricing models designed for institutional deployment. We offer several tiers of access, with different features; our basic offering removes the AI features in order to maximise our impact and reach for schools, our middle tier enables student tutoring, automatic grading and assessment, and simple experiment creation, and our top tier enables advanced analytics, extended custom experiment creation, access to roadmap features and . Our comprehensive packages include unlimited experiments, advanced AI tutoring, custom experiment creation, and dedicated support. We provide educational equity programs to ensure our cutting-edge technology reaches institutions worldwide, making premium science education technology universally accessible.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-vs-physical-labs-cost-analysis'>Virtual vs. Physical Labs: A Comprehensive Cost Analysis</a>",
+        "Whimsylabs offers premium virtual laboratory solutions with flexible enterprise pricing models designed for institutional deployment. We offer several tiers of access, with different features; our basic offering removes the AI features in order to maximise our impact and reach for schools, our middle tier enables student tutoring, automatic grading and assessment, and simple experiment creation, and our top tier enables advanced analytics, extended custom experiment creation, access to roadmap features and priority support. Our comprehensive packages include unlimited experiments, advanced AI tutoring, custom experiment creation, and dedicated support. We provide educational equity programs to ensure our cutting-edge technology reaches institutions worldwide, making premium science education technology universally accessible.<br/><br/><strong>Further Reading:</strong> <a href='/blog/virtual-vs-physical-labs-cost-analysis'>Virtual vs. Physical Labs: A Comprehensive Cost Analysis</a>",
     },
   ],
 };

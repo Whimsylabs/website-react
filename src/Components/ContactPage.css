@@ -5,6 +5,69 @@
   padding: 2rem 0;
 }
 
+/* Trust Banner */
+.contact-trust-banner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  color: #1f1968;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trust-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.trust-icon {
+  font-size: 1.2rem;
+}
+
+.trust-text {
+  font-size: 0.95rem;
+}
+
+/* Testimonial Section */
+.contact-testimonial {
+  background: rgba(255, 255, 255, 0.75);
+  border-left: 4px solid #6172B3;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  text-align: left;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #333;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6172B3;
+  font-style: normal;
+}
+
 .contact-header-container {
   margin-bottom: 2.5rem;
 }
@@ -248,5 +311,32 @@
   
   .contact-main-heading {
     font-size: 2rem;
+  }
+  
+  .contact-trust-banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .trust-badge {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+  }
+  
+  .trust-text {
+    font-size: 0.9rem;
+  }
+  
+  .contact-testimonial {
+    padding: 1.25rem 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .testimonial-quote {
+    font-size: 1rem;
   }
 }

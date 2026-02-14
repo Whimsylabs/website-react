@@ -128,11 +128,35 @@ const ContactPage = ({ language }) => {
       <Header currentLang={language} />
       <div id="contact-page-background">
         <div className="container py-5">
+          {/* Trust Banner */}
+          <div className="contact-trust-banner">
+            <div className="trust-badge">
+              <span className="trust-icon">🏆</span>
+              <span className="trust-text">BETT 2025 Award Winner</span>
+            </div>
+            <div className="trust-badge">
+              <span className="trust-icon">🏫</span>
+              <span className="trust-text">Trusted by Schools Across the UK</span>
+            </div>
+            <div className="trust-badge">
+              <span className="trust-icon">⚡</span>
+              <span className="trust-text">Response Within 24 Hours</span>
+            </div>
+          </div>
+
           <div className="contact-header-container">
             <h1 className="contact-main-heading">Contact WhimsyLabs</h1>
             <p className="contact-subheading">
               We'd love to hear from you! Whether you're interested in trying our virtual labs at your school or have general questions, we're here to help.
             </p>
+          </div>
+          
+          {/* Social Proof / Testimonial */}
+          <div className="contact-testimonial">
+            <blockquote className="testimonial-quote">
+              "WhimsyLabs transformed how our students engage with science practicals. The virtual experiments feel genuinely hands-on, and the AI feedback helps students learn from mistakes safely."
+            </blockquote>
+            <cite className="testimonial-author">— Head of Science, Secondary School</cite>
           </div>
           
           <div className="contact-form-selector">

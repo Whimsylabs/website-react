@@ -1,8 +1,25 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-10T01:04:15.376Z
+// Generated on 2026-02-14T20:27:27.341Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post31",
+      "slug": "uk-government-ai-education-funding-2026",
+      "title": "UK Invests £49m in AI Education: What This Means for Schools",
+      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "keywords": [
+        "UK AI education funding 2026",
+        "government EdTech investment",
+        "AI in schools UK",
+        "TechFirst programme",
+        "AI marking tools",
+        "education technology grants"
+      ],
+      "date": "2026-03-01",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
@@ -282,7 +299,7 @@ module.exports = {
       "id": "post11",
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
       "title": "Virtual vs. Physical Labs: Cost-Benefit Analysis for Schools",
-      "description": "Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution, exploring how our impact-focused, non-profit-driven approach democratizes STEM education.",
+      "description": "Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution. UK statistics show 27% of schools can't afford science equipment while practical work has halved since 2016. Learn how virtual labs address this crisis.",
       "keywords": null,
       "date": "2025-09-01",
       "hasFullTranslation": false,
@@ -401,17 +418,34 @@ module.exports = {
   ],
   "de": [
     {
+      "id": "post31",
+      "slug": "uk-government-ai-education-funding-2026",
+      "title": "UK Invests £49m in AI Education: What This Means for Schools",
+      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "keywords": [
+        "UK AI education funding 2026",
+        "government EdTech investment",
+        "AI in schools UK",
+        "TechFirst programme",
+        "AI marking tools",
+        "education technology grants"
+      ],
+      "date": "2026-03-01",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Premium-Naturwissenschaftsbildung für jede Schule zugänglich machen",
-      "description": "Premium-EdTech sollte nicht nur wohlhabenden Schulen vorbehalten sein. Erfahren Sie, wie Förderungen und Finanzierungen physikgenaue virtuelle Labore in jedes Klassenzimmer bringen können.",
+      "title": "Making Premium Science Education Accessible to Every School",
+      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
       "keywords": [
-        "Bildungsfinanzierung Naturwissenschaften",
-        "Schulfördermittel",
-        "zugängliche Bildungstechnologie",
-        "Premium EdTech",
-        "WhimsyLabs Förderungen",
-        "Bildungsgerechtigkeit"
+        "science education funding",
+        "school grants",
+        "accessible education technology",
+        "premium edtech",
+        "WhimsyLabs grants",
+        "educational equity"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -884,17 +918,34 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post31",
+      "slug": "uk-government-ai-education-funding-2026",
+      "title": "UK Invests £49m in AI Education: What This Means for Schools",
+      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "keywords": [
+        "UK AI education funding 2026",
+        "government EdTech investment",
+        "AI in schools UK",
+        "TechFirst programme",
+        "AI marking tools",
+        "education technology grants"
+      ],
+      "date": "2026-03-01",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Rendre l'éducation scientifique premium accessible à toutes les écoles",
-      "description": "La technologie éducative premium ne devrait pas être réservée aux écoles aisées. Découvrez comment les subventions peuvent apporter des laboratoires virtuels physiquement précis dans chaque classe.",
+      "title": "Making Premium Science Education Accessible to Every School",
+      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
       "keywords": [
-        "financement éducation scientifique",
-        "subventions scolaires",
-        "technologie éducative accessible",
-        "edtech premium",
-        "subventions WhimsyLabs",
-        "équité éducative"
+        "science education funding",
+        "school grants",
+        "accessible education technology",
+        "premium edtech",
+        "WhimsyLabs grants",
+        "educational equity"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -1367,17 +1418,34 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post31",
+      "slug": "uk-government-ai-education-funding-2026",
+      "title": "UK Invests £49m in AI Education: What This Means for Schools",
+      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "keywords": [
+        "UK AI education funding 2026",
+        "government EdTech investment",
+        "AI in schools UK",
+        "TechFirst programme",
+        "AI marking tools",
+        "education technology grants"
+      ],
+      "date": "2026-03-01",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Educación Científica Premium Accesible para Todas las Escuelas",
-      "description": "La tecnología educativa premium no debería ser solo para escuelas ricas. Descubre cómo las becas y la financiación pueden llevar laboratorios virtuales con física precisa a cada aula.",
+      "title": "Making Premium Science Education Accessible to Every School",
+      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
       "keywords": [
-        "financiación educación científica",
-        "becas escolares",
-        "tecnología educativa accesible",
-        "edtech premium",
-        "becas WhimsyLabs",
-        "equidad educativa"
+        "science education funding",
+        "school grants",
+        "accessible education technology",
+        "premium edtech",
+        "WhimsyLabs grants",
+        "educational equity"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -1850,17 +1918,34 @@ module.exports = {
   ],
   "ja": [
     {
+      "id": "post31",
+      "slug": "uk-government-ai-education-funding-2026",
+      "title": "UK Invests £49m in AI Education: What This Means for Schools",
+      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "keywords": [
+        "UK AI education funding 2026",
+        "government EdTech investment",
+        "AI in schools UK",
+        "TechFirst programme",
+        "AI marking tools",
+        "education technology grants"
+      ],
+      "date": "2026-03-01",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "すべての学校にプレミアム理科教育を届ける",
-      "description": "プレミアムなEdTechは裕福な学校だけのものであってはなりません。助成金と資金調達により、物理的に正確なバーチャルラボをすべての教室に届ける方法をご紹介します。",
+      "title": "Making Premium Science Education Accessible to Every School",
+      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
       "keywords": [
-        "理科教育資金",
-        "学校助成金",
-        "アクセシブルな教育技術",
-        "プレミアムEdTech",
-        "WhimsyLabs助成金",
-        "教育の公平性"
+        "science education funding",
+        "school grants",
+        "accessible education technology",
+        "premium edtech",
+        "WhimsyLabs grants",
+        "educational equity"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,

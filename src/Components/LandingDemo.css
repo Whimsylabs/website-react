@@ -395,6 +395,35 @@
   font-size: 1.1rem;
 }
 
+/* ============================================
+   DEFINITION SECTION (GEO Optimization)
+   ============================================ */
+.definition-section {
+  background: linear-gradient(180deg, #f8f9fc 0%, #ffffff 100%);
+  padding: 60px 0 40px;
+  border-bottom: 1px solid rgba(31, 25, 104, 0.08);
+}
+
+.definition-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.definition-content .section-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: #1f1968;
+  margin-bottom: 24px;
+}
+
+.definition-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Animation on scroll */
 .animate-on-scroll {
   opacity: 0;

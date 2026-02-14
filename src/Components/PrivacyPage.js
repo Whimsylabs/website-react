@@ -9,9 +9,9 @@ const PrivacyPage = ({ t, currentLang, language }) => {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
-        <title>Privacy Policy | WhimsyLabs Virtual Lab Software</title>
-        <meta name="description" content="WhimsyLabs Privacy Policy - Learn how we collect, use, and protect your personal information when using our virtual laboratory software." />
-        <meta name="keywords" content="WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy" />
+        <title>{t('privacy.title')}</title>
+        <meta name="description" content={t('privacy.description')} />
+        <meta name="keywords" content="WhimsyLabs privacy policy, data protection, GDPR compliance, COPPA compliance, student data privacy, educational software privacy, DPA" />
       </Helmet>
       <Header currentLang={language} />
       <div className="privacy-page">
@@ -22,251 +22,373 @@ const PrivacyPage = ({ t, currentLang, language }) => {
               {t('privacy.subtitle')}
             </p>
             <p className="privacy-last-updated">
-              <strong>Last Updated:</strong> January 8, 2025
+              <strong>{t('privacy.lastUpdated')}:</strong> July 2025
             </p>
+          </div>
+
+          {/* Trust Badges Section */}
+          <div className="trust-badges-container">
+            <div className="trust-badge">
+              <span className="trust-icon">🛡️</span>
+              <span>{t('privacy.badges.gdpr')}</span>
+            </div>
+            <div className="trust-badge">
+              <span className="trust-icon">🎓</span>
+              <span>{t('privacy.badges.studentData')}</span>
+            </div>
+            <div className="trust-badge">
+              <span className="trust-icon">🇬🇧</span>
+              <span>{t('privacy.badges.ukBased')}</span>
+            </div>
+            <div className="trust-badge">
+              <span className="trust-icon">🚫</span>
+              <span>{t('privacy.badges.noSale')}</span>
+            </div>
           </div>
           
           <div className="privacy-content">
-            <section className="privacy-section">
-              <h2>1. Information We Collect</h2>
+            {/* Company Information & DPO Section */}
+            <section className="privacy-section company-info-section">
+              <h2>{t('privacy.companyInfo.title')}</h2>
               
-              <h3>1.1 Information You Provide</h3>
-              <p>
-                When you use WhimsyLabs virtual laboratory software, we may collect information that you voluntarily provide, including:
-              </p>
-              <ul>
-                <li><strong>Account Information:</strong> Name, email address, school/institution affiliation</li>
-                <li><strong>Educational Data:</strong> Lab experiment results, assessment scores, learning progress</li>
-                <li><strong>Communication Data:</strong> Messages sent through our support system or contact forms</li>
-                <li><strong>Feedback Data:</strong> Survey responses, feature requests, and user feedback</li>
-              </ul>
-
-              <h3>1.2 Automatically Collected Information</h3>
-              <p>
-                We automatically collect certain technical information to improve our service:
-              </p>
-              <ul>
-                <li><strong>Usage Data:</strong> Time spent in virtual labs, experiments completed, interaction patterns</li>
-                <li><strong>Technical Data:</strong> Device type, browser information, IP address, operating system</li>
-                <li><strong>Performance Data:</strong> Load times, error logs, system performance metrics</li>
-              </ul>
+              <div className="company-details-grid">
+                <div className="company-detail-card">
+                  <h3>🏢 {t('privacy.companyInfo.companyName')}</h3>
+                  <p><strong>WhimsyLabs Ltd</strong></p>
+                  <p>London, United Kingdom</p>
+                </div>
+                
+                <div className="company-detail-card">
+                  <h3>👤 {t('privacy.companyInfo.dpo')}</h3>
+                  <p>{t('privacy.companyInfo.dpoDesc')}</p>
+                  <p><a href="mailto:privacy@whimsylabs.ai">privacy@whimsylabs.ai</a></p>
+                </div>
+                
+                <div className="company-detail-card">
+                  <h3>📋 {t('privacy.companyInfo.ico')}</h3>
+                  <p>{t('privacy.companyInfo.icoDesc')}</p>
+                </div>
+                
+                <div className="company-detail-card">
+                  <h3>📄 {t('privacy.companyInfo.dpa')}</h3>
+                  <p>{t('privacy.companyInfo.dpaDesc')}</p>
+                  <a href="/documents/dpa.pdf" className="dpa-download-btn" target="_blank" rel="noopener noreferrer">
+                    ⬇️ {t('privacy.companyInfo.dpaDownload')}
+                  </a>
+                </div>
+              </div>
             </section>
 
-            <section className="privacy-section">
-              <h2>2. How We Use Your Information</h2>
+            {/* Student Data Privacy Commitment */}
+            <section className="privacy-section student-privacy-section">
+              <h2>🎓 {t('privacy.studentPrivacy.title')}</h2>
               
-              <p>We use the collected information for the following purposes:</p>
+              <div className="commitment-highlight">
+                <p className="commitment-statement">{t('privacy.studentPrivacy.commitment')}</p>
+              </div>
               
-              <h3>2.1 Educational Services</h3>
-              <ul>
-                <li>Provide access to virtual laboratory experiments and simulations</li>
-                <li>Generate AI-powered feedback and assessments</li>
-                <li>Track learning progress and provide personalized recommendations</li>
-                <li>Enable teachers to monitor student performance and provide support</li>
-              </ul>
-
-              <h3>2.2 Service Improvement</h3>
-              <ul>
-                <li>Analyze usage patterns to improve our virtual lab platform</li>
-                <li>Develop new features and experiments based on user needs</li>
-                <li>Optimize performance and fix technical issues</li>
-                <li>Conduct educational research to enhance learning outcomes</li>
-              </ul>
-
-              <h3>2.3 Communication</h3>
-              <ul>
-                <li>Respond to support requests and technical issues</li>
-                <li>Send important updates about our service</li>
-                <li>Provide educational resources and best practices</li>
-                <li>Notify users of new features and improvements</li>
-              </ul>
+              <div className="student-privacy-grid">
+                <div className="student-privacy-card">
+                  <h3>{t('privacy.studentPrivacy.principles.title')}</h3>
+                  <ul>
+                    <li><strong>{t('privacy.studentPrivacy.principles.minimal')}:</strong> {t('privacy.studentPrivacy.principles.minimalDesc')}</li>
+                    <li><strong>{t('privacy.studentPrivacy.principles.purpose')}:</strong> {t('privacy.studentPrivacy.principles.purposeDesc')}</li>
+                    <li><strong>{t('privacy.studentPrivacy.principles.noAds')}:</strong> {t('privacy.studentPrivacy.principles.noAdsDesc')}</li>
+                    <li><strong>{t('privacy.studentPrivacy.principles.noSale')}:</strong> {t('privacy.studentPrivacy.principles.noSaleDesc')}</li>
+                    <li><strong>{t('privacy.studentPrivacy.principles.schoolControl')}:</strong> {t('privacy.studentPrivacy.principles.schoolControlDesc')}</li>
+                  </ul>
+                </div>
+                
+                <div className="student-privacy-card coppa-card">
+                  <h3>🛡️ {t('privacy.studentPrivacy.coppa.title')}</h3>
+                  <p>{t('privacy.studentPrivacy.coppa.intro')}</p>
+                  <ul>
+                    <li>{t('privacy.studentPrivacy.coppa.consent')}</li>
+                    <li>{t('privacy.studentPrivacy.coppa.minimal')}</li>
+                    <li>{t('privacy.studentPrivacy.coppa.noMarketing')}</li>
+                    <li>{t('privacy.studentPrivacy.coppa.parentRights')}</li>
+                    <li>{t('privacy.studentPrivacy.coppa.deletion')}</li>
+                  </ul>
+                </div>
+              </div>
             </section>
 
-            <section className="privacy-section">
-              <h2>3. Data Sharing and Disclosure</h2>
+            {/* School Data Deletion Requests */}
+            <section className="privacy-section deletion-section">
+              <h2>🗑️ {t('privacy.schoolDeletion.title')}</h2>
+              <p>{t('privacy.schoolDeletion.intro')}</p>
               
-              <p>
-                WhimsyLabs follows a strict data minimization policy. We do not sell, rent, or trade your personal information. 
-                We may share information only in the following limited circumstances:
-              </p>
+              <div className="deletion-process">
+                <div className="deletion-step">
+                  <span className="step-number">1</span>
+                  <div>
+                    <h4>{t('privacy.schoolDeletion.step1.title')}</h4>
+                    <p>{t('privacy.schoolDeletion.step1.desc')}</p>
+                  </div>
+                </div>
+                <div className="deletion-step">
+                  <span className="step-number">2</span>
+                  <div>
+                    <h4>{t('privacy.schoolDeletion.step2.title')}</h4>
+                    <p>{t('privacy.schoolDeletion.step2.desc')}</p>
+                  </div>
+                </div>
+                <div className="deletion-step">
+                  <span className="step-number">3</span>
+                  <div>
+                    <h4>{t('privacy.schoolDeletion.step3.title')}</h4>
+                    <p>{t('privacy.schoolDeletion.step3.desc')}</p>
+                  </div>
+                </div>
+                <div className="deletion-step">
+                  <span className="step-number">4</span>
+                  <div>
+                    <h4>{t('privacy.schoolDeletion.step4.title')}</h4>
+                    <p>{t('privacy.schoolDeletion.step4.desc')}</p>
+                  </div>
+                </div>
+              </div>
               
-              <h3>3.1 Educational Institution Access</h3>
-              <p>
-                If you access WhimsyLabs through your school or educational institution, authorized educators and administrators 
-                may have access to your educational data and progress reports as part of the normal educational process.
-              </p>
-
-              <h3>3.2 Service Providers</h3>
-              <p>
-                We may share information with trusted third-party service providers who assist us in operating our platform, 
-                such as cloud hosting services, analytics providers, and customer support tools. These providers are 
-                contractually bound to protect your information and use it only for specified purposes.
-              </p>
-
-              <h3>3.3 Legal Requirements</h3>
-              <p>
-                We may disclose information if required by law, court order, or government regulation, or if we believe 
-                disclosure is necessary to protect our rights, your safety, or the safety of others.
-              </p>
-            </section>
-
-            <section className="privacy-section">
-              <h2>4. Data Security and Protection</h2>
-              
-              <p>
-                We implement comprehensive security measures to protect your information:
-              </p>
-              
-              <ul>
-                <li><strong>Encryption:</strong> All data is encrypted in transit and at rest using industry-standard protocols</li>
-                <li><strong>Access Controls:</strong> Strict access controls ensure only authorized personnel can access user data</li>
-                <li><strong>Regular Audits:</strong> We conduct regular security audits and vulnerability assessments</li>
-                <li><strong>Data Backup:</strong> Secure backup systems protect against data loss</li>
-                <li><strong>Incident Response:</strong> We have procedures in place to respond quickly to any security incidents</li>
-              </ul>
-            </section>
-
-            <section className="privacy-section">
-              <h2>5. Your Rights and Choices</h2>
-              
-              <p>
-                You have several rights regarding your personal information:
-              </p>
-              
-              <h3>5.1 Access and Portability</h3>
-              <p>
-                You can request access to your personal data and receive a copy in a portable format.
-              </p>
-
-              <h3>5.2 Correction and Updates</h3>
-              <p>
-                You can update or correct your personal information through your account settings or by contacting us.
-              </p>
-
-              <h3>5.3 Deletion</h3>
-              <p>
-                You can request deletion of your personal data, subject to legal and educational record-keeping requirements.
-              </p>
-
-              <h3>5.4 Opt-Out</h3>
-              <p>
-                You can opt out of non-essential communications and certain data collection practices.
-              </p>
-            </section>
-
-            <section className="privacy-section">
-              <h2>6. Children's Privacy (COPPA/GDPR Compliance)</h2>
-              
-              <p>
-                WhimsyLabs is designed for educational use and may be used by students under 18. We comply with applicable 
-                children's privacy laws, including COPPA (Children's Online Privacy Protection Act) and GDPR requirements:
-              </p>
-              
-              <ul>
-                <li>We collect minimal information necessary for educational purposes</li>
-                <li>We require parental or school consent for users under 13</li>
-                <li>We do not use children's data for advertising or marketing</li>
-                <li>We provide enhanced privacy protections for student data</li>
-                <li>We allow parents and schools to review and delete children's data</li>
-              </ul>
-            </section>
-
-            <section className="privacy-section">
-              <h2>7. International Data Transfers</h2>
-              
-              <p>
-                WhimsyLabs operates globally and may transfer data across international borders. We ensure appropriate 
-                safeguards are in place for international transfers, including:
-              </p>
-              
-              <ul>
-                <li>Standard Contractual Clauses (SCCs) for EU data transfers</li>
-                <li>Adequacy decisions where applicable</li>
-                <li>Additional security measures for sensitive educational data</li>
-              </ul>
-            </section>
-
-            <section className="privacy-section">
-              <h2>8. Data Retention</h2>
-              
-              <p>
-                We retain your information only as long as necessary for educational and legal purposes:
-              </p>
-              
-              <ul>
-                <li><strong>Active Accounts:</strong> Data is retained while your account is active</li>
-                <li><strong>Educational Records:</strong> Student progress data may be retained for educational continuity</li>
-                <li><strong>Legal Requirements:</strong> Some data may be retained to comply with legal obligations</li>
-                <li><strong>Deletion Requests:</strong> We honor deletion requests while respecting educational and legal requirements</li>
-              </ul>
-            </section>
-
-            <section className="privacy-section">
-              <h2>9. Cookies and Tracking Technologies</h2>
-              
-              <p>
-                We use cookies and similar technologies to enhance your experience:
-              </p>
-              
-              <ul>
-                <li><strong>Essential Cookies:</strong> Required for basic platform functionality</li>
-                <li><strong>Performance Cookies:</strong> Help us understand how users interact with our platform</li>
-                <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
-              </ul>
-              
-              <p>
-                You can control cookie settings through your browser, though disabling certain cookies may affect platform functionality.
-              </p>
-            </section>
-
-            <section className="privacy-section">
-              <h2>10. Updates to This Privacy Policy</h2>
-              
-              <p>
-                We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. 
-                We will notify users of significant changes through:
-              </p>
-              
-              <ul>
-                <li>Email notifications to registered users</li>
-                <li>Prominent notices on our website</li>
-                <li>In-platform notifications</li>
-              </ul>
-              
-              <p>
-                Continued use of WhimsyLabs after policy updates constitutes acceptance of the revised terms.
-              </p>
-            </section>
-
-            <section className="privacy-section">
-              <h2>11. Contact Information</h2>
-              
-              <p>
-                If you have questions about this Privacy Policy or our data practices, please contact us:
-              </p>
-              
-              <div className="contact-info">
-                <p><strong>General Inquiries:</strong> inquiries@whimsylabs.ai</p>
+              <div className="deletion-contact">
+                <p><strong>{t('privacy.schoolDeletion.contact')}:</strong> <a href="mailto:privacy@whimsylabs.ai">privacy@whimsylabs.ai</a></p>
               </div>
             </section>
 
             <section className="privacy-section">
-              <h2>12. Regulatory Compliance</h2>
+              <h2>1. {t('privacy.sections.infoCollect.title')}</h2>
+              
+              <h3>1.1 {t('privacy.sections.infoCollect.provided.title')}</h3>
+              <p>
+                {t('privacy.sections.infoCollect.provided.intro')}
+              </p>
+              <ul>
+                <li><strong>{t('privacy.sections.infoCollect.provided.account')}:</strong> {t('privacy.sections.infoCollect.provided.accountDesc')}</li>
+                <li><strong>{t('privacy.sections.infoCollect.provided.educational')}:</strong> {t('privacy.sections.infoCollect.provided.educationalDesc')}</li>
+                <li><strong>{t('privacy.sections.infoCollect.provided.communication')}:</strong> {t('privacy.sections.infoCollect.provided.communicationDesc')}</li>
+                <li><strong>{t('privacy.sections.infoCollect.provided.feedback')}:</strong> {t('privacy.sections.infoCollect.provided.feedbackDesc')}</li>
+              </ul>
+
+              <h3>1.2 {t('privacy.sections.infoCollect.automatic.title')}</h3>
+              <p>
+                {t('privacy.sections.infoCollect.automatic.intro')}
+              </p>
+              <ul>
+                <li><strong>{t('privacy.sections.infoCollect.automatic.usage')}:</strong> {t('privacy.sections.infoCollect.automatic.usageDesc')}</li>
+                <li><strong>{t('privacy.sections.infoCollect.automatic.technical')}:</strong> {t('privacy.sections.infoCollect.automatic.technicalDesc')}</li>
+                <li><strong>{t('privacy.sections.infoCollect.automatic.performance')}:</strong> {t('privacy.sections.infoCollect.automatic.performanceDesc')}</li>
+              </ul>
+            </section>
+
+            <section className="privacy-section">
+              <h2>2. {t('privacy.sections.usage.title')}</h2>
+              
+              <p>{t('privacy.sections.usage.intro')}</p>
+              
+              <h3>2.1 {t('privacy.sections.usage.educational.title')}</h3>
+              <ul>
+                <li>{t('privacy.sections.usage.educational.item1')}</li>
+                <li>{t('privacy.sections.usage.educational.item2')}</li>
+                <li>{t('privacy.sections.usage.educational.item3')}</li>
+                <li>{t('privacy.sections.usage.educational.item4')}</li>
+              </ul>
+
+              <h3>2.2 {t('privacy.sections.usage.improvement.title')}</h3>
+              <ul>
+                <li>{t('privacy.sections.usage.improvement.item1')}</li>
+                <li>{t('privacy.sections.usage.improvement.item2')}</li>
+                <li>{t('privacy.sections.usage.improvement.item3')}</li>
+                <li>{t('privacy.sections.usage.improvement.item4')}</li>
+              </ul>
+
+              <h3>2.3 {t('privacy.sections.usage.communication.title')}</h3>
+              <ul>
+                <li>{t('privacy.sections.usage.communication.item1')}</li>
+                <li>{t('privacy.sections.usage.communication.item2')}</li>
+                <li>{t('privacy.sections.usage.communication.item3')}</li>
+                <li>{t('privacy.sections.usage.communication.item4')}</li>
+              </ul>
+            </section>
+
+            <section className="privacy-section">
+              <h2>3. {t('privacy.sections.sharing.title')}</h2>
               
               <p>
-                WhimsyLabs complies with applicable privacy regulations, including:
+                {t('privacy.sections.sharing.intro')}
+              </p>
+              
+              <h3>3.1 {t('privacy.sections.sharing.institution.title')}</h3>
+              <p>
+                {t('privacy.sections.sharing.institution.desc')}
+              </p>
+
+              <h3>3.2 {t('privacy.sections.sharing.providers.title')}</h3>
+              <p>
+                {t('privacy.sections.sharing.providers.desc')}
+              </p>
+
+              <h3>3.3 {t('privacy.sections.sharing.legal.title')}</h3>
+              <p>
+                {t('privacy.sections.sharing.legal.desc')}
+              </p>
+            </section>
+
+            <section className="privacy-section">
+              <h2>4. {t('privacy.sections.security.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.security.intro')}
               </p>
               
               <ul>
-                <li><strong>GDPR:</strong> General Data Protection Regulation (EU)</li>
-                <li><strong>COPPA:</strong> Children's Online Privacy Protection Act (US)</li>
-                <li><strong>FERPA:</strong> Family Educational Rights and Privacy Act (US)</li>
-                <li><strong>UK GDPR:</strong> UK Data Protection Act 2018</li>
-                <li><strong>PIPEDA:</strong> Personal Information Protection and Electronic Documents Act (Canada)</li>
+                <li><strong>{t('privacy.sections.security.encryption')}:</strong> {t('privacy.sections.security.encryptionDesc')}</li>
+                <li><strong>{t('privacy.sections.security.access')}:</strong> {t('privacy.sections.security.accessDesc')}</li>
+                <li><strong>{t('privacy.sections.security.audits')}:</strong> {t('privacy.sections.security.auditsDesc')}</li>
+                <li><strong>{t('privacy.sections.security.backup')}:</strong> {t('privacy.sections.security.backupDesc')}</li>
+                <li><strong>{t('privacy.sections.security.incident')}:</strong> {t('privacy.sections.security.incidentDesc')}</li>
+              </ul>
+            </section>
+
+            <section className="privacy-section">
+              <h2>5. {t('privacy.sections.rights.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.rights.intro')}
+              </p>
+              
+              <h3>5.1 {t('privacy.sections.rights.access.title')}</h3>
+              <p>
+                {t('privacy.sections.rights.access.desc')}
+              </p>
+
+              <h3>5.2 {t('privacy.sections.rights.correction.title')}</h3>
+              <p>
+                {t('privacy.sections.rights.correction.desc')}
+              </p>
+
+              <h3>5.3 {t('privacy.sections.rights.deletion.title')}</h3>
+              <p>
+                {t('privacy.sections.rights.deletion.desc')}
+              </p>
+
+              <h3>5.4 {t('privacy.sections.rights.optout.title')}</h3>
+              <p>
+                {t('privacy.sections.rights.optout.desc')}
+              </p>
+            </section>
+
+            <section className="privacy-section">
+              <h2>6. {t('privacy.sections.children.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.children.intro')}
+              </p>
+              
+              <ul>
+                <li>{t('privacy.sections.children.item1')}</li>
+                <li>{t('privacy.sections.children.item2')}</li>
+                <li>{t('privacy.sections.children.item3')}</li>
+                <li>{t('privacy.sections.children.item4')}</li>
+                <li>{t('privacy.sections.children.item5')}</li>
+              </ul>
+            </section>
+
+            <section className="privacy-section">
+              <h2>7. {t('privacy.sections.international.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.international.intro')}
+              </p>
+              
+              <ul>
+                <li>{t('privacy.sections.international.item1')}</li>
+                <li>{t('privacy.sections.international.item2')}</li>
+                <li>{t('privacy.sections.international.item3')}</li>
+              </ul>
+            </section>
+
+            <section className="privacy-section">
+              <h2>8. {t('privacy.sections.retention.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.retention.intro')}
+              </p>
+              
+              <ul>
+                <li><strong>{t('privacy.sections.retention.active')}:</strong> {t('privacy.sections.retention.activeDesc')}</li>
+                <li><strong>{t('privacy.sections.retention.educational')}:</strong> {t('privacy.sections.retention.educationalDesc')}</li>
+                <li><strong>{t('privacy.sections.retention.legal')}:</strong> {t('privacy.sections.retention.legalDesc')}</li>
+                <li><strong>{t('privacy.sections.retention.deletion')}:</strong> {t('privacy.sections.retention.deletionDesc')}</li>
+              </ul>
+            </section>
+
+            <section className="privacy-section">
+              <h2>9. {t('privacy.sections.cookies.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.cookies.intro')}
+              </p>
+              
+              <ul>
+                <li><strong>{t('privacy.sections.cookies.essential')}:</strong> {t('privacy.sections.cookies.essentialDesc')}</li>
+                <li><strong>{t('privacy.sections.cookies.performance')}:</strong> {t('privacy.sections.cookies.performanceDesc')}</li>
+                <li><strong>{t('privacy.sections.cookies.preference')}:</strong> {t('privacy.sections.cookies.preferenceDesc')}</li>
               </ul>
               
               <p>
-                We regularly review our practices to ensure ongoing compliance with evolving privacy regulations.
+                {t('privacy.sections.cookies.control')}
+              </p>
+            </section>
+
+            <section className="privacy-section">
+              <h2>10. {t('privacy.sections.updates.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.updates.intro')}
+              </p>
+              
+              <ul>
+                <li>{t('privacy.sections.updates.item1')}</li>
+                <li>{t('privacy.sections.updates.item2')}</li>
+                <li>{t('privacy.sections.updates.item3')}</li>
+              </ul>
+              
+              <p>
+                {t('privacy.sections.updates.continued')}
+              </p>
+            </section>
+
+            <section className="privacy-section">
+              <h2>11. {t('privacy.sections.contact.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.contact.intro')}
+              </p>
+              
+              <div className="contact-info">
+                <p><strong>{t('privacy.sections.contact.company')}:</strong> WhimsyLabs Ltd</p>
+                <p><strong>{t('privacy.sections.contact.address')}:</strong> London, United Kingdom</p>
+                <p><strong>{t('privacy.sections.contact.general')}:</strong> <a href="mailto:inquiries@whimsylabs.ai">inquiries@whimsylabs.ai</a></p>
+                <p><strong>{t('privacy.sections.contact.privacy')}:</strong> <a href="mailto:privacy@whimsylabs.ai">privacy@whimsylabs.ai</a></p>
+              </div>
+            </section>
+
+            <section className="privacy-section">
+              <h2>12. {t('privacy.sections.compliance.title')}</h2>
+              
+              <p>
+                {t('privacy.sections.compliance.intro')}
+              </p>
+              
+              <ul>
+                <li><strong>GDPR:</strong> {t('privacy.sections.compliance.gdpr')}</li>
+                <li><strong>COPPA:</strong> {t('privacy.sections.compliance.coppa')}</li>
+                <li><strong>FERPA:</strong> {t('privacy.sections.compliance.ferpa')}</li>
+                <li><strong>UK GDPR:</strong> {t('privacy.sections.compliance.ukgdpr')}</li>
+                <li><strong>PIPEDA:</strong> {t('privacy.sections.compliance.pipeda')}</li>
+              </ul>
+              
+              <p>
+                {t('privacy.sections.compliance.review')}
               </p>
             </section>
           </div>

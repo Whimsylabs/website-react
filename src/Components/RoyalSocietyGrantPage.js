@@ -11,6 +11,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
     school: "",
     email: "",
     role: "",
+    deadline: "",
     message: ""
   });
   const [formStatus, setFormStatus] = useState("");
@@ -40,15 +41,16 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
           school: formData.school,
           email: formData.email,
           role: formData.role,
+          deadline: formData.deadline,
           message: formData.message,
-          subject: "Royal Society Partnership Grant Enquiry - WhimsyLabs",
+          subject: "Partnership Grant Application - WhimsyLabs Partner Request",
         }),
       });
 
       const result = await response.json();
       if (result.success) {
         setFormStatus("success");
-        setFormData({ name: "", school: "", email: "", role: "", message: "" });
+        setFormData({ name: "", school: "", email: "", role: "", deadline: "", message: "" });
       } else {
         setFormStatus("error");
       }
@@ -61,7 +63,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
     <main className="container-fluid text-center p-0">
       <Header language={language} />
 
-      {/* Hero Section */}
+      {/* Hero Section - Position WhimsyLabs as THE Partner */}
       <section className="rsg-hero-section">
         <div
           className="rsg-hero-bg"
@@ -70,37 +72,39 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
         <div className="container">
           <div className="rsg-hero-content">
             <AnimatedTitle
-              text="Royal Society Partnership Grants"
+              text="Your Partnership Grant Partner"
               className="rsg-hero-title"
               delay={0}
               darkMode={false}
               uppercase={true}
             />
             <p className="rsg-hero-subtitle">
-              Get up to £3,000 to bring VR science to your classroom
+              <strong>WhimsyLabs is your Royal Society Partnership Grant solution.</strong>
+              <br />
+              Free VR science software. Application support. Everything you need.
             </p>
             <div className="rsg-hero-badges">
               <div className="rsg-badge rsg-badge-primary">
+                🎁 FREE Software During Grant
+              </div>
+              <div className="rsg-badge rsg-badge-secondary">
+                📝 Application Templates
+              </div>
+              <div className="rsg-badge rsg-badge-secondary">
                 💰 Up to £3,000 Funding
-              </div>
-              <div className="rsg-badge rsg-badge-secondary">
-                🔬 For UK Schools
-              </div>
-              <div className="rsg-badge rsg-badge-secondary">
-                🤝 We Help You Apply
               </div>
             </div>
           </div>
 
           <div className="rsg-hero-ctas">
-            <a href="#how-we-help" className="rsg-cta-button rsg-cta-secondary">
-              How We Help
+            <a href="#apply" className="rsg-cta-button rsg-cta-primary">
+              Apply With WhimsyLabs
+            </a>
+            <a href="#what-you-get" className="rsg-cta-button rsg-cta-secondary">
+              What You Get
             </a>
             <a href="#eligibility" className="rsg-cta-button rsg-cta-secondary">
               Am I Eligible?
-            </a>
-            <a href="#contact" className="rsg-cta-button rsg-cta-secondary">
-              Get Started
             </a>
           </div>
         </div>
@@ -114,31 +118,135 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
         </div>
       </section>
 
-      {/* What Are Partnership Grants */}
+      {/* The Opportunity Section */}
       <BubbleContainer>
         <section className="rsg-about-section">
-          <h2>What Are Royal Society Partnership Grants?</h2>
+          <h2>£3,000 for VR Science in Your Classroom</h2>
           <p className="rsg-section-description">
-            The Royal Society Partnership Grants scheme funds projects that bring cutting-edge 
-            STEM experiences into schools. Schools can receive up to £3,000 to run investigative 
-            projects in partnership with a STEM professional from academia or industry.
+            The Royal Society Partnership Grants fund schools to run cutting-edge STEM projects. 
+            <strong> WhimsyLabs is your ready-made solution</strong> — we provide everything you need 
+            to submit a winning application and bring immersive science to your students.
           </p>
           
           <div className="rsg-info-cards">
             <div className="rsg-info-card">
-              <div className="rsg-info-icon">🎓</div>
-              <h3>For Schools</h3>
-              <p>UK state-funded schools with students aged 5-18 can apply for funding to enhance STEM education.</p>
+              <div className="rsg-info-icon">🎯</div>
+              <h3>The Opportunity</h3>
+              <p>UK state schools can apply for up to £3,000 to fund investigative STEM projects with industry partners.</p>
             </div>
             <div className="rsg-info-card">
-              <div className="rsg-info-icon">🔬</div>
-              <h3>STEM Partnership</h3>
-              <p>Work alongside a scientist or engineer from a university or company to inspire your students.</p>
+              <div className="rsg-info-icon">🤝</div>
+              <h3>WhimsyLabs = Your Partner</h3>
+              <p>We're your technology partner. Free software, application support, and technical documentation included.</p>
             </div>
             <div className="rsg-info-card">
-              <div className="rsg-info-icon">💡</div>
-              <h3>Investigative Projects</h3>
-              <p>Design hands-on experiments and investigations that go beyond the standard curriculum.</p>
+              <div className="rsg-info-icon">🚀</div>
+              <h3>Ready to Go</h3>
+              <p>Don't start from scratch. Our proven partnership model makes your application stronger.</p>
+            </div>
+          </div>
+        </section>
+      </BubbleContainer>
+
+      {/* What You Get Section */}
+      <section id="what-you-get" className="rsg-package-section">
+        <div className="container">
+          <h2>What WhimsyLabs Provides — FREE</h2>
+          <p className="rsg-section-description">
+            When you partner with WhimsyLabs for your grant application, you get everything below 
+            at <strong>no cost</strong>. Your entire £3,000 goes toward VR hardware and other project needs.
+          </p>
+
+          <div className="rsg-package-grid">
+            <div className="rsg-package-card rsg-package-whimsy">
+              <div className="rsg-package-icon">🎁</div>
+              <h3>FREE for Grant Recipients</h3>
+              <ul>
+                <li><strong>Full WhimsyLabs Platform Access</strong> — All virtual experiments and lab environments</li>
+                <li><strong>Application Support Pack</strong> — Templates, project ideas, and sample text</li>
+                <li><strong>Technical Documentation</strong> — Ready-to-use content for your proposal</li>
+                <li><strong>Teacher Training</strong> — Full onboarding for your team</li>
+                <li><strong>Student Progress Dashboard</strong> — Track learning outcomes</li>
+                <li><strong>Curriculum-Aligned Lessons</strong> — Ready-made lesson plans</li>
+                <li><strong>Ongoing Technical Support</strong> — Help throughout your project</li>
+                <li><strong>Impact Documentation</strong> — Evidence gathering for your Royal Society report</li>
+              </ul>
+            </div>
+            <div className="rsg-package-card rsg-package-grant">
+              <div className="rsg-package-icon">💷</div>
+              <h3>Your Grant Covers</h3>
+              <ul>
+                <li>VR headsets for your classroom (6-10 devices typical)</li>
+                <li>Optional tablet for teacher control</li>
+                <li>Physical materials for investigations</li>
+                <li>STEM partner expenses (if needed)</li>
+                <li>Celebration event for students</li>
+              </ul>
+              <p className="rsg-package-highlight">
+                <strong>💡 Pro Tip:</strong> Budget £2,000-2,500 for VR hardware — that's where your grant has most impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Application Support Section */}
+      <BubbleContainer>
+        <section className="rsg-help-section">
+          <h2>Application Support Included</h2>
+          <p className="rsg-section-description">
+            Writing grant applications is time-consuming. We make it easy with ready-to-use materials 
+            and expert support.
+          </p>
+
+          <div className="rsg-features-grid">
+            <div className="rsg-feature-item">
+              <div className="rsg-feature-number">📄</div>
+              <h4>Application Templates</h4>
+              <p>
+                Pre-written sections you can adapt for your school. Project descriptions, 
+                learning objectives, and methodology — all tailored for VR science.
+              </p>
+            </div>
+            <div className="rsg-feature-item">
+              <div className="rsg-feature-number">📊</div>
+              <h4>Evidence Pack</h4>
+              <p>
+                Research summaries showing VR's impact on science learning. Ready to drop 
+                into your application's evidence section.
+              </p>
+            </div>
+            <div className="rsg-feature-item">
+              <div className="rsg-feature-number">🔬</div>
+              <h4>Project Ideas</h4>
+              <p>
+                Proven investigation frameworks that work brilliantly with VR — from 
+                virtual chemistry experiments to physics simulations.
+              </p>
+            </div>
+            <div className="rsg-feature-item">
+              <div className="rsg-feature-number">📋</div>
+              <h4>Technical Specification</h4>
+              <p>
+                Hardware requirements, software capabilities, and setup documentation — 
+                everything reviewers need to understand your project.
+              </p>
+            </div>
+            <div className="rsg-feature-item">
+              <div className="rsg-feature-number">✍️</div>
+              <h4>Application Review</h4>
+              <p>
+                We'll review your draft application and suggest improvements before 
+                you submit. A second pair of expert eyes.
+              </p>
+            </div>
+            <div className="rsg-feature-item">
+              <div className="rsg-feature-number">🎥</div>
+              <h4>Demo Access</h4>
+              <p>
+                Free demo of WhimsyLabs for your application. Show reviewers exactly 
+                what students will experience.
+              </p>
             </div>
           </div>
         </section>
@@ -147,9 +255,10 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
       {/* Key Dates Section */}
       <section className="rsg-dates-section">
         <div className="container">
-          <h2>Key Dates for 2026</h2>
+          <h2>2026 Application Deadlines</h2>
           <p className="rsg-section-description">
-            There are three application windows throughout the year. Plan ahead and we'll help you prepare.
+            Three opportunities to apply. <strong>Contact us 4-6 weeks before</strong> your target deadline 
+            for the best support.
           </p>
           
           <div className="rsg-timeline">
@@ -163,132 +272,27 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
             <div className="rsg-timeline-item">
               <div className="rsg-timeline-marker">📝</div>
               <div className="rsg-timeline-content">
-                <h3>First Deadline</h3>
+                <h3>Spring Deadline</h3>
                 <p className="rsg-date">30 April 2026</p>
-                <p className="rsg-deadline-note">Spring round - ideal for autumn term projects</p>
+                <p className="rsg-deadline-note">→ Contact us by mid-March</p>
               </div>
             </div>
             <div className="rsg-timeline-item">
               <div className="rsg-timeline-marker">📝</div>
               <div className="rsg-timeline-content">
-                <h3>Second Deadline</h3>
+                <h3>Summer Deadline</h3>
                 <p className="rsg-date">10 July 2026</p>
-                <p className="rsg-deadline-note">Summer round - for winter term start</p>
+                <p className="rsg-deadline-note">→ Contact us by late May</p>
               </div>
             </div>
             <div className="rsg-timeline-item">
               <div className="rsg-timeline-marker">📝</div>
               <div className="rsg-timeline-content">
-                <h3>Final Deadline</h3>
+                <h3>Autumn Deadline</h3>
                 <p className="rsg-date">30 November 2026</p>
-                <p className="rsg-deadline-note">Autumn round - spring term projects</p>
+                <p className="rsg-deadline-note">→ Contact us by mid-October</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Help Section */}
-      <BubbleContainer>
-        <section id="how-we-help" className="rsg-help-section">
-          <h2>How WhimsyLabs Helps You</h2>
-          <p className="rsg-section-description">
-            We make applying for a Partnership Grant straightforward. From application support 
-            to providing the VR software, we're with you every step of the way.
-          </p>
-
-          <div className="rsg-features-grid">
-            <div className="rsg-feature-item">
-              <div className="rsg-feature-number">1</div>
-              <h4>Free Pilot Access</h4>
-              <p>
-                Get complimentary access to WhimsyLabs virtual lab software throughout your
-                project period. No software costs eat into your grant — we'll also provide a
-                free demo for your grant application.
-              </p>
-            </div>
-            <div className="rsg-feature-item">
-              <div className="rsg-feature-number">2</div>
-              <h4>Application Support</h4>
-              <p>
-                We'll help you craft a compelling application. Our team can provide 
-                project ideas, learning objectives, and evidence of VR's impact on science education.
-              </p>
-            </div>
-            <div className="rsg-feature-item">
-              <div className="rsg-feature-number">3</div>
-              <h4>STEM Partner Connections</h4>
-              <p>
-                Need a STEM partner? We can help connect you with researchers and scientists 
-                from universities who are keen to work with schools.
-              </p>
-            </div>
-            <div className="rsg-feature-item">
-              <div className="rsg-feature-number">4</div>
-              <h4>Project Planning</h4>
-              <p>
-                We'll work with you to design an investigation that makes the most of 
-                VR — from virtual chemistry experiments to physics simulations.
-              </p>
-            </div>
-            <div className="rsg-feature-item">
-              <div className="rsg-feature-number">5</div>
-              <h4>Training & Support</h4>
-              <p>
-                Receive full training for teachers on using WhimsyLabs, plus ongoing 
-                technical support throughout your project.
-              </p>
-            </div>
-            <div className="rsg-feature-item">
-              <div className="rsg-feature-number">6</div>
-              <h4>Impact Documentation</h4>
-              <p>
-                We'll help you gather evidence and document student outcomes for your 
-                project report to the Royal Society.
-              </p>
-            </div>
-          </div>
-        </section>
-      </BubbleContainer>
-
-      {/* The Package Section */}
-      <section className="rsg-package-section">
-        <div className="container">
-          <h2>The Package</h2>
-          <p className="rsg-section-description">
-            Here's how a typical WhimsyLabs Partnership Grant project works:
-          </p>
-
-          <div className="rsg-package-grid">
-            <div className="rsg-package-card rsg-package-grant">
-              <div className="rsg-package-icon">💷</div>
-              <h3>Your Grant Covers</h3>
-              <ul>
-                <li>VR headsets for your classroom (typically 6-10 devices)</li>
-                <li>Optional: tablet for teacher control</li>
-                <li>Any physical materials for investigations</li>
-                <li>STEM partner expenses (travel, time)</li>
-                <li>Celebration event for students</li>
-              </ul>
-            </div>
-            <div className="rsg-package-card rsg-package-whimsy">
-              <div className="rsg-package-icon">🎁</div>
-              <h3>WhimsyLabs Provides FREE</h3>
-              <ul>
-                <li>Full access to WhimsyLabs VR science platform</li>
-                <li>All virtual experiments and lab environments</li>
-                <li>Teacher dashboard and student progress tracking</li>
-                <li>Curriculum-aligned lesson plans</li>
-                <li>Ongoing technical support</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="rsg-package-note">
-            <p>
-              <strong>💡 Pro Tip:</strong> Most successful applications budget around £2,000-2,500 
-              for VR hardware, leaving room for partner expenses and student celebration activities.
-            </p>
           </div>
         </div>
       </section>
@@ -298,7 +302,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
         <section id="eligibility" className="rsg-eligibility-section">
           <h2>Are You Eligible?</h2>
           <p className="rsg-section-description">
-            Check if your school qualifies for a Royal Society Partnership Grant:
+            Most UK state schools can apply. Here's the quick checklist:
           </p>
 
           <div className="rsg-eligibility-grid">
@@ -307,39 +311,30 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               <ul>
                 <li>You're a UK state-funded school</li>
                 <li>Your students are aged 5-18</li>
-                <li>You can partner with a STEM professional</li>
                 <li>You haven't received this grant in the past 2 years</li>
-                <li>Your project is investigative (not just demonstrations)</li>
+                <li>Your project involves student investigation (not just demos)</li>
               </ul>
             </div>
             <div className="rsg-eligibility-card rsg-partners">
-              <h3>🤝 STEM Partners Can Be:</h3>
+              <h3>🤝 About STEM Partners</h3>
               <ul>
-                <li>University researchers or academics</li>
-                <li>PhD students or postdocs</li>
-                <li>Scientists from research institutes</li>
-                <li>STEM professionals from industry</li>
-                <li>Engineers from companies</li>
+                <li>Royal Society requires a STEM professional partner</li>
+                <li>This can be a university researcher, PhD student, or industry scientist</li>
+                <li><strong>Don't have one? We can help connect you</strong></li>
+                <li>WhimsyLabs is your technology partner — separate from your STEM partner</li>
               </ul>
             </div>
-          </div>
-
-          <div className="rsg-eligibility-cta">
-            <p>Not sure if you qualify? Don't have a STEM partner yet?</p>
-            <a href="#contact" className="rsg-cta-button rsg-cta-primary">
-              Let's Chat — We Can Help!
-            </a>
           </div>
         </section>
       </BubbleContainer>
 
-      {/* Contact Form Section */}
-      <section id="contact" className="rsg-contact-section">
+      {/* Apply Section */}
+      <section id="apply" className="rsg-contact-section">
         <div className="container">
-          <h2>Get Started</h2>
+          <h2>Apply With WhimsyLabs as Your Partner</h2>
           <p className="rsg-contact-description">
-            Ready to bring VR science to your classroom? Fill in the form below and we'll 
-            get in touch to discuss your Partnership Grant application.
+            Ready to bring VR science to your classroom? Register your interest and we'll send 
+            your application support pack within 48 hours.
           </p>
 
           <form className="rsg-contact-form" onSubmit={handleSubmit}>
@@ -399,14 +394,30 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
             </div>
 
             <div className="rsg-form-group">
-              <label htmlFor="message">Tell Us About Your Interest</label>
+              <label htmlFor="deadline">Which Deadline Are You Targeting?</label>
+              <select
+                id="deadline"
+                name="deadline"
+                value={formData.deadline}
+                onChange={handleInputChange}
+              >
+                <option value="">Select a deadline...</option>
+                <option value="april-2026">30 April 2026 (Spring)</option>
+                <option value="july-2026">10 July 2026 (Summer)</option>
+                <option value="november-2026">30 November 2026 (Autumn)</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div className="rsg-form-group">
+              <label htmlFor="message">Anything Else We Should Know?</label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
                 rows="4"
-                placeholder="What subjects do you teach? Have you applied for a Partnership Grant before? Do you have a STEM partner in mind?"
+                placeholder="What subjects do you teach? Have you applied for grants before? Any specific questions?"
               ></textarea>
             </div>
 
@@ -415,12 +426,13 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               className="rsg-submit-btn"
               disabled={formStatus === "sending"}
             >
-              {formStatus === "sending" ? "Sending..." : "Get In Touch"}
+              {formStatus === "sending" ? "Sending..." : "Get My Application Pack"}
             </button>
 
             {formStatus === "success" && (
               <div className="rsg-form-success">
-                Thanks for your interest! We'll be in touch within 2 working days to discuss your application.
+                ✅ <strong>You're in!</strong> Check your email within 48 hours for your application support pack. 
+                We'll also reach out to schedule a quick call if helpful.
               </div>
             )}
 
@@ -436,14 +448,14 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
       {/* Final CTA Section */}
       <BubbleContainer>
         <section className="rsg-cta-section">
-          <h2>Don't Miss Out on £3,000 for VR Science</h2>
+          <h2>Don't Write Your Application Alone</h2>
           <p>
-            The Royal Society Partnership Grants are one of the best-kept secrets in education funding. 
-            With our help, applying is easier than you think.
+            Schools that partner with us get free software, application templates, and expert support. 
+            Your grant application is stronger with WhimsyLabs.
           </p>
           <div className="rsg-cta-buttons">
-            <a href="#contact" className="btn rsg-cta-primary">
-              Start Your Application
+            <a href="#apply" className="btn rsg-cta-primary">
+              Partner With WhimsyLabs
             </a>
             <a 
               href="https://royalsociety.org/grants/partnership-grants/" 
