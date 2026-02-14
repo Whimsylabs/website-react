@@ -1,14 +1,14 @@
 import React from "react";
 
-export const title = "Making Premium Science Education Accessible to Every School";
-export const description = "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.";
+export const title = "プレミアム科学教育をすべての学校に届ける";
+export const description = "プレミアムEdTechは裕福な学校だけのものであってはなりません。助成金と資金援助がどのように物理学に基づいた仮想ラボをすべての教室に届けられるかをご紹介します。";
 export const keywords = [
-  "science education funding",
-  "school grants",
-  "accessible education technology",
-  "premium edtech",
-  "WhimsyLabs grants",
-  "educational equity"
+  "科学教育資金",
+  "学校助成金",
+  "アクセシブルな教育技術",
+  "プレミアムEdTech",
+  "WhimsyLabs助成金",
+  "教育の公平性"
 ];
 
 export const content = (
@@ -16,168 +16,168 @@ export const content = (
     <figure className="blog-image">
       <img
         src="/images/kids_judge_bett.png"
-        alt="Students from diverse schools using WhimsyLabs virtual science lab"
+        alt="様々な学校の生徒がWhimsyLabs仮想科学ラボを使用している様子"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />
       <figcaption style={{ textAlign: 'center', fontStyle: 'italic', color: '#666', marginBottom: '1.5rem' }}>
-        Premium science education technology, accessible through grant funding
+        助成金を通じてアクセス可能になるプレミアム科学教育技術
       </figcaption>
     </figure>
 
     <p>
-      There's a pattern in educational technology that bothers us. The best tools tend to end up in schools that already have the most resources. Private schools with generous budgets get cutting-edge VR labs. State schools in affluent areas secure parent-funded extras. And everyone else? They make do with whatever's left in the budget.
+      教育技術には私たちが気になるパターンがあります。最高のツールは、すでに最も多くのリソースを持っている学校に行き着く傾向があります。潤沢な予算を持つ私立学校は最先端のVRラボを手に入れます。裕福な地域の公立学校は保護者が資金を出した追加設備を確保します。そして他のすべての学校は？予算の残りでやりくりするしかありません。
     </p>
     <p>
-      This isn't some abstract concern. Research consistently shows that access to quality educational resources affects outcomes. A <a href="https://www.nfer.ac.uk/publications/science-education-2019/" target="_blank" rel="noopener noreferrer">2019 NFER report</a> found that schools in disadvantaged areas are significantly more likely to lack adequate science equipment. The result: students from poorer backgrounds get fewer opportunities to develop practical scientific skills.
+      これは抽象的な懸念ではありません。研究は一貫して、質の高い教育リソースへのアクセスが成果に影響を与えることを示しています。<a href="https://www.nfer.ac.uk/publications/science-education-2019/" target="_blank" rel="noopener noreferrer">2019年のNFERレポート</a>は、恵まれない地域の学校は適切な科学機器が不足している可能性が著しく高いことを明らかにしました。その結果、貧しい背景を持つ生徒は実践的な科学スキルを発達させる機会が少なくなっています。
     </p>
     <p>
-      We built WhimsyLabs to change this equation. But we quickly learned that building quality software wasn't enough. We also needed to help schools find ways to pay for it.
-    </p>
-
-    <h2>Why "Cheap" Isn't the Answer</h2>
-    <p>
-      Some EdTech companies respond to the equity problem by making cheaper products. The logic seems sound: if price is the barrier, lower the price.
-    </p>
-    <p>
-      But this approach has a serious flaw. When you cut costs aggressively, you cut quality. You get simulations that don't behave like real science. You get AI tutors that frustrate more than they help. You get platforms that crash during lessons and support teams that take weeks to respond.
-    </p>
-    <p>
-      Teachers see through this immediately. A <a href="https://doi.org/10.1007/s10956-020-09862-4" target="_blank" rel="noopener noreferrer">2020 study in the Journal of Science Education and Technology</a> found that teacher perception of technology quality directly affects how much they use it in class. Give teachers a buggy simulation, and they'll abandon it within weeks. The cheap solution becomes no solution at all.
-    </p>
-    <p>
-      We took a different approach. We built WhimsyLabs to be genuinely premium: physics-accurate simulations, AI tutoring that actually understands student struggles, real teacher support from people who know science education. Then we figured out how to get it into schools that couldn't otherwise afford it.
+      私たちはこの方程式を変えるためにWhimsyLabsを構築しました。しかし、質の高いソフトウェアを構築するだけでは十分ではないことをすぐに学びました。学校がそれを支払う方法を見つける手助けも必要でした。
     </p>
 
-    <h2>The Real Solution: Grants and Funding</h2>
+    <h2>「安い」が答えではない理由</h2>
     <p>
-      Here's what many schools don't realise: there's money available specifically for educational technology. You just need to know where to look.
+      一部のEdTech企業は、より安い製品を作ることで公平性の問題に対応しています。論理は一見正しそうです：価格が障壁なら、価格を下げればいい。
+    </p>
+    <p>
+      しかし、このアプローチには深刻な欠陥があります。コストを積極的に削減すると、品質も削減されます。本物の科学のように動作しないシミュレーションになります。助けるよりもイライラさせるAIチューターになります。授業中にクラッシュするプラットフォームと、応答に数週間かかるサポートチームになります。
+    </p>
+    <p>
+      教師はこれをすぐに見抜きます。<a href="https://doi.org/10.1007/s10956-020-09862-4" target="_blank" rel="noopener noreferrer">Journal of Science Education and Technologyの2020年の研究</a>は、技術品質に対する教師の認識が、授業でどれだけそれを使用するかに直接影響することを発見しました。バグだらけのシミュレーションを教師に与えれば、数週間以内に放棄されます。安い解決策は、解決策がないのと同じになります。
+    </p>
+    <p>
+      私たちは異なるアプローチを取りました。WhimsyLabsを真にプレミアムなものとして構築しました：物理学的に正確なシミュレーション、生徒の苦労を本当に理解するAIチュータリング、科学教育を知る人々による本物の教師サポート。そして、それ以外では購入できない学校にも届ける方法を見つけました。
     </p>
 
-    <h3>UK Funding Opportunities</h3>
+    <h2>本当の解決策：助成金と資金援助</h2>
     <p>
-      The <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a> programme offers UK state schools up to £3,000 for investigative STEM projects. We've worked with dozens of schools to secure these grants for VR science labs. The Royal Society provides the funding for hardware. We provide the software free of charge.
+      多くの学校が気づいていないことがあります：教育技術専用の資金が利用可能です。どこを探せばいいか知る必要があるだけです。
+    </p>
+
+    <h3>イギリスの資金調達機会</h3>
+    <p>
+      <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a>プログラムは、イギリスの公立学校に調査型STEMプロジェクトのために最大3,000ポンドを提供しています。私たちは数十の学校と協力して、VR科学ラボのためのこれらの助成金を確保してきました。Royal Societyがハードウェアの資金を提供します。私たちはソフトウェアを無料で提供します。
     </p>
     <p>
-      Beyond the Royal Society, UK schools can access:
+      Royal Society以外にも、イギリスの学校は以下にアクセスできます：
     </p>
     <ul>
-      <li><strong>STEM Learning Network grants</strong> for teacher professional development and resources</li>
-      <li><strong>Institute of Physics equipment grants</strong> specifically for physics teaching</li>
-      <li><strong>Royal Society of Chemistry grants</strong> for chemistry education initiatives</li>
-      <li><strong>Local authority STEM funds</strong> that vary by region but can be substantial</li>
-      <li><strong>Multi-Academy Trust innovation budgets</strong> often reserved for technology pilots</li>
+      <li><strong>STEM Learning Network助成金</strong> - 教師の専門能力開発とリソース向け</li>
+      <li><strong>Institute of Physics機器助成金</strong> - 物理教育専用</li>
+      <li><strong>Royal Society of Chemistry助成金</strong> - 化学教育イニシアチブ向け</li>
+      <li><strong>地方自治体のSTEM資金</strong> - 地域によって異なりますが、相当額になることもあります</li>
+      <li><strong>Multi-Academy Trustのイノベーション予算</strong> - 技術パイロット用に確保されていることが多い</li>
     </ul>
     <p>
-      Each funding stream has its own application process, timeline, and criteria. But the common thread is that they exist to improve science education for students who might otherwise miss out.
+      各資金源には独自の申請プロセス、タイムライン、基準があります。しかし共通点は、そうでなければ機会を逃すかもしれない生徒の科学教育を改善するために存在しているということです。
     </p>
 
-    <h3>International Funding Sources</h3>
+    <h3>国際的な資金源</h3>
     <p>
-      Outside the UK, similar opportunities exist. In the US, Title II and Title IV funding can support educational technology. Many states have STEM-specific grant programmes. Private foundations like the Simons Foundation and the Gates Foundation regularly fund science education initiatives.
+      イギリス以外でも、同様の機会があります。アメリカでは、Title IIとTitle IV資金が教育技術を支援できます。多くの州にはSTEM特有の助成プログラムがあります。Simons FoundationやGates Foundationなどの民間財団は、定期的に科学教育イニシアチブに資金を提供しています。
     </p>
     <p>
-      European schools can access Erasmus+ funding for innovative educational projects. Australian schools have the STEM Professionals in Schools programme. Singapore's Ministry of Education runs technology adoption grants. The specifics vary, but the principle remains: governments and foundations want to fund quality science education.
-    </p>
-
-    <h2>How WhimsyLabs Supports Grant Applications</h2>
-    <p>
-      We don't just tell schools that grants exist. We actively help them apply.
+      ヨーロッパの学校は、革新的な教育プロジェクトのためのErasmus+資金にアクセスできます。オーストラリアの学校にはSTEM Professionals in Schoolsプログラムがあります。シンガポール教育省は技術導入助成金を運営しています。詳細は異なりますが、原則は変わりません：政府と財団は質の高い科学教育に資金を提供したいのです。
     </p>
 
-    <h3>Free Demo Access for Applications</h3>
+    <h2>WhimsyLabsが助成金申請をどのようにサポートするか</h2>
     <p>
-      Grant applications are stronger when reviewers can see exactly what you're proposing. We provide free demo access so you can include screenshots, student feedback, and concrete details about how WhimsyLabs works. Some of our schools have even run pilot lessons and included student outcome data in their applications.
+      私たちは学校に助成金があることを伝えるだけではありません。積極的に申請を支援します。
     </p>
 
-    <h3>Application Support</h3>
+    <h3>申請用の無料デモアクセス</h3>
     <p>
-      We've seen enough successful (and unsuccessful) grant applications to know what works. Our team can review your draft, suggest improvements, and help you frame the educational case for virtual labs. This isn't ghostwriting. It's the kind of support that peer reviewers and grant officers actually find valuable.
+      審査員が提案内容を正確に確認できると、助成金申請はより強力になります。スクリーンショット、生徒のフィードバック、WhimsyLabsの仕組みに関する具体的な詳細を含められるよう、無料のデモアクセスを提供しています。一部の学校ではパイロット授業を実施し、申請に生徒の成果データを含めています。
     </p>
 
-    <h3>WhimsyLabs: Your STEM Partner</h3>
+    <h3>申請サポート</h3>
     <p>
-      Some grants, like the Royal Society Partnership Grants, require a STEM partner from industry or academia. <strong>WhimsyLabs fulfils this requirement.</strong> Our team includes PhD scientists and researchers who can serve as your official STEM partner, making your application complete without needing to find external contacts.
+      私たちは成功した（そして成功しなかった）助成金申請を十分に見てきて、何が効果的かを知っています。私たちのチームはあなたの草稿をレビューし、改善を提案し、仮想ラボの教育的ケースを構築する手助けをします。これはゴーストライティングではありません。査読者や助成金担当者が実際に価値があると感じるタイプのサポートです。
     </p>
 
-    <h3>Free Software for Funded Projects</h3>
+    <h3>WhimsyLabs：あなたのSTEMパートナー</h3>
     <p>
-      When your grant is approved, WhimsyLabs software comes at no additional cost. Your funding goes toward hardware and any other project expenses. We've chosen this model because we believe it maximises the impact of educational grants.
+      Royal Society Partnership Grantsのような一部の助成金は、産業界または学術界からのSTEMパートナーを必要とします。<strong>WhimsyLabsはこの要件を満たします。</strong>私たちのチームには、公式のSTEMパートナーとして機能できる博士号を持つ科学者や研究者が含まれており、外部の連絡先を見つける必要なく申請を完了できます。
     </p>
 
-    <h2>What "Premium" Actually Means</h2>
+    <h3>資金提供プロジェクト向けの無料ソフトウェア</h3>
     <p>
-      When we say WhimsyLabs is premium, we mean something specific. Not expensive for its own sake. Not fancy features that look good in demos but don't help learning. Premium means built properly, in ways that genuinely improve science education.
+      助成金が承認されると、WhimsyLabsソフトウェアは追加費用なしで提供されます。資金はハードウェアやその他のプロジェクト費用に充てられます。教育助成金の影響を最大化すると信じているため、このモデルを選択しました。
     </p>
 
-    <h3>Physics-Accurate Simulation</h3>
+    <h2>「プレミアム」が本当に意味するもの</h2>
     <p>
-      Our virtual labs run on a physics engine. When students pour one solution into another, they see realistic mixing behaviour. When they heat a substance, temperature changes follow actual thermodynamics. When they make measurement errors, those errors propagate through calculations just like they would in a real lab.
-    </p>
-    <p>
-      This matters because science education isn't just about getting the right answer. It's about understanding how the physical world behaves. Research shows that <a href="https://doi.org/10.1103/PhysRevSTPER.6.020108" target="_blank" rel="noopener noreferrer">physics-based simulations transfer to real-world understanding</a> in ways that simplified animations do not.
+      WhimsyLabsがプレミアムだと言うとき、私たちは具体的なことを意味しています。それ自体のために高価であることではありません。デモでは見栄えがするが学習には役立たない派手な機能でもありません。プレミアムとは、科学教育を真に改善する方法で適切に構築されていることを意味します。
     </p>
 
-    <h3>AI Tutoring That Works</h3>
+    <h3>物理学的に正確なシミュレーション</h3>
     <p>
-      WhimsyCat, our AI tutor, watches what students actually do in the virtual lab. It notices when someone is struggling and offers help. It detects when students are frustrated and adjusts its approach. It provides feedback on technique, not just on answers.
+      私たちの仮想ラボは物理エンジンで動作します。生徒が一方の溶液を他方に注ぐと、現実的な混合挙動が見られます。物質を加熱すると、温度変化は実際の熱力学に従います。測定誤差を犯すと、それらの誤差は実際のラボと同じように計算を通じて伝播します。
     </p>
     <p>
-      Most AI tutors are glorified chatbots. They respond to what students type, not what students do. WhimsyCat is different because it's integrated with the simulation itself. It knows that the student just added too much acid. It knows they're repeating the same mistake. It can intervene at exactly the right moment.
-    </p>
-
-    <h3>Actual Teacher Support</h3>
-    <p>
-      When you contact WhimsyLabs support, you talk to someone who understands science teaching. Not a script reader. Not a chatbot. A person who can help you set up experiments, troubleshoot technical issues, and adapt the platform to your curriculum.
-    </p>
-    <p>
-      We know this matters because we hear it from teachers constantly. The number one complaint about EdTech is support that doesn't understand education. We've built our team specifically to avoid that problem.
+      これが重要なのは、科学教育は正しい答えを得ることだけではないからです。物理的な世界がどのように振る舞うかを理解することです。研究は、<a href="https://doi.org/10.1103/PhysRevSTPER.6.020108" target="_blank" rel="noopener noreferrer">物理学ベースのシミュレーションが実世界の理解に転移する</a>ことを示しており、簡略化されたアニメーションではそれができません。
     </p>
 
-    <h3>Data Privacy Done Right</h3>
+    <h3>機能するAIチュータリング</h3>
     <p>
-      Student data stays with the school. We don't use it for AI training. We don't sell it to third parties. We don't even store more than we need to make the platform work.
+      私たちのAIチューターであるWhimsyCatは、生徒が仮想ラボで実際に何をしているかを観察します。誰かが苦労していることに気づくと、助けを提供します。生徒がイライラしていることを検出し、アプローチを調整します。答えだけでなく、技術についてのフィードバックを提供します。
     </p>
     <p>
-      This costs more than the alternative. Aggregating user data and monetising it is how many EdTech companies subsidise their pricing. We've chosen not to do that because students deserve privacy, especially when they're learning.
+      ほとんどのAIチューターは、美化されたチャットボットです。生徒がタイプすることには反応しますが、生徒がすることには反応しません。WhimsyCatはシミュレーション自体と統合されているため異なります。生徒が今酸を入れすぎたことを知っています。同じ間違いを繰り返していることを知っています。まさに適切なタイミングで介入できます。
     </p>
 
-    <h2>Success Stories</h2>
+    <h3>本物の教師サポート</h3>
     <p>
-      We've worked with over fifty schools to secure grant funding for virtual labs. Some highlights:
+      WhimsyLabsサポートに連絡すると、科学教育を理解している人と話します。スクリプトを読む人ではありません。チャットボットではありません。実験のセットアップ、技術的な問題のトラブルシューティング、プラットフォームのカリキュラムへの適応を手伝える人です。
+    </p>
+    <p>
+      これが重要であることを私たちは知っています。なぜなら、教師から常に聞いているからです。EdTechに関する一番の不満は、教育を理解していないサポートです。私たちはその問題を避けるために特別にチームを構築しました。
+    </p>
+
+    <h3>適切に行われるデータプライバシー</h3>
+    <p>
+      生徒のデータは学校に留まります。AIトレーニングには使用しません。第三者に販売しません。プラットフォームを機能させるために必要以上のものは保存しません。
+    </p>
+    <p>
+      これは代替案よりもコストがかかります。ユーザーデータを集約して収益化することは、多くのEdTech企業が価格を補助する方法です。私たちはそうしないことを選択しました。なぜなら、生徒は特に学習中にプライバシーを享受する権利があるからです。
+    </p>
+
+    <h2>成功事例</h2>
+    <p>
+      私たちは50以上の学校と協力して、仮想ラボのための助成金を確保してきました。いくつかのハイライト：
     </p>
     <ul>
-      <li>A comprehensive school in the Midlands received Royal Society funding and now runs VR chemistry practicals for Year 10 and 11 students. Their GCSE practical assessment results improved noticeably in the first year.</li>
-      <li>A school in Scotland used local authority STEM funding to pilot WhimsyLabs in their physics department. After the pilot, they expanded to chemistry and biology with Multi-Academy Trust support.</li>
-      <li>An international school in Germany accessed Erasmus+ funding for a cross-border science education project, using WhimsyLabs as the common platform between partner schools.</li>
+      <li>ミッドランズの総合学校がRoyal Societyの資金を受け、現在Year 10と11の生徒向けにVR化学実習を実施しています。GCSE実技評価の結果は初年度から著しく改善しました。</li>
+      <li>スコットランドの学校は地方自治体のSTEM資金を使用して物理学部門でWhimsyLabsをパイロット導入しました。パイロット後、Multi-Academy Trustのサポートを受けて化学と生物学に拡大しました。</li>
+      <li>ドイツの国際学校がErasmus+資金にアクセスし、国境を越えた科学教育プロジェクトを実施し、パートナー校間の共通プラットフォームとしてWhimsyLabsを使用しました。</li>
     </ul>
     <p>
-      These aren't wealthy schools with unlimited budgets. They're ordinary schools that found funding and made it work.
+      これらは無制限の予算を持つ裕福な学校ではありません。資金を見つけて成功させた普通の学校です。
     </p>
 
-    <h2>Does Your School Qualify?</h2>
+    <h2>あなたの学校は資格がありますか？</h2>
     <p>
-      Most schools have access to some form of grant funding for educational technology. The question is which funding streams apply to your specific situation.
+      ほとんどの学校は、教育技術のための何らかの形の助成金にアクセスできます。問題は、どの資金源があなたの特定の状況に適用されるかです。
     </p>
     <p>
-      UK state schools are almost always eligible for Royal Society Partnership Grants. With WhimsyLabs as your STEM partner and a well-designed investigative project, you have a strong shot at funding.
+      イギリスの公立学校は、ほとんどの場合Royal Society Partnership Grantsの対象となります。WhimsyLabsをSTEMパートナーとし、よく設計された調査プロジェクトがあれば、資金を得る可能性は高いです。
     </p>
     <p>
-      International schools should check with their national education ministry, local foundations, and any international school networks they belong to. Many have innovation funds specifically for technology adoption.
+      国際学校は、国の教育省、地域の財団、所属する国際学校ネットワークに確認する必要があります。多くには技術導入専用のイノベーション資金があります。
     </p>
     <p>
-      Independent schools often have their own routes. Parent fundraising, alumni foundations, and school development funds can all support educational technology.
+      私立学校には独自のルートがあることが多いです。保護者の募金、同窓会財団、学校開発基金はすべて教育技術を支援できます。
     </p>
 
-    <h2>Get Started</h2>
+    <h2>始めましょう</h2>
     <p>
-      If you're interested in bringing WhimsyLabs to your school through grant funding, we're here to help. Start by visiting our <a href="/grants">grants and funding page</a>. You'll find details on specific funding opportunities and how we can support your application.
+      助成金を通じてWhimsyLabsをあなたの学校に導入することに興味がある場合、私たちがお手伝いします。まず<a href="/grants">助成金と資金援助ページ</a>をご覧ください。特定の資金調達機会と、申請をどのようにサポートできるかの詳細が記載されています。
     </p>
     <p>
-      Premium science education shouldn't be reserved for wealthy schools. With the right funding and the right support, it's accessible to everyone.
+      プレミアム科学教育は裕福な学校だけのものであってはなりません。適切な資金と適切なサポートがあれば、すべての人がアクセス可能です。
     </p>
 
     <div className="references-section">
-      <h3>References</h3>
+      <h3>参考文献</h3>
       <ul className="references-list">
         <li key="ref-1">
           Finkelstein, N. D., Adams, W. K., Keller, C. J., Kohl, P. B., Perkins, K. K., Podolefsky, N. S., & Reid, S. (2010). When learning about the real world is better done virtually: A study of substituting computer simulations for laboratory equipment.
@@ -196,12 +196,12 @@ export const content = (
       </ul>
     </div>
 
-    <h2>Further Reading</h2>
+    <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtual Labs vs Physical Labs: The Real Cost Comparison</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Actually Understands Science</a></li>
-      <li><a href="/blog/data-security-edtech-vendor-questions">10 Questions to Ask EdTech Vendors About Data Security</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">イギリスの学校：VR科学ラボのために£3,000を獲得</a></li>
+      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想ラボ vs 物理ラボ：本当のコスト比較</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会おう：科学を本当に理解するAIチューター</a></li>
+      <li><a href="/blog/data-security-edtech-vendor-questions">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
     </ul>
   </>
 );

@@ -1,14 +1,14 @@
 import React from "react";
 
-export const title = "Making Premium Science Education Accessible to Every School";
-export const description = "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.";
+export const title = "Haciendo accesible la educación científica premium para todas las escuelas";
+export const description = "La EdTech premium no debería ser solo para escuelas adineradas. Descubra cómo las subvenciones y la financiación pueden llevar laboratorios virtuales con física precisa a cada aula.";
 export const keywords = [
-  "science education funding",
-  "school grants",
-  "accessible education technology",
-  "premium edtech",
-  "WhimsyLabs grants",
-  "educational equity"
+  "financiación de educación científica",
+  "subvenciones escolares",
+  "tecnología educativa accesible",
+  "EdTech premium",
+  "subvenciones WhimsyLabs",
+  "equidad educativa"
 ];
 
 export const content = (
@@ -16,168 +16,168 @@ export const content = (
     <figure className="blog-image">
       <img
         src="/images/kids_judge_bett.png"
-        alt="Students from diverse schools using WhimsyLabs virtual science lab"
+        alt="Estudiantes de diversas escuelas usando el laboratorio virtual de ciencias WhimsyLabs"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />
       <figcaption style={{ textAlign: 'center', fontStyle: 'italic', color: '#666', marginBottom: '1.5rem' }}>
-        Premium science education technology, accessible through grant funding
+        Tecnología educativa científica premium, accesible a través de financiación por subvenciones
       </figcaption>
     </figure>
 
     <p>
-      There's a pattern in educational technology that bothers us. The best tools tend to end up in schools that already have the most resources. Private schools with generous budgets get cutting-edge VR labs. State schools in affluent areas secure parent-funded extras. And everyone else? They make do with whatever's left in the budget.
+      Hay un patrón en la tecnología educativa que nos preocupa. Las mejores herramientas tienden a terminar en escuelas que ya tienen más recursos. Las escuelas privadas con presupuestos generosos obtienen laboratorios de RV de última generación. Las escuelas públicas en áreas prósperas aseguran extras financiados por los padres. ¿Y todos los demás? Se las arreglan con lo que queda en el presupuesto.
     </p>
     <p>
-      This isn't some abstract concern. Research consistently shows that access to quality educational resources affects outcomes. A <a href="https://www.nfer.ac.uk/publications/science-education-2019/" target="_blank" rel="noopener noreferrer">2019 NFER report</a> found that schools in disadvantaged areas are significantly more likely to lack adequate science equipment. The result: students from poorer backgrounds get fewer opportunities to develop practical scientific skills.
+      Esta no es una preocupación abstracta. La investigación muestra consistentemente que el acceso a recursos educativos de calidad afecta los resultados. Un <a href="https://www.nfer.ac.uk/publications/science-education-2019/" target="_blank" rel="noopener noreferrer">informe del NFER de 2019</a> encontró que las escuelas en áreas desfavorecidas tienen significativamente más probabilidades de carecer de equipamiento científico adecuado. El resultado: los estudiantes de entornos más pobres tienen menos oportunidades de desarrollar habilidades científicas prácticas.
     </p>
     <p>
-      We built WhimsyLabs to change this equation. But we quickly learned that building quality software wasn't enough. We also needed to help schools find ways to pay for it.
-    </p>
-
-    <h2>Why "Cheap" Isn't the Answer</h2>
-    <p>
-      Some EdTech companies respond to the equity problem by making cheaper products. The logic seems sound: if price is the barrier, lower the price.
-    </p>
-    <p>
-      But this approach has a serious flaw. When you cut costs aggressively, you cut quality. You get simulations that don't behave like real science. You get AI tutors that frustrate more than they help. You get platforms that crash during lessons and support teams that take weeks to respond.
-    </p>
-    <p>
-      Teachers see through this immediately. A <a href="https://doi.org/10.1007/s10956-020-09862-4" target="_blank" rel="noopener noreferrer">2020 study in the Journal of Science Education and Technology</a> found that teacher perception of technology quality directly affects how much they use it in class. Give teachers a buggy simulation, and they'll abandon it within weeks. The cheap solution becomes no solution at all.
-    </p>
-    <p>
-      We took a different approach. We built WhimsyLabs to be genuinely premium: physics-accurate simulations, AI tutoring that actually understands student struggles, real teacher support from people who know science education. Then we figured out how to get it into schools that couldn't otherwise afford it.
+      Construimos WhimsyLabs para cambiar esta ecuación. Pero rápidamente aprendimos que construir software de calidad no era suficiente. También necesitábamos ayudar a las escuelas a encontrar formas de pagarlo.
     </p>
 
-    <h2>The Real Solution: Grants and Funding</h2>
+    <h2>Por qué "Barato" no es la respuesta</h2>
     <p>
-      Here's what many schools don't realise: there's money available specifically for educational technology. You just need to know where to look.
+      Algunas empresas de EdTech responden al problema de la equidad fabricando productos más baratos. La lógica parece sólida: si el precio es la barrera, baja el precio.
+    </p>
+    <p>
+      Pero este enfoque tiene un defecto grave. Cuando recortas costos agresivamente, recortas la calidad. Obtienes simulaciones que no se comportan como ciencia real. Obtienes tutores de IA que frustran más de lo que ayudan. Obtienes plataformas que se bloquean durante las clases y equipos de soporte que tardan semanas en responder.
+    </p>
+    <p>
+      Los profesores lo detectan inmediatamente. Un <a href="https://doi.org/10.1007/s10956-020-09862-4" target="_blank" rel="noopener noreferrer">estudio de 2020 en el Journal of Science Education and Technology</a> encontró que la percepción del profesorado sobre la calidad de la tecnología afecta directamente cuánto la usan en clase. Dale a los profesores una simulación con errores y la abandonarán en semanas. La solución barata se convierte en ninguna solución.
+    </p>
+    <p>
+      Nosotros tomamos un enfoque diferente. Construimos WhimsyLabs para ser genuinamente premium: simulaciones con física precisa, tutoría de IA que realmente entiende las dificultades de los estudiantes, soporte real para profesores de personas que conocen la educación científica. Luego descubrimos cómo llevarlo a escuelas que de otro modo no podrían permitírselo.
     </p>
 
-    <h3>UK Funding Opportunities</h3>
+    <h2>La solución real: Subvenciones y financiación</h2>
     <p>
-      The <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a> programme offers UK state schools up to £3,000 for investigative STEM projects. We've worked with dozens of schools to secure these grants for VR science labs. The Royal Society provides the funding for hardware. We provide the software free of charge.
+      Esto es lo que muchas escuelas no saben: hay dinero disponible específicamente para tecnología educativa. Solo necesitas saber dónde buscar.
+    </p>
+
+    <h3>Oportunidades de financiación en el Reino Unido</h3>
+    <p>
+      El programa <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a> ofrece a las escuelas públicas del Reino Unido hasta £3,000 para proyectos STEM de investigación. Hemos trabajado con docenas de escuelas para asegurar estas subvenciones para laboratorios de ciencias de RV. La Royal Society proporciona la financiación para el hardware. Nosotros proporcionamos el software de forma gratuita.
     </p>
     <p>
-      Beyond the Royal Society, UK schools can access:
+      Más allá de la Royal Society, las escuelas del Reino Unido pueden acceder a:
     </p>
     <ul>
-      <li><strong>STEM Learning Network grants</strong> for teacher professional development and resources</li>
-      <li><strong>Institute of Physics equipment grants</strong> specifically for physics teaching</li>
-      <li><strong>Royal Society of Chemistry grants</strong> for chemistry education initiatives</li>
-      <li><strong>Local authority STEM funds</strong> that vary by region but can be substantial</li>
-      <li><strong>Multi-Academy Trust innovation budgets</strong> often reserved for technology pilots</li>
+      <li><strong>Subvenciones de STEM Learning Network</strong> para desarrollo profesional docente y recursos</li>
+      <li><strong>Subvenciones de equipamiento del Institute of Physics</strong> específicamente para la enseñanza de física</li>
+      <li><strong>Subvenciones de la Royal Society of Chemistry</strong> para iniciativas de educación química</li>
+      <li><strong>Fondos STEM de autoridades locales</strong> que varían según la región pero pueden ser sustanciales</li>
+      <li><strong>Presupuestos de innovación de Multi-Academy Trust</strong> a menudo reservados para pilotos tecnológicos</li>
     </ul>
     <p>
-      Each funding stream has its own application process, timeline, and criteria. But the common thread is that they exist to improve science education for students who might otherwise miss out.
+      Cada flujo de financiación tiene su propio proceso de solicitud, cronograma y criterios. Pero el hilo común es que existen para mejorar la educación científica de estudiantes que de otro modo podrían perdérsela.
     </p>
 
-    <h3>International Funding Sources</h3>
+    <h3>Fuentes de financiación internacionales</h3>
     <p>
-      Outside the UK, similar opportunities exist. In the US, Title II and Title IV funding can support educational technology. Many states have STEM-specific grant programmes. Private foundations like the Simons Foundation and the Gates Foundation regularly fund science education initiatives.
+      Fuera del Reino Unido, existen oportunidades similares. En EE.UU., la financiación del Título II y Título IV puede apoyar la tecnología educativa. Muchos estados tienen programas de subvenciones específicos para STEM. Fundaciones privadas como la Simons Foundation y la Gates Foundation financian regularmente iniciativas de educación científica.
     </p>
     <p>
-      European schools can access Erasmus+ funding for innovative educational projects. Australian schools have the STEM Professionals in Schools programme. Singapore's Ministry of Education runs technology adoption grants. The specifics vary, but the principle remains: governments and foundations want to fund quality science education.
-    </p>
-
-    <h2>How WhimsyLabs Supports Grant Applications</h2>
-    <p>
-      We don't just tell schools that grants exist. We actively help them apply.
+      Las escuelas europeas pueden acceder a financiación Erasmus+ para proyectos educativos innovadores. Las escuelas australianas tienen el programa STEM Professionals in Schools. El Ministerio de Educación de Singapur gestiona subvenciones para adopción tecnológica. Los detalles varían, pero el principio permanece: los gobiernos y las fundaciones quieren financiar educación científica de calidad.
     </p>
 
-    <h3>Free Demo Access for Applications</h3>
+    <h2>Cómo WhimsyLabs apoya las solicitudes de subvenciones</h2>
     <p>
-      Grant applications are stronger when reviewers can see exactly what you're proposing. We provide free demo access so you can include screenshots, student feedback, and concrete details about how WhimsyLabs works. Some of our schools have even run pilot lessons and included student outcome data in their applications.
+      No solo les decimos a las escuelas que existen subvenciones. Las ayudamos activamente a solicitarlas.
     </p>
 
-    <h3>Application Support</h3>
+    <h3>Acceso de demostración gratuito para solicitudes</h3>
     <p>
-      We've seen enough successful (and unsuccessful) grant applications to know what works. Our team can review your draft, suggest improvements, and help you frame the educational case for virtual labs. This isn't ghostwriting. It's the kind of support that peer reviewers and grant officers actually find valuable.
+      Las solicitudes de subvenciones son más sólidas cuando los revisores pueden ver exactamente lo que estás proponiendo. Proporcionamos acceso de demostración gratuito para que puedas incluir capturas de pantalla, comentarios de estudiantes y detalles concretos sobre cómo funciona WhimsyLabs. Algunas de nuestras escuelas incluso han realizado clases piloto e incluido datos de resultados de estudiantes en sus solicitudes.
     </p>
 
-    <h3>WhimsyLabs: Your STEM Partner</h3>
+    <h3>Apoyo en la solicitud</h3>
     <p>
-      Some grants, like the Royal Society Partnership Grants, require a STEM partner from industry or academia. <strong>WhimsyLabs fulfils this requirement.</strong> Our team includes PhD scientists and researchers who can serve as your official STEM partner, making your application complete without needing to find external contacts.
+      Hemos visto suficientes solicitudes de subvenciones exitosas (y no exitosas) para saber qué funciona. Nuestro equipo puede revisar tu borrador, sugerir mejoras y ayudarte a enmarcar el caso educativo para los laboratorios virtuales. Esto no es escritura fantasma. Es el tipo de apoyo que los revisores pares y los funcionarios de subvenciones realmente encuentran valioso.
     </p>
 
-    <h3>Free Software for Funded Projects</h3>
+    <h3>WhimsyLabs: Tu socio STEM</h3>
     <p>
-      When your grant is approved, WhimsyLabs software comes at no additional cost. Your funding goes toward hardware and any other project expenses. We've chosen this model because we believe it maximises the impact of educational grants.
+      Algunas subvenciones, como las Royal Society Partnership Grants, requieren un socio STEM de la industria o la academia. <strong>WhimsyLabs cumple este requisito.</strong> Nuestro equipo incluye científicos con doctorado e investigadores que pueden servir como tu socio STEM oficial, completando tu solicitud sin necesidad de encontrar contactos externos.
     </p>
 
-    <h2>What "Premium" Actually Means</h2>
+    <h3>Software gratuito para proyectos financiados</h3>
     <p>
-      When we say WhimsyLabs is premium, we mean something specific. Not expensive for its own sake. Not fancy features that look good in demos but don't help learning. Premium means built properly, in ways that genuinely improve science education.
+      Cuando tu subvención es aprobada, el software WhimsyLabs no tiene costo adicional. Tu financiación va hacia hardware y otros gastos del proyecto. Hemos elegido este modelo porque creemos que maximiza el impacto de las subvenciones educativas.
     </p>
 
-    <h3>Physics-Accurate Simulation</h3>
+    <h2>Lo que "Premium" realmente significa</h2>
     <p>
-      Our virtual labs run on a physics engine. When students pour one solution into another, they see realistic mixing behaviour. When they heat a substance, temperature changes follow actual thermodynamics. When they make measurement errors, those errors propagate through calculations just like they would in a real lab.
-    </p>
-    <p>
-      This matters because science education isn't just about getting the right answer. It's about understanding how the physical world behaves. Research shows that <a href="https://doi.org/10.1103/PhysRevSTPER.6.020108" target="_blank" rel="noopener noreferrer">physics-based simulations transfer to real-world understanding</a> in ways that simplified animations do not.
+      Cuando decimos que WhimsyLabs es premium, queremos decir algo específico. No caro por sí mismo. No características elegantes que se ven bien en demos pero no ayudan al aprendizaje. Premium significa construido correctamente, de formas que genuinamente mejoran la educación científica.
     </p>
 
-    <h3>AI Tutoring That Works</h3>
+    <h3>Simulación con física precisa</h3>
     <p>
-      WhimsyCat, our AI tutor, watches what students actually do in the virtual lab. It notices when someone is struggling and offers help. It detects when students are frustrated and adjusts its approach. It provides feedback on technique, not just on answers.
+      Nuestros laboratorios virtuales funcionan con un motor de física. Cuando los estudiantes vierten una solución en otra, ven un comportamiento de mezcla realista. Cuando calientan una sustancia, los cambios de temperatura siguen la termodinámica real. Cuando cometen errores de medición, esos errores se propagan a través de los cálculos igual que lo harían en un laboratorio real.
     </p>
     <p>
-      Most AI tutors are glorified chatbots. They respond to what students type, not what students do. WhimsyCat is different because it's integrated with the simulation itself. It knows that the student just added too much acid. It knows they're repeating the same mistake. It can intervene at exactly the right moment.
-    </p>
-
-    <h3>Actual Teacher Support</h3>
-    <p>
-      When you contact WhimsyLabs support, you talk to someone who understands science teaching. Not a script reader. Not a chatbot. A person who can help you set up experiments, troubleshoot technical issues, and adapt the platform to your curriculum.
-    </p>
-    <p>
-      We know this matters because we hear it from teachers constantly. The number one complaint about EdTech is support that doesn't understand education. We've built our team specifically to avoid that problem.
+      Esto importa porque la educación científica no se trata solo de obtener la respuesta correcta. Se trata de entender cómo se comporta el mundo físico. La investigación muestra que <a href="https://doi.org/10.1103/PhysRevSTPER.6.020108" target="_blank" rel="noopener noreferrer">las simulaciones basadas en física se transfieren a la comprensión del mundo real</a> de formas que las animaciones simplificadas no pueden.
     </p>
 
-    <h3>Data Privacy Done Right</h3>
+    <h3>Tutoría de IA que funciona</h3>
     <p>
-      Student data stays with the school. We don't use it for AI training. We don't sell it to third parties. We don't even store more than we need to make the platform work.
+      WhimsyCat, nuestro tutor de IA, observa lo que los estudiantes realmente hacen en el laboratorio virtual. Nota cuando alguien está luchando y ofrece ayuda. Detecta cuando los estudiantes están frustrados y ajusta su enfoque. Proporciona retroalimentación sobre la técnica, no solo sobre las respuestas.
     </p>
     <p>
-      This costs more than the alternative. Aggregating user data and monetising it is how many EdTech companies subsidise their pricing. We've chosen not to do that because students deserve privacy, especially when they're learning.
+      La mayoría de los tutores de IA son chatbots glorificados. Responden a lo que los estudiantes escriben, no a lo que los estudiantes hacen. WhimsyCat es diferente porque está integrado con la simulación misma. Sabe que el estudiante acaba de agregar demasiado ácido. Sabe que están repitiendo el mismo error. Puede intervenir exactamente en el momento adecuado.
     </p>
 
-    <h2>Success Stories</h2>
+    <h3>Soporte real para profesores</h3>
     <p>
-      We've worked with over fifty schools to secure grant funding for virtual labs. Some highlights:
+      Cuando contactas al soporte de WhimsyLabs, hablas con alguien que entiende la enseñanza de ciencias. No un lector de guiones. No un chatbot. Una persona que puede ayudarte a configurar experimentos, solucionar problemas técnicos y adaptar la plataforma a tu currículo.
+    </p>
+    <p>
+      Sabemos que esto importa porque lo escuchamos de los profesores constantemente. La queja número uno sobre EdTech es el soporte que no entiende la educación. Hemos construido nuestro equipo específicamente para evitar ese problema.
+    </p>
+
+    <h3>Privacidad de datos hecha correctamente</h3>
+    <p>
+      Los datos de los estudiantes permanecen con la escuela. No los usamos para entrenar IA. No los vendemos a terceros. Ni siquiera almacenamos más de lo que necesitamos para que la plataforma funcione.
+    </p>
+    <p>
+      Esto cuesta más que la alternativa. Agregar datos de usuarios y monetizarlos es como muchas empresas de EdTech subsidian sus precios. Hemos elegido no hacer eso porque los estudiantes merecen privacidad, especialmente cuando están aprendiendo.
+    </p>
+
+    <h2>Historias de éxito</h2>
+    <p>
+      Hemos trabajado con más de cincuenta escuelas para asegurar financiación de subvenciones para laboratorios virtuales. Algunos destacados:
     </p>
     <ul>
-      <li>A comprehensive school in the Midlands received Royal Society funding and now runs VR chemistry practicals for Year 10 and 11 students. Their GCSE practical assessment results improved noticeably in the first year.</li>
-      <li>A school in Scotland used local authority STEM funding to pilot WhimsyLabs in their physics department. After the pilot, they expanded to chemistry and biology with Multi-Academy Trust support.</li>
-      <li>An international school in Germany accessed Erasmus+ funding for a cross-border science education project, using WhimsyLabs as the common platform between partner schools.</li>
+      <li>Una escuela secundaria en los Midlands recibió financiación de la Royal Society y ahora realiza prácticas de química de RV para estudiantes de 10º y 11º año. Sus resultados en las evaluaciones prácticas de GCSE mejoraron notablemente en el primer año.</li>
+      <li>Una escuela en Escocia usó fondos STEM de la autoridad local para pilotar WhimsyLabs en su departamento de física. Después del piloto, se expandieron a química y biología con apoyo del Multi-Academy Trust.</li>
+      <li>Una escuela internacional en Alemania accedió a financiación Erasmus+ para un proyecto de educación científica transfronteriza, usando WhimsyLabs como la plataforma común entre las escuelas asociadas.</li>
     </ul>
     <p>
-      These aren't wealthy schools with unlimited budgets. They're ordinary schools that found funding and made it work.
+      Estas no son escuelas adineradas con presupuestos ilimitados. Son escuelas ordinarias que encontraron financiación y lo hicieron funcionar.
     </p>
 
-    <h2>Does Your School Qualify?</h2>
+    <h2>¿Tu escuela califica?</h2>
     <p>
-      Most schools have access to some form of grant funding for educational technology. The question is which funding streams apply to your specific situation.
+      La mayoría de las escuelas tienen acceso a alguna forma de financiación por subvención para tecnología educativa. La pregunta es qué flujos de financiación aplican a tu situación específica.
     </p>
     <p>
-      UK state schools are almost always eligible for Royal Society Partnership Grants. With WhimsyLabs as your STEM partner and a well-designed investigative project, you have a strong shot at funding.
+      Las escuelas públicas del Reino Unido casi siempre son elegibles para las Royal Society Partnership Grants. Con WhimsyLabs como tu socio STEM y un proyecto de investigación bien diseñado, tienes buenas posibilidades de obtener financiación.
     </p>
     <p>
-      International schools should check with their national education ministry, local foundations, and any international school networks they belong to. Many have innovation funds specifically for technology adoption.
+      Las escuelas internacionales deben consultar con su ministerio de educación nacional, fundaciones locales y cualquier red de escuelas internacionales a la que pertenezcan. Muchas tienen fondos de innovación específicamente para adopción tecnológica.
     </p>
     <p>
-      Independent schools often have their own routes. Parent fundraising, alumni foundations, and school development funds can all support educational technology.
+      Las escuelas independientes a menudo tienen sus propias rutas. Recaudación de fondos de padres, fundaciones de ex alumnos y fondos de desarrollo escolar pueden apoyar la tecnología educativa.
     </p>
 
-    <h2>Get Started</h2>
+    <h2>Comienza</h2>
     <p>
-      If you're interested in bringing WhimsyLabs to your school through grant funding, we're here to help. Start by visiting our <a href="/grants">grants and funding page</a>. You'll find details on specific funding opportunities and how we can support your application.
+      Si estás interesado en llevar WhimsyLabs a tu escuela a través de financiación por subvención, estamos aquí para ayudar. Comienza visitando nuestra <a href="/grants">página de subvenciones y financiación</a>. Encontrarás detalles sobre oportunidades de financiación específicas y cómo podemos apoyar tu solicitud.
     </p>
     <p>
-      Premium science education shouldn't be reserved for wealthy schools. With the right funding and the right support, it's accessible to everyone.
+      La educación científica premium no debería estar reservada para escuelas adineradas. Con la financiación adecuada y el apoyo correcto, es accesible para todos.
     </p>
 
     <div className="references-section">
-      <h3>References</h3>
+      <h3>Referencias</h3>
       <ul className="references-list">
         <li key="ref-1">
           Finkelstein, N. D., Adams, W. K., Keller, C. J., Kohl, P. B., Perkins, K. K., Podolefsky, N. S., & Reid, S. (2010). When learning about the real world is better done virtually: A study of substituting computer simulations for laboratory equipment.
@@ -196,12 +196,12 @@ export const content = (
       </ul>
     </div>
 
-    <h2>Further Reading</h2>
+    <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtual Labs vs Physical Labs: The Real Cost Comparison</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Actually Understands Science</a></li>
-      <li><a href="/blog/data-security-edtech-vendor-questions">10 Questions to Ask EdTech Vendors About Data Security</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias de RV</a></li>
+      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios virtuales vs laboratorios físicos: La comparación real de costos</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que realmente entiende la ciencia</a></li>
+      <li><a href="/blog/data-security-edtech-vendor-questions">10 preguntas que debes hacer a los proveedores de EdTech sobre seguridad de datos</a></li>
     </ul>
   </>
 );
