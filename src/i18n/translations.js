@@ -82,7 +82,7 @@ const translations = {
       badges: {
         gdpr: "GDPR Compliant",
         studentData: "Student Data Protected",
-        ukBased: "UK-Based Processing",
+        ukBased: "Locally-Based Processing",
         noSale: "Data Never Sold",
       },
       
@@ -122,7 +122,7 @@ const translations = {
           consent: "We require verifiable parental or school consent before collecting data from children under 13",
           minimal: "We collect only the minimum data necessary for educational purposes",
           noMarketing: "We never use children's data for marketing, advertising, or profiling",
-          parentRights: "Parents and schools can review, download, and delete children's data at any time",
+          parentRights: "Parents can review and download their children's data; deletion requests are processed in accordance with school data retention policies",
           deletion: "Data is automatically deleted when no longer needed for educational purposes",
         },
       },
@@ -259,7 +259,7 @@ const translations = {
           item2: "We require parental or school consent for users under 13",
           item3: "We do not use children's data for advertising or marketing",
           item4: "We provide enhanced privacy protections for student data",
-          item5: "We allow parents and schools to review and delete children's data",
+          item5: "We allow parents and schools to review children's data; deletion follows school retention policies",
         },
         international: {
           title: "International Data Transfers",

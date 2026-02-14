@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-14T21:17:27.450Z
+// Generated on 2026-02-14T22:13:32.560Z
 
 module.exports = {
   "en": [
