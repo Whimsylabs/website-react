@@ -1,8 +1,8 @@
-// Spanish - Post 20: Evaluación con IA
+// Spanish - Post 20: AI Assessment
 import React from "react";
 
-export const title = "Detección IA Falla. Evaluación por Procesos Funciona.";
-export const description = "El 82% de los educadores teme el engaño con IA, pero las herramientas de detección fallan. La evaluación práctica basada en procesos ofrece un mejor camino.";
+export const title = "La detección de IA no funciona. La evaluación basada en procesos sí.";
+export const description = "El 82% de los educadores teme el fraude con IA, pero las herramientas de detección fallan. La evaluación práctica basada en procesos ofrece un mejor camino.";
 export const keywords = [
   "evaluación con IA",
   "evaluación formativa IA",

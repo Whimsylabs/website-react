@@ -1,19 +1,19 @@
-// German - Post 20: KI-Bewertung
+// German - Post 20: AI Assessment
 import React from "react";
 
-export const title = "KI-Erkennung versagt. Prozessbasierte Bewertung hilft.";
-export const description = "82% der Lehrkräfte befürchten KI-Betrug, aber Erkennungstools versagen. Prozessbasierte praktische Bewertung bietet einen besseren Weg nach vorne.";
+export const title = "KI-Erkennung funktioniert nicht. Prozessbasierte Bewertung schon.";
+export const description = "82% der Pädagogen befürchten KI-Betrug, doch Erkennungstools versagen. Prozessbasierte praktische Bewertung bietet einen besseren Weg.";
 export const keywords = [
-  "KI-Bewertung",
+  "KI Bewertung",
   "formative Bewertung KI",
   "KI-Erkennung Bildung",
   "Pearson Bewertungsforschung",
-  "virtuelle Labor-Bewertung",
+  "virtuelles Labor Benotung",
   "prozessbasierte Bewertung",
   "KI-resistente Bewertung",
   "naturwissenschaftliche Bildung KI",
   "praktische Bewertung",
-  "Lehrer KI-Bewertung"
+  "Lehrer KI Benotung"
 ];
 
 export const content = null; // Content loaded from main Post20.js

@@ -40,23 +40,23 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Virtual Science Lab FAQ | WhimsyLabs Questions & Answers",
-      description: "Get expert answers to common questions about WhimsyLabs virtual laboratory software, implementation, pricing, and how our STEM simulations enhance education.",
+      title: "Virtual Lab & Online Lab Simulation FAQ | WhimsyLabs",
+      description: "Get expert answers to common questions about WhimsyLabs virtual laboratory and online lab simulation software, implementation, pricing, and STEM education.",
       subtitle:
-        "Find answers to common questions about our virtual lab software and how it can transform STEM education",
-      heading: "Virtual Science Lab: Frequently Asked Questions",
+        "Find answers to common questions about our virtual lab and online lab simulation software for STEM education",
+      heading: "Virtual Lab & Online Lab Simulation: FAQ",
     },
 
     // Blog
     blog: {
-      title: "Science Education Blog | WhimsyLabs Virtual Lab Insights",
-      description: "Stay updated with the latest in virtual laboratory technology, STEM education trends, teaching strategies, and WhimsyLabs platform developments.",
+      title: "STEM Education Blog | WhimsyLabs Virtual Lab Insights",
+      description: "Stay updated with the latest in virtual laboratory technology, STEM education trends, AI in science education, and WhimsyLabs platform developments.",
     },
 
     // Services
     services: {
-      title: "Virtual Lab for Schools | WhimsyLabs Education Services",
-      description: "Comprehensive virtual laboratory services including custom lab development, curriculum integration, teacher training, and technical support for schools.",
+      title: "K-12 Virtual Lab Software | Classroom Lab Solutions | WhimsyLabs",
+      description: "Comprehensive K-12 virtual laboratory software including classroom lab solutions, curriculum integration, teacher training, and technical support for schools.",
     },
 
     // Privacy

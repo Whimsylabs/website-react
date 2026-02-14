@@ -64,10 +64,14 @@ function checkKeywordPresence(html, keyword) {
     locations.title = true;
   }
 
-  // Check H1
-  const h1Match = html.match(/<h1[^>]*>([^<]+)<\/h1>/i);
-  if (h1Match && h1Match[1].toLowerCase().includes(lowerKeyword)) {
-    locations.h1 = true;
+  // Check H1 (handles inner HTML like <em> tags)
+  const h1Match = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  if (h1Match) {
+    // Strip HTML tags to get text content
+    const h1Text = h1Match[1].replace(/<[^>]+>/g, '').toLowerCase();
+    if (h1Text.includes(lowerKeyword)) {
+      locations.h1 = true;
+    }
   }
 
   // Check meta description

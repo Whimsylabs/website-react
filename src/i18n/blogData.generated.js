@@ -1,8 +1,106 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-08T22:51:56.050Z
+// Generated on 2026-02-10T01:04:15.376Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post30",
+      "slug": "premium-science-education-accessible-grants",
+      "title": "Making Premium Science Education Accessible to Every School",
+      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
+      "keywords": [
+        "science education funding",
+        "school grants",
+        "accessible education technology",
+        "premium edtech",
+        "WhimsyLabs grants",
+        "educational equity"
+      ],
+      "date": "2026-02-26",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post29",
+      "slug": "virtual-physics-lab-simulations-teach",
+      "title": "Virtual Physics Lab: Simulations That Actually Teach",
+      "description": "Why physics is uniquely suited to simulation, what makes bad physics sims harmful, and how a physics-accurate engine transforms learning.",
+      "keywords": [
+        "virtual physics lab",
+        "physics simulation",
+        "online physics experiments",
+        "physics practical",
+        "mechanics simulation",
+        "forces simulation"
+      ],
+      "date": "2026-02-23",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post28",
+      "slug": "virtual-biology-lab-dissections-microscopy",
+      "title": "Virtual Biology Lab: Dissections, Microscopy, and More",
+      "description": "Virtual biology labs offer unlimited dissection practice, perfect microscopy specimens, and accessibility for all students. Learn how virtual practicals supplement and enhance real lab work.",
+      "keywords": null,
+      "date": "2026-02-20",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post27",
+      "slug": "ai-science-tutor-classroom-what-works",
+      "title": "AI Science Tutors in the Classroom: What Actually Works",
+      "description": "A realistic look at what AI tutors can and cannot do in science education. Learn how WhimsyCat observes technique, detects frustration, and supports teachers.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post26",
+      "slug": "virtual-lab-software-guide-2026",
+      "title": "The Complete Virtual Lab Software Guide for 2026",
+      "description": "A comprehensive buyer's guide to virtual lab software in 2026. Compare solution types, evaluation criteria, and learn how to make the business case to leadership.",
+      "keywords": null,
+      "date": "2026-02-14",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post25",
+      "slug": "virtual-chemistry-lab-teachers-guide",
+      "title": "Virtual Chemistry Lab: A Teacher's Complete Guide",
+      "description": "A practical guide for chemistry teachers on integrating virtual labs into your curriculum. Covers titrations, hazardous reactions, and getting students comfortable with simulations.",
+      "keywords": [
+        "virtual chemistry lab",
+        "online chemistry experiments",
+        "chemistry simulation",
+        "titration simulation",
+        "chemistry practical",
+        "virtual titration"
+      ],
+      "date": "2026-02-11",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post24",
+      "slug": "how-to-choose-virtual-lab-software-school",
+      "title": "How to Choose Virtual Lab Software for Your School",
+      "description": "A practical buyer's guide for school decision-makers. Learn what features matter in virtual lab software and what questions to ask vendors.",
+      "keywords": [
+        "virtual lab software",
+        "school science software",
+        "how to choose",
+        "edtech buyer's guide",
+        "virtual science labs",
+        "lab software comparison"
+      ],
+      "date": "2026-02-09",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post23",
       "slug": "teachers-are-experts-custom-experiment-designer",
@@ -303,6 +401,104 @@ module.exports = {
   ],
   "de": [
     {
+      "id": "post30",
+      "slug": "premium-science-education-accessible-grants",
+      "title": "Premium-Naturwissenschaftsbildung für jede Schule zugänglich machen",
+      "description": "Premium-EdTech sollte nicht nur wohlhabenden Schulen vorbehalten sein. Erfahren Sie, wie Förderungen und Finanzierungen physikgenaue virtuelle Labore in jedes Klassenzimmer bringen können.",
+      "keywords": [
+        "Bildungsfinanzierung Naturwissenschaften",
+        "Schulfördermittel",
+        "zugängliche Bildungstechnologie",
+        "Premium EdTech",
+        "WhimsyLabs Förderungen",
+        "Bildungsgerechtigkeit"
+      ],
+      "date": "2026-02-26",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post29",
+      "slug": "virtual-physics-lab-simulations-teach",
+      "title": "Virtuelles Physiklabor: Simulationen, die wirklich lehren",
+      "description": "Warum Physik einzigartig für Simulationen geeignet ist, was schlechte Physiksimulationen schädlich macht und wie eine physikgenaue Engine das Lernen transformiert.",
+      "keywords": [
+        "virtuelles Physiklabor",
+        "Physiksimulation",
+        "Online-Physikexperimente",
+        "Physikpraktikum",
+        "Mechaniksimulation",
+        "Kräftesimulation"
+      ],
+      "date": "2026-02-23",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post28",
+      "slug": "virtual-biology-lab-dissections-microscopy",
+      "title": "Virtuelles Biologielabor: Sezieren, Mikroskopie und mehr",
+      "description": "Virtuelle Biologielabore bieten unbegrenzte Sezierübungen, perfekte Mikroskopie-Präparate und Zugänglichkeit für alle Schüler. Erfahren Sie, wie virtuelle Praktika die echte Laborarbeit ergänzen.",
+      "keywords": null,
+      "date": "2026-02-20",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post27",
+      "slug": "ai-science-tutor-classroom-what-works",
+      "title": "KI-Tutoren im Naturwissenschaftsunterricht: Was Funktioniert",
+      "description": "Ein realistischer Blick auf das, was KI-Tutoren im naturwissenschaftlichen Unterricht leisten können und was nicht. Erfahren Sie, wie WhimsyCat Technik beobachtet, Frustration erkennt und Lehrkräfte unterstützt.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post26",
+      "slug": "virtual-lab-software-guide-2026",
+      "title": "Der komplette Leitfaden für virtuelle Laborsoftware 2026",
+      "description": "Ein umfassender Einkaufsleitfaden für virtuelle Laborsoftware 2026. Vergleichen Sie Lösungstypen, Bewertungskriterien und lernen Sie, wie Sie den Business Case für die Führungsebene erstellen.",
+      "keywords": null,
+      "date": "2026-02-14",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post25",
+      "slug": "virtual-chemistry-lab-teachers-guide",
+      "title": "Virtuelles Chemielabor: Ein vollständiger Leitfaden für Lehrkräfte",
+      "description": "Ein praktischer Leitfaden für Chemielehrer zur Integration virtueller Labore in Ihren Lehrplan. Behandelt Titrationen, gefährliche Reaktionen und wie Schüler sich mit Simulationen vertraut machen.",
+      "keywords": [
+        "virtuelles Chemielabor",
+        "Online-Chemie-Experimente",
+        "Chemiesimulation",
+        "Titrationssimulation",
+        "Chemiepraktikum",
+        "virtuelle Titration"
+      ],
+      "date": "2026-02-11",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post24",
+      "slug": "how-to-choose-virtual-lab-software-school",
+      "title": "So wählen Sie die richtige virtuelle Laborsoftware für Ihre Schule",
+      "description": "Ein praktischer Einkaufsführer für Schulentscheider. Erfahren Sie, welche Funktionen bei virtueller Laborsoftware wichtig sind und welche Fragen Sie Anbietern stellen sollten.",
+      "keywords": [
+        "virtuelle Laborsoftware",
+        "Schul-Naturwissenschaftssoftware",
+        "Auswahlkriterien",
+        "EdTech-Einkaufsführer",
+        "virtuelle Naturwissenschaftslabore",
+        "Laborsoftware-Vergleich"
+      ],
+      "date": "2026-02-09",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
       "id": "post23",
       "slug": "teachers-are-experts-custom-experiment-designer",
       "title": "Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.",
@@ -343,19 +539,19 @@ module.exports = {
     {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
-      "title": "KI-Erkennung versagt. Prozessbasierte Bewertung hilft.",
-      "description": "82% der Lehrkräfte befürchten KI-Betrug, aber Erkennungstools versagen. Prozessbasierte praktische Bewertung bietet einen besseren Weg nach vorne.",
+      "title": "KI-Erkennung funktioniert nicht. Prozessbasierte Bewertung schon.",
+      "description": "82% der Pädagogen befürchten KI-Betrug, doch Erkennungstools versagen. Prozessbasierte praktische Bewertung bietet einen besseren Weg.",
       "keywords": [
-        "KI-Bewertung",
+        "KI Bewertung",
         "formative Bewertung KI",
         "KI-Erkennung Bildung",
         "Pearson Bewertungsforschung",
-        "virtuelle Labor-Bewertung",
+        "virtuelles Labor Benotung",
         "prozessbasierte Bewertung",
         "KI-resistente Bewertung",
         "naturwissenschaftliche Bildung KI",
         "praktische Bewertung",
-        "Lehrer KI-Bewertung"
+        "Lehrer KI Benotung"
       ],
       "date": "2026-02-04",
       "hasFullTranslation": false,
@@ -688,6 +884,104 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post30",
+      "slug": "premium-science-education-accessible-grants",
+      "title": "Rendre l'éducation scientifique premium accessible à toutes les écoles",
+      "description": "La technologie éducative premium ne devrait pas être réservée aux écoles aisées. Découvrez comment les subventions peuvent apporter des laboratoires virtuels physiquement précis dans chaque classe.",
+      "keywords": [
+        "financement éducation scientifique",
+        "subventions scolaires",
+        "technologie éducative accessible",
+        "edtech premium",
+        "subventions WhimsyLabs",
+        "équité éducative"
+      ],
+      "date": "2026-02-26",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post29",
+      "slug": "virtual-physics-lab-simulations-teach",
+      "title": "Laboratoire Virtuel de Physique : Simulations Efficaces",
+      "description": "Pourquoi la physique est particulièrement adaptée à la simulation, ce qui rend les mauvaises simulations nuisibles et comment un moteur physique précis transforme l'apprentissage.",
+      "keywords": [
+        "laboratoire virtuel de physique",
+        "simulation de physique",
+        "expériences de physique en ligne",
+        "travaux pratiques de physique",
+        "simulation de mécanique",
+        "simulation des forces"
+      ],
+      "date": "2026-02-23",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post28",
+      "slug": "virtual-biology-lab-dissections-microscopy",
+      "title": "Laboratoire Virtuel de Biologie : Dissections, Microscopie et Plus",
+      "description": "Les laboratoires virtuels de biologie offrent une pratique illimitée de la dissection, des spécimens parfaits pour la microscopie et l'accessibilité pour tous les étudiants. Découvrez comment les travaux pratiques virtuels complètent le travail en laboratoire réel.",
+      "keywords": null,
+      "date": "2026-02-20",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post27",
+      "slug": "ai-science-tutor-classroom-what-works",
+      "title": "Tuteurs IA en sciences dans la classe : ce qui fonctionne vraiment",
+      "description": "Un regard réaliste sur ce que les tuteurs IA peuvent et ne peuvent pas faire dans l'enseignement des sciences. Découvrez comment WhimsyCat observe les techniques, détecte la frustration et soutient les enseignants.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post26",
+      "slug": "virtual-lab-software-guide-2026",
+      "title": "Le guide complet des logiciels de laboratoire virtuel pour 2026",
+      "description": "Un guide d'achat complet pour les logiciels de laboratoire virtuel en 2026. Comparez les types de solutions, les critères d'évaluation et apprenez à présenter le cas commercial à la direction.",
+      "keywords": null,
+      "date": "2026-02-14",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post25",
+      "slug": "virtual-chemistry-lab-teachers-guide",
+      "title": "Laboratoire Virtuel de Chimie : Guide Complet pour les Enseignants",
+      "description": "Un guide pratique pour les professeurs de chimie sur l'intégration des laboratoires virtuels dans votre programme. Couvre les titrages, les réactions dangereuses et comment familiariser les élèves avec les simulations.",
+      "keywords": [
+        "laboratoire virtuel de chimie",
+        "expériences de chimie en ligne",
+        "simulation de chimie",
+        "simulation de titrage",
+        "travaux pratiques de chimie",
+        "titrage virtuel"
+      ],
+      "date": "2026-02-11",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post24",
+      "slug": "how-to-choose-virtual-lab-software-school",
+      "title": "Choisir un Logiciel de Laboratoire Virtuel pour Écoles",
+      "description": "Un guide d'achat pratique pour les décideurs scolaires. Découvrez les fonctionnalités importantes dans les logiciels de laboratoire virtuel et les questions à poser aux fournisseurs.",
+      "keywords": [
+        "logiciel de laboratoire virtuel",
+        "logiciel scientifique scolaire",
+        "comment choisir",
+        "guide d'achat EdTech",
+        "laboratoires virtuels de sciences",
+        "comparaison de logiciels de laboratoire"
+      ],
+      "date": "2026-02-09",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post23",
       "slug": "teachers-are-experts-custom-experiment-designer",
       "title": "Les Enseignants Sont les Experts. Nous Créons les Outils.",
@@ -728,7 +1022,7 @@ module.exports = {
     {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
-      "title": "La Détection d'IA Échoue. L'Évaluation Processus Gagne.",
+      "title": "Détection IA Inefficace. Évaluation par Processus, Oui.",
       "description": "82% des éducateurs craignent la triche par IA, mais les outils de détection échouent. L'évaluation pratique basée sur les processus offre une meilleure voie.",
       "keywords": [
         "évaluation IA",
@@ -736,7 +1030,7 @@ module.exports = {
         "détection IA éducation",
         "recherche évaluation Pearson",
         "notation laboratoire virtuel",
-        "évaluation basée sur processus",
+        "évaluation basée sur les processus",
         "évaluation résistante à l'IA",
         "enseignement scientifique IA",
         "évaluation pratique",
@@ -1073,6 +1367,104 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post30",
+      "slug": "premium-science-education-accessible-grants",
+      "title": "Educación Científica Premium Accesible para Todas las Escuelas",
+      "description": "La tecnología educativa premium no debería ser solo para escuelas ricas. Descubre cómo las becas y la financiación pueden llevar laboratorios virtuales con física precisa a cada aula.",
+      "keywords": [
+        "financiación educación científica",
+        "becas escolares",
+        "tecnología educativa accesible",
+        "edtech premium",
+        "becas WhimsyLabs",
+        "equidad educativa"
+      ],
+      "date": "2026-02-26",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post29",
+      "slug": "virtual-physics-lab-simulations-teach",
+      "title": "Laboratorio Virtual de Física: Simulaciones que Realmente Enseñan",
+      "description": "Por qué la física es especialmente adecuada para la simulación, qué hace que las malas simulaciones de física sean perjudiciales y cómo un motor preciso transforma el aprendizaje.",
+      "keywords": [
+        "laboratorio virtual de física",
+        "simulación de física",
+        "experimentos de física en línea",
+        "prácticas de física",
+        "simulación de mecánica",
+        "simulación de fuerzas"
+      ],
+      "date": "2026-02-23",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post28",
+      "slug": "virtual-biology-lab-dissections-microscopy",
+      "title": "Laboratorio Virtual de Biología: Disecciones, Microscopía y Más",
+      "description": "Los laboratorios virtuales de biología ofrecen práctica ilimitada de disección, especímenes perfectos para microscopía y accesibilidad para todos los estudiantes. Descubre cómo las prácticas virtuales complementan el trabajo de laboratorio real.",
+      "keywords": null,
+      "date": "2026-02-20",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post27",
+      "slug": "ai-science-tutor-classroom-what-works",
+      "title": "Tutores de IA para ciencias en el aula: lo que realmente funciona",
+      "description": "Una mirada realista a lo que los tutores de IA pueden y no pueden hacer en la educación científica. Descubra cómo WhimsyCat observa técnicas, detecta frustración y apoya a los docentes.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post26",
+      "slug": "virtual-lab-software-guide-2026",
+      "title": "Guía completa de software de laboratorio virtual para 2026",
+      "description": "Una guía completa para compradores de software de laboratorio virtual en 2026. Compare tipos de soluciones, criterios de evaluación y aprenda a presentar el caso de negocio a la dirección.",
+      "keywords": null,
+      "date": "2026-02-14",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post25",
+      "slug": "virtual-chemistry-lab-teachers-guide",
+      "title": "Laboratorio Virtual de Química: Guía Completa para Profesores",
+      "description": "Una guía práctica para profesores de química sobre cómo integrar laboratorios virtuales en su currículo. Cubre titulaciones, reacciones peligrosas y cómo familiarizar a los estudiantes con las simulaciones.",
+      "keywords": [
+        "laboratorio virtual de química",
+        "experimentos de química en línea",
+        "simulación de química",
+        "simulación de titulación",
+        "prácticas de química",
+        "titulación virtual"
+      ],
+      "date": "2026-02-11",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post24",
+      "slug": "how-to-choose-virtual-lab-software-school",
+      "title": "Cómo elegir software de laboratorio virtual para tu centro educativo",
+      "description": "Una guía práctica de compra para responsables de centros educativos. Aprende qué características importan en el software de laboratorio virtual y qué preguntas hacer a los proveedores.",
+      "keywords": [
+        "software de laboratorio virtual",
+        "software de ciencias escolar",
+        "cómo elegir",
+        "guía de compra EdTech",
+        "laboratorios virtuales de ciencias",
+        "comparación de software de laboratorio"
+      ],
+      "date": "2026-02-09",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post23",
       "slug": "teachers-are-experts-custom-experiment-designer",
       "title": "Los Profesores Son Expertos. Nosotros Damos Herramientas.",
@@ -1113,8 +1505,8 @@ module.exports = {
     {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
-      "title": "Detección IA Falla. Evaluación por Procesos Funciona.",
-      "description": "El 82% de los educadores teme el engaño con IA, pero las herramientas de detección fallan. La evaluación práctica basada en procesos ofrece un mejor camino.",
+      "title": "La detección de IA no funciona. La evaluación basada en procesos sí.",
+      "description": "El 82% de los educadores teme el fraude con IA, pero las herramientas de detección fallan. La evaluación práctica basada en procesos ofrece un mejor camino.",
       "keywords": [
         "evaluación con IA",
         "evaluación formativa IA",
@@ -1458,6 +1850,104 @@ module.exports = {
   ],
   "ja": [
     {
+      "id": "post30",
+      "slug": "premium-science-education-accessible-grants",
+      "title": "すべての学校にプレミアム理科教育を届ける",
+      "description": "プレミアムなEdTechは裕福な学校だけのものであってはなりません。助成金と資金調達により、物理的に正確なバーチャルラボをすべての教室に届ける方法をご紹介します。",
+      "keywords": [
+        "理科教育資金",
+        "学校助成金",
+        "アクセシブルな教育技術",
+        "プレミアムEdTech",
+        "WhimsyLabs助成金",
+        "教育の公平性"
+      ],
+      "date": "2026-02-26",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post29",
+      "slug": "virtual-physics-lab-simulations-teach",
+      "title": "バーチャル物理実験室：本当に教えるシミュレーション",
+      "description": "物理学がシミュレーションに最適な理由、悪いシミュレーションが学習に有害な理由、そして物理的に正確なエンジンが学習をどう変えるか。",
+      "keywords": [
+        "バーチャル物理実験室",
+        "物理シミュレーション",
+        "オンライン物理実験",
+        "物理実習",
+        "力学シミュレーション",
+        "力のシミュレーション"
+      ],
+      "date": "2026-02-23",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post28",
+      "slug": "virtual-biology-lab-dissections-microscopy",
+      "title": "バーチャル生物実験室：解剖、顕微鏡観察など",
+      "description": "バーチャル生物実験室では、無制限の解剖練習、完璧な顕微鏡標本、すべての生徒へのアクセシビリティを提供します。バーチャル実習が実際の実験室作業をどのように補完するかを学びましょう。",
+      "keywords": null,
+      "date": "2026-02-20",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post27",
+      "slug": "ai-science-tutor-classroom-what-works",
+      "title": "教室でのAI理科チューター：実際に効果があるもの",
+      "description": "理科教育におけるAIチューターの可能性と限界についての現実的な考察。WhimsyCatがどのように技術を観察し、フラストレーションを検出し、教師をサポートするかをご紹介します。",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post26",
+      "slug": "virtual-lab-software-guide-2026",
+      "title": "2026年版バーチャルラボソフトウェア完全ガイド",
+      "description": "2026年のバーチャルラボソフトウェアに関する包括的な購入ガイド。ソリューションの種類、評価基準を比較し、経営陣へのビジネスケースの作り方を学びます。",
+      "keywords": null,
+      "date": "2026-02-14",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post25",
+      "slug": "virtual-chemistry-lab-teachers-guide",
+      "title": "仮想化学実験室：教師のための完全ガイド",
+      "description": "化学教師のための仮想実験室をカリキュラムに統合する実践ガイド。滴定、危険な反応、生徒がシミュレーションに慣れる方法を解説します。",
+      "keywords": [
+        "仮想化学実験室",
+        "オンライン化学実験",
+        "化学シミュレーション",
+        "滴定シミュレーション",
+        "化学実習",
+        "仮想滴定"
+      ],
+      "date": "2026-02-11",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post24",
+      "slug": "how-to-choose-virtual-lab-software-school",
+      "title": "学校向け仮想実験室ソフトウェアの選び方",
+      "description": "学校の意思決定者向けの実践的な購入ガイド。仮想実験室ソフトウェアで重要な機能と、ベンダーに尋ねるべき質問を学びましょう。",
+      "keywords": [
+        "仮想実験室ソフトウェア",
+        "学校理科ソフトウェア",
+        "選び方",
+        "EdTech購入ガイド",
+        "仮想理科実験室",
+        "実験室ソフトウェア比較"
+      ],
+      "date": "2026-02-09",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
       "id": "post23",
       "slug": "teachers-are-experts-custom-experiment-designer",
       "title": "教師が専門家です。私たちはツールを作るだけです。",
@@ -1499,18 +1989,18 @@ module.exports = {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
       "title": "AI検出は機能しない。プロセスベースの評価は機能する。",
-      "description": "教育者の82%がAI不正を懸念していますが、Turnitinなど主要AI検出ツールの誤検知率は高く信頼できません。WhimsyLabsのプロセスベース実践的評価が、生徒固有の実験データを活用してAI耐性のある真の学習評価を実現する方法を解説。",
+      "description": "教育者の82%がAI不正を懸念していますが、検出ツールは失敗しています。プロセスベースの実践的評価がより良い道を提供します。",
       "keywords": [
         "AI評価",
-        "形成的評価AI",
-        "AI検出教育",
-        "Pearson評価研究",
-        "仮想実験室採点",
+        "形成的評価 AI",
+        "AI検出 教育",
+        "Pearson 評価研究",
+        "仮想実験室 採点",
         "プロセスベース評価",
         "AI耐性評価",
-        "理科教育AI",
+        "理科教育 AI",
         "実践的評価",
-        "教師AI採点"
+        "教師 AI採点"
       ],
       "date": "2026-02-04",
       "hasFullTranslation": false,

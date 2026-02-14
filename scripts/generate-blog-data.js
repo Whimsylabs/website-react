@@ -10,7 +10,8 @@ const blogPosts = [
   'post1', 'post2', 'post3', 'post4', 'post5', 'post6',
   'post7', 'post8', 'post9', 'post10', 'post11', 'post12',
   'post13', 'post14', 'post15', 'post16', 'post17', 'post18', 'post19', 'post20',
-  'post21', 'post22', 'post23'
+  'post21', 'post22', 'post23', 'post24', 'post25', 'post26', 'post27', 'post28', 'post29', 'post30',
+  'post31'
 ];
 const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
@@ -38,7 +39,15 @@ const postIdToSlug = {
   'post20': 'ai-assessment-crisis-solution',
   'post21': 'royal-society-partnership-grants-vr-science-labs',
   'post22': 'edtech-vendor-security-questions-powerschool',
-  'post23': 'teachers-are-experts-custom-experiment-designer'
+  'post23': 'teachers-are-experts-custom-experiment-designer',
+  'post24': 'how-to-choose-virtual-lab-software-school',
+  'post25': 'virtual-chemistry-lab-teachers-guide',
+  'post26': 'virtual-lab-software-guide-2026',
+  'post27': 'ai-science-tutor-classroom-what-works',
+  'post28': 'virtual-biology-lab-dissections-microscopy',
+  'post29': 'virtual-physics-lab-simulations-teach',
+  'post30': 'premium-science-education-accessible-grants',
+  'post31': 'uk-government-ai-education-funding-2026'
 };
 
 // Dates from the original blog components
@@ -66,6 +75,14 @@ const postDates = {
   post21: "2026-02-06",
   post22: "2026-02-05",
   post23: "2026-02-07",
+  post24: "2026-02-09",
+  post25: "2026-02-11",
+  post26: "2026-02-14",
+  post27: "2026-02-17",
+  post28: "2026-02-20",
+  post29: "2026-02-23",
+  post30: "2026-02-26",
+  post31: "2026-03-01",
 };
 
 async function generateBlogData() {

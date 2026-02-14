@@ -32,6 +32,14 @@ import * as Post20 from './blog/Post20';
 import * as Post21 from './blog/Post21';
 import * as Post22 from './blog/Post22';
 import * as Post23 from './blog/Post23';
+import * as Post24 from './blog/Post24';
+import * as Post25 from './blog/Post25';
+import * as Post26 from './blog/Post26';
+import * as Post27 from './blog/Post27';
+import * as Post28 from './blog/Post28';
+import * as Post29 from './blog/Post29';
+import * as Post30 from './blog/Post30';
+import * as Post31 from './blog/Post31';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -195,6 +203,62 @@ const fallbackPosts = [
     content: Post23.content,
     date: Post23.date,
     description: Post23.description,
+  },
+  {
+    id: Post24.slug,
+    title: Post24.title,
+    content: Post24.content,
+    date: Post24.date,
+    description: Post24.description,
+  },
+  {
+    id: Post25.slug,
+    title: Post25.title,
+    content: Post25.content,
+    date: Post25.date,
+    description: Post25.description,
+  },
+  {
+    id: Post26.slug,
+    title: Post26.title,
+    content: Post26.content,
+    date: Post26.date,
+    description: Post26.description,
+  },
+  {
+    id: Post27.slug,
+    title: Post27.title,
+    content: Post27.content,
+    date: Post27.date,
+    description: Post27.description,
+  },
+  {
+    id: Post28.slug,
+    title: Post28.title,
+    content: Post28.content,
+    date: Post28.date,
+    description: Post28.description,
+  },
+  {
+    id: Post29.slug,
+    title: Post29.title,
+    content: Post29.content,
+    date: Post29.date,
+    description: Post29.description,
+  },
+  {
+    id: Post30.slug,
+    title: Post30.title,
+    content: Post30.content,
+    date: Post30.date,
+    description: Post30.description,
+  },
+  {
+    id: Post31.slug,
+    title: Post31.title,
+    content: Post31.content,
+    date: Post31.date,
+    description: Post31.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -222,7 +286,15 @@ const slugToPostId = {
   'ai-assessment-crisis-solution': 'post20',
   'royal-society-partnership-grants-vr-science-labs': 'post21',
   'edtech-vendor-security-questions-powerschool': 'post22',
-  'teachers-are-experts-custom-experiment-designer': 'post23'
+  'teachers-are-experts-custom-experiment-designer': 'post23',
+  'how-to-choose-virtual-lab-software-school': 'post24',
+  'virtual-chemistry-lab-teachers-guide': 'post25',
+  'virtual-lab-software-guide-2026': 'post26',
+  'ai-science-tutor-classroom-what-works': 'post27',
+  'virtual-biology-lab-dissections-microscopy': 'post28',
+  'virtual-physics-lab-simulations-teach': 'post29',
+  'premium-science-education-accessible-grants': 'post30',
+  'uk-government-ai-education-funding-2026': 'post31'
 };
 
 // Reverse mapping from post IDs to slugs
@@ -376,7 +448,7 @@ const Blog = (props = {}) => {
       <Header currentLang={currentLanguage} />
       <BubbleContainer speed={50} restrictOverflow={true} bubbleCount={3}>
         <div className="blog-container">
-          <h1 className="blog-page-title">Science Education Blog | WhimsyLabs</h1>
+          <h1 className="blog-page-title">STEM Education Blog | WhimsyLabs</h1>
           <div className="posts-section blog-index">
             {currentPosts.map((post) => (
               <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} />
