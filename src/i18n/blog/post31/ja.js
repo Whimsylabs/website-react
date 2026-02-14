@@ -1,312 +1,286 @@
 import React from "react";
 
-export const title = "UK Invests £49m in AI Education: What This Means for Schools";
-export const description = "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.";
+export const title = "英国がAI教育に4900万ポンドを投資：学校にとっての意味";
+export const description = "英国政府が4900万ポンドのAI教育資金と1億8700万ポンドのTechFirstプログラムを発表。学校がAIチューターと評価ツールのためにこれらの資金にアクセスする方法を学びましょう。";
 export const keywords = [
-  "UK AI education funding 2026",
-  "government EdTech investment",
-  "AI in schools UK",
-  "TechFirst programme",
-  "AI marking tools",
-  "education technology grants"
+  "英国AI教育資金2026",
+  "政府EdTech投資",
+  "英国の学校でのAI",
+  "TechFirstプログラム",
+  "AI採点ツール",
+  "教育技術助成金"
 ];
 
 export const content = (
   <div>
     <p>
-      Something significant just happened in UK education policy. The government
-      has announced <strong>£49 million in funding</strong> for AI in
-      education, alongside hosting an international AI education summit in 2026.
-      Add to that the £187 million TechFirst programme and an AI tutoring pilot
-      reaching 450,000 pupils on free school meals, and you have one of the
-      clearest signals yet that AI-powered learning tools are moving from
-      "interesting experiment" to "core infrastructure."
+      英国の教育政策で重要なことが起こりました。政府は2026年に国際AI教育サミットの開催と併せて、
+      教育におけるAIに<strong>4900万ポンドの資金提供</strong>を発表しました。
+      これに1億8700万ポンドのTechFirstプログラムと、無料給食を受ける45万人の生徒に届くAIチューター
+      パイロットプログラムを加えると、AI搭載の学習ツールが「興味深い実験」から
+      「コアインフラ」へと移行しているという、これまでで最も明確なシグナルの一つとなります。
     </p>
 
     <p>
-      For us at WhimsyLabs, this isn't validation we needed—we've been building
-      AI assessment and tutoring tools because the educational evidence demanded
-      it. But it's reassuring to see national policy catching up with what
-      teachers and researchers have been saying for years: personalised,
-      AI-assisted learning works, and it's time to scale it.
+      WhimsyLabsの私たちにとって、これは必要としていた検証ではありません—私たちは教育的エビデンスが
+      求めていたからこそ、AI評価・チューターツールを構築してきました。
+      しかし、国の政策が教師や研究者が何年も言ってきたことに追いついてきているのを見るのは心強いことです：
+      パーソナライズされたAI支援学習は機能し、今こそスケールする時なのです。
     </p>
 
-    <h2>Breaking Down the £49 Million</h2>
+    <h2>4900万ポンドの内訳</h2>
 
     <p>
-      The headline figure breaks down into three distinct funding streams, each
-      addressing a different piece of the AI education puzzle:
-    </p>
-
-    <p>
-      <strong>£45 million for school connectivity.</strong> This is the
-      foundation layer. AI tools are only as good as the infrastructure running
-      them. Too many UK schools still struggle with patchy WiFi and outdated
-      networks—a barrier that hits rural and disadvantaged schools hardest. This
-      funding aims to ensure every classroom can actually <em>run</em> the AI
-      tools being developed. It's not glamorous, but it's essential. You can't
-      have AI tutors timing out because the school's broadband can't cope.
+      この総額は、AI教育パズルのそれぞれ異なる部分に対処する3つの異なる資金の流れに分かれています：
     </p>
 
     <p>
-      <strong>£1 million for AI marking tools.</strong> This might seem modest
-      compared to the connectivity spend, but it's strategically important.
-      Teacher workload is at crisis levels, with marking consistently cited as
-      one of the biggest time drains. AI marking tools won't replace teacher
-      judgment—good implementations augment it, handling routine feedback while
-      flagging work that needs human attention. The research on AI-assisted
-      assessment shows teachers can redirect 3-5 hours per week from marking to
-      actual teaching (
+      <strong>学校接続性に4500万ポンド。</strong>これは基盤層です。
+      AIツールは、それを動かすインフラの質に左右されます。
+      英国の多くの学校は依然として不安定なWiFiや時代遅れのネットワークに苦しんでいます—
+      これは地方や恵まれない学校に最も大きな打撃を与える障壁です。
+      この資金は、すべての教室が開発中のAIツールを実際に<em>実行</em>できるようにすることを目指しています。
+      華やかではありませんが、不可欠です。学校のブロードバンドが対応できないために
+      AIチューターがタイムアウトするようでは困ります。
+    </p>
+
+    <p>
+      <strong>AI採点ツールに100万ポンド。</strong>接続性への支出と比べると控えめに見えるかもしれませんが、
+      戦略的に重要です。教師の業務負担は危機的レベルにあり、採点は一貫して最大の時間の浪費源の一つ
+      として挙げられています。AI採点ツールは教師の判断を置き換えるものではありません—
+      優れた実装はそれを補完し、ルーティンのフィードバックを処理しながら、
+      人間の注意が必要な作業にフラグを立てます。AI支援評価に関する研究は、
+      教師が週に3〜5時間を採点から実際の授業に振り向けられることを示しています（
       <a
         href="https://www.gov.uk/government/publications/ai-in-education"
         target="_blank"
         rel="noopener noreferrer"
       >
-        DfE, 2026
+        DfE、2026
       </a>
-      ).
+      ）。
     </p>
 
     <p>
-      <strong>£3 million for AI-ready educational datasets.</strong> This is the
-      quiet investment that will pay dividends for years. AI systems need
-      high-quality, properly structured data to learn from. By funding the
-      creation of educational datasets—curriculum-aligned, properly anonymised,
-      and pedagogically sound—the government is building the raw material that
-      will power the next generation of AI education tools. Every EdTech company
-      building in this space will benefit.
+      <strong>AI対応の教育データセットに300万ポンド。</strong>これは何年も配当を生み続ける
+      静かな投資です。AIシステムは学習するために高品質で適切に構造化されたデータを必要とします。
+      教育データセット—カリキュラムに沿い、適切に匿名化され、教育学的に健全なもの—の作成に
+      資金を提供することで、政府は次世代のAI教育ツールを動かす原材料を構築しています。
+      この分野で活動するすべてのEdTech企業が恩恵を受けるでしょう。
     </p>
 
-    <h2>The TechFirst Programme: £187 Million for Digital Skills</h2>
+    <h2>TechFirstプログラム：デジタルスキルに1億8700万ポンド</h2>
 
     <p>
-      Running alongside the AI-specific funding, the £187 million TechFirst
-      programme focuses on digital skills more broadly. The logic is sound: AI
-      tools are only useful if students (and teachers) have the digital literacy
-      to use them effectively.
+      AI特化の資金と並行して、1億8700万ポンドのTechFirstプログラムは
+      より広くデジタルスキルに焦点を当てています。論理は健全です：AIツールは、
+      生徒（と教師）がそれらを効果的に使用するデジタルリテラシーを持っている場合にのみ有用です。
     </p>
 
     <p>
-      TechFirst targets both hardware provision—getting devices into
-      classrooms—and training. It's the kind of unglamorous infrastructure
-      spending that often gets overlooked in favour of flashier announcements,
-      but without it, AI investments would be building on sand.
+      TechFirstは、ハードウェアの提供—教室にデバイスを導入すること—と研修の両方を対象としています。
+      これは、より派手な発表に押されて見過ごされがちな地味なインフラ支出ですが、
+      これなしではAI投資は砂上の楼閣となります。
     </p>
 
-    <h2>i.AI Tutoring: 450,000 Pupils on Free School Meals</h2>
+    <h2>i.AIチューター：無料給食を受ける45万人の生徒</h2>
 
     <p>
-      Perhaps the most significant announcement is the i.AI tutoring programme,
-      developed by the government's Incubator for Artificial Intelligence. This
-      isn't a pilot in the traditional sense—450,000 pupils is substantial
-      scale.
+      おそらく最も重要な発表は、政府のIncubator for Artificial Intelligenceが開発した
+      i.AIチュータープログラムです。これは従来の意味でのパイロットではありません—
+      45万人の生徒は相当な規模です。
     </p>
 
     <p>
-      The targeting matters here. By focusing on pupils eligible for free school
-      meals, the programme directly addresses the attainment gap that has
-      proven so resistant to traditional interventions. Research consistently
-      shows that disadvantaged students benefit disproportionately from
-      personalised tutoring, but the cost of human tutors makes it uneconomical
-      at scale (
+      ここでターゲティングが重要です。無料給食の対象となる生徒に焦点を当てることで、
+      このプログラムは従来の介入に非常に抵抗力があることが証明されている学力格差に
+      直接対処します。研究は一貫して、恵まれない生徒がパーソナライズされたチューターから
+      不釣り合いに恩恵を受けることを示していますが、人間のチューターのコストは
+      大規模では経済的ではありません（
       <a
         href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition"
         target="_blank"
         rel="noopener noreferrer"
       >
-        EEF, 2024
+        EEF、2024
       </a>
-      ). AI tutoring changes that equation.
+      ）。AIチューターはその方程式を変えます。
     </p>
 
     <p>
-      The programme will use adaptive AI that adjusts to each student's level,
-      provides immediate feedback, and identifies misconceptions before they
-      compound. This is exactly the kind of application where AI excels:
-      infinitely patient, always available, and capable of meeting each student
-      where they are.
+      プログラムは各生徒のレベルに適応し、即座にフィードバックを提供し、
+      誤解が固定化する前にそれを特定する適応型AIを使用します。
+      これはまさにAIが得意とする種類のアプリケーションです：
+      無限に忍耐強く、常に利用可能で、各生徒がいる場所で出会うことができます。
     </p>
 
-    <h2>The International AI Education Summit 2026</h2>
+    <h2>2026年国際AI教育サミット</h2>
 
     <p>
-      The UK will host an international summit on AI in education later in 2026,
-      bringing together governments, researchers, and EdTech providers to share
-      best practices and establish guidelines. This matters beyond the
-      diplomatic symbolism—international coordination on AI education standards
-      could prevent the fragmentation that has plagued other EdTech
-      implementations.
+      英国は2026年後半にAI教育に関する国際サミットを主催し、
+      政府、研究者、EdTechプロバイダーを集めてベストプラクティスを共有し、
+      ガイドラインを確立します。これは外交的象徴を超えて重要です—
+      AI教育基準に関する国際的な調整は、他のEdTech実装を悩ませてきた
+      断片化を防ぐことができます。
     </p>
 
     <p>
-      Topics expected to feature prominently include data privacy frameworks for
-      educational AI, evidence standards for AI learning tools, and strategies
-      for equitable access. For companies like WhimsyLabs operating across
-      multiple markets, international alignment on these issues would
-      significantly reduce compliance complexity while raising the bar for
-      quality across the sector.
+      prominentに取り上げられると予想されるトピックには、教育AIのためのデータプライバシー
+      フレームワーク、AI学習ツールのエビデンス基準、公平なアクセスのための戦略が含まれます。
+      複数の市場で事業を展開するWhimsyLabsのような企業にとって、これらの問題に関する
+      国際的な調整は、コンプライアンスの複雑さを大幅に軽減しながら、
+      セクター全体の品質基準を引き上げることになります。
     </p>
 
-    <h2>A £31 Billion Market by 2030</h2>
+    <h2>2030年までに310億ドル市場</h2>
 
     <p>
-      These government investments arrive as the global EdTech market continues
-      its remarkable growth trajectory. Current projections put the market at
-      $31 billion by 2030, with AI-powered learning tools accounting for an
-      increasing share (
+      これらの政府投資は、グローバルEdTech市場が著しい成長軌道を続ける中で到来しています。
+      現在の予測では、市場は2030年までに310億ドルに達し、AI搭載の学習ツールが
+      増加する割合を占めるとされています（
       <a
         href="https://www.holoniq.com/edtech"
         target="_blank"
         rel="noopener noreferrer"
       >
-        HolonIQ, 2025
+        HolonIQ、2025
       </a>
-      ).
+      ）。
     </p>
 
     <p>
-      The UK government's investment signals that public procurement will be a
-      significant driver of this growth. Schools and multi-academy trusts will
-      have both the infrastructure and the mandate to adopt AI tools. For
-      providers who've been building evidence-based solutions—rather than
-      chasing hype cycles—this represents an opportunity to scale proven
-      approaches.
+      英国政府の投資は、公共調達がこの成長の重要な推進力になることを示しています。
+      学校とマルチアカデミートラストは、AIツールを採用するためのインフラとマンデートの
+      両方を持つことになります。ハイプサイクルを追いかけるのではなく、
+      エビデンスに基づくソリューションを構築してきたプロバイダーにとって、
+      これは実証されたアプローチをスケールする機会を表しています。
     </p>
 
-    <h2>How Schools Can Access This Funding</h2>
+    <h2>学校がこの資金にアクセスする方法</h2>
 
     <p>
-      If you're a school leader wondering how to tap into these funding streams,
-      here's what we know so far:
+      これらの資金の流れをどのように活用するか疑問に思っている学校のリーダーのために、
+      私たちが今までに知っていることをご紹介します：
     </p>
 
-    <h3>Connectivity Funding (£45m)</h3>
+    <h3>接続性資金（4500万ポンド）</h3>
     <p>
-      Applications will be managed through the Department for Education's
-      existing schools infrastructure programmes. Priority will be given to
-      schools in areas with the poorest existing connectivity. Multi-academy
-      trusts can apply on behalf of their schools collectively, which may
-      simplify procurement. Watch for announcements on the{" "}
+      申請は教育省の既存の学校インフラプログラムを通じて管理されます。
+      既存の接続性が最も悪い地域の学校が優先されます。
+      マルチアカデミートラストは、学校を代表して集合的に申請することができ、
+      調達を簡素化する可能性があります。今後数ヶ月間、{" "}
       <a
         href="https://www.gov.uk/government/organisations/department-for-education"
         target="_blank"
         rel="noopener noreferrer"
       >
-        DfE website
+        DfEウェブサイト
       </a>{" "}
-      in the coming months.
+      での発表に注目してください。
     </p>
 
-    <h3>AI Marking Tools (£1m)</h3>
+    <h3>AI採点ツール（100万ポンド）</h3>
     <p>
-      This funding stream is expected to work through approved vendor lists.
-      Schools won't apply for grants directly; instead, they'll be able to
-      access subsidised or free licences for approved AI marking solutions. If
-      your school is already evaluating AI assessment tools, it's worth waiting
-      for the approved list before committing to long-term contracts.
+      この資金の流れは、承認されたベンダーリストを通じて機能すると予想されています。
+      学校は直接助成金を申請しません。代わりに、承認されたAI採点ソリューションの
+      補助金付きまたは無料のライセンスにアクセスできるようになります。
+      学校がすでにAI評価ツールを評価している場合、長期契約を結ぶ前に
+      承認リストを待つ価値があります。
     </p>
 
-    <h3>TechFirst Programme (£187m)</h3>
+    <h3>TechFirstプログラム（1億8700万ポンド）</h3>
     <p>
-      TechFirst applications will open later in 2026, with funding allocated
-      through a competitive process. Schools demonstrating clear digital skills
-      gaps and concrete plans for addressing them will be prioritised. Start
-      documenting your current digital capabilities and identifying training
-      needs now—having a clear baseline will strengthen any application.
+      TechFirstの申請は2026年後半に開始され、競争プロセスを通じて資金が割り当てられます。
+      明確なデジタルスキルのギャップとそれに対処するための具体的な計画を示す学校が
+      優先されます。現在のデジタル能力を文書化し、研修ニーズを特定し始めてください—
+      明確なベースラインを持つことで、申請が強化されます。
     </p>
 
-    <h3>i.AI Tutoring Programme</h3>
+    <h3>i.AIチュータープログラム</h3>
     <p>
-      Schools with high proportions of free school meal-eligible pupils should
-      register interest through their local authority or regional schools
-      commissioner. The programme is expected to roll out in phases, with
-      initial deployments focusing on maths and English in Key Stages 2 and 3.
+      無料給食対象の生徒の割合が高い学校は、地方自治体または地域学校委員を通じて
+      関心を登録する必要があります。プログラムは段階的に展開される予定で、
+      初期の展開はキーステージ2と3の数学と英語に焦点を当てます。
     </p>
 
-    <h2>What This Means for WhimsyLabs</h2>
+    <h2>WhimsyLabsにとっての意味</h2>
 
     <p>
-      We'd be lying if we said this announcement wasn't encouraging. For years,
-      we've been building AI assessment tools and tutoring capabilities into
-      WhimsyCat because the research said it would help students learn science
-      better. Now government policy is aligned with that evidence.
+      この発表が励みにならないと言えば嘘になります。何年もの間、私たちは研究が
+      生徒がより良く科学を学ぶのに役立つと言っていたため、WhimsyCatにAI評価ツールと
+      チューター機能を組み込んできました。今、政府の政策はそのエビデンスと一致しています。
     </p>
 
     <p>
-      Our AI tutor already provides the kind of personalised, patient,
-      always-available support that the i.AI programme aims to deliver. Our
-      assessment tools give teachers insight into student understanding without
-      adding to their marking burden. We're not pivoting to chase this
-      funding—we're already here.
+      私たちのAIチューターは、i.AIプログラムが提供しようとしているパーソナライズされた、
+      忍耐強い、常に利用可能なサポートをすでに提供しています。私たちの評価ツールは、
+      教師の採点負担を増やすことなく、生徒の理解についての洞察を教師に提供します。
+      私たちはこの資金を追いかけるために方向転換しているのではありません—私たちはすでにここにいます。
     </p>
 
     <p>
-      But this isn't about us. What matters is that hundreds of thousands of
-      students who might otherwise fall behind will now have access to tools
-      that meet them where they are, explain concepts until they click, and
-      never lose patience. That's worth celebrating, whoever builds it.
+      しかし、これは私たちのことではありません。重要なのは、さもなければ
+      取り残される可能性のある何十万人もの生徒が、彼らがいる場所で出会い、
+      概念が理解できるまで説明し、決して忍耐を失わないツールにアクセスできるようになることです。
+      誰が作ったとしても、それは祝うに値します。
     </p>
 
-    <h2>The Road Ahead</h2>
+    <h2>今後の道のり</h2>
 
     <p>
-      £49 million plus £187 million is serious money, but it's also a down
-      payment. If these programmes succeed—and the evidence suggests they
-      will—expect follow-on investment at significantly larger scale. The
-      government is essentially running a large-scale pilot, and the results
-      will shape education policy for the next decade.
-    </p>
-
-    <p>
-      For schools, the message is clear: AI in education is no longer
-      speculative. It's policy. The infrastructure funding is coming, the tools
-      are being subsidised, and the research evidence is building. Now is the
-      time to start planning how AI fits into your educational strategy—not
-      because it's trendy, but because it works.
+      4900万ポンドプラス1億8700万ポンドは真剣なお金ですが、これは頭金でもあります。
+      これらのプログラムが成功すれば—そしてエビデンスはそうなることを示唆しています—
+      大幅に大きな規模での追加投資を期待してください。政府は本質的に大規模な
+      パイロットを実施しており、その結果は今後10年間の教育政策を形作ります。
     </p>
 
     <p>
-      We'll be watching the summit closely and updating our understanding as
-      more details emerge. In the meantime, if you're curious about how AI
-      tutoring and assessment actually work in practice,{" "}
-      <a href="/contact">get in touch</a>. We're happy to share what we've
-      learned.
+      学校にとってのメッセージは明確です：教育におけるAIはもはや投機的ではありません。
+      それは政策です。インフラ資金が来ており、ツールは補助金を受けており、
+      研究エビデンスが蓄積されています。今こそ、AIが教育戦略にどのように適合するかを
+      計画し始める時です—トレンディだからではなく、機能するからです。
     </p>
 
-    <h2>Related Articles</h2>
+    <p>
+      私たちはサミットを注意深く見守り、詳細が明らかになるにつれて理解を更新していきます。
+      それまでの間、AIチューターと評価が実際にどのように機能するか興味がある場合は、{" "}
+      <a href="/contact">お問い合わせください</a>。私たちが学んだことを喜んで共有します。
+    </p>
+
+    <h2>関連記事</h2>
     <ul>
       <li>
         <a href="/blog/ai-assessment-crisis-solution">
-          AI Assessment: How Technology Is Addressing the Marking Crisis
+          AI評価：テクノロジーが採点危機にどう対処しているか
         </a>
       </li>
       <li>
         <a href="/blog/ai-science-tutor-classroom-what-works">
-          AI Science Tutors in the Classroom: What Actually Works?
+          教室でのAI科学チューター：実際に何が機能するか？
         </a>
       </li>
       <li>
         <a href="/blog/premium-science-education-accessible-grants">
-          Making Premium Science Education Accessible to Every School
+          プレミアム科学教育をすべての学校がアクセスできるようにする
         </a>
       </li>
     </ul>
 
     <div className="references-section">
-      <h3>References</h3>
+      <h3>参考文献</h3>
       <ul className="references-list">
         <li key="ref-1">
           Department for Education. (2026). <em>AI in Education Policy Paper</em>.
-          Retrieved from https://www.gov.uk/government/publications/ai-in-education
+          取得元：https://www.gov.uk/government/publications/ai-in-education
         </li>
         <li key="ref-2">
           Education Endowment Foundation. (2024). <em>One to One Tuition</em>.
-          Teaching and Learning Toolkit. Retrieved from
+          Teaching and Learning Toolkit. 取得元：
           https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/one-to-one-tuition
         </li>
         <li key="ref-3">
-          HolonIQ. (2025). <em>Global EdTech Market Intelligence</em>. Retrieved
-          from https://www.holoniq.com/edtech
+          HolonIQ. (2025). <em>Global EdTech Market Intelligence</em>. 取得元：
+          https://www.holoniq.com/edtech
         </li>
       </ul>
     </div>
