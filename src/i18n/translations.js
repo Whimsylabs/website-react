@@ -699,8 +699,8 @@ const translations = {
 
     // Grants Page
     grants: {
-      heroTitle: "Your Grant Application Partner",
-      heroSubtitle: "WhimsyLabs provides free software, application support, and templates for your grant",
+      heroTitle: "Science Education Grants for UK Schools",
+      heroSubtitle: "Get funding for virtual labs — WhimsyLabs provides free software, STEM expertise, and application support",
       introTitle: "WhimsyLabs: Your Partner for Education Grants",
       introText1: "Applying for education grants? <strong>WhimsyLabs is your ready-made technology partner.</strong> We provide free virtual lab software throughout your grant period — your entire budget goes to hardware and other needs.",
       introText2: "Our team includes <strong>members with PhDs experienced in grant writing</strong>. We provide application templates, technical documentation, project ideas, and letters of support. Everything you need to submit a compelling application.",
@@ -1286,8 +1286,8 @@ const translations = {
 
     // Grants Page
     grants: {
-      heroTitle: "Tu Socio para Solicitudes de Subvenciones",
-      heroSubtitle: "WhimsyLabs proporciona software gratuito, apoyo en la solicitud y plantillas para tu subvención",
+      heroTitle: "Subvenciones para Educación Científica en Escuelas",
+      heroSubtitle: "Obtén financiación para laboratorios virtuales — WhimsyLabs proporciona software gratuito, experiencia STEM y apoyo en la solicitud",
       introTitle: "WhimsyLabs: Tu Socio para Subvenciones Educativas",
       introText1: "¿Solicitando subvenciones educativas? <strong>WhimsyLabs es tu socio tecnológico listo para usar.</strong> Proporcionamos software de laboratorio virtual gratuito durante todo el período de tu subvención — tu presupuesto completo va a hardware y otras necesidades.",
       introText2: "Nuestro equipo incluye <strong>miembros con doctorados con experiencia en redacción de subvenciones</strong>. Proporcionamos plantillas de solicitud, documentación técnica, ideas de proyectos y cartas de apoyo. Todo lo que necesitas para presentar una solicitud convincente.",
@@ -1652,7 +1652,7 @@ const translations = {
 
     // BETT Page
     bett: {
-      title: "Merci de Nous Avoir Visités au BETT 2026 | WhimsyLabs Laboratoire Virtuel",
+      title: "Merci pour votre visite au BETT 2026 | WhimsyLabs",
       description: "WhimsyLabs au BETT 2026 fut un succès ! Nous avons remporté le prix Best of BETT 2026 de Tech&Learning. Vous nous avez manqué ? Réservez une démo virtuelle pour découvrir notre logiciel primé.",
       heroTitle: "Merci de Nous Avoir Visités au BETT 2026 !",
       heroSubtitle: "Nous avons passé un moment incroyable à présenter WhimsyLabs au BETT 2026. Vous n'avez pas pu venir ? Pas de souci — réservez une démo virtuelle et découvrez notre plateforme primée de n'importe où !",
@@ -1873,8 +1873,8 @@ const translations = {
 
     // Grants Page
     grants: {
-      heroTitle: "Votre Partenaire pour les Demandes de Subvention",
-      heroSubtitle: "WhimsyLabs fournit un logiciel gratuit, un soutien à la demande et des modèles pour votre subvention",
+      heroTitle: "Subventions pour l'Éducation Scientifique au Royaume-Uni",
+      heroSubtitle: "Obtenez un financement pour les laboratoires virtuels — WhimsyLabs fournit logiciel gratuit, expertise STEM et soutien à la demande",
       introTitle: "WhimsyLabs: Votre Partenaire pour les Subventions Éducatives",
       introText1: "Vous demandez des subventions éducatives? <strong>WhimsyLabs est votre partenaire technologique clé en main.</strong> Nous fournissons un logiciel de laboratoire virtuel gratuit pendant toute la durée de votre subvention — tout votre budget va au matériel et autres besoins.",
       introText2: "Notre équipe comprend <strong>des membres titulaires de doctorats expérimentés dans la rédaction de demandes de subventions</strong>. Nous fournissons des modèles de demande, de la documentation technique, des idées de projets et des lettres de soutien. Tout ce dont vous avez besoin pour soumettre une demande convaincante.",
@@ -2459,8 +2459,8 @@ const translations = {
 
     // Grants Page
     grants: {
-      heroTitle: "Ihr Partner für Förderanträge",
-      heroSubtitle: "WhimsyLabs bietet kostenlose Software, Antragsunterstützung und Vorlagen für Ihren Förderantrag",
+      heroTitle: "Fördermittel für naturwissenschaftliche Bildung an Schulen",
+      heroSubtitle: "Finanzierung für virtuelle Labore — WhimsyLabs bietet kostenlose Software, MINT-Expertise und Antragsunterstützung",
       introTitle: "WhimsyLabs: Ihr Partner für Bildungsförderungen",
       introText1: "Bewerben Sie sich um Bildungsförderungen? <strong>WhimsyLabs ist Ihr schlüsselfertiger Technologiepartner.</strong> Wir stellen während der gesamten Förderlaufzeit kostenlose virtuelle Laborsoftware bereit — Ihr gesamtes Budget geht an Hardware und andere Bedürfnisse.",
       introText2: "Unser Team umfasst <strong>Mitglieder mit Doktortiteln, die Erfahrung im Schreiben von Förderanträgen haben</strong>. Wir bieten Antragsvorlagen, technische Dokumentation, Projektideen und Unterstützungsschreiben. Alles, was Sie brauchen, um einen überzeugenden Antrag einzureichen.",
@@ -2884,8 +2884,8 @@ const translations = {
 
     // Grants Page
     grants: {
-      heroTitle: "助成金申請のパートナー",
-      heroSubtitle: "WhimsyLabsは助成金申請のための無料ソフトウェア、申請サポート、テンプレートを提供します",
+      heroTitle: "英国の学校向け科学教育助成金",
+      heroSubtitle: "バーチャルラボの資金を獲得 — WhimsyLabsは無料ソフトウェア、STEM専門知識、申請サポートを提供します",
       introTitle: "WhimsyLabs：教育助成金のパートナー",
       introText1: "教育助成金を申請中ですか？<strong>WhimsyLabsはあなたのすぐに使えるテクノロジーパートナーです。</strong>助成金期間中は無料でバーチャルラボソフトウェアを提供します。予算全額をハードウェアやその他のニーズに使用できます。",
       introText2: "当社のチームには<strong>助成金申請書作成の経験を持つ博士号取得者</strong>が含まれています。申請テンプレート、技術文書、プロジェクトアイデア、推薦状を提供します。説得力のある申請書を提出するために必要なすべてが揃っています。",

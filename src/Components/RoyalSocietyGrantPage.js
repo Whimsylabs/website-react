@@ -81,7 +81,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
             <p className="rsg-hero-subtitle">
               <strong>Get up to £3,000 for VR science labs in your school.</strong>
               <br />
-              WhimsyLabs provides free software + application support.
+              WhimsyLabs is your STEM partner — free software, application support, and industry scientist expertise.
             </p>
             <div className="rsg-hero-badges">
               <div className="rsg-badge rsg-badge-primary">
@@ -124,8 +124,8 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
           <h2>£3,000 for VR Science in Your Classroom</h2>
           <p className="rsg-section-description">
             The Royal Society Partnership Grants fund schools to run cutting-edge STEM projects. 
-            <strong> WhimsyLabs is your ready-made solution</strong> — we provide everything you need 
-            to submit a winning application and bring immersive science to your students.
+            <strong>WhimsyLabs is your complete STEM partner:</strong> our industry scientist founders fulfils the partnership requirement, 
+            and we provide everything you need to submit a winning application.
           </p>
           
           <div className="rsg-info-cards">
@@ -135,9 +135,9 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               <p>UK state schools can apply for up to £3,000 to fund investigative STEM projects with industry partners.</p>
             </div>
             <div className="rsg-info-card">
-              <div className="rsg-info-icon">🤝</div>
-              <h3>WhimsyLabs = Your Partner</h3>
-              <p>We're your technology partner. Free software, application support, and technical documentation included.</p>
+              <div className="rsg-info-icon">🔬</div>
+              <h3>We're Your STEM Partner</h3>
+              <p>Our founders are industry experienced scientists: we fulfil the STEM professional requirement AND provide free software.</p>
             </div>
             <div className="rsg-info-card">
               <div className="rsg-info-icon">🚀</div>
@@ -316,12 +316,12 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               </ul>
             </div>
             <div className="rsg-eligibility-card rsg-partners">
-              <h3>🤝 About STEM Partners</h3>
+              <h3>🔬 WhimsyLabs = Your STEM Partner</h3>
               <ul>
                 <li>Royal Society requires a STEM professional partner</li>
-                <li>This can be a university researcher, PhD student, or industry scientist</li>
-                <li><strong>Don't have one? We can help connect you</strong></li>
-                <li>WhimsyLabs is your technology partner — separate from your STEM partner</li>
+                <li><strong>WhimsyLabs qualifies: our founders are industry experienced scientists</strong></li>
+                <li>We provide both the STEM expertise AND the technology</li>
+                <li>One partnership covers both requirements</li>
               </ul>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const title = "Haciendo accesible la educación científica premium para todas las escuelas";
+export const title = "Educación científica premium accesible para todas las escuelas";
 export const description = "La EdTech premium no debería ser solo para escuelas adineradas. Descubra cómo las subvenciones y la financiación pueden llevar laboratorios virtuales con física precisa a cada aula.";
 export const keywords = [
   "financiación de educación científica",

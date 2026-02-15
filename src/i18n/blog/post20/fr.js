@@ -1,7 +1,7 @@
 // French - Post 20: AI Assessment
 import React from "react";
 
-export const title = "La détection de l'IA ne fonctionne pas. L'évaluation basée sur les processus, si.";
+export const title = "Détection IA inefficace : L'évaluation par processus fonctionne";
 export const description = "82% des éducateurs craignent la triche par IA, mais les outils de détection échouent. L'évaluation pratique basée sur les processus offre une meilleure voie.";
 export const keywords = [
   "évaluation IA",

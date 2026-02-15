@@ -259,7 +259,7 @@ export const content = (
     <ul>
       <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Écoles britanniques : Obtenez 3 000 £ pour des laboratoires de sciences en VR</a></li>
       <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Les enseignants sont les experts. Nous construisons simplement les outils.</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">La détection de l'IA ne fonctionne pas. L'évaluation basée sur les processus, si.</a></li>
+      <li><a href="/blog/ai-assessment-crisis-solution">Détection IA inefficace : L'évaluation par processus fonctionne</a></li>
     </ul>
   </>
 );

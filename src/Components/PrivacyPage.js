@@ -55,7 +55,7 @@ const PrivacyPage = ({ t, currentLang, language }) => {
                 <div className="company-detail-card">
                   <h3>🏢 {t('privacy.companyInfo.companyName')}</h3>
                   <p><strong>WhimsyLabs Ltd</strong></p>
-                  <p>London, United Kingdom</p>
+                  <p>Edinburgh, United Kingdom</p>
                 </div>
                 
                 <div className="company-detail-card">
@@ -366,7 +366,7 @@ const PrivacyPage = ({ t, currentLang, language }) => {
               
               <div className="contact-info">
                 <p><strong>{t('privacy.sections.contact.company')}:</strong> WhimsyLabs Ltd</p>
-                <p><strong>{t('privacy.sections.contact.address')}:</strong> London, United Kingdom</p>
+                <p><strong>{t('privacy.sections.contact.address')}:</strong> Edinburgh, United Kingdom</p>
                 <p><strong>{t('privacy.sections.contact.general')}:</strong> <a href="mailto:inquiries@whimsylabs.ai">inquiries@whimsylabs.ai</a></p>
                 <p><strong>{t('privacy.sections.contact.privacy')}:</strong> <a href="mailto:privacy@whimsylabs.ai">privacy@whimsylabs.ai</a></p>
               </div>

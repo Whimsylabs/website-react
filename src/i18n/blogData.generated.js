@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-14T23:57:26.979Z
+// Generated on 2026-02-15T11:28:52.019Z
 
 module.exports = {
   "en": [
@@ -925,7 +925,7 @@ module.exports = {
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
-      "title": "Le Royaume-Uni investit 49 M£ dans l'éducation à l'IA : Ce que cela signifie pour les écoles",
+      "title": "49 M£ pour l'IA éducative au Royaume-Uni : Impact sur les écoles",
       "description": "Le gouvernement britannique annonce 49 M£ de financement pour l'éducation à l'IA plus le programme TechFirst de 187 M£. Découvrez comment les écoles peuvent accéder à ces fonds pour les outils de tutorat et d'évaluation par IA.",
       "keywords": [
         "financement éducation IA Royaume-Uni 2026",
@@ -959,7 +959,7 @@ module.exports = {
     {
       "id": "post29",
       "slug": "virtual-physics-lab-simulations-teach",
-      "title": "Laboratoire Virtuel de Physique : Des Simulations qui Enseignent Vraiment",
+      "title": "Labo Virtuel de Physique : Simulations qui Enseignent",
       "description": "Pourquoi la physique est idéalement adaptée à la simulation, ce qui rend les mauvaises simulations de physique nuisibles, et comment un moteur physiquement précis transforme l'apprentissage.",
       "keywords": null,
       "date": "2026-02-23",
@@ -1077,7 +1077,7 @@ module.exports = {
     {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
-      "title": "La détection de l'IA ne fonctionne pas. L'évaluation basée sur les processus, si.",
+      "title": "Détection IA inefficace : L'évaluation par processus fonctionne",
       "description": "82% des éducateurs craignent la triche par IA, mais les outils de détection échouent. L'évaluation pratique basée sur les processus offre une meilleure voie.",
       "keywords": [
         "évaluation IA",
@@ -1424,7 +1424,7 @@ module.exports = {
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
-      "title": "El Reino Unido invierte 49 millones de libras en educación con IA: Qué significa esto para las escuelas",
+      "title": "Reino Unido invierte 49M£ en IA educativa: Impacto en escuelas",
       "description": "El gobierno del Reino Unido anuncia 49 millones de libras en financiación para educación con IA más el programa TechFirst de 187 millones de libras. Descubre cómo las escuelas pueden acceder a estos fondos para herramientas de tutoría y evaluación con IA.",
       "keywords": [
         "financiación educación IA Reino Unido 2026",
@@ -1441,7 +1441,7 @@ module.exports = {
     {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Haciendo accesible la educación científica premium para todas las escuelas",
+      "title": "Educación científica premium accesible para todas las escuelas",
       "description": "La EdTech premium no debería ser solo para escuelas adineradas. Descubra cómo las subvenciones y la financiación pueden llevar laboratorios virtuales con física precisa a cada aula.",
       "keywords": [
         "financiación de educación científica",

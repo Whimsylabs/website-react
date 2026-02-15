@@ -1,6 +1,6 @@
 import React from "react";
 
-export const title = "Laboratoire Virtuel de Physique : Des Simulations qui Enseignent Vraiment";
+export const title = "Labo Virtuel de Physique : Simulations qui Enseignent";
 export const description = "Pourquoi la physique est idéalement adaptée à la simulation, ce qui rend les mauvaises simulations de physique nuisibles, et comment un moteur physiquement précis transforme l'apprentissage.";
 export const keywords = "laboratoire virtuel de physique, simulation de physique, expériences de physique en ligne, travaux pratiques de physique, simulation de mécanique, simulation de forces";
 

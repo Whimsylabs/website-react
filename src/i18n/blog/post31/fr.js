@@ -1,6 +1,6 @@
 import React from "react";
 
-export const title = "Le Royaume-Uni investit 49 M£ dans l'éducation à l'IA : Ce que cela signifie pour les écoles";
+export const title = "49 M£ pour l'IA éducative au Royaume-Uni : Impact sur les écoles";
 export const description = "Le gouvernement britannique annonce 49 M£ de financement pour l'éducation à l'IA plus le programme TechFirst de 187 M£. Découvrez comment les écoles peuvent accéder à ces fonds pour les outils de tutorat et d'évaluation par IA.";
 export const keywords = [
   "financement éducation IA Royaume-Uni 2026",
