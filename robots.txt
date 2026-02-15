@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-08
+# Last updated: 2026-02-15
 
 User-agent: *
 Allow: /
@@ -57,19 +57,27 @@ Allow: /blog/
 Allow: /blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /blog/ai-assessment-crisis-solution/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /blog/ai-science-tutor-classroom-what-works/
 Allow: /blog/edtech-vendor-security-questions-powerschool/
 Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /blog/gamification-science-education-points-rewards-engagement/
 Allow: /blog/green-labs-sustainability-virtual-stem-education/
+Allow: /blog/how-to-choose-virtual-lab-software-school/
 Allow: /blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /blog/physicality-in-virtual-labs/
+Allow: /blog/premium-science-education-accessible-grants/
 Allow: /blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /blog/sandbox-learning-revolution-stem-education/
 Allow: /blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /blog/teachers-are-experts-custom-experiment-designer/
+Allow: /blog/uk-government-ai-education-funding-2026/
+Allow: /blog/virtual-biology-lab-dissections-microscopy/
+Allow: /blog/virtual-chemistry-lab-teachers-guide/
 Allow: /blog/virtual-kidney-dissection-send-engagement/
+Allow: /blog/virtual-lab-software-guide-2026/
 Allow: /blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /blog/virtual-physics-lab-simulations-teach/
 Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /blog/vr-winter-web-first-virtual-labs/
 Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
@@ -85,19 +93,27 @@ Allow: /de/blog/
 Allow: /de/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /de/blog/ai-assessment-crisis-solution/
 Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /de/blog/ai-science-tutor-classroom-what-works/
 Allow: /de/blog/edtech-vendor-security-questions-powerschool/
 Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /de/blog/gamification-science-education-points-rewards-engagement/
 Allow: /de/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /de/blog/how-to-choose-virtual-lab-software-school/
 Allow: /de/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /de/blog/physicality-in-virtual-labs/
+Allow: /de/blog/premium-science-education-accessible-grants/
 Allow: /de/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /de/blog/sandbox-learning-revolution-stem-education/
 Allow: /de/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /de/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /de/blog/uk-government-ai-education-funding-2026/
+Allow: /de/blog/virtual-biology-lab-dissections-microscopy/
+Allow: /de/blog/virtual-chemistry-lab-teachers-guide/
 Allow: /de/blog/virtual-kidney-dissection-send-engagement/
+Allow: /de/blog/virtual-lab-software-guide-2026/
 Allow: /de/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /de/blog/virtual-physics-lab-simulations-teach/
 Allow: /de/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /de/blog/vr-winter-web-first-virtual-labs/
 Allow: /de/blog/whimsycat-ai-tutor-transforming-science-education/
@@ -119,19 +135,27 @@ Allow: /es/blog/
 Allow: /es/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /es/blog/ai-assessment-crisis-solution/
 Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /es/blog/ai-science-tutor-classroom-what-works/
 Allow: /es/blog/edtech-vendor-security-questions-powerschool/
 Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /es/blog/gamification-science-education-points-rewards-engagement/
 Allow: /es/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /es/blog/how-to-choose-virtual-lab-software-school/
 Allow: /es/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /es/blog/physicality-in-virtual-labs/
+Allow: /es/blog/premium-science-education-accessible-grants/
 Allow: /es/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /es/blog/sandbox-learning-revolution-stem-education/
 Allow: /es/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /es/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /es/blog/uk-government-ai-education-funding-2026/
+Allow: /es/blog/virtual-biology-lab-dissections-microscopy/
+Allow: /es/blog/virtual-chemistry-lab-teachers-guide/
 Allow: /es/blog/virtual-kidney-dissection-send-engagement/
+Allow: /es/blog/virtual-lab-software-guide-2026/
 Allow: /es/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /es/blog/virtual-physics-lab-simulations-teach/
 Allow: /es/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /es/blog/vr-winter-web-first-virtual-labs/
 Allow: /es/blog/whimsycat-ai-tutor-transforming-science-education/
@@ -155,19 +179,27 @@ Allow: /fr/blog/
 Allow: /fr/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /fr/blog/ai-assessment-crisis-solution/
 Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /fr/blog/ai-science-tutor-classroom-what-works/
 Allow: /fr/blog/edtech-vendor-security-questions-powerschool/
 Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
 Allow: /fr/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /fr/blog/how-to-choose-virtual-lab-software-school/
 Allow: /fr/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /fr/blog/physicality-in-virtual-labs/
+Allow: /fr/blog/premium-science-education-accessible-grants/
 Allow: /fr/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /fr/blog/sandbox-learning-revolution-stem-education/
 Allow: /fr/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /fr/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /fr/blog/uk-government-ai-education-funding-2026/
+Allow: /fr/blog/virtual-biology-lab-dissections-microscopy/
+Allow: /fr/blog/virtual-chemistry-lab-teachers-guide/
 Allow: /fr/blog/virtual-kidney-dissection-send-engagement/
+Allow: /fr/blog/virtual-lab-software-guide-2026/
 Allow: /fr/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /fr/blog/virtual-physics-lab-simulations-teach/
 Allow: /fr/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /fr/blog/vr-winter-web-first-virtual-labs/
 Allow: /fr/blog/whimsycat-ai-tutor-transforming-science-education/
@@ -191,19 +223,27 @@ Allow: /jp/blog/
 Allow: /jp/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /jp/blog/ai-assessment-crisis-solution/
 Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
+Allow: /jp/blog/ai-science-tutor-classroom-what-works/
 Allow: /jp/blog/edtech-vendor-security-questions-powerschool/
 Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
 Allow: /jp/blog/green-labs-sustainability-virtual-stem-education/
+Allow: /jp/blog/how-to-choose-virtual-lab-software-school/
 Allow: /jp/blog/oecd-ai-learning-paradox-virtual-labs/
 Allow: /jp/blog/physicality-in-virtual-labs/
+Allow: /jp/blog/premium-science-education-accessible-grants/
 Allow: /jp/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /jp/blog/sandbox-learning-revolution-stem-education/
 Allow: /jp/blog/science-real-time-physics-simulations-virtual-labs/
 Allow: /jp/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /jp/blog/uk-government-ai-education-funding-2026/
+Allow: /jp/blog/virtual-biology-lab-dissections-microscopy/
+Allow: /jp/blog/virtual-chemistry-lab-teachers-guide/
 Allow: /jp/blog/virtual-kidney-dissection-send-engagement/
+Allow: /jp/blog/virtual-lab-software-guide-2026/
 Allow: /jp/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
+Allow: /jp/blog/virtual-physics-lab-simulations-teach/
 Allow: /jp/blog/virtual-reality-prepares-students-real-world-stem-careers/
 Allow: /jp/blog/vr-winter-web-first-virtual-labs/
 Allow: /jp/blog/whimsycat-ai-tutor-transforming-science-education/
@@ -222,7 +262,7 @@ Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 115 total (included above)
+# Blog posts summary: 155 total (included above)
 
-# Total pages in build: 169
+# Total pages in build: 209
 # This file is generated automatically - do not edit manually

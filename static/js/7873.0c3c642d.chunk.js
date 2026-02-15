@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwhimsylabs_website=self.webpackChunkwhimsylabs_website||[]).push([[7873],{7873(t,e,s){s.d(e,{content:()=>a,description:()=>i,title:()=>n});s(5043);const n="Emotional AI: WhimsyCat Detects and Responds to Student Frustration",i="Exploring WhimsyCat's groundbreaking frustration detection system that monitors player actions, gaze tracking, and engagement patterns to provide proactive emotional support when students struggle.",a=null}}]);
-//# sourceMappingURL=7873.0c3c642d.chunk.js.map
