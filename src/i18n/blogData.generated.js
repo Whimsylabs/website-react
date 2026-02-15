@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-14T22:13:32.560Z
+// Generated on 2026-02-14T23:57:26.979Z
 
 module.exports = {
   "en": [
@@ -79,7 +79,13 @@ module.exports = {
       "slug": "virtual-lab-software-guide-2026",
       "title": "The Complete Virtual Lab Software Guide for 2026",
       "description": "A comprehensive buyer's guide to virtual lab software in 2026. Compare solution types, evaluation criteria, and learn how to make the business case to leadership.",
-      "keywords": null,
+      "keywords": [
+        "virtual lab software",
+        "best virtual labs 2026",
+        "science education software",
+        "lab simulation software",
+        "virtual laboratory platform"
+      ],
       "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "en"
@@ -420,15 +426,15 @@ module.exports = {
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
-      "title": "UK Invests £49m in AI Education: What This Means for Schools",
-      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "title": "UK investiert 49 Mio. £ in KI-Bildung: Was das für Schulen bedeutet",
+      "description": "Die britische Regierung kündigt 49 Mio. £ KI-Bildungsförderung plus das 187 Mio. £ TechFirst-Programm an. Erfahren Sie, wie Schulen auf diese Mittel für KI-Nachhilfe und Bewertungstools zugreifen können.",
       "keywords": [
-        "UK AI education funding 2026",
-        "government EdTech investment",
-        "AI in schools UK",
-        "TechFirst programme",
-        "AI marking tools",
-        "education technology grants"
+        "UK KI-Bildungsförderung 2026",
+        "staatliche EdTech-Investitionen",
+        "KI in britischen Schulen",
+        "TechFirst-Programm",
+        "KI-Bewertungstools",
+        "Bildungstechnologie-Förderung"
       ],
       "date": "2026-03-01",
       "hasFullTranslation": false,
@@ -437,15 +443,15 @@ module.exports = {
     {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Making Premium Science Education Accessible to Every School",
-      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
+      "title": "Premium-Naturwissenschaftsunterricht für jede Schule zugänglich machen",
+      "description": "Premium-EdTech sollte nicht nur wohlhabenden Schulen vorbehalten sein. Erfahren Sie, wie Fördermittel und Zuschüsse physikgenaue virtuelle Labore in jeden Klassenraum bringen können.",
       "keywords": [
-        "science education funding",
-        "school grants",
-        "accessible education technology",
-        "premium edtech",
-        "WhimsyLabs grants",
-        "educational equity"
+        "Finanzierung naturwissenschaftlicher Bildung",
+        "Schulförderungen",
+        "zugängliche Bildungstechnologie",
+        "Premium EdTech",
+        "WhimsyLabs Fördermittel",
+        "Bildungsgerechtigkeit"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -455,15 +461,8 @@ module.exports = {
       "id": "post29",
       "slug": "virtual-physics-lab-simulations-teach",
       "title": "Virtuelles Physiklabor: Simulationen, die wirklich lehren",
-      "description": "Warum Physik einzigartig für Simulationen geeignet ist, was schlechte Physiksimulationen schädlich macht und wie eine physikgenaue Engine das Lernen transformiert.",
-      "keywords": [
-        "virtuelles Physiklabor",
-        "Physiksimulation",
-        "Online-Physikexperimente",
-        "Physikpraktikum",
-        "Mechaniksimulation",
-        "Kräftesimulation"
-      ],
+      "description": "Warum Physik einzigartig für Simulation geeignet ist, was schlechte Physiksimulationen schädlich macht und wie eine physikalisch akkurate Engine das Lernen transformiert.",
+      "keywords": null,
       "date": "2026-02-23",
       "hasFullTranslation": false,
       "language": "de"
@@ -472,7 +471,7 @@ module.exports = {
       "id": "post28",
       "slug": "virtual-biology-lab-dissections-microscopy",
       "title": "Virtuelles Biologielabor: Sezieren, Mikroskopie und mehr",
-      "description": "Virtuelle Biologielabore bieten unbegrenzte Sezierübungen, perfekte Mikroskopie-Präparate und Zugänglichkeit für alle Schüler. Erfahren Sie, wie virtuelle Praktika die echte Laborarbeit ergänzen.",
+      "description": "Virtuelle Biologielabore bieten unbegrenzte Sezierübungen, perfekte Mikroskopie-Präparate und Zugänglichkeit für alle Schüler. Erfahren Sie, wie virtuelle Praktika die echte Laborarbeit ergänzen und verbessern.",
       "keywords": null,
       "date": "2026-02-20",
       "hasFullTranslation": false,
@@ -493,7 +492,13 @@ module.exports = {
       "slug": "virtual-lab-software-guide-2026",
       "title": "Der komplette Leitfaden für virtuelle Laborsoftware 2026",
       "description": "Ein umfassender Einkaufsleitfaden für virtuelle Laborsoftware 2026. Vergleichen Sie Lösungstypen, Bewertungskriterien und lernen Sie, wie Sie den Business Case für die Führungsebene erstellen.",
-      "keywords": null,
+      "keywords": [
+        "virtuelle Laborsoftware",
+        "beste virtuelle Labs 2026",
+        "Wissenschaftsbildungssoftware",
+        "Laborsimulationssoftware",
+        "virtuelle Laborplattform"
+      ],
       "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "de"
@@ -920,15 +925,15 @@ module.exports = {
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
-      "title": "UK Invests £49m in AI Education: What This Means for Schools",
-      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "title": "Le Royaume-Uni investit 49 M£ dans l'éducation à l'IA : Ce que cela signifie pour les écoles",
+      "description": "Le gouvernement britannique annonce 49 M£ de financement pour l'éducation à l'IA plus le programme TechFirst de 187 M£. Découvrez comment les écoles peuvent accéder à ces fonds pour les outils de tutorat et d'évaluation par IA.",
       "keywords": [
-        "UK AI education funding 2026",
-        "government EdTech investment",
-        "AI in schools UK",
-        "TechFirst programme",
-        "AI marking tools",
-        "education technology grants"
+        "financement éducation IA Royaume-Uni 2026",
+        "investissement gouvernemental EdTech",
+        "IA dans les écoles britanniques",
+        "programme TechFirst",
+        "outils de notation IA",
+        "subventions technologie éducative"
       ],
       "date": "2026-03-01",
       "hasFullTranslation": false,
@@ -937,15 +942,15 @@ module.exports = {
     {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Making Premium Science Education Accessible to Every School",
-      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
+      "title": "Rendre l'éducation scientifique premium accessible à toutes les écoles",
+      "description": "L'EdTech premium ne devrait pas être réservée aux écoles aisées. Découvrez comment les subventions et les financements peuvent apporter des laboratoires virtuels avec physique précise dans chaque classe.",
       "keywords": [
-        "science education funding",
-        "school grants",
-        "accessible education technology",
-        "premium edtech",
-        "WhimsyLabs grants",
-        "educational equity"
+        "financement de l'éducation scientifique",
+        "subventions scolaires",
+        "technologie éducative accessible",
+        "EdTech premium",
+        "subventions WhimsyLabs",
+        "équité éducative"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -954,16 +959,9 @@ module.exports = {
     {
       "id": "post29",
       "slug": "virtual-physics-lab-simulations-teach",
-      "title": "Laboratoire Virtuel de Physique : Simulations Efficaces",
-      "description": "Pourquoi la physique est particulièrement adaptée à la simulation, ce qui rend les mauvaises simulations nuisibles et comment un moteur physique précis transforme l'apprentissage.",
-      "keywords": [
-        "laboratoire virtuel de physique",
-        "simulation de physique",
-        "expériences de physique en ligne",
-        "travaux pratiques de physique",
-        "simulation de mécanique",
-        "simulation des forces"
-      ],
+      "title": "Laboratoire Virtuel de Physique : Des Simulations qui Enseignent Vraiment",
+      "description": "Pourquoi la physique est idéalement adaptée à la simulation, ce qui rend les mauvaises simulations de physique nuisibles, et comment un moteur physiquement précis transforme l'apprentissage.",
+      "keywords": null,
       "date": "2026-02-23",
       "hasFullTranslation": false,
       "language": "fr"
@@ -993,7 +991,13 @@ module.exports = {
       "slug": "virtual-lab-software-guide-2026",
       "title": "Le guide complet des logiciels de laboratoire virtuel pour 2026",
       "description": "Un guide d'achat complet pour les logiciels de laboratoire virtuel en 2026. Comparez les types de solutions, les critères d'évaluation et apprenez à présenter le cas commercial à la direction.",
-      "keywords": null,
+      "keywords": [
+        "logiciel laboratoire virtuel",
+        "meilleurs laboratoires virtuels 2026",
+        "logiciel éducation scientifique",
+        "logiciel simulation laboratoire",
+        "plateforme laboratoire virtuel"
+      ],
       "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "fr"
@@ -1073,7 +1077,7 @@ module.exports = {
     {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
-      "title": "Détection IA Inefficace. Évaluation par Processus, Oui.",
+      "title": "La détection de l'IA ne fonctionne pas. L'évaluation basée sur les processus, si.",
       "description": "82% des éducateurs craignent la triche par IA, mais les outils de détection échouent. L'évaluation pratique basée sur les processus offre une meilleure voie.",
       "keywords": [
         "évaluation IA",
@@ -1081,11 +1085,11 @@ module.exports = {
         "détection IA éducation",
         "recherche évaluation Pearson",
         "notation laboratoire virtuel",
-        "évaluation basée sur les processus",
-        "évaluation résistante à l'IA",
-        "enseignement scientifique IA",
+        "évaluation basée processus",
+        "évaluation résistante IA",
+        "éducation scientifique IA",
         "évaluation pratique",
-        "notation enseignant IA"
+        "notation IA enseignants"
       ],
       "date": "2026-02-04",
       "hasFullTranslation": false,
@@ -1420,15 +1424,15 @@ module.exports = {
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
-      "title": "UK Invests £49m in AI Education: What This Means for Schools",
-      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "title": "El Reino Unido invierte 49 millones de libras en educación con IA: Qué significa esto para las escuelas",
+      "description": "El gobierno del Reino Unido anuncia 49 millones de libras en financiación para educación con IA más el programa TechFirst de 187 millones de libras. Descubre cómo las escuelas pueden acceder a estos fondos para herramientas de tutoría y evaluación con IA.",
       "keywords": [
-        "UK AI education funding 2026",
-        "government EdTech investment",
-        "AI in schools UK",
-        "TechFirst programme",
-        "AI marking tools",
-        "education technology grants"
+        "financiación educación IA Reino Unido 2026",
+        "inversión gubernamental EdTech",
+        "IA en escuelas del Reino Unido",
+        "programa TechFirst",
+        "herramientas de corrección con IA",
+        "subvenciones tecnología educativa"
       ],
       "date": "2026-03-01",
       "hasFullTranslation": false,
@@ -1437,15 +1441,15 @@ module.exports = {
     {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Making Premium Science Education Accessible to Every School",
-      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
+      "title": "Haciendo accesible la educación científica premium para todas las escuelas",
+      "description": "La EdTech premium no debería ser solo para escuelas adineradas. Descubra cómo las subvenciones y la financiación pueden llevar laboratorios virtuales con física precisa a cada aula.",
       "keywords": [
-        "science education funding",
-        "school grants",
-        "accessible education technology",
-        "premium edtech",
-        "WhimsyLabs grants",
-        "educational equity"
+        "financiación de educación científica",
+        "subvenciones escolares",
+        "tecnología educativa accesible",
+        "EdTech premium",
+        "subvenciones WhimsyLabs",
+        "equidad educativa"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -1455,15 +1459,8 @@ module.exports = {
       "id": "post29",
       "slug": "virtual-physics-lab-simulations-teach",
       "title": "Laboratorio Virtual de Física: Simulaciones que Realmente Enseñan",
-      "description": "Por qué la física es especialmente adecuada para la simulación, qué hace que las malas simulaciones de física sean perjudiciales y cómo un motor preciso transforma el aprendizaje.",
-      "keywords": [
-        "laboratorio virtual de física",
-        "simulación de física",
-        "experimentos de física en línea",
-        "prácticas de física",
-        "simulación de mecánica",
-        "simulación de fuerzas"
-      ],
+      "description": "Por qué la física es idónea para la simulación, qué hace que las malas simulaciones de física sean dañinas y cómo un motor físicamente preciso transforma el aprendizaje.",
+      "keywords": null,
       "date": "2026-02-23",
       "hasFullTranslation": false,
       "language": "es"
@@ -1493,7 +1490,13 @@ module.exports = {
       "slug": "virtual-lab-software-guide-2026",
       "title": "Guía completa de software de laboratorio virtual para 2026",
       "description": "Una guía completa para compradores de software de laboratorio virtual en 2026. Compare tipos de soluciones, criterios de evaluación y aprenda a presentar el caso de negocio a la dirección.",
-      "keywords": null,
+      "keywords": [
+        "software laboratorio virtual",
+        "mejores laboratorios virtuales 2026",
+        "software educación científica",
+        "software simulación laboratorio",
+        "plataforma laboratorio virtual"
+      ],
       "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "es"
@@ -1574,18 +1577,18 @@ module.exports = {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
       "title": "La detección de IA no funciona. La evaluación basada en procesos sí.",
-      "description": "El 82% de los educadores teme el fraude con IA, pero las herramientas de detección fallan. La evaluación práctica basada en procesos ofrece un mejor camino.",
+      "description": "El 82% de los educadores temen el engaño con IA, pero las herramientas de detección fallan. La evaluación práctica basada en procesos ofrece un mejor camino.",
       "keywords": [
-        "evaluación con IA",
+        "evaluación IA",
         "evaluación formativa IA",
-        "detección de IA educación",
+        "detección IA educación",
         "investigación evaluación Pearson",
         "calificación laboratorio virtual",
         "evaluación basada en procesos",
         "evaluación resistente a IA",
         "educación científica IA",
         "evaluación práctica",
-        "calificación docente IA"
+        "calificación IA docentes"
       ],
       "date": "2026-02-04",
       "hasFullTranslation": false,
@@ -1920,15 +1923,15 @@ module.exports = {
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
-      "title": "UK Invests £49m in AI Education: What This Means for Schools",
-      "description": "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.",
+      "title": "英国がAI教育に4900万ポンドを投資：学校にとっての意味",
+      "description": "英国政府が4900万ポンドのAI教育資金と1億8700万ポンドのTechFirstプログラムを発表。学校がAIチューターと評価ツールのためにこれらの資金にアクセスする方法を学びましょう。",
       "keywords": [
-        "UK AI education funding 2026",
-        "government EdTech investment",
-        "AI in schools UK",
-        "TechFirst programme",
-        "AI marking tools",
-        "education technology grants"
+        "英国AI教育資金2026",
+        "政府EdTech投資",
+        "英国の学校でのAI",
+        "TechFirstプログラム",
+        "AI採点ツール",
+        "教育技術助成金"
       ],
       "date": "2026-03-01",
       "hasFullTranslation": false,
@@ -1937,15 +1940,15 @@ module.exports = {
     {
       "id": "post30",
       "slug": "premium-science-education-accessible-grants",
-      "title": "Making Premium Science Education Accessible to Every School",
-      "description": "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.",
+      "title": "プレミアム科学教育をすべての学校に届ける",
+      "description": "プレミアムEdTechは裕福な学校だけのものであってはなりません。助成金と資金援助がどのように物理学に基づいた仮想ラボをすべての教室に届けられるかをご紹介します。",
       "keywords": [
-        "science education funding",
-        "school grants",
-        "accessible education technology",
-        "premium edtech",
-        "WhimsyLabs grants",
-        "educational equity"
+        "科学教育資金",
+        "学校助成金",
+        "アクセシブルな教育技術",
+        "プレミアムEdTech",
+        "WhimsyLabs助成金",
+        "教育の公平性"
       ],
       "date": "2026-02-26",
       "hasFullTranslation": false,
@@ -1955,15 +1958,8 @@ module.exports = {
       "id": "post29",
       "slug": "virtual-physics-lab-simulations-teach",
       "title": "バーチャル物理実験室：本当に教えるシミュレーション",
-      "description": "物理学がシミュレーションに最適な理由、悪いシミュレーションが学習に有害な理由、そして物理的に正確なエンジンが学習をどう変えるか。",
-      "keywords": [
-        "バーチャル物理実験室",
-        "物理シミュレーション",
-        "オンライン物理実験",
-        "物理実習",
-        "力学シミュレーション",
-        "力のシミュレーション"
-      ],
+      "description": "なぜ物理学はシミュレーションに最適なのか、悪い物理シミュレーションが有害な理由、そして物理的に正確なエンジンがいかに学習を変革するか。",
+      "keywords": null,
       "date": "2026-02-23",
       "hasFullTranslation": false,
       "language": "ja"
@@ -1993,7 +1989,13 @@ module.exports = {
       "slug": "virtual-lab-software-guide-2026",
       "title": "2026年版バーチャルラボソフトウェア完全ガイド",
       "description": "2026年のバーチャルラボソフトウェアに関する包括的な購入ガイド。ソリューションの種類、評価基準を比較し、経営陣へのビジネスケースの作り方を学びます。",
-      "keywords": null,
+      "keywords": [
+        "バーチャルラボソフトウェア",
+        "2026年ベスト仮想実験室",
+        "科学教育ソフトウェア",
+        "実験室シミュレーションソフトウェア",
+        "仮想実験室プラットフォーム"
+      ],
       "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "ja"
@@ -2074,18 +2076,18 @@ module.exports = {
       "id": "post20",
       "slug": "ai-assessment-crisis-solution",
       "title": "AI検出は機能しない。プロセスベースの評価は機能する。",
-      "description": "教育者の82%がAI不正を懸念していますが、検出ツールは失敗しています。プロセスベースの実践的評価がより良い道を提供します。",
+      "description": "教育者の82%がAI不正を恐れていますが、検出ツールは失敗しています。プロセスベースの実践的評価がより良い道を提供します。",
       "keywords": [
         "AI評価",
-        "形成的評価 AI",
-        "AI検出 教育",
-        "Pearson 評価研究",
-        "仮想実験室 採点",
+        "形成的評価AI",
+        "AI検出教育",
+        "Pearson評価研究",
+        "バーチャルラボ採点",
         "プロセスベース評価",
         "AI耐性評価",
-        "理科教育 AI",
+        "科学教育AI",
         "実践的評価",
-        "教師 AI採点"
+        "教師AI採点"
       ],
       "date": "2026-02-04",
       "hasFullTranslation": false,

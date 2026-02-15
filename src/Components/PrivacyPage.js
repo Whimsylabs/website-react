@@ -72,7 +72,7 @@ const PrivacyPage = ({ t, currentLang, language }) => {
                 <div className="company-detail-card">
                   <h3>📄 {t('privacy.companyInfo.dpa')}</h3>
                   <p>{t('privacy.companyInfo.dpaDesc')}</p>
-                  <a href="/documents/dpa.html" className="dpa-download-btn" target="_blank" rel="noopener noreferrer">
+                  <a href="/documents/dpa.pdf" className="dpa-download-btn" target="_blank" rel="noopener noreferrer">
                     📄 {t('privacy.companyInfo.dpaDownload')}
                   </a>
                 </div>

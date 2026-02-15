@@ -84,3 +84,9 @@ mcp-servers/*/node_modules/
 *client_secret*.json
 .gsc-token.json
 secret/*
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc

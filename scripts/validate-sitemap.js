@@ -20,7 +20,8 @@ const BASE_URL = 'https://whimsylabs.ai';
 const EXCLUDED_PATHS = [
   '/index.html',           // Root is just /
   '/404.html',             // Error page, not in sitemap
-  '/Two_Pager_Website.pdf' // PDF, not HTML
+  '/Two_Pager_Website.pdf', // PDF, not HTML
+  '/documents/dpa/'        // Single-language legal doc, not in sitemap
 ];
 
 // Patterns to exclude (regex)
