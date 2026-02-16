@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-15
+# Last updated: 2026-02-16
 
 User-agent: *
 Allow: /
