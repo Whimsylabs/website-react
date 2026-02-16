@@ -1,8 +1,15 @@
-// English - post14: Gamification in Science Education: How Points, Rewards, and Creative Expression Drive Engagement in WhimsyLabs
 import React from "react";
 
 export const title = "Gamification in Science: Points, Rewards, and Creative Expression";
 export const description = "Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.";
+export const slug = "gamification-science-education-points-rewards-engagement";
+export const keywords = [
+  "gamification in education",
+  "STEM engagement",
+  "educational rewards",
+  "intrinsic motivation",
+  "game-based learning"
+];
 
 export const content = (
   <div>
@@ -226,7 +233,7 @@ export const content = (
       Artwork created by students is displayed in rotating galleries throughout
       class laboratories, allowing students to see each other's creative
       expressions. This gallery system creates organic opportunities for social
-      connection: "I saw your artwork on the wall last week—it was amazing!" →
+      connection: "I saw your artwork on the wall last week! It was amazing!" →
       "Thanks! I've been really enjoying WhimsyLabs" → "How did you do on
       assignment 4? I found the titration tricky..." → natural peer support
       emerges organically.
@@ -250,7 +257,7 @@ export const content = (
     <p>
       The submission and selection process also teaches valuable lessons about
       creative work, peer review, and graceful handling of both acceptance and
-      rejection—soft skills essential for professional and personal development.
+      rejection, soft skills essential for professional and personal development.
     </p>
     <h2>How Does Gamification Support Rather Than Replace Social Networks?</h2>
     <p>
@@ -292,9 +299,8 @@ export const content = (
     <h3>Teacher-Facilitated Social Integration</h3>
     <p>
       Our teacher dashboard highlights opportunities for social
-      integration—identifying students with complementary strengths who might
-      benefit from peer tutoring, suggesting group discussions based on shared
-      experimental challenges, and flagging students who might be isolated and
+      integration; suggesting practicals based on 
+      experimental challenges the student is currently facing, and flagging students to teachers who might be isolated and
       benefit from encouraged peer interaction.
     </p>
     <p>
@@ -339,14 +345,14 @@ export const content = (
     </p>
     <p>
       Teachers particularly appreciate that gamification motivates without
-      requiring teacher intervention—the system automatically provides
-      personalized incentives that keep students engaged and progressing. This
+      requiring teacher intervention as the system automatically provides
+      personalised incentives that keep students engaged and progressing. This
       automation allows teachers to focus on high-value pedagogical activities
       rather than motivating reluctant students.
     </p>
     <p>
       Students report enjoying science learning more with gamification, feeling
-      proud of earned rewards, appreciating personalization options that make
+      proud of earned rewards, appreciating personalisation options that make
       the platform "theirs," and valuing social connections formed through
       shared experiences. These affective improvements translate to cognitive
       gains as sustained engagement enables deeper learning than minimal-effort
@@ -364,7 +370,7 @@ export const content = (
     <p>
       Our vision is learning environments that students genuinely want to engage
       with not because they must, but because the experience is intrinsically
-      rewarding—intellectually stimulating, creatively satisfying, and socially
+      rewarding, intellectually stimulating, creatively satisfying, and socially
       enriching. Gamification, implemented ethically with learning goals as the
       priority, makes this vision reality.
     </p>
@@ -375,7 +381,7 @@ export const content = (
       rather than replacing peer connections, WhimsyLabs proves that
       gamification can enhance education without the ethical compromises
       plaguing much of the EdTech industry. This is gamification done
-      right—engaging, equitable, educational, and fundamentally respectful of
+      right, built with morals in mind to create experiences that are truly engaging, equitable, educational, and fundamentally respectful of
       students as learners and individuals.
     </p>
     <h2>Related Articles</h2>

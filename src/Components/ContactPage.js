@@ -156,7 +156,7 @@ const ContactPage = ({ language }) => {
             <blockquote className="testimonial-quote">
               "WhimsyLabs transformed how our students engage with science practicals. The virtual experiments feel genuinely hands-on, and the AI feedback helps students learn from mistakes safely."
             </blockquote>
-            <cite className="testimonial-author">— Head of Science, Secondary School</cite>
+            <cite className="testimonial-author">- Head of Science, Secondary School</cite>
           </div>
           
           <div className="contact-form-selector">

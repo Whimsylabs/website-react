@@ -142,6 +142,13 @@ async function main() {
     }
   }
   
+  // Sort to prioritize new URLs before updated URLs
+  urlsToSubmit.sort((a, b) => {
+    if (a.reason === 'new' && b.reason === 'updated') return -1;
+    if (a.reason === 'updated' && b.reason === 'new') return 1;
+    return 0;
+  });
+  
   if (urlsToSubmit.length === 0) {
     console.log('✅ No new or updated URLs to submit');
     process.exit(0);

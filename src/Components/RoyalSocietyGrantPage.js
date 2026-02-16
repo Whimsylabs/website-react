@@ -81,7 +81,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
             <p className="rsg-hero-subtitle">
               <strong>Get up to £3,000 for VR science labs in your school.</strong>
               <br />
-              WhimsyLabs is your STEM partner — free software, application support, and industry scientist expertise.
+              WhimsyLabs is your STEM partner: We provide free software, application support, and industry scientist expertise.
             </p>
             <div className="rsg-hero-badges">
               <div className="rsg-badge rsg-badge-primary">
@@ -151,7 +151,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
       {/* What You Get Section */}
       <section id="what-you-get" className="rsg-package-section">
         <div className="container">
-          <h2>What WhimsyLabs Provides — FREE</h2>
+          <h2>What WhimsyLabs Provides for FREE</h2>
           <p className="rsg-section-description">
             When you partner with WhimsyLabs for your grant application, you get everything below 
             at <strong>no cost</strong>. Your entire £3,000 goes toward VR hardware and other project needs.
@@ -162,14 +162,14 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               <div className="rsg-package-icon">🎁</div>
               <h3>FREE for Grant Recipients</h3>
               <ul>
-                <li><strong>Full WhimsyLabs Platform Access</strong> — All virtual experiments and lab environments</li>
-                <li><strong>Application Support Pack</strong> — Templates, project ideas, and sample text</li>
-                <li><strong>Technical Documentation</strong> — Ready-to-use content for your proposal</li>
-                <li><strong>Teacher Training</strong> — Full onboarding for your team</li>
-                <li><strong>Student Progress Dashboard</strong> — Track learning outcomes</li>
-                <li><strong>Curriculum-Aligned Lessons</strong> — Ready-made lesson plans</li>
-                <li><strong>Ongoing Technical Support</strong> — Help throughout your project</li>
-                <li><strong>Impact Documentation</strong> — Evidence gathering for your Royal Society report</li>
+                <li><strong>Full WhimsyLabs Platform Access:</strong> All virtual experiments and lab environments</li>
+                <li><strong>Application Support Pack:</strong> Templates, project ideas, and sample text</li>
+                <li><strong>Technical Documentation:</strong> Ready-to-use content for your proposal</li>
+                <li><strong>Teacher Training:</strong> Full onboarding for your team</li>
+                <li><strong>Student Progress Dashboard:</strong> Track learning outcomes</li>
+                <li><strong>Curriculum-Aligned Lessons:</strong> Ready-made lesson plans</li>
+                <li><strong>Ongoing Technical Support:</strong> Help throughout your project</li>
+                <li><strong>Impact Documentation:</strong> Evidence gathering for your Royal Society report</li>
               </ul>
             </div>
             <div className="rsg-package-card rsg-package-grant">
@@ -183,7 +183,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
                 <li>Celebration event for students</li>
               </ul>
               <p className="rsg-package-highlight">
-                <strong>💡 Pro Tip:</strong> Budget £2,000-2,500 for VR hardware — that's where your grant has most impact.
+                <strong>💡Tip:</strong> Budget £2,000-2,500 for VR hardware, computers or chromebooks, that's where your grant has most impact.
               </p>
             </div>
           </div>
@@ -205,7 +205,7 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               <h4>Application Templates</h4>
               <p>
                 Pre-written sections you can adapt for your school. Project descriptions, 
-                learning objectives, and methodology — all tailored for VR science.
+                learning objectives, and methodology. All tailored for VR or web-based science.
               </p>
             </div>
             <div className="rsg-feature-item">
@@ -220,16 +220,16 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
               <div className="rsg-feature-number">🔬</div>
               <h4>Project Ideas</h4>
               <p>
-                Proven investigation frameworks that work brilliantly with VR — from 
-                virtual chemistry experiments to physics simulations.
+                Proven investigation frameworks that work brilliantly with VR or web-based platforms. From
+                virtual chemistry experiments, physics simulations or biological dissections.
               </p>
             </div>
             <div className="rsg-feature-item">
               <div className="rsg-feature-number">📋</div>
               <h4>Technical Specification</h4>
               <p>
-                Hardware requirements, software capabilities, and setup documentation — 
-                everything reviewers need to understand your project.
+                Hardware requirements, software capabilities, and setup documentation.  
+                Everything reviewers need to understand your project.
               </p>
             </div>
             <div className="rsg-feature-item">

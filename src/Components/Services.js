@@ -34,7 +34,7 @@ const Services = ({ language }) => {
                     </p>
                     <ul style={{ textAlign: 'left', maxWidth: '800px', margin: 'auto' }}>
                         <li><strong>Create in Minutes:</strong> Turn any written protocol into a working virtual lab without programming knowledge.</li>
-                        <li><strong>Curriculum-Aligned:</strong> Build experiments that match your specific syllabus requirements — IB, A-Level, AP, or national standards.</li>
+                        <li><strong>Curriculum-Aligned:</strong> Build experiments that match your specific syllabus requirements for IB, A-Level, AP, or national standards.</li>
                         <li><strong>No Extra Cost:</strong> The AI Experiment Builder is included with every WhimsyLabs subscription at no additional charge.</li>
                         <li><strong>Community Library:</strong> Access thousands of labs created by educators worldwide, or contribute your own.</li>
                     </ul>
@@ -42,7 +42,7 @@ const Services = ({ language }) => {
                     {/* CTA after AI-Powered Experiment Creator */}
                     <div className="services-cta-section">
                         <h3>See the AI Experiment Builder in Action</h3>
-                        <p>Watch how teachers create custom labs in minutes — no coding required.</p>
+                        <p>Watch how teachers create custom labs in minutes,  no coding required, simply paste your lab protocol and let the AI do the rest.</p>
                         <div className="services-cta-buttons">
                             <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Book a Demo</a>
                             <a href={getLocalizedPath("/features/")} className="services-cta-button secondary">See Features</a>
@@ -57,17 +57,17 @@ const Services = ({ language }) => {
 
                     <h2>School-Wide Solutions</h2>
                     <ul style={{ textAlign: 'left', maxWidth: '800px', margin: 'auto' }}>
-                        <li><strong>Affordable Per-Student Pricing:</strong> Transparent pricing that scales with your institution — no hidden fees or surprise costs.</li>
+                        <li><strong>Affordable Per-Student Pricing:</strong> Transparent pricing that scales with your institution: no hidden fees or surprise costs.</li>
                         <li><strong>LMS Integration:</strong> Seamlessly connect with Google Classroom, Canvas, Schoology, and other learning management systems.</li>
                         <li><strong>Teacher Training:</strong> Comprehensive onboarding and ongoing professional development at no extra cost.</li>
                         <li><strong>Technical Support:</strong> Dedicated support team available during school hours to assist with any issues.</li>
-                        <li><strong>Offline Capability:</strong> Labs work without internet — perfect for schools with unreliable connectivity.</li>
+                        <li><strong>Offline Capability:</strong> Labs pre-download to student devices for use with weak internet, perfect for schools with unreliable connectivity.</li>
                     </ul>
 
                     {/* CTA after School-Wide Solutions */}
                     <div className="services-cta-section">
                         <h3>Ready to Transform Your Science Department?</h3>
-                        <p>Get a personalized quote for your school or district — pricing that fits any budget.</p>
+                        <p>Get a personalized quote for your school or district with pricing that fits any budget, grant support and public school discounts available.</p>
                         <div className="services-cta-buttons">
                             <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Request a Free Trial</a>
                             <a href={getLocalizedPath("/bett/")} className="services-cta-button secondary">See It In Action</a>
@@ -89,7 +89,7 @@ const Services = ({ language }) => {
                     {/* CTA after Custom Development */}
                     <div className="services-cta-section">
                         <h3>Need a Custom Solution?</h3>
-                        <p>Tell us about your project — our team will design a solution tailored to your needs.</p>
+                        <p>Tell us about your project and our team will design a solution tailored to your needs. We collectively have over 100k hours of experience in developing VR/Web simulations for education and industry.</p>
                         <div className="services-cta-buttons">
                             <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Contact Us</a>
                         </div>

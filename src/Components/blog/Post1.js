@@ -31,7 +31,7 @@ export const content = (
       >
         Grewenig et al., 2021
       </a>
-      ). This perfect storm of declining STEM performance and infrastructure loss catalyzed the creation of Whimsylabs in 2020, founded by Marisa French during her Physics PhD. For Marisa, this crisis felt deeply personal—she had been inspired to pursue science through the hands-on practicals she experienced in secondary school, opportunities that were now disappearing for a new generation.
+      ). This perfect storm of declining STEM performance and infrastructure loss catalyzed the creation of Whimsylabs in 2020, founded by Marisa French during her Physics PhD. For Marisa, this crisis felt deeply personal; she had been inspired to pursue science through the hands-on practicals she experienced in secondary school, opportunities that were now disappearing for a new generation.
     </p>
 
     <h2>How Did Whimsylabs Begin?</h2>

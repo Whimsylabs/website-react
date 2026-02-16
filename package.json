@@ -80,6 +80,8 @@
     "predeploy": "npm run build-static",
     "deploy": "gh-pages -d build && powershell -Command \"Write-Host 'Waiting 3 minutes for server to update...'; Start-Sleep -Seconds 180; Write-Host 'Starting IndexNow submission...'\" && npm run indexnow-submit && npm run gsc-ping && npm run google-indexing",
     "google-indexing": "node scripts/google-indexing-submit.js",
+    "google-indexing:compare": "node scripts/compare-indexed-urls.js",
+    "compare-urls": "node scripts/compare-local-vs-live.js",
     "gsc-ping": "node scripts/gsc-post-deploy.js",
     "seo:fetch": "node scripts/seo-automation/gsc-data-fetcher.js",
     "seo:fetch-live": "node scripts/seo-automation/fetch-live-gsc.js",

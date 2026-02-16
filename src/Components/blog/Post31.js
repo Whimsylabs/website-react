@@ -28,7 +28,7 @@ export const content = (
     </p>
 
     <p>
-      For us at WhimsyLabs, this isn't validation we needed—we've been building
+      For us at WhimsyLabs, this isn't validation we needed, as we've been building
       AI assessment and tutoring tools because the educational evidence demanded
       it. But it's reassuring to see national policy catching up with what
       teachers and researchers have been saying for years: personalised,
@@ -46,7 +46,7 @@ export const content = (
       <strong>£45 million for school connectivity.</strong> This is the
       foundation layer. AI tools are only as good as the infrastructure running
       them. Too many UK schools still struggle with patchy WiFi and outdated
-      networks—a barrier that hits rural and disadvantaged schools hardest. This
+      networks, a significant barrier that hits rural and disadvantaged schools hardest. This
       funding aims to ensure every classroom can actually <em>run</em> the AI
       tools being developed. It's not glamorous, but it's essential. You can't
       have AI tutors timing out because the school's broadband can't cope.
@@ -57,8 +57,8 @@ export const content = (
       compared to the connectivity spend, but it's strategically important.
       Teacher workload is at crisis levels, with marking consistently cited as
       one of the biggest time drains. AI marking tools won't replace teacher
-      judgment—good implementations augment it, handling routine feedback while
-      flagging work that needs human attention. The research on AI-assisted
+      judgment, good implementations augment it, handling routine feedback while
+      flagging work that needs human attention. The ability to audit AI output is also essential, due to the potential for bias and errors. The research on AI-assisted
       assessment shows teachers can redirect 3-5 hours per week from marking to
       actual teaching (
       <a
@@ -75,8 +75,8 @@ export const content = (
       <strong>£3 million for AI-ready educational datasets.</strong> This is the
       quiet investment that will pay dividends for years. AI systems need
       high-quality, properly structured data to learn from. By funding the
-      creation of educational datasets—curriculum-aligned, properly anonymised,
-      and pedagogically sound—the government is building the raw material that
+      creation of educational datasets that are curriculum-aligned, properly anonymised,
+      and pedagogically sound, the government is building the raw material that
       will power the next generation of AI education tools. Every EdTech company
       building in this space will benefit.
     </p>
@@ -91,8 +91,8 @@ export const content = (
     </p>
 
     <p>
-      TechFirst targets both hardware provision—getting devices into
-      classrooms—and training. It's the kind of unglamorous infrastructure
+      TechFirst targets both hardware provision, getting devices into
+      classrooms, and training. It's the kind of unglamorous infrastructure
       spending that often gets overlooked in favour of flashier announcements,
       but without it, AI investments would be building on sand.
     </p>
@@ -102,7 +102,7 @@ export const content = (
     <p>
       Perhaps the most significant announcement is the i.AI tutoring programme,
       developed by the government's Incubator for Artificial Intelligence. This
-      isn't a pilot in the traditional sense—450,000 pupils is substantial
+      isn't a pilot in the traditional sense, 450,000 pupils is substantial
       scale.
     </p>
 
@@ -137,7 +137,7 @@ export const content = (
       The UK will host an international summit on AI in education later in 2026,
       bringing together governments, researchers, and EdTech providers to share
       best practices and establish guidelines. This matters beyond the
-      diplomatic symbolism—international coordination on AI education standards
+      diplomatic symbolism, international coordination on AI education standards
       could prevent the fragmentation that has plagued other EdTech
       implementations.
     </p>
@@ -172,8 +172,8 @@ export const content = (
       The UK government's investment signals that public procurement will be a
       significant driver of this growth. Schools and multi-academy trusts will
       have both the infrastructure and the mandate to adopt AI tools. For
-      providers who've been building evidence-based solutions—rather than
-      chasing hype cycles—this represents an opportunity to scale proven
+      providers who've been building evidence-based solutions, rather than
+      chasing hype cycles, this represents an opportunity to scale proven
       approaches.
     </p>
 
@@ -216,7 +216,7 @@ export const content = (
       through a competitive process. Schools demonstrating clear digital skills
       gaps and concrete plans for addressing them will be prioritised. Start
       documenting your current digital capabilities and identifying training
-      needs now—having a clear baseline will strengthen any application.
+      needs now, and having a clear baseline will strengthen any application.
     </p>
 
     <h3>i.AI Tutoring Programme</h3>
@@ -241,7 +241,7 @@ export const content = (
       always-available support that the i.AI programme aims to deliver. Our
       assessment tools give teachers insight into student understanding without
       adding to their marking burden. We're not pivoting to chase this
-      funding—we're already here.
+      funding, we're already here.
     </p>
 
     <p>
@@ -255,8 +255,8 @@ export const content = (
 
     <p>
       £49 million plus £187 million is serious money, but it's also a down
-      payment. If these programmes succeed—and the evidence suggests they
-      will—expect follow-on investment at significantly larger scale. The
+      payment. If these programmes succeed, and the evidence suggests they
+      will, expect follow-on investment at significantly larger scale. The
       government is essentially running a large-scale pilot, and the results
       will shape education policy for the next decade.
     </p>
@@ -265,7 +265,7 @@ export const content = (
       For schools, the message is clear: AI in education is no longer
       speculative. It's policy. The infrastructure funding is coming, the tools
       are being subsidised, and the research evidence is building. Now is the
-      time to start planning how AI fits into your educational strategy—not
+      time to start planning how AI fits into your educational strategy, not
       because it's trendy, but because it works.
     </p>
 

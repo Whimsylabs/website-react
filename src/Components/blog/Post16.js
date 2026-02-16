@@ -105,10 +105,10 @@ export const content = (
     </p>
     <p>
       <strong>The WhimsyLabs Solution:</strong> Our data is{" "}
-      <strong>emergent</strong>. We simulate environmental variables—temperature
-      fluctuations, humidity, and impurities—that interact with the physics
-      engine. A student's result is generated <em>de novo</em> based on their
-      specific actions and environmental conditions—full of noise and artifacts,
+      <strong>emergent</strong>. We simulate environmental variables: temperature
+      fluctuations, humidity, and impurities, all of which interact with the physics
+      engine, a truly in silico simulation of the real world. A student's result is generated <em>de novo</em> based on their
+      specific actions and environmental conditions, full of noise and artifacts, 
       just like in a real lab.
     </p>
     <ul>

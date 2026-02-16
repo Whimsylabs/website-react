@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-15T11:28:52.019Z
+// Generated on 2026-02-16T15:41:37.612Z
 
 module.exports = {
   "en": [
@@ -276,7 +276,13 @@ module.exports = {
       "slug": "gamification-science-education-points-rewards-engagement",
       "title": "Gamification in Science: Points, Rewards, and Creative Expression",
       "description": "Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.",
-      "keywords": null,
+      "keywords": [
+        "gamification in education",
+        "STEM engagement",
+        "educational rewards",
+        "intrinsic motivation",
+        "game-based learning"
+      ],
       "date": "2025-10-15",
       "hasFullTranslation": false,
       "language": "en"
@@ -304,9 +310,18 @@ module.exports = {
     {
       "id": "post11",
       "slug": "virtual-labs-vs-physical-labs-cost-benefit-analysis",
-      "title": "Virtual vs. Physical Labs: Cost-Benefit Analysis for Schools",
+      "title": "Virtual vs Physical Labs: A Cost-Benefit Analysis",
       "description": "Comprehensive cost-benefit comparison between traditional physical laboratories and WhimsyLabs' virtual solution. UK statistics show 27% of schools can't afford science equipment while practical work has halved since 2016. Learn how virtual labs address this crisis.",
-      "keywords": null,
+      "keywords": [
+        "virtual vs physical labs",
+        "cost-benefit analysis",
+        "STEM education costs",
+        "educational equity",
+        "school budget optimization",
+        "UK science lab equipment costs",
+        "school laboratory funding",
+        "practical science education"
+      ],
       "date": "2025-09-01",
       "hasFullTranslation": false,
       "language": "en"
@@ -404,7 +419,7 @@ module.exports = {
     {
       "id": "post1",
       "slug": "whimsylabs-education-revolution",
-      "title": "WhimsyLabs History: From Humble Start to BETT 2025 Winner",
+      "title": "WhimsyLabs Story: From Startup to BETT 2025 Winner",
       "description": "How Whimsylabs, founded by Marisa French, is addressing STEM challenges with fully simulated labs, impactful partnerships, and award-winning innovation.",
       "keywords": [
         "virtual laboratory history",

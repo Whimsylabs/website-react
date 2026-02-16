@@ -39,7 +39,7 @@ export const content = (
       >
         SLS Education, 2025
       </a>
-      ). For under-resourced schools, these costs are prohibitive—and the
+      ). For under-resourced schools, these costs are prohibitive, and the
       situation is worsening. According to EngineeringUK research,{" "}
       <strong>
         27% of UK science teachers report their schools cannot afford the
@@ -66,8 +66,8 @@ export const content = (
       <p>
         "When we analysed the return on investment for schools adopting
         WhimsyLabs, the numbers were striking: a typical secondary school spends
-        £15,000-£25,000 annually on science lab consumables alone—chemicals,
-        broken glassware, disposable materials. Our platform eliminates those
+        £15,000-£25,000 annually on science lab consumables alone. Chemicals,
+        broken glassware, disposable materials are just a small aprt of the ongoing costs of running a lab. Our platform eliminates those
         recurring costs entirely while enabling{" "}
         <em>unlimited</em> experimentation. But ROI isn't just financial.
         Schools using our virtual labs report students completing 3-5× more
@@ -76,7 +76,7 @@ export const content = (
         opportunities."
       </p>
       <cite>
-        — Dr. Marisa French, Founder & CEO, WhimsyLabs
+        Dr. Marisa French, Founder & CEO, WhimsyLabs
       </cite>
     </blockquote>
 
@@ -129,9 +129,9 @@ export const content = (
     <ul>
       <li>
         <strong>
-          Access to hands-on practical science for GCSE pupils has almost halved
+          Access to hands-on practical science for GCSE pupils has almost halved,
         </strong>
-        —dropping from 44% doing practical work at least fortnightly in 2016 to
+        dropping from 44% doing practical work at least fortnightly in 2016 to
         just 26% in 2023 (
         <a
           href="https://royalsociety.org/news/2024/04/science-education-tracker-2023/"
@@ -149,7 +149,7 @@ export const content = (
       </li>
       <li>
         <strong>52% of years 7-9 students</strong> cite doing practical science
-        as a key motivating factor for learning science—making it the top
+        as a key motivating factor for learning science, making it <i>the top</i>
         engagement driver
       </li>
       <li>
@@ -208,7 +208,7 @@ export const content = (
     <p>
       Physical laboratories cannot offer experiments involving highly toxic
       chemicals, explosive reactions, radioactive materials, or prohibitively
-      expensive reagents. WhimsyLabs provides complete safety—students can
+      expensive reagents. WhimsyLabs provides complete safety allowing students to
       explore reactions that would be impossible in school settings, handle
       virtual materials that physical schools cannot afford, and experiment with
       dangerous procedures in perfectly safe environments. Studies in virtual
@@ -244,9 +244,9 @@ export const content = (
     <p>
       Physical laboratories operate on fixed schedules, limited by teacher
       availability and facility access. WhimsyLabs provides 24/7 access from
-      anywhere—students can complete experiments at optimal times for their
-      schedules, revisit difficult concepts at 9 PM on Sunday if needed, and
-      continue learning during school closures or personal circumstances
+      anywhere: students can complete experiments at optimal times for their
+      schedules; hopping in VR or accessing through the web (Chromebooks, laptops) completing their practical on-demand, revisiting difficult concepts at 9 PM on Sunday if needed, and
+      continuing to learn during school closures or personal circumstances
       preventing attendance. This flexibility is particularly valuable for
       students with irregular schedules, chronic health conditions, or family
       responsibilities that conflict with fixed laboratory times.
@@ -277,7 +277,7 @@ export const content = (
 
     <p>
       Traditional laboratory assessment relies on teacher observation and final
-      results—a limited snapshot of student performance. WhimsyLabs' AI analyzes
+      results, giving a limited snapshot of student performance. WhimsyLabs' AI analyzes
       thousands of actions per experiment, evaluating technique accuracy, safety
       compliance, procedural efficiency, and conceptual understanding. Teachers
       receive detailed analytics showing class-wide trends, individual student
@@ -335,7 +335,7 @@ export const content = (
       Beyond financial considerations, environmental sustainability increasingly
       influences school decision-making. Traditional laboratories consume
       enormous resources and generate substantial waste. WhimsyLabs dramatically
-      reduces environmental impact—research shows physical labs consume 60-65%
+      reduces environmental impactresearch shows physical labs consume 60-65%
       of university energy budgets and produce 5.5 million tonnes of plastic
       waste annually (
       <a
@@ -365,8 +365,8 @@ export const content = (
       disadvantaged communities often cannot afford comprehensive laboratory
       facilities, creating educational deserts where students lack access to
       hands-on practical work entirely. This infrastructure inequality
-      perpetuates broader STEM participation gaps—students without laboratory
-      access are far less likely to pursue STEM careers.
+      perpetuates broader STEM participation gaps, with students without laboratory
+      access being far less likely to pursue STEM careers.
     </p>
 
     <p>
@@ -409,7 +409,7 @@ export const content = (
       >
         Smith & Johnson, 2025
       </a>
-      ). WhimsyLabs embodies this potential—democratizing access to premium
+      ). WhimsyLabs embodies this potential democratizing access to premium
       science education regardless of school wealth, geographic location, or
       existing infrastructure.
     </p>

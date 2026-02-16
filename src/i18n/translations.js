@@ -59,11 +59,11 @@ const translations = {
       description: "Comprehensive K-12 virtual laboratory software including classroom lab solutions, curriculum integration, teacher training, and technical support for schools.",
       // Mid-page CTAs
       cta1Title: "See the AI Experiment Builder in Action",
-      cta1Text: "Watch how teachers create custom labs in minutes — no coding required.",
+      cta1Text: "Watch how teachers create custom labs in minutes, no coding required.",
       cta1Button: "Book a Demo",
       cta1Secondary: "See Features",
       cta2Title: "Ready to Transform Your Science Department?",
-      cta2Text: "Get a personalized quote for your school or district — pricing that fits any budget.",
+      cta2Text: "Get a personalized quote for your school or district, pricing that fits any budget.",
       cta2Button: "Request a Free Trial",
       cta2Secondary: "See It In Action",
       cta3Title: "Need a Custom Solution?",
@@ -102,7 +102,7 @@ const translations = {
       // Student privacy commitment
       studentPrivacy: {
         title: "Student Data Privacy Commitment",
-        commitment: "\"We believe student data belongs to students and their schools — never to us. Our platform is designed from the ground up to protect learner privacy.\"",
+        commitment: "\"We believe student data belongs to students and their schools, never to us. Our platform is designed from the ground up to protect learner privacy.\"",
         principles: {
           title: "Our Student Privacy Principles",
           minimal: "Data Minimisation",
