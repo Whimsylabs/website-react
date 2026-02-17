@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import './ContactPage.css';
 import { Helmet } from 'react-helmet-async';
+import { sendToCRM, parseFullName } from '../utils/crmWebhook';
 
 const ContactPage = ({ language }) => {
   const [activeForm, setActiveForm] = useState('trial'); // 'general' or 'trial'
@@ -66,6 +67,23 @@ const ContactPage = ({ language }) => {
     }
     
     setIsSubmitting(true);
+    
+    // Send to CRM (fire-and-forget - don't block form submission)
+    const { first_name, last_name } = parseFullName(formData.name);
+    sendToCRM({
+      form_type: activeForm === 'trial' ? 'trial_request' : 'contact',
+      email: formData.email,
+      first_name,
+      last_name,
+      company: formData.school,
+      job_title: formData.role,
+      phone: formData.phoneNumber,
+      message: formData.message,
+      metadata: {
+        student_count: formData.studentCount,
+        preferred_contact: formData.preferredContact
+      }
+    });
     
     // Check if we have a script URL
     if (!scriptURL) {

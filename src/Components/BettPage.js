@@ -6,6 +6,7 @@ import BubbleContainer from "./BubbleContainer";
 import AnimatedTitle from "./AnimatedTitle";
 import withTranslation from "./withTranslation";
 import SplashSection from "./SplashSection";
+import { sendToCRM, parseFullName } from "../utils/crmWebhook";
 
 const BettPage = ({ t, language }) => {
   const [formData, setFormData] = useState({
@@ -28,6 +29,21 @@ const BettPage = ({ t, language }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus("sending");
+
+    // Send to CRM (fire-and-forget - don't block form submission)
+    const { first_name, last_name } = parseFullName(formData.name);
+    sendToCRM({
+      form_type: 'demo_request',
+      email: formData.email,
+      first_name,
+      last_name,
+      company: formData.school,
+      phone: formData.phone,
+      message: formData.message,
+      metadata: {
+        source: 'bett_page'
+      }
+    });
 
     try {
       // Using Web3Forms - you'll need to replace this with your actual access key

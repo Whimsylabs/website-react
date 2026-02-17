@@ -2,6 +2,7 @@ import React from "react";
 
 export const title = "Gamification in Science: Points, Rewards, and Creative Expression";
 export const description = "Exploring WhimsyLabs' comprehensive non-monetized gamification system—including points for assessments, personalized lab recommendations, cosmetic rewards, lab personalization, and art creation—that enhances social connections rather than replacing them.";
+export const date = "2025-11-25";
 export const slug = "gamification-science-education-points-rewards-engagement";
 export const keywords = [
   "gamification in education",

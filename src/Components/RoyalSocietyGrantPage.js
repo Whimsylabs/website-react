@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import BubbleContainer from "./BubbleContainer";
 import AnimatedTitle from "./AnimatedTitle";
+import { sendToCRM, parseFullName } from "../utils/crmWebhook";
 
 const RoyalSocietyGrantPage = ({ language = "en" }) => {
   const [formData, setFormData] = useState({
@@ -27,6 +28,22 @@ const RoyalSocietyGrantPage = ({ language = "en" }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus("sending");
+
+    // Send to CRM (fire-and-forget - don't block form submission)
+    const { first_name, last_name } = parseFullName(formData.name);
+    sendToCRM({
+      form_type: 'partnership',
+      email: formData.email,
+      first_name,
+      last_name,
+      company: formData.school,
+      job_title: formData.role,
+      message: formData.message,
+      metadata: {
+        source: 'royal_society_grant_page',
+        grant_deadline: formData.deadline
+      }
+    });
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
