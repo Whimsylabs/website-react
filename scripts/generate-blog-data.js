@@ -11,7 +11,7 @@ const blogPosts = [
   'post7', 'post8', 'post9', 'post10', 'post11', 'post12',
   'post13', 'post14', 'post15', 'post16', 'post17', 'post18', 'post19', 'post20',
   'post21', 'post22', 'post23', 'post24', 'post25', 'post26', 'post27', 'post28', 'post29', 'post30',
-  'post31', 'post32'
+  'post31', 'post32', 'post33'
 ];
 const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
@@ -48,7 +48,8 @@ const postIdToSlug = {
   'post29': 'virtual-physics-lab-simulations-teach',
   'post30': 'premium-science-education-accessible-grants',
   'post31': 'uk-government-ai-education-funding-2026',
-  'post32': 'pearson-webinar-vr-assessment-ai-age'
+  'post32': 'pearson-webinar-vr-assessment-ai-age',
+  'post33': 'edtech-critics-right-passive-learning-vs-active-labs'
 };
 
 // Dates from the original blog components
@@ -85,6 +86,7 @@ const postDates = {
   post30: "2026-02-14",
   post31: "2026-02-15",
   post32: "2026-02-17",
+  post33: "2026-02-18",
 };
 
 async function generateBlogData() {

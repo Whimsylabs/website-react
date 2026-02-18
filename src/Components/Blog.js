@@ -41,6 +41,7 @@ import * as Post29 from './blog/Post29';
 import * as Post30 from './blog/Post30';
 import * as Post31 from './blog/Post31';
 import * as Post32 from './blog/Post32';
+import * as Post33 from './blog/Post33';
 
 // Blog categories for filtering
 const BLOG_CATEGORIES = {
@@ -307,6 +308,13 @@ const fallbackPosts = [
     content: Post32.content,
     date: Post32.date,
     description: Post32.description,
+  },
+  {
+    id: Post33.slug,
+    title: Post33.title,
+    content: Post33.content,
+    date: Post33.date,
+    description: Post33.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 

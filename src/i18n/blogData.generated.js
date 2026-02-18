@@ -1,8 +1,26 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-18T17:40:37.811Z
+// Generated on 2026-02-18T19:33:08.037Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post33",
+      "slug": "edtech-critics-right-passive-learning-vs-active-labs",
+      "title": "The Critics Are Right: Most EdTech Is Useless",
+      "description": "US schools spent $30 billion on edtech in 2024. Critics say it's wasted. They're right—about passive screen time. Virtual labs that require active experimentation are fundamentally different.",
+      "keywords": [
+        "edtech effectiveness",
+        "virtual labs learning outcomes",
+        "active learning technology",
+        "education technology criticism",
+        "passive vs active learning",
+        "OECD digital education",
+        "AI in education"
+      ],
+      "date": "2026-02-18",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post32",
       "slug": "pearson-webinar-vr-assessment-ai-age",
@@ -456,6 +474,24 @@ module.exports = {
     }
   ],
   "de": [
+    {
+      "id": "post33",
+      "slug": "edtech-critics-right-passive-learning-vs-active-labs",
+      "title": "Die Kritiker haben Recht: Die meiste EdTech ist nutzlos",
+      "description": "US-Schulen gaben 2024 30 Milliarden Dollar für EdTech aus. Kritiker sagen, es sei verschwendet. Sie haben Recht—bei passiver Bildschirmzeit. Virtuelle Labore, die aktives Experimentieren erfordern, sind grundlegend anders.",
+      "keywords": [
+        "EdTech Effektivität",
+        "virtuelle Labore Lernergebnisse",
+        "aktive Lerntechnologie",
+        "Bildungstechnologie Kritik",
+        "passives vs aktives Lernen",
+        "OECD digitale Bildung",
+        "KI in der Bildung"
+      ],
+      "date": "2026-02-18",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
     {
       "id": "post32",
       "slug": "pearson-webinar-vr-assessment-ai-age",
@@ -974,6 +1010,24 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post33",
+      "slug": "edtech-critics-right-passive-learning-vs-active-labs",
+      "title": "Les critiques ont raison : la plupart des EdTech sont inutiles",
+      "description": "Les écoles américaines ont dépensé 30 milliards de dollars en EdTech en 2024. Les critiques disent que c'est gaspillé. Ils ont raison—concernant le temps d'écran passif. Les laboratoires virtuels nécessitant une expérimentation active sont fondamentalement différents.",
+      "keywords": [
+        "efficacité EdTech",
+        "résultats apprentissage laboratoires virtuels",
+        "technologie apprentissage actif",
+        "critique technologie éducative",
+        "apprentissage passif vs actif",
+        "OCDE éducation numérique",
+        "IA dans l'éducation"
+      ],
+      "date": "2026-02-18",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post32",
       "slug": "pearson-webinar-vr-assessment-ai-age",
       "title": "L'évaluation à l'ère de l'IA : Rejoignez notre webinaire Pearson",
@@ -1491,6 +1545,24 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post33",
+      "slug": "edtech-critics-right-passive-learning-vs-active-labs",
+      "title": "Los críticos tienen razón: la mayoría de EdTech es inútil",
+      "description": "Las escuelas estadounidenses gastaron 30 mil millones de dólares en EdTech en 2024. Los críticos dicen que es un desperdicio. Tienen razón—sobre el tiempo de pantalla pasivo. Los laboratorios virtuales que requieren experimentación activa son fundamentalmente diferentes.",
+      "keywords": [
+        "efectividad EdTech",
+        "resultados aprendizaje laboratorios virtuales",
+        "tecnología aprendizaje activo",
+        "crítica tecnología educativa",
+        "aprendizaje pasivo vs activo",
+        "OCDE educación digital",
+        "IA en educación"
+      ],
+      "date": "2026-02-18",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post32",
       "slug": "pearson-webinar-vr-assessment-ai-age",
       "title": "La evaluación en la era de la IA: Únete a nuestro webinar de Pearson",
@@ -2007,6 +2079,24 @@ module.exports = {
     }
   ],
   "ja": [
+    {
+      "id": "post33",
+      "slug": "edtech-critics-right-passive-learning-vs-active-labs",
+      "title": "批判者は正しい：EdTechの大半は無駄である",
+      "description": "2024年、米国の学校はEdTechに300億ドルを費やした。批判者はそれが無駄だと言う。受動的な画面時間については彼らの言う通りだ。しかし、能動的な実験を必要とする仮想ラボは根本的に異なる。",
+      "keywords": [
+        "EdTech効果",
+        "仮想ラボ学習成果",
+        "アクティブラーニング技術",
+        "教育テクノロジー批判",
+        "受動的vs能動的学習",
+        "OECDデジタル教育",
+        "教育におけるAI"
+      ],
+      "date": "2026-02-18",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
     {
       "id": "post32",
       "slug": "pearson-webinar-vr-assessment-ai-age",
