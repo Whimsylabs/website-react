@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-16
+# Last updated: 2026-02-18
 
 User-agent: *
 Allow: /
@@ -64,6 +64,7 @@ Allow: /blog/gamification-science-education-points-rewards-engagement/
 Allow: /blog/green-labs-sustainability-virtual-stem-education/
 Allow: /blog/how-to-choose-virtual-lab-software-school/
 Allow: /blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /blog/physicality-in-virtual-labs/
 Allow: /blog/premium-science-education-accessible-grants/
 Allow: /blog/royal-society-partnership-grants-vr-science-labs/
@@ -100,6 +101,7 @@ Allow: /de/blog/gamification-science-education-points-rewards-engagement/
 Allow: /de/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /de/blog/how-to-choose-virtual-lab-software-school/
 Allow: /de/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /de/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /de/blog/physicality-in-virtual-labs/
 Allow: /de/blog/premium-science-education-accessible-grants/
 Allow: /de/blog/royal-society-partnership-grants-vr-science-labs/
@@ -142,6 +144,7 @@ Allow: /es/blog/gamification-science-education-points-rewards-engagement/
 Allow: /es/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /es/blog/how-to-choose-virtual-lab-software-school/
 Allow: /es/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /es/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /es/blog/physicality-in-virtual-labs/
 Allow: /es/blog/premium-science-education-accessible-grants/
 Allow: /es/blog/royal-society-partnership-grants-vr-science-labs/
@@ -186,6 +189,7 @@ Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
 Allow: /fr/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /fr/blog/how-to-choose-virtual-lab-software-school/
 Allow: /fr/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /fr/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /fr/blog/physicality-in-virtual-labs/
 Allow: /fr/blog/premium-science-education-accessible-grants/
 Allow: /fr/blog/royal-society-partnership-grants-vr-science-labs/
@@ -230,6 +234,7 @@ Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
 Allow: /jp/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /jp/blog/how-to-choose-virtual-lab-software-school/
 Allow: /jp/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /jp/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /jp/blog/physicality-in-virtual-labs/
 Allow: /jp/blog/premium-science-education-accessible-grants/
 Allow: /jp/blog/royal-society-partnership-grants-vr-science-labs/
@@ -262,7 +267,7 @@ Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 155 total (included above)
+# Blog posts summary: 160 total (included above)
 
-# Total pages in build: 209
+# Total pages in build: 214
 # This file is generated automatically - do not edit manually
