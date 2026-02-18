@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title = "Teachers Are the Experts. We Just Build the Tools.";
 export const date = "2026-02-08";
@@ -149,7 +152,7 @@ export const content = (
       So we built WhimsyLabs on a different premise: teachers are the experts at teaching. We're just experts at building virtual laboratories. When we stay in our lane and give you control, students get the best of both.
     </p>
     <p>
-      If you're a teacher who wants virtual labs that work the way you do, we'd love to show you what that looks like. <a href="/contact">Get in touch</a> and we'll set up a demo.
+      If you're a teacher who wants virtual labs that work the way you do, we'd love to show you what that looks like. <a href={getLocalizedPath("/contact", language)}>Get in touch</a> and we'll set up a demo.
     </p>
 
     <div className="references-section">
@@ -195,10 +198,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">The Sandbox Learning Revolution: Why Freedom to Fail is Essential</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: AI That Supports, Not Replaces</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 Questions to Ask EdTech Vendors After the PowerSchool Breach</a></li>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
+      <li><a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>The Sandbox Learning Revolution: Why Freedom to Fail is Essential</a></li>
+      <li><a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>Meet WhimsyCat: AI That Supports, Not Replaces</a></li>
+      <li><a href={getLocalizedPath("/blog/edtech-vendor-security-questions-powerschool", language)}>10 Questions to Ask EdTech Vendors After the PowerSchool Breach</a></li>
+      <li><a href={getLocalizedPath("/blog/royal-society-partnership-grants-vr-science-labs", language)}>UK Schools: Get £3,000 for VR Science Labs</a></li>
     </ul>
   </>
 );

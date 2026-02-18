@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "AI Boosted Scores 127%. Then Students Couldn't Think.";
@@ -17,6 +18,15 @@ export const keywords = [
   "cognitive skills",
   "science education"
 ];
+
+const ContactCTA = () => {
+  const language = getCurrentLanguage();
+  return (
+    <p>
+      Ready to see virtual labs that build real skills? <a href={getLocalizedPath("/contact", language)}>Get in touch</a> to experience the WhimsyLabs difference.
+    </p>
+  );
+};
 
 export const content = (
   <div>
@@ -172,9 +182,7 @@ export const content = (
     <p>
       Grades are rising in AI-assisted classrooms. But as the research shows, grades aren't the same as learning.
     </p>
-    <p>
-      Ready to see virtual labs that build real skills? <a href="/contact">Get in touch</a> to experience the WhimsyLabs difference.
-    </p>
+    <ContactCTA />
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />
     <p style={{ fontSize: '0.9rem', color: '#666' }}>

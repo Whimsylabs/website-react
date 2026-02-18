@@ -40,6 +40,7 @@ import * as Post28 from './blog/Post28';
 import * as Post29 from './blog/Post29';
 import * as Post30 from './blog/Post30';
 import * as Post31 from './blog/Post31';
+import * as Post32 from './blog/Post32';
 
 // Blog categories for filtering
 const BLOG_CATEGORIES = {
@@ -299,6 +300,13 @@ const fallbackPosts = [
     content: Post31.content,
     date: Post31.date,
     description: Post31.description,
+  },
+  {
+    id: Post32.slug,
+    title: Post32.title,
+    content: Post32.content,
+    date: Post32.date,
+    description: Post32.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -334,7 +342,8 @@ const slugToPostId = {
   'virtual-biology-lab-dissections-microscopy': 'post28',
   'virtual-physics-lab-simulations-teach': 'post29',
   'premium-science-education-accessible-grants': 'post30',
-  'uk-government-ai-education-funding-2026': 'post31'
+  'uk-government-ai-education-funding-2026': 'post31',
+  'pearson-webinar-vr-assessment-ai-age': 'post32'
 };
 
 // Reverse mapping from post IDs to slugs

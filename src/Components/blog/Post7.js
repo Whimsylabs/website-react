@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "Green Labs: Virtual Labs for Sustainable STEM";
@@ -358,12 +361,12 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/virtual-vs-physical-labs-cost-analysis">
+        <a href={getLocalizedPath("/blog/virtual-vs-physical-labs-cost-analysis", language)}>
           Virtual vs. Physical Labs: A Comprehensive Cost Analysis
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href={getLocalizedPath("/blog/ai-powered-virtual-labs-solving-education-crisis", language)}>
           How AI-Powered Virtual Labs Are Solving the Global Science Education
           Crisis
         </a>

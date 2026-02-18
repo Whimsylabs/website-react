@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title = "The Complete Virtual Lab Software Guide for 2026";
 export const date = "2026-02-14";
@@ -174,7 +177,7 @@ export const content = (
 
     <h3>Privacy Concerns Have Grown</h3>
     <p>
-      High-profile data breaches in EdTech have made schools more cautious about student data. The <a href="/blog/edtech-vendor-security-questions-powerschool">PowerSchool breach</a> exposed millions of student records and raised urgent questions about vendor security practices.
+      High-profile data breaches in EdTech have made schools more cautious about student data. The <a href={getLocalizedPath("/blog/edtech-vendor-security-questions-powerschool", language)}>PowerSchool breach</a> exposed millions of student records and raised urgent questions about vendor security practices.
     </p>
     <p>
       When evaluating virtual lab solutions, scrutinise their data practices carefully. Where is student data stored? Is it encrypted? Who has access? Is data used to train AI models? Does the vendor comply with GDPR, FERPA, and COPPA? Can you request data deletion if you leave the platform?
@@ -217,7 +220,7 @@ export const content = (
       We built WhimsyLabs with these principles in mind. Our platform runs on a genuine physics engine, not scripted animations. Students experience realistic cause and effect. Mistakes produce incorrect results, creating learning opportunities rather than dead ends.
     </p>
     <p>
-      Our AI tutor, <a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>, provides contextual guidance based on what students actually do. It detects frustration and adjusts its approach. Teachers retain full control over learning objectives and can customise experiments using our <a href="/blog/teachers-are-experts-custom-experiment-designer">experiment designer</a>.
+      Our AI tutor, <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>WhimsyCat</a>, provides contextual guidance based on what students actually do. It detects frustration and adjusts its approach. Teachers retain full control over learning objectives and can customise experiments using our <a href={getLocalizedPath("/blog/teachers-are-experts-custom-experiment-designer", language)}>experiment designer</a>.
     </p>
     <p>
       We prioritise web-first delivery for maximum accessibility, with VR support for schools that want immersive experiences. Our platform integrates via LTI with major learning management systems. And we're serious about data privacy: isolated per-school deployments, full encryption, GDPR and FERPA compliance, and we never use student data to train AI models.
@@ -228,7 +231,7 @@ export const content = (
       Request trials from multiple vendors. Run the same experiments across platforms and compare directly. Have teachers evaluate usability. Have students test engagement. Look beyond the sales pitch to the actual experience.
     </p>
     <p>
-      And if you want to see how WhimsyLabs stacks up against your other options, we'd be happy to arrange a demonstration. <a href="/contact">Get in touch</a> and we'll set up a session tailored to your curriculum and requirements.
+      And if you want to see how WhimsyLabs stacks up against your other options, we'd be happy to arrange a demonstration. <a href={getLocalizedPath("/contact", language)}>Get in touch</a> and we'll set up a session tailored to your curriculum and requirements.
     </p>
 
     <div className="references-section">
@@ -259,10 +262,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Why Traditional Virtual Labs Fail: The Physics Engine Difference</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Understands Frustration</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtual Labs vs Physical Labs: A Complete Cost-Benefit Analysis</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 Questions to Ask EdTech Vendors About Data Security</a></li>
+      <li><a href={getLocalizedPath("/blog/why-traditional-virtual-labs-fail-physics-engine", language)}>Why Traditional Virtual Labs Fail: The Physics Engine Difference</a></li>
+      <li><a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>Meet WhimsyCat: The AI Tutor That Understands Frustration</a></li>
+      <li><a href={getLocalizedPath("/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis", language)}>Virtual Labs vs Physical Labs: A Complete Cost-Benefit Analysis</a></li>
+      <li><a href={getLocalizedPath("/blog/edtech-vendor-security-questions-powerschool", language)}>10 Questions to Ask EdTech Vendors About Data Security</a></li>
     </ul>
   </>
 );

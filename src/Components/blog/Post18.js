@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "VR Winter? Why Web-First Virtual Labs Are Smart for Schools";
@@ -16,6 +17,15 @@ export const keywords = [
   "sustainable edtech investment",
   "VR headset decline"
 ];
+
+const ContactCTA = () => {
+  const language = getCurrentLanguage();
+  return (
+    <p>
+      Ready to see physics-first virtual labs that work on any device? <a href={getLocalizedPath("/contact", language)}>Get in touch</a> to schedule a demonstration.
+    </p>
+  );
+};
 
 export const content = (
   <div>
@@ -156,9 +166,7 @@ export const content = (
     <p>
       WhimsyLabs works on the devices your school already has, scales with your needs, and remains valuable regardless of what happens in the VR market. That's not a compromise; it's smart educational technology procurement.
     </p>
-    <p>
-      Ready to see physics-first virtual labs that work on any device? <a href="/contact">Get in touch</a> to schedule a demonstration.
-    </p>
+    <ContactCTA />
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />
     <p style={{ fontSize: '0.9rem', color: '#666' }}>

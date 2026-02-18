@@ -7,6 +7,7 @@ import ContactUs from './ContactUs';
 import Testimonial from './Testimonial';
 import Partners from './Partners';
 import { useTranslation } from '../i18n/translations';
+import { getLocalizedPath } from '../i18n';
 import './LandingDemo.css';
 
 // ============================================
@@ -761,7 +762,7 @@ const LandingDemo = ({ language = 'en' }) => {
           <div className="gassy-header">
             <h2 className="gassy-title">{t('home.demo.whyStudentsLove')}<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer" className="citation-link">[3]</a></sup></h2>
             <div className="bett-award-badges">
-              <a href="/blog/whimsylabs-education-revolution" className="bett-award-badge">
+              <a href={getLocalizedPath("/blog/whimsylabs-education-revolution", language)} className="bett-award-badge">
                 <span className="award-text">{t('home.demo.mockups.bettAward')}</span>
               </a>
               <a href="https://www.techlearning.com/learning/classroom-tools/best-of-bett-2026-the-floor-of-bett-uk-reveals-the-future-of-education-tech" target="_blank" rel="noopener noreferrer" className="bett-award-badge techlearning">

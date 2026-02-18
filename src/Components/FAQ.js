@@ -3,6 +3,7 @@ import "./FAQ.css";
 import { faqCategories } from "../data/faqData";
 import { generateFAQCategories } from "../i18n/faqDataGenerator";
 import withTranslation from './withTranslation';
+import { getLocalizedPath } from '../i18n';
 
 const FAQ = ({ t, currentLang }) => {
 
@@ -390,7 +391,7 @@ const FAQ = ({ t, currentLang }) => {
               For additional research inquiries or to access our complete
               bibliography, please{" "}
               <a
-                href="/contact/"
+                href={getLocalizedPath("/contact/", currentLang)}
                 style={{
                   color: "#14b7ff",
                   textDecoration: "none",

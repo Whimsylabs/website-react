@@ -6,7 +6,8 @@ import { useTranslation } from '../i18n/translations';
 const withTranslation = (WrappedComponent) => {
   return function TranslatedComponent(props) {
     // Use language from props (for SSR) or detect from URL (for client-side)
-    const currentLang = props.language || getCurrentLanguage();
+    // Check both 'language' and 'currentLang' props since components may use either
+    const currentLang = props.language || props.currentLang || getCurrentLanguage();
     const { t } = useTranslation(currentLang);
     
 

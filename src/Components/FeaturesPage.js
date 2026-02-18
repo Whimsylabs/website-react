@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import BubbleContainer from "./BubbleContainer";
 import ContactUs from "./ContactUs";
 import AnimatedTitle from "./AnimatedTitle";
+import { getLocalizedPath } from '../i18n';
 
 const FeaturesPage = ({ language }) => {
   const [currentVideo, setCurrentVideo] = useState("9D2e2e2gzvk");
@@ -160,7 +161,7 @@ const FeaturesPage = ({ language }) => {
                 {features[activeFeature].description}
               </p>
               <a
-                href={features[activeFeature].blogLink}
+                href={getLocalizedPath(features[activeFeature].blogLink, language)}
                 className="feature-learn-more-link"
               >
                 Learn More About {features[activeFeature].title} →
@@ -245,18 +246,18 @@ const FeaturesPage = ({ language }) => {
           <h2>Have Questions?</h2>
           <p>
             Visit our{" "}
-            <a href="/faq/" className="faq-link">
+            <a href={getLocalizedPath("/faq/", language)} className="faq-link">
               FAQ page
             </a>{" "}
             for answers to common questions, or explore our{" "}
-            <a href="/services/" className="faq-link">
+            <a href={getLocalizedPath("/services/", language)} className="faq-link">
               Services
             </a>{" "}
             to see how we can help your school!
           </p>
           <p style={{ marginTop: '15px' }}>
             Coming to BETT 2026?{" "}
-            <a href="/bett/" className="faq-link">
+            <a href={getLocalizedPath("/bett/", language)} className="faq-link">
               Book a demo at our booth
             </a>!
           </p>

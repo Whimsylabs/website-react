@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "AI-Powered Virtual Labs Solving the STEM Crisis";
@@ -287,22 +290,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>
           Meet WhimsyCat: The Revolutionary AI Tutor Transforming Science Education
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall Behind
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href={getLocalizedPath("/blog/stem-teacher-shortage-virtual-labs", language)}>
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href={getLocalizedPath("/blog/physicality-in-virtual-labs", language)}>
           The Importance of Physicality in Virtual Labs
         </a>
       </li>

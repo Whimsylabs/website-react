@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollingMap from "../ScrollingMap";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "We're Exhibiting at Bett 2026: Join Us in London";
@@ -14,6 +15,38 @@ export const keywords = [
   "virtual laboratory showcase",
   "EdTech innovation"
 ];
+
+const RelatedArticles = () => {
+  const language = getCurrentLanguage();
+  return (
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href={getLocalizedPath("/blog/whimsylabs-education-revolution", language)}>
+            A Brief History of WhimsyLabs: From Humble Start to BETT 2025 Winner
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/physicality-in-virtual-labs", language)}>
+            The Physicality Breakthrough: How We Made Virtual Labs Feel Real
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/green-labs-sustainability-virtual-stem-education", language)}>
+            Green Labs, Greener Future: Virtual Labs and Sustainability
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/ai-powered-virtual-labs-solving-education-crisis", language)}>
+            How AI-Powered Virtual Labs Are Solving the Global Science Education
+            Crisis
+          </a>
+        </li>
+      </ul>
+    </>
+  );
+};
 
 export const content = (
   <div>
@@ -355,30 +388,7 @@ export const content = (
       love.
     </p>
 
-    <h2>Related Articles</h2>
-    <ul>
-      <li>
-        <a href="/blog/whimsylabs-education-revolution">
-          A Brief History of WhimsyLabs: From Humble Start to BETT 2025 Winner
-        </a>
-      </li>
-      <li>
-        <a href="/blog/physicality-in-virtual-labs">
-          The Physicality Breakthrough: How We Made Virtual Labs Feel Real
-        </a>
-      </li>
-      <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
-          Green Labs, Greener Future: Virtual Labs and Sustainability
-        </a>
-      </li>
-      <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
-          How AI-Powered Virtual Labs Are Solving the Global Science Education
-          Crisis
-        </a>
-      </li>
-    </ul>
+    <RelatedArticles />
 
     <div className="references-section">
       <h3>References</h3>

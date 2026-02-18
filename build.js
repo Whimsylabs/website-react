@@ -436,8 +436,9 @@ async function getBlogPosts(language = 'en') {
     const Post29 = require("./src/Components/blog/Post29.js");
     const Post30 = require("./src/Components/blog/Post30.js");
     const Post31 = require("./src/Components/blog/Post31.js");
+    const Post32 = require("./src/Components/blog/Post32.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30, Post31];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30, Post31, Post32];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -491,6 +492,7 @@ async function getBlogPosts(language = 'en') {
       const Post29 = require("./src/Components/blog/Post29.js");
       const Post30 = require("./src/Components/blog/Post30.js");
       const Post31 = require("./src/Components/blog/Post31.js");
+      const Post32 = require("./src/Components/blog/Post32.js");
 
       const fallbackPosts = [
         {
@@ -800,6 +802,16 @@ async function getBlogPosts(language = 'en') {
           description: Post31.description,
           content: Post31.content,
           path: `/blog/${Post31.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post32.slug,
+          title: Post32.title,
+          date: Post32.date,
+          description: Post32.description,
+          content: Post32.content,
+          path: `/blog/${Post32.slug}`,
           language: 'en',
           hasFullTranslation: true
         }

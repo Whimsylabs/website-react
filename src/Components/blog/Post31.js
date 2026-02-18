@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "UK Invests £49m in AI Education: What This Means for Schools";
@@ -273,24 +276,24 @@ export const content = (
       We'll be watching the summit closely and updating our understanding as
       more details emerge. In the meantime, if you're curious about how AI
       tutoring and assessment actually work in practice,{" "}
-      <a href="/contact">get in touch</a>. We're happy to share what we've
+      <a href={getLocalizedPath("/contact", language)}>get in touch</a>. We're happy to share what we've
       learned.
     </p>
 
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href={getLocalizedPath("/blog/ai-assessment-crisis-solution", language)}>
           AI Assessment: How Technology Is Addressing the Marking Crisis
         </a>
       </li>
       <li>
-        <a href="/blog/ai-science-tutor-classroom-what-works">
+        <a href={getLocalizedPath("/blog/ai-science-tutor-classroom-what-works", language)}>
           AI Science Tutors in the Classroom: What Actually Works?
         </a>
       </li>
       <li>
-        <a href="/blog/premium-science-education-accessible-grants">
+        <a href={getLocalizedPath("/blog/premium-science-education-accessible-grants", language)}>
           Making Premium Science Education Accessible to Every School
         </a>
       </li>

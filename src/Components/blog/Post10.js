@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "WhimsyCat: Detecting Student Frustration with AI";
@@ -287,23 +290,23 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>
           Meet WhimsyCat: The Emotionally Intelligent AI Tutor
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
           Behind
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href={getLocalizedPath("/blog/gamification-done-right-ethical-engagement", language)}>
           Gamification Done Right: Creating Supportive Learning Environments
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-kidney-dissection-send-engagement">
+        <a href={getLocalizedPath("/blog/virtual-kidney-dissection-send-engagement", language)}>
           Virtual Kidney Dissection: Supporting Diverse Learning Needs
         </a>
       </li>

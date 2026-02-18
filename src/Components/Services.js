@@ -3,16 +3,10 @@ import Header from './Header';
 import Footer from './Footer';
 import BubbleContainer from './BubbleContainer';
 import ContactUs from './ContactUs';
+import { getLocalizedPath } from '../i18n';
 import './Services.css';
 
 const Services = ({ language }) => {
-    // Helper for localized paths
-    const getLocalizedPath = (path) => {
-        if (language && language !== 'en') {
-            return `/${language}${path}`;
-        }
-        return path;
-    };
 
     return (
             <main className="container-fluid text-center p-0">
@@ -44,8 +38,8 @@ const Services = ({ language }) => {
                         <h3>See the AI Experiment Builder in Action</h3>
                         <p>Watch how teachers create custom labs in minutes,  no coding required, simply paste your lab protocol and let the AI do the rest.</p>
                         <div className="services-cta-buttons">
-                            <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Book a Demo</a>
-                            <a href={getLocalizedPath("/features/")} className="services-cta-button secondary">See Features</a>
+                            <a href={getLocalizedPath("/contact/", language)} className="services-cta-button primary">Book a Demo</a>
+                            <a href={getLocalizedPath("/features/", language)} className="services-cta-button secondary">See Features</a>
                         </div>
                     </div>
 
@@ -69,8 +63,8 @@ const Services = ({ language }) => {
                         <h3>Ready to Transform Your Science Department?</h3>
                         <p>Get a personalized quote for your school or district with pricing that fits any budget, grant support and public school discounts available.</p>
                         <div className="services-cta-buttons">
-                            <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Request a Free Trial</a>
-                            <a href={getLocalizedPath("/bett/")} className="services-cta-button secondary">See It In Action</a>
+                            <a href={getLocalizedPath("/contact/", language)} className="services-cta-button primary">Request a Free Trial</a>
+                            <a href={getLocalizedPath("/bett/", language)} className="services-cta-button secondary">See It In Action</a>
                         </div>
                     </div>
 
@@ -91,7 +85,7 @@ const Services = ({ language }) => {
                         <h3>Need a Custom Solution?</h3>
                         <p>Tell us about your project and our team will design a solution tailored to your needs. We collectively have over 100k hours of experience in developing VR/Web simulations for education and industry.</p>
                         <div className="services-cta-buttons">
-                            <a href={getLocalizedPath("/contact/")} className="services-cta-button primary">Contact Us</a>
+                            <a href={getLocalizedPath("/contact/", language)} className="services-cta-button primary">Contact Us</a>
                         </div>
                     </div>
 
@@ -103,8 +97,8 @@ const Services = ({ language }) => {
 
                     <div style={{ textAlign: 'center', marginTop: '30px', marginBottom: '30px' }}>
                         <p>
-                            Explore our <a href="/features/" style={{ color: '#6B4EAA', fontWeight: 'bold' }}>full feature set</a> or 
-                            <a href="/bett/" style={{ color: '#6B4EAA', fontWeight: 'bold', marginLeft: '5px' }}>meet us at BETT 2026</a> for a live demo!
+                            Explore our <a href={getLocalizedPath("/features/", language)} style={{ color: '#6B4EAA', fontWeight: 'bold' }}>full feature set</a> or 
+                            <a href={getLocalizedPath("/bett/", language)} style={{ color: '#6B4EAA', fontWeight: 'bold', marginLeft: '5px' }}>meet us at BETT 2026</a> for a live demo!
                         </p>
                     </div>
 

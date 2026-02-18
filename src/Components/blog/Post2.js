@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "Physicality in Virtual Labs: Beyond Simulations";
@@ -202,22 +205,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
+        <a href={getLocalizedPath("/blog/science-real-time-physics-simulations-virtual-labs", language)}>
           Real-Time Physics Simulations: The Technical Innovation Behind WhimsyLabs
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
+        <a href={getLocalizedPath("/blog/virtual-reality-prepares-students-real-world-stem-careers", language)}>
           Preparing Industry-Ready STEM Graduates Through Virtual Laboratory Training
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>
           The Sandbox Learning Revolution: Why Freedom to Fail is Essential
         </a>
       </li>
       <li>
-        <a href="/blog/whimsylabs-education-revolution">
+        <a href={getLocalizedPath("/blog/whimsylabs-education-revolution", language)}>
           A Brief History of WhimsyLabs: From Humble Start to BETT 2025 Winner
         </a>
       </li>

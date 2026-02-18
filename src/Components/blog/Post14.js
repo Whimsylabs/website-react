@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "Gamification in Science: How WhimsyLabs Engages";
@@ -13,6 +14,38 @@ export const keywords = [
   "intrinsic motivation",
   "game-based learning"
 ];
+
+const RelatedArticles = () => {
+  const language = getCurrentLanguage();
+  return (
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
+            24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
+            Behind
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection", language)}>
+            The Future of Learning: Emotional Intelligence in AI Tutors
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>
+            The Sandbox Learning Revolution: Why Freedom to Fail is Essential
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>
+            Meet WhimsyCat: The AI Tutor That Makes Learning Engaging
+          </a>
+        </li>
+      </ul>
+    </>
+  );
+};
 
 export const content = (
   <div>
@@ -387,30 +420,7 @@ export const content = (
       right, built with morals in mind to create experiences that are truly engaging, equitable, educational, and fundamentally respectful of
       students as learners and individuals.
     </p>
-    <h2>Related Articles</h2>
-    <ul>
-      <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
-          24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
-          Behind
-        </a>
-      </li>
-      <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
-          The Future of Learning: Emotional Intelligence in AI Tutors
-        </a>
-      </li>
-      <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
-          The Sandbox Learning Revolution: Why Freedom to Fail is Essential
-        </a>
-      </li>
-      <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
-          Meet WhimsyCat: The AI Tutor That Makes Learning Engaging
-        </a>
-      </li>
-    </ul>
+    <RelatedArticles />
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">

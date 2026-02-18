@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "VR Labs That Teach Real Physical Lab Skills";
@@ -13,6 +14,35 @@ export const keywords = [
   "laboratory safety training",
   "future of work"
 ];
+
+const RelatedArticles = () => {
+  const language = getCurrentLanguage();
+  return (
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href={getLocalizedPath("/blog/science-real-time-physics-simulations-virtual-labs", language)}>
+            Real-Time Physics Simulations: The Technical Innovation Behind
+            WhimsyLabs
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/physicality-in-virtual-labs", language)}>
+            The Importance of Physicality in Virtual Labs: A Step Beyond
+            Traditional Simulations
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>
+            The Sandbox Learning Revolution: Why Freedom to Fail is Essential for
+            STEM Education
+          </a>
+        </li>
+      </ul>
+    </>
+  );
+};
 
 export const content = (
   <div>
@@ -419,27 +449,7 @@ export const content = (
       standard for preparing the next generation of STEM professionals.
     </p>
 
-    <h2>Related Articles</h2>
-    <ul>
-      <li>
-        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
-          Real-Time Physics Simulations: The Technical Innovation Behind
-          WhimsyLabs
-        </a>
-      </li>
-      <li>
-        <a href="/blog/physicality-in-virtual-labs">
-          The Importance of Physicality in Virtual Labs: A Step Beyond
-          Traditional Simulations
-        </a>
-      </li>
-      <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
-          The Sandbox Learning Revolution: Why Freedom to Fail is Essential for
-          STEM Education
-        </a>
-      </li>
-    </ul>
+    <RelatedArticles />
 
     <div className="references-section">
       <h3>References</h3>

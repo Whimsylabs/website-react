@@ -1,9 +1,23 @@
 import { Helmet } from "react-helmet-async";
 // Removed React Router - getting location from window.location
 
+// Map language codes to og:locale values
+const localeMap = {
+    'en': 'en_GB',
+    'es': 'es_ES',
+    'fr': 'fr_FR',
+    'de': 'de_DE',
+    'jp': 'ja_JP'
+};
+
 const MetaTags = () => {
     // Get current path from window.location instead of React Router
     const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
+    
+    // Extract language from path (e.g., /fr/blog/ -> fr)
+    const langMatch = currentPath.match(/^\/([a-z]{2})\//);
+    const langCode = langMatch ? langMatch[1] : 'en';
+    const ogLocale = localeMap[langCode] || 'en_GB';
 
     // Define meta information based on the current route with optimized SEO keywords
     const metaInfo = {
@@ -50,7 +64,7 @@ const MetaTags = () => {
             <meta property="og:url" content={`https://whimsylabs.ai${currentPath}`} />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="WhimsyLabs" />
-            <meta property="og:locale" content="en_GB" />
+            <meta property="og:locale" content={ogLocale} />
             <meta property="og:image" content="https://whimsylabs.ai/logo.png" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />

@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title = "How to Choose Virtual Lab Software for Your School";
 export const date = "2026-02-09";
@@ -189,7 +192,7 @@ export const content = (
       WhimsyLabs isn't the cheapest option on the market. But it's designed to actually work. And for schools with limited budgets, we actively support grant applications. Many UK schools have funded their subscriptions through Royal Society Partnership Grants and similar programmes.
     </p>
     <p>
-      If you're evaluating virtual lab software, we'd welcome the chance to show you how WhimsyLabs compares. <a href="/contact">Get in touch</a> to arrange a demo with your science team.
+      If you're evaluating virtual lab software, we'd welcome the chance to show you how WhimsyLabs compares. <a href={getLocalizedPath("/contact", language)}>Get in touch</a> to arrange a demo with your science team.
     </p>
 
     <div className="references-section">
@@ -220,10 +223,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Why Traditional Virtual Labs Fail (And What Makes Physics Engines Different)</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 Questions to Ask EdTech Vendors After the PowerSchool Breach</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
+      <li><a href={getLocalizedPath("/blog/why-traditional-virtual-labs-fail-physics-engine", language)}>Why Traditional Virtual Labs Fail (And What Makes Physics Engines Different)</a></li>
+      <li><a href={getLocalizedPath("/blog/edtech-vendor-security-questions-powerschool", language)}>10 Questions to Ask EdTech Vendors After the PowerSchool Breach</a></li>
+      <li><a href={getLocalizedPath("/blog/teachers-are-experts-custom-experiment-designer", language)}>Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href={getLocalizedPath("/blog/royal-society-partnership-grants-vr-science-labs", language)}>UK Schools: Get £3,000 for VR Science Labs</a></li>
     </ul>
   </>
 );

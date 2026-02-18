@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title = "Virtual Kidney Dissection Boosts SEND Engagement";
 export const date = "2025-03-19";
@@ -179,22 +182,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>
           Meet WhimsyCat: AI Support for Diverse Learning Needs
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
           24/7 AI Tutoring: Personalized Support for Every Student
         </a>
       </li>
       <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
+        <a href={getLocalizedPath("/blog/green-labs-sustainability-virtual-stem-education", language)}>
           Accessibility and Equity: Sustainability Beyond Environmental Impact
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href={getLocalizedPath("/blog/ai-powered-virtual-labs-solving-education-crisis", language)}>
           Supporting Special Educational Needs and Disabilities (SEND)
         </a>
       </li>

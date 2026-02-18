@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "Real-Time Physics in Virtual Labs: Making Learning Fun";
@@ -13,6 +14,39 @@ export const keywords = [
   "virtual lab technology",
   "gamified learning"
 ];
+
+const RelatedArticles = () => {
+  const language = getCurrentLanguage();
+  return (
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href={getLocalizedPath("/blog/physicality-in-virtual-labs", language)}>
+            The Importance of Physicality in Virtual Labs
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/virtual-reality-prepares-students-real-world-stem-careers", language)}>
+            Preparing Industry-Ready STEM Graduates Through Virtual Laboratory
+            Training
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>
+            The Sandbox Learning Revolution: Why Freedom to Fail is Essential
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/whimsylabs-education-revolution", language)}>
+            A Brief History of WhimsyLabs: From Real-Time Simulations to BETT 2025
+            Winner
+          </a>
+        </li>
+      </ul>
+    </>
+  );
+};
 
 export const content = (
   <div>
@@ -359,31 +393,7 @@ export const content = (
       by sustaining the engagement necessary for meaningful learning.
     </p>
 
-    <h2>Related Articles</h2>
-    <ul>
-      <li>
-        <a href="/blog/physicality-in-virtual-labs">
-          The Importance of Physicality in Virtual Labs
-        </a>
-      </li>
-      <li>
-        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
-          Preparing Industry-Ready STEM Graduates Through Virtual Laboratory
-          Training
-        </a>
-      </li>
-      <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
-          The Sandbox Learning Revolution: Why Freedom to Fail is Essential
-        </a>
-      </li>
-      <li>
-        <a href="/blog/whimsylabs-education-revolution">
-          A Brief History of WhimsyLabs: From Real-Time Simulations to BETT 2025
-          Winner
-        </a>
-      </li>
-    </ul>
+    <RelatedArticles />
 
     <div className="references-section">
       <h3>References</h3>

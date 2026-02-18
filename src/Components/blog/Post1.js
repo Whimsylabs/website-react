@@ -1,4 +1,8 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
+
 export const title =
   "WhimsyLabs Story: From Startup to BETT 2025 Winner";
 export const date = "2025-01-27";
@@ -221,22 +225,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>
           Meet WhimsyCat: Our AI Innovation in Science Education
         </a>
       </li>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href={getLocalizedPath("/blog/physicality-in-virtual-labs", language)}>
           The Physicality Breakthrough: How We Made Virtual Labs Feel Real
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>
           Our Sandbox Learning Philosophy: Freedom to Fail and Explore
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href={getLocalizedPath("/blog/ai-powered-virtual-labs-solving-education-crisis", language)}>
           How Our Platform Addresses the Global Science Education Crisis
         </a>
       </li>

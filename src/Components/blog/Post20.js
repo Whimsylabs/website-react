@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "AI Detection Doesn't Work. Process-Based Assessment Does.";
@@ -18,6 +19,15 @@ export const keywords = [
   "practical assessment",
   "teacher AI grading"
 ];
+
+const ContactCTA = () => {
+  const language = getCurrentLanguage();
+  return (
+    <p>
+      Interested in seeing this in action? <a href={getLocalizedPath("/contact", language)}>Get in touch</a> to learn how WhimsyLabs can improve practical science assessment at your school.
+    </p>
+  );
+};
 
 export const content = (
   <div>
@@ -58,7 +68,7 @@ export const content = (
 
     <h2>Assessing Process Instead of Product</h2>
     <p>
-      Consider assessing how students work rather than just what they produce.
+      Consider assessing how students work rather than just what they produce. Researchers call this approach <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1499495/full" target="_blank" rel="noopener noreferrer">process-driven assessment</a>, evaluating not just the final product but a student's interaction throughout the learning journey.
     </p>
     <p>
       This is the approach we've built into WhimsyLabs. Our virtual laboratories don't just let students perform experiments. They capture detailed data about every action: how precisely students pipette, whether they detect endpoints correctly, how they handle equipment, whether they follow safety protocols.
@@ -101,7 +111,7 @@ export const content = (
       Pearson's research asked educators which assessment types were most vulnerable to AI misuse. The results were unsurprising. Essays, coding assignments, and multiple-choice questions ranked as most vulnerable. Simulations and game-based activities ranked as least vulnerable.
     </p>
     <p>
-      This makes sense. You can prompt ChatGPT to write about chemistry. You cannot prompt it to do chemistry. The physical nature of practical work creates a barrier that text-based AI cannot cross.
+      This makes sense. You can prompt ChatGPT to write about chemistry. You cannot prompt it to do chemistry. The physical nature of practical work creates a barrier that text-based AI cannot cross. Engineering educators have described this as <a href="https://arxiv.org/html/2509.25258" target="_blank" rel="noopener noreferrer">"plagiarism resistance"</a> through hands-on skill assessment.
     </p>
     <p>
       For science education, this is actually good news. The subjects that require hands-on practical work are exactly the subjects where AI shortcuts fail. We don't need to fight the technology. We need to lean into what makes science education different from essay writing.
@@ -144,9 +154,7 @@ export const content = (
       At WhimsyLabs, we're building tools to make that possible. Because the future of assessment isn't about catching cheaters. It's about designing learning experiences worth doing honestly.
     </p>
 
-    <p>
-      Interested in seeing this in action? <a href="/contact">Get in touch</a> to learn how WhimsyLabs can improve practical science assessment at your school.
-    </p>
+    <ContactCTA />
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />
     <p style={{ fontSize: '0.9rem', color: '#666' }}>
@@ -161,6 +169,16 @@ export const content = (
       <li>
         <a href="https://arxiv.org/abs/2303.11156" target="_blank" rel="noopener noreferrer">
           Liang, W. et al. (2023). GPT detectors are biased against non-native English writers. arXiv.
+        </a>
+      </li>
+      <li>
+        <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1499495/full" target="_blank" rel="noopener noreferrer">
+          Frontiers in Education (2024). AI-resistant assessments in higher education: practical insights from faculty training workshops.
+        </a>
+      </li>
+      <li>
+        <a href="https://arxiv.org/html/2509.25258" target="_blank" rel="noopener noreferrer">
+          arXiv (2025). AI-Powered Assessment Framework for Skill-Oriented Engineering Lab Education.
         </a>
       </li>
     </ul>

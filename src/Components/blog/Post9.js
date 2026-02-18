@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "24/7 AI Tutoring: Keeping Students on Track";
@@ -316,22 +319,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>
           Meet WhimsyCat: The AI Tutor Behind 24/7 Personalized Support
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href={getLocalizedPath("/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection", language)}>
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href={getLocalizedPath("/blog/stem-teacher-shortage-virtual-labs", language)}>
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href={getLocalizedPath("/blog/gamification-done-right-ethical-engagement", language)}>
           Gamification Done Right: Engaging Students Through Mastery, Not
           Manipulation
         </a>

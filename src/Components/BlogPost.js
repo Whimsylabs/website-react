@@ -6,6 +6,7 @@ import BubbleContainer from './BubbleContainer';
 import Header from './Header';
 import Footer from './Footer';
 import { getBlogPostTranslation, getAllBlogPosts } from '../i18n/blogDataGenerator';
+import { getLocalizedPath } from '../i18n';
 
 // Import posts directly for fallback (keep for build compatibility)
 import * as Post1 from './blog/Post1';
@@ -39,6 +40,7 @@ import * as Post28 from './blog/Post28';
 import * as Post29 from './blog/Post29';
 import * as Post30 from './blog/Post30';
 import * as Post31 from './blog/Post31';
+import * as Post32 from './blog/Post32';
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -258,6 +260,13 @@ const fallbackPosts = [
     content: Post31.content,
     date: Post31.date,
     description: Post31.description,
+  },
+  {
+    id: Post32.slug,
+    title: Post32.title,
+    content: Post32.content,
+    date: Post32.date,
+    description: Post32.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -293,7 +302,8 @@ const slugToPostId = {
   'virtual-biology-lab-dissections-microscopy': 'post28',
   'virtual-physics-lab-simulations-teach': 'post29',
   'premium-science-education-accessible-grants': 'post30',
-  'uk-government-ai-education-funding-2026': 'post31'
+  'uk-government-ai-education-funding-2026': 'post31',
+  'pearson-webinar-vr-assessment-ai-age': 'post32'
 };
 
 const BlogPost = (props = {}) => {
@@ -462,7 +472,7 @@ const BlogPost = (props = {}) => {
               <div className="post-box not-found-box">
                 <h2>Post Not Found</h2>
                 <p>Sorry, the blog post you're looking for doesn't exist.</p>
-                <a href="/blog/" className="btn-primary post-nav-button">Back to Blog</a>
+                <a href={getLocalizedPath("/blog/", language)} className="btn-primary post-nav-button">Back to Blog</a>
               </div>
             </div>
           </div>
@@ -511,17 +521,17 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
               <div className="post-navigation">
                 <div className="post-nav-links">
                   {prevPost && (
-                    <a href={language && language !== 'en' ? `/${language}/blog/${prevPost.id || prevPost.slug}/` : `/blog/${prevPost.id || prevPost.slug}/`} className="post-nav-button prev-post">
+                    <a href={getLocalizedPath(`/blog/${prevPost.id || prevPost.slug}/`, language)} className="post-nav-button prev-post">
                       &larr; Older Post
                     </a>
                   )}
                   
-                  <a href={language && language !== 'en' ? `/${language}/blog/` : `/blog/`} className="post-nav-button back-to-blog">
+                  <a href={getLocalizedPath("/blog/", language)} className="post-nav-button back-to-blog">
                     All Posts
                   </a>
                   
                   {nextPost && (
-                    <a href={language && language !== 'en' ? `/${language}/blog/${nextPost.id || nextPost.slug}/` : `/blog/${nextPost.id || nextPost.slug}/`} className="post-nav-button next-post">
+                    <a href={getLocalizedPath(`/blog/${nextPost.id || nextPost.slug}/`, language)} className="post-nav-button next-post">
                       Newer Post &rarr;
                     </a>
                   )}

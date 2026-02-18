@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "Virtual vs Physical Labs: A Cost-Benefit Analysis";
@@ -16,6 +17,34 @@ export const keywords = [
   "school laboratory funding",
   "practical science education"
 ];
+
+const RelatedArticles = () => {
+  const language = getCurrentLanguage();
+  return (
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href={getLocalizedPath("/blog/green-labs-sustainability-virtual-stem-education", language)}>
+            Green Labs, Greener Future: How Virtual Laboratories Transform
+            Sustainability
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/stem-teacher-shortage-virtual-labs", language)}>
+            Addressing the STEM Teacher Shortage Crisis with Virtual Labs
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/ai-powered-virtual-labs-solving-education-crisis", language)}>
+            How AI-Powered Virtual Labs Are Solving the Global Science Education
+            Crisis
+          </a>
+        </li>
+      </ul>
+    </>
+  );
+};
 
 export const content = (
   <div>
@@ -414,26 +443,7 @@ export const content = (
       existing infrastructure.
     </p>
 
-    <h2>Related Articles</h2>
-    <ul>
-      <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
-          Green Labs, Greener Future: How Virtual Laboratories Transform
-          Sustainability
-        </a>
-      </li>
-      <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
-          Addressing the STEM Teacher Shortage Crisis with Virtual Labs
-        </a>
-      </li>
-      <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
-          How AI-Powered Virtual Labs Are Solving the Global Science Education
-          Crisis
-        </a>
-      </li>
-    </ul>
+    <RelatedArticles />
 
     <div className="references-section">
       <h3>References</h3>

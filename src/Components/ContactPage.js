@@ -4,6 +4,7 @@ import Footer from './Footer';
 import './ContactPage.css';
 import { Helmet } from 'react-helmet-async';
 import { sendToCRM, parseFullName } from '../utils/crmWebhook';
+import { getLocalizedPath } from '../i18n';
 
 const ContactPage = ({ language }) => {
   const [activeForm, setActiveForm] = useState('trial'); // 'general' or 'trial'
@@ -352,7 +353,7 @@ const ContactPage = ({ language }) => {
                 </div>
 
                 <div className="form-group form-privacy-notice">
-                  <p>By submitting this form, you agree to our <a href="/privacy">Privacy Policy</a>. We'll only use your information to respond to your inquiry.</p>
+                  <p>By submitting this form, you agree to our <a href={getLocalizedPath("/privacy", language)}>Privacy Policy</a>. We'll only use your information to respond to your inquiry.</p>
                 </div>
                 
                 <button 

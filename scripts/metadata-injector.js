@@ -225,6 +225,22 @@ class MetadataInjector {
   }
 
   /**
+   * Get the og:locale value for a given language code
+   * @param {string} langCode - Language code (en, es, fr, de, jp)
+   * @returns {string} - Proper og:locale value (e.g., en_GB, fr_FR)
+   */
+  getOgLocale(langCode) {
+    const localeMap = {
+      'en': 'en_GB',
+      'es': 'es_ES',
+      'fr': 'fr_FR',
+      'de': 'de_DE',
+      'jp': 'ja_JP'
+    };
+    return localeMap[langCode] || 'en_GB';
+  }
+
+  /**
    * Generate Open Graph meta tags
    * @param {string} route - The route path
    * @param {Object} customMeta - Custom metadata
@@ -237,13 +253,18 @@ class MetadataInjector {
     // Ensure consistent trailing slash for og:url to match canonical URL
     const normalizedRoute = route.endsWith('/') ? route : route + '/';
     
+    // Extract language from route (e.g., /fr/blog/ -> fr)
+    const langMatch = route.match(/^\/([a-z]{2})\//);
+    const langCode = langMatch ? langMatch[1] : 'en';
+    const ogLocale = this.getOgLocale(langCode);
+    
     return `
     <meta property="og:title" content="${meta.title}">
     <meta property="og:description" content="${meta.description}">
     <meta property="og:url" content="${this.baseUrl}${normalizedRoute}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WhimsyLabs">
-    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale" content="${ogLocale}">
     <meta property="og:image" content="${this.baseUrl}/logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">`;

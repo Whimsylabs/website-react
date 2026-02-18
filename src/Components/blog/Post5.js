@@ -1,4 +1,7 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
+
+const language = getCurrentLanguage();
 
 export const title =
   "Meet WhimsyCat: AI Tutor for Science Education";
@@ -290,17 +293,17 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall Behind
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href={getLocalizedPath("/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection", language)}>
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href={getLocalizedPath("/blog/stem-teacher-shortage-virtual-labs", language)}>
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>

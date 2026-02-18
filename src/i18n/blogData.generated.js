@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-16T15:41:37.612Z
+// Generated on 2026-02-18T12:41:25.264Z
 
 module.exports = {
   "en": [
@@ -69,6 +69,16 @@ module.exports = {
       "slug": "ai-science-tutor-classroom-what-works",
       "title": "AI Science Tutors in the Classroom: What Actually Works",
       "description": "A realistic look at what AI tutors can and cannot do in science education. Learn how WhimsyCat observes technique, detects frustration, and supports teachers.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
       "keywords": null,
       "date": "2026-02-17",
       "hasFullTranslation": false,
@@ -501,6 +511,17 @@ module.exports = {
       "date": "2026-02-17",
       "hasFullTranslation": false,
       "language": "de"
+    },
+    {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "de",
+      "fallbackLanguage": "en"
     },
     {
       "id": "post26",
@@ -1002,6 +1023,17 @@ module.exports = {
       "language": "fr"
     },
     {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "fr",
+      "fallbackLanguage": "en"
+    },
+    {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
       "title": "Le guide complet des logiciels de laboratoire virtuel pour 2026",
@@ -1501,6 +1533,17 @@ module.exports = {
       "language": "es"
     },
     {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "es",
+      "fallbackLanguage": "en"
+    },
+    {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
       "title": "Guía completa de software de laboratorio virtual para 2026",
@@ -1998,6 +2041,17 @@ module.exports = {
       "date": "2026-02-17",
       "hasFullTranslation": false,
       "language": "ja"
+    },
+    {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
+      "keywords": null,
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "ja",
+      "fallbackLanguage": "en"
     },
     {
       "id": "post26",

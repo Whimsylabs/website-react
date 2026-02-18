@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "Why Other Virtual Labs Fail: The Physics Engine Solution";
@@ -14,6 +15,34 @@ export const keywords = [
   "STEM skill gap",
   "active learning technology"
 ];
+
+const RelatedArticles = () => {
+  const language = getCurrentLanguage();
+  return (
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href={getLocalizedPath("/blog/physicality-in-virtual-labs", language)}>
+            The Importance of Physicality in Virtual Labs: A Step Beyond
+            Traditional Simulations
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/science-real-time-physics-simulations-virtual-labs", language)}>
+            The Science Behind Real-Time Physics Simulations in Virtual Labs
+          </a>
+        </li>
+        <li>
+          <a href={getLocalizedPath("/blog/sandbox-learning-revolution-stem-education", language)}>
+            The Sandbox Learning Revolution: Why Freedom to Fail is Essential for
+            STEM Education
+          </a>
+        </li>
+      </ul>
+    </>
+  );
+};
 
 export const content = (
   <div>
@@ -196,26 +225,7 @@ export const content = (
       "virtual" and "physical," but between "simulation" and "animation."
     </p>
 
-    <h2>Related Articles</h2>
-    <ul>
-      <li>
-        <a href="/blog/physicality-in-virtual-labs">
-          The Importance of Physicality in Virtual Labs: A Step Beyond
-          Traditional Simulations
-        </a>
-      </li>
-      <li>
-        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
-          The Science Behind Real-Time Physics Simulations in Virtual Labs
-        </a>
-      </li>
-      <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
-          The Sandbox Learning Revolution: Why Freedom to Fail is Essential for
-          STEM Education
-        </a>
-      </li>
-    </ul>
+    <RelatedArticles />
 
     <div className="references-section">
       <h3>References</h3>
