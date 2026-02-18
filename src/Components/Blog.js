@@ -569,7 +569,7 @@ const Blog = (props = {}) => {
         <div className="blog-container">
           {/* Full-width header */}
           <header className="blog-header">
-            <h1 className="blog-page-title">STEM Education Blog | WhimsyLabs</h1>
+            <h1 className="blog-page-title">Virtual Lab & STEM Education Blog | WhimsyLabs</h1>
             <p className="blog-intro">
               Expert insights on virtual laboratories, AI-powered learning, and innovative STEM education. 
               Discover research-backed strategies and practical guides for science educators.

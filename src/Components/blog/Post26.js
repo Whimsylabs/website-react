@@ -3,11 +3,11 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 const language = getCurrentLanguage();
 
-export const title = "The Complete Virtual Lab Software Guide for 2026";
+export const title = "Virtual Labs in Higher Education: A 2026 Buyer's Guide";
 export const date = "2026-02-09";
 export const slug = "virtual-lab-software-guide-2026";
-export const description = "A comprehensive buyer's guide to virtual lab software in 2026. Compare solution types, evaluation criteria, and learn how to make the business case to leadership.";
-export const keywords = "virtual lab software, best virtual labs 2026, science education software, lab simulation software, virtual laboratory platform";
+export const description = "A comprehensive guide to virtual lab software for universities and colleges. Compare solution types, evaluate research-grade features, and make the case to faculty.";
+export const keywords = "virtual lab software university, higher education lab simulation, college science software, undergraduate labs, research-grade virtual labs";
 
 export const content = (
   <>

@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-18T15:04:44.106Z
+// Generated on 2026-02-18T17:40:37.811Z
 
 module.exports = {
   "en": [
@@ -95,8 +95,8 @@ module.exports = {
     {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
-      "title": "The Complete Virtual Lab Software Guide for 2026",
-      "description": "A comprehensive buyer's guide to virtual lab software in 2026. Compare solution types, evaluation criteria, and learn how to make the business case to leadership.",
+      "title": "Virtual Labs in Higher Education: A 2026 Buyer's Guide",
+      "description": "A comprehensive guide to virtual lab software for universities and colleges. Compare solution types, evaluation criteria, and learn how to make the business case to leadership.",
       "keywords": [
         "virtual lab software",
         "best virtual labs 2026",
@@ -128,8 +128,8 @@ module.exports = {
     {
       "id": "post24",
       "slug": "how-to-choose-virtual-lab-software-school",
-      "title": "How to Choose Virtual Lab Software for Your School",
-      "description": "A practical buyer's guide for school decision-makers. Learn what features matter in virtual lab software and what questions to ask vendors.",
+      "title": "Virtual Lab Software for Secondary Schools: A Buyer's Guide",
+      "description": "A practical buyer's guide for secondary school decision-makers. Learn what features matter for GCSE and A-Level science and what questions to ask vendors.",
       "keywords": [
         "virtual lab software",
         "school science software",
@@ -541,7 +541,7 @@ module.exports = {
     {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
-      "title": "Der komplette Leitfaden für virtuelle Laborsoftware 2026",
+      "title": "Virtuelle Labore in der Hochschulbildung: Kaufratgeber 2026",
       "description": "Ein umfassender Einkaufsleitfaden für virtuelle Laborsoftware 2026. Vergleichen Sie Lösungstypen, Bewertungskriterien und lernen Sie, wie Sie den Business Case für die Führungsebene erstellen.",
       "keywords": [
         "virtuelle Laborsoftware",
@@ -574,7 +574,7 @@ module.exports = {
     {
       "id": "post24",
       "slug": "how-to-choose-virtual-lab-software-school",
-      "title": "So wählen Sie die richtige virtuelle Laborsoftware für Ihre Schule",
+      "title": "Virtuelle Laborsoftware für Sekundarschulen: Ein Kaufratgeber",
       "description": "Ein praktischer Einkaufsführer für Schulentscheider. Erfahren Sie, welche Funktionen bei virtueller Laborsoftware wichtig sind und welche Fragen Sie Anbietern stellen sollten.",
       "keywords": [
         "virtuelle Laborsoftware",
@@ -1058,7 +1058,7 @@ module.exports = {
     {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
-      "title": "Le guide complet des logiciels de laboratoire virtuel pour 2026",
+      "title": "Laboratoires Virtuels dans l'Enseignement Supérieur : Guide 2026",
       "description": "Un guide d'achat complet pour les logiciels de laboratoire virtuel en 2026. Comparez les types de solutions, les critères d'évaluation et apprenez à présenter le cas commercial à la direction.",
       "keywords": [
         "logiciel laboratoire virtuel",
@@ -1091,7 +1091,7 @@ module.exports = {
     {
       "id": "post24",
       "slug": "how-to-choose-virtual-lab-software-school",
-      "title": "Choisir un Logiciel de Laboratoire Virtuel pour Écoles",
+      "title": "Logiciel de Laboratoire Virtuel pour le Secondaire : Guide d'Achat",
       "description": "Un guide d'achat pratique pour les décideurs scolaires. Découvrez les fonctionnalités importantes dans les logiciels de laboratoire virtuel et les questions à poser aux fournisseurs.",
       "keywords": [
         "logiciel de laboratoire virtuel",
@@ -1575,7 +1575,7 @@ module.exports = {
     {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
-      "title": "Guía completa de software de laboratorio virtual para 2026",
+      "title": "Laboratorios Virtuales en Educación Superior: Guía 2026",
       "description": "Una guía completa para compradores de software de laboratorio virtual en 2026. Compare tipos de soluciones, criterios de evaluación y aprenda a presentar el caso de negocio a la dirección.",
       "keywords": [
         "software laboratorio virtual",
@@ -1608,7 +1608,7 @@ module.exports = {
     {
       "id": "post24",
       "slug": "how-to-choose-virtual-lab-software-school",
-      "title": "Cómo elegir software de laboratorio virtual para tu centro educativo",
+      "title": "Laboratorios Virtuales para Secundaria: Guía de Compra",
       "description": "Una guía práctica de compra para responsables de centros educativos. Aprende qué características importan en el software de laboratorio virtual y qué preguntas hacer a los proveedores.",
       "keywords": [
         "software de laboratorio virtual",
@@ -2092,7 +2092,7 @@ module.exports = {
     {
       "id": "post26",
       "slug": "virtual-lab-software-guide-2026",
-      "title": "2026年版バーチャルラボソフトウェア完全ガイド",
+      "title": "高等教育向けバーチャルラボ：2026年購入ガイド",
       "description": "2026年のバーチャルラボソフトウェアに関する包括的な購入ガイド。ソリューションの種類、評価基準を比較し、経営陣へのビジネスケースの作り方を学びます。",
       "keywords": [
         "バーチャルラボソフトウェア",
@@ -2125,7 +2125,7 @@ module.exports = {
     {
       "id": "post24",
       "slug": "how-to-choose-virtual-lab-software-school",
-      "title": "学校向け仮想実験室ソフトウェアの選び方",
+      "title": "中等教育向けバーチャルラボソフトウェア：購入ガイド",
       "description": "学校の意思決定者向けの実践的な購入ガイド。仮想実験室ソフトウェアで重要な機能と、ベンダーに尋ねるべき質問を学びましょう。",
       "keywords": [
         "仮想実験室ソフトウェア",

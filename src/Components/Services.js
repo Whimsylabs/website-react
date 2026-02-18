@@ -14,7 +14,7 @@ const Services = ({ language }) => {
 
                 <section className="services-hero">
                     <div className="container py-4">
-                        <h1 className="services-title">K-12 Virtual Lab Software: Classroom Lab Services for Schools</h1>
+                        <h1 className="services-title">Virtual Lab for Schools: K-12 Classroom Lab Software</h1>
                         <p className="services-subtitle">WhimsyLabs provides comprehensive virtual laboratory solutions for educational institutions of all sizes. From ready-to-use curriculum-aligned labs to fully customized experiments, we make hands-on science accessible and affordable.</p>
                     </div>
                 </section>

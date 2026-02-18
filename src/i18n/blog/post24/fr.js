@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "Choisir un Logiciel de Laboratoire Virtuel pour Écoles";
+export const title = "Logiciel de Laboratoire Virtuel pour le Secondaire : Guide d'Achat";
 export const date = "2026-02-09";
 export const slug = "how-to-choose-virtual-lab-software-school";
 export const description = "Un guide d'achat pratique pour les décideurs scolaires. Découvrez les fonctionnalités importantes dans les logiciels de laboratoire virtuel et les questions à poser aux fournisseurs.";

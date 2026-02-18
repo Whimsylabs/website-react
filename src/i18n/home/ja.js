@@ -3,7 +3,7 @@
 export default {
   // Landing Demo page
   demo: {
-    heroTitle: "<em>本物の</em>STEM教育のためのバーチャル実験室",
+    heroTitle: "仮想実験室で<em>本物の</em>STEM教育を実現",
     heroTagline: "「次へ」をクリックするのをやめて、科学を始めましょう。",
     heroDescription: "WhimsyLabsは単なるシミュレーターではありません。粒子の遊び場です。最高クラスの物理優先エンジンとAI駆動の評価を組み合わせ、教師の採点時間を節約しながら真の筋肉記憶を構築する唯一の仮想ラボを提供します。",
     splashSticker: "VR不要！",

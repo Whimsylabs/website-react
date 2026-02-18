@@ -40,22 +40,22 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Virtual Lab & Online Lab Simulation FAQ | WhimsyLabs",
+      title: "Virtual Lab FAQ | Online Lab Simulation Questions | WhimsyLabs",
       description: "Get expert answers to common questions about WhimsyLabs virtual laboratory and online lab simulation software, implementation, pricing, and STEM education.",
       subtitle:
         "Find answers to common questions about our virtual lab and online lab simulation software for STEM education",
-      heading: "Virtual Lab & Online Lab Simulation: FAQ",
+      heading: "Virtual Lab FAQ: Online Lab Simulation Questions",
     },
 
     // Blog
     blog: {
-      title: "STEM Education Blog | WhimsyLabs Virtual Lab Insights",
+      title: "STEM Education & AI in Science Education Blog | WhimsyLabs",
       description: "Stay updated with the latest in virtual laboratory technology, STEM education trends, AI in science education, and WhimsyLabs platform developments.",
     },
 
     // Services
     services: {
-      title: "K-12 Virtual Lab Software | Classroom Lab Solutions | WhimsyLabs",
+      title: "Virtual Lab for Schools | K-12 Classroom Solutions | WhimsyLabs",
       description: "Comprehensive K-12 virtual laboratory software including classroom lab solutions, curriculum integration, teacher training, and technical support for schools.",
       // Mid-page CTAs
       cta1Title: "See the AI Experiment Builder in Action",
@@ -684,7 +684,7 @@ const translations = {
 
     // Landing Demo (Homepage)
     landingDemo: {
-      title: "WhimsyLabs Virtual Science Lab | Award-Winning STEM Education Software",
+      title: "WhimsyLabs Virtual Lab | Award-Winning Virtual Laboratory Software",
       description: "WhimsyLabs virtual laboratory software transforms STEM education with physics-first simulations and AI-driven assessment. Build real lab skills safely.",
     },
 
@@ -790,7 +790,7 @@ const translations = {
 
     // Blog
     blog: {
-      title: "Blog de Educación Científica | WhimsyLabs",
+      title: "Blog de Laboratorio Virtual y Educación STEM | WhimsyLabs",
       description: "Mantente actualizado con lo último en tecnología de laboratorio virtual, tendencias de educación STEM, estrategias de enseñanza y desarrollos de la plataforma WhimsyLabs.",
       post10: {
         whimsyrambleAlt: "Tutor de IA WhimsyCat mostrando un mensaje de prueba para demostrar sus capacidades de comunicación"
@@ -1349,10 +1349,10 @@ const translations = {
     // Features
     features: {
       title:
-        "Tuteur Scientifique IA et Laboratoire Virtuel | WhimsyLabs",
+        "Laboratoire Virtuel avec Tuteur IA | WhimsyLabs",
       description:
         "Explorez les fonctionnalités puissantes de WhimsyLabs incluant des simulations physiques réalistes, une évaluation pilotée par IA, une accessibilité multiplateforme et des expériences STEM immersives.",
-      uniqueFeatures: "Tuteur Scientifique IA et Fonctionnalités du Laboratoire Virtuel",
+      uniqueFeatures: "Fonctionnalités du Laboratoire Virtuel WhimsyLabs",
       realisticSimulations: "Simulations Physiques Réalistes",
       realisticSimulationsDesc: "Découvrez des simulations physiques réalistes avec une dynamique des fluides avancée, une manipulation d'équipement réaliste et des procédures de laboratoire authentiques qui développent une vraie mémoire musculaire.",
       aiAssessment: "Évaluation Pilotée par IA",
@@ -1368,16 +1368,16 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "FAQ du Laboratoire Scientifique Virtuel | WhimsyLabs",
+      title: "FAQ Laboratoire Virtuel & Simulation Physique | WhimsyLabs",
       description: "Obtenez des réponses d'experts aux questions courantes sur le logiciel de laboratoire virtuel WhimsyLabs, l'implémentation, les prix et comment nos simulations STEM améliorent l'éducation.",
       subtitle:
         "Trouvez des réponses aux questions courantes sur notre logiciel de laboratoire virtuel et comment il peut transformer l'éducation STEM",
-      heading: "Laboratoire Scientifique Virtuel : Questions Fréquentes",
+      heading: "Laboratoire Virtuel : Questions Fréquentes",
     },
 
     // Blog
     blog: {
-      title: "Blog d'Éducation Scientifique | WhimsyLabs",
+      title: "Blog Laboratoire Virtuel & Éducation STEM | WhimsyLabs",
       description: "Restez informé des dernières innovations en technologie de laboratoire virtuel, tendances de l'éducation STEM, stratégies pédagogiques et développements de la plateforme WhimsyLabs.",
       post10: {
         whimsyrambleAlt: "Tuteur IA WhimsyCat affichant un message de test pour démontrer ses capacités de communication"
@@ -1386,7 +1386,7 @@ const translations = {
 
     // Services
     services: {
-      title: "Laboratoire Virtuel pour Écoles | Services Éducatifs WhimsyLabs",
+      title: "Laboratoire Virtuel pour Écoles | Logiciel Éducatif WhimsyLabs",
       description: "Services complets de laboratoire virtuel incluant développement de laboratoires personnalisés, intégration curriculaire, formation des enseignants et support technique pour les écoles.",
       // Mid-page CTAs
       cta1Title: "Découvrez le Créateur d'Expériences IA en Action",
@@ -1935,10 +1935,10 @@ const translations = {
 
     // Features
     features: {
-      title: "KI-Wissenschaftstutor & Virtuelles Labor | WhimsyLabs",
+      title: "Virtuelles Labor Funktionen & Physiksimulation | WhimsyLabs",
       description:
         "Entdecken Sie WhimsyLabs' leistungsstarke Funktionen einschließlich realistischer Physiksimulationen, KI-gesteuerte Bewertung, plattformübergreifende Zugänglichkeit und immersive STEM-Experimente.",
-      uniqueFeatures: "KI-Wissenschaftstutor & Virtuelles Labor Funktionen",
+      uniqueFeatures: "Virtuelles Labor: Funktionen & Physiksimulation",
       realisticSimulations: "Realistische Physiksimulationen",
       realisticSimulationsDesc: "Erleben Sie lebensechte Physiksimulationen mit fortgeschrittener Fluiddynamik, realistischer Gerätehandhabung und authentischen Laborverfahren, die echtes Muskelgedächtnis aufbauen.",
       aiAssessment: "KI-gesteuerte Bewertung",
@@ -1954,16 +1954,16 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Virtuelles Wissenschaftslabor FAQ | WhimsyLabs",
+      title: "Virtuelles Labor FAQ | Fragen & Antworten | WhimsyLabs",
       description: "Erhalten Sie Expertenantworten auf häufige Fragen über WhimsyLabs virtuelle Labor-Software, Implementierung, Preise und wie unsere STEM-Simulationen die Bildung verbessern.",
       subtitle:
         "Finden Sie Antworten auf häufige Fragen zu unserer virtuellen Labor-Software und wie sie die STEM-Bildung transformieren kann",
-      heading: "Virtuelles Wissenschaftslabor: Häufig Gestellte Fragen",
+      heading: "Virtuelles Labor: Häufig Gestellte Fragen",
     },
 
     // Blog
     blog: {
-      title: "Wissenschaftsbildung Blog | WhimsyLabs",
+      title: "Virtuelles Labor & MINT-Bildung Blog | WhimsyLabs",
       description: "Bleiben Sie auf dem Laufenden mit den neuesten Entwicklungen in der virtuellen Labor-Technologie, STEM-Bildungstrends, Unterrichtsstrategien und WhimsyLabs Plattform-Entwicklungen.",
       post10: {
         whimsyrambleAlt: "WhimsyCat AI-Tutor zeigt eine Testnachricht zur Demonstration seiner Kommunikationsfähigkeiten"
@@ -1972,7 +1972,7 @@ const translations = {
 
     // Services
     services: {
-      title: "Virtuelles Labor für Schulen | WhimsyLabs Bildungsdienste",
+      title: "Virtuelles Labor für Schulen | Unterrichtssoftware | WhimsyLabs",
       description: "Umfassende virtuelle Labor-Dienstleistungen einschließlich benutzerdefinierter Labor-Entwicklung, Lehrplan-Integration, Lehrerfortbildung und technischem Support für Schulen.",
       // Mid-page CTAs
       cta1Title: "Sehen Sie den KI-Experiment-Builder in Aktion",
@@ -2521,10 +2521,10 @@ const translations = {
 
     // Features
     features: {
-      title: "AI科学チューターとバーチャルラボ機能 | WhimsyLabs",
+      title: "仮想実験室の機能｜AI科学チューター＆物理シミュレーション | WhimsyLabs",
       description:
         "WhimsyLabsの強力な機能をご覧ください。リアルな物理シミュレーション、AI駆動の自動評価システム、VRとウェブ対応のクロスプラットフォームアクセシビリティ、そして生徒の探究心を刺激する没入型STEM実験環境を提供します。教育現場の課題解決に最適な機能を搭載しています。",
-      uniqueFeatures: "AI科学チューターとバーチャルラボ機能",
+      uniqueFeatures: "WhimsyLabs仮想実験室の機能",
       realisticSimulations: "リアルな物理シミュレーション",
       realisticSimulationsDesc: "高度な流体力学、リアルな機器操作、本物の実験手順により、実際の筋肉記憶を構築する実物に近い物理シミュレーションを体験してください。",
       aiAssessment: "AI駆動の評価",
@@ -2540,16 +2540,16 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "仮想科学実験室FAQ | WhimsyLabs",
+      title: "仮想実験室のよくある質問｜オンライン実験シミュレーションFAQ | WhimsyLabs",
       description: "WhimsyLabsバーチャルラボソフトウェアに関するよくある質問への専門的な回答をご覧ください。導入方法、価格プラン、技術要件、カリキュラムへの統合方法、そしてSTEMシミュレーションが学校教育をどのように向上させるかについて詳しくご説明します。",
       subtitle:
         "当社のシミュレーション教材と、STEM教育をどのように変革できるかについてのよくある質問への回答をご覧ください",
-      heading: "仮想科学実験室：よくあるご質問",
+      heading: "仮想実験室：よくあるご質問",
     },
 
     // Blog
     blog: {
-      title: "科学教育ブログ | WhimsyLabs",
+      title: "仮想実験室＆STEM教育ブログ | WhimsyLabs",
       description: "WhimsyLabsの最新情報をご覧ください。バーチャルラボ技術の革新的な開発、STEM教育のトレンド、効果的な教授戦略、プラットフォームの開発状況など、教育者の皆様に役立つ情報を定期的にお届けします。科学教育の未来を一緒に探求しましょう。",
       post10: {
         whimsyrambleAlt: "WhimsyCat AIチューターがコミュニケーション能力を示すためのテストメッセージを表示"
@@ -2558,7 +2558,7 @@ const translations = {
 
     // Services
     services: {
-      title: "学校向けバーチャルラボ | WhimsyLabs教育サービス",
+      title: "学校向け仮想実験室ソフトウェア｜教育サービス | WhimsyLabs",
       description: "学校向けの包括的なバーチャルラボサービスをご提供します。カスタム実験開発、カリキュラムへの統合支援、教師向けトレーニングプログラム、継続的な技術サポートなど、STEM教育の質を向上させるための充実したサービスをご利用いただけます。導入から運用まで、全面的にサポートいたします。",
       // Mid-page CTAs
       cta1Title: "AI実験ビルダーの実演をご覧ください",

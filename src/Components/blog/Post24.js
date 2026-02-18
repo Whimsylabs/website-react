@@ -3,11 +3,11 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 const language = getCurrentLanguage();
 
-export const title = "How to Choose Virtual Lab Software for Your School";
+export const title = "Virtual Lab Software for Secondary Schools: A Buyer's Guide";
 export const date = "2026-02-05";
 export const slug = "how-to-choose-virtual-lab-software-school";
-export const description = "A practical buyer's guide for school decision-makers. Learn what features matter in virtual lab software and what questions to ask vendors.";
-export const keywords = "virtual lab software, school science software, how to choose, edtech buyer's guide, virtual science labs, lab software comparison";
+export const description = "A practical buyer's guide for secondary school decision-makers. Learn what features matter for GCSE and A-Level science, and what questions to ask vendors.";
+export const keywords = "virtual lab software secondary school, GCSE science software, A-Level practical, edtech buyer's guide, virtual science labs, school lab software";
 
 export const content = (
   <>

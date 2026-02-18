@@ -2,7 +2,7 @@
 export default {
   // Landing Demo page
   demo: {
-    heroTitle: "WhimsyLabs: The <em>Practical</em> Virtual Lab for STEM",
+    heroTitle: "WhimsyLabs: The <em>Practical</em> Virtual Lab for STEM Education",
     heroTagline: "Stop clicking 'Next.' Start doing science.",
     heroDescription: "WhimsyLabs isn't just a simulator; it's a playground of particles. We combine a best-in-class Physicality-First engine with AI-driven assessment to deliver the only virtual lab that builds true muscle memory while saving teachers hours of marking time.",
     splashSticker: "No VR required!",

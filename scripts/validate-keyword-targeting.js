@@ -10,7 +10,9 @@ const glob = require('glob');
 const BUILD_DIR = path.join(__dirname, '../build');
 
 // Target keywords for key pages (expanded 2026)
+// Includes translations for DE, ES, FR, JP pages
 const PAGE_KEYWORDS = {
+  // ============ ENGLISH ============
   // Homepage - broad coverage
   '/index.html': [
     'virtual lab', 'virtual laboratory', 'virtual science lab', 'stem education', 
@@ -39,10 +41,102 @@ const PAGE_KEYWORDS = {
     'virtual lab', 'stem education', 'science education',
     'AI in science education', 'VR STEM learning', 'gamified science learning'
   ],
-  // Subject-specific pages (if they exist)
+  // Subject-specific pages
   '/chemistry/index.html': ['virtual chemistry lab', 'chemistry simulation', 'online chemistry lab'],
   '/biology/index.html': ['virtual biology lab', 'virtual dissection', 'online biology lab'],
   '/physics/index.html': ['virtual physics lab', 'physics simulation', 'online physics lab'],
+
+  // ============ GERMAN (DE) ============
+  '/de/index.html': [
+    'virtuelles labor', 'virtuelle labore', 'online labor', 'MINT bildung',
+    'whimsylabs', 'laborsimulation', 'naturwissenschaft software',
+    'virtuelles labor schule', 'KI tutor', 'VR labor'
+  ],
+  '/de/features/index.html': [
+    'virtuelles labor', 'physiksimulation', 'KI tutor', 'interaktive simulation',
+    'praktisches lernen', 'echtzeit physik', 'automatische bewertung'
+  ],
+  '/de/services/index.html': [
+    'virtuelles labor', 'labor für schulen', 'unterrichtssoftware',
+    'schul laborsoftware', 'MINT lehrermangel'
+  ],
+  '/de/faq/index.html': [
+    'virtuelles labor', 'online laborsimulation', 'sichere experimente',
+    'virtuelle sektion', 'VR labor'
+  ],
+  '/de/blog/index.html': [
+    'virtuelles labor', 'MINT bildung', 'naturwissenschaftliche bildung',
+    'KI in der bildung', 'digitales lernen'
+  ],
+
+  // ============ SPANISH (ES) ============
+  '/es/index.html': [
+    'laboratorio virtual', 'laboratorios virtuales', 'lab virtual', 'educación STEM',
+    'whimsylabs', 'simulación de laboratorio', 'software de ciencias',
+    'laboratorio virtual escolar', 'tutor IA', 'laboratorio RV'
+  ],
+  '/es/features/index.html': [
+    'laboratorio virtual', 'simulación física', 'tutor IA', 'simulación interactiva',
+    'aprendizaje práctico', 'física en tiempo real', 'evaluación automática'
+  ],
+  '/es/services/index.html': [
+    'laboratorio virtual', 'laboratorio para escuelas', 'software educativo',
+    'software de laboratorio escolar', 'escasez de profesores STEM'
+  ],
+  '/es/faq/index.html': [
+    'laboratorio virtual', 'simulación de laboratorio online', 'experimentos seguros',
+    'disección virtual', 'laboratorio RV'
+  ],
+  '/es/blog/index.html': [
+    'laboratorio virtual', 'educación STEM', 'educación científica',
+    'IA en educación', 'aprendizaje digital'
+  ],
+
+  // ============ FRENCH (FR) ============
+  '/fr/index.html': [
+    'laboratoire virtuel', 'laboratoires virtuels', 'labo virtuel', 'éducation STEM',
+    'whimsylabs', 'simulation de laboratoire', 'logiciel scientifique',
+    'laboratoire virtuel scolaire', 'tuteur IA', 'laboratoire RV'
+  ],
+  '/fr/features/index.html': [
+    'laboratoire virtuel', 'simulation physique', 'tuteur IA', 'simulation interactive',
+    'apprentissage pratique', 'physique en temps réel', 'évaluation automatique'
+  ],
+  '/fr/services/index.html': [
+    'laboratoire virtuel', 'laboratoire pour écoles', 'logiciel éducatif',
+    'logiciel de laboratoire scolaire', 'pénurie enseignants STEM'
+  ],
+  '/fr/faq/index.html': [
+    'laboratoire virtuel', 'simulation de labo en ligne', 'expériences sécurisées',
+    'dissection virtuelle', 'laboratoire RV'
+  ],
+  '/fr/blog/index.html': [
+    'laboratoire virtuel', 'éducation STEM', 'éducation scientifique',
+    'IA dans éducation', 'apprentissage numérique'
+  ],
+
+  // ============ JAPANESE (JP) ============
+  '/jp/index.html': [
+    '仮想実験室', 'バーチャルラボ', '仮想ラボ', 'STEM教育',
+    'whimsylabs', '実験シミュレーション', '理科教育ソフト',
+    '学校向け仮想実験室', 'AIチューター', 'VR実験室'
+  ],
+  '/jp/features/index.html': [
+    '仮想実験室', '物理シミュレーション', 'AIチューター', 'インタラクティブシミュレーション',
+    '実践的学習', 'リアルタイム物理', '自動評価'
+  ],
+  '/jp/services/index.html': [
+    '仮想実験室', '学校向けラボ', '教育ソフトウェア',
+    '学校用実験室ソフト', 'STEM教員不足'
+  ],
+  '/jp/faq/index.html': [
+    '仮想実験室', 'オンライン実験シミュレーション', '安全な実験',
+    'バーチャル解剖', 'VRラボ'
+  ],
+  '/jp/blog/index.html': [
+    '仮想実験室', 'STEM教育', '理科教育',
+    'AI教育', 'デジタル学習'
+  ],
 };
 
 // Check for keyword presence in important locations

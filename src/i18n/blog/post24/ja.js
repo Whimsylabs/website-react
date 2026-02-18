@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "学校向け仮想実験室ソフトウェアの選び方";
+export const title = "中等教育向けバーチャルラボソフトウェア：購入ガイド";
 export const date = "2026-02-09";
 export const slug = "how-to-choose-virtual-lab-software-school";
 export const description = "学校の意思決定者向けの実践的な購入ガイド。仮想実験室ソフトウェアで重要な機能と、ベンダーに尋ねるべき質問を学びましょう。";

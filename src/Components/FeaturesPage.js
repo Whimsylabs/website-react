@@ -90,7 +90,7 @@ const FeaturesPage = ({ language }) => {
           <div className="text-container">
             {mounted ? (
               <AnimatedTitle
-                text="Virtual Lab Features: AI Tutor & Physics Simulation"
+                text="AI Science Tutor & Virtual Lab Features"
                 className="features-hero-title"
                 delay={0}
                 darkMode={false}
@@ -98,7 +98,7 @@ const FeaturesPage = ({ language }) => {
               />
             ) : (
               <h1 className="features-hero-title">
-                Virtual Lab Features: AI Tutor & Physics Simulation
+                AI Science Tutor & Virtual Lab Features
               </h1>
             )}
             <div className="text-justify">
