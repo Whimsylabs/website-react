@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "Teachers Are the Experts. We Just Build the Tools.";
-export const date = "2026-02-08";
+export const date = "2026-02-03";
 export const slug = "teachers-are-experts-custom-experiment-designer";
 export const description = "WhimsyLabs puts teachers in control with a custom experiment designer. Teachers know their students best - we provide the tools.";
 export const keywords = "teacher agency, custom experiment designer, virtual lab for teachers, science teacher tools, teacher-led EdTech, WhimsyLabs experiment builder, AI for teachers not replacing teachers";

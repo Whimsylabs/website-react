@@ -5,7 +5,7 @@ const language = getCurrentLanguage();
 
 export const title =
   "UK Invests £49m in AI Education: What This Means for Schools";
-export const date = "2026-03-01";
+export const date = "2026-02-15";
 export const slug = "uk-government-ai-education-funding-2026";
 export const description =
   "The UK government announces £49m AI education funding plus £187m TechFirst programme. Learn how schools can access these funds for AI tutoring and assessment tools.";

@@ -3,7 +3,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "WhimsyLabs Wins Tech&Learning #1 Best of BETT 2026";
-export const date = "2026-01-28";
+export const date = "2026-01-29";
 export const slug = "whimsylabs-wins-techlearning-best-of-bett-2026";
 export const description =
   "WhimsyLabs won Tech&Learning's #1 Best of BETT 2026, named top edtech product at the world's largest education technology event.";

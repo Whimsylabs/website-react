@@ -2,7 +2,7 @@ import React from "react";
 import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title = "UK Schools: Get £3,000 for VR Science Labs";
-export const date = "2026-02-06";
+export const date = "2026-01-30";
 export const slug = "royal-society-partnership-grants-vr-science-labs";
 export const description = "Royal Society Partnership Grants offer UK schools up to £3,000 for STEM projects. WhimsyLabs helps you apply and provides free VR science lab software.";
 export const keywords = "Royal Society Partnership Grants, UK school grants, STEM funding for schools, VR science labs, science education funding, WhimsyLabs grants, free VR lab software, school science equipment";

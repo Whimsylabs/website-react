@@ -927,6 +927,7 @@ async function generatePageHTML(route, data = {}) {
           'virtual-physics-lab-simulations-teach': 'post29',
           'premium-science-education-accessible-grants': 'post30',
           'uk-government-ai-education-funding-2026': 'post31',
+          'pearson-webinar-vr-assessment-ai-age': 'post32',
         };
         
         const postId = slugToPostId[data.slug];

@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "Making Premium Science Education Accessible to Every School";
-export const date = "2026-02-26";
+export const date = "2026-02-14";
 export const slug = "premium-science-education-accessible-grants";
 export const description = "Premium EdTech shouldn't only go to wealthy schools. Learn how grants and funding can bring physics-accurate virtual labs to every classroom.";
 export const keywords = "science education funding, school grants, accessible education technology, premium edtech, WhimsyLabs grants, educational equity";

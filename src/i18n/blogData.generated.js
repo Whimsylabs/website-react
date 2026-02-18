@@ -1,8 +1,26 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-18T12:41:25.264Z
+// Generated on 2026-02-18T15:04:44.106Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
+      "keywords": [
+        "Pearson webinar",
+        "VR assessment",
+        "immersive learning",
+        "AI-resistant assessment",
+        "process-driven assessment",
+        "science education",
+        "virtual labs"
+      ],
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
@@ -16,7 +34,7 @@ module.exports = {
         "AI marking tools",
         "education technology grants"
       ],
-      "date": "2026-03-01",
+      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -33,7 +51,7 @@ module.exports = {
         "WhimsyLabs grants",
         "educational equity"
       ],
-      "date": "2026-02-26",
+      "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -50,7 +68,7 @@ module.exports = {
         "mechanics simulation",
         "forces simulation"
       ],
-      "date": "2026-02-23",
+      "date": "2026-02-13",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -60,7 +78,7 @@ module.exports = {
       "title": "Virtual Biology Lab: Dissections, Microscopy, and More",
       "description": "Virtual biology labs offer unlimited dissection practice, perfect microscopy specimens, and accessibility for all students. Learn how virtual practicals supplement and enhance real lab work.",
       "keywords": null,
-      "date": "2026-02-20",
+      "date": "2026-02-12",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -70,17 +88,7 @@ module.exports = {
       "title": "AI Science Tutors in the Classroom: What Actually Works",
       "description": "A realistic look at what AI tutors can and cannot do in science education. Learn how WhimsyCat observes technique, detects frustration, and supports teachers.",
       "keywords": null,
-      "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "en"
-    },
-    {
-      "id": "post32",
-      "slug": "pearson-webinar-vr-assessment-ai-age",
-      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
-      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
-      "keywords": null,
-      "date": "2026-02-17",
+      "date": "2026-02-11",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -96,7 +104,7 @@ module.exports = {
         "lab simulation software",
         "virtual laboratory platform"
       ],
-      "date": "2026-02-14",
+      "date": "2026-02-09",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -113,7 +121,7 @@ module.exports = {
         "chemistry practical",
         "virtual titration"
       ],
-      "date": "2026-02-11",
+      "date": "2026-02-07",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -130,7 +138,7 @@ module.exports = {
         "virtual science labs",
         "lab software comparison"
       ],
-      "date": "2026-02-09",
+      "date": "2026-02-05",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -140,17 +148,7 @@ module.exports = {
       "title": "Teachers Are the Experts. We Just Build the Tools.",
       "description": "WhimsyLabs puts teachers in control with a custom experiment designer. Teachers know their students best - we provide the tools.",
       "keywords": null,
-      "date": "2026-02-07",
-      "hasFullTranslation": false,
-      "language": "en"
-    },
-    {
-      "id": "post21",
-      "slug": "royal-society-partnership-grants-vr-science-labs",
-      "title": "UK Schools: Get £3,000 for VR Science Labs | Royal Society Grants",
-      "description": "Royal Society Partnership Grants offer UK schools up to £3,000 for STEM projects. WhimsyLabs helps you apply and provides free VR science lab software.",
-      "keywords": null,
-      "date": "2026-02-06",
+      "date": "2026-02-03",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -160,7 +158,17 @@ module.exports = {
       "title": "10 Questions to Ask EdTech Vendors After the PowerSchool Breach",
       "description": "After the PowerSchool breach exposed millions of students, schools must vet EdTech vendors. 10 essential security questions to ask.",
       "keywords": null,
-      "date": "2026-02-05",
+      "date": "2026-02-01",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post21",
+      "slug": "royal-society-partnership-grants-vr-science-labs",
+      "title": "UK Schools: Get £3,000 for VR Science Labs | Royal Society Grants",
+      "description": "Royal Society Partnership Grants offer UK schools up to £3,000 for STEM projects. WhimsyLabs helps you apply and provides free VR science lab software.",
+      "keywords": null,
+      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -181,7 +189,7 @@ module.exports = {
         "practical assessment",
         "teacher AI grading"
       ],
-      "date": "2026-02-04",
+      "date": "2026-01-28",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -201,26 +209,7 @@ module.exports = {
         "cognitive skills",
         "science education"
       ],
-      "date": "2026-02-02",
-      "hasFullTranslation": false,
-      "language": "en"
-    },
-    {
-      "id": "post17",
-      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
-      "title": "WhimsyLabs Wins Tech&Learning #1 Best of BETT 2026",
-      "description": "WhimsyLabs has been awarded Tech&Learning's #1 Best of BETT 2026, recognising our physics-first virtual laboratory as the top educational technology product at the world's largest edtech event.",
-      "keywords": [
-        "BETT 2026",
-        "Tech and Learning Award",
-        "Best of BETT",
-        "virtual laboratory",
-        "edtech award",
-        "WhimsyLabs award",
-        "physics simulation",
-        "STEM education innovation"
-      ],
-      "date": "2026-02-01",
+      "date": "2026-01-26",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -239,7 +228,26 @@ module.exports = {
         "sustainable edtech investment",
         "VR headset decline"
       ],
-      "date": "2026-02-01",
+      "date": "2026-01-24",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Wins Tech&Learning #1 Best of BETT 2026",
+      "description": "WhimsyLabs has been awarded Tech&Learning's #1 Best of BETT 2026, recognising our physics-first virtual laboratory as the top educational technology product at the world's largest edtech event.",
+      "keywords": [
+        "BETT 2026",
+        "Tech and Learning Award",
+        "Best of BETT",
+        "virtual laboratory",
+        "edtech award",
+        "WhimsyLabs award",
+        "physics simulation",
+        "STEM education innovation"
+      ],
+      "date": "2026-01-22",
       "hasFullTranslation": false,
       "language": "en"
     },
@@ -449,6 +457,24 @@ module.exports = {
   ],
   "de": [
     {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "Bewertung im KI-Zeitalter: Unser Pearson-Webinar",
+      "description": "Dr. Marisa French spricht beim Webinar der Immersive Practitioners' Community von Pearson am 26. Februar 2026. Erfahren Sie, wie VR prozessorientierte Bewertungen ermöglicht, die KI-Betrug irrelevant machen.",
+      "keywords": [
+        "Pearson Webinar",
+        "VR-Bewertung",
+        "immersives Lernen",
+        "KI-resistente Bewertung",
+        "prozessorientierte Bewertung",
+        "naturwissenschaftliche Bildung",
+        "virtuelle Labore"
+      ],
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
       "title": "UK investiert 49 Mio. £ in KI-Bildung: Was das für Schulen bedeutet",
@@ -461,7 +487,7 @@ module.exports = {
         "KI-Bewertungstools",
         "Bildungstechnologie-Förderung"
       ],
-      "date": "2026-03-01",
+      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -478,7 +504,7 @@ module.exports = {
         "WhimsyLabs Fördermittel",
         "Bildungsgerechtigkeit"
       ],
-      "date": "2026-02-26",
+      "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -488,7 +514,7 @@ module.exports = {
       "title": "Virtuelles Physiklabor: Simulationen, die wirklich lehren",
       "description": "Warum Physik einzigartig für Simulation geeignet ist, was schlechte Physiksimulationen schädlich macht und wie eine physikalisch akkurate Engine das Lernen transformiert.",
       "keywords": null,
-      "date": "2026-02-23",
+      "date": "2026-02-13",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -498,7 +524,7 @@ module.exports = {
       "title": "Virtuelles Biologielabor: Sezieren, Mikroskopie und mehr",
       "description": "Virtuelle Biologielabore bieten unbegrenzte Sezierübungen, perfekte Mikroskopie-Präparate und Zugänglichkeit für alle Schüler. Erfahren Sie, wie virtuelle Praktika die echte Laborarbeit ergänzen und verbessern.",
       "keywords": null,
-      "date": "2026-02-20",
+      "date": "2026-02-12",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -508,20 +534,9 @@ module.exports = {
       "title": "KI-Tutoren im Naturwissenschaftsunterricht: Was Funktioniert",
       "description": "Ein realistischer Blick auf das, was KI-Tutoren im naturwissenschaftlichen Unterricht leisten können und was nicht. Erfahren Sie, wie WhimsyCat Technik beobachtet, Frustration erkennt und Lehrkräfte unterstützt.",
       "keywords": null,
-      "date": "2026-02-17",
+      "date": "2026-02-11",
       "hasFullTranslation": false,
       "language": "de"
-    },
-    {
-      "id": "post32",
-      "slug": "pearson-webinar-vr-assessment-ai-age",
-      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
-      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
-      "keywords": null,
-      "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "de",
-      "fallbackLanguage": "en"
     },
     {
       "id": "post26",
@@ -535,7 +550,7 @@ module.exports = {
         "Laborsimulationssoftware",
         "virtuelle Laborplattform"
       ],
-      "date": "2026-02-14",
+      "date": "2026-02-09",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -552,7 +567,7 @@ module.exports = {
         "Chemiepraktikum",
         "virtuelle Titration"
       ],
-      "date": "2026-02-11",
+      "date": "2026-02-07",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -569,7 +584,7 @@ module.exports = {
         "virtuelle Naturwissenschaftslabore",
         "Laborsoftware-Vergleich"
       ],
-      "date": "2026-02-09",
+      "date": "2026-02-05",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -579,7 +594,17 @@ module.exports = {
       "title": "Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.",
       "description": "WhimsyLabs gibt Lehrkräften die Kontrolle mit einem benutzerdefinierten Experimentdesigner. Lehrer kennen ihre Schüler am besten - wir liefern die Werkzeuge.",
       "keywords": null,
-      "date": "2026-02-07",
+      "date": "2026-02-03",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post22",
+      "slug": "edtech-vendor-security-questions-powerschool",
+      "title": "10 Fragen an EdTech-Anbieter nach PowerSchool-Leck",
+      "description": "Nach dem PowerSchool-Datenleck, das Millionen von Schülern betraf, müssen Schulen EdTech-Anbieter prüfen. 10 wichtige Sicherheitsfragen.",
+      "keywords": null,
+      "date": "2026-02-01",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -597,17 +622,7 @@ module.exports = {
         "WhimsyLabs Förderung",
         "Schulwissenschaftsausrüstung"
       ],
-      "date": "2026-02-06",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
-    {
-      "id": "post22",
-      "slug": "edtech-vendor-security-questions-powerschool",
-      "title": "10 Fragen an EdTech-Anbieter nach PowerSchool-Leck",
-      "description": "Nach dem PowerSchool-Datenleck, das Millionen von Schülern betraf, müssen Schulen EdTech-Anbieter prüfen. 10 wichtige Sicherheitsfragen.",
-      "keywords": null,
-      "date": "2026-02-05",
+      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -628,7 +643,7 @@ module.exports = {
         "praktische Bewertung",
         "Lehrer KI Benotung"
       ],
-      "date": "2026-02-04",
+      "date": "2026-01-28",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -648,26 +663,7 @@ module.exports = {
         "kognitive Fähigkeiten",
         "naturwissenschaftliche Bildung"
       ],
-      "date": "2026-02-02",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
-    {
-      "id": "post17",
-      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
-      "title": "WhimsyLabs Gewinnt Tech&Learning #1 Best of BETT 2026",
-      "description": "WhimsyLabs wurde mit dem prestigeträchtigen Tech&Learning #1 Best of BETT 2026 als bestes Bildungstechnologieprodukt ausgezeichnet.",
-      "keywords": [
-        "BETT 2026",
-        "Tech and Learning Auszeichnung",
-        "Best of BETT",
-        "virtuelles Labor",
-        "EdTech Auszeichnung",
-        "WhimsyLabs Auszeichnung",
-        "Physiksimulation",
-        "MINT-Bildung Innovation"
-      ],
-      "date": "2026-02-01",
+      "date": "2026-01-26",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -686,7 +682,26 @@ module.exports = {
         "nachhaltige EdTech Investition",
         "VR Headset Rückgang"
       ],
-      "date": "2026-02-01",
+      "date": "2026-01-24",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Gewinnt Tech&Learning #1 Best of BETT 2026",
+      "description": "WhimsyLabs wurde mit dem prestigeträchtigen Tech&Learning #1 Best of BETT 2026 als bestes Bildungstechnologieprodukt ausgezeichnet.",
+      "keywords": [
+        "BETT 2026",
+        "Tech and Learning Auszeichnung",
+        "Best of BETT",
+        "virtuelles Labor",
+        "EdTech Auszeichnung",
+        "WhimsyLabs Auszeichnung",
+        "Physiksimulation",
+        "MINT-Bildung Innovation"
+      ],
+      "date": "2026-01-22",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -959,6 +974,24 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "L'évaluation à l'ère de l'IA : Rejoignez notre webinaire Pearson",
+      "description": "Dr Marisa French intervient lors du webinaire de la communauté des praticiens de l'immersif de Pearson le 26 février 2026. Découvrez comment la RV permet une évaluation axée sur le processus qui rend la triche par IA obsolète.",
+      "keywords": [
+        "webinaire Pearson",
+        "évaluation RV",
+        "apprentissage immersif",
+        "évaluation résistante à l'IA",
+        "évaluation axée sur le processus",
+        "enseignement des sciences",
+        "laboratoires virtuels"
+      ],
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
       "title": "49 M£ pour l'IA éducative au Royaume-Uni : Impact sur les écoles",
@@ -971,7 +1004,7 @@ module.exports = {
         "outils de notation IA",
         "subventions technologie éducative"
       ],
-      "date": "2026-03-01",
+      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -988,7 +1021,7 @@ module.exports = {
         "subventions WhimsyLabs",
         "équité éducative"
       ],
-      "date": "2026-02-26",
+      "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -998,7 +1031,7 @@ module.exports = {
       "title": "Labo Virtuel de Physique : Simulations qui Enseignent",
       "description": "Pourquoi la physique est idéalement adaptée à la simulation, ce qui rend les mauvaises simulations de physique nuisibles, et comment un moteur physiquement précis transforme l'apprentissage.",
       "keywords": null,
-      "date": "2026-02-23",
+      "date": "2026-02-13",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1008,7 +1041,7 @@ module.exports = {
       "title": "Laboratoire Virtuel de Biologie : Dissections, Microscopie et Plus",
       "description": "Les laboratoires virtuels de biologie offrent une pratique illimitée de la dissection, des spécimens parfaits pour la microscopie et l'accessibilité pour tous les étudiants. Découvrez comment les travaux pratiques virtuels complètent le travail en laboratoire réel.",
       "keywords": null,
-      "date": "2026-02-20",
+      "date": "2026-02-12",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1018,20 +1051,9 @@ module.exports = {
       "title": "Tuteurs IA en sciences dans la classe : ce qui fonctionne vraiment",
       "description": "Un regard réaliste sur ce que les tuteurs IA peuvent et ne peuvent pas faire dans l'enseignement des sciences. Découvrez comment WhimsyCat observe les techniques, détecte la frustration et soutient les enseignants.",
       "keywords": null,
-      "date": "2026-02-17",
+      "date": "2026-02-11",
       "hasFullTranslation": false,
       "language": "fr"
-    },
-    {
-      "id": "post32",
-      "slug": "pearson-webinar-vr-assessment-ai-age",
-      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
-      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
-      "keywords": null,
-      "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "fr",
-      "fallbackLanguage": "en"
     },
     {
       "id": "post26",
@@ -1045,7 +1067,7 @@ module.exports = {
         "logiciel simulation laboratoire",
         "plateforme laboratoire virtuel"
       ],
-      "date": "2026-02-14",
+      "date": "2026-02-09",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1062,7 +1084,7 @@ module.exports = {
         "travaux pratiques de chimie",
         "titrage virtuel"
       ],
-      "date": "2026-02-11",
+      "date": "2026-02-07",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1079,7 +1101,7 @@ module.exports = {
         "laboratoires virtuels de sciences",
         "comparaison de logiciels de laboratoire"
       ],
-      "date": "2026-02-09",
+      "date": "2026-02-05",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1089,7 +1111,17 @@ module.exports = {
       "title": "Les Enseignants Sont les Experts. Nous Créons les Outils.",
       "description": "Découvrez comment WhimsyLabs donne le contrôle total aux enseignants avec un concepteur d'expériences personnalisé pour leurs élèves.",
       "keywords": null,
-      "date": "2026-02-07",
+      "date": "2026-02-03",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post22",
+      "slug": "edtech-vendor-security-questions-powerschool",
+      "title": "10 Questions EdTech Après la Violation PowerSchool",
+      "description": "Après la violation PowerSchool exposant des millions d'élèves, les écoles doivent vérifier les fournisseurs EdTech. 10 questions essentielles.",
+      "keywords": null,
+      "date": "2026-02-01",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1107,17 +1139,7 @@ module.exports = {
         "bourses WhimsyLabs",
         "équipement scientifique scolaire"
       ],
-      "date": "2026-02-06",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
-      "id": "post22",
-      "slug": "edtech-vendor-security-questions-powerschool",
-      "title": "10 Questions EdTech Après la Violation PowerSchool",
-      "description": "Après la violation PowerSchool exposant des millions d'élèves, les écoles doivent vérifier les fournisseurs EdTech. 10 questions essentielles.",
-      "keywords": null,
-      "date": "2026-02-05",
+      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1138,7 +1160,7 @@ module.exports = {
         "évaluation pratique",
         "notation IA enseignants"
       ],
-      "date": "2026-02-04",
+      "date": "2026-01-28",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1158,26 +1180,7 @@ module.exports = {
         "compétences cognitives",
         "éducation scientifique"
       ],
-      "date": "2026-02-02",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
-      "id": "post17",
-      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
-      "title": "WhimsyLabs Remporte le #1 Meilleur de BETT 2026",
-      "description": "WhimsyLabs reçoit le prestigieux prix #1 Meilleur de BETT 2026 de Tech&Learning pour son laboratoire virtuel basé sur la physique.",
-      "keywords": [
-        "BETT 2026",
-        "Prix Tech and Learning",
-        "Meilleur de BETT",
-        "laboratoire virtuel",
-        "prix edtech",
-        "prix WhimsyLabs",
-        "simulation physique",
-        "innovation éducation STEM"
-      ],
-      "date": "2026-02-01",
+      "date": "2026-01-26",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1196,7 +1199,26 @@ module.exports = {
         "investissement edtech durable",
         "déclin casques RV"
       ],
-      "date": "2026-02-01",
+      "date": "2026-01-24",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Remporte le #1 Meilleur de BETT 2026",
+      "description": "WhimsyLabs reçoit le prestigieux prix #1 Meilleur de BETT 2026 de Tech&Learning pour son laboratoire virtuel basé sur la physique.",
+      "keywords": [
+        "BETT 2026",
+        "Prix Tech and Learning",
+        "Meilleur de BETT",
+        "laboratoire virtuel",
+        "prix edtech",
+        "prix WhimsyLabs",
+        "simulation physique",
+        "innovation éducation STEM"
+      ],
+      "date": "2026-01-22",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1469,6 +1491,24 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "La evaluación en la era de la IA: Únete a nuestro webinar de Pearson",
+      "description": "La Dra. Marisa French participa en el Webinar de la Comunidad de Profesionales de Inmersión de Pearson el 26 de febrero de 2026. Descubre cómo la RV permite una evaluación basada en procesos que hace irrelevante el engaño con IA.",
+      "keywords": [
+        "webinar Pearson",
+        "evaluación RV",
+        "aprendizaje inmersivo",
+        "evaluación resistente a IA",
+        "evaluación basada en procesos",
+        "educación científica",
+        "laboratorios virtuales"
+      ],
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
       "title": "Reino Unido invierte 49M£ en IA educativa: Impacto en escuelas",
@@ -1481,7 +1521,7 @@ module.exports = {
         "herramientas de corrección con IA",
         "subvenciones tecnología educativa"
       ],
-      "date": "2026-03-01",
+      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1498,7 +1538,7 @@ module.exports = {
         "subvenciones WhimsyLabs",
         "equidad educativa"
       ],
-      "date": "2026-02-26",
+      "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1508,7 +1548,7 @@ module.exports = {
       "title": "Laboratorio Virtual de Física: Simulaciones que Realmente Enseñan",
       "description": "Por qué la física es idónea para la simulación, qué hace que las malas simulaciones de física sean dañinas y cómo un motor físicamente preciso transforma el aprendizaje.",
       "keywords": null,
-      "date": "2026-02-23",
+      "date": "2026-02-13",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1518,7 +1558,7 @@ module.exports = {
       "title": "Laboratorio Virtual de Biología: Disecciones, Microscopía y Más",
       "description": "Los laboratorios virtuales de biología ofrecen práctica ilimitada de disección, especímenes perfectos para microscopía y accesibilidad para todos los estudiantes. Descubre cómo las prácticas virtuales complementan el trabajo de laboratorio real.",
       "keywords": null,
-      "date": "2026-02-20",
+      "date": "2026-02-12",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1528,20 +1568,9 @@ module.exports = {
       "title": "Tutores de IA para ciencias en el aula: lo que realmente funciona",
       "description": "Una mirada realista a lo que los tutores de IA pueden y no pueden hacer en la educación científica. Descubra cómo WhimsyCat observa técnicas, detecta frustración y apoya a los docentes.",
       "keywords": null,
-      "date": "2026-02-17",
+      "date": "2026-02-11",
       "hasFullTranslation": false,
       "language": "es"
-    },
-    {
-      "id": "post32",
-      "slug": "pearson-webinar-vr-assessment-ai-age",
-      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
-      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
-      "keywords": null,
-      "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "es",
-      "fallbackLanguage": "en"
     },
     {
       "id": "post26",
@@ -1555,7 +1584,7 @@ module.exports = {
         "software simulación laboratorio",
         "plataforma laboratorio virtual"
       ],
-      "date": "2026-02-14",
+      "date": "2026-02-09",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1572,7 +1601,7 @@ module.exports = {
         "prácticas de química",
         "titulación virtual"
       ],
-      "date": "2026-02-11",
+      "date": "2026-02-07",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1589,7 +1618,7 @@ module.exports = {
         "laboratorios virtuales de ciencias",
         "comparación de software de laboratorio"
       ],
-      "date": "2026-02-09",
+      "date": "2026-02-05",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1599,7 +1628,17 @@ module.exports = {
       "title": "Los Profesores Son Expertos. Nosotros Damos Herramientas.",
       "description": "WhimsyLabs da control a los profesores con un diseñador de experimentos personalizado. Los profesores conocen a sus estudiantes.",
       "keywords": null,
-      "date": "2026-02-07",
+      "date": "2026-02-03",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post22",
+      "slug": "edtech-vendor-security-questions-powerschool",
+      "title": "10 Preguntas de Seguridad para Proveedores EdTech",
+      "description": "Tras la brecha de PowerSchool que expuso millones de estudiantes, las escuelas deben evaluar proveedores EdTech. 10 preguntas de seguridad.",
+      "keywords": null,
+      "date": "2026-02-01",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1617,17 +1656,7 @@ module.exports = {
         "WhimsyLabs subvenciones",
         "equipamiento ciencia escolar"
       ],
-      "date": "2026-02-06",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
-      "id": "post22",
-      "slug": "edtech-vendor-security-questions-powerschool",
-      "title": "10 Preguntas de Seguridad para Proveedores EdTech",
-      "description": "Tras la brecha de PowerSchool que expuso millones de estudiantes, las escuelas deben evaluar proveedores EdTech. 10 preguntas de seguridad.",
-      "keywords": null,
-      "date": "2026-02-05",
+      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1648,7 +1677,7 @@ module.exports = {
         "evaluación práctica",
         "calificación IA docentes"
       ],
-      "date": "2026-02-04",
+      "date": "2026-01-28",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1668,26 +1697,7 @@ module.exports = {
         "habilidades cognitivas",
         "educación científica"
       ],
-      "date": "2026-02-02",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
-      "id": "post17",
-      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
-      "title": "WhimsyLabs Gana el #1 Mejor de BETT 2026 de Tech&Learning",
-      "description": "WhimsyLabs ha sido galardonado con el #1 Mejor de BETT 2026 de Tech&Learning, reconociendo nuestro laboratorio virtual basado en física como el mejor producto de tecnología educativa en el evento de edtech más grande del mundo.",
-      "keywords": [
-        "BETT 2026",
-        "Premio Tech and Learning",
-        "Mejor de BETT",
-        "laboratorio virtual",
-        "premio edtech",
-        "premio WhimsyLabs",
-        "simulación física",
-        "innovación educación STEM"
-      ],
-      "date": "2026-02-01",
+      "date": "2026-01-26",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1706,7 +1716,26 @@ module.exports = {
         "inversión edtech sostenible",
         "declive cascos RV"
       ],
-      "date": "2026-02-01",
+      "date": "2026-01-24",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabs Gana el #1 Mejor de BETT 2026 de Tech&Learning",
+      "description": "WhimsyLabs ha sido galardonado con el #1 Mejor de BETT 2026 de Tech&Learning, reconociendo nuestro laboratorio virtual basado en física como el mejor producto de tecnología educativa en el evento de edtech más grande del mundo.",
+      "keywords": [
+        "BETT 2026",
+        "Premio Tech and Learning",
+        "Mejor de BETT",
+        "laboratorio virtual",
+        "premio edtech",
+        "premio WhimsyLabs",
+        "simulación física",
+        "innovación educación STEM"
+      ],
+      "date": "2026-01-22",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -1979,6 +2008,24 @@ module.exports = {
   ],
   "ja": [
     {
+      "id": "post32",
+      "slug": "pearson-webinar-vr-assessment-ai-age",
+      "title": "AI時代の評価方法：Pearsonウェビナーにご参加ください",
+      "description": "マリサ・フレンチ博士が2026年2月26日のPearson Immersive Practitioners' Communityウェビナーで講演します。VRがプロセス重視の評価を可能にし、AIによる不正行為を無意味にする方法について学びましょう。",
+      "keywords": [
+        "Pearsonウェビナー",
+        "VR評価",
+        "没入型学習",
+        "AI耐性評価",
+        "プロセス重視評価",
+        "理科教育",
+        "仮想実験室"
+      ],
+      "date": "2026-02-17",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
       "id": "post31",
       "slug": "uk-government-ai-education-funding-2026",
       "title": "英国がAI教育に4900万ポンドを投資：学校にとっての意味",
@@ -1991,7 +2038,7 @@ module.exports = {
         "AI採点ツール",
         "教育技術助成金"
       ],
-      "date": "2026-03-01",
+      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2008,7 +2055,7 @@ module.exports = {
         "WhimsyLabs助成金",
         "教育の公平性"
       ],
-      "date": "2026-02-26",
+      "date": "2026-02-14",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2018,7 +2065,7 @@ module.exports = {
       "title": "バーチャル物理実験室：本当に教えるシミュレーション",
       "description": "なぜ物理学はシミュレーションに最適なのか、悪い物理シミュレーションが有害な理由、そして物理的に正確なエンジンがいかに学習を変革するか。",
       "keywords": null,
-      "date": "2026-02-23",
+      "date": "2026-02-13",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2028,7 +2075,7 @@ module.exports = {
       "title": "バーチャル生物実験室：解剖、顕微鏡観察など",
       "description": "バーチャル生物実験室では、無制限の解剖練習、完璧な顕微鏡標本、すべての生徒へのアクセシビリティを提供します。バーチャル実習が実際の実験室作業をどのように補完するかを学びましょう。",
       "keywords": null,
-      "date": "2026-02-20",
+      "date": "2026-02-12",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2038,20 +2085,9 @@ module.exports = {
       "title": "教室でのAI理科チューター：実際に効果があるもの",
       "description": "理科教育におけるAIチューターの可能性と限界についての現実的な考察。WhimsyCatがどのように技術を観察し、フラストレーションを検出し、教師をサポートするかをご紹介します。",
       "keywords": null,
-      "date": "2026-02-17",
+      "date": "2026-02-11",
       "hasFullTranslation": false,
       "language": "ja"
-    },
-    {
-      "id": "post32",
-      "slug": "pearson-webinar-vr-assessment-ai-age",
-      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
-      "description": "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.",
-      "keywords": null,
-      "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "ja",
-      "fallbackLanguage": "en"
     },
     {
       "id": "post26",
@@ -2065,7 +2101,7 @@ module.exports = {
         "実験室シミュレーションソフトウェア",
         "仮想実験室プラットフォーム"
       ],
-      "date": "2026-02-14",
+      "date": "2026-02-09",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2082,7 +2118,7 @@ module.exports = {
         "化学実習",
         "仮想滴定"
       ],
-      "date": "2026-02-11",
+      "date": "2026-02-07",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2099,7 +2135,7 @@ module.exports = {
         "仮想理科実験室",
         "実験室ソフトウェア比較"
       ],
-      "date": "2026-02-09",
+      "date": "2026-02-05",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2109,7 +2145,17 @@ module.exports = {
       "title": "教師が専門家です。私たちはツールを作るだけです。",
       "description": "教師こそが生徒を最もよく知る真の専門家です。WhimsyLabsのカスタム実験デザイナーは、教師が独自の実験を設計すると、AIが理論セクション・手順ガイド・評価問題を自動生成。教師の専門性を尊重しながら教育テクノロジーの可能性を最大化します。",
       "keywords": null,
-      "date": "2026-02-07",
+      "date": "2026-02-03",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post22",
+      "slug": "edtech-vendor-security-questions-powerschool",
+      "title": "PowerSchool侵害後にEdTechベンダーに尋ねるべき10の質問",
+      "description": "PowerSchoolデータ侵害事件で6,240万人の生徒と950万人の教育者の情報が流出。学校がEdTechベンダー選定時に確認すべき10の重要なセキュリティ質問を解説。SOC 2認証、MFA、データ保持ポリシーなど、契約前に必ず確認を。",
+      "keywords": null,
+      "date": "2026-02-01",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2127,17 +2173,7 @@ module.exports = {
         "WhimsyLabs助成金支援",
         "学校理科機器"
       ],
-      "date": "2026-02-06",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
-      "id": "post22",
-      "slug": "edtech-vendor-security-questions-powerschool",
-      "title": "PowerSchool侵害後にEdTechベンダーに尋ねるべき10の質問",
-      "description": "PowerSchoolデータ侵害事件で6,240万人の生徒と950万人の教育者の情報が流出。学校がEdTechベンダー選定時に確認すべき10の重要なセキュリティ質問を解説。SOC 2認証、MFA、データ保持ポリシーなど、契約前に必ず確認を。",
-      "keywords": null,
-      "date": "2026-02-05",
+      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2158,7 +2194,7 @@ module.exports = {
         "実践的評価",
         "教師AI採点"
       ],
-      "date": "2026-02-04",
+      "date": "2026-01-28",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2178,26 +2214,7 @@ module.exports = {
         "認知スキル",
         "科学教育"
       ],
-      "date": "2026-02-02",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
-      "id": "post17",
-      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
-      "title": "WhimsyLabsがTech&Learning #1 Best of BETT 2026を受賞",
-      "description": "WhimsyLabsがTech&Learning誌の「#1 Best of BETT 2026」を受賞！600社以上の出展者から第1位に選出され、物理ファーストの仮想実験室アプローチが世界最大のエドテックイベントで最高の教育テクノロジー製品として認められました。",
-      "keywords": [
-        "BETT 2026",
-        "Tech and Learning Award",
-        "Best of BETT",
-        "仮想実験室",
-        "エドテック賞",
-        "WhimsyLabs受賞",
-        "物理シミュレーション",
-        "STEM教育イノベーション"
-      ],
-      "date": "2026-02-01",
+      "date": "2026-01-26",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -2216,7 +2233,26 @@ module.exports = {
         "持続可能なエドテック投資",
         "VRヘッドセット衰退"
       ],
-      "date": "2026-02-01",
+      "date": "2026-01-24",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post17",
+      "slug": "whimsylabs-wins-techlearning-best-of-bett-2026",
+      "title": "WhimsyLabsがTech&Learning #1 Best of BETT 2026を受賞",
+      "description": "WhimsyLabsがTech&Learning誌の「#1 Best of BETT 2026」を受賞！600社以上の出展者から第1位に選出され、物理ファーストの仮想実験室アプローチが世界最大のエドテックイベントで最高の教育テクノロジー製品として認められました。",
+      "keywords": [
+        "BETT 2026",
+        "Tech and Learning Award",
+        "Best of BETT",
+        "仮想実験室",
+        "エドテック賞",
+        "WhimsyLabs受賞",
+        "物理シミュレーション",
+        "STEM教育イノベーション"
+      ],
+      "date": "2026-01-22",
       "hasFullTranslation": false,
       "language": "ja"
     },

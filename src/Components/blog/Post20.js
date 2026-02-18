@@ -3,7 +3,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "AI Detection Doesn't Work. Process-Based Assessment Does.";
-export const date = "2026-02-04";
+export const date = "2026-01-28";
 export const slug = "ai-assessment-crisis-solution";
 export const description =
   "82% of educators fear AI cheating, but detection tools fail. Process-based practical assessment offers a better path forward.";

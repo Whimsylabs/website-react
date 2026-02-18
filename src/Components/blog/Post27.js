@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "AI Science Tutors in the Classroom: What Actually Works";
-export const date = "2026-02-17";
+export const date = "2026-02-11";
 export const slug = "ai-science-tutor-classroom-what-works";
 export const description = "A realistic look at what AI tutors can and cannot do in science education. Learn how WhimsyCat observes technique, detects frustration, and supports teachers.";
 export const keywords = "AI tutor science, AI science education, AI in science classroom, WhimsyCat, AI tutoring system, intelligent tutoring science";

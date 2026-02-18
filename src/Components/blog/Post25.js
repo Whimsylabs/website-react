@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "Virtual Chemistry Lab: A Teacher's Complete Guide";
-export const date = "2026-02-11";
+export const date = "2026-02-07";
 export const slug = "virtual-chemistry-lab-teachers-guide";
 export const description = "A practical guide for chemistry teachers on integrating virtual labs into your curriculum. Covers titrations, hazardous reactions, and getting students comfortable with simulations.";
 export const keywords = "virtual chemistry lab, online chemistry experiments, chemistry simulation, titration simulation, chemistry practical, virtual titration";

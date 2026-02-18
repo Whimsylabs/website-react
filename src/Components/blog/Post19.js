@@ -3,7 +3,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "AI Boosted Scores 127%. Then Students Couldn't Think.";
-export const date = "2026-02-02";
+export const date = "2026-01-26";
 export const slug = "oecd-ai-learning-paradox-virtual-labs";
 export const description =
   "OECD research shows AI tutors boost scores but hurt problem-solving. Hands-on virtual labs offer a better path forward.";

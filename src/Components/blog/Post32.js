@@ -1,5 +1,4 @@
 import React from "react";
-import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title = "Assessment in the Age of AI: Join Our Pearson Webinar";
 export const date = "2026-02-17";
@@ -7,40 +6,16 @@ export const slug = "pearson-webinar-vr-assessment-ai-age";
 export const description = "Dr Marisa French speaks at Pearson's Immersive Practitioners' Community Webinar on 26 February 2026. Learn how VR enables process-driven assessment that makes AI cheating irrelevant.";
 export const keywords = "Pearson webinar, VR assessment, immersive learning, AI-resistant assessment, process-driven assessment, science education, virtual labs";
 
-const ContactCTA = () => {
-  const language = getCurrentLanguage();
-  return (
-    <p>
-      I hope to see you there. And if you can't make it but want to learn more about process-driven assessment in virtual labs, feel free to <a href={getLocalizedPath("/contact", language)}>get in touch</a> directly. We're always happy to discuss how WhimsyLabs can support authentic assessment in your school or institution.
-    </p>
-  );
-};
-
-const RelatedArticles = () => {
-  const language = getCurrentLanguage();
-  return (
-    <>
-      <h2>Further Reading</h2>
-      <ul>
-        <li><a href={getLocalizedPath("/blog/ai-assessment-crisis-solution", language)}>The AI Assessment Crisis: How Virtual Labs Offer a Solution</a></li>
-        <li><a href={getLocalizedPath("/blog/teachers-are-experts-custom-experiment-designer", language)}>Teachers Are the Experts. We Just Build the Tools.</a></li>
-        <li><a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>Meet WhimsyCat: The AI Tutor That Watches What You Do</a></li>
-        <li><a href={getLocalizedPath("/blog/how-to-choose-virtual-lab-software-school", language)}>How to Choose Virtual Lab Software for Your School</a></li>
-      </ul>
-    </>
-  );
-};
-
 export const content = (
   <>
     <figure className="blog-image">
       <img
-        src="/images/vr_whimsycat.png"
-        alt="Student in VR headset conducting virtual lab experiment"
+        src="/images/grading dashboard2.jpg"
+        alt="Teacher grading dashboard showing AI assessment overview and audit trail"
         style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
       />
       <figcaption style={{ textAlign: 'center', fontStyle: 'italic', color: '#666', marginBottom: '1.5rem' }}>
-        Virtual labs track what students DO, not just what they submit.
+        Teachers can review and audit AI grading decisions through an intuitive dashboard.
       </figcaption>
     </figure>
 
@@ -95,7 +70,7 @@ export const content = (
 
     <h2>The Research Behind Process-Driven Assessment</h2>
     <p>
-      This isn't just theory. A recent paper in Frontiers in Education (<a href="https://doi.org/10.3389/feduc.2024.1499495" target="_blank" rel="noopener noreferrer">French & Sherwin, 2024</a>) explored how virtual labs enable process-driven assessment. The key insight: when you track student actions rather than just final outputs, you create assessment that is naturally robust against AI assistance.
+      This isn't just theory. A recent paper in Frontiers in Education (<a href="https://doi.org/10.3389/feduc.2024.1499495" target="_blank" rel="noopener noreferrer">Alkouk & Khlaif, 2024</a>) explored AI-resistant assessments in higher education. The key insight: when you track student actions rather than just final outputs, you create assessment that is naturally robust against AI assistance.
     </p>
     <p>
       Why? Because AI can write about titrations. AI can describe the steps. AI can even generate realistic-looking data tables. But AI cannot perform a titration. It cannot demonstrate proper technique. It cannot show the procedural knowledge that comes from practice.
@@ -128,6 +103,17 @@ export const content = (
     <p>
       I'll also discuss the challenges we've encountered and how we've addressed them. Process-driven assessment isn't a magic solution. It requires thoughtful implementation and clear communication with students about what's being assessed and why.
     </p>
+
+    <figure className="blog-image">
+      <img
+        src="/images/grading dashboard3.jpg"
+        alt="3D replay of student actions in virtual lab for assessment auditing"
+        style={{ width: '100%', maxWidth: '700px', margin: '0 auto 1.5rem', display: 'block', borderRadius: '8px' }}
+      />
+      <figcaption style={{ textAlign: 'center', fontStyle: 'italic', color: '#666', marginBottom: '1.5rem' }}>
+        Teachers can replay student actions in 3D to verify practical technique and audit assessments.
+      </figcaption>
+    </figure>
 
     <h2>Who Should Attend</h2>
     <p>
@@ -175,20 +161,32 @@ export const content = (
         Register for the Webinar →
       </a>
     </p>
-    <ContactCTA />
+    <p>
+      I hope to see you there. And if you can't make it but want to learn more about process-driven assessment in virtual labs, feel free to <a href="/contact">get in touch</a> directly. We're always happy to discuss how WhimsyLabs can support authentic assessment in your school or institution.
+    </p>
 
     <div className="references-section">
       <h3>References</h3>
       <ul className="references-list">
         <li key="ref-1">
-          French, M., & Sherwin, G. (2024). WhimsyLabs: A browser-based virtual laboratory platform for accessible and authentic science education.
+          Alkouk, W.A., & Khlaif, Z.N. (2024). AI-resistant assessments in higher education: practical insights from faculty training workshops.
           <em> Frontiers in Education</em>, 9, 1499495.
           <a href="https://doi.org/10.3389/feduc.2024.1499495" target="_blank" rel="noopener noreferrer"> https://doi.org/10.3389/feduc.2024.1499495</a>
+        </li>
+        <li key="ref-2">
+          Pearson (2025). Assessment Evolved: Redefining Formative Assessment in a Generative AI Era.
+          <a href="https://plc.pearson.com/en-GB/news-and-insights/assessment-evolved-redefining-formative-assessment-in-a-generative-ai-era" target="_blank" rel="noopener noreferrer"> Pearson Insights</a>
         </li>
       </ul>
     </div>
 
-    <RelatedArticles />
+    <h2>Further Reading</h2>
+    <ul>
+      <li><a href="/blog/ai-assessment-crisis-solution">The AI Assessment Crisis: How Virtual Labs Offer a Solution</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Watches What You Do</a></li>
+      <li><a href="/blog/how-to-choose-virtual-lab-software-school">How to Choose Virtual Lab Software for Your School</a></li>
+    </ul>
   </>
 );
 

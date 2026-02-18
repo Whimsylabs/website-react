@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "Virtual Biology Lab: Dissections, Microscopy, and More";
-export const date = "2026-02-20";
+export const date = "2026-02-12";
 export const slug = "virtual-biology-lab-dissections-microscopy";
 export const description = "Virtual biology labs offer unlimited dissection practice, perfect microscopy specimens, and accessibility for all students. Learn how virtual practicals supplement and enhance real lab work.";
 export const keywords = [

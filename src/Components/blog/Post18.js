@@ -3,7 +3,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 export const title =
   "VR Winter? Why Web-First Virtual Labs Are Smart for Schools";
-export const date = "2026-02-01";
+export const date = "2026-01-24";
 export const slug = "vr-winter-web-first-virtual-labs";
 export const description =
   "VR headset sales are declining. Schools need edtech that isn't hardware-dependent. Web-first virtual labs are the sustainable choice.";

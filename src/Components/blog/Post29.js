@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "Virtual Physics Lab: Simulations That Actually Teach";
-export const date = "2026-02-23";
+export const date = "2026-02-13";
 export const slug = "virtual-physics-lab-simulations-teach";
 export const description = "Why physics is uniquely suited to simulation, what makes bad physics sims harmful, and how a physics-accurate engine transforms learning.";
 export const keywords = [

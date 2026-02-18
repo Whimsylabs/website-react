@@ -4,7 +4,7 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 const language = getCurrentLanguage();
 
 export const title = "10 Questions for EdTech Vendors Post-PowerSchool";
-export const date = "2026-02-07";
+export const date = "2026-02-01";
 export const slug = "edtech-vendor-security-questions-powerschool";
 export const description = "After the PowerSchool breach exposed millions of students, schools must vet EdTech vendors. 10 essential security questions to ask.";
 export const keywords = "PowerSchool data breach, EdTech security, student data privacy, school vendor questionnaire, FERPA compliance, GDPR education, virtual lab security, EdTech vendor vetting";
