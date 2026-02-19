@@ -6,9 +6,16 @@ import SplashSection from './SplashSection';
 import ContactUs from './ContactUs';
 import Testimonial from './Testimonial';
 import Partners from './Partners';
+import SpeakerButton from './SpeakerButton';
 import { useTranslation } from '../i18n/translations';
 import { getLocalizedPath } from '../i18n';
 import './LandingDemo.css';
+
+// Helper to get audio path for landing sections
+const getLandingAudioPath = (sectionId, lang) => {
+  const audioLang = lang === 'ja' ? 'jp' : lang;
+  return `/audio/landing/${audioLang}/${sectionId}.mp3`;
+};
 
 // ============================================
 // MOCK UI COMPONENTS (Code-based "screenshots")
@@ -253,13 +260,14 @@ const LandingDemo = ({ language = 'en' }) => {
     <main className="landing-demo">
       {/* Floating decorations for wide screens - random selection */}
       <div className="floating-decorations">
-        <img src="/images/microscope.webp" alt="Microscope illustration representing biology virtual labs" className="floating-deco left-1" aria-hidden="true" />
-        <img src="/images/molecule.webp" alt="Molecular structure illustration for chemistry simulations" className="floating-deco left-2" aria-hidden="true" />
-        <img src="/images/bubble beaker.webp" alt="Laboratory beaker with bubbling reaction" className="floating-deco right-1" aria-hidden="true" />
+        <img src="/images/microscope.webp" alt="Microscope illustration representing biology virtual labs" className="floating-deco left-1" aria-hidden="true" loading="lazy" />
+        <img src="/images/molecule.webp" alt="Molecular structure illustration for chemistry simulations" className="floating-deco left-2" aria-hidden="true" loading="lazy" />
+        <img src="/images/bubble beaker.webp" alt="Laboratory beaker with bubbling reaction" className="floating-deco right-1" aria-hidden="true" loading="lazy" />
       </div>
       
       <Header language={language} />
 
+      <div id="main-content" className="page-content">
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-video-container">
@@ -284,11 +292,18 @@ const LandingDemo = ({ language = 'en' }) => {
         </div>
         <div className="hero-pattern"></div>
         <div className="hero-content container">
+          <SpeakerButton
+            audioSrc={getLandingAudioPath('hero', language)}
+            label={t('common.listenToSection') || 'Listen'}
+            size="small"
+            className="whimsy-theme hero-speaker"
+          />
           <div className="hero-logo">
             <img
               src="/logo.png"
               alt="WhimsyLabs"
               className="hero-logo-img"
+              fetchpriority="high"
             />
           </div>
           <h1 className="hero-title" dangerouslySetInnerHTML={{ __html: t('home.demo.heroTitle') }} />
@@ -328,7 +343,15 @@ const LandingDemo = ({ language = 'en' }) => {
       <section className="definition-section">
         <div className="container">
           <div className="definition-content animate-on-scroll">
-            <h2 className="section-title">{t('home.demo.whatIsTitle')}</h2>
+            <div className="section-header-row">
+              <h2 className="section-title">{t('home.demo.whatIsTitle')}</h2>
+              <SpeakerButton
+                audioSrc={getLandingAudioPath('what-is', language)}
+                label={t('common.listenToSection') || 'Listen to section'}
+                size="small"
+                className="whimsy-theme section-speaker"
+              />
+            </div>
             <p className="section-text definition-text">
               {t('home.demo.whatIsText')}
             </p>
@@ -341,11 +364,19 @@ const LandingDemo = ({ language = 'en' }) => {
         <section className="muscle-memory-section container">
           <div className="section-grid">
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">
-                {t('home.demo.muscleMemoryTitle')}
-              </h2>
+              <div className="section-header-row">
+                <h2 className="section-title">
+                  {t('home.demo.muscleMemoryTitle')}
+                </h2>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('physics', language)}
+                  label={t('common.listenToSection') || 'Listen'}
+                  size="small"
+                  className="whimsy-theme section-speaker"
+                />
+              </div>
               <p className="section-text">
-                {t('home.demo.muscleMemoryText1')}<sup><a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-019-0587-8" target="_blank" rel="noopener noreferrer" className="citation-link">[1]</a></sup>
+                {t('home.demo.muscleMemoryText1')}<sup><a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-019-0587-8" target="_blank" rel="noopener noreferrer" className="citation-link" aria-label="Citation 1: Motor learning research study">[1]</a></sup>
               </p>
               <p className="section-text highlight-text">
                 {t('home.demo.muscleMemoryHighlight')}
@@ -458,7 +489,15 @@ const LandingDemo = ({ language = 'en' }) => {
               </div>
             </div>
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">{t('home.demo.assessmentTitle')}</h2>
+              <div className="section-header-row">
+                <h2 className="section-title">{t('home.demo.assessmentTitle')}</h2>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('assessment', language)}
+                  label={t('common.listenToSection') || 'Listen'}
+                  size="small"
+                  className="whimsy-theme section-speaker"
+                />
+              </div>
               <p className="section-text">
                 {t('home.demo.assessmentText1')}
               </p>
@@ -493,9 +532,17 @@ const LandingDemo = ({ language = 'en' }) => {
               <span className="time-label">{t('home.demo.mockups.savedPerWeek')}</span>
             </div>
             <div className="time-text">
-              <h2 className="section-title">
-                {t('home.demo.timeSavingTitle')}<sup><a href="https://journals.sagepub.com/doi/10.3102/0034654314564881" target="_blank" rel="noopener noreferrer" className="citation-link">[2]</a></sup>
-              </h2>
+              <div className="section-header-row">
+                <h2 className="section-title">
+                  {t('home.demo.timeSavingTitle')}<sup><a href="https://journals.sagepub.com/doi/10.3102/0034654314564881" target="_blank" rel="noopener noreferrer" className="citation-link" aria-label="Citation 2: Time-saving research study">[2]</a></sup>
+                </h2>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('time-saving', language)}
+                  label={t('common.listenToSection') || 'Listen'}
+                  size="small"
+                  className="whimsy-theme section-speaker"
+                />
+              </div>
               <p className="section-text">
                 {t('home.demo.timeSavingText')}
               </p>
@@ -509,7 +556,15 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="container">
           <div className="section-grid">
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">{t('home.demo.curriculumTitle')}</h2>
+              <div className="section-header-row">
+                <h2 className="section-title">{t('home.demo.curriculumTitle')}</h2>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('curriculum', language)}
+                  label={t('common.listenToSection') || 'Listen'}
+                  size="small"
+                  className="whimsy-theme section-speaker"
+                />
+              </div>
               <p className="section-text">
                 {t('home.demo.curriculumText1')}
               </p>
@@ -647,7 +702,15 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="container">
           <div className="section-grid">
             <div className="section-content animate-on-scroll">
-              <h2 className="section-title">{t('home.demo.dashboardTitle')}</h2>
+              <div className="section-header-row">
+                <h2 className="section-title">{t('home.demo.dashboardTitle')}</h2>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('dashboard', language)}
+                  label={t('common.listenToSection') || 'Listen'}
+                  size="small"
+                  className="whimsy-theme section-speaker"
+                />
+              </div>
               <p className="section-text">
                 {t('home.demo.dashboardText1')}
               </p>
@@ -696,7 +759,7 @@ const LandingDemo = ({ language = 'en' }) => {
 
                   {/* Class Performance */}
                   <div className="classes-section">
-                    <h4 className="section-subtitle">{t('home.demo.mockups.classPerformance')}</h4>
+                    <h3 className="section-subtitle">{t('home.demo.mockups.classPerformance')}</h3>
                     <ClassRow
                       name={t('home.demo.mockups.year9ChemistryA')}
                       students={28}
@@ -728,9 +791,9 @@ const LandingDemo = ({ language = 'en' }) => {
 
                   {/* Skills Breakdown */}
                   <div className="skills-section">
-                    <h4 className="section-subtitle">
+                    <h3 className="section-subtitle">
                       {t('home.demo.mockups.skillsAssessment')}
-                    </h4>
+                    </h3>
                     <SkillBar skill={t('home.demo.mockups.labSafety')} avgScore={88} benchmark={85} />
                     <SkillBar
                       skill={t('home.demo.mockups.measurementAccuracy')}
@@ -760,7 +823,7 @@ const LandingDemo = ({ language = 'en' }) => {
         <div className="gassy-bubbles"></div>
         <div className="features-grid-section container">
           <div className="gassy-header">
-            <h2 className="gassy-title">{t('home.demo.whyStudentsLove')}<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer" className="citation-link">[3]</a></sup></h2>
+            <h2 className="gassy-title">{t('home.demo.whyStudentsLove')}<sup><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11684589/" target="_blank" rel="noopener noreferrer" className="citation-link" aria-label="Citation 3: Student engagement research">[3]</a></sup></h2>
             <div className="bett-award-badges">
               <a href={getLocalizedPath("/blog/whimsylabs-education-revolution", language)} className="bett-award-badge">
                 <span className="award-text">{t('home.demo.mockups.bettAward')}</span>
@@ -772,22 +835,43 @@ const LandingDemo = ({ language = 'en' }) => {
           </div>
           <div className="features-grid animate-on-scroll">
             <article className="feature-block">
-              <img src="/images/meowdy.png" alt="WhimsyCat mascot exploring with curiosity" className="feature-icon-img" />
-              <h3>{t('home.demo.freedomToExplore')}</h3>
+              <img src="/images/meowdy.png" alt="WhimsyCat mascot exploring with curiosity" className="feature-icon-img" loading="lazy" />
+              <div className="feature-header-row">
+                <h3>{t('home.demo.freedomToExplore')}</h3>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('freedom', language)}
+                  size="small"
+                  className="whimsy-theme"
+                />
+              </div>
               <p>
                 {t('home.demo.freedomToExploreText')}
               </p>
             </article>
             <article className="feature-block">
-              <img src="/images/cat_beaker.png" alt="WhimsyCat mascot with science beaker representing inclusive education" className="feature-icon-img" />
-              <h3>{t('home.demo.scienceForEveryone')}</h3>
+              <img src="/images/cat_beaker.png" alt="WhimsyCat mascot with science beaker representing inclusive education" className="feature-icon-img" loading="lazy" />
+              <div className="feature-header-row">
+                <h3>{t('home.demo.scienceForEveryone')}</h3>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('send', language)}
+                  size="small"
+                  className="whimsy-theme"
+                />
+              </div>
               <p>
                 {t('home.demo.scienceForEveryoneText')}
               </p>
             </article>
             <article className="feature-block">
-              <img src="/images/cat_brain.png" alt="WhimsyCat mascot with brain icon representing mastery-based learning" className="feature-icon-img" />
-              <h3>{t('home.demo.rewardingMastery')}</h3>
+              <img src="/images/cat_brain.png" alt="WhimsyCat mascot with brain icon representing mastery-based learning" className="feature-icon-img" loading="lazy" />
+              <div className="feature-header-row">
+                <h3>{t('home.demo.rewardingMastery')}</h3>
+                <SpeakerButton
+                  audioSrc={getLandingAudioPath('gamification', language)}
+                  size="small"
+                  className="whimsy-theme"
+                />
+              </div>
               <p>
                 {t('home.demo.rewardingMasteryText')}
               </p>
@@ -800,7 +884,15 @@ const LandingDemo = ({ language = 'en' }) => {
       <section className="pioneer-section">
         <div className="container">
           <div className="pioneer-content animate-on-scroll">
-            <h2 className="section-title">{t('home.demo.pioneerTitle')}</h2>
+            <div className="section-header-row">
+              <h2 className="section-title">{t('home.demo.pioneerTitle')}</h2>
+              <SpeakerButton
+                audioSrc={getLandingAudioPath('pioneer', language)}
+                label={t('common.listenToSection') || 'Listen'}
+                size="small"
+                className="whimsy-theme section-speaker"
+              />
+            </div>
             <p className="pioneer-intro">
               {t('home.demo.pioneerIntro')}
             </p>
@@ -862,6 +954,7 @@ const LandingDemo = ({ language = 'en' }) => {
           </ol>
         </div>
       </section>
+      </div>
 
       <Footer language={language} />
     </main>

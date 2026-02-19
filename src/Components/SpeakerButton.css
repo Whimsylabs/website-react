@@ -1,0 +1,205 @@
+/* SpeakerButton - Accessible audio playback button */
+
+.speaker-btn {
+  /* Base button styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  
+  /* Default colors - can be overridden */
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Size variants */
+.speaker-btn-small {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+}
+
+.speaker-btn-small .speaker-btn-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.speaker-btn-medium {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+}
+
+.speaker-btn-medium .speaker-btn-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.speaker-btn-large {
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+}
+
+.speaker-btn-large .speaker-btn-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Icon container */
+.speaker-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.speaker-btn-icon svg {
+  display: block;
+}
+
+/* Hover state */
+.speaker-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f3f4 100%);
+  color: #212529;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+/* Active/pressed state - sunken effect */
+.speaker-btn:active:not(:disabled) {
+  background: linear-gradient(180deg, #dee2e6 0%, #e9ecef 100%);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.15),
+    inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+}
+
+/* Playing state - highlighted */
+.speaker-btn-playing {
+  background: linear-gradient(180deg, #4263eb 0%, #364fc7 100%);
+  color: white;
+  box-shadow: 
+    0 2px 8px rgba(66, 99, 235, 0.4),
+    0 1px 2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.speaker-btn-playing:hover:not(:disabled) {
+  background: linear-gradient(180deg, #5c7cfa 0%, #4263eb 100%);
+  color: white;
+  box-shadow: 
+    0 4px 12px rgba(66, 99, 235, 0.5),
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.speaker-btn-playing:active:not(:disabled) {
+  background: linear-gradient(180deg, #364fc7 0%, #3b5bdb 100%);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 1px 4px rgba(66, 99, 235, 0.3);
+}
+
+/* Loading state */
+.speaker-btn-loading {
+  cursor: wait;
+  opacity: 0.8;
+}
+
+.speaker-icon-spinner {
+  animation: speaker-spin 1s linear infinite;
+}
+
+@keyframes speaker-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Error state */
+.speaker-btn-error {
+  background: linear-gradient(180deg, #fff5f5 0%, #ffe3e3 100%);
+  color: #c92a2a;
+  cursor: not-allowed;
+}
+
+.speaker-btn-error:hover {
+  background: linear-gradient(180deg, #fff5f5 0%, #ffe3e3 100%);
+  transform: none;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Disabled state */
+.speaker-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Focus state for accessibility */
+.speaker-btn:focus {
+  outline: none;
+  box-shadow: 
+    0 0 0 3px rgba(66, 99, 235, 0.4),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-btn:focus:not(:focus-visible) {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .speaker-btn {
+    background: linear-gradient(180deg, #495057 0%, #343a40 100%);
+    color: #f8f9fa;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      0 1px 2px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .speaker-btn:hover:not(:disabled) {
+    background: linear-gradient(180deg, #5c6370 0%, #495057 100%);
+    color: #ffffff;
+  }
+  
+  .speaker-btn:active:not(:disabled) {
+    background: linear-gradient(180deg, #343a40 0%, #212529 100%);
+  }
+  
+  .speaker-btn-error {
+    background: linear-gradient(180deg, #4a1e1e 0%, #3d1515 100%);
+    color: #ff8787;
+  }
+}
+
+/* WhimsyLabs theme variant */
+.speaker-btn.whimsy-theme {
+  background: linear-gradient(180deg, #f3f0ff 0%, #e5dbff 100%);
+  color: #5f3dc4;
+}
+
+.speaker-btn.whimsy-theme:hover:not(:disabled) {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f0ff 100%);
+  color: #5f3dc4;
+}
+
+.speaker-btn.whimsy-theme.speaker-btn-playing {
+  background: linear-gradient(180deg, #7950f2 0%, #6741d9 100%);
+  color: white;
+}

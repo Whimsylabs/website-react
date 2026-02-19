@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import PageReader from './PageReader';
 import './ContactPage.css';
 import { Helmet } from 'react-helmet-async';
 import { sendToCRM, parseFullName } from '../utils/crmWebhook';
@@ -145,7 +146,7 @@ const ContactPage = ({ language }) => {
         <meta name="keywords" content="contact WhimsyLabs, virtual lab trial, STEM education software, school lab simulation" />
       </Helmet>
       <Header currentLang={language} />
-      <div id="contact-page-background">
+      <div id="contact-page-background" className="page-content">
         <div className="container py-5">
           {/* Trust Banner */}
           <div className="contact-trust-banner">
@@ -297,8 +298,8 @@ const ContactPage = ({ language }) => {
                       />
                     </div>
                     
-                    <div className="form-group">
-                      <label>Preferred Contact Method</label>
+                    <fieldset className="form-group">
+                      <legend>Preferred Contact Method</legend>
                       <div className="radio-group">
                         <label>
                           <input
@@ -321,7 +322,7 @@ const ContactPage = ({ language }) => {
                           Phone
                         </label>
                       </div>
-                    </div>
+                    </fieldset>
                   </>
                 )}
                 
@@ -342,13 +343,14 @@ const ContactPage = ({ language }) => {
                 </div>
                 
                 {/* Honeypot field - hidden from users but bots might fill it out */}
-                <div className="honeypot-field">
+                <div className="honeypot-field" aria-hidden="true">
                   <input
                     type="text"
                     id="website"
                     name="website"
                     tabIndex="-1"
                     autoComplete="off"
+                    aria-label="Leave this field empty"
                   />
                 </div>
 
@@ -368,11 +370,12 @@ const ContactPage = ({ language }) => {
           )}
           
           <div className="contact-alternative">
-            <h3>Prefer to email us directly?</h3>
+            <h2>Prefer to email us directly?</h2>
             <p>Reach out to <a href="mailto:inquiries@whimsylabs.ai">inquiries@whimsylabs.ai</a></p>
           </div>
         </div>
       </div>
+      <PageReader contentSelector=".page-content" language={language || 'en'} />
       <Footer language={language} />
     </main>
   );

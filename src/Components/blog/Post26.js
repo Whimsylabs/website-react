@@ -223,7 +223,7 @@ export const content = (
       Our AI tutor, <a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>WhimsyCat</a>, provides contextual guidance based on what students actually do. It detects frustration and adjusts its approach. Teachers retain full control over learning objectives and can customise experiments using our <a href={getLocalizedPath("/blog/teachers-are-experts-custom-experiment-designer", language)}>experiment designer</a>.
     </p>
     <p>
-      We prioritise web-first delivery for maximum accessibility, with VR support for schools that want immersive experiences. Our platform integrates via LTI with major learning management systems. And we're serious about data privacy: isolated per-school deployments, full encryption, GDPR and FERPA compliance, and we never use student data to train AI models.
+      We prioritise web-first delivery for maximum accessibility, with VR support for schools that want immersive experiences. Our platform integrates via LTI with major learning management systems. And we're serious about data privacy: per-school encryption, GDPR and FERPA compliance, and we never use student data to train AI models.
     </p>
 
     <h2>How to Compare Solutions</h2>

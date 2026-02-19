@@ -15,7 +15,7 @@ const DataSecurityPage = ({ t, currentLang, language }) => {
       </Helmet>
       <Header currentLang={language} />
       
-      <div id="security-tiled-background">
+      <div id="security-tiled-background" className="page-content">
         <div className="container py-5">
           {/* Hero Header */}
           <div className="security-header-container">

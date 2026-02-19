@@ -4,6 +4,7 @@ import { faqCategories } from "../data/faqData";
 import { generateFAQCategories } from "../i18n/faqDataGenerator";
 import withTranslation from './withTranslation';
 import { getLocalizedPath } from '../i18n';
+import SpeakerButton from './SpeakerButton';
 
 const FAQ = ({ t, currentLang }) => {
 
@@ -88,6 +89,16 @@ const FAQ = ({ t, currentLang }) => {
                         itemProp="text"
                         dangerouslySetInnerHTML={{ __html: item.answer }}
                       ></p>
+                      {activeIndices.includes(globalIndex) && (
+                        <div className="faq-answer-footer">
+                          <SpeakerButton
+                            audioSrc={`/audio/faq/${currentLang === 'ja' ? 'jp' : currentLang}/q${globalIndex}.mp3`}
+                            label={t('faq.listenToAnswer') || 'Listen to answer'}
+                            size="small"
+                            className="whimsy-theme"
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
@@ -393,8 +404,8 @@ const FAQ = ({ t, currentLang }) => {
               <a
                 href={getLocalizedPath("/contact/", currentLang)}
                 style={{
-                  color: "#14b7ff",
-                  textDecoration: "none",
+                  color: "#0066cc",
+                  textDecoration: "underline",
                   fontWeight: "500",
                 }}
               >

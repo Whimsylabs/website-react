@@ -351,7 +351,8 @@ const slugToPostId = {
   'virtual-physics-lab-simulations-teach': 'post29',
   'premium-science-education-accessible-grants': 'post30',
   'uk-government-ai-education-funding-2026': 'post31',
-  'pearson-webinar-vr-assessment-ai-age': 'post32'
+  'pearson-webinar-vr-assessment-ai-age': 'post32',
+  'edtech-critics-right-passive-learning-vs-active-labs': 'post33'
 };
 
 // Reverse mapping from post IDs to slugs
@@ -551,7 +552,7 @@ const Blog = (props = {}) => {
             <div className="posts-section">
               <div className="post-box loading-box">
                 <div className="loading-spinner"></div>
-                <h2>Loading...</h2>
+                <p className="loading-text" role="status">Loading...</p>
               </div>
             </div>
           </div>

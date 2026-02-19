@@ -19,7 +19,9 @@ const LanguageSwitcher = ({ currentPath }) => {
       <button 
         className="language-switcher-button"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Select language"
+        aria-label={`Select language. Current: ${currentLanguage.name}`}
+        aria-expanded={isOpen}
+        aria-haspopup="menu"
       >
         <span className="language-flag">{currentLanguage.flag}</span>
         <span className="language-code">{currentLanguage.code.toUpperCase()}</span>
@@ -27,7 +29,7 @@ const LanguageSwitcher = ({ currentPath }) => {
       </button>
       
       {isOpen && (
-        <div className="language-dropdown">
+        <div className="language-dropdown" role="menu" aria-label="Language selection">
           {Object.values(SUPPORTED_LANGUAGES).map((lang) => (
             <button
               key={lang.code}
@@ -36,8 +38,11 @@ const LanguageSwitcher = ({ currentPath }) => {
                 handleLanguageChange(lang.code);
                 setIsOpen(false);
               }}
+              role="menuitem"
+              aria-label={`Switch to ${lang.name}`}
+              aria-current={lang.code === currentLang ? 'true' : undefined}
             >
-              <span className="language-flag">{lang.flag}</span>
+              <span className="language-flag" aria-hidden="true">{lang.flag}</span>
               <span className="language-name">{lang.name}</span>
             </button>
           ))}

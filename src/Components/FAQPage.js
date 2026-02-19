@@ -15,7 +15,7 @@ const FAQPage = ({ t, currentLang, language }) => {
         <meta name="keywords" content="virtual lab software FAQ, online lab simulations help, STEM virtual labs questions, virtual laboratory software support" />
       </Helmet>
       <Header currentLang={language || currentLang} />
-      <div id="faq-tiled-background">
+      <div id="faq-tiled-background" className="page-content">
         <div className="container py-5">
           <div className="faq-header-container">
             <h1 className="faq-main-heading">{t('faq.title')}</h1>

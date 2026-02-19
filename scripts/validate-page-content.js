@@ -54,6 +54,7 @@ const slugToPostId = {
   'premium-science-education-accessible-grants': 'post30',
   'uk-government-ai-education-funding-2026': 'post31',
   'pearson-webinar-vr-assessment-ai-age': 'post32',
+  'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
 };
 
 // Languages to check (jp maps to ja in translation files)

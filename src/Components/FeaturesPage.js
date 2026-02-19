@@ -154,9 +154,9 @@ const FeaturesPage = ({ language }) => {
           {/* Feature Description Below Video */}
           <div className="feature-description-container">
             <div className="feature-description-content">
-              <h3 className="feature-description-title">
+              <h2 className="feature-description-title">
                 {features[activeFeature].title}
-              </h3>
+              </h2>
               <p className="feature-description-text">
                 {features[activeFeature].description}
               </p>

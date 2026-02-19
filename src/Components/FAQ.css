@@ -96,6 +96,15 @@
   font-size: 1rem;
 }
 
+/* Speaker button footer */
+.faq-answer-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(97, 114, 179, 0.15);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .faq-section {

@@ -15,11 +15,16 @@ const Header = ({ t, currentLang }) => {
   };
 
   return (
-    <header
-      className={`header-container ${menuOpen ? "menu-active" : ""}`}
-      aria-label="Main site navigation"
-    >
-      <div className="logo-container">
+    <>
+      {/* Skip to main content link for keyboard users */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+      <header
+        className={`header-container ${menuOpen ? "menu-active" : ""}`}
+        aria-label="Main site navigation"
+      >
+        <div className="logo-container">
         <a
           href={getLocalizedPath("/", currentLang)}
           aria-label="Return to home page"
@@ -125,6 +130,7 @@ const Header = ({ t, currentLang }) => {
         </li>
       </ul>
     </header>
+    </>
   );
 };
 

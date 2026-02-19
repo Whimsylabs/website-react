@@ -46,7 +46,7 @@ const PrivacyPage = ({ t, currentLang, language }) => {
             </div>
           </div>
           
-          <div className="privacy-content">
+          <div className="privacy-content page-content">
             {/* Company Information & DPO Section */}
             <section className="privacy-section company-info-section">
               <h2>{t('privacy.companyInfo.title')}</h2>
@@ -122,28 +122,28 @@ const PrivacyPage = ({ t, currentLang, language }) => {
                 <div className="deletion-step">
                   <span className="step-number">1</span>
                   <div>
-                    <h4>{t('privacy.schoolDeletion.step1.title')}</h4>
+                    <h3>{t('privacy.schoolDeletion.step1.title')}</h3>
                     <p>{t('privacy.schoolDeletion.step1.desc')}</p>
                   </div>
                 </div>
                 <div className="deletion-step">
                   <span className="step-number">2</span>
                   <div>
-                    <h4>{t('privacy.schoolDeletion.step2.title')}</h4>
+                    <h3>{t('privacy.schoolDeletion.step2.title')}</h3>
                     <p>{t('privacy.schoolDeletion.step2.desc')}</p>
                   </div>
                 </div>
                 <div className="deletion-step">
                   <span className="step-number">3</span>
                   <div>
-                    <h4>{t('privacy.schoolDeletion.step3.title')}</h4>
+                    <h3>{t('privacy.schoolDeletion.step3.title')}</h3>
                     <p>{t('privacy.schoolDeletion.step3.desc')}</p>
                   </div>
                 </div>
                 <div className="deletion-step">
                   <span className="step-number">4</span>
                   <div>
-                    <h4>{t('privacy.schoolDeletion.step4.title')}</h4>
+                    <h3>{t('privacy.schoolDeletion.step4.title')}</h3>
                     <p>{t('privacy.schoolDeletion.step4.desc')}</p>
                   </div>
                 </div>
