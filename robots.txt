@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-18
+# Last updated: 2026-02-19
 
 User-agent: *
 Allow: /
@@ -58,6 +58,7 @@ Allow: /blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /blog/ai-assessment-crisis-solution/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /blog/ai-science-tutor-classroom-what-works/
+Allow: /blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /blog/edtech-vendor-security-questions-powerschool/
 Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /blog/gamification-science-education-points-rewards-engagement/
@@ -95,6 +96,7 @@ Allow: /de/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /de/blog/ai-assessment-crisis-solution/
 Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /de/blog/ai-science-tutor-classroom-what-works/
+Allow: /de/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /de/blog/edtech-vendor-security-questions-powerschool/
 Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /de/blog/gamification-science-education-points-rewards-engagement/
@@ -138,6 +140,7 @@ Allow: /es/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /es/blog/ai-assessment-crisis-solution/
 Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /es/blog/ai-science-tutor-classroom-what-works/
+Allow: /es/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /es/blog/edtech-vendor-security-questions-powerschool/
 Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /es/blog/gamification-science-education-points-rewards-engagement/
@@ -183,6 +186,7 @@ Allow: /fr/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /fr/blog/ai-assessment-crisis-solution/
 Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /fr/blog/ai-science-tutor-classroom-what-works/
+Allow: /fr/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /fr/blog/edtech-vendor-security-questions-powerschool/
 Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
@@ -228,6 +232,7 @@ Allow: /jp/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /jp/blog/ai-assessment-crisis-solution/
 Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /jp/blog/ai-science-tutor-classroom-what-works/
+Allow: /jp/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /jp/blog/edtech-vendor-security-questions-powerschool/
 Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
 Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
@@ -267,7 +272,7 @@ Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 160 total (included above)
+# Blog posts summary: 165 total (included above)
 
-# Total pages in build: 214
+# Total pages in build: 219
 # This file is generated automatically - do not edit manually
