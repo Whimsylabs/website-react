@@ -1,0 +1,500 @@
+{
+  "generated": "2026-02-19T23:26:07.131355",
+  "voices": {
+    "en": "en-GB-SoniaNeural",
+    "es": "es-ES-ElviraNeural",
+    "fr": "fr-FR-DeniseNeural",
+    "de": "de-DE-KatjaNeural",
+    "jp": "ja-JP-NanamiNeural"
+  },
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "jp"
+  ],
+  "totalQuestions": 40,
+  "questions": [
+    {
+      "index": 0,
+      "question": "Is WhimsyLabs free?",
+      "category": "Getting Started",
+      "audio": {
+        "en": "/audio/faq/en/q0.mp3",
+        "es": "/audio/faq/es/q0.mp3",
+        "fr": "/audio/faq/fr/q0.mp3",
+        "de": "/audio/faq/de/q0.mp3",
+        "jp": "/audio/faq/jp/q0.mp3"
+      }
+    },
+    {
+      "index": 1,
+      "question": "Do I need VR headsets to use WhimsyLabs?",
+      "category": "Getting Started",
+      "audio": {
+        "en": "/audio/faq/en/q1.mp3",
+        "es": "/audio/faq/es/q1.mp3",
+        "fr": "/audio/faq/fr/q1.mp3",
+        "de": "/audio/faq/de/q1.mp3",
+        "jp": "/audio/faq/jp/q1.mp3"
+      }
+    },
+    {
+      "index": 2,
+      "question": "How much does WhimsyLabs cost per student?",
+      "category": "Getting Started",
+      "audio": {
+        "en": "/audio/faq/en/q2.mp3",
+        "es": "/audio/faq/es/q2.mp3",
+        "fr": "/audio/faq/fr/q2.mp3",
+        "de": "/audio/faq/de/q2.mp3",
+        "jp": "/audio/faq/jp/q2.mp3"
+      }
+    },
+    {
+      "index": 3,
+      "question": "How do I get started with WhimsyLabs?",
+      "category": "Getting Started",
+      "audio": {
+        "en": "/audio/faq/en/q3.mp3",
+        "es": "/audio/faq/es/q3.mp3",
+        "fr": "/audio/faq/fr/q3.mp3",
+        "de": "/audio/faq/de/q3.mp3",
+        "jp": "/audio/faq/jp/q3.mp3"
+      }
+    },
+    {
+      "index": 4,
+      "question": "What subjects does WhimsyLabs cover?",
+      "category": "Getting Started",
+      "audio": {
+        "en": "/audio/faq/en/q4.mp3",
+        "es": "/audio/faq/es/q4.mp3",
+        "fr": "/audio/faq/fr/q4.mp3",
+        "de": "/audio/faq/de/q4.mp3",
+        "jp": "/audio/faq/jp/q4.mp3"
+      }
+    },
+    {
+      "index": 5,
+      "question": "What is Whimsylabs virtual lab software?",
+      "category": "About Whimsylabs",
+      "audio": {
+        "en": "/audio/faq/en/q5.mp3",
+        "es": "/audio/faq/es/q5.mp3",
+        "fr": "/audio/faq/fr/q5.mp3",
+        "de": "/audio/faq/de/q5.mp3",
+        "jp": "/audio/faq/jp/q5.mp3"
+      }
+    },
+    {
+      "index": 6,
+      "question": "Is Whimsylabs a for-profit company?",
+      "category": "About Whimsylabs",
+      "audio": {
+        "en": "/audio/faq/en/q6.mp3",
+        "es": "/audio/faq/es/q6.mp3",
+        "fr": "/audio/faq/fr/q6.mp3",
+        "de": "/audio/faq/de/q6.mp3",
+        "jp": "/audio/faq/jp/q6.mp3"
+      }
+    },
+    {
+      "index": 7,
+      "question": "What makes Whimsylabs different from other virtual lab platforms?",
+      "category": "About Whimsylabs",
+      "audio": {
+        "en": "/audio/faq/en/q7.mp3",
+        "es": "/audio/faq/es/q7.mp3",
+        "fr": "/audio/faq/fr/q7.mp3",
+        "de": "/audio/faq/de/q7.mp3",
+        "jp": "/audio/faq/jp/q7.mp3"
+      }
+    },
+    {
+      "index": 8,
+      "question": "What is Whimsylabs' social mission?",
+      "category": "About Whimsylabs",
+      "audio": {
+        "en": "/audio/faq/en/q8.mp3",
+        "es": "/audio/faq/es/q8.mp3",
+        "fr": "/audio/faq/fr/q8.mp3",
+        "de": "/audio/faq/de/q8.mp3",
+        "jp": "/audio/faq/jp/q8.mp3"
+      }
+    },
+    {
+      "index": 9,
+      "question": "How do virtual labs help students learn?",
+      "category": "Educational Benefits",
+      "audio": {
+        "en": "/audio/faq/en/q9.mp3",
+        "es": "/audio/faq/es/q9.mp3",
+        "fr": "/audio/faq/fr/q9.mp3",
+        "de": "/audio/faq/de/q9.mp3",
+        "jp": "/audio/faq/jp/q9.mp3"
+      }
+    },
+    {
+      "index": 10,
+      "question": "How does Whimsylabs compare to traditional labs?",
+      "category": "Educational Benefits",
+      "audio": {
+        "en": "/audio/faq/en/q10.mp3",
+        "es": "/audio/faq/es/q10.mp3",
+        "fr": "/audio/faq/fr/q10.mp3",
+        "de": "/audio/faq/de/q10.mp3",
+        "jp": "/audio/faq/jp/q10.mp3"
+      }
+    },
+    {
+      "index": 11,
+      "question": "How does Whimsylabs support students with Special Educational Needs and Disabilities (SEND)?",
+      "category": "Educational Benefits",
+      "audio": {
+        "en": "/audio/faq/en/q11.mp3",
+        "es": "/audio/faq/es/q11.mp3",
+        "fr": "/audio/faq/fr/q11.mp3",
+        "de": "/audio/faq/de/q11.mp3",
+        "jp": "/audio/faq/jp/q11.mp3"
+      }
+    },
+    {
+      "index": 12,
+      "question": "How does Whimsylabs foster creativity and critical thinking?",
+      "category": "Educational Benefits",
+      "audio": {
+        "en": "/audio/faq/en/q12.mp3",
+        "es": "/audio/faq/es/q12.mp3",
+        "fr": "/audio/faq/fr/q12.mp3",
+        "de": "/audio/faq/de/q12.mp3",
+        "jp": "/audio/faq/jp/q12.mp3"
+      }
+    },
+    {
+      "index": 13,
+      "question": "How does Whimsylabs' web and VR environment work?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q13.mp3",
+        "es": "/audio/faq/es/q13.mp3",
+        "fr": "/audio/faq/fr/q13.mp3",
+        "de": "/audio/faq/de/q13.mp3",
+        "jp": "/audio/faq/jp/q13.mp3"
+      }
+    },
+    {
+      "index": 14,
+      "question": "Is Whimsylabs compatible with Chromebooks?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q14.mp3",
+        "es": "/audio/faq/es/q14.mp3",
+        "fr": "/audio/faq/fr/q14.mp3",
+        "de": "/audio/faq/de/q14.mp3",
+        "jp": "/audio/faq/jp/q14.mp3"
+      }
+    },
+    {
+      "index": 15,
+      "question": "How accurate are the simulations in Whimsylabs?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q15.mp3",
+        "es": "/audio/faq/es/q15.mp3",
+        "fr": "/audio/faq/fr/q15.mp3",
+        "de": "/audio/faq/de/q15.mp3",
+        "jp": "/audio/faq/jp/q15.mp3"
+      }
+    },
+    {
+      "index": 16,
+      "question": "Is Whimsylabs compliant with school IT and privacy policies?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q16.mp3",
+        "es": "/audio/faq/es/q16.mp3",
+        "fr": "/audio/faq/fr/q16.mp3",
+        "de": "/audio/faq/de/q16.mp3",
+        "jp": "/audio/faq/jp/q16.mp3"
+      }
+    },
+    {
+      "index": 17,
+      "question": "How does Whimsylabs protect student data?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q17.mp3",
+        "es": "/audio/faq/es/q17.mp3",
+        "fr": "/audio/faq/fr/q17.mp3",
+        "de": "/audio/faq/de/q17.mp3",
+        "jp": "/audio/faq/jp/q17.mp3"
+      }
+    },
+    {
+      "index": 18,
+      "question": "Can Whimsylabs be used offline or with weak internet?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q18.mp3",
+        "es": "/audio/faq/es/q18.mp3",
+        "fr": "/audio/faq/fr/q18.mp3",
+        "de": "/audio/faq/de/q18.mp3",
+        "jp": "/audio/faq/jp/q18.mp3"
+      }
+    },
+    {
+      "index": 19,
+      "question": "How does Whimsylabs ensure assessment integrity?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q19.mp3",
+        "es": "/audio/faq/es/q19.mp3",
+        "fr": "/audio/faq/fr/q19.mp3",
+        "de": "/audio/faq/de/q19.mp3",
+        "jp": "/audio/faq/jp/q19.mp3"
+      }
+    },
+    {
+      "index": 20,
+      "question": "What makes Whimsylabs fast and efficient?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q20.mp3",
+        "es": "/audio/faq/es/q20.mp3",
+        "fr": "/audio/faq/fr/q20.mp3",
+        "de": "/audio/faq/de/q20.mp3",
+        "jp": "/audio/faq/jp/q20.mp3"
+      }
+    },
+    {
+      "index": 21,
+      "question": "How does Whimsylabs support flexible learning?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q21.mp3",
+        "es": "/audio/faq/es/q21.mp3",
+        "fr": "/audio/faq/fr/q21.mp3",
+        "de": "/audio/faq/de/q21.mp3",
+        "jp": "/audio/faq/jp/q21.mp3"
+      }
+    },
+    {
+      "index": 22,
+      "question": "What role does AI play in Whimsylabs for Students?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q22.mp3",
+        "es": "/audio/faq/es/q22.mp3",
+        "fr": "/audio/faq/fr/q22.mp3",
+        "de": "/audio/faq/de/q22.mp3",
+        "jp": "/audio/faq/jp/q22.mp3"
+      }
+    },
+    {
+      "index": 23,
+      "question": "How does AI support Teachers in Whimsylabs?",
+      "category": "Technical Features",
+      "audio": {
+        "en": "/audio/faq/en/q23.mp3",
+        "es": "/audio/faq/es/q23.mp3",
+        "fr": "/audio/faq/fr/q23.mp3",
+        "de": "/audio/faq/de/q23.mp3",
+        "jp": "/audio/faq/jp/q23.mp3"
+      }
+    },
+    {
+      "index": 24,
+      "question": "What subjects do Whimsylabs virtual labs cover?",
+      "category": "Curriculum & Content",
+      "audio": {
+        "en": "/audio/faq/en/q24.mp3",
+        "es": "/audio/faq/es/q24.mp3",
+        "fr": "/audio/faq/fr/q24.mp3",
+        "de": "/audio/faq/de/q24.mp3",
+        "jp": "/audio/faq/jp/q24.mp3"
+      }
+    },
+    {
+      "index": 25,
+      "question": "Can I customize or build my own experiments?",
+      "category": "Curriculum & Content",
+      "audio": {
+        "en": "/audio/faq/en/q25.mp3",
+        "es": "/audio/faq/es/q25.mp3",
+        "fr": "/audio/faq/fr/q25.mp3",
+        "de": "/audio/faq/de/q25.mp3",
+        "jp": "/audio/faq/jp/q25.mp3"
+      }
+    },
+    {
+      "index": 26,
+      "question": "How many experiments does Whimsylabs have?",
+      "category": "Curriculum & Content",
+      "audio": {
+        "en": "/audio/faq/en/q26.mp3",
+        "es": "/audio/faq/es/q26.mp3",
+        "fr": "/audio/faq/fr/q26.mp3",
+        "de": "/audio/faq/de/q26.mp3",
+        "jp": "/audio/faq/jp/q26.mp3"
+      }
+    },
+    {
+      "index": 27,
+      "question": "Do you support LTI (e.g., Blackboard, Canvas)?",
+      "category": "Curriculum & Content",
+      "audio": {
+        "en": "/audio/faq/en/q27.mp3",
+        "es": "/audio/faq/es/q27.mp3",
+        "fr": "/audio/faq/fr/q27.mp3",
+        "de": "/audio/faq/de/q27.mp3",
+        "jp": "/audio/faq/jp/q27.mp3"
+      }
+    },
+    {
+      "index": 28,
+      "question": "When can I gain access to the pilot program?",
+      "category": "Curriculum & Content",
+      "audio": {
+        "en": "/audio/faq/en/q28.mp3",
+        "es": "/audio/faq/es/q28.mp3",
+        "fr": "/audio/faq/fr/q28.mp3",
+        "de": "/audio/faq/de/q28.mp3",
+        "jp": "/audio/faq/jp/q28.mp3"
+      }
+    },
+    {
+      "index": 29,
+      "question": "How does Whimsylabs support teachers?",
+      "category": "Teaching & Assessment",
+      "audio": {
+        "en": "/audio/faq/en/q29.mp3",
+        "es": "/audio/faq/es/q29.mp3",
+        "fr": "/audio/faq/fr/q29.mp3",
+        "de": "/audio/faq/de/q29.mp3",
+        "jp": "/audio/faq/jp/q29.mp3"
+      }
+    },
+    {
+      "index": 30,
+      "question": "How does automated grading work in Whimsylabs?",
+      "category": "Teaching & Assessment",
+      "audio": {
+        "en": "/audio/faq/en/q30.mp3",
+        "es": "/audio/faq/es/q30.mp3",
+        "fr": "/audio/faq/fr/q30.mp3",
+        "de": "/audio/faq/de/q30.mp3",
+        "jp": "/audio/faq/jp/q30.mp3"
+      }
+    },
+    {
+      "index": 31,
+      "question": "What features does the teacher dashboard offer?",
+      "category": "Teaching & Assessment",
+      "audio": {
+        "en": "/audio/faq/en/q31.mp3",
+        "es": "/audio/faq/es/q31.mp3",
+        "fr": "/audio/faq/fr/q31.mp3",
+        "de": "/audio/faq/de/q31.mp3",
+        "jp": "/audio/faq/jp/q31.mp3"
+      }
+    },
+    {
+      "index": 32,
+      "question": "How does the AI tutor work in practice?",
+      "category": "Teaching & Assessment",
+      "audio": {
+        "en": "/audio/faq/en/q32.mp3",
+        "es": "/audio/faq/es/q32.mp3",
+        "fr": "/audio/faq/fr/q32.mp3",
+        "de": "/audio/faq/de/q32.mp3",
+        "jp": "/audio/faq/jp/q32.mp3"
+      }
+    },
+    {
+      "index": 33,
+      "question": "Can Whimsylabs virtual labs be used for remote teaching?",
+      "category": "Teaching & Assessment",
+      "audio": {
+        "en": "/audio/faq/en/q33.mp3",
+        "es": "/audio/faq/es/q33.mp3",
+        "fr": "/audio/faq/fr/q33.mp3",
+        "de": "/audio/faq/de/q33.mp3",
+        "jp": "/audio/faq/jp/q33.mp3"
+      }
+    },
+    {
+      "index": 34,
+      "question": "Is Whimsylabs suitable for primary school students?",
+      "category": "Educational Levels",
+      "audio": {
+        "en": "/audio/faq/en/q34.mp3",
+        "es": "/audio/faq/es/q34.mp3",
+        "fr": "/audio/faq/fr/q34.mp3",
+        "de": "/audio/faq/de/q34.mp3",
+        "jp": "/audio/faq/jp/q34.mp3"
+      }
+    },
+    {
+      "index": 35,
+      "question": "Is Whimsylabs designed for secondary school students?",
+      "category": "Educational Levels",
+      "audio": {
+        "en": "/audio/faq/en/q35.mp3",
+        "es": "/audio/faq/es/q35.mp3",
+        "fr": "/audio/faq/fr/q35.mp3",
+        "de": "/audio/faq/de/q35.mp3",
+        "jp": "/audio/faq/jp/q35.mp3"
+      }
+    },
+    {
+      "index": 36,
+      "question": "Is Whimsylabs useful for university or tertiary-level education?",
+      "category": "Educational Levels",
+      "audio": {
+        "en": "/audio/faq/en/q36.mp3",
+        "es": "/audio/faq/es/q36.mp3",
+        "fr": "/audio/faq/fr/q36.mp3",
+        "de": "/audio/faq/de/q36.mp3",
+        "jp": "/audio/faq/jp/q36.mp3"
+      }
+    },
+    {
+      "index": 37,
+      "question": "Can Whimsylabs be used for professional training or lifelong learning?",
+      "category": "Educational Levels",
+      "audio": {
+        "en": "/audio/faq/en/q37.mp3",
+        "es": "/audio/faq/es/q37.mp3",
+        "fr": "/audio/faq/fr/q37.mp3",
+        "de": "/audio/faq/de/q37.mp3",
+        "jp": "/audio/faq/jp/q37.mp3"
+      }
+    },
+    {
+      "index": 38,
+      "question": "Do you offer discounts for underfunded schools?",
+      "category": "Pricing & Accessibility",
+      "audio": {
+        "en": "/audio/faq/en/q38.mp3",
+        "es": "/audio/faq/es/q38.mp3",
+        "fr": "/audio/faq/fr/q38.mp3",
+        "de": "/audio/faq/de/q38.mp3",
+        "jp": "/audio/faq/jp/q38.mp3"
+      }
+    },
+    {
+      "index": 39,
+      "question": "What pricing options are available for schools?",
+      "category": "Pricing & Accessibility",
+      "audio": {
+        "en": "/audio/faq/en/q39.mp3",
+        "es": "/audio/faq/es/q39.mp3",
+        "fr": "/audio/faq/fr/q39.mp3",
+        "de": "/audio/faq/de/q39.mp3",
+        "jp": "/audio/faq/jp/q39.mp3"
+      }
+    }
+  ]
+}
