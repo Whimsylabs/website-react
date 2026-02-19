@@ -1,0 +1,129 @@
+{
+  "generated": "2026-02-19T21:40:42.593521",
+  "voices": {
+    "en": "en-GB-SoniaNeural",
+    "es": "es-ES-ElviraNeural",
+    "fr": "fr-FR-DeniseNeural",
+    "de": "de-DE-KatjaNeural",
+    "jp": "ja-JP-NanamiNeural"
+  },
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "jp"
+  ],
+  "sections": {
+    "hero": {
+      "name": "Hero Section",
+      "audio": {
+        "en": "/audio/landing/en/hero.mp3",
+        "es": "/audio/landing/es/hero.mp3",
+        "fr": "/audio/landing/fr/hero.mp3",
+        "de": "/audio/landing/de/hero.mp3",
+        "jp": "/audio/landing/jp/hero.mp3"
+      }
+    },
+    "what-is": {
+      "name": "What is WhimsyLabs",
+      "audio": {
+        "en": "/audio/landing/en/what-is.mp3",
+        "es": "/audio/landing/es/what-is.mp3",
+        "fr": "/audio/landing/fr/what-is.mp3",
+        "de": "/audio/landing/de/what-is.mp3",
+        "jp": "/audio/landing/jp/what-is.mp3"
+      }
+    },
+    "physics": {
+      "name": "Real Physics Engines",
+      "audio": {
+        "en": "/audio/landing/en/physics.mp3",
+        "es": "/audio/landing/es/physics.mp3",
+        "fr": "/audio/landing/fr/physics.mp3",
+        "de": "/audio/landing/de/physics.mp3",
+        "jp": "/audio/landing/jp/physics.mp3"
+      }
+    },
+    "assessment": {
+      "name": "AI Assessment",
+      "audio": {
+        "en": "/audio/landing/en/assessment.mp3",
+        "es": "/audio/landing/es/assessment.mp3",
+        "fr": "/audio/landing/fr/assessment.mp3",
+        "de": "/audio/landing/de/assessment.mp3",
+        "jp": "/audio/landing/jp/assessment.mp3"
+      }
+    },
+    "time-saving": {
+      "name": "Time Saving",
+      "audio": {
+        "en": "/audio/landing/en/time-saving.mp3",
+        "es": "/audio/landing/es/time-saving.mp3",
+        "fr": "/audio/landing/fr/time-saving.mp3",
+        "de": "/audio/landing/de/time-saving.mp3",
+        "jp": "/audio/landing/jp/time-saving.mp3"
+      }
+    },
+    "curriculum": {
+      "name": "Curriculum Customization",
+      "audio": {
+        "en": "/audio/landing/en/curriculum.mp3",
+        "es": "/audio/landing/es/curriculum.mp3",
+        "fr": "/audio/landing/fr/curriculum.mp3",
+        "de": "/audio/landing/de/curriculum.mp3",
+        "jp": "/audio/landing/jp/curriculum.mp3"
+      }
+    },
+    "dashboard": {
+      "name": "Student Analytics",
+      "audio": {
+        "en": "/audio/landing/en/dashboard.mp3",
+        "es": "/audio/landing/es/dashboard.mp3",
+        "fr": "/audio/landing/fr/dashboard.mp3",
+        "de": "/audio/landing/de/dashboard.mp3",
+        "jp": "/audio/landing/jp/dashboard.mp3"
+      }
+    },
+    "freedom": {
+      "name": "Freedom to Explore",
+      "audio": {
+        "en": "/audio/landing/en/freedom.mp3",
+        "es": "/audio/landing/es/freedom.mp3",
+        "fr": "/audio/landing/fr/freedom.mp3",
+        "de": "/audio/landing/de/freedom.mp3",
+        "jp": "/audio/landing/jp/freedom.mp3"
+      }
+    },
+    "send": {
+      "name": "SEND Support",
+      "audio": {
+        "en": "/audio/landing/en/send.mp3",
+        "es": "/audio/landing/es/send.mp3",
+        "fr": "/audio/landing/fr/send.mp3",
+        "de": "/audio/landing/de/send.mp3",
+        "jp": "/audio/landing/jp/send.mp3"
+      }
+    },
+    "gamification": {
+      "name": "Gamification",
+      "audio": {
+        "en": "/audio/landing/en/gamification.mp3",
+        "es": "/audio/landing/es/gamification.mp3",
+        "fr": "/audio/landing/fr/gamification.mp3",
+        "de": "/audio/landing/de/gamification.mp3",
+        "jp": "/audio/landing/jp/gamification.mp3"
+      }
+    },
+    "pioneer": {
+      "name": "Pioneer Program",
+      "audio": {
+        "en": "/audio/landing/en/pioneer.mp3",
+        "es": "/audio/landing/es/pioneer.mp3",
+        "fr": "/audio/landing/fr/pioneer.mp3",
+        "de": "/audio/landing/de/pioneer.mp3",
+        "jp": "/audio/landing/jp/pioneer.mp3"
+      }
+    }
+  }
+}
