@@ -2,7 +2,7 @@
 import React from "react";
 
 export const title = "The Critics Are Right: Most EdTech Is Useless";
-export const description = "US schools spent $30 billion on edtech in 2024. Critics say it's wasted. They're right—about passive screen time. Virtual labs that require active experimentation are fundamentally different.";
+export const description = "US schools spent $30 billion on edtech in 2024. Critics say it's wasted. They're right about passive screen time. But virtual labs that make students actually DO science? That's a different story.";
 export const keywords = [
   "edtech effectiveness",
   "virtual labs learning outcomes",
@@ -32,26 +32,29 @@ export const content = (
       >
         Bloomberg
       </a>
-      . The headlines are damning. And honestly? We agree with much of it.
+      . These are damning headlines. And as an edtech company ourselves, we find ourselves agreeing with much of the criticism.
     </p>
 
     <p>
-      The Bloomberg piece highlights a staggering figure: US schools spent{" "}
-      <strong>$30 billion on education technology in 2024</strong>—ten times what they spent on textbooks. Where did that money go? Mostly into tablets, laptops, learning management systems, and apps that promise engagement but deliver distraction. The return on investment has been, to put it charitably, questionable.
+      The Bloomberg piece highlights a staggering figure: US schools spent <strong>$30 billion on education technology in 2024</strong>, ten times what they spent on textbooks. Where did that investment go? Mostly into tablets, laptops, learning management systems, and apps that promised engagement but often delivered little more than screen time. The return on investment, according to these critics, has been questionable at best.
+    </p>
+
+    <h2>Why Is Most EdTech Failing?</h2>
+
+    <p>
+      The critics aren't wrong. They're just not specific enough about the problem. The issue isn't technology in education. The issue is <strong>passive technology</strong> in education.
     </p>
 
     <p>
-      We're an edtech company saying this. Let that sink in.
-    </p>
-
-    <h2>The $30 Billion Problem: Passive Screen Time</h2>
-
-    <p>
-      The critics aren't wrong—they're just not specific enough. The problem isn't technology in education. The problem is <strong>passive technology</strong> in education.
-    </p>
-
-    <p>
-      Consider what most "edtech" actually looks like in practice: students watching videos, clicking through multiple-choice quizzes, scrolling through digital textbooks. It's the same passive consumption that happens with television, just dressed up in educational language. The screen is doing the work. The student is along for the ride.
+      Consider what most "edtech" actually looks like in practice: students watching videos, clicking through multiple-choice quizzes, scrolling through digital textbooks. This is the same passive consumption that happens with television, just dressed up in educational language. The screen does the work while the student sits passively. Research consistently shows that passive learning has limited effectiveness compared to active engagement (
+      <a
+        href="https://www.pnas.org/doi/10.1073/pnas.1319030111"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Freeman et al., 2014
+      </a>
+      ).
     </p>
 
     <p>
@@ -63,7 +66,7 @@ export const content = (
       >
         OECD's Digital Education Outlook 2026
       </a>{" "}
-      makes this distinction crystal clear. General-purpose AI tools, when simply handed to students, often <em>reduce</em> learning—students outsource thinking to the machine. But AI designed with <strong>"intentional pedagogical purpose"</strong> shows sustained improvements. The difference isn't the technology. It's how the technology engages the learner.
+      makes this distinction clear. When general-purpose AI tools are simply handed to students without structure, learning often <em>decreases</em> because students outsource their thinking to the machine. However, AI designed with <strong>"intentional pedagogical purpose"</strong> shows sustained improvements. The difference isn't whether technology is present. It's whether the technology requires the learner to actively engage.
     </p>
 
     <p>
@@ -75,144 +78,165 @@ export const content = (
       >
         2026 Driving K-12 Innovation Report
       </a>{" "}
-      puts it bluntly: <em>"without a human-centered strategy, even the best technology will fail."</em> Schools bought the technology. They didn't buy the strategy.
+      reinforces this point: <em>"without a human-centered strategy, even the best technology will fail."</em> Many schools purchased the technology without purchasing the strategy to implement it effectively.
     </p>
 
-    <h2>Active Learning Is Different. Here's Why.</h2>
+    <h2>What Makes Active Learning Different?</h2>
 
     <p>
-      There's a vast body of research on something called <strong>active learning</strong>—the idea that students learn best when they <em>do</em> things rather than watch things. It's not controversial. Decades of cognitive science support it. The question is: how do you create active learning experiences at scale?
-    </p>
-
-    <p>
-      Physical science labs have always been active learning. You don't watch a titration—you <em>perform</em> one. You don't read about pendulum motion—you <em>measure</em> it. The learning happens through action, through trial and error, through the physical engagement of doing.
-    </p>
-
-    <p>
-      The problem is that physical labs are expensive, dangerous, time-limited, and increasingly impossible to staff. The STEM teacher shortage isn't getting better. School budgets aren't getting larger. Something has to give.
-    </p>
-
-    <p>
-      This is where most edtech fails spectacularly. They replace active physical labs with passive digital alternatives: animations of experiments, videos of scientists, clickable diagrams with labels. Students watch someone else do science instead of doing it themselves. It's cheaper, safer, and—according to the research—largely ineffective.
-    </p>
-
-    <h2>Virtual Labs That Make You DO Science</h2>
-
-    <p>
-      WhimsyLabs is different because we kept the <em>active</em> part.
-    </p>
-
-    <p>
-      In our virtual labs, students don't click a button to "add chemical." They physically pour liquids using hand movements. They don't select "heat beaker" from a menu. They position equipment over a Bunsen burner and control the flame. They don't read about pipette technique. They develop the muscle memory by actually pipetting—badly at first, then better with practice.
-    </p>
-
-    <p>
-      This isn't a philosophical distinction. It's a pedagogical one backed by motor learning research. When you perform a physical action, your brain encodes it differently than when you watch someone else perform it. The neural pathways are different. The retention is different. The transfer to real-world skills is different.
-    </p>
-
-    <p>
-      Our sandbox approach takes this further. Students aren't following recipes—they're designing experiments. Given a problem ("determine the concentration of this unknown acid"), they must choose equipment, plan procedures, execute techniques, analyze results, and iterate when things go wrong. This is what scientists actually do. It cannot be passive.
-    </p>
-
-    <h2>AI That Tracks Process, Not Just Answers</h2>
-
-    <p>
-      Here's where the current AI panic in education becomes relevant. Students can use ChatGPT to write essays. They can use Wolfram Alpha to solve maths problems. They can use Claude to generate lab reports. Traditional assessment is broken.
-    </p>
-
-    <p>
-      But there's something ChatGPT cannot do: <strong>pour a liquid steadily</strong>.
-    </p>
-
-    <p>
-      Our AI tutor, WhimsyCat, watches <em>how</em> students work, not just what answers they produce. Did they hold the pipette correctly? Did they titrate too quickly? Did they forget to rinse the burette? Did they check the meniscus at eye level? These are physical actions captured in real-time. They can't be outsourced to an AI text generator because they aren't text—they're motion, timing, spatial reasoning, procedural knowledge embodied in action.
-    </p>
-
-    <p>
+      There is a substantial body of research on <strong>active learning</strong>, demonstrating that students learn more effectively when they do things rather than watch things. A landmark meta-analysis of 225 studies found that active learning improved examination performance by half a letter grade and reduced failure rates by 55% compared to traditional lecturing (
       <a
-        href="https://www.pearson.com/"
+        href="https://www.pnas.org/doi/10.1073/pnas.1319030111"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Pearson's assessment research
-      </a>{" "}
-      has identified practical skills as fundamentally <strong>AI-resistant</strong>—not because we're trying to block AI, but because the skills themselves require physical demonstration. You can't fake titration technique with a language model. You have to actually do it.
+        Freeman et al., 2014
+      </a>
+      ). The question for educators has always been: how do you create active learning experiences at scale?
     </p>
 
     <p>
-      WhimsyCat grades students on their process: their experimental design, their technique, their troubleshooting approach, their safety awareness. Every assessment generates an audit trail that teachers can review. This isn't AI replacing teacher judgment—it's AI providing evidence that teachers can use to make better judgments.
-    </p>
-
-    <h2>Human-Centered Means Supporting Teachers</h2>
-
-    <p>
-      The CoSN report emphasizes that successful edtech requires a <em>"human-centered strategy."</em> We take this seriously. WhimsyLabs isn't designed to replace science teachers—it's designed to make their impossible job slightly more possible.
+      Physical science labs have always exemplified active learning. Students don't watch a titration; they perform one. They don't read about pendulum motion; they measure it. The learning happens through action, through trial and error, through the physical engagement of manipulating equipment and observing results firsthand.
     </p>
 
     <p>
-      A single science teacher with 30 students cannot possibly observe each one's technique during a lab session. There aren't enough eyes, enough time, enough attention. So most practical assessment becomes checkbox exercises: did they produce the right final answer? Did they write something in the observation column?
+      The challenge is that physical labs are expensive, require careful safety management, are constrained by timetabling, and increasingly difficult to staff given the ongoing STEM teacher shortage. When COVID-19 closed schools worldwide, millions of students lost access to practical science education entirely (
+      <a
+        href="https://www.iza.org/publications/dp/13820/covid-19-and-educational-inequality-how-school-closures-affect-low-and-high-achieving-students"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Grewenig et al., 2021
+      </a>
+      ).
     </p>
 
     <p>
-      Our AI tutor provides continuous formative feedback to students while they work—coaching technique, catching errors, asking probing questions. This doesn't replace the teacher. It multiplies them. The teacher can focus on students who need human intervention while WhimsyCat handles routine guidance.
+      This is where most edtech solutions have failed. They replaced active physical labs with passive digital alternatives: animations of experiments, videos of scientists at work, clickable diagrams with labels. Students watch someone else do science instead of doing it themselves. These alternatives are cheaper and safer, but according to research on embodied cognition and motor learning, they miss the fundamental mechanism through which practical skills are acquired (
+      <a
+        href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00625/full"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Macedonia, 2019
+      </a>
+      ).
+    </p>
+
+    <h2>How Can Virtual Labs Preserve Active Learning?</h2>
+
+    <p>
+      At WhimsyLabs, we built our platform around one principle: preserve the <em>active</em> part of laboratory learning. In our virtual labs, students don't click a button labelled "add chemical." They physically pour liquids using natural hand movements. They don't select "heat beaker" from a menu. They position equipment over a Bunsen burner and control the flame themselves. They don't read about pipette technique. They develop muscle memory by actually pipetting, with their movements tracked and coached in real time.
     </p>
 
     <p>
-      More importantly, teachers remain in control. They can create custom experiments for their curriculum. They can adjust difficulty levels. They can review AI grading decisions and override them. The human is centered—the AI is peripheral.
+      This approach is grounded in motor learning research. When you perform a physical action, your brain encodes it differently than when you watch someone else perform the same action. The neural pathways activated are different, the retention is different, and critically, the transfer to real-world skills is different (
+      <a
+        href="https://www.nature.com/articles/nphys293"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Wieman & Perkins, 2006
+      </a>
+      ).
     </p>
 
-    <h2>What the Critics Should Actually Attack</h2>
+    <p>
+      Our sandbox approach extends this further. Rather than following predetermined recipes, students design their own experiments. Given a problem such as "determine the concentration of this unknown acid," they must select appropriate equipment, plan their procedure, execute the techniques, analyse their results, and iterate when things don't work as expected. This is what scientists actually do. It requires active engagement at every step.
+    </p>
+
+    <h2>Can AI Assessment Be Meaningful Rather Than Threatening?</h2>
 
     <p>
-      We'd love to see the edtech criticism become more precise. Instead of asking "is edtech useless?", ask these questions:
+      The current concern about students using ChatGPT and similar tools to complete assignments is legitimate. Students can use AI to write essays, solve mathematics problems, and generate laboratory reports. Traditional assessment methods that focus on written outputs are increasingly vulnerable to this kind of circumvention.
+    </p>
+
+    <p>
+      However, there is something that text-generating AI fundamentally cannot do: <strong>physically perform a procedure</strong>.
+    </p>
+
+    <p>
+      Our AI tutor, WhimsyCat, observes <em>how</em> students work, not just what written answers they produce. Did they hold the pipette at the correct angle? Did they approach the endpoint of a titration slowly enough? Did they remember to rinse the burette before filling it? Did they read the meniscus at eye level? These are physical actions captured in real time. They cannot be outsourced to a text generator because they are not text. They are motion, timing, spatial reasoning, and procedural knowledge demonstrated through action.
+    </p>
+
+    <p>
+      Pearson's recent research on assessment has identified practical skills as inherently <strong>AI-resistant</strong>, not because anyone is deliberately blocking AI, but because the skills themselves require physical demonstration that language models cannot provide. You cannot fake titration technique by prompting ChatGPT. You have to actually do it.
+    </p>
+
+    <p>
+      WhimsyCat assesses students on their process: experimental design choices, technique quality, troubleshooting approaches, and safety awareness. Every assessment generates an audit trail that teachers can review. This is not AI replacing teacher judgement. It is AI providing detailed evidence that teachers can use to make better-informed judgements about student competence.
+    </p>
+
+    <h2>What Does Human-Centered EdTech Actually Look Like?</h2>
+
+    <p>
+      The CoSN report emphasises that successful educational technology requires a <em>"human-centered strategy."</em> We take this principle seriously. WhimsyLabs is not designed to replace science teachers. It is designed to support them in managing an increasingly impossible workload.
+    </p>
+
+    <p>
+      Consider the practical reality: a single science teacher supervising 30 students during a laboratory session cannot possibly observe each student's technique with the attention it deserves. There are not enough eyes, not enough time, not enough bandwidth. Consequently, practical assessment often becomes a checkbox exercise focused on whether students produced the expected final answer rather than whether they demonstrated competent technique.
+    </p>
+
+    <p>
+      WhimsyCat provides continuous formative feedback while students work, coaching technique, identifying errors, and asking probing questions. This does not replace the teacher. It multiplies them. The teacher can focus attention on students who need human support while WhimsyCat handles routine guidance for others.
+    </p>
+
+    <p>
+      Importantly, teachers remain in control. They can create custom experiments aligned with their curriculum. They can adjust difficulty levels. They can review AI assessments and override them when they disagree. The human remains at the centre of the educational process. The AI supports from the periphery.
+    </p>
+
+    <h2>What Questions Should We Be Asking About EdTech?</h2>
+
+    <p>
+      We would welcome more precise criticism of educational technology. Rather than asking broadly whether edtech is useless, consider these more specific questions:
     </p>
 
     <ul>
-      <li><strong>Does this technology require active engagement?</strong> If students can use it while half-asleep, it's probably passive.</li>
-      <li><strong>Does it track process or just outcomes?</strong> Multiple-choice quizzes only capture final answers. They miss everything interesting.</li>
-      <li><strong>Does it support teachers or attempt to replace them?</strong> Teacher replacement has failed repeatedly. Teacher augmentation has potential.</li>
+      <li><strong>Does this technology require active engagement?</strong> If students can use it while half-attending, it is likely passive.</li>
+      <li><strong>Does it assess process or only outcomes?</strong> Multiple-choice quizzes capture only final answers. They miss the reasoning and technique that matters most.</li>
+      <li><strong>Does it support teachers or attempt to replace them?</strong> Teacher replacement has failed repeatedly. Teacher augmentation shows genuine promise.</li>
       <li><strong>Is there evidence of learning transfer?</strong> Do students who use this technology perform better in real-world contexts?</li>
-      <li><strong>Was it designed with pedagogical intent?</strong> Or was it designed by engineers who assumed learning would happen automatically?</li>
+      <li><strong>Was it designed with pedagogical intent?</strong> Or was it designed by engineers who assumed learning would happen automatically once the technology was deployed?</li>
     </ul>
 
     <p>
-      Much of the $30 billion spent on edtech fails these tests. Tablets handed to students with minimal guidance fail these tests. Learning management systems that become PDF repositories fail these tests. AI chatbots deployed without pedagogical frameworks fail these tests.
+      Much of the $30 billion spent on educational technology fails these tests. Tablets distributed without implementation plans fail these tests. Learning management systems that become repositories for PDF worksheets fail these tests. AI chatbots deployed without pedagogical frameworks fail these tests.
     </p>
 
     <p>
-      Virtual labs where students physically perform experiments, receive real-time technique coaching, and demonstrate skills that AI cannot fake? That's a different category entirely.
+      Virtual laboratories where students physically perform experiments, receive real-time coaching on their technique, and demonstrate skills that AI cannot replicate? That represents a fundamentally different category of educational technology.
     </p>
 
-    <h2>Our Evidence</h2>
+    <h2>What Evidence Supports This Approach?</h2>
 
     <p>
-      We don't ask you to take this on faith. At BETT 2025, students themselves voted for us in the <strong>Kids' Choice Awards</strong>. At BETT 2026, <strong>Tech & Learning named us Best of BETT</strong>. These aren't marketing awards—they're recognition from educators and students who actually used the product.
-    </p>
-
-    <p>
-      We're conducting ongoing research with partner schools measuring practical skill transfer. Early results show that students who practice in WhimsyLabs demonstrate better technique in physical labs—the virtual practice transfers to real-world performance. The sandbox approach develops experimental design thinking that cookbook labs never could.
+      We do not ask anyone to accept these claims on faith. At BETT 2025, students themselves voted for WhimsyLabs in the <strong>Kids' Choice Awards</strong>, recognising the platform for making science engaging and accessible. At BETT 2026, <strong>Tech & Learning named us Best of BETT</strong>. These are not marketing awards. They represent recognition from educators and students who actually used the product and found it valuable.
     </p>
 
     <p>
-      The critics are right: most edtech is useless. We're not most edtech.
-    </p>
-
-    <h2>Conclusion: The Right Fight</h2>
-
-    <p>
-      The debate about education technology shouldn't be "technology versus no technology." That ship has sailed. The debate should be about <em>what kind</em> of technology, designed with <em>what principles</em>, implemented with <em>what strategies</em>.
+      We are conducting ongoing research with partner schools measuring practical skill transfer. Early results indicate that students who practice procedures in WhimsyLabs demonstrate improved technique when they subsequently work in physical laboratories. The virtual practice transfers to real-world performance. The sandbox approach develops experimental design thinking that traditional cookbook-style labs struggle to cultivate.
     </p>
 
     <p>
-      Passive screen time dressed up as learning? Useless. AI tools that outsource thinking? Counterproductive. Teacher replacement fantasies? Failed.
+      The critics are right: most edtech is failing to deliver meaningful educational value. We are working to be part of the solution rather than part of the problem.
+    </p>
+
+    <h2>Where Does This Leave Us?</h2>
+
+    <p>
+      The debate about educational technology should not be framed as "technology versus no technology." That choice is no longer available. Technology is embedded in education and will remain so. The productive debate concerns <em>what kind</em> of technology, designed according to <em>what principles</em>, implemented with <em>what strategies</em>.
     </p>
 
     <p>
-      Active learning environments that require genuine engagement? That track process and technique? That support teachers rather than replacing them? That make practical science accessible to schools that can't afford real labs? That develop skills AI cannot fake?
+      Passive screen time dressed up as learning? The critics are right to call it out. AI tools that do students' thinking for them? Counterproductive. Promises that technology will replace teachers? Repeatedly failed.
     </p>
 
     <p>
-      That's the technology worth $30 billion. We're just trying to be a small part of it.
+      Active learning environments that require genuine engagement. Assessment that tracks process and technique rather than just final answers. Technology that supports teachers rather than attempting to replace them. Platforms that make practical science accessible to schools that cannot afford or staff traditional laboratories. Tools that develop skills AI cannot fake.
+    </p>
+
+    <p>
+      That is the educational technology worth investing in. We are trying to be a small part of building it.
     </p>
 
     <h2>Related Articles</h2>
@@ -224,7 +248,7 @@ export const content = (
       </li>
       <li>
         <a href="/blog/ai-assessment-crisis-solution">
-          The AI Assessment Crisis Has a Solution—It's Just Not What You Think
+          The AI Assessment Crisis Has a Solution
         </a>
       </li>
       <li>
@@ -238,30 +262,40 @@ export const content = (
       <h3>References</h3>
       <ul className="references-list">
         <li>
-          The Economist. (2026, February 12). Is education technology mostly useless?{" "}
-          <em>The Economist</em>.{" "}
-          <a href="https://www.economist.com/letters/2026/02/12/is-education-technology-mostly-useless" target="_blank" rel="noopener noreferrer">
-            https://www.economist.com/letters/2026/02/12/is-education-technology-mostly-useless
-          </a>
+          Freeman, S., Eddy, S. L., McDonough, M., Smith, M. K., Okoroafor, N., Jordt, H., & Wenderoth, M. P. (2014). Active learning increases student performance in science, engineering, and mathematics. <em>Proceedings of the National Academy of Sciences, 111</em>(23), 8410-8415.
         </li>
         <li>
-          Bloomberg. (2026, February 11). Kids Spend Hours in School on Screens. And for What?{" "}
-          <em>Bloomberg Opinion</em>.{" "}
-          <a href="https://www.bloomberg.com/opinion/articles/2026-02-11/education-technology-isn-t-teaching-us-children-more-effectively" target="_blank" rel="noopener noreferrer">
-            https://www.bloomberg.com/opinion/articles/2026-02-11/education-technology-isn-t-teaching-us-children-more-effectively
-          </a>
+          Grewenig, E., Lergetporer, P., Werner, K., Woessmann, L., & Zierow, L. (2021). COVID-19 and educational inequality: How school closures affect low- and high-achieving students. <em>European Economic Review, 140</em>, 103920.
+        </li>
+        <li>
+          Macedonia, M. (2019). Embodied learning: Why at school the mind needs the body. <em>Frontiers in Psychology, 10</em>, 2098.
         </li>
         <li>
           OECD. (2026). <em>OECD Digital Education Outlook 2026</em>. OECD Publishing.{" "}
           <a href="https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html" target="_blank" rel="noopener noreferrer">
-            https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html
+            Link
           </a>
         </li>
         <li>
           CoSN. (2026). <em>2026 Driving K-12 Innovation Report</em>. Consortium for School Networking.{" "}
           <a href="https://www.cosn.org/tools-and-resources/resource/2026-driving-k-12-innovation-report-hurdles-accelerators-tech-enablers/" target="_blank" rel="noopener noreferrer">
-            https://www.cosn.org/tools-and-resources/resource/2026-driving-k-12-innovation-report-hurdles-accelerators-tech-enablers/
+            Link
           </a>
+        </li>
+        <li>
+          The Economist. (2026, February 12). Is education technology mostly useless? <em>The Economist</em>.{" "}
+          <a href="https://www.economist.com/letters/2026/02/12/is-education-technology-mostly-useless" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </li>
+        <li>
+          Bloomberg. (2026, February 11). Kids Spend Hours in School on Screens. And for What? <em>Bloomberg Opinion</em>.{" "}
+          <a href="https://www.bloomberg.com/opinion/articles/2026-02-11/education-technology-isn-t-teaching-us-children-more-effectively" target="_blank" rel="noopener noreferrer">
+            Link
+          </a>
+        </li>
+        <li>
+          Wieman, C. E., & Perkins, K. K. (2006). A powerful tool for teaching science. <em>Nature Physics, 2</em>(5), 290-292.
         </li>
       </ul>
     </div>

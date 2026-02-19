@@ -1,6 +1,7 @@
 // Complete German FAQ translations
 export default {
   "categories": {
+    "Getting Started": "Erste Schritte",
     "About Whimsylabs": "Über Whimsylabs",
     "Educational Benefits": "Pädagogische Vorteile", 
     "Technical Features": "Technische Funktionen",
@@ -10,6 +11,26 @@ export default {
     "Pricing & Accessibility": "Preisgestaltung und Zugänglichkeit"
   },
   "faqs": {
+    "is-whimsylabs-free": {
+      "question": "Ist WhimsyLabs kostenlos?",
+      "answer": "WhimsyLabs bietet eine kostenlose Testversion an, damit Sie unsere virtuellen Labore vor einer Verpflichtung erleben können. Nach der Testphase bieten wir flexible Preispläne für Schulen und Institutionen jeder Größe. Unsere gestaffelten Preise umfassen Optionen vom Basiszugang bis zu vollständigen KI-gestützten Funktionen einschließlich automatischer Bewertung, personalisiertem Tutoring und benutzerdefinierter Experimenterstellung. Wir bieten auch Sonderrabatte von bis zu 20% für unterfinanzierte Schulen durch unser Educational Equity Reinvestment Program. <a href='/contact'>Kontaktieren Sie uns</a>, um Ihre kostenlose Testversion zu starten oder Preisoptionen für Ihre Institution zu besprechen."
+    },
+    "do-i-need-vr-headsets-to-use-whimsylabs": {
+      "question": "Benötige ich VR-Headsets, um WhimsyLabs zu nutzen?",
+      "answer": "Nein, VR-Headsets sind nicht erforderlich. WhimsyLabs funktioniert auf jedem Gerät einschließlich Desktop-Computern, Laptops, Chromebooks, Tablets und Mobiltelefonen über Ihren Webbrowser. VR-Headsets sind eine optionale Erweiterung, die ein immersiveres Erlebnis bietet, aber das vollständige Lernerlebnis ist auch ohne sie verfügbar. Unsere Plattform erreicht 96,66% Gerätekompatibilität über Hardware-Konfigurationen hinweg, einschließlich einfacher Chromebooks mit nur 4GB RAM."
+    },
+    "how-much-does-whimsylabs-cost-per-student": {
+      "question": "Wie viel kostet WhimsyLabs pro Schüler?",
+      "answer": "Die Preise variieren je nach Größe Ihrer Institution, ausgewählten Funktionen und Supportanforderungen. Wir bieten gestaffelte Pläne vom Basis-Zugang zu virtuellen Laboren bis zu umfassenden Paketen mit KI-Tutoring, automatischer Bewertung und unbegrenzter benutzerdefinierter Experimenterstellung. Schulen, die für Pupil Premium, Title I-Finanzierung oder gleichwertige Unterstützung berechtigt sind, können Rabatte von bis zu 20% erhalten. <a href='/contact'>Kontaktieren Sie uns</a> für ein personalisiertes Angebot."
+    },
+    "how-do-i-get-started-with-whimsylabs": {
+      "question": "Wie beginne ich mit WhimsyLabs?",
+      "answer": "Der Einstieg ist einfach: Fordern Sie eine kostenlose Testversion über unsere Website an. Nach der Genehmigung erhalten Sie Zugangsdaten und können sofort mit der Erkundung unserer virtuellen Labore beginnen. Für den Web-Zugang ist keine Softwareinstallation erforderlich. Unser Team bietet Onboarding-Unterstützung, um Ihnen bei der Einrichtung von Klassen, der Zuweisung von Experimenten und der Integration von WhimsyLabs in Ihren bestehenden Lehrplan zu helfen. <a href='/contact'>Fordern Sie hier Ihre kostenlose Testversion an</a>."
+    },
+    "what-subjects-does-whimsylabs-cover": {
+      "question": "Welche Fächer deckt WhimsyLabs ab?",
+      "answer": "WhimsyLabs deckt Biologie, Chemie und Physik mit Experimenten ab, die auf GCSE- und A-Level-Lehrpläne abgestimmt sind. Unsere virtuellen Labore unterstützen 100% der erforderlichen praktischen Arbeit gemäß den Prüfungsausschüssen einschließlich AQA, Edexcel, OCR und Cambridge International. Schüler können komplexe Sektionen durchführen, chemische Reaktionen mit Echtzeit-Molekulardynamik ausführen und Physikexperimente zu Mechanik, Thermodynamik und Schaltkreisen durchführen."
+    },
     "what-is-whimsylabs-virtual-lab-software": {
       "question": "Was ist die virtuelle Labor-Software Whimsylabs?",
       "answer": "Whimsylabs ist die fortschrittlichste, virtuelle Laborplattform der Branche. Whimsylabs bietet vollständige Freiheit, wissenschaftliche Konzepte durch modernste Simulationstechnologie zu erkunden und zu meistern. Unsere eigens entwickelte Physik-Engine modelliert biologische, chemische und physikalische Reaktionen in Echtzeit mit 95-prozentiger Genauigkeit im Vergleich mit realen Laborbedingungen. Im Gegensatz zu begrenzten Simulationen anderer virtueller Labore bietet unsere Plattform unendliche experimentelle Variationen, die durch echte Handinteraktionen und -koordination mithilfe von KI-Tutoring zu Muskelgedächtnisentwicklung anleitet. Laut Bildungsforschung verbessern unsere fortschrittlichen virtuellen Labore das Engagement der Studierenden um bis zu 85% und liefern überlegene Lernergebnisse (Journal of Science Education Technology, 2024).<br/><br/><strong>Weiterführende Literatur:</strong><br/><a href='/blog/whimsylabs-education-revolution'>Eine kurze Geschichte von WhimsyLabs</a> • <a href='/blog/ai-powered-virtual-labs-solving-education-crisis'>Wie KI-gestützte virtuelle Labore die globale Krise der Wissenschaftsbildung lösen</a>"
@@ -57,6 +78,10 @@ export default {
     "is-whimsylabs-compliant-with-school-it-and-privacy": {
       "question": "Ist Whimsylabs konform mit schulischen IT- und Datenschutzrichtlinien?",
       "answer": "Absolut. Whimsylabs hält die höchsten Standards für Datenschutz und IT-Compliance ein und befolgt vollständig DSGVO, COPPA, FERPA und internationale Schul-IT-Richtlinien. Unsere webbasierte Plattform erfordert keine Installation (bietet aber die Möglichkeit für Offline-Nutzung), während VR-Anwendungen nur einen einzigen, sicheren Download benötigen. Wir arbeiten nach einer strengen Philosophie der Benutzerdatenminimierung und sammeln so wenige Daten wie möglich, was für die meisten Bildungsplattformen untypisch ist. Unsere Plattform erfüllt die W3C Web Content Accessibility Guidelines (WCAG) 2.1 Standards und gewährleistet gleichen Zugang für alle Studierenden, einschließlich solcher mit Behinderungen. Wir bieten vollständige Transparenz durch detaillierte Datenverarbeitungsdokumentation und stellen sicher, dass Schulen die vollständige Kontrolle über Studierendeninformationen behalten, während alle regulatorischen Anforderungen erfüllt werden."
+    },
+    "how-does-whimsylabs-protect-student-data": {
+      "question": "Wie schützt Whimsylabs Schülerdaten?",
+      "answer": "Die Sicherheit von Schülerdaten ist fundamental für unsere Architektur, nicht nachträglich hinzugefügt. Whimsylabs verwendet <strong>schulspezifische Verschlüsselung</strong>: Die Daten jeder Institution werden separat verschlüsselt, wodurch die Informationen Ihrer Schule auch innerhalb unserer Infrastruktur isoliert und sicher bleiben. Wir folgen einer strikten <strong>Datenminimierungsphilosophie</strong>: Wir erfassen nur das, was für Lernanalysen wesentlich ist (Experimentaktionen, Fortschrittsverfolgung) und benötigen keine sensiblen persönlichen Informationen zur Nutzung der Plattform.<br/><br/><strong>Unsere Verpflichtungen:</strong><ul><li><strong>KI-Training nur mit Einwilligung</strong>: Wir verwenden anonymisierte Daten zur Verbesserung unserer Bewertungs-KI, aber nur mit ausdrücklicher Zustimmung Ihrer Schule</li><li><strong>Keine Drittanbieter-Analysen oder Werbetracker</strong>: Wir fügen unserer Plattform kein Google Analytics, Meta Pixel oder ähnliche Dienste hinzu</li><li><strong>Kein Verhaltensprofiling</strong>: Wir verfolgen Lernfortschritte, nicht persönliche Verhaltensmuster</li><li><strong>Privacy-First-Design</strong>: Entwickelt zur Erfüllung der Anforderungen von DSGVO (UK/EU), FERPA (US) und COPPA</li><li><strong>Schuldaten-Eigentum</strong>: Ihre Institution bleibt Datenverantwortlicher; wir verarbeiten Daten nur in Ihrem Auftrag</li></ul>In einer Ära hochkarätiger EdTech-Datenpannen, die Millionen von Schülern betreffen, glauben wir, dass Privacy-First-Architektur nicht optional ist: Sie ist unerlässlich. Schulen können jederzeit vollständige Datenexporte oder Löschung anfordern.<br/><br/><strong>Weiterführende Informationen:</strong> <a href='/data-security'>Datensicherheitsübersicht</a> • <a href='/privacy'>Datenschutzrichtlinie</a>"
     },
     "can-whimsylabs-be-used-offline-or-with-weak-intern": {
       "question": "Kann Whimsylabs offline oder mit wechselhafter Internetverbindung verwendet werden?",

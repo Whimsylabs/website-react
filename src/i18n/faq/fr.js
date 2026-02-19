@@ -1,6 +1,7 @@
 // French FAQ translations - Complete
 export default {
   "categories": {
+    "Getting Started": "Pour Commencer",
     "About Whimsylabs": "À propos de WhimsyLabs",
     "Educational Benefits": "Avantages éducatifs",
     "Technical Features": "Fonctionnalités techniques",
@@ -76,6 +77,10 @@ export default {
         "WhimsyLabs est-il conforme aux politiques informatiques et de confidentialité des écoles ?",
       "answer":
         "Absolument. WhimsyLabs maintient les plus hauts standards de protection des données et de conformité informatique, adhérant pleinement au RGPD, COPPA, FERPA et aux directives informatiques scolaires internationales. Notre plateforme basée sur le web ne nécessite aucune installation (bien qu'elle offre la possibilité d'utilisation hors ligne), tandis que les applications VR ne nécessitent qu'un seul téléchargement sécurisé. Nous opérons selon une philosophie stricte de minimisation des données utilisateur, collectant le moins de données possible, atypique pour la plupart des plateformes éducatives. Notre plateforme respecte les standards W3C Web Content Accessibility Guidelines (WCAG) 2.1, assurant un accès égal pour tous les étudiants y compris ceux avec des handicaps. Nous fournissons une transparence complète grâce à une documentation détaillée de traitement des données, s'assurant que les écoles maintiennent un contrôle complet sur les informations des étudiants tout en respectant toutes les exigences réglementaires.",
+    },
+    "how-does-whimsylabs-protect-student-data": {
+      "question": "Comment WhimsyLabs protège-t-il les données des étudiants ?",
+      "answer": "La sécurité des données des étudiants est fondamentale pour notre architecture, pas une réflexion après coup. WhimsyLabs utilise un <strong>chiffrement par école</strong> : les données de chaque institution sont chiffrées séparément, garantissant que les informations de votre école restent isolées et sécurisées même au sein de notre infrastructure. Nous suivons une stricte <strong>philosophie de minimisation des données</strong> : nous ne collectons que ce qui est essentiel pour l'analyse de l'apprentissage (actions d'expérimentation, suivi des progrès) et ne demandons jamais d'informations personnelles sensibles pour utiliser la plateforme.<br/><br/><strong>Nos engagements :</strong><ul><li><strong>Formation IA uniquement sur consentement</strong> : Nous utilisons des données anonymisées pour améliorer notre IA de notation, mais uniquement avec le consentement explicite de votre école</li><li><strong>Pas d'analyses tierces ni de traceurs publicitaires</strong> : Nous n'ajoutons pas Google Analytics, Meta Pixel ou services similaires à notre plateforme</li><li><strong>Pas de profilage comportemental</strong> : Nous suivons les progrès d'apprentissage, pas les comportements personnels</li><li><strong>Conception axée sur la confidentialité</strong> : Conçu pour répondre aux exigences du RGPD (UK/EU), FERPA (US) et COPPA</li><li><strong>Propriété des données scolaires</strong> : Votre institution reste le responsable du traitement ; nous ne traitons les données qu'en votre nom</li></ul>À une époque de violations de données EdTech très médiatisées affectant des millions d'étudiants, nous croyons que l'architecture axée sur la confidentialité n'est pas optionnelle : elle est essentielle. Les écoles peuvent demander des exportations complètes de données ou leur suppression à tout moment.<br/><br/><strong>Plus d'informations :</strong> <a href='/data-security'>Aperçu de la sécurité des données</a> • <a href='/privacy'>Politique de confidentialité</a>"
     },
     "can-whimsylabs-be-used-offline-or-with-weak-intern": {
       "question":
@@ -192,6 +197,26 @@ export default {
         "Quelles options de tarification sont disponibles pour les écoles ?",
       "answer":
         "WhimsyLabs offre des solutions de laboratoire virtuel premium avec des modèles de tarification d'entreprise flexibles conçus pour le déploiement institutionnel. Nous offrons plusieurs niveaux d'accès, avec différentes fonctionnalités ; notre offre de base supprime les fonctionnalités IA afin de maximiser notre impact et portée pour les écoles, notre niveau intermédiaire permet le tutorat étudiant, la notation et évaluation automatiques, et la création d'expériences simples, et notre niveau supérieur permet l'analyse avancée, la création d'expériences personnalisées étendues, l'accès aux fonctionnalités de feuille de route et plus. Nos packages complets incluent des expériences illimitées, le tutorat IA avancé, la création d'expériences personnalisées et un support dédié. Nous fournissons des programmes d'équité éducative pour assurer que notre technologie de pointe atteigne les institutions mondiales, rendant la technologie d'éducation scientifique premium universellement accessible.<br/><br/><strong>Pour aller plus loin:</strong><br/><a href='/blog/virtual-vs-physical-labs-cost-analysis'>Virtuel vs. Physique: Une analyse complète des coûts</a>",
+    },
+    "is-whimsylabs-free": {
+      "question": "WhimsyLabs est-il gratuit ?",
+      "answer": "WhimsyLabs propose un essai gratuit pour vous permettre de découvrir nos laboratoires virtuels avant de vous engager. Après la période d'essai, nous proposons des plans tarifaires flexibles conçus pour les écoles et institutions de toutes tailles. Nos tarifs échelonnés comprennent des options allant de l'accès de base aux fonctionnalités complètes avec IA, y compris la notation automatisée, le tutorat personnalisé et la création d'expériences personnalisées. Nous offrons également des réductions spéciales jusqu'à 20% pour les écoles sous-financées. <a href='/contact'>Contactez-nous</a> pour commencer votre essai gratuit."
+    },
+    "do-i-need-vr-headsets-to-use-whimsylabs": {
+      "question": "Ai-je besoin de casques VR pour utiliser WhimsyLabs ?",
+      "answer": "Non, les casques VR ne sont pas nécessaires. WhimsyLabs fonctionne sur n'importe quel appareil, y compris les ordinateurs de bureau, les portables, les Chromebooks, les tablettes et les téléphones mobiles via votre navigateur web. Les casques VR sont une amélioration optionnelle qui offre une expérience plus immersive, mais l'expérience d'apprentissage complète est disponible sans eux. Notre plateforme atteint 96,66% de compatibilité des appareils."
+    },
+    "how-much-does-whimsylabs-cost-per-student": {
+      "question": "Combien coûte WhimsyLabs par élève ?",
+      "answer": "Les prix varient en fonction de la taille de votre institution, des fonctionnalités sélectionnées et des exigences de support. Nous proposons des plans échelonnés allant de l'accès de base au laboratoire virtuel aux packages complets avec tutorat IA, notation automatisée et création illimitée d'expériences personnalisées. Les écoles éligibles peuvent bénéficier de réductions jusqu'à 20%. <a href='/contact'>Contactez-nous</a> pour un devis personnalisé."
+    },
+    "how-do-i-get-started-with-whimsylabs": {
+      "question": "Comment démarrer avec WhimsyLabs ?",
+      "answer": "Commencer est simple : demandez un essai gratuit via notre site web. Une fois approuvé, vous recevrez des identifiants d'accès et pourrez commencer à explorer nos laboratoires virtuels immédiatement. Aucune installation de logiciel n'est requise pour l'accès web. Notre équipe fournit un support d'intégration pour vous aider à configurer les classes et à attribuer des expériences. <a href='/contact'>Demandez votre essai gratuit ici</a>."
+    },
+    "what-subjects-does-whimsylabs-cover": {
+      "question": "Quelles matières WhimsyLabs couvre-t-il ?",
+      "answer": "WhimsyLabs couvre la Biologie, la Chimie et la Physique avec des expériences alignées sur les programmes GCSE et A-Level. Nos laboratoires virtuels prennent en charge 100% des travaux pratiques requis selon les commissions d'examen, y compris AQA, Edexcel, OCR et Cambridge International. Les élèves peuvent effectuer des dissections complexes, exécuter des réactions chimiques avec une dynamique moléculaire en temps réel et mener des expériences de physique."
     },
   },
 };

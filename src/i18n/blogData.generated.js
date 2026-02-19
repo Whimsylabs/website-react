@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-18T19:33:08.037Z
+// Generated on 2026-02-19T22:51:54.038Z
 
 module.exports = {
   "en": [
@@ -7,7 +7,7 @@ module.exports = {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
       "title": "The Critics Are Right: Most EdTech Is Useless",
-      "description": "US schools spent $30 billion on edtech in 2024. Critics say it's wasted. They're right—about passive screen time. Virtual labs that require active experimentation are fundamentally different.",
+      "description": "US schools spent $30 billion on edtech in 2024. Critics say it's wasted. They're right about passive screen time. But virtual labs that make students actually DO science? That's a different story.",
       "keywords": [
         "edtech effectiveness",
         "virtual labs learning outcomes",
@@ -477,16 +477,19 @@ module.exports = {
     {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
-      "title": "Die Kritiker haben Recht: Die meiste EdTech ist nutzlos",
-      "description": "US-Schulen gaben 2024 30 Milliarden Dollar für EdTech aus. Kritiker sagen, es sei verschwendet. Sie haben Recht—bei passiver Bildschirmzeit. Virtuelle Labore, die aktives Experimentieren erfordern, sind grundlegend anders.",
+      "title": "Die Kritiker haben Recht: Die meiste Bildungstechnologie ist nutzlos",
+      "description": "US-Schulen gaben 2024 30 Milliarden Dollar für EdTech aus. Kritiker sagen, es sei verschwendet. Sie haben Recht, was passive Bildschirmzeit betrifft. Aber ein virtuelles Labor, in dem Schüler tatsächlich Wissenschaft BETREIBEN? Das ist eine andere Geschichte.",
       "keywords": [
-        "EdTech Effektivität",
-        "virtuelle Labore Lernergebnisse",
-        "aktive Lerntechnologie",
+        "EdTech Wirksamkeit",
+        "virtuelles Labor Lernergebnisse",
+        "aktives Lernen Technologie",
         "Bildungstechnologie Kritik",
         "passives vs aktives Lernen",
         "OECD digitale Bildung",
-        "KI in der Bildung"
+        "KI in der Bildung",
+        "MINT-Bildung",
+        "Physiksimulation",
+        "KI-Tutor"
       ],
       "date": "2026-02-18",
       "hasFullTranslation": false,
@@ -1013,15 +1016,17 @@ module.exports = {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
       "title": "Les critiques ont raison : la plupart des EdTech sont inutiles",
-      "description": "Les écoles américaines ont dépensé 30 milliards de dollars en EdTech en 2024. Les critiques disent que c'est gaspillé. Ils ont raison—concernant le temps d'écran passif. Les laboratoires virtuels nécessitant une expérimentation active sont fondamentalement différents.",
+      "description": "Les écoles américaines ont dépensé 30 milliards de dollars en EdTech en 2024. Les critiques affirment que c'est du gaspillage. Ils ont raison concernant le temps d'écran passif. Mais les laboratoires virtuels qui font vraiment FAIRE de la science aux élèves ? C'est une tout autre histoire.",
       "keywords": [
-        "efficacité EdTech",
-        "résultats apprentissage laboratoires virtuels",
-        "technologie apprentissage actif",
+        "efficacité des EdTech",
+        "laboratoire virtuel résultats apprentissage",
+        "apprentissage actif technologie",
         "critique technologie éducative",
         "apprentissage passif vs actif",
         "OCDE éducation numérique",
-        "IA dans l'éducation"
+        "tuteur IA éducation",
+        "simulation de laboratoire",
+        "éducation STEM"
       ],
       "date": "2026-02-18",
       "hasFullTranslation": false,
@@ -1547,14 +1552,16 @@ module.exports = {
     {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
-      "title": "Los críticos tienen razón: la mayoría de EdTech es inútil",
-      "description": "Las escuelas estadounidenses gastaron 30 mil millones de dólares en EdTech en 2024. Los críticos dicen que es un desperdicio. Tienen razón—sobre el tiempo de pantalla pasivo. Los laboratorios virtuales que requieren experimentación activa son fundamentalmente diferentes.",
+      "title": "Los Críticos Tienen Razón: La Mayoría del EdTech Es Inútil",
+      "description": "Las escuelas de EE.UU. gastaron $30 mil millones en EdTech en 2024. Los críticos tienen razón sobre el tiempo pasivo en pantallas. Pero los laboratorios virtuales que hacen que los estudiantes HAGAN ciencia con un tutor IA? Eso es diferente.",
       "keywords": [
-        "efectividad EdTech",
-        "resultados aprendizaje laboratorios virtuales",
-        "tecnología aprendizaje activo",
-        "crítica tecnología educativa",
-        "aprendizaje pasivo vs activo",
+        "laboratorio virtual",
+        "educación STEM",
+        "tutor IA",
+        "simulación de laboratorio",
+        "aprendizaje activo",
+        "tecnología educativa efectiva",
+        "tutor de inteligencia artificial",
         "OCDE educación digital",
         "IA en educación"
       ],
@@ -2082,16 +2089,19 @@ module.exports = {
     {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
-      "title": "批判者は正しい：EdTechの大半は無駄である",
-      "description": "2024年、米国の学校はEdTechに300億ドルを費やした。批判者はそれが無駄だと言う。受動的な画面時間については彼らの言う通りだ。しかし、能動的な実験を必要とする仮想ラボは根本的に異なる。",
+      "title": "批評家の指摘は正しい：ほとんどのEdTechは役に立たない",
+      "description": "2024年、米国の学校はEdTechに300億ドルを費やしました。批評家たちはそれが無駄だと言います。受動的なスクリーンタイムについては彼らの言う通りです。しかし、生徒が実際に科学を「体験する」仮想実験室は別の話です。",
       "keywords": [
         "EdTech効果",
-        "仮想ラボ学習成果",
-        "アクティブラーニング技術",
-        "教育テクノロジー批判",
-        "受動的vs能動的学習",
-        "OECDデジタル教育",
-        "教育におけるAI"
+        "仮想実験室",
+        "バーチャルラボ",
+        "STEM教育",
+        "AIチューター",
+        "実験シミュレーション",
+        "アクティブラーニング",
+        "教育工学批判",
+        "受動的学習と能動的学習",
+        "OECD デジタル教育"
       ],
       "date": "2026-02-18",
       "hasFullTranslation": false,
@@ -2420,7 +2430,7 @@ module.exports = {
       "id": "post12",
       "slug": "virtual-reality-prepares-students-real-world-stem-careers",
       "title": "VRシミュレーション教材が実世界のSTEMキャリアに備える学生を育成：物理的な実験技術を教える唯一のプラットフォーム",
-      "description": "雇用主の70%以上が理科系卒業生の実践スキル不足を報告。WhimsyLabsが高精度VR物理シミュレーションと完全な探究学習の自由を通じて、実世界のSTEMキャリアに直結する筋肉記憶・手順的流暢さ・実験デザイン能力を育成する方法をご紹介します。",
+      "description": "雇用主の70%以上が理科系卒業生の実践スキル不足を報告。WhimsyLabsが高精度VR物理シミュレーションと完全な探究学習の自由を通じて、実世界のSTEMキャリアに直結する実技スキル・手順的流暢さ・実験デザイン能力を育成する方法をご紹介します。",
       "keywords": [
         "高等教育向けVR実験室",
         "大学向け仮想実験室",
@@ -2580,12 +2590,12 @@ module.exports = {
       "id": "post2",
       "slug": "physicality-in-virtual-labs",
       "title": "仮想実験室における身体性：従来のシミュレーションを超えて",
-      "description": "WhimsyLabsの画期的な液体物理学シミュレーションと手順トレーニングが、高精度VRによる没入型仮想実験室体験を通じて理科教育をどのように再定義し、生徒の筋肉記憶と実世界のSTEMキャリアで活かせる実践的なスキルを育成するかを探ります。",
+      "description": "WhimsyLabsの画期的な液体物理学シミュレーションと手順トレーニングが、高精度VRによる没入型仮想実験室体験を通じて理科教育をどのように再定義し、生徒の実技スキルと実世界のSTEMキャリアで活かせる実践的なスキルを育成するかを探ります。",
       "keywords": [
         "仮想実験室 身体性",
         "液体物理学 シミュレーション",
         "手順トレーニング",
-        "筋肉記憶 発達",
+        "実技スキル 発達",
         "高度な仮想実験室"
       ],
       "date": "2025-02-03",
