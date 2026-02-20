@@ -1,0 +1,40 @@
+{
+  "generated": "2026-02-19T15:58:12.059785",
+  "voices": {
+    "en": "en-GB-SoniaNeural",
+    "es": "es-ES-ElviraNeural",
+    "fr": "fr-FR-DeniseNeural",
+    "de": "de-DE-KatjaNeural",
+    "jp": "ja-JP-NanamiNeural"
+  },
+  "pages": {
+    "contact": {
+      "en": "/audio/en/contact.mp3",
+      "es": "/audio/es/contact.mp3",
+      "fr": "/audio/fr/contact.mp3",
+      "de": "/audio/de/contact.mp3",
+      "jp": "/audio/jp/contact.mp3"
+    },
+    "faq": {
+      "en": "/audio/en/faq.mp3",
+      "es": "/audio/es/faq.mp3",
+      "fr": "/audio/fr/faq.mp3",
+      "de": "/audio/de/faq.mp3",
+      "jp": "/audio/jp/faq.mp3"
+    },
+    "data-security": {
+      "en": "/audio/en/data-security.mp3",
+      "es": "/audio/es/data-security.mp3",
+      "fr": "/audio/fr/data-security.mp3",
+      "de": "/audio/de/data-security.mp3",
+      "jp": "/audio/jp/data-security.mp3"
+    },
+    "landing": {
+      "en": "/audio/en/landing.mp3",
+      "es": "/audio/es/landing.mp3",
+      "fr": "/audio/fr/landing.mp3",
+      "de": "/audio/de/landing.mp3",
+      "jp": "/audio/jp/landing.mp3"
+    }
+  }
+}
