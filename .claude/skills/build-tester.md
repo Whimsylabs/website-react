@@ -95,7 +95,7 @@ grep -c '<loc>' build/sitemap.xml
 
 ```bash
 # Serve locally and test
-npx serve -s build -p 3001 &
+npx serve build -p 3001 &
 
 # Test key pages respond
 curl -s -o /dev/null -w "%{http_code}" http://localhost:3001/

@@ -699,7 +699,7 @@ const translations = {
 
     // Grants Page
     grants: {
-      heroTitle: "Science Education Grants for UK Schools",
+      heroTitle: "Science Education Grants for Schools",
       heroSubtitle: "Get funding for virtual labs — WhimsyLabs provides free software, STEM expertise, and application support",
       introTitle: "WhimsyLabs: Your Partner for Education Grants",
       introText1: "Applying for education grants? <strong>WhimsyLabs is your ready-made technology partner.</strong> We provide free virtual lab software throughout your grant period — your entire budget goes to hardware and other needs.",

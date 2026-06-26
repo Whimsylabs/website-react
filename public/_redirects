@@ -132,6 +132,13 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /bett /bett/ 301!
 /grants /grants/ 301!
 /grants/royal-society /grants/royal-society/ 301!
+/grants/science-community /grants/science-community/ 301!
+/grants/british-science-week /grants/british-science-week/ 301!
+/grants/japan-education /grants/japan-education/ 301!
+/grants/erasmus-plus /grants/erasmus-plus/ 301!
+/grants/armourers /grants/armourers/ 301!
+/grants/uk-school-funding /grants/uk-school-funding/ 301!
+/grants/us-education /grants/us-education/ 301!
 /chemistry /chemistry/ 301!
 /biology /biology/ 301!
 /physics /physics/ 301!
@@ -159,6 +166,20 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /fr/features/contact/ /fr/contact/ 301!
 /fr/features/features/ /fr/features/ 301!
 /fr/services/contact/ /fr/contact/ 301!
+
+# Replaced grant pages -> current replacements (Google may have old URLs cached)
+/grants/ogden-trust/ /grants/armourers/ 301!
+/grants/ogden-trust /grants/armourers/ 301!
+/grants/ironmongers/ /grants/uk-school-funding/ 301!
+/grants/ironmongers /grants/uk-school-funding/ 301!
+/de/grants/ogden-trust/ /de/grants/armourers/ 301!
+/es/grants/ogden-trust/ /es/grants/armourers/ 301!
+/fr/grants/ogden-trust/ /fr/grants/armourers/ 301!
+/jp/grants/ogden-trust/ /jp/grants/armourers/ 301!
+/de/grants/ironmongers/ /de/grants/uk-school-funding/ 301!
+/es/grants/ironmongers/ /es/grants/uk-school-funding/ 301!
+/fr/grants/ironmongers/ /fr/grants/uk-school-funding/ 301!
+/jp/grants/ironmongers/ /jp/grants/uk-school-funding/ 301!
 
 # Old/renamed blog post redirects (Google has these cached)
 /blog/real-time-physics-simulations /blog/science-real-time-physics-simulations-virtual-labs/ 301!

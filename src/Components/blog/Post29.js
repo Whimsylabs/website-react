@@ -3,17 +3,19 @@ import { getLocalizedPath, getCurrentLanguage } from '../../i18n';
 
 const language = getCurrentLanguage();
 
-export const title = "Virtual Physics Lab: Simulations That Actually Teach";
+export const title = "Physics Lab Simulator: Virtual Physics Labs That Actually Teach";
 export const date = "2026-02-13";
 export const slug = "virtual-physics-lab-simulations-teach";
-export const description = "Why physics is uniquely suited to simulation, what makes bad physics sims harmful, and how a physics-accurate engine transforms learning.";
+export const description = "Discover how a physics lab simulator with real physics engines transforms STEM education. Learn why virtual physics labs with accurate simulations beat traditional methods.";
 export const keywords = [
+  "physics lab simulator",
   "virtual physics lab",
   "physics simulation",
   "online physics experiments",
   "physics practical",
   "mechanics simulation",
-  "forces simulation"
+  "forces simulation",
+  "physics lab software"
 ];
 
 export const content = (

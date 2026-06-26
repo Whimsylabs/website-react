@@ -17,6 +17,7 @@ const ReactDOMServer = require("react-dom/server");
 const ComponentRenderer = require("./scripts/component-renderer");
 const AssetExtractor = require("./scripts/asset-extractor");
 const MetadataInjector = require("./scripts/metadata-injector");
+const { getGrantMetadata } = require("./src/data/grantMetadata");
 
 // Initialize rendering utilities
 const componentRenderer = new ComponentRenderer();
@@ -72,16 +73,15 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.bett?.description || "Visit WhimsyLabs at BETT 2026 (ExCeL London, Jan 21-23). Book a demo at Booth FS10 and discover our award-winning virtual laboratory software.",
     keywords: "BETT 2026, WhimsyLabs exhibition, virtual lab demo, education technology show, ExCeL London",
   },
-  "/grants": {
-    title: "STEM Education Grants & Funding Support | WhimsyLabs",
-    description: "Find grants for VR science labs in schools. WhimsyLabs helps you apply for STEM education funding with free demo access.",
-    keywords: "STEM grants, education funding, school grants, VR equipment funding, science lab grants, WhimsyLabs grants",
-  },
-  "/grants/royal-society": {
-    title: "Royal Society Partnership Grants | WhimsyLabs",
-    description: "UK schools can get up to £3,000 for VR science projects. WhimsyLabs offers free virtual lab software and full application support.",
-    keywords: "Royal Society Partnership Grants, UK school grants, STEM funding UK, science project funding, VR lab grants, WhimsyLabs Royal Society",
-  },
+  "/grants": getGrantMetadata("/grants", lang),
+  "/grants/royal-society": getGrantMetadata("/grants/royal-society", lang),
+  "/grants/science-community": getGrantMetadata("/grants/science-community", lang),
+  "/grants/british-science-week": getGrantMetadata("/grants/british-science-week", lang),
+  "/grants/armourers": getGrantMetadata("/grants/armourers", lang),
+  "/grants/uk-school-funding": getGrantMetadata("/grants/uk-school-funding", lang),
+  "/grants/us-education": getGrantMetadata("/grants/us-education", lang),
+  "/grants/japan-education": getGrantMetadata("/grants/japan-education", lang),
+  "/grants/erasmus-plus": getGrantMetadata("/grants/erasmus-plus", lang),
   "/contact": {
     title: translations[lang]?.contact?.title || "Contact Us | WhimsyLabs Virtual Lab Software",
     description: translations[lang]?.contact?.description || "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
@@ -129,6 +129,13 @@ const routeComponentMap = {
   "/bett": "BettPage",
   "/grants": "GrantsPage",
   "/grants/royal-society": "RoyalSocietyGrantPage",
+  "/grants/science-community": "ScienceCommunityGrantPage",
+  "/grants/british-science-week": "BritishScienceWeekGrantPage",
+  "/grants/japan-education": "JapanEducationGrantPage",
+  "/grants/erasmus-plus": "ErasmusGrantPage",
+  "/grants/armourers": "ArmourersGrantPage",
+  "/grants/uk-school-funding": "UKSchoolFundingGrantPage",
+  "/grants/us-education": "USGrantsPage",
   // TEMPORARILY DISABLED - Subject pages need more work
   // "/chemistry": "ChemistryPage",
   // "/biology": "BiologyPage",
@@ -267,6 +274,26 @@ async function loadReactComponents() {
 
     ReactComponents.RoyalSocietyGrantPage = require("./src/Components/RoyalSocietyGrantPage.js").default;
     console.log("✅ Loaded RoyalSocietyGrantPage");
+
+
+    ReactComponents.ScienceCommunityGrantPage = require("./src/Components/ScienceCommunityGrantPage.js").default;
+    console.log("✅ Loaded ScienceCommunityGrantPage");
+
+
+    ReactComponents.BritishScienceWeekGrantPage = require("./src/Components/BritishScienceWeekGrantPage.js").default;
+    console.log("✅ Loaded BritishScienceWeekGrantPage");
+
+    ReactComponents.JapanEducationGrantPage = require("./src/Components/JapanEducationGrantPage.js").default;
+    console.log("✅ Loaded JapanEducationGrantPage");
+
+    ReactComponents.ErasmusGrantPage = require("./src/Components/ErasmusGrantPage.js").default;
+    console.log("✅ Loaded ErasmusGrantPage");
+    ReactComponents.ArmourersGrantPage = require("./src/Components/ArmourersGrantPage.js").default;
+    console.log("✅ Loaded ArmourersGrantPage");
+    ReactComponents.UKSchoolFundingGrantPage = require("./src/Components/UKSchoolFundingGrantPage.js").default;
+    console.log("✅ Loaded UKSchoolFundingGrantPage");
+    ReactComponents.USGrantsPage = require("./src/Components/USGrantsPage.js").default;
+    console.log("✅ Loaded USGrantsPage");
 
     // TEMPORARILY DISABLED - Subject pages need more work
     // ReactComponents.ChemistryPage = require("./src/Components/ChemistryPage.js").default;
@@ -438,8 +465,10 @@ async function getBlogPosts(language = 'en') {
     const Post31 = require("./src/Components/blog/Post31.js");
     const Post32 = require("./src/Components/blog/Post32.js");
     const Post33 = require("./src/Components/blog/Post33.js");
+    const Post34 = require("./src/Components/blog/Post34.js");
+    const Post38 = require("./src/Components/blog/Post38.js");
 
-    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30, Post31, Post32, Post33];
+    const fallbackPosts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16, Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30, Post31, Post32, Post33, Post34, Post38];
     
     // Build the blog posts array with translated content
     for (const translatedPost of translatedPosts) {
@@ -495,6 +524,8 @@ async function getBlogPosts(language = 'en') {
       const Post31 = require("./src/Components/blog/Post31.js");
       const Post32 = require("./src/Components/blog/Post32.js");
       const Post33 = require("./src/Components/blog/Post33.js");
+      const Post34 = require("./src/Components/blog/Post34.js");
+      const Post38 = require("./src/Components/blog/Post38.js");
 
       const fallbackPosts = [
         {
@@ -826,6 +857,26 @@ async function getBlogPosts(language = 'en') {
           path: `/blog/${Post33.slug}`,
           language: 'en',
           hasFullTranslation: true
+        },
+        {
+          id: Post34.slug,
+          title: Post34.title,
+          date: Post34.date,
+          description: Post34.description,
+          content: Post34.content,
+          path: `/blog/${Post34.slug}`,
+          language: 'en',
+          hasFullTranslation: true
+        },
+        {
+          id: Post38.slug,
+          title: Post38.title,
+          date: Post38.date,
+          description: Post38.description,
+          content: Post38.content,
+          path: `/blog/${Post38.slug}`,
+          language: 'en',
+          hasFullTranslation: true
         }
       ];
 
@@ -941,6 +992,15 @@ async function generatePageHTML(route, data = {}) {
           'uk-government-ai-education-funding-2026': 'post31',
           'pearson-webinar-vr-assessment-ai-age': 'post32',
           'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
+          'vr-stem-education-research-pedagogical-scaffolding': 'post34',
+          'purpose-built-ai-education-difference': 'post35',
+          'ai-text-grading-fails-process-assessment-works': 'post36',
+          'process-based-lab-assessment-future': 'post37',
+          'uk-edtech-testbeds-bett-2026-ai-policy': 'post38',
+          'oecd-process-oriented-assessment-validation': 'post39',
+          'student-ai-use-assessment-crisis-solution': 'post40',
+          'send-white-paper-2026-science-practicals': 'post41',
+          'triple-science-entitlement-2028-virtual-labs': 'post42',
         };
         
         const postId = slugToPostId[data.slug];
@@ -956,7 +1016,15 @@ async function generatePageHTML(route, data = {}) {
               postModule = require(`./src/i18n/blog/${postId}/${langCode}.js`);
             }
           } catch (e) {
-            // Translation not found, will fall back to English
+            // Distinguish a genuinely missing translation (expected — fall back to
+            // English) from a translation file that EXISTS but failed to load (a real
+            // bug, e.g. a missing `import React`). The latter must be loud, otherwise
+            // the page silently ships English content under a translated URL.
+            if (e.code === 'MODULE_NOT_FOUND') {
+              console.warn(`⚠️ No ${langCode} translation for ${postId}, using English fallback`);
+            } else {
+              console.error(`❌ ${langCode} translation for ${postId} FAILED TO LOAD — serving ENGLISH instead: ${e.message.split('\n')[0]}`);
+            }
           }
           
           // Fall back to English if no translation
@@ -1166,7 +1234,14 @@ async function generateSitemap() {
       { path: '/features/', priority: '0.8', changefreq: 'weekly' },
       { path: '/bett/', priority: '0.9', changefreq: 'weekly' }, // High priority for event page
       { path: '/grants/', priority: '0.7', changefreq: 'weekly' }, // Grants index
-      { path: '/grants/royal-society/', priority: '0.8', changefreq: 'weekly' }, // Royal Society grants - high priority for UK schools
+      { path: '/grants/royal-society/', priority: '0.8', changefreq: 'weekly' }, // Royal Society Partnership Grants
+      { path: '/grants/science-community/', priority: '0.7', changefreq: 'weekly' }, // Royal Society Science Community Grant
+      { path: '/grants/british-science-week/', priority: '0.8', changefreq: 'weekly' }, // British Science Week Kick Start
+      { path: '/grants/japan-education/', priority: '0.8', changefreq: 'weekly' }, // Japan MEXT/GIGA + foundation grants
+      { path: '/grants/erasmus-plus/', priority: '0.9', changefreq: 'weekly' }, // Erasmus+ KA220 EU grants
+      { path: '/grants/armourers/', priority: '0.7', changefreq: 'weekly' }, // Armourers & Brasiers science grants
+      { path: '/grants/uk-school-funding/', priority: '0.7', changefreq: 'weekly' }, // Pupil Premium / SEN budgets
+      { path: '/grants/us-education/', priority: '0.8', changefreq: 'weekly' }, // US Title IV-A / DonorsChoose
       { path: '/faq/', priority: '0.9', changefreq: 'monthly' },
       { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
       { path: '/privacy/', priority: '0.3', changefreq: 'yearly' },

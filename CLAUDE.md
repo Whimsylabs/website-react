@@ -12,7 +12,7 @@ WhimsyLabs is a React-based multilingual website for a virtual laboratory softwa
 - `npm start` - Start React development server (port 3000)
 - `npm run dev` - Build and start dev server with auto-rebuild (port 3001)
 - `node dev-server.js` - Run the custom dev server after building
-- `npx serve -s build` - Serve the built static site locally
+- `npx serve build` - Serve the built static site locally (do NOT use `-s`; this is an MPA, and the `-s`/`--single` flag rewrites every route to the home page)
 
 ### Building
 - `npm run build-static` - **Primary build command**: Builds React app + generates static HTML for all languages
@@ -340,17 +340,17 @@ To test a specific language without building all languages:
 ```bash
 # Test English only (no language prefix)
 BUILD_LANGUAGES=en npm run build-static
-npx serve -s build
+npx serve build
 # Navigate to http://localhost:3000/ (English is at root, no /en/ prefix)
 
 # Test Spanish only
 BUILD_LANGUAGES=es npm run build-static
-npx serve -s build
+npx serve build
 # Navigate to http://localhost:3000/es/
 
 # Test all languages
 npm run build-static
-npx serve -s build
+npx serve build
 # Navigate to:
 # - http://localhost:3000/ (English)
 # - http://localhost:3000/es/ (Spanish)

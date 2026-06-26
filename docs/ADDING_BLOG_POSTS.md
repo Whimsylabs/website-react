@@ -194,7 +194,7 @@ The build process will:
 Serve the built site:
 
 ```bash
-npx serve -s build
+npx serve build
 ```
 
 Then test:
@@ -350,8 +350,8 @@ npm run build-static
 # Build (English only - faster)
 BUILD_LANGUAGES=en npm run build-static
 
-# Test locally
-npx serve -s build
+# Test locally (no -s: this is an MPA)
+npx serve build
 
 # Validate translations
 npm run validate-blog-translations

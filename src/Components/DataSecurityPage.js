@@ -109,6 +109,8 @@ const DataSecurityPage = ({ t, currentLang, language }) => {
                   <li><strong>{t('dataSecurity.progressMarkers')}</strong> - {t('dataSecurity.progressMarkersDesc')}</li>
                   <li><strong>{t('dataSecurity.assessmentResponses')}</strong> - {t('dataSecurity.assessmentResponsesDesc')}</li>
                   <li><strong>{t('dataSecurity.safetyCompliance')}</strong> - {t('dataSecurity.safetyComplianceDesc')}</li>
+                  <li><strong>{t('dataSecurity.sessionRecordings')}</strong> - {t('dataSecurity.sessionRecordingsDesc')}</li>
+                  <li><strong>{t('dataSecurity.aiGrades')}</strong> - {t('dataSecurity.aiGradesDesc')}</li>
                 </ul>
               </div>
               
@@ -116,8 +118,63 @@ const DataSecurityPage = ({ t, currentLang, language }) => {
                 <h3>👤 {t('dataSecurity.accountData')}</h3>
                 <ul>
                   <li><strong>{t('dataSecurity.username')}</strong> - {t('dataSecurity.usernameDesc')}</li>
+                  <li><strong>{t('dataSecurity.email')}</strong> - {t('dataSecurity.emailDesc')}</li>
                   <li><strong>{t('dataSecurity.schoolAssociation')}</strong> - {t('dataSecurity.schoolAssociationDesc')}</li>
                   <li><strong>{t('dataSecurity.role')}</strong> - {t('dataSecurity.roleDesc')}</li>
+                  <li><strong>{t('dataSecurity.avatarUrl')}</strong> - {t('dataSecurity.avatarUrlDesc')}</li>
+                  <li><strong>{t('dataSecurity.twoFaStatus')}</strong> - {t('dataSecurity.twoFaStatusDesc')}</li>
+                </ul>
+              </div>
+              
+              <div className="data-category">
+                <h3>🔧 {t('dataSecurity.technicalData')}</h3>
+                <ul>
+                  <li><strong>{t('dataSecurity.ipAddress')}</strong> - {t('dataSecurity.ipAddressDesc')}</li>
+                  <li><strong>{t('dataSecurity.timestamps')}</strong> - {t('dataSecurity.timestampsDesc')}</li>
+                  <li><strong>{t('dataSecurity.auditLogs')}</strong> - {t('dataSecurity.auditLogsDesc')}</li>
+                  <li><strong>{t('dataSecurity.accessibilitySettings')}</strong> - {t('dataSecurity.accessibilitySettingsDesc')}</li>
+                  <li><strong>{t('dataSecurity.generalPrefs')}</strong> - {t('dataSecurity.generalPrefsDesc')}</li>
+                  <li><strong>{t('dataSecurity.fileUploads')}</strong> - {t('dataSecurity.fileUploadsDesc')}</li>
+                </ul>
+              </div>
+              
+              <div className="data-category">
+                <h3>👩‍🏫 {t('dataSecurity.teacherData')}</h3>
+                <ul>
+                  <li><strong>{t('dataSecurity.gradingQueue')}</strong> - {t('dataSecurity.gradingQueueDesc')}</li>
+                  <li><strong>{t('dataSecurity.teacherFeedback')}</strong> - {t('dataSecurity.teacherFeedbackDesc')}</li>
+                  <li><strong>{t('dataSecurity.customExperiments')}</strong> - {t('dataSecurity.customExperimentsDesc')}</li>
+                  <li><strong>{t('dataSecurity.experimentName')}</strong> - {t('dataSecurity.experimentNameDesc')}</li>
+                  <li><strong>{t('dataSecurity.teacherName')}</strong> - {t('dataSecurity.teacherNameDesc')}</li>
+                  <li><strong>{t('dataSecurity.schoolName')}</strong> - {t('dataSecurity.schoolNameDesc')}</li>
+                  <li><strong>{t('dataSecurity.aiValidation')}</strong> - {t('dataSecurity.aiValidationDesc')}</li>
+                  <li><strong>{t('dataSecurity.aiGenerated')}</strong> - {t('dataSecurity.aiGeneratedDesc')}</li>
+                </ul>
+              </div>
+              
+              <div className="data-category">
+                <h3>🎮 {t('dataSecurity.gamificationData')}</h3>
+                <ul>
+                  <li><strong>{t('dataSecurity.pointsBalance')}</strong> - {t('dataSecurity.pointsBalanceDesc')}</li>
+                  <li><strong>{t('dataSecurity.purchaseHistory')}</strong> - {t('dataSecurity.purchaseHistoryDesc')}</li>
+                  <li><strong>{t('dataSecurity.achievements')}</strong> - {t('dataSecurity.achievementsDesc')}</li>
+                </ul>
+              </div>
+              
+              <div className="data-category">
+                <h3>📊 {t('dataSecurity.analyticsData')}</h3>
+                <ul>
+                  <li><strong>{t('dataSecurity.studentAnalytics')}</strong> - {t('dataSecurity.studentAnalyticsDesc')}</li>
+                  <li><strong>{t('dataSecurity.teacherAnalytics')}</strong> - {t('dataSecurity.teacherAnalyticsDesc')}</li>
+                  <li><strong>{t('dataSecurity.regionAnalytics')}</strong> - {t('dataSecurity.regionAnalyticsDesc')}</li>
+                </ul>
+              </div>
+              
+              <div className="data-category">
+                <h3>⚙️ {t('dataSecurity.systemData')}</h3>
+                <ul>
+                  <li><strong>{t('dataSecurity.notifications')}</strong> - {t('dataSecurity.notificationsDesc')}</li>
+                  <li><strong>{t('dataSecurity.ltiKeys')}</strong> - {t('dataSecurity.ltiKeysDesc')}</li>
                 </ul>
               </div>
               

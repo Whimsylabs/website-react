@@ -4,6 +4,8 @@
 
 // Import translations for multilingual metadata
 const { translations } = require('../src/i18n/translations.js');
+// Single source of truth for localized grant-page metadata (shared with build.js)
+const { getGrantMetadata } = require('../src/data/grantMetadata');
 
 class MetadataInjector {
   constructor() {
@@ -101,16 +103,15 @@ class MetadataInjector {
         description: t.dataSecurity?.description || 'How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.',
         keywords: 'student data privacy, EdTech security, FERPA compliance, GDPR education, COPPA compliance, school data security, virtual lab data protection',
       },
-      '/grants': {
-        title: 'STEM Education Grants & Funding Support | WhimsyLabs',
-        description: 'Find grants for VR science labs in schools. WhimsyLabs helps you apply for STEM education funding with free demo access.',
-        keywords: 'STEM grants, education funding, school grants, VR equipment funding, science lab grants, virtual lab funding',
-      },
-      '/grants/royal-society': {
-        title: 'Royal Society Partnership Grants | WhimsyLabs',
-        description: 'UK schools can get up to £3,000 for VR science projects. WhimsyLabs offers free virtual lab software and full application support.',
-        keywords: 'Royal Society Partnership Grants, UK school grants, STEM funding UK, VR lab grants, science education grants',
-      },
+      '/grants': getGrantMetadata('/grants', routeLang),
+      '/grants/royal-society': getGrantMetadata('/grants/royal-society', routeLang),
+      '/grants/science-community': getGrantMetadata('/grants/science-community', routeLang),
+      '/grants/british-science-week': getGrantMetadata('/grants/british-science-week', routeLang),
+      '/grants/armourers': getGrantMetadata('/grants/armourers', routeLang),
+      '/grants/uk-school-funding': getGrantMetadata('/grants/uk-school-funding', routeLang),
+      '/grants/us-education': getGrantMetadata('/grants/us-education', routeLang),
+      '/grants/japan-education': getGrantMetadata('/grants/japan-education', routeLang),
+      '/grants/erasmus-plus': getGrantMetadata('/grants/erasmus-plus', routeLang),
       '/chemistry': {
         title: t.chemistry?.title || 'Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs',
         description: t.chemistry?.description || 'Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.',

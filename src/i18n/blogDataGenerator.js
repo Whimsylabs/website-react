@@ -37,13 +37,22 @@ import * as Post30 from '../Components/blog/Post30';
 import * as Post31 from '../Components/blog/Post31';
 import * as Post32 from '../Components/blog/Post32';
 import * as Post33 from '../Components/blog/Post33';
+import * as Post34 from '../Components/blog/Post34';
+import * as Post35 from '../Components/blog/Post35';
+import * as Post36 from '../Components/blog/Post36';
+import * as Post37 from '../Components/blog/Post37';
+import * as Post38 from '../Components/blog/Post38';
+import * as Post39 from '../Components/blog/Post39';
+import * as Post40 from '../Components/blog/Post40';
+import * as Post41 from '../Components/blog/Post41';
+import * as Post42 from '../Components/blog/Post42';
 
 // Create dynamic mapping of all posts
 const ALL_POSTS = [
   Post1, Post2, Post3, Post4, Post5, Post6, Post7,
   Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16,
   Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30,
-  Post31, Post32, Post33
+  Post31, Post32, Post33, Post34, Post35, Post36, Post37, Post38, Post39, Post40, Post41, Post42
 ];
 
 // Generate blog post IDs dynamically

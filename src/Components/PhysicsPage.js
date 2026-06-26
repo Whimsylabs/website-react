@@ -95,6 +95,11 @@ const PhysicsPage = ({ t, language }) => {
             <h2 className="physics-section-title">{t("physics.intro.title")}</h2>
             <p className="physics-intro-text">{t("physics.intro.text1")}</p>
             <p className="physics-intro-text">{t("physics.intro.text2")}</p>
+            <p className="physics-intro-text">
+              <a href={`/${language === 'en' ? '' : language + '/'}blog/virtual-physics-lab-simulations-teach`} className="physics-learn-more-link">
+                {t("physics.intro.learnMore") || "Learn more about our physics lab simulator →"}
+              </a>
+            </p>
           </div>
         </section>
 

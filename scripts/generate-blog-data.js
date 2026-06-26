@@ -11,7 +11,8 @@ const blogPosts = [
   'post7', 'post8', 'post9', 'post10', 'post11', 'post12',
   'post13', 'post14', 'post15', 'post16', 'post17', 'post18', 'post19', 'post20',
   'post21', 'post22', 'post23', 'post24', 'post25', 'post26', 'post27', 'post28', 'post29', 'post30',
-  'post31', 'post32', 'post33'
+  'post31', 'post32', 'post33', 'post34', 'post35', 'post36', 'post37', 'post38', 'post39', 'post40',
+  'post41', 'post42'
 ];
 const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
@@ -49,7 +50,16 @@ const postIdToSlug = {
   'post30': 'premium-science-education-accessible-grants',
   'post31': 'uk-government-ai-education-funding-2026',
   'post32': 'pearson-webinar-vr-assessment-ai-age',
-  'post33': 'edtech-critics-right-passive-learning-vs-active-labs'
+  'post33': 'edtech-critics-right-passive-learning-vs-active-labs',
+  'post34': 'vr-stem-education-research-pedagogical-scaffolding',
+  'post35': 'purpose-built-ai-education-difference',
+  'post36': 'ai-text-grading-fails-process-assessment-works',
+  'post37': 'process-based-lab-assessment-future',
+  'post38': 'uk-edtech-testbeds-bett-2026-ai-policy',
+  'post39': 'oecd-process-oriented-assessment-validation',
+  'post40': 'student-ai-use-assessment-crisis-solution',
+  'post41': 'send-white-paper-2026-science-practicals',
+  'post42': 'triple-science-entitlement-2028-virtual-labs'
 };
 
 // Dates from the original blog components
@@ -87,6 +97,15 @@ const postDates = {
   post31: "2026-02-15",
   post32: "2026-02-17",
   post33: "2026-02-18",
+  post34: "2026-02-25",
+  post35: "2026-03-11",
+  post36: "2026-03-11",
+  post37: "2026-03-11",
+  post38: "2026-03-11",
+  post39: "2026-03-19",
+  post40: "2026-03-19",
+  post41: "2026-06-15",
+  post42: "2026-06-25",
 };
 
 async function generateBlogData() {

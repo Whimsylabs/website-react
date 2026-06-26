@@ -55,6 +55,13 @@ const slugToPostId = {
   'uk-government-ai-education-funding-2026': 'post31',
   'pearson-webinar-vr-assessment-ai-age': 'post32',
   'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
+  'vr-stem-education-research-pedagogical-scaffolding': 'post34',
+  'purpose-built-ai-education-difference': 'post35',
+  'ai-text-grading-fails-process-assessment-works': 'post36',
+  'process-based-lab-assessment-future': 'post37',
+  'uk-edtech-testbeds-bett-2026-ai-policy': 'post38',
+  'oecd-process-oriented-assessment-validation': 'post39',
+  'student-ai-use-assessment-crisis-solution': 'post40',
 };
 
 // Languages to check (jp maps to ja in translation files)
@@ -251,7 +258,10 @@ const GLOBAL_FORBIDDEN_PATTERNS = [
   /translation\..*?\.missing/gi,     // i18next missing key markers
   /<script>.*?error.*?<\/script>/gi, // Script errors
   /class="error-boundary"/gi,        // React error boundary triggered
-  /Something went wrong/gi,          // Generic error message
+  // "Something went wrong" only counts as a failure when rendered inside an error
+  // container (error boundary / form-error div) — NOT as legitimate prose in blog
+  // content (e.g. Post35: "When something went wrong, did they recognise it?").
+  /class="[^"]*error[^"]*"[^>]*>(?:\s|<[^>]*>)*Something went wrong/gi, // Rendered error UI
   /Cannot read propert/gi,           // JS errors
   /is not defined/gi,                // Undefined variable errors
   /Uncaught.*Error/gi,               // Uncaught exceptions
@@ -475,32 +485,53 @@ function validateFile(filePath, relativePath) {
       errors.push('Blog post missing <h1 class="post-title"> element');
     }
     
-    // CRITICAL: Verify actual paragraph content from source appears in HTML
+    // CRITICAL: Verify actual paragraph content from source appears in HTML.
+    // This also closes the "silent English fallback" blind spot: a non-English page
+    // that shipped English content (e.g. because its translation file failed to load)
+    // previously PASSED here, because validation fell back to comparing against the
+    // English snippet. We now compare each language against its OWN snippet and flag
+    // English leakage explicitly.
     if (slug && blogPostsMetadata[slug]) {
-      // Get the content snippet for this language (fall back to English if no translation)
-      const postMeta = blogPostsMetadata[slug][lang] || blogPostsMetadata[slug]['en'];
-      
-      if (postMeta && postMeta.contentSnippet && postMeta.contentSnippet.length > 15) {
-        // Normalize the snippet and HTML for comparison
-        const normalizeText = (t) => t
-          .replace(/&#x27;/g, "'")
-          .replace(/&amp;/g, '&')
-          .replace(/&quot;/g, '"')
-          .replace(/&lt;/g, '<')
-          .replace(/&gt;/g, '>')
-          .replace(/\s+/g, ' ')
-          .toLowerCase();
-        
-        const snippetNorm = normalizeText(postMeta.contentSnippet);
-        const htmlNorm = normalizeText(html);
-        
-        // Check if the content snippet appears in the HTML
-        if (!htmlNorm.includes(snippetNorm.substring(0, 25))) {
-          errors.push(`CONTENT MISSING (${lang}): Blog post content not found in static HTML! Expected: "${postMeta.contentSnippet.substring(0, 35)}..."`);
+      const englishMeta = blogPostsMetadata[slug]['en'];
+      const translatedMeta = blogPostsMetadata[slug][lang];
+
+      // Normalize the snippet and HTML for comparison
+      const normalizeText = (t) => t
+        .replace(/&#x27;/g, "'")
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/\s+/g, ' ')
+        .toLowerCase();
+
+      const htmlNorm = normalizeText(html);
+      const pageHasSnippet = (meta) =>
+        meta && meta.contentSnippet && meta.contentSnippet.length > 15 &&
+        htmlNorm.includes(normalizeText(meta.contentSnippet).substring(0, 25));
+
+      if (lang === 'en') {
+        // English page must contain the English content.
+        if (englishMeta && englishMeta.contentSnippet && englishMeta.contentSnippet.length > 15) {
+          if (!pageHasSnippet(englishMeta)) {
+            errors.push(`CONTENT MISSING (en): Blog post content not found in static HTML! Expected: "${englishMeta.contentSnippet.substring(0, 35)}..."`);
+          }
+        } else {
+          warnings.push(`No content snippet found for en to verify`);
+        }
+      } else if (translatedMeta && translatedMeta.contentSnippet && translatedMeta.contentSnippet.length > 15) {
+        // A translation file EXISTS for this language → the page MUST render it, and
+        // MUST NOT still be showing the English source (the old blind spot).
+        if (!pageHasSnippet(translatedMeta)) {
+          errors.push(`CONTENT MISSING (${lang}): translated content not found in static HTML! Expected: "${translatedMeta.contentSnippet.substring(0, 35)}..."`);
+        }
+        if (pageHasSnippet(englishMeta)) {
+          errors.push(`ENGLISH FALLBACK (${lang}): "${slug}" is serving English content under a /${lang}/ URL even though a ${lang} translation exists — the translation file likely failed to load.`);
         }
       } else {
-        // No content snippet found for this language
-        warnings.push(`No content snippet found for ${lang} to verify`);
+        // No translation file for this language → English fallback by design. Not a code
+        // bug, but a content gap worth surfacing (warning, does not fail the build).
+        warnings.push(`No ${lang} translation for "${slug}" — page is serving English fallback (translate to fix)`);
       }
     }
   }

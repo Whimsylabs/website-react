@@ -1,8 +1,170 @@
 // Auto-generated blog data for build script
-// Generated on 2026-02-19T22:51:54.038Z
+// Generated on 2026-06-26T10:09:08.917Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post42",
+      "slug": "triple-science-entitlement-2028-virtual-labs",
+      "title": "Triple Science for All by 2028: Delivering the Practicals",
+      "description": "A Triple Science entitlement arrives for September 2028, but hands-on practical work has nearly halved since 2016. Here is how virtual labs help schools deliver it.",
+      "keywords": [
+        "Triple Science entitlement 2028",
+        "Curriculum and Assessment Review",
+        "Francis Review science",
+        "practical science decline",
+        "physics teacher shortage",
+        "virtual science labs schools",
+        "GCSE separate sciences",
+        "Chromebook virtual labs"
+      ],
+      "date": "2026-06-25",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post41",
+      "slug": "send-white-paper-2026-science-practicals",
+      "title": "What the 2026 SEND White Paper Means for Science Teaching",
+      "description": "The 2026 SEND White Paper gives every pupil with SEND a statutory Individual Support Plan and makes inclusion an Ofsted focus from September. Here is what it means for science teaching.",
+      "keywords": [
+        "SEND White Paper 2026",
+        "Individual Support Plan",
+        "SEND science practicals",
+        "Ofsted inclusion framework 2026",
+        "accessible science labs SEND",
+        "evidencing SEND progress",
+        "inclusive science education",
+        "virtual labs SEND"
+      ],
+      "date": "2026-06-15",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post39",
+      "slug": "oecd-process-oriented-assessment-validation",
+      "title": "OECD: Grade the Process, Not the Product, in Science Education",
+      "description": "The OECD Digital Education Outlook 2026 officially recommends 'process-oriented assessment' for the AI age. This international validation confirms what WhimsyLabs has built from the start.",
+      "keywords": [
+        "OECD process assessment",
+        "process-oriented grading",
+        "AI education assessment",
+        "virtual lab assessment",
+        "technique-based grading",
+        "OECD Digital Education Outlook 2026",
+        "formative assessment AI",
+        "science education assessment"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post40",
+      "slug": "student-ai-use-assessment-crisis-solution",
+      "title": "94% of Students Use AI for Assessed Work — Not the Problem",
+      "description": "The HEPI 2026 survey shows near-universal AI use among UK students. The real crisis is not AI use itself, but that we are still assessing outputs that AI can easily produce. Process-based assessment offers a solution.",
+      "keywords": [
+        "AI in education",
+        "student AI use",
+        "assessment crisis",
+        "process-based assessment",
+        "AI-proof assessment",
+        "virtual lab assessment",
+        "HEPI AI survey 2026",
+        "AI detection failures"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post35",
+      "slug": "purpose-built-ai-education-difference",
+      "title": "Purpose-Built AI vs ChatGPT: Why Design Matters 3x More Than You Think",
+      "description": "Pearson's analysis of 79 million student interactions reveals purpose-built AI tools drive 3x more active learning than general-purpose AI like ChatGPT.",
+      "keywords": null,
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post36",
+      "slug": "ai-text-grading-fails-process-assessment-works",
+      "title": "When AI Misreads 'At Least One': Why Text-Based Grading Fails",
+      "description": "A Connecticut student lost points because AI interpreted 'at least one' as 'only one.' Over 150 students signed a petition against AI grading. Here's why measuring physical actions eliminates this problem entirely.",
+      "keywords": [
+        "AI grading problems",
+        "process-based assessment",
+        "virtual lab grading",
+        "AI assessment errors",
+        "automated essay scoring",
+        "virtual laboratory",
+        "AI text interpretation",
+        "educational technology"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post37",
+      "slug": "process-based-lab-assessment-future",
+      "title": "Grading the Process, Not the Answer: The Future of Lab Assessment",
+      "description": "Arizona State University now grades students on their reasoning pathway through virtual labs, not just final answers. This shift to process-based assessment reflects what WhimsyLabs has built from the start.",
+      "keywords": [
+        "virtual lab assessment",
+        "process-based grading",
+        "STEM education AI",
+        "laboratory skills assessment",
+        "Dreamscape Learn",
+        "reasoning assessment",
+        "science education",
+        "virtual laboratory"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post38",
+      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
+      "title": "UK Schools Get £50M+ for AI Education: The BETT 2026 Signal",
+      "description": "The UK government's £23M EdTech Testbeds expansion, £45M connectivity fund, and upcoming AI Education Summit signal a major shift. Here's what schools should prepare for.",
+      "keywords": [
+        "UK EdTech Testbeds",
+        "BETT 2026 announcements",
+        "AI in UK schools",
+        "DfE technology investment",
+        "Bridget Phillipson AI",
+        "UK education technology policy",
+        "AI Education Summit 2026",
+        "government EdTech funding"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post34",
+      "slug": "vr-stem-education-research-pedagogical-scaffolding",
+      "title": "New VR Research Confirms: Technology Without Pedagogy Falls Flat",
+      "description": "A Frontiers in Virtual Reality study followed semester-long VR use in neuroanatomy. The finding? Instructors understood VR's potential but lacked pedagogical knowledge. Here's what virtual labs need to actually work.",
+      "keywords": [
+        "VR STEM education",
+        "virtual reality learning",
+        "science education research",
+        "pedagogical scaffolding",
+        "virtual labs",
+        "educational technology",
+        "TPACK framework",
+        "student motivation"
+      ],
+      "date": "2026-02-25",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
@@ -474,6 +636,177 @@ module.exports = {
     }
   ],
   "de": [
+    {
+      "id": "post42",
+      "slug": "triple-science-entitlement-2028-virtual-labs",
+      "title": "Triple Science für alle bis 2028: Die Praktika umsetzen",
+      "description": "Ein Anspruch auf Triple Science kommt im September 2028, aber die praktische Arbeit hat sich seit 2016 fast halbiert. So helfen virtuelle Labore Schulen, ihn umzusetzen.",
+      "keywords": [
+        "Anspruch Triple Science 2028",
+        "Curriculum and Assessment Review",
+        "Francis Review Naturwissenschaft",
+        "Rückgang praktische Naturwissenschaft",
+        "Lehrermangel Physik",
+        "virtuelle Wissenschaftslabore Schulen",
+        "GCSE einzelne Naturwissenschaften",
+        "Chromebook virtuelle Labore"
+      ],
+      "date": "2026-06-25",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post41",
+      "slug": "send-white-paper-2026-science-practicals",
+      "title": "Das SEND-Weißbuch 2026 und der Naturwissenschaftsunterricht",
+      "description": "Das SEND-Weißbuch 2026 gibt jedem Schüler mit SEND einen gesetzlichen Individual Support Plan (individueller Förderplan) und macht Inklusion ab September zu einem Ofsted-Schwerpunkt. Das bedeutet es für den Naturwissenschaftsunterricht.",
+      "keywords": [
+        "SEND-Weißbuch 2026",
+        "individueller Förderplan",
+        "SEND naturwissenschaftliche Praktika",
+        "Ofsted-Inklusionsrahmen 2026",
+        "barrierefreie Wissenschaftslabore SEND",
+        "SEND-Fortschritt belegen",
+        "inklusive naturwissenschaftliche Bildung",
+        "virtuelles Labor SEND"
+      ],
+      "date": "2026-06-15",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post39",
+      "slug": "oecd-process-oriented-assessment-validation",
+      "title": "OECD: Den Prozess bewerten, nicht das Produkt",
+      "description": "Der OECD Digital Education Outlook 2026 empfiehlt offiziell 'prozessorientierte Bewertung' für das KI-Zeitalter. Diese internationale Bestätigung bekräftigt, was WhimsyLabs von Anfang an entwickelt hat.",
+      "keywords": [
+        "OECD Prozessbewertung",
+        "prozessorientierte Benotung",
+        "KI Bildungsbewertung",
+        "virtuelles Labor Bewertung",
+        "technikbasierte Benotung",
+        "OECD Digital Education Outlook 2026",
+        "formative Bewertung KI",
+        "MINT-Bildung",
+        "naturwissenschaftliche Bildungsbewertung"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post40",
+      "slug": "student-ai-use-assessment-crisis-solution",
+      "title": "94% der Studierenden nutzen KI — und das ist nicht das Problem",
+      "description": "Die HEPI-Umfrage 2026 zeigt nahezu universelle KI-Nutzung unter britischen Studierenden. Die eigentliche Krise liegt nicht in der KI-Nutzung selbst, sondern darin, dass wir weiterhin Ergebnisse bewerten, die KI leicht produzieren kann. Prozessbasierte Bewertung bietet eine Lösung.",
+      "keywords": [
+        "KI in der Bildung",
+        "Studierende KI-Nutzung",
+        "Bewertungskrise",
+        "prozessbasierte Bewertung",
+        "KI-sichere Bewertung",
+        "virtuelles Labor Bewertung",
+        "HEPI KI-Umfrage 2026",
+        "KI-Erkennung Fehler"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post35",
+      "slug": "purpose-built-ai-education-difference",
+      "title": "Warum KI eine Pipettiertechnik nicht falsch bewerten kann",
+      "description": "KI-Bewertungssysteme scheitern bei der Interpretation schriftlicher Antworten, aber prozessbasierte Bewertung physischer Handlungen in virtuellen Laboren eliminiert Mehrdeutigkeiten vollständig. Hier erfahren Sie, warum das Messen von Handlungen besser ist als das Analysieren von Texten.",
+      "keywords": [
+        "KI-Bewertungsprobleme",
+        "prozessbasierte Bewertung",
+        "virtuelles Labor Bewertung",
+        "KI-Bewertungsfehler",
+        "automatisierte Aufsatzbewertung",
+        "virtuelles Labor",
+        "naturwissenschaftliche Bildungsbewertung",
+        "Bildungstechnologie"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post36",
+      "slug": "ai-text-grading-fails-process-assessment-works",
+      "title": "Wenn KI 'mindestens eins' falsch liest: Textbewertung scheitert",
+      "description": "Ein Schüler aus Connecticut verlor Punkte, weil die KI 'mindestens eins' als 'nur eins' interpretierte. Über 150 Schüler unterzeichneten eine Petition gegen KI-Bewertung. Deshalb eliminiert die Messung physischer Handlungen dieses Problem vollständig.",
+      "keywords": [
+        "KI-Bewertungsprobleme",
+        "prozessbasierte Bewertung",
+        "virtuelles Labor Bewertung",
+        "KI-Bewertungsfehler",
+        "automatisierte Aufsatzbewertung",
+        "virtuelles Labor",
+        "KI-Textinterpretation",
+        "Bildungstechnologie"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post37",
+      "slug": "process-based-lab-assessment-future",
+      "title": "Den Prozess bewerten, nicht die Antwort: Zukunft der Laborbewertung",
+      "description": "Die Arizona State University bewertet Studierende jetzt nach ihrem Denkprozess in virtuellen Laboren, nicht nur nach den Endergebnissen. Diese Verlagerung zur prozessbasierten Bewertung spiegelt wider, was WhimsyLabs von Anfang an entwickelt hat.",
+      "keywords": [
+        "virtuelles Labor Bewertung",
+        "prozessbasierte Benotung",
+        "KI MINT-Bildung",
+        "Laborkompetenz Bewertung",
+        "wissenschaftliches Denken",
+        "naturwissenschaftliche Bildung",
+        "virtuelles Labor"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post38",
+      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
+      "title": "Britische Schulen: über 50 Mio. £ für KI-Bildung — BETT 2026",
+      "description": "Die Erweiterung der EdTech-Testbeds auf 23 Mio. £, der Konnektivitätsfonds von 45 Mio. £ und der bevorstehende KI-Bildungsgipfel signalisieren einen großen Wandel. Was Schulen jetzt vorbereiten sollten.",
+      "keywords": [
+        "UK EdTech Testbeds",
+        "BETT 2026 Ankündigungen",
+        "KI in britischen Schulen",
+        "MINT-Bildung",
+        "KI-Tutor",
+        "Bildungstechnologie UK",
+        "KI-Bildungsgipfel 2026",
+        "staatliche EdTech-Förderung"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post34",
+      "slug": "vr-stem-education-research-pedagogical-scaffolding",
+      "title": "Neue VR-Studie: Technologie ohne Pädagogik reicht nicht",
+      "description": "Eine Studie in Frontiers in Virtual Reality begleitete den semesterlangen VR-Einsatz in der Neuroanatomie. Das Ergebnis? Die Lehrkraft verstand das Potenzial von VR, aber es fehlte ihr an pädagogischem Wissen. Hier erfahren Sie, was virtuelle Labore wirklich brauchen, um zu funktionieren.",
+      "keywords": [
+        "VR-MINT-Bildung",
+        "Lernen mit Virtual Reality",
+        "Forschung naturwissenschaftliche Bildung",
+        "pädagogisches Scaffolding",
+        "virtuelle Labore",
+        "Bildungstechnologie",
+        "TPACK-Modell",
+        "Schülermotivation"
+      ],
+      "date": "2026-02-25",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
     {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
@@ -1013,6 +1346,168 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post42",
+      "slug": "triple-science-entitlement-2028-virtual-labs",
+      "title": "Triple Science pour tous d'ici 2028 : assurer les travaux pratiques",
+      "description": "Un droit à la Triple Science (les trois sciences distinctes au GCSE) arrive pour septembre 2028, mais les travaux pratiques ont presque diminué de moitié depuis 2016. Voici comment les laboratoires virtuels aident les écoles à le mettre en œuvre.",
+      "keywords": [
+        "droit à la Triple Science 2028",
+        "Curriculum and Assessment Review",
+        "revue Francis sciences",
+        "déclin des sciences pratiques",
+        "pénurie d'enseignants de physique",
+        "laboratoires de sciences virtuels écoles",
+        "sciences distinctes GCSE",
+        "laboratoires virtuels Chromebook"
+      ],
+      "date": "2026-06-25",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post41",
+      "slug": "send-white-paper-2026-science-practicals",
+      "title": "Le Livre blanc SEND 2026 et l'enseignement des sciences",
+      "description": "Le Livre blanc SEND 2026 accorde à chaque élève en situation de SEND (besoins éducatifs particuliers) un Individual Support Plan (plan de soutien individualisé) statutaire et fait de l'inclusion une priorité d'Ofsted dès septembre. Voici ce que cela signifie pour l'enseignement des sciences.",
+      "keywords": [
+        "Livre blanc SEND 2026",
+        "plan de soutien individualisé",
+        "travaux pratiques de sciences SEND",
+        "cadre d'inclusion Ofsted 2026",
+        "laboratoires de sciences accessibles SEND",
+        "preuves de progrès SEND",
+        "éducation scientifique inclusive",
+        "laboratoires virtuels SEND"
+      ],
+      "date": "2026-06-15",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post39",
+      "slug": "oecd-process-oriented-assessment-validation",
+      "title": "OCDE : évaluer le processus, pas le produit, en sciences",
+      "description": "Le Digital Education Outlook 2026 de l'OCDE recommande officiellement 'l'évaluation orientée processus' pour l'ère de l'IA. Cette validation internationale confirme ce que WhimsyLabs construit depuis le début.",
+      "keywords": [
+        "évaluation processus OCDE",
+        "notation orientée processus",
+        "évaluation éducation IA",
+        "évaluation laboratoire virtuel",
+        "notation basée sur la technique",
+        "OECD Digital Education Outlook 2026",
+        "évaluation formative IA",
+        "éducation STEM",
+        "tuteur IA"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post40",
+      "slug": "student-ai-use-assessment-crisis-solution",
+      "title": "94% des étudiants utilisent l'IA — et ce n'est pas le problème",
+      "description": "L'enquête HEPI 2026 montre une utilisation quasi universelle de l'IA parmi les étudiants britanniques. La véritable crise n'est pas l'utilisation de l'IA elle-même, mais le fait que nous continuons à évaluer des résultats que l'IA peut facilement produire. L'évaluation basée sur les processus offre une solution.",
+      "keywords": [
+        "IA dans l'éducation",
+        "utilisation IA étudiants",
+        "crise de l'évaluation",
+        "évaluation basée sur les processus",
+        "évaluation résistante à l'IA",
+        "évaluation laboratoire virtuel",
+        "enquête HEPI IA 2026",
+        "échecs détection IA"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post35",
+      "slug": "purpose-built-ai-education-difference",
+      "title": "IA Spécialisée vs ChatGPT : la Conception Compte 3x Plus",
+      "description": "L'analyse de Pearson de 79 millions d'interactions étudiantes révèle que les outils d'IA spécialisés génèrent 3 fois plus d'apprentissage actif que l'IA généraliste comme ChatGPT.",
+      "keywords": null,
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post36",
+      "slug": "ai-text-grading-fails-process-assessment-works",
+      "title": "Quand l'IA lit mal 'au moins un' : la notation textuelle échoue",
+      "description": "Un étudiant du Connecticut a perdu des points parce que l'IA a interprété 'au moins un' comme 'seulement un'. Plus de 150 étudiants ont signé une pétition contre la notation par IA. Voici pourquoi mesurer les actions physiques élimine complètement ce problème.",
+      "keywords": [
+        "problèmes de notation IA",
+        "évaluation basée sur les processus",
+        "notation laboratoire virtuel",
+        "erreurs d'évaluation IA",
+        "notation automatisée des dissertations",
+        "laboratoire virtuel",
+        "interprétation de texte IA",
+        "technologie éducative"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post37",
+      "slug": "process-based-lab-assessment-future",
+      "title": "Évaluer le Processus, Pas la Réponse : l'Avenir du Laboratoire",
+      "description": "L'Université d'État de l'Arizona évalue désormais les étudiants sur leur processus de raisonnement dans les laboratoires virtuels, pas seulement sur les réponses finales. Ce passage à l'évaluation basée sur le processus reflète ce que WhimsyLabs a construit depuis le début.",
+      "keywords": [
+        "évaluation laboratoire virtuel",
+        "notation basée sur le processus",
+        "éducation STEM IA",
+        "évaluation compétences laboratoire",
+        "raisonnement scientifique",
+        "éducation scientifique",
+        "laboratoire virtuel"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post38",
+      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
+      "title": "Royaume-Uni : +50 M£ pour l'IA éducative et le signal BETT 2026",
+      "description": "L'expansion des EdTech Testbeds à 23 millions de livres, le fonds de connectivité de 45 millions et le prochain Sommet de l'Éducation IA signalent un changement majeur. Voici ce que les écoles doivent préparer.",
+      "keywords": [
+        "UK EdTech Testbeds",
+        "BETT 2026 annonces",
+        "IA dans les écoles britanniques",
+        "éducation STEM",
+        "tuteur IA",
+        "technologie éducative UK",
+        "Sommet Éducation IA 2026",
+        "financement gouvernemental EdTech"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post34",
+      "slug": "vr-stem-education-research-pedagogical-scaffolding",
+      "title": "Étude VR : la technologie sans pédagogie ne suffit pas",
+      "description": "Une étude de Frontiers in Virtual Reality a suivi l'usage de la VR sur tout un semestre en neuroanatomie. Le constat ? Les enseignants comprenaient le potentiel de la VR mais manquaient de savoir pédagogique. Voici ce dont les laboratoires virtuels ont vraiment besoin pour fonctionner.",
+      "keywords": [
+        "éducation STEM en VR",
+        "apprentissage en réalité virtuelle",
+        "recherche en éducation scientifique",
+        "étayage pédagogique",
+        "laboratoires virtuels",
+        "technologie éducative",
+        "cadre TPACK",
+        "motivation des étudiants"
+      ],
+      "date": "2026-02-25",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
       "title": "Les critiques ont raison : la plupart des EdTech sont inutiles",
@@ -1550,6 +2045,168 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post42",
+      "slug": "triple-science-entitlement-2028-virtual-labs",
+      "title": "Triple Science para todos en 2028: cómo impartir las prácticas",
+      "description": "Un derecho a Triple Science llega en septiembre de 2028, pero el trabajo práctico se ha reducido casi a la mitad desde 2016. Esto es cómo los laboratorios virtuales ayudan a los colegios a impartirlo.",
+      "keywords": [
+        "derecho a Triple Science 2028",
+        "Curriculum and Assessment Review",
+        "Francis Review ciencias",
+        "declive de la ciencia practica",
+        "escasez de profesores de fisica",
+        "laboratorios de ciencias virtuales colegios",
+        "ciencias separadas GCSE",
+        "laboratorios virtuales Chromebook"
+      ],
+      "date": "2026-06-25",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post41",
+      "slug": "send-white-paper-2026-science-practicals",
+      "title": "Qué significa el Libro Blanco SEND 2026 para la enseñanza de ciencias",
+      "description": "El Libro Blanco SEND 2026 otorga a cada alumno con SEND un Individual Support Plan (plan de apoyo individual) estatutario y convierte la inclusión en un foco de Ofsted desde septiembre. Esto es lo que significa para la enseñanza de ciencias.",
+      "keywords": [
+        "Libro Blanco SEND 2026",
+        "plan de apoyo individual",
+        "practicas de ciencias SEND",
+        "marco de inclusion Ofsted 2026",
+        "laboratorios de ciencias accesibles SEND",
+        "evidenciar progreso SEND",
+        "educacion cientifica inclusiva",
+        "laboratorio virtual SEND"
+      ],
+      "date": "2026-06-15",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post39",
+      "slug": "oecd-process-oriented-assessment-validation",
+      "title": "OCDE: Evalúa el proceso, no el producto, en ciencias",
+      "description": "El OECD Digital Education Outlook 2026 recomienda oficialmente la 'evaluación orientada al proceso' para la era de la IA. Esta validación internacional confirma lo que WhimsyLabs ha construido desde el principio.",
+      "keywords": [
+        "evaluación de procesos OCDE",
+        "calificación orientada al proceso",
+        "evaluación educación IA",
+        "evaluación laboratorio virtual",
+        "calificación basada en técnica",
+        "OECD Digital Education Outlook 2026",
+        "evaluación formativa IA",
+        "educación STEM",
+        "tutor IA"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post40",
+      "slug": "student-ai-use-assessment-crisis-solution",
+      "title": "El 94% usa IA en trabajos evaluados, y no es el problema",
+      "description": "La encuesta HEPI 2026 muestra un uso casi universal de IA entre estudiantes británicos. La verdadera crisis no es el uso de IA en sí, sino que seguimos evaluando resultados que la IA puede producir fácilmente. La evaluación basada en procesos ofrece una solución.",
+      "keywords": [
+        "IA en educación",
+        "uso de IA por estudiantes",
+        "crisis de evaluación",
+        "evaluación basada en procesos",
+        "evaluación a prueba de IA",
+        "evaluación laboratorio virtual",
+        "encuesta HEPI IA 2026",
+        "fallos detección IA"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post35",
+      "slug": "purpose-built-ai-education-difference",
+      "title": "IA Especializada vs ChatGPT: el Diseño Importa 3 Veces Más",
+      "description": "El análisis de Pearson de 79 millones de interacciones estudiantiles revela que las herramientas de IA especializadas impulsan 3 veces más aprendizaje activo que la IA de propósito general como ChatGPT.",
+      "keywords": null,
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post36",
+      "slug": "ai-text-grading-fails-process-assessment-works",
+      "title": "La IA malinterpreta 'al menos uno': la evaluación textual falla",
+      "description": "Un estudiante de Connecticut perdió puntos porque la IA interpretó 'al menos uno' como 'solo uno'. Más de 150 estudiantes firmaron una petición contra la calificación por IA. Por eso medir acciones físicas elimina este problema por completo.",
+      "keywords": [
+        "problemas de calificación IA",
+        "evaluación basada en procesos",
+        "calificación laboratorio virtual",
+        "errores de evaluación IA",
+        "calificación automatizada de ensayos",
+        "laboratorio virtual",
+        "interpretación de texto IA",
+        "tecnología educativa"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post37",
+      "slug": "process-based-lab-assessment-future",
+      "title": "Evaluar el Proceso, No la Respuesta: el Futuro del Laboratorio",
+      "description": "La Universidad Estatal de Arizona ahora califica a los estudiantes por su proceso de razonamiento en laboratorios virtuales, no solo por las respuestas finales. Este cambio hacia la evaluación basada en procesos refleja lo que WhimsyLabs ha construido desde el principio.",
+      "keywords": [
+        "evaluación laboratorio virtual",
+        "calificación basada en procesos",
+        "educación STEM IA",
+        "evaluación habilidades laboratorio",
+        "razonamiento científico",
+        "educación científica",
+        "laboratorio virtual"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post38",
+      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
+      "title": "Reino Unido: +50 M£ para educación con IA y la señal de BETT 2026",
+      "description": "La expansión de 23 millones de libras en EdTech Testbeds, el fondo de conectividad de 45 millones y la próxima Cumbre de Educación con IA señalan un cambio importante. Esto es lo que las escuelas deben preparar.",
+      "keywords": [
+        "UK EdTech Testbeds",
+        "BETT 2026 anuncios",
+        "IA en escuelas del Reino Unido",
+        "educación STEM",
+        "tutor IA",
+        "tecnología educativa Reino Unido",
+        "Cumbre Educación IA 2026",
+        "financiación gubernamental EdTech"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post34",
+      "slug": "vr-stem-education-research-pedagogical-scaffolding",
+      "title": "Nueva investigación en RV: la tecnología sin pedagogía no basta",
+      "description": "Un estudio de Frontiers in Virtual Reality siguió el uso de RV durante un semestre en neuroanatomía. ¿El hallazgo? Los instructores entendían el potencial de la RV pero carecían de conocimiento pedagógico. Esto es lo que los laboratorios virtuales necesitan para funcionar de verdad.",
+      "keywords": [
+        "RV en educación STEM",
+        "aprendizaje con realidad virtual",
+        "investigación en educación científica",
+        "andamiaje pedagógico",
+        "laboratorios virtuales",
+        "tecnología educativa",
+        "marco TPACK",
+        "motivación estudiantil"
+      ],
+      "date": "2026-02-25",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",
       "title": "Los Críticos Tienen Razón: La Mayoría del EdTech Es Inútil",
@@ -2086,6 +2743,178 @@ module.exports = {
     }
   ],
   "ja": [
+    {
+      "id": "post42",
+      "slug": "triple-science-entitlement-2028-virtual-labs",
+      "title": "2028年までにTriple Scienceをすべての生徒に：実験をどう実現するか",
+      "description": "Triple Science（生物・化学・物理の3科目別履修）の権利保障が2028年9月に到来しますが、実践的な実験は2016年以降ほぼ半減しています。仮想実験室が学校の実現をどう支援するかを解説します。",
+      "keywords": [
+        "Triple Science 権利保障 2028",
+        "Curriculum and Assessment Review",
+        "Francisレビュー 理科",
+        "実践的な理科の減少",
+        "物理教師の不足",
+        "学校向け仮想実験室",
+        "GCSE 理科別科目",
+        "Chromebook 仮想実験室"
+      ],
+      "date": "2026-06-25",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post41",
+      "slug": "send-white-paper-2026-science-practicals",
+      "title": "2026年SEND白書が理科教育にもたらす意味",
+      "description": "2026年のSEND白書は、SENDのあるすべての児童生徒に法定の個別支援計画（ISP）を保障し、9月からインクルージョンをOfstedの重点項目とします。これが理科教育に何を意味するのかを解説します。",
+      "keywords": [
+        "SEND白書 2026",
+        "個別支援計画",
+        "SEND 理科実験",
+        "Ofstedインクルージョン枠組み 2026",
+        "アクセシブルな理科実験室 SEND",
+        "SEND進捗のエビデンス化",
+        "インクルーシブな理科教育",
+        "仮想実験室 SEND"
+      ],
+      "date": "2026-06-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post39",
+      "slug": "oecd-process-oriented-assessment-validation",
+      "title": "OECDが推奨：成果物ではなくプロセスを評価する — 理科教育への意味",
+      "description": "OECD Digital Education Outlook 2026はAI時代の「プロセス指向評価」を公式に推奨しています。この国際的な検証は、WhimsyLabsが最初から構築してきたアプローチを確認するものです。",
+      "keywords": [
+        "OECDプロセス評価",
+        "プロセス指向の評定",
+        "AI教育評価",
+        "仮想実験室評価",
+        "技術ベースの評定",
+        "OECD Digital Education Outlook 2026",
+        "形成的評価AI",
+        "STEM教育",
+        "AIチューター",
+        "バーチャルラボ"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post40",
+      "slug": "student-ai-use-assessment-crisis-solution",
+      "title": "学生の94%が評価課題でAIを使用：それは問題ではない",
+      "description": "HEPI 2026年調査は、英国の学生の間でAI利用がほぼ普遍的であることを示しています。本当の危機はAIの利用そのものではなく、AIが容易に生成できる成果物を依然として評価していることです。プロセスベースの評価が解決策を提供します。",
+      "keywords": [
+        "教育におけるAI",
+        "学生のAI利用",
+        "評価の危機",
+        "プロセスベース評価",
+        "AI耐性評価",
+        "仮想実験室評価",
+        "HEPI AI調査2026",
+        "AI検出の失敗"
+      ],
+      "date": "2026-03-19",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post35",
+      "slug": "purpose-built-ai-education-difference",
+      "title": "AIがピペッティング技術を誤採点できない理由",
+      "description": "AIの採点システムは書面での回答の解釈に失敗しますが、バーチャルラボでの物理的な動作のプロセスベース評価は曖昧さを完全に排除します。学生が書いた内容を解析するよりも、学生が実際に行ったことを測定する方が優れている理由をご説明します。",
+      "keywords": [
+        "AI採点の問題",
+        "プロセスベース評価",
+        "バーチャルラボ採点",
+        "AI評価エラー",
+        "自動エッセイ採点",
+        "仮想実験室",
+        "理科教育評価",
+        "教育テクノロジー"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post36",
+      "slug": "ai-text-grading-fails-process-assessment-works",
+      "title": "AIが「少なくとも1つ」を誤読：テキスト評価が失敗する理由",
+      "description": "コネチカット州の学生は、AIが「少なくとも1つ」を「1つだけ」と解釈したために減点されました。150人以上の学生がAI採点に反対する請願書に署名しました。物理的な動作を測定することがこの問題を完全に排除する理由をご説明します。",
+      "keywords": [
+        "AI採点の問題",
+        "プロセスベース評価",
+        "バーチャルラボ採点",
+        "AI評価エラー",
+        "自動エッセイ採点",
+        "仮想実験室",
+        "AIテキスト解釈",
+        "教育テクノロジー"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post37",
+      "slug": "process-based-lab-assessment-future",
+      "title": "答えではなくプロセスを評価する：実験室評価の未来",
+      "description": "アリゾナ州立大学は、最終的な答えだけでなく、仮想実験室での推論プロセスで学生を評価しています。このプロセスベースの評価への移行は、WhimsyLabsが最初から構築してきたものを反映しています。",
+      "keywords": [
+        "仮想実験室評価",
+        "プロセスベース評価",
+        "STEM教育AI",
+        "実験室スキル評価",
+        "科学的推論",
+        "科学教育",
+        "バーチャルラボ"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post38",
+      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
+      "title": "英国の学校がAI教育に5,000万ポンド以上を獲得：BETT 2026がEdTechに示すもの",
+      "description": "EdTech Testbedsの2,300万ポンドへの拡大、4,500万ポンドの接続性基金、そして今後のAI教育サミットは大きな転換を示しています。学校が準備すべきことをご紹介します。",
+      "keywords": [
+        "UK EdTech Testbeds",
+        "BETT 2026 発表",
+        "英国学校のAI",
+        "STEM教育",
+        "AIチューター",
+        "教育テクノロジー UK",
+        "AI教育サミット 2026",
+        "政府EdTech資金"
+      ],
+      "date": "2026-03-11",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post34",
+      "slug": "vr-stem-education-research-pedagogical-scaffolding",
+      "title": "新たなVR研究が確認：教育法なきテクノロジーは機能しない",
+      "description": "Frontiers in Virtual Realityの研究が、神経解剖学における学期を通じたVR利用を追跡しました。その結論とは？教員はVRの可能性を理解していたものの、教育法の知識が不足していたのです。バーチャルラボが実際に機能するために必要なものをご説明します。",
+      "keywords": [
+        "VR STEM教育",
+        "バーチャルリアリティ学習",
+        "理科教育研究",
+        "教育的スキャフォールディング",
+        "バーチャルラボ",
+        "教育テクノロジー",
+        "TPACKフレームワーク",
+        "学生のモチベーション"
+      ],
+      "date": "2026-02-25",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
     {
       "id": "post33",
       "slug": "edtech-critics-right-passive-learning-vs-active-labs",

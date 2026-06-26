@@ -17,7 +17,9 @@ class TitleLengthValidator {
   }
   
   isWhitelistedForShortTitle(relativePath) {
-    return this.shortTitleWhitelist.some(pattern => pattern.test(relativePath));
+    // Normalize Windows backslashes so the `^jp/` whitelist matches on all platforms.
+    const normalized = relativePath.replace(/\\/g, '/');
+    return this.shortTitleWhitelist.some(pattern => pattern.test(normalized));
   }
 
   async validateAllFiles() {

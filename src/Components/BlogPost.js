@@ -43,6 +43,9 @@ import * as Post30 from './blog/Post30';
 import * as Post31 from './blog/Post31';
 import * as Post32 from './blog/Post32';
 import * as Post33 from './blog/Post33';
+import * as Post34 from './blog/Post34';
+import * as Post35 from './blog/Post35';
+import * as Post38 from './blog/Post38';
 
 // Blog Article Speaker - Uses pre-generated audio with Web Speech API fallback
 const ArticleSpeaker = ({ language = 'en', postNumber }) => {
@@ -437,6 +440,27 @@ const fallbackPosts = [
     content: Post33.content,
     date: Post33.date,
     description: Post33.description,
+  },
+  {
+    id: Post34.slug,
+    title: Post34.title,
+    content: Post34.content,
+    date: Post34.date,
+    description: Post34.description,
+  },
+  {
+    id: Post35.slug,
+    title: Post35.title,
+    content: Post35.content,
+    date: Post35.date,
+    description: Post35.description,
+  },
+  {
+    id: Post38.slug,
+    title: Post38.title,
+    content: Post38.content,
+    date: Post38.date,
+    description: Post38.description,
   }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
@@ -474,7 +498,16 @@ const slugToPostId = {
   'premium-science-education-accessible-grants': 'post30',
   'uk-government-ai-education-funding-2026': 'post31',
   'pearson-webinar-vr-assessment-ai-age': 'post32',
-  'edtech-critics-right-passive-learning-vs-active-labs': 'post33'
+  'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
+  'vr-stem-education-research-pedagogical-scaffolding': 'post34',
+  'purpose-built-ai-education-difference': 'post35',
+  'ai-text-grading-fails-process-assessment-works': 'post36',
+  'process-based-lab-assessment-future': 'post37',
+  'uk-edtech-testbeds-bett-2026-ai-policy': 'post38',
+  'oecd-process-oriented-assessment-validation': 'post39',
+  'student-ai-use-assessment-crisis-solution': 'post40',
+  'send-white-paper-2026-science-practicals': 'post41',
+  'triple-science-entitlement-2028-virtual-labs': 'post42'
 };
 
 const BlogPost = (props = {}) => {
@@ -533,7 +566,7 @@ const BlogPost = (props = {}) => {
               slug: routeSlug,
               title: postData.title,
               content: postData.content,
-              date: fallbackPost?.date || '2025-01-01', // Use fallback date
+              date: postData.date || fallbackPost?.date || '2025-01-01', // Prefer authoritative date from translation data, then fallback
               description: postData.description
             };
             

@@ -67,6 +67,9 @@ const PrivacyPage = ({ t, currentLang, language }) => {
                 <div className="company-detail-card">
                   <h3>📋 {t('privacy.companyInfo.ico')}</h3>
                   <p>{t('privacy.companyInfo.icoDesc')}</p>
+                  <a href="https://ico.org.uk/ESDWebPages/Entry/ZB548128" target="_blank" rel="noopener noreferrer" className="ico-link">
+                    View ICO Registration →
+                  </a>
                 </div>
                 
                 <div className="company-detail-card">

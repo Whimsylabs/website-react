@@ -55,7 +55,7 @@ The app will run in development mode at [http://localhost:3000](http://localhost
 ### Development
 - `npm start` - Run development server (port 3000)
 - `npm run dev` - Build and run dev server with auto-rebuild (port 3001)
-- `npx serve -s build` - Serve built site locally
+- `npx serve build` - Serve built site locally (do NOT use `-s`; this is an MPA, and `-s` makes serve return the home page for every route)
 
 ### Building
 - `npm run build-static` - **Primary build command** for production (builds React + static HTML)

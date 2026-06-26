@@ -13,6 +13,13 @@ import DataSecurityPage from "./Components/DataSecurityPage";
 import BettPage from "./Components/BettPage";
 import GrantsPage from "./Components/GrantsPage";
 import RoyalSocietyGrantPage from "./Components/RoyalSocietyGrantPage";
+import ScienceCommunityGrantPage from "./Components/ScienceCommunityGrantPage";
+import BritishScienceWeekGrantPage from "./Components/BritishScienceWeekGrantPage";
+import JapanEducationGrantPage from "./Components/JapanEducationGrantPage";
+import ErasmusGrantPage from "./Components/ErasmusGrantPage";
+import ArmourersGrantPage from "./Components/ArmourersGrantPage";
+import UKSchoolFundingGrantPage from "./Components/UKSchoolFundingGrantPage";
+import USGrantsPage from "./Components/USGrantsPage";
 import ChemistryPage from "./Components/ChemistryPage";
 import BiologyPage from "./Components/BiologyPage";
 import PhysicsPage from "./Components/PhysicsPage";
@@ -60,6 +67,20 @@ function App(props = {}) {
       return <GrantsPage language={language} />;
     if (basePath === "/grants/royal-society/" || basePath === "/grants/royal-society")
       return <RoyalSocietyGrantPage language={language} />;
+    if (basePath === "/grants/science-community/" || basePath === "/grants/science-community")
+      return <ScienceCommunityGrantPage language={language} />;
+    if (basePath === "/grants/british-science-week/" || basePath === "/grants/british-science-week")
+      return <BritishScienceWeekGrantPage language={language} />;
+    if (basePath === "/grants/japan-education/" || basePath === "/grants/japan-education")
+      return <JapanEducationGrantPage language={language} />;
+    if (basePath === "/grants/erasmus-plus/" || basePath === "/grants/erasmus-plus")
+      return <ErasmusGrantPage language={language} />;
+    if (basePath === "/grants/armourers/" || basePath === "/grants/armourers")
+      return <ArmourersGrantPage language={language} />;
+    if (basePath === "/grants/uk-school-funding/" || basePath === "/grants/uk-school-funding")
+      return <UKSchoolFundingGrantPage language={language} />;
+    if (basePath === "/grants/us-education/" || basePath === "/grants/us-education")
+      return <USGrantsPage language={language} />;
     if (basePath === "/chemistry/" || basePath === "/chemistry")
       return <ChemistryPage language={language} />;
     if (basePath === "/biology/" || basePath === "/biology")

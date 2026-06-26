@@ -36,12 +36,12 @@ const FeaturesPage = ({ language }) => {
     },
     {
       id: "physics-engine",
-      title: "Physics Engine",
+      title: "Physics Lab Simulator",
       description:
         "Proprietary physics engine with 99.7% accuracy simulation, processing thousands of molecular interactions per second. Real-time fluid dynamics and molecular behavior modeling.",
       videoId: "jNQXAC9IVRw",
       icon: "/images/cat_vr.png",
-      blogLink: "/blog/physicality-in-virtual-labs/",
+      blogLink: "/blog/virtual-physics-lab-simulations-teach/",
     },
     {
       id: "hand-representation",

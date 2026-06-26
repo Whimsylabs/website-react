@@ -160,6 +160,18 @@
   text-align: center;
 }
 
+.physics-learn-more-link {
+  color: #f9d71c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.physics-learn-more-link:hover {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
 /* Experiments Section */
 .physics-experiments-section {
   padding: 80px 0;

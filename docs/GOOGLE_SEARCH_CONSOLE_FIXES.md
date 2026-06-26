@@ -96,7 +96,7 @@ Google Search Console reported multiple URLs with "Page with redirect" errors, p
 
 ### Local Testing
 1. Build the site: `npm run build-static`
-2. Test the 404.html locally: `npx serve -s build`
+2. Test the 404.html locally: `npx serve build` (without `-s`, so missing paths hit the real 404.html instead of being rewritten to home)
 3. Try these URLs to verify redirects work:
    - `http://localhost:3000/es/blog` (should add trailing slash)
    - `http://localhost:3000/de/services` (should add trailing slash)

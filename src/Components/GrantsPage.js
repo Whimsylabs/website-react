@@ -7,7 +7,10 @@ import AnimatedTitle from "./AnimatedTitle";
 import withTranslation from "./withTranslation";
 import { getLocalizedPath } from "../i18n";
 
-// Grant data - Royal Society is UK-only so not translated
+// Grant data organized by region
+// Grant cards shown on the /grants index. Content is hardcoded English (like the
+// detail pages); the page chrome (hero/intro/grid/support) is translated via t().
+// Keep this list in sync with the grant detail pages and src/data/grantMetadata.js.
 const GRANTS_DATA = [
   {
     id: "royal-society",
@@ -18,16 +21,84 @@ const GRANTS_DATA = [
     description: "Funding for investigative STEM projects that bring cutting-edge science into the classroom through partnerships with research scientists.",
     link: "/grants/royal-society/",
     available: true,
-    translateKey: null, // UK-specific, no translation
+    translateKey: null,
   },
   {
-    id: "coming-soon-1",
-    country: "Various",
-    flag: "🌍",
-    amount: "TBD",
-    link: null,
-    available: false,
-    translateKey: "moreGrants", // Use translation
+    id: "science-community",
+    name: "Royal Society Science Community Grant",
+    country: "UK",
+    flag: "🇬🇧",
+    amount: "£105,000",
+    description: "Three-year funding for organisations leading clusters of 25+ schools to build sustainable partnerships with STEM professionals.",
+    link: "/grants/science-community/",
+    available: true,
+    translateKey: null,
+  },
+  {
+    id: "armourers",
+    name: "Armourers & Brasiers Science Grants",
+    country: "UK",
+    flag: "🇬🇧",
+    amount: "£600 - £1,000",
+    description: "Funding for practical science equipment and enrichment in UK primary and secondary schools, so students can enjoy hands-on science.",
+    link: "/grants/armourers/",
+    available: true,
+    translateKey: null,
+  },
+  {
+    id: "uk-school-funding",
+    name: "Pupil Premium & SEN Funding",
+    country: "UK",
+    flag: "🇬🇧",
+    amount: "£1,100 - £2,690",
+    description: "Use your school's existing Pupil Premium and notional SEN budgets to fund WhimsyLabs — both allow instructional and assistive software.",
+    link: "/grants/uk-school-funding/",
+    available: true,
+    translateKey: null,
+  },
+  {
+    id: "british-science-week",
+    name: "British Science Week",
+    country: "UK",
+    flag: "🇬🇧",
+    amount: "£400",
+    description: "Kick Start grants for schools in challenging circumstances to run STEM events during British Science Week each March.",
+    link: "/grants/british-science-week/",
+    available: true,
+    translateKey: null,
+  },
+  {
+    id: "erasmus-plus",
+    name: "Erasmus+ Cooperation Partnerships",
+    country: "EU",
+    flag: "🇪🇺",
+    amount: "€120,000 - €400,000",
+    description: "EU KA220 funding for cross-border school partnerships, supporting digital tools, innovative teaching, and teacher training.",
+    link: "/grants/erasmus-plus/",
+    available: true,
+    translateKey: null,
+  },
+  {
+    id: "us-education",
+    name: "US Title IV-A & DonorsChoose",
+    country: "USA",
+    flag: "🇺🇸",
+    amount: "Varies",
+    description: "Fund WhimsyLabs through Title IV-A technology funds and DonorsChoose, where digital subscriptions and VR are eligible for K-12 schools.",
+    link: "/grants/us-education/",
+    available: true,
+    translateKey: null,
+  },
+  {
+    id: "japan-education",
+    name: "Japan Education Grants",
+    country: "Japan",
+    flag: "🇯🇵",
+    amount: "Varies",
+    description: "MEXT GIGA School devices plus foundation grants (Panasonic, Takeda) that fund science software and STEAM projects in Japanese schools.",
+    link: "/grants/japan-education/",
+    available: true,
+    translateKey: null,
   },
 ];
 
