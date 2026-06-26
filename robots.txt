@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-02-20
+# Last updated: 2026-06-26
 
 User-agent: *
 Allow: /
@@ -58,6 +58,7 @@ Allow: /blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /blog/ai-assessment-crisis-solution/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /blog/ai-science-tutor-classroom-what-works/
+Allow: /blog/ai-text-grading-fails-process-assessment-works/
 Allow: /blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /blog/edtech-vendor-security-questions-powerschool/
 Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -65,13 +66,20 @@ Allow: /blog/gamification-science-education-points-rewards-engagement/
 Allow: /blog/green-labs-sustainability-virtual-stem-education/
 Allow: /blog/how-to-choose-virtual-lab-software-school/
 Allow: /blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /blog/oecd-process-oriented-assessment-validation/
 Allow: /blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /blog/physicality-in-virtual-labs/
 Allow: /blog/premium-science-education-accessible-grants/
+Allow: /blog/process-based-lab-assessment-future/
+Allow: /blog/purpose-built-ai-education-difference/
 Allow: /blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /blog/sandbox-learning-revolution-stem-education/
 Allow: /blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /blog/send-white-paper-2026-science-practicals/
+Allow: /blog/student-ai-use-assessment-crisis-solution/
 Allow: /blog/teachers-are-experts-custom-experiment-designer/
+Allow: /blog/triple-science-entitlement-2028-virtual-labs/
+Allow: /blog/uk-edtech-testbeds-bett-2026-ai-policy/
 Allow: /blog/uk-government-ai-education-funding-2026/
 Allow: /blog/virtual-biology-lab-dissections-microscopy/
 Allow: /blog/virtual-chemistry-lab-teachers-guide/
@@ -81,6 +89,7 @@ Allow: /blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /blog/virtual-physics-lab-simulations-teach/
 Allow: /blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /blog/vr-stem-education-research-pedagogical-scaffolding/
 Allow: /blog/vr-winter-web-first-virtual-labs/
 Allow: /blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /blog/whimsylabs-bett-2026-exhibition-announcement/
@@ -96,6 +105,7 @@ Allow: /de/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /de/blog/ai-assessment-crisis-solution/
 Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /de/blog/ai-science-tutor-classroom-what-works/
+Allow: /de/blog/ai-text-grading-fails-process-assessment-works/
 Allow: /de/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /de/blog/edtech-vendor-security-questions-powerschool/
 Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -103,13 +113,20 @@ Allow: /de/blog/gamification-science-education-points-rewards-engagement/
 Allow: /de/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /de/blog/how-to-choose-virtual-lab-software-school/
 Allow: /de/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /de/blog/oecd-process-oriented-assessment-validation/
 Allow: /de/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /de/blog/physicality-in-virtual-labs/
 Allow: /de/blog/premium-science-education-accessible-grants/
+Allow: /de/blog/process-based-lab-assessment-future/
+Allow: /de/blog/purpose-built-ai-education-difference/
 Allow: /de/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /de/blog/sandbox-learning-revolution-stem-education/
 Allow: /de/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /de/blog/send-white-paper-2026-science-practicals/
+Allow: /de/blog/student-ai-use-assessment-crisis-solution/
 Allow: /de/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /de/blog/triple-science-entitlement-2028-virtual-labs/
+Allow: /de/blog/uk-edtech-testbeds-bett-2026-ai-policy/
 Allow: /de/blog/uk-government-ai-education-funding-2026/
 Allow: /de/blog/virtual-biology-lab-dissections-microscopy/
 Allow: /de/blog/virtual-chemistry-lab-teachers-guide/
@@ -119,6 +136,7 @@ Allow: /de/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /de/blog/virtual-physics-lab-simulations-teach/
 Allow: /de/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /de/blog/vr-stem-education-research-pedagogical-scaffolding/
 Allow: /de/blog/vr-winter-web-first-virtual-labs/
 Allow: /de/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /de/blog/whimsylabs-bett-2026-exhibition-announcement/
@@ -130,7 +148,14 @@ Allow: /de/data-security/
 Allow: /de/faq/
 Allow: /de/features/
 Allow: /de/grants/
+Allow: /de/grants/armourers/
+Allow: /de/grants/british-science-week/
+Allow: /de/grants/erasmus-plus/
+Allow: /de/grants/japan-education/
 Allow: /de/grants/royal-society/
+Allow: /de/grants/science-community/
+Allow: /de/grants/uk-school-funding/
+Allow: /de/grants/us-education/
 Allow: /de/privacy/
 Allow: /de/services/
 Allow: /es/
@@ -140,6 +165,7 @@ Allow: /es/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /es/blog/ai-assessment-crisis-solution/
 Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /es/blog/ai-science-tutor-classroom-what-works/
+Allow: /es/blog/ai-text-grading-fails-process-assessment-works/
 Allow: /es/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /es/blog/edtech-vendor-security-questions-powerschool/
 Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -147,13 +173,20 @@ Allow: /es/blog/gamification-science-education-points-rewards-engagement/
 Allow: /es/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /es/blog/how-to-choose-virtual-lab-software-school/
 Allow: /es/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /es/blog/oecd-process-oriented-assessment-validation/
 Allow: /es/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /es/blog/physicality-in-virtual-labs/
 Allow: /es/blog/premium-science-education-accessible-grants/
+Allow: /es/blog/process-based-lab-assessment-future/
+Allow: /es/blog/purpose-built-ai-education-difference/
 Allow: /es/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /es/blog/sandbox-learning-revolution-stem-education/
 Allow: /es/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /es/blog/send-white-paper-2026-science-practicals/
+Allow: /es/blog/student-ai-use-assessment-crisis-solution/
 Allow: /es/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /es/blog/triple-science-entitlement-2028-virtual-labs/
+Allow: /es/blog/uk-edtech-testbeds-bett-2026-ai-policy/
 Allow: /es/blog/uk-government-ai-education-funding-2026/
 Allow: /es/blog/virtual-biology-lab-dissections-microscopy/
 Allow: /es/blog/virtual-chemistry-lab-teachers-guide/
@@ -163,6 +196,7 @@ Allow: /es/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /es/blog/virtual-physics-lab-simulations-teach/
 Allow: /es/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /es/blog/vr-stem-education-research-pedagogical-scaffolding/
 Allow: /es/blog/vr-winter-web-first-virtual-labs/
 Allow: /es/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /es/blog/whimsylabs-bett-2026-exhibition-announcement/
@@ -174,7 +208,14 @@ Allow: /es/data-security/
 Allow: /es/faq/
 Allow: /es/features/
 Allow: /es/grants/
+Allow: /es/grants/armourers/
+Allow: /es/grants/british-science-week/
+Allow: /es/grants/erasmus-plus/
+Allow: /es/grants/japan-education/
 Allow: /es/grants/royal-society/
+Allow: /es/grants/science-community/
+Allow: /es/grants/uk-school-funding/
+Allow: /es/grants/us-education/
 Allow: /es/privacy/
 Allow: /es/services/
 Allow: /faq/
@@ -186,6 +227,7 @@ Allow: /fr/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /fr/blog/ai-assessment-crisis-solution/
 Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /fr/blog/ai-science-tutor-classroom-what-works/
+Allow: /fr/blog/ai-text-grading-fails-process-assessment-works/
 Allow: /fr/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /fr/blog/edtech-vendor-security-questions-powerschool/
 Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -193,13 +235,20 @@ Allow: /fr/blog/gamification-science-education-points-rewards-engagement/
 Allow: /fr/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /fr/blog/how-to-choose-virtual-lab-software-school/
 Allow: /fr/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /fr/blog/oecd-process-oriented-assessment-validation/
 Allow: /fr/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /fr/blog/physicality-in-virtual-labs/
 Allow: /fr/blog/premium-science-education-accessible-grants/
+Allow: /fr/blog/process-based-lab-assessment-future/
+Allow: /fr/blog/purpose-built-ai-education-difference/
 Allow: /fr/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /fr/blog/sandbox-learning-revolution-stem-education/
 Allow: /fr/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /fr/blog/send-white-paper-2026-science-practicals/
+Allow: /fr/blog/student-ai-use-assessment-crisis-solution/
 Allow: /fr/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /fr/blog/triple-science-entitlement-2028-virtual-labs/
+Allow: /fr/blog/uk-edtech-testbeds-bett-2026-ai-policy/
 Allow: /fr/blog/uk-government-ai-education-funding-2026/
 Allow: /fr/blog/virtual-biology-lab-dissections-microscopy/
 Allow: /fr/blog/virtual-chemistry-lab-teachers-guide/
@@ -209,6 +258,7 @@ Allow: /fr/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /fr/blog/virtual-physics-lab-simulations-teach/
 Allow: /fr/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /fr/blog/vr-stem-education-research-pedagogical-scaffolding/
 Allow: /fr/blog/vr-winter-web-first-virtual-labs/
 Allow: /fr/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /fr/blog/whimsylabs-bett-2026-exhibition-announcement/
@@ -220,11 +270,25 @@ Allow: /fr/data-security/
 Allow: /fr/faq/
 Allow: /fr/features/
 Allow: /fr/grants/
+Allow: /fr/grants/armourers/
+Allow: /fr/grants/british-science-week/
+Allow: /fr/grants/erasmus-plus/
+Allow: /fr/grants/japan-education/
 Allow: /fr/grants/royal-society/
+Allow: /fr/grants/science-community/
+Allow: /fr/grants/uk-school-funding/
+Allow: /fr/grants/us-education/
 Allow: /fr/privacy/
 Allow: /fr/services/
 Allow: /grants/
+Allow: /grants/armourers/
+Allow: /grants/british-science-week/
+Allow: /grants/erasmus-plus/
+Allow: /grants/japan-education/
 Allow: /grants/royal-society/
+Allow: /grants/science-community/
+Allow: /grants/uk-school-funding/
+Allow: /grants/us-education/
 Allow: /jp/
 Allow: /jp/bett/
 Allow: /jp/blog/
@@ -232,6 +296,7 @@ Allow: /jp/blog/24-7-ai-tutoring-personalized-daily-recommendations/
 Allow: /jp/blog/ai-assessment-crisis-solution/
 Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /jp/blog/ai-science-tutor-classroom-what-works/
+Allow: /jp/blog/ai-text-grading-fails-process-assessment-works/
 Allow: /jp/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /jp/blog/edtech-vendor-security-questions-powerschool/
 Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -239,13 +304,20 @@ Allow: /jp/blog/gamification-science-education-points-rewards-engagement/
 Allow: /jp/blog/green-labs-sustainability-virtual-stem-education/
 Allow: /jp/blog/how-to-choose-virtual-lab-software-school/
 Allow: /jp/blog/oecd-ai-learning-paradox-virtual-labs/
+Allow: /jp/blog/oecd-process-oriented-assessment-validation/
 Allow: /jp/blog/pearson-webinar-vr-assessment-ai-age/
 Allow: /jp/blog/physicality-in-virtual-labs/
 Allow: /jp/blog/premium-science-education-accessible-grants/
+Allow: /jp/blog/process-based-lab-assessment-future/
+Allow: /jp/blog/purpose-built-ai-education-difference/
 Allow: /jp/blog/royal-society-partnership-grants-vr-science-labs/
 Allow: /jp/blog/sandbox-learning-revolution-stem-education/
 Allow: /jp/blog/science-real-time-physics-simulations-virtual-labs/
+Allow: /jp/blog/send-white-paper-2026-science-practicals/
+Allow: /jp/blog/student-ai-use-assessment-crisis-solution/
 Allow: /jp/blog/teachers-are-experts-custom-experiment-designer/
+Allow: /jp/blog/triple-science-entitlement-2028-virtual-labs/
+Allow: /jp/blog/uk-edtech-testbeds-bett-2026-ai-policy/
 Allow: /jp/blog/uk-government-ai-education-funding-2026/
 Allow: /jp/blog/virtual-biology-lab-dissections-microscopy/
 Allow: /jp/blog/virtual-chemistry-lab-teachers-guide/
@@ -255,6 +327,7 @@ Allow: /jp/blog/virtual-labs-solve-stem-teacher-shortage-crisis/
 Allow: /jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/
 Allow: /jp/blog/virtual-physics-lab-simulations-teach/
 Allow: /jp/blog/virtual-reality-prepares-students-real-world-stem-careers/
+Allow: /jp/blog/vr-stem-education-research-pedagogical-scaffolding/
 Allow: /jp/blog/vr-winter-web-first-virtual-labs/
 Allow: /jp/blog/whimsycat-ai-tutor-transforming-science-education/
 Allow: /jp/blog/whimsylabs-bett-2026-exhibition-announcement/
@@ -266,13 +339,20 @@ Allow: /jp/data-security/
 Allow: /jp/faq/
 Allow: /jp/features/
 Allow: /jp/grants/
+Allow: /jp/grants/armourers/
+Allow: /jp/grants/british-science-week/
+Allow: /jp/grants/erasmus-plus/
+Allow: /jp/grants/japan-education/
 Allow: /jp/grants/royal-society/
+Allow: /jp/grants/science-community/
+Allow: /jp/grants/uk-school-funding/
+Allow: /jp/grants/us-education/
 Allow: /jp/privacy/
 Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 165 total (included above)
+# Blog posts summary: 210 total (included above)
 
-# Total pages in build: 219
+# Total pages in build: 299
 # This file is generated automatically - do not edit manually

@@ -1,0 +1,249 @@
+{
+  "generated": "2026-02-20T02:00:42.972911",
+  "voices": {
+    "en": "en-GB-SoniaNeural",
+    "es": "es-ES-ElviraNeural",
+    "fr": "fr-FR-DeniseNeural",
+    "de": "de-DE-KatjaNeural",
+    "jp": "ja-JP-NanamiNeural"
+  },
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "jp"
+  ],
+  "posts": {
+    "post11": {
+      "title": "Laboratorios Virtuales vs. Físicos: Análisis Costo-Beneficio",
+      "audio": {
+        "es": "/audio/blog/es/post11.mp3",
+        "fr": "/audio/blog/fr/post11.mp3",
+        "de": "/audio/blog/de/post11.mp3",
+        "jp": "/audio/blog/jp/post11.mp3"
+      }
+    },
+    "post12": {
+      "title": "VR Prepares Students for STEM Careers with Physical Lab Skills",
+      "audio": {
+        "en": "/audio/blog/en/post12.mp3",
+        "es": "/audio/blog/es/post12.mp3",
+        "fr": "/audio/blog/fr/post12.mp3",
+        "de": "/audio/blog/de/post12.mp3",
+        "jp": "/audio/blog/jp/post12.mp3"
+      }
+    },
+    "post13": {
+      "title": "Real-Time Physics: Why Dynamic Simulations Make Learning Fun",
+      "audio": {
+        "en": "/audio/blog/en/post13.mp3",
+        "es": "/audio/blog/es/post13.mp3",
+        "fr": "/audio/blog/fr/post13.mp3",
+        "de": "/audio/blog/de/post13.mp3",
+        "jp": "/audio/blog/jp/post13.mp3"
+      }
+    },
+    "post14": {
+      "title": "Gamification in Science: Points, Rewards, and Creative Expression",
+      "audio": {
+        "en": "/audio/blog/en/post14.mp3",
+        "es": "/audio/blog/es/post14.mp3",
+        "fr": "/audio/blog/fr/post14.mp3",
+        "de": "/audio/blog/de/post14.mp3",
+        "jp": "/audio/blog/jp/post14.mp3"
+      }
+    },
+    "post15": {
+      "title": "We",
+      "audio": {
+        "en": "/audio/blog/en/post15.mp3",
+        "es": "/audio/blog/es/post15.mp3",
+        "fr": "/audio/blog/fr/post15.mp3",
+        "de": "/audio/blog/de/post15.mp3",
+        "jp": "/audio/blog/jp/post15.mp3"
+      }
+    },
+    "post16": {
+      "title": "Why Other Virtual Labs Fail: The Physics Engine Solution",
+      "audio": {
+        "en": "/audio/blog/en/post16.mp3",
+        "es": "/audio/blog/es/post16.mp3",
+        "fr": "/audio/blog/fr/post16.mp3",
+        "de": "/audio/blog/de/post16.mp3",
+        "jp": "/audio/blog/jp/post16.mp3"
+      }
+    },
+    "post17": {
+      "title": "WhimsyLabs Wins Tech&Learning #1 Best of BETT 2026",
+      "audio": {
+        "en": "/audio/blog/en/post17.mp3",
+        "es": "/audio/blog/es/post17.mp3",
+        "fr": "/audio/blog/fr/post17.mp3",
+        "de": "/audio/blog/de/post17.mp3",
+        "jp": "/audio/blog/jp/post17.mp3"
+      }
+    },
+    "post18": {
+      "title": "VR Winter? Why Web-First Virtual Labs Are Smart for Schools",
+      "audio": {
+        "en": "/audio/blog/en/post18.mp3",
+        "es": "/audio/blog/es/post18.mp3",
+        "fr": "/audio/blog/fr/post18.mp3",
+        "de": "/audio/blog/de/post18.mp3",
+        "jp": "/audio/blog/jp/post18.mp3"
+      }
+    },
+    "post19": {
+      "title": "AI Boosted Test Scores 127%. Then Students Couldn",
+      "audio": {
+        "en": "/audio/blog/en/post19.mp3",
+        "es": "/audio/blog/es/post19.mp3",
+        "fr": "/audio/blog/fr/post19.mp3",
+        "de": "/audio/blog/de/post19.mp3",
+        "jp": "/audio/blog/jp/post19.mp3"
+      }
+    },
+    "post20": {
+      "title": "AI Detection Doesn",
+      "audio": {
+        "en": "/audio/blog/en/post20.mp3",
+        "es": "/audio/blog/es/post20.mp3",
+        "fr": "/audio/blog/fr/post20.mp3",
+        "de": "/audio/blog/de/post20.mp3",
+        "jp": "/audio/blog/jp/post20.mp3"
+      }
+    },
+    "post21": {
+      "title": "UK Schools: Get £3,000 for VR Science Labs | Royal Society Grants",
+      "audio": {
+        "en": "/audio/blog/en/post21.mp3",
+        "es": "/audio/blog/es/post21.mp3",
+        "fr": "/audio/blog/fr/post21.mp3",
+        "de": "/audio/blog/de/post21.mp3",
+        "jp": "/audio/blog/jp/post21.mp3"
+      }
+    },
+    "post22": {
+      "title": "10 Questions to Ask EdTech Vendors After the PowerSchool Breach",
+      "audio": {
+        "en": "/audio/blog/en/post22.mp3",
+        "es": "/audio/blog/es/post22.mp3",
+        "fr": "/audio/blog/fr/post22.mp3",
+        "de": "/audio/blog/de/post22.mp3",
+        "jp": "/audio/blog/jp/post22.mp3"
+      }
+    },
+    "post23": {
+      "title": "Teachers Are the Experts. We Just Build the Tools.",
+      "audio": {
+        "en": "/audio/blog/en/post23.mp3",
+        "es": "/audio/blog/es/post23.mp3",
+        "fr": "/audio/blog/fr/post23.mp3",
+        "de": "/audio/blog/de/post23.mp3",
+        "jp": "/audio/blog/jp/post23.mp3"
+      }
+    },
+    "post24": {
+      "title": "Virtual Lab Software for Secondary Schools: A Buyer",
+      "audio": {
+        "en": "/audio/blog/en/post24.mp3",
+        "es": "/audio/blog/es/post24.mp3",
+        "fr": "/audio/blog/fr/post24.mp3",
+        "de": "/audio/blog/de/post24.mp3",
+        "jp": "/audio/blog/jp/post24.mp3"
+      }
+    },
+    "post25": {
+      "title": "Virtual Chemistry Lab: A Teacher",
+      "audio": {
+        "en": "/audio/blog/en/post25.mp3",
+        "es": "/audio/blog/es/post25.mp3",
+        "fr": "/audio/blog/fr/post25.mp3",
+        "de": "/audio/blog/de/post25.mp3",
+        "jp": "/audio/blog/jp/post25.mp3"
+      }
+    },
+    "post26": {
+      "title": "Virtual Labs in Higher Education: A 2026 Buyer",
+      "audio": {
+        "en": "/audio/blog/en/post26.mp3",
+        "es": "/audio/blog/es/post26.mp3",
+        "fr": "/audio/blog/fr/post26.mp3",
+        "de": "/audio/blog/de/post26.mp3",
+        "jp": "/audio/blog/jp/post26.mp3"
+      }
+    },
+    "post27": {
+      "title": "AI Science Tutors in the Classroom: What Actually Works",
+      "audio": {
+        "en": "/audio/blog/en/post27.mp3",
+        "es": "/audio/blog/es/post27.mp3",
+        "fr": "/audio/blog/fr/post27.mp3",
+        "de": "/audio/blog/de/post27.mp3",
+        "jp": "/audio/blog/jp/post27.mp3"
+      }
+    },
+    "post28": {
+      "title": "Virtual Biology Lab: Dissections, Microscopy, and More",
+      "audio": {
+        "en": "/audio/blog/en/post28.mp3",
+        "es": "/audio/blog/es/post28.mp3",
+        "fr": "/audio/blog/fr/post28.mp3",
+        "de": "/audio/blog/de/post28.mp3",
+        "jp": "/audio/blog/jp/post28.mp3"
+      }
+    },
+    "post29": {
+      "title": "Virtual Physics Lab: Simulations That Actually Teach",
+      "audio": {
+        "en": "/audio/blog/en/post29.mp3",
+        "es": "/audio/blog/es/post29.mp3",
+        "fr": "/audio/blog/fr/post29.mp3",
+        "de": "/audio/blog/de/post29.mp3",
+        "jp": "/audio/blog/jp/post29.mp3"
+      }
+    },
+    "post30": {
+      "title": "Making Premium Science Education Accessible to Every School",
+      "audio": {
+        "en": "/audio/blog/en/post30.mp3",
+        "es": "/audio/blog/es/post30.mp3",
+        "fr": "/audio/blog/fr/post30.mp3",
+        "de": "/audio/blog/de/post30.mp3",
+        "jp": "/audio/blog/jp/post30.mp3"
+      }
+    },
+    "post31": {
+      "title": "UK Invests £49m in AI Education: What This Means for Schools",
+      "audio": {
+        "en": "/audio/blog/en/post31.mp3",
+        "es": "/audio/blog/es/post31.mp3",
+        "fr": "/audio/blog/fr/post31.mp3",
+        "de": "/audio/blog/de/post31.mp3",
+        "jp": "/audio/blog/jp/post31.mp3"
+      }
+    },
+    "post32": {
+      "title": "Assessment in the Age of AI: Join Our Pearson Webinar",
+      "audio": {
+        "en": "/audio/blog/en/post32.mp3",
+        "es": "/audio/blog/es/post32.mp3",
+        "fr": "/audio/blog/fr/post32.mp3",
+        "de": "/audio/blog/de/post32.mp3",
+        "jp": "/audio/blog/jp/post32.mp3"
+      }
+    },
+    "post33": {
+      "title": "The Critics Are Right: Most EdTech Is Useless",
+      "audio": {
+        "en": "/audio/blog/en/post33.mp3",
+        "es": "/audio/blog/es/post33.mp3",
+        "fr": "/audio/blog/fr/post33.mp3",
+        "de": "/audio/blog/de/post33.mp3",
+        "jp": "/audio/blog/jp/post33.mp3"
+      }
+    }
+  },
+  "totalPosts": 33
+}
