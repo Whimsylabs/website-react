@@ -66,6 +66,18 @@
           return;
         }
 
+        // Region-specific blog posts are English-only. A localized blog URL that 404s
+        // (e.g. /de/blog/<uk-post>/) means the post is not published in that language,
+        // so send the reader to the English version. Localized posts that DO exist are
+        // real files and never reach this 404 handler, so this only fires for
+        // English-only (or invalid) posts. See src/i18n/blogPostLanguageRestrictions.json.
+        var langBlogMatch = path.match(/^\/(?:de|es|fr|jp)(\/blog\/.+)$/);
+        if (langBlogMatch) {
+          var enBlogPath = langBlogMatch[1].replace(/\/?$/, '/');
+          window.location.replace(enBlogPath + search + hash);
+          return;
+        }
+
         // Handle trailing slash redirects
         // If path doesn't end with / and isn't a file, add trailing slash
         if (!path.endsWith('/') && !path.includes('.')) {

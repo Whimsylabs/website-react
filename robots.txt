@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
 # Generated automatically based on build content
-# Last updated: 2026-06-26
+# Last updated: 2026-06-27
 
 User-agent: *
 Allow: /
@@ -59,6 +59,7 @@ Allow: /blog/ai-assessment-crisis-solution/
 Allow: /blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /blog/ai-science-tutor-classroom-what-works/
 Allow: /blog/ai-text-grading-fails-process-assessment-works/
+Allow: /blog/dfe-ai-safety-standards-tutor-checklist/
 Allow: /blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /blog/edtech-vendor-security-questions-powerschool/
 Allow: /blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -106,6 +107,7 @@ Allow: /de/blog/ai-assessment-crisis-solution/
 Allow: /de/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /de/blog/ai-science-tutor-classroom-what-works/
 Allow: /de/blog/ai-text-grading-fails-process-assessment-works/
+Allow: /de/blog/dfe-ai-safety-standards-tutor-checklist/
 Allow: /de/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /de/blog/edtech-vendor-security-questions-powerschool/
 Allow: /de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -166,6 +168,7 @@ Allow: /es/blog/ai-assessment-crisis-solution/
 Allow: /es/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /es/blog/ai-science-tutor-classroom-what-works/
 Allow: /es/blog/ai-text-grading-fails-process-assessment-works/
+Allow: /es/blog/dfe-ai-safety-standards-tutor-checklist/
 Allow: /es/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /es/blog/edtech-vendor-security-questions-powerschool/
 Allow: /es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -228,6 +231,7 @@ Allow: /fr/blog/ai-assessment-crisis-solution/
 Allow: /fr/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /fr/blog/ai-science-tutor-classroom-what-works/
 Allow: /fr/blog/ai-text-grading-fails-process-assessment-works/
+Allow: /fr/blog/dfe-ai-safety-standards-tutor-checklist/
 Allow: /fr/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /fr/blog/edtech-vendor-security-questions-powerschool/
 Allow: /fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -297,6 +301,7 @@ Allow: /jp/blog/ai-assessment-crisis-solution/
 Allow: /jp/blog/ai-powered-virtual-labs-solving-education-crisis/
 Allow: /jp/blog/ai-science-tutor-classroom-what-works/
 Allow: /jp/blog/ai-text-grading-fails-process-assessment-works/
+Allow: /jp/blog/dfe-ai-safety-standards-tutor-checklist/
 Allow: /jp/blog/edtech-critics-right-passive-learning-vs-active-labs/
 Allow: /jp/blog/edtech-vendor-security-questions-powerschool/
 Allow: /jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/
@@ -352,7 +357,7 @@ Allow: /jp/services/
 Allow: /privacy/
 Allow: /services/
 
-# Blog posts summary: 210 total (included above)
+# Blog posts summary: 215 total (included above)
 
-# Total pages in build: 299
+# Total pages in build: 304
 # This file is generated automatically - do not edit manually
