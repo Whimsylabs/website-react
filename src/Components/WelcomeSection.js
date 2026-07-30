@@ -5,7 +5,7 @@ import ContactUs from './ContactUs';
 import AnimatedTitle from './AnimatedTitle';
 import withTranslation from './withTranslation';
 
-const WelcomeSection = ({ t }) => {
+const WelcomeSection = ({ t, language }) => {
   const titleText = t('home.welcomeTitle');
   const bodyText = t('home.welcomeText');
   const [mounted, setMounted] = useState(false);
@@ -37,7 +37,7 @@ const WelcomeSection = ({ t }) => {
           </div>
         </div>
       </div>
-      <ContactUs buttonText={t('home.joinPilot')} />
+      <ContactUs buttonText={t('home.joinPilot')} language={language} />
     </section>
   );
 };

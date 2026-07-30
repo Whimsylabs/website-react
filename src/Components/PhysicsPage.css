@@ -1,363 +1,57 @@
-/* Physics Page Styles */
+/* Physics theme for the shared subject-lab system.
+   Layout and the opt-in depth classes live in SubjectLab.css — this file
+   supplies the subject accent plus every physics-only retune, so nothing here
+   can disturb the other subject pages. Both files are imported by
+   PhysicsPage.js. */
 
-/* Decorative Background Elements */
-.physics-page {
-  position: relative;
+.lab-page--physics {
+  /* Amber, carried over from the previous physics identity but retuned: the
+     old #fbbf24 was built for a dark ground and fails contrast on white.
+     --accent      graphics and fills
+     --accent-text AA-safe against the light body
+     --accent-lit  the original pale value, for use on the dark bands */
+  --lab-accent: #d97706;
+  --lab-accent-text: #b45309;
+  --lab-accent-lit: #fbbf24;
+
+  /* Tint bands lean warm rather than neutral slate, so the alternation reads */
+  --lab-ground: #fdf8f1;
+  --lab-grid: rgba(217, 119, 6, 0.06);
 }
 
-/* Hero Section */
-.physics-hero-section {
-  background: linear-gradient(135deg, #1a365d 0%, #2563eb 50%, #3b82f6 100%);
-  padding: 120px 20px 80px;
-  position: relative;
-  overflow: hidden;
+/* Squared paper on the tint bands — an exercise book, not a flat fill */
+.lab-page--physics .lab-band--tint {
+  background-image:
+    linear-gradient(var(--lab-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--lab-grid) 1px, transparent 1px);
+  background-size: 26px 26px;
 }
 
-/* Hero decoration */
-.physics-hero-section::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  right: 5%;
-  width: 300px;
-  height: 200px;
-  background: url('../../public/images/subject-physics-decorations.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.15;
-  pointer-events: none;
-  filter: brightness(0) invert(1);
+/* White cards earn resting elevation instead of hover-only */
+.lab-page--physics .lab-cross-item,
+.lab-page--physics .lab-tag {
+  box-shadow: 0 2px 10px rgba(31, 25, 104, 0.06);
 }
 
-.physics-hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
+/* Curriculum tags cycle amber / house blue, the two physics hues */
+.lab-page--physics .lab-tag:nth-child(2n + 1) { border-color: rgba(217, 119, 6, 0.4); background: rgba(217, 119, 6, 0.07); }
+.lab-page--physics .lab-tag:nth-child(2n) { border-color: rgba(20, 183, 255, 0.4); background: rgba(20, 183, 255, 0.08); }
+
+/* Closing CTA gets the site's tiled treatment, bookending the hero.
+   Relative path, not /images/ — css-loader resolves url() as a module. */
+.lab-page--physics .lab-band--tiled {
+  background-image:
+    linear-gradient(180deg, rgba(31, 25, 104, 0.95) 0%, rgba(31, 25, 104, 0.6) 100%),
+    url("../../public/images/tiled.png");
+  background-color: var(--lab-dark-a);
 }
 
-.physics-brand-tag {
-  display: inline-block;
-  background: rgba(251, 191, 36, 0.2);
-  color: #fbbf24;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.physics-hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-.physics-hero-subtitle {
-  font-size: 1.4rem;
-  color: #93c5fd;
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
-}
-
-.physics-hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.physics-btn-primary {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-  color: #1a365d;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
-}
-
-.physics-btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(251, 191, 36, 0.6);
-  color: #1a365d;
-}
-
-.physics-btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border: 2px solid #93c5fd;
-  transition: all 0.3s ease;
-}
-
-.physics-btn-secondary:hover {
-  background: rgba(147, 197, 253, 0.2);
-  color: #ffffff;
-}
-
-.physics-btn-large {
-  padding: 18px 45px;
-  font-size: 1.2rem;
-}
-
-.physics-wave-divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-}
-
-.physics-wave-divider svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* Container */
-.physics-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Section Styles */
-.physics-section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.physics-section-subtitle {
-  font-size: 1.2rem;
-  color: #93c5fd;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-/* Intro Section */
-.physics-intro-section {
-  padding: 80px 0;
-}
-
-.physics-intro-text {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-  text-align: center;
-}
-
-.physics-learn-more-link {
-  color: #f9d71c;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.physics-learn-more-link:hover {
-  color: #ffeb3b;
-  text-decoration: underline;
-}
-
-/* Experiments Section */
-.physics-experiments-section {
-  padding: 80px 0;
-  position: relative;
-}
-
-.physics-experiments-section::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: 3%;
-  width: 200px;
-  height: 150px;
-  background: url('../../public/images/subject-physics-decorations.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.06;
-  pointer-events: none;
-  transform: rotate(-10deg);
-}
-
-.physics-experiments-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.physics-experiment-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(147, 197, 253, 0.2);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.physics-experiment-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(251, 191, 36, 0.4);
-}
-
-.physics-experiment-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.physics-experiment-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 0.75rem;
-}
-
-.physics-experiment-desc {
-  font-size: 1rem;
-  color: #b0b0b0;
-  line-height: 1.6;
-}
-
-/* Benefits Section */
-.physics-benefits-section {
-  padding: 80px 0;
-  background: rgba(26, 54, 93, 0.3);
-}
-
-.physics-benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.physics-benefit-card {
-  text-align: center;
-  padding: 2rem;
-}
-
-.physics-benefit-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
-.physics-benefit-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 0.75rem;
-}
-
-.physics-benefit-desc {
-  font-size: 1rem;
-  color: #c0c0c0;
-  line-height: 1.6;
-}
-
-/* Curriculum Section */
-.physics-curriculum-section {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.physics-curriculum-text {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  line-height: 1.7;
-}
-
-.physics-curriculum-badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.physics-badge {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.2) 0%, rgba(245, 158, 11, 0.2) 100%);
-  border: 1px solid rgba(251, 191, 36, 0.4);
-  color: #ffffff;
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-/* CTA Section */
-.physics-cta-section {
-  padding: 100px 0;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.5) 0%, rgba(59, 130, 246, 0.5) 100%);
-}
-
-.physics-cta-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.physics-cta-text {
-  font-size: 1.2rem;
-  color: #93c5fd;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .physics-hero-section {
-    padding: 100px 15px 60px;
-  }
-
-  .physics-hero-title {
-    font-size: 2.2rem;
-  }
-
-  .physics-hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .physics-section-title {
-    font-size: 1.8rem;
-  }
-
-  .physics-experiments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .physics-benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .physics-intro-section,
-  .physics-experiments-section,
-  .physics-benefits-section,
-  .physics-curriculum-section,
-  .physics-cta-section {
-    padding: 50px 0;
-  }
-
-  /* Hide decorations on mobile */
-  .physics-hero-section::before,
-  .physics-experiments-section::after {
-    display: none;
+/* The hoist rail normally needs 1520px of viewport; between 1380 and 1519px a
+   slimmer rail rides closer to the column so laptops still get it. */
+@media (min-width: 1380px) and (max-width: 1519px) {
+  .lab-page--physics .lab-rail {
+    display: block;
+    width: 84px;
+    right: calc(50% - 600px - 90px);
   }
 }

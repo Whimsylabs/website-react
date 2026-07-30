@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 
 // ANSI color codes for console output
 const colors = {
@@ -256,6 +257,10 @@ function validateBlogPosts() {
 
       if (!fs.existsSync(filePath)) {
         return;
+      }
+
+      if (isRedirectStub(fs.readFileSync(filePath, 'utf8'))) {
+        return; // skip generated redirect stubs
       }
 
       blogPostsChecked++;

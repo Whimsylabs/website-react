@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 const glob = require('glob');
 
 const BUILD_DIR = path.join(__dirname, '../build');
@@ -46,8 +47,9 @@ function validateBreadcrumbs() {
   const skipped = [];
 
   for (const file of htmlFiles) {
+    if (isRedirectStub(fs.readFileSync(file, 'utf8'))) continue; // skip generated redirect stubs
     const relativePath = '/' + path.relative(BUILD_DIR, file).replace(/\\/g, '/');
-    
+
     // Skip home pages
     if (HOME_PAGES.includes(relativePath)) {
       skipped.push(relativePath);

@@ -58,8 +58,12 @@ The app will run in development mode at [http://localhost:3000](http://localhost
 - `npx serve build` - Serve built site locally (do NOT use `-s`; this is an MPA, and `-s` makes serve return the home page for every route)
 
 ### Building
-- `npm run build-static` - **Primary build command** for production (builds React + static HTML)
-- `npm run build-english-only` - Build English-only version (faster for testing)
+
+`npm run build-static` is the canonical production build. Under the hood the build is a two-stage pipeline:
+
+- `npm run build-static` - **Canonical build command**: runs `build-spa` (the CRA/webpack compile), then `node build.js` (prerenders static HTML for every route and language), then the full validator suite. Use this for all deploys.
+- `npm run build-spa` - Internal first stage only: compiles the React app into `build/`. Not deployable on its own — it produces the SPA shell and bundles but no prerendered static HTML.
+- `npm run build-english-only` - Runs `build-spa`, then prerenders English-only static HTML (faster for testing). Skips most validators.
 - `npm run clean-build` - Clean build directory
 
 ### Blog Management

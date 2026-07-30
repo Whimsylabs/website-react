@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import BubbleContainer from "./BubbleContainer";
 import ContactUs from "./ContactUs";
 import AnimatedTitle from "./AnimatedTitle";
+import FeatureHighlights from "./FeatureHighlights";
 import { getLocalizedPath } from '../i18n';
 
 const FeaturesPage = ({ language }) => {
@@ -20,7 +21,7 @@ const FeaturesPage = ({ language }) => {
       id: "sandbox-freedom",
       title: "Sandbox Freedom",
       description:
-        "Complete experimental freedom with over 10,000 equipment permutations and unlimited procedural pathways. Unlike restrictive competitors, students design their own experiments and learn from authentic mistakes.",
+        "Complete experimental freedom: mix any reagent with any equipment and follow your own procedural pathways. Students design their own experiments and learn from authentic mistakes.",
       videoId: "dQw4w9WgXcQ",
       icon: "/images/cat_beaker.png",
       blogLink: "/blog/sandbox-learning-revolution-stem-education/",
@@ -29,7 +30,7 @@ const FeaturesPage = ({ language }) => {
       id: "ai-tutoring",
       title: "AI Tutoring",
       description:
-        "WhimsyCat AI analyzes 200+ behavioral indicators per experiment, providing personalized guidance with 96% correlation to expert assessment. Proactive error detection and contextual support.",
+        "WhimsyCat watches how students work — technique, safety, and procedure — and offers guidance based on their actions. There is no student chat window: pupils never type prompts or receive generated text.",
       videoId: "9D2e2e2gzvk",
       icon: "/images/cat_brain.png",
       blogLink: "/blog/whimsycat-ai-tutor-transforming-science-education/",
@@ -38,7 +39,7 @@ const FeaturesPage = ({ language }) => {
       id: "physics-engine",
       title: "Physics Lab Simulator",
       description:
-        "Proprietary physics engine with 99.7% accuracy simulation, processing thousands of molecular interactions per second. Real-time fluid dynamics and molecular behavior modeling.",
+        "A proprietary physicality-first engine simulates fluids, heat, and molecular behaviour in real time — down to temperature perturbations, impurities, and deviation between samples.",
       videoId: "jNQXAC9IVRw",
       icon: "/images/cat_vr.png",
       blogLink: "/blog/virtual-physics-lab-simulations-teach/",
@@ -47,7 +48,7 @@ const FeaturesPage = ({ language }) => {
       id: "hand-representation",
       title: "Hand Representation",
       description:
-        "Revolutionary true hand representation across all devices. Develop genuine muscle memory through precise 360-degree interactions that transfer directly to physical laboratories.",
+        "True hand representation across all devices. Develop genuine muscle memory through precise interactions — pouring, swirling, focusing — that transfer directly to physical laboratories.",
       videoId: "L_jWHffIx5E",
       icon: "/images/cat_beaker.png",
       blogLink: "/blog/physicality-in-virtual-labs/",
@@ -56,7 +57,7 @@ const FeaturesPage = ({ language }) => {
       id: "assessment-system",
       title: "Assessment System",
       description:
-        "Advanced AI assessment with dynamic question generation. Each student receives unique, personalized assessments based on their experimental data, eliminating cheating possibilities.",
+        "Process-based assessment that grades how students work, not just what they write. Follow-up questions are tied to each student's own experimental data, so generic AI answers don't help.",
       videoId: "kJQP7kiw5Fk",
       icon: "/images/cat_brain.png",
       blogLink: "/blog/ai-powered-virtual-labs-solving-education-crisis/",
@@ -65,7 +66,7 @@ const FeaturesPage = ({ language }) => {
       id: "cross-platform",
       title: "Cross-Platform",
       description:
-        "Seamless operation across VR headsets, desktops, tablets, and mobile devices with 96.66% compatibility. Consistent 60+ FPS performance and offline functionality.",
+        "Runs on VR headsets, desktops, Chromebooks, tablets, and phones, with a low-bandwidth mode that keeps lessons running on unstable school internet connections.",
       videoId: "fJ9rUzIMcZQ",
       icon: "/images/cat_vr.png",
       blogLink: "/blog/ai-powered-virtual-labs-solving-education-crisis/",
@@ -103,7 +104,11 @@ const FeaturesPage = ({ language }) => {
             )}
             <div className="text-justify">
               <p className="justified-text features-hero-subtitle">
-                Page WIP
+                Stop clicking, start doing. WhimsyLabs combines a
+                physicality-first engine with AI-driven assessment to deliver a
+                virtual lab that builds true muscle memory while saving
+                teachers hours of marking time. Available on VR headsets and
+                desktop (Chromebook, Mac, PC).
               </p>
             </div>
           </div>
@@ -171,8 +176,8 @@ const FeaturesPage = ({ language }) => {
         </div>
       </section>
 
-      {/* Interactive Video Section with Feature Buttons */}
-      <BubbleContainer>Honk</BubbleContainer>
+      {/* In-depth feature sections from the 2026 features flyer */}
+      <FeatureHighlights language={language} />
 
       {/* Awards & Recognition Section */}
       <div className="awards-recognition" style={{ marginBottom: "2rem" }}>
@@ -241,7 +246,7 @@ const FeaturesPage = ({ language }) => {
       {/* Final CTA Section with Bubble Background */}
       <BubbleContainer>
         <h2>Ready to Experience the Future of Science Education?</h2>
-        <ContactUs buttonText="Schedule Your Premium Demo" />
+        <ContactUs buttonText="Schedule Your Premium Demo" language={language} />
         <div className="faq-teaser">
           <h2>Have Questions?</h2>
           <p>

@@ -6,6 +6,9 @@
 const { translations } = require('../src/i18n/translations.js');
 // Single source of truth for localized grant-page metadata (shared with build.js)
 const { getGrantMetadata } = require('../src/data/grantMetadata');
+// Per-post language allowlist (keyed by slug, build codes en/es/fr/de/jp). Region-specific
+// posts only emit hreflang for the languages they are actually published in.
+const blogPostLanguageRestrictions = require('../src/i18n/blogPostLanguageRestrictions.json');
 
 class MetadataInjector {
   constructor() {
@@ -112,6 +115,7 @@ class MetadataInjector {
       '/grants/us-education': getGrantMetadata('/grants/us-education', routeLang),
       '/grants/japan-education': getGrantMetadata('/grants/japan-education', routeLang),
       '/grants/erasmus-plus': getGrantMetadata('/grants/erasmus-plus', routeLang),
+      '/grants/inclusive-mainstream-fund': getGrantMetadata('/grants/inclusive-mainstream-fund', routeLang),
       '/chemistry': {
         title: t.chemistry?.title || 'Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs',
         description: t.chemistry?.description || 'Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.',
@@ -126,6 +130,21 @@ class MetadataInjector {
         title: t.physics?.title || 'Virtual Physics Lab | Interactive Physics Simulations | WhimsyLabs',
         description: t.physics?.description || 'Explore interactive virtual physics experiments with realistic simulations. Mechanics, electricity, waves, and more with real-time data collection.',
         keywords: 'virtual physics lab, physics simulations, online physics experiments, circuit simulation, mechanics simulation, GCSE physics, A-level physics, IB physics, AP physics',
+      },
+      '/ai-assessment': {
+        title: t.aiAssessment?.title || 'AI-Proof Assessment for Science Labs | WhimsyLabs',
+        description: t.aiAssessment?.description || "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab — nothing to fake.",
+        keywords: 'AI-proof assessment, process-based assessment, AI detection alternative, practical skills assessment, science lab grading, AI assessment schools',
+      },
+      '/choose-virtual-lab': {
+        title: t.chooseVirtualLab?.title || "How to Choose Virtual Lab Software: A Buyer's Guide",
+        description: t.chooseVirtualLab?.description || 'A 12-point checklist for choosing virtual lab software: physics vs animation, AI assessment, accessibility, data protection and cost.',
+        keywords: "choose virtual lab software, virtual lab comparison, best virtual lab software, virtual lab buyer's guide, virtual lab checklist",
+      },
+      '/send': {
+        title: t.sendScience?.title || 'Accessible Science Practicals for SEND | WhimsyLabs',
+        description: t.sendScience?.description || 'Virtual labs built for SEND: control remapping, text-to-speech, self-paced practicals, and evidence for the 2026 SEND White Paper.',
+        keywords: 'SEND science practicals, accessible virtual labs, SEND white paper 2026, inclusive science education, special educational needs science',
       },
       '/spa': {
         title: t.landingDemo?.title || 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
@@ -174,8 +193,15 @@ class MetadataInjector {
     // Add hreflang tags for international versions - ensure consistent trailing slash handling
     const languages = ['en', 'de', 'es', 'fr', 'ja'];
     const languageMap = { 'en': '', 'de': '/de', 'es': '/es', 'fr': '/fr', 'ja': '/jp' };
-    
+
+    // Region-specific posts: only emit hreflang for languages they are published in
+    const blogSlugMatch = baseRoute.match(/^\/blog\/([^/]+)\/$/);
+    const allowedLangs = blogSlugMatch ? blogPostLanguageRestrictions[blogSlugMatch[1]] : null;
+
     for (const lang of languages) {
+      // Map hreflang code 'ja' to the build/URL code 'jp' used in the allowlist
+      const buildCode = lang === 'ja' ? 'jp' : lang;
+      if (allowedLangs && !allowedLangs.includes(buildCode)) continue;
       const langPrefix = languageMap[lang];
       // Build the full URL ensuring no double slashes and consistent trailing slashes
       let hreflangUrl;
@@ -242,6 +268,35 @@ class MetadataInjector {
   }
 
   /**
+   * Resolve the best social-share image for a route.
+   * Blog posts use their first in-content image when available; everything
+   * else uses the 1280x720 demo-video thumbnail (logo.png is only 180x137,
+   * far too small for social cards).
+   * @param {string} route - The route path
+   * @param {Object} data - Route data (data.contentHtml for blog posts)
+   * @returns {{url: string, width: number|null, height: number|null}}
+   */
+  resolveOgImage(route, data = {}) {
+    if (typeof data.contentHtml === 'string') {
+      const imgMatch = data.contentHtml.match(/<img[^>]+src=["']([^"']+)["']/i);
+      if (imgMatch) {
+        const src = imgMatch[1];
+        if (/^https?:\/\//i.test(src)) {
+          return { url: src, width: null, height: null };
+        }
+        if (src.startsWith('/')) {
+          return { url: `${this.baseUrl}${src}`, width: null, height: null };
+        }
+      }
+    }
+    return {
+      url: 'https://res.cloudinary.com/dgrrhld5t/video/upload/so_0,w_1280,h_720,c_fill/Whimsylabs_Short_1_ushm4f.jpg',
+      width: 1280,
+      height: 720
+    };
+  }
+
+  /**
    * Generate Open Graph meta tags
    * @param {string} route - The route path
    * @param {Object} customMeta - Custom metadata
@@ -250,15 +305,22 @@ class MetadataInjector {
   generateOpenGraphTags(route, customMeta = {}) {
     const defaultMeta = this.getDefaultMetadata(route);
     const meta = { ...defaultMeta, ...customMeta };
-    
+
     // Ensure consistent trailing slash for og:url to match canonical URL
     const normalizedRoute = route.endsWith('/') ? route : route + '/';
-    
+
     // Extract language from route (e.g., /fr/blog/ -> fr)
     const langMatch = route.match(/^\/([a-z]{2})\//);
     const langCode = langMatch ? langMatch[1] : 'en';
     const ogLocale = this.getOgLocale(langCode);
-    
+
+    const ogImage = this.resolveOgImage(route, customMeta);
+    const ogImageDimensions = ogImage.width
+      ? `
+    <meta property="og:image:width" content="${ogImage.width}">
+    <meta property="og:image:height" content="${ogImage.height}">`
+      : '';
+
     return `
     <meta property="og:title" content="${meta.title}">
     <meta property="og:description" content="${meta.description}">
@@ -266,9 +328,7 @@ class MetadataInjector {
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WhimsyLabs">
     <meta property="og:locale" content="${ogLocale}">
-    <meta property="og:image" content="${this.baseUrl}/logo.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">`;
+    <meta property="og:image" content="${ogImage.url}">${ogImageDimensions}`;
   }
 
   /**
@@ -280,12 +340,12 @@ class MetadataInjector {
   generateTwitterCardTags(route, customMeta = {}) {
     const defaultMeta = this.getDefaultMetadata(route);
     const meta = { ...defaultMeta, ...customMeta };
-    
+
     return `
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${meta.title}">
     <meta name="twitter:description" content="${meta.description}">
-    <meta name="twitter:image" content="${this.baseUrl}/logo.png">`;
+    <meta name="twitter:image" content="${this.resolveOgImage(route, customMeta).url}">`;
   }
 
   /**
@@ -403,6 +463,11 @@ class MetadataInjector {
       "url": this.baseUrl,
       "logo": `${this.baseUrl}/logo.png`,
       "description": "WhimsyLabs provides award-winning virtual laboratory software for science education, used in schools, colleges, and universities worldwide.",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr Marisa French",
+        "sameAs": "https://www.linkedin.com/in/drmarisafrench/"
+      },
       "sameAs": [
         "https://www.youtube.com/@whimsylabs",
         "https://bsky.app/profile/whimsylabs.bsky.social"
@@ -411,7 +476,18 @@ class MetadataInjector {
         "@type": "ContactPoint",
         "email": "inquiries@whimsylabs.ai",
         "contactType": "customer service"
-      }
+      },
+      "knowsAbout": [
+        "Virtual Laboratory Software",
+        "STEM Education",
+        "AI Assessment",
+        "Science Education Technology"
+      ],
+      "award": [
+        "BETT 2025 Kids Judge Award Winner - Best Science Lab (Start Up)",
+        "TechLearning Best of BETT 2026",
+        "Converge Challenge Finalist"
+      ]
     };
 
     let schemas = [organizationSchema];
@@ -430,11 +506,7 @@ class MetadataInjector {
           "priceCurrency": "GBP"
         },
         "description": "A sandbox virtual laboratory simulation that gives you the freedom to explore, play and learn scientific concepts firsthand.",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "ratingCount": "120"
-        }
+        "award": "BETT 2025 Kids Judge Award Winner - Best Science Lab (Start Up)"
       };
       schemas.push(productSchema);
 
@@ -579,11 +651,11 @@ class MetadataInjector {
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": "WhimsyLabs Virtual Laboratory Demo",
-        "description": "Experience the world's most advanced virtual laboratory platform. See how WhimsyLabs transforms STEM education with realistic physics simulations, AI-powered tutoring, and hands-on virtual experiments.",
-        "thumbnailUrl": `${this.baseUrl}/logo.png`,
-        "uploadDate": "2025-01-01",
+        "description": "See how WhimsyLabs transforms STEM education with realistic physics simulations, AI-powered tutoring, and hands-on virtual experiments.",
+        "thumbnailUrl": "https://res.cloudinary.com/dgrrhld5t/video/upload/so_0,w_1280,h_720,c_fill/Whimsylabs_Short_1_ushm4f.jpg",
+        "uploadDate": "2026-01-30",
         "duration": "PT2M30S",
-        "contentUrl": `${this.baseUrl}/videos/placeholder.webm`,
+        "contentUrl": "https://res.cloudinary.com/dgrrhld5t/video/upload/q_auto/Whimsylabs_Short_1_ushm4f.webm",
         "embedUrl": `${this.baseUrl}/`,
         "publisher": {
           "@type": "Organization",
@@ -697,9 +769,31 @@ class MetadataInjector {
       // Language was already extracted at the top of the function
       const inLanguage = langCode === 'en' ? 'en-GB' : langCode;
 
-      // Calculate estimated reading time (assuming 200 words per minute)
-      const description = data.description || '';
-      const wordCount = description ? description.split(/\s+/).length * 10 : 1000;
+      // Word count from the rendered article content when available
+      // (data.contentHtml is set by build.js after SSR-rendering the post,
+      // data.content is the post's JSX element); fall back to a conservative
+      // default rather than fabricating a number from the description length.
+      let wordCount = 1000;
+      try {
+        let contentMarkup = null;
+        if (typeof data.contentHtml === 'string') {
+          contentMarkup = data.contentHtml;
+        } else if (data.content) {
+          const { renderToStaticMarkup } = require('react-dom/server');
+          contentMarkup = renderToStaticMarkup(data.content);
+        }
+        if (contentMarkup) {
+          const words = contentMarkup
+            .replace(/<[^>]*>/g, ' ')
+            .trim()
+            .split(/\s+/)
+            .filter(Boolean).length;
+          if (words > 0) wordCount = words;
+        }
+      } catch (e) {
+        // Keep the default if the content can't be rendered outside React
+      }
+      // Estimated reading time (assuming 200 words per minute)
       const readingMinutes = Math.max(3, Math.ceil(wordCount / 200));
 
       const blogPostSchema = {
@@ -707,12 +801,15 @@ class MetadataInjector {
         "@type": "BlogPosting",
         "headline": data.title || "WhimsyLabs Blog Post",
         "description": data.description || "",
-        "image": {
-          "@type": "ImageObject",
-          "url": `${this.baseUrl}/logo.png`,
-          "width": 1200,
-          "height": 630
-        },
+        "image": (() => {
+          const img = this.resolveOgImage(route, data);
+          const imageObject = { "@type": "ImageObject", "url": img.url };
+          if (img.width) {
+            imageObject.width = img.width;
+            imageObject.height = img.height;
+          }
+          return imageObject;
+        })(),
         "datePublished": data.date || data.datePublished || new Date().toISOString().split('T')[0],
         "dateModified": data.dateModified || data.date || data.datePublished || new Date().toISOString().split('T')[0],
         "author": {

@@ -305,6 +305,27 @@
     display: block;
 }
 
+.post-cta {
+    margin-top: 40px;
+    padding: 20px 25px;
+    background: rgba(218, 190, 255, 0.25);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.post-cta-lead {
+    margin: 0 0 15px;
+    font-weight: 600;
+    color: #1f1968;
+}
+
+.post-cta-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .post-navigation {
     margin-top: 40px;
     padding-top: 25px;

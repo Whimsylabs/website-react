@@ -1,373 +1,63 @@
-/* Chemistry Page Styles */
+/* Chemistry theme for the shared subject-lab system.
+   Layout and the opt-in depth classes live in SubjectLab.css — this file
+   supplies the subject accent plus every chemistry-only retune, so nothing
+   here can disturb the other subject pages. Both files are imported by
+   ChemistryPage.js. */
 
-/* Decorative Background Elements */
-.chemistry-page {
-  position: relative;
+.lab-page--chemistry {
+  /* Violet, carried over from the previous chemistry identity but retuned:
+     the old #c9a6ff was built for a dark ground and washes out on white.
+     --accent      graphics and fills
+     --accent-text AA-safe against the light body
+     --accent-lit  the original pale value, for use on the dark bands */
+  --lab-accent: #6d4ae0;
+  --lab-accent-text: #5b34d6;
+  --lab-accent-lit: #c9a6ff;
+
+  /* The tint bands lean violet instead of neutral slate, so the light/tint
+     alternation is actually visible; the grid ink draws the graph paper. */
+  --lab-ground: #f6f3fd;
+  --lab-grid: rgba(109, 74, 224, 0.055);
 }
 
-.chemistry-decorations {
-  position: fixed;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.08;
+/* Graph paper on the tint bands — a lab notebook, not a flat fill */
+.lab-page--chemistry .lab-band--tint {
+  background-image:
+    linear-gradient(var(--lab-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--lab-grid) 1px, transparent 1px);
+  background-size: 26px 26px;
 }
 
-.chemistry-decorations-left {
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 250px;
+/* White cards earn resting elevation instead of hover-only */
+.lab-page--chemistry .lab-cross-item,
+.lab-page--chemistry .lab-tag {
+  box-shadow: 0 2px 10px rgba(31, 25, 104, 0.06);
 }
 
-.chemistry-decorations-right {
-  right: -50px;
-  top: 30%;
-  transform: translateY(-50%) scaleX(-1);
-  width: 200px;
+/* Curriculum tags cycle the four reagent hues from the hero rack */
+.lab-page--chemistry .lab-tag:nth-child(4n + 1) { border-color: rgba(109, 74, 224, 0.35); background: rgba(109, 74, 224, 0.07); }
+.lab-page--chemistry .lab-tag:nth-child(4n + 2) { border-color: rgba(20, 183, 255, 0.4); background: rgba(20, 183, 255, 0.08); }
+.lab-page--chemistry .lab-tag:nth-child(4n + 3) { border-color: rgba(224, 27, 132, 0.32); background: rgba(224, 27, 132, 0.06); }
+.lab-page--chemistry .lab-tag:nth-child(4n) { border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.08); }
+
+/* Closing CTA gets the site's tiled treatment, bookending the hero.
+   Relative path, not /images/ — css-loader resolves url() as a module. */
+.lab-page--chemistry .lab-band--tiled {
+  background-image:
+    linear-gradient(180deg, rgba(31, 25, 104, 0.95) 0%, rgba(31, 25, 104, 0.6) 100%),
+    url("../../public/images/tiled.png");
+  background-color: var(--lab-dark-a);
 }
 
-/* Hero Section */
-.chemistry-hero-section {
-  background: linear-gradient(135deg, #1f1968 0%, #3d2d85 50%, #5a3d9e 100%);
-  padding: 120px 20px 80px;
-  position: relative;
-  overflow: hidden;
-}
+/* Bubble fields on dark bands draw in the lit accent so they stay visible */
+.lab-page--chemistry .lab-band--dark .lab-bubbles-field { --lab-accent: var(--lab-accent-lit); }
 
-/* Hero decoration */
-.chemistry-hero-section::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  right: 5%;
-  width: 300px;
-  height: 200px;
-  background: url('../../public/images/subject-chemistry-decorations.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.12;
-  pointer-events: none;
-  filter: brightness(0) invert(1);
-}
-
-.chemistry-hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-.chemistry-brand-tag {
-  display: inline-block;
-  background: rgba(218, 190, 255, 0.2);
-  color: #dabeff;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.chemistry-hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-.chemistry-hero-subtitle {
-  font-size: 1.4rem;
-  color: #dabeff;
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
-}
-
-.chemistry-hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.chemistry-btn-primary {
-  background: linear-gradient(135deg, #dabeff 0%, #95CEF6 100%);
-  color: #1f1968;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(218, 190, 255, 0.4);
-}
-
-.chemistry-btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(218, 190, 255, 0.6);
-  color: #1f1968;
-}
-
-.chemistry-btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border: 2px solid #dabeff;
-  transition: all 0.3s ease;
-}
-
-.chemistry-btn-secondary:hover {
-  background: rgba(218, 190, 255, 0.2);
-  color: #ffffff;
-}
-
-.chemistry-btn-large {
-  padding: 18px 45px;
-  font-size: 1.2rem;
-}
-
-.chemistry-wave-divider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-}
-
-.chemistry-wave-divider svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* Container */
-.chemistry-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Section Styles */
-.chemistry-section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.chemistry-section-subtitle {
-  font-size: 1.2rem;
-  color: #dabeff;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-/* Intro Section */
-.chemistry-intro-section {
-  padding: 80px 0;
-}
-
-.chemistry-intro-text {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-  text-align: center;
-}
-
-/* Experiments Section */
-.chemistry-experiments-section {
-  padding: 80px 0;
-  position: relative;
-}
-
-.chemistry-experiments-section::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: 3%;
-  width: 200px;
-  height: 150px;
-  background: url('../../public/images/subject-chemistry-decorations.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.06;
-  pointer-events: none;
-  transform: rotate(-10deg);
-}
-
-.chemistry-experiments-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.chemistry-experiment-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(218, 190, 255, 0.2);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.chemistry-experiment-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(218, 190, 255, 0.4);
-}
-
-.chemistry-experiment-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.chemistry-experiment-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 0.75rem;
-}
-
-.chemistry-experiment-desc {
-  font-size: 1rem;
-  color: #b0b0b0;
-  line-height: 1.6;
-}
-
-/* Benefits Section */
-.chemistry-benefits-section {
-  padding: 80px 0;
-  background: rgba(31, 25, 104, 0.3);
-}
-
-.chemistry-benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.chemistry-benefit-card {
-  text-align: center;
-  padding: 2rem;
-}
-
-.chemistry-benefit-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
-.chemistry-benefit-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 0.75rem;
-}
-
-.chemistry-benefit-desc {
-  font-size: 1rem;
-  color: #c0c0c0;
-  line-height: 1.6;
-}
-
-/* Curriculum Section */
-.chemistry-curriculum-section {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.chemistry-curriculum-text {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  line-height: 1.7;
-}
-
-.chemistry-curriculum-badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.chemistry-badge {
-  background: linear-gradient(135deg, rgba(218, 190, 255, 0.2) 0%, rgba(149, 206, 246, 0.2) 100%);
-  border: 1px solid rgba(218, 190, 255, 0.4);
-  color: #ffffff;
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-/* CTA Section */
-.chemistry-cta-section {
-  padding: 100px 0;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(61, 45, 133, 0.5) 0%, rgba(90, 61, 158, 0.5) 100%);
-}
-
-.chemistry-cta-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.chemistry-cta-text {
-  font-size: 1.2rem;
-  color: #dabeff;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .chemistry-hero-section {
-    padding: 100px 15px 60px;
-  }
-
-  .chemistry-hero-title {
-    font-size: 2.2rem;
-  }
-
-  .chemistry-hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .chemistry-section-title {
-    font-size: 1.8rem;
-  }
-
-  .chemistry-experiments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .chemistry-benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .chemistry-intro-section,
-  .chemistry-experiments-section,
-  .chemistry-benefits-section,
-  .chemistry-curriculum-section,
-  .chemistry-cta-section {
-    padding: 50px 0;
-  }
-
-  /* Hide decorations on mobile */
-  .chemistry-decorations,
-  .chemistry-hero-section::before,
-  .chemistry-experiments-section::after {
-    display: none;
+/* The burette rail normally needs 1520px of viewport; between 1380 and 1519px
+   a slimmer rail rides closer to the column so laptops still get it. */
+@media (min-width: 1380px) and (max-width: 1519px) {
+  .lab-page--chemistry .lab-rail {
+    display: block;
+    width: 76px;
+    right: calc(50% - 600px - 82px);
   }
 }

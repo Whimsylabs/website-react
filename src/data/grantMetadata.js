@@ -264,6 +264,34 @@ const GRANT_META = {
       keywords: 'Title IV-A 資金, DonorsChoose, 米国 学校助成金, K-12 STEM 資金, 教育ソフトウェア',
     },
   },
+
+  '/grants/inclusive-mainstream-fund': {
+    en: {
+      title: 'Inclusive Mainstream Fund for Schools | WhimsyLabs',
+      description: 'English schools get Inclusive Mainstream Fund money in 2026-27, no application needed. Fund accessible practical science with WhimsyLabs and get inclusion strategy support.',
+      keywords: 'Inclusive Mainstream Fund, IMF schools, inclusion strategy, SEND funding, accessible practical science, inclusive practice fund',
+    },
+    es: {
+      title: 'Fondo Inclusive Mainstream para Escuelas | WhimsyLabs',
+      description: 'Las escuelas inglesas reciben el Inclusive Mainstream Fund en 2026-27 sin solicitud. Financia ciencia práctica accesible con WhimsyLabs y recibe apoyo con tu estrategia.',
+      keywords: 'Inclusive Mainstream Fund, fondo inclusión escuelas, financiación SEND, ciencia práctica accesible',
+    },
+    fr: {
+      title: 'Fonds Inclusive Mainstream pour les Écoles | WhimsyLabs',
+      description: 'Les écoles anglaises reçoivent le Inclusive Mainstream Fund en 2026-27 sans candidature. Financez des sciences pratiques accessibles avec WhimsyLabs et votre stratégie.',
+      keywords: 'Inclusive Mainstream Fund, fonds inclusion écoles, financement SEND, sciences pratiques accessibles',
+    },
+    de: {
+      title: 'Inclusive Mainstream Fund für Schulen | WhimsyLabs',
+      description: 'Englische Schulen erhalten 2026-27 Mittel aus dem Inclusive Mainstream Fund, ohne Antrag. Finanzieren Sie barrierefreie praktische Naturwissenschaft mit WhimsyLabs.',
+      keywords: 'Inclusive Mainstream Fund, Inklusionsförderung Schulen, SEND Förderung, barrierefreie Naturwissenschaft',
+    },
+    jp: {
+      title: '英国インクルーシブ教育基金と実験室 | WhimsyLabs',
+      description: '英国の学校は2026-27年度にInclusive Mainstream Fundの配分を申請不要で受け取ります。WhimsyLabsでバリアのない実践的な理科を実現し、戦略作成も支援します。',
+      keywords: 'Inclusive Mainstream Fund, インクルーシブ教育 資金, SEND 支援, バリアフリー 理科実験',
+    },
+  },
 };
 
 /**

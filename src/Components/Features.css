@@ -44,19 +44,20 @@
 /* Ensure animated title works properly on features page */
 .features-hero-title.animated-title {
   margin-bottom: 2rem !important;
+  /* AnimatedTitle's base width of 120% overflows this hero's container */
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .features-hero-title.animated-title .animated-char {
   animation: featuresWave 6s ease-in-out infinite !important;
   transform-origin: center bottom !important;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5)) !important;
+  /* Cheap outline + glow — per-character drop-shadow filters re-rasterize
+     every animation frame (see AnimatedTitle.css) */
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  paint-order: stroke fill;
   color: #95CEF6 !important;
-  text-shadow: 
-    -1px -1px 0 rgba(255, 255, 255, 0.8),
-    1px -1px 0 rgba(255, 255, 255, 0.8),
-    -1px 1px 0 rgba(255, 255, 255, 0.8),
-    1px 1px 0 rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(149, 206, 246, 0.6) !important;
+  text-shadow: 0 0 20px rgba(149, 206, 246, 0.6) !important;
 }
 
 /* Wave animation for features page title */
@@ -72,7 +73,6 @@
   50% {
     transform: translateY(-20px) scale(1.2) rotateZ(3deg);
     color: #dabeff;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 15px rgba(218, 190, 255, 0.7)) !important;
   }
   75% {
     transform: translateY(-8px) scale(1.05) rotateZ(-1deg);
@@ -94,6 +94,10 @@
 .interactive-features-section {
   text-align: center;
   padding: 2rem 0;
+  /* Lift above the section's ::before dark overlay (z-index 1), which was
+     dimming the tabs, video, and description */
+  position: relative;
+  z-index: 2;
 }
 
 .features-video-container {

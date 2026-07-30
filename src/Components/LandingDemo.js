@@ -507,6 +507,12 @@ const LandingDemo = ({ language = 'en' }) => {
               <p className="section-text callout-text">
                 {t('home.demo.assessmentCallout')}
               </p>
+              <p className="section-text">
+                {t('home.demo.aiSafetyNote')}{" "}
+                <a href={getLocalizedPath("/ai-assessment/", language)} className="section-inline-link">
+                  {t('home.demo.aiSafetyLink')} →
+                </a>
+              </p>
               {/* Code-based UI mockup: Question Preview */}
               <div className="question-mockup-wrapper">
                 <QuestionPreview

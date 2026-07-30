@@ -3,6 +3,7 @@ import WelcomeSection from "./WelcomeSection";
 import FeaturesSection from "./FeaturesSection";
 import VideoPlayer from "./VideoPlayer";
 import withTranslation from "./withTranslation";
+import { getLocalizedPath } from "../i18n";
 // Video now served from public directory
 // Video poster now served from public directory
 import "./MainContent.css";
@@ -31,12 +32,12 @@ const MainContent = ({ t, language }) => {
       <BubbleContainer>
         <Testimonial />
         <h2>{t("home.trialDemo")}</h2>
-        <ContactUs buttonText={t("home.applyTrial")} />
+        <ContactUs buttonText={t("home.applyTrial")} language={language} />
         <div className="faq-teaser">
           <h2>{t("home.haveQuestions")}</h2>
           <p>
             Visit our{" "}
-            <a href="./faq/index.html" className="faq-link">
+            <a href={getLocalizedPath("/faq/", language)} className="faq-link">
               {t("home.faqPage")}
             </a>{" "}
             for answers to common questions, or check our our{" "}

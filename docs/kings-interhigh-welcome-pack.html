@@ -1,0 +1,1352 @@
+<title>WhimsyLabs — Welcome Pack for King's InterHigh</title>
+
+<style>
+  /* ==========================================================
+     WhimsyLabs Welcome Pack
+     Tokens taken from the live site:
+       src/App.css, src/Components/LandingDemo.css,
+       src/Components/FeatureHighlights.css
+     ========================================================== */
+  :root {
+    --deep:      #1f1968;
+    --deep-mid:  #2d2a6e;
+    --lavender:  #dabeff;
+    --sky:       #95cef6;
+    --cyan:      #14b7ff;
+    --magenta:   #e01b84;
+    --pink:      #ff4da6;
+    --link:      #6b4eaa;
+    --body:      #444444;
+    --body-firm: #333333;
+    --tint:      rgba(218, 190, 255, 0.2);
+    --tint-firm: rgba(218, 190, 255, 0.45);
+    --hairline:  rgba(31, 25, 104, 0.08);
+    --shadow:    0 8px 24px rgba(31, 25, 104, 0.2);
+    --shadow-sm: 0 4px 14px rgba(31, 25, 104, 0.12);
+    --font:      'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--body);
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  h1, h2, h3, h4 { margin: 0; line-height: 1.3; text-wrap: balance; }
+  sub { font-size: 0.68em; line-height: 0; vertical-align: baseline; bottom: -0.25em; position: relative; }
+  p { margin: 0; }
+  a { color: var(--link); font-weight: 600; }
+  a:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
+
+  .section-title {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--deep);
+  }
+  .section-text { font-size: 1.05rem; color: var(--body); line-height: 1.7; }
+  .eyebrow {
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--magenta);
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    background: linear-gradient(135deg, #1f1968 0%, #2d2a6e 50%, #1f1968 100%);
+    padding: 70px 20px 80px;
+    overflow: hidden;
+  }
+  .hero-pattern {
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dabeff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+  .hero-panel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(31, 25, 104, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(218, 190, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 46px 50px 50px;
+    text-align: center;
+  }
+  .hero-brand {
+    font-size: 0.95rem; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--lavender); margin-bottom: 22px;
+  }
+  .hero-title {
+    font-size: clamp(1.9rem, 4.6vw, 3.1rem);
+    font-weight: 700; color: #ffffff; line-height: 1.18; margin-bottom: 18px;
+  }
+  .hero-title em { color: var(--cyan); font-style: italic; }
+  .hero-tagline {
+    font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+    font-weight: 600; color: var(--cyan); margin-bottom: 22px;
+  }
+  .hero-description {
+    font-size: 1.08rem; color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7; max-width: 700px; margin: 0 auto 30px;
+  }
+  .hero-for {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(224, 27, 132, 0.6) 0%, rgba(255, 77, 166, 0.5) 100%);
+    border: 2px solid var(--magenta);
+    border-radius: 50px;
+    padding: 12px 28px;
+    color: #ffffff; font-weight: 600; font-size: 0.95rem;
+  }
+  .hero-meta {
+    margin-top: 26px; display: flex; flex-wrap: wrap;
+    justify-content: center; gap: 10px;
+  }
+  .hero-meta span {
+    border: 1px solid rgba(218, 190, 255, 0.35);
+    border-radius: 50px; padding: 7px 16px;
+    color: #f0ecff; font-size: 0.82rem; font-weight: 500;
+  }
+  .hero-sticker-wrap { position: relative; display: inline-block; }
+  .splash-sticker {
+    position: absolute; top: -14px; right: -104px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+    color: #1a1a2e; font-weight: 800; font-size: 0.75rem;
+    padding: 6px 14px; border-radius: 4px;
+    transform: rotate(12deg);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.4);
+    text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;
+  }
+  @media (max-width: 900px) {
+    .hero-panel { padding: 34px 24px 40px; }
+    .splash-sticker { position: static; display: inline-block; transform: rotate(6deg); margin-top: 14px; }
+  }
+
+  /* ============ DEFINITION BAND ============ */
+  .definition {
+    background: linear-gradient(180deg, #f8f9fc 0%, #ffffff 100%);
+    padding: 60px 0 50px;
+    border-bottom: 1px solid var(--hairline);
+    text-align: center;
+  }
+  .definition .section-text { max-width: 800px; margin: 18px auto 0; }
+
+  /* ============ GENERIC SECTION ============ */
+  .sec { padding: 66px 0 0; }
+  .sec-head { max-width: 800px; margin-bottom: 30px; }
+  .sec-head .section-text { margin-top: 14px; }
+
+  /* ============ NUMBERED HOW-IT-WORKS ============ */
+  .steps { display: grid; gap: 22px; }
+  .step {
+    display: grid; grid-template-columns: 58px 1fr; gap: 22px;
+    background: var(--tint); border-radius: 16px; padding: 26px 30px;
+  }
+  .step-num {
+    font-size: 1.5rem; font-weight: 800; color: var(--magenta);
+    line-height: 1.1; font-variant-numeric: tabular-nums;
+  }
+  .step h3 { font-size: 1.25rem; font-weight: 700; color: var(--deep); margin-bottom: 8px; }
+  .step p { color: var(--body-firm); line-height: 1.7; }
+  .step p + p { margin-top: 12px; }
+  .reading {
+    font-size: 0.87rem; line-height: 1.6; color: var(--body);
+    margin-top: 14px !important; padding-top: 12px;
+    border-top: 1px solid var(--tint-firm);
+  }
+  .reading a { font-weight: 600; }
+
+  /* ============ VIDEO POSTER ============ */
+  .video-sec { max-width: 780px; margin: 0 auto; }
+  .video-poster {
+    position: relative; display: block;
+    border-radius: 16px; overflow: hidden;
+    box-shadow: var(--shadow);
+    /* brand gradient shows through if the poster image fails to load */
+    background: linear-gradient(135deg, var(--deep) 0%, var(--deep-mid) 100%);
+    aspect-ratio: 16 / 9;
+    text-decoration: none;
+  }
+  .video-poster img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .video-play {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 84px; height: 84px; border-radius: 50%;
+    background: rgba(224, 27, 132, 0.92);
+    border: 3px solid #fff;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  }
+  .video-play::after {
+    content: ""; position: absolute;
+    top: 50%; left: 54%; transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #fff;
+  }
+  .video-caption {
+    text-align: center; margin-top: 16px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .video-caption strong { color: var(--deep); font-size: 1.05rem; font-weight: 700; }
+  .video-caption span { color: var(--body); font-size: 0.95rem; }
+  .video-url {
+    font-size: 0.82rem !important; color: var(--link) !important;
+    font-weight: 600; display: none;
+  }
+
+  /* ============ FIGURE ============ */
+  .pack-fig { margin: 30px 0 0; }
+  .pack-fig-frame {
+    border-radius: 16px; overflow: hidden;
+    box-shadow: var(--shadow);
+    /* brand gradient behind, so a missing image never leaves a white hole */
+    background: linear-gradient(135deg, var(--deep) 0%, var(--deep-mid) 100%);
+    min-height: 90px;
+  }
+  .pack-fig-frame img { width: 100%; height: auto; display: block; }
+  .pack-fig figcaption {
+    margin-top: 12px; font-size: 0.92rem; color: var(--body);
+    line-height: 1.55; text-align: center;
+  }
+  .pack-fig figcaption strong { color: var(--deep); font-weight: 700; }
+
+  /* ============ CALLOUT ============ */
+  .callout {
+    background: var(--tint);
+    border-left: 5px solid var(--cyan);
+    border-radius: 0 16px 16px 0;
+    padding: 24px 28px;
+    margin-top: 26px;
+  }
+  .callout p { color: var(--body-firm); }
+  .callout p + p { margin-top: 12px; }
+  .callout strong { color: var(--deep); }
+
+  .pull {
+    font-size: clamp(1.35rem, 3vw, 1.95rem);
+    font-weight: 700; color: var(--deep);
+    text-align: center; max-width: 26ch;
+    margin: 40px auto; line-height: 1.35;
+  }
+  .pull em { color: var(--magenta); font-style: normal; }
+
+  /* ============ FEATURE CARDS ============ */
+  .cards {
+    display: grid; gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+  .card {
+    background: var(--tint); border-radius: 16px; padding: 26px 24px;
+  }
+  .card .tag {
+    display: inline-block; font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--deep); background: rgba(255, 255, 255, 0.75);
+    border-radius: 50px; padding: 4px 12px; margin-bottom: 12px;
+  }
+  .card .tag.later { background: var(--deep); color: var(--lavender); }
+  .card.later { background: #f8f9fc; border: 2px dashed var(--tint-firm); }
+  .card h3 { font-size: 1.18rem; font-weight: 700; color: var(--deep); margin-bottom: 8px; }
+  .card p { font-size: 0.97rem; color: var(--body-firm); line-height: 1.65; }
+
+  /* ============ GRADIENT BAND ============ */
+  .band {
+    background: linear-gradient(180deg, #dabeff 0%, #95cef6 100%);
+    border-radius: 16px; padding: 40px 28px; text-align: center;
+    margin-top: 40px;
+  }
+  .band h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 700; color: var(--deep); }
+  .band .subjects {
+    font-size: 1.3rem; font-weight: 700; color: var(--deep); margin: 12px auto;
+    text-align: center;
+  }
+  .band p { color: #2b2560; max-width: 640px; margin: 0 auto; }
+
+  /* ============ COMPARISON TABLE ============ */
+  .scroller {
+    overflow-x: auto; border-radius: 16px;
+    box-shadow: var(--shadow-sm); margin-top: 8px;
+  }
+  table { border-collapse: collapse; width: 100%; min-width: 46rem; background: #fff; }
+  th, td {
+    text-align: left; padding: 16px 20px; vertical-align: top;
+    font-size: 0.96rem; line-height: 1.6;
+    border-bottom: 1px solid var(--hairline);
+  }
+  thead th {
+    background: var(--deep); color: #f0ecff;
+    font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.11em; text-transform: uppercase;
+    border-bottom: none;
+  }
+  thead th.us { color: var(--lavender); }
+  tbody th { font-weight: 700; color: var(--deep); width: 13rem; }
+  td.us { background: var(--tint); color: var(--body-firm); font-weight: 500; }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
+  .table-note { font-size: 0.9rem; color: var(--body); margin-top: 14px; }
+
+  /* ============ ROADMAP ============ */
+  .flag {
+    background: linear-gradient(135deg, rgba(255,215,0,.22) 0%, rgba(255,170,0,.18) 100%);
+    border: 2px dashed #d09a15;
+    border-radius: 16px; padding: 22px 26px; margin-top: 26px;
+  }
+  .flag h3 {
+    font-size: 0.82rem; font-weight: 800; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #8a6100; margin-bottom: 8px;
+  }
+  .flag p { color: var(--body-firm); font-size: 0.98rem; }
+  .flag strong { color: var(--deep); }
+
+  .waves { display: grid; gap: 26px; margin-top: 28px; }
+  .wave {
+    border-radius: 16px; overflow: hidden;
+    box-shadow: var(--shadow); background: #fff;
+  }
+  .wave-head {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px;
+    padding: 22px 28px; color: #fff;
+  }
+  .wave-head h3 { font-size: 1.3rem; font-weight: 700; color: #fff; }
+  .wave-when { font-size: 0.88rem; opacity: 0.85; }
+  .wave-count {
+    margin-left: auto; font-size: 0.85rem; font-weight: 700;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 50px; padding: 6px 16px; white-space: nowrap;
+  }
+  .wave-chip {
+    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em;
+    text-transform: uppercase; background: rgba(255, 255, 255, 0.9);
+    border-radius: 50px; padding: 5px 14px;
+  }
+  .w1 .wave-head { background: linear-gradient(135deg, var(--magenta) 0%, var(--pink) 100%); }
+  .w1 .wave-chip { color: var(--magenta); }
+  .w2 .wave-head { background: linear-gradient(135deg, #0f8fd0 0%, var(--cyan) 100%); }
+  .w2 .wave-chip { color: #0b6fa3; }
+  .w3 .wave-head { background: linear-gradient(135deg, #3f3aa0 0%, #6b4eaa 100%); }
+  .w3 .wave-chip { color: #4a3f9e; }
+  .w4 .wave-head { background: linear-gradient(135deg, var(--deep) 0%, var(--deep-mid) 100%); }
+  .w4 .wave-chip { color: var(--deep); }
+
+  .wave-body {
+    display: grid; gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 26px 28px;
+  }
+  .disc h4 {
+    font-size: 0.76rem; font-weight: 800; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--deep);
+    padding-bottom: 10px; margin-bottom: 14px;
+    border-bottom: 2px solid var(--tint-firm);
+  }
+  .disc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+  .disc li {
+    display: flex; gap: 10px; font-size: 0.94rem;
+    line-height: 1.45; color: var(--body-firm);
+  }
+  .disc li::before {
+    content: ""; flex: 0 0 auto;
+    width: 7px; height: 7px; margin-top: 8px;
+    border-radius: 50%; background: var(--lavender);
+  }
+  .wave-note {
+    background: var(--tint); padding: 18px 28px;
+    font-size: 0.94rem; color: var(--body-firm);
+  }
+
+  /* ============ FURTHER READING ============ */
+  .reading-grid {
+    display: grid; gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .reading-col h4 {
+    font-size: 0.76rem; font-weight: 800; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--magenta);
+    padding-bottom: 10px; margin-bottom: 12px;
+    border-bottom: 2px solid var(--tint-firm);
+  }
+  .reading-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .reading-col li { font-size: 0.93rem; line-height: 1.45; }
+  .reading-col a { color: var(--deep); text-decoration: none; }
+  .reading-col a:hover { color: var(--link); text-decoration: underline; }
+
+  /* ============ DARK PANEL ============ */
+  .panel {
+    background: var(--deep); border-radius: 16px;
+    padding: 44px 40px; margin-top: 40px; color: #f0ecff;
+  }
+  .panel h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 700; color: var(--lavender); }
+  .panel > p { color: #f0ecff; line-height: 1.7; margin-top: 14px; max-width: 62ch; }
+  .panel-steps { display: grid; gap: 4px; margin-top: 26px; }
+  .panel-step {
+    display: grid; grid-template-columns: 44px 1fr; gap: 16px;
+    padding: 20px 0; border-bottom: 1px solid rgba(218, 190, 255, 0.18);
+  }
+  .panel-step:last-child { border-bottom: none; }
+  .panel-step .n {
+    font-size: 1.05rem; font-weight: 800; color: var(--lavender);
+    font-variant-numeric: tabular-nums;
+  }
+  .panel-step h3 { font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
+  .panel-step p { color: #ddd6f7; font-size: 0.97rem; line-height: 1.65; }
+  .panel-cta {
+    display: inline-block; margin-top: 28px;
+    background: var(--lavender); color: var(--deep);
+    font-weight: 700; padding: 13px 32px;
+    border-radius: 30px; text-decoration: none;
+  }
+
+  /* ============ FOOTER ============ */
+  .foot {
+    margin-top: 56px; padding: 30px 0 60px;
+    border-top: 1px solid var(--hairline);
+    display: flex; flex-wrap: wrap; gap: 14px 40px;
+    justify-content: space-between; align-items: baseline;
+    font-size: 0.9rem; color: var(--body);
+  }
+  .foot strong { color: var(--deep); }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .step { grid-template-columns: 1fr; gap: 10px; padding: 22px; }
+    .panel { padding: 30px 24px; }
+    .wave-head, .wave-body, .wave-note { padding-left: 20px; padding-right: 20px; }
+  }
+
+  /* ============ PRINT / PDF ============
+     Landscape by design: this is a wide multi-column layout and portrait A4
+     collapses the grids to one column.
+
+     Generate with headless Chrome (no dialog, exact output):
+       chrome --headless=new --no-pdf-header-footer               --print-to-pdf=pack.pdf file:///.../kings-interhigh-welcome-pack.html
+
+     Or Ctrl+P -> Save as PDF -> Background graphics ON -> Landscape.
+
+     CUSTOM PAGE SIZE: change the two lengths in @page (width height).
+       A4 landscape ....... 297mm 210mm   (current)
+       A3 landscape ....... 420mm 297mm
+       US Letter landscape  279mm 216mm
+       16:9 slide deck .... 338mm 190mm  */
+  @page {
+    size: 297mm 210mm;
+    margin: 12mm 14mm;
+  }
+
+  @media print {
+    /* without this the hero, cards and bands print white */
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body { font-size: 10pt; line-height: 1.5; }
+    .container { max-width: none; padding: 0; }
+
+    /* --- cover: hero fills sheet one (210mm - 24mm margins = 186mm) --- */
+    .hero {
+      min-height: 186mm;
+      display: flex; align-items: center; justify-content: center;
+      padding: 0; break-after: page;
+    }
+    .hero-panel {
+      box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none;
+      padding: 40px 50px 44px; width: 100%;
+    }
+    .hero-title { font-size: 30pt; }
+    .hero-tagline { font-size: 15pt; }
+
+    /* --- sheet two: opening statement + video together --- */
+    .definition { padding: 0 0 22px; border-bottom: none; }
+    .video-sec { break-before: auto; max-width: 480px; margin-top: 6mm; }
+    .video-poster { box-shadow: none; }
+    .video-url { display: block; }
+
+    /* --- sections flow; only the heavy ones start a fresh sheet --- */
+    .sec { padding: 0; margin-top: 11mm; break-before: auto; break-inside: auto; }
+    .sec.pb { break-before: page; margin-top: 0; }
+    .sec-head { max-width: none; margin-bottom: 16px; }   /* full landscape width */
+    .sec-head, .section-title, h2, h3, h4 { break-after: avoid; }
+    .section-text { max-width: 165mm; }                   /* readable measure, not full bleed */
+
+    /* --- hold the multi-column grids open: the point of landscape --- */
+    .cards { grid-template-columns: repeat(3, 1fr); gap: 13px; }
+    .card { padding: 15px 17px; }
+    .card h3 { font-size: 1rem; }
+    .card p { font-size: 0.84rem; line-height: 1.45; }
+    .wave-body { grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 16px 20px; }
+    .reading-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .steps { gap: 12px; }
+    .step { padding: 16px 20px; }
+    .panel { padding: 26px 30px; }
+    .panel-step { padding: 12px 0; }
+
+    /* --- never split these across a page --- */
+    .card, .wave, .step, .callout, .flag, .band, .panel,
+    .scroller, .reading-col, .panel-step, .pull, .video-sec, .foot {
+      break-inside: avoid; box-shadow: none;
+    }
+    .wave-head, .disc h4 { break-after: avoid; }
+    .disc { break-inside: avoid; }
+    table { break-inside: auto; }
+    tr, .disc li, .reading-col li { break-inside: avoid; }
+    .wave { margin-bottom: 7mm; }
+    .pull { margin: 22px auto; }
+
+    /* prose-only sections: two columns, so landscape doesn't leave a dead half-page */
+    .sec.prose .sec-head { column-count: 2; column-gap: 14mm; }
+    .sec.prose .sec-head .eyebrow,
+    .sec.prose .sec-head .section-title { column-span: all; }
+    .sec.prose .section-text { max-width: none; }
+    .sec.prose { break-inside: avoid; }
+
+    /* roadmap density: two waves per sheet instead of one */
+    .wave { margin-bottom: 5mm; }
+    .wave-head { padding: 12px 18px; }
+    .wave-head h3 { font-size: 1.12rem; }
+    .wave-body { padding: 13px 18px; gap: 16px; }
+    .disc ul { gap: 6px; }
+    .disc li { font-size: 0.85rem; line-height: 1.32; }
+    .disc h4 { padding-bottom: 7px; margin-bottom: 9px; }
+    .wave-note { padding: 11px 18px; font-size: 0.84rem; }
+
+    /* size figures by WIDTH so the height is predictable and they fit under the
+       content above rather than being bumped to a page of their own */
+    .pack-fig { break-inside: avoid; margin: 7mm auto 0; max-width: 195mm; }
+    /* a 16:9 screenshot at 195mm would be 110mm tall and bump itself to a
+       fresh page — hold these narrower so they sit under the text above */
+    .pack-fig.fig-16x9 { max-width: 120mm; }
+    .pack-fig-frame { box-shadow: none; }
+    .pack-fig-frame { box-shadow: none; }
+    .pack-fig figcaption { font-size: 0.84rem; margin-top: 9px; }
+
+    p, li { orphans: 3; widows: 3; }
+
+    /* clicks don't work on paper — print the destination */
+    .reading-col a[href^="http"]::after,
+    .table-note a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 0.7em; font-weight: 400; color: #666; word-break: break-all;
+    }
+  }
+</style>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-panel">
+    <div class="hero-brand">WhimsyLabs &middot; Welcome Pack</div>
+    <h1 class="hero-title">Real practical science, <em>wherever your students log in</em>.</h1>
+    <p class="hero-tagline">Stop clicking &ldquo;Next.&rdquo; Start doing science.</p>
+    <p class="hero-description">
+      What WhimsyLabs does, how it does it, where it differs from the guided-simulation
+      platform you&rsquo;re currently renewing, and a term-by-term delivery plan for
+      all 52 practicals you sent us.
+    </p>
+    <div class="hero-sticker-wrap">
+      <span class="hero-for">Prepared for Anthony Peters, King&rsquo;s InterHigh</span>
+      <span class="splash-sticker">All 52 mapped!</span>
+    </div>
+    <div class="hero-meta">
+      <span>BETT 2025 Kids Judge Award Winner</span>
+      <span>TechLearning #1 Best of BETT 2026</span>
+      <span>Global launch September 2026</span>
+      <span>28 July 2026</span>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== DEFINITION ==================== -->
+<section class="definition">
+  <div class="container">
+    <h2 class="section-title">We simulate the laboratory, not the lab worksheet</h2>
+    <p class="section-text">
+      WhimsyLabs is virtual laboratory software for Biology, Chemistry, Physics and Electronics,
+      built on a real physics engine rather than a sequence of animations. Students handle
+      apparatus, take measurements, and get the results their technique actually earned them.
+      It runs in a browser on Chromebooks, Macs and PCs, with VR headset support following
+      closely behind desktop, no headset required, and no installation for web access.
+    </p>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- ==================== VIDEO ==================== -->
+  <section class="sec video-sec">
+    <a class="video-poster"
+       href="https://www.youtube.com/watch?v=9D2e2e2gzvk"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Watch the WhimsyLabs virtual laboratory in action on YouTube">
+      <img src="https://whimsylabs.ai/images/Sandbox.jpg"
+           alt="A beaker heating over a Bunsen burner inside the WhimsyLabs virtual laboratory" />
+      <span class="video-play" aria-hidden="true"></span>
+    </a>
+    <p class="video-caption">
+      <strong>Click to watch the lab in action</strong>
+      <span>See the physics engine, the sandbox and the assessment working together &mdash; two minutes.</span>
+      <span class="video-url">youtube.com/watch?v=9D2e2e2gzvk</span>
+    </p>
+  </section>
+
+  <!-- ==================== WHY IT MATTERS ==================== -->
+  <section class="sec">
+    <div class="sec-head">
+      <div class="eyebrow">01 &middot; Why this matters for King&rsquo;s InterHigh</div>
+      <h2 class="section-title" style="margin-top:10px">It replaces the bench, and it makes real bench time worth more</h2>
+      <p class="section-text">
+        Most virtual labs are sold as a substitute for a laboratory. Ours does that, but the
+        second use is the one schools tend to underestimate.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">✦</div>
+        <div>
+          <h3>Where there is no bench, it becomes the bench</h3>
+          <p>
+            Students on the UK, Middle East and South-East Asia timetables all run the same
+            practical, at home, on hardware they already own. No travel, no scheduling around a
+            campus, and no cohort excluded by geography. Because the simulation is physics-driven
+            rather than scripted, what they build is genuine procedural skill, and we can
+            evidence it, because we record what they physically did, in what order, and how well.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">✦</div>
+        <div>
+          <h3>Where there is a bench, students arrive already competent</h3>
+          <p>
+            When pupils do get into a physical lab, they can arrive having already run the
+            procedure end to end. They know the sequence, the apparatus, the hazards and the PPE.
+            <strong>The health and safety learning is pre-loaded before anyone touches
+            glassware.</strong>
+          </p>
+          <p>
+            That changes what a lab session can be. Instead of spending it on briefing,
+            demonstration and safety instruction, you start at hands-on method, so the same
+            slot supports something broader, more open-ended, and more genuinely investigative.
+            Students have already made their mistakes somewhere those mistakes were free.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="sec pb">
+    <div class="sec-head">
+      <div class="eyebrow">02 &middot; How it works</div>
+      <h2 class="section-title" style="margin-top:10px">Three systems, one simulation</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>A physicality-first engine</h3>
+          <p>
+            The simulation replicates the chaos and weight of the real world, temperature
+            perturbations, reagent impurities, and deviation between samples. Whether a student is
+            pouring titrant in VR or focusing a microscope on a Chromebook, fine motor control and
+            procedural accuracy are what produce the result.
+          </p>
+          <p>
+            <strong>Drop a beaker and it breaks. Overheat a compound and it reacts.</strong>
+            That freedom to fail builds resilience and a genuine understanding of laboratory risk.
+          </p>
+          <p class="reading">
+            Further reading:
+            <a href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/">Physicality in Virtual Labs</a> &middot;
+            <a href="https://whimsylabs.ai/blog/why-traditional-virtual-labs-fail-physics-engine/">Why Other Virtual Labs Fail: The Physics Engine Solution</a> &middot;
+            <a href="https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/">Sandbox Learning: Why Freedom to Fail Is Essential</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Assessment that grades the process</h3>
+          <p>
+            We track physical inputs inside the lab, equipment handling, technique, sequence,
+            reaction times, and grade against them. Every student&rsquo;s reagents carry
+            slightly different concentrations and impurities, so every student has a different
+            correct answer.
+          </p>
+          <p>
+            Follow-up questions are tied to their own data: &ldquo;why does <em>your</em> graph show
+            an unexpected peak?&rdquo; A chatbot can&rsquo;t answer that, because it doesn&rsquo;t
+            know they skipped rinsing the burette three steps earlier. That is what makes the
+            platform safe to set as unsupervised homework.
+          </p>
+          <p class="reading">
+            Further reading:
+            <a href="https://whimsylabs.ai/blog/oecd-process-oriented-assessment-validation/">OECD: Grade the Process, Not the Product</a> &middot;
+            <a href="https://whimsylabs.ai/blog/process-based-lab-assessment-future/">Grading the Process, Not the Answer</a> &middot;
+            <a href="https://whimsylabs.ai/blog/student-ai-use-assessment-crisis-solution/">94% of Students Use AI for Assessed Work, Not the Problem</a> &middot;
+            <a href="https://whimsylabs.ai/blog/ai-text-grading-fails-process-assessment-works/">When AI Misreads &ldquo;At Least One&rdquo;</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>WhimsyCat, an AI tutor with no chat window</h3>
+          <p>
+            Our tutor infers a student&rsquo;s understanding entirely from their actions in the lab.
+            Pupils never type a prompt and never receive generated text.
+          </p>
+          <p>
+            There is no free-text surface to safeguard, no generated content reaching a child, and
+            nothing to prompt-inject. That is a materially easier system to sign off against the
+            DfE&rsquo;s AI safety expectations than a chat-based tutor.
+          </p>
+          <p>
+            Both the AI grading and WhimsyCat are live from day one of the pilot. Both are also the
+            parts of the platform we most expect to tune in response to what your teachers tell us
+           , the design principles above are settled; the thresholds, prompts and weightings
+            are deliberately not.
+          </p>
+          <p class="reading">
+            Further reading:
+            <a href="https://whimsylabs.ai/blog/dfe-ai-safety-standards-tutor-checklist/">How WhimsyCat Meets the DfE AI Safety Standards Without a Chat Box</a> &middot;
+            <a href="https://whimsylabs.ai/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">WhimsyCat Detects and Responds to Student Frustration</a> &middot;
+            <a href="https://whimsylabs.ai/blog/ai-chatbot-lawsuits-2026-schools/">The Chatbot Reckoning: What 2026&rsquo;s Lawsuits Mean for School AI</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="pack-fig fig-16x9">
+      <div class="pack-fig-frame">
+        <img src="https://whimsylabs.ai/images/whimsycat-observing.jpg" width="1600" height="900"
+             alt="WhimsyCat watching from a shelf in the virtual laboratory while a titration runs on the bench below" />
+      </div>
+      <figcaption>
+        <strong>WhimsyCat watches the bench, not a chat box.</strong>
+        It reads what a student does with the apparatus and steps in when the technique
+        goes wrong &mdash; there is nowhere for a pupil to type, and nothing generated back at them.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ==================== FEATURE SPREAD ==================== -->
+  <section class="sec pb">
+    <div class="sec-head">
+      <div class="eyebrow">03 &middot; The full spread</div>
+      <h2 class="section-title" style="margin-top:10px">What&rsquo;s in the platform</h2>
+      <p class="section-text">
+        All four disciplines live in the same simulation, with real interactions between them
+       , an electronics fault behaves like an electronics fault when it&rsquo;s wired into a
+        chemistry rig.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Simulation</span>
+        <h3>Open sandbox</h3>
+        <p>Students can combine any reagent with any apparatus to test their own hypothesis, not just the steps a designer anticipated. Curiosity-driven work, safely contained.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Simulation</span>
+        <h3>Real consequences</h3>
+        <p>Mistakes propagate the way they do on a real bench. Contaminate a sample and the analysis shows artefacts; add acid too fast and the pH overshoots. Students diagnose their own errors.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Simulation</span>
+        <h3>Modelled hazards &amp; PPE</h3>
+        <p>Fully simulated hazard labelling, safety equipment and cleanup. Safety behaviour is observed and scored, not assumed, so pupils who later enter a real lab arrive already briefed.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Assessment</span>
+        <h3>Automatic practical grading</h3>
+        <p>Skill mastery and safety assessed in real time, with a quick or detailed per-student breakdown across procedure, safety, data collection and scientific communication. Live from day one of the pilot, and tuned through the year on your feedback.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Assessment</span>
+        <h3>AI-proof by construction</h3>
+        <p>Because every student&rsquo;s data set is unique, answers can&rsquo;t be shared or generated. This is what makes the platform safe to set as unsupervised homework.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Teaching</span>
+        <h3>Marking time returned</h3>
+        <p>Roughly 3.5 hours per teacher per week recovered from lab setup, observation, cleanup and grading, time that goes back into live teaching.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Teaching</span>
+        <h3>Intervention dashboard</h3>
+        <p>A real-time view of performance rather than grades alone. Struggling students surface early; reports export, or feed your LMS from individual pupil up to whole-region view.</p>
+      </div>
+      <div class="card later">
+        <span class="tag later">Roadmap &middot; 2027/28</span>
+        <h3>AI Experiment Builder</h3>
+        <p>Paste a protocol in plain English and get a working lab scenario in minutes, equipment, reagents, reactions, objectives and assessment criteria. Not in the first year: 2026/27 is dedicated to landing your practicals properly.</p>
+      </div>
+      <div class="card later">
+        <span class="tag later">Roadmap &middot; 2027/28</span>
+        <h3>Worldwide Lab Library</h3>
+        <p>Labs built by educators shared across the WhimsyLabs community, browse, adapt, contribute back. Follows the Experiment Builder, since it depends on it.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Access</span>
+        <h3>Runs on what pupils own</h3>
+        <p>96.66% device compatibility, down to basic Chromebooks with 4&nbsp;GB RAM. Browser-based, with VR an optional enhancement rather than a dependency.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Access</span>
+        <h3>Their headset, your licence</h3>
+        <p>Where a pupil already owns a VR headset, their school licence covers them using it at home for homework and practicals. You get immersive delivery for the students who can take it, without buying hardware. Desktop leads on features; VR follows slightly behind.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Access</span>
+        <h3>Inclusive by default</h3>
+        <p>Full control remapping, text-to-speech, and self-paced modes for SEND learners. A low-bandwidth mode keeps sessions running on unstable home connections.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Teaching</span>
+        <h3>Support across every time zone</h3>
+        <p>Students on the UK, Middle East and South-East Asia timetables work at different hours. WhimsyCat is available whenever they are, with personalised daily recommendations that keep asynchronous learners on track without a teacher online at 3am.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Assurance</span>
+        <h3>Data protection you can defend</h3>
+        <p>We expect your DPO&rsquo;s questions and we&rsquo;d rather answer them early than late. Because WhimsyCat has no pupil chat surface, there is no free-text student input to store, review or leak in the first place, the smallest data footprint of any AI tutor category.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Access</span>
+        <h3>LTI integration</h3>
+        <p>Full Learning Tools Interoperability support, including Blackboard and Canvas, so assignment and grade flow sits inside your existing stack.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Engagement</span>
+        <h3>Lab Points, not loot boxes</h3>
+        <p>Students earn free points for safety and accuracy, spent on customising their virtual workspace. Intrinsic motivation, with no predatory engagement mechanics.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Curriculum</span>
+        <h3>Exam-board aligned</h3>
+        <p>Built against the required practicals mandated by AQA, Edexcel, OCR and Cambridge International, GCSE through A-Level and international equivalents.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Curriculum</span>
+        <h3>Bespoke apparatus requests</h3>
+        <p>Pioneer schools get direct access to our development team to request specific apparatus, the mechanism behind the delivery plan later in this pack.</p>
+      </div>
+    </div>
+
+    <div class="band">
+      <h2>One Fully-Simulated STEM Lab</h2>
+      <p class="subjects">Biology &bull; Chemistry &bull; Physics &bull; Electronics</p>
+      <p>All disciplines in the same simulation, on VR headsets and desktop, Chromebook, Mac, PC.</p>
+    </div>
+  </section>
+
+  <!-- ==================== VS ALTERNATIVES ==================== -->
+  <section class="sec pb">
+    <div class="sec-head">
+      <div class="eyebrow">04 &middot; Against the alternatives</div>
+      <h2 class="section-title" style="margin-top:10px">Where we differ from guided simulation</h2>
+      <p class="section-text">
+        The virtual lab market splits into three categories, and the dividing question is simple:
+        <strong>what happens when a student does the experiment wrong?</strong> Video tools show a
+        recording, watching a titration is not performing one. Guided step-by-step
+        simulations, walk students along a predetermined sequence and
+        return them to the correct path when they stray. Physics-engine sandboxes calculate outcomes
+        from physical law, so there is no correct path to be returned to.
+      </p>
+    </div>
+
+    <p class="pull">If a student can&rsquo;t <em>make a mess of it</em>, they aren&rsquo;t doing it.</p>
+
+    <figure class="pack-fig">
+      <div class="pack-fig-frame">
+        <img src="https://whimsylabs.ai/images/blog18.jpg" width="1834" height="491"
+             alt="The same WhimsyLabs practical shown side by side: on a desktop browser, and in a VR headset" />
+      </div>
+      <figcaption>
+        <strong>One sandbox, two ways in.</strong>
+        The same bench, the same physics and the same assessment, whether a student
+        is on a Chromebook or in a headset &mdash; and in neither case are they following a script.
+      </figcaption>
+    </figure>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">Guided simulation</th>
+            <th scope="col" class="us">WhimsyLabs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Core interaction</th>
+            <td>Click through a branching, quiz-gated script.</td>
+            <td class="us">Manipulate apparatus in an open sandbox governed by a physics engine.</td>
+          </tr>
+          <tr>
+            <th scope="row">Getting it wrong</th>
+            <td>Blocked, corrected, or nudged back on rails. The link between action and consequence is broken.</td>
+            <td class="us">The error happens and propagates. Students must notice it, diagnose it, and decide what to do.</td>
+          </tr>
+          <tr>
+            <th scope="row">What&rsquo;s assessed</th>
+            <td>Answers selected and steps completed.</td>
+            <td class="us">Technique, handling, sequence, safety and cleanup, then the answers.</td>
+          </tr>
+          <tr>
+            <th scope="row">Homework integrity</th>
+            <td>Identical data for every student, so answers are shareable and AI-answerable.</td>
+            <td class="us">Per-student reagent variation means each pupil has a unique correct answer.</td>
+          </tr>
+          <tr>
+            <th scope="row">AI tutor safety</th>
+            <td>Typically a pupil-facing chat surface generating text to children.</td>
+            <td class="us">No student chat window at all. The tutor reads actions, never prompts.</td>
+          </tr>
+          <tr>
+            <th scope="row">Coverage model</th>
+            <td>A fixed catalogue, typically a few hundred authored simulations, on the vendor&rsquo;s release schedule.</td>
+            <td class="us">In 2026/27 we build to <em>your</em> specification, on your term dates, the 52 practicals below. From 2027/28 the Experiment Builder removes the cap entirely.</td>
+          </tr>
+          <tr>
+            <th scope="row">Custom practicals</th>
+            <td>Vendor roadmap request, on their priorities.</td>
+            <td class="us">Pioneer schools get direct access to our development team to request specific apparatus and reorder the build queue. Self-service authoring arrives in year two.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">
+      We&rsquo;d encourage you to test both platforms against the same practical with the same
+      students, rather than take our word for any of the above. If it helps to have a neutral
+      checklist for that, we wrote one:
+      <a href="https://whimsylabs.ai/blog/how-to-choose-virtual-lab-software-school/">Virtual Lab Software for Secondary Schools: A Buyer&rsquo;s Guide</a>.
+    </p>
+
+    <div class="callout">
+      <p>
+        <strong>Where guided platforms genuinely win, today.</strong> A mature catalogue of several
+        hundred polished, curriculum-tagged simulations is a real asset, and on raw title count we
+        are behind. Our position is that title count is the wrong metric for a school that needs to
+        evidence practical <em>skill</em>, but you should weigh that yourself, and the
+        delivery plan below is written so you never have to take it on trust.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CUSTOM LABS ==================== -->
+  <section class="sec prose">
+    <div class="sec-head">
+      <div class="eyebrow">05 &middot; Custom labs</div>
+      <h2 class="section-title" style="margin-top:10px">Year one builds your practicals. Year two hands you the tools.</h2>
+      <p class="section-text">
+        We want to be exact about sequencing here, because it&rsquo;s the thing most likely to be
+        misread. <strong>Self-service custom experiments are not part of the 2026/27
+        offer.</strong> The whole of the first year is committed to building the 52 practicals on
+        your list properly, and we would rather do that than spread the same engineering across two
+        goals and do neither well.
+      </p>
+      <p class="section-text" style="margin-top:14px">
+        What you get instead in year one is direct access to our development team. If a practical
+        matters more to your timetable than to our sequencing, you tell us and we move it. That is
+        a slower loop than authoring it yourself, but it is a considerably faster one than a
+        feature request into a vendor backlog.
+      </p>
+      <p class="section-text" style="margin-top:14px">
+        From <strong>2027/28</strong>, the AI Experiment Builder takes a protocol written in
+        ordinary English and produces a working lab, equipment, reagents, reactions,
+        objectives and assessment criteria. At that point the procurement question changes: you are
+        no longer buying a catalogue and hoping it covers your specification, you are buying an
+        engine plus the ability to author against it. Anything your teachers build can stay private
+        to King&rsquo;s InterHigh, be shared across Inspired, or be contributed to the global
+        library, your call, per lab.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== ROADMAP ==================== -->
+  <section class="sec pb">
+    <div class="sec-head">
+      <div class="eyebrow">06 &middot; Delivery plan</div>
+      <h2 class="section-title" style="margin-top:10px">Your 52 practicals, staggered across 2026/27</h2>
+      <p class="section-text">
+        We will not pretend all 52 will be finished for September, and you should be sceptical of
+        any vendor who says otherwise. Below is an honest four-wave plan aligned to term boundaries.
+      </p>
+      <p class="section-text" style="margin-top:14px">
+        The sequencing isn&rsquo;t arbitrary, and September is not a sampler. Wave&nbsp;1 delivers
+        <strong>complete capability families rather than isolated experiments</strong>: the entire
+        titration platform &mdash; acid&ndash;base, redox, pH curves, K<sub>a</sub> determination and
+        Vitamin&nbsp;C &mdash; arrives together, as does the whole electrical bench, chromatography
+        across both Biology and Chemistry, and dissection in all its forms. A department can teach a
+        coherent unit from day one rather than working around gaps.
+      </p>
+      <p class="section-text" style="margin-top:14px">
+        Later waves then inherit those rigs, because once a bench exists the second practical built
+        on it costs a fraction of the first. Wave dates are indicative pending your 2026/27 term
+        boundaries &mdash; send us those and we will convert them into dated commitments.
+      </p>
+    </div>
+
+    <div class="waves">
+
+      <!-- WAVE 1 -->
+      <div class="wave w1">
+        <div class="wave-head">
+          <span class="wave-chip">Wave 1</span>
+          <h3>September launch</h3>
+          <span class="wave-when">Term dates indicative &middot; from Sept 2026</span>
+          <span class="wave-count">17 practicals</span>
+        </div>
+        <div class="wave-body">
+          <div class="disc">
+            <h4>Biology</h4>
+            <ul>
+              <li>Microscopy &amp; Cell Division</li>
+              <li>Organ Dissection (all types)</li>
+              <li>Chromatography</li>
+              <li>Vitamin C Titration</li>
+              <li>Brine Shrimp Development</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Chemistry</h4>
+            <ul>
+              <li>Titration (Acid&ndash;Base &amp; Redox)</li>
+              <li>Neutralisation &amp; pH Curves</li>
+              <li>K<sub>a</sub> &amp; pK<sub>a</sub> Determination</li>
+              <li>Chromatography &amp; TLC</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Physics</h4>
+            <ul>
+              <li>I&ndash;V Characteristics</li>
+              <li>Resistance &amp; Resistivity</li>
+              <li>EMF &amp; Internal Resistance</li>
+              <li>Capacitor Charge/Discharge</li>
+              <li>Refraction</li>
+              <li>Simple Harmonic Motion</li>
+              <li>Viscosity</li>
+              <li>Radioactivity (Inverse Square, Absorption)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wave-note">
+          Complete capability families rather than isolated experiments: the full titration platform, the entire electrical bench, chromatography serving both sciences, and dissection in all its forms. Every rig here is reused by a later wave.
+        </div>
+      </div>
+
+      <!-- WAVE 2 -->
+      <div class="wave w2">
+        <div class="wave-head">
+          <span class="wave-chip">Wave 2</span>
+          <h3>Autumn term</h3>
+          <span class="wave-when">Term dates indicative &middot; Oct&ndash;Dec 2026</span>
+          <span class="wave-count">12 practicals</span>
+        </div>
+        <div class="wave-body">
+          <div class="disc">
+            <h4>Biology</h4>
+            <ul>
+              <li>Enzymes &amp; Temperature Effects</li>
+              <li>Osmosis</li>
+              <li>Cell Membranes</li>
+              <li>Food Tests (Benedict&rsquo;s, Biuret)</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Chemistry</h4>
+            <ul>
+              <li>Making Salts</li>
+              <li>Tests for Ions</li>
+              <li>Combustion &amp; Enthalpy</li>
+              <li>Electrolysis</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Physics</h4>
+            <ul>
+              <li>Density</li>
+              <li>Acceleration &amp; Freefall</li>
+              <li>Hooke&rsquo;s Law &amp; Young Modulus</li>
+              <li>Thermal Insulation &amp; Specific/Latent Heat</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wave-note">
+          Core GCSE benchwork across all three sciences. Electrolysis here sets up electrochemical cells in Wave 3, and the tensile rig introduced with Hooke&rsquo;s Law carries plant fibre strength in Wave 4.
+        </div>
+      </div>
+
+      <!-- WAVE 3 -->
+      <div class="wave w3">
+        <div class="wave-head">
+          <span class="wave-chip">Wave 3</span>
+          <h3>Spring term</h3>
+          <span class="wave-when">Term dates indicative &middot; Jan&ndash;Mar 2027</span>
+          <span class="wave-count">12 practicals</span>
+        </div>
+        <div class="wave-body">
+          <div class="disc">
+            <h4>Biology</h4>
+            <ul>
+              <li>Respiration</li>
+              <li>Microbiology &amp; Aseptic Technique</li>
+              <li>Heart Rate</li>
+              <li>Spirometry</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Chemistry</h4>
+            <ul>
+              <li>Reaction Rates &amp; Activation Energy</li>
+              <li>Molar Volume of Gas</li>
+              <li>Electrochemical Cells</li>
+              <li>Organic Analysis (Alcohols, Aldehydes, Carboxylic Acids)</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Physics</h4>
+            <ul>
+              <li>Wave Properties &amp; Stationary Waves</li>
+              <li>Diffraction</li>
+              <li>Speed of Sound</li>
+              <li>Gas Laws (Boyle&rsquo;s Law)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wave-note">
+          A-Level and IB weighting, timed to land before spring coursework deadlines. The wave-optics bench arrives in one block, and the gas rig serves both molar volume and Boyle&rsquo;s Law.
+        </div>
+      </div>
+
+      <!-- WAVE 4 -->
+      <div class="wave w4">
+        <div class="wave-head">
+          <span class="wave-chip">Wave 4</span>
+          <h3>Summer term</h3>
+          <span class="wave-when">Term dates indicative &middot; Apr&ndash;Jul 2027</span>
+          <span class="wave-count">11 practicals</span>
+        </div>
+        <div class="wave-body">
+          <div class="disc">
+            <h4>Biology</h4>
+            <ul>
+              <li>Photosynthesis &amp; Chloroplast Isolation</li>
+              <li>Gel Electrophoresis</li>
+              <li>Fieldwork &amp; Sampling (Quadrats, Transects)</li>
+              <li>Plant Fibres &amp; Tensile Strength</li>
+              <li>Habituation Studies</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Chemistry</h4>
+            <ul>
+              <li>Organic Synthesis &mdash; Solid (Aspirin)</li>
+              <li>Organic Synthesis &mdash; Liquid (Distillation)</li>
+              <li>Hydrolysis Rates (Halogenoalkanes)</li>
+              <li>Transition Metal Complexes</li>
+            </ul>
+          </div>
+          <div class="disc">
+            <h4>Physics</h4>
+            <ul>
+              <li>Magnetic Fields &amp; Forces</li>
+              <li>Momentum &amp; Collisions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wave-note">
+          The specialist builds &mdash; field sampling environments, behavioural studies and multi-step organic synthesis &mdash; each needing bespoke environment work rather than rig reuse.
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p>
+        <strong>The order is not fixed.</strong> If a practical matters more to your timetable than
+        to our sequencing, tell us and we will move it, Pioneer schools have direct access to
+        the development team precisely for this, and reordering the queue is the single most useful
+        thing you can do with that access.
+      </p>
+      <p>
+        Send us your scheme of work alongside your term dates and we will re-cut these four waves
+        against it before anything is signed.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FURTHER READING ==================== -->
+  <section class="sec pb">
+    <div class="sec-head">
+      <div class="eyebrow">07 &middot; Further reading</div>
+      <h2 class="section-title" style="margin-top:10px">The arguments above, at full length</h2>
+      <p class="section-text">
+        Everything in this pack is set out in more detail on our blog, with sources. These are the
+        pieces most likely to be useful when you circulate your recommendation.
+      </p>
+    </div>
+
+    <div class="reading-grid">
+      <div class="reading-col">
+        <h4>Why the engine matters</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/physicality-in-virtual-labs/">Physicality in Virtual Labs: Beyond Traditional Simulations</a></li>
+          <li><a href="https://whimsylabs.ai/blog/why-traditional-virtual-labs-fail-physics-engine/">Why Other Virtual Labs Fail: The Physics Engine Solution</a></li>
+          <li><a href="https://whimsylabs.ai/blog/sandbox-learning-revolution-stem-education/">Sandbox Learning: Why Freedom to Fail Is Essential for STEM</a></li>
+          <li><a href="https://whimsylabs.ai/blog/edtech-critics-right-passive-learning-vs-active-labs/">The Critics Are Right: Most EdTech Is Useless</a></li>
+          <li><a href="https://whimsylabs.ai/blog/science-real-time-physics-simulations-virtual-labs/">Real-Time Physics: Why Dynamic Simulations Make Learning Fun</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>Assessment &amp; AI integrity</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/oecd-process-oriented-assessment-validation/">OECD: Grade the Process, Not the Product</a></li>
+          <li><a href="https://whimsylabs.ai/blog/process-based-lab-assessment-future/">Grading the Process, Not the Answer</a></li>
+          <li><a href="https://whimsylabs.ai/blog/ai-assessment-crisis-solution/">AI Detection Doesn&rsquo;t Work. Process-Based Assessment Does.</a></li>
+          <li><a href="https://whimsylabs.ai/blog/oecd-ai-learning-paradox-virtual-labs/">AI Boosted Test Scores 127%. Then Students Couldn&rsquo;t Think Without It.</a></li>
+          <li><a href="https://whimsylabs.ai/blog/neu-survey-ai-critical-thinking-decline/">76% of Teachers Use AI. 66% Say It Erodes Critical Thinking.</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>AI safety &amp; data protection</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/dfe-ai-safety-standards-tutor-checklist/">How WhimsyCat Meets the DfE AI Safety Standards Without a Chat Box</a></li>
+          <li><a href="https://whimsylabs.ai/blog/ai-chatbot-lawsuits-2026-schools/">The Chatbot Reckoning: What 2026&rsquo;s Lawsuits Mean for School AI</a></li>
+          <li><a href="https://whimsylabs.ai/blog/purpose-built-ai-education-difference/">Purpose-Built AI vs ChatGPT: Why Design Matters</a></li>
+          <li><a href="https://whimsylabs.ai/blog/edtech-vendor-security-questions-powerschool/">10 Questions to Ask EdTech Vendors After the PowerSchool Breach</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>VR strategy &amp; devices</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/meta-quest-education-support-cliff-2030/">Your School&rsquo;s VR Headsets Just Lost Their Roadmap</a></li>
+          <li><a href="https://whimsylabs.ai/blog/vr-winter-web-first-virtual-labs/">VR Winter? Why Web-First Virtual Labs Are Smart for Schools</a></li>
+          <li><a href="https://whimsylabs.ai/blog/vr-headsets-vs-chromebooks-cost-per-student/">VR Headsets vs Chromebooks: A 2026 Cost Guide</a></li>
+          <li><a href="https://whimsylabs.ai/blog/vr-stem-education-research-pedagogical-scaffolding/">New VR Research: Technology Without Pedagogy Falls Flat</a></li>
+          <li><a href="https://whimsylabs.ai/blog/virtual-reality-prepares-students-real-world-stem-careers/">VR Prepares Students for STEM Careers with Physical Lab Skills</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>Inclusion &amp; SEND</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/virtual-kidney-dissection-send-engagement/">Virtual Kidney Dissection Enhances SEND Student Engagement</a></li>
+          <li><a href="https://whimsylabs.ai/blog/send-white-paper-2026-science-practicals/">What the 2026 SEND White Paper Means for Science Teaching</a></li>
+          <li><a href="https://whimsylabs.ai/blog/ofsted-inclusion-2026-science-evidence/">How to Evidence Inclusion in Science for Ofsted&rsquo;s New Toolkit</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>Curriculum, cost &amp; policy</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/triple-science-entitlement-2028-virtual-labs/">Triple Science for All by 2028: Delivering the Practicals</a></li>
+          <li><a href="https://whimsylabs.ai/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Virtual vs Physical Labs: A Cost-Benefit Analysis</a></li>
+          <li><a href="https://whimsylabs.ai/blog/virtual-labs-solve-stem-teacher-shortage-crisis/">Virtual Labs and the STEM Teacher Shortage</a></li>
+          <li><a href="https://whimsylabs.ai/blog/how-to-choose-virtual-lab-software-school/">Virtual Lab Software for Secondary Schools: A Buyer&rsquo;s Guide</a></li>
+          <li><a href="https://whimsylabs.ai/blog/green-labs-sustainability-virtual-stem-education/">Green Labs: Sustainability in STEM</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>By discipline</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/virtual-biology-lab-dissections-microscopy/">Virtual Biology Lab: Dissections, Microscopy and More</a></li>
+          <li><a href="https://whimsylabs.ai/blog/virtual-chemistry-lab-teachers-guide/">Virtual Chemistry Lab: A Teacher&rsquo;s Complete Guide</a></li>
+          <li><a href="https://whimsylabs.ai/blog/virtual-physics-lab-simulations-teach/">Virtual Physics Lab: Simulations That Actually Teach</a></li>
+        </ul>
+      </div>
+
+      <div class="reading-col">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="https://whimsylabs.ai/blog/whimsylabs-wins-techlearning-best-of-bett-2026/">WhimsyLabs Wins Tech&amp;Learning #1 Best of BETT 2026</a></li>
+          <li><a href="https://whimsylabs.ai/blog/whimsylabs-education-revolution/">The WhimsyLabs Story: From Startup to BETT 2025 Winner</a></li>
+          <li><a href="https://whimsylabs.ai/blog/pearson-webinar-vr-assessment-ai-age/">Assessment in the Age of AI: Our Pearson Webinar</a></li>
+          <li><a href="https://whimsylabs.ai/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEXT STEPS ==================== -->
+  <section class="sec pb">
+    <div class="panel">
+      <h2>Getting to a September decision</h2>
+      <p>
+        Five things between here and a signed pilot. None of them require you to win an internal
+        argument on a renewal deadline.
+      </p>
+      <div class="panel-steps">
+        <div class="panel-step">
+          <div class="n">01</div>
+          <div>
+            <h3>Confirm term dates and cohort scope</h3>
+            <p>We need your 2026/27 term boundaries to convert the waves above into dated commitments, plus which cohorts are in scope, KS3, IGCSE, A-Level, IB, and approximate student numbers.</p>
+          </div>
+        </div>
+        <div class="panel-step">
+          <div class="n">02</div>
+          <div>
+            <h3>Technical check on home devices</h3>
+            <p>Your students sit across UK, Middle East and South-East Asia timetables on their own hardware. We&rsquo;d like a short call with your IT lead to confirm the device floor and bandwidth profile before anything is committed.</p>
+          </div>
+        </div>
+        <div class="panel-step">
+          <div class="n">03</div>
+          <div>
+            <h3>Run a term in parallel, not a rip-and-replace</h3>
+            <p>We would rather sit alongside your incumbent for the autumn term on one or two cohorts, with agreed success measures, than ask you to displace them on a payment deadline. Compare both on the same practical, with the same students.</p>
+          </div>
+        </div>
+        <div class="panel-step">
+          <div class="n">04</div>
+          <div>
+            <h3>Pricing and Pioneer terms</h3>
+            <p>Pioneer schools secure the 2026/27 academic year at our introductory BETT rate, with beta AI grading and early modules available from the summer term. We&rsquo;ll issue a written quote once scope and cohort numbers are settled.</p>
+          </div>
+        </div>
+        <div class="panel-step">
+          <div class="n">05</div>
+          <div>
+            <h3>The wider Inspired conversation</h3>
+            <p>If King&rsquo;s InterHigh goes well we&rsquo;re glad to talk to the wider group, but we&rsquo;d rather earn that on evidence from your cohorts than price for 125 schools before we&rsquo;ve served one properly.</p>
+          </div>
+        </div>
+      </div>
+      <a class="panel-cta" href="https://whimsylabs.ai/contact/">Become a Pioneer School</a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>
+      <strong>WhimsyLabs</strong>, whimsylabs.ai<br />
+      Prepared for King&rsquo;s InterHigh, 28 July 2026
+    </div>
+    <div>Biology &bull; Chemistry &bull; Physics &bull; Electronics</div>
+  </footer>
+
+</div>

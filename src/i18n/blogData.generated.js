@@ -1,8 +1,255 @@
 // Auto-generated blog data for build script
-// Generated on 2026-06-26T10:09:08.917Z
+// Generated on 2026-07-30T22:01:58.277Z
 
 module.exports = {
   "en": [
+    {
+      "id": "post55",
+      "slug": "student-owned-vr-headsets-school-licence",
+      "title": "Student-Owned VR Headsets: Practicals at Home",
+      "description": "Plenty of students already own a VR headset. Letting a school licence extend to it turns idle consumer hardware into practical science capacity, at no cost.",
+      "keywords": [
+        "student owned VR headsets",
+        "BYOD VR schools",
+        "VR homework practicals",
+        "school VR licence",
+        "consumer VR education",
+        "virtual labs at home",
+        "VR without buying headsets",
+        "immersive homework"
+      ],
+      "date": "2026-08-04",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post54",
+      "slug": "multi-school-group-virtual-lab-rollout",
+      "title": "Rolling Out Virtual Labs Across a School Group",
+      "description": "Buying edtech for twenty schools is not buying it twenty times. A practical guide to piloting, evidencing and scaling virtual labs across a trust or group.",
+      "keywords": [
+        "multi academy trust edtech",
+        "MAT procurement science",
+        "school group edtech rollout",
+        "virtual labs trust wide",
+        "edtech pilot design",
+        "central procurement schools",
+        "school group science strategy",
+        "international school group"
+      ],
+      "date": "2026-08-03",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post53",
+      "slug": "ib-diploma-science-practicals-virtual-labs",
+      "title": "IB Sciences: Simulation and the Scientific Investigation",
+      "description": "The IB explicitly allows simulation and modelling in the Scientific Investigation. Here is how to use that well, and where it still needs a real bench.",
+      "keywords": [
+        "IB Diploma science",
+        "scientific investigation IA",
+        "IB internal assessment simulation",
+        "IB Group 4",
+        "IB sciences online",
+        "IB chemistry IA",
+        "IB biology IA",
+        "virtual labs international baccalaureate"
+      ],
+      "date": "2026-07-31",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post52",
+      "slug": "flipped-practical-preloading-lab-skills",
+      "title": "The Flipped Practical: Arrive at the Bench Competent",
+      "description": "Most lab time is spent on briefing, not doing. Running the practical in simulation first turns a demonstration slot into a genuine investigation.",
+      "keywords": [
+        "flipped practical",
+        "flipped classroom science",
+        "lab preparation simulation",
+        "practical science time",
+        "health and safety training science",
+        "blended science teaching",
+        "virtual labs before real labs",
+        "required practicals"
+      ],
+      "date": "2026-07-30",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post51",
+      "slug": "virtual-labs-online-schools-distance-learning",
+      "title": "Virtual Labs for Online Schools: Science at a Distance",
+      "description": "Online schools can teach every subject well except one. Here is an honest look at how distance providers deliver practical science, and what actually works.",
+      "keywords": [
+        "online school science",
+        "distance learning practicals",
+        "virtual labs online school",
+        "OEAS accreditation",
+        "elective home education science",
+        "remote practical science",
+        "online school GCSE science",
+        "virtual laboratory software"
+      ],
+      "date": "2026-07-29",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post50",
+      "slug": "inclusive-mainstream-fund-practical-science",
+      "title": "How to Spend the Inclusive Mainstream Fund on Practical Science",
+      "description": "Schools receive Inclusive Mainstream Fund money this year, with inclusion strategies due from December. A practical-science spend guide for SENCOs.",
+      "keywords": [
+        "Inclusive Mainstream Fund",
+        "IMF schools spending",
+        "inclusion strategy December 2026",
+        "SEND funding science",
+        "inclusive practice fund",
+        "SEND practical science funding",
+        "virtual labs SEND funding",
+        "Â£400 million inclusion fund"
+      ],
+      "date": "2026-07-17",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post45",
+      "slug": "meta-quest-education-support-cliff-2030",
+      "title": "Your School's VR Headsets Just Lost Their Roadmap",
+      "description": "Meta stopped selling commercial Quest headsets in February 2026, with support ending January 2030. What schools with VR fleets should do next.",
+      "keywords": [
+        "Meta Quest schools",
+        "Meta for Education",
+        "Horizon Managed Services",
+        "VR in schools",
+        "school VR headsets",
+        "virtual lab",
+        "device-agnostic virtual labs",
+        "VR procurement schools"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post46",
+      "slug": "ai-chatbot-lawsuits-2026-schools",
+      "title": "The Chatbot Reckoning: What 2026's Lawsuits Mean for School AI",
+      "description": "Character.AI settlements, the first state lawsuit, and the GUARD Act: 2026 is the year chatbot liability got real. What it means for AI in schools.",
+      "keywords": [
+        "AI chatbot lawsuits",
+        "GUARD Act schools",
+        "AI companion minors",
+        "safe AI for schools",
+        "AI safeguarding children",
+        "Character.AI settlement",
+        "AI tutor safety",
+        "AI tutor without chatbot"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post47",
+      "slug": "neu-survey-ai-critical-thinking-decline",
+      "title": "76% of Teachers Use AI. 66% Say It Erodes Critical Thinking.",
+      "description": "The NEU's 2026 survey finds 76% of teachers use AI while 66% see critical thinking declining. The fix is AI that makes pupils do the work.",
+      "keywords": [
+        "NEU State of Education 2026",
+        "AI critical thinking decline",
+        "teachers AI survey",
+        "school AI policy",
+        "AI tutors disadvantaged pupils",
+        "cognitive offloading",
+        "AI in schools",
+        "virtual lab AI tutor"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post48",
+      "slug": "us-federal-ai-education-grant-priority-2026",
+      "title": "How to Write AI Into Your US Federal Education Grant Application",
+      "description": "The US Education Department now prioritizes AI in discretionary grants. How districts can write AI into applications, and which tools qualify.",
+      "keywords": [
+        "AI education grant priority",
+        "Department of Education AI grants",
+        "discretionary grants AI 2026",
+        "Title IV-A virtual labs",
+        "Perkins V simulation software",
+        "AI personalized learning grant",
+        "grant writing AI schools",
+        "virtual lab funding"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post49",
+      "slug": "ofsted-inclusion-2026-science-evidence",
+      "title": "How to Evidence Inclusion in Science for Ofsted's New Toolkit",
+      "description": "Ofsted's September 2026 updates make inclusion everyone's responsibility. How science departments can show every pupil accesses practical work.",
+      "keywords": [
+        "Ofsted inclusion 2026",
+        "Ofsted September 2026 changes",
+        "inclusion in science",
+        "SEND practical science",
+        "Ofsted report cards",
+        "evidence inclusive practice",
+        "accessible science labs",
+        "virtual labs SEND"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post44",
+      "slug": "vr-headsets-vs-chromebooks-cost-per-student",
+      "title": "VR Headsets vs Chromebooks for Virtual Labs: A 2026 Cost Guide",
+      "description": "An honest 2026 cost-per-student comparison: classroom VR headsets versus browser-based virtual labs on the Chromebooks you already own.",
+      "keywords": [
+        "VR headsets vs Chromebooks",
+        "virtual lab cost per student",
+        "do schools need VR headsets",
+        "browser-based virtual labs",
+        "Meta Quest education price",
+        "classroom VR total cost of ownership",
+        "WebXR education",
+        "virtual science labs"
+      ],
+      "date": "2026-07-15",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
+    {
+      "id": "post43",
+      "slug": "dfe-ai-safety-standards-tutor-checklist",
+      "title": "How WhimsyCat Meets the DfE AI Safety Standards Without a Chat Box",
+      "description": "WhimsyCat has no student chat window; it infers everything from lab actions. Here is how that design meets the DfE's 2026 AI safety standards.",
+      "keywords": [
+        "DfE AI product safety standards",
+        "safe AI tutor schools",
+        "AI tutor without chatbot",
+        "action-based AI tutor",
+        "WhimsyCat",
+        "AI safeguarding schools",
+        "cognitive offloading AI",
+        "purpose-built AI education"
+      ],
+      "date": "2026-06-27",
+      "hasFullTranslation": false,
+      "language": "en"
+    },
     {
       "id": "post42",
       "slug": "triple-science-entitlement-2028-virtual-labs",
@@ -587,8 +834,8 @@ module.exports = {
     {
       "id": "post4",
       "slug": "ai-powered-virtual-labs-solving-education-crisis",
-      "title": "WhimsyLabs' AI Virtual Labs Solving Global Science Education Crisis",
-      "description": "WhimsyLabs' innovative virtual laboratory platform combines advanced AI assessment, realistic physics simulations, and sandbox learning to democratize high-quality science education globally.",
+      "title": "How AI Virtual Labs Tackle the STEM Education Crisis",
+      "description": "Teacher shortages and lab costs are squeezing science education. See how AI-assessed virtual labs give every student realistic, hands-on practice.",
       "keywords": null,
       "date": "2025-04-15",
       "hasFullTranslation": true,
@@ -636,44 +883,6 @@ module.exports = {
     }
   ],
   "de": [
-    {
-      "id": "post42",
-      "slug": "triple-science-entitlement-2028-virtual-labs",
-      "title": "Triple Science für alle bis 2028: Die Praktika umsetzen",
-      "description": "Ein Anspruch auf Triple Science kommt im September 2028, aber die praktische Arbeit hat sich seit 2016 fast halbiert. So helfen virtuelle Labore Schulen, ihn umzusetzen.",
-      "keywords": [
-        "Anspruch Triple Science 2028",
-        "Curriculum and Assessment Review",
-        "Francis Review Naturwissenschaft",
-        "Rückgang praktische Naturwissenschaft",
-        "Lehrermangel Physik",
-        "virtuelle Wissenschaftslabore Schulen",
-        "GCSE einzelne Naturwissenschaften",
-        "Chromebook virtuelle Labore"
-      ],
-      "date": "2026-06-25",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
-    {
-      "id": "post41",
-      "slug": "send-white-paper-2026-science-practicals",
-      "title": "Das SEND-Weißbuch 2026 und der Naturwissenschaftsunterricht",
-      "description": "Das SEND-Weißbuch 2026 gibt jedem Schüler mit SEND einen gesetzlichen Individual Support Plan (individueller Förderplan) und macht Inklusion ab September zu einem Ofsted-Schwerpunkt. Das bedeutet es für den Naturwissenschaftsunterricht.",
-      "keywords": [
-        "SEND-Weißbuch 2026",
-        "individueller Förderplan",
-        "SEND naturwissenschaftliche Praktika",
-        "Ofsted-Inklusionsrahmen 2026",
-        "barrierefreie Wissenschaftslabore SEND",
-        "SEND-Fortschritt belegen",
-        "inklusive naturwissenschaftliche Bildung",
-        "virtuelles Labor SEND"
-      ],
-      "date": "2026-06-15",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
     {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
@@ -770,25 +979,6 @@ module.exports = {
       "language": "de"
     },
     {
-      "id": "post38",
-      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
-      "title": "Britische Schulen: über 50 Mio. £ für KI-Bildung — BETT 2026",
-      "description": "Die Erweiterung der EdTech-Testbeds auf 23 Mio. £, der Konnektivitätsfonds von 45 Mio. £ und der bevorstehende KI-Bildungsgipfel signalisieren einen großen Wandel. Was Schulen jetzt vorbereiten sollten.",
-      "keywords": [
-        "UK EdTech Testbeds",
-        "BETT 2026 Ankündigungen",
-        "KI in britischen Schulen",
-        "MINT-Bildung",
-        "KI-Tutor",
-        "Bildungstechnologie UK",
-        "KI-Bildungsgipfel 2026",
-        "staatliche EdTech-Förderung"
-      ],
-      "date": "2026-03-11",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
-    {
       "id": "post34",
       "slug": "vr-stem-education-research-pedagogical-scaffolding",
       "title": "Neue VR-Studie: Technologie ohne Pädagogik reicht nicht",
@@ -843,23 +1033,6 @@ module.exports = {
         "virtuelle Labore"
       ],
       "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
-    {
-      "id": "post31",
-      "slug": "uk-government-ai-education-funding-2026",
-      "title": "UK investiert 49 Mio. £ in KI-Bildung: Was das für Schulen bedeutet",
-      "description": "Die britische Regierung kündigt 49 Mio. £ KI-Bildungsförderung plus das 187 Mio. £ TechFirst-Programm an. Erfahren Sie, wie Schulen auf diese Mittel für KI-Nachhilfe und Bewertungstools zugreifen können.",
-      "keywords": [
-        "UK KI-Bildungsförderung 2026",
-        "staatliche EdTech-Investitionen",
-        "KI in britischen Schulen",
-        "TechFirst-Programm",
-        "KI-Bewertungstools",
-        "Bildungstechnologie-Förderung"
-      ],
-      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -977,24 +1150,6 @@ module.exports = {
       "description": "Nach dem PowerSchool-Datenleck, das Millionen von Schülern betraf, müssen Schulen EdTech-Anbieter prüfen. 10 wichtige Sicherheitsfragen.",
       "keywords": null,
       "date": "2026-02-01",
-      "hasFullTranslation": false,
-      "language": "de"
-    },
-    {
-      "id": "post21",
-      "slug": "royal-society-partnership-grants-vr-science-labs",
-      "title": "UK-Schulen: £3.000 für VR-Labore mit Royal Society Grants",
-      "description": "Die Royal Society Partnership Grants bieten UK-Schulen bis zu £3.000 für MINT-Projekte. WhimsyLabs hilft bei der Bewerbung und bietet kostenlose VR-Labor-Software.",
-      "keywords": [
-        "Royal Society Partnership Grants",
-        "UK-Schulförderung",
-        "MINT-Förderung",
-        "VR-Wissenschaftslabore",
-        "Förderung naturwissenschaftlicher Bildung",
-        "WhimsyLabs Förderung",
-        "Schulwissenschaftsausrüstung"
-      ],
-      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "de"
     },
@@ -1346,44 +1501,6 @@ module.exports = {
   ],
   "fr": [
     {
-      "id": "post42",
-      "slug": "triple-science-entitlement-2028-virtual-labs",
-      "title": "Triple Science pour tous d'ici 2028 : assurer les travaux pratiques",
-      "description": "Un droit à la Triple Science (les trois sciences distinctes au GCSE) arrive pour septembre 2028, mais les travaux pratiques ont presque diminué de moitié depuis 2016. Voici comment les laboratoires virtuels aident les écoles à le mettre en œuvre.",
-      "keywords": [
-        "droit à la Triple Science 2028",
-        "Curriculum and Assessment Review",
-        "revue Francis sciences",
-        "déclin des sciences pratiques",
-        "pénurie d'enseignants de physique",
-        "laboratoires de sciences virtuels écoles",
-        "sciences distinctes GCSE",
-        "laboratoires virtuels Chromebook"
-      ],
-      "date": "2026-06-25",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
-      "id": "post41",
-      "slug": "send-white-paper-2026-science-practicals",
-      "title": "Le Livre blanc SEND 2026 et l'enseignement des sciences",
-      "description": "Le Livre blanc SEND 2026 accorde à chaque élève en situation de SEND (besoins éducatifs particuliers) un Individual Support Plan (plan de soutien individualisé) statutaire et fait de l'inclusion une priorité d'Ofsted dès septembre. Voici ce que cela signifie pour l'enseignement des sciences.",
-      "keywords": [
-        "Livre blanc SEND 2026",
-        "plan de soutien individualisé",
-        "travaux pratiques de sciences SEND",
-        "cadre d'inclusion Ofsted 2026",
-        "laboratoires de sciences accessibles SEND",
-        "preuves de progrès SEND",
-        "éducation scientifique inclusive",
-        "laboratoires virtuels SEND"
-      ],
-      "date": "2026-06-15",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
       "title": "OCDE : évaluer le processus, pas le produit, en sciences",
@@ -1470,25 +1587,6 @@ module.exports = {
       "language": "fr"
     },
     {
-      "id": "post38",
-      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
-      "title": "Royaume-Uni : +50 M£ pour l'IA éducative et le signal BETT 2026",
-      "description": "L'expansion des EdTech Testbeds à 23 millions de livres, le fonds de connectivité de 45 millions et le prochain Sommet de l'Éducation IA signalent un changement majeur. Voici ce que les écoles doivent préparer.",
-      "keywords": [
-        "UK EdTech Testbeds",
-        "BETT 2026 annonces",
-        "IA dans les écoles britanniques",
-        "éducation STEM",
-        "tuteur IA",
-        "technologie éducative UK",
-        "Sommet Éducation IA 2026",
-        "financement gouvernemental EdTech"
-      ],
-      "date": "2026-03-11",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
       "id": "post34",
       "slug": "vr-stem-education-research-pedagogical-scaffolding",
       "title": "Étude VR : la technologie sans pédagogie ne suffit pas",
@@ -1542,23 +1640,6 @@ module.exports = {
         "laboratoires virtuels"
       ],
       "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
-      "id": "post31",
-      "slug": "uk-government-ai-education-funding-2026",
-      "title": "49 M£ pour l'IA éducative au Royaume-Uni : Impact sur les écoles",
-      "description": "Le gouvernement britannique annonce 49 M£ de financement pour l'éducation à l'IA plus le programme TechFirst de 187 M£. Découvrez comment les écoles peuvent accéder à ces fonds pour les outils de tutorat et d'évaluation par IA.",
-      "keywords": [
-        "financement éducation IA Royaume-Uni 2026",
-        "investissement gouvernemental EdTech",
-        "IA dans les écoles britanniques",
-        "programme TechFirst",
-        "outils de notation IA",
-        "subventions technologie éducative"
-      ],
-      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -1676,24 +1757,6 @@ module.exports = {
       "description": "Après la violation PowerSchool exposant des millions d'élèves, les écoles doivent vérifier les fournisseurs EdTech. 10 questions essentielles.",
       "keywords": null,
       "date": "2026-02-01",
-      "hasFullTranslation": false,
-      "language": "fr"
-    },
-    {
-      "id": "post21",
-      "slug": "royal-society-partnership-grants-vr-science-labs",
-      "title": "Écoles UK : 3 000 £ pour Labos RV via Royal Society",
-      "description": "Les bourses Royal Society Partnership offrent 3 000 £ aux écoles UK pour des projets STEM. WhimsyLabs vous aide à postuler.",
-      "keywords": [
-        "bourses Royal Society Partnership",
-        "subventions écoles UK",
-        "financement STEM",
-        "laboratoires sciences RV",
-        "financement éducation scientifique",
-        "bourses WhimsyLabs",
-        "équipement scientifique scolaire"
-      ],
-      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "fr"
     },
@@ -2045,44 +2108,6 @@ module.exports = {
   ],
   "es": [
     {
-      "id": "post42",
-      "slug": "triple-science-entitlement-2028-virtual-labs",
-      "title": "Triple Science para todos en 2028: cómo impartir las prácticas",
-      "description": "Un derecho a Triple Science llega en septiembre de 2028, pero el trabajo práctico se ha reducido casi a la mitad desde 2016. Esto es cómo los laboratorios virtuales ayudan a los colegios a impartirlo.",
-      "keywords": [
-        "derecho a Triple Science 2028",
-        "Curriculum and Assessment Review",
-        "Francis Review ciencias",
-        "declive de la ciencia practica",
-        "escasez de profesores de fisica",
-        "laboratorios de ciencias virtuales colegios",
-        "ciencias separadas GCSE",
-        "laboratorios virtuales Chromebook"
-      ],
-      "date": "2026-06-25",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
-      "id": "post41",
-      "slug": "send-white-paper-2026-science-practicals",
-      "title": "Qué significa el Libro Blanco SEND 2026 para la enseñanza de ciencias",
-      "description": "El Libro Blanco SEND 2026 otorga a cada alumno con SEND un Individual Support Plan (plan de apoyo individual) estatutario y convierte la inclusión en un foco de Ofsted desde septiembre. Esto es lo que significa para la enseñanza de ciencias.",
-      "keywords": [
-        "Libro Blanco SEND 2026",
-        "plan de apoyo individual",
-        "practicas de ciencias SEND",
-        "marco de inclusion Ofsted 2026",
-        "laboratorios de ciencias accesibles SEND",
-        "evidenciar progreso SEND",
-        "educacion cientifica inclusiva",
-        "laboratorio virtual SEND"
-      ],
-      "date": "2026-06-15",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
       "title": "OCDE: Evalúa el proceso, no el producto, en ciencias",
@@ -2169,25 +2194,6 @@ module.exports = {
       "language": "es"
     },
     {
-      "id": "post38",
-      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
-      "title": "Reino Unido: +50 M£ para educación con IA y la señal de BETT 2026",
-      "description": "La expansión de 23 millones de libras en EdTech Testbeds, el fondo de conectividad de 45 millones y la próxima Cumbre de Educación con IA señalan un cambio importante. Esto es lo que las escuelas deben preparar.",
-      "keywords": [
-        "UK EdTech Testbeds",
-        "BETT 2026 anuncios",
-        "IA en escuelas del Reino Unido",
-        "educación STEM",
-        "tutor IA",
-        "tecnología educativa Reino Unido",
-        "Cumbre Educación IA 2026",
-        "financiación gubernamental EdTech"
-      ],
-      "date": "2026-03-11",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
       "id": "post34",
       "slug": "vr-stem-education-research-pedagogical-scaffolding",
       "title": "Nueva investigación en RV: la tecnología sin pedagogía no basta",
@@ -2241,23 +2247,6 @@ module.exports = {
         "laboratorios virtuales"
       ],
       "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
-      "id": "post31",
-      "slug": "uk-government-ai-education-funding-2026",
-      "title": "Reino Unido invierte 49M£ en IA educativa: Impacto en escuelas",
-      "description": "El gobierno del Reino Unido anuncia 49 millones de libras en financiación para educación con IA más el programa TechFirst de 187 millones de libras. Descubre cómo las escuelas pueden acceder a estos fondos para herramientas de tutoría y evaluación con IA.",
-      "keywords": [
-        "financiación educación IA Reino Unido 2026",
-        "inversión gubernamental EdTech",
-        "IA en escuelas del Reino Unido",
-        "programa TechFirst",
-        "herramientas de corrección con IA",
-        "subvenciones tecnología educativa"
-      ],
-      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -2375,24 +2364,6 @@ module.exports = {
       "description": "Tras la brecha de PowerSchool que expuso millones de estudiantes, las escuelas deben evaluar proveedores EdTech. 10 preguntas de seguridad.",
       "keywords": null,
       "date": "2026-02-01",
-      "hasFullTranslation": false,
-      "language": "es"
-    },
-    {
-      "id": "post21",
-      "slug": "royal-society-partnership-grants-vr-science-labs",
-      "title": "Escuelas UK: Obtén £3,000 para Laboratorios VR",
-      "description": "Royal Society Partnership Grants ofrece £3,000 para proyectos STEM. WhimsyLabs te ayuda a solicitar con software VR gratuito.",
-      "keywords": [
-        "Royal Society Partnership Grants",
-        "subvenciones escuelas Reino Unido",
-        "financiación STEM",
-        "laboratorios ciencia VR",
-        "financiación educación científica",
-        "WhimsyLabs subvenciones",
-        "equipamiento ciencia escolar"
-      ],
-      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "es"
     },
@@ -2744,44 +2715,6 @@ module.exports = {
   ],
   "ja": [
     {
-      "id": "post42",
-      "slug": "triple-science-entitlement-2028-virtual-labs",
-      "title": "2028年までにTriple Scienceをすべての生徒に：実験をどう実現するか",
-      "description": "Triple Science（生物・化学・物理の3科目別履修）の権利保障が2028年9月に到来しますが、実践的な実験は2016年以降ほぼ半減しています。仮想実験室が学校の実現をどう支援するかを解説します。",
-      "keywords": [
-        "Triple Science 権利保障 2028",
-        "Curriculum and Assessment Review",
-        "Francisレビュー 理科",
-        "実践的な理科の減少",
-        "物理教師の不足",
-        "学校向け仮想実験室",
-        "GCSE 理科別科目",
-        "Chromebook 仮想実験室"
-      ],
-      "date": "2026-06-25",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
-      "id": "post41",
-      "slug": "send-white-paper-2026-science-practicals",
-      "title": "2026年SEND白書が理科教育にもたらす意味",
-      "description": "2026年のSEND白書は、SENDのあるすべての児童生徒に法定の個別支援計画（ISP）を保障し、9月からインクルージョンをOfstedの重点項目とします。これが理科教育に何を意味するのかを解説します。",
-      "keywords": [
-        "SEND白書 2026",
-        "個別支援計画",
-        "SEND 理科実験",
-        "Ofstedインクルージョン枠組み 2026",
-        "アクセシブルな理科実験室 SEND",
-        "SEND進捗のエビデンス化",
-        "インクルーシブな理科教育",
-        "仮想実験室 SEND"
-      ],
-      "date": "2026-06-15",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
       "title": "OECDが推奨：成果物ではなくプロセスを評価する — 理科教育への意味",
@@ -2878,25 +2811,6 @@ module.exports = {
       "language": "ja"
     },
     {
-      "id": "post38",
-      "slug": "uk-edtech-testbeds-bett-2026-ai-policy",
-      "title": "英国の学校がAI教育に5,000万ポンド以上を獲得：BETT 2026がEdTechに示すもの",
-      "description": "EdTech Testbedsの2,300万ポンドへの拡大、4,500万ポンドの接続性基金、そして今後のAI教育サミットは大きな転換を示しています。学校が準備すべきことをご紹介します。",
-      "keywords": [
-        "UK EdTech Testbeds",
-        "BETT 2026 発表",
-        "英国学校のAI",
-        "STEM教育",
-        "AIチューター",
-        "教育テクノロジー UK",
-        "AI教育サミット 2026",
-        "政府EdTech資金"
-      ],
-      "date": "2026-03-11",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
       "id": "post34",
       "slug": "vr-stem-education-research-pedagogical-scaffolding",
       "title": "新たなVR研究が確認：教育法なきテクノロジーは機能しない",
@@ -2951,23 +2865,6 @@ module.exports = {
         "仮想実験室"
       ],
       "date": "2026-02-17",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
-      "id": "post31",
-      "slug": "uk-government-ai-education-funding-2026",
-      "title": "英国がAI教育に4900万ポンドを投資：学校にとっての意味",
-      "description": "英国政府が4900万ポンドのAI教育資金と1億8700万ポンドのTechFirstプログラムを発表。学校がAIチューターと評価ツールのためにこれらの資金にアクセスする方法を学びましょう。",
-      "keywords": [
-        "英国AI教育資金2026",
-        "政府EdTech投資",
-        "英国の学校でのAI",
-        "TechFirstプログラム",
-        "AI採点ツール",
-        "教育技術助成金"
-      ],
-      "date": "2026-02-15",
       "hasFullTranslation": false,
       "language": "ja"
     },
@@ -3085,24 +2982,6 @@ module.exports = {
       "description": "PowerSchoolデータ侵害事件で6,240万人の生徒と950万人の教育者の情報が流出。学校がEdTechベンダー選定時に確認すべき10の重要なセキュリティ質問を解説。SOC 2認証、MFA、データ保持ポリシーなど、契約前に必ず確認を。",
       "keywords": null,
       "date": "2026-02-01",
-      "hasFullTranslation": false,
-      "language": "ja"
-    },
-    {
-      "id": "post21",
-      "slug": "royal-society-partnership-grants-vr-science-labs",
-      "title": "英国の学校向け：王立協会グラントでVR理科実験室に£3,000獲得",
-      "description": "英国の学校向け王立協会パートナーシップグラントで最大£3,000のSTEM資金を獲得しませんか？WhimsyLabsが申請書作成を無料サポートし、採択校にはVR理科実験室ソフトウェアを無料提供。2026年度の申請日程と手順を詳しく解説します。",
-      "keywords": [
-        "王立協会パートナーシップグラント",
-        "英国学校助成金",
-        "STEM資金援助",
-        "VR理科実験室",
-        "理科教育資金",
-        "WhimsyLabs助成金支援",
-        "学校理科機器"
-      ],
-      "date": "2026-01-30",
       "hasFullTranslation": false,
       "language": "ja"
     },

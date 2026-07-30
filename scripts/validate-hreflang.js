@@ -9,6 +9,9 @@ const glob = require('glob');
 
 const SUPPORTED_LANGUAGES = ['en', 'de', 'es', 'fr', 'ja'];
 const BASE_URL = 'https://whimsylabs.ai';
+// Per-post language allowlist (keyed by slug, build codes en/es/fr/de/jp).
+const blogPostLanguageRestrictions = require('../src/i18n/blogPostLanguageRestrictions.json');
+const BUILD_TO_HREFLANG = { jp: 'ja' };
 
 function extractHreflangTags(html) {
   const hreflangRegex = /<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g;
@@ -33,11 +36,24 @@ function extractCanonical(html) {
 function validatePageHreflang(pagePath, expectedPath) {
   const html = fs.readFileSync(pagePath, 'utf8');
 
+  // Skip redirect stubs / noindex pages - they intentionally have no hreflang
+  if (/http-equiv=["']refresh["']/i.test(html) || /name=["']robots["'][^>]*noindex/i.test(html)) {
+    return { success: true, errors: [], warnings: [], hreflangTags: [], canonical: null, skipped: true };
+  }
+
   const hreflangTags = extractHreflangTags(html);
   const canonical = extractCanonical(html);
 
   const errors = [];
   const warnings = [];
+
+  // Region-specific posts only need hreflang for the languages they are published in.
+  // (Only the English URL of a restricted post is generated; localized ones are redirect stubs, skipped above.)
+  const blogSlugMatch = expectedPath.match(/^\/blog\/([^/]+)\/$/);
+  const restrictedTo = blogSlugMatch ? blogPostLanguageRestrictions[blogSlugMatch[1]] : null;
+  const requiredLanguages = restrictedTo
+    ? restrictedTo.map(code => BUILD_TO_HREFLANG[code] || code)
+    : SUPPORTED_LANGUAGES;
 
   // Check if has any hreflang tags
   if (hreflangTags.length === 0) {
@@ -45,15 +61,15 @@ function validatePageHreflang(pagePath, expectedPath) {
     return { success: false, errors, warnings, hreflangTags, canonical };
   }
 
-  // Should have 6 tags: 5 languages + x-default
-  const expectedCount = SUPPORTED_LANGUAGES.length + 1; // +1 for x-default
+  // Should have requiredLanguages + x-default
+  const expectedCount = requiredLanguages.length + 1; // +1 for x-default
   if (hreflangTags.length !== expectedCount) {
     warnings.push(`Expected ${expectedCount} hreflang tags, found ${hreflangTags.length}`);
   }
 
   // Check for all required languages
   const foundLanguages = hreflangTags.map(t => t.lang).filter(l => l !== 'x-default');
-  SUPPORTED_LANGUAGES.forEach(lang => {
+  requiredLanguages.forEach(lang => {
     if (!foundLanguages.includes(lang)) {
       errors.push(`Missing hreflang for language: ${lang}`);
     }

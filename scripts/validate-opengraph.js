@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
+const { isRedirectStub } = require('./is-redirect-stub');
 
 const BASE_URL = 'https://whimsylabs.ai';
 const RECOMMENDED_IMAGE_WIDTH = 1200;
@@ -33,6 +34,9 @@ function extractMetaTags(html) {
 
 function validatePageOpenGraph(pagePath, expectedPath) {
   const html = fs.readFileSync(pagePath, 'utf8');
+  if (isRedirectStub(html)) {
+    return { success: true, errors: [], warnings: [], skipped: true };
+  }
   const { ogTags, twitterTags } = extractMetaTags(html);
 
   const errors = [];

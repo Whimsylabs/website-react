@@ -102,7 +102,7 @@ const Services = ({ language }) => {
                         </p>
                     </div>
 
-                <ContactUs />
+                <ContactUs language={language} />
             </BubbleContainer>
             <Footer language={language} />
             </main>

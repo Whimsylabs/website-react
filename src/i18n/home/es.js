@@ -21,6 +21,8 @@ export default {
     assessmentText1: "WhimsyLabs protege las evaluaciones de la IA calificando el proceso, no solo el resultado. Rastreamos las entradas físicas dentro de nuestros laboratorios virtuales, como el manejo de equipos y los tiempos de reacción, que la IA no puede simular.",
     assessmentText2: "Los reactivos de cada estudiante tienen concentraciones e impurezas ligeramente diferentes — por lo que cada estudiante tiene una respuesta correcta diferente. ChatGPT asume reactivos perfectos de 0.1M. Tu HCl era 0.0987M con trazas de hierro. Su respuesta \"correcta\" te dará una mala nota.",
     assessmentCallout: "💡 Esto hace que WhimsyLabs sea perfecto para tareas — los estudiantes no pueden compartir respuestas ni usar IA para hacer trampa.",
+    aiSafetyNote: "Y es seguro por diseño: WhimsyCat, nuestro tutor de IA, no tiene ventana de chat para estudiantes. Lo infiere todo a partir de sus acciones en el laboratorio — el alumnado nunca escribe prompts ni recibe texto generado.",
+    aiSafetyLink: "Descubra cómo funciona nuestra evaluación a prueba de IA",
     timeSavingTitle: "¿Puede la Calificación Automática Ahorrar Tiempo a los Profesores?",
     timeSavingText: "Deja de marcar casillas y empieza a enseñar. WhimsyLabs evalúa el dominio de habilidades y la seguridad en tiempo real, proporcionando calificación automática de las capacidades de los estudiantes para tu revisión.",
     curriculumTitle: "¿Cómo Pueden los Profesores Personalizar Experimentos Virtuales?",

@@ -12,6 +12,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 const glob = require('glob');
 
 const BUILD_DIR = path.join(__dirname, '../build');
@@ -216,6 +217,7 @@ function runValidation() {
   // Validate each page
   const pageResults = [];
   for (const file of htmlFiles) {
+    if (isRedirectStub(fs.readFileSync(file, 'utf8'))) continue; // skip generated redirect stubs
     const result = validatePage(file);
     pageResults.push(result);
   }

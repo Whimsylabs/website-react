@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
+const { isRedirectStub } = require('./is-redirect-stub');
 
 // English/Western language requirements
 const OPTIMAL_MIN_LENGTH = 155;
@@ -145,6 +146,7 @@ function validateMetaDescriptions() {
   // Validate each HTML file
   htmlFiles.forEach(filePath => {
     const html = fs.readFileSync(filePath, 'utf8');
+    if (isRedirectStub(html)) return; // skip generated redirect stubs
 
     // Extract page name from path
     const relativePath = path.relative(buildDir, path.dirname(filePath));

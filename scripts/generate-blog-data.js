@@ -5,6 +5,9 @@
 
 const fs = require('fs-extra');
 const path = require('path');
+// Per-post language allowlist (keyed by slug). Posts listed here are region-specific
+// and only published in the given languages; posts not listed are published in all.
+const blogPostLanguageRestrictions = require('../src/i18n/blogPostLanguageRestrictions.json');
 
 const blogPosts = [
   'post1', 'post2', 'post3', 'post4', 'post5', 'post6',
@@ -12,55 +15,14 @@ const blogPosts = [
   'post13', 'post14', 'post15', 'post16', 'post17', 'post18', 'post19', 'post20',
   'post21', 'post22', 'post23', 'post24', 'post25', 'post26', 'post27', 'post28', 'post29', 'post30',
   'post31', 'post32', 'post33', 'post34', 'post35', 'post36', 'post37', 'post38', 'post39', 'post40',
-  'post41', 'post42'
+  'post41', 'post42', 'post43', 'post44', 'post45', 'post46', 'post47', 'post48', 'post49', 'post50',
+  'post51', 'post52', 'post53', 'post54', 'post55'
 ];
 const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
-// Mapping from post IDs to slugs (from the original blog components)
-const postIdToSlug = {
-  'post1': 'whimsylabs-education-revolution',
-  'post2': 'physicality-in-virtual-labs',
-  'post3': 'virtual-kidney-dissection-send-engagement',
-  'post4': 'ai-powered-virtual-labs-solving-education-crisis',
-  'post5': 'whimsycat-ai-tutor-transforming-science-education',
-  'post6': 'sandbox-learning-revolution-stem-education',
-  'post7': 'green-labs-sustainability-virtual-stem-education',
-  'post8': 'virtual-labs-solve-stem-teacher-shortage-crisis',
-  'post9': '24-7-ai-tutoring-personalized-daily-recommendations',
-  'post10': 'emotional-intelligence-ai-tutors-whimsycat-frustration-detection',
-  'post11': 'virtual-labs-vs-physical-labs-cost-benefit-analysis',
-  'post12': 'virtual-reality-prepares-students-real-world-stem-careers',
-  'post13': 'science-real-time-physics-simulations-virtual-labs',
-  'post14': 'gamification-science-education-points-rewards-engagement',
-  'post15': 'whimsylabs-bett-2026-exhibition-announcement',
-  'post16': 'why-traditional-virtual-labs-fail-physics-engine',
-  'post17': 'whimsylabs-wins-techlearning-best-of-bett-2026',
-  'post18': 'vr-winter-web-first-virtual-labs',
-  'post19': 'oecd-ai-learning-paradox-virtual-labs',
-  'post20': 'ai-assessment-crisis-solution',
-  'post21': 'royal-society-partnership-grants-vr-science-labs',
-  'post22': 'edtech-vendor-security-questions-powerschool',
-  'post23': 'teachers-are-experts-custom-experiment-designer',
-  'post24': 'how-to-choose-virtual-lab-software-school',
-  'post25': 'virtual-chemistry-lab-teachers-guide',
-  'post26': 'virtual-lab-software-guide-2026',
-  'post27': 'ai-science-tutor-classroom-what-works',
-  'post28': 'virtual-biology-lab-dissections-microscopy',
-  'post29': 'virtual-physics-lab-simulations-teach',
-  'post30': 'premium-science-education-accessible-grants',
-  'post31': 'uk-government-ai-education-funding-2026',
-  'post32': 'pearson-webinar-vr-assessment-ai-age',
-  'post33': 'edtech-critics-right-passive-learning-vs-active-labs',
-  'post34': 'vr-stem-education-research-pedagogical-scaffolding',
-  'post35': 'purpose-built-ai-education-difference',
-  'post36': 'ai-text-grading-fails-process-assessment-works',
-  'post37': 'process-based-lab-assessment-future',
-  'post38': 'uk-edtech-testbeds-bett-2026-ai-policy',
-  'post39': 'oecd-process-oriented-assessment-validation',
-  'post40': 'student-ai-use-assessment-crisis-solution',
-  'post41': 'send-white-paper-2026-science-practicals',
-  'post42': 'triple-science-entitlement-2028-virtual-labs'
-};
+// Mapping from post IDs to slugs — single source of truth shared with build.js,
+// src/Components/Blog.js and src/Components/BlogPost.js. Add new posts HERE only.
+const postIdToSlug = require('../src/i18n/blogPostSlugs.json');
 
 // Dates from the original blog components
 const postDates = {
@@ -106,6 +68,19 @@ const postDates = {
   post40: "2026-03-19",
   post41: "2026-06-15",
   post42: "2026-06-25",
+  post43: "2026-06-27",
+  post44: "2026-07-15",
+  post45: "2026-07-16",
+  post46: "2026-07-16",
+  post47: "2026-07-16",
+  post48: "2026-07-16",
+  post49: "2026-07-16",
+  post50: "2026-07-17",
+  post51: "2026-07-29",
+  post52: "2026-07-30",
+  post53: "2026-07-31",
+  post54: "2026-08-03",
+  post55: "2026-08-04",
 };
 
 async function generateBlogData() {
@@ -117,6 +92,11 @@ async function generateBlogData() {
     blogData[language] = [];
     
     for (const postId of blogPosts) {
+      // Skip region-specific posts in languages they are not published in
+      const allowedLanguages = blogPostLanguageRestrictions[postIdToSlug[postId]];
+      if (allowedLanguages && !allowedLanguages.includes(language)) {
+        continue;
+      }
       try {
         // Try to load the translation file
         const translationPath = path.join(__dirname, '..', 'src', 'i18n', 'blog', postId, `${language}.js`);

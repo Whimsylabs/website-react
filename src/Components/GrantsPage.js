@@ -46,6 +46,17 @@ const GRANTS_DATA = [
     translateKey: null,
   },
   {
+    id: "inclusive-mainstream-fund",
+    name: "Inclusive Mainstream Fund",
+    country: "UK",
+    flag: "🇬🇧",
+    amount: "£400M in 2026-27",
+    description: "Every mainstream school in England receives IMF money from 2026-27 to remove predictable barriers to learning. Accessible practical science qualifies.",
+    link: "/grants/inclusive-mainstream-fund/",
+    available: true,
+    translateKey: null,
+  },
+  {
     id: "uk-school-funding",
     name: "Pupil Premium & SEN Funding",
     country: "UK",

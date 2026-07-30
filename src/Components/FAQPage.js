@@ -10,8 +10,8 @@ const FAQPage = ({ t, currentLang, language }) => {
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
-        <title>Frequently Asked Questions | WhimsyLabs Virtual Lab Software</title>
-        <meta name="description" content="Get answers to common questions about WhimsyLabs virtual lab software, online lab simulations, and how our STEM virtual labs help students and educators." />
+        <title>Virtual Lab FAQ: Pricing, Setup & Free Trials | WhimsyLabs</title>
+        <meta name="description" content="How much does WhimsyLabs cost? Do you need VR headsets? How do free school trials work? Clear answers to 40+ questions about our virtual lab software." />
         <meta name="keywords" content="virtual lab software FAQ, online lab simulations help, STEM virtual labs questions, virtual laboratory software support" />
       </Helmet>
       <Header currentLang={language || currentLang} />

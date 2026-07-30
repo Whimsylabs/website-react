@@ -26,6 +26,7 @@
     </script>
     <!-- End Cookie Consent & Conditional GTM -->
     <meta charset="utf-8">
+    <meta name="robots" content="noindex, follow">
     <title>WhimsyLabs - Redirecting...</title>
     <script>
       // GitHub Pages SPA redirect handler
@@ -66,16 +67,28 @@
           return;
         }
 
+        // Region-specific blog posts are English-only. A localized blog URL that 404s
+        // (e.g. /de/blog/<uk-post>/) means the post is not published in that language,
+        // so send the reader to the English version. Localized posts that DO exist are
+        // real files and never reach this 404 handler, so this only fires for
+        // English-only (or invalid) posts. See src/i18n/blogPostLanguageRestrictions.json.
+        var langBlogMatch = path.match(/^\/(?:de|es|fr|jp)(\/blog\/.+)$/);
+        if (langBlogMatch) {
+          var enBlogPath = langBlogMatch[1].replace(/\/?$/, '/');
+          window.location.replace(enBlogPath + search + hash);
+          return;
+        }
+
         // Handle trailing slash redirects
         // If path doesn't end with / and isn't a file, add trailing slash
         if (!path.endsWith('/') && !path.includes('.')) {
           // Check if this is a valid page that should have a trailing slash
           var validPaths = [
-            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa', '/landing-demo', '/data-security', '/grants', '/grants/royal-society', '/grants/science-community', '/grants/british-science-week', '/grants/japan-education', '/grants/erasmus-plus', '/grants/armourers', '/grants/uk-school-funding', '/grants/us-education', '/chemistry', '/biology', '/physics',
-            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett', '/de/landing-demo', '/de/data-security', '/de/grants', '/de/grants/royal-society', '/de/grants/science-community', '/de/grants/british-science-week', '/de/grants/japan-education', '/de/grants/erasmus-plus', '/de/grants/armourers', '/de/grants/uk-school-funding', '/de/grants/us-education', '/de/chemistry', '/de/biology', '/de/physics',
-            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett', '/es/landing-demo', '/es/data-security', '/es/grants', '/es/grants/royal-society', '/es/grants/science-community', '/es/grants/british-science-week', '/es/grants/japan-education', '/es/grants/erasmus-plus', '/es/grants/armourers', '/es/grants/uk-school-funding', '/es/grants/us-education', '/es/chemistry', '/es/biology', '/es/physics',
-            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett', '/fr/landing-demo', '/fr/data-security', '/fr/grants', '/fr/grants/royal-society', '/fr/grants/science-community', '/fr/grants/british-science-week', '/fr/grants/japan-education', '/fr/grants/erasmus-plus', '/fr/grants/armourers', '/fr/grants/uk-school-funding', '/fr/grants/us-education', '/fr/chemistry', '/fr/biology', '/fr/physics',
-            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett', '/jp/landing-demo', '/jp/data-security', '/jp/grants', '/jp/grants/royal-society', '/jp/grants/science-community', '/jp/grants/british-science-week', '/jp/grants/japan-education', '/jp/grants/erasmus-plus', '/jp/grants/armourers', '/jp/grants/uk-school-funding', '/jp/grants/us-education', '/jp/chemistry', '/jp/biology', '/jp/physics'
+            '/blog', '/services', '/features', '/faq', '/contact', '/privacy', '/bett', '/demo', '/spa', '/landing-demo', '/data-security', '/grants', '/grants/royal-society', '/grants/science-community', '/grants/british-science-week', '/grants/japan-education', '/grants/erasmus-plus', '/grants/armourers', '/grants/uk-school-funding', '/grants/us-education', '/grants/inclusive-mainstream-fund', '/chemistry', '/biology', '/physics', '/ai-assessment', '/choose-virtual-lab', '/send',
+            '/de', '/de/blog', '/de/services', '/de/features', '/de/faq', '/de/contact', '/de/privacy', '/de/bett', '/de/landing-demo', '/de/data-security', '/de/grants', '/de/grants/royal-society', '/de/grants/science-community', '/de/grants/british-science-week', '/de/grants/japan-education', '/de/grants/erasmus-plus', '/de/grants/armourers', '/de/grants/uk-school-funding', '/de/grants/us-education', '/de/grants/inclusive-mainstream-fund', '/de/chemistry', '/de/biology', '/de/physics', '/de/ai-assessment', '/de/choose-virtual-lab', '/de/send',
+            '/es', '/es/blog', '/es/services', '/es/features', '/es/faq', '/es/contact', '/es/privacy', '/es/bett', '/es/landing-demo', '/es/data-security', '/es/grants', '/es/grants/royal-society', '/es/grants/science-community', '/es/grants/british-science-week', '/es/grants/japan-education', '/es/grants/erasmus-plus', '/es/grants/armourers', '/es/grants/uk-school-funding', '/es/grants/us-education', '/es/grants/inclusive-mainstream-fund', '/es/chemistry', '/es/biology', '/es/physics', '/es/ai-assessment', '/es/choose-virtual-lab', '/es/send',
+            '/fr', '/fr/blog', '/fr/services', '/fr/features', '/fr/faq', '/fr/contact', '/fr/privacy', '/fr/bett', '/fr/landing-demo', '/fr/data-security', '/fr/grants', '/fr/grants/royal-society', '/fr/grants/science-community', '/fr/grants/british-science-week', '/fr/grants/japan-education', '/fr/grants/erasmus-plus', '/fr/grants/armourers', '/fr/grants/uk-school-funding', '/fr/grants/us-education', '/fr/grants/inclusive-mainstream-fund', '/fr/chemistry', '/fr/biology', '/fr/physics', '/fr/ai-assessment', '/fr/choose-virtual-lab', '/fr/send',
+            '/jp', '/jp/blog', '/jp/services', '/jp/features', '/jp/faq', '/jp/contact', '/jp/privacy', '/jp/bett', '/jp/landing-demo', '/jp/data-security', '/jp/grants', '/jp/grants/royal-society', '/jp/grants/science-community', '/jp/grants/british-science-week', '/jp/grants/japan-education', '/jp/grants/erasmus-plus', '/jp/grants/armourers', '/jp/grants/uk-school-funding', '/jp/grants/us-education', '/jp/grants/inclusive-mainstream-fund', '/jp/chemistry', '/jp/biology', '/jp/physics', '/jp/ai-assessment', '/jp/choose-virtual-lab', '/jp/send'
           ];
 
           if (validPaths.indexOf(path) !== -1) {

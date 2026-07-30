@@ -7,6 +7,14 @@
 
 const fs = require('fs-extra');
 const path = require('path');
+// Per-post language allowlist (keyed by slug, build codes en/es/fr/de/jp). Region-specific
+// posts are only published in the listed languages, so missing translation files for the
+// other languages are expected, not errors.
+const blogPostLanguageRestrictions = require('../src/i18n/blogPostLanguageRestrictions.json');
+let blogDataForSlugs = {};
+try { blogDataForSlugs = require('../src/i18n/blogData.generated.js'); } catch (e) { /* not built yet */ }
+const postIdToSlug = {};
+for (const p of (blogDataForSlugs.en || [])) { postIdToSlug[p.id] = p.slug; }
 
 // Language-specific indicators (characters/words that MUST appear if properly translated)
 const LANGUAGE_INDICATORS = {
@@ -126,9 +134,16 @@ async function validateRawFiles() {
   }
 
   for (const post of posts) {
+    const allowedLangs = blogPostLanguageRestrictions[postIdToSlug[post]];
     for (const lang of languages) {
+      // Region-specific posts: a missing translation in a language they are not
+      // published in is expected, so don't count it as an issue.
+      const buildCode = lang === 'ja' ? 'jp' : lang;
+      if (allowedLangs && !allowedLangs.includes(buildCode)) {
+        continue;
+      }
       const filePath = path.join(blogDir, post, `${lang}.js`);
-      
+
       if (!await fs.pathExists(filePath)) {
         results.summary[lang].missing++;
         results.issues.push({ post, lang, issue: 'FILE_MISSING' });

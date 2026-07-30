@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./ScrollingMap.css";
 
 const ScrollingMap = ({
@@ -10,51 +10,64 @@ const ScrollingMap = ({
 }) => {
   const pathRef = useRef(null);
   const dotsRef = useRef([]);
-  const animationRef = useRef(null);
+  const containerRef = useRef(null);
+  const frameIdRef = useRef(null);
   const progressRef = useRef([]);
 
   useEffect(() => {
     const path = pathRef.current;
-    if (!path) return;
+    const container = containerRef.current;
+    if (!path || !container) return;
 
+    // Sample the path once into a lookup table; getPointAtLength per dot per
+    // frame is expensive SVG geometry work
     const pathLen = path.getTotalLength();
+    const SAMPLES = 600;
+    const points = Array.from({ length: SAMPLES + 1 }, (_, i) =>
+      path.getPointAtLength((i / SAMPLES) * pathLen)
+    );
 
     // Initialize progress for each token, evenly spaced
     progressRef.current = Array.from({ length: numTokens }, (_, i) => i / numTokens);
 
-    const animate = (timestamp) => {
-      if (!animationRef.current) {
-        animationRef.current = timestamp;
-      }
-
-      const elapsed = timestamp - animationRef.current;
-
+    const animate = () => {
       dotsRef.current.forEach((dot, index) => {
         if (!dot) return;
 
-        // Update progress
         progressRef.current[index] = (progressRef.current[index] + speed) % 1;
+        const point = points[Math.round(progressRef.current[index] * SAMPLES)];
 
-        // Get point on path
-        const point = path.getPointAtLength(progressRef.current[index] * pathLen);
-
-        // Update dot position
         dot.setAttribute("cx", point.x);
         dot.setAttribute("cy", point.y);
       });
 
-      requestAnimationFrame(animate);
+      frameIdRef.current = requestAnimationFrame(animate);
     };
 
-    const animationId = requestAnimationFrame(animate);
+    // Only animate while the map is actually on screen
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        if (frameIdRef.current === null) {
+          frameIdRef.current = requestAnimationFrame(animate);
+        }
+      } else if (frameIdRef.current !== null) {
+        cancelAnimationFrame(frameIdRef.current);
+        frameIdRef.current = null;
+      }
+    });
+    observer.observe(container);
 
     return () => {
-      cancelAnimationFrame(animationId);
+      observer.disconnect();
+      if (frameIdRef.current !== null) {
+        cancelAnimationFrame(frameIdRef.current);
+        frameIdRef.current = null;
+      }
     };
   }, [pathData, speed, numTokens]);
 
   return (
-    <div className="scrolling-map-container">
+    <div className="scrolling-map-container" ref={containerRef}>
       <div className="scrolling-map-wrapper">
         <img src={imagePath} className="scrolling-map-image" alt="Map to WhimsyLabs booth" />
         <svg className="scrolling-map-overlay" viewBox={viewBox} preserveAspectRatio="xMidYMid meet">

@@ -286,6 +286,28 @@ Common issues:
 
 ## Advanced Topics
 
+### Language-Specific (Region-Specific) Posts
+
+Some posts are only relevant to one market (e.g. UK education-policy posts about Ofsted, GCSE, SEND, or the DfE). These should be **English-only** rather than translated into all five languages.
+
+To restrict a post, add its slug to `src/i18n/blogPostLanguageRestrictions.json`, mapping it to the list of languages it should be published in (build codes: `en`, `es`, `fr`, `de`, `jp`):
+
+```json
+{
+  "send-white-paper-2026-science-practicals": ["en"]
+}
+```
+
+A post listed here is **excluded** from the listings, sitemap, and page generation of any language not in its array. A single config drives every consumer:
+
+- `scripts/generate-blog-data.js`, `src/i18n/blogDataGenerator.js`, and `src/Components/Blog.js` — skip the post for disallowed languages, so it never appears in those locales' blog listings (server-rendered cards, sidebar, schema, or client-loaded list).
+- `build.js` — does not generate the full localized page; instead writes a small **200-status redirect stub** at `/<lang>/blog/<slug>/` (noindex + meta-refresh + JS redirect, canonical to the English URL) so the localized URL is a real redirect rather than a 404. Also omits the disallowed languages from `sitemap.xml`.
+- `scripts/metadata-injector.js` — emits `hreflang` only for the allowed languages on the English page.
+- `public/404.html` — a generic fallback rule redirects any *non-existent* localized blog URL (`/<lang>/blog/...`, e.g. typos) to its English URL.
+- Validators are stub-aware via `scripts/is-redirect-stub.js`: the SEO/content validators skip redirect stubs, and the translation/hreflang validators skip a restricted post's unpublished languages. So a restricted post needs no `de/fr/es/ja` files and the build stays green. **If you add a NEW page validator that scans every `index.html`, add the `isRedirectStub()` skip to it too.**
+
+You do **not** need to create `de.js`/`fr.js`/`es.js`/`ja.js` translation files for a restricted post — only `en.js` (and the `Post{N}.js` component). After editing the JSON, run `npm run generate-blog-data` and rebuild.
+
 ### Cross-Linking Posts
 
 Add links to related posts in your "Further Reading" section:

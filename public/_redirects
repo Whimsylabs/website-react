@@ -139,6 +139,7 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /grants/armourers /grants/armourers/ 301!
 /grants/uk-school-funding /grants/uk-school-funding/ 301!
 /grants/us-education /grants/us-education/ 301!
+/grants/inclusive-mainstream-fund /grants/inclusive-mainstream-fund/ 301!
 /chemistry /chemistry/ 301!
 /biology /biology/ 301!
 /physics /physics/ 301!
@@ -197,3 +198,34 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 
 # Block email protection service and other problematic paths
 /cdn-cgi/* /404.html 404!
+# New landing pages (ai-assessment, choose-virtual-lab, send)
+/ai-assessment/index.html /ai-assessment/ 301!
+/choose-virtual-lab/index.html /choose-virtual-lab/ 301!
+/send/index.html /send/ 301!
+/ai-assessment /ai-assessment/ 301!
+/choose-virtual-lab /choose-virtual-lab/ 301!
+/send /send/ 301!
+/de/ai-assessment/index.html /de/ai-assessment/ 301!
+/de/choose-virtual-lab/index.html /de/choose-virtual-lab/ 301!
+/de/send/index.html /de/send/ 301!
+/de/ai-assessment /de/ai-assessment/ 301!
+/de/choose-virtual-lab /de/choose-virtual-lab/ 301!
+/de/send /de/send/ 301!
+/es/ai-assessment/index.html /es/ai-assessment/ 301!
+/es/choose-virtual-lab/index.html /es/choose-virtual-lab/ 301!
+/es/send/index.html /es/send/ 301!
+/es/ai-assessment /es/ai-assessment/ 301!
+/es/choose-virtual-lab /es/choose-virtual-lab/ 301!
+/es/send /es/send/ 301!
+/fr/ai-assessment/index.html /fr/ai-assessment/ 301!
+/fr/choose-virtual-lab/index.html /fr/choose-virtual-lab/ 301!
+/fr/send/index.html /fr/send/ 301!
+/fr/ai-assessment /fr/ai-assessment/ 301!
+/fr/choose-virtual-lab /fr/choose-virtual-lab/ 301!
+/fr/send /fr/send/ 301!
+/jp/ai-assessment/index.html /jp/ai-assessment/ 301!
+/jp/choose-virtual-lab/index.html /jp/choose-virtual-lab/ 301!
+/jp/send/index.html /jp/send/ 301!
+/jp/ai-assessment /jp/ai-assessment/ 301!
+/jp/choose-virtual-lab /jp/choose-virtual-lab/ 301!
+/jp/send /jp/send/ 301!

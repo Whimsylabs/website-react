@@ -21,6 +21,8 @@ export default {
     assessmentText1: "WhimsyLabs schützt Bewertungen vor KI, indem der Prozess bewertet wird, nicht nur das Ergebnis. Wir verfolgen physische Eingaben in unseren virtuellen Laboren, wie Gerätehandhabung und Reaktionszeiten, die KI nicht simulieren kann.",
     assessmentText2: "Die Reagenzien jedes Schülers haben leicht unterschiedliche Konzentrationen und Verunreinigungen — daher hat jeder Schüler eine andere richtige Antwort. ChatGPT nimmt perfekte 0,1M Reagenzien an. Ihre HCl war 0,0987M mit Eisenspuren. Seine \"richtige\" Antwort wird falsch bewertet.",
     assessmentCallout: "💡 Das macht WhimsyLabs perfekt für Hausaufgaben — Schüler können keine Antworten teilen oder KI zum Schummeln verwenden.",
+    aiSafetyNote: "Und es ist von Grund auf sicher: WhimsyCat, unser KI-Tutor, hat kein Chatfenster für Lernende. Alles wird aus den Handlungen im Labor abgeleitet — Schülerinnen und Schüler geben nie Prompts ein und erhalten nie generierten Text.",
+    aiSafetyLink: "So funktioniert unsere KI-sichere Bewertung",
     timeSavingTitle: "Kann Automatisierte Bewertung Lehrern Zeit Sparen?",
     timeSavingText: "Hören Sie auf, Kästchen anzukreuzen, und beginnen Sie zu unterrichten. WhimsyLabs bewertet Kompetenzbeherrschung und Sicherheit in Echtzeit und bietet automatische Bewertung der Fähigkeiten der Schüler zur Überprüfung.",
     curriculumTitle: "Wie Können Lehrer Virtuelle Experimente Anpassen?",

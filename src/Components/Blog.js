@@ -7,6 +7,10 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogPreview from './BlogPreview';
 import { getAllBlogPosts } from '../i18n/blogDataGenerator';
+// Per-post language allowlist (keyed by slug). Region-specific posts are hidden from
+// the listing in languages they are not published in.
+import blogPostLanguageRestrictions from '../i18n/blogPostLanguageRestrictions.json';
+import blogPostSlugs from '../i18n/blogPostSlugs.json';
 
 // Import posts statically for fallback
 import * as Post1 from './blog/Post1';
@@ -335,50 +339,11 @@ const fallbackPosts = [
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
 // Mapping from old slugs to new post IDs
-const slugToPostId = {
-  'whimsylabs-education-revolution': 'post1',
-  'physicality-in-virtual-labs': 'post2',
-  'virtual-kidney-dissection-send-engagement': 'post3',
-  'ai-powered-virtual-labs-solving-education-crisis': 'post4',
-  'whimsycat-ai-tutor-transforming-science-education': 'post5',
-  'sandbox-learning-revolution-stem-education': 'post6',
-  'green-labs-sustainability-virtual-stem-education': 'post7',
-  'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
-  '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
-  'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
-  'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
-  'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
-  'science-real-time-physics-simulations-virtual-labs': 'post13',
-  'gamification-science-education-points-rewards-engagement': 'post14',
-  'whimsylabs-bett-2026-exhibition-announcement': 'post15',
-  'why-traditional-virtual-labs-fail-physics-engine': 'post16',
-  'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
-  'vr-winter-web-first-virtual-labs': 'post18',
-  'oecd-ai-learning-paradox-virtual-labs': 'post19',
-  'ai-assessment-crisis-solution': 'post20',
-  'royal-society-partnership-grants-vr-science-labs': 'post21',
-  'edtech-vendor-security-questions-powerschool': 'post22',
-  'teachers-are-experts-custom-experiment-designer': 'post23',
-  'how-to-choose-virtual-lab-software-school': 'post24',
-  'virtual-chemistry-lab-teachers-guide': 'post25',
-  'virtual-lab-software-guide-2026': 'post26',
-  'ai-science-tutor-classroom-what-works': 'post27',
-  'virtual-biology-lab-dissections-microscopy': 'post28',
-  'virtual-physics-lab-simulations-teach': 'post29',
-  'premium-science-education-accessible-grants': 'post30',
-  'uk-government-ai-education-funding-2026': 'post31',
-  'pearson-webinar-vr-assessment-ai-age': 'post32',
-  'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
-  'vr-stem-education-research-pedagogical-scaffolding': 'post34',
-  'purpose-built-ai-education-difference': 'post35',
-  'ai-text-grading-fails-process-assessment-works': 'post36',
-  'process-based-lab-assessment-future': 'post37',
-  'uk-edtech-testbeds-bett-2026-ai-policy': 'post38',
-  'oecd-process-oriented-assessment-validation': 'post39',
-  'student-ai-use-assessment-crisis-solution': 'post40',
-  'send-white-paper-2026-science-practicals': 'post41',
-  'triple-science-entitlement-2028-virtual-labs': 'post42'
-};
+// Slug -> post ID, derived from the shared source of truth so this can never
+// drift from build.js / generate-blog-data.js.
+const slugToPostId = Object.fromEntries(
+  Object.entries(blogPostSlugs).map(([id, slug]) => [slug, id])
+);
 
 // Reverse mapping from post IDs to slugs
 const postIdToSlug = Object.fromEntries(
@@ -389,9 +354,16 @@ const Blog = (props = {}) => {
   const { language } = props;
   const [activePostId] = useState(null);
 
-  // Always use fallbackPosts for blog listing since they have actual content
-  // The server-rendered HTML uses fallbackPosts, so client should too for consistency
+  // Use the build-time/SSR post list (full and language-filtered) so crawlers see every
+  // post in the server-rendered HTML. The client reuses the same list via
+  // window.__INITIAL_POSTS__ to avoid a hydration mismatch; fallbackPosts is a last resort.
   const getInitialPosts = () => {
+    if (props.posts && props.posts.length > 0) {
+      return props.posts;
+    }
+    if (typeof window !== 'undefined' && Array.isArray(window.__INITIAL_POSTS__) && window.__INITIAL_POSTS__.length > 0) {
+      return window.__INITIAL_POSTS__;
+    }
     return fallbackPosts;
   };
 
@@ -488,8 +460,13 @@ const Blog = (props = {}) => {
       ...post,
       categories: categorizePost(post)
     }));
-    return displayPosts;
-  }, [posts]);
+    // Exclude region-specific posts not published in the current language (applies to
+    // both the fallbackPosts SSR render and the client-loaded list).
+    return displayPosts.filter(post => {
+      const allowed = blogPostLanguageRestrictions[post.id];
+      return !allowed || allowed.includes(currentLanguage);
+    });
+  }, [posts, currentLanguage]);
   
   // Filter posts by category
   const filteredPosts = useMemo(() => {
@@ -701,7 +678,7 @@ const Blog = (props = {}) => {
             <div className="sidebar">
               <h2>Blog Posts</h2>
               <ul>
-                {posts.map((post) => (
+                {postsWithCategories.map((post) => (
                   <li
                     key={post.id}
                     className={activePostId === post.id ? 'active' : ''}

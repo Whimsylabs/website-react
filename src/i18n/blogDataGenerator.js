@@ -46,13 +46,31 @@ import * as Post39 from '../Components/blog/Post39';
 import * as Post40 from '../Components/blog/Post40';
 import * as Post41 from '../Components/blog/Post41';
 import * as Post42 from '../Components/blog/Post42';
+import * as Post43 from '../Components/blog/Post43';
+import * as Post44 from '../Components/blog/Post44';
+import * as Post45 from '../Components/blog/Post45';
+import * as Post46 from '../Components/blog/Post46';
+import * as Post47 from '../Components/blog/Post47';
+import * as Post48 from '../Components/blog/Post48';
+import * as Post49 from '../Components/blog/Post49';
+import * as Post50 from '../Components/blog/Post50';
+import * as Post51 from '../Components/blog/Post51';
+import * as Post52 from '../Components/blog/Post52';
+import * as Post53 from '../Components/blog/Post53';
+import * as Post54 from '../Components/blog/Post54';
+import * as Post55 from '../Components/blog/Post55';
+
+// Per-post language allowlist (keyed by slug). Region-specific posts only appear
+// in the listed languages; posts not listed appear in all languages.
+import blogPostLanguageRestrictions from './blogPostLanguageRestrictions.json';
 
 // Create dynamic mapping of all posts
 const ALL_POSTS = [
   Post1, Post2, Post3, Post4, Post5, Post6, Post7,
   Post8, Post9, Post10, Post11, Post12, Post13, Post14, Post15, Post16,
   Post17, Post18, Post19, Post20, Post21, Post22, Post23, Post24, Post25, Post26, Post27, Post28, Post29, Post30,
-  Post31, Post32, Post33, Post34, Post35, Post36, Post37, Post38, Post39, Post40, Post41, Post42
+  Post31, Post32, Post33, Post34, Post35, Post36, Post37, Post38, Post39, Post40, Post41, Post42, Post43, Post44, Post45, Post46, Post47, Post48, Post49, Post50,
+  Post51, Post52, Post53, Post54, Post55
 ];
 
 // Generate blog post IDs dynamically
@@ -173,9 +191,16 @@ export async function getAllBlogPosts(language = 'en') {
 
   for (let i = 0; i < blogPosts.length; i++) {
     const postNumber = blogPosts[i];
+    const originalPost = ALL_POSTS[i];
+
+    // Skip region-specific posts in languages they are not published in
+    const allowedLanguages = blogPostLanguageRestrictions[originalPost && originalPost.slug];
+    if (allowedLanguages && !allowedLanguages.includes(language)) {
+      continue;
+    }
+
     try {
       const post = await getBlogPostTranslation(language, postNumber);
-      const originalPost = ALL_POSTS[i];
 
       posts.push({
         id: originalPost.slug, // Use slug as id for URLs

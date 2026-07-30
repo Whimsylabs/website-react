@@ -21,6 +21,8 @@ export default {
     assessmentText1: "WhimsyLabs protège les évaluations de l'IA en notant le processus, pas seulement le résultat. Nous suivons les entrées physiques dans nos laboratoires virtuels, comme la manipulation d'équipement et les temps de réaction, que l'IA ne peut pas simuler.",
     assessmentText2: "Les réactifs de chaque étudiant ont des concentrations et des impuretés légèrement différentes — donc chaque étudiant a une réponse correcte différente. ChatGPT suppose des réactifs parfaits à 0.1M. Votre HCl était à 0.0987M avec des traces de fer. Sa réponse \"correcte\" vous donnera une mauvaise note.",
     assessmentCallout: "💡 Cela rend WhimsyLabs parfait pour les devoirs — les étudiants ne peuvent pas partager les réponses ou utiliser l'IA pour tricher.",
+    aiSafetyNote: "Et c'est sûr par conception : WhimsyCat, notre tuteur IA, n'a pas de fenêtre de discussion pour les élèves. Il déduit tout de leurs actions dans le laboratoire — les élèves ne saisissent jamais de prompt et ne reçoivent jamais de texte généré.",
+    aiSafetyLink: "Découvrez notre évaluation à l'épreuve de l'IA",
     timeSavingTitle: "La Notation Automatisée Peut-elle Faire Gagner du Temps aux Enseignants ?",
     timeSavingText: "Arrêtez de cocher des cases et commencez à enseigner. WhimsyLabs évalue la maîtrise des compétences et la sécurité en temps réel, fournissant une notation automatique des capacités des étudiants pour votre révision.",
     curriculumTitle: "Comment les Enseignants Peuvent-ils Personnaliser les Expériences Virtuelles ?",

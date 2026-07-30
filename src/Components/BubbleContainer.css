@@ -32,7 +32,7 @@
   
   .bubble {
     position: absolute;
-    bottom: -20%;
+    bottom: -25%;
     width: 31px;  /* Increased by 25% from 25px */
     height: 25px; /* Increased by 25% from 20px */
     background-size: cover;
@@ -43,45 +43,38 @@
     z-index: 1;
   }
 
-
-  
+  /* Transform-only so bubbles animate on the compositor (animating `bottom`
+     forces layout every frame). --rise/--drift-* are set per-bubble in
+     BubbleContainer.js; fallbacks keep the animation valid without them. */
   @keyframes riseAndWobble {
     0% {
-      bottom: -25%;
-      transform: translateX(0);
+      transform: translate(0, 0);
       opacity: 0;
     }
     15% {
-      bottom: 0%;
-      transform: translateX(var(--drift-left));
+      transform: translate(var(--drift-left, -15px), calc(var(--rise, 150vh) * -0.167));
       opacity: 0.2;
     }
     30% {
-      bottom: 25%;
-      transform: translateX(var(--drift-right));
+      transform: translate(var(--drift-right, 15px), calc(var(--rise, 150vh) * -0.333));
     }
     45% {
-      bottom: 50%;
-      transform: translateX(calc(var(--drift-left) / 2));
+      transform: translate(calc(var(--drift-left, -15px) / 2), calc(var(--rise, 150vh) * -0.5));
       opacity: 0.9;
     }
     60% {
-      bottom: 75%;
-      transform: translateX(calc(var(--drift-right) / 2));
+      transform: translate(calc(var(--drift-right, 15px) / 2), calc(var(--rise, 150vh) * -0.667));
     }
     75% {
-      bottom: 100%;
-      transform: translateX(0);
+      transform: translate(0, calc(var(--rise, 150vh) * -0.833));
       opacity: 0.2;
     }
     90% {
-      bottom: 125%;
-      transform: translateX(0);
+      transform: translate(0, calc(var(--rise, 150vh) * -1));
       opacity: 0;
     }
     100% {
-      bottom: 125%;
-      transform: translateX(0);
+      transform: translate(0, calc(var(--rise, 150vh) * -1));
       opacity: 0;
     }
   }

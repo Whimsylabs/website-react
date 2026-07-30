@@ -5,10 +5,14 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 const glob = require('glob');
 
 function validateBlogPostSchema(postPath, postName) {
   const html = fs.readFileSync(postPath, 'utf8');
+  if (isRedirectStub(html)) {
+    return { success: true, post: postName, errors: [] };
+  }
 
   // Extract BlogPosting schema
   const schemaMatch = html.match(/<script type="application\/ld\+json">({.*?"@type":"BlogPosting".*?})<\/script>/);

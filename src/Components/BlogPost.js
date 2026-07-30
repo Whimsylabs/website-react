@@ -7,6 +7,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { getBlogPostTranslation, getAllBlogPosts } from '../i18n/blogDataGenerator';
 import { getLocalizedPath } from '../i18n';
+import blogPostSlugs from '../i18n/blogPostSlugs.json';
 import SpeakerButton from './SpeakerButton';
 
 // Import posts directly for fallback (keep for build compatibility)
@@ -465,50 +466,11 @@ const fallbackPosts = [
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort posts from newest to oldest
 
 // Mapping from old slugs to new post IDs
-const slugToPostId = {
-  'whimsylabs-education-revolution': 'post1',
-  'physicality-in-virtual-labs': 'post2',
-  'virtual-kidney-dissection-send-engagement': 'post3',
-  'ai-powered-virtual-labs-solving-education-crisis': 'post4',
-  'whimsycat-ai-tutor-transforming-science-education': 'post5',
-  'sandbox-learning-revolution-stem-education': 'post6',
-  'green-labs-sustainability-virtual-stem-education': 'post7',
-  'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
-  '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
-  'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
-  'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
-  'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
-  'science-real-time-physics-simulations-virtual-labs': 'post13',
-  'gamification-science-education-points-rewards-engagement': 'post14',
-  'whimsylabs-bett-2026-exhibition-announcement': 'post15',
-  'why-traditional-virtual-labs-fail-physics-engine': 'post16',
-  'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
-  'vr-winter-web-first-virtual-labs': 'post18',
-  'oecd-ai-learning-paradox-virtual-labs': 'post19',
-  'ai-assessment-crisis-solution': 'post20',
-  'royal-society-partnership-grants-vr-science-labs': 'post21',
-  'edtech-vendor-security-questions-powerschool': 'post22',
-  'teachers-are-experts-custom-experiment-designer': 'post23',
-  'how-to-choose-virtual-lab-software-school': 'post24',
-  'virtual-chemistry-lab-teachers-guide': 'post25',
-  'virtual-lab-software-guide-2026': 'post26',
-  'ai-science-tutor-classroom-what-works': 'post27',
-  'virtual-biology-lab-dissections-microscopy': 'post28',
-  'virtual-physics-lab-simulations-teach': 'post29',
-  'premium-science-education-accessible-grants': 'post30',
-  'uk-government-ai-education-funding-2026': 'post31',
-  'pearson-webinar-vr-assessment-ai-age': 'post32',
-  'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
-  'vr-stem-education-research-pedagogical-scaffolding': 'post34',
-  'purpose-built-ai-education-difference': 'post35',
-  'ai-text-grading-fails-process-assessment-works': 'post36',
-  'process-based-lab-assessment-future': 'post37',
-  'uk-edtech-testbeds-bett-2026-ai-policy': 'post38',
-  'oecd-process-oriented-assessment-validation': 'post39',
-  'student-ai-use-assessment-crisis-solution': 'post40',
-  'send-white-paper-2026-science-practicals': 'post41',
-  'triple-science-entitlement-2028-virtual-labs': 'post42'
-};
+// Slug -> post ID, derived from the shared source of truth so this can never
+// drift from build.js / generate-blog-data.js.
+const slugToPostId = Object.fromEntries(
+  Object.entries(blogPostSlugs).map(([id, slug]) => [slug, id])
+);
 
 const BlogPost = (props = {}) => {
   const { language } = props;
@@ -691,7 +653,19 @@ const BlogPost = (props = {}) => {
 };
 
 // Separate render function for reusability
+// Contextual links from every post to the product pages (internal linking:
+// high-ranking posts were previously dead ends with no route to features/contact)
+const POST_CTA_TEXT = {
+  en: { lead: 'Want to see what your students could do in a WhimsyLabs virtual lab?', features: 'Explore the features', demo: 'Book a free demo' },
+  de: { lead: 'Möchten Sie sehen, was Ihre Schüler in einem virtuellen WhimsyLabs-Labor erreichen können?', features: 'Funktionen entdecken', demo: 'Kostenlose Demo buchen' },
+  es: { lead: '¿Quiere ver lo que sus estudiantes podrían hacer en un laboratorio virtual de WhimsyLabs?', features: 'Descubra las funciones', demo: 'Reserve una demo gratuita' },
+  fr: { lead: 'Envie de découvrir ce que vos élèves pourraient faire dans un laboratoire virtuel WhimsyLabs ?', features: 'Découvrir les fonctionnalités', demo: 'Réserver une démo gratuite' },
+  ja: { lead: 'WhimsyLabsのバーチャルラボで生徒たちが何をできるか、ご覧になりませんか？', features: '機能を見る', demo: '無料デモを予約' },
+};
+POST_CTA_TEXT.jp = POST_CTA_TEXT.ja;
+
 function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
+  const cta = POST_CTA_TEXT[language] || POST_CTA_TEXT.en;
   return (
     <main className="container-fluid text-center p-0">
       <Helmet>
@@ -726,10 +700,18 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
                   className="whimsy-theme blog-speaker"
                 />
               </div>
-              {typeof post.content === 'string' 
+              {typeof post.content === 'string'
                 ? <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
                 : <div className="post-content">{post.content}</div>}
-              
+
+              <div className="post-cta">
+                <p className="post-cta-lead">{cta.lead}</p>
+                <div className="post-cta-links">
+                  <a href={getLocalizedPath("/features/", language)} className="post-nav-button">{cta.features}</a>
+                  <a href={getLocalizedPath("/contact/", language)} className="post-nav-button">{cta.demo}</a>
+                </div>
+              </div>
+
               <div className="post-navigation">
                 <div className="post-nav-links">
                   {prevPost && (

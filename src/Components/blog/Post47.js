@@ -1,0 +1,205 @@
+import React from "react";
+
+export const title = "76% of Teachers Use AI. 66% Say It Erodes Critical Thinking.";
+export const date = "2026-07-16";
+export const slug = "neu-survey-ai-critical-thinking-decline";
+export const description =
+  "The NEU's 2026 survey finds 76% of teachers use AI while 66% see critical thinking declining. The fix is AI that makes pupils do the work.";
+export const keywords = [
+  "NEU State of Education 2026",
+  "AI critical thinking decline",
+  "teachers AI survey",
+  "school AI policy",
+  "AI tutors disadvantaged pupils",
+  "cognitive offloading",
+  "AI in schools",
+  "virtual lab AI tutor"
+];
+
+export const content = (
+  <div>
+    <p>
+      In January 2026, the OECD's <em>Digital Education Outlook</em> warned of "false mastery": students whose grades rise with AI assistance while their independent ability quietly falls (
+      <a
+        href="https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        OECD, 2026
+      </a>
+      ). It was a warning built on research data. Three months later, the largest teaching union in Europe asked the people who would know whether it was actually happening. The National Education Union surveyed 9,408 teachers in English state schools for its State of Education report, released at its April conference, and the classroom verdict matched the research: two-thirds of secondary teachers say their pupils' critical thinking has declined because of AI (
+      <a
+        href="https://neu.org.uk/latest/press-releases/state-education-2026-ai"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        NEU, 2026
+      </a>
+      ).
+    </p>
+
+    <p>
+      The same survey found that 76 per cent of those teachers now use AI in their own working lives, up from 53 per cent a year earlier. Teachers are not rejecting the technology. They are using it daily and watching what a different kind of use is doing to their students. That combination, adoption and alarm rising together, is the most honest picture of AI in education anyone has published this year, and it points directly at what schools should do next.
+    </p>
+
+    <h2>What Did 9,408 Teachers Actually Say?</h2>
+
+    <p>
+      The headline numbers deserve to be read together rather than separately. Three-quarters of teachers (76 per cent) use AI tools for day-to-day work, mostly for creating resources (61 per cent), lesson planning (41 per cent), and administrative tasks (38 per cent). At the same time, 66 per cent of secondary teachers agree that pupils' critical thinking has declined as a result of AI use, with a third of them agreeing strongly. In primary schools, where pupils have less independent access to AI, only 28 per cent see a decline. And underneath it all, 49 per cent of schools have no AI policy of any kind, for staff or for students (
+      <a
+        href="https://neu.org.uk/latest/press-releases/state-education-2026-ai"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        NEU, 2026
+      </a>
+      ).
+    </p>
+
+    <p>
+      The secondary-versus-primary gap is the detail that turns a worry into evidence. If teacher pessimism about technology were a mood, it would not track pupil exposure so cleanly. It does: where students can reach for a chatbot to produce their work, teachers see thinking decline; where they mostly cannot, teachers largely do not. This is not proof of causation, but it is exactly the pattern the research predicts, and British teachers are not alone in reporting it. A June 2026 Ipsos poll found American teachers expressing the same concern about AI and their students' critical thinking (
+      <a
+        href="https://www.ipsos.com/en-us/teachers-concerned-about-impact-ai-students-critical-thinking"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ipsos, 2026
+      </a>
+      ).
+    </p>
+
+    <h2>Why Do Teachers Embrace AI for Themselves but Fear It for Pupils?</h2>
+
+    <p>
+      At first glance the survey looks contradictory. The same profession that doubled its AI use in a year is sounding the alarm about AI. But there is no contradiction, and seeing why is the key to the whole debate. When a teacher uses AI to draft a worksheet, the AI is producing an artefact the teacher already knows how to make, freeing time for the parts of the job only a human can do. When a pupil uses AI to write their essay or solve their physics problem, the AI is replacing the very process the task existed to exercise. The output was never the point of homework. The thinking was, and that is the part the chatbot does.
+    </p>
+
+    <p>
+      This is precisely the mechanism the OECD documented. In the year-long study the Outlook highlights, students using AI chatbots posted dramatically better results while the AI was available, then scored 17 per cent <em>worse</em> than peers who had never used AI once it was taken away (
+      <a
+        href="https://www.pnas.org/doi/10.1073/pnas.2422633122"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Bastani et al., 2025
+      </a>
+      ). We examined that study in detail when the Outlook was published. What is new in 2026 is that the effect is no longer a research finding. It is something two-thirds of secondary teachers say they can see from the front of the room.
+    </p>
+
+    <h2>The Policy Vacuum Makes It Worse</h2>
+
+    <p>
+      Half of English schools have no AI policy at all. In practice that means the decision about whether AI does a pupil's thinking is being made individually, by children, in the least supervised moments of their education. Meanwhile the government is moving ahead with plans for AI tutoring tools for disadvantaged pupils, and the profession is unconvinced: just 14 per cent of teachers support the plan, and 49 per cent oppose it. The NEU's general secretary, Daniel Kebede, put the union's position carefully: "The profession is far from convinced that AI tutors are a magic bullet for closing opportunity gaps for disadvantaged students," adding that AI will only improve learning "if implemented correctly, within a vision of a highly skilled profession" (
+      <a
+        href="https://neu.org.uk/latest/press-releases/state-education-2026-ai"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        NEU, 2026
+      </a>
+      ).
+    </p>
+
+    <p>
+      We build an AI tutor, and we think the scepticism is healthy. Teachers are not objecting to software helping children learn. They are objecting, with the evidence of their own classrooms behind them, to handing pupils an answer machine and calling it tutoring. The 14 per cent figure is not a rejection of AI in education. It is a demand that whoever builds these tools take the critical-thinking problem seriously, and most tools have not.
+    </p>
+
+    <h2>The Question Is Not Whether AI. It Is Who Does the Thinking.</h2>
+
+    <p>
+      Put the NEU survey and the OECD report side by side and they draw the same line through the middle of the AI market. On one side is AI that produces work for the learner: essays, solutions, explanations on demand. It inflates performance, hollows out skill, and it is what teachers are watching erode critical thinking. On the other side is AI that scaffolds the learner's own work: observing, adjusting difficulty, prompting the next attempt, and leaving the cognitive effort exactly where it belongs. The OECD's data says the first kind harms learning. The teachers' experience agrees. Any school writing its first AI policy this year, and 49 per cent need to, should start from that distinction rather than from a list of banned websites.
+    </p>
+
+    <h2>AI That Makes Pupils Do the Work</h2>
+
+    <p>
+      This distinction is the founding design decision of WhimsyLabs. Our virtual laboratories do not explain science to pupils. Pupils do science: they plan the experiment, handle the equipment, watch it behave with full physics simulation, make mistakes with real consequences, and try again. WhimsyCat, the AI tutor inside the labs, has no chat window a student can ask for answers. It cannot write anyone's conclusion or solve anyone's titration, because there is no channel through which to ask. Instead it watches how each pupil works, infers where they are struggling from their actions, nudges them back into productive effort, and reports what it sees to the teacher, who remains the expert in the room.
+    </p>
+
+    <p>
+      The result is AI that operates on the right side of the line the NEU's members have drawn. The struggle that builds critical thinking is protected, not outsourced; a pupil cannot offload the thinking to WhimsyCat even if they try. And because our assessment grades the process rather than the final answer, the pupil's reasoning becomes visible to the teacher instead of hidden behind a polished output that may or may not be theirs. Teachers told the NEU they want AI that supports a highly skilled profession rather than substituting for one. That is a specification, and it is the one we built to.
+    </p>
+
+    <h2>What Should the 49% Without a Policy Do?</h2>
+
+    <p>
+      For school leaders starting an AI policy from a blank page this summer, the survey and the research suggest a short set of principles:
+    </p>
+
+    <ul>
+      <li>Separate staff use from pupil use. AI that saves a teacher an hour of formatting and AI that writes a pupil's coursework are different technologies in every way that matters.</li>
+      <li>For pupil-facing tools, ask where the thinking happens. If the AI can produce the work product, assume pupils will let it, whatever the usage rules say.</li>
+      <li>Prefer tools that make pupil process visible to teachers over tools that only deliver outputs, so declining engagement is caught early rather than at exam time.</li>
+      <li>Keep the teacher in the loop by design. The NEU's members are clear that they want AI accountable to professional judgement, not a replacement for it.</li>
+      <li>Revisit annually. Teacher AI use jumped from 53 to 76 per cent in a single year; a policy written for last year's technology is already out of date.</li>
+    </ul>
+
+    <h2>Listen to the Measurement Instrument</h2>
+
+    <p>
+      There are 9,408 data points in the NEU survey, but the finding that matters is simple: the people best positioned to observe children thinking, every day, at scale, report that something is changing, and the direction matches what controlled research predicted. Teachers are not resisting the future. They are the measurement instrument, and the reading is clear. The answer is not less technology in science education. It is technology that puts the effort back where learning happens: in the pupil's own hands, with an AI that watches, scaffolds, and never does the thinking for them.
+    </p>
+
+    <>
+      <h2>Related Articles</h2>
+      <ul>
+        <li>
+          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+            AI Boosted Scores 127%. Then Students Couldn't Think.
+          </a>
+        </li>
+        <li>
+          <a href="/blog/teachers-are-experts-custom-experiment-designer">
+            Teachers Are the Experts. We Just Build the Tools.
+          </a>
+        </li>
+        <li>
+          <a href="/blog/ai-science-tutor-classroom-what-works">
+            AI Science Tutors in the Classroom: What Actually Works
+          </a>
+        </li>
+        <li>
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+            How WhimsyCat Meets the DfE AI Safety Standards Without a Chat Box
+          </a>
+        </li>
+      </ul>
+    </>
+
+    <div className="references-section">
+      <h3>References</h3>
+      <ul className="references-list">
+        <li key="ref-1">
+          National Education Union. (2026). State of education: AI.{" "}
+          <a href="https://neu.org.uk/latest/press-releases/state-education-2026-ai" target="_blank" rel="noopener noreferrer">
+            https://neu.org.uk/latest/press-releases/state-education-2026-ai
+          </a>
+        </li>
+        <li key="ref-2">
+          OECD. (2026). OECD Digital Education Outlook 2026. OECD Publishing.{" "}
+          <a href="https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html" target="_blank" rel="noopener noreferrer">
+            https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html
+          </a>
+        </li>
+        <li key="ref-3">
+          Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., &amp; Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. Proceedings of the National Academy of Sciences.{" "}
+          <a href="https://www.pnas.org/doi/10.1073/pnas.2422633122" target="_blank" rel="noopener noreferrer">
+            https://www.pnas.org/doi/10.1073/pnas.2422633122
+          </a>
+        </li>
+        <li key="ref-4">
+          Ipsos. (2026). Teachers concerned about the impact of AI on students' critical thinking.{" "}
+          <a href="https://www.ipsos.com/en-us/teachers-concerned-about-impact-ai-students-critical-thinking" target="_blank" rel="noopener noreferrer">
+            https://www.ipsos.com/en-us/teachers-concerned-about-impact-ai-students-critical-thinking
+          </a>
+        </li>
+        <li key="ref-5">
+          Schools Week. (2026). DfE invites bids from AI tutoring pilot partners.{" "}
+          <a href="https://schoolsweek.co.uk/dfe-invites-bids-from-ai-tutoring-pilot-partners/" target="_blank" rel="noopener noreferrer">
+            https://schoolsweek.co.uk/dfe-invites-bids-from-ai-tutoring-pilot-partners/
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+);

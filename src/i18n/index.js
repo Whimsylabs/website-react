@@ -49,10 +49,19 @@ function getLocalizedPath(path, lang = getCurrentLanguage()) {
   // Remove existing language prefix if present
   const cleanPath = path.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 
-  if (lang === DEFAULT_LANGUAGE) {
-    return cleanPath;
+  const localized = lang === DEFAULT_LANGUAGE ? cleanPath : `/${lang}${cleanPath}`;
+
+  // Always emit trailing slashes: canonicals and the sitemap use them, and
+  // slash-less internal links get indexed as duplicate URLs on GitHub Pages
+  if (
+    !localized.endsWith("/") &&
+    !localized.includes(".") &&
+    !localized.includes("#") &&
+    !localized.includes("?")
+  ) {
+    return `${localized}/`;
   }
-  return `/${lang}${cleanPath}`;
+  return localized;
 }
 
 // Get path without language prefix

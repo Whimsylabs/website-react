@@ -18,6 +18,15 @@ const ComponentRenderer = require("./scripts/component-renderer");
 const AssetExtractor = require("./scripts/asset-extractor");
 const MetadataInjector = require("./scripts/metadata-injector");
 const { getGrantMetadata } = require("./src/data/grantMetadata");
+// Per-post language allowlist (keyed by slug). Region-specific posts are only
+// published in the listed languages (build codes: en, es, fr, de, jp); other
+// languages get a redirect stub to the English URL.
+const blogPostLanguageRestrictions = require("./src/i18n/blogPostLanguageRestrictions.json");
+// Post ID <-> slug mapping. Single source of truth: src/i18n/blogPostSlugs.json
+const blogPostSlugs = require("./src/i18n/blogPostSlugs.json");
+const blogSlugToPostId = Object.fromEntries(
+  Object.entries(blogPostSlugs).map(([id, slug]) => [slug, id])
+);
 
 // Initialize rendering utilities
 const componentRenderer = new ComponentRenderer();
@@ -82,6 +91,7 @@ const getPageMetadata = (lang = 'en') => ({
   "/grants/us-education": getGrantMetadata("/grants/us-education", lang),
   "/grants/japan-education": getGrantMetadata("/grants/japan-education", lang),
   "/grants/erasmus-plus": getGrantMetadata("/grants/erasmus-plus", lang),
+  "/grants/inclusive-mainstream-fund": getGrantMetadata("/grants/inclusive-mainstream-fund", lang),
   "/contact": {
     title: translations[lang]?.contact?.title || "Contact Us | WhimsyLabs Virtual Lab Software",
     description: translations[lang]?.contact?.description || "Get in touch with WhimsyLabs to request a trial for your school or ask questions about our virtual lab software for STEM education.",
@@ -97,22 +107,36 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.dataSecurity?.description || "How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.",
     keywords: "student data privacy, EdTech security, FERPA compliance, GDPR education, virtual lab data protection, school data security",
   },
-  // TEMPORARILY DISABLED - Subject pages need more work
-  // "/chemistry": {
-  //   title: translations[lang]?.chemistry?.title || "Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs",
-  //   description: translations[lang]?.chemistry?.description || "Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.",
-  //   keywords: "virtual chemistry lab, chemistry simulations, online chemistry experiments, titration simulation, molecular modelling, GCSE chemistry, A-level chemistry",
-  // },
-  // "/biology": {
-  //   title: translations[lang]?.biology?.title || "Virtual Biology Lab | Interactive Biology Simulations | WhimsyLabs",
-  //   description: translations[lang]?.biology?.description || "Explore interactive virtual biology experiments with realistic simulations. Dissections, microscopy, and cellular biology without ethical concerns.",
-  //   keywords: "virtual biology lab, biology simulations, online biology experiments, virtual dissection, microscopy simulation, GCSE biology, A-level biology",
-  // },
-  // "/physics": {
-  //   title: translations[lang]?.physics?.title || "Virtual Physics Lab | Interactive Physics Simulations | WhimsyLabs",
-  //   description: translations[lang]?.physics?.description || "Explore interactive virtual physics experiments with realistic simulations. Mechanics, electricity, waves, and more with real-time data collection.",
-  //   keywords: "virtual physics lab, physics simulations, online physics experiments, circuit simulation, mechanics simulation, GCSE physics, A-level physics",
-  // },
+  "/chemistry": {
+    title: translations[lang]?.chemistry?.title || "Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs",
+    description: translations[lang]?.chemistry?.description || "Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.",
+    keywords: "virtual chemistry lab, chemistry simulations, online chemistry experiments, titration simulation, molecular modelling, GCSE chemistry, A-level chemistry",
+  },
+  "/biology": {
+    title: translations[lang]?.biology?.title || "Virtual Biology Lab | Interactive Biology Simulations | WhimsyLabs",
+    description: translations[lang]?.biology?.description || "Explore interactive virtual biology experiments with realistic simulations. Dissections, microscopy, and cellular biology without ethical concerns.",
+    keywords: "virtual biology lab, biology simulations, online biology experiments, virtual dissection, microscopy simulation, GCSE biology, A-level biology",
+  },
+  "/physics": {
+    title: translations[lang]?.physics?.title || "Virtual Physics Lab | Interactive Physics Simulations | WhimsyLabs",
+    description: translations[lang]?.physics?.description || "Explore interactive virtual physics experiments with realistic simulations. Mechanics, electricity, waves, and more with real-time data collection.",
+    keywords: "virtual physics lab, physics simulations, online physics experiments, circuit simulation, mechanics simulation, GCSE physics, A-level physics",
+  },
+  "/ai-assessment": {
+    title: translations[lang]?.aiAssessment?.title || "AI-Proof Assessment for Science Labs | WhimsyLabs",
+    description: translations[lang]?.aiAssessment?.description || "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab — nothing to fake.",
+    keywords: "AI-proof assessment, process-based assessment, AI detection alternative, practical skills assessment, science lab grading, AI assessment schools",
+  },
+  "/choose-virtual-lab": {
+    title: translations[lang]?.chooseVirtualLab?.title || "How to Choose Virtual Lab Software: A Buyer's Guide",
+    description: translations[lang]?.chooseVirtualLab?.description || "A 12-point checklist for choosing virtual lab software: physics vs animation, AI assessment, accessibility, data protection and cost.",
+    keywords: "choose virtual lab software, virtual lab comparison, best virtual lab software, virtual lab buyer's guide, Labster alternatives, virtual lab checklist",
+  },
+  "/send": {
+    title: translations[lang]?.sendScience?.title || "Accessible Science Practicals for SEND | WhimsyLabs",
+    description: translations[lang]?.sendScience?.description || "Virtual labs built for SEND: control remapping, text-to-speech, self-paced practicals, and evidence for the 2026 SEND White Paper.",
+    keywords: "SEND science practicals, accessible virtual labs, SEND white paper 2026, inclusive science education, SEND lab access, special educational needs science",
+  },
   // "/landing-demo" is now the homepage at "/"
 });
 
@@ -136,10 +160,13 @@ const routeComponentMap = {
   "/grants/armourers": "ArmourersGrantPage",
   "/grants/uk-school-funding": "UKSchoolFundingGrantPage",
   "/grants/us-education": "USGrantsPage",
-  // TEMPORARILY DISABLED - Subject pages need more work
-  // "/chemistry": "ChemistryPage",
-  // "/biology": "BiologyPage",
-  // "/physics": "PhysicsPage",
+  "/grants/inclusive-mainstream-fund": "InclusiveMainstreamFundGrantPage",
+  "/chemistry": "ChemistryPage",
+  "/biology": "BiologyPage",
+  "/physics": "PhysicsPage",
+  "/ai-assessment": "AIAssessmentPage",
+  "/choose-virtual-lab": "ChooseVirtualLabPage",
+  "/send": "SendSciencePage",
   // "/landing-demo": "LandingDemo", // Now the homepage
   // "/ignite-pitch": "IgnitePitchDeck", // Disabled
 };
@@ -294,14 +321,21 @@ async function loadReactComponents() {
     console.log("✅ Loaded UKSchoolFundingGrantPage");
     ReactComponents.USGrantsPage = require("./src/Components/USGrantsPage.js").default;
     console.log("✅ Loaded USGrantsPage");
+    ReactComponents.InclusiveMainstreamFundGrantPage = require("./src/Components/InclusiveMainstreamFundGrantPage.js").default;
+    console.log("✅ Loaded InclusiveMainstreamFundGrantPage");
 
-    // TEMPORARILY DISABLED - Subject pages need more work
-    // ReactComponents.ChemistryPage = require("./src/Components/ChemistryPage.js").default;
-    // console.log("✅ Loaded ChemistryPage");
-    // ReactComponents.BiologyPage = require("./src/Components/BiologyPage.js").default;
-    // console.log("✅ Loaded BiologyPage");
-    // ReactComponents.PhysicsPage = require("./src/Components/PhysicsPage.js").default;
-    // console.log("✅ Loaded PhysicsPage");
+    ReactComponents.ChemistryPage = require("./src/Components/ChemistryPage.js").default;
+    console.log("✅ Loaded ChemistryPage");
+    ReactComponents.BiologyPage = require("./src/Components/BiologyPage.js").default;
+    console.log("✅ Loaded BiologyPage");
+    ReactComponents.PhysicsPage = require("./src/Components/PhysicsPage.js").default;
+    console.log("✅ Loaded PhysicsPage");
+    ReactComponents.AIAssessmentPage = require("./src/Components/AIAssessmentPage.js").default;
+    console.log("✅ Loaded AIAssessmentPage");
+    ReactComponents.ChooseVirtualLabPage = require("./src/Components/ChooseVirtualLabPage.js").default;
+    console.log("✅ Loaded ChooseVirtualLabPage");
+    ReactComponents.SendSciencePage = require("./src/Components/SendSciencePage.js").default;
+    console.log("✅ Loaded SendSciencePage");
 
     ReactComponents.LandingDemo = require("./src/Components/LandingDemo.js").default;
     console.log("✅ Loaded LandingDemo");
@@ -364,8 +398,12 @@ async function copyAssets() {
     // Copy React build static files (CSS/JS)
     const reactStaticDir = `${config.buildDir}/static`;
     const destStaticDir = `${config.distDir}/static`;
-    
-    if (await fs.pathExists(reactStaticDir)) {
+
+    if (path.resolve(reactStaticDir) === path.resolve(destStaticDir)) {
+      // distDir is the same as buildDir, so the files are already in place;
+      // fs.copy rejects self-copies with "Source and destination must not be the same"
+      console.log("✅ React build static files already in place (distDir same as buildDir)");
+    } else if (await fs.pathExists(reactStaticDir)) {
       await fs.ensureDir(destStaticDir);
       await fs.copy(reactStaticDir, destStaticDir, { overwrite: true });
       console.log("✅ Copied React build static files");
@@ -908,12 +946,6 @@ async function generatePageHTML(route, data = {}) {
     // Get critical CSS for inlining
     const criticalCSS = assetExtractor.extractCriticalCSSContent();
 
-    // Generate complete metadata
-    const completeMetadata = metadataInjector.generateCompleteMetadata(
-      route,
-      data
-    );
-
     // Create React element with props
     const props = {
       ...data,
@@ -958,50 +990,7 @@ async function generatePageHTML(route, data = {}) {
         const language = data.language || 'en';
         
         // Map slug to post ID (post1, post2, etc.)
-        const slugToPostId = {
-          'whimsylabs-education-revolution': 'post1',
-          'physicality-in-virtual-labs': 'post2',
-          'virtual-kidney-dissection-send-engagement': 'post3',
-          'ai-powered-virtual-labs-solving-education-crisis': 'post4',
-          'whimsycat-ai-tutor-transforming-science-education': 'post5',
-          'sandbox-learning-revolution-stem-education': 'post6',
-          'green-labs-sustainability-virtual-stem-education': 'post7',
-          'virtual-labs-solve-stem-teacher-shortage-crisis': 'post8',
-          '24-7-ai-tutoring-personalized-daily-recommendations': 'post9',
-          'emotional-intelligence-ai-tutors-whimsycat-frustration-detection': 'post10',
-          'virtual-labs-vs-physical-labs-cost-benefit-analysis': 'post11',
-          'virtual-reality-prepares-students-real-world-stem-careers': 'post12',
-          'science-real-time-physics-simulations-virtual-labs': 'post13',
-          'gamification-science-education-points-rewards-engagement': 'post14',
-          'whimsylabs-bett-2026-exhibition-announcement': 'post15',
-          'why-traditional-virtual-labs-fail-physics-engine': 'post16',
-          'whimsylabs-wins-techlearning-best-of-bett-2026': 'post17',
-          'vr-winter-web-first-virtual-labs': 'post18',
-          'oecd-ai-learning-paradox-virtual-labs': 'post19',
-          'ai-assessment-crisis-solution': 'post20',
-          'royal-society-partnership-grants-vr-science-labs': 'post21',
-          'edtech-vendor-security-questions-powerschool': 'post22',
-          'teachers-are-experts-custom-experiment-designer': 'post23',
-          'how-to-choose-virtual-lab-software-school': 'post24',
-          'virtual-chemistry-lab-teachers-guide': 'post25',
-          'virtual-lab-software-guide-2026': 'post26',
-          'ai-science-tutor-classroom-what-works': 'post27',
-          'virtual-biology-lab-dissections-microscopy': 'post28',
-          'virtual-physics-lab-simulations-teach': 'post29',
-          'premium-science-education-accessible-grants': 'post30',
-          'uk-government-ai-education-funding-2026': 'post31',
-          'pearson-webinar-vr-assessment-ai-age': 'post32',
-          'edtech-critics-right-passive-learning-vs-active-labs': 'post33',
-          'vr-stem-education-research-pedagogical-scaffolding': 'post34',
-          'purpose-built-ai-education-difference': 'post35',
-          'ai-text-grading-fails-process-assessment-works': 'post36',
-          'process-based-lab-assessment-future': 'post37',
-          'uk-edtech-testbeds-bett-2026-ai-policy': 'post38',
-          'oecd-process-oriented-assessment-validation': 'post39',
-          'student-ai-use-assessment-crisis-solution': 'post40',
-          'send-white-paper-2026-science-practicals': 'post41',
-          'triple-science-entitlement-2028-virtual-labs': 'post42',
-        };
+        const slugToPostId = blogSlugToPostId;
         
         const postId = slugToPostId[data.slug];
         let postModule = null;
@@ -1037,7 +1026,10 @@ async function generatePageHTML(route, data = {}) {
             // Render JSX content to HTML string
             const contentHtml = ReactDOMServer.renderToStaticMarkup(postModule.content);
             props.content = contentHtml;
-            
+            // Expose the rendered article to the metadata injector so the
+            // BlogPosting schema can report a real wordCount/reading time
+            data.contentHtml = contentHtml;
+
             // Also use translated title if available
             if (postModule.title) {
               props.title = postModule.title;
@@ -1050,6 +1042,13 @@ async function generatePageHTML(route, data = {}) {
         console.warn(`⚠️ Could not SSR blog content for ${data.slug}:`, ssrError.message);
       }
     }
+
+    // Generate complete metadata (after blog content SSR so schema markup can
+    // use the rendered article via data.contentHtml)
+    const completeMetadata = metadataInjector.generateCompleteMetadata(
+      route,
+      data
+    );
 
     // Render component to string
     const renderResult = componentRenderer.renderComponent(
@@ -1242,15 +1241,18 @@ async function generateSitemap() {
       { path: '/grants/armourers/', priority: '0.7', changefreq: 'weekly' }, // Armourers & Brasiers science grants
       { path: '/grants/uk-school-funding/', priority: '0.7', changefreq: 'weekly' }, // Pupil Premium / SEN budgets
       { path: '/grants/us-education/', priority: '0.8', changefreq: 'weekly' }, // US Title IV-A / DonorsChoose
+      { path: '/grants/inclusive-mainstream-fund/', priority: '0.8', changefreq: 'weekly' }, // DfE Inclusive Mainstream Fund 2026-27
       { path: '/faq/', priority: '0.9', changefreq: 'monthly' },
       { path: '/contact/', priority: '0.6', changefreq: 'monthly' },
       { path: '/privacy/', priority: '0.3', changefreq: 'yearly' },
       { path: '/data-security/', priority: '0.4', changefreq: 'yearly' },
       // DPA excluded from sitemap - single-language legal document, linked from footer
-      // TEMPORARILY DISABLED - Subject pages need more work
-      // { path: '/chemistry/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
-      // { path: '/biology/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
-      // { path: '/physics/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
+      { path: '/chemistry/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
+      { path: '/biology/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
+      { path: '/physics/', priority: '0.8', changefreq: 'weekly' }, // Subject landing page
+      { path: '/ai-assessment/', priority: '0.8', changefreq: 'weekly' }, // Assessment pillar page
+      { path: '/choose-virtual-lab/', priority: '0.8', changefreq: 'weekly' }, // Buyer's guide
+      { path: '/send/', priority: '0.8', changefreq: 'weekly' }, // SEND accessibility page
       // landing-demo is now the homepage
     ];
 
@@ -1287,20 +1289,23 @@ async function generateSitemap() {
     
     for (const post of sortedPosts) {
       const lastmod = new Date(post.date).toISOString().split("T")[0];
-      
+      const allowedLangs = blogPostLanguageRestrictions[post.id]; // post.id is the slug
+
       for (const lang of config.supportedLanguages) {
+        if (allowedLangs && !allowedLangs.includes(lang)) continue; // region-specific: omit unpublished languages
         const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
         const url = `${config.siteUrl}${langPrefix}/blog/${post.id}/`;
-        
+
         sitemap += `
     <url>
         <loc>${url}</loc>
         <lastmod>${lastmod}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>`;
-        
+
         // Add alternate language links for blog posts
         for (const altLang of config.supportedLanguages) {
+          if (allowedLangs && !allowedLangs.includes(altLang)) continue; // region-specific: omit unpublished languages
           const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
           const altUrl = `${config.siteUrl}${altLangPrefix}/blog/${post.id}/`;
           sitemap += `
@@ -1335,6 +1340,51 @@ async function generateRobotsTxt() {
     console.log(`✅ Generated robots.txt automatically based on build content`);
   } catch (error) {
     console.error("❌ Error generating robots.txt:", error);
+  }
+}
+
+// Generate llms.txt — the emerging convention AI assistants and crawlers use
+// to discover a site's key content (https://llmstxt.org/)
+async function generateLlmsTxt() {
+  try {
+    const posts = await getBlogPosts('en');
+    const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    let llmsTxt = `# WhimsyLabs
+
+> WhimsyLabs is award-winning virtual laboratory software for science education. Students conduct realistic Biology, Chemistry, and Physics experiments in a fully simulated sandbox lab — on desktop, mobile, or VR — while WhimsyCat, the built-in AI tutor, assesses their practical skills. WhimsyCat has no student chat window: it infers everything from students' actions in the lab, so pupils never type prompts or receive generated text. Winner of the BETT 2025 Kids Judge Award (Best Science Lab, Start Up).
+
+The site is available in English (default, no URL prefix), Spanish (/es/), French (/fr/), German (/de/), and Japanese (/jp/).
+
+## Key pages
+
+- [Home](${config.siteUrl}/): What WhimsyLabs is, how the physics-first simulation and AI assessment work
+- [Features](${config.siteUrl}/features/): Full feature set — realistic simulations, AI assessment, cross-platform access
+- [Services](${config.siteUrl}/services/): Solutions for schools and K-12 classrooms, trials, and onboarding
+- [AI-Proof Assessment](${config.siteUrl}/ai-assessment/): Why process-based assessment beats AI detection, and how WhimsyLabs grades technique
+- [How to Choose Virtual Lab Software](${config.siteUrl}/choose-virtual-lab/): A 12-point buyer's checklist for schools comparing virtual lab platforms
+- [SEND Science Practicals](${config.siteUrl}/send/): Accessible practicals — control remapping, text-to-speech, self-paced modes
+- [Virtual Chemistry Lab](${config.siteUrl}/chemistry/): Titrations, reactions, electrolysis with simulated chemistry
+- [Virtual Biology Lab](${config.siteUrl}/biology/): Dissections, microscopy, and physiology
+- [Virtual Physics Lab](${config.siteUrl}/physics/): Mechanics, circuits, waves on a real-time physics engine
+- [FAQ](${config.siteUrl}/faq/): 40+ answered questions on pricing, setup, VR requirements, and curriculum fit
+- [Grants](${config.siteUrl}/grants/): Funding routes schools can use to pay for WhimsyLabs
+- [Data Security](${config.siteUrl}/data-security/): Student data protection, GDPR/FERPA/COPPA compliance
+- [Contact](${config.siteUrl}/contact/): Book a demo or request a school trial
+
+## Blog
+
+`;
+
+    for (const post of sortedPosts) {
+      const description = (post.description || '').replace(/\s+/g, ' ').trim();
+      llmsTxt += `- [${post.title}](${config.siteUrl}/blog/${post.id}/): ${description}\n`;
+    }
+
+    await fs.writeFile(`${config.distDir}/llms.txt`, llmsTxt);
+    console.log(`✅ Generated llms.txt with ${sortedPosts.length} blog posts`);
+  } catch (error) {
+    console.error("❌ Error generating llms.txt:", error);
   }
 }
 
@@ -1415,6 +1465,42 @@ async function generateLanguageDetection() {
   console.log('✅ Language detection script generated');
 }
 
+// Generate 200-status redirect stubs for region-specific posts in languages they are
+// not published in (e.g. /de/blog/<uk-post>/ -> /blog/<uk-post>/). Static MPA redirect
+// (meta refresh + JS) with noindex + a canonical to the English URL. These pages exist
+// (HTTP 200) so the localized URL is a real redirect rather than a 404. SEO/content
+// validators detect and skip them via scripts/is-redirect-stub.js.
+async function generateRestrictedRedirects() {
+  let count = 0;
+  for (const [slug, allowedLangs] of Object.entries(blogPostLanguageRestrictions)) {
+    const targetPath = `/blog/${slug}/`; // English (default) canonical URL
+    for (const lang of config.supportedLanguages) {
+      if (lang === config.defaultLanguage || allowedLangs.includes(lang)) continue;
+      const dir = `${config.distDir}/${lang}/blog/${slug}`;
+      const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, follow">
+    <title>Redirecting to English version | WhimsyLabs</title>
+    <link rel="canonical" href="${config.siteUrl}${targetPath}">
+    <meta http-equiv="refresh" content="0; url=${targetPath}">
+    <script>window.location.replace("${targetPath}");</script>
+</head>
+<body>
+    <p>This article is available in English. Redirecting to <a href="${targetPath}">${targetPath}</a>.</p>
+</body>
+</html>`;
+      await fs.ensureDir(dir);
+      await fs.writeFile(`${dir}/index.html`, html);
+      count++;
+    }
+  }
+  if (count > 0) {
+    console.log(`🔁 Generated ${count} language redirect stubs for region-specific posts`);
+  }
+}
+
 // Main build function
 async function build() {
   try {
@@ -1431,8 +1517,10 @@ async function build() {
     await copyAssets();
     await convertBlogPosts();
     await generatePages();
+    await generateRestrictedRedirects();
     await generateSitemap();
     await generateRobotsTxt();
+    await generateLlmsTxt();
     await generateLanguageDetection();
     
     // Final validation step

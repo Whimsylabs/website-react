@@ -40,8 +40,8 @@ const translations = {
 
     // FAQ
     faq: {
-      title: "Virtual Lab FAQ | Online Lab Simulation Questions | WhimsyLabs",
-      description: "Get expert answers to common questions about WhimsyLabs virtual laboratory and online lab simulation software, implementation, pricing, and STEM education.",
+      title: "Virtual Lab FAQ: Pricing, Setup & Free Trials | WhimsyLabs",
+      description: "How much does WhimsyLabs cost? Do you need VR headsets? How do free school trials work? Clear answers to 40+ questions about our virtual lab software.",
       subtitle:
         "Find answers to common questions about our virtual lab and online lab simulation software for STEM education",
       heading: "Virtual Lab FAQ: Online Lab Simulation Questions",
@@ -55,7 +55,7 @@ const translations = {
 
     // Services
     services: {
-      title: "Virtual Lab for Schools | K-12 Classroom Solutions | WhimsyLabs",
+      title: "Virtual Labs for Schools & K-12 Classrooms | WhimsyLabs",
       description: "Comprehensive K-12 virtual laboratory software including classroom lab solutions, curriculum integration, teacher training, and technical support for schools.",
       // Mid-page CTAs
       cta1Title: "See the AI Experiment Builder in Action",
@@ -464,6 +464,18 @@ const translations = {
     },
 
     // Chemistry Page
+    aiAssessment: {
+      title: "AI-Proof Assessment for Science Labs | WhimsyLabs",
+      description: "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab — nothing to fake.",
+    },
+    chooseVirtualLab: {
+      title: "How to Choose Virtual Lab Software: A Buyer's Guide",
+      description: "A 12-point checklist for choosing virtual lab software: physics vs animation, AI assessment, accessibility, data protection and cost.",
+    },
+    sendScience: {
+      title: "Accessible Science Practicals for SEND | WhimsyLabs",
+      description: "Virtual labs built for SEND: control remapping, text-to-speech, self-paced practicals, and evidence for the 2026 SEND White Paper.",
+    },
     chemistry: {
       title: "Virtual Chemistry Lab | Interactive Chemistry Simulations | WhimsyLabs",
       description: "Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.",
@@ -684,7 +696,7 @@ const translations = {
 
     // Landing Demo (Homepage)
     landingDemo: {
-      title: "WhimsyLabs Virtual Lab | Award-Winning Virtual Laboratory Software",
+      title: "WhimsyLabs | Award-Winning Virtual Lab Software for Schools",
       description: "WhimsyLabs virtual laboratory software transforms STEM education with physics-first simulations and AI-driven assessment. Build real lab skills safely.",
     },
 
@@ -1125,6 +1137,18 @@ const translations = {
     },
 
     // Chemistry Page
+    aiAssessment: {
+      title: "Evaluación a Prueba de IA para Laboratorios | WhimsyLabs",
+      description: "La IA puede escribir un informe, pero no hacer una titulación. WhimsyLabs evalúa técnica, decisiones y seguridad en el laboratorio.",
+    },
+    chooseVirtualLab: {
+      title: "Cómo Elegir Software de Laboratorio Virtual: Guía de Compra",
+      description: "Una lista de 12 puntos para elegir laboratorio virtual: física o animación, evaluación con IA, accesibilidad, datos y coste.",
+    },
+    sendScience: {
+      title: "Prácticas de Ciencias Accesibles (NEE) | WhimsyLabs",
+      description: "Laboratorios virtuales accesibles: controles adaptables, texto a voz, ritmo propio y evidencias para alumnado con necesidades especiales.",
+    },
     chemistry: {
       title: "Laboratorio Virtual de Química | Simulaciones | WhimsyLabs",
       description: "Explora experimentos virtuales de química interactivos con simulaciones realistas. Práctica segura e ilimitada de titulaciones, reacciones y química molecular.",
@@ -1712,6 +1736,18 @@ const translations = {
     },
 
     // Chemistry Page
+    aiAssessment: {
+      title: "Évaluation à l'Épreuve de l'IA en Sciences | WhimsyLabs",
+      description: "L'IA peut rédiger un compte rendu, pas réaliser un titrage. WhimsyLabs note la technique, les décisions et la sécurité au laboratoire.",
+    },
+    chooseVirtualLab: {
+      title: "Choisir un Logiciel de Laboratoire Virtuel : Guide d'Achat",
+      description: "Une liste de 12 critères pour choisir un laboratoire virtuel : physique ou animation, évaluation IA, accessibilité, données et coût.",
+    },
+    sendScience: {
+      title: "TP de Sciences Accessibles | WhimsyLabs",
+      description: "Laboratoires virtuels accessibles : commandes adaptables, synthèse vocale, rythme personnalisé et suivi des élèves à besoins particuliers.",
+    },
     chemistry: {
       title: "Laboratoire Virtuel de Chimie | Simulations | WhimsyLabs",
       description: "Explorez des expériences de chimie virtuelles interactives avec des simulations réalistes. Pratique sûre et illimitée des titrages, réactions et chimie moléculaire.",
@@ -2298,6 +2334,18 @@ const translations = {
     },
 
     // Chemistry Page
+    aiAssessment: {
+      title: "KI-sichere Bewertung für Schullabore | WhimsyLabs",
+      description: "KI kann Berichte schreiben, aber keine Titration durchführen. WhimsyLabs bewertet Technik, Entscheidungen und Sicherheit im Labor.",
+    },
+    chooseVirtualLab: {
+      title: "Virtuelle Labor-Software auswählen: Ein Kaufratgeber",
+      description: "Eine 12-Punkte-Checkliste für virtuelle Labore: Physik oder Animation, KI-Bewertung, Barrierefreiheit, Datenschutz und Kosten.",
+    },
+    sendScience: {
+      title: "Barrierefreie Experimente für Förderschüler | WhimsyLabs",
+      description: "Virtuelle Labore für Lernende mit Förderbedarf: anpassbare Steuerung, Sprachausgabe, eigenes Tempo und lückenlose Lernnachweise.",
+    },
     chemistry: {
       title: "Virtuelles Chemielabor | Chemie-Simulationen | WhimsyLabs",
       description: "Entdecken Sie interaktive virtuelle Chemieexperimente mit realistischen Simulationen. Sichere, unbegrenzte Übung für Titrationen, Reaktionen und Molekülchemie.",
@@ -2723,6 +2771,18 @@ const translations = {
     },
 
     // Chemistry Page
+    aiAssessment: {
+      title: "AI対策済みの理科実験評価 | WhimsyLabs",
+      description: "AIはレポートは書けても滴定はできません。WhimsyLabsは実験中の技術・判断・安全性をそのまま評価するため、ごまかしがききません。",
+    },
+    chooseVirtualLab: {
+      title: "バーチャルラボの選び方：学校向け購入ガイド | WhimsyLabs",
+      description: "物理シミュレーションかアニメーションか、AI評価、アクセシビリティ、コストなど、バーチャルラボ選定の12項目チェックリスト。",
+    },
+    sendScience: {
+      title: "特別支援の生徒のための理科実験 | WhimsyLabs",
+      description: "操作の再割り当て、音声読み上げ、自分のペースで進められる実習など、特別な支援を要する生徒のために設計されたバーチャル理科実験室です。",
+    },
     chemistry: {
       title: "バーチャル化学実験室 | インタラクティブ化学シミュレーション | WhimsyLabs",
       description: "リアルなシミュレーションでインタラクティブな仮想化学実験を体験できます。滴定、反応、分子化学の安全で無制限の練習が可能。",

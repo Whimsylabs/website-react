@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import './Testimonial.css';
 
 const testimonials = [
@@ -37,34 +37,41 @@ const testimonials = [
 const Testimonial = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [animationClass, setAnimationClass] = useState('fade-in-right');
+    const intervalRef = useRef(null);
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         setAnimationClass('fade-out-left'); // Start the fade-out-left animation
         setTimeout(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
             setAnimationClass('fade-in-right'); // Set the fade-in-right animation for the next item
         }, 500); // Match this timeout to the animation duration
-    };
+    }, []);
 
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         setAnimationClass('fade-out-left'); // Start the fade-out-left animation
         setTimeout(() => {
             setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
             setAnimationClass('fade-in-right'); // Set the fade-in-right animation for the next item
         }, 500); // Match this timeout to the animation duration
-    };
+    }, []);
 
-    // Auto-cycle every 10 seconds
+    // Auto-cycle every 10 seconds; restarted on manual navigation so a click
+    // isn't immediately followed by an auto-advance
+    const restartAutoCycle = useCallback(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        intervalRef.current = setInterval(handleNext, 10000);
+    }, [handleNext]);
+
     useEffect(() => {
-        const interval = setInterval(handleNext, 10000); // Change testimonial every 10 seconds
-        return () => clearInterval(interval); // Clear interval on component unmount
-    }, [currentIndex]); // Reset interval whenever currentIndex changes
+        restartAutoCycle();
+        return () => clearInterval(intervalRef.current); // Clear interval on component unmount
+    }, [restartAutoCycle]);
 
     return (
         <section className="testimonial-carousel" aria-labelledby="testimonial-heading">
             <h2 id="testimonial-heading" className="testimonial-header">What Educators Say About Our Virtual Lab Software</h2>
             <div className="testimonial-container">
-                <button className="carousel-control prev-icon" onClick={handlePrev} aria-label="Previous testimonial"></button>
+                <button className="carousel-control prev-icon" onClick={() => { handlePrev(); restartAutoCycle(); }} aria-label="Previous testimonial"></button>
                 <div className={`testimonial-box ${animationClass}`} itemScope itemType="https://schema.org/Review">
                     <div className="testimonial-content">
                         <meta itemProp="reviewRating" content="5" />
@@ -84,7 +91,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </div>
-                <button className="carousel-control next-icon" onClick={handleNext} aria-label="Next testimonial"></button>
+                <button className="carousel-control next-icon" onClick={() => { handleNext(); restartAutoCycle(); }} aria-label="Next testimonial"></button>
             </div>
         </section>
     );

@@ -11,6 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 
 const BUILD_DIR = path.join(__dirname, '../build');
 const MIN_INTERNAL_LINKS = 2; // Minimum links a page should have pointing to it
@@ -118,6 +119,7 @@ function validateInternalLinking() {
   for (const file of htmlFiles) {
     const url = fileToUrl(file);
     const content = fs.readFileSync(file, 'utf8');
+    if (isRedirectStub(content)) continue; // skip generated redirect stubs
     pageUrls.set(url, { file, content });
     incomingLinks.set(url, new Set());
     outgoingLinks.set(url, new Set());

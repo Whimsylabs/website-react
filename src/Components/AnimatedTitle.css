@@ -47,26 +47,21 @@
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transform-origin: center bottom;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(149, 206, 246, 0.5));
-  text-shadow: 
-    -1px -1px 0 rgba(255, 255, 255, 0.8),
-    1px -1px 0 rgba(255, 255, 255, 0.8),
-    -1px 1px 0 rgba(255, 255, 255, 0.8),
-    1px 1px 0 rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(149, 206, 246, 0.6);
+  /* Per-character drop-shadow filters forced a filter re-rasterization every
+     animation frame per glyph; the outline is now a cheap text-stroke, the
+     glow a single text-shadow, and depth comes from the parent's filter */
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  paint-order: stroke fill;
+  text-shadow: 0 0 20px rgba(149, 206, 246, 0.6);
+  will-change: transform;
   position: relative;
 }
 
 /* Dark mode colors for characters */
 .animated-char.dark-mode {
   color: #0F9FD3;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 10px rgba(15, 159, 211, 0.5));
-  text-shadow: 
-    -1px -1px 0 rgba(0, 0, 0, 0.8),
-    1px -1px 0 rgba(0, 0, 0, 0.8),
-    -1px 1px 0 rgba(0, 0, 0, 0.8),
-    1px 1px 0 rgba(0, 0, 0, 0.8),
-    0 0 20px rgba(15, 159, 211, 0.6);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 20px rgba(15, 159, 211, 0.6);
   animation-name: smoothWaveDark;
 }
 

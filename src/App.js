@@ -20,9 +20,13 @@ import ErasmusGrantPage from "./Components/ErasmusGrantPage";
 import ArmourersGrantPage from "./Components/ArmourersGrantPage";
 import UKSchoolFundingGrantPage from "./Components/UKSchoolFundingGrantPage";
 import USGrantsPage from "./Components/USGrantsPage";
+import InclusiveMainstreamFundGrantPage from "./Components/InclusiveMainstreamFundGrantPage";
 import ChemistryPage from "./Components/ChemistryPage";
 import BiologyPage from "./Components/BiologyPage";
 import PhysicsPage from "./Components/PhysicsPage";
+import AIAssessmentPage from "./Components/AIAssessmentPage";
+import ChooseVirtualLabPage from "./Components/ChooseVirtualLabPage";
+import SendSciencePage from "./Components/SendSciencePage";
 import LandingDemo from "./Components/LandingDemo";
 import BlogPost from "./Components/BlogPost";
 import { getCurrentLanguage } from "./i18n";
@@ -81,12 +85,20 @@ function App(props = {}) {
       return <UKSchoolFundingGrantPage language={language} />;
     if (basePath === "/grants/us-education/" || basePath === "/grants/us-education")
       return <USGrantsPage language={language} />;
+    if (basePath === "/grants/inclusive-mainstream-fund/" || basePath === "/grants/inclusive-mainstream-fund")
+      return <InclusiveMainstreamFundGrantPage language={language} />;
     if (basePath === "/chemistry/" || basePath === "/chemistry")
       return <ChemistryPage language={language} />;
     if (basePath === "/biology/" || basePath === "/biology")
       return <BiologyPage language={language} />;
     if (basePath === "/physics/" || basePath === "/physics")
       return <PhysicsPage language={language} />;
+    if (basePath === "/ai-assessment/" || basePath === "/ai-assessment")
+      return <AIAssessmentPage language={language} />;
+    if (basePath === "/choose-virtual-lab/" || basePath === "/choose-virtual-lab")
+      return <ChooseVirtualLabPage language={language} />;
+    if (basePath === "/send/" || basePath === "/send")
+      return <SendSciencePage language={language} />;
     // landing-demo is now the homepage
     // if (basePath === "/landing-demo/" || basePath === "/landing-demo")
     //   return <LandingDemo language={language} />;

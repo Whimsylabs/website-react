@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 const glob = require('glob');
 
 const BUILD_DIR = path.join(__dirname, '../build');
@@ -98,6 +99,7 @@ function validateSchemas() {
   const missingByType = {};
 
   for (const file of htmlFiles) {
+    if (isRedirectStub(fs.readFileSync(file, 'utf8'))) continue; // skip generated redirect stubs
     const relativePath = '/' + path.relative(BUILD_DIR, file).replace(/\\/g, '/');
     const pageType = getPageType(relativePath);
     const requiredSchemas = SCHEMA_REQUIREMENTS[pageType] || SCHEMA_REQUIREMENTS.default;
