@@ -1,17 +1,17 @@
 # WhimsyLabs
 
-> WhimsyLabs is award-winning virtual laboratory software for science education. Students conduct realistic Biology, Chemistry, and Physics experiments in a fully simulated sandbox lab — on desktop, mobile, or VR — while WhimsyCat, the built-in AI tutor, assesses their practical skills. WhimsyCat has no student chat window: it infers everything from students' actions in the lab, so pupils never type prompts or receive generated text. Winner of the BETT 2025 Kids Judge Award (Best Science Lab, Start Up).
+> WhimsyLabs is award-winning virtual laboratory software for science education. Students conduct realistic Biology, Chemistry, and Physics experiments in a fully simulated sandbox lab, on desktop, mobile, or VR, while WhimsyCat, the built-in AI tutor, assesses their practical skills. WhimsyCat has no student chat window: it infers everything from students' actions in the lab, so pupils never type prompts or receive generated text. Winner of the BETT 2025 Kids Judge Award (Best Science Lab, Start Up).
 
 The site is available in English (default, no URL prefix), Spanish (/es/), French (/fr/), German (/de/), and Japanese (/jp/).
 
 ## Key pages
 
 - [Home](https://whimsylabs.ai/): What WhimsyLabs is, how the physics-first simulation and AI assessment work
-- [Features](https://whimsylabs.ai/features/): Full feature set — realistic simulations, AI assessment, cross-platform access
+- [Features](https://whimsylabs.ai/features/): Full feature set, realistic simulations, AI assessment, cross-platform access
 - [Services](https://whimsylabs.ai/services/): Solutions for schools and K-12 classrooms, trials, and onboarding
 - [AI-Proof Assessment](https://whimsylabs.ai/ai-assessment/): Why process-based assessment beats AI detection, and how WhimsyLabs grades technique
 - [How to Choose Virtual Lab Software](https://whimsylabs.ai/choose-virtual-lab/): A 12-point buyer's checklist for schools comparing virtual lab platforms
-- [SEND Science Practicals](https://whimsylabs.ai/send/): Accessible practicals — control remapping, text-to-speech, self-paced modes
+- [SEND Science Practicals](https://whimsylabs.ai/send/): Accessible practicals, control remapping, text-to-speech, self-paced modes
 - [Virtual Chemistry Lab](https://whimsylabs.ai/chemistry/): Titrations, reactions, electrolysis with simulated chemistry
 - [Virtual Biology Lab](https://whimsylabs.ai/biology/): Dissections, microscopy, and physiology
 - [Virtual Physics Lab](https://whimsylabs.ai/physics/): Mechanics, circuits, waves on a real-time physics engine
@@ -38,7 +38,7 @@ The site is available in English (default, no URL prefix), Spanish (/es/), Frenc
 - [Triple Science for All by 2028: Delivering the Practicals](https://whimsylabs.ai/blog/triple-science-entitlement-2028-virtual-labs/): A Triple Science entitlement arrives for September 2028, but hands-on practical work has nearly halved since 2016. Here is how virtual labs help schools deliver it.
 - [What the 2026 SEND White Paper Means for Science Teaching](https://whimsylabs.ai/blog/send-white-paper-2026-science-practicals/): The 2026 SEND White Paper gives every pupil with SEND a statutory Individual Support Plan and makes inclusion an Ofsted focus from September. Here is what it means for science teaching.
 - [OECD: Grade the Process, Not the Product, in Science Education](https://whimsylabs.ai/blog/oecd-process-oriented-assessment-validation/): The OECD Digital Education Outlook 2026 officially recommends 'process-oriented assessment' for the AI age. This international validation confirms what WhimsyLabs has built from the start.
-- [94% of Students Use AI for Assessed Work — Not the Problem](https://whimsylabs.ai/blog/student-ai-use-assessment-crisis-solution/): The HEPI 2026 survey shows near-universal AI use among UK students. The real crisis is not AI use itself, but that we are still assessing outputs that AI can easily produce. Process-based assessment offers a solution.
+- [94% of Students Use AI for Assessed Work, Not the Problem](https://whimsylabs.ai/blog/student-ai-use-assessment-crisis-solution/): The HEPI 2026 survey shows near-universal AI use among UK students. The real crisis is not AI use itself, but that we are still assessing outputs that AI can easily produce. Process-based assessment offers a solution.
 - [Purpose-Built AI vs ChatGPT: Why Design Matters 3x More Than You Think](https://whimsylabs.ai/blog/purpose-built-ai-education-difference/): Pearson's analysis of 79 million student interactions reveals purpose-built AI tools drive 3x more active learning than general-purpose AI like ChatGPT.
 - [When AI Misreads 'At Least One': Why Text-Based Grading Fails](https://whimsylabs.ai/blog/ai-text-grading-fails-process-assessment-works/): A Connecticut student lost points because AI interpreted 'at least one' as 'only one.' Over 150 students signed a petition against AI grading. Here's why measuring physical actions eliminates this problem entirely.
 - [Grading the Process, Not the Answer: The Future of Lab Assessment](https://whimsylabs.ai/blog/process-based-lab-assessment-future/): Arizona State University now grades students on their reasoning pathway through virtual labs, not just final answers. This shift to process-based assessment reflects what WhimsyLabs has built from the start.
