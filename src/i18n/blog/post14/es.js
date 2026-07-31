@@ -277,22 +277,22 @@ export const content = (
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/es/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           Tutoría de IA 24/7: Cómo el apoyo personalizado ayuda a los estudiantes a nunca quedarse atrás
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           El futuro del aprendizaje: Inteligencia emocional en tutores de IA
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/es/blog/sandbox-learning-revolution-stem-education">
           La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial
         </a>
       </li>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">
           Conoce a WhimsyCat: El tutor de IA que hace que el aprendizaje sea atractivo
         </a>
       </li>

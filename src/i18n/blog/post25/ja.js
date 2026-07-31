@@ -247,10 +247,10 @@ export const content = (
 
     <h2>さらに読む</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">なぜ従来の仮想実験室は失敗するのか：物理エンジンの違い</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想実験室 vs 物理実験室：費用対効果分析</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会いましょう：行き詰まったときを知るAIチューター</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">教師がエキスパートです。私たちはツールを作るだけです。</a></li>
+      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">なぜ従来の仮想実験室は失敗するのか：物理エンジンの違い</a></li>
+      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想実験室 vs 物理実験室：費用対効果分析</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会いましょう：行き詰まったときを知るAIチューター</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師がエキスパートです。私たちはツールを作るだけです。</a></li>
     </ul>
   </>
 );

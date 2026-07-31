@@ -217,22 +217,22 @@ export const content = (
     <h2>Articles connexes</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">
           Rencontrez WhimsyCat : Soutien IA pour les enseignants débordés
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/fr/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           Tutorat IA 24h/24 et 7j/7 : Réduire la charge de travail des enseignants tout en améliorant les résultats
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-vs-physical-labs-cost-analysis">
+        <a href="/fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
           Laboratoires virtuels vs physiques : Rendre l'éducation STEM durable
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/fr/blog/ai-powered-virtual-labs-solving-education-crisis">
           Comment les laboratoires virtuels alimentés par l'IA résolvent la crise mondiale de l'éducation scientifique
         </a>
       </li>

@@ -258,8 +258,8 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">英国の学校：VR理科実験室に3,000ポンドの助成金を取得</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です。私たちはツールを作るだけです。</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">AI検出は機能しません。プロセスベースの評価は機能します。</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です。私たちはツールを作るだけです。</a></li>
+      <li><a href="/jp/blog/ai-assessment-crisis-solution">AI検出は機能しません。プロセスベースの評価は機能します。</a></li>
     </ul>
   </>
 );

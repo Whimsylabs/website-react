@@ -248,22 +248,22 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href="/jp/blog/physicality-in-virtual-labs">
           シミュレーション教材における物理性の重要性
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
+        <a href="/jp/blog/virtual-reality-prepares-students-real-world-stem-careers">
           シミュレーション教材訓練を通じて業界対応のSTEM卒業生を準備する
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/jp/blog/sandbox-learning-revolution-stem-education">
           探究学習革命：失敗する自由が不可欠な理由
         </a>
       </li>
       <li>
-        <a href="/blog/whimsylabs-education-revolution">
+        <a href="/jp/blog/whimsylabs-education-revolution">
           WhimsyLabsの簡単な歴史：リアルタイムシミュレーションからBETT 2025受賞者まで
         </a>
       </li>

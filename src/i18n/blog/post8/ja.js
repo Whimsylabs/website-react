@@ -221,22 +221,22 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">
           WhimsyCatとの出会い：圧倒された教師のためのAIサポート
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/jp/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           24時間365日のAIチューターリング：教師の作業負担を削減しながら成果を改善する
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-vs-physical-labs-cost-analysis">
+        <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
           シミュレーション教材と物理的実験室：STEM教育を持続可能にする
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/jp/blog/ai-powered-virtual-labs-solving-education-crisis">
           AI搭載シミュレーション教材が世界的な理科教育の危機をどのように解決しているか
         </a>
       </li>

@@ -180,7 +180,7 @@ export const content = (
 
     <h3>Las preocupaciones de privacidad han crecido</h3>
     <p>
-      Las brechas de datos de alto perfil en EdTech han hecho que los centros sean más cautelosos con los datos de los estudiantes. La <a href="/blog/edtech-vendor-security-questions-powerschool">brecha de PowerSchool</a> expuso millones de registros de estudiantes y planteó preguntas urgentes sobre las prácticas de seguridad de los proveedores.
+      Las brechas de datos de alto perfil en EdTech han hecho que los centros sean más cautelosos con los datos de los estudiantes. La <a href="/es/blog/edtech-vendor-security-questions-powerschool">brecha de PowerSchool</a> expuso millones de registros de estudiantes y planteó preguntas urgentes sobre las prácticas de seguridad de los proveedores.
     </p>
     <p>
       Al evaluar soluciones de laboratorio virtual, examine cuidadosamente sus prácticas de datos. ¿Dónde se almacenan los datos de los estudiantes? ¿Están encriptados? ¿Quién tiene acceso? ¿Se utilizan los datos para entrenar modelos de IA? ¿Cumple el proveedor con GDPR, FERPA y COPPA? ¿Puede solicitar la eliminación de datos si abandona la plataforma?
@@ -223,7 +223,7 @@ export const content = (
       Construimos WhimsyLabs con estos principios en mente. Nuestra plataforma funciona con un motor de física genuino, no animaciones programadas. Los estudiantes experimentan causa y efecto realistas. Los errores producen resultados incorrectos, creando oportunidades de aprendizaje en lugar de callejones sin salida.
     </p>
     <p>
-      Nuestro tutor de IA, <a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>, proporciona orientación contextual basada en lo que los estudiantes realmente hacen. Detecta la frustración y ajusta su enfoque. Los profesores mantienen el control total sobre los objetivos de aprendizaje y pueden personalizar experimentos usando nuestro <a href="/blog/teachers-are-experts-custom-experiment-designer">diseñador de experimentos</a>.
+      Nuestro tutor de IA, <a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>, proporciona orientación contextual basada en lo que los estudiantes realmente hacen. Detecta la frustración y ajusta su enfoque. Los profesores mantienen el control total sobre los objetivos de aprendizaje y pueden personalizar experimentos usando nuestro <a href="/es/blog/teachers-are-experts-custom-experiment-designer">diseñador de experimentos</a>.
     </p>
     <p>
       Priorizamos la entrega web-first para máxima accesibilidad, con soporte de VR para centros que quieren experiencias inmersivas. Nuestra plataforma se integra vía LTI con los principales sistemas de gestión del aprendizaje. Y nos tomamos en serio la privacidad de datos: despliegues aislados por centro, encriptación completa, cumplimiento de GDPR y FERPA, y nunca usamos datos de estudiantes para entrenar modelos de IA.
@@ -265,10 +265,10 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Por qué fallan los laboratorios virtuales tradicionales: La diferencia del motor de física</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que entiende la frustración</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios virtuales vs laboratorios físicos: Un análisis completo de coste-beneficio</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 preguntas que hacer a los proveedores de EdTech sobre seguridad de datos</a></li>
+      <li><a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine">Por qué fallan los laboratorios virtuales tradicionales: La diferencia del motor de física</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que entiende la frustración</a></li>
+      <li><a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios virtuales vs laboratorios físicos: Un análisis completo de coste-beneficio</a></li>
+      <li><a href="/es/blog/edtech-vendor-security-questions-powerschool">10 preguntas que hacer a los proveedores de EdTech sobre seguridad de datos</a></li>
     </ul>
   </>
 );

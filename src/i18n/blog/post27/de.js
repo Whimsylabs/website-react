@@ -271,10 +271,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: KI-Tutor für den Naturwissenschaftsunterricht</a></li>
-      <li><a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat: Frustrationserkennung mit KI</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">KI-Bewertung in den Naturwissenschaften: Von der Krise zur Lösung</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: KI-Tutor für den Naturwissenschaftsunterricht</a></li>
+      <li><a href="/de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat: Frustrationserkennung mit KI</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/ai-assessment-crisis-solution">KI-Bewertung in den Naturwissenschaften: Von der Krise zur Lösung</a></li>
     </ul>
   </>
 );

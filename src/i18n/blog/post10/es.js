@@ -174,22 +174,22 @@ export const content = (
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">
           Conoce a WhimsyCat: El tutor IA emocionalmente inteligente
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/es/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           Tutoría IA 24/7: Cómo el apoyo personalizado ayuda a los estudiantes a nunca quedarse atrás
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href="/es/blog/gamification-science-education-points-rewards-engagement">
           Gamificación bien hecha: Creando entornos de aprendizaje de apoyo
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-kidney-dissection-send-engagement">
+        <a href="/es/blog/virtual-kidney-dissection-send-engagement">
           Disección virtual de riñón: Apoyando diversas necesidades de aprendizaje
         </a>
       </li>

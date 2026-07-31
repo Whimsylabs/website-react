@@ -282,13 +282,13 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
           Behind
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href="/blog/gamification-science-education-points-rewards-engagement">
           Gamification Done Right: Creating Supportive Learning Environments
         </a>
       </li>

@@ -195,9 +195,9 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">サンドボックス学習革命：失敗する自由が不可欠な理由</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatのご紹介：置き換えるのではなくサポートするAI</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">PowerSchool情報漏洩後にEdTechベンダーに尋ねるべき10の質問</a></li>
+      <li><a href="/jp/blog/sandbox-learning-revolution-stem-education">サンドボックス学習革命：失敗する自由が不可欠な理由</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatのご紹介：置き換えるのではなくサポートするAI</a></li>
+      <li><a href="/jp/blog/edtech-vendor-security-questions-powerschool">PowerSchool情報漏洩後にEdTechベンダーに尋ねるべき10の質問</a></li>
       <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">英国の学校向け：VR科学ラボに£3,000を獲得</a></li>
     </ul>
   </>

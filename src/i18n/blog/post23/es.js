@@ -195,9 +195,9 @@ export const content = (
 
     <h2>Lectura adicional</h2>
     <ul>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: IA que apoya, no reemplaza</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 preguntas para proveedores EdTech después de la brecha de PowerSchool</a></li>
+      <li><a href="/es/blog/sandbox-learning-revolution-stem-education">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: IA que apoya, no reemplaza</a></li>
+      <li><a href="/es/blog/edtech-vendor-security-questions-powerschool">10 preguntas para proveedores EdTech después de la brecha de PowerSchool</a></li>
       <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias VR</a></li>
     </ul>
   </>

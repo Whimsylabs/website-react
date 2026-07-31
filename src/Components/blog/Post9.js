@@ -329,12 +329,12 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href={getLocalizedPath("/blog/stem-teacher-shortage-virtual-labs", language)}>
+        <a href={getLocalizedPath("/blog/virtual-labs-solve-stem-teacher-shortage-crisis", language)}>
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>
       <li>
-        <a href={getLocalizedPath("/blog/gamification-done-right-ethical-engagement", language)}>
+        <a href={getLocalizedPath("/blog/gamification-science-education-points-rewards-engagement", language)}>
           Gamification Done Right: Engaging Students Through Mastery, Not
           Manipulation
         </a>

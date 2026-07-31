@@ -171,7 +171,7 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/uk-government-ai-education-funding-2026">
+          <a href="/blog/uk-government-ai-education-funding-2026">
             UK investiert 49 Mio. £ in KI-Bildung: Was das für Schulen bedeutet
           </a>
         </li>

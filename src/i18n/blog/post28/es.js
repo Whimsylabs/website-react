@@ -69,7 +69,7 @@ export const content = (
       No todos los temas de biología se benefician igualmente del tratamiento virtual. Basándonos en nuestro trabajo con escuelas, ciertas aplicaciones destacan.
     </p>
     <p>
-      <strong>La disección de riñón</strong> se traduce excepcionalmente bien al formato virtual. Hemos escrito anteriormente sobre <a href="/blog/virtual-kidney-dissection-send-engagement">cómo la disección virtual de riñón apoya a estudiantes SEND</a>, pero los beneficios se extienden a todos los aprendices. Las estructuras internas del riñón, particularmente las nefronas y los conductos colectores, son difíciles de visualizar en un espécimen físico porque son microscópicas. La disección virtual puede hacer zoom desde el órgano completo hasta el nivel celular sin problemas, algo imposible con un riñón real y un microscopio de estudiante.
+      <strong>La disección de riñón</strong> se traduce excepcionalmente bien al formato virtual. Hemos escrito anteriormente sobre <a href="/es/blog/virtual-kidney-dissection-send-engagement">cómo la disección virtual de riñón apoya a estudiantes SEND</a>, pero los beneficios se extienden a todos los aprendices. Las estructuras internas del riñón, particularmente las nefronas y los conductos colectores, son difíciles de visualizar en un espécimen físico porque son microscópicas. La disección virtual puede hacer zoom desde el órgano completo hasta el nivel celular sin problemas, algo imposible con un riñón real y un microscopio de estudiante.
     </p>
     <p>
       <strong>La disección de corazón</strong> demuestra ventajas similares. Los especímenes físicos de corazón de cerdos u ovejas proporcionan buenas analogías para la anatomía humana, pero cortar a través del resistente músculo cardíaco requiere herramientas y técnica que los estudiantes a menudo carecen. Las versiones virtuales permiten a los estudiantes hacer secciones limpias, examinar estructuras de cámaras desde múltiples ángulos y trazar el flujo sanguíneo a través del órgano sin ningún riesgo de destruir el espécimen antes de haberlo entendido.
@@ -177,10 +177,10 @@ export const content = (
 
     <h2>Lecturas Adicionales</h2>
     <ul>
-      <li><a href="/blog/virtual-kidney-dissection-send-engagement">La Disección Virtual de Riñón Aumenta el Compromiso SEND</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios Virtuales vs Físicos: Análisis Costo-Beneficio</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: IA Que Apoya, No Reemplaza</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Los Profesores Son los Expertos. Nosotros Solo Construimos las Herramientas.</a></li>
+      <li><a href="/es/blog/virtual-kidney-dissection-send-engagement">La Disección Virtual de Riñón Aumenta el Compromiso SEND</a></li>
+      <li><a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios Virtuales vs Físicos: Análisis Costo-Beneficio</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: IA Que Apoya, No Reemplaza</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los Profesores Son los Expertos. Nosotros Solo Construimos las Herramientas.</a></li>
     </ul>
   </>
 );

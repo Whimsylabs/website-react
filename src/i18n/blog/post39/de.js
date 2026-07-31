@@ -166,17 +166,17 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/blog/process-based-lab-assessment-future">
+          <a href="/de/blog/process-based-lab-assessment-future">
             Den Prozess bewerten, nicht die Antwort: Die Zukunft der Laborbewertung
           </a>
         </li>
         <li>
-          <a href="/blog/ai-text-grading-fails-process-assessment-works">
+          <a href="/de/blog/ai-text-grading-fails-process-assessment-works">
             Warum KI-Textbewertung versagt und Prozessbewertung funktioniert
           </a>
         </li>
         <li>
-          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/de/blog/oecd-ai-learning-paradox-virtual-labs">
             Das OECD KI-Lernparadoxon und was es für virtuelle Labore bedeutet
           </a>
         </li>

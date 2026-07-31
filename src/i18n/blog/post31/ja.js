@@ -250,17 +250,17 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/jp/blog/ai-assessment-crisis-solution">
           AI評価：テクノロジーが採点危機にどう対処しているか
         </a>
       </li>
       <li>
-        <a href="/blog/ai-science-tutor-classroom-what-works">
+        <a href="/jp/blog/ai-science-tutor-classroom-what-works">
           教室でのAI科学チューター：実際に何が機能するか？
         </a>
       </li>
       <li>
-        <a href="/blog/premium-science-education-accessible-grants">
+        <a href="/jp/blog/premium-science-education-accessible-grants">
           プレミアム科学教育をすべての学校がアクセスできるようにする
         </a>
       </li>

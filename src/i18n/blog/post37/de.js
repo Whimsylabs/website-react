@@ -173,17 +173,17 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/blog/ai-assessment-crisis-solution">
+          <a href="/de/blog/ai-assessment-crisis-solution">
             Die KI-Bewertungskrise: Wie virtuelle Labore authentische Evaluation bieten
           </a>
         </li>
         <li>
-          <a href="/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/de/blog/vr-stem-education-research-pedagogical-scaffolding">
             Neue VR-Forschung bestätigt: Technologie ohne Pädagogik versagt
           </a>
         </li>
         <li>
-          <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          <a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">
             Lernen Sie WhimsyCat kennen: Unsere KI-Innovation in der naturwissenschaftlichen Bildung
           </a>
         </li>

@@ -171,7 +171,7 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/uk-government-ai-education-funding-2026">
+          <a href="/blog/uk-government-ai-education-funding-2026">
             Reino Unido invierte 49 millones de libras en educación con IA: Qué significa para las escuelas
           </a>
         </li>

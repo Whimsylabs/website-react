@@ -15,7 +15,7 @@ export const keywords = [
 export const content = (
   <>
     <p>
-      Among the major science qualifications, the IB Diploma is unusually explicit about simulation. The Scientific Investigation &mdash; the single internal assessment that carries 20% of the subject grade across Biology, Chemistry and Physics &mdash; allows students to build their investigation on hands-on laboratory work, on databases, on modelling or simulation, or on a hybrid of these (
+      Among the major science qualifications, the IB Diploma is unusually explicit about simulation. The Scientific Investigation, the single internal assessment that carries 20% of the subject grade across Biology, Chemistry and Physics, allows students to build their investigation on hands-on laboratory work, on databases, on modelling or simulation, or on a hybrid of these (
       <a
         href="https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/"
         target="_blank"
@@ -83,7 +83,7 @@ export const content = (
     <h2>What About the Collaborative Element?</h2>
 
     <p>
-      The IB sciences course includes collaborative project work across the science subjects, designed around a shared problem approached from different disciplinary angles. For schools whose students are geographically distributed &mdash; international schools with multiple campuses, or online schools &mdash; this is logistically the hardest part of the Group 4 experience to deliver, because the whole point is students working together on something.
+      The IB sciences course includes collaborative project work across the science subjects, designed around a shared problem approached from different disciplinary angles. For schools whose students are geographically distributed, such as international schools with multiple campuses or online schools, this is logistically the hardest part of the Group 4 experience to deliver, because the whole point is students working together on something.
     </p>
 
     <p>
@@ -107,7 +107,7 @@ export const content = (
         <strong>Teach the limitations explicitly.</strong> A student who can articulate what their model does not capture is demonstrating exactly the understanding the criteria reward.
       </li>
       <li>
-        <strong>Keep the bench.</strong> Where you have laboratories, use simulation to prepare students for them rather than to replace them &mdash; the{" "}
+        <strong>Keep the bench.</strong> Where you have laboratories, use simulation to prepare students for them rather than to replace them. The{" "}
         <a href="/blog/flipped-practical-preloading-lab-skills">flipped practical model</a>{" "}
         applies as well to the IB as to anything else.
       </li>
@@ -116,7 +116,7 @@ export const content = (
     <h2>Where WhimsyLabs Fits</h2>
 
     <p>
-      WhimsyLabs runs on a physics engine, which is the property that matters for the IA. Reagents carry realistic concentrations and impurities, measurements have genuine uncertainty, and outcomes are calculated rather than authored &mdash; so a student investigating a relationship gets scatter they have to account for, and a student who introduces a procedural error sees it propagate. That gives an IB student something to analyse and something honest to write in their evaluation.
+      WhimsyLabs runs on a physics engine, which is the property that matters for the IA. Reagents carry realistic concentrations and impurities, measurements have genuine uncertainty, and outcomes are calculated rather than authored, so a student investigating a relationship gets scatter they have to account for, and a student who introduces a procedural error sees it propagate. That gives an IB student something to analyse and something honest to write in their evaluation.
     </p>
 
     <p>
@@ -124,7 +124,7 @@ export const content = (
     </p>
 
     <p>
-      The IB has made a considered judgement that a well-constructed simulation-based investigation can demonstrate scientific thinking as well as a wet-lab one. It is worth taking them up on it &mdash; carefully, and with a platform that can bear the weight.
+      The IB has made a considered judgement that a well-constructed simulation-based investigation can demonstrate scientific thinking as well as a wet-lab one. It is worth taking them up on it, carefully, and with a platform that can bear the weight.
     </p>
 
     <>
@@ -169,7 +169,7 @@ export const content = (
           </a>
         </li>
         <li key="ref-3">
-          Finkelstein, N. D., et al. (2010). When learning about the real world is better done virtually. Physical Review Special Topics &mdash; Physics Education Research.
+          Finkelstein, N. D., et al. (2010). When learning about the real world is better done virtually. Physical Review Special Topics: Physics Education Research.
         </li>
       </ul>
     </div>

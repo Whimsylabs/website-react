@@ -230,17 +230,17 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
+        <a href="/jp/blog/green-labs-sustainability-virtual-stem-education">
           グリーンラボ、グリーンな未来:シミュレーション教材が持続可能性を変革する方法
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href="/jp/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
           シミュレーション教材でSTEM教師不足危機に対処する
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/jp/blog/ai-powered-virtual-labs-solving-education-crisis">
           AI搭載シミュレーション教材がグローバル科学教育危機をどのように解決しているか
         </a>
       </li>

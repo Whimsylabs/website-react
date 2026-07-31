@@ -220,12 +220,12 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/virtual-vs-physical-labs-cost-analysis">
+        <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
           シミュレーション教材と物理的実験室：包括的なコスト分析
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/jp/blog/ai-powered-virtual-labs-solving-education-crisis">
           AI搭載シミュレーション教材が世界的な理科教育の危機をどのように解決しているか
         </a>
       </li>

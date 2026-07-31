@@ -218,12 +218,12 @@ export const content = (
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
-        <a href="/blog/virtual-vs-physical-labs-cost-analysis">
+        <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
           Virtual vs. Physical Labs: A Comprehensive Cost Analysis
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/es/blog/ai-powered-virtual-labs-solving-education-crisis">
           How AI-Powered Virtual Labs Are Solving the Global Science Education Crisis
         </a>
       </li>

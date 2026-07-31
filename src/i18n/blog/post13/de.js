@@ -250,22 +250,22 @@ export const content = (
     <h2>Verwandte Artikel</h2>
     <ul>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href="/de/blog/physicality-in-virtual-labs">
           Die Bedeutung von Physikalität in virtuellen Laboren
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
+        <a href="/de/blog/virtual-reality-prepares-students-real-world-stem-careers">
           Vorbereitung industriereifer MINT-Absolventen durch virtuelles Labortraining
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/de/blog/sandbox-learning-revolution-stem-education">
           Die Sandbox-Lernrevolution: Warum Freiheit zum Scheitern wesentlich ist
         </a>
       </li>
       <li>
-        <a href="/blog/whimsylabs-education-revolution">
+        <a href="/de/blog/whimsylabs-education-revolution">
           Eine kurze Geschichte von WhimsyLabs: Von Echtzeitsimulationen zum BETT 2025 Gewinner
         </a>
       </li>

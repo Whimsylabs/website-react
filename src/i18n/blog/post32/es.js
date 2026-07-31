@@ -189,10 +189,10 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/blog/ai-assessment-crisis-solution">La crisis de la evaluación con IA: Cómo los laboratorios virtuales ofrecen una solución</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que observa lo que haces</a></li>
-      <li><a href="/blog/how-to-choose-virtual-lab-software-school">Cómo elegir software de laboratorio virtual para tu escuela</a></li>
+      <li><a href="/es/blog/ai-assessment-crisis-solution">La crisis de la evaluación con IA: Cómo los laboratorios virtuales ofrecen una solución</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que observa lo que haces</a></li>
+      <li><a href="/es/blog/how-to-choose-virtual-lab-software-school">Cómo elegir software de laboratorio virtual para tu escuela</a></li>
     </ul>
   </>
 );

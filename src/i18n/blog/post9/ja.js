@@ -267,22 +267,22 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">
           WhimsyCatのご紹介:24時間個別化支援を支えるAIチューター
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           学習の未来:AIチューターにおける感情的知性
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href="/jp/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
           シミュレーション教材でSTEM教師不足危機に対処する
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href="/jp/blog/gamification-science-education-points-rewards-engagement">
           適切なゲーム要素化:操作ではなく習得を通じて生徒を引き込む
         </a>
       </li>

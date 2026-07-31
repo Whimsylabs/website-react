@@ -279,22 +279,22 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/jp/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           24時間年中無休のAIチュータリング：パーソナライズされたサポートが学生が遅れを取らないのを助ける方法
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           学習の未来：AIチューターにおける感情的知性
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/jp/blog/sandbox-learning-revolution-stem-education">
           探究学習革命：失敗する自由が不可欠な理由
         </a>
       </li>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">
           WhimsyCatに会う：学習を魅力的にするAIチューター
         </a>
       </li>

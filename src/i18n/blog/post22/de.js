@@ -258,8 +258,8 @@ export const content = (
     <h2>Weiterführende Lektüre</h2>
     <ul>
       <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK-Schulen: 3.000 £ für VR-Naturwissenschaftslabore erhalten</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">KI-Erkennung funktioniert nicht. Prozessbasierte Bewertung schon.</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/ai-assessment-crisis-solution">KI-Erkennung funktioniert nicht. Prozessbasierte Bewertung schon.</a></li>
     </ul>
   </>
 );

@@ -48,7 +48,7 @@ export const content = (
     </p>
 
     <p>
-      Framed that way, the equity argument runs the other direction. The alternative to letting students use hardware they own is not that everyone gets a headset &mdash; it is that nobody does, because the school cannot afford a class set. Declining to let a student use their own device does not improve anyone else's provision. It just wastes capacity that was sitting there.
+      Framed that way, the equity argument runs the other direction. The alternative to letting students use hardware they own is not that everyone gets a headset. It is that nobody does, because the school cannot afford a class set. Declining to let a student use their own device does not improve anyone else's provision. It just wastes capacity that was sitting there.
     </p>
 
     <p>
@@ -64,7 +64,7 @@ export const content = (
     </p>
 
     <p>
-      Manual technique is the clearest case. Pipetting, titrating, focusing a microscope, aligning optical apparatus &mdash; these involve two hands doing different things in a spatial relationship, and a headset with tracked controllers represents that far more faithfully than a mouse does. A student who is going to stand at a real bench eventually gets more transferable practice from the headset, which is the argument we made about{" "}
+      Manual technique is the clearest case. Pipetting, titrating, focusing a microscope, aligning optical apparatus. These involve two hands doing different things in a spatial relationship, and a headset with tracked controllers represents that far more faithfully than a mouse does. A student who is going to stand at a real bench eventually gets more transferable practice from the headset, which is the argument we made about{" "}
       <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">VR and physical lab skills</a>.
     </p>
 

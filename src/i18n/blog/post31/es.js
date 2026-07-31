@@ -269,17 +269,17 @@ export const content = (
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/es/blog/ai-assessment-crisis-solution">
           Evaluación con IA: Cómo la tecnología está abordando la crisis de corrección
         </a>
       </li>
       <li>
-        <a href="/blog/ai-science-tutor-classroom-what-works">
+        <a href="/es/blog/ai-science-tutor-classroom-what-works">
           Tutores de ciencias con IA en el aula: ¿Qué funciona realmente?
         </a>
       </li>
       <li>
-        <a href="/blog/premium-science-education-accessible-grants">
+        <a href="/es/blog/premium-science-education-accessible-grants">
           Educación científica premium accesible para todas las escuelas
         </a>
       </li>

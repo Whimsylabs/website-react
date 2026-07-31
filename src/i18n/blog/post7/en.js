@@ -348,7 +348,7 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/virtual-vs-physical-labs-cost-analysis">
+        <a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
           Virtual vs. Physical Labs: A Comprehensive Cost Analysis
         </a>
       </li>

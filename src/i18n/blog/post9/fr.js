@@ -255,22 +255,22 @@ export const content = (
     <h2>Articles connexes</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">
           Rencontrez WhimsyCat : le tuteur IA derrière le soutien personnalisé 24h/24 et 7j/7
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           L'avenir de l'apprentissage : l'intelligence émotionnelle dans les tuteurs IA
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href="/fr/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
           Faire face à la crise de la pénurie d'enseignants STEM avec des laboratoires virtuels
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href="/fr/blog/gamification-science-education-points-rewards-engagement">
           La ludification bien faite : engager les élèves par la maîtrise, pas la manipulation
         </a>
       </li>

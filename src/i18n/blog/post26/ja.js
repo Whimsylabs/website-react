@@ -180,7 +180,7 @@ export const content = (
 
     <h3>プライバシーの懸念が増大</h3>
     <p>
-      EdTechでの大規模なデータ侵害により、学校は生徒データについてより慎重になっています。<a href="/blog/edtech-vendor-security-questions-powerschool">PowerSchoolの侵害</a>は数百万の生徒記録を露出させ、ベンダーのセキュリティ慣行について緊急の疑問を提起しました。
+      EdTechでの大規模なデータ侵害により、学校は生徒データについてより慎重になっています。<a href="/jp/blog/edtech-vendor-security-questions-powerschool">PowerSchoolの侵害</a>は数百万の生徒記録を露出させ、ベンダーのセキュリティ慣行について緊急の疑問を提起しました。
     </p>
     <p>
       バーチャルラボソリューションを評価する際は、データ慣行を注意深く精査してください。生徒データはどこに保存されますか？暗号化されていますか？誰がアクセスできますか？データはAIモデルのトレーニングに使用されますか？ベンダーはGDPR、FERPA、COPPAに準拠していますか？プラットフォームを離れる場合、データの削除を要求できますか？
@@ -223,7 +223,7 @@ export const content = (
       私たちはこれらの原則を念頭に置いてWhimsyLabsを構築しました。私たちのプラットフォームは、スクリプト化されたアニメーションではなく、本物の物理エンジンで動作します。生徒はリアルな因果関係を体験します。間違いは不正確な結果を生み、行き止まりではなく学習の機会を創出します。
     </p>
     <p>
-      私たちのAIチューター、<a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>は、生徒が実際に何をするかに基づいた文脈的なガイダンスを提供します。フラストレーションを検出し、アプローチを調整します。教師は学習目標の完全な制御を維持し、私たちの<a href="/blog/teachers-are-experts-custom-experiment-designer">実験デザイナー</a>を使用して実験をカスタマイズできます。
+      私たちのAIチューター、<a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>は、生徒が実際に何をするかに基づいた文脈的なガイダンスを提供します。フラストレーションを検出し、アプローチを調整します。教師は学習目標の完全な制御を維持し、私たちの<a href="/jp/blog/teachers-are-experts-custom-experiment-designer">実験デザイナー</a>を使用して実験をカスタマイズできます。
     </p>
     <p>
       私たちは最大限のアクセシビリティのためにウェブファースト配信を優先し、没入型体験を望む学校向けにVRサポートを提供しています。私たちのプラットフォームはLTIを介して主要な学習管理システムと統合します。そして、データプライバシーについて真剣に取り組んでいます：学校ごとの分離されたデプロイメント、完全な暗号化、GDPRとFERPAへの準拠、そしてAIモデルのトレーニングに生徒データを使用することは決してありません。
@@ -265,10 +265,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">なぜ従来のバーチャルラボは失敗するのか：物理エンジンの違い</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatをご紹介：フラストレーションを理解するAIチューター</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">バーチャルラボ vs 物理ラボ：完全なコスト・ベネフィット分析</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
+      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">なぜ従来のバーチャルラボは失敗するのか：物理エンジンの違い</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatをご紹介：フラストレーションを理解するAIチューター</a></li>
+      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">バーチャルラボ vs 物理ラボ：完全なコスト・ベネフィット分析</a></li>
+      <li><a href="/jp/blog/edtech-vendor-security-questions-powerschool">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
     </ul>
   </>
 );

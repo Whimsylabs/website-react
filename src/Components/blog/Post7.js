@@ -361,7 +361,7 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href={getLocalizedPath("/blog/virtual-vs-physical-labs-cost-analysis", language)}>
+        <a href={getLocalizedPath("/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis", language)}>
           Virtual vs. Physical Labs: A Comprehensive Cost Analysis
         </a>
       </li>

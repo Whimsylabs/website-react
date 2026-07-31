@@ -69,7 +69,7 @@ export const content = (
       すべての生物学のトピックがバーチャル処理から等しく恩恵を受けるわけではありません。学校との仕事に基づいて、特定のアプリケーションが際立っています。
     </p>
     <p>
-      <strong>腎臓の解剖</strong>はバーチャル形式に非常によく翻訳されます。<a href="/blog/virtual-kidney-dissection-send-engagement">バーチャル腎臓解剖がSEND生徒をどのようにサポートするか</a>について以前書きましたが、その利点はすべての学習者に及びます。腎臓の内部構造、特にネフロンと集合管は、顕微鏡的であるため物理的な標本では視覚化が困難です。バーチャル解剖は臓器全体から細胞レベルまでシームレスにズームでき、実際の腎臓と生徒用顕微鏡では不可能なことです。
+      <strong>腎臓の解剖</strong>はバーチャル形式に非常によく翻訳されます。<a href="/jp/blog/virtual-kidney-dissection-send-engagement">バーチャル腎臓解剖がSEND生徒をどのようにサポートするか</a>について以前書きましたが、その利点はすべての学習者に及びます。腎臓の内部構造、特にネフロンと集合管は、顕微鏡的であるため物理的な標本では視覚化が困難です。バーチャル解剖は臓器全体から細胞レベルまでシームレスにズームでき、実際の腎臓と生徒用顕微鏡では不可能なことです。
     </p>
     <p>
       <strong>心臓の解剖</strong>は同様の利点を示します。豚や羊からの物理的な心臓標本は人間の解剖学の良いアナロジーを提供しますが、硬い心筋を切るには生徒がしばしば欠いている道具と技術が必要です。バーチャルバージョンは、生徒がきれいな断面を作り、複数の角度から心室構造を調べ、標本を理解する前に破壊するリスクなしに臓器を通る血流を追跡することを可能にします。
@@ -177,10 +177,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/virtual-kidney-dissection-send-engagement">バーチャル腎臓解剖がSENDエンゲージメントを向上</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">バーチャル実験室と物理実験室：費用対効果分析</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会う：置き換えではなくサポートするAI</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です。私たちはツールを作るだけ。</a></li>
+      <li><a href="/jp/blog/virtual-kidney-dissection-send-engagement">バーチャル腎臓解剖がSENDエンゲージメントを向上</a></li>
+      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">バーチャル実験室と物理実験室：費用対効果分析</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会う：置き換えではなくサポートするAI</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です。私たちはツールを作るだけ。</a></li>
     </ul>
   </>
 );

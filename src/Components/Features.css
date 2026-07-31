@@ -1,710 +1,455 @@
-/* Features Page Styles - Matching Homepage Design */
+/* Features page theme for the shared subject-lab system.
+   Layout and the opt-in depth classes live in SubjectLab.css — this file
+   supplies the page accent plus features-only components (hero shelf, showcase
+   glyphs, three-up cards, awards), so nothing here can disturb the subject
+   pages. Imported by FeaturesPage.js. */
 
-/* Hero Section with Tiled Background */
-.features-welcome-section {
-  background-image: linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 1) 100%), 
-                    linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
-                    linear-gradient(180deg, rgba(31, 25, 104, 0) -50%, rgba(31, 25, 104, 0.45) 100%), 
-                    url("../../public/images/tiled.png");
-  background-blend-mode: darken, multiply, multiply;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 2rem 0;
-  position: relative;
-  overflow: hidden;
-  z-index: 3;
+.lab-page--features {
+  /* House cyan, retuned AA-safe for white grounds; the lit value is the
+     original brand cyan for use on dark bands. */
+  --lab-accent: #0e8fc7;
+  --lab-accent-text: #0b76a6;
+  --lab-accent-lit: #7ee0ff;
+
+  /* Tint bands lean sky rather than neutral slate, so the alternation reads */
+  --lab-ground: #f1f8fd;
+  --lab-grid: rgba(20, 183, 255, 0.07);
 }
 
-.features-welcome-section::before {
-  content: '';
+/* Graph paper on the tint bands — a lab notebook, not a flat fill */
+.lab-page--features .lab-band--tint {
+  background-image:
+    linear-gradient(var(--lab-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--lab-grid) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* White cards earn resting elevation instead of hover-only */
+.lab-page--features .lab-cross-item,
+.lab-page--features .lab-tag {
+  box-shadow: 0 2px 10px rgba(31, 25, 104, 0.06);
+}
+
+/* Closing CTA gets the site's tiled treatment, bookending the hero.
+   Relative path, not /images/ — css-loader resolves url() as a module. */
+.lab-page--features .lab-band--tiled {
+  background-image:
+    linear-gradient(180deg, rgba(31, 25, 104, 0.95) 0%, rgba(31, 25, 104, 0.6) 100%),
+    url("../../public/images/tiled.png");
+  background-color: var(--lab-dark-a);
+}
+
+/* Bubble fields on dark bands draw in the lit accent so they stay visible */
+.lab-page--features .lab-band--dark .lab-bubbles-field { --lab-accent: var(--lab-accent-lit); }
+
+/* --------------------------------------------------------------------------
+   Hero — the five-second pitch and the invitation to play
+   -------------------------------------------------------------------------- */
+
+.feat-ticks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 0 0 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.feat-ticks li {
+  color: #e8e6ff;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.feat-ticks li::before {
+  content: "\2713";
+  margin-right: 8px;
+  color: var(--lab-accent-lit);
+  font-weight: 800;
+}
+
+.feat-hero-hint {
+  margin: 18px 0 0;
+  color: rgba(232, 230, 255, 0.62);
+  font-family: var(--lab-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+/* "Only WhimsyLabs" chip on the differentiator tabs */
+.feat-tab-only {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--tab-soft, rgba(20, 183, 255, 0.14));
+  color: var(--tab-hue, var(--lab-accent-text));
+  font-family: var(--lab-mono);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.lab-tab[aria-selected="true"] .feat-tab-only {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+/* A real teacher, on exactly this feature */
+.feat-quote {
+  margin: 22px 0 0;
+  padding: 4px 0 4px 18px;
+  border-left: 4px solid var(--lab-accent);
+}
+
+.feat-quote p {
+  margin: 0 0 8px;
+  color: var(--lab-ink);
+  font-size: 1.04rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.feat-quote cite {
+  color: #64748b;
+  font-family: var(--lab-mono);
+  font-size: 0.72rem;
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
+/* --------------------------------------------------------------------------
+   Hero shelf — glassware holding live liquid, standing on a shelf line
+   -------------------------------------------------------------------------- */
+
+.feat-shelf { color: #ffffff; }
+
+.feat-shelf-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(14px, 3vw, 30px);
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.55);
+}
+
+.feat-shelf-row svg {
+  display: block;
+  height: clamp(110px, 14vw, 170px);
+  width: auto;
+  overflow: visible;
+}
+
+@media (max-width: 900px) {
+  .feat-shelf { max-width: 320px; margin: 0 auto; }
+}
+
+/* --------------------------------------------------------------------------
+   Showcase — tab glyphs and the video embed
+   -------------------------------------------------------------------------- */
+
+/* The shared .lab-tab svg rule sizes for tall vessels (22x30); these glyphs
+   are square, so they get their own box. */
+.lab-tab svg.feat-glyph { width: 24px; height: 24px; }
+
+/* Real product video, in the panel's media slot */
+.feat-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--lab-sunk);
+}
+
+.feat-embed iframe {
   position: absolute;
-  top: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   The droppable beaker — "if they drop a beaker, it breaks", literally.
+   The static SVG ships in the HTML; featureLab.js swaps in the canvas.
+   -------------------------------------------------------------------------- */
+
+.feat-drop {
+  position: relative;
+  height: 320px;
+  color: var(--lab-ink);
+  touch-action: none;
+  cursor: grab;
+}
+
+.feat-drop.is-grabbing { cursor: grabbing; }
+
+.feat-drop canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.feat-drop-fallback {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.feat-drop.is-live .feat-drop-fallback { display: none; }
+
+.feat-drop-hint {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  margin: 0;
+  color: var(--lab-accent-text);
+  font-family: var(--lab-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.feat-drop .lab-readout {
+  position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(16, 16, 29, 0.9) 100%);
-  z-index: 1;
-}
-
-
-
-.features-welcome-section .container {
-  position: relative;
-  z-index: 2;
-}
-
-/* Features Page Specific Styles */
-
-.features-hero-title:not(.animated-title) {
-  margin-bottom: 1.5rem;
-}
-
-/* Ensure animated title works properly on features page */
-.features-hero-title.animated-title {
-  margin-bottom: 2rem !important;
-  /* AnimatedTitle's base width of 120% overflows this hero's container */
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-.features-hero-title.animated-title .animated-char {
-  animation: featuresWave 6s ease-in-out infinite !important;
-  transform-origin: center bottom !important;
-  /* Cheap outline + glow — per-character drop-shadow filters re-rasterize
-     every animation frame (see AnimatedTitle.css) */
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
-  paint-order: stroke fill;
-  color: #95CEF6 !important;
-  text-shadow: 0 0 20px rgba(149, 206, 246, 0.6) !important;
-}
-
-/* Wave animation for features page title */
-@keyframes featuresWave {
-  0%, 100% {
-    transform: translateY(0) scale(1) rotateZ(0deg);
-    color: #95CEF6;
-  }
-  25% {
-    transform: translateY(-8px) scale(1.05) rotateZ(1deg);
-    color: #b8d9f7;
-  }
-  50% {
-    transform: translateY(-20px) scale(1.2) rotateZ(3deg);
-    color: #dabeff;
-  }
-  75% {
-    transform: translateY(-8px) scale(1.05) rotateZ(-1deg);
-    color: #b8d9f7;
-  }
-}
-
-.features-hero-subtitle {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-/* Interactive Features Section */
-.interactive-features-section {
-  text-align: center;
-  padding: 2rem 0;
-  /* Lift above the section's ::before dark overlay (z-index 1), which was
-     dimming the tabs, video, and description */
-  position: relative;
-  z-index: 2;
-}
-
-.features-video-container {
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.features-video-frame {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-.features-video-frame:hover {
-  border-color: rgba(255, 107, 157, 0.4);
-}
-
-.features-video {
-  width: 100%;
-  height: 450px;
-  border-radius: 12px;
-  border: none;
-}
-
-.video-placeholder {
-  width: 100%;
-  height: 450px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(31, 25, 104, 0.8) 0%, rgba(97, 114, 179, 0.8) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-placeholder-content {
-  text-align: center;
-  color: white;
-}
-
-.video-placeholder-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  opacity: 0.7;
-}
-
-.video-placeholder p {
-  font-size: 1.2rem;
-  opacity: 0.8;
+  bottom: 2px;
   margin: 0;
 }
 
-/* Feature Buttons Grid */
-.feature-buttons-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 2rem auto;
-  max-width: 1000px;
-  padding: 0 1rem;
+/* --------------------------------------------------------------------------
+   Versus table + WhimsyCat's live visit report
+   -------------------------------------------------------------------------- */
+
+.feat-versus {
+  max-width: 820px;
+  margin: -14px auto 0;
+  padding-bottom: 76px;
 }
 
-.feature-tab-button {
-  flex: 1;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 1.5rem 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  color: white;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  min-height: 120px;
+.feat-watch {
+  max-width: 620px;
+  margin: 8px auto 0;
+  padding-bottom: 80px;
+}
+
+.feat-watch-grid {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  gap: 20px;
 }
 
-.feature-tab-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
+.feat-watch-grid .skills-section { flex: 1; min-width: 0; }
+
+/* The assessor. --cat-tilt is set by featureLab as the cursor moves, so the
+   cat leans toward whatever you are doing; reactions animate the inner img so
+   the two transforms never fight. */
+.feat-watch-cat {
+  flex: 0 0 104px;
+  text-align: center;
+  transform: rotate(var(--cat-tilt, 0deg));
+  transition: transform 0.35s ease;
+}
+
+.feat-watch-cat img {
+  display: block;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transition: left 0.5s ease;
+  height: auto;
 }
 
-.feature-tab-button:hover::before {
-  left: 100%;
-}
-
-.feature-tab-button:hover {
-  transform: translateY(-5px);
-  border-color: rgba(20, 183, 255, 0.6);
-  background: linear-gradient(135deg, rgba(20, 183, 255, 0.2) 0%, rgba(78, 205, 196, 0.2) 100%);
-  box-shadow: 0 10px 30px rgba(20, 183, 255, 0.3);
-}
-
-.feature-tab-button.active {
-  border-color: rgba(255, 182, 193, 0.8);
-  background: linear-gradient(135deg, rgba(255, 182, 193, 0.3) 0%, rgba(255, 192, 203, 0.3) 100%);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
-}
-
-.feature-tab-icon {
-  margin-bottom: 0.5rem;
-}
-
-.feature-tab-icon img {
-  width: 50px;
-  height: 50px;
-  transition: all 0.3s ease;
-}
-
-.feature-tab-button:hover .feature-tab-icon img {
-  transform: scale(1.1) rotate(5deg);
-}
-
-.feature-tab-title {
-  font-size: 1rem;
-  font-weight: bold;
+.feat-watch-duty {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-family: var(--lab-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  transition: all 0.3s ease;
 }
 
-.feature-tab-button.active .feature-tab-title {
-  color: #1f1968;
+.feat-watch-cat.cat-note img { animation: featCatNod 0.5s ease; }
+.feat-watch-cat.cat-alarm img { animation: featCatAlarm 0.8s ease; }
+.feat-watch-cat.cat-proud img { animation: featCatProud 1.6s ease-in-out infinite; }
+.feat-watch-cat.cat-proud .feat-watch-duty { color: var(--lab-accent-text); }
+
+@keyframes featCatNod {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-7px); }
 }
 
-/* Feature Description Container */
-.feature-description-container {
-  margin: 2rem auto;
-  max-width: 800px;
-  padding: 0 1rem;
+@keyframes featCatAlarm {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  20% { transform: translateY(-14px) rotate(-7deg); }
+  45% { transform: translateY(0) rotate(5deg); }
+  65% { transform: translateY(-5px) rotate(-3deg); }
 }
 
-.feature-description-content {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  text-align: center;
-  transition: all 0.3s ease;
+@keyframes featCatProud {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
-.feature-description-content:hover {
-  border-color: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-
-.feature-description-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  background: linear-gradient(45deg, #ff6b9d, #4ecdc4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.feature-description-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #ffffff;
-  opacity: 0.9;
-  margin-bottom: 1.5rem;
-}
-
-.feature-learn-more-link {
-  display: inline-block;
-  background: linear-gradient(135deg, #ff6b9d 0%, #4ecdc4 100%);
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.8rem 2rem;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.feature-learn-more-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
-  text-decoration: none;
-  color: white;
-}
-
-.feature-button {
-  background: linear-gradient(135deg, #1f1968 0%, #6172B3 50%, #1f1968 100%);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  color: white;
-  position: relative;
-  overflow: hidden;
-
-}
-
-.feature-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transition: left 0.5s ease;
-}
-
-.feature-button:hover::before {
-  left: 100%;
-}
-
-.feature-button:hover {
-  transform: translateY(-10px);
-  border-color: rgba(20, 183, 255, 0.6);
-  background: linear-gradient(135deg, #14b7ff 0%, #4ecdc4 50%, #14b7ff 100%);
-}
-
-.feature-button.active {
-  border-color: rgba(255, 182, 193, 0.8);
-  background: linear-gradient(135deg, #ffb6c1 0%, #ffc0cb 50%, #ffb6c1 100%);
-  transform: translateY(-5px);
-  color: #1f1968;
-}
-
-.feature-button-icon {
-  margin-bottom: 1.5rem;
-}
-
-.feature-button-icon img {
-  width: 80px;
-  height: 80px;
-  transition: all 0.3s ease;
-}
-
-.feature-button:hover .feature-button-icon img {
-  transform: scale(1.1) rotate(5deg);
-}
-
-.feature-button.active .feature-button-icon img {
-
-}
-
-.feature-button h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-}
-
-.feature-button:hover h3 {
-  color: #ffffff;
-}
-
-.feature-button.active h3 {
-  color: #1f1968;
-}
-
-.feature-button p {
-  font-size: 1rem;
-  line-height: 1.6;
-  opacity: 0.9;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.feature-button.active p {
-  color: #1f1968;
-  opacity: 1;
-}
-
-.blog-link {
-  display: inline-block;
-  color: #4ecdc4;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-}
-
-.blog-link:hover {
-  color: #ff6b9d;
-  border-bottom-color: #ff6b9d;
-  text-decoration: none;
-}
-
-.feature-button.active .blog-link {
-  color: #1f1968;
-}
-
-.feature-button.active .blog-link:hover {
-  color: #ff6b9d;
-  border-bottom-color: #ff6b9d;
-}
-
-/* Cloud Transition */
-.cloud-transition {
-  position: relative;
-  height: 120px;
-  overflow: hidden;
-  background: linear-gradient(to bottom, rgba(149, 206, 246, 0.3), rgba(218, 190, 255, 0.3));
-}
-
-.cloud-svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  animation: cloudFloat 20s ease-in-out infinite;
-}
-
-@keyframes cloudFloat {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-}
-
-/* Main Features Section Title */
-.features-main-title {
-  margin-bottom: 2rem;
-}
-
-/* Technical Superiority Section */
-.technical-superiority-section {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.tech-title {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease-in-out infinite;
-  margin-bottom: 3rem;
-}
-
-.tech-features-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.tech-feature-bubble {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.tech-feature-bubble:hover {
-  transform: translateY(-10px);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.tech-feature-bubble h3 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.tech-feature-bubble p {
-  font-size: 1rem;
-  line-height: 1.6;
-  opacity: 0.9;
-  color: #ffffff;
-}
-
-/* Awards Section Styling */
-.awards-recognition {
-  text-align: center;
-  padding: 3rem 0;
-  background: rgba(255, 255, 255, 0.05);
-  margin: 2rem 0;
-  border-radius: 20px;
-}
-
-.awards-recognition h2 {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.awards-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.award-item {
-  text-align: center;
-  max-width: 250px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.award-item:hover {
-  transform: translateY(-5px);
-}
-
-.award-icon {
-  margin-bottom: 1rem;
-}
-
-.award-icon img {
-  height: 80px;
-}
-
-.award-item h4 {
-  margin: 0.5rem 0;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.award-item p {
-  font-size: 0.9rem;
-  opacity: 0.9;
-  color: #ffffff;
-}
-
-/* Animation Classes for Bubbles */
-.animate {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .zzz-title {
-    font-size: 2.5rem;
-  }
-  
-  .features-main-title {
-    font-size: 2.2rem;
-  }
-  
-  .tech-title {
-    font-size: 2rem;
-  }
-  
-  .features-hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .features-video {
-    height: 250px;
-  }
-  
-  .feature-buttons-row {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .feature-tab-button {
-    min-height: 100px;
-    padding: 1rem;
-  }
-  
-  .feature-tab-icon img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .feature-tab-title {
-    font-size: 0.9rem;
-  }
-  
-  .feature-description-title {
-    font-size: 1.5rem;
-  }
-  
-  .feature-description-text {
-    font-size: 1rem;
-  }
-  
-  .feature-description-content {
-    padding: 1.5rem;
-  }
-  
-  .tech-features-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .tech-feature-bubble {
-    padding: 1.5rem;
-  }
-  
-  .awards-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Full marks: the card glows like the stat band */
+[data-feat-watch].is-complete {
+  box-shadow: 0 0 0 3px rgba(218, 190, 255, 0.9), 0 12px 40px rgba(109, 74, 224, 0.25);
 }
 
 @media (max-width: 480px) {
-  .features-welcome-section {
-    padding: 1.5rem 0;
-  }
-  
-  .zzz-title {
-    font-size: 2rem;
-    letter-spacing: 0.05em;
-  }
-  
-  .features-main-title {
-    font-size: 1.8rem;
-  }
-  
-  .tech-title {
-    font-size: 1.6rem;
-  }
-  
-  .technical-superiority-section {
-    padding: 1.5rem 0;
-  }
-  
-  .tech-feature-bubble {
-    padding: 1.2rem;
-  }
-  
-  .tech-feature-bubble h3 {
-    font-size: 1.2rem;
-  }
-  
-  .awards-recognition {
-    padding: 2rem 0;
-    margin: 1rem 0;
-  }
-  
-  .award-item {
-    padding: 1rem;
-    max-width: 200px;
-  }
-  
-  .award-icon img {
-    height: 60px;
-  }
+  .feat-watch-cat { flex-basis: 72px; }
+}
+
+.feat-watch-log {
+  margin: 14px 2px 0;
+  color: var(--lab-accent-text);
+  font-family: var(--lab-mono);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.feat-watch-log::before { content: "▸ "; }
+
+.feat-watch-note {
+  margin: 12px 2px 0;
+  color: #b9bcdd;
+  font-family: var(--lab-mono);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Three-up cards — the welcome pack's tint cards, with a hue chip
+   -------------------------------------------------------------------------- */
+
+.feat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.feat-card {
+  background: rgba(218, 190, 255, 0.16);
+  border-top: 4px solid var(--card-hue, var(--lab-accent));
+  border-radius: 16px;
+  padding: 22px 22px 24px;
+  text-align: left;
+}
+
+.feat-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 18px rgba(31, 25, 104, 0.14);
+}
+
+.feat-card h3 {
+  margin: 0 0 8px;
+  color: var(--lab-ink);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.feat-card p {
+  margin: 0;
+  color: #444;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   Subjects — the non-link "electronics" entry in the cross grid
+   -------------------------------------------------------------------------- */
+
+.feat-cross-soon {
+  cursor: default;
+  color: #64748b;
+  border-style: dashed;
+}
+
+.feat-cross-soon:hover { transform: none; box-shadow: none; border-color: var(--lab-rule); }
+
+/* --------------------------------------------------------------------------
+   Awards — real cards, no emoji stand-ins
+   -------------------------------------------------------------------------- */
+
+.feat-awards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.feat-award {
+  padding: 26px 24px;
+  border: 1px solid var(--lab-rule);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(31, 25, 104, 0.06);
+  text-align: center;
+}
+
+.feat-award img {
+  height: 84px;
+  width: auto;
+  margin: 0 auto 14px;
+  display: block;
+}
+
+/* Awards without artwork get a monogram medal instead of a stock emoji */
+.feat-award-mono {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dabeff 0%, #95cef6 100%);
+  color: var(--lab-ink);
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.feat-award h3 {
+  margin: 0 0 8px;
+  color: var(--lab-ink);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.feat-award p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.feat-award-link { color: inherit; text-decoration: none; }
+.feat-award-link:hover { color: var(--lab-accent-text); text-decoration: underline; }
+
+/* Footnote under the versus table */
+.feat-versus-note {
+  margin: 14px 2px 0;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.feat-versus-note a { color: var(--lab-accent-text); font-weight: 600; }
+
+/* Links inside the watch footnote sit on the dark band */
+.feat-watch-note a { color: var(--lab-accent-lit); font-weight: 600; }
+
+/* Card links pick up their card's hue */
+.feat-card .lab-link {
+  margin-top: 12px;
+  padding: 4px 0 0;
+  color: var(--card-hue, var(--lab-accent-text));
+  font-size: 0.95rem;
 }

@@ -295,13 +295,13 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
+        <a href={getLocalizedPath("/blog/24-7-ai-tutoring-personalized-daily-recommendations", language)}>
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
           Behind
         </a>
       </li>
       <li>
-        <a href={getLocalizedPath("/blog/gamification-done-right-ethical-engagement", language)}>
+        <a href={getLocalizedPath("/blog/gamification-science-education-points-rewards-engagement", language)}>
           Gamification Done Right: Creating Supportive Learning Environments
         </a>
       </li>

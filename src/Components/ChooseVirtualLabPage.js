@@ -280,7 +280,7 @@ const ChooseVirtualLabPage = ({ language }) => {
               &mdash; the animation fallacy and emergent data, in depth.
             </li>
             <li>
-              <a href={getLocalizedPath("/blog/ai-grading-fails-process-assessment-works/", language)}>
+              <a href={getLocalizedPath("/blog/purpose-built-ai-education-difference/", language)}>
                 Why AI Cannot Misgrade a Pipetting Technique
               </a>{" "}
               &mdash; process-based assessment versus text-parsing AI.

@@ -271,10 +271,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatをご紹介：理科教育のためのAIチューター</a></li>
-      <li><a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat：AIで生徒のフラストレーションを検出</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">教師こそが専門家。私たちはツールを作るだけ。</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">理科におけるAI評価：危機から解決へ</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatをご紹介：理科教育のためのAIチューター</a></li>
+      <li><a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat：AIで生徒のフラストレーションを検出</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師こそが専門家。私たちはツールを作るだけ。</a></li>
+      <li><a href="/jp/blog/ai-assessment-crisis-solution">理科におけるAI評価：危機から解決へ</a></li>
     </ul>
   </>
 );

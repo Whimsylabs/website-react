@@ -244,17 +244,17 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+        <a href="/jp/blog/oecd-ai-learning-paradox-virtual-labs">
           OECDのAI学習パラドックス：なぜ生成AIは生徒を失敗させるのか（そして仮想実験室はなぜ成功するのか）
         </a>
       </li>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/jp/blog/ai-assessment-crisis-solution">
           AI評価の危機には解決策がある
         </a>
       </li>
       <li>
-        <a href="/blog/pearson-webinar-vr-assessment-ai-age">
+        <a href="/jp/blog/pearson-webinar-vr-assessment-ai-age">
           AI時代の評価：Pearsonウェビナーに参加しよう
         </a>
       </li>

@@ -272,17 +272,17 @@ export const content = (
     <h2>Verwandte Artikel</h2>
     <ul>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/de/blog/ai-assessment-crisis-solution">
           KI-Bewertung: Wie Technologie die Korrekturkrise adressiert
         </a>
       </li>
       <li>
-        <a href="/blog/ai-science-tutor-classroom-what-works">
+        <a href="/de/blog/ai-science-tutor-classroom-what-works">
           KI-Naturwissenschafts-Tutoren im Klassenzimmer: Was wirklich funktioniert?
         </a>
       </li>
       <li>
-        <a href="/blog/premium-science-education-accessible-grants">
+        <a href="/de/blog/premium-science-education-accessible-grants">
           Naturwissenschaftsbildung auf Premium-Niveau für jede Schule zugänglich machen
         </a>
       </li>

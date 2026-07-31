@@ -257,22 +257,22 @@ export const content = (
     <h2>Verwandte Artikel</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">
           Lernen Sie WhimsyCat kennen: Der KI-Tutor hinter der 24/7 personalisierten Unterstützung
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
           Die Zukunft des Lernens: Emotionale Intelligenz in KI-Tutoren
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href="/de/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
           Bekämpfung der MINT-Lehrkräftemangel-Krise mit virtuellen Laboren
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href="/de/blog/gamification-science-education-points-rewards-engagement">
           Gamification richtig gemacht: Schüler durch Meisterschaft engagieren, nicht durch Manipulation
         </a>
       </li>

@@ -172,7 +172,7 @@ export const content = (
           </a>
         </li>
         <li key="ref-4">
-          Finkelstein, N. D., et al. (2010). When learning about the real world is better done virtually. Physical Review Special Topics &mdash; Physics Education Research.
+          Finkelstein, N. D., et al. (2010). When learning about the real world is better done virtually. Physical Review Special Topics: Physics Education Research.
         </li>
         <li key="ref-5">
           Kapur, M. (2015). Learning from productive failure. Learning: Research and Practice, 1(1), 51&ndash;65.

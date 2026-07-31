@@ -167,17 +167,17 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/blog/process-based-lab-assessment-future">
+          <a href="/jp/blog/process-based-lab-assessment-future">
             回答ではなくプロセスを評価する：実験室評価の未来
           </a>
         </li>
         <li>
-          <a href="/blog/ai-text-grading-fails-process-assessment-works">
+          <a href="/jp/blog/ai-text-grading-fails-process-assessment-works">
             なぜAIテキスト採点は失敗し、プロセス評価は機能するのか
           </a>
         </li>
         <li>
-          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/jp/blog/oecd-ai-learning-paradox-virtual-labs">
             OECD AI学習パラドックスと仮想実験室への意味
           </a>
         </li>

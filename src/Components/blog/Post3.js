@@ -187,7 +187,7 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href={getLocalizedPath("/blog/always-available-ai-tutoring-24-7-personalized-support", language)}>
+        <a href={getLocalizedPath("/blog/24-7-ai-tutoring-personalized-daily-recommendations", language)}>
           24/7 AI Tutoring: Personalized Support for Every Student
         </a>
       </li>

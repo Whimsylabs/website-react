@@ -195,10 +195,10 @@ export const content = (
 
     <h2>Pour aller plus loin</h2>
     <ul>
-      <li><a href="/blog/science-real-time-physics-simulations-virtual-labs">La physique en temps réel dans les laboratoires virtuels : Rendre l'apprentissage amusant</a></li>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Pourquoi les laboratoires virtuels traditionnels échouent : Le problème du moteur physique</a></li>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">La révolution de l'apprentissage bac à sable : Pourquoi la liberté d'échouer est essentielle</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Les enseignants sont les experts : Concepteur d'expériences personnalisées</a></li>
+      <li><a href="/fr/blog/science-real-time-physics-simulations-virtual-labs">La physique en temps réel dans les laboratoires virtuels : Rendre l'apprentissage amusant</a></li>
+      <li><a href="/fr/blog/why-traditional-virtual-labs-fail-physics-engine">Pourquoi les laboratoires virtuels traditionnels échouent : Le problème du moteur physique</a></li>
+      <li><a href="/fr/blog/sandbox-learning-revolution-stem-education">La révolution de l'apprentissage bac à sable : Pourquoi la liberté d'échouer est essentielle</a></li>
+      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer">Les enseignants sont les experts : Concepteur d'expériences personnalisées</a></li>
     </ul>
   </>
 );

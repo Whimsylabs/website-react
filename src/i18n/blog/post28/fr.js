@@ -69,7 +69,7 @@ export const content = (
       Tous les sujets de biologie ne bénéficient pas également du traitement virtuel. Basé sur notre travail avec les écoles, certaines applications se démarquent.
     </p>
     <p>
-      <strong>La dissection du rein</strong> se traduit exceptionnellement bien en format virtuel. Nous avons déjà écrit sur <a href="/blog/virtual-kidney-dissection-send-engagement">comment la dissection virtuelle du rein soutient les élèves SEND</a>, mais les avantages s'étendent à tous les apprenants. Les structures internes du rein, particulièrement les néphrons et les canaux collecteurs, sont difficiles à visualiser dans un spécimen physique parce qu'elles sont microscopiques. La dissection virtuelle peut zoomer de l'organe entier au niveau cellulaire de manière fluide, quelque chose d'impossible avec un vrai rein et un microscope d'élève.
+      <strong>La dissection du rein</strong> se traduit exceptionnellement bien en format virtuel. Nous avons déjà écrit sur <a href="/fr/blog/virtual-kidney-dissection-send-engagement">comment la dissection virtuelle du rein soutient les élèves SEND</a>, mais les avantages s'étendent à tous les apprenants. Les structures internes du rein, particulièrement les néphrons et les canaux collecteurs, sont difficiles à visualiser dans un spécimen physique parce qu'elles sont microscopiques. La dissection virtuelle peut zoomer de l'organe entier au niveau cellulaire de manière fluide, quelque chose d'impossible avec un vrai rein et un microscope d'élève.
     </p>
     <p>
       <strong>La dissection du cœur</strong> démontre des avantages similaires. Les spécimens physiques de cœur de porcs ou de moutons fournissent de bonnes analogies pour l'anatomie humaine, mais couper à travers le muscle cardiaque résistant nécessite des outils et une technique que les élèves n'ont souvent pas. Les versions virtuelles permettent aux élèves de faire des coupes nettes, d'examiner les structures des chambres sous plusieurs angles, et de tracer le flux sanguin à travers l'organe sans aucun risque de détruire le spécimen avant de l'avoir compris.
@@ -177,10 +177,10 @@ export const content = (
 
     <h2>Lectures Complémentaires</h2>
     <ul>
-      <li><a href="/blog/virtual-kidney-dissection-send-engagement">La Dissection Virtuelle du Rein Booste l'Engagement SEND</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Labos Virtuels vs Physiques : Analyse Coût-Bénéfice</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Rencontrez WhimsyCat : L'IA Qui Soutient, Ne Remplace Pas</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Les Enseignants Sont les Experts. Nous Construisons Juste les Outils.</a></li>
+      <li><a href="/fr/blog/virtual-kidney-dissection-send-engagement">La Dissection Virtuelle du Rein Booste l'Engagement SEND</a></li>
+      <li><a href="/fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Labos Virtuels vs Physiques : Analyse Coût-Bénéfice</a></li>
+      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">Rencontrez WhimsyCat : L'IA Qui Soutient, Ne Remplace Pas</a></li>
+      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer">Les Enseignants Sont les Experts. Nous Construisons Juste les Outils.</a></li>
     </ul>
   </>
 );

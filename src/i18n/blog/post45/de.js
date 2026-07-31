@@ -1,0 +1,173 @@
+import React from "react";
+export const title = "Ihre VR-Brillen an der Schule haben keine Roadmap mehr";
+export const description =
+  "Meta hat den Verkauf kommerzieller Quest-Brillen im Februar 2026 eingestellt, der Support endet im Januar 2030. Was Schulen mit VR-Flotten jetzt tun sollten.";
+export const keywords = [
+  "Meta Quest Schule",
+  "Meta for Education",
+  "Horizon Managed Services",
+  "Virtual Reality im Unterricht",
+  "VR-Brillen für Schulen",
+  "virtuelles Labor",
+  "geräteunabhängige virtuelle Labore",
+  "VR-Beschaffung Schule"
+];
+export const content = (
+  <>
+    <p>
+      Am 20. Februar 2026 hat Meta den Verkauf von Horizon Managed Services und der kommerziellen Versionen seiner Quest-Brillen eingestellt (
+      <a
+        href="https://work.meta.com/help/1964851097790493/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Meta, 2026
+      </a>
+      ). Es gab keine Keynote und keine Pressetour. Die Änderung erschien in einem Artikel im Hilfebereich, und sofern die IT-Verantwortlichen Ihrer Schule die Nachrichtenlage zum Gerätemanagement nicht sehr genau verfolgen, haben Sie davon womöglich gar nichts mitbekommen. Für jede Schule, die in eine Flotte von Quest-Brillen investiert hat, ist es dennoch eine der folgenreichsten Bildungstechnologie-Meldungen des Jahres, denn sie setzt der Plattform, auf der diese Brillen laufen, ein Enddatum.
+    </p>
+
+    <p>
+      Wir entwickeln Software für virtuelle Labore, die auf VR-Brillen läuft, und wir halten VR nach wie vor für einen bemerkenswerten Weg, praktische Naturwissenschaft zu betreiben. Genau deshalb verdient diese Ankündigung eine nüchterne Betrachtung statt Panik oder Abwinken. Sie stellt nicht infrage, ob VR in die Schule gehört. Sie verändert, wie Schulen über das Verhältnis zwischen der gekauften Hardware und der Lernsoftware nachdenken sollten, auf die sie sich verlassen.
+    </p>
+
+    <h2>Was hat Meta tatsächlich angekündigt?</h2>
+
+    <p>
+      Drei Dinge geschahen gleichzeitig. Erstens ist Horizon Managed Services, das System, mit dem Schulen und Unternehmen Flotten von Quest-Brillen registrieren, verwalten und absichern, nicht mehr käuflich zu erwerben, und bestehende Lizenzen wurden kostenlos (
+      <a
+        href="https://help.managexr.com/en/articles/13394353-update-meta-horizon-managed-services-will-be-free-starting-feb-20-2026"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ManageXR, 2026
+      </a>
+      ). Zweitens sind die kommerziellen SKUs der Meta Quest, also die Varianten mit Geschäfts- statt Verbraucherbedingungen, nicht mehr im Verkauf. Drittens, und für die Planung am wichtigsten, ist die gesamte Managed-Services-Plattform in den Wartungsmodus übergegangen. Meta sagt Fehlerbehebungen und Support für bestehende Kunden bis zum <strong>4. Januar 2030</strong> zu, neue Funktionen wird es jedoch nicht geben, und Meta erklärt selbst, dass über dieses Datum hinaus keine konkreten Zusagen zum Verhalten der Plattform möglich sind (
+      <a
+        href="https://redboxvr.com/meta-horizon-managed-services-update/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RedboxVR, 2026
+      </a>
+      ).
+    </p>
+
+    <p>
+      Nichts davon schaltet irgendjemandem die Brillen ab. Bereits ausgerollte Geräte funktionieren weiter, bestehende Registrierungen bleiben aktiv, und die Verwaltungsebene ist jetzt kostenlos, was kurzfristig eine echte Ersparnis bedeutet. Beschaffungstechnisch hat die Plattform jedoch nun einen veröffentlichten Support-Horizont und keinen angekündigten Nachfolger. Für diese Kombination gibt es in der IT-Planung einen Begriff: eine Support-Klippe.
+    </p>
+
+    <h2>Warum betrifft das Schulen besonders?</h2>
+
+    <p>
+      Meta hat die vergangenen zwei Jahre gezielt um den Bildungsbereich geworben. Meta for Education brachte Schulen und Hochschulen verwaltete Quest-Rollouts, Content-Partnerschaften für den Unterricht und Werkzeuge zur Klassenraumverwaltung (
+      <a
+        href="https://www.meta.com/blog/meta-for-education-quest-classroom-educators-vr-mixed-reality/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Meta, 2025
+      </a>
+      ). Schulen, die dieser Einladung gefolgt sind, haben mit den verfügbaren Informationen eine vernünftige Entscheidung getroffen. Das Problem ist, dass schulische Beschaffungszyklen lang sind. Eine weiterführende Schule, die 2025 einen Klassensatz Brillen gekauft hat, plant üblicherweise mit fünf bis sieben Jahren Nutzungsdauer, und dieser Zeitraum reicht nun über den Punkt hinaus, bis zu dem Meta die Verwaltung dieser Geräte zu unterstützen zusagt.
+    </p>
+
+    <p>
+      Schulen stehen zudem vor einer Einschränkung, die Unternehmen nicht kennen. Ein Unternehmen kann dreißig Brillen an einem Wochenende neu aufsetzen und die Störung verkraften. Eine Schule, die VR über einen ganzen Stundenplan hinweg einsetzt, mit Geräten, die zwischen Klassen geteilt und von einer einzigen überlasteten Fachkraft betreut werden, kann das nicht. Gerätemanagement ist im Klassenzimmer kein optionales Extra. Es ist der Unterschied zwischen einer Stunde, die pünktlich beginnt, und dreißig Jugendlichen mit ungesicherten Consumer-Geräten in der Hand. Deshalb wiegt der stille Rückzug der kommerziellen Plattform für Schulen schwerer, als die weiterhin erhältlichen Consumer-Brillen vermuten lassen.
+    </p>
+
+    <h2>Ist VR in der Bildung damit vorbei?</h2>
+
+    <p>
+      Nein, und es lohnt sich, genau zu sagen, warum. Die Didaktik hat sich nicht geändert. Die Belege dafür, dass gut gestaltetes immersives Praxislernen den Transfer motorischer Fertigkeiten und das Engagement fördert, sind heute dieselben wie im Januar. Verändert hat sich Kommerzielles, nicht Pädagogisches: Ein großer Hardware-Anbieter hat den institutionellen Markt zurückgestuft. Dieses Muster hat die Branche schon einmal gesehen. Anfang 2026 haben wir über den breiteren „VR-Winter“ geschrieben, das Abkühlen der Plattforminvestitionen nach dem Metaverse-Boom, und schon damals argumentiert, dass die robuste Position für Schulen Software ist, die nicht davon abhängt, dass ein bestimmtes Gerät die Marktbereinigung übersteht. Diese Ankündigung ist genau dieses Argument, pünktlich eingetroffen.
+    </p>
+
+    <p>
+      Ebenso wichtig ist, was nicht zurückgezogen wurde. Consumer-Quest-Geräte bleiben im Verkauf, Drittanbieter für Gerätemanagement betreuen Quest-Flotten weiterhin, und andere Brillenhersteller bedienen den Bildungsmarkt nach wie vor. Der Markt konsolidiert sich, er verschwindet nicht. Aber Konsolidierung ist genau die Lage, in der es riskant wird, einen naturwissenschaftlichen Lehrplan auf die Roadmap eines einzigen Herstellers zu setzen, denn über diese Roadmap dürfen Sie nicht mitentscheiden.
+    </p>
+
+    <h2>Was sollten Schulen mit Quest-Flotten jetzt tun?</h2>
+
+    <p>
+      Erstens: Mustern Sie nichts aus. Ihre Brillen funktionieren, die Verwaltungsebene ist jetzt kostenlos, und Sie haben dreieinhalb Jahre zugesagten Support. Funktionierende Hardware aus Panik zu ersetzen, wäre verschwendetes Geld ohne pädagogischen Gewinn. Nutzen Sie die kostenfreie Phase zu Ihrem Vorteil.
+    </p>
+
+    <p>
+      Zweitens: Nehmen Sie das Datum 2030 jetzt in Ihre Schulentwicklungsplanung auf, solange es eine Planungsfrage und kein Notfall ist. Gut durch diese Situation kommen die Schulen, die den Januar 2030 so behandeln wie eine Heizungsanlage am Ende ihrer Lebensdauer: ein bekanntes Datum, über mehrere Jahre eingeplant, mit in Ruhe geprüften Optionen.
+    </p>
+
+    <p>
+      Drittens, und am wichtigsten: Prüfen Sie Ihre Software, nicht nur Ihre Hardware. Stellen Sie zu jeder VR-Anwendung, auf die sich Ihre Lehrkräfte stützen, eine einzige Frage: <strong>Würde das Lernen überleben, wenn diese Brillen morgen verschwänden?</strong> Existiert eine Anwendung nur auf einer Plattform, lautet die Antwort Nein, und jede darauf aufgebaute Unterrichtsplanung erbt das Ablaufdatum der Hardware. Läuft die Anwendung auf den Geräten, die Sie ohnehin in großer Zahl besitzen, lautet die Antwort Ja, und die Brillen werden zu dem, was sie immer hätten sein sollen: eine Bereicherung, keine Abhängigkeit.
+    </p>
+
+    <h2>Wie wählt man Laborsoftware, die die Brille überdauert?</h2>
+
+    <p>
+      Das ist die Designfrage, um die herum wir WhimsyLabs von Anfang an aufgebaut haben. Unsere virtuellen Labore laufen im Browser auf den Chromebooks, PCs und Macs, die Schulen bereits besitzen, und dieselben Labore laufen in VR, wo Brillen vorhanden sind und die zusätzliche Immersion gewünscht ist. Es ist eine Plattform, ein Konto-System, eine Lehrplanzuordnung und ein Satz von Ergebnis-Dashboards, unabhängig vom Gerät. Die vollständige Physiksimulation, die Sandbox-Freiheit, gefahrlos zu entwerfen und zu scheitern, und WhimsyCats Einschätzung der Arbeitsweise jeder Schülerin und jedes Schülers verhalten sich am Trackpad genauso wie in der Brille, weil sie in der Simulation leben und nicht in der Hardware.
+    </p>
+
+    <p>
+      Für eine Schule mit Quest-Flotte verändert diese Architektur die Bedeutung der 2030-Frage. Das VR-Erlebnis funktioniert so lange, wie die Brillen es tun, und wenn die Flotte irgendwann altersbedingt ausscheidet, laufen die Labore, die Lernstandsdaten und die Unterrichtsplanungen der Lehrkräfte unangetastet auf den Geräten weiter, die die Schule als Nächstes einsetzt, seien es Brillen eines anderen Herstellers oder der Chromebook-Wagen, der nie verschwunden ist. Praktischer Naturwissenschaftsunterricht sollte kein Ablaufdatum haben, das die Strategieabteilung eines Hardware-Herstellers festlegt, und mit einer geräteunabhängigen Plattform hat er das auch nicht.
+    </p>
+
+    <h2>Die Hardware ist nicht die Investition</h2>
+
+    <p>
+      Die unbequeme Lehre aus der Februar-Ankündigung lautet: Schulen wurden dazu ermutigt, die Brillen als Investition und die Software als Zubehör zu betrachten, obwohl der dauerhafte Wert genau umgekehrt verteilt ist. Brillen verlieren an Wert, gehen kaputt und verlieren nun offenkundig auch ihre Roadmap. Was sich über Jahre summiert, sind die Lerninhalte, die Beurteilungsdaten und die um eine Plattform herum aufgebaute Expertise der Lehrkräfte. Diese Werte sind schützenswert, und der Weg, sie zu schützen, besteht darin, sicherzustellen, dass sie nie von einem einzelnen Stück Hardware abhängen. Ob Ihre Schule je wieder eine Brille kauft oder nicht: Das ist das Beschaffungsprinzip, das man aus 2026 mitnehmen sollte. Kaufen Sie Lernen, das überall läuft, und lassen Sie die Hardware kommen und gehen.
+    </p>
+
+    <>
+      <h2>Verwandte Artikel</h2>
+      <ul>
+        <li>
+          <a href="/de/blog/vr-headsets-vs-chromebooks-cost-per-student">
+            VR-Brillen oder Chromebooks für virtuelle Labore: Kostenguide 2026
+          </a>
+        </li>
+        <li>
+          <a href="/de/blog/vr-winter-web-first-virtual-labs">
+            VR-Winter? Warum Web-First Labore die kluge Wahl sind
+          </a>
+        </li>
+        <li>
+          <a href="/de/blog/how-to-choose-virtual-lab-software-school">
+            Virtuelle Laborsoftware für Sekundarschulen: Ein Kaufratgeber
+          </a>
+        </li>
+        <li>
+          <a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+            Virtuelle vs. physische Labore: Kosten-Nutzen-Analyse
+          </a>
+        </li>
+      </ul>
+    </>
+
+    <div className="references-section">
+      <h3>Quellen</h3>
+      <ul className="references-list">
+        <li key="ref-1">
+          Meta. (2026). Update to Meta Horizon managed services. Meta for Work Help Centre.{" "}
+          <a href="https://work.meta.com/help/1964851097790493/" target="_blank" rel="noopener noreferrer">
+            https://work.meta.com/help/1964851097790493/
+          </a>
+        </li>
+        <li key="ref-2">
+          ManageXR. (2026). Update: Meta Horizon Managed Services will be free starting Feb 20, 2026.{" "}
+          <a href="https://help.managexr.com/en/articles/13394353-update-meta-horizon-managed-services-will-be-free-starting-feb-20-2026" target="_blank" rel="noopener noreferrer">
+            https://help.managexr.com/en/articles/13394353-update-meta-horizon-managed-services-will-be-free-starting-feb-20-2026
+          </a>
+        </li>
+        <li key="ref-3">
+          RedboxVR. (2026). Meta Horizon Managed Services update.{" "}
+          <a href="https://redboxvr.com/meta-horizon-managed-services-update/" target="_blank" rel="noopener noreferrer">
+            https://redboxvr.com/meta-horizon-managed-services-update/
+          </a>
+        </li>
+        <li key="ref-4">
+          Meta. (2025). Introducing Meta for Education: Quest for the classroom.{" "}
+          <a href="https://www.meta.com/blog/meta-for-education-quest-classroom-educators-vr-mixed-reality/" target="_blank" rel="noopener noreferrer">
+            https://www.meta.com/blog/meta-for-education-quest-classroom-educators-vr-mixed-reality/
+          </a>
+        </li>
+      </ul>
+    </div>
+  </>
+);

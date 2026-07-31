@@ -171,7 +171,7 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/uk-government-ai-education-funding-2026">
+          <a href="/blog/uk-government-ai-education-funding-2026">
             英国がAI教育に4,900万ポンドを投資：学校にとっての意味
           </a>
         </li>

@@ -245,17 +245,17 @@ export const content = (
     <h2>Verwandte Artikel</h2>
     <ul>
       <li>
-        <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+        <a href="/de/blog/oecd-ai-learning-paradox-virtual-labs">
           Das OECD-KI-Lernparadoxon: Warum GenAI bei Schülern versagt (und wie virtuelle Labore erfolgreich sind)
         </a>
       </li>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/de/blog/ai-assessment-crisis-solution">
           Die KI-Bewertungskrise hat eine Lösung
         </a>
       </li>
       <li>
-        <a href="/blog/pearson-webinar-vr-assessment-ai-age">
+        <a href="/de/blog/pearson-webinar-vr-assessment-ai-age">
           Bewertung im Zeitalter der KI: Nehmen Sie an unserem Pearson-Webinar teil
         </a>
       </li>

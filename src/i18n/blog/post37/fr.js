@@ -173,17 +173,17 @@ export const content = (
       <h2>Articles Connexes</h2>
       <ul>
         <li>
-          <a href="/blog/ai-assessment-crisis-solution">
+          <a href="/fr/blog/ai-assessment-crisis-solution">
             La Crise de l'Évaluation IA : Comment les Laboratoires Virtuels Fournissent une Évaluation Authentique
           </a>
         </li>
         <li>
-          <a href="/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/fr/blog/vr-stem-education-research-pedagogical-scaffolding">
             La Nouvelle Recherche VR Confirme : La Technologie Sans Pédagogie Échoue
           </a>
         </li>
         <li>
-          <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          <a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">
             Rencontrez WhimsyCat : Notre Innovation IA dans l'Éducation Scientifique
           </a>
         </li>

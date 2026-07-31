@@ -23,7 +23,7 @@ export const content = (
     </p>
 
     <p>
-      This is not a criticism of teachers. Given a single period, a class of thirty, live hazards and shared equipment, it is close to the only way to run the session safely. But it means the scarcest, most expensive resource in the school &mdash; the laboratory, staffed, with apparatus out &mdash; is spent mostly on instruction, and the part that can only happen at a bench gets whatever is left.
+      This is not a criticism of teachers. Given a single period, a class of thirty, live hazards and shared equipment, it is close to the only way to run the session safely. But it means the scarcest, most expensive resource in the school, the laboratory, staffed and with apparatus out, is spent mostly on instruction, and the part that can only happen at a bench gets whatever is left.
     </p>
 
     <p>
@@ -65,8 +65,8 @@ export const content = (
     <h2>Doesn't Simulation Just Replace the Real Thing?</h2>
 
     <p>
-      It can, and for some schools and some students it has to &mdash;{" "}
-      <a href="/blog/virtual-labs-online-schools-distance-learning">online schools</a>{" "}
+      It can, and for some schools and some students it has to.{" "}
+      <a href="/blog/virtual-labs-online-schools-distance-learning">Online schools</a>{" "}
       have no alternative, and the Royal Society's Science Education Tracker found the proportion of GCSE pupils doing practical work at least fortnightly fell from 44% in 2016 to 26% in 2023, which suggests a great many pupils in physical schools are not getting much bench time either.
     </p>
 
@@ -101,7 +101,7 @@ export const content = (
 
     <ul>
       <li>
-        <strong>Set the simulation as prep,</strong> the week before the laboratory session. It is safe to set unsupervised, which matters &mdash; there is nothing to spill at home.
+        <strong>Set the simulation as prep,</strong> the week before the laboratory session. It is safe to set unsupervised, because there is nothing to spill at home.
       </li>
       <li>
         <strong>Check the data before the lesson.</strong> If the platform assesses process, you will know before anyone enters the room which students have the method and which do not, and you can pair them accordingly.
@@ -120,7 +120,7 @@ export const content = (
     <h2>Who Benefits Most?</h2>
 
     <p>
-      Three groups, in our experience. Schools with strong laboratories and not enough hours in them, which is most secondary schools. Schools whose practical provision is constrained by equipment budgets rather than facilities &mdash; EngineeringUK's 2024 research reported that 27% of UK science teachers say their school cannot afford the equipment needed for practical lessons. And students who find the physical laboratory environment overwhelming, for whom arriving already familiar with the room's demands is the difference between participating and coping. That last group is why we wrote about{" "}
+      Three groups, in our experience. Schools with strong laboratories and not enough hours in them, which is most secondary schools. Schools whose practical provision is constrained by equipment budgets rather than facilities. EngineeringUK's 2024 research reported that 27% of UK science teachers say their school cannot afford the equipment needed for practical lessons. And students who find the physical laboratory environment overwhelming, for whom arriving already familiar with the room's demands is the difference between participating and coping. That last group is why we wrote about{" "}
       <a href="/blog/virtual-kidney-dissection-send-engagement">virtual dissection and SEND engagement</a>, and it is a benefit that tends to surprise schools who adopted the model purely for time reasons.
     </p>
 

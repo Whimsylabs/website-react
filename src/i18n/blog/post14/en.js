@@ -388,7 +388,7 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/always-available-ai-tutoring-24-7-personalized-support">
+        <a href="/blog/24-7-ai-tutoring-personalized-daily-recommendations">
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
           Behind
         </a>

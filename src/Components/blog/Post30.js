@@ -199,7 +199,7 @@ export const content = (
       <li><a href={getLocalizedPath("/blog/royal-society-partnership-grants-vr-science-labs", language)}>UK Schools: Get £3,000 for VR Science Labs</a></li>
       <li><a href={getLocalizedPath("/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis", language)}>Virtual Labs vs Physical Labs: The Real Cost Comparison</a></li>
       <li><a href={getLocalizedPath("/blog/whimsycat-ai-tutor-transforming-science-education", language)}>Meet WhimsyCat: The AI Tutor That Actually Understands Science</a></li>
-      <li><a href={getLocalizedPath("/blog/data-security-edtech-vendor-questions", language)}>10 Questions to Ask EdTech Vendors About Data Security</a></li>
+      <li><a href={getLocalizedPath("/blog/edtech-vendor-security-questions-powerschool", language)}>10 Questions to Ask EdTech Vendors About Data Security</a></li>
     </ul>
   </>
 );

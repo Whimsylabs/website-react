@@ -244,17 +244,17 @@ export const content = (
     <h2>Artículos Relacionados</h2>
     <ul>
       <li>
-        <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+        <a href="/es/blog/oecd-ai-learning-paradox-virtual-labs">
           La Paradoja del Aprendizaje con IA de la OCDE: Por Qué la IA Generativa Falla a los Estudiantes (Y Cómo los Laboratorios Virtuales Tienen Éxito)
         </a>
       </li>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/es/blog/ai-assessment-crisis-solution">
           La Crisis de la Evaluación con IA Tiene Solución
         </a>
       </li>
       <li>
-        <a href="/blog/pearson-webinar-vr-assessment-ai-age">
+        <a href="/es/blog/pearson-webinar-vr-assessment-ai-age">
           La Evaluación en la Era de la IA: Únete a Nuestro Webinar con Pearson
         </a>
       </li>

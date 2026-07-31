@@ -195,10 +195,10 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/blog/science-real-time-physics-simulations-virtual-labs">Física en tiempo real en laboratorios virtuales: Haciendo el aprendizaje divertido</a></li>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Por qué los laboratorios virtuales tradicionales fallan: El problema del motor de física</a></li>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos: Diseñador de experimentos personalizados</a></li>
+      <li><a href="/es/blog/science-real-time-physics-simulations-virtual-labs">Física en tiempo real en laboratorios virtuales: Haciendo el aprendizaje divertido</a></li>
+      <li><a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine">Por qué los laboratorios virtuales tradicionales fallan: El problema del motor de física</a></li>
+      <li><a href="/es/blog/sandbox-learning-revolution-stem-education">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos: Diseñador de experimentos personalizados</a></li>
     </ul>
   </>
 );

@@ -130,7 +130,7 @@ export const content = (
     </p>
 
     <p>
-      The single most effective mechanism we have seen is a head of science from a pilot school talking to a head of science from a prospective one. It is more persuasive than anything a vendor or a central team can say, because the concerns are the ones only a practitioner thinks to raise. Groups that build this into the rollout &mdash; a short session per wave, run by teachers &mdash; get adoption curves that look completely different from groups that send an email announcing licences.
+      The single most effective mechanism we have seen is a head of science from a pilot school talking to a head of science from a prospective one. It is more persuasive than anything a vendor or a central team can say, because the concerns are the ones only a practitioner thinks to raise. Groups that build this into the rollout, with a short session per wave run by teachers, get adoption curves that look completely different from groups that send an email announcing licences.
     </p>
 
     <p>
@@ -140,7 +140,7 @@ export const content = (
     <h2>The Underlying Point</h2>
 
     <p>
-      A school group's advantage is not that it can buy more cheaply. It is that it can run a genuine comparison &mdash; the same intervention, the same term, across schools that differ in ways you understand &mdash; and reach an evidenced conclusion that no single school could reach on its own. Most groups do not use that advantage, and buy on a demo like everyone else.
+      A school group's advantage is not that it can buy more cheaply. It is that it can run a genuine comparison, the same intervention in the same term across schools that differ in ways you understand, and reach an evidenced conclusion that no single school could reach on its own. Most groups do not use that advantage, and buy on a demo like everyone else.
     </p>
 
     <p>

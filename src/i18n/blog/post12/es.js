@@ -271,17 +271,17 @@ export const content = (
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
-        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
+        <a href="/es/blog/science-real-time-physics-simulations-virtual-labs">
           Simulaciones físicas en tiempo real: La innovación técnica detrás de WhimsyLabs
         </a>
       </li>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href="/es/blog/physicality-in-virtual-labs">
           La importancia de la fisicalidad en los laboratorios virtuales: Un paso más allá de las simulaciones tradicionales
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/es/blog/sandbox-learning-revolution-stem-education">
           La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial para la educación STEM
         </a>
       </li>

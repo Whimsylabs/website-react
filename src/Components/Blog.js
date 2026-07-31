@@ -463,7 +463,10 @@ const Blog = (props = {}) => {
     // Exclude region-specific posts not published in the current language (applies to
     // both the fallbackPosts SSR render and the client-loaded list).
     return displayPosts.filter(post => {
-      const allowed = blogPostLanguageRestrictions[post.id];
+      // Keyed by slug. The generated post list carries `slug` alongside an id like
+      // "post55", while fallbackPosts set `id` to the slug itself — so check both,
+      // otherwise this filter silently passes everything on the generated-list path.
+      const allowed = blogPostLanguageRestrictions[post.slug || post.id];
       return !allowed || allowed.includes(currentLanguage);
     });
   }, [posts, currentLanguage]);

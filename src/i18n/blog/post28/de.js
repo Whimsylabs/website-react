@@ -69,7 +69,7 @@ export const content = (
       Nicht alle Biologiethemen profitieren gleichermaßen von virtueller Behandlung. Basierend auf unserer Arbeit mit Schulen stechen bestimmte Anwendungen hervor.
     </p>
     <p>
-      <strong>Nierensektion</strong> übersetzt sich außergewöhnlich gut ins virtuelle Format. Wir haben bereits darüber geschrieben, <a href="/blog/virtual-kidney-dissection-send-engagement">wie virtuelle Nierensektion SEND-Schüler unterstützt</a>, aber die Vorteile erstrecken sich auf alle Lernenden. Die inneren Strukturen der Niere, insbesondere die Nephrone und Sammelrohre, sind in einem physischen Präparat schwer zu visualisieren, weil sie mikroskopisch sind. Virtuelles Sezieren kann nahtlos vom ganzen Organ bis zur Zellebene zoomen – etwas, das mit einer echten Niere und einem Schülermikroskop unmöglich ist.
+      <strong>Nierensektion</strong> übersetzt sich außergewöhnlich gut ins virtuelle Format. Wir haben bereits darüber geschrieben, <a href="/de/blog/virtual-kidney-dissection-send-engagement">wie virtuelle Nierensektion SEND-Schüler unterstützt</a>, aber die Vorteile erstrecken sich auf alle Lernenden. Die inneren Strukturen der Niere, insbesondere die Nephrone und Sammelrohre, sind in einem physischen Präparat schwer zu visualisieren, weil sie mikroskopisch sind. Virtuelles Sezieren kann nahtlos vom ganzen Organ bis zur Zellebene zoomen – etwas, das mit einer echten Niere und einem Schülermikroskop unmöglich ist.
     </p>
     <p>
       <strong>Herzsektion</strong> zeigt ähnliche Vorteile. Physische Herzpräparate von Schweinen oder Schafen bieten gute Analogien zur menschlichen Anatomie, aber das Durchschneiden von zähem Herzmuskel erfordert Werkzeuge und Technik, die Schülern oft fehlen. Virtuelle Versionen erlauben es Schülern, saubere Schnitte zu machen, Kammerstrukturen aus mehreren Winkeln zu untersuchen und den Blutfluss durch das Organ zu verfolgen, ohne jegliches Risiko, das Präparat zu zerstören, bevor sie es verstanden haben.
@@ -177,10 +177,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/virtual-kidney-dissection-send-engagement">Virtuelle Nierensektion steigert SEND-Engagement</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle vs. Physische Labore: Kosten-Nutzen-Analyse</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: KI, die unterstützt, nicht ersetzt</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/virtual-kidney-dissection-send-engagement">Virtuelle Nierensektion steigert SEND-Engagement</a></li>
+      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle vs. Physische Labore: Kosten-Nutzen-Analyse</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: KI, die unterstützt, nicht ersetzt</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
     </ul>
   </>
 );

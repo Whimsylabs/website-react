@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-07-30T22:01:58.277Z
+// Generated on 2026-07-31T01:05:43.426Z
 
 module.exports = {
   "en": [
@@ -884,6 +884,177 @@ module.exports = {
   ],
   "de": [
     {
+      "id": "post55",
+      "slug": "student-owned-vr-headsets-school-licence",
+      "title": "Eigene VR-Brillen der Schüler: Praktika zu Hause machen",
+      "description": "Viele Jugendliche besitzen längst eine VR-Brille. Wenn die Schullizenz auch dort gilt, wird ungenutzte Consumer-Hardware ohne zusätzliche Kosten zu echter Kapazität für naturwissenschaftliche Praktika.",
+      "keywords": [
+        "VR-Brille Schüler",
+        "BYOD VR Schule",
+        "Praktikum zu Hause",
+        "VR Lizenz Schule",
+        "virtuelle Realität Unterricht",
+        "virtuelles Labor zu Hause",
+        "VR ohne Hardwarekauf",
+        "immersive Hausaufgaben"
+      ],
+      "date": "2026-08-04",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post54",
+      "slug": "multi-school-group-virtual-lab-rollout",
+      "title": "Virtuelle Labore im gesamten Schulverbund einführen",
+      "description": "Bildungstechnologie für zwanzig Schulen zu kaufen ist nicht dasselbe wie zwanzig Einzelkäufe. Ein praktischer Leitfaden für Pilotphase, Wirkungsnachweis und Skalierung virtueller Labore im gesamten Schulverbund.",
+      "keywords": [
+        "Bildungstechnologie Schulverbund",
+        "zentrale Beschaffung Schulen",
+        "EdTech Einführung Schulträger",
+        "virtuelle Labore Schulnetzwerk",
+        "EdTech Pilotprojekt Schule",
+        "Digitalisierung Schulverwaltung Beschaffung",
+        "Naturwissenschaften Strategie Schulgruppe",
+        "internationale Schulgruppe"
+      ],
+      "date": "2026-08-03",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post53",
+      "slug": "ib-diploma-science-practicals-virtual-labs",
+      "title": "IB-Diplom: Simulation in der wissenschaftlichen Untersuchung",
+      "description": "Das IB erlaubt Simulation und Modellierung in der wissenschaftlichen Untersuchung ausdrücklich. Wie Sie das sinnvoll nutzen und wo der echte Labortisch unverzichtbar bleibt.",
+      "keywords": [
+        "IB Diplomprogramm Naturwissenschaften",
+        "wissenschaftliche Untersuchung interne Bewertung",
+        "interne Bewertung IB Simulation",
+        "IB Gruppe 4",
+        "IB Naturwissenschaften online",
+        "IB Chemie IA",
+        "IB Biologie IA",
+        "virtuelle Labore International Baccalaureate"
+      ],
+      "date": "2026-07-31",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post52",
+      "slug": "flipped-practical-preloading-lab-skills",
+      "title": "Das umgedrehte Praktikum: kompetent an der Laborbank ankommen",
+      "description": "Die meiste Laborzeit geht für Erklärungen drauf, nicht für das Experimentieren. Wer den Versuch zuerst in der Simulation durchführt, macht aus einer Demonstrationsstunde eine echte Untersuchung.",
+      "keywords": [
+        "umgedrehtes Praktikum",
+        "Flipped Classroom Naturwissenschaften",
+        "Praktikumsvorbereitung Simulation",
+        "Laborzeit Schule",
+        "Sicherheitsunterweisung Schullabor",
+        "Blended Learning Naturwissenschaften",
+        "virtuelles Labor vor dem Praktikum",
+        "Pflichtexperimente Lehrplan"
+      ],
+      "date": "2026-07-30",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post51",
+      "slug": "virtual-labs-online-schools-distance-learning",
+      "title": "Virtuelle Labore für Online-Schulen: Praktika auf Distanz",
+      "description": "Online-Schulen unterrichten jedes Fach gut, nur eines nicht. Eine ehrliche Bestandsaufnahme, wie Fernschulen naturwissenschaftliche Praktika lösen und was wirklich funktioniert.",
+      "keywords": [
+        "Online-Schule Naturwissenschaften",
+        "Praktika im Fernunterricht",
+        "virtuelles Labor Online-Schule",
+        "Akkreditierung Online-Unterricht",
+        "Hausunterricht Naturwissenschaften",
+        "naturwissenschaftliche Experimente digital",
+        "Fernschule Chemie Praktikum",
+        "virtuelle Laborsoftware"
+      ],
+      "date": "2026-07-29",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post45",
+      "slug": "meta-quest-education-support-cliff-2030",
+      "title": "Ihre VR-Brillen an der Schule haben keine Roadmap mehr",
+      "description": "Meta hat den Verkauf kommerzieller Quest-Brillen im Februar 2026 eingestellt, der Support endet im Januar 2030. Was Schulen mit VR-Flotten jetzt tun sollten.",
+      "keywords": [
+        "Meta Quest Schule",
+        "Meta for Education",
+        "Horizon Managed Services",
+        "Virtual Reality im Unterricht",
+        "VR-Brillen für Schulen",
+        "virtuelles Labor",
+        "geräteunabhängige virtuelle Labore",
+        "VR-Beschaffung Schule"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post46",
+      "slug": "ai-chatbot-lawsuits-2026-schools",
+      "title": "KI-Chatbot-Klagen 2026: Was sie für KI an Schulen bedeuten",
+      "description": "Vergleiche von Character.AI, die erste Klage eines US-Bundesstaats und der GUARD Act: 2026 wurde die Haftung für Chatbots real. Was das für KI an Schulen heißt.",
+      "keywords": [
+        "KI Chatbot Klage",
+        "GUARD Act Minderjährige",
+        "KI Companion Kinder",
+        "sichere KI für Schulen",
+        "Kinderschutz und KI",
+        "Character.AI Vergleich",
+        "KI Tutor Sicherheit",
+        "KI Tutor ohne Chatbot"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post47",
+      "slug": "neu-survey-ai-critical-thinking-decline",
+      "title": "76% der Lehrkräfte nutzen KI. 66% sehen kritisches Denken schwinden",
+      "description": "Die NEU-Umfrage 2026 zeigt: 76% der Lehrkräfte nutzen KI, 66% beobachten schwindendes kritisches Denken. Die Lösung ist KI, die Lernende selbst arbeiten lässt.",
+      "keywords": [
+        "NEU State of Education 2026",
+        "KI und kritisches Denken",
+        "Umfrage Lehrkräfte künstliche Intelligenz",
+        "KI-Richtlinie Schule",
+        "KI-Tutoren benachteiligte Schüler",
+        "kognitive Auslagerung",
+        "künstliche Intelligenz im Unterricht",
+        "KI-Tutor virtuelles Labor"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
+      "id": "post44",
+      "slug": "vr-headsets-vs-chromebooks-cost-per-student",
+      "title": "VR-Brillen oder Chromebooks für virtuelle Labore: Kosten 2026",
+      "description": "Ein ehrlicher Kostenvergleich pro Schülerin und Schüler für 2026: VR-Brillen im Klassenzimmer gegen browserbasierte virtuelle Labore auf vorhandenen Chromebooks.",
+      "keywords": [
+        "VR-Brillen oder Chromebooks",
+        "Kosten pro Schüler virtuelles Labor",
+        "brauchen Schulen VR-Brillen",
+        "virtuelle Labore im Browser",
+        "Meta Quest Bildung Preis",
+        "Gesamtkosten VR im Unterricht",
+        "WebXR Bildung",
+        "virtuelle Naturwissenschaftslabore"
+      ],
+      "date": "2026-07-15",
+      "hasFullTranslation": false,
+      "language": "de"
+    },
+    {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
       "title": "OECD: Den Prozess bewerten, nicht das Produkt",
@@ -1501,6 +1672,177 @@ module.exports = {
   ],
   "fr": [
     {
+      "id": "post55",
+      "slug": "student-owned-vr-headsets-school-licence",
+      "title": "Casques VR des élèves : faire ses TP de sciences chez soi",
+      "description": "De nombreux élèves possèdent déjà un casque VR. Étendre la licence de l'établissement à ce matériel transforme un équipement grand public inutilisé en véritable capacité de travaux pratiques, sans aucun coût.",
+      "keywords": [
+        "casque VR élève",
+        "AVEC matériel personnel école",
+        "travaux pratiques à la maison",
+        "licence VR établissement scolaire",
+        "réalité virtuelle éducation",
+        "laboratoire virtuel à domicile",
+        "VR sans acheter de casques",
+        "devoirs immersifs"
+      ],
+      "date": "2026-08-04",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post54",
+      "slug": "multi-school-group-virtual-lab-rollout",
+      "title": "Déployer les laboratoires virtuels dans un groupe scolaire",
+      "description": "Acheter du numérique éducatif pour vingt établissements, ce n'est pas l'acheter vingt fois. Guide pratique pour expérimenter, prouver et généraliser les laboratoires virtuels à l'échelle d'un réseau ou d'un groupe d'établissements.",
+      "keywords": [
+        "numérique éducatif réseau d'établissements",
+        "achat groupé établissements scolaires",
+        "déploiement edtech groupe scolaire",
+        "laboratoires virtuels lycée",
+        "expérimentation edtech",
+        "mutualisation des achats scolaires",
+        "stratégie sciences réseau scolaire",
+        "groupe scolaire international"
+      ],
+      "date": "2026-08-03",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post53",
+      "slug": "ib-diploma-science-practicals-virtual-labs",
+      "title": "Sciences de l'IB : simulation et investigation scientifique",
+      "description": "L'IB autorise explicitement la simulation et la modélisation dans l'investigation scientifique. Comment bien l'exploiter, et où la paillasse reste indispensable.",
+      "keywords": [
+        "sciences Programme du diplôme",
+        "investigation scientifique évaluation interne",
+        "évaluation interne IB simulation",
+        "groupe 4 IB",
+        "sciences IB en ligne",
+        "EI chimie IB",
+        "EI biologie IB",
+        "laboratoires virtuels Baccalauréat International"
+      ],
+      "date": "2026-07-31",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post52",
+      "slug": "flipped-practical-preloading-lab-skills",
+      "title": "La pratique inversée : arriver à la paillasse compétent",
+      "description": "L'essentiel du temps de laboratoire sert aux consignes, pas à la manipulation. Faire d'abord la séance en simulation transforme une démonstration en véritable investigation.",
+      "keywords": [
+        "travaux pratiques inversés",
+        "classe inversée sciences",
+        "préparation TP par simulation",
+        "temps de laboratoire scolaire",
+        "formation sécurité laboratoire",
+        "enseignement hybride des sciences",
+        "laboratoire virtuel avant les TP",
+        "travaux pratiques obligatoires"
+      ],
+      "date": "2026-07-30",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post51",
+      "slug": "virtual-labs-online-schools-distance-learning",
+      "title": "Laboratoires virtuels pour écoles en ligne : sciences à distance",
+      "description": "Les écoles en ligne enseignent bien toutes les matières, sauf une. Regard honnête sur la façon dont l'enseignement à distance assure les travaux pratiques de sciences, et sur ce qui fonctionne vraiment.",
+      "keywords": [
+        "école en ligne sciences",
+        "travaux pratiques à distance",
+        "laboratoire virtuel enseignement à distance",
+        "accréditation enseignement en ligne",
+        "instruction en famille sciences",
+        "sciences expérimentales à distance",
+        "lycée en ligne sciences",
+        "logiciel de laboratoire virtuel"
+      ],
+      "date": "2026-07-29",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post45",
+      "slug": "meta-quest-education-support-cliff-2030",
+      "title": "Les casques VR de votre école n'ont plus de feuille de route",
+      "description": "Meta a cessé de vendre les casques Quest professionnels en février 2026 et le support s'arrête en janvier 2030. Que faire quand on a déjà un parc VR ?",
+      "keywords": [
+        "Meta Quest établissement scolaire",
+        "Meta for Education",
+        "Horizon Managed Services",
+        "réalité virtuelle en classe",
+        "casques VR pour écoles",
+        "laboratoire virtuel",
+        "laboratoires virtuels multi-appareils",
+        "achat de casques VR en établissement"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post46",
+      "slug": "ai-chatbot-lawsuits-2026-schools",
+      "title": "Procès contre les chatbots IA : ce que 2026 change pour l'école",
+      "description": "Accords de Character.AI, première action d'un État américain et GUARD Act : en 2026, la responsabilité juridique des chatbots devient réelle. Ce que cela implique pour l'IA à l'école.",
+      "keywords": [
+        "proces chatbot IA",
+        "GUARD Act mineurs",
+        "compagnon IA enfants",
+        "IA sure pour les ecoles",
+        "protection de l'enfance IA",
+        "accord Character.AI",
+        "securite tuteur IA",
+        "tuteur IA sans chatbot"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post47",
+      "slug": "neu-survey-ai-critical-thinking-decline",
+      "title": "76 % des enseignants utilisent l'IA. 66 % : l'esprit critique recule",
+      "description": "L'enquête 2026 du NEU montre que 76 % des enseignants utilisent l'IA et que 66 % constatent un recul de l'esprit critique. La réponse : une IA qui fait travailler les élèves.",
+      "keywords": [
+        "NEU State of Education 2026",
+        "IA et esprit critique",
+        "enquête enseignants intelligence artificielle",
+        "politique IA établissement scolaire",
+        "tuteurs IA élèves défavorisés",
+        "délestage cognitif",
+        "intelligence artificielle à l'école",
+        "tuteur IA laboratoire virtuel"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
+      "id": "post44",
+      "slug": "vr-headsets-vs-chromebooks-cost-per-student",
+      "title": "Casques VR ou Chromebooks pour laboratoires virtuels en 2026",
+      "description": "Comparaison honnête du coût par élève en 2026 : les casques VR en classe face aux laboratoires virtuels dans le navigateur des Chromebooks que vous possédez déjà.",
+      "keywords": [
+        "casques VR ou Chromebooks",
+        "coût par élève laboratoire virtuel",
+        "les écoles ont-elles besoin de casques VR",
+        "laboratoires virtuels dans le navigateur",
+        "prix Meta Quest éducation",
+        "coût total de la VR en classe",
+        "WebXR éducation",
+        "laboratoires de sciences virtuels"
+      ],
+      "date": "2026-07-15",
+      "hasFullTranslation": false,
+      "language": "fr"
+    },
+    {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
       "title": "OCDE : évaluer le processus, pas le produit, en sciences",
@@ -2108,6 +2450,177 @@ module.exports = {
   ],
   "es": [
     {
+      "id": "post55",
+      "slug": "student-owned-vr-headsets-school-licence",
+      "title": "Gafas de VR del alumnado: prácticas de ciencias en casa",
+      "description": "Muchos estudiantes ya tienen unas gafas de VR. Si la licencia del centro llega hasta ese equipo, un dispositivo parado se convierte en capacidad real para prácticas de ciencias, sin coste alguno.",
+      "keywords": [
+        "gafas VR alumnos",
+        "BYOD VR centros educativos",
+        "prácticas de laboratorio en casa",
+        "licencia VR para colegios",
+        "realidad virtual educativa",
+        "laboratorios virtuales en casa",
+        "VR sin comprar visores",
+        "deberes inmersivos"
+      ],
+      "date": "2026-08-04",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post54",
+      "slug": "multi-school-group-virtual-lab-rollout",
+      "title": "Cómo implantar laboratorios virtuales en una red de centros",
+      "description": "Comprar tecnología educativa para veinte centros no es comprarla veinte veces. Guía práctica para pilotar, evidenciar y escalar los laboratorios virtuales en una red o grupo de centros.",
+      "keywords": [
+        "tecnología educativa redes de centros",
+        "compra centralizada colegios",
+        "implantación edtech grupo escolar",
+        "laboratorios virtuales para institutos",
+        "piloto de tecnología educativa",
+        "gestión de compras centros educativos",
+        "estrategia de ciencias red de centros",
+        "grupo internacional de colegios"
+      ],
+      "date": "2026-08-03",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post53",
+      "slug": "ib-diploma-science-practicals-virtual-labs",
+      "title": "Ciencias del IB: la simulación en la investigación científica",
+      "description": "El IB permite explícitamente la simulación y la modelización en la investigación científica. Cómo aprovecharla bien y dónde sigue siendo imprescindible el laboratorio real.",
+      "keywords": [
+        "ciencias Programa del Diploma",
+        "investigación científica evaluación interna",
+        "evaluación interna IB simulación",
+        "Grupo 4 IB",
+        "ciencias IB en línea",
+        "EI química IB",
+        "EI biología IB",
+        "laboratorios virtuales Bachillerato Internacional"
+      ],
+      "date": "2026-07-31",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post52",
+      "slug": "flipped-practical-preloading-lab-skills",
+      "title": "La práctica invertida: llegar al laboratorio ya competente",
+      "description": "La mayor parte del tiempo de laboratorio se dedica a explicar, no a hacer. Realizar antes la práctica en simulación convierte una sesión de demostración en una investigación real.",
+      "keywords": [
+        "práctica invertida",
+        "aula invertida ciencias",
+        "preparación de prácticas con simulación",
+        "tiempo de laboratorio escolar",
+        "formación en seguridad de laboratorio",
+        "enseñanza mixta de ciencias",
+        "laboratorios virtuales antes del laboratorio real",
+        "prácticas obligatorias de ciencias"
+      ],
+      "date": "2026-07-30",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post51",
+      "slug": "virtual-labs-online-schools-distance-learning",
+      "title": "Laboratorios virtuales para escuelas online: ciencia a distancia",
+      "description": "Las escuelas online enseñan bien todas las asignaturas salvo una. Un análisis honesto de cómo los centros a distancia resuelven las prácticas de ciencias y qué funciona de verdad.",
+      "keywords": [
+        "escuela online ciencias",
+        "prácticas de laboratorio a distancia",
+        "laboratorio virtual educación online",
+        "acreditación educación online",
+        "educación en casa ciencias",
+        "ciencia experimental remota",
+        "bachillerato online ciencias",
+        "software de laboratorio virtual"
+      ],
+      "date": "2026-07-29",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post45",
+      "slug": "meta-quest-education-support-cliff-2030",
+      "title": "Los visores VR de tu centro se han quedado sin hoja de ruta",
+      "description": "Meta dejó de vender los visores Quest comerciales en febrero de 2026 y el soporte termina en enero de 2030. Qué deberían hacer ahora los centros con flotas de VR.",
+      "keywords": [
+        "Meta Quest en educación",
+        "Meta for Education",
+        "Horizon Managed Services",
+        "realidad virtual en el aula",
+        "visores VR para colegios",
+        "laboratorio virtual",
+        "laboratorios virtuales multidispositivo",
+        "compra de visores VR en centros educativos"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post46",
+      "slug": "ai-chatbot-lawsuits-2026-schools",
+      "title": "Demandas contra chatbots de IA en 2026: qué implican para las aulas",
+      "description": "Acuerdos de Character.AI, la primera demanda estatal y la GUARD Act: en 2026 la responsabilidad legal de los chatbots se volvió real. Qué significa para la IA escolar.",
+      "keywords": [
+        "demandas contra chatbots de IA",
+        "GUARD Act menores",
+        "acompanantes de IA menores",
+        "IA segura para colegios",
+        "proteccion infantil e IA",
+        "acuerdo Character.AI",
+        "seguridad tutor IA",
+        "tutor de IA sin chatbot"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post47",
+      "slug": "neu-survey-ai-critical-thinking-decline",
+      "title": "El 76% de docentes usa IA. El 66% ve caer el pensamiento crítico",
+      "description": "La encuesta 2026 del NEU revela que el 76% del profesorado usa IA y que el 66% observa un deterioro del pensamiento crítico. La solución es una IA que obligue al alumnado a trabajar.",
+      "keywords": [
+        "NEU State of Education 2026",
+        "IA y pensamiento crítico",
+        "encuesta profesorado inteligencia artificial",
+        "política de IA en centros educativos",
+        "tutores de IA alumnado desfavorecido",
+        "descarga cognitiva",
+        "inteligencia artificial en las aulas",
+        "tutor de IA laboratorio virtual"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
+      "id": "post44",
+      "slug": "vr-headsets-vs-chromebooks-cost-per-student",
+      "title": "Cascos VR vs Chromebooks para laboratorios virtuales en 2026",
+      "description": "Comparación honesta del coste por alumno en 2026: cascos de realidad virtual para el aula frente a laboratorios virtuales en el navegador de los Chromebooks que ya tienes.",
+      "keywords": [
+        "cascos VR frente a Chromebooks",
+        "coste por alumno laboratorio virtual",
+        "necesitan las escuelas cascos de realidad virtual",
+        "laboratorios virtuales en el navegador",
+        "precio Meta Quest educación",
+        "coste total realidad virtual en el aula",
+        "WebXR educación",
+        "laboratorios de ciencias virtuales"
+      ],
+      "date": "2026-07-15",
+      "hasFullTranslation": false,
+      "language": "es"
+    },
+    {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
       "title": "OCDE: Evalúa el proceso, no el producto, en ciencias",
@@ -2714,6 +3227,177 @@ module.exports = {
     }
   ],
   "ja": [
+    {
+      "id": "post55",
+      "slug": "student-owned-vr-headsets-school-licence",
+      "title": "生徒所有のVRヘッドセット：自宅で理科の実験を",
+      "description": "多くの生徒はすでにVRヘッドセットを持っています。学校のライセンスをその端末まで広げれば、使われていない民生用機器が追加費用なしで理科実験の実施能力に変わります。",
+      "keywords": [
+        "生徒所有VRヘッドセット",
+        "学校 BYOD VR",
+        "自宅での実験実習",
+        "学校向けVRライセンス",
+        "民生用VR 教育活用",
+        "自宅で使える仮想実験室",
+        "ヘッドセットを買わないVR導入",
+        "没入型の家庭学習"
+      ],
+      "date": "2026-08-04",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post54",
+      "slug": "multi-school-group-virtual-lab-rollout",
+      "title": "学校グループ全体で仮想実験室を導入する方法",
+      "description": "20校分の教育テクノロジーを買うことは、20回買うことと同じではありません。学校グループやネットワーク全体で仮想実験室を試験導入し、効果を裏づけ、拡大するための実践ガイド。",
+      "keywords": [
+        "学校グループ 教育ICT",
+        "一括導入 教育システム",
+        "仮想実験室 導入",
+        "学校法人 ICT調達",
+        "EdTech 試験導入",
+        "理科教育 デジタル化",
+        "学校ネットワーク 導入戦略",
+        "インターナショナルスクール グループ"
+      ],
+      "date": "2026-08-03",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post53",
+      "slug": "ib-diploma-science-practicals-virtual-labs",
+      "title": "IBディプロマ理科：科学的探究とシミュレーション",
+      "description": "IBはディプロマプログラムの科学的探究においてシミュレーションとモデリングを明確に認めています。その効果的な活用法と、実験台が今も欠かせない理由を解説します。",
+      "keywords": [
+        "IBディプロマ 理科",
+        "科学的探究 内部評価",
+        "IB 内部評価 シミュレーション",
+        "IB グループ4",
+        "IB 理科 オンライン",
+        "IB 化学 IA",
+        "IB 生物 IA",
+        "国際バカロレア バーチャルラボ"
+      ],
+      "date": "2026-07-31",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post52",
+      "slug": "flipped-practical-preloading-lab-skills",
+      "title": "反転型実験実習：習熟してから実験台に立つ",
+      "description": "実験室の時間の大半は、実験そのものではなく説明に費やされています。先にシミュレーションで実習を行えば、実演で終わる一コマが本物の探究に変わります。",
+      "keywords": [
+        "反転授業 理科",
+        "実験実習 シミュレーション",
+        "仮想実験室 事前学習",
+        "理科 実験時間",
+        "実験室 安全教育",
+        "ブレンディッドラーニング 理科",
+        "バーチャルラボ 学校",
+        "必修実験 準備"
+      ],
+      "date": "2026-07-30",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post51",
+      "slug": "virtual-labs-online-schools-distance-learning",
+      "title": "オンラインスクールの仮想実験室：遠隔で行う理科の実験",
+      "description": "オンラインスクールはほぼすべての教科をうまく教えられますが、理科の実験だけは別です。遠隔教育の提供者が実験実習をどう実現しているのか、そして何が本当に機能するのかを率直に検証します。",
+      "keywords": [
+        "オンラインスクール 理科",
+        "遠隔教育 実験実習",
+        "仮想実験室 通信制",
+        "オンライン教育 認定制度",
+        "ホームスクーリング 理科",
+        "リモート実験 授業",
+        "通信制高校 理科実験",
+        "バーチャルラボ ソフトウェア"
+      ],
+      "date": "2026-07-29",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post45",
+      "slug": "meta-quest-education-support-cliff-2030",
+      "title": "学校のVRヘッドセット、Metaがロードマップを打ち切り",
+      "description": "Metaは2026年2月に商用版Questヘッドセットの販売を終了し、サポートは2030年1月に終了します。VR機器を導入済みの学校が次に取るべき行動を解説します。",
+      "keywords": [
+        "Meta Quest 学校",
+        "Meta for Education",
+        "Horizon Managed Services",
+        "教育現場のVR",
+        "学校向けVRヘッドセット",
+        "仮想実験室",
+        "デバイス非依存の仮想実験室",
+        "学校のVR機器調達"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post46",
+      "slug": "ai-chatbot-lawsuits-2026-schools",
+      "title": "AIチャットボット訴訟2026：学校のAI選びに何を意味するか",
+      "description": "Character.AIの和解、米国州による初の提訴、そしてGUARD Act。2026年、チャットボットの法的責任は現実になりました。学校で使うAIにとっての意味を解説します。",
+      "keywords": [
+        "AIチャットボット 訴訟",
+        "GUARD Act 未成年",
+        "AIコンパニオン 子ども",
+        "学校向け 安全なAI",
+        "児童保護 AI",
+        "Character.AI 和解",
+        "AI家庭教師 安全性",
+        "チャットなし AIチューター"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post47",
+      "slug": "neu-survey-ai-critical-thinking-decline",
+      "title": "教師の76%がAIを使用。66%が批判的思考の低下を実感",
+      "description": "NEUの2026年調査では、教師の76%がAIを使う一方、66%が生徒の批判的思考の低下を実感しています。答えは、生徒自身に手を動かさせるAIです。",
+      "keywords": [
+        "NEU State of Education 2026",
+        "AI 批判的思考 低下",
+        "教員 AI 利用実態調査",
+        "学校 AI ポリシー",
+        "AIチューター 教育格差",
+        "認知的オフローディング",
+        "学校現場のAI活用",
+        "仮想実験室 AIチューター"
+      ],
+      "date": "2026-07-16",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
+    {
+      "id": "post44",
+      "slug": "vr-headsets-vs-chromebooks-cost-per-student",
+      "title": "VRヘッドセットとChromebook：仮想実験室のコスト比較2026",
+      "description": "2026年の生徒一人あたりコストを正直に比較。教室用VRヘッドセットと、すでに保有しているChromebookのブラウザで動く仮想実験室のどちらが有利か。",
+      "keywords": [
+        "VRヘッドセット Chromebook 比較",
+        "仮想実験室 生徒一人あたりコスト",
+        "学校にVRヘッドセットは必要か",
+        "ブラウザ型仮想実験室",
+        "Meta Quest 教育 価格",
+        "教室VR 総保有コスト",
+        "WebXR 教育活用",
+        "理科 バーチャル実験"
+      ],
+      "date": "2026-07-15",
+      "hasFullTranslation": false,
+      "language": "ja"
+    },
     {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",

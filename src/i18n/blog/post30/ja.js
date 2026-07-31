@@ -199,9 +199,9 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">イギリスの学校：VR科学ラボのために£3,000を獲得</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想ラボ vs 物理ラボ：本当のコスト比較</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会おう：科学を本当に理解するAIチューター</a></li>
-      <li><a href="/blog/data-security-edtech-vendor-questions">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
+      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想ラボ vs 物理ラボ：本当のコスト比較</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会おう：科学を本当に理解するAIチューター</a></li>
+      <li><a href="/jp/blog/edtech-vendor-security-questions-powerschool">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
     </ul>
   </>
 );

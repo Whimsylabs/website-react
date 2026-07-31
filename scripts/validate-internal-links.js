@@ -155,8 +155,13 @@ function validateInternalLinks() {
     
     // Check blog links
     if (url.includes('/blog/') && !url.endsWith('/blog/') && !url.endsWith('/blog')) {
-      // Extract the slug from the URL
-      const blogMatch = url.match(/\/(?:es|fr|de|jp)?\/blog\/([^/?#]+)/);
+      // Extract the slug from the URL. Anchored, and path-only because extractInternalLinks
+      // yields just root-relative URLs (it excludes anything starting with http).
+      // The language segment is optional since English carries no prefix. The previous
+      // pattern made the prefix optional but kept its leading slash, so for English it
+      // required "//blog/..." and therefore never matched — every unprefixed internal
+      // blog link went unvalidated, which is how a stale slug survived undetected.
+      const blogMatch = url.match(/^\/(?:(?:es|fr|de|jp)\/)?blog\/([^/?#]+)/);
       if (blogMatch) {
         const slug = blogMatch[1].replace(/\/$/, ''); // Remove trailing slash
         

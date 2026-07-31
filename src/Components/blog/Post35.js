@@ -2,7 +2,7 @@ import React from "react";
 
 export const title = "Why AI Cannot Misgrade a Pipetting Technique";
 export const date = "2026-03-11";
-export const slug = "ai-grading-fails-process-assessment-works";
+export const slug = "purpose-built-ai-education-difference";
 export const description =
   "AI grading systems fail when interpreting written answers, but process-based assessment of physical actions in virtual labs eliminates ambiguity entirely. Here's why measuring what students do beats parsing what they write.";
 export const keywords = [

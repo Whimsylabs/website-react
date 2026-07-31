@@ -180,7 +180,7 @@ export const content = (
 
     <h3>Datenschutzbedenken sind gewachsen</h3>
     <p>
-      Aufsehenerregende Datenlecks in der EdTech-Branche haben Schulen vorsichtiger im Umgang mit Schülerdaten gemacht. Der <a href="/blog/edtech-vendor-security-questions-powerschool">PowerSchool-Vorfall</a> hat Millionen von Schülerdatensätzen offengelegt und dringende Fragen zu den Sicherheitspraktiken von Anbietern aufgeworfen.
+      Aufsehenerregende Datenlecks in der EdTech-Branche haben Schulen vorsichtiger im Umgang mit Schülerdaten gemacht. Der <a href="/de/blog/edtech-vendor-security-questions-powerschool">PowerSchool-Vorfall</a> hat Millionen von Schülerdatensätzen offengelegt und dringende Fragen zu den Sicherheitspraktiken von Anbietern aufgeworfen.
     </p>
     <p>
       Bei der Bewertung virtueller Laborlösungen sollten Sie deren Datenpraktiken sorgfältig prüfen. Wo werden Schülerdaten gespeichert? Sind sie verschlüsselt? Wer hat Zugriff? Werden Daten zum Trainieren von KI-Modellen verwendet? Entspricht der Anbieter der DSGVO, FERPA und COPPA? Können Sie die Löschung von Daten beantragen, wenn Sie die Plattform verlassen?
@@ -223,7 +223,7 @@ export const content = (
       Wir haben WhimsyLabs mit diesen Prinzipien im Sinn gebaut. Unsere Plattform läuft auf einer echten Physik-Engine, nicht auf geskripteten Animationen. Schüler erleben realistische Ursache und Wirkung. Fehler produzieren falsche Ergebnisse und schaffen Lernmöglichkeiten statt Sackgassen.
     </p>
     <p>
-      Unser KI-Tutor, <a href="/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>, bietet kontextbezogene Anleitung basierend auf dem, was Schüler tatsächlich tun. Er erkennt Frustration und passt seinen Ansatz an. Lehrer behalten die volle Kontrolle über Lernziele und können Experimente mit unserem <a href="/blog/teachers-are-experts-custom-experiment-designer">Experiment-Designer</a> anpassen.
+      Unser KI-Tutor, <a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCat</a>, bietet kontextbezogene Anleitung basierend auf dem, was Schüler tatsächlich tun. Er erkennt Frustration und passt seinen Ansatz an. Lehrer behalten die volle Kontrolle über Lernziele und können Experimente mit unserem <a href="/de/blog/teachers-are-experts-custom-experiment-designer">Experiment-Designer</a> anpassen.
     </p>
     <p>
       Wir priorisieren Web-first-Bereitstellung für maximale Zugänglichkeit, mit VR-Unterstützung für Schulen, die immersive Erfahrungen wünschen. Unsere Plattform integriert sich über LTI mit den wichtigsten Lernmanagementsystemen. Und wir nehmen Datenschutz ernst: isolierte Bereitstellungen pro Schule, vollständige Verschlüsselung, DSGVO- und FERPA-Konformität, und wir verwenden niemals Schülerdaten zum Trainieren von KI-Modellen.
@@ -265,10 +265,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Warum traditionelle virtuelle Labore versagen: Der Unterschied der Physik-Engine</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der Frustration versteht</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle Labore vs. physische Labore: Eine vollständige Kosten-Nutzen-Analyse</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 Fragen, die Sie EdTech-Anbietern zur Datensicherheit stellen sollten</a></li>
+      <li><a href="/de/blog/why-traditional-virtual-labs-fail-physics-engine">Warum traditionelle virtuelle Labore versagen: Der Unterschied der Physik-Engine</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der Frustration versteht</a></li>
+      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle Labore vs. physische Labore: Eine vollständige Kosten-Nutzen-Analyse</a></li>
+      <li><a href="/de/blog/edtech-vendor-security-questions-powerschool">10 Fragen, die Sie EdTech-Anbietern zur Datensicherheit stellen sollten</a></li>
     </ul>
   </>
 );

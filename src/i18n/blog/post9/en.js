@@ -316,12 +316,12 @@ export const content = (
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-done-right-ethical-engagement">
+        <a href="/blog/gamification-science-education-points-rewards-engagement">
           Gamification Done Right: Engaging Students Through Mastery, Not
           Manipulation
         </a>

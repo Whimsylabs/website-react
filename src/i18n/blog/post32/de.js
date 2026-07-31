@@ -189,10 +189,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/ai-assessment-crisis-solution">Die KI-Bewertungskrise: Wie virtuelle Labore eine Lösung bieten</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der beobachtet, was Sie tun</a></li>
-      <li><a href="/blog/how-to-choose-virtual-lab-software-school">Wie Sie die richtige virtuelle Laborsoftware für Ihre Schule auswählen</a></li>
+      <li><a href="/de/blog/ai-assessment-crisis-solution">Die KI-Bewertungskrise: Wie virtuelle Labore eine Lösung bieten</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der beobachtet, was Sie tun</a></li>
+      <li><a href="/de/blog/how-to-choose-virtual-lab-software-school">Wie Sie die richtige virtuelle Laborsoftware für Ihre Schule auswählen</a></li>
     </ul>
   </>
 );

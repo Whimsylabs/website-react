@@ -232,17 +232,17 @@ export const content = (
     <h2>Articles connexes</h2>
     <ul>
       <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
+        <a href="/fr/blog/green-labs-sustainability-virtual-stem-education">
           Laboratoires verts, avenir plus vert : Comment les laboratoires virtuels transforment la durabilité
         </a>
       </li>
       <li>
-        <a href="/blog/stem-teacher-shortage-virtual-labs">
+        <a href="/fr/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
           Répondre à la crise de pénurie d'enseignants STEM avec les laboratoires virtuels
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/fr/blog/ai-powered-virtual-labs-solving-education-crisis">
           Comment les laboratoires virtuels alimentés par l'IA résolvent la crise mondiale de l'éducation scientifique
         </a>
       </li>

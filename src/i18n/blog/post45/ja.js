@@ -1,0 +1,173 @@
+import React from "react";
+export const title = "学校のVRヘッドセット、Metaがロードマップを打ち切り";
+export const description =
+  "Metaは2026年2月に商用版Questヘッドセットの販売を終了し、サポートは2030年1月に終了します。VR機器を導入済みの学校が次に取るべき行動を解説します。";
+export const keywords = [
+  "Meta Quest 学校",
+  "Meta for Education",
+  "Horizon Managed Services",
+  "教育現場のVR",
+  "学校向けVRヘッドセット",
+  "仮想実験室",
+  "デバイス非依存の仮想実験室",
+  "学校のVR機器調達"
+];
+export const content = (
+  <>
+    <p>
+      2026年2月20日、MetaはHorizon Managed Servicesと商用版Questヘッドセットの販売を終了しました（
+      <a
+        href="https://work.meta.com/help/1964851097790493/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Meta, 2026
+      </a>
+      ）。基調講演もプレスツアーもありませんでした。この変更はヘルプセンターの記事として掲載されただけで、学校のIT担当者がデバイス管理関連のニュースを細かく追っていなければ、まったく耳にしていない可能性もあります。しかし、Questヘッドセットを一括導入した学校にとっては、今年最も影響の大きい教育テクノロジー関連の発表の一つです。手元の端末が動いている土台となるプラットフォームに、終了日が設定されたからです。
+    </p>
+
+    <p>
+      私たちはVRヘッドセットで動作する仮想実験室ソフトウェアを開発しており、VRが実験科学を学ぶ優れた手段であるという考えは今も変わりません。だからこそ、この発表はパニックにも黙殺にも走らず、冷静に読み解く価値があります。変わったのは、VRが学校にふさわしいかどうかではありません。変わったのは、購入するハードウェアと、日々頼っている学習ソフトウェアとの関係を、学校がどう捉えるべきかという点です。
+    </p>
+
+    <h2>Metaは実際に何を発表したのか？</h2>
+
+    <p>
+      三つのことが同時に起こりました。第一に、学校や企業がQuestヘッドセットの一括登録・管理・機能制限に使ってきたHorizon Managed Servicesが販売終了となり、既存ライセンスは無料になりました（
+      <a
+        href="https://help.managexr.com/en/articles/13394353-update-meta-horizon-managed-services-will-be-free-starting-feb-20-2026"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ManageXR, 2026
+      </a>
+      ）。第二に、消費者向けではなく法人向け条件で販売されていたMeta Questの商用SKUが、販売終了となりました。第三に、そして計画上最も重要な点として、マネージドサービスのプラットフォーム全体がメンテナンスモードに入りました。Metaは既存顧客向けに<strong>2030年1月4日</strong>まで不具合修正とサポートを約束していますが、新機能は追加されず、Meta自身がその日以降のプラットフォームの挙動について具体的な保証はできないと明言しています（
+      <a
+        href="https://redboxvr.com/meta-horizon-managed-services-update/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RedboxVR, 2026
+      </a>
+      ）。
+    </p>
+
+    <p>
+      これによって誰かのヘッドセットの電源が切られるわけではありません。すでに配備された端末は動き続け、既存の登録もそのまま機能し、管理レイヤーは無料になったので短期的には実質的な節約になります。しかし調達の観点では、このプラットフォームには公表されたサポート期限があり、後継製品は公表されていません。この組み合わせにはIT計画上の呼び名があります。サポートの崖です。
+    </p>
+
+    <h2>なぜ学校にとってとりわけ重要なのか？</h2>
+
+    <p>
+      Metaはこの二年間、教育分野を明確に狙って働きかけてきました。Meta for Educationは、管理されたQuestの導入、教育向けコンテンツ提携、授業運営ツールを学校や大学にもたらしました（
+      <a
+        href="https://www.meta.com/blog/meta-for-education-quest-classroom-educators-vr-mixed-reality/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Meta, 2025
+      </a>
+      ）。その呼びかけに応じた学校は、当時得られる情報の中で妥当な判断を下しました。問題は、学校の調達サイクルが長いことです。2025年に一学級分のヘッドセットを購入した中等学校は、通常その資産を五年から七年かけて使い切る前提で計画します。その期間は、Metaが端末管理の仕組みを支えると約束した時点を、いまや超えてしまいます。
+    </p>
+
+    <p>
+      学校には、企業にはない制約もあります。企業なら週末のあいだに三十台のヘッドセットを再設定し、その混乱を吸収できます。時間割全体にVRを組み込み、複数のクラスで端末を共有し、たった一人の多忙な技術担当者が管理している学校には、それができません。教室において端末管理は付随的なオプションではありません。授業が定刻に始まるか、それとも三十人の生徒がロック解除された消費者向け端末を手にしているかを分けるものです。消費者向けヘッドセットが引き続き購入できるという事実以上に、法人向けプラットフォームの静かな撤退が学校にとって重い理由はここにあります。
+    </p>
+
+    <h2>教育におけるVRは終わったのか？</h2>
+
+    <p>
+      いいえ、そしてその理由を正確に述べておく価値があります。教育学的な根拠は変わっていません。よく設計された没入型の実習が運動技能の転移と学習意欲を支えるという証拠は、今も一月と同じです。変わったのは商業的な事情であって、教育的な事情ではありません。大手ハードウェアベンダー一社が組織向け市場の優先順位を下げた、それだけです。これは業界が以前にも見た型です。私たちは2026年初頭に、メタバース熱の後に続いたプラットフォーム投資の冷え込み、すなわち広い意味での「VRの冬」について書き、そのとき学校にとって強靭な立ち位置とは、特定の端末が淘汰を生き延びるかどうかに依存しないソフトウェアだと論じました。今回の発表は、その主張が予定どおりに現実になったものです。
+    </p>
+
+    <p>
+      撤回されていないものにも触れておく価値があります。消費者向けQuestは引き続き販売され、サードパーティのデバイス管理事業者はQuest端末群のサポートを続けており、他社のヘッドセットメーカーも教育分野に製品を提供し続けています。市場は消滅しているのではなく、集約が進んでいるのです。しかし集約こそ、理科のカリキュラムを一社のロードマップに賭けることが危うくなる局面です。そのロードマップに、あなたの一票は反映されないからです。
+    </p>
+
+    <h2>Quest端末を抱える学校は今、何をすべきか？</h2>
+
+    <p>
+      第一に、何も廃棄しないでください。ヘッドセットは動作しており、管理レイヤーは無料になり、三年半のサポートが約束されています。動いている機材をあわてて置き換えても、教育的な利得はなく費用を浪費するだけです。無料化された期間を有利に使いましょう。
+    </p>
+
+    <p>
+      第二に、2030年という日付を、緊急事態ではなく計画課題であるうちに学校の中期計画へ書き込んでください。うまく対処できる学校は、2030年1月をボイラーの更新時期と同じように扱う学校です。既知の期日として、複数年度に分けて予算化し、選択肢を落ち着いて比較検討するのです。
+    </p>
+
+    <p>
+      第三に、そして最も重要な点として、ハードウェアだけでなくソフトウェアを棚卸ししてください。教員が頼っているVRアプリケーションごとに、問いはひとつです。<strong>このヘッドセットが明日消えたとして、学びは残るでしょうか。</strong>そのアプリケーションが単一のプラットフォームにしか存在しないなら、答えは「いいえ」であり、それを土台にした指導計画はすべてハードウェアの寿命を引き継ぎます。すでに数を揃えている端末でも動くのであれば、答えは「はい」であり、ヘッドセットは本来あるべき姿、すなわち依存先ではなく上乗せの体験に戻ります。
+    </p>
+
+    <h2>ヘッドセットより長持ちする実験ソフトウェアの選び方</h2>
+
+    <p>
+      これはWhimsyLabsが当初から設計の軸に据えてきた問いです。私たちの仮想実験室は、学校がすでに持っているChromebookやPC、Macのブラウザ上で動作し、ヘッドセットがあってより高い没入感を求める場合には同じ実験がVRでも動きます。端末が何であれ、プラットフォームは一つ、アカウントは一つ、カリキュラム対応は一つ、成績ダッシュボードも一つです。完全な物理シミュレーション、安全に設計し失敗できるサンドボックスの自由度、そして各生徒の取り組み方に対するWhimsyCatの評価は、トラックパッドでもヘッドセットでもまったく同じように働きます。それらはハードウェアではなく、シミュレーションの中にあるからです。
+    </p>
+
+    <p>
+      Quest端末を抱える学校にとって、この設計は2030年という問いの意味を変えます。VR体験はヘッドセットが動く限り使い続けられ、やがて端末が寿命を迎えたときも、実験内容も生徒の学習記録も教員の指導計画も、学校が次に使う端末の上でそのまま引き継がれます。それが他社のヘッドセットであっても、ずっとそこにあったChromebookのカートであっても同じです。実験科学の学習環境が、ハードウェアメーカーの戦略部門によって使用期限を決められる必要はありません。デバイスに依存しないプラットフォームであれば、そうはならないのです。
+    </p>
+
+    <h2>投資対象はハードウェアではない</h2>
+
+    <p>
+      2月の発表が突きつける居心地の悪い教訓は、学校がヘッドセットこそ投資でソフトウェアは付属品だと考えるよう促されてきたことです。実際には、持続する価値は逆方向にあります。ヘッドセットは価値が下がり、壊れ、そして今回明らかになったようにロードマップも失います。年月をかけて積み上がるのは、学習コンテンツであり、評価データであり、プラットフォームを軸に育つ教員の指導力です。守るべきものはそちらであり、守る方法は、それらが特定のハードウェアに決して依存しないようにしておくことです。あなたの学校が今後ヘッドセットを買い足すにせよ買わないにせよ、2026年から持ち帰るべき調達の原則はこれです。あらゆる端末で動く学びを買い、ハードウェアは来ては去るものと割り切ることです。
+    </p>
+
+    <>
+      <h2>関連記事</h2>
+      <ul>
+        <li>
+          <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student">
+            VRヘッドセット対Chromebook：2026年の仮想実験室コストガイド
+          </a>
+        </li>
+        <li>
+          <a href="/jp/blog/vr-winter-web-first-virtual-labs">
+            VRの冬？ウェブファーストの仮想実験室が賢明な投資である理由
+          </a>
+        </li>
+        <li>
+          <a href="/jp/blog/how-to-choose-virtual-lab-software-school">
+            中等教育向けバーチャルラボソフトウェア：購入ガイド
+          </a>
+        </li>
+        <li>
+          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+            仮想実験室と実際の実験室：費用対効果の分析
+          </a>
+        </li>
+      </ul>
+    </>
+
+    <div className="references-section">
+      <h3>参考文献</h3>
+      <ul className="references-list">
+        <li key="ref-1">
+          Meta. (2026). Update to Meta Horizon managed services. Meta for Work Help Centre.{" "}
+          <a href="https://work.meta.com/help/1964851097790493/" target="_blank" rel="noopener noreferrer">
+            https://work.meta.com/help/1964851097790493/
+          </a>
+        </li>
+        <li key="ref-2">
+          ManageXR. (2026). Update: Meta Horizon Managed Services will be free starting Feb 20, 2026.{" "}
+          <a href="https://help.managexr.com/en/articles/13394353-update-meta-horizon-managed-services-will-be-free-starting-feb-20-2026" target="_blank" rel="noopener noreferrer">
+            https://help.managexr.com/en/articles/13394353-update-meta-horizon-managed-services-will-be-free-starting-feb-20-2026
+          </a>
+        </li>
+        <li key="ref-3">
+          RedboxVR. (2026). Meta Horizon Managed Services update.{" "}
+          <a href="https://redboxvr.com/meta-horizon-managed-services-update/" target="_blank" rel="noopener noreferrer">
+            https://redboxvr.com/meta-horizon-managed-services-update/
+          </a>
+        </li>
+        <li key="ref-4">
+          Meta. (2025). Introducing Meta for Education: Quest for the classroom.{" "}
+          <a href="https://www.meta.com/blog/meta-for-education-quest-classroom-educators-vr-mixed-reality/" target="_blank" rel="noopener noreferrer">
+            https://www.meta.com/blog/meta-for-education-quest-classroom-educators-vr-mixed-reality/
+          </a>
+        </li>
+      </ul>
+    </div>
+  </>
+);

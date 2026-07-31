@@ -195,10 +195,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/science-real-time-physics-simulations-virtual-labs">バーチャルラボでのリアルタイム物理：学習を楽しくする</a></li>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">従来のバーチャルラボが失敗する理由：物理エンジンの問題</a></li>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">サンドボックス学習革命：失敗する自由が不可欠な理由</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です：カスタム実験デザイナー</a></li>
+      <li><a href="/jp/blog/science-real-time-physics-simulations-virtual-labs">バーチャルラボでのリアルタイム物理：学習を楽しくする</a></li>
+      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">従来のバーチャルラボが失敗する理由：物理エンジンの問題</a></li>
+      <li><a href="/jp/blog/sandbox-learning-revolution-stem-education">サンドボックス学習革命：失敗する自由が不可欠な理由</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です：カスタム実験デザイナー</a></li>
     </ul>
   </>
 );

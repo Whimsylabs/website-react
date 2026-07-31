@@ -247,10 +247,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Warum traditionelle virtuelle Labore versagen: Der Unterschied der Physik-Engine</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle Labore vs. physische Labore: Eine Kosten-Nutzen-Analyse</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der weiß, wenn Sie feststecken</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Lehrer sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/why-traditional-virtual-labs-fail-physics-engine">Warum traditionelle virtuelle Labore versagen: Der Unterschied der Physik-Engine</a></li>
+      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle Labore vs. physische Labore: Eine Kosten-Nutzen-Analyse</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der weiß, wenn Sie feststecken</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrer sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
     </ul>
   </>
 );
