@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="phys" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088.67 794">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="236.34" x2="236.34" y2="435"/>
+  <circle class="cls-2" cx="236.34" cy="449" r="62"/>
+</svg>
