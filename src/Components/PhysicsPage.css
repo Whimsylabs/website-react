@@ -1,5 +1,5 @@
 /* Physics theme for the shared subject-lab system.
-   Layout and the opt-in depth classes live in SubjectLab.css — this file
+   Layout and the opt-in depth classes live in SubjectLab.css, this file
    supplies the subject accent plus every physics-only retune, so nothing here
    can disturb the other subject pages. Both files are imported by
    PhysicsPage.js. */
@@ -19,7 +19,7 @@
   --lab-grid: rgba(217, 119, 6, 0.06);
 }
 
-/* Squared paper on the tint bands — an exercise book, not a flat fill */
+/* Squared paper on the tint bands, an exercise book, not a flat fill */
 .lab-page--physics .lab-band--tint {
   background-image:
     linear-gradient(var(--lab-grid) 1px, transparent 1px),
@@ -38,7 +38,7 @@
 .lab-page--physics .lab-tag:nth-child(2n) { border-color: rgba(20, 183, 255, 0.4); background: rgba(20, 183, 255, 0.08); }
 
 /* Closing CTA gets the site's tiled treatment, bookending the hero.
-   Relative path, not /images/ — css-loader resolves url() as a module. */
+   Relative path, not /images/, css-loader resolves url() as a module. */
 .lab-page--physics .lab-band--tiled {
   background-image:
     linear-gradient(180deg, rgba(31, 25, 104, 0.95) 0%, rgba(31, 25, 104, 0.6) 100%),

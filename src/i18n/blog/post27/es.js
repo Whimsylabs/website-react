@@ -53,7 +53,7 @@ export const content = (
       Esta observación granular es imposible para un docente humano que gestiona una clase completa. Un docente puede notar que un estudiante tiene dificultades, pero no puede rastrear simultáneamente la técnica de cada estudiante en cada momento. La IA sí puede.
     </p>
     <p>
-      La investigación sobre analítica del aprendizaje en la educación científica muestra que los datos de proceso —el registro de cómo los estudiantes abordan los problemas— a menudo predicen los resultados de aprendizaje mejor que solo las respuestas finales (<a href="https://doi.org/10.18608/jla.2021.7325" target="_blank" rel="noopener noreferrer">Sao Pedro et al., 2021</a>).
+      La investigación sobre analítica del aprendizaje en la educación científica muestra que los datos de proceso,el registro de cómo los estudiantes abordan los problemas— a menudo predicen los resultados de aprendizaje mejor que solo las respuestas finales (<a href="https://doi.org/10.18608/jla.2021.7325" target="_blank" rel="noopener noreferrer">Sao Pedro et al., 2021</a>).
     </p>
 
     <h3>Detectar errores de técnica</h3>
@@ -107,7 +107,7 @@ export const content = (
       Hemos construido WhimsyCat para detectar signos de frustración a través de patrones de comportamiento: errores repetidos, movimientos erráticos, pausas largas, abandono de tareas. Pero detectar frustración no es lo mismo que entenderla.
     </p>
     <p>
-      Un docente humano conoce la diferencia entre la lucha productiva —donde un estudiante está desafiado pero comprometido— y la frustración improductiva donde necesitan un enfoque completamente diferente. Pueden percibir cuándo el aliento ayudará y cuándo se sentirá condescendiente. Captan señales sutiles que revelan si un estudiante necesita apoyo académico o apoyo emocional.
+      Un docente humano conoce la diferencia entre la lucha productiva,donde un estudiante está desafiado pero comprometido— y la frustración improductiva donde necesitan un enfoque completamente diferente. Pueden percibir cuándo el aliento ayudará y cuándo se sentirá condescendiente. Captan señales sutiles que revelan si un estudiante necesita apoyo académico o apoyo emocional.
     </p>
     <p>
       La IA puede aproximar algo de esto a través de coincidencia cuidadosa de patrones, pero el matiz de la comprensión emocional sigue siendo fundamentalmente humano.
@@ -148,7 +148,7 @@ export const content = (
       Cuando WhimsyCat detecta estos patrones, ajusta su enfoque. Podría ofrecer una pista más simple, sugerir dar un paso atrás para revisar un concepto, o simplemente reconocer que esto es difícil. "Este paso atrapa a mucha gente. ¿Te gustaría que lo repasemos juntos?"
     </p>
     <p>
-      El objetivo no es prevenir la lucha —que es parte del aprendizaje— sino prevenir la frustración improductiva que lleva a rendirse.
+      El objetivo no es prevenir la lucha,que es parte del aprendizaje— sino prevenir la frustración improductiva que lleva a rendirse.
     </p>
 
     <h3>Deferir a las configuraciones del docente</h3>

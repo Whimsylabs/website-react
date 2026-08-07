@@ -14,22 +14,22 @@ const EXTRA = {
   en: {
     assessmentTitle: "How Does AI Assessment Work in the Physics Lab?",
     assessment1:
-      "WhimsyCat, our AI tutor and assessor, tracks how students set up apparatus, take measurements, and record data — assessing method and measurement technique as students work, not just the numbers they write down afterwards. Follow-up questions use each student's own readings, so generic AI answers don't help.",
+      "WhimsyCat, our AI tutor and assessor, tracks how students set up apparatus, take measurements, and record data, assessing method and measurement technique as students work, not just the numbers they write down afterwards. Follow-up questions use each student's own readings, so generic AI answers don't help.",
     assessment2:
       "There is no student chat window: WhimsyCat infers everything from actions in the lab. Teachers get a skill-by-skill breakdown covering technique, safety, data collection, and scientific communication.",
     faqTitle: "Virtual Physics Lab FAQ",
     faqs: [
       {
         q: "How is this different from physics animations?",
-        a: "Everything runs on a real-time physics engine: masses have weight, liquids splash, and readings vary with technique. Students aren't watching a canned animation — they produce their own imperfect data, which is where the learning happens.",
+        a: "Everything runs on a real-time physics engine: masses have weight, liquids splash, and readings vary with technique. Students aren't watching a canned animation, they produce their own imperfect data, which is where the learning happens.",
       },
       {
         q: "Which physics topics are covered?",
-        a: "Mechanics, electricity and circuits, waves, optics, magnetism, and thermal physics, aligned to KS3, GCSE, A-Level, IB, and AP Physics — with real-time data collection that students can export and analyse.",
+        a: "Mechanics, electricity and circuits, waves, optics, magnetism, and thermal physics, aligned to KS3, GCSE, A-Level, IB, and AP Physics, with real-time data collection that students can export and analyse.",
       },
       {
         q: "Can students investigate their own questions?",
-        a: "Yes — the sandbox lets students change any variable and design their own investigations, and teachers can generate bespoke practicals in minutes with the AI Experiment Builder.",
+        a: "Yes, the sandbox lets students change any variable and design their own investigations, and teachers can generate bespoke practicals in minutes with the AI Experiment Builder.",
       },
     ],
     guideTitle: "Read the Teacher's Guide",
@@ -46,22 +46,22 @@ const EXTRA = {
   es: {
     assessmentTitle: "¿Cómo funciona la evaluación con IA en el laboratorio de física?",
     assessment1:
-      "WhimsyCat, nuestro tutor y evaluador de IA, registra cómo los estudiantes montan los aparatos, toman medidas y anotan datos — evaluando el método y la técnica de medición mientras trabajan, no solo los números que escriben después. Las preguntas de seguimiento usan las lecturas propias de cada estudiante, así que las respuestas genéricas de IA no sirven.",
+      "WhimsyCat, nuestro tutor y evaluador de IA, registra cómo los estudiantes montan los aparatos, toman medidas y anotan datos, evaluando el método y la técnica de medición mientras trabajan, no solo los números que escriben después. Las preguntas de seguimiento usan las lecturas propias de cada estudiante, así que las respuestas genéricas de IA no sirven.",
     assessment2:
       "No hay ventana de chat para estudiantes: WhimsyCat lo infiere todo a partir de las acciones en el laboratorio. El profesorado recibe un desglose por competencia: técnica, seguridad, recogida de datos y comunicación científica.",
     faqTitle: "Preguntas frecuentes sobre el laboratorio virtual de física",
     faqs: [
       {
         q: "¿En qué se diferencia de las animaciones de física?",
-        a: "Todo funciona sobre un motor de física en tiempo real: las masas pesan, los líquidos salpican y las lecturas varían según la técnica. Los estudiantes no ven una animación enlatada — generan sus propios datos imperfectos, que es donde ocurre el aprendizaje.",
+        a: "Todo funciona sobre un motor de física en tiempo real: las masas pesan, los líquidos salpican y las lecturas varían según la técnica. Los estudiantes no ven una animación enlatada, generan sus propios datos imperfectos, que es donde ocurre el aprendizaje.",
       },
       {
         q: "¿Qué temas de física se cubren?",
-        a: "Mecánica, electricidad y circuitos, ondas, óptica, magnetismo y física térmica, alineados con KS3, GCSE, A-Level, IB y AP Physics — con recogida de datos en tiempo real que los estudiantes pueden exportar y analizar.",
+        a: "Mecánica, electricidad y circuitos, ondas, óptica, magnetismo y física térmica, alineados con KS3, GCSE, A-Level, IB y AP Physics, con recogida de datos en tiempo real que los estudiantes pueden exportar y analizar.",
       },
       {
         q: "¿Pueden los estudiantes investigar sus propias preguntas?",
-        a: "Sí — el sandbox permite cambiar cualquier variable y diseñar investigaciones propias, y el profesorado puede generar prácticas a medida en minutos con el Diseñador de Experimentos con IA.",
+        a: "Sí, el sandbox permite cambiar cualquier variable y diseñar investigaciones propias, y el profesorado puede generar prácticas a medida en minutos con el Diseñador de Experimentos con IA.",
       },
     ],
     guideTitle: "Lea la guía para docentes",
@@ -78,22 +78,22 @@ const EXTRA = {
   fr: {
     assessmentTitle: "Comment fonctionne l'évaluation par IA dans le laboratoire de physique ?",
     assessment1:
-      "WhimsyCat, notre tuteur et évaluateur IA, suit la façon dont les élèves montent le matériel, prennent leurs mesures et consignent leurs données — en évaluant la méthode et la technique de mesure pendant le travail, pas seulement les chiffres notés ensuite. Les questions de suivi utilisent les relevés propres à chaque élève : les réponses génériques d'une IA ne servent à rien.",
+      "WhimsyCat, notre tuteur et évaluateur IA, suit la façon dont les élèves montent le matériel, prennent leurs mesures et consignent leurs données, en évaluant la méthode et la technique de mesure pendant le travail, pas seulement les chiffres notés ensuite. Les questions de suivi utilisent les relevés propres à chaque élève : les réponses génériques d'une IA ne servent à rien.",
     assessment2:
       "Il n'y a pas de fenêtre de discussion pour les élèves : WhimsyCat déduit tout de leurs actions dans le laboratoire. Les enseignants reçoivent un bilan compétence par compétence : technique, sécurité, collecte de données et communication scientifique.",
     faqTitle: "FAQ du laboratoire virtuel de physique",
     faqs: [
       {
         q: "Quelle différence avec des animations de physique ?",
-        a: "Tout repose sur un moteur physique en temps réel : les masses ont un poids, les liquides éclaboussent, les mesures varient selon la technique. Les élèves ne regardent pas une animation préenregistrée — ils produisent leurs propres données imparfaites, et c'est là que se joue l'apprentissage.",
+        a: "Tout repose sur un moteur physique en temps réel : les masses ont un poids, les liquides éclaboussent, les mesures varient selon la technique. Les élèves ne regardent pas une animation préenregistrée, ils produisent leurs propres données imparfaites, et c'est là que se joue l'apprentissage.",
       },
       {
         q: "Quels chapitres de physique sont couverts ?",
-        a: "Mécanique, électricité et circuits, ondes, optique, magnétisme et physique thermique, en correspondance avec les programmes KS3, GCSE, A-Level, IB et AP Physics — avec une collecte de données en temps réel que les élèves peuvent exporter et analyser.",
+        a: "Mécanique, électricité et circuits, ondes, optique, magnétisme et physique thermique, en correspondance avec les programmes KS3, GCSE, A-Level, IB et AP Physics, avec une collecte de données en temps réel que les élèves peuvent exporter et analyser.",
       },
       {
         q: "Les élèves peuvent-ils explorer leurs propres questions ?",
-        a: "Oui — le bac à sable permet de modifier n'importe quelle variable et de concevoir ses propres investigations, et les enseignants peuvent générer des TP sur mesure en quelques minutes avec le générateur d'expériences IA.",
+        a: "Oui, le bac à sable permet de modifier n'importe quelle variable et de concevoir ses propres investigations, et les enseignants peuvent générer des TP sur mesure en quelques minutes avec le générateur d'expériences IA.",
       },
     ],
     guideTitle: "Lire le guide de l'enseignant",
@@ -110,22 +110,22 @@ const EXTRA = {
   de: {
     assessmentTitle: "Wie funktioniert die KI-Bewertung im Physiklabor?",
     assessment1:
-      "WhimsyCat, unser KI-Tutor und -Prüfer, verfolgt, wie Schülerinnen und Schüler Apparaturen aufbauen, Messungen durchführen und Daten erfassen — bewertet werden Methode und Messtechnik während der Arbeit, nicht nur die später notierten Zahlen. Folgefragen nutzen die eigenen Messwerte der Lernenden, sodass generische KI-Antworten nicht weiterhelfen.",
+      "WhimsyCat, unser KI-Tutor und -Prüfer, verfolgt, wie Schülerinnen und Schüler Apparaturen aufbauen, Messungen durchführen und Daten erfassen, bewertet werden Methode und Messtechnik während der Arbeit, nicht nur die später notierten Zahlen. Folgefragen nutzen die eigenen Messwerte der Lernenden, sodass generische KI-Antworten nicht weiterhelfen.",
     assessment2:
       "Es gibt kein Chatfenster für Lernende: WhimsyCat leitet alles aus den Handlungen im Labor ab. Lehrkräfte erhalten eine Aufschlüsselung nach Kompetenzen: Technik, Sicherheit, Datenerfassung und wissenschaftliche Kommunikation.",
     faqTitle: "FAQ zum virtuellen Physiklabor",
     faqs: [
       {
         q: "Worin unterscheidet sich das von Physik-Animationen?",
-        a: "Alles läuft auf einer Echtzeit-Physik-Engine: Massen haben Gewicht, Flüssigkeiten spritzen, Messwerte streuen je nach Technik. Die Lernenden schauen keine vorgefertigte Animation an — sie erzeugen ihre eigenen, unvollkommenen Daten, und genau dort findet das Lernen statt.",
+        a: "Alles läuft auf einer Echtzeit-Physik-Engine: Massen haben Gewicht, Flüssigkeiten spritzen, Messwerte streuen je nach Technik. Die Lernenden schauen keine vorgefertigte Animation an, sie erzeugen ihre eigenen, unvollkommenen Daten, und genau dort findet das Lernen statt.",
       },
       {
         q: "Welche Physikthemen werden abgedeckt?",
-        a: "Mechanik, Elektrizität und Stromkreise, Wellen, Optik, Magnetismus und Wärmelehre, ausgerichtet auf KS3, GCSE, A-Level, IB und AP Physics — mit Datenerfassung in Echtzeit, die Lernende exportieren und auswerten können.",
+        a: "Mechanik, Elektrizität und Stromkreise, Wellen, Optik, Magnetismus und Wärmelehre, ausgerichtet auf KS3, GCSE, A-Level, IB und AP Physics, mit Datenerfassung in Echtzeit, die Lernende exportieren und auswerten können.",
       },
       {
         q: "Können Lernende eigene Fragestellungen untersuchen?",
-        a: "Ja — im Sandbox-Modus lässt sich jede Variable verändern und eine eigene Untersuchung entwerfen; Lehrkräfte können mit dem KI-Experiment-Designer in Minuten maßgeschneiderte Praktika erstellen.",
+        a: "Ja, im Sandbox-Modus lässt sich jede Variable verändern und eine eigene Untersuchung entwerfen; Lehrkräfte können mit dem KI-Experiment-Designer in Minuten maßgeschneiderte Praktika erstellen.",
       },
     ],
     guideTitle: "Lehrkräfte-Leitfaden lesen",
@@ -192,7 +192,7 @@ const PHYS_EXTRA = {
   engineText1:
     "Most virtual physics is a recording. Drag the slider and the pre-drawn result plays back, correct every time, because the answer was decided when the animation was made rather than by anything the student did.",
   engineText2:
-    "Ours runs on a real-time physics engine. Masses have weight, pendulums lose energy to the air, and a badly clamped ruler gives a badly measured result — so students produce their own imperfect data and have to reason about why it is imperfect.",
+    "Ours runs on a real-time physics engine. Masses have weight, pendulums lose energy to the air, and a badly clamped ruler gives a badly measured result, so students produce their own imperfect data and have to reason about why it is imperfect.",
   engineNote:
     "Apparatus is manipulated directly rather than configured through a form, so setting up the experiment is part of the experiment.",
   enginePoints: [
@@ -204,7 +204,7 @@ const PHYS_EXTRA = {
   detailWhat: "What students do",
   details: {
     circuits: {
-      what: "Build the circuit component by component, then measure it — with a voltmeter that loads the circuit and a lamp that dims when you add another in series.",
+      what: "Build the circuit component by component, then measure it, with a voltmeter that loads the circuit and a lamp that dims when you add another in series.",
       skills: ["Circuit assembly", "Meter placement", "Reading accuracy", "Fault finding"],
     },
     mechanics: {
@@ -258,7 +258,7 @@ const PhysicsPage = ({ t, language }) => {
   const eb = PHYS_EXTRA.eyebrows;
   const pageRef = useRef(null);
 
-  // Progressive enhancement only — the page is complete without this running.
+  // Progressive enhancement only, the page is complete without this running.
   useEffect(() => initSubjectLab(pageRef.current), []);
 
   // hue colours the selected tab and skill fills; soft tints the panel badge
@@ -305,7 +305,7 @@ const PhysicsPage = ({ t, language }) => {
                   </g>
                 </g>
 
-                {/* Load — origin is the top of the wire, so it swings as a pendulum */}
+                {/* Load, origin is the top of the wire, so it swings as a pendulum */}
                 <g data-hoist-load transform={`translate(${CX},${TOP + 26})`}>
                   <line x1="0" y1="0" x2="0" y2="15" stroke="currentColor" strokeWidth="4" />
                   <rect x="-23" y="11" width="46" height="9" rx="2" fill="currentColor" />
@@ -389,7 +389,7 @@ const PhysicsPage = ({ t, language }) => {
                   style={{ marginTop: "18px", "--poster": "url(/images/handGrabbingSmall.png)" }}
                 >
                   <span className="lab-video-play" aria-hidden="true"></span>
-                  <span className="lab-video-label">VIDEO — LAB WALKTHROUGH</span>
+                  <span className="lab-video-label">VIDEO, LAB WALKTHROUGH</span>
                 </div>
               </div>
             </div>
@@ -491,7 +491,7 @@ const PhysicsPage = ({ t, language }) => {
               <h3 className="lab-faq-q" style={{ marginTop: "34px" }}>{extra.moreTitle}</h3>
               <ul className="lab-more">
                 {extra.more.map((m) => (
-                  <li key={m.name}><b>{m.name}</b> — {m.note}</li>
+                  <li key={m.name}><b>{m.name}</b>, {m.note}</li>
                 ))}
               </ul>
             </div>
@@ -667,7 +667,7 @@ const PhysicsPage = ({ t, language }) => {
           </div>
         </section>
 
-        {/* ---- FAQ — native disclosures, so the tail of the page keeps an
+        {/* ---- FAQ, native disclosures, so the tail of the page keeps an
              interaction without any JS ---- */}
         <section className="lab-band lab-band--tint lab-band--pad" data-lab-band="light" data-lab-section>
           <div className="container">

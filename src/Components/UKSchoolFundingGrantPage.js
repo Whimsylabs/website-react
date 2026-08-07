@@ -95,7 +95,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
             <p className="rsg-hero-subtitle">
               <strong>No competitive application needed.</strong>
               <br />
-              UK state schools can fund WhimsyLabs from budgets they already hold — Pupil Premium and the notional SEN budget — as a documented, evidence-based spending decision.
+              UK state schools can fund WhimsyLabs from budgets they already hold, Pupil Premium and the notional SEN budget, as a documented, evidence-based spending decision.
             </p>
             <div className="rsg-hero-badges">
               <div className="rsg-badge rsg-badge-primary">
@@ -138,7 +138,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
           <h2>Allocate, Don't Apply</h2>
           <p className="rsg-section-description">
             These aren't grants you win in a competition. <strong>Pupil Premium and the notional SEN budget are discretionary
-            funds every English state school already holds.</strong> You decide how to spend them — so funding WhimsyLabs is simply a
+            funds every English state school already holds.</strong> You decide how to spend them, so funding WhimsyLabs is simply a
             documented, evidence-based spending decision, not an external bid.
           </p>
 
@@ -146,7 +146,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
             <div className="rsg-info-card">
               <div className="rsg-info-icon">💷</div>
               <h3>Budgets You Already Hold</h3>
-              <p>Pupil Premium and the notional SEN budget sit in your school's own funding — no awarding body, no deadline, no competition.</p>
+              <p>Pupil Premium and the notional SEN budget sit in your school's own funding, no awarding body, no deadline, no competition.</p>
             </div>
             <div className="rsg-info-card">
               <div className="rsg-info-icon">📊</div>
@@ -168,7 +168,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
           <h2>Funding WhimsyLabs from Pupil Premium</h2>
           <p className="rsg-section-description">
             Pupil Premium is additional funding to improve outcomes for disadvantaged pupils in England. The DfE's official
-            "menu of approaches" explicitly allows spending on <strong>"technology to support high-quality teaching — for example,
+            "menu of approaches" explicitly allows spending on <strong>"technology to support high-quality teaching, for example,
             software to support diagnostic assessment."</strong> Instructional science software like WhimsyLabs is an allowable
             Pupil Premium spend when it benefits disadvantaged pupils.
           </p>
@@ -178,13 +178,13 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
               <div className="rsg-package-icon">💷</div>
               <h3>2026–27 Per-Pupil Rates (England)</h3>
               <ul>
-                <li><strong>£1,550</strong> — FSM Ever-6, primary</li>
-                <li><strong>£1,100</strong> — FSM Ever-6, secondary</li>
-                <li><strong>£2,690</strong> — Looked-after / previously-looked-after children</li>
-                <li><strong>£360</strong> — Service Pupil Premium</li>
+                <li><strong>£1,550</strong>, FSM Ever-6, primary</li>
+                <li><strong>£1,100</strong>, FSM Ever-6, secondary</li>
+                <li><strong>£2,690</strong>, Looked-after / previously-looked-after children</li>
+                <li><strong>£360</strong>, Service Pupil Premium</li>
               </ul>
               <p className="rsg-package-highlight">
-                <strong>💡 Note:</strong> These rates are set per eligible pupil — your total Pupil Premium allocation depends on
+                <strong>💡 Note:</strong> These rates are set per eligible pupil, your total Pupil Premium allocation depends on
                 how many pupils qualify at your school.
               </p>
             </div>
@@ -194,7 +194,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
               <ul>
                 <li><strong>Supports high-quality teaching:</strong> curriculum-aligned virtual chemistry, biology and physics labs</li>
                 <li><strong>Benefits disadvantaged pupils:</strong> hands-on practical science without the cost barrier of physical kit</li>
-                <li><strong>Runs on what schools have:</strong> browser-based and Chromebook-friendly — no expensive hardware needed</li>
+                <li><strong>Runs on what schools have:</strong> browser-based and Chromebook-friendly, no expensive hardware needed</li>
                 <li><strong>AI tutor support:</strong> targeted, individualised help that closes gaps for pupils who need it most</li>
                 <li><strong>Evidence-ready:</strong> we provide research summaries to underpin your Pupil Premium strategy statement</li>
               </ul>
@@ -219,7 +219,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
               <div className="rsg-feature-number">♿</div>
               <h4>Built for Accessibility</h4>
               <p>
-                Designed with SEND in mind — adjustable pacing, clear visuals, audio support and a calm, low-pressure
+                Designed with SEND in mind, adjustable pacing, clear visuals, audio support and a calm, low-pressure
                 environment that lets every pupil take part in practical science.
               </p>
             </div>
@@ -227,7 +227,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
               <div className="rsg-feature-number">🤖</div>
               <h4>Patient AI Tutor</h4>
               <p>
-                An always-available AI tutor gives individualised, step-by-step guidance — ideal for pupils who benefit from
+                An always-available AI tutor gives individualised, step-by-step guidance, ideal for pupils who benefit from
                 repetition and one-to-one style support.
               </p>
             </div>
@@ -235,7 +235,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
               <div className="rsg-feature-number">🧪</div>
               <h4>Safe, Repeatable Practicals</h4>
               <p>
-                Pupils can repeat experiments as many times as they need, with no risk and no consumable cost — removing
+                Pupils can repeat experiments as many times as they need, with no risk and no consumable cost, removing
                 barriers that often exclude SEND learners from the lab.
               </p>
             </div>
@@ -251,7 +251,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
               <div className="rsg-feature-number">🥽</div>
               <h4>VR-Capable When Helpful</h4>
               <p>
-                For pupils who engage better through immersion, the same labs are VR-capable — an inclusive option, never a
+                For pupils who engage better through immersion, the same labs are VR-capable, an inclusive option, never a
                 requirement.
               </p>
             </div>
@@ -345,7 +345,7 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
           <h2>Get Your School Funding Pack</h2>
           <p className="rsg-contact-description">
             Tell us a little about your school and we'll send evidence summaries, a value-for-money case, and ready-to-use
-            wording for your Pupil Premium or SEN documentation — usually within 48 hours.
+            wording for your Pupil Premium or SEN documentation, usually within 48 hours.
           </p>
 
           <form className="rsg-contact-form" onSubmit={handleSubmit}>
@@ -443,10 +443,10 @@ const UKSchoolFundingGrantPage = ({ language = "en" }) => {
       {/* Final CTA Section */}
       <BubbleContainer>
         <section className="rsg-cta-section">
-          <h2>Already Funded — Just Allocate It</h2>
+          <h2>Already Funded, Just Allocate It</h2>
           <p>
             The money is already in your school's hands. WhimsyLabs gives you the evidence and value-for-money case to spend
-            Pupil Premium or SEN budget on accessible, curriculum-aligned virtual science — confidently and defensibly.
+            Pupil Premium or SEN budget on accessible, curriculum-aligned virtual science, confidently and defensibly.
           </p>
           <div className="rsg-cta-buttons">
             <a href="#enquire" className="btn rsg-cta-primary">

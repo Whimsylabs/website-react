@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Features.css";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -15,7 +15,7 @@ import initFeatureLab from "./featureLab";
  * WhimsyLabs 2026 flyer (docs/WhimsyFlyer_2026-compressed-1.pdf); the grading
  * panel numbers in the assessment mockup are the flyer's own screenshots.
  *
- * English-only on purpose, like the page it replaces — the showcase and flyer
+ * English-only on purpose, like the page it replaces, the showcase and flyer
  * copy render identically for every language until a translation pass is due.
  */
 
@@ -27,7 +27,7 @@ const REAGENTS = [
   { id: "featD", from: "#ffd77a", to: "#f59e0b" },
 ];
 
-/* Small stroked glyphs for the showcase tabs — drawn to sit at 24px */
+/* Small stroked glyphs for the showcase tabs, drawn to sit at 24px */
 const GLYPHS = {
   cat: (
     <g fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round">
@@ -74,7 +74,7 @@ const GLYPHS = {
   ),
 };
 
-/* The six-feature showcase. `videoId` only where a real product video exists —
+/* The six-feature showcase. `videoId` only where a real product video exists,
    everything else shows an in-app capture instead of a placeholder embed. */
 const SHOWCASE = [
   {
@@ -87,7 +87,7 @@ const SHOWCASE = [
     videoId: "9D2e2e2gzvk",
     badge: "Video demo",
     description:
-      "WhimsyCat watches how students work — technique, safety, and procedure — and offers guidance based on their actions. There is no student chat window: pupils never type prompts and never receive generated text.",
+      "WhimsyCat watches how students work, technique, safety, and procedure, and offers guidance based on their actions. There is no student chat window: pupils never type prompts and never receive generated text.",
     blogLink: "/blog/whimsycat-ai-tutor-transforming-science-education/",
   },
   {
@@ -112,7 +112,7 @@ const SHOWCASE = [
     shot: "/images/finalLab.png",
     badge: "In-app capture",
     description:
-      "A proprietary physicality-first engine simulates fluids, heat, and molecular behaviour in real time — down to temperature perturbations, impurities, and deviation between samples.",
+      "A proprietary physicality-first engine simulates fluids, heat, and molecular behaviour in real time, down to temperature perturbations, impurities, and deviation between samples.",
     blogLink: "/blog/why-traditional-virtual-labs-fail-physics-engine/",
   },
   {
@@ -124,7 +124,7 @@ const SHOWCASE = [
     shot: "/images/handGrabbingSmall.png",
     badge: "In-app capture",
     description:
-      "True hand representation across all devices. Develop genuine muscle memory through precise interactions — pouring, swirling, focusing — that transfer directly to physical laboratories.",
+      "True hand representation across all devices. Develop genuine muscle memory through precise interactions, pouring, swirling, focusing, that transfer directly to physical laboratories.",
     blogLink: "/blog/virtual-reality-prepares-students-real-world-stem-careers/",
   },
   {
@@ -149,7 +149,7 @@ const SHOWCASE = [
     shot: "/images/Challenges.jpg",
     badge: "In-app capture",
     description:
-      "Runs on VR headsets, desktops, Chromebooks, tablets, and phones, with a low-bandwidth mode that keeps lessons running on unstable school internet connections.",
+      "Runs on VR headsets, desktops, Chromebooks, with a low-bandwidth mode that keeps lessons running on unstable school internet connections.",
     blogLink: "/blog/vr-headsets-vs-chromebooks-cost-per-student/",
   },
 ];
@@ -179,8 +179,8 @@ const AWARDS = [
   {
     img: "/images/kids_judge_bett.png",
     mono: null,
-    title: "BETT 2025 Kids Judge Award — Winner",
-    note: "“Best Science Lab (Start Up)” — judged by the people who matter most: the kids.",
+    title: "BETT 2025 Kids Judge Award, Winner",
+    note: "“Best Science Lab (Start Up)”, judged by the people who matter most: the kids.",
   },
   {
     img: null,
@@ -200,21 +200,32 @@ const AWARDS = [
 const FeaturesPage = ({ language }) => {
   const pageRef = useRef(null);
 
-  // Progressive enhancement only — the page is complete without this running.
+  // The page's own reduced-motion switch, the same control students get in
+  // the lab. Toggling re-initialises every interactive module in calm mode.
+  // It only ever ADDS calm: an OS-level reduced-motion preference is always
+  // honoured regardless of the checkbox.
+  const [calm, setCalm] = useState(false);
+  const [osReduced, setOsReduced] = useState(false);
+
   useEffect(() => {
-    const offLab = initSubjectLab(pageRef.current);
-    const offFeat = initFeatureLab(pageRef.current);
+    setOsReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }, []);
+
+  // Progressive enhancement only, the page is complete without this running.
+  useEffect(() => {
+    const offLab = initSubjectLab(pageRef.current, { forceReduced: calm });
+    const offFeat = initFeatureLab(pageRef.current, { forceReduced: calm });
     return () => {
       offLab();
       offFeat();
     };
-  }, []);
+  }, [calm]);
 
   const BENCH = ["erlenmeyer", "beaker", "roundFlask", "wideBeaker", "testTube"];
   const GRADS = ["featA", "featB", "featC", "featD"];
 
   return (
-    <main className="lab-page lab-page--features" ref={pageRef}>
+    <main className={`lab-page lab-page--features${calm ? " lab-calm" : ""}`} ref={pageRef}>
       <Header language={language} />
 
       {/* Liquid gradients live once, here, so any vessel on the page can
@@ -241,7 +252,7 @@ const FeaturesPage = ({ language }) => {
               <h1 className="lab-hero-title">AI Science Tutor &amp; Virtual Lab Features</h1>
               <p className="lab-hero-sub">
                 Stop clicking, start doing. WhimsyLabs isn&rsquo;t just a simulator
-                — it&rsquo;s a playground of particles: the only virtual lab that
+               , it&rsquo;s a playground of particles: the only virtual lab that
                 builds true muscle memory while saving teachers hours of marking
                 time.
               </p>
@@ -249,7 +260,7 @@ const FeaturesPage = ({ language }) => {
               <ul className="feat-ticks">
                 <li>Real physics, not animations</li>
                 <li>Grades the doing, not the typing</li>
-                <li>No student chat window — by design</li>
+                <li>No student chat window, by design</li>
               </ul>
               <div className="lab-hero-cta">
                 <a href={getLocalizedPath("/contact/", language)} className="lab-btn">
@@ -264,7 +275,7 @@ const FeaturesPage = ({ language }) => {
               </p>
             </div>
 
-            {/* A shelf of glassware holding live liquid — stir it */}
+            {/* A shelf of glassware holding live liquid, stir it */}
             <div className="lab-rack feat-shelf" aria-hidden="true">
               <div className="feat-shelf-row">
                 <Glassware name="erlenmeyer" id="hero-erlenmeyer" variant="outline" gradient="featA" />
@@ -346,7 +357,7 @@ const FeaturesPage = ({ language }) => {
                           <div className="feat-embed">
                             <iframe
                               src={`https://www.youtube.com/embed/${f.videoId}`}
-                              title={`${f.title} — WhimsyLabs demo`}
+                              title={`${f.title}, WhimsyLabs demo`}
                               loading="lazy"
                               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                               allowFullScreen
@@ -371,8 +382,11 @@ const FeaturesPage = ({ language }) => {
         <section className="lab-band lab-band--tint" data-lab-band="light" data-lab-section>
           <div className="container">
             <div className="animate-on-scroll" style={{ paddingTop: "72px" }}>
+              {/* Each claim lights up in the house magenta the first time the
+                  visitor proves it in the drop zone below */}
               <p className="lab-pull">
-                If they drop a beaker, it breaks. If they overheat a compound, it reacts.
+                <span data-pull-break>If they drop a beaker, it breaks.</span>{" "}
+                <span data-pull-heat>If they overheat a compound, it reacts.</span>
               </p>
             </div>
             <div className="section-grid">
@@ -381,7 +395,7 @@ const FeaturesPage = ({ language }) => {
                 <h2 className="section-title">Muscle Memory Forged in Simulations, Not Mouse-Driven Animations</h2>
                 <p className="section-text">
                   Unlike &ldquo;slide-show&rdquo; simulators, our engine replicates the
-                  chaos and weight of the real world — down to temperature
+                  chaos and weight of the real world, down to temperature
                   perturbations, impurities, and deviation between samples.
                   Whether pouring titration fluids in VR or adjusting microscope
                   focus on a Chromebook, students must use fine motor skills and
@@ -389,7 +403,7 @@ const FeaturesPage = ({ language }) => {
                 </p>
                 <p className="section-text">
                   This freedom to fail builds resilience and a genuine
-                  understanding of laboratory risks — read more about{" "}
+                  understanding of laboratory risks, read more about{" "}
                   <a href={getLocalizedPath("/blog/physicality-in-virtual-labs/", language)}>
                     why physicality matters in virtual labs
                   </a>.
@@ -406,7 +420,7 @@ const FeaturesPage = ({ language }) => {
                     <line x1="33" y1="18" x2="107" y2="18" stroke="currentColor" strokeWidth="6" strokeLinecap="round" />
                     <line x1="12" y1="134" x2="128" y2="134" stroke="currentColor" strokeWidth="4" />
                   </svg>
-                  <p className="feat-drop-hint">Go on — drop it.</p>
+                  <p className="feat-drop-hint">Go on, drop it.</p>
                   <div className="lab-readout" data-drop-readout>0 beakers broken · £0.00 in damages</div>
                 </div>
               </div>
@@ -441,7 +455,7 @@ const FeaturesPage = ({ language }) => {
                         </tr>
                         <tr>
                           <th scope="row">The data you collect</th>
-                          <td className="lab-col-win">Yours — scatter and all</td>
+                          <td className="lab-col-win">Yours, scatter and all</td>
                           <td className="lab-col-alt">Identical every run</td>
                         </tr>
                         <tr>
@@ -455,7 +469,7 @@ const FeaturesPage = ({ language }) => {
                 </div>
               </div>
               <p className="feat-versus-note">
-                Even the sceptics land here — see{" "}
+                Even the sceptics land here, see{" "}
                 <a href={getLocalizedPath("/blog/edtech-critics-right-passive-learning-vs-active-labs/", language)}>
                   why the edtech critics are half right about passive learning
                 </a>.
@@ -512,14 +526,14 @@ const FeaturesPage = ({ language }) => {
                 <h2 className="section-title">How Does WhimsyLabs Make Assessment AI-Proof?</h2>
                 <p className="section-text">
                   WhimsyLabs grades the process, not just the result. We track
-                  physical inputs inside the lab — equipment handling, technique,
-                  and reaction times — which generative AI cannot simulate.
+                  physical inputs inside the lab, equipment handling, technique,
+                  and reaction times, which generative AI cannot simulate.
                   Follow-up questions are tied to each student&rsquo;s unique
                   experimental data (&ldquo;At what pH did <em>your</em> indicator
                   change colour?&rdquo;), so generic AI answers are no help.
                 </p>
                 <p className="section-text">
-                  WhimsyCat has no student chat window — it infers everything
+                  WhimsyCat has no student chat window, it infers everything
                   from actions in the lab, which is how WhimsyLabs meets{" "}
                   <a href={getLocalizedPath("/blog/dfe-ai-safety-standards-tutor-checklist/", language)}>
                     the DfE&rsquo;s AI safety expectations by design
@@ -533,16 +547,16 @@ const FeaturesPage = ({ language }) => {
 
             {/* The concept, demonstrated on the reader: WhimsyCat grades this
                 visit from actions alone. Ships with resting scores; JS updates
-                them as the visitor stirs, explores, reads — and drops things. */}
+                them as the visitor stirs, explores, reads, and drops things. */}
             <div className="feat-watch animate-on-scroll">
               <div className="mockup-container" data-feat-watch>
                 <div className="mockup-header">
                   <span className="mockup-title">WhimsyCat · grading this visit</span>
-                  <span className="mockup-badge">Live — from your actions</span>
+                  <span className="mockup-badge">Live, from your actions</span>
                 </div>
                 <div className="mockup-content">
                   <div className="feat-watch-grid">
-                    {/* The assessor, on duty — featureLab tilts it toward the
+                    {/* The assessor, on duty, featureLab tilts it toward the
                         cursor and lets it react to what it observes */}
                     <div className="feat-watch-cat" data-watch-cat>
                       <img src="/images/Cat_only2.svg" alt="" loading="lazy" />
@@ -571,7 +585,7 @@ const FeaturesPage = ({ language }) => {
                 </div>
               </div>
               <p className="feat-watch-note">
-                No chat window, no typing — scored from actions alone, exactly
+                No chat window, no typing, scored from actions alone, exactly
                 like the real thing. In the real lab, WhimsyCat even{" "}
                 <a href={getLocalizedPath("/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/", language)}>
                   notices frustration
@@ -602,7 +616,7 @@ const FeaturesPage = ({ language }) => {
                   Stop ticking boxes and start teaching. WhimsyLabs assesses
                   skill mastery and safety in real time, providing automatic
                   grading of students&rsquo; practical capabilities for you to
-                  review — with a quick or detailed breakdown per student.
+                  review, with a quick or detailed breakdown per student.
                 </p>
                 <p className="section-text">
                   The teacher dashboard is a real-time view of performance, not
@@ -616,12 +630,12 @@ const FeaturesPage = ({ language }) => {
                 </p>
                 <p className="section-text">
                   And because the tutor never clocks off, students can practise
-                  around the clock —{" "}
+                  around the clock,{" "}
                   <a href={getLocalizedPath("/blog/24-7-ai-tutoring-personalized-daily-recommendations/", language)}>
                     24/7 AI tutoring with personalised daily recommendations
                   </a>.
                 </p>
-                {/* Verbatim from the testimonial carousel — a real teacher on
+                {/* Verbatim from the testimonial carousel, a real teacher on
                     exactly this feature */}
                 <blockquote className="feat-quote">
                   <p>
@@ -640,7 +654,7 @@ const FeaturesPage = ({ language }) => {
                     loading="lazy"
                   />
                   <figcaption aria-hidden="true">
-                    The class at a glance — who is on track, who needs you now.
+                    The class at a glance, who is on track, who needs you now.
                   </figcaption>
                 </figure>
               </div>
@@ -681,6 +695,22 @@ const FeaturesPage = ({ language }) => {
                 <a className="lab-link" href={getLocalizedPath("/blog/virtual-kidney-dissection-send-engagement/", language)}>
                   The SEND engagement story
                 </a>
+                {/* Not a mock-up: this switch genuinely calms the whole page,
+                    the way the same setting calms the lab for students */}
+                <label className="feat-calm-toggle">
+                  <input
+                    type="checkbox"
+                    checked={calm || osReduced}
+                    disabled={osReduced}
+                    onChange={(e) => setCalm(e.target.checked)}
+                  />
+                  <span>Try it now: reduce motion on this page</span>
+                </label>
+                <p className="feat-calm-note">
+                  {osReduced
+                    ? "Your system already asks for reduced motion, so this page is honouring it."
+                    : "Not a mock-up. Tick it, then scroll back up: the beaker, the liquid, the bubbles and WhimsyCat all settle down, and everything still works."}
+                </p>
               </div>
               <div className="feat-card" style={{ "--card-hue": "#c2107a" }}>
                 <img src="/images/basicskins.jpg" alt="Two collectable WhimsyCat skins earned with Lab Points" loading="lazy" />
@@ -688,7 +718,7 @@ const FeaturesPage = ({ language }) => {
                 <p>
                   Gamification that drives understanding, not screen time.
                   Students earn free Lab Points for safety and accuracy to
-                  customise their virtual workspace — intrinsic motivation
+                  customise their virtual workspace, intrinsic motivation
                   without predatory engagement tactics.
                 </p>
                 <a className="lab-link" href={getLocalizedPath("/blog/gamification-science-education-points-rewards-engagement/", language)}>
@@ -699,7 +729,7 @@ const FeaturesPage = ({ language }) => {
           </div>
         </section>
 
-        {/* ---- One lab, four sciences — and the doors to each ---- */}
+        {/* ---- One lab, four sciences, and the doors to each ---- */}
         <section className="lab-band lab-band--tint lab-band--pad" data-lab-band="light" data-lab-section>
           <div className="container">
             <div className="animate-on-scroll">
@@ -707,7 +737,7 @@ const FeaturesPage = ({ language }) => {
               <h2 className="section-title">One Fully-Simulated STEM Lab</h2>
               <p className="section-text">
                 Biology, chemistry, physics and electronics live in the same
-                simulation, with real interactions between them — heat a
+                simulation, with real interactions between them, heat a
                 solution, wire a sensor, culture a sample, all on one bench.
                 Explore each subject&rsquo;s lab in depth:
               </p>
@@ -736,7 +766,7 @@ const FeaturesPage = ({ language }) => {
                   <svg viewBox="0 0 54 170" aria-hidden="true" focusable="false">
                     <path d="M27,0 L27,55 M27,115 L27,170 M13,55 L41,55 L41,115 L13,115 Z" fill="none" stroke="currentColor" strokeWidth="7" strokeLinejoin="round" />
                   </svg>
-                  Electronics — in the same lab
+                  Electronics, in the same lab
                 </span>
               </div>
             </div>
@@ -779,7 +809,7 @@ const FeaturesPage = ({ language }) => {
               <span className="lab-eyebrow">Read next</span>
               <h2 className="section-title">Choosing a Virtual Lab?</h2>
               <p className="section-text">
-                The two guides schools use to compare platforms — what to look
+                The two guides schools use to compare platforms, what to look
                 for, what to avoid, and how the options stack up in 2026.
               </p>
               <ul className="lab-links">
@@ -810,11 +840,11 @@ const FeaturesPage = ({ language }) => {
                     <h3 className="lab-faq-q">Is there a student chat window?</h3>
                   </summary>
                   <p className="lab-faq-a">
-                    No — and that is deliberate. WhimsyCat infers everything from a
+                    No, and that is deliberate. WhimsyCat infers everything from a
                     student&rsquo;s actions in the lab: pupils never type prompts and
                     never receive generated text. There is no conversation to
                     monitor, so safeguarding is built into the architecture rather
-                    than bolted on as a filter — which is how WhimsyLabs meets the
+                    than bolted on as a filter, which is how WhimsyLabs meets the
                     DfE&rsquo;s AI safety expectations by design. A distinction that
                     matters more every term, as{" "}
                     <a href={getLocalizedPath("/blog/ai-chatbot-lawsuits-2026-schools/", language)}>
@@ -828,8 +858,7 @@ const FeaturesPage = ({ language }) => {
                     <h3 className="lab-faq-q">What does it run on?</h3>
                   </summary>
                   <p className="lab-faq-a">
-                    VR headsets and desktop — Chromebook, Mac, and PC — plus tablets
-                    and phones, with a low-bandwidth mode built for unstable school
+                    VR headsets and desktop, Chromebook, Mac, and PC, with a low-bandwidth mode built for unstable school
                     internet connections. One licence, every device. Weighing up
                     hardware? See{" "}
                     <a href={getLocalizedPath("/blog/vr-headsets-vs-chromebooks-cost-per-student/", language)}>
@@ -844,7 +873,7 @@ const FeaturesPage = ({ language }) => {
                   <p className="lab-faq-a">
                     Now. Pioneer Schools get Summer Term access to the beta AI
                     grading and early modules ahead of the global launch in
-                    September 2026 — and lock in the introductory BETT rate for the
+                    September 2026, and lock in the introductory BETT rate for the
                     2026/27 academic year.
                   </p>
                 </details>
@@ -869,7 +898,7 @@ const FeaturesPage = ({ language }) => {
             <span className="lab-eyebrow">Get started</span>
             <h2 className="section-title">WhimsyLabs Pioneer Program</h2>
             <p className="section-text">
-              WhimsyLabs launches globally in September 2026 — and Pioneer
+              WhimsyLabs launches globally in September 2026, and Pioneer
               Schools get early access now. Sign up to receive:
             </p>
             <div className="lab-hazards">

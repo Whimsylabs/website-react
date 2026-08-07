@@ -1,5 +1,5 @@
 /* Features page theme for the shared subject-lab system.
-   Layout and the opt-in depth classes live in SubjectLab.css — this file
+   Layout and the opt-in depth classes live in SubjectLab.css, this file
    supplies the page accent plus features-only components (hero shelf, showcase
    glyphs, three-up cards, awards), so nothing here can disturb the subject
    pages. Imported by FeaturesPage.js. */
@@ -16,7 +16,7 @@
   --lab-grid: rgba(20, 183, 255, 0.07);
 }
 
-/* Graph paper on the tint bands — a lab notebook, not a flat fill */
+/* Graph paper on the tint bands, a lab notebook, not a flat fill */
 .lab-page--features .lab-band--tint {
   background-image:
     linear-gradient(var(--lab-grid) 1px, transparent 1px),
@@ -31,7 +31,7 @@
 }
 
 /* Closing CTA gets the site's tiled treatment, bookending the hero.
-   Relative path, not /images/ — css-loader resolves url() as a module. */
+   Relative path, not /images/, css-loader resolves url() as a module. */
 .lab-page--features .lab-band--tiled {
   background-image:
     linear-gradient(180deg, rgba(31, 25, 104, 0.95) 0%, rgba(31, 25, 104, 0.6) 100%),
@@ -43,7 +43,7 @@
 .lab-page--features .lab-band--dark .lab-bubbles-field { --lab-accent: var(--lab-accent-lit); }
 
 /* --------------------------------------------------------------------------
-   Hero — the five-second pitch and the invitation to play
+   Hero, the five-second pitch and the invitation to play
    -------------------------------------------------------------------------- */
 
 .feat-ticks {
@@ -119,7 +119,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Hero shelf — glassware holding live liquid, standing on a shelf line
+   Hero shelf, glassware holding live liquid, standing on a shelf line
    -------------------------------------------------------------------------- */
 
 .feat-shelf { color: #ffffff; }
@@ -145,7 +145,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Showcase — tab glyphs and the video embed
+   Showcase, tab glyphs and the video embed
    -------------------------------------------------------------------------- */
 
 /* The shared .lab-tab svg rule sizes for tall vessels (22x30); these glyphs
@@ -169,8 +169,30 @@
   border: 0;
 }
 
+/* The pull-quote keeps score: each claim lights up in the house magenta the
+   first time the visitor proves it in the drop zone. */
+.lab-pull [data-pull-break],
+.lab-pull [data-pull-heat] {
+  transition: color 0.6s ease;
+}
+
+.lab-pull .is-lit {
+  color: #e01b84;
+  animation: featClaimPop 0.6s ease;
+}
+
+@keyframes featClaimPop {
+  0%, 100% { transform: none; }
+  35% { transform: scale(1.04); }
+}
+
+.lab-pull [data-pull-break].is-lit,
+.lab-pull [data-pull-heat].is-lit {
+  display: inline-block;
+}
+
 /* --------------------------------------------------------------------------
-   The droppable beaker — "if they drop a beaker, it breaks", literally.
+   The droppable beaker, "if they drop a beaker, it breaks", literally.
    The static SVG ships in the HTML; featureLab.js swaps in the canvas.
    -------------------------------------------------------------------------- */
 
@@ -320,7 +342,53 @@
 }
 
 /* --------------------------------------------------------------------------
-   Three-up cards — the welcome pack's tint cards, with a hue chip
+   The page's own reduced-motion switch, the accessibility claim proven the
+   same way the beaker proves the physics claim. The class mirrors what the
+   prefers-reduced-motion media query does; the JS modules re-init in calm
+   mode alongside it.
+   -------------------------------------------------------------------------- */
+
+.lab-page--features.lab-calm *,
+.lab-page--features.lab-calm *::before,
+.lab-page--features.lab-calm *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+.lab-page--features.lab-calm .feat-watch-cat { transform: none; }
+
+.feat-calm-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 10px 12px;
+  border: 1px dashed var(--card-hue, var(--lab-accent));
+  border-radius: 10px;
+  color: var(--lab-ink);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feat-calm-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--card-hue, var(--lab-accent));
+  cursor: pointer;
+}
+
+.feat-calm-toggle input:disabled { cursor: default; }
+
+.feat-calm-note {
+  margin: 8px 2px 0;
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   Three-up cards, the welcome pack's tint cards, with a hue chip
    -------------------------------------------------------------------------- */
 
 .feat-cards {
@@ -362,7 +430,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Subjects — the non-link "electronics" entry in the cross grid
+   Subjects, the non-link "electronics" entry in the cross grid
    -------------------------------------------------------------------------- */
 
 .feat-cross-soon {
@@ -374,7 +442,7 @@
 .feat-cross-soon:hover { transform: none; box-shadow: none; border-color: var(--lab-rule); }
 
 /* --------------------------------------------------------------------------
-   Awards — real cards, no emoji stand-ins
+   Awards, real cards, no emoji stand-ins
    -------------------------------------------------------------------------- */
 
 .feat-awards {

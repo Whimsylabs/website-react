@@ -7,8 +7,8 @@
  * === ARCHITECTURE CONTEXT ===
  * This site is deployed on GitHub Pages (free tier) as a Multi-Page Application.
  * Each page MUST have its own static HTML file with fully-rendered content because:
- *   - Search engine bots (Google, Bing) crawl the raw HTML — they do NOT execute JS
- *   - GitHub Pages serves static files only — no server-side rendering at request time
+ *   - Search engine bots (Google, Bing) crawl the raw HTML, they do NOT execute JS
+ *   - GitHub Pages serves static files only, no server-side rendering at request time
  *   - The build process (build.js) pre-renders React components to static HTML via SSR
  *   - React then "hydrates" the page client-side for interactivity
  *
@@ -27,14 +27,14 @@
  * Every new page must satisfy ALL of these for proper SEO and MPA functionality:
  *
  * 1. STATIC HTML: The build creates /route/index.html with full content baked in
- * 2. META TAGS: <title>, <meta description>, Open Graph, Twitter Card — all in the HTML
+ * 2. META TAGS: <title>, <meta description>, Open Graph, Twitter Card, all in the HTML
  * 3. SCHEMA MARKUP: JSON-LD structured data injected during build (not by React)
  * 4. CANONICAL URL: Self-referencing canonical + hreflang alternates for all languages
  * 5. TRANSLATIONS: Title/description in all 5 languages for metadata injection
  * 6. ROUTING: Both build.js (SSR) and App.js (client hydration) must know the route
  * 7. 404.HTML: validPaths array must include the route for trailing-slash redirects
  * 8. SITEMAP: Route must appear in sitemap.xml with proper priority/changefreq
- * 9. ROBOTS.TXT: Auto-generated from build — page will be included automatically
+ * 9. ROBOTS.TXT: Auto-generated from build, page will be included automatically
  *
  * === URL CONVENTIONS ===
  * - English pages: /route/ (NO /en/ prefix)
@@ -64,7 +64,7 @@ const path = require('path');
 const readline = require('readline');
 
 // ============================================================
-// Configuration — mirrors build.js config
+// Configuration, mirrors build.js config
 // ============================================================
 const SITE_URL = 'https://whimsylabs.ai';
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'de', 'jp'];
@@ -396,7 +396,7 @@ async function addTranslationKeys(translationKey, title, description, translatio
     // Look for the pattern of the translation key already existing
     const existingPattern = new RegExp(`${translationKey}:\\s*\\{`);
     if (existingPattern.test(content)) {
-      console.log(`  ⚠️  Translation key '${translationKey}' already exists in translations.js — skipping`);
+      console.log(`  ⚠️  Translation key '${translationKey}' already exists in translations.js, skipping`);
       return;
     }
 
@@ -450,7 +450,7 @@ async function updateBuildJs(componentName, route, translationKey, title, descri
     );
     console.log('  ✅ Added to routeComponentMap in build.js');
   } else {
-    console.log('  ⚠️  Route already in routeComponentMap — skipping');
+    console.log('  ⚠️  Route already in routeComponentMap, skipping');
   }
 
   // 2. Add to getPageMetadata
@@ -465,7 +465,7 @@ async function updateBuildJs(componentName, route, translationKey, title, descri
     content = content.replace(metadataMarker, metadataBlock);
     console.log('  ✅ Added to getPageMetadata in build.js');
   } else {
-    console.log('  ⚠️  Route already in getPageMetadata — skipping');
+    console.log('  ⚠️  Route already in getPageMetadata, skipping');
   }
 
   // 3. Add to loadReactComponents
@@ -475,7 +475,7 @@ async function updateBuildJs(componentName, route, translationKey, title, descri
     content = content.replace(loadMarker, loadLine);
     console.log('  ✅ Added to loadReactComponents in build.js');
   } else {
-    console.log('  ⚠️  Component already in loadReactComponents — skipping');
+    console.log('  ⚠️  Component already in loadReactComponents, skipping');
   }
 
   // 4. Add to staticPages for sitemap generation
@@ -489,7 +489,7 @@ async function updateBuildJs(componentName, route, translationKey, title, descri
       console.log('  ✅ Added to sitemap staticPages in build.js');
     }
   } else {
-    console.log('  ⚠️  Route already in sitemap staticPages — skipping');
+    console.log('  ⚠️  Route already in sitemap staticPages, skipping');
   }
 
   await fs.writeFile(PATHS.buildJs, content, 'utf8');
@@ -511,7 +511,7 @@ async function updateAppJs(componentName, route) {
     );
     console.log('  ✅ Added import to App.js');
   } else {
-    console.log('  ⚠️  Import already exists in App.js — skipping');
+    console.log('  ⚠️  Import already exists in App.js, skipping');
   }
 
   // 2. Add route to getComponentForPath
@@ -522,7 +522,7 @@ async function updateAppJs(componentName, route) {
     content = content.replace(blogHandlerMarker, routeLine);
     console.log('  ✅ Added route to getComponentForPath in App.js');
   } else {
-    console.log('  ⚠️  Route already in getComponentForPath — skipping');
+    console.log('  ⚠️  Route already in getComponentForPath, skipping');
   }
 
   await fs.writeFile(PATHS.appJs, content, 'utf8');
@@ -537,7 +537,7 @@ async function updateFourOhFour(route) {
 
   // Check if route already exists
   if (content.includes(`'${route}'`)) {
-    console.log('  ⚠️  Route already in 404.html validPaths — skipping');
+    console.log('  ⚠️  Route already in 404.html validPaths, skipping');
     return;
   }
 
@@ -619,7 +619,7 @@ async function updateFourOhFour(route) {
     await fs.writeFile(PATHS.fourOhFour, lines.join('\n'), 'utf8');
     console.log('  ✅ Added route to 404.html validPaths (all languages)');
   } else {
-    console.log('  ⚠️  Could not modify 404.html — please add manually');
+    console.log('  ⚠️  Could not modify 404.html, please add manually');
   }
 }
 
@@ -631,7 +631,7 @@ async function updateMetadataInjector(route, translationKey, title, description,
 
   // Check if route already exists
   if (content.includes(`'${route}':`)) {
-    console.log('  ⚠️  Route already in metadata-injector.js — skipping');
+    console.log('  ⚠️  Route already in metadata-injector.js, skipping');
     return;
   }
 
@@ -811,18 +811,18 @@ async function main() {
     console.log('     npm run build-static');
     console.log('');
     console.log('  5. The following validators will automatically verify your page:');
-    console.log('     • validate-meta-tags         — title + description present');
-    console.log('     • validate-title-length       — SEO title length check');
-    console.log('     • validate-meta-descriptions  — description length check');
-    console.log('     • validate-hreflang           — language alternates correct');
-    console.log('     • validate-opengraph          — OG tags present');
-    console.log('     • validate-breadcrumb-schema  — breadcrumb JSON-LD');
-    console.log('     • validate-all-schemas        — all structured data valid');
-    console.log('     • validate-404-redirects      — 404.html paths match build');
-    console.log('     • validate-page-content       — SSR content not empty');
-    console.log('     • validate-sitemap            — sitemap matches build');
-    console.log('     • validate-seo-uniqueness     — unique titles/descriptions');
-    console.log('     • build-summary               — overall build report');
+    console.log('     • validate-meta-tags        , title + description present');
+    console.log('     • validate-title-length      , SEO title length check');
+    console.log('     • validate-meta-descriptions , description length check');
+    console.log('     • validate-hreflang          , language alternates correct');
+    console.log('     • validate-opengraph         , OG tags present');
+    console.log('     • validate-breadcrumb-schema , breadcrumb JSON-LD');
+    console.log('     • validate-all-schemas       , all structured data valid');
+    console.log('     • validate-404-redirects     , 404.html paths match build');
+    console.log('     • validate-page-content      , SSR content not empty');
+    console.log('     • validate-sitemap           , sitemap matches build');
+    console.log('     • validate-seo-uniqueness    , unique titles/descriptions');
+    console.log('     • build-summary              , overall build report');
     console.log('');
     console.log('  6. If adding schema markup (FAQ, Event, etc.), update:');
     console.log('     scripts/metadata-injector.js → generateStructuredData()');

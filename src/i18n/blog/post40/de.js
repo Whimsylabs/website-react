@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "94% der Studierenden nutzen KI — und das ist nicht das Problem";
+export const title = "94% der Studierenden nutzen KI, und das ist nicht das Problem";
 export const description = "Die HEPI-Umfrage 2026 zeigt nahezu universelle KI-Nutzung unter britischen Studierenden. Die eigentliche Krise liegt nicht in der KI-Nutzung selbst, sondern darin, dass wir weiterhin Ergebnisse bewerten, die KI leicht produzieren kann. Prozessbasierte Bewertung bietet eine Lösung.";
 export const keywords = [
   "KI in der Bildung",

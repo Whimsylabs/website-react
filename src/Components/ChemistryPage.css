@@ -1,5 +1,5 @@
 /* Chemistry theme for the shared subject-lab system.
-   Layout and the opt-in depth classes live in SubjectLab.css — this file
+   Layout and the opt-in depth classes live in SubjectLab.css, this file
    supplies the subject accent plus every chemistry-only retune, so nothing
    here can disturb the other subject pages. Both files are imported by
    ChemistryPage.js. */
@@ -20,7 +20,7 @@
   --lab-grid: rgba(109, 74, 224, 0.055);
 }
 
-/* Graph paper on the tint bands — a lab notebook, not a flat fill */
+/* Graph paper on the tint bands, a lab notebook, not a flat fill */
 .lab-page--chemistry .lab-band--tint {
   background-image:
     linear-gradient(var(--lab-grid) 1px, transparent 1px),
@@ -41,7 +41,7 @@
 .lab-page--chemistry .lab-tag:nth-child(4n) { border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.08); }
 
 /* Closing CTA gets the site's tiled treatment, bookending the hero.
-   Relative path, not /images/ — css-loader resolves url() as a module. */
+   Relative path, not /images/, css-loader resolves url() as a module. */
 .lab-page--chemistry .lab-band--tiled {
   background-image:
     linear-gradient(180deg, rgba(31, 25, 104, 0.95) 0%, rgba(31, 25, 104, 0.6) 100%),

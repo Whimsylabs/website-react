@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "94% of Students Use AI for Assessed Work — Not the Problem";
+export const title = "94% of Students Use AI for Assessed Work, Not the Problem";
 export const description = "The HEPI 2026 survey shows near-universal AI use among UK students. The real crisis is not AI use itself, but that we are still assessing outputs that AI can easily produce. Process-based assessment offers a solution.";
 export const keywords = [
   "AI in education",

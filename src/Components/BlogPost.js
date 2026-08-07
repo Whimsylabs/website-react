@@ -1,12 +1,13 @@
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 // Removed React Router - using direct HTML links
 import { Helmet } from 'react-helmet-async';
 import './Blog.css';
 import BubbleContainer from './BubbleContainer';
 import Header from './Header';
 import Footer from './Footer';
-import { getBlogPostTranslation, getAllBlogPosts } from '../i18n/blogDataGenerator';
+import { getBlogPostTranslation } from '../i18n/blogDataGenerator';
 import { getLocalizedPath } from '../i18n';
+import { withLazyImages, lazyImageHtml } from '../utils/lazyImages';
 import blogPostSlugs from '../i18n/blogPostSlugs.json';
 import SpeakerButton from './SpeakerButton';
 
@@ -47,167 +48,6 @@ import * as Post33 from './blog/Post33';
 import * as Post34 from './blog/Post34';
 import * as Post35 from './blog/Post35';
 import * as Post38 from './blog/Post38';
-
-// Blog Article Speaker - Uses pre-generated audio with Web Speech API fallback
-const ArticleSpeaker = ({ language = 'en', postNumber }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [useFallback, setUseFallback] = useState(false);
-  const audioRef = useRef(null);
-  const utteranceRef = useRef(null);
-
-  const audioLang = language === 'ja' ? 'jp' : language;
-  const audioSrc = postNumber ? `/audio/blog/${audioLang}/post${postNumber}.mp3` : null;
-
-  const langMap = {
-    'en': 'en-GB', 'de': 'de-DE', 'es': 'es-ES', 
-    'fr': 'fr-FR', 'jp': 'ja-JP', 'ja': 'ja-JP'
-  };
-
-  const getTextContent = useCallback(() => {
-    const container = document.querySelector('.post-content');
-    if (!container) return '';
-    const clone = container.cloneNode(true);
-    clone.querySelectorAll('script, style, .no-read').forEach(el => el.remove());
-    return clone.textContent?.replace(/\s+/g, ' ').trim() || '';
-  }, []);
-
-  // Play pre-generated audio
-  const playAudio = useCallback(() => {
-    if (!audioSrc) {
-      setUseFallback(true);
-      return;
-    }
-
-    if (audioRef.current && isPaused) {
-      audioRef.current.play();
-      setIsPaused(false);
-      setIsPlaying(true);
-      return;
-    }
-
-    setIsLoading(true);
-    const audio = new Audio();
-    audioRef.current = audio;
-
-    audio.oncanplaythrough = () => {
-      setIsLoading(false);
-      audio.play();
-    };
-    audio.onplay = () => { setIsPlaying(true); setIsPaused(false); };
-    audio.onpause = () => { if (!audio.ended) { setIsPaused(true); setIsPlaying(false); } };
-    audio.onended = () => { setIsPlaying(false); setIsPaused(false); audioRef.current = null; };
-    audio.onerror = () => {
-      setIsLoading(false);
-      setUseFallback(true); // Fall back to Web Speech API
-    };
-
-    audio.src = audioSrc;
-    audio.load();
-  }, [audioSrc, isPaused]);
-
-  // Fallback: Web Speech API
-  const playWebSpeech = useCallback(() => {
-    if (!('speechSynthesis' in window)) return;
-    
-    if (isPaused) {
-      speechSynthesis.resume();
-      setIsPaused(false);
-      setIsPlaying(true);
-      return;
-    }
-
-    speechSynthesis.cancel();
-    const text = getTextContent();
-    if (!text) return;
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utteranceRef.current = utterance;
-    
-    const voices = speechSynthesis.getVoices();
-    const targetLang = langMap[language] || 'en-GB';
-    const voice = voices.find(v => v.lang === targetLang) || 
-                  voices.find(v => v.lang.startsWith(targetLang.split('-')[0]));
-    if (voice) {
-      utterance.voice = voice;
-      utterance.lang = voice.lang;
-    }
-
-    utterance.onstart = () => { setIsPlaying(true); setIsPaused(false); };
-    utterance.onend = () => { setIsPlaying(false); setIsPaused(false); };
-    utterance.onerror = () => { setIsPlaying(false); setIsPaused(false); };
-    
-    speechSynthesis.speak(utterance);
-  }, [language, isPaused, getTextContent]);
-
-  const handlePlay = useCallback(() => {
-    if (useFallback || !audioSrc) {
-      playWebSpeech();
-    } else {
-      playAudio();
-    }
-  }, [useFallback, audioSrc, playAudio, playWebSpeech]);
-
-  const handlePause = useCallback(() => {
-    if (audioRef.current && !useFallback) {
-      audioRef.current.pause();
-    } else if (speechSynthesis.speaking) {
-      speechSynthesis.pause();
-      setIsPaused(true);
-      setIsPlaying(false);
-    }
-  }, [useFallback]);
-
-  const handleStop = useCallback(() => {
-    if (audioRef.current) {
-      // Clear event handlers before stopping to prevent state conflicts
-      audioRef.current.onpause = null;
-      audioRef.current.onended = null;
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-      audioRef.current = null;
-    }
-    if (typeof speechSynthesis !== 'undefined') {
-      speechSynthesis.cancel();
-    }
-    setIsPlaying(false);
-    setIsPaused(false);
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
-      if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel();
-    };
-  }, []);
-
-  return (
-    <div className="article-speaker">
-      {!isPlaying && !isPaused && (
-        <button className="article-speaker-btn" onClick={handlePlay} disabled={isLoading}>
-          <span className="speaker-icon">{isLoading ? '⏳' : '🔊'}</span> 
-          {isLoading ? 'Loading...' : 'Listen to Article'}
-        </button>
-      )}
-      {isPlaying && (
-        <button className="article-speaker-btn playing" onClick={handlePause}>
-          <span className="speaker-icon">⏸️</span> Pause
-        </button>
-      )}
-      {isPaused && (
-        <button className="article-speaker-btn paused" onClick={handlePlay}>
-          <span className="speaker-icon">▶️</span> Resume
-        </button>
-      )}
-      {(isPlaying || isPaused) && (
-        <button className="article-speaker-btn stop" onClick={handleStop}>
-          <span className="speaker-icon">⏹️</span> Stop
-        </button>
-      )}
-    </div>
-  );
-};
 
 // Fallback posts for build system compatibility
 const fallbackPosts = [
@@ -510,7 +350,7 @@ const BlogPost = (props = {}) => {
             // Client-side: detect from URL path
             const currentPath = window.location.pathname;
             const pathParts = currentPath.split('/').filter(part => part);
-            if (pathParts.length > 0 && ['en', 'de', 'fr', 'es'].includes(pathParts[0])) {
+            if (pathParts.length > 0 && ['en', 'de', 'fr', 'es', 'jp'].includes(pathParts[0])) {
               language = pathParts[0];
             }
           }
@@ -676,7 +516,7 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
         )}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.description} />
-        <meta property="og:url" content={`https://whimsylabs.ai/blog/${post.id || post.slug}`} />
+        <meta property="og:url" content={`https://whimsylabs.ai${getLocalizedPath(`/blog/${post.slug || post.id}/`, language)}`} />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
       </Helmet>
@@ -700,9 +540,10 @@ function renderBlogPost(post, nextPost, prevPost, formatDate, language) {
                   className="whimsy-theme blog-speaker"
                 />
               </div>
+              {/* Lazy-load post images below the first (the hero stays eager for LCP) */}
               {typeof post.content === 'string'
-                ? <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
-                : <div className="post-content">{post.content}</div>}
+                ? <div className="post-content" dangerouslySetInnerHTML={{ __html: lazyImageHtml(post.content) }} />
+                : <div className="post-content">{withLazyImages(post.content)}</div>}
 
               <div className="post-cta">
                 <p className="post-cta-lead">{cta.lead}</p>

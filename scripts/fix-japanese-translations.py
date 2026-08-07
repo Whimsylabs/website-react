@@ -48,7 +48,7 @@ REPLACEMENTS = [
     # === SPECIFIC PHRASE IMPROVEMENTS ===
     ("私たちのチームがニーズに合わせた", "お客様のニーズに合わせた", "our team -> customer needs"),
     ("私たちのチームが", "弊社が", "our team (formal)"),
-    ("プロジェクトについてお聞かせください — 私たちのチーム", "プロジェクトについてお聞かせください。弊社", "project tellus - our team"),
+    ("プロジェクトについてお聞かせください, 私たちのチーム", "プロジェクトについてお聞かせください。弊社", "project tellus - our team"),
 ]
 
 # Additional context-specific fixes that need manual review flags

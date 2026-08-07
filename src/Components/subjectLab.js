@@ -1,5 +1,5 @@
 /**
- * subjectLab.js — progressive enhancement for the subject landing pages.
+ * subjectLab.js, progressive enhancement for the subject landing pages.
  *
  * Everything here animates markup that is already in the server-rendered HTML;
  * nothing creates content. If it never runs (no JS, crawler, reduced-motion)
@@ -78,10 +78,14 @@ function makeSurface(n, opts) {
   };
 }
 
-export default function initSubjectLab(root) {
+export default function initSubjectLab(root, opts) {
   if (!root || typeof window === "undefined") return () => {};
 
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // forceReduced can only ever ADD calm (a page-level toggle demonstrating
+  // reduced motion); a visitor whose OS asks for reduced motion always gets it.
+  const reduced =
+    (opts && opts.forceReduced) ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const loops = [];
   const cleanups = [];
 
@@ -91,7 +95,7 @@ export default function initSubjectLab(root) {
   };
 
   /* ---------------------------------------------------------------------- */
-  /* Reveal on scroll — same class contract as the homepage                  */
+  /* Reveal on scroll, same class contract as the homepage                  */
   /* ---------------------------------------------------------------------- */
 
   const revealables = root.querySelectorAll(".animate-on-scroll");
@@ -116,10 +120,10 @@ export default function initSubjectLab(root) {
   }
 
   /* ---------------------------------------------------------------------- */
-  /* Hero test tubes — reagents you can slosh                                */
+  /* Hero test tubes, reagents you can slosh                                */
   /* ---------------------------------------------------------------------- */
 
-  // Any element carrying [data-lab-liq] holds a simulated liquid — hero tubes,
+  // Any element carrying [data-lab-liq] holds a simulated liquid, hero tubes,
   // bench glassware, whatever. Geometry comes from its data attributes.
   const liqHosts = Array.from(root.querySelectorAll("[data-lab-liq]"));
   if (liqHosts.length) {
@@ -261,7 +265,7 @@ export default function initSubjectLab(root) {
   }
 
   /* ---------------------------------------------------------------------- */
-  /* Burette — drains as you read, graduations double as section nav         */
+  /* Burette, drains as you read, graduations double as section nav         */
   /* ---------------------------------------------------------------------- */
 
   const rail = root.querySelector("[data-lab-rail]");
@@ -395,7 +399,7 @@ export default function initSubjectLab(root) {
   }
 
   /* ---------------------------------------------------------------------- */
-  /* DNA strand — runs the full height of the page and turns as you scroll   */
+  /* DNA strand, runs the full height of the page and turns as you scroll   */
   /* ---------------------------------------------------------------------- */
 
   const strandRail = root.querySelector("[data-lab-strand-rail]");
@@ -565,7 +569,7 @@ export default function initSubjectLab(root) {
   }
 
   /* ---------------------------------------------------------------------- */
-  /* Hoist — gear pays out chain as you read, the load swings and settles    */
+  /* Hoist, gear pays out chain as you read, the load swings and settles    */
   /* ---------------------------------------------------------------------- */
 
   const hoistRail = root.querySelector("[data-lab-hoist-rail]");
@@ -668,7 +672,7 @@ export default function initSubjectLab(root) {
   }
 
   /* ---------------------------------------------------------------------- */
-  /* Hanging chain — a Verlet rope you can grab and pull                     */
+  /* Hanging chain, a Verlet rope you can grab and pull                     */
   /* ---------------------------------------------------------------------- */
 
   root.querySelectorAll("[data-lab-chain]").forEach((host) => {
@@ -757,7 +761,7 @@ export default function initSubjectLab(root) {
     };
 
     const paint = () => {
-      // One smooth stroked curve rather than a capsule per segment — the
+      // One smooth stroked curve rather than a capsule per segment, the
       // repeated capsules bunched into visible pips either side of a drag.
       if (curve) {
         curve.setAttribute("d", `M${pts.map((p) => `${p.x.toFixed(2)},${p.y.toFixed(2)}`).join(" L")}`);
@@ -794,7 +798,7 @@ export default function initSubjectLab(root) {
   });
 
   /* ---------------------------------------------------------------------- */
-  /* Liquid surface divider — the boundary you descend through               */
+  /* Liquid surface divider, the boundary you descend through               */
   /* ---------------------------------------------------------------------- */
 
   root.querySelectorAll("[data-lab-liquid-surface]").forEach((host) => {
@@ -880,7 +884,7 @@ export default function initSubjectLab(root) {
       const pts = [];
       for (let i = 0; i < N; i += 1) pts.push([(i / (N - 1)) * W, restY + h[i]]);
 
-      // Only below the waterline is painted — above stays transparent so the
+      // Only below the waterline is painted, above stays transparent so the
       // hero's own gradient shows through and there is no seam to match.
       ctx.beginPath();
       ctx.moveTo(0, H);
@@ -963,7 +967,7 @@ export default function initSubjectLab(root) {
   });
 
   /* ---------------------------------------------------------------------- */
-  /* Submerged sections — bubbles drifting up behind the content             */
+  /* Submerged sections, bubbles drifting up behind the content             */
   /* ---------------------------------------------------------------------- */
 
   root.querySelectorAll("[data-lab-bubble-field]").forEach((host) => {
@@ -1023,7 +1027,7 @@ export default function initSubjectLab(root) {
   });
 
   /* ---------------------------------------------------------------------- */
-  /* Lipid bilayer — a membrane you can part with the cursor                 */
+  /* Lipid bilayer, a membrane you can part with the cursor                 */
   /* ---------------------------------------------------------------------- */
 
   root.querySelectorAll("[data-lab-membrane]").forEach((host) => {
@@ -1082,7 +1086,7 @@ export default function initSubjectLab(root) {
             L.vy += (dy / dist) * f * 2.4;
           }
         }
-        // Spring home, then damp — the membrane flows back closed
+        // Spring home, then damp, the membrane flows back closed
         L.vx += (L.rx - L.x) * 0.045;
         L.vy += (L.ry - L.y) * 0.055;
         L.vx *= 0.9;
@@ -1137,7 +1141,7 @@ export default function initSubjectLab(root) {
   });
 
   /* ---------------------------------------------------------------------- */
-  /* Vessels — fill on hover / focus                                         */
+  /* Vessels, fill on hover / focus                                         */
   /* ---------------------------------------------------------------------- */
 
   root.querySelectorAll("[data-lab-vessel]").forEach((g) => {

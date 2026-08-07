@@ -1,7 +1,7 @@
 import React from "react";
 
 /**
- * labWave.js — the wave seam used at the edges of dark bands on the subject
+ * labWave.js, the wave seam used at the edges of dark bands on the subject
  * pages: a static echo of the chemistry liquid divider, cut from the colour of
  * the neighbouring band so a dark band never meets a light one along a ruled
  * line. Styling lives in SubjectLab.css (.lab-wave and variants).

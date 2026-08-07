@@ -1,7 +1,7 @@
 import React from "react";
 
 export const title = "Virtual Labs for Online Schools: Science at a Distance";
-export const date = "2026-07-29";
+export const date = "2026-07-20";
 export const slug = "virtual-labs-online-schools-distance-learning";
 export const description =
   "Online schools can teach every subject well except one. Here is an honest look at how distance providers deliver practical science, and what actually works.";

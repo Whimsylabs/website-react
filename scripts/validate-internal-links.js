@@ -159,7 +159,7 @@ function validateInternalLinks() {
       // yields just root-relative URLs (it excludes anything starting with http).
       // The language segment is optional since English carries no prefix. The previous
       // pattern made the prefix optional but kept its leading slash, so for English it
-      // required "//blog/..." and therefore never matched — every unprefixed internal
+      // required "//blog/..." and therefore never matched, every unprefixed internal
       // blog link went unvalidated, which is how a stale slug survived undetected.
       const blogMatch = url.match(/^\/(?:(?:es|fr|de|jp)\/)?blog\/([^/?#]+)/);
       if (blogMatch) {

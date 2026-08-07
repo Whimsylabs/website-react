@@ -140,7 +140,7 @@ const BritishScienceWeekGrantPage = ({ language = "en" }) => {
           <h2>Spark Curiosity During British Science Week</h2>
           <p className="rsg-section-description">
             Each year's British Science Week is a perfect moment for VR science exploration.
-            <strong> Let students ask "what if?" and find out — safely, in virtual labs.</strong>
+            <strong> Let students ask "what if?" and find out, safely, in virtual labs.</strong>
             WhimsyLabs provides free demo access for your Science Week event.
           </p>
           
@@ -248,7 +248,7 @@ const BritishScienceWeekGrantPage = ({ language = "en" }) => {
               <h4>Science Fair Booth</h4>
               <p>
                 VR as one station at your Science Fair. Students demonstrate experiments 
-                to visitors — no safety concerns!
+                to visitors, no safety concerns!
               </p>
             </div>
             <div className="rsg-feature-item">
@@ -454,7 +454,7 @@ const BritishScienceWeekGrantPage = ({ language = "en" }) => {
           <h2>Make Science Week Unforgettable</h2>
           <p>
             VR labs turn British Science Week into an experience students will remember. 
-            Free demo access, event ideas, and support — all at no cost.
+            Free demo access, event ideas, and support, all at no cost.
           </p>
           <div className="rsg-cta-buttons">
             <a href="#apply" className="btn rsg-cta-primary">

@@ -9,6 +9,8 @@ const { getGrantMetadata } = require('../src/data/grantMetadata');
 // Per-post language allowlist (keyed by slug, build codes en/es/fr/de/jp). Region-specific
 // posts only emit hreflang for the languages they are actually published in.
 const blogPostLanguageRestrictions = require('../src/i18n/blogPostLanguageRestrictions.json');
+// Static routes published in English only (no translated copy exists).
+const englishOnlyRoutes = require('../src/i18n/englishOnlyRoutes.json');
 
 class MetadataInjector {
   constructor() {
@@ -101,6 +103,12 @@ class MetadataInjector {
         description: t.privacy?.description || 'Read WhimsyLabs privacy policy to understand how we protect your data and privacy when using our virtual laboratory software for STEM education.',
         keywords: 'WhimsyLabs privacy policy, virtual lab data protection, student data privacy, EdTech privacy',
       },
+      '/industrial': {
+        // English-only route (src/i18n/englishOnlyRoutes.json): no translation lookup.
+        title: 'Virtual Process & Safety Training for Industry | WhimsyLabs',
+        description: 'SafeLab by WhimsyLabs: simulation training where process and lab staff practise COSHH handling, spill response and quality procedures repeatedly, on standard PCs or VR. Ufi VocTech funded. Free pilot places open.',
+        keywords: 'industrial safety training simulation, COSHH training, spill response training, VR safety training, process operator training, lab technician training, competency assessment, ISO 9001 training records',
+      },
       '/data-security': {
         title: t.dataSecurity?.title || 'Student Data Security | WhimsyLabs Virtual Lab Software',
         description: t.dataSecurity?.description || 'How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.',
@@ -133,7 +141,7 @@ class MetadataInjector {
       },
       '/ai-assessment': {
         title: t.aiAssessment?.title || 'AI-Proof Assessment for Science Labs | WhimsyLabs',
-        description: t.aiAssessment?.description || "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab — nothing to fake.",
+        description: t.aiAssessment?.description || "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab, nothing to fake.",
         keywords: 'AI-proof assessment, process-based assessment, AI detection alternative, practical skills assessment, science lab grading, AI assessment schools',
       },
       '/choose-virtual-lab': {
@@ -196,7 +204,13 @@ class MetadataInjector {
 
     // Region-specific posts: only emit hreflang for languages they are published in
     const blogSlugMatch = baseRoute.match(/^\/blog\/([^/]+)\/$/);
-    const allowedLangs = blogSlugMatch ? blogPostLanguageRestrictions[blogSlugMatch[1]] : null;
+    let allowedLangs = blogSlugMatch ? blogPostLanguageRestrictions[blogSlugMatch[1]] : null;
+
+    // English-only static routes: self-referencing hreflang only, so we never
+    // point at /es/... etc. pages that are deliberately not built.
+    if (englishOnlyRoutes.includes(baseRoute.replace(/\/$/, ''))) {
+      allowedLangs = ['en'];
+    }
 
     for (const lang of languages) {
       // Map hreflang code 'ja' to the build/URL code 'jp' used in the allowlist

@@ -19,7 +19,7 @@ export const content = (
     </p>
 
     <p>
-      We work with school groups, and we have watched rollouts go well and badly. The pattern is consistent enough to be worth writing down.
+      We build for school groups, and the failure patterns below come from what group-scale buyers and heads of department consistently describe. They are worth writing down, because most of them are avoidable.
     </p>
 
     <h2>Why Do Group-Wide Rollouts Fail?</h2>
@@ -126,7 +126,7 @@ export const content = (
     </p>
 
     <p>
-      The single most effective mechanism we have seen is a head of science from a pilot school talking to a head of science from a prospective one. It is more persuasive than anything a vendor or a central team can say, because the concerns are the ones only a practitioner thinks to raise. Groups that build this into the rollout, with a short session per wave run by teachers, get adoption curves that look completely different from groups that send an email announcing licences.
+      The most effective mechanism is a head of science from a pilot school talking to a head of science from a prospective one. It is more persuasive than anything a vendor or a central team can say, because the concerns are the ones only a practitioner thinks to raise. Groups that build this into the rollout, with a short session per wave run by teachers, get adoption curves that look completely different from groups that send an email announcing licences.
     </p>
 
     <p>

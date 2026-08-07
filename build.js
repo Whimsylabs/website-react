@@ -22,6 +22,8 @@ const { getGrantMetadata } = require("./src/data/grantMetadata");
 // published in the listed languages (build codes: en, es, fr, de, jp); other
 // languages get a redirect stub to the English URL.
 const blogPostLanguageRestrictions = require("./src/i18n/blogPostLanguageRestrictions.json");
+// Static routes published in English only (no translated copy exists).
+const englishOnlyRoutes = require("./src/i18n/englishOnlyRoutes.json");
 // Post ID <-> slug mapping. Single source of truth: src/i18n/blogPostSlugs.json
 const blogPostSlugs = require("./src/i18n/blogPostSlugs.json");
 const blogSlugToPostId = Object.fromEntries(
@@ -102,6 +104,12 @@ const getPageMetadata = (lang = 'en') => ({
     description: translations[lang]?.privacy?.description || "Read WhimsyLabs privacy policy to understand how we collect, use, and protect your data when using our virtual laboratory software for STEM education.",
     keywords: "WhimsyLabs privacy policy, data protection, GDPR compliance, virtual lab privacy, educational software privacy",
   },
+  "/industrial": {
+    // English-only route (see src/i18n/englishOnlyRoutes.json): no translation lookup.
+    title: "Virtual Process & Safety Training for Industry | WhimsyLabs",
+    description: "SafeLab by WhimsyLabs: simulation training where process and lab staff practise COSHH handling, spill response and quality procedures repeatedly, on standard PCs or VR. Ufi VocTech funded. Free pilot places open.",
+    keywords: "industrial safety training simulation, COSHH training, spill response training, VR safety training, process operator training, lab technician training, competency assessment",
+  },
   "/data-security": {
     title: translations[lang]?.dataSecurity?.title || "Student Data Security | WhimsyLabs Virtual Lab Software",
     description: translations[lang]?.dataSecurity?.description || "How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.",
@@ -124,7 +132,7 @@ const getPageMetadata = (lang = 'en') => ({
   },
   "/ai-assessment": {
     title: translations[lang]?.aiAssessment?.title || "AI-Proof Assessment for Science Labs | WhimsyLabs",
-    description: translations[lang]?.aiAssessment?.description || "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab — nothing to fake.",
+    description: translations[lang]?.aiAssessment?.description || "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab, nothing to fake.",
     keywords: "AI-proof assessment, process-based assessment, AI detection alternative, practical skills assessment, science lab grading, AI assessment schools",
   },
   "/choose-virtual-lab": {
@@ -150,6 +158,7 @@ const routeComponentMap = {
   "/contact": "ContactPage",
   "/privacy": "PrivacyPage",
   "/data-security": "DataSecurityPage",
+  "/industrial": "IndustrialPage",
   "/bett": "BettPage",
   "/grants": "GrantsPage",
   "/grants/royal-society": "RoyalSocietyGrantPage",
@@ -213,6 +222,11 @@ async function generateRouteConfigs() {
 
     // Add static routes for this language
     Object.keys(routeComponentMap).forEach((path) => {
+      // English-only routes (e.g. the UK industrial pilot page) are not built
+      // per-language: no translated copy exists, so emitting /es/... etc. would
+      // ship duplicate English content under a translated URL.
+      if (lang !== config.defaultLanguage && englishOnlyRoutes.includes(path)) return;
+
       const componentName = routeComponentMap[path];
       const localizedPath = `${langPrefix}${path}`;
       const metadata = pageMetadata[path] || {};
@@ -292,6 +306,10 @@ async function loadReactComponents() {
     ReactComponents.DataSecurityPage =
       require("./src/Components/DataSecurityPage.js").default;
     console.log("✅ Loaded DataSecurityPage");
+
+    ReactComponents.IndustrialPage =
+      require("./src/Components/IndustrialPage.js").default;
+    console.log("✅ Loaded IndustrialPage");
 
     ReactComponents.BettPage = require("./src/Components/BettPage.js").default;
     console.log("✅ Loaded BettPage");
@@ -1005,14 +1023,14 @@ async function generatePageHTML(route, data = {}) {
               postModule = require(`./src/i18n/blog/${postId}/${langCode}.js`);
             }
           } catch (e) {
-            // Distinguish a genuinely missing translation (expected — fall back to
+            // Distinguish a genuinely missing translation (expected, fall back to
             // English) from a translation file that EXISTS but failed to load (a real
             // bug, e.g. a missing `import React`). The latter must be loud, otherwise
             // the page silently ships English content under a translated URL.
             if (e.code === 'MODULE_NOT_FOUND') {
               console.warn(`⚠️ No ${langCode} translation for ${postId}, using English fallback`);
             } else {
-              console.error(`❌ ${langCode} translation for ${postId} FAILED TO LOAD — serving ENGLISH instead: ${e.message.split('\n')[0]}`);
+              console.error(`❌ ${langCode} translation for ${postId} FAILED TO LOAD, serving ENGLISH instead: ${e.message.split('\n')[0]}`);
             }
           }
           
@@ -1253,11 +1271,16 @@ async function generateSitemap() {
       { path: '/ai-assessment/', priority: '0.8', changefreq: 'weekly' }, // Assessment pillar page
       { path: '/choose-virtual-lab/', priority: '0.8', changefreq: 'weekly' }, // Buyer's guide
       { path: '/send/', priority: '0.8', changefreq: 'weekly' }, // SEND accessibility page
+      { path: '/industrial/', priority: '0.8', changefreq: 'weekly' }, // Industrial / vocational (English only)
       // landing-demo is now the homepage
     ];
 
     for (const page of staticPages) {
-      for (const lang of config.supportedLanguages) {
+      // English-only pages appear once, with no alternate-language links.
+      const isEnglishOnly = englishOnlyRoutes.includes(page.path.replace(/\/$/, ''));
+      const pageLangs = isEnglishOnly ? [config.defaultLanguage] : config.supportedLanguages;
+
+      for (const lang of pageLangs) {
         const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
         const url = `${config.siteUrl}${langPrefix}${page.path}`;
 
@@ -1267,15 +1290,15 @@ async function generateSitemap() {
         <lastmod>${currentDate}</lastmod>
         <changefreq>${page.changefreq}</changefreq>
         <priority>${page.priority}</priority>`;
-        
+
         // Add alternate language links
-        for (const altLang of config.supportedLanguages) {
+        for (const altLang of pageLangs) {
           const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
           const altUrl = `${config.siteUrl}${altLangPrefix}${page.path}`;
           sitemap += `
         <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}"/>`;
         }
-        
+
         sitemap += `
     </url>`;
       }
@@ -1343,7 +1366,7 @@ async function generateRobotsTxt() {
   }
 }
 
-// Generate llms.txt — the emerging convention AI assistants and crawlers use
+// Generate llms.txt, the emerging convention AI assistants and crawlers use
 // to discover a site's key content (https://llmstxt.org/)
 async function generateLlmsTxt() {
   try {
@@ -1352,18 +1375,18 @@ async function generateLlmsTxt() {
 
     let llmsTxt = `# WhimsyLabs
 
-> WhimsyLabs is award-winning virtual laboratory software for science education. Students conduct realistic Biology, Chemistry, and Physics experiments in a fully simulated sandbox lab — on desktop, mobile, or VR — while WhimsyCat, the built-in AI tutor, assesses their practical skills. WhimsyCat has no student chat window: it infers everything from students' actions in the lab, so pupils never type prompts or receive generated text. Winner of the BETT 2025 Kids Judge Award (Best Science Lab, Start Up).
+> WhimsyLabs is award-winning virtual laboratory software for science education. Students conduct realistic Biology, Chemistry, and Physics experiments in a fully simulated sandbox lab, on desktop, mobile, or VR, while WhimsyCat, the built-in AI tutor, assesses their practical skills. WhimsyCat has no student chat window: it infers everything from students' actions in the lab, so pupils never type prompts or receive generated text. Winner of the BETT 2025 Kids Judge Award (Best Science Lab, Start Up).
 
 The site is available in English (default, no URL prefix), Spanish (/es/), French (/fr/), German (/de/), and Japanese (/jp/).
 
 ## Key pages
 
 - [Home](${config.siteUrl}/): What WhimsyLabs is, how the physics-first simulation and AI assessment work
-- [Features](${config.siteUrl}/features/): Full feature set — realistic simulations, AI assessment, cross-platform access
+- [Features](${config.siteUrl}/features/): Full feature set, realistic simulations, AI assessment, cross-platform access
 - [Services](${config.siteUrl}/services/): Solutions for schools and K-12 classrooms, trials, and onboarding
 - [AI-Proof Assessment](${config.siteUrl}/ai-assessment/): Why process-based assessment beats AI detection, and how WhimsyLabs grades technique
 - [How to Choose Virtual Lab Software](${config.siteUrl}/choose-virtual-lab/): A 12-point buyer's checklist for schools comparing virtual lab platforms
-- [SEND Science Practicals](${config.siteUrl}/send/): Accessible practicals — control remapping, text-to-speech, self-paced modes
+- [SEND Science Practicals](${config.siteUrl}/send/): Accessible practicals, control remapping, text-to-speech, self-paced modes
 - [Virtual Chemistry Lab](${config.siteUrl}/chemistry/): Titrations, reactions, electrolysis with simulated chemistry
 - [Virtual Biology Lab](${config.siteUrl}/biology/): Dissections, microscopy, and physiology
 - [Virtual Physics Lab](${config.siteUrl}/physics/): Mechanics, circuits, waves on a real-time physics engine

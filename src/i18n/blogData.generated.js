@@ -1,5 +1,5 @@
 // Auto-generated blog data for build script
-// Generated on 2026-07-31T01:05:43.426Z
+// Generated on 2026-08-01T17:04:03.342Z
 
 module.exports = {
   "en": [
@@ -310,7 +310,7 @@ module.exports = {
     {
       "id": "post40",
       "slug": "student-ai-use-assessment-crisis-solution",
-      "title": "94% of Students Use AI for Assessed Work — Not the Problem",
+      "title": "94% of Students Use AI for Assessed Work, Not the Problem",
       "description": "The HEPI 2026 survey shows near-universal AI use among UK students. The real crisis is not AI use itself, but that we are still assessing outputs that AI can easily produce. Process-based assessment offers a solution.",
       "keywords": [
         "AI in education",
@@ -1077,7 +1077,7 @@ module.exports = {
     {
       "id": "post40",
       "slug": "student-ai-use-assessment-crisis-solution",
-      "title": "94% der Studierenden nutzen KI — und das ist nicht das Problem",
+      "title": "94% der Studierenden nutzen KI, und das ist nicht das Problem",
       "description": "Die HEPI-Umfrage 2026 zeigt nahezu universelle KI-Nutzung unter britischen Studierenden. Die eigentliche Krise liegt nicht in der KI-Nutzung selbst, sondern darin, dass wir weiterhin Ergebnisse bewerten, die KI leicht produzieren kann. Prozessbasierte Bewertung bietet eine Lösung.",
       "keywords": [
         "KI in der Bildung",
@@ -1865,7 +1865,7 @@ module.exports = {
     {
       "id": "post40",
       "slug": "student-ai-use-assessment-crisis-solution",
-      "title": "94% des étudiants utilisent l'IA — et ce n'est pas le problème",
+      "title": "94% des étudiants utilisent l'IA, et ce n'est pas le problème",
       "description": "L'enquête HEPI 2026 montre une utilisation quasi universelle de l'IA parmi les étudiants britanniques. La véritable crise n'est pas l'utilisation de l'IA elle-même, mais le fait que nous continuons à évaluer des résultats que l'IA peut facilement produire. L'évaluation basée sur les processus offre une solution.",
       "keywords": [
         "IA dans l'éducation",
@@ -3401,7 +3401,7 @@ module.exports = {
     {
       "id": "post39",
       "slug": "oecd-process-oriented-assessment-validation",
-      "title": "OECDが推奨：成果物ではなくプロセスを評価する — 理科教育への意味",
+      "title": "OECDが推奨：成果物ではなくプロセスを評価する, 理科教育への意味",
       "description": "OECD Digital Education Outlook 2026はAI時代の「プロセス指向評価」を公式に推奨しています。この国際的な検証は、WhimsyLabsが最初から構築してきたアプローチを確認するものです。",
       "keywords": [
         "OECDプロセス評価",

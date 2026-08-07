@@ -205,6 +205,10 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 /ai-assessment /ai-assessment/ 301!
 /choose-virtual-lab /choose-virtual-lab/ 301!
 /send /send/ 301!
+# Industrial / vocational page is English only (src/i18n/englishOnlyRoutes.json),
+# so it has no language-prefixed variants below.
+/industrial/index.html /industrial/ 301!
+/industrial /industrial/ 301!
 /de/ai-assessment/index.html /de/ai-assessment/ 301!
 /de/choose-virtual-lab/index.html /de/choose-virtual-lab/ 301!
 /de/send/index.html /de/send/ 301!

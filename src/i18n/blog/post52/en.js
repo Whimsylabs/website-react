@@ -116,7 +116,7 @@ export const content = (
     <h2>Who Benefits Most?</h2>
 
     <p>
-      Three groups, in our experience. Schools with strong laboratories and not enough hours in them, which is most secondary schools. Schools whose practical provision is constrained by equipment budgets rather than facilities. EngineeringUK's 2024 research reported that 27% of UK science teachers say their school cannot afford the equipment needed for practical lessons. And students who find the physical laboratory environment overwhelming, for whom arriving already familiar with the room's demands is the difference between participating and coping. That last group is why we wrote about{" "}
+      Three groups. Schools with strong laboratories and not enough hours in them, which is most secondary schools. Schools whose practical provision is constrained by equipment budgets rather than facilities. EngineeringUK's 2024 research reported that 27% of UK science teachers say their school cannot afford the equipment needed for practical lessons. And students who find the physical laboratory environment overwhelming, for whom arriving already familiar with the room's demands is the difference between participating and coping. That last group is why we wrote about{" "}
       <a href="/blog/virtual-kidney-dissection-send-engagement">virtual dissection and SEND engagement</a>, and it is a benefit that tends to surprise schools who adopted the model purely for time reasons.
     </p>
 

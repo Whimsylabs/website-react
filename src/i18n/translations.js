@@ -67,7 +67,7 @@ const translations = {
       cta2Button: "Request a Free Trial",
       cta2Secondary: "See It In Action",
       cta3Title: "Need a Custom Solution?",
-      cta3Text: "Tell us about your project — our team will design a solution tailored to your needs.",
+      cta3Text: "Tell us about your project, our team will design a solution tailored to your needs.",
       cta3Button: "Contact Us",
     },
 
@@ -407,7 +407,7 @@ const translations = {
       title: "Thanks for Visiting Us at BETT 2026 | WhimsyLabs Virtual Lab Software",
       description: "WhimsyLabs at BETT 2026 was a success! We won Tech&Learning's Best of BETT 2026 award. Missed us? Book a virtual demo to see our award-winning virtual laboratory software.",
       heroTitle: "Thanks for Visiting Us at BETT 2026!",
-      heroSubtitle: "We had an amazing time showcasing WhimsyLabs at BETT 2026. Couldn't make it? Don't worry — book a virtual demo and experience our award-winning platform from anywhere!",
+      heroSubtitle: "We had an amazing time showcasing WhimsyLabs at BETT 2026. Couldn't make it? Don't worry, book a virtual demo and experience our award-winning platform from anywhere!",
       dates: "Event Dates",
       location: "Location",
       award: "Awards",
@@ -466,7 +466,7 @@ const translations = {
     // Chemistry Page
     aiAssessment: {
       title: "AI-Proof Assessment for Science Labs | WhimsyLabs",
-      description: "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab — nothing to fake.",
+      description: "AI can write a lab report but can't do a titration. WhimsyLabs grades technique, decisions and safety in the lab, nothing to fake.",
     },
     chooseVirtualLab: {
       title: "How to Choose Virtual Lab Software: A Buyer's Guide",
@@ -481,14 +481,14 @@ const translations = {
       description: "Explore interactive virtual chemistry experiments with realistic simulations. Safe, unlimited practice for titrations, reactions, and molecular chemistry.",
       hero: {
         title: "Virtual Chemistry Lab for Schools",
-        subtitle: "Safe, engaging chemistry experiments with realistic physics simulations. From titrations to combustion reactions — all without the hazards.",
+        subtitle: "Safe, engaging chemistry experiments with realistic physics simulations. From titrations to combustion reactions, all without the hazards.",
         cta: "Book a Demo",
         ctaSecondary: "See Features",
       },
       intro: {
         title: "Transform Chemistry Education",
         text1: "Chemistry is hands-on by nature. But traditional labs face challenges: limited equipment, safety concerns, time constraints, and the impossibility of repeating expensive experiments.",
-        text2: "WhimsyLabs virtual chemistry lab solves these problems with physics-accurate simulations that let students practice titrations, observe reactions, and explore molecular structures — safely and as many times as needed.",
+        text2: "WhimsyLabs virtual chemistry lab solves these problems with physics-accurate simulations that let students practice titrations, observe reactions, and explore molecular structures, safely and as many times as needed.",
       },
       experiments: {
         title: "Chemistry Experiments Available",
@@ -554,14 +554,14 @@ const translations = {
       description: "Explore interactive virtual biology experiments with realistic simulations. Dissections, microscopy, and cellular biology without ethical concerns.",
       hero: {
         title: "Virtual Biology Lab for Schools",
-        subtitle: "Explore life sciences with ethical, engaging experiments. From cell biology to organ dissections — all without harming animals.",
+        subtitle: "Explore life sciences with ethical, engaging experiments. From cell biology to organ dissections, all without harming animals.",
         cta: "Book a Demo",
         ctaSecondary: "See Features",
       },
       intro: {
         title: "Transform Biology Education",
         text1: "Biology is about understanding life. But traditional labs face challenges: ethical concerns about dissections, limited microscope access, and the impossibility of observing processes in real-time.",
-        text2: "WhimsyLabs virtual biology lab solves these problems with detailed simulations that let students explore cells, perform virtual dissections, and observe biological processes — ethically and repeatedly.",
+        text2: "WhimsyLabs virtual biology lab solves these problems with detailed simulations that let students explore cells, perform virtual dissections, and observe biological processes, ethically and repeatedly.",
       },
       experiments: {
         title: "Biology Experiments Available",
@@ -627,14 +627,14 @@ const translations = {
       description: "Explore interactive virtual physics experiments with realistic simulations. Mechanics, electricity, waves, and more with real-time data collection.",
       hero: {
         title: "Virtual Physics Lab for Schools",
-        subtitle: "Master physics concepts with interactive simulations. From circuits to mechanics — precise measurements without equipment limitations.",
+        subtitle: "Master physics concepts with interactive simulations. From circuits to mechanics, precise measurements without equipment limitations.",
         cta: "Book a Demo",
         ctaSecondary: "See Features",
       },
       intro: {
         title: "Transform Physics Education",
         text1: "Physics is about understanding how the universe works. But traditional labs face challenges: expensive equipment, time-consuming setup, and difficulty repeating experiments with different variables.",
-        text2: "WhimsyLabs virtual physics lab solves these problems with accurate simulations that let students build circuits, investigate mechanics, and explore wave phenomena — with instant variable control and real-time data.",
+        text2: "WhimsyLabs virtual physics lab solves these problems with accurate simulations that let students build circuits, investigate mechanics, and explore wave phenomena, with instant variable control and real-time data.",
       },
       experiments: {
         title: "Physics Experiments Available",
@@ -712,9 +712,9 @@ const translations = {
     // Grants Page
     grants: {
       heroTitle: "Science Education Grants for Schools",
-      heroSubtitle: "Get funding for virtual labs — WhimsyLabs provides free software, STEM expertise, and application support",
+      heroSubtitle: "Get funding for virtual labs, WhimsyLabs provides free software, STEM expertise, and application support",
       introTitle: "WhimsyLabs: Your Partner for Education Grants",
-      introText1: "Applying for education grants? <strong>WhimsyLabs is your ready-made technology partner.</strong> We provide free virtual lab software throughout your grant period — your entire budget goes to hardware and other needs.",
+      introText1: "Applying for education grants? <strong>WhimsyLabs is your ready-made technology partner.</strong> We provide free virtual lab software throughout your grant period, your entire budget goes to hardware and other needs.",
       introText2: "Our team includes <strong>members with PhDs experienced in grant writing</strong>. We provide application templates, technical documentation, project ideas, and letters of support. Everything you need to submit a compelling application.",
       introText3: "<strong>Partner with us and get: free software access, application support pack, demo for reviewers, and ongoing technical support.</strong> We've helped schools secure funding for VR headsets, Chromebooks, and other STEM equipment.",
       gridTitle: "Grants We Support",
@@ -815,15 +815,15 @@ const translations = {
       description: "Servicios integrales de laboratorio virtual incluyendo desarrollo de laboratorios personalizados, integración curricular, capacitación docente y soporte técnico para escuelas.",
       // Mid-page CTAs
       cta1Title: "Vea el Creador de Experimentos IA en Acción",
-      cta1Text: "Observe cómo los profesores crean laboratorios personalizados en minutos — sin necesidad de programar.",
+      cta1Text: "Observe cómo los profesores crean laboratorios personalizados en minutos, sin necesidad de programar.",
       cta1Button: "Reservar una Demo",
       cta1Secondary: "Ver Características",
       cta2Title: "¿Listo para Transformar su Departamento de Ciencias?",
-      cta2Text: "Obtenga una cotización personalizada para su escuela o distrito — precios que se adaptan a cualquier presupuesto.",
+      cta2Text: "Obtenga una cotización personalizada para su escuela o distrito, precios que se adaptan a cualquier presupuesto.",
       cta2Button: "Solicitar Prueba Gratuita",
       cta2Secondary: "Verlo en Acción",
       cta3Title: "¿Necesita una Solución Personalizada?",
-      cta3Text: "Cuéntenos sobre su proyecto — nuestro equipo diseñará una solución a su medida.",
+      cta3Text: "Cuéntenos sobre su proyecto, nuestro equipo diseñará una solución a su medida.",
       cta3Button: "Contáctenos",
     },
 
@@ -1080,7 +1080,7 @@ const translations = {
       title: "¡Gracias por Visitarnos en BETT 2026! | WhimsyLabs Laboratorio Virtual",
       description: "¡WhimsyLabs en BETT 2026 fue un éxito! Ganamos el premio Best of BETT 2026 de Tech&Learning. ¿Te lo perdiste? Reserva una demo virtual para ver nuestro premiado software de laboratorio virtual.",
       heroTitle: "¡Gracias por Visitarnos en BETT 2026!",
-      heroSubtitle: "Tuvimos un tiempo increíble mostrando WhimsyLabs en BETT 2026. ¿No pudiste asistir? ¡No te preocupes — reserva una demo virtual y experimenta nuestra plataforma galardonada desde cualquier lugar!",
+      heroSubtitle: "Tuvimos un tiempo increíble mostrando WhimsyLabs en BETT 2026. ¿No pudiste asistir? ¡No te preocupes, reserva una demo virtual y experimenta nuestra plataforma galardonada desde cualquier lugar!",
       dates: "Fechas del Evento",
       location: "Ubicación",
       award: "Premios",
@@ -1154,14 +1154,14 @@ const translations = {
       description: "Explora experimentos virtuales de química interactivos con simulaciones realistas. Práctica segura e ilimitada de titulaciones, reacciones y química molecular.",
       hero: {
         title: "Laboratorio Virtual de Química para Escuelas",
-        subtitle: "Experimentos de química seguros y atractivos con simulaciones físicas realistas. Desde titulaciones hasta reacciones de combustión — todo sin riesgos.",
+        subtitle: "Experimentos de química seguros y atractivos con simulaciones físicas realistas. Desde titulaciones hasta reacciones de combustión, todo sin riesgos.",
         cta: "Solicitar Demo",
         ctaSecondary: "Ver Características",
       },
       intro: {
         title: "Transforma la Educación en Química",
         text1: "La química es práctica por naturaleza. Pero los laboratorios tradicionales enfrentan desafíos: equipos limitados, preocupaciones de seguridad, restricciones de tiempo e imposibilidad de repetir experimentos costosos.",
-        text2: "El laboratorio virtual de química de WhimsyLabs resuelve estos problemas con simulaciones precisas que permiten a los estudiantes practicar titulaciones, observar reacciones y explorar estructuras moleculares — de forma segura y tantas veces como necesiten.",
+        text2: "El laboratorio virtual de química de WhimsyLabs resuelve estos problemas con simulaciones precisas que permiten a los estudiantes practicar titulaciones, observar reacciones y explorar estructuras moleculares, de forma segura y tantas veces como necesiten.",
       },
       experiments: {
         title: "Experimentos de Química Disponibles",
@@ -1227,14 +1227,14 @@ const translations = {
       description: "Explora experimentos virtuales de biología con simulaciones realistas. Disecciones, microscopía y biología celular sin preocupaciones éticas.",
       hero: {
         title: "Laboratorio Virtual de Biología para Escuelas",
-        subtitle: "Explora las ciencias de la vida con experimentos éticos y atractivos. Desde biología celular hasta disecciones — sin dañar animales.",
+        subtitle: "Explora las ciencias de la vida con experimentos éticos y atractivos. Desde biología celular hasta disecciones, sin dañar animales.",
         cta: "Reservar Demo",
         ctaSecondary: "Ver Características",
       },
       intro: {
         title: "Transforma la Educación en Biología",
         text1: "La biología trata de entender la vida. Pero los laboratorios tradicionales enfrentan desafíos: preocupaciones éticas sobre disecciones, acceso limitado a microscopios y la imposibilidad de observar procesos en tiempo real.",
-        text2: "El laboratorio virtual de biología de WhimsyLabs resuelve estos problemas con simulaciones detalladas que permiten a los estudiantes explorar células, realizar disecciones virtuales y observar procesos biológicos — de manera ética y repetida.",
+        text2: "El laboratorio virtual de biología de WhimsyLabs resuelve estos problemas con simulaciones detalladas que permiten a los estudiantes explorar células, realizar disecciones virtuales y observar procesos biológicos, de manera ética y repetida.",
       },
       experiments: {
         title: "Experimentos de Biología Disponibles",
@@ -1263,7 +1263,7 @@ const translations = {
       description: "Explora experimentos virtuales de física con simulaciones realistas. Mecánica, electricidad, ondas y más con recopilación de datos en tiempo real.",
       hero: {
         title: "Laboratorio Virtual de Física para Escuelas",
-        subtitle: "Domina conceptos de física con simulaciones interactivas. Desde circuitos hasta mecánica — mediciones precisas sin limitaciones de equipo.",
+        subtitle: "Domina conceptos de física con simulaciones interactivas. Desde circuitos hasta mecánica, mediciones precisas sin limitaciones de equipo.",
         cta: "Reservar Demo",
         ctaSecondary: "Ver Características",
       },
@@ -1311,9 +1311,9 @@ const translations = {
     // Grants Page
     grants: {
       heroTitle: "Subvenciones para Educación Científica en Escuelas",
-      heroSubtitle: "Obtén financiación para laboratorios virtuales — WhimsyLabs proporciona software gratuito, experiencia STEM y apoyo en la solicitud",
+      heroSubtitle: "Obtén financiación para laboratorios virtuales, WhimsyLabs proporciona software gratuito, experiencia STEM y apoyo en la solicitud",
       introTitle: "WhimsyLabs: Tu Socio para Subvenciones Educativas",
-      introText1: "¿Solicitando subvenciones educativas? <strong>WhimsyLabs es tu socio tecnológico listo para usar.</strong> Proporcionamos software de laboratorio virtual gratuito durante todo el período de tu subvención — tu presupuesto completo va a hardware y otras necesidades.",
+      introText1: "¿Solicitando subvenciones educativas? <strong>WhimsyLabs es tu socio tecnológico listo para usar.</strong> Proporcionamos software de laboratorio virtual gratuito durante todo el período de tu subvención, tu presupuesto completo va a hardware y otras necesidades.",
       introText2: "Nuestro equipo incluye <strong>miembros con doctorados con experiencia en redacción de subvenciones</strong>. Proporcionamos plantillas de solicitud, documentación técnica, ideas de proyectos y cartas de apoyo. Todo lo que necesitas para presentar una solicitud convincente.",
       introText3: "<strong>Asóciate con nosotros y obtén: acceso gratuito al software, paquete de apoyo para la solicitud, demo para los evaluadores y soporte técnico continuo.</strong> Hemos ayudado a escuelas a conseguir financiación para gafas VR, Chromebooks y otros equipos STEM.",
       gridTitle: "Subvenciones que Apoyamos",
@@ -1414,15 +1414,15 @@ const translations = {
       description: "Services complets de laboratoire virtuel incluant développement de laboratoires personnalisés, intégration curriculaire, formation des enseignants et support technique pour les écoles.",
       // Mid-page CTAs
       cta1Title: "Découvrez le Créateur d'Expériences IA en Action",
-      cta1Text: "Regardez comment les enseignants créent des laboratoires personnalisés en quelques minutes — aucune programmation requise.",
+      cta1Text: "Regardez comment les enseignants créent des laboratoires personnalisés en quelques minutes, aucune programmation requise.",
       cta1Button: "Réserver une Démo",
       cta1Secondary: "Voir les Fonctionnalités",
       cta2Title: "Prêt à Transformer Votre Département de Sciences?",
-      cta2Text: "Obtenez un devis personnalisé pour votre école ou district — des tarifs adaptés à tous les budgets.",
+      cta2Text: "Obtenez un devis personnalisé pour votre école ou district, des tarifs adaptés à tous les budgets.",
       cta2Button: "Demander un Essai Gratuit",
       cta2Secondary: "Voir en Action",
       cta3Title: "Besoin d'une Solution Sur Mesure?",
-      cta3Text: "Parlez-nous de votre projet — notre équipe concevra une solution adaptée à vos besoins.",
+      cta3Text: "Parlez-nous de votre projet, notre équipe concevra une solution adaptée à vos besoins.",
       cta3Button: "Nous Contacter",
     },
 
@@ -1679,7 +1679,7 @@ const translations = {
       title: "Merci pour votre visite au BETT 2026 | WhimsyLabs",
       description: "WhimsyLabs au BETT 2026 fut un succès ! Nous avons remporté le prix Best of BETT 2026 de Tech&Learning. Vous nous avez manqué ? Réservez une démo virtuelle pour découvrir notre logiciel primé.",
       heroTitle: "Merci de Nous Avoir Visités au BETT 2026 !",
-      heroSubtitle: "Nous avons passé un moment incroyable à présenter WhimsyLabs au BETT 2026. Vous n'avez pas pu venir ? Pas de souci — réservez une démo virtuelle et découvrez notre plateforme primée de n'importe où !",
+      heroSubtitle: "Nous avons passé un moment incroyable à présenter WhimsyLabs au BETT 2026. Vous n'avez pas pu venir ? Pas de souci, réservez une démo virtuelle et découvrez notre plateforme primée de n'importe où !",
       dates: "Dates de l'Événement",
       location: "Emplacement",
       award: "Récompenses",
@@ -1753,14 +1753,14 @@ const translations = {
       description: "Explorez des expériences de chimie virtuelles interactives avec des simulations réalistes. Pratique sûre et illimitée des titrages, réactions et chimie moléculaire.",
       hero: {
         title: "Laboratoire Virtuel de Chimie pour Écoles",
-        subtitle: "Des expériences de chimie sûres et engageantes avec des simulations physiques réalistes. Des titrages aux réactions de combustion — le tout sans danger.",
+        subtitle: "Des expériences de chimie sûres et engageantes avec des simulations physiques réalistes. Des titrages aux réactions de combustion, le tout sans danger.",
         cta: "Réserver une Démo",
         ctaSecondary: "Voir les Fonctionnalités",
       },
       intro: {
         title: "Transformez l'Enseignement de la Chimie",
         text1: "La chimie est pratique par nature. Mais les laboratoires traditionnels font face à des défis: équipement limité, préoccupations de sécurité, contraintes de temps et impossibilité de répéter des expériences coûteuses.",
-        text2: "Le laboratoire virtuel de chimie WhimsyLabs résout ces problèmes avec des simulations précises permettant aux étudiants de pratiquer les titrages, observer les réactions et explorer les structures moléculaires — en toute sécurité et autant de fois que nécessaire.",
+        text2: "Le laboratoire virtuel de chimie WhimsyLabs résout ces problèmes avec des simulations précises permettant aux étudiants de pratiquer les titrages, observer les réactions et explorer les structures moléculaires, en toute sécurité et autant de fois que nécessaire.",
       },
       experiments: {
         title: "Expériences de Chimie Disponibles",
@@ -1826,14 +1826,14 @@ const translations = {
       description: "Explorez des expériences virtuelles de biologie avec des simulations réalistes. Dissections, microscopie et biologie cellulaire sans préoccupations éthiques.",
       hero: {
         title: "Laboratoire Virtuel de Biologie pour Écoles",
-        subtitle: "Explorez les sciences de la vie avec des expériences éthiques et engageantes. De la biologie cellulaire aux dissections — sans nuire aux animaux.",
+        subtitle: "Explorez les sciences de la vie avec des expériences éthiques et engageantes. De la biologie cellulaire aux dissections, sans nuire aux animaux.",
         cta: "Réserver une Démo",
         ctaSecondary: "Voir les Fonctionnalités",
       },
       intro: {
         title: "Transformez l'Éducation en Biologie",
         text1: "La biologie consiste à comprendre la vie. Mais les laboratoires traditionnels font face à des défis: préoccupations éthiques sur les dissections, accès limité aux microscopes et impossibilité d'observer les processus en temps réel.",
-        text2: "Le laboratoire virtuel de biologie WhimsyLabs résout ces problèmes avec des simulations détaillées permettant aux étudiants d'explorer les cellules, d'effectuer des dissections virtuelles et d'observer les processus biologiques — de manière éthique et répétée.",
+        text2: "Le laboratoire virtuel de biologie WhimsyLabs résout ces problèmes avec des simulations détaillées permettant aux étudiants d'explorer les cellules, d'effectuer des dissections virtuelles et d'observer les processus biologiques, de manière éthique et répétée.",
       },
       experiments: {
         title: "Expériences de Biologie Disponibles",
@@ -1862,7 +1862,7 @@ const translations = {
       description: "Explorez des expériences virtuelles de physique avec des simulations réalistes. Mécanique, électricité, ondes et plus avec collecte de données en temps réel.",
       hero: {
         title: "Laboratoire Virtuel de Physique pour Écoles",
-        subtitle: "Maîtrisez les concepts de physique avec des simulations interactives. Des circuits à la mécanique — mesures précises sans limitations d'équipement.",
+        subtitle: "Maîtrisez les concepts de physique avec des simulations interactives. Des circuits à la mécanique, mesures précises sans limitations d'équipement.",
         cta: "Réserver une Démo",
         ctaSecondary: "Voir les Fonctionnalités",
       },
@@ -1910,9 +1910,9 @@ const translations = {
     // Grants Page
     grants: {
       heroTitle: "Subventions pour l'Éducation Scientifique au Royaume-Uni",
-      heroSubtitle: "Obtenez un financement pour les laboratoires virtuels — WhimsyLabs fournit logiciel gratuit, expertise STEM et soutien à la demande",
+      heroSubtitle: "Obtenez un financement pour les laboratoires virtuels, WhimsyLabs fournit logiciel gratuit, expertise STEM et soutien à la demande",
       introTitle: "WhimsyLabs: Votre Partenaire pour les Subventions Éducatives",
-      introText1: "Vous demandez des subventions éducatives? <strong>WhimsyLabs est votre partenaire technologique clé en main.</strong> Nous fournissons un logiciel de laboratoire virtuel gratuit pendant toute la durée de votre subvention — tout votre budget va au matériel et autres besoins.",
+      introText1: "Vous demandez des subventions éducatives? <strong>WhimsyLabs est votre partenaire technologique clé en main.</strong> Nous fournissons un logiciel de laboratoire virtuel gratuit pendant toute la durée de votre subvention, tout votre budget va au matériel et autres besoins.",
       introText2: "Notre équipe comprend <strong>des membres titulaires de doctorats expérimentés dans la rédaction de demandes de subventions</strong>. Nous fournissons des modèles de demande, de la documentation technique, des idées de projets et des lettres de soutien. Tout ce dont vous avez besoin pour soumettre une demande convaincante.",
       introText3: "<strong>Associez-vous avec nous et obtenez: accès gratuit au logiciel, pack de soutien à la demande, démo pour les évaluateurs et support technique continu.</strong> Nous avons aidé des écoles à obtenir des financements pour des casques VR, Chromebooks et autres équipements STEM.",
       gridTitle: "Subventions que Nous Soutenons",
@@ -2012,15 +2012,15 @@ const translations = {
       description: "Umfassende virtuelle Labor-Dienstleistungen einschließlich benutzerdefinierter Labor-Entwicklung, Lehrplan-Integration, Lehrerfortbildung und technischem Support für Schulen.",
       // Mid-page CTAs
       cta1Title: "Sehen Sie den KI-Experiment-Builder in Aktion",
-      cta1Text: "Beobachten Sie, wie Lehrer individuelle Labore in wenigen Minuten erstellen — keine Programmierkenntnisse erforderlich.",
+      cta1Text: "Beobachten Sie, wie Lehrer individuelle Labore in wenigen Minuten erstellen, keine Programmierkenntnisse erforderlich.",
       cta1Button: "Demo Buchen",
       cta1Secondary: "Funktionen Ansehen",
       cta2Title: "Bereit, Ihre Naturwissenschaftsabteilung zu Transformieren?",
-      cta2Text: "Erhalten Sie ein individuelles Angebot für Ihre Schule oder Ihren Bezirk — Preise für jedes Budget.",
+      cta2Text: "Erhalten Sie ein individuelles Angebot für Ihre Schule oder Ihren Bezirk, Preise für jedes Budget.",
       cta2Button: "Kostenlose Testversion Anfordern",
       cta2Secondary: "In Aktion Sehen",
       cta3Title: "Benötigen Sie eine Individuelle Lösung?",
-      cta3Text: "Erzählen Sie uns von Ihrem Projekt — unser Team entwickelt eine maßgeschneiderte Lösung.",
+      cta3Text: "Erzählen Sie uns von Ihrem Projekt, unser Team entwickelt eine maßgeschneiderte Lösung.",
       cta3Button: "Kontaktieren Sie Uns",
     },
 
@@ -2277,7 +2277,7 @@ const translations = {
       title: "Danke für Ihren Besuch auf der BETT 2026 | WhimsyLabs Labor",
       description: "WhimsyLabs auf der BETT 2026 war ein Erfolg! Wir haben den Best of BETT 2026 Award von Tech&Learning gewonnen. Verpasst? Buchen Sie eine virtuelle Demo, um unsere preisgekrönte Software zu sehen.",
       heroTitle: "Danke für Ihren Besuch auf der BETT 2026!",
-      heroSubtitle: "Wir hatten eine fantastische Zeit bei der Präsentation von WhimsyLabs auf der BETT 2026. Konnten Sie nicht dabei sein? Kein Problem — buchen Sie eine virtuelle Demo und erleben Sie unsere preisgekrönte Plattform von überall!",
+      heroSubtitle: "Wir hatten eine fantastische Zeit bei der Präsentation von WhimsyLabs auf der BETT 2026. Konnten Sie nicht dabei sein? Kein Problem, buchen Sie eine virtuelle Demo und erleben Sie unsere preisgekrönte Plattform von überall!",
       dates: "Veranstaltungsdaten",
       location: "Standort",
       award: "Auszeichnungen",
@@ -2351,14 +2351,14 @@ const translations = {
       description: "Entdecken Sie interaktive virtuelle Chemieexperimente mit realistischen Simulationen. Sichere, unbegrenzte Übung für Titrationen, Reaktionen und Molekülchemie.",
       hero: {
         title: "Virtuelles Chemielabor für Schulen",
-        subtitle: "Sichere, ansprechende Chemieexperimente mit realistischen Physiksimulationen. Von Titrationen bis Verbrennungsreaktionen — alles ohne Gefahren.",
+        subtitle: "Sichere, ansprechende Chemieexperimente mit realistischen Physiksimulationen. Von Titrationen bis Verbrennungsreaktionen, alles ohne Gefahren.",
         cta: "Demo Buchen",
         ctaSecondary: "Funktionen Ansehen",
       },
       intro: {
         title: "Chemieunterricht Transformieren",
         text1: "Chemie ist von Natur aus praktisch. Aber traditionelle Labore stehen vor Herausforderungen: begrenzte Ausrüstung, Sicherheitsbedenken, Zeitbeschränkungen und die Unmöglichkeit, teure Experimente zu wiederholen.",
-        text2: "Das virtuelle Chemielabor von WhimsyLabs löst diese Probleme mit physikalisch genauen Simulationen, die Schülern ermöglichen, Titrationen zu üben, Reaktionen zu beobachten und Molekülstrukturen zu erkunden — sicher und so oft wie nötig.",
+        text2: "Das virtuelle Chemielabor von WhimsyLabs löst diese Probleme mit physikalisch genauen Simulationen, die Schülern ermöglichen, Titrationen zu üben, Reaktionen zu beobachten und Molekülstrukturen zu erkunden, sicher und so oft wie nötig.",
       },
       experiments: {
         title: "Verfügbare Chemieexperimente",
@@ -2424,7 +2424,7 @@ const translations = {
       description: "Erkunden Sie virtuelle Biologieexperimente mit realistischen Simulationen. Sezierungen, Mikroskopie und Zellbiologie ohne ethische Bedenken.",
       hero: {
         title: "Virtuelles Biologielabor für Schulen",
-        subtitle: "Erkunden Sie Lebenswissenschaften mit ethischen, ansprechenden Experimenten. Von Zellbiologie bis zu Sezierungen — alles ohne Tiere zu schädigen.",
+        subtitle: "Erkunden Sie Lebenswissenschaften mit ethischen, ansprechenden Experimenten. Von Zellbiologie bis zu Sezierungen, alles ohne Tiere zu schädigen.",
         cta: "Demo Buchen",
         ctaSecondary: "Funktionen Ansehen",
       },
@@ -2460,7 +2460,7 @@ const translations = {
       description: "Erkunden Sie virtuelle Physikexperimente mit realistischen Simulationen. Mechanik, Elektrizität, Wellen und mehr mit Echtzeit-Datenerfassung.",
       hero: {
         title: "Virtuelles Physiklabor für Schulen",
-        subtitle: "Meistern Sie Physikkonzepte mit interaktiven Simulationen. Von Schaltkreisen bis zur Mechanik — präzise Messungen ohne Ausrüstungsbeschränkungen.",
+        subtitle: "Meistern Sie Physikkonzepte mit interaktiven Simulationen. Von Schaltkreisen bis zur Mechanik, präzise Messungen ohne Ausrüstungsbeschränkungen.",
         cta: "Demo Buchen",
         ctaSecondary: "Funktionen Ansehen",
       },
@@ -2508,9 +2508,9 @@ const translations = {
     // Grants Page
     grants: {
       heroTitle: "Fördermittel für naturwissenschaftliche Bildung an Schulen",
-      heroSubtitle: "Finanzierung für virtuelle Labore — WhimsyLabs bietet kostenlose Software, MINT-Expertise und Antragsunterstützung",
+      heroSubtitle: "Finanzierung für virtuelle Labore, WhimsyLabs bietet kostenlose Software, MINT-Expertise und Antragsunterstützung",
       introTitle: "WhimsyLabs: Ihr Partner für Bildungsförderungen",
-      introText1: "Bewerben Sie sich um Bildungsförderungen? <strong>WhimsyLabs ist Ihr schlüsselfertiger Technologiepartner.</strong> Wir stellen während der gesamten Förderlaufzeit kostenlose virtuelle Laborsoftware bereit — Ihr gesamtes Budget geht an Hardware und andere Bedürfnisse.",
+      introText1: "Bewerben Sie sich um Bildungsförderungen? <strong>WhimsyLabs ist Ihr schlüsselfertiger Technologiepartner.</strong> Wir stellen während der gesamten Förderlaufzeit kostenlose virtuelle Laborsoftware bereit, Ihr gesamtes Budget geht an Hardware und andere Bedürfnisse.",
       introText2: "Unser Team umfasst <strong>Mitglieder mit Doktortiteln, die Erfahrung im Schreiben von Förderanträgen haben</strong>. Wir bieten Antragsvorlagen, technische Dokumentation, Projektideen und Unterstützungsschreiben. Alles, was Sie brauchen, um einen überzeugenden Antrag einzureichen.",
       introText3: "<strong>Werden Sie unser Partner und erhalten Sie: kostenlosen Softwarezugang, Antragsunterstützungspaket, Demo für Gutachter und laufenden technischen Support.</strong> Wir haben Schulen geholfen, Förderungen für VR-Headsets, Chromebooks und andere MINT-Ausrüstung zu erhalten.",
       gridTitle: "Förderungen, die wir unterstützen",
@@ -2614,11 +2614,11 @@ const translations = {
       cta1Button: "デモを予約",
       cta1Secondary: "機能を見る",
       cta2Title: "理科教育の新しい可能性を探りませんか？",
-      cta2Text: "学校や学区向けのカスタマイズされた見積もりを取得 — あらゆる予算に対応した価格設定。",
+      cta2Text: "学校や学区向けのカスタマイズされた見積もりを取得, あらゆる予算に対応した価格設定。",
       cta2Button: "無料トライアルをリクエスト",
       cta2Secondary: "実際に見る",
       cta3Title: "カスタムソリューションが必要ですか？",
-      cta3Text: "プロジェクトについてお聞かせください — お客様のニーズに合わせたソリューションを設計します。",
+      cta3Text: "プロジェクトについてお聞かせください, お客様のニーズに合わせたソリューションを設計します。",
       cta3Button: "お問い合わせ",
     },
 
@@ -2788,14 +2788,14 @@ const translations = {
       description: "リアルなシミュレーションでインタラクティブな仮想化学実験を体験できます。滴定、反応、分子化学の安全で無制限の練習が可能。",
       hero: {
         title: "学校向けバーチャル化学実験室",
-        subtitle: "リアルな物理シミュレーションによる安全で魅力的な化学実験。滴定から燃焼反応まで — すべて危険なく。",
+        subtitle: "リアルな物理シミュレーションによる安全で魅力的な化学実験。滴定から燃焼反応まで, すべて危険なく。",
         cta: "デモを予約",
         ctaSecondary: "機能を見る",
       },
       intro: {
         title: "化学教育を変革する",
         text1: "化学は本質的に実践的です。しかし、従来の実験室には課題があります：限られた設備、安全上の懸念、時間的制約、そして高価な実験を繰り返すことの不可能性。",
-        text2: "WhimsyLabsのバーチャル化学実験室は、生徒が滴定を練習し、反応を観察し、分子構造を探索できる物理的に正確なシミュレーションでこれらの問題を解決します — 安全に、何度でも。",
+        text2: "WhimsyLabsのバーチャル化学実験室は、生徒が滴定を練習し、反応を観察し、分子構造を探索できる物理的に正確なシミュレーションでこれらの問題を解決します, 安全に、何度でも。",
       },
       experiments: {
         title: "利用可能な化学実験",
@@ -2861,7 +2861,7 @@ const translations = {
       description: "リアルなシミュレーションでインタラクティブな仮想生物学実験を体験できます。解剖、顕微鏡、細胞生物学を倫理的に学習が可能。",
       hero: {
         title: "学校向けバーチャル生物学実験室",
-        subtitle: "倫理的で魅力的な実験で生命科学を探求。細胞生物学から解剖まで — 動物を傷つけずに学習。",
+        subtitle: "倫理的で魅力的な実験で生命科学を探求。細胞生物学から解剖まで, 動物を傷つけずに学習。",
         cta: "デモを予約",
         ctaSecondary: "機能を見る",
       },
@@ -2897,7 +2897,7 @@ const translations = {
       description: "リアルなシミュレーションでインタラクティブな仮想物理学実験を体験できます。力学、電気、波動など、リアルタイムデータ収集で学習。",
       hero: {
         title: "学校向けバーチャル物理学実験室",
-        subtitle: "インタラクティブシミュレーションで物理概念を習得。回路から力学まで — 機器の制限なしに正確な測定。",
+        subtitle: "インタラクティブシミュレーションで物理概念を習得。回路から力学まで, 機器の制限なしに正確な測定。",
         cta: "デモを予約",
         ctaSecondary: "機能を見る",
       },
@@ -2945,7 +2945,7 @@ const translations = {
     // Grants Page
     grants: {
       heroTitle: "英国の学校向け科学教育助成金",
-      heroSubtitle: "バーチャルラボの資金を獲得 — WhimsyLabsは無料ソフトウェア、STEM専門知識、申請サポートを提供します",
+      heroSubtitle: "バーチャルラボの資金を獲得, WhimsyLabsは無料ソフトウェア、STEM専門知識、申請サポートを提供します",
       introTitle: "WhimsyLabs：教育助成金のパートナー",
       introText1: "教育助成金を申請中ですか？<strong>WhimsyLabsはあなたのすぐに使えるテクノロジーパートナーです。</strong>助成金期間中は無料でバーチャルラボソフトウェアを提供します。予算全額をハードウェアやその他のニーズに使用できます。",
       introText2: "当社のチームには<strong>助成金申請書作成の経験を持つ博士号取得者</strong>が含まれています。申請テンプレート、技術文書、プロジェクトアイデア、推薦状を提供します。説得力のある申請書を提出するために必要なすべてが揃っています。",

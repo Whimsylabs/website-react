@@ -1,7 +1,7 @@
 import React from "react";
 
 export const title = "Student-Owned VR Headsets: Practicals at Home";
-export const date = "2026-08-04";
+export const date = "2026-07-31";
 export const slug = "student-owned-vr-headsets-school-licence";
 export const description =
   "Plenty of students already own a VR headset. Letting a school licence extend to it turns idle consumer hardware into practical science capacity, at no cost.";

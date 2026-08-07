@@ -174,7 +174,7 @@ const USGrantsPage = ({ language = "en" }) => {
           <div className="rsg-package-grid">
             <div className="rsg-package-card rsg-package-whimsy">
               <div className="rsg-package-icon">📚</div>
-              <h3>Title IV-A (SSAE) — Best Federal Route</h3>
+              <h3>Title IV-A (SSAE), Best Federal Route</h3>
               <p>
                 Federal ESSA formula funds that flow to your district. One of its three core areas is
                 <strong> "Effective Use of Technology,"</strong> which covers instructional and blended-learning
@@ -189,18 +189,18 @@ const USGrantsPage = ({ language = "en" }) => {
             </div>
             <div className="rsg-package-card rsg-package-grant">
               <div className="rsg-package-icon">💛</div>
-              <h3>DonorsChoose — Always Open</h3>
+              <h3>DonorsChoose, Always Open</h3>
               <p>
                 Teacher crowdfunding from a 501(c)(3) nonprofit. <strong>Digital subscriptions and VR are
                 explicitly eligible.</strong>
               </p>
               <ul>
-                <li>Rolling and always open — no deadline</li>
+                <li>Rolling and always open, no deadline</li>
                 <li>Public, charter, AND private school teachers</li>
                 <li>Teachers create projects directly at donorschoose.org</li>
               </ul>
               <p className="rsg-package-highlight">
-                <strong>💡 Tip:</strong> Pair a DonorsChoose project with district Title IV-A funds — that
+                <strong>💡 Tip:</strong> Pair a DonorsChoose project with district Title IV-A funds, that
                 combination covers most schools.
               </p>
             </div>
@@ -313,7 +313,7 @@ const USGrantsPage = ({ language = "en" }) => {
             <div className="rsg-eligibility-card rsg-partners">
               <h3>🎯 Why WhimsyLabs Qualifies</h3>
               <ul>
-                <li>It is instructional/blended-learning software — a Title IV-A "Effective Use of Technology" fit</li>
+                <li>It is instructional/blended-learning software, a Title IV-A "Effective Use of Technology" fit</li>
                 <li>A subscription is not subject to the 15% device-infrastructure cap</li>
                 <li>Digital subscriptions and VR are explicitly DonorsChoose-eligible</li>
                 <li>VR is explicitly funded by state programs like Georgia's Teacher Grants for Innovation</li>

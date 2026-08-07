@@ -55,25 +55,23 @@
 }
 
 .blog-preview-link:hover .post-box {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    border-color: #dabeff;
+    box-shadow: 0 8px 20px rgba(31, 25, 104, 0.15);
 }
 
 .post-box {
     background-color: #ffffffd0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    border: 1px solid rgba(218, 190, 255, 0.45);
+    box-shadow: 0 2px 4px rgba(31, 25, 104, 0.06), 0 4px 12px rgba(31, 25, 104, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .post-box h2 {
     margin: 0 0 10px;
     font-size: 1.5rem;
-    color: #333333;
-}
-
-.post-box h2 {
     color: #333333;
     text-decoration: none;
     transition: color 0.2s;
@@ -87,10 +85,13 @@
 }
 
 .post-date {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #e01b84;
     display: block;
     margin-bottom: 5px; /* Reduced from 10px */
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
 }
 
 .post-preview {
@@ -98,15 +99,28 @@
     padding-bottom: 0%; /* Reduced since button is now overlaid on content */
     overflow: hidden;
     min-height: 300px; /* Set minimum height for the box */
+    text-align: left;
+}
+
+/* Cards whose post doesn't open with an image get a brand-gradient accent
+   strip instead, so text-only cards don't look unfinished next to image
+   cards. (:has() is unsupported ≈2021 browsers; they just see a plain card.) */
+.post-preview:not(:has(.post-header-image))::before {
+    content: '';
+    display: block;
+    height: 6px;
+    margin: -20px -20px 16px -20px;
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(90deg, #dabeff 0%, #95CEF6 60%, #14b7ff 100%);
 }
 
 .post-header-image {
     width: 100%;
-    height: 120px; /* Reduced by ~50% from 180px */
+    height: 140px;
     overflow: hidden;
     margin: -20px -20px 20px -20px;
     width: calc(100% + 40px);
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px 12px 0 0;
     position: relative;
 }
 
@@ -180,10 +194,10 @@
 
 .read-more-link {
     display: inline-block;
-    background-color: #1f1968;
+    background: linear-gradient(135deg, #1f1968 0%, #3d2d8a 100%);
     color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 10px 24px;
+    border-radius: 999px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -192,33 +206,30 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10; /* Higher z-index to ensure it appears above the fade effect */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 0 15px rgba(255,255,255,0.8); /* Added glow effect */
-    font-size: 1.05rem;
-    opacity: 0.9; /* Slightly transparent by default */
+    box-shadow: 0 3px 10px rgba(31, 25, 104, 0.3);
+    font-size: 1rem;
 }
 
 .blog-preview-link:hover .read-more-link {
-    background-color: #14b7ff;
+    background: linear-gradient(135deg, #14b7ff 0%, #0d8fd6 100%);
     color: white;
-    transform: translateX(-50%) translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.4), 0 0 20px rgba(20,183,255,0.6); /* Enhanced glow effect */
-    opacity: 1; /* Fully opaque on hover */
+    transform: translateX(-50%) translateY(-4px);
+    box-shadow: 0 6px 16px rgba(20, 183, 255, 0.4);
 }
 
 /* Make the button more visible on hover */
 .read-more-link:hover {
-    transform: translateX(-50%) scale(1.1);
-    opacity: 1;
+    transform: translateX(-50%) scale(1.05);
 }
 
 /* Style for post title in blog preview */
 .post-title {
-    color: #333333;
+    color: #1f1968;
     transition: color 0.3s ease;
 }
 
 .blog-preview-link:hover .post-title {
-    color: #007bff;
+    color: #14b7ff;
 }
 
 /* Single post page styles */
@@ -227,6 +238,7 @@
     max-width: 800px;
     margin: 0 auto;
     background-color: #ffffffee;
+    border-radius: 16px;
 }
 
 .single-post .post-title {
@@ -303,13 +315,79 @@
 .single-post .post-content img {
     margin: 25px auto;
     display: block;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(31, 25, 104, 0.12);
+}
+
+/* Article typography, many posts use bare h2/h3/lists/quotes with no
+   classes, so give them a consistent, branded treatment here. */
+.single-post .post-content h2 {
+    font-size: 1.6rem;
+    color: #1f1968;
+    text-align: left;
+    margin: 40px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(218, 190, 255, 0.6);
+}
+
+.single-post .post-content h3 {
+    font-size: 1.3rem;
+    color: #1f1968;
+    text-align: left;
+    margin: 30px 0 12px;
+}
+
+.single-post .post-content a {
+    color: #1f1968;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #dabeff;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.single-post .post-content a:hover {
+    color: #14b7ff;
+    text-decoration-color: #14b7ff;
+}
+
+.single-post .post-content ul,
+.single-post .post-content ol {
+    text-align: left;
+    margin: 0 0 20px;
+    padding-left: 28px;
+}
+
+.single-post .post-content li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.single-post .post-content blockquote {
+    margin: 25px 0;
+    padding: 15px 20px;
+    border-left: 4px solid #dabeff;
+    background: rgba(218, 190, 255, 0.12);
+    border-radius: 0 12px 12px 0;
+    font-style: italic;
+    color: #444;
+    text-align: left;
+}
+
+.single-post .post-content blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 .post-cta {
     margin-top: 40px;
-    padding: 20px 25px;
-    background: rgba(218, 190, 255, 0.25);
-    border-radius: 12px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(218, 190, 255, 0.3) 0%, rgba(149, 206, 246, 0.2) 100%);
+    border: 1px solid rgba(218, 190, 255, 0.6);
+    border-radius: 16px;
     text-align: center;
 }
 
@@ -342,21 +420,22 @@
 
 .post-nav-button {
     display: inline-block;
-    background-color: #1f1968;
+    background: linear-gradient(135deg, #1f1968 0%, #3d2d8a 100%);
     color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 10px 22px;
+    border-radius: 999px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
     margin: 10px 5px;
+    box-shadow: 0 3px 10px rgba(31, 25, 104, 0.25);
 }
 
 .post-nav-button:hover {
-    background-color: #14b7ff;
+    background: linear-gradient(135deg, #14b7ff 0%, #0d8fd6 100%);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 14px rgba(20, 183, 255, 0.35);
 }
 
 .prev-post, .next-post {
@@ -1000,16 +1079,21 @@
 
 .post-heading {
     margin: 0 0 10px;
-    font-size: 1.5rem;
-    color: #333333;
+    font-size: 1.45rem;
+    line-height: 1.3;
+    color: #1f1968;
+    text-align: left;
 }
 
 .post-description-text {
     font-size: 0.95rem;
-    color: #666;
+    color: #5a5a72;
     margin: 8px 0 12px;
-    line-height: 1.5;
+    line-height: 1.55;
     font-style: italic;
+    text-align: left;
+    border-left: 3px solid #dabeff;
+    padding-left: 12px;
 }
 
 /* ========================================
@@ -1067,57 +1151,4 @@
     .featured-post-card {
         padding: 12px;
     }
-}
-/* Article Speaker Button */
-.article-speaker {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0 1.5rem 0;
-  flex-wrap: wrap;
-}
-
-.article-speaker-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  background: linear-gradient(180deg, #f3f0ff 0%, #e5dbff 100%);
-  color: #5f3dc4;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.article-speaker-btn:hover {
-  background: linear-gradient(180deg, #ffffff 0%, #f3f0ff 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-}
-
-.article-speaker-btn:active {
-  transform: translateY(1px);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.article-speaker-btn.playing {
-  background: linear-gradient(180deg, #7950f2 0%, #6741d9 100%);
-  color: white;
-}
-
-.article-speaker-btn.paused {
-  background: linear-gradient(180deg, #fab005 0%, #f59f00 100%);
-  color: #1a1a1a;
-}
-
-.article-speaker-btn.stop {
-  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
-  color: #495057;
-}
-
-.speaker-icon {
-  font-size: 1rem;
 }

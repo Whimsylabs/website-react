@@ -1,96 +1,215 @@
-/* AI Assessment pillar page — scoped with .aia- prefix */
+/* AIAssessmentPage.css - AI-proof assessment pillar page
+   Band system mirrors the subject pages (SubjectLab.css) and landing:
+   dark hero -> lavender stats -> white -> tint -> bubble gradient ->
+   dark pipeline -> white -> tint -> dark CTA. */
 
-/* Hero */
+/* ============================================
+   HERO (matches landing hero language)
+   ============================================ */
 .aia-hero {
-    background: linear-gradient(180deg, #dabeff 0%, #95CEF6 100%);
-    padding: 60px 20px 50px;
+    position: relative;
+    background: linear-gradient(135deg, #1f1968 0%, #2d2a6e 50%, #1f1968 100%);
+    padding: 130px 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.aia-hero-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dabeff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.aia-hero-card {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    background: rgba(31, 25, 104, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 40px 50px 50px;
+    border-radius: 24px;
+    border: 1px solid rgba(218, 190, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.aia-award-chips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.aia-chip {
+    background: rgba(218, 190, 255, 0.15);
+    border: 1px solid rgba(218, 190, 255, 0.4);
+    color: #dabeff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
 }
 
 .aia-title {
-    color: #1f1968;
-    font-size: 2.2rem;
-    font-weight: 800;
-    max-width: 900px;
-    margin: 0 auto 15px;
+    font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 18px;
 }
 
 .aia-subtitle {
-    color: #1f1968;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
-    max-width: 760px;
-    margin: 0 auto 25px;
+    max-width: 700px;
+    margin: 0 auto 28px;
+}
+
+.aia-byline {
+    font-size: 0.92rem;
+    color: rgba(240, 236, 255, 0.75);
+    margin: -12px auto 26px;
+    text-align: center;
+}
+
+.aia-byline a {
+    color: #dabeff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.aia-byline a:hover {
+    text-decoration: underline;
+    color: #ffffff;
 }
 
 .aia-hero-ctas {
     display: flex;
-    gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Buttons */
 .aia-btn {
     display: inline-block;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .aia-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(31, 25, 104, 0.25);
     text-decoration: none;
 }
 
 .aia-btn-primary {
-    background: #1f1968;
-    color: #fff !important;
+    background: #e01b84;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(224, 27, 132, 0.4);
 }
+
+.aia-btn-primary:hover { color: #fff; }
 
 .aia-btn-secondary {
-    background: rgba(255, 255, 255, 0.85);
-    color: #1f1968 !important;
+    background: rgba(218, 190, 255, 0.15);
+    border: 1px solid rgba(218, 190, 255, 0.5);
+    color: #dabeff;
 }
 
-.aia-btn-light {
-    background: #dabeff;
-    color: #1f1968 !important;
-}
+.aia-btn-secondary:hover { color: #fff; border-color: #fff; }
+
+.aia-btn-light { background: #dabeff; color: #1f1968; }
+.aia-btn-light:hover { color: #1f1968; }
 
 .aia-btn-outline {
-    border: 2px solid #dabeff;
-    color: #dabeff !important;
+    border: 1px solid #dabeff;
+    color: #dabeff;
 }
 
-/* Content column */
-.aia-content {
-    max-width: 1100px;
+.aia-btn-outline:hover { color: #fff; border-color: #fff; }
+
+/* ============================================
+   STATS BAND (stat tiles, no chart)
+   ============================================ */
+.aia-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 45px 20px;
+    background: #f4eeff;
+}
+
+.aia-stat {
+    flex: 0 1 280px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 24px;
+    box-shadow: 0 4px 16px rgba(31, 25, 104, 0.08);
+    border-top: 4px solid #dabeff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aia-stat-value {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #1f1968;
+    line-height: 1;
+}
+
+.aia-stat-label {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ============================================
+   BANDS + SHARED CONTENT
+   ============================================ */
+.aia-band {
+    padding: 55px 20px;
+}
+
+.aia-band--white { background: #ffffff; }
+.aia-band--tint { background: linear-gradient(180deg, #f8f9fc 0%, #ffffff 100%); }
+
+.aia-band--dark {
+    background: linear-gradient(135deg, #1f1968 0%, #2d2a6e 52%, #1f1968 100%);
+}
+
+.aia-inner {
+    max-width: 960px;
     margin: 0 auto;
-    padding: 40px 20px;
     text-align: left;
 }
 
-.aia-content h2 {
+.aia-inner h2 {
     color: #1f1968;
     font-size: 1.6rem;
     margin-bottom: 15px;
 }
 
-.aia-content p {
+.aia-inner p,
+.aia-inner li {
     color: #333;
     line-height: 1.7;
-    margin-bottom: 15px;
 }
 
-.aia-content a {
-    color: #6B4EAA;
-    font-weight: 600;
-}
+.aia-inner p { margin-bottom: 15px; }
 
-/* Direct-answer lead paragraph (answer-engine friendly) */
+.aia-inner a { color: #6a3bb5; }
+
 .aia-answer {
     background: rgba(218, 190, 255, 0.2);
     border-left: 4px solid #dabeff;
@@ -98,9 +217,34 @@
     padding: 15px 20px;
 }
 
-/* Plain sections */
+/* Citation superscripts */
+.aia-cite a {
+    color: #6a3bb5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+.aia-cite a:hover { text-decoration: underline; }
+
 .aia-section {
     margin-bottom: 50px;
+}
+
+/* Side-by-side problem cards */
+.aia-duo {
+    display: flex;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.aia-duo-card {
+    flex: 1 1 0;
+    background: #ffffff;
+    border: 1px solid rgba(31, 25, 104, 0.1);
+    border-radius: 16px;
+    padding: 28px 26px;
+    box-shadow: 0 6px 20px rgba(31, 25, 104, 0.07);
 }
 
 /* Alternating text/image rows */
@@ -108,7 +252,6 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 50px;
 }
 
 .aia-row.reverse {
@@ -130,12 +273,196 @@
     box-shadow: 0 8px 24px rgba(31, 25, 104, 0.2);
 }
 
-/* Authorities band */
+/* White card that floats on the bubble gradient band */
+.aia-safety-card {
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 20px;
+    padding: 35px 32px;
+    margin: 35px 0;
+    box-shadow: 0 10px 32px rgba(31, 25, 104, 0.18);
+}
+
+/* ============================================
+   DARK PIPELINE BAND
+   ============================================ */
+.aia-band--dark h2 {
+    color: #ffffff;
+}
+
+.aia-band--dark .aia-inner p,
+.aia-band--dark .aia-inner li {
+    color: #c9cbe8;
+}
+
+.aia-answer-dark {
+    background: rgba(218, 190, 255, 0.12);
+    border-left: 4px solid #dabeff;
+}
+
+.aia-band--dark .aia-answer-dark strong,
+.aia-band--dark .aia-pipeline-list strong {
+    color: #ffffff;
+}
+
+.aia-pipeline-grid {
+    display: flex;
+    gap: 34px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.aia-pipeline-list {
+    flex: 1 1 58%;
+    padding-left: 0;
+    margin: 0;
+    counter-reset: pipeline;
+    list-style: none;
+}
+
+.aia-pipeline-list li {
+    line-height: 1.7;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 38px;
+    counter-increment: pipeline;
+}
+
+.aia-pipeline-list li::before {
+    content: counter(pipeline);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #dabeff;
+    color: #1f1968;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+/* connecting line between step numbers */
+.aia-pipeline-list li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 32px;
+    bottom: -14px;
+    width: 2px;
+    background: rgba(218, 190, 255, 0.35);
+}
+
+/* Session-log mockup (white card pops on the dark band) */
+.aia-log-mockup {
+    flex: 1 1 42%;
+    position: sticky;
+    top: 100px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    font-size: 0.85rem;
+}
+
+.aia-log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #1f1968;
+    border-bottom: 2px solid #dabeff;
+}
+
+.aia-log-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+.aia-log-badge {
+    background: #e01b84;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.aia-log-body {
+    padding: 8px 0;
+}
+
+.aia-log-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 16px;
+}
+
+.aia-log-row.flagged {
+    background: rgba(255, 214, 102, 0.18);
+}
+
+.aia-log-time {
+    font-family: monospace;
+    color: #888;
+    flex-shrink: 0;
+}
+
+.aia-log-cat {
+    flex-shrink: 0;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.cat-safety { background: #e3f6e8; color: #1c7a3d; }
+.cat-equipment { background: #e5f0fb; color: #1d5a96; }
+.cat-transfer { background: #efe5fb; color: #6a3bb5; }
+.cat-reagent { background: #fbe5f1; color: #b02a72; }
+.cat-reaction { background: #fdeede; color: #b05e1a; }
+
+/* Log rows sit on white regardless of band */
+.aia-band--dark .aia-log-text { color: #333; }
+
+.aia-log-text {
+    color: #333;
+    text-align: left;
+}
+
+.aia-log-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-top: 1px solid rgba(31, 25, 104, 0.1);
+    background: #faf8ff;
+}
+
+.aia-log-score {
+    font-weight: 700;
+    color: #1c7a3d;
+}
+
+.aia-log-replay {
+    color: #6a3bb5;
+    font-weight: 600;
+}
+
+/* ============================================
+   AUTHORITIES / DEEPER / REFERENCES / CTA
+   ============================================ */
 .aia-authorities {
     background: rgba(149, 206, 246, 0.18);
     border-radius: 16px;
     padding: 30px 25px;
-    margin-bottom: 50px;
 }
 
 .aia-authority-list {
@@ -144,12 +471,9 @@
 }
 
 .aia-authority-list li {
-    color: #333;
-    line-height: 1.7;
     margin-bottom: 12px;
 }
 
-/* Go deeper */
 .aia-deeper {
     margin-bottom: 50px;
 }
@@ -160,31 +484,77 @@
 }
 
 .aia-deeper-list li {
-    color: #333;
-    line-height: 1.7;
     margin-bottom: 12px;
 }
 
-/* Final CTA band */
+.aia-references {
+    border-top: 1px solid rgba(31, 25, 104, 0.15);
+    padding-top: 25px;
+}
+
+.aia-references h2 {
+    font-size: 1.25rem;
+}
+
+.aia-reference-list {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.aia-reference-list li {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Final CTA: full-width dark band (pioneer style) */
 .aia-cta {
-    background: #1f1968;
-    border-radius: 16px;
-    padding: 40px 30px;
+    background: linear-gradient(135deg, #1f1968 0%, #2d2a6e 100%);
+    padding: 70px 20px;
     text-align: center;
 }
 
 .aia-cta h2 {
     color: #dabeff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 .aia-cta p {
     color: #f0ecff;
     max-width: 640px;
     margin: 0 auto 25px;
+    line-height: 1.7;
 }
 
-/* Responsive */
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+    .aia-duo {
+        flex-direction: column;
+    }
+
+    .aia-pipeline-grid {
+        flex-direction: column;
+    }
+
+    .aia-log-mockup {
+        position: static;
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
+    .aia-hero {
+        padding: 110px 15px 50px;
+    }
+
+    .aia-hero-card {
+        padding: 30px 22px 35px;
+    }
+
     .aia-title {
         font-size: 1.6rem;
     }
@@ -193,14 +563,26 @@
         font-size: 1rem;
     }
 
+    .aia-stat {
+        flex-basis: 100%;
+    }
+
+    .aia-band {
+        padding: 40px 15px;
+    }
+
     .aia-row,
     .aia-row.reverse {
         flex-direction: column;
         gap: 20px;
-        margin-bottom: 40px;
     }
 
-    .aia-content h2 {
+    .aia-safety-card {
+        padding: 25px 18px;
+        margin: 20px 0;
+    }
+
+    .aia-inner h2 {
         font-size: 1.35rem;
     }
 }

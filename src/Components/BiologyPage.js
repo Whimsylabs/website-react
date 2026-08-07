@@ -14,14 +14,14 @@ const EXTRA = {
   en: {
     assessmentTitle: "How Does AI Assessment Work in the Biology Lab?",
     assessment1:
-      "WhimsyCat, our AI tutor and assessor, watches how students handle the microscope, prepare samples, and work through dissections — grading technique and procedure, not just written answers. Follow-up questions reference each student's own observations, so answers can't be copied from a chatbot.",
+      "WhimsyCat, our AI tutor and assessor, watches how students handle the microscope, prepare samples, and work through dissections, grading technique and procedure, not just written answers. Follow-up questions reference each student's own observations, so answers can't be copied from a chatbot.",
     assessment2:
       "There is no student chat window: WhimsyCat infers everything from actions in the lab. Teachers get a skill-by-skill breakdown covering technique, safety, data collection, and scientific communication.",
     faqTitle: "Virtual Biology Lab FAQ",
     faqs: [
       {
         q: "Can students really do dissections virtually?",
-        a: "Yes — organ dissections such as the kidney are fully interactive, with realistic tissue layers and instruments. They remove ethical and squeamishness barriers, and in our school sessions SEND students in particular showed markedly stronger engagement with the virtual kidney dissection.",
+        a: "Yes, organ dissections such as the kidney are fully interactive, with realistic tissue layers and instruments. They remove ethical and squeamishness barriers, and in our school sessions SEND students in particular showed markedly stronger engagement with the virtual kidney dissection.",
       },
       {
         q: "Does virtual microscopy teach real technique?",
@@ -29,7 +29,7 @@ const EXTRA = {
       },
       {
         q: "Which curricula does the biology lab cover?",
-        a: "Content maps to KS3, GCSE, A-Level, IB, and AP Biology — from cell biology and microscopy to dissection and physiology. Teachers can also build custom practicals with the AI Experiment Builder.",
+        a: "Content maps to KS3, GCSE, A-Level, IB, and AP Biology, from cell biology and microscopy to dissection and physiology. Teachers can also build custom practicals with the AI Experiment Builder.",
       },
     ],
     guideTitle: "Read the Teacher's Guide",
@@ -46,14 +46,14 @@ const EXTRA = {
   es: {
     assessmentTitle: "¿Cómo funciona la evaluación con IA en el laboratorio de biología?",
     assessment1:
-      "WhimsyCat, nuestro tutor y evaluador de IA, observa cómo los estudiantes manejan el microscopio, preparan muestras y realizan disecciones — calificando la técnica y el procedimiento, no solo las respuestas escritas. Las preguntas de seguimiento se basan en las observaciones propias de cada estudiante, de modo que las respuestas no pueden copiarse de un chatbot.",
+      "WhimsyCat, nuestro tutor y evaluador de IA, observa cómo los estudiantes manejan el microscopio, preparan muestras y realizan disecciones, calificando la técnica y el procedimiento, no solo las respuestas escritas. Las preguntas de seguimiento se basan en las observaciones propias de cada estudiante, de modo que las respuestas no pueden copiarse de un chatbot.",
     assessment2:
       "No hay ventana de chat para estudiantes: WhimsyCat lo infiere todo a partir de las acciones en el laboratorio. El profesorado recibe un desglose por competencia: técnica, seguridad, recogida de datos y comunicación científica.",
     faqTitle: "Preguntas frecuentes sobre el laboratorio virtual de biología",
     faqs: [
       {
         q: "¿Pueden los estudiantes hacer disecciones virtuales de verdad?",
-        a: "Sí — las disecciones de órganos, como el riñón, son totalmente interactivas, con capas de tejido e instrumentos realistas. Eliminan barreras éticas y de aprensión, y en nuestras sesiones escolares el alumnado con necesidades educativas especiales mostró un compromiso notablemente mayor con la disección virtual de riñón.",
+        a: "Sí, las disecciones de órganos, como el riñón, son totalmente interactivas, con capas de tejido e instrumentos realistas. Eliminan barreras éticas y de aprensión, y en nuestras sesiones escolares el alumnado con necesidades educativas especiales mostró un compromiso notablemente mayor con la disección virtual de riñón.",
       },
       {
         q: "¿La microscopía virtual enseña técnica real?",
@@ -61,7 +61,7 @@ const EXTRA = {
       },
       {
         q: "¿Qué currículos cubre el laboratorio de biología?",
-        a: "El contenido se ajusta a KS3, GCSE, A-Level, IB y AP Biology — desde biología celular y microscopía hasta disección y fisiología. El profesorado también puede crear prácticas personalizadas con el Diseñador de Experimentos con IA.",
+        a: "El contenido se ajusta a KS3, GCSE, A-Level, IB y AP Biology, desde biología celular y microscopía hasta disección y fisiología. El profesorado también puede crear prácticas personalizadas con el Diseñador de Experimentos con IA.",
       },
     ],
     guideTitle: "Lea la guía para docentes",
@@ -78,14 +78,14 @@ const EXTRA = {
   fr: {
     assessmentTitle: "Comment fonctionne l'évaluation par IA dans le laboratoire de biologie ?",
     assessment1:
-      "WhimsyCat, notre tuteur et évaluateur IA, observe la façon dont les élèves manipulent le microscope, préparent les échantillons et mènent les dissections — en notant la technique et la procédure, pas seulement les réponses écrites. Les questions de suivi s'appuient sur les observations propres à chaque élève : impossible de copier les réponses d'un chatbot.",
+      "WhimsyCat, notre tuteur et évaluateur IA, observe la façon dont les élèves manipulent le microscope, préparent les échantillons et mènent les dissections, en notant la technique et la procédure, pas seulement les réponses écrites. Les questions de suivi s'appuient sur les observations propres à chaque élève : impossible de copier les réponses d'un chatbot.",
     assessment2:
       "Il n'y a pas de fenêtre de discussion pour les élèves : WhimsyCat déduit tout de leurs actions dans le laboratoire. Les enseignants reçoivent un bilan compétence par compétence : technique, sécurité, collecte de données et communication scientifique.",
     faqTitle: "FAQ du laboratoire virtuel de biologie",
     faqs: [
       {
         q: "Les élèves peuvent-ils vraiment faire des dissections virtuelles ?",
-        a: "Oui — les dissections d'organes, comme le rein, sont entièrement interactives, avec des couches de tissus et des instruments réalistes. Elles lèvent les obstacles éthiques et la répugnance, et lors de nos séances en classe, les élèves à besoins éducatifs particuliers se sont montrés nettement plus engagés dans la dissection virtuelle du rein.",
+        a: "Oui, les dissections d'organes, comme le rein, sont entièrement interactives, avec des couches de tissus et des instruments réalistes. Elles lèvent les obstacles éthiques et la répugnance, et lors de nos séances en classe, les élèves à besoins éducatifs particuliers se sont montrés nettement plus engagés dans la dissection virtuelle du rein.",
       },
       {
         q: "La microscopie virtuelle enseigne-t-elle une vraie technique ?",
@@ -93,7 +93,7 @@ const EXTRA = {
       },
       {
         q: "Quels programmes le laboratoire de biologie couvre-t-il ?",
-        a: "Le contenu correspond aux programmes KS3, GCSE, A-Level, IB et AP Biology — de la biologie cellulaire et la microscopie à la dissection et la physiologie. Les enseignants peuvent aussi créer des TP sur mesure avec le générateur d'expériences IA.",
+        a: "Le contenu correspond aux programmes KS3, GCSE, A-Level, IB et AP Biology, de la biologie cellulaire et la microscopie à la dissection et la physiologie. Les enseignants peuvent aussi créer des TP sur mesure avec le générateur d'expériences IA.",
       },
     ],
     guideTitle: "Lire le guide de l'enseignant",
@@ -110,22 +110,22 @@ const EXTRA = {
   de: {
     assessmentTitle: "Wie funktioniert die KI-Bewertung im Biologielabor?",
     assessment1:
-      "WhimsyCat, unser KI-Tutor und -Prüfer, beobachtet, wie Schülerinnen und Schüler mit dem Mikroskop umgehen, Proben vorbereiten und Sektionen durchführen — bewertet werden Technik und Vorgehen, nicht nur schriftliche Antworten. Folgefragen beziehen sich auf die eigenen Beobachtungen der Lernenden, sodass Antworten nicht aus einem Chatbot kopiert werden können.",
+      "WhimsyCat, unser KI-Tutor und -Prüfer, beobachtet, wie Schülerinnen und Schüler mit dem Mikroskop umgehen, Proben vorbereiten und Sektionen durchführen, bewertet werden Technik und Vorgehen, nicht nur schriftliche Antworten. Folgefragen beziehen sich auf die eigenen Beobachtungen der Lernenden, sodass Antworten nicht aus einem Chatbot kopiert werden können.",
     assessment2:
       "Es gibt kein Chatfenster für Lernende: WhimsyCat leitet alles aus den Handlungen im Labor ab. Lehrkräfte erhalten eine Aufschlüsselung nach Kompetenzen: Technik, Sicherheit, Datenerfassung und wissenschaftliche Kommunikation.",
     faqTitle: "FAQ zum virtuellen Biologielabor",
     faqs: [
       {
         q: "Können Sektionen wirklich virtuell durchgeführt werden?",
-        a: "Ja — Organsektionen wie die Niere sind vollständig interaktiv, mit realistischen Gewebeschichten und Instrumenten. Sie beseitigen ethische Hürden und Berührungsängste; in unseren Schulstunden zeigten gerade Lernende mit Förderbedarf ein deutlich stärkeres Engagement bei der virtuellen Nierensektion.",
+        a: "Ja, Organsektionen wie die Niere sind vollständig interaktiv, mit realistischen Gewebeschichten und Instrumenten. Sie beseitigen ethische Hürden und Berührungsängste; in unseren Schulstunden zeigten gerade Lernende mit Förderbedarf ein deutlich stärkeres Engagement bei der virtuellen Nierensektion.",
       },
       {
         q: "Vermittelt virtuelle Mikroskopie echte Technik?",
-        a: "Die Lernenden fokussieren, regeln das Licht und bewegen den Objekttisch genau wie an einem physischen Mikroskop. Die Feinmotorik überträgt sich — die Zeit am echten Gerät wird zum Beobachten genutzt, nicht zum Herumprobieren.",
+        a: "Die Lernenden fokussieren, regeln das Licht und bewegen den Objekttisch genau wie an einem physischen Mikroskop. Die Feinmotorik überträgt sich, die Zeit am echten Gerät wird zum Beobachten genutzt, nicht zum Herumprobieren.",
       },
       {
         q: "Welche Lehrpläne deckt das Biologielabor ab?",
-        a: "Die Inhalte entsprechen KS3, GCSE, A-Level, IB und AP Biology — von Zellbiologie und Mikroskopie bis zu Sektion und Physiologie. Mit dem KI-Experiment-Designer können Lehrkräfte zudem eigene Praktika erstellen.",
+        a: "Die Inhalte entsprechen KS3, GCSE, A-Level, IB und AP Biology, von Zellbiologie und Mikroskopie bis zu Sektion und Physiologie. Mit dem KI-Experiment-Designer können Lehrkräfte zudem eigene Praktika erstellen.",
       },
     ],
     guideTitle: "Lehrkräfte-Leitfaden lesen",
@@ -192,9 +192,9 @@ const BIO_EXTRA = {
   ethicsText1:
     "A school dissection costs a life, arrives frozen, and happens once. Students who object are handed a worksheet instead, and quietly learn less than everyone else in the room.",
   ethicsText2:
-    "A virtual dissection has none of those problems. Every student does it, as many times as they need, with the same specimen — and can undo a bad cut instead of ruining the only heart in the box.",
+    "A virtual dissection has none of those problems. Every student does it, as many times as they need, with the same specimen, and can undo a bad cut instead of ruining the only heart in the box.",
   ethicsNote:
-    "Specimens are anatomically modelled rather than photographed, so structures can be isolated, rotated and re-entered — which a real dissection cannot offer once the first incision is made.",
+    "Specimens are anatomically modelled rather than photographed, so structures can be isolated, rotated and re-entered, which a real dissection cannot offer once the first incision is made.",
   ethicsPoints: [
     { name: "No specimens", note: "Nothing sourced, stored, or disposed of" },
     { name: "No opt-out gap", note: "Objecting students do the same practical" },
@@ -204,7 +204,7 @@ const BIO_EXTRA = {
   detailWhat: "What students do",
   details: {
     microscopy: {
-      what: "Prepare the slide, set the stage, and bring a real specimen into focus by working the coarse and fine adjustment — with the depth of field behaving as it actually does.",
+      what: "Prepare the slide, set the stage, and bring a real specimen into focus by working the coarse and fine adjustment, with the depth of field behaving as it actually does.",
       skills: ["Slide preparation", "Focusing technique", "Magnification choice", "Observation"],
     },
     dissection: {
@@ -244,7 +244,7 @@ const BIO_EXTRA = {
   compareCol2: "Physical bench",
   compareRows: [
     { label: "Specimens required", virtual: "None", physical: "One per group, single use" },
-    { label: "Repeat attempts", virtual: "Unlimited", physical: "None — the cut is final" },
+    { label: "Repeat attempts", virtual: "Unlimited", physical: "None, the cut is final" },
     { label: "Students who opt out", virtual: "Still take part", physical: "Given a worksheet" },
     { label: "Evidence of technique", virtual: "Every action logged", physical: "Whatever the teacher saw" },
   ],
@@ -257,7 +257,7 @@ const BiologyPage = ({ t, language }) => {
   const eb = BIO_EXTRA.eyebrows;
   const pageRef = useRef(null);
 
-  // Progressive enhancement only — the page is complete without this running.
+  // Progressive enhancement only, the page is complete without this running.
   useEffect(() => initSubjectLab(pageRef.current), []);
 
   // Each tab carries its own hue (an AA-safe dark value for the selected tab
@@ -374,7 +374,7 @@ const BiologyPage = ({ t, language }) => {
                   style={{ marginTop: "18px", "--poster": "url(/images/microscope.webp)" }}
                 >
                   <span className="lab-video-play" aria-hidden="true"></span>
-                  <span className="lab-video-label">VIDEO — LAB WALKTHROUGH</span>
+                  <span className="lab-video-label">VIDEO, LAB WALKTHROUGH</span>
                 </div>
               </div>
             </div>
@@ -463,7 +463,7 @@ const BiologyPage = ({ t, language }) => {
               <h3 className="lab-faq-q" style={{ marginTop: "34px" }}>{extra.moreTitle}</h3>
               <ul className="lab-more">
                 {extra.more.map((m) => (
-                  <li key={m.name}><b>{m.name}</b> — {m.note}</li>
+                  <li key={m.name}><b>{m.name}</b>, {m.note}</li>
                 ))}
               </ul>
             </div>
@@ -636,7 +636,7 @@ const BiologyPage = ({ t, language }) => {
           </div>
         </section>
 
-        {/* ---- FAQ — native disclosures, so the tail of the page keeps an
+        {/* ---- FAQ, native disclosures, so the tail of the page keeps an
              interaction without any JS ---- */}
         <section className="lab-band lab-band--tint lab-band--pad" data-lab-band="light" data-lab-section>
           <div className="container">

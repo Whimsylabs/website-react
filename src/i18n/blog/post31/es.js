@@ -71,7 +71,7 @@ export const content = (
       <strong>3 millones de libras para conjuntos de datos educativos preparados para IA.</strong> Esta es la
       inversión silenciosa que dará dividendos durante años. Los sistemas de IA necesitan
       datos de alta calidad y correctamente estructurados de los que aprender. Al financiar la
-      creación de conjuntos de datos educativos —alineados con el currículo, correctamente anonimizados
+      creación de conjuntos de datos educativos,alineados con el currículo, correctamente anonimizados
       y pedagógicamente sólidos— el gobierno está construyendo la materia prima que
       impulsará la próxima generación de herramientas educativas de IA. Toda empresa EdTech
       que trabaje en este espacio se beneficiará.
@@ -87,7 +87,7 @@ export const content = (
     </p>
 
     <p>
-      TechFirst apunta tanto a la provisión de hardware —llevar dispositivos a las aulas—
+      TechFirst apunta tanto a la provisión de hardware,llevar dispositivos a las aulas—
       como a la formación. Es el tipo de gasto en infraestructura poco glamuroso que
       a menudo se pasa por alto en favor de anuncios más llamativos, pero sin él,
       las inversiones en IA se construirían sobre arena.
@@ -164,7 +164,7 @@ export const content = (
       La inversión del gobierno del Reino Unido señala que la contratación pública será un
       impulsor significativo de este crecimiento. Las escuelas y los trusts multi-academy tendrán
       tanto la infraestructura como el mandato para adoptar herramientas de IA. Para
-      los proveedores que han estado construyendo soluciones basadas en evidencia —en lugar de
+      los proveedores que han estado construyendo soluciones basadas en evidencia,en lugar de
       perseguir ciclos de moda— esto representa una oportunidad para escalar enfoques probados.
     </p>
 
@@ -245,7 +245,7 @@ export const content = (
 
     <p>
       49 millones de libras más 187 millones de libras es dinero serio, pero también es un
-      anticipo. Si estos programas tienen éxito —y la evidencia sugiere que lo
+      anticipo. Si estos programas tienen éxito,y la evidencia sugiere que lo
       tendrán— espera inversiones de seguimiento a una escala significativamente mayor. El
       gobierno está esencialmente ejecutando un piloto a gran escala, y los resultados
       darán forma a la política educativa de la próxima década.

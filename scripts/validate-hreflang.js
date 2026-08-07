@@ -11,6 +11,8 @@ const SUPPORTED_LANGUAGES = ['en', 'de', 'es', 'fr', 'ja'];
 const BASE_URL = 'https://whimsylabs.ai';
 // Per-post language allowlist (keyed by slug, build codes en/es/fr/de/jp).
 const blogPostLanguageRestrictions = require('../src/i18n/blogPostLanguageRestrictions.json');
+// Static routes published in English only (no translated copy exists).
+const englishOnlyRoutes = require('../src/i18n/englishOnlyRoutes.json');
 const BUILD_TO_HREFLANG = { jp: 'ja' };
 
 function extractHreflangTags(html) {
@@ -51,9 +53,16 @@ function validatePageHreflang(pagePath, expectedPath) {
   // (Only the English URL of a restricted post is generated; localized ones are redirect stubs, skipped above.)
   const blogSlugMatch = expectedPath.match(/^\/blog\/([^/]+)\/$/);
   const restrictedTo = blogSlugMatch ? blogPostLanguageRestrictions[blogSlugMatch[1]] : null;
-  const requiredLanguages = restrictedTo
-    ? restrictedTo.map(code => BUILD_TO_HREFLANG[code] || code)
-    : SUPPORTED_LANGUAGES;
+
+  // English-only static routes are built for English alone, so they should
+  // carry a self-referencing hreflang and x-default only.
+  const isEnglishOnlyRoute = englishOnlyRoutes.includes(expectedPath.replace(/\/$/, ''));
+
+  const requiredLanguages = isEnglishOnlyRoute
+    ? ['en']
+    : restrictedTo
+      ? restrictedTo.map(code => BUILD_TO_HREFLANG[code] || code)
+      : SUPPORTED_LANGUAGES;
 
   // Check if has any hreflang tags
   if (hreflangTags.length === 0) {

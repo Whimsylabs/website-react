@@ -464,7 +464,7 @@ const Blog = (props = {}) => {
     // both the fallbackPosts SSR render and the client-loaded list).
     return displayPosts.filter(post => {
       // Keyed by slug. The generated post list carries `slug` alongside an id like
-      // "post55", while fallbackPosts set `id` to the slug itself — so check both,
+      // "post55", while fallbackPosts set `id` to the slug itself, so check both,
       // otherwise this filter silently passes everything on the generated-list path.
       const allowed = blogPostLanguageRestrictions[post.slug || post.id];
       return !allowed || allowed.includes(currentLanguage);
@@ -638,8 +638,8 @@ const Blog = (props = {}) => {
               <div className="no-posts-message">
                 <p>No posts found in this category. <button onClick={() => setActiveCategory('all')} className="link-button">View all posts</button></p>
               </div>
-            ) : currentPosts.map((post) => (
-              <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} />
+            ) : currentPosts.map((post, index) => (
+              <BlogPreview key={post.id} post={post} languagePrefix={languagePrefix} index={index} />
             ))}
 
             {/* Pagination controls */}

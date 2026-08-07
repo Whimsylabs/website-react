@@ -78,7 +78,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build-static",
-    "deploy": "gh-pages -d build --add && powershell -Command \"Write-Host 'Waiting 3 minutes for server to update...'; Start-Sleep -Seconds 180; Write-Host 'Starting IndexNow submission...'\" && npm run indexnow-submit && npm run gsc-ping && npm run google-indexing",
+    "deploy": "gh-pages -d build --add && powershell -Command \"Write-Host 'Waiting 5 minutes for server to update...'; Start-Sleep -Seconds 300; Write-Host 'Starting IndexNow submission...'\" && npm run indexnow-submit && npm run gsc-ping && npm run google-indexing",
     "google-indexing": "node scripts/google-indexing-submit.js",
     "google-indexing:compare": "node scripts/compare-indexed-urls.js",
     "compare-urls": "node scripts/compare-local-vs-live.js",
@@ -92,7 +92,8 @@
     "seo:full": "node scripts/seo-automation/orchestrator.js full",
     "seo:status": "node scripts/seo-automation/orchestrator.js status",
     "mcp:geo": "node mcp-servers/geo-mcp/index.js",
-    "pack-pdf": "node scripts/generate-pack-pdf.js"
+    "pack-pdf": "node scripts/generate-pack-pdf.js",
+    "pack": "node scripts/build-pack.js"
   },
   "eslintConfig": {
     "extends": [

@@ -53,7 +53,7 @@ export const content = (
       Cette observation granulaire est impossible pour un enseignant humain qui gère une classe entière. Un enseignant peut remarquer qu'un élève a des difficultés, mais il ne peut pas simultanément suivre la technique de chaque élève à chaque instant. L'IA le peut.
     </p>
     <p>
-      La recherche sur l'analytique de l'apprentissage dans l'enseignement des sciences montre que les données de processus — l'enregistrement de la façon dont les élèves abordent les problèmes — prédisent souvent mieux les résultats d'apprentissage que les seules réponses finales (<a href="https://doi.org/10.18608/jla.2021.7325" target="_blank" rel="noopener noreferrer">Sao Pedro et al., 2021</a>).
+      La recherche sur l'analytique de l'apprentissage dans l'enseignement des sciences montre que les données de processus, l'enregistrement de la façon dont les élèves abordent les problèmes, prédisent souvent mieux les résultats d'apprentissage que les seules réponses finales (<a href="https://doi.org/10.18608/jla.2021.7325" target="_blank" rel="noopener noreferrer">Sao Pedro et al., 2021</a>).
     </p>
 
     <h3>Repérer les erreurs de technique</h3>
@@ -107,7 +107,7 @@ export const content = (
       Nous avons construit WhimsyCat pour détecter des signes de frustration à travers des schémas comportementaux : erreurs répétées, mouvements erratiques, longues pauses, abandon de tâches. Mais détecter la frustration n'est pas la même chose que la comprendre.
     </p>
     <p>
-      Un enseignant humain connaît la différence entre la lutte productive — où un élève est mis au défi mais engagé — et la frustration improductive où il a besoin d'une approche complètement différente. Il peut sentir quand l'encouragement aidera et quand il semblera condescendant. Il capte des indices subtils qui révèlent si un élève a besoin d'un soutien académique ou d'un soutien émotionnel.
+      Un enseignant humain connaît la différence entre la lutte productive, où un élève est mis au défi mais engagé, et la frustration improductive où il a besoin d'une approche complètement différente. Il peut sentir quand l'encouragement aidera et quand il semblera condescendant. Il capte des indices subtils qui révèlent si un élève a besoin d'un soutien académique ou d'un soutien émotionnel.
     </p>
     <p>
       L'IA peut approximer une partie de cela à travers une correspondance de motifs soignée, mais la nuance de la compréhension émotionnelle reste fondamentalement humaine.
@@ -148,7 +148,7 @@ export const content = (
       Quand WhimsyCat détecte ces schémas, il ajuste son approche. Il pourrait offrir un indice plus simple, suggérer de prendre du recul pour revoir un concept, ou simplement reconnaître que c'est difficile. « Cette étape piège beaucoup de monde. Voudrais-tu que je te la présente étape par étape ? »
     </p>
     <p>
-      L'objectif n'est pas d'empêcher la lutte — qui fait partie de l'apprentissage — mais d'empêcher la frustration improductive qui mène à l'abandon.
+      L'objectif n'est pas d'empêcher la lutte, qui fait partie de l'apprentissage, mais d'empêcher la frustration improductive qui mène à l'abandon.
     </p>
 
     <h3>S'en remettre aux paramètres de l'enseignant</h3>

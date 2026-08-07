@@ -16,7 +16,7 @@
  * engine, so getBBox() is unavailable). Curves are bounded by their control-point
  * hull, which is conservative: the box may be a touch loose but can never clip.
  *
- * Non-destructive — reads from a source dir, writes to a separate output dir.
+ * Non-destructive, reads from a source dir, writes to a separate output dir.
  *
  *   node scripts/normalize-svg-kit.js [--src <dir>] [--out <dir>] [--pad <px>]
  */
@@ -54,7 +54,7 @@ function rootsInUnit(a, b, c) {
 
 /**
  * Exact extrema of a cubic Bezier on one axis: the endpoints plus any turning
- * point where B'(t) = 0. Bounding by the control hull instead would overshoot —
+ * point where B'(t) = 0. Bounding by the control hull instead would overshoot,
  * a control point can sit well outside the curve it steers.
  */
 function cubicExtrema(p0, p1, p2, p3) {
@@ -97,7 +97,7 @@ function spanPoints(xs, ys) {
  */
 function pathPoints(d) {
   const pts = [];
-  // A number is either `12`, `12.5`, `.5` or exponential — never two dots. Naive
+  // A number is either `12`, `12.5`, `.5` or exponential, never two dots. Naive
   // `[\d.]*` merges Illustrator's comma-less pairs (`12.89.75` is 12.89 then .75),
   // which silently shifts every following coordinate and corrupts the bounds.
   const tokens = d.match(/[a-zA-Z]|-?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?/g) || [];
@@ -111,7 +111,7 @@ function pathPoints(d) {
   let cmd = null;
   let lastCx = 0;
   let lastCy = 0;
-  let lastCurve = null; // "C" | "Q" | null — needed to reflect S/T controls
+  let lastCurve = null; // "C" | "Q" | null, needed to reflect S/T controls
 
   const push = (x, y) => pts.push([x, y]);
 
@@ -333,7 +333,7 @@ function parseAttrs(tagText) {
 
 /**
  * The kit sets stroke-width inside a <style> block keyed by .cls-N, so the widest
- * declared stroke is a safe global padding value — half of it can overhang the
+ * declared stroke is a safe global padding value, half of it can overhang the
  * geometric bounds on any side.
  */
 function widestStroke(svg) {
@@ -443,9 +443,9 @@ async function main() {
     let newVb = oldVb;
 
     if (!bounds) {
-      note = "no geometry found — left as-is";
+      note = "no geometry found, left as-is";
     } else if (bounds.truncated) {
-      note = "!! path parse truncated — left as-is";
+      note = "!! path parse truncated, left as-is";
       failures += 1;
     } else {
       const pad = widestStroke(svg) / 2 + extraPad;
@@ -455,7 +455,7 @@ async function main() {
       const h = bounds.maxY - bounds.minY + pad * 2;
 
       if (w <= 0 || h <= 0) {
-        note = "degenerate bounds — left as-is";
+        note = "degenerate bounds, left as-is";
       } else {
         newVb = `${round(minX)} ${round(minY)} ${round(w)} ${round(h)}`;
         if (vbMatch) {

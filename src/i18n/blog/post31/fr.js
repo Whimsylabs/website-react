@@ -24,7 +24,7 @@ export const content = (
     </p>
 
     <p>
-      Pour nous chez WhimsyLabs, ce n'est pas une validation dont nous avions besoin — nous construisons
+      Pour nous chez WhimsyLabs, ce n'est pas une validation dont nous avions besoin, nous construisons
       des outils d'évaluation et de tutorat par IA parce que les preuves éducatives l'exigeaient.
       Mais il est rassurant de voir la politique nationale rattraper ce que
       les enseignants et chercheurs disent depuis des années : l'apprentissage personnalisé
@@ -41,7 +41,7 @@ export const content = (
     <p>
       <strong>45 millions de livres pour la connectivité des écoles.</strong> C'est la
       couche de fondation. Les outils d'IA ne valent que ce que vaut l'infrastructure qui les fait fonctionner.
-      Trop d'écoles britanniques luttent encore avec un WiFi inégal et des réseaux obsolètes —
+      Trop d'écoles britanniques luttent encore avec un WiFi inégal et des réseaux obsolètes,
       une barrière qui frappe plus durement les écoles rurales et défavorisées. Ce
       financement vise à garantir que chaque salle de classe puisse réellement <em>exécuter</em> les outils d'IA
       en cours de développement. Ce n'est pas glamour, mais c'est essentiel. On ne peut pas avoir
@@ -52,7 +52,7 @@ export const content = (
       <strong>1 million de livres pour les outils de notation par IA.</strong> Cela peut sembler modeste
       comparé aux dépenses de connectivité, mais c'est stratégiquement important.
       La charge de travail des enseignants est à des niveaux de crise, la notation étant constamment citée comme
-      l'un des plus grands gouffres de temps. Les outils de notation par IA ne remplaceront pas le jugement de l'enseignant —
+      l'un des plus grands gouffres de temps. Les outils de notation par IA ne remplaceront pas le jugement de l'enseignant,
       les bonnes implémentations le complètent, gérant les retours routiniers tout en
       signalant le travail nécessitant une attention humaine. La recherche sur l'évaluation assistée par IA
       montre que les enseignants peuvent rediriger 3 à 5 heures par semaine de la notation vers
@@ -71,8 +71,8 @@ export const content = (
       <strong>3 millions de livres pour des ensembles de données éducatives prêts pour l'IA.</strong> C'est
       l'investissement discret qui rapportera des dividendes pendant des années. Les systèmes d'IA ont besoin
       de données de haute qualité, correctement structurées pour apprendre. En finançant la
-      création d'ensembles de données éducatives — alignés sur le programme, correctement anonymisés
-      et pédagogiquement solides — le gouvernement construit la matière première qui
+      création d'ensembles de données éducatives, alignés sur le programme, correctement anonymisés
+      et pédagogiquement solides, le gouvernement construit la matière première qui
       alimentera la prochaine génération d'outils éducatifs d'IA. Toute entreprise EdTech
       travaillant dans ce domaine en bénéficiera.
     </p>
@@ -87,8 +87,8 @@ export const content = (
     </p>
 
     <p>
-      TechFirst cible à la fois la fourniture de matériel — mettre des appareils dans les
-      salles de classe — et la formation. C'est le type de dépenses d'infrastructure peu glamour qui
+      TechFirst cible à la fois la fourniture de matériel, mettre des appareils dans les
+      salles de classe, et la formation. C'est le type de dépenses d'infrastructure peu glamour qui
       est souvent négligé au profit d'annonces plus tape-à-l'œil, mais sans lui,
       les investissements dans l'IA seraient construits sur du sable.
     </p>
@@ -98,7 +98,7 @@ export const content = (
     <p>
       L'annonce peut-être la plus significative est le programme de tutorat i.AI,
       développé par l'Incubateur pour l'Intelligence Artificielle du gouvernement. Ce n'est pas
-      un pilote au sens traditionnel — 450 000 élèves représente une échelle substantielle.
+      un pilote au sens traditionnel, 450 000 élèves représente une échelle substantielle.
     </p>
 
     <p>
@@ -130,7 +130,7 @@ export const content = (
       Le Royaume-Uni accueillera un sommet international sur l'IA dans l'éducation plus tard en 2026,
       réunissant gouvernements, chercheurs et fournisseurs EdTech pour partager
       les meilleures pratiques et établir des lignes directrices. Cela compte au-delà du
-      symbolisme diplomatique — la coordination internationale sur les normes d'éducation à l'IA
+      symbolisme diplomatique, la coordination internationale sur les normes d'éducation à l'IA
       pourrait empêcher la fragmentation qui a affecté d'autres implémentations EdTech.
     </p>
 
@@ -164,8 +164,8 @@ export const content = (
       L'investissement du gouvernement britannique signale que les marchés publics seront un
       moteur significatif de cette croissance. Les écoles et les trusts multi-académies auront
       à la fois l'infrastructure et le mandat pour adopter les outils d'IA. Pour
-      les fournisseurs qui ont construit des solutions basées sur les preuves — plutôt que de
-      courir après les cycles de hype — cela représente une opportunité de déployer des approches éprouvées.
+      les fournisseurs qui ont construit des solutions basées sur les preuves, plutôt que de
+      courir après les cycles de hype, cela représente une opportunité de déployer des approches éprouvées.
     </p>
 
     <h2>Comment les écoles peuvent accéder à ce financement</h2>
@@ -207,7 +207,7 @@ export const content = (
       par un processus compétitif. Les écoles démontrant des lacunes claires en compétences numériques
       et des plans concrets pour les combler seront prioritaires. Commencez
       à documenter vos capacités numériques actuelles et à identifier les besoins de formation
-      maintenant — avoir une base claire renforcera toute candidature.
+      maintenant, avoir une base claire renforcera toute candidature.
     </p>
 
     <h3>Programme de tutorat i.AI</h3>
@@ -231,7 +231,7 @@ export const content = (
       Notre tuteur IA fournit déjà le type de soutien personnalisé, patient et
       toujours disponible que le programme i.AI vise à offrir. Nos outils d'évaluation
       donnent aux enseignants un aperçu de la compréhension des élèves sans alourdir leur
-      charge de notation. Nous ne pivotons pas pour courir après ce financement — nous sommes déjà là.
+      charge de notation. Nous ne pivotons pas pour courir après ce financement, nous sommes déjà là.
     </p>
 
     <p>
@@ -245,8 +245,8 @@ export const content = (
 
     <p>
       49 millions de livres plus 187 millions de livres, c'est de l'argent sérieux, mais c'est aussi un
-      acompte. Si ces programmes réussissent — et les preuves suggèrent qu'ils
-      le feront — attendez-vous à des investissements de suivi à une échelle nettement plus grande. Le
+      acompte. Si ces programmes réussissent, et les preuves suggèrent qu'ils
+      le feront, attendez-vous à des investissements de suivi à une échelle nettement plus grande. Le
       gouvernement mène essentiellement un pilote à grande échelle, et les résultats
       façonneront la politique éducative de la prochaine décennie.
     </p>
@@ -255,7 +255,7 @@ export const content = (
       Pour les écoles, le message est clair : l'IA dans l'éducation n'est plus
       spéculative. C'est de la politique. Le financement des infrastructures arrive, les outils
       sont subventionnés, et les preuves de recherche s'accumulent. C'est maintenant le moment
-      de commencer à planifier comment l'IA s'intègre dans votre stratégie éducative — non pas
+      de commencer à planifier comment l'IA s'intègre dans votre stratégie éducative, non pas
       parce que c'est tendance, mais parce que ça fonctionne.
     </p>
 

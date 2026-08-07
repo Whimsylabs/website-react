@@ -260,7 +260,7 @@ const GLOBAL_FORBIDDEN_PATTERNS = [
   /<script>.*?error.*?<\/script>/gi, // Script errors
   /class="error-boundary"/gi,        // React error boundary triggered
   // "Something went wrong" only counts as a failure when rendered inside an error
-  // container (error boundary / form-error div) — NOT as legitimate prose in blog
+  // container (error boundary / form-error div), NOT as legitimate prose in blog
   // content (e.g. Post35: "When something went wrong, did they recognise it?").
   /class="[^"]*error[^"]*"[^>]*>(?:\s|<[^>]*>)*Something went wrong/gi, // Rendered error UI
   /Cannot read propert/gi,           // JS errors
@@ -528,12 +528,12 @@ function validateFile(filePath, relativePath) {
           errors.push(`CONTENT MISSING (${lang}): translated content not found in static HTML! Expected: "${translatedMeta.contentSnippet.substring(0, 35)}..."`);
         }
         if (pageHasSnippet(englishMeta)) {
-          errors.push(`ENGLISH FALLBACK (${lang}): "${slug}" is serving English content under a /${lang}/ URL even though a ${lang} translation exists — the translation file likely failed to load.`);
+          errors.push(`ENGLISH FALLBACK (${lang}): "${slug}" is serving English content under a /${lang}/ URL even though a ${lang} translation exists, the translation file likely failed to load.`);
         }
       } else {
         // No translation file for this language → English fallback by design. Not a code
         // bug, but a content gap worth surfacing (warning, does not fail the build).
-        warnings.push(`No ${lang} translation for "${slug}" — page is serving English fallback (translate to fix)`);
+        warnings.push(`No ${lang} translation for "${slug}", page is serving English fallback (translate to fix)`);
       }
     }
   }

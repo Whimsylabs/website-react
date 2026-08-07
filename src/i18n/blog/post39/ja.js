@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "OECDが推奨：成果物ではなくプロセスを評価する — 理科教育への意味";
+export const title = "OECDが推奨：成果物ではなくプロセスを評価する, 理科教育への意味";
 export const description = "OECD Digital Education Outlook 2026はAI時代の「プロセス指向評価」を公式に推奨しています。この国際的な検証は、WhimsyLabsが最初から構築してきたアプローチを確認するものです。";
 export const keywords = [
   "OECDプロセス評価",

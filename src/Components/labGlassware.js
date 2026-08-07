@@ -1,16 +1,16 @@
 import React from "react";
 
 /**
- * labGlassware.js — chemistry apparatus transcribed from the cleaned kit
+ * labGlassware.js, chemistry apparatus transcribed from the cleaned kit
  * (public/images/kit-chemsitry/), so the geometry has one home.
  *
  * Two variants:
  *
- *  "solid"   — the kit's own treatment: a filled ink silhouette with a stroked
+ *  "solid"  , the kit's own treatment: a filled ink silhouette with a stroked
  *              rim. An accent copy is revealed from the bottom by a clip rect,
  *              so the vessel appears to fill without losing the bold shape.
  *
- *  "outline" — stroked glass with nothing inside, so real liquid can be seen
+ *  "outline", stroked glass with nothing inside, so real liquid can be seen
  *              through it. Used wherever the vessel actually holds a simulated
  *              liquid (the hero rack, the bench divider).
  *
@@ -142,7 +142,7 @@ export const vesselMeta = (name) => VESSELS[name] || VESSELS.beaker;
 
 /**
  * @param {string} name     key from VESSELS
- * @param {string} id       unique per instance — clip paths share a document scope
+ * @param {string} id       unique per instance, clip paths share a document scope
  * @param {string} variant  "solid" (default) or "outline"
  * @param {string} gradient gradient id to fill the liquid with (outline only)
  */

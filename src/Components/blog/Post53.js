@@ -1,7 +1,7 @@
 import React from "react";
 
 export const title = "IB Sciences: Simulation and the Scientific Investigation";
-export const date = "2026-07-31";
+export const date = "2026-07-28";
 export const slug = "ib-diploma-science-practicals-virtual-labs";
 export const description =
   "The IB explicitly allows simulation and modelling in the Scientific Investigation. Here is how to use that well, and where it still needs a real bench.";

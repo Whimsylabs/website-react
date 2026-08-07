@@ -15,22 +15,22 @@ const EXTRA = {
   en: {
     assessmentTitle: "How Does AI Assessment Work in the Chemistry Lab?",
     assessment1:
-      "WhimsyCat, our AI tutor and assessor, watches how students work — burette technique, swirling, indicator choice, endpoint judgement — and grades the process, not just the final figure. Follow-up questions are tied to each student's own results, so answers can't be copied from a chatbot.",
+      "WhimsyCat, our AI tutor and assessor, watches how students work, burette technique, swirling, indicator choice, endpoint judgement, and grades the process, not just the final figure. Follow-up questions are tied to each student's own results, so answers can't be copied from a chatbot.",
     assessment2:
       "There is no student chat window: WhimsyCat infers everything from actions in the lab. Teachers get a skill-by-skill breakdown covering technique, safety, data collection, and scientific communication.",
     faqTitle: "Virtual Chemistry Lab FAQ",
     faqs: [
       {
         q: "Can students practise GCSE required practicals virtually?",
-        a: "Yes — the experiment library covers the major exam-board required practicals, including acid–base titrations, electrolysis, and energy changes. Virtual runs are ideal for building technique before assessed physical practicals; check your exam board's guidance on what may be assessed virtually.",
+        a: "Yes, the experiment library covers the major exam-board required practicals, including acid–base titrations, electrolysis, and energy changes. Virtual runs are ideal for building technique before assessed physical practicals; check your exam board's guidance on what may be assessed virtually.",
       },
       {
         q: "Is it safe to simulate dangerous reactions?",
-        a: "That is the point: reactions too hazardous or expensive for a school lab — concentrated acids, vigorous combustion — are fully simulated, complete with realistic hazards and consequences, so students build real risk awareness with zero real risk.",
+        a: "That is the point: reactions too hazardous or expensive for a school lab, concentrated acids, vigorous combustion, are fully simulated, complete with realistic hazards and consequences, so students build real risk awareness with zero real risk.",
       },
       {
         q: "Do simulated titrations behave like real ones?",
-        a: "Yes. Reactions run on simulated chemistry over time, determined by molarity, pH, and reactivity — with impurities and sample-to-sample variation — so no two runs are identical, just like a real bench.",
+        a: "Yes. Reactions run on simulated chemistry over time, determined by molarity, pH, and reactivity, with impurities and sample-to-sample variation, so no two runs are identical, just like a real bench.",
       },
     ],
     guideTitle: "Read the Teacher's Guide",
@@ -48,7 +48,7 @@ const EXTRA = {
     // these until the wording has settled and is worth translating. ---
     safetyTitle: "Every Hazard, None of the Risk",
     safetyText1:
-      "Reagents in the lab carry their real hazards. Concentrated acids burn, solvents catch, and gases build pressure in a sealed vessel — and students meet all of it, with consequences that follow from what they actually did.",
+      "Reagents in the lab carry their real hazards. Concentrated acids burn, solvents catch, and gases build pressure in a sealed vessel, and students meet all of it, with consequences that follow from what they actually did.",
     safetyText2:
       "That is the part a physical school lab cannot teach. Technicians remove the dangerous reagent before the lesson starts, so students never learn what makes it dangerous. Here they can get it wrong, see what happens, and try again.",
     safetyNote:
@@ -67,7 +67,7 @@ const EXTRA = {
         skills: ["Burette technique", "Indicator choice", "Endpoint judgement", "Concordance"],
       },
       reactions: {
-        what: "Change concentration, temperature or surface area and watch the rate respond in real time. Nothing is on rails — the reaction runs on simulated chemistry, so the data has scatter in it.",
+        what: "Change concentration, temperature or surface area and watch the rate respond in real time. Nothing is on rails, the reaction runs on simulated chemistry, so the data has scatter in it.",
         skills: ["Variable control", "Timing accuracy", "Data recording", "Rate analysis"],
       },
       combustion: {
@@ -75,7 +75,7 @@ const EXTRA = {
         skills: ["Apparatus setup", "Heat-loss awareness", "Calculation", "Error analysis"],
       },
       electrolysis: {
-        what: "Wire the cell, pick the electrodes, and identify what collects where — with electrode choice actually changing the products.",
+        what: "Wire the cell, pick the electrodes, and identify what collects where, with electrode choice actually changing the products.",
         skills: ["Circuit assembly", "Product prediction", "Gas testing", "Half equations"],
       },
     },
@@ -123,22 +123,22 @@ const EXTRA = {
   es: {
     assessmentTitle: "¿Cómo funciona la evaluación con IA en el laboratorio de química?",
     assessment1:
-      "WhimsyCat, nuestro tutor y evaluador de IA, observa cómo trabajan los estudiantes — técnica de bureta, agitación, elección del indicador, criterio del punto final — y califica el proceso, no solo la cifra final. Las preguntas de seguimiento se basan en los resultados propios de cada estudiante, de modo que las respuestas no pueden copiarse de un chatbot.",
+      "WhimsyCat, nuestro tutor y evaluador de IA, observa cómo trabajan los estudiantes, técnica de bureta, agitación, elección del indicador, criterio del punto final, y califica el proceso, no solo la cifra final. Las preguntas de seguimiento se basan en los resultados propios de cada estudiante, de modo que las respuestas no pueden copiarse de un chatbot.",
     assessment2:
       "No hay ventana de chat para estudiantes: WhimsyCat lo infiere todo a partir de las acciones en el laboratorio. El profesorado recibe un desglose por competencia: técnica, seguridad, recogida de datos y comunicación científica.",
     faqTitle: "Preguntas frecuentes sobre el laboratorio virtual de química",
     faqs: [
       {
         q: "¿Pueden los estudiantes practicar virtualmente las prácticas obligatorias?",
-        a: "Sí — la biblioteca de experimentos cubre las prácticas obligatorias de los principales planes de estudio, incluidas titulaciones ácido-base, electrólisis y cambios de energía. Las sesiones virtuales son ideales para dominar la técnica antes de las prácticas físicas evaluadas.",
+        a: "Sí, la biblioteca de experimentos cubre las prácticas obligatorias de los principales planes de estudio, incluidas titulaciones ácido-base, electrólisis y cambios de energía. Las sesiones virtuales son ideales para dominar la técnica antes de las prácticas físicas evaluadas.",
       },
       {
         q: "¿Es seguro simular reacciones peligrosas?",
-        a: "Esa es la idea: las reacciones demasiado peligrosas o costosas para un laboratorio escolar — ácidos concentrados, combustiones vigorosas — están totalmente simuladas, con riesgos y consecuencias realistas, para que el alumnado desarrolle conciencia del riesgo sin riesgo real.",
+        a: "Esa es la idea: las reacciones demasiado peligrosas o costosas para un laboratorio escolar, ácidos concentrados, combustiones vigorosas, están totalmente simuladas, con riesgos y consecuencias realistas, para que el alumnado desarrolle conciencia del riesgo sin riesgo real.",
       },
       {
         q: "¿Las titulaciones simuladas se comportan como las reales?",
-        a: "Sí. Las reacciones se ejecutan con química simulada en el tiempo, según molaridad, pH y reactividad — con impurezas y variación entre muestras — de modo que no hay dos ensayos idénticos, igual que en un banco real.",
+        a: "Sí. Las reacciones se ejecutan con química simulada en el tiempo, según molaridad, pH y reactividad, con impurezas y variación entre muestras, de modo que no hay dos ensayos idénticos, igual que en un banco real.",
       },
     ],
     guideTitle: "Lea la guía para docentes",
@@ -164,22 +164,22 @@ const EXTRA = {
   fr: {
     assessmentTitle: "Comment fonctionne l'évaluation par IA dans le laboratoire de chimie ?",
     assessment1:
-      "WhimsyCat, notre tuteur et évaluateur IA, observe la façon dont les élèves travaillent — technique de burette, agitation, choix de l'indicateur, jugement du point d'équivalence — et note le processus, pas seulement le résultat final. Les questions de suivi s'appuient sur les résultats propres à chaque élève : impossible de copier les réponses d'un chatbot.",
+      "WhimsyCat, notre tuteur et évaluateur IA, observe la façon dont les élèves travaillent, technique de burette, agitation, choix de l'indicateur, jugement du point d'équivalence, et note le processus, pas seulement le résultat final. Les questions de suivi s'appuient sur les résultats propres à chaque élève : impossible de copier les réponses d'un chatbot.",
     assessment2:
       "Il n'y a pas de fenêtre de discussion pour les élèves : WhimsyCat déduit tout de leurs actions dans le laboratoire. Les enseignants reçoivent un bilan compétence par compétence : technique, sécurité, collecte de données et communication scientifique.",
     faqTitle: "FAQ du laboratoire virtuel de chimie",
     faqs: [
       {
         q: "Les élèves peuvent-ils s'entraîner virtuellement aux travaux pratiques obligatoires ?",
-        a: "Oui — la bibliothèque d'expériences couvre les principaux travaux pratiques exigés par les programmes, dont les titrages acide-base, l'électrolyse et les transferts d'énergie. Les séances virtuelles sont idéales pour acquérir la technique avant les TP physiques évalués.",
+        a: "Oui, la bibliothèque d'expériences couvre les principaux travaux pratiques exigés par les programmes, dont les titrages acide-base, l'électrolyse et les transferts d'énergie. Les séances virtuelles sont idéales pour acquérir la technique avant les TP physiques évalués.",
       },
       {
         q: "Est-il sûr de simuler des réactions dangereuses ?",
-        a: "C'est tout l'intérêt : les réactions trop dangereuses ou coûteuses pour un laboratoire scolaire — acides concentrés, combustions vives — sont entièrement simulées, avec des risques et conséquences réalistes, pour développer une vraie conscience du risque sans danger réel.",
+        a: "C'est tout l'intérêt : les réactions trop dangereuses ou coûteuses pour un laboratoire scolaire, acides concentrés, combustions vives, sont entièrement simulées, avec des risques et conséquences réalistes, pour développer une vraie conscience du risque sans danger réel.",
       },
       {
         q: "Les titrages simulés se comportent-ils comme les vrais ?",
-        a: "Oui. Les réactions reposent sur une chimie simulée dans le temps, selon la molarité, le pH et la réactivité — avec impuretés et variations entre échantillons — si bien que deux essais ne sont jamais identiques, comme sur une vraie paillasse.",
+        a: "Oui. Les réactions reposent sur une chimie simulée dans le temps, selon la molarité, le pH et la réactivité, avec impuretés et variations entre échantillons, si bien que deux essais ne sont jamais identiques, comme sur une vraie paillasse.",
       },
     ],
     guideTitle: "Lire le guide de l'enseignant",
@@ -205,22 +205,22 @@ const EXTRA = {
   de: {
     assessmentTitle: "Wie funktioniert die KI-Bewertung im Chemielabor?",
     assessment1:
-      "WhimsyCat, unser KI-Tutor und -Prüfer, beobachtet, wie Schülerinnen und Schüler arbeiten — Bürettentechnik, Schwenken, Indikatorwahl, Endpunktbestimmung — und bewertet den Prozess, nicht nur das Endergebnis. Folgefragen beziehen sich auf die eigenen Messwerte der Lernenden, sodass Antworten nicht aus einem Chatbot kopiert werden können.",
+      "WhimsyCat, unser KI-Tutor und -Prüfer, beobachtet, wie Schülerinnen und Schüler arbeiten, Bürettentechnik, Schwenken, Indikatorwahl, Endpunktbestimmung, und bewertet den Prozess, nicht nur das Endergebnis. Folgefragen beziehen sich auf die eigenen Messwerte der Lernenden, sodass Antworten nicht aus einem Chatbot kopiert werden können.",
     assessment2:
       "Es gibt kein Chatfenster für Lernende: WhimsyCat leitet alles aus den Handlungen im Labor ab. Lehrkräfte erhalten eine Aufschlüsselung nach Kompetenzen: Technik, Sicherheit, Datenerfassung und wissenschaftliche Kommunikation.",
     faqTitle: "FAQ zum virtuellen Chemielabor",
     faqs: [
       {
         q: "Können Pflichtpraktika virtuell geübt werden?",
-        a: "Ja — die Experimentbibliothek deckt die wichtigsten lehrplanrelevanten Praktika ab, darunter Säure-Base-Titrationen, Elektrolyse und Energieumsätze. Virtuelle Durchläufe eignen sich ideal, um die Technik vor bewerteten Präsenzpraktika zu festigen.",
+        a: "Ja, die Experimentbibliothek deckt die wichtigsten lehrplanrelevanten Praktika ab, darunter Säure-Base-Titrationen, Elektrolyse und Energieumsätze. Virtuelle Durchläufe eignen sich ideal, um die Technik vor bewerteten Präsenzpraktika zu festigen.",
       },
       {
         q: "Ist es sicher, gefährliche Reaktionen zu simulieren?",
-        a: "Genau darum geht es: Reaktionen, die für ein Schullabor zu gefährlich oder zu teuer sind — konzentrierte Säuren, heftige Verbrennungen — sind vollständig simuliert, mit realistischen Gefahren und Konsequenzen. So entsteht echtes Risikobewusstsein ohne echtes Risiko.",
+        a: "Genau darum geht es: Reaktionen, die für ein Schullabor zu gefährlich oder zu teuer sind, konzentrierte Säuren, heftige Verbrennungen, sind vollständig simuliert, mit realistischen Gefahren und Konsequenzen. So entsteht echtes Risikobewusstsein ohne echtes Risiko.",
       },
       {
         q: "Verhalten sich simulierte Titrationen wie echte?",
-        a: "Ja. Reaktionen laufen auf simulierter Chemie in Echtzeit ab, bestimmt durch Molarität, pH-Wert und Reaktivität — mit Verunreinigungen und Probenstreuung. Keine zwei Durchläufe sind identisch, genau wie an einer echten Laborbank.",
+        a: "Ja. Reaktionen laufen auf simulierter Chemie in Echtzeit ab, bestimmt durch Molarität, pH-Wert und Reaktivität, mit Verunreinigungen und Probenstreuung. Keine zwei Durchläufe sind identisch, genau wie an einer echten Laborbank.",
       },
     ],
     guideTitle: "Lehrkräfte-Leitfaden lesen",
@@ -319,12 +319,12 @@ const ChemistryPage = ({ t, language }) => {
   // Merge over English so copy added since the last translation pass still
   // renders in every language instead of coming out undefined.
   const extra = { ...EXTRA.en, ...(EXTRA[language] || {}) };
-  // Nested objects need their own merge — a shallow spread would replace the
+  // Nested objects need their own merge, a shallow spread would replace the
   // English eyebrows wholesale and lose any key the translation predates.
   const eb = { ...EXTRA.en.eyebrows, ...(extra.eyebrows || {}) };
   const pageRef = useRef(null);
 
-  // Progressive enhancement only — the page is complete without this running.
+  // Progressive enhancement only, the page is complete without this running.
   useEffect(() => initSubjectLab(pageRef.current), []);
 
   const { vbW, vbH, x, w, top, barrelEnd, tipY, inset } = PIPETTE;
@@ -386,7 +386,7 @@ const ChemistryPage = ({ t, language }) => {
               </div>
             </div>
 
-            {/* Rack of reagents — sloshes and bubbles, and you can stir it */}
+            {/* Rack of reagents, sloshes and bubbles, and you can stir it */}
             <div className="lab-rack">
               <svg viewBox="0 0 311 186" data-lab-rack role="img" aria-label={t("chemistry.hero.title")}>
                 <defs>
@@ -547,7 +547,7 @@ const ChemistryPage = ({ t, language }) => {
                   </div>
                 </div>
 
-                {/* Placeholder — a real embed drops straight in here. The
+                {/* Placeholder, a real embed drops straight in here. The
                     blurred frame behind the play button is a product capture,
                     so the box reads as a video and not a flat gradient. */}
                 <div
@@ -555,7 +555,7 @@ const ChemistryPage = ({ t, language }) => {
                   style={{ marginTop: "18px", "--poster": "url(/images/finalLab.png)" }}
                 >
                   <span className="lab-video-play" aria-hidden="true"></span>
-                  <span className="lab-video-label">VIDEO — LAB WALKTHROUGH</span>
+                  <span className="lab-video-label">VIDEO, LAB WALKTHROUGH</span>
                 </div>
               </div>
             </div>
@@ -585,7 +585,7 @@ const ChemistryPage = ({ t, language }) => {
                     style={{ "--tab-hue": f.hue, "--tab-soft": f.soft }}
                   >
                     {/* The tab's vessel holds live liquid in its reagent's
-                        colour — the four tabs are the hero rack, revisited */}
+                        colour, the four tabs are the hero rack, revisited */}
                     <Glassware name={f.vessel} id={`tab-${f.key}`} variant="outline" gradient={f.grad} />
                     {t(`chemistry.experiments.${f.key}.title`)}
                   </button>
@@ -642,7 +642,7 @@ const ChemistryPage = ({ t, language }) => {
               <h3 className="lab-faq-q" style={{ marginTop: "34px" }}>{extra.moreTitle}</h3>
               <ul className="lab-more">
                 {extra.more.map((m) => (
-                  <li key={m.name}><b>{m.name}</b> — {m.note}</li>
+                  <li key={m.name}><b>{m.name}</b>, {m.note}</li>
                 ))}
               </ul>
             </div>
@@ -668,7 +668,7 @@ const ChemistryPage = ({ t, language }) => {
 
         {/* ---- Safety: its own section, inverted. Wave seams cut the band's
              edges, the plus-lattice textures the ground, and bubbles rise
-             behind the content — dark, but not flat. ---- */}
+             behind the content, dark, but not flat. ---- */}
         <section className="lab-band lab-band--dark lab-band--tex lab-submerged" data-lab-band="dark" data-lab-section>
           <Wave />
           <Wave flip />
@@ -849,7 +849,7 @@ const ChemistryPage = ({ t, language }) => {
           </div>
         </div>
 
-        {/* ---- FAQ — native disclosures, so the tail of the page keeps an
+        {/* ---- FAQ, native disclosures, so the tail of the page keeps an
              interaction without any JS ---- */}
         <section className="lab-band lab-band--tint lab-band--pad" data-lab-band="light" data-lab-section>
           <div className="container">

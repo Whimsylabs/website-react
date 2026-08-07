@@ -1,9 +1,13 @@
 import React from 'react';
 // Removed React Router - using direct HTML links
 import './Blog.css';
+import { withLazyImages } from '../utils/lazyImages';
 
-// Function to extract the first image from content
-const extractFirstImage = (content) => {
+// Function to extract the first image from content.
+// `eager` is true for the first (above-the-fold) card only, every other
+// card's image is lazy-loaded so the static listing page, which renders all
+// posts for crawlers, doesn't fetch every header image on load.
+const extractFirstImage = (content, eager) => {
   try {
     // Handle string content (from mock data)
     if (typeof content === 'string') {
@@ -49,9 +53,11 @@ const extractFirstImage = (content) => {
     if (firstImage && firstImage.props) {
       return (
         <div className="post-header-image">
-          <img 
-            src={firstImage.props.src} 
-            alt={firstImage.props.alt || "Blog post header"} 
+          <img
+            src={firstImage.props.src}
+            alt={firstImage.props.alt || "Blog post header"}
+            loading={eager ? 'eager' : 'lazy'}
+            decoding="async"
           />
         </div>
       );
@@ -105,11 +111,11 @@ const extractPreview = (content) => {
       .slice(0, 2)
       .filter(child => React.isValidElement(child) && child.type === 'p');
     
-    // Return the preview content
+    // Return the preview content (any inline images in it are lazy-loaded)
     return (
       <div className="post-preview-content">
-        {previewContent.length > 0 ? previewContent.map((child, index) => 
-          React.cloneElement(child, { key: `preview-${index}` })
+        {previewContent.length > 0 ? previewContent.map((child, index) =>
+          React.cloneElement(withLazyImages(child, { seen: 1 }), { key: `preview-${index}` })
         ) : (
           <p className="post-description">Read the full article...</p>
         )}
@@ -127,7 +133,7 @@ const extractPreview = (content) => {
   }
 };
 
-const BlogPreview = ({ post, languagePrefix = '' }) => {
+const BlogPreview = ({ post, languagePrefix = '', index = 0 }) => {
   // Format the date in a more readable format
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -144,7 +150,7 @@ const BlogPreview = ({ post, languagePrefix = '' }) => {
       <a href={`${languagePrefix}/blog/${post.id}/`} className="blog-preview-link">
         <div className="post-box post-preview" id={`post-${post.id}`}>
           {/* Extract and display the first image as a header */}
-          {extractFirstImage(post.content)}
+          {extractFirstImage(post.content, index === 0)}
           
           <h3 className="post-heading">
             <span className="post-title">{post.title}</span>

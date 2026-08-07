@@ -28,7 +28,7 @@ export const content = (
     </figure>
 
     <p>
-      Trouver des financements pour les technologies innovantes en classe peut sembler un véritable parcours du combattant. Les contraintes budgétaires, les priorités concurrentes et les processus de candidature complexes s'interposent souvent entre les enseignants et les outils dont ils ont besoin. Mais il y a une bonne nouvelle pour les écoles britanniques : le programme de <a href="https://royalsociety.org/grants/partnership-grants/" target="_blank" rel="noopener noreferrer">bourses Royal Society Partnership</a> offre jusqu'à 3 000 £ pour apporter des expériences STEM de pointe dans votre classe — et nous sommes là pour vous aider à l'obtenir.
+      Trouver des financements pour les technologies innovantes en classe peut sembler un véritable parcours du combattant. Les contraintes budgétaires, les priorités concurrentes et les processus de candidature complexes s'interposent souvent entre les enseignants et les outils dont ils ont besoin. Mais il y a une bonne nouvelle pour les écoles britanniques : le programme de <a href="https://royalsociety.org/grants/partnership-grants/" target="_blank" rel="noopener noreferrer">bourses Royal Society Partnership</a> offre jusqu'à 3 000 £ pour apporter des expériences STEM de pointe dans votre classe, et nous sommes là pour vous aider à l'obtenir.
     </p>
 
     <h2>Que sont les bourses Royal Society Partnership ?</h2>
@@ -40,10 +40,10 @@ export const content = (
     </p>
     <ul>
       <li><strong>Jusqu'à 3 000 £ de financement</strong> pour l'équipement, les matériaux et les frais de partenariat</li>
-      <li><strong>Pour tous les âges</strong> — les élèves de 5 à 18 ans sont éligibles</li>
-      <li><strong>Approche investigative</strong> — les élèves mènent de vraies recherches, pas de simples démonstrations</li>
-      <li><strong>Modèle de partenariat</strong> — travaillez aux côtés d'un professionnel STEM d'une université ou de l'industrie</li>
-      <li><strong>Plusieurs dates limites</strong> — trois fenêtres de candidature par an</li>
+      <li><strong>Pour tous les âges</strong>, les élèves de 5 à 18 ans sont éligibles</li>
+      <li><strong>Approche investigative</strong>, les élèves mènent de vraies recherches, pas de simples démonstrations</li>
+      <li><strong>Modèle de partenariat</strong>, travaillez aux côtés d'un professionnel STEM d'une université ou de l'industrie</li>
+      <li><strong>Plusieurs dates limites</strong>, trois fenêtres de candidature par an</li>
     </ul>
     <p>
       Depuis le début du programme, des milliers d'écoles ont utilisé les bourses Partnership pour financer des équipements allant de l'analyse ADN aux stations de surveillance climatique. Aujourd'hui, la réalité virtuelle émerge comme l'une des applications les plus passionnantes.
@@ -54,11 +54,11 @@ export const content = (
       La réalité virtuelle transforme la façon dont les élèves vivent la science. Au lieu de lire sur les réactions chimiques ou de regarder des vidéos de dissections, les élèves peuvent les réaliser dans des environnements immersifs et physiquement précis. Les avantages sont considérables :
     </p>
     <ul>
-      <li><strong>Pratique illimitée</strong> — les élèves peuvent répéter les expériences sans consommer de matériaux</li>
-      <li><strong>Exploration sécurisée</strong> — essayez des procédures dangereuses sans risques réels</li>
-      <li><strong>Retour immédiat</strong> — l'évaluation par IA détecte les erreurs de technique en temps réel</li>
-      <li><strong>Engagement</strong> — <a href="https://doi.org/10.3389/fpsyg.2024.1360574" target="_blank" rel="noopener noreferrer">Lin et al., 2024</a> montre que la RV augmente la motivation et la rétention des élèves</li>
-      <li><strong>Accessibilité</strong> — les élèves avec des limitations physiques peuvent participer pleinement</li>
+      <li><strong>Pratique illimitée</strong>, les élèves peuvent répéter les expériences sans consommer de matériaux</li>
+      <li><strong>Exploration sécurisée</strong>, essayez des procédures dangereuses sans risques réels</li>
+      <li><strong>Retour immédiat</strong>, l'évaluation par IA détecte les erreurs de technique en temps réel</li>
+      <li><strong>Engagement</strong>, <a href="https://doi.org/10.3389/fpsyg.2024.1360574" target="_blank" rel="noopener noreferrer">Lin et al., 2024</a> montre que la RV augmente la motivation et la rétention des élèves</li>
+      <li><strong>Accessibilité</strong>, les élèves avec des limitations physiques peuvent participer pleinement</li>
     </ul>
     <p>
       Une bourse Royal Society Partnership peut couvrir le coût des casques RV pour votre classe, tandis que WhimsyLabs fournit le logiciel gratuitement pendant la durée de votre projet. C'est une combinaison parfaite.
@@ -79,9 +79,9 @@ export const content = (
       La session 2026 s'ouvre le <strong>23 février 2026</strong>, avec trois dates limites de soumission :
     </p>
     <ul>
-      <li><strong>30 avril 2026</strong> — Session de printemps (pour les projets du trimestre d'automne)</li>
-      <li><strong>10 juillet 2026</strong> — Session d'été (pour le début du trimestre d'hiver)</li>
-      <li><strong>30 novembre 2026</strong> — Session d'automne (pour les projets du trimestre de printemps)</li>
+      <li><strong>30 avril 2026</strong>, Session de printemps (pour les projets du trimestre d'automne)</li>
+      <li><strong>10 juillet 2026</strong>, Session d'été (pour le début du trimestre d'hiver)</li>
+      <li><strong>30 novembre 2026</strong>, Session d'automne (pour les projets du trimestre de printemps)</li>
     </ul>
     <p>
       Planifier à l'avance vous donne le temps de trouver un partenaire STEM, de concevoir votre projet et de rédiger une candidature convaincante.
@@ -94,7 +94,7 @@ export const content = (
 
     <h3>Accès gratuit à WhimsyLabs</h3>
     <p>
-      Si votre candidature est acceptée, vous recevrez un accès gratuit à la plateforme de laboratoire virtuel WhimsyLabs pendant toute la durée de votre projet. Cela signifie que votre bourse est entièrement consacrée au matériel et aux frais de partenariat — pas aux licences logicielles.
+      Si votre candidature est acceptée, vous recevrez un accès gratuit à la plateforme de laboratoire virtuel WhimsyLabs pendant toute la durée de votre projet. Cela signifie que votre bourse est entièrement consacrée au matériel et aux frais de partenariat, pas aux licences logicielles.
     </p>
 
     <h3>Aide à la rédaction de candidature</h3>
@@ -104,7 +104,7 @@ export const content = (
 
     <h3>Mise en relation avec des partenaires STEM</h3>
     <p>
-      Les bourses Partnership nécessitent une collaboration avec un professionnel STEM — quelqu'un travaillant activement dans la recherche ou l'industrie. Si vous n'avez pas de contacts universitaires existants, nous pouvons vous aider à vous connecter avec des universitaires désireux de travailler avec des écoles.
+      Les bourses Partnership nécessitent une collaboration avec un professionnel STEM, quelqu'un travaillant activement dans la recherche ou l'industrie. Si vous n'avez pas de contacts universitaires existants, nous pouvons vous aider à vous connecter avec des universitaires désireux de travailler avec des écoles.
     </p>
 
     <h3>Planification de projet</h3>
@@ -122,13 +122,13 @@ export const content = (
       Les bourses Royal Society Partnership sont principalement destinées à l'équipement et aux matériaux. Un projet typique soutenu par WhimsyLabs pourrait budgéter :
     </p>
     <ul>
-      <li><strong>Casques RV (2 000-2 500 £)</strong> — suffisamment d'appareils Quest 3 pour équiper une classe</li>
-      <li><strong>Frais du partenaire STEM (jusqu'à 200 £)</strong> — frais de déplacement pour les visites scolaires</li>
-      <li><strong>Matériaux physiques</strong> — tout composant réel pour votre investigation</li>
-      <li><strong>Événement de célébration</strong> — présenter le travail des élèves à la fin du projet</li>
+      <li><strong>Casques RV (2 000-2 500 £)</strong>, suffisamment d'appareils Quest 3 pour équiper une classe</li>
+      <li><strong>Frais du partenaire STEM (jusqu'à 200 £)</strong>, frais de déplacement pour les visites scolaires</li>
+      <li><strong>Matériaux physiques</strong>, tout composant réel pour votre investigation</li>
+      <li><strong>Événement de célébration</strong>, présenter le travail des élèves à la fin du projet</li>
     </ul>
     <p>
-      Note importante : le financement ne peut pas être utilisé pour acheter des produits ou services auprès de votre partenaire STEM (cela constitue un conflit d'intérêts). C'est pourquoi WhimsyLabs fournit l'accès au logiciel gratuitement — ainsi il n'y a pas de conflit avec les règles de la bourse.
+      Note importante : le financement ne peut pas être utilisé pour acheter des produits ou services auprès de votre partenaire STEM (cela constitue un conflit d'intérêts). C'est pourquoi WhimsyLabs fournit l'accès au logiciel gratuitement, ainsi il n'y a pas de conflit avec les règles de la bourse.
     </p>
 
     <h2>Êtes-vous éligible ?</h2>
@@ -139,11 +139,11 @@ export const content = (
       <li>Vous êtes une école publique britannique (y compris les academies et free schools)</li>
       <li>Vos élèves ont entre 5 et 18 ans</li>
       <li>Vous pouvez vous associer avec un professionnel STEM (pas quelqu'un travaillant principalement dans l'éducation/la vulgarisation)</li>
-      <li>Votre projet est investigatif — les élèves répondent à une question de recherche</li>
+      <li>Votre projet est investigatif, les élèves répondent à une question de recherche</li>
       <li>Vous n'avez pas reçu de bourse Partnership au cours des deux dernières années</li>
     </ul>
     <p>
-      Les écoles privées et les écoles internationales ne sont malheureusement pas éligibles à ce programme particulier. Cependant, nous recherchons des opportunités de financement dans d'autres pays — consultez notre <a href="/grants/">centre de ressources financement</a> pour les mises à jour.
+      Les écoles privées et les écoles internationales ne sont malheureusement pas éligibles à ce programme particulier. Cependant, nous recherchons des opportunités de financement dans d'autres pays, consultez notre <a href="/grants/">centre de ressources financement</a> pour les mises à jour.
     </p>
 
     <h2>Idées de projets pour les sciences en RV</h2>
@@ -177,7 +177,7 @@ export const content = (
       La fenêtre de candidature 2026 s'ouvre le 23 février. Si vous souhaitez apporter les sciences en RV dans votre classe grâce à une bourse Royal Society Partnership, c'est le moment de commencer à planifier.
     </p>
     <p>
-      Visitez notre <a href="/grants/royal-society/">page sur les bourses Royal Society Partnership</a> pour en savoir plus et nous contacter. Nous vous accompagnerons à chaque étape — de la recherche d'un partenaire STEM à la soumission de votre candidature.
+      Visitez notre <a href="/grants/royal-society/">page sur les bourses Royal Society Partnership</a> pour en savoir plus et nous contacter. Nous vous accompagnerons à chaque étape, de la recherche d'un partenaire STEM à la soumission de votre candidature.
     </p>
     <p>
       Ne manquez pas cette opportunité d'obtenir 3 000 £ pour du matériel RV tout en bénéficiant d'un accès gratuit à WhimsyLabs. Ensemble, apportons l'avenir de l'enseignement des sciences dans votre classe.

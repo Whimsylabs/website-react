@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "94% des étudiants utilisent l'IA — et ce n'est pas le problème";
+export const title = "94% des étudiants utilisent l'IA, et ce n'est pas le problème";
 export const description = "L'enquête HEPI 2026 montre une utilisation quasi universelle de l'IA parmi les étudiants britanniques. La véritable crise n'est pas l'utilisation de l'IA elle-même, mais le fait que nous continuons à évaluer des résultats que l'IA peut facilement produire. L'évaluation basée sur les processus offre une solution.";
 export const keywords = [
   "IA dans l'éducation",

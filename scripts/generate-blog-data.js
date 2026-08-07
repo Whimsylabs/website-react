@@ -20,7 +20,7 @@ const blogPosts = [
 ];
 const supportedLanguages = ['en', 'de', 'fr', 'es', 'ja'];
 
-// Mapping from post IDs to slugs — single source of truth shared with build.js,
+// Mapping from post IDs to slugs, single source of truth shared with build.js,
 // src/Components/Blog.js and src/Components/BlogPost.js. Add new posts HERE only.
 const postIdToSlug = require('../src/i18n/blogPostSlugs.json');
 

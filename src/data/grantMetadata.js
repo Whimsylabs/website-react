@@ -1,5 +1,5 @@
 /**
- * Localized SEO metadata for grant pages — SINGLE SOURCE OF TRUTH.
+ * Localized SEO metadata for grant pages, SINGLE SOURCE OF TRUTH.
  *
  * Used by both build.js (getPageMetadata) and scripts/metadata-injector.js
  * (getDefaultMetadata) so the two never drift apart. Each route has per-language
@@ -8,7 +8,7 @@
  * Constraints (enforced by validators):
  *  - title  <= 70 chars (validate-title-length), includes "| WhimsyLabs"
  *  - description >= 120 chars for en/es/fr/de (validate-meta-descriptions);
- *    Japanese (jp) is intentionally shorter — characters pack more meaning.
+ *    Japanese (jp) is intentionally shorter, characters pack more meaning.
  *  - titles & descriptions must be unique across pages (validate-seo-uniqueness)
  */
 
@@ -212,7 +212,7 @@ const GRANT_META = {
   '/grants/uk-school-funding': {
     en: {
       title: 'Fund Virtual Labs with Pupil Premium | WhimsyLabs',
-      description: 'UK schools can fund WhimsyLabs from existing budgets — Pupil Premium (£1,100–£2,690 per pupil) and the notional SEN budget both allow instructional and assistive software.',
+      description: 'UK schools can fund WhimsyLabs from existing budgets, Pupil Premium (£1,100–£2,690 per pupil) and the notional SEN budget both allow instructional and assistive software.',
       keywords: 'Pupil Premium software, SEN budget technology, UK school funding, fund virtual labs, SEND accessibility',
     },
     es: {

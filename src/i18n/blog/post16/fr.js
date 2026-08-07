@@ -108,10 +108,10 @@ export const content = (
     </p>
     <p>
       <strong>La Solution WhimsyLabs :</strong> Nos données sont{" "}
-      <strong>émergentes</strong>. Nous simulons des variables environnementales —
-      fluctuations de température, humidité et impuretés — qui interagissent avec le
+      <strong>émergentes</strong>. Nous simulons des variables environnementales,
+      fluctuations de température, humidité et impuretés, qui interagissent avec le
       moteur physique. Le résultat d'un étudiant est généré <em>de novo</em> en fonction
-      de ses actions spécifiques et des conditions environnementales — plein de bruit
+      de ses actions spécifiques et des conditions environnementales, plein de bruit
       et d'artefacts, exactement comme dans un vrai laboratoire.
     </p>
     <ul>

@@ -17,8 +17,8 @@ const { execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const DEFAULT_INPUT = 'docs/kings-interhigh-welcome-pack.html';
-const DEFAULT_OUTPUT = 'docs/kings-interhigh-welcome-pack.pdf';
+const DEFAULT_INPUT = 'docs/kings-interhigh-partnership-pack.html';
+const DEFAULT_OUTPUT = 'docs/kings-interhigh-partnership-pack.pdf';
 
 const CANDIDATES = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -61,7 +61,7 @@ function main() {
   console.log(`Browser : ${browser}`);
   console.log(`Input   : ${inputAbs}`);
 
-  // file:// URL — Windows paths need forward slashes and a leading slash
+  // file:// URL, Windows paths need forward slashes and a leading slash
   const fileUrl = 'file:///' + inputAbs.replace(/\\/g, '/').replace(/^\//, '');
 
   execFileSync(browser, [

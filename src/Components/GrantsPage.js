@@ -62,7 +62,7 @@ const GRANTS_DATA = [
     country: "UK",
     flag: "🇬🇧",
     amount: "£1,100 - £2,690",
-    description: "Use your school's existing Pupil Premium and notional SEN budgets to fund WhimsyLabs — both allow instructional and assistive software.",
+    description: "Use your school's existing Pupil Premium and notional SEN budgets to fund WhimsyLabs, both allow instructional and assistive software.",
     link: "/grants/uk-school-funding/",
     available: true,
     translateKey: null,

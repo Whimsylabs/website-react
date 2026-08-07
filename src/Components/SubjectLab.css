@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Subject landing pages — the "lab" layer
+   Subject landing pages, the "lab" layer
    --------------------------------------------------------------------------
    The build emits a single CSS bundle, so LandingDemo.css is loaded on every
    page and its classes are global and unscoped. This file therefore does NOT
@@ -165,7 +165,7 @@
 
 /* Sits over the bottom of the hero and paints only below the waterline, so the
    hero's own gradient shows through above it. Painting a flat dark above would
-   seam visibly — a 135deg gradient is not one colour along its bottom edge. */
+   seam visibly, a 135deg gradient is not one colour along its bottom edge. */
 .lab-liquid {
   position: relative;
   z-index: 2;
@@ -187,7 +187,7 @@
    right edge sits at calc(50% - 600px) from the viewport's right; the rail is
    offset a further (width + gutter) beyond that.
    It therefore only exists once the viewport is wide enough to hold
-   1200px of column plus a rail either side — below that it is simply hidden. */
+   1200px of column plus a rail either side, below that it is simply hidden. */
 .lab-rail {
   position: absolute;
   top: 0;
@@ -225,7 +225,7 @@
 .lab-grad-hit { position: absolute; background: none; border: 0; padding: 0; cursor: pointer; pointer-events: auto; }
 
 /* --------------------------------------------------------------------------
-   Left rail — the biology strand, which runs the whole page rather than just
+   Left rail, the biology strand, which runs the whole page rather than just
    the body, so it passes behind every band from hero to closing CTA.
    -------------------------------------------------------------------------- */
 
@@ -244,11 +244,11 @@
 .lab-rail--left .lab-readout { position: absolute; left: 0; right: 0; bottom: 12px; margin: 0; }
 
 /* --------------------------------------------------------------------------
-   Lipid bilayer divider — a membrane you part with the cursor
+   Lipid bilayer divider, a membrane you part with the cursor
    -------------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------------
-   Hanging chain divider — grab a gold link and pull
+   Hanging chain divider, grab a gold link and pull
    -------------------------------------------------------------------------- */
 
 .lab-chain { padding: 6px 0 0; touch-action: none; }
@@ -302,7 +302,7 @@
    Experiment tabs
    -------------------------------------------------------------------------- */
 
-/* Alignment is declared explicitly rather than inherited — .App sets
+/* Alignment is declared explicitly rather than inherited, .App sets
    text-align: center globally, so anything unstated is ambiguous. */
 .lab-head-center { text-align: center; }
 .lab-head-center .section-text { margin-left: auto; margin-right: auto; max-width: 62ch; }
@@ -364,7 +364,7 @@
 .lab-more b { color: var(--lab-ink); font-weight: 650; flex: 0 0 auto; }
 
 /* --------------------------------------------------------------------------
-   Safety — runs on a dark band, so its cards are glass rather than paper
+   Safety, runs on a dark band, so its cards are glass rather than paper
    -------------------------------------------------------------------------- */
 
 .lab-hazards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 22px; }
@@ -392,7 +392,7 @@
 .lab-band--dark .lab-hazard span { color: #b9bcdd; }
 
 /* --------------------------------------------------------------------------
-   Comparison — a real table with real columns
+   Comparison, a real table with real columns
    -------------------------------------------------------------------------- */
 
 .lab-table-wrap { overflow-x: auto; }
@@ -464,7 +464,7 @@
   letter-spacing: 0.06em;
 }
 
-/* Placeholder video — a real embed drops straight in here later */
+/* Placeholder video, a real embed drops straight in here later */
 .lab-video {
   position: relative;
   display: flex;
@@ -506,7 +506,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Submerged sections — bubbles drifting up behind the content
+   Submerged sections, bubbles drifting up behind the content
    -------------------------------------------------------------------------- */
 
 .lab-submerged { position: relative; overflow: hidden; }
@@ -522,7 +522,7 @@
 .lab-bubbles-field canvas { display: block; width: 100%; height: 100%; }
 
 /* --------------------------------------------------------------------------
-   Bench divider — apparatus standing on a line, holding real liquid
+   Bench divider, apparatus standing on a line, holding real liquid
    -------------------------------------------------------------------------- */
 
 .lab-bench { padding: 10px 0 0; }
@@ -611,7 +611,7 @@
 .lab-cross-item svg { flex: 0 0 auto; width: 24px; height: 32px; overflow: visible; }
 
 /* --------------------------------------------------------------------------
-   Depth & rhythm layer — everything below is opt-in (new classes or vars with
+   Depth & rhythm layer, everything below is opt-in (new classes or vars with
    fallbacks), so pages adopt pieces independently.
    -------------------------------------------------------------------------- */
 
@@ -620,7 +620,7 @@
 .lab-band--pad { padding: 72px 0; }
 
 /* The homepage only ever renders .skill-bar-fill with an .above/.below
-   modifier, so the base class has no background of its own — bare fills on
+   modifier, so the base class has no background of its own, bare fills on
    these pages were invisible tracks. */
 .lab-page .skill-bar-fill {
   background: linear-gradient(90deg, var(--lab-accent), var(--lab-accent-text));
@@ -633,7 +633,7 @@
   color: var(--tab-hue, #14b7ff);
 }
 
-/* Wave seam — a static echo of the liquid divider, cut from the colour of the
+/* Wave seam, a static echo of the liquid divider, cut from the colour of the
    neighbouring band so a dark band never meets a light one along a ruled line.
    Sits inside the dark band; the band's own padding provides the clearance. */
 .lab-wave {
@@ -651,7 +651,7 @@
 .lab-wave--ground { color: var(--lab-ground); }
 .lab-wave--flip { top: auto; bottom: -1px; transform: scaleY(-1); }
 
-/* Molecular plus-lattice for dark bands — the welcome pack's hero texture,
+/* Molecular plus-lattice for dark bands, the welcome pack's hero texture,
    lavender at whisper opacity, so dark stops meaning empty. */
 .lab-band--tex::before {
   content: "";
@@ -662,7 +662,7 @@
   pointer-events: none;
 }
 
-/* Hazard cards can carry their own hue — set --hz / --hz-soft inline. The
+/* Hazard cards can carry their own hue, set --hz / --hz-soft inline. The
    diamond echoes a GHS pictogram border without pretending to be one. */
 .lab-hazard--hue { border-left-color: var(--hz, var(--lab-accent)); }
 .lab-hazard--hue b { display: flex; align-items: center; gap: 9px; }
@@ -682,7 +682,7 @@
   background: var(--hz-soft, rgba(255, 255, 255, 0.06));
 }
 
-/* Stat strip — the site's lavender-to-sky gradient band carrying big numbers */
+/* Stat strip, the site's lavender-to-sky gradient band carrying big numbers */
 .lab-statband {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -715,7 +715,7 @@
   text-transform: uppercase;
 }
 
-/* Pull-quote — one line of copy given display scale */
+/* Pull-quote, one line of copy given display scale */
 .lab-pull {
   max-width: 36ch;
   margin: 0 auto 34px;
@@ -730,7 +730,7 @@
 .lab-pull::before { content: "\201C"; color: var(--lab-accent-text); margin-right: 2px; }
 .lab-pull::after { content: "\201D"; color: var(--lab-accent-text); margin-left: 2px; }
 
-/* FAQ as native disclosure — <details class="lab-faq-item"> gets accordion
+/* FAQ as native disclosure, <details class="lab-faq-item"> gets accordion
    behaviour for free; the existing div form is untouched. */
 details.lab-faq-item { padding: 0; }
 

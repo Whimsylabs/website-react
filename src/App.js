@@ -25,6 +25,7 @@ import ChemistryPage from "./Components/ChemistryPage";
 import BiologyPage from "./Components/BiologyPage";
 import PhysicsPage from "./Components/PhysicsPage";
 import AIAssessmentPage from "./Components/AIAssessmentPage";
+import IndustrialPage from "./Components/IndustrialPage";
 import ChooseVirtualLabPage from "./Components/ChooseVirtualLabPage";
 import SendSciencePage from "./Components/SendSciencePage";
 import LandingDemo from "./Components/LandingDemo";
@@ -95,6 +96,9 @@ function App(props = {}) {
       return <PhysicsPage language={language} />;
     if (basePath === "/ai-assessment/" || basePath === "/ai-assessment")
       return <AIAssessmentPage language={language} />;
+    // English-only route: rendered without a language prop by design
+    if (basePath === "/industrial/" || basePath === "/industrial")
+      return <IndustrialPage />;
     if (basePath === "/choose-virtual-lab/" || basePath === "/choose-virtual-lab")
       return <ChooseVirtualLabPage language={language} />;
     if (basePath === "/send/" || basePath === "/send")

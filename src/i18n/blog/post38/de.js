@@ -1,5 +1,5 @@
 import React from "react";
-export const title = "Britische Schulen: über 50 Mio. £ für KI-Bildung — BETT 2026";
+export const title = "Britische Schulen: über 50 Mio. £ für KI-Bildung, BETT 2026";
 export const description = "Die Erweiterung der EdTech-Testbeds auf 23 Mio. £, der Konnektivitätsfonds von 45 Mio. £ und der bevorstehende KI-Bildungsgipfel signalisieren einen großen Wandel. Was Schulen jetzt vorbereiten sollten.";
 export const keywords = [
   "UK EdTech Testbeds",

@@ -21,7 +21,7 @@ export default {
     assessmentText1: "WhimsyLabs AI-proofs assessments by grading the process, not just the result. We track physical inputs within our virtual labs, like equipment handling and reaction times, which AI cannot simulate.",
     assessmentText2: "Every student's reagents have slightly different concentrations and impurities, so every student gets a unique correct answer. AI tools assume textbook-perfect conditions, but your HCl was 0.0987M with trace iron. A generic \"correct\" answer won't match your actual data.",
     assessmentCallout: "💡 This makes WhimsyLabs perfect for homework: students can't share answers or use AI to cheat.",
-    aiSafetyNote: "And it's safe by design: WhimsyCat, our AI tutor, has no student chat window. It infers everything from students' actions in the lab — pupils never type prompts or receive generated text.",
+    aiSafetyNote: "And it's safe by design: WhimsyCat, our AI tutor, has no student chat window. It infers everything from students' actions in the lab, pupils never type prompts or receive generated text.",
     aiSafetyLink: "See how our AI-proof assessment works",
     timeSavingTitle: "Can Automated Grading Save Teachers Time?",
     timeSavingText: "Stop ticking boxes and start teaching. WhimsyLabs assesses skill mastery and safety in real-time, providing automatic grading on students' capabilities for you to review.",

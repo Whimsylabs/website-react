@@ -4,6 +4,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const { glob } = require('glob');
+const { isRedirectStub } = require('./is-redirect-stub');
 
 class BuildValidator {
   constructor(buildDir = './build', siteUrl = 'https://whimsylabs.ai') {
@@ -20,7 +21,7 @@ class BuildValidator {
     try {
       const htmlFiles = await glob(`${this.buildDir}/**/*.html`);
 
-      const urls = htmlFiles
+      const entries = htmlFiles
         .map(file => {
           // Convert to forward slashes
           const normalizedFile = file.replace(/\\/g, '/');
@@ -44,9 +45,10 @@ class BuildValidator {
           // Clean up the URL
           url = url
             .replace(/^\/+/, '') // Remove leading slashes
-            .replace('/index.html', '')
-            .replace('.html', '');
-          
+            .replace(/index\.html$/, '') // Anchored: leading slashes are already gone, so root index.html matches too
+            .replace(/\.html$/, '')
+            .replace(/\/+$/, '');
+
           // Add leading slash and trailing slash for proper URL format
           if (!url || url === '') {
             url = '/'; // Root path
@@ -54,23 +56,35 @@ class BuildValidator {
             url = '/' + url + '/';
           }
           
-          return url;
+          return { file, url };
         })
-        .filter(url => {
+        .filter(({ url }) => {
           // Filter out non-page files and system paths
-          return !url.includes('/static/') && 
-                 !url.includes('/images/') && 
+          return !url.includes('/static/') &&
+                 !url.includes('/images/') &&
                  !url.includes('/videos/') &&
                  !url.includes('/js/') &&
                  !url.includes('/css/') &&
                  url !== '/404/' &&
                  url !== '/manifest.json/' &&
-                 url !== '/index/' &&  // Root page alias
                  url !== '/spa/';      // SPA fallback page
-        })
-        .sort();
+        });
 
-      console.log(`📁 Found ${urls.length} HTML pages in build directory`);
+      // Redirect stubs for region-specific posts are noindex + meta-refresh and are
+      // deliberately kept out of the sitemap, so they must not count as indexable pages.
+      const pages = [];
+      let stubCount = 0;
+      for (const { file, url } of entries) {
+        if (isRedirectStub(await fs.readFile(file, 'utf8'))) {
+          stubCount++;
+          continue;
+        }
+        pages.push(url);
+      }
+      const urls = pages.sort();
+
+      console.log(`📁 Found ${urls.length} HTML pages in build directory` +
+        (stubCount > 0 ? ` (skipped ${stubCount} redirect stubs)` : ''));
       return urls;
     } catch (error) {
       this.errors.push(`Failed to scan build directory: ${error.message}`);

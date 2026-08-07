@@ -11,6 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { isRedirectStub } = require('./is-redirect-stub');
 
 const BUILD_DIR = path.join(__dirname, '../build');
 const SITEMAP_PATH = path.join(BUILD_DIR, 'sitemap.xml');
@@ -49,6 +50,10 @@ function findAllHtmlPages(dir, baseDir = dir) {
           pages.push(...findAllHtmlPages(fullPath, baseDir));
         }
       } else if (entry.name === 'index.html') {
+        // Redirect stubs for region-specific posts are noindex + meta-refresh and are
+        // deliberately kept out of the sitemap, so they are not missing pages.
+        if (isRedirectStub(fs.readFileSync(fullPath, 'utf8'))) continue;
+
         // Convert file path to URL path
         const relativePath = path.relative(baseDir, dir);
         const urlPath = '/' + relativePath.replace(/\\/g, '/') + '/';
