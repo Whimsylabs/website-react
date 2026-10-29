@@ -172,7 +172,7 @@ export const content = (
       AI支援教室では成績が上がっています。しかし、研究が示すように、成績は学習と同じではありません。
     </p>
     <p>
-      本物のスキルを構築するバーチャルラボをご覧になりたいですか？WhimsyLabsの違いを体験するには、<a href="/ja/contact">お問い合わせください</a>。
+      本物のスキルを構築するバーチャルラボをご覧になりたいですか？WhimsyLabsの違いを体験するには、<a href="/jp/contact/">お問い合わせください</a>。
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

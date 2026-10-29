@@ -159,22 +159,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/oecd-process-oriented-assessment-validation">
+          <a href="/jp/blog/oecd-process-oriented-assessment-validation/">
             OECDは成果物ではなくプロセスを評価せよと言う：これが科学教育にとって何を意味するか
           </a>
         </li>
         <li>
-          <a href="/jp/blog/ai-text-grading-fails-process-assessment-works">
+          <a href="/jp/blog/ai-text-grading-fails-process-assessment-works/">
             なぜAIテキスト評価は失敗し、プロセス評価は機能するのか
           </a>
         </li>
         <li>
-          <a href="/jp/blog/process-based-lab-assessment-future">
+          <a href="/jp/blog/process-based-lab-assessment-future/">
             答えではなくプロセスを評価する：実験室評価の未来
           </a>
         </li>
         <li>
-          <a href="/jp/blog/ai-assessment-crisis-solution">
+          <a href="/jp/blog/ai-assessment-crisis-solution/">
             AIと評価の危機：実践的な解決策
           </a>
         </li>

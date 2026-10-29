@@ -62,7 +62,7 @@ export const content = (
 
     <p>
       Das kann sie, und für manche Schulen und manche Lernenden muss sie es.{" "}
-      <a href="/de/blog/virtual-labs-online-schools-distance-learning">Online-Schulen</a>{" "}
+      <a href="/de/blog/virtual-labs-online-schools-distance-learning/">Online-Schulen</a>{" "}
       haben keine Alternative, und der Science Education Tracker der Royal Society (britische Akademie der Wissenschaften) stellte fest, dass der Anteil der GCSE-Lernenden, die mindestens alle zwei Wochen praktisch arbeiten, von 44% im Jahr 2016 auf 26% im Jahr 2023 gefallen ist. Das deutet darauf hin, dass auch sehr viele Lernende an Präsenzschulen kaum Zeit an der Laborbank verbringen.
     </p>
 
@@ -86,7 +86,7 @@ export const content = (
 
     <p>
       Das ist das Argument, das wir ausführlich zur{" "}
-      <a href="/de/blog/physicality-in-virtual-labs">Körperlichkeit in virtuellen Laboren</a> dargelegt haben, und im umgedrehten Praktikum zahlt es sich am handfestesten aus. In der Simulation aufgebautes Muskelgedächtnis ist der gesamte Mechanismus, über den dieses Modell später Zeit spart.
+      <a href="/de/blog/physicality-in-virtual-labs/">Körperlichkeit in virtuellen Laboren</a> dargelegt haben, und im umgedrehten Praktikum zahlt es sich am handfestesten aus. In der Simulation aufgebautes Muskelgedächtnis ist der gesamte Mechanismus, über den dieses Modell später Zeit spart.
     </p>
 
     <h2>Wie setzt man es praktisch um?</h2>
@@ -117,7 +117,7 @@ export const content = (
 
     <p>
       Nach unserer Erfahrung drei Gruppen. Schulen mit guten Laboren und zu wenig Stunden darin, also die meisten weiterführenden Schulen. Schulen, deren praktisches Angebot am Gerätebudget scheitert und nicht an den Räumen: Die Untersuchung von EngineeringUK aus dem Jahr 2024 berichtet, dass 27% der britischen Naturwissenschaftslehrkräfte angeben, ihre Schule könne sich die für Praktika nötige Ausstattung nicht leisten. Und Lernende, die die physische Laborumgebung als überfordernd erleben und für die es den Unterschied zwischen Teilnehmen und bloßem Aushalten ausmacht, wenn sie mit den Anforderungen des Raums bereits vertraut ankommen. Diese letzte Gruppe war der Anlass für unseren Beitrag über{" "}
-      <a href="/de/blog/virtual-kidney-dissection-send-engagement">virtuelle Sektion und die Teilhabe von Lernenden mit sonderpädagogischem Förderbedarf</a>, und es ist ein Nutzen, der Schulen überrascht, die das Modell rein aus Zeitgründen eingeführt haben.
+      <a href="/de/blog/virtual-kidney-dissection-send-engagement/">virtuelle Sektion und die Teilhabe von Lernenden mit sonderpädagogischem Förderbedarf</a>, und es ist ein Nutzen, der Schulen überrascht, die das Modell rein aus Zeitgründen eingeführt haben.
     </p>
 
     <p>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/de/blog/virtual-labs-online-schools-distance-learning/">
             Virtuelle Labore für Online-Schulen: Naturwissenschaft auf Distanz
           </a>
         </li>
         <li>
-          <a href="/de/blog/physicality-in-virtual-labs">
+          <a href="/de/blog/physicality-in-virtual-labs/">
             Körperlichkeit in virtuellen Laboren: jenseits klassischer Simulationen
           </a>
         </li>
         <li>
-          <a href="/de/blog/sandbox-learning-revolution-stem-education">
+          <a href="/de/blog/sandbox-learning-revolution-stem-education/">
             Sandbox-Lernen: Warum die Freiheit zu scheitern für MINT unverzichtbar ist
           </a>
         </li>
         <li>
-          <a href="/de/blog/virtual-reality-prepares-students-real-world-stem-careers">
+          <a href="/de/blog/virtual-reality-prepares-students-real-world-stem-careers/">
             VR bereitet Lernende mit echten Laborfertigkeiten auf MINT-Berufe vor
           </a>
         </li>

@@ -14,6 +14,12 @@ const translations = {
       faq: "FAQ",
       contact: "Contact",
       grants: "Grants",
+      labs: "Labs",
+      openMenu: "Open navigation menu",
+      closeMenu: "Close navigation menu",
+      primaryLabel: "Primary navigation",
+      siteNavigation: "Main site navigation",
+      skipToContent: "Skip to main content",
     },
 
     // Homepage - imported from separate file
@@ -41,7 +47,7 @@ const translations = {
     // FAQ
     faq: {
       title: "Virtual Lab FAQ: Pricing, Setup & Free Trials | WhimsyLabs",
-      description: "How much does WhimsyLabs cost? Do you need VR headsets? How do free school trials work? Clear answers to 40+ questions about our virtual lab software.",
+      description: "How much does WhimsyLabs cost? Do you need VR headsets? How do free school trials work? Clear answers to dozens of questions about our virtual lab software.",
       subtitle:
         "Find answers to common questions about our virtual lab and online lab simulation software for STEM education",
       heading: "Virtual Lab FAQ: Online Lab Simulation Questions",
@@ -729,13 +735,29 @@ const translations = {
       moreGrantsDesc: "We're researching additional funding opportunities. Check back soon or contact us about grants in your region.",
     },
 
+    // Homepage "explore the labs" internal linking block
+    exploreLabs: {
+      heading: "Explore the labs",
+      intro:
+        "See what students actually do in each subject, or read our guide to choosing the right virtual lab for your school.",
+      biology: "Biology Labs",
+      chemistry: "Chemistry Labs",
+      physics: "Physics Labs",
+      chooseVirtualLab: "Choosing a Virtual Lab",
+    },
+
     // Footer
     footer: {
       copyright: "© 2025 Whimsylabs – Virtual Laboratory Solutions",
       navigation: "Footer navigation",
       home: "Home",
       features: "Features",
-      services: "Services", 
+      biology: "Biology Labs",
+      chemistry: "Chemistry Labs",
+      physics: "Physics Labs",
+      chooseVirtualLab: "Choosing a Virtual Lab",
+      send: "SEND & Accessibility",
+      services: "Services",
       bett: "BETT 2026",
       contact: "Contact",
       blog: "Blog",
@@ -743,6 +765,11 @@ const translations = {
       privacy: "Privacy",
       homeLabel: "Navigate to Home",
       featuresLabel: "View Our Features",
+      biologyLabel: "Virtual Biology Lab",
+      chemistryLabel: "Virtual Chemistry Lab",
+      physicsLabel: "Virtual Physics Lab",
+      chooseVirtualLabLabel: "Read Our Virtual Lab Buyer's Guide",
+      sendLabel: "Accessible Science Practicals for SEND",
       servicesLabel: "View Our Services",
       bettLabel: "Visit Us at BETT 2026",
       contactLabel: "Contact Us via Email",
@@ -766,6 +793,12 @@ const translations = {
       faq: "Preguntas Frecuentes",
       contact: "Contacto",
       grants: "Subvenciones",
+      labs: "Laboratorios",
+      openMenu: "Abrir el menú de navegación",
+      closeMenu: "Cerrar el menú de navegación",
+      primaryLabel: "Navegación principal",
+      siteNavigation: "Navegación principal del sitio",
+      skipToContent: "Saltar al contenido principal",
     },
 
     // Homepage - imported from separate file
@@ -1329,11 +1362,26 @@ const translations = {
     },
 
     // Footer
+    exploreLabs: {
+      heading: "Explora los laboratorios",
+      intro:
+        "Descubre lo que el alumnado hace realmente en cada asignatura, o lee nuestra guía para elegir el laboratorio virtual adecuado para tu centro.",
+      biology: "Laboratorios de Biología",
+      chemistry: "Laboratorios de Química",
+      physics: "Laboratorios de Física",
+      chooseVirtualLab: "Elegir un Laboratorio Virtual",
+    },
+
     footer: {
       copyright: "© 2025 Whimsylabs – Soluciones de Laboratorio Virtual",
       navigation: "Navegación del pie de página",
       home: "Inicio",
       features: "Características",
+      biology: "Laboratorios de Biología",
+      chemistry: "Laboratorios de Química",
+      physics: "Laboratorios de Física",
+      chooseVirtualLab: "Elegir un Laboratorio Virtual",
+      send: "Accesibilidad y NEE",
       services: "Servicios",
       bett: "BETT 2026",
       contact: "Contacto",
@@ -1342,6 +1390,11 @@ const translations = {
       privacy: "Privacidad",
       homeLabel: "Navegar al Inicio",
       featuresLabel: "Ver Nuestras Características",
+      biologyLabel: "Laboratorio Virtual de Biología",
+      chemistryLabel: "Laboratorio Virtual de Química",
+      physicsLabel: "Laboratorio Virtual de Física",
+      chooseVirtualLabLabel: "Lee Nuestra Guía de Compra de Laboratorios Virtuales",
+      sendLabel: "Prácticas de Ciencias Accesibles para NEE",
       servicesLabel: "Ver Nuestros Servicios",
       bettLabel: "Visítanos en BETT 2026",
       contactLabel: "Contáctanos por Email",
@@ -1365,6 +1418,12 @@ const translations = {
       faq: "FAQ",
       contact: "Contact",
       grants: "Subventions",
+      labs: "Laboratoires",
+      openMenu: "Ouvrir le menu de navigation",
+      closeMenu: "Fermer le menu de navigation",
+      primaryLabel: "Navigation principale",
+      siteNavigation: "Navigation principale du site",
+      skipToContent: "Aller au contenu principal",
     },
 
     // Homepage - imported from separate file
@@ -1928,11 +1987,26 @@ const translations = {
     },
 
     // Footer
+    exploreLabs: {
+      heading: "Explorez les laboratoires",
+      intro:
+        "Découvrez ce que les élèves font réellement dans chaque matière, ou lisez notre guide pour choisir le laboratoire virtuel adapté à votre établissement.",
+      biology: "Laboratoires de Biologie",
+      chemistry: "Laboratoires de Chimie",
+      physics: "Laboratoires de Physique",
+      chooseVirtualLab: "Choisir un Laboratoire Virtuel",
+    },
+
     footer: {
       copyright: "© 2025 Whimsylabs – Solutions de Laboratoire Virtuel",
       navigation: "Navigation du pied de page",
       home: "Accueil",
       features: "Fonctionnalités",
+      biology: "Laboratoires de Biologie",
+      chemistry: "Laboratoires de Chimie",
+      physics: "Laboratoires de Physique",
+      chooseVirtualLab: "Choisir un Laboratoire Virtuel",
+      send: "Accessibilité et Besoins Éducatifs",
       services: "Services",
       bett: "BETT 2026",
       contact: "Contact",
@@ -1941,6 +2015,11 @@ const translations = {
       privacy: "Confidentialité",
       homeLabel: "Naviguer vers l'Accueil",
       featuresLabel: "Voir Nos Fonctionnalités",
+      biologyLabel: "Laboratoire Virtuel de Biologie",
+      chemistryLabel: "Laboratoire Virtuel de Chimie",
+      physicsLabel: "Laboratoire Virtuel de Physique",
+      chooseVirtualLabLabel: "Lire Notre Guide d'Achat de Laboratoires Virtuels",
+      sendLabel: "TP de Sciences Accessibles à Tous",
       servicesLabel: "Voir Nos Services",
       bettLabel: "Visitez-nous au BETT 2026",
       contactLabel: "Nous Contacter par Email",
@@ -1964,6 +2043,12 @@ const translations = {
       faq: "FAQ",
       contact: "Kontakt",
       grants: "Fördermittel",
+      labs: "Labore",
+      openMenu: "Navigationsmenü öffnen",
+      closeMenu: "Navigationsmenü schließen",
+      primaryLabel: "Hauptnavigation",
+      siteNavigation: "Haupt-Navigation der Website",
+      skipToContent: "Zum Hauptinhalt springen",
     },
 
     // Homepage - imported from separate file
@@ -2526,11 +2611,26 @@ const translations = {
     },
 
     // Footer
+    exploreLabs: {
+      heading: "Entdecken Sie die Labore",
+      intro:
+        "Sehen Sie, was Schülerinnen und Schüler in jedem Fach wirklich tun, oder lesen Sie unseren Ratgeber zur Auswahl des passenden virtuellen Labors für Ihre Schule.",
+      biology: "Biologielabore",
+      chemistry: "Chemielabore",
+      physics: "Physiklabore",
+      chooseVirtualLab: "Virtuelles Labor auswählen",
+    },
+
     footer: {
       copyright: "© 2025 Whimsylabs – Virtuelle Laborlösungen",
       navigation: "Footer-Navigation",
       home: "Startseite",
       features: "Funktionen",
+      biology: "Biologielabore",
+      chemistry: "Chemielabore",
+      physics: "Physiklabore",
+      chooseVirtualLab: "Virtuelles Labor auswählen",
+      send: "Barrierefreiheit und Förderbedarf",
       services: "Dienstleistungen",
       bett: "BETT 2026",
       contact: "Kontakt",
@@ -2539,6 +2639,11 @@ const translations = {
       privacy: "Datenschutz",
       homeLabel: "Zur Startseite navigieren",
       featuresLabel: "Unsere Funktionen ansehen",
+      biologyLabel: "Virtuelles Biologielabor",
+      chemistryLabel: "Virtuelles Chemielabor",
+      physicsLabel: "Virtuelles Physiklabor",
+      chooseVirtualLabLabel: "Unseren Kaufratgeber für virtuelle Labore lesen",
+      sendLabel: "Barrierefreie Experimente für Förderschüler",
       servicesLabel: "Unsere Dienstleistungen ansehen",
       bettLabel: "Besuchen Sie uns auf der BETT 2026",
       contactLabel: "Kontaktieren Sie uns per E-Mail",
@@ -2562,6 +2667,12 @@ const translations = {
       faq: "よくある質問",
       contact: "お問い合わせ",
       grants: "助成金",
+      labs: "ラボ",
+      openMenu: "ナビゲーションメニューを開く",
+      closeMenu: "ナビゲーションメニューを閉じる",
+      primaryLabel: "メインナビゲーション",
+      siteNavigation: "サイトのメインナビゲーション",
+      skipToContent: "メインコンテンツへスキップ",
     },
 
     // Homepage - imported from separate file
@@ -2963,11 +3074,26 @@ const translations = {
     },
 
     // Footer
+    exploreLabs: {
+      heading: "ラボを見てみる",
+      intro:
+        "各教科で生徒が実際に何をするのかをご覧ください。学校に合ったバーチャルラボの選び方ガイドもご用意しています。",
+      biology: "生物学ラボ",
+      chemistry: "化学ラボ",
+      physics: "物理学ラボ",
+      chooseVirtualLab: "バーチャルラボの選び方",
+    },
+
     footer: {
       copyright: "© 2025 Whimsylabs – シミュレーション教材ソリューション",
       navigation: "フッターナビゲーション",
       home: "ホーム",
       features: "機能",
+      biology: "生物学ラボ",
+      chemistry: "化学ラボ",
+      physics: "物理学ラボ",
+      chooseVirtualLab: "バーチャルラボの選び方",
+      send: "特別支援とアクセシビリティ",
       services: "サービス",
       bett: "BETT 2026",
       contact: "お問い合わせ",
@@ -2976,6 +3102,11 @@ const translations = {
       privacy: "プライバシー",
       homeLabel: "ホームへ移動",
       featuresLabel: "機能を見る",
+      biologyLabel: "バーチャル生物学実験室",
+      chemistryLabel: "バーチャル化学実験室",
+      physicsLabel: "バーチャル物理学実験室",
+      chooseVirtualLabLabel: "バーチャルラボ購入ガイドを読む",
+      sendLabel: "特別支援の生徒のための理科実験",
       servicesLabel: "サービスを見る",
       bettLabel: "BETT 2026でお会いしましょう",
       contactLabel: "メールでお問い合わせ",

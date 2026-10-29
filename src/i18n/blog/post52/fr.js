@@ -62,7 +62,7 @@ export const content = (
 
     <p>
       Elle le peut, et pour certains établissements et certains élèves elle le doit.{" "}
-      <a href="/fr/blog/virtual-labs-online-schools-distance-learning">Les établissements en ligne</a>{" "}
+      <a href="/fr/blog/virtual-labs-online-schools-distance-learning/">Les établissements en ligne</a>{" "}
       n'ont pas d'alternative, et le Science Education Tracker de la Royal Society (académie des sciences britannique) a constaté que la proportion d'élèves de GCSE réalisant des travaux pratiques au moins une fois par quinzaine est passée de 44% en 2016 à 26% en 2023, ce qui suggère qu'un très grand nombre d'élèves scolarisés en présentiel ne passent guère plus de temps à la paillasse.
     </p>
 
@@ -86,7 +86,7 @@ export const content = (
 
     <p>
       C'est l'argument que nous avons développé en détail à propos de la{" "}
-      <a href="/fr/blog/physicality-in-virtual-labs">physicalité dans les laboratoires virtuels</a>, et la séance pratique inversée est l'endroit où il paie le plus concrètement. La mémoire gestuelle construite en simulation est tout le mécanisme par lequel ce modèle fait gagner du temps ensuite.
+      <a href="/fr/blog/physicality-in-virtual-labs/">physicalité dans les laboratoires virtuels</a>, et la séance pratique inversée est l'endroit où il paie le plus concrètement. La mémoire gestuelle construite en simulation est tout le mécanisme par lequel ce modèle fait gagner du temps ensuite.
     </p>
 
     <h2>Comment le mettre en œuvre concrètement ?</h2>
@@ -117,7 +117,7 @@ export const content = (
 
     <p>
       Trois groupes, d'après notre expérience. Les établissements dotés de bons laboratoires et de trop peu d'heures pour les utiliser, c'est-à-dire la plupart des collèges et lycées. Les établissements dont l'offre expérimentale est limitée par le budget matériel plutôt que par les locaux : l'étude 2024 d'EngineeringUK indique que 27% des enseignants de sciences britanniques déclarent que leur établissement ne peut pas financer le matériel nécessaire aux séances pratiques. Et les élèves pour qui l'environnement physique du laboratoire est submergeant, et pour qui arriver déjà familiarisé avec les exigences du lieu fait la différence entre participer et simplement tenir le coup. C'est ce dernier groupe qui nous a conduits à écrire sur la{" "}
-      <a href="/fr/blog/virtual-kidney-dissection-send-engagement">dissection virtuelle et l'engagement des élèves à besoins éducatifs particuliers</a>, et c'est un bénéfice qui surprend souvent les établissements ayant adopté le modèle uniquement pour des raisons de temps.
+      <a href="/fr/blog/virtual-kidney-dissection-send-engagement/">dissection virtuelle et l'engagement des élèves à besoins éducatifs particuliers</a>, et c'est un bénéfice qui surprend souvent les établissements ayant adopté le modèle uniquement pour des raisons de temps.
     </p>
 
     <p>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Articles connexes</h2>
       <ul>
         <li>
-          <a href="/fr/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/fr/blog/virtual-labs-online-schools-distance-learning/">
             Laboratoires virtuels pour établissements en ligne : la science à distance
           </a>
         </li>
         <li>
-          <a href="/fr/blog/physicality-in-virtual-labs">
+          <a href="/fr/blog/physicality-in-virtual-labs/">
             La physicalité dans les laboratoires virtuels : au-delà des simulations classiques
           </a>
         </li>
         <li>
-          <a href="/fr/blog/sandbox-learning-revolution-stem-education">
+          <a href="/fr/blog/sandbox-learning-revolution-stem-education/">
             Apprentissage en bac à sable : pourquoi la liberté d'échouer est essentielle en STEM
           </a>
         </li>
         <li>
-          <a href="/fr/blog/virtual-reality-prepares-students-real-world-stem-careers">
+          <a href="/fr/blog/virtual-reality-prepares-students-real-world-stem-careers/">
             La RV prépare les élèves aux carrières STEM par les gestes de laboratoire
           </a>
         </li>

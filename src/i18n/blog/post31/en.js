@@ -273,24 +273,24 @@ export const content = (
       We'll be watching the summit closely and updating our understanding as
       more details emerge. In the meantime, if you're curious about how AI
       tutoring and assessment actually work in practice,{" "}
-      <a href="/contact">get in touch</a>. We're happy to share what we've
+      <a href="/contact/">get in touch</a>. We're happy to share what we've
       learned.
     </p>
 
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/ai-assessment-crisis-solution">
+        <a href="/blog/ai-assessment-crisis-solution/">
           AI Assessment: How Technology Is Addressing the Marking Crisis
         </a>
       </li>
       <li>
-        <a href="/blog/ai-science-tutor-classroom-what-works">
+        <a href="/blog/ai-science-tutor-classroom-what-works/">
           AI Science Tutors in the Classroom: What Actually Works?
         </a>
       </li>
       <li>
-        <a href="/blog/premium-science-education-accessible-grants">
+        <a href="/blog/premium-science-education-accessible-grants/">
           Making Premium Science Education Accessible to Every School
         </a>
       </li>

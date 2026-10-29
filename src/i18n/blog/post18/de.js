@@ -148,7 +148,7 @@ export const content = (
       WhimsyLabs funktioniert auf den Geräten, die Ihre Schule bereits hat, skaliert mit Ihren Bedürfnissen und bleibt wertvoll, unabhängig davon, was auf dem VR-Markt passiert. Das ist kein Kompromiss; das ist kluge Beschaffung von Bildungstechnologie.
     </p>
     <p>
-      Bereit, physikbasierte virtuelle Labore zu sehen, die auf jedem Gerät funktionieren? <a href="/de/contact">Kontaktieren Sie uns</a>, um eine Demonstration zu vereinbaren.
+      Bereit, physikbasierte virtuelle Labore zu sehen, die auf jedem Gerät funktionieren? <a href="/de/contact/">Kontaktieren Sie uns</a>, um eine Demonstration zu vereinbaren.
     </p>
   </div>
 );

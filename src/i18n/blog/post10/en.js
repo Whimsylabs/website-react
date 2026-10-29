@@ -277,23 +277,23 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education/">
           Meet WhimsyCat: The Emotionally Intelligent AI Tutor
         </a>
       </li>
       <li>
-        <a href="/blog/24-7-ai-tutoring-personalized-daily-recommendations">
+        <a href="/blog/24-7-ai-tutoring-personalized-daily-recommendations/">
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
           Behind
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-science-education-points-rewards-engagement">
+        <a href="/blog/gamification-science-education-points-rewards-engagement/">
           Gamification Done Right: Creating Supportive Learning Environments
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-kidney-dissection-send-engagement">
+        <a href="/blog/virtual-kidney-dissection-send-engagement/">
           Virtual Kidney Dissection: Supporting Diverse Learning Needs
         </a>
       </li>

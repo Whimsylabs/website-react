@@ -164,22 +164,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">
             Cómo WhimsyCat cumple los estándares de seguridad de IA del DfE sin chat
           </a>
         </li>
         <li>
-          <a href="/es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+          <a href="/es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">
             IA emocional: WhimsyCat detecta y responde a la frustración del alumnado
           </a>
         </li>
         <li>
-          <a href="/es/blog/purpose-built-ai-education-difference">
+          <a href="/es/blog/purpose-built-ai-education-difference/">
             IA de propósito específico frente a ChatGPT: por qué importa el diseño
           </a>
         </li>
         <li>
-          <a href="/es/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/es/blog/edtech-vendor-security-questions-powerschool/">
             10 preguntas para proveedores de tecnología educativa tras la brecha de PowerSchool
           </a>
         </li>

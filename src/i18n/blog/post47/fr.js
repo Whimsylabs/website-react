@@ -140,22 +140,22 @@ export const content = (
       <h2>Articles associés</h2>
       <ul>
         <li>
-          <a href="/fr/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/fr/blog/oecd-ai-learning-paradox-virtual-labs/">
             L'IA a fait bondir les notes de 127 %. Puis les élèves ont cessé de penser.
           </a>
         </li>
         <li>
-          <a href="/fr/blog/teachers-are-experts-custom-experiment-designer">
+          <a href="/fr/blog/teachers-are-experts-custom-experiment-designer/">
             Les enseignants sont les experts. Nous fabriquons seulement les outils.
           </a>
         </li>
         <li>
-          <a href="/fr/blog/ai-science-tutor-classroom-what-works">
+          <a href="/fr/blog/ai-science-tutor-classroom-what-works/">
             Tuteurs IA en sciences : ce qui fonctionne vraiment en classe
           </a>
         </li>
         <li>
-          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">
             Comment WhimsyCat respecte les normes de sécurité IA du DfE sans chat
           </a>
         </li>

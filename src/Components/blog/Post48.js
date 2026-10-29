@@ -147,22 +147,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/ai-chatbot-lawsuits-2026-schools">
+          <a href="/blog/ai-chatbot-lawsuits-2026-schools/">
             The Chatbot Reckoning: What 2026's Lawsuits Mean for School AI
           </a>
         </li>
         <li>
-          <a href="/blog/neu-survey-ai-critical-thinking-decline">
+          <a href="/blog/neu-survey-ai-critical-thinking-decline/">
             76% of Teachers Use AI. 66% Say It Erodes Critical Thinking.
           </a>
         </li>
         <li>
-          <a href="/blog/premium-science-education-accessible-grants">
+          <a href="/blog/premium-science-education-accessible-grants/">
             Making Premium Science Education Accessible to Every School
           </a>
         </li>
         <li>
-          <a href="/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/blog/how-to-choose-virtual-lab-software-school/">
             Virtual Lab Software for Secondary Schools: A Buyer's Guide
           </a>
         </li>

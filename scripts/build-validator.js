@@ -133,7 +133,7 @@ class BuildValidator {
       }
 
       const robotsContent = await fs.readFile(robotsPath, 'utf8');
-      const lines = robotsContent.split('\\n');
+      const lines = robotsContent.split('\n');
       
       const allowed = [];
       const disallowed = [];
@@ -159,7 +159,7 @@ class BuildValidator {
    * Validate consistency between build, sitemap, and robots.txt
    */
   async validate() {
-    console.log('\\n🔍 Starting build validation...');
+    console.log('\n🔍 Starting build validation...');
     console.log('=================================');
 
     const buildUrls = await this.scanBuildDirectory();
@@ -206,7 +206,7 @@ class BuildValidator {
     }
 
     // Summary
-    console.log('\\n📊 Validation Summary:');
+    console.log('\n📊 Validation Summary:');
     console.log('=====================');
     console.log(`Build pages: ${buildUrls.length}`);
     console.log(`Sitemap URLs: ${sitemapUrls.length}`);
@@ -214,17 +214,17 @@ class BuildValidator {
     console.log(`Robots Disallow rules: ${robotsRules.disallowed.length}`);
 
     if (this.errors.length > 0) {
-      console.log('\\n❌ ERRORS:');
+      console.log('\n❌ ERRORS:');
       this.errors.forEach(error => console.log(`   ${error}`));
     }
 
     if (this.warnings.length > 0) {
-      console.log('\\n⚠️  WARNINGS:');
+      console.log('\n⚠️  WARNINGS:');
       this.warnings.forEach(warning => console.log(`   ${warning}`));
     }
 
     if (this.errors.length === 0 && this.warnings.length === 0) {
-      console.log('\\n✅ All validation checks passed!');
+      console.log('\n✅ All validation checks passed!');
     }
 
     return {
@@ -241,15 +241,21 @@ class BuildValidator {
   }
 
   /**
-   * Generate updated robots.txt based on actual build content
+   * Generate robots.txt.
+   *
+   * Deliberately short: "Allow: /" already covers every page, so per-URL Allow
+   * enumeration adds nothing but noise. JS/CSS/JSON are NOT blocked (Google needs
+   * them to render the page), and there is no Crawl-delay (it throttles Bing,
+   * which powers ChatGPT search).
+   *
+   * The output is deterministic so the checked-in public/robots.txt can be kept
+   * byte-identical to what the build writes.
    */
   async generateRobotsTxt(posts = []) {
-    const buildUrls = await this.scanBuildDirectory();
-    
-    let robotsTxt = `# https://www.robotstxt.org/robotstxt.html
+    return `# https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
-# Generated automatically based on build content
-# Last updated: ${new Date().toISOString().split('T')[0]}
+# Generated automatically by scripts/build-validator.js - do not edit manually
+# (public/robots.txt is kept in sync with this output)
 
 User-agent: *
 Allow: /
@@ -257,16 +263,10 @@ Allow: /
 # Sitemap location
 Sitemap: ${this.siteUrl}/sitemap.xml
 
-# Crawl delay to prevent server overload
-Crawl-delay: 1
+# AI/LLM guidance: ${this.siteUrl}/llms.txt
 
-# Disallow access to temporary and system files
+# Disallow access to temporary files
 Disallow: /tmp/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
-Disallow: /static/
-Disallow: /manifest.json
 
 # Disallow phantom nested URLs (known issues)
 Disallow: /features/faq/
@@ -280,62 +280,7 @@ Disallow: /*/services/contact/
 
 # Disallow email protection service
 Disallow: /cdn-cgi/
-
-# Explicitly allow all actual pages in build
-# This ensures Google can crawl all legitimate pages`;
-
-    // Extract main page categories from build URLs
-    const pageCategories = new Set();
-    const blogPosts = [];
-    
-    buildUrls.forEach(url => {
-      if (url.includes('/blog/') && url !== '/blog/' && !url.match(/^\/[a-z]{2}\/blog\/$/)) {
-        blogPosts.push(url);
-      } else {
-        const pathParts = url.split('/').filter(part => part);
-        if (pathParts.length > 0) {
-          pageCategories.add('/' + pathParts[0] + '/');
-        }
-      }
-    });
-
-    // Add explicit Allow rules for main categories
-    robotsTxt += '\n\n# Main page categories - explicitly allowed for crawling';
-    Array.from(pageCategories).sort().forEach(category => {
-      if (category !== '/cdn-cgi/' && category !== '/static/' && category !== '/tmp/') {
-        robotsTxt += `\nAllow: ${category}`;
-      }
-    });
-
-    // Add explicit Allow directives for ALL valid pages (comprehensive Google crawling)
-    const allValidUrls = [...buildUrls]
-      .filter(url => 
-        !url.includes('/static/') && 
-        !url.includes('/cdn-cgi/') &&
-        !url.includes('/tmp/') &&
-        !url.endsWith('.json') && 
-        !url.endsWith('.js') && 
-        !url.endsWith('.css') &&
-        !url.endsWith('.map')
-      )
-      .sort();
-    
-    if (allValidUrls.length > 0) {
-      robotsTxt += '\n\n# All valid pages - explicitly allowed for Google crawling';
-      allValidUrls.forEach(url => {
-        robotsTxt += `\nAllow: ${url}`;
-      });
-    }
-
-    // Add blog posts summary
-    if (blogPosts.length > 0) {
-      robotsTxt += `\n\n# Blog posts summary: ${blogPosts.length} total (included above)`;
-    }
-
-    robotsTxt += `\n\n# Total pages in build: ${buildUrls.length}`;
-    robotsTxt += `\n# This file is generated automatically - do not edit manually`;
-
-    return robotsTxt;
+`;
   }
 }
 

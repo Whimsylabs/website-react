@@ -149,7 +149,7 @@ export const content = (
       Nous avons donc construit WhimsyLabs sur une prémisse différente : les enseignants sont les experts de l'enseignement. Nous sommes juste des experts dans la construction de laboratoires virtuels. Quand nous restons dans notre domaine et vous donnons le contrôle, les élèves obtiennent le meilleur des deux mondes.
     </p>
     <p>
-      Si vous êtes un enseignant qui veut des laboratoires virtuels qui fonctionnent comme vous, nous serions ravis de vous montrer à quoi cela ressemble. <a href="/contact">Contactez-nous</a> et nous organiserons une démonstration.
+      Si vous êtes un enseignant qui veut des laboratoires virtuels qui fonctionnent comme vous, nous serions ravis de vous montrer à quoi cela ressemble. <a href="/contact/">Contactez-nous</a> et nous organiserons une démonstration.
     </p>
 
     <div className="references-section">
@@ -195,10 +195,10 @@ export const content = (
 
     <h2>Pour aller plus loin</h2>
     <ul>
-      <li><a href="/fr/blog/sandbox-learning-revolution-stem-education">La révolution de l'apprentissage bac à sable : Pourquoi la liberté d'échouer est essentielle</a></li>
-      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">Découvrez WhimsyCat : L'IA qui soutient, pas qui remplace</a></li>
-      <li><a href="/fr/blog/edtech-vendor-security-questions-powerschool">10 questions à poser aux fournisseurs EdTech après la faille PowerSchool</a></li>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Écoles britanniques : Obtenez £3 000 pour des laboratoires scientifiques VR</a></li>
+      <li><a href="/fr/blog/sandbox-learning-revolution-stem-education/">La révolution de l'apprentissage bac à sable : Pourquoi la liberté d'échouer est essentielle</a></li>
+      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education/">Découvrez WhimsyCat : L'IA qui soutient, pas qui remplace</a></li>
+      <li><a href="/fr/blog/edtech-vendor-security-questions-powerschool/">10 questions à poser aux fournisseurs EdTech après la faille PowerSchool</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">Écoles britanniques : Obtenez £3 000 pour des laboratoires scientifiques VR</a></li>
     </ul>
   </>
 );

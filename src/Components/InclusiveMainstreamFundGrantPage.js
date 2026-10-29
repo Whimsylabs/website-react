@@ -465,7 +465,7 @@ const InclusiveMainstreamFundGrantPage = ({ language = "en" }) => {
           <p>
             The schools that get the IMF right will pick named, predictable barriers and remove them completely.
             Practical science is one of the clearest candidates in the building, and the evidence writes itself.
-            Read our full guide to <a href="/blog/inclusive-mainstream-fund-practical-science">spending the Inclusive Mainstream Fund on practical science</a>.
+            Read our full guide to <a href="/blog/inclusive-mainstream-fund-practical-science/">spending the Inclusive Mainstream Fund on practical science</a>.
           </p>
           <div className="rsg-cta-buttons">
             <a href="#apply" className="btn rsg-cta-primary">

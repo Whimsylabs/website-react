@@ -120,22 +120,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/send-white-paper-2026-science-practicals">
+          <a href="/blog/send-white-paper-2026-science-practicals/">
             What the 2026 SEND White Paper Means for Science Teaching
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
+          <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis/">
             How Virtual Labs Help Solve the STEM Teacher Shortage Crisis
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Virtual Labs vs Physical Labs: A Cost-Benefit Analysis
           </a>
         </li>
         <li>
-          <a href="/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/blog/how-to-choose-virtual-lab-software-school/">
             How to Choose Virtual Lab Software for Your School
           </a>
         </li>

@@ -171,17 +171,17 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/blog/uk-government-ai-education-funding-2026">
+          <a href="/blog/uk-government-ai-education-funding-2026/">
             UK investiert 49 Mio. £ in KI-Bildung: Was das für Schulen bedeutet
           </a>
         </li>
         <li>
-          <a href="/de/blog/whimsylabs-wins-techlearning-best-of-bett-2026">
+          <a href="/de/blog/whimsylabs-wins-techlearning-best-of-bett-2026/">
             WhimsyLabs gewinnt Tech&amp;Learning Best of BETT 2026 Award
           </a>
         </li>
         <li>
-          <a href="/de/blog/ai-science-tutor-classroom-what-works">
+          <a href="/de/blog/ai-science-tutor-classroom-what-works/">
             KI-Wissenschaftstutoren: Was im Klassenzimmer wirklich funktioniert
           </a>
         </li>

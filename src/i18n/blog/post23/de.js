@@ -149,7 +149,7 @@ export const content = (
       Also haben wir WhimsyLabs auf einer anderen Prämisse aufgebaut: Lehrkräfte sind die Experten für das Unterrichten. Wir sind nur Experten für den Bau virtueller Labore. Wenn wir in unserem Bereich bleiben und Ihnen die Kontrolle geben, bekommen Schüler das Beste aus beiden Welten.
     </p>
     <p>
-      Wenn Sie eine Lehrkraft sind, die virtuelle Labore möchte, die so funktionieren wie Sie, würden wir Ihnen gerne zeigen, wie das aussieht. <a href="/contact">Kontaktieren Sie uns</a> und wir vereinbaren eine Demo.
+      Wenn Sie eine Lehrkraft sind, die virtuelle Labore möchte, die so funktionieren wie Sie, würden wir Ihnen gerne zeigen, wie das aussieht. <a href="/contact/">Kontaktieren Sie uns</a> und wir vereinbaren eine Demo.
     </p>
 
     <div className="references-section">
@@ -195,10 +195,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/de/blog/sandbox-learning-revolution-stem-education">Die Sandbox-Lernrevolution: Warum die Freiheit zu scheitern wesentlich ist</a></li>
-      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: KI, die unterstützt, nicht ersetzt</a></li>
-      <li><a href="/de/blog/edtech-vendor-security-questions-powerschool">10 Fragen an EdTech-Anbieter nach dem PowerSchool-Datenleck</a></li>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Britische Schulen: £3.000 für VR-Wissenschaftslabore erhalten</a></li>
+      <li><a href="/de/blog/sandbox-learning-revolution-stem-education/">Die Sandbox-Lernrevolution: Warum die Freiheit zu scheitern wesentlich ist</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education/">Lernen Sie WhimsyCat kennen: KI, die unterstützt, nicht ersetzt</a></li>
+      <li><a href="/de/blog/edtech-vendor-security-questions-powerschool/">10 Fragen an EdTech-Anbieter nach dem PowerSchool-Datenleck</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">Britische Schulen: £3.000 für VR-Wissenschaftslabore erhalten</a></li>
     </ul>
   </>
 );

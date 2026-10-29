@@ -10,7 +10,9 @@ const faqTranslations = {
   es,
   fr,
   de,
-  jp: ja
+  // Both codes resolve: "jp" is our URL prefix, "ja" the ISO language code
+  jp: ja,
+  ja
 };
 
 export default faqTranslations;

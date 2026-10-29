@@ -108,7 +108,7 @@ export const content = (
       </li>
       <li>
         <strong>Conserve el laboratorio.</strong> Donde haya laboratorios, use la simulación para preparar al alumnado antes de entrar en ellos, no para sustituirlos. El{" "}
-        <a href="/es/blog/flipped-practical-preloading-lab-skills">modelo de práctica invertida</a>{" "}
+        <a href="/es/blog/flipped-practical-preloading-lab-skills/">modelo de práctica invertida</a>{" "}
         se aplica al IB tan bien como a cualquier otro contexto.
       </li>
     </ul>
@@ -131,22 +131,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/es/blog/virtual-labs-online-schools-distance-learning/">
             Laboratorios virtuales para centros en línea: ciencia a distancia
           </a>
         </li>
         <li>
-          <a href="/es/blog/flipped-practical-preloading-lab-skills">
+          <a href="/es/blog/flipped-practical-preloading-lab-skills/">
             La práctica invertida: llegar al laboratorio ya competente
           </a>
         </li>
         <li>
-          <a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine/">
             Por qué fallan otros laboratorios virtuales: la solución del motor de física
           </a>
         </li>
         <li>
-          <a href="/es/blog/process-based-lab-assessment-future">
+          <a href="/es/blog/process-based-lab-assessment-future/">
             Calificar el proceso, no la respuesta
           </a>
         </li>

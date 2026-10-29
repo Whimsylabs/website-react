@@ -216,7 +216,7 @@ export const content = (
       Los laboratorios virtuales de química son una herramienta. Como cualquier herramienta, son útiles cuando se aplican apropiadamente e inútiles cuando se mal utilizan. Los profesores que obtienen más valor son los que piensan cuidadosamente sobre cómo estas herramientas encajan en su contexto específico, estudiantes y objetivos curriculares.
     </p>
     <p>
-      Si te gustaría ver cómo funcionan las simulaciones de química de WhimsyLabs en la práctica, <a href="/contact">contáctanos</a> para una demo. Te guiaremos a través de la plataforma y discutiremos cómo podría encajar en tu enseñanza.
+      Si te gustaría ver cómo funcionan las simulaciones de química de WhimsyLabs en la práctica, <a href="/contact/">contáctanos</a> para una demo. Te guiaremos a través de la plataforma y discutiremos cómo podría encajar en tu enseñanza.
     </p>
 
     <div className="references-section">
@@ -247,10 +247,10 @@ export const content = (
 
     <h2>Lectura adicional</h2>
     <ul>
-      <li><a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine">Por qué fallan los laboratorios virtuales tradicionales: La diferencia del motor de física</a></li>
-      <li><a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios virtuales vs. laboratorios físicos: Un análisis de costo-beneficio</a></li>
-      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que sabe cuándo estás atascado</a></li>
-      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
+      <li><a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine/">Por qué fallan los laboratorios virtuales tradicionales: La diferencia del motor de física</a></li>
+      <li><a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Laboratorios virtuales vs. laboratorios físicos: Un análisis de costo-beneficio</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education/">Conoce a WhimsyCat: El tutor de IA que sabe cuándo estás atascado</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer/">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
     </ul>
   </>
 );

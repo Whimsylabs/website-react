@@ -209,6 +209,8 @@ http://whimsylabs.ai/* https://whimsylabs.ai/:splat 301!
 # so it has no language-prefixed variants below.
 /industrial/index.html /industrial/ 301!
 /industrial /industrial/ 301!
+/industrial-v2/index.html /industrial-v2/ 301!
+/industrial-v2 /industrial-v2/ 301!
 /de/ai-assessment/index.html /de/ai-assessment/ 301!
 /de/choose-virtual-lab/index.html /de/choose-virtual-lab/ 301!
 /de/send/index.html /de/send/ 301!

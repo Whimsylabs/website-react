@@ -87,7 +87,7 @@ export const content = (
 
     <p>
       Verbünde haben echte Einkaufsmacht und sollten sie nutzen: eine Verhandlung, eine Datenschutz-Folgenabschätzung, eine Integration in das Schulverwaltungssystem (MIS) oder das LMS, eine Sicherheitsprüfung. Zwanzig Schulen jeweils ihre eigene Anbieterprüfung durchführen zu lassen, verschwendet die Zeit von zwanzig Personen und erzeugt zwanzig unterschiedliche Antworten auf dieselbe Datenschutzfrage, was ein Governance-Problem mit Ansage ist. Unsere{" "}
-      <a href="/de/blog/edtech-vendor-security-questions-powerschool">Liste an Fragen, die man EdTech-Anbietern stellen sollte</a>{" "}
+      <a href="/de/blog/edtech-vendor-security-questions-powerschool/">Liste an Fragen, die man EdTech-Anbietern stellen sollte</a>{" "}
       ist so geschrieben, dass sie einmalig und zentral durchlaufen wird.
     </p>
 
@@ -147,22 +147,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/de/blog/how-to-choose-virtual-lab-software-school/">
             Virtuelle Laborsoftware für weiterführende Schulen: ein Kaufratgeber
           </a>
         </li>
         <li>
-          <a href="/de/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/de/blog/edtech-vendor-security-questions-powerschool/">
             10 Fragen an EdTech-Anbieter nach dem PowerSchool-Datenleck
           </a>
         </li>
         <li>
-          <a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Virtuelle und physische Labore: eine Kosten-Nutzen-Analyse
           </a>
         </li>
         <li>
-          <a href="/de/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/de/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             Die Kritiker haben recht: Die meiste EdTech ist nutzlos
           </a>
         </li>

@@ -183,17 +183,17 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/uk-government-ai-education-funding-2026">
+          <a href="/blog/uk-government-ai-education-funding-2026/">
             UK Invests £49m in AI Education: What This Means for Schools
           </a>
         </li>
         <li>
-          <a href="/blog/whimsylabs-wins-techlearning-best-of-bett-2026">
+          <a href="/blog/whimsylabs-wins-techlearning-best-of-bett-2026/">
             WhimsyLabs Wins Tech&amp;Learning Best of BETT 2026 Award
           </a>
         </li>
         <li>
-          <a href="/blog/ai-science-tutor-classroom-what-works">
+          <a href="/blog/ai-science-tutor-classroom-what-works/">
             AI Science Tutors: What Actually Works in the Classroom
           </a>
         </li>

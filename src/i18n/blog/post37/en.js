@@ -194,22 +194,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/ai-assessment-crisis-solution">
+          <a href="/blog/ai-assessment-crisis-solution/">
             The AI Assessment Crisis: How Virtual Labs Provide Authentic Evaluation
           </a>
         </li>
         <li>
-          <a href="/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/blog/vr-stem-education-research-pedagogical-scaffolding/">
             New VR Research Confirms: Technology Without Pedagogy Falls Flat
           </a>
         </li>
         <li>
-          <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          <a href="/blog/whimsycat-ai-tutor-transforming-science-education/">
             Meet WhimsyCat: Our AI Innovation in Science Education
           </a>
         </li>
         <li>
-          <a href="/blog/physicality-in-virtual-labs">
+          <a href="/blog/physicality-in-virtual-labs/">
             The Physicality Breakthrough: How We Made Virtual Labs Feel Real
           </a>
         </li>

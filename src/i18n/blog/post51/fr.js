@@ -56,7 +56,7 @@ export const content = (
 
     <p>
       <strong>Vidéo de démonstration.</strong> Économique, sûre et accessible à tous en même temps. Elle est aussi passive. Regarder un technicien expérimenté réaliser une distillation sans faute apprend à l'élève à quoi ressemble la réussite, et presque rien sur la manière d'y parvenir. Nous avons déjà écrit sur les raisons pour lesquelles{" "}
-      <a href="/fr/blog/edtech-critics-right-passive-learning-vs-active-labs">la plupart des edtech échouent parce qu'elles sont passives</a>, et la vidéo de démonstration en est l'exemple le plus net en sciences.
+      <a href="/fr/blog/edtech-critics-right-passive-learning-vs-active-labs/">la plupart des edtech échouent parce qu'elles sont passives</a>, et la vidéo de démonstration en est l'exemple le plus net en sciences.
     </p>
 
     <p>
@@ -101,7 +101,7 @@ export const content = (
 
     <p>
       Pour le Diplôme de l'IB, le tableau est nettement plus ouvert. La Scientific Investigation, l'évaluation interne qui compte pour 20% de la note de la matière, autorise explicitement des investigations bâties sur des bases de données, de la modélisation, de la simulation, ou un mélange de tout cela aux côtés du travail manipulatoire. Une école en ligne proposant l'IB peut donc utiliser la simulation comme une voie à part entière pour l'évaluation interne, et non comme un contournement, ce dont nous avons parlé séparément dans{" "}
-      <a href="/fr/blog/ib-diploma-science-practicals-virtual-labs">notre guide des sciences de l'IB en ligne</a>.
+      <a href="/fr/blog/ib-diploma-science-practicals-virtual-labs/">notre guide des sciences de l'IB en ligne</a>.
     </p>
 
     <h2>À quoi ressemble concrètement une bonne offre ?</h2>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Articles liés</h2>
       <ul>
         <li>
-          <a href="/fr/blog/flipped-practical-preloading-lab-skills">
+          <a href="/fr/blog/flipped-practical-preloading-lab-skills/">
             Le TP inversé : arriver à la paillasse déjà compétent
           </a>
         </li>
         <li>
-          <a href="/fr/blog/ib-diploma-science-practicals-virtual-labs">
+          <a href="/fr/blog/ib-diploma-science-practicals-virtual-labs/">
             Sciences de l'IB en ligne : simulation et Scientific Investigation
           </a>
         </li>
         <li>
-          <a href="/fr/blog/physicality-in-virtual-labs">
+          <a href="/fr/blog/physicality-in-virtual-labs/">
             La physicalité dans les laboratoires virtuels : au-delà des simulations classiques
           </a>
         </li>
         <li>
-          <a href="/fr/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/fr/blog/how-to-choose-virtual-lab-software-school/">
             Logiciels de laboratoire virtuel pour le secondaire : guide d'achat
           </a>
         </li>

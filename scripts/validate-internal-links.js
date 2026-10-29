@@ -17,6 +17,24 @@ const BUILD_DIR = path.join(__dirname, '../build');
 const BLOG_DIR = path.join(SRC_DIR, 'Components/blog');
 const I18N_BLOG_DIR = path.join(SRC_DIR, 'i18n/blog');
 
+// Canonical URLs on this site always end in a trailing slash. A link to a page
+// without one costs a redirect hop (or 404s on GitHub Pages), so it is an error.
+// Asset links are exempt - they are files, not pages.
+const FILE_EXTENSION_PATTERN = /\.(pdf|docx?|xlsx?|pptx?|png|jpe?g|gif|svg|webp|avif|ico|bmp|xml|txt|html?|json|webmanifest|mp4|webm|mov|mp3|wav|m4a|ogg|css|js|mjs|map|zip|woff2?|ttf|eot)$/i;
+
+/**
+ * Returns the path portion of an internal link, or null when the link is not a
+ * page link that needs a trailing slash (external, mailto/tel, pure anchor, asset file).
+ */
+function pagePathNeedingSlash(url) {
+  if (!url || !url.startsWith('/')) return null;            // external / relative / protocol links
+  if (/^\/\//.test(url)) return null;                       // protocol-relative external URL
+  const pathPart = url.split('#')[0].split('?')[0];
+  if (!pathPart || pathPart === '/') return null;           // pure anchor or root
+  if (FILE_EXTENSION_PATTERN.test(pathPart)) return null;   // asset, not a page
+  return pathPart;
+}
+
 // Get all valid blog slugs
 function getValidBlogSlugs() {
   const slugs = new Set();
@@ -152,7 +170,18 @@ function validateInternalLinks() {
       });
       continue;
     }
-    
+
+    // Trailing slash is mandatory on internal page links (canonical form).
+    const slashPath = pagePathNeedingSlash(url);
+    if (slashPath && !slashPath.endsWith('/')) {
+      errors.push({
+        type: 'MISSING_TRAILING_SLASH',
+        url,
+        file: relFile,
+        message: `Link "${url}" is missing a trailing slash - use "${slashPath}/${url.slice(slashPath.length)}"`
+      });
+    }
+
     // Check blog links
     if (url.includes('/blog/') && !url.endsWith('/blog/') && !url.endsWith('/blog')) {
       // Extract the slug from the URL. Anchored, and path-only because extractInternalLinks
@@ -248,12 +277,12 @@ function validateInternalLinks() {
     
     for (const [type, errs] of Object.entries(errorsByType)) {
       console.log(`   ${type} (${errs.length}):`);
-      for (const err of errs.slice(0, 10)) {
+      for (const err of errs.slice(0, 40)) {
         console.log(`   - ${err.message}`);
         console.log(`     File: ${err.file}`);
       }
-      if (errs.length > 10) {
-        console.log(`   ... and ${errs.length - 10} more`);
+      if (errs.length > 40) {
+        console.log(`   ... and ${errs.length - 40} more`);
       }
       console.log('');
     }

@@ -215,7 +215,7 @@ export const content = (
       Virtual chemistry labs are a tool. Like any tool, they're useful when applied appropriately and unhelpful when misused. The teachers who get the most value are the ones who think carefully about how these tools fit their specific context, students, and curriculum goals.
     </p>
     <p>
-      If you'd like to see how WhimsyLabs chemistry simulations work in practice, <a href="/contact">get in touch</a> for a demo. We'll walk you through the platform and discuss how it might fit your teaching.
+      If you'd like to see how WhimsyLabs chemistry simulations work in practice, <a href="/contact/">get in touch</a> for a demo. We'll walk you through the platform and discuss how it might fit your teaching.
     </p>
 
     <div className="references-section">
@@ -246,10 +246,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Why Traditional Virtual Labs Fail: The Physics Engine Difference</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtual Labs vs Physical Labs: A Cost-Benefit Analysis</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Knows When You're Stuck</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine/">Why Traditional Virtual Labs Fail: The Physics Engine Difference</a></li>
+      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Virtual Labs vs Physical Labs: A Cost-Benefit Analysis</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education/">Meet WhimsyCat: The AI Tutor That Knows When You're Stuck</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
     </ul>
   </>
 );

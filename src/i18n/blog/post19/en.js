@@ -172,7 +172,7 @@ export const content = (
       Grades are rising in AI-assisted classrooms. But as the research shows, grades aren't the same as learning.
     </p>
     <p>
-      Ready to see virtual labs that build real skills? <a href="/contact">Get in touch</a> to experience the WhimsyLabs difference.
+      Ready to see virtual labs that build real skills? <a href="/contact/">Get in touch</a> to experience the WhimsyLabs difference.
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

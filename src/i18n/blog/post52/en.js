@@ -62,7 +62,7 @@ export const content = (
 
     <p>
       It can, and for some schools and some students it has to.{" "}
-      <a href="/blog/virtual-labs-online-schools-distance-learning">Online schools</a>{" "}
+      <a href="/blog/virtual-labs-online-schools-distance-learning/">Online schools</a>{" "}
       have no alternative, and the Royal Society's Science Education Tracker found the proportion of GCSE pupils doing practical work at least fortnightly fell from 44% in 2016 to 26% in 2023, which suggests a great many pupils in physical schools are not getting much bench time either.
     </p>
 
@@ -86,7 +86,7 @@ export const content = (
 
     <p>
       This is the argument we have made at length about{" "}
-      <a href="/blog/physicality-in-virtual-labs">physicality in virtual labs</a>, and the flipped practical is where it pays off most concretely. Muscle memory built in simulation is the entire mechanism by which the model saves time later.
+      <a href="/blog/physicality-in-virtual-labs/">physicality in virtual labs</a>, and the flipped practical is where it pays off most concretely. Muscle memory built in simulation is the entire mechanism by which the model saves time later.
     </p>
 
     <h2>How Do You Actually Run It?</h2>
@@ -117,7 +117,7 @@ export const content = (
 
     <p>
       Three groups. Schools with strong laboratories and not enough hours in them, which is most secondary schools. Schools whose practical provision is constrained by equipment budgets rather than facilities. EngineeringUK's 2024 research reported that 27% of UK science teachers say their school cannot afford the equipment needed for practical lessons. And students who find the physical laboratory environment overwhelming, for whom arriving already familiar with the room's demands is the difference between participating and coping. That last group is why we wrote about{" "}
-      <a href="/blog/virtual-kidney-dissection-send-engagement">virtual dissection and SEND engagement</a>, and it is a benefit that tends to surprise schools who adopted the model purely for time reasons.
+      <a href="/blog/virtual-kidney-dissection-send-engagement/">virtual dissection and SEND engagement</a>, and it is a benefit that tends to surprise schools who adopted the model purely for time reasons.
     </p>
 
     <p>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/blog/virtual-labs-online-schools-distance-learning/">
             Virtual Labs for Online Schools: Science at a Distance
           </a>
         </li>
         <li>
-          <a href="/blog/physicality-in-virtual-labs">
+          <a href="/blog/physicality-in-virtual-labs/">
             Physicality in Virtual Labs: Beyond Traditional Simulations
           </a>
         </li>
         <li>
-          <a href="/blog/sandbox-learning-revolution-stem-education">
+          <a href="/blog/sandbox-learning-revolution-stem-education/">
             Sandbox Learning: Why Freedom to Fail Is Essential for STEM
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
+          <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers/">
             VR Prepares Students for STEM Careers with Physical Lab Skills
           </a>
         </li>

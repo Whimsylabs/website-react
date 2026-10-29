@@ -148,7 +148,7 @@ export const content = (
       WhimsyLabs funciona en los dispositivos que tu escuela ya tiene, escala con tus necesidades y sigue siendo valioso independientemente de lo que ocurra en el mercado de RV. Eso no es un compromiso; es una adquisición inteligente de tecnología educativa.
     </p>
     <p>
-      ¿Listo para ver laboratorios virtuales basados en física que funcionan en cualquier dispositivo? <a href="/es/contact">Ponte en contacto</a> para programar una demostración.
+      ¿Listo para ver laboratorios virtuales basados en física que funcionan en cualquier dispositivo? <a href="/es/contact/">Ponte en contacto</a> para programar una demostración.
     </p>
   </div>
 );

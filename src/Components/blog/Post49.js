@@ -118,22 +118,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/send-white-paper-2026-science-practicals">
+          <a href="/blog/send-white-paper-2026-science-practicals/">
             What the 2026 SEND White Paper Means for Science Teaching
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-kidney-dissection-send-engagement">
+          <a href="/blog/virtual-kidney-dissection-send-engagement/">
             Virtual Kidney Dissection Enhances SEND Student Engagement
           </a>
         </li>
         <li>
-          <a href="/blog/triple-science-entitlement-2028-virtual-labs">
+          <a href="/blog/triple-science-entitlement-2028-virtual-labs/">
             Triple Science for All by 2028: Delivering the Practicals
           </a>
         </li>
         <li>
-          <a href="/blog/premium-science-education-accessible-grants">
+          <a href="/blog/premium-science-education-accessible-grants/">
             Making Premium Science Education Accessible to Every School
           </a>
         </li>

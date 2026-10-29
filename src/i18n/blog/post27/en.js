@@ -210,7 +210,7 @@ export const content = (
       That's the future we're building with WhimsyCat. Not AI that replaces teacher expertise, but AI that extends it. Technology that does the things AI does well, while staying firmly in its lane on the things only humans can do.
     </p>
     <p>
-      If you'd like to see what that looks like in practice, <a href="/contact">get in touch</a>. We'll show you WhimsyCat in action and let you judge for yourself what it can and cannot do.
+      If you'd like to see what that looks like in practice, <a href="/contact/">get in touch</a>. We'll show you WhimsyCat in action and let you judge for yourself what it can and cannot do.
     </p>
 
     <div className="references-section">
@@ -271,10 +271,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: AI Tutor for Science Education</a></li>
-      <li><a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat: Detecting Student Frustration with AI</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">AI Assessment in Science: From Crisis to Solution</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education/">Meet WhimsyCat: AI Tutor for Science Education</a></li>
+      <li><a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">WhimsyCat: Detecting Student Frustration with AI</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/blog/ai-assessment-crisis-solution/">AI Assessment in Science: From Crisis to Solution</a></li>
     </ul>
   </>
 );

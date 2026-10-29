@@ -108,7 +108,7 @@ export const content = (
       </li>
       <li>
         <strong>Gardez la paillasse.</strong> Là où vous disposez de laboratoires, utilisez la simulation pour y préparer les élèves plutôt que pour les remplacer. Le{" "}
-        <a href="/fr/blog/flipped-practical-preloading-lab-skills">modèle des travaux pratiques inversés</a>{" "}
+        <a href="/fr/blog/flipped-practical-preloading-lab-skills/">modèle des travaux pratiques inversés</a>{" "}
         vaut pour l'IB comme pour tout le reste.
       </li>
     </ul>
@@ -131,22 +131,22 @@ export const content = (
       <h2>Articles connexes</h2>
       <ul>
         <li>
-          <a href="/fr/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/fr/blog/virtual-labs-online-schools-distance-learning/">
             Laboratoires virtuels pour établissements en ligne : les sciences à distance
           </a>
         </li>
         <li>
-          <a href="/fr/blog/flipped-practical-preloading-lab-skills">
+          <a href="/fr/blog/flipped-practical-preloading-lab-skills/">
             Les travaux pratiques inversés : arriver à la paillasse déjà compétent
           </a>
         </li>
         <li>
-          <a href="/fr/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/fr/blog/why-traditional-virtual-labs-fail-physics-engine/">
             Pourquoi les autres labos virtuels échouent : la solution du moteur physique
           </a>
         </li>
         <li>
-          <a href="/fr/blog/process-based-lab-assessment-future">
+          <a href="/fr/blog/process-based-lab-assessment-future/">
             Évaluer le processus, pas la réponse
           </a>
         </li>

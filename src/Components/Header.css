@@ -1,4 +1,55 @@
-/* Skip to main content link - hidden until focused */
+/* ==========================================================================
+   Site header
+   --------------------------------------------------------------------------
+   Speaks the subject-lab language used by /features, /chemistry, /biology and
+   /physics: the same dark band gradient, the same lit cyan accent, glass
+   panels with real elevation, and the mono eyebrow for group labels.
+
+   Two layouts, one set of markup. Above 900px the links sit inline in the bar
+   and the Labs group is a hovering glass dropdown. Below 900px the whole nav
+   becomes a full-width panel under the bar and the Labs group flattens into an
+   inline accordion, so nothing ever has to shrink to fit.
+   ========================================================================== */
+
+.site-header {
+  --hdr-h: 76px;
+  --hdr-dark-a: #1f1968;
+  --hdr-dark-b: #2d2a6e;
+  --hdr-lit: #7ee0ff;
+  --hdr-house: #14b7ff;
+  --hdr-ink: rgba(255, 255, 255, 0.86);
+  --hdr-mono: "SF Mono", "Monaco", "Inconsolata", monospace;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, var(--hdr-dark-a) 0%, var(--hdr-dark-b) 52%, var(--hdr-dark-a) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Depth cue once the page moves, the bar lifts off the content it covers */
+.site-header.is-scrolled {
+  border-bottom-color: rgba(126, 224, 255, 0.22);
+  box-shadow: 0 10px 34px rgba(10, 6, 45, 0.42);
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: var(--hdr-h);
+  padding: 0 clamp(14px, 3vw, 30px);
+  transition: min-height 0.25s ease;
+}
+
+.site-header.is-scrolled .site-header-inner { min-height: 66px; }
+
+/* --------------------------------------------------------------------------
+   Skip link
+   -------------------------------------------------------------------------- */
+
 .skip-link {
   position: absolute;
   top: -100px;
@@ -20,227 +71,429 @@
   outline-offset: 2px;
 }
 
-/* General header styles */
-header {
-  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #1f1968;
+/* --------------------------------------------------------------------------
+   Logo
+   -------------------------------------------------------------------------- */
+
+.site-logo {
   display: flex;
   align-items: center;
-  padding: 0 0px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  flex: 0 0 auto;
+  padding: 5px 0;
+  line-height: 0;
 }
 
-/* Logo container */
-.logo-container {
-  margin-left: 0px;
-  padding: 5px;
+.site-logo .logo {
+  height: 60px;
+  width: auto;
+  transition: height 0.25s ease;
 }
 
-.logo {
-  height: 60px; /* Adjust the size of the logo */
+.site-header.is-scrolled .site-logo .logo { height: 50px; }
+
+/* --------------------------------------------------------------------------
+   Inline navigation (desktop)
+   -------------------------------------------------------------------------- */
+
+.site-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
-/* Mobile controls container */
-.mobile-controls {
-  display: none;
+.site-nav-list {
+  display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: 20px;
-  gap: 15px;
-}
-
-/* Mobile language switcher */
-.mobile-language-switcher {
-  display: none;
-}
-
-/* Burger menu button */
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 24px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+  gap: 4px;
+  margin: 0;
   padding: 0;
-  z-index: 1001;
-  position: relative;
-}
-
-.burger-menu span {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  border-radius: 3px;
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-  left: 0;
-}
-
-.burger-menu span:nth-child(1) {
-  top: 0;
-}
-
-.burger-menu span:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.burger-menu span:nth-child(3) {
-  bottom: 0;
-}
-
-/* Animation for burger menu when open */
-header.menu-active .burger-menu span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 50%;
-  margin-top: -1.5px;
-}
-
-header.menu-active .burger-menu span:nth-child(2) {
-  opacity: 0;
-}
-
-header.menu-active .burger-menu span:nth-child(3) {
-  transform: rotate(-45deg);
-  bottom: 50%;
-  margin-bottom: -1.5px;
-}
-
-/* Navigation links */
-header .nav {
   list-style: none;
-  display: flex;
-  margin-left: auto; /* Align the links to the right */
-  margin-right: 20px;
-  transition: all 0.3s ease-in-out;
 }
 
-header .nav-item {
-  margin-left: 15px;
-  font-size: clamp(0.5rem, 2.5vw, 1.2rem); /* Responsive font size */
-}
+.site-nav-item { position: relative; }
 
-header .nav-link {
-  color: white !important;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap; /* Prevents the text from breaking into a new line */
-}
-
-header .nav-link:hover {
-  transform: scale(1.05); /* Scales up the link on hover */
-}
-
-/* Active link styling */
-header .nav-link.active {
+.site-nav-link {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--hdr-ink);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-header .nav-link.active::after {
+.site-nav-link:hover,
+.site-nav-link:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.site-nav-link.is-active {
+  background: rgba(126, 224, 255, 0.14);
+  color: #ffffff;
+}
+
+/* A short lit rule under the current page, the same cue the lab tabs use */
+.site-nav-link.is-active::after {
   content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #6a1b9a, #15b7ff);
   position: absolute;
-  bottom: -10px;
-  left: 0;
+  left: 50%;
+  bottom: 1px;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  background: var(--hdr-lit);
 }
 
-/* Ensure text does not overflow and prevent new lines */
-header .nav-link {
-  white-space: nowrap; /* Prevents the text from breaking into a new line */
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline: 3px solid var(--hdr-house);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Labs group
+   -------------------------------------------------------------------------- */
+
+.site-labs-chevron {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.site-labs-trigger[aria-expanded="true"] .site-labs-chevron { transform: rotate(180deg); }
+
+.site-labs-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 20;
+  min-width: 286px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(45, 42, 110, 0.97) 0%, rgba(31, 25, 104, 0.97) 100%);
+  box-shadow: 0 24px 60px rgba(10, 6, 45, 0.5);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.site-labs-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* The notch that ties the panel back to its trigger */
+.site-labs-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 26px;
+  width: 11px;
+  height: 11px;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(45, 42, 110, 0.97);
+  transform: rotate(45deg);
+}
+
+.site-labs-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-labs-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 11px;
+  color: #e8e6ff;
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.site-labs-item svg {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  color: var(--hdr-lit);
+  overflow: visible;
+}
+
+.site-labs-item:hover,
+.site-labs-item:focus-visible {
+  background: rgba(126, 224, 255, 0.13);
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+.site-labs-item.is-active {
+  background: rgba(126, 224, 255, 0.16);
+  color: #ffffff;
+}
+
+/* The buyer's guide is a different kind of thing to a subject page, so it sits
+   below a rule and takes the mono treatment used for lab eyebrows. */
+.site-labs-guide {
+  margin-top: 7px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0 0 11px 11px;
+  color: rgba(232, 230, 255, 0.72);
+  font-family: var(--hdr-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.site-labs-guide svg { width: 20px; height: 20px; }
+
+/* --------------------------------------------------------------------------
+   Tools: language switcher and hamburger
+   -------------------------------------------------------------------------- */
+
+.site-header-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.site-lang .language-switcher-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: #ffffff;
+}
+
+.site-lang .language-switcher-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(126, 224, 255, 0.5);
+}
+
+.site-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.site-burger:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(126, 224, 255, 0.5);
+}
+
+.site-burger-bars {
+  position: relative;
+  display: block;
+  width: 21px;
+  height: 15px;
+}
+
+.site-burger-bars span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #ffffff;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.site-burger-bars span:nth-child(1) { top: 0; }
+.site-burger-bars span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.site-burger-bars span:nth-child(3) { bottom: 0; }
+
+.site-header.is-menu-open .site-burger-bars span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.site-header.is-menu-open .site-burger-bars span:nth-child(2) { opacity: 0; }
+
+.site-header.is-menu-open .site-burger-bars span:nth-child(3) {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* --------------------------------------------------------------------------
+   Between 900px and 1120px the bar is full but tight, so trim the pill
+   padding rather than let the labels crowd one another.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1120px) and (min-width: 901px) {
+  .site-nav-list { gap: 2px; }
+  .site-nav-link { padding: 9px 10px; font-size: 0.85rem; }
+  .site-logo .logo { height: 52px; }
+  .site-header-inner { gap: 12px; }
+}
+
+/* --------------------------------------------------------------------------
+   Panel layout (below 900px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .site-header { --hdr-h: 66px; }
+
+  .site-header-inner,
+  .site-header.is-scrolled .site-header-inner { min-height: var(--hdr-h); }
+
+  .site-logo .logo,
+  .site-header.is-scrolled .site-logo .logo { height: 46px; }
+
+  .site-burger { display: inline-flex; }
+
+  .site-header-tools { margin-left: auto; }
+
+  /* The nav leaves the bar and becomes a full-width sheet beneath it. Full
+     width is the point: nothing has to share a row, so nothing squashes. */
+  .site-nav {
+    position: fixed;
+    top: var(--hdr-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 16px calc(48px + env(safe-area-inset-bottom, 0px));
+    background-image:
+      linear-gradient(180deg, rgba(31, 25, 104, 0.96) 0%, rgba(31, 25, 104, 0.99) 100%),
+      url("../../public/images/tiled.png");
+    background-color: var(--hdr-dark-a);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.24s ease, transform 0.24s ease, visibility 0.24s ease;
+  }
+
+  .site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .site-nav-list {
+    display: block;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .site-nav-item { margin-bottom: 8px; }
+
+  /* Full-width rows in the site's glass-card idiom, generous tap targets */
+  .site-nav-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-size: 1.02rem;
+    white-space: normal;
+  }
+
+  .site-nav-link:hover,
+  .site-nav-link:focus-visible,
+  .site-nav-link.is-active {
+    background: rgba(126, 224, 255, 0.14);
+    border-color: rgba(126, 224, 255, 0.34);
+  }
+
+  /* The underline cue would collide with the row edge, a left bar reads better */
+  .site-nav-link.is-active::after {
+    left: 0;
+    bottom: 50%;
+    width: 3px;
+    height: 22px;
+    border-radius: 0 3px 3px 0;
+    transform: translateY(50%);
+  }
+
+  /* Labs flattens into an inline accordion, no floating panel on a phone */
+  .site-labs-menu {
+    position: static;
+    min-width: 0;
+    margin: 8px 0 0;
+    padding: 6px 6px 6px 12px;
+    border: 0;
+    border-left: 2px solid rgba(126, 224, 255, 0.35);
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    display: none;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  .site-labs-menu.is-open { display: block; }
+
+  .site-labs-menu::before { display: none; }
+
+  .site-labs-item {
+    padding: 13px 14px;
+    border-radius: 12px;
+    font-size: 0.98rem;
+  }
+
+  .site-labs-guide {
+    margin-top: 4px;
+    padding-top: 15px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Small phones: the language pill loses its label so the bar stays honest */
+@media (max-width: 380px) {
+  .site-lang .language-switcher-button { padding: 7px 9px; }
+  .site-lang .language-code { display: none; }
+}
+
+/* Reduced motion, matching the subject-lab pages' own switch */
+@media (prefers-reduced-motion: reduce) {
+  .site-header, .site-header-inner, .site-nav, .site-nav-link, .site-labs-menu,
+  .site-labs-item, .site-labs-chevron, .site-logo .logo, .site-burger-bars span {
+    transition: none;
+  }
+  .site-labs-item:hover { transform: none; }
 }
 
 /* Remove white space above the header */
 body, html {
   margin: 0;
   padding: 0;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  .mobile-controls {
-    display: flex;
-  }
-
-  .mobile-language-switcher {
-    display: block;
-  }
-
-  .burger-menu {
-    display: flex;
-  }
-
-  header .nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background-color: #1f1968;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 50px 0;
-    transition: right 0.3s ease-in-out;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-  }
-
-  header .nav.menu-open {
-    right: 0;
-  }
-
-  header .nav-item {
-    margin: 15px 0;
-  }
-
-  header .nav-link.active::after {
-    bottom: -5px;
-  }
-
-  /* Hide the language switcher inside the mobile menu */
-  .language-switcher-nav {
-    display: none;
-  }
-}
-
-/* Language switcher in navigation */
-.language-switcher-nav {
-  margin-left: auto;
-}
-
-.nav .language-switcher-nav .language-switcher-button {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-}
-
-.nav .language-switcher-nav .language-switcher-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Mobile language switcher styling */
-@media (max-width: 768px) {
-  .mobile-language-switcher .language-switcher-button {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 0.9rem;
-    padding: 8px 12px;
-  }
-
-  .mobile-language-switcher .language-switcher-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
 }

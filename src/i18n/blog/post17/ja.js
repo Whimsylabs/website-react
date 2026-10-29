@@ -46,7 +46,7 @@ export const content = (
 
     <h2>受賞の年</h2>
     <p>
-      これは2年連続で2度目の主要なBETT受賞となります。<a href="/ja/blog/whimsylabs-education-revolution">BETT 2025</a>では、生徒自身によって選出された<strong>Kids Judge Bett Award</strong>を受賞し、仮想実験室が実験室教育を変革しながら持続可能性目標を支援できることを示しました。
+      これは2年連続で2度目の主要なBETT受賞となります。<a href="/jp/blog/whimsylabs-education-revolution/">BETT 2025</a>では、生徒自身によって選出された<strong>Kids Judge Bett Award</strong>を受賞し、仮想実験室が実験室教育を変革しながら持続可能性目標を支援できることを示しました。
     </p>
     <p>
       Tech&amp;Learning #1 Best of BETT 2026賞は、異なる視点からの認定を表しています：革新性、教室への影響、導入の容易さ、教育的価値などの基準で製品を評価した教育テクノロジーの専門家と実践者からの評価です。両方の賞を受賞したことは、WhimsyLabsが重要なすべての人々―私たちのプラットフォームを使用する生徒と、それを導入する教育者―に響いていることを示しています。
@@ -92,7 +92,7 @@ export const content = (
       この認定に対してTech&amp;Learningに、素晴らしいイベントを開催してくださったBETTチームに、そして最も重要なこととして、私たちが作るすべてのものにインスピレーションを与えてくださる教育者と生徒の皆様に、心からの感謝を申し上げます。この賞は、科学教育が実践的で、アクセスしやすく、本当にワクワクするものであるべきだと信じるすべての人のものです。
     </p>
     <p>
-      WhimsyLabsが#1 Best of BETT 2026を受賞した理由を体験するいかがでしょうか？デモのスケジュールについては<a href="/ja/contact">お問い合わせください</a>、または<a href="/ja/">仮想実験室プラットフォーム</a>の詳細をご覧ください。
+      WhimsyLabsが#1 Best of BETT 2026を受賞した理由を体験するいかがでしょうか？デモのスケジュールについては<a href="/jp/contact/">お問い合わせください</a>、または<a href="/jp/">仮想実験室プラットフォーム</a>の詳細をご覧ください。
     </p>
   </div>
 );

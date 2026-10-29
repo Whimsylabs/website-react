@@ -169,7 +169,7 @@ export const content = (
       </a>
     </p>
     <p>
-      I hope to see you there. And if you can't make it but want to learn more about process-driven assessment in virtual labs, feel free to <a href="/contact">get in touch</a> directly. We're always happy to discuss how WhimsyLabs can support authentic assessment in your school or institution.
+      I hope to see you there. And if you can't make it but want to learn more about process-driven assessment in virtual labs, feel free to <a href="/contact/">get in touch</a> directly. We're always happy to discuss how WhimsyLabs can support authentic assessment in your school or institution.
     </p>
 
     <div className="references-section">
@@ -189,10 +189,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/ai-assessment-crisis-solution">The AI Assessment Crisis: How Virtual Labs Offer a Solution</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Watches What You Do</a></li>
-      <li><a href="/blog/how-to-choose-virtual-lab-software-school">How to Choose Virtual Lab Software for Your School</a></li>
+      <li><a href="/blog/ai-assessment-crisis-solution/">The AI Assessment Crisis: How Virtual Labs Offer a Solution</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education/">Meet WhimsyCat: The AI Tutor That Watches What You Do</a></li>
+      <li><a href="/blog/how-to-choose-virtual-lab-software-school/">How to Choose Virtual Lab Software for Your School</a></li>
     </ul>
   </>
 );

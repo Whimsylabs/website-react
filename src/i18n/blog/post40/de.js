@@ -159,22 +159,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/oecd-process-oriented-assessment-validation">
+          <a href="/de/blog/oecd-process-oriented-assessment-validation/">
             OECD sagt: Bewerten Sie den Prozess, nicht das Produkt
           </a>
         </li>
         <li>
-          <a href="/de/blog/ai-text-grading-fails-process-assessment-works">
+          <a href="/de/blog/ai-text-grading-fails-process-assessment-works/">
             Warum KI-Textbewertung scheitert und Prozessbewertung funktioniert
           </a>
         </li>
         <li>
-          <a href="/de/blog/process-based-lab-assessment-future">
+          <a href="/de/blog/process-based-lab-assessment-future/">
             Den Prozess bewerten, nicht die Antwort: Die Zukunft der Laborbewertung
           </a>
         </li>
         <li>
-          <a href="/de/blog/ai-assessment-crisis-solution">
+          <a href="/de/blog/ai-assessment-crisis-solution/">
             KI und die Bewertungskrise: Eine praktische Lösung
           </a>
         </li>

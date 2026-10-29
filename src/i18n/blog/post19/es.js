@@ -172,7 +172,7 @@ export const content = (
       Las calificaciones están subiendo en las aulas asistidas por IA. Pero como muestra la investigación, las calificaciones no son lo mismo que el aprendizaje.
     </p>
     <p>
-      ¿Listo para ver laboratorios virtuales que desarrollan habilidades reales? <a href="/es/contact">Contáctanos</a> para experimentar la diferencia de WhimsyLabs.
+      ¿Listo para ver laboratorios virtuales que desarrollan habilidades reales? <a href="/es/contact/">Contáctanos</a> para experimentar la diferencia de WhimsyLabs.
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

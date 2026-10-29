@@ -169,7 +169,7 @@ export const content = (
       </a>
     </p>
     <p>
-      Espero verte allí. Y si no puedes asistir pero quieres saber más sobre la evaluación basada en procesos en laboratorios virtuales, no dudes en <a href="/contact">ponerte en contacto</a> directamente. Siempre estaremos encantados de hablar sobre cómo WhimsyLabs puede apoyar la evaluación auténtica en tu escuela o institución.
+      Espero verte allí. Y si no puedes asistir pero quieres saber más sobre la evaluación basada en procesos en laboratorios virtuales, no dudes en <a href="/contact/">ponerte en contacto</a> directamente. Siempre estaremos encantados de hablar sobre cómo WhimsyLabs puede apoyar la evaluación auténtica en tu escuela o institución.
     </p>
 
     <div className="references-section">
@@ -189,10 +189,10 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/es/blog/ai-assessment-crisis-solution">La crisis de la evaluación con IA: Cómo los laboratorios virtuales ofrecen una solución</a></li>
-      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
-      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que observa lo que haces</a></li>
-      <li><a href="/es/blog/how-to-choose-virtual-lab-software-school">Cómo elegir software de laboratorio virtual para tu escuela</a></li>
+      <li><a href="/es/blog/ai-assessment-crisis-solution/">La crisis de la evaluación con IA: Cómo los laboratorios virtuales ofrecen una solución</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer/">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education/">Conoce a WhimsyCat: El tutor de IA que observa lo que haces</a></li>
+      <li><a href="/es/blog/how-to-choose-virtual-lab-software-school/">Cómo elegir software de laboratorio virtual para tu escuela</a></li>
     </ul>
   </>
 );

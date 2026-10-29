@@ -96,22 +96,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+          <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">
             Emotional Intelligence in AI Tutors: How WhimsyCat Detects Frustration
           </a>
         </li>
         <li>
-          <a href="/blog/purpose-built-ai-education-difference">
+          <a href="/blog/purpose-built-ai-education-difference/">
             Why Purpose-Built AI for Education Makes the Difference
           </a>
         </li>
         <li>
-          <a href="/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/blog/edtech-vendor-security-questions-powerschool/">
             Ten Questions to Ask EdTech Vendors After PowerSchool
           </a>
         </li>
         <li>
-          <a href="/blog/ai-science-tutor-classroom-what-works">
+          <a href="/blog/ai-science-tutor-classroom-what-works/">
             AI Science Tutors: What Actually Works in the Classroom
           </a>
         </li>

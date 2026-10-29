@@ -216,7 +216,7 @@ export const content = (
       Virtuelle Chemielabore sind ein Werkzeug. Wie jedes Werkzeug sind sie nützlich, wenn sie angemessen angewendet werden, und wenig hilfreich, wenn sie missbraucht werden. Die Lehrer, die am meisten profitieren, sind diejenigen, die sorgfältig darüber nachdenken, wie diese Werkzeuge zu ihrem spezifischen Kontext, ihren Schülern und ihren Lehrplanzielen passen.
     </p>
     <p>
-      Wenn Sie sehen möchten, wie WhimsyLabs Chemiesimulationen in der Praxis funktionieren, <a href="/contact">kontaktieren Sie uns</a> für eine Demo. Wir führen Sie durch die Plattform und besprechen, wie sie zu Ihrem Unterricht passen könnte.
+      Wenn Sie sehen möchten, wie WhimsyLabs Chemiesimulationen in der Praxis funktionieren, <a href="/contact/">kontaktieren Sie uns</a> für eine Demo. Wir führen Sie durch die Plattform und besprechen, wie sie zu Ihrem Unterricht passen könnte.
     </p>
 
     <div className="references-section">
@@ -247,10 +247,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/de/blog/why-traditional-virtual-labs-fail-physics-engine">Warum traditionelle virtuelle Labore versagen: Der Unterschied der Physik-Engine</a></li>
-      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle Labore vs. physische Labore: Eine Kosten-Nutzen-Analyse</a></li>
-      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der weiß, wenn Sie feststecken</a></li>
-      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrer sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/why-traditional-virtual-labs-fail-physics-engine/">Warum traditionelle virtuelle Labore versagen: Der Unterschied der Physik-Engine</a></li>
+      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Virtuelle Labore vs. physische Labore: Eine Kosten-Nutzen-Analyse</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education/">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der weiß, wenn Sie feststecken</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer/">Lehrer sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
     </ul>
   </>
 );

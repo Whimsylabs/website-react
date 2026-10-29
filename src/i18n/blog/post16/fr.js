@@ -204,19 +204,19 @@ export const content = (
     <h2>Articles Connexes</h2>
     <ul>
       <li>
-        <a href="/fr/blog/physicality-in-virtual-labs">
+        <a href="/fr/blog/physicality-in-virtual-labs/">
           L'Importance de la Physicalité dans les Laboratoires Virtuels : Un Pas
           Au-Delà des Simulations Traditionnelles
         </a>
       </li>
       <li>
-        <a href="/fr/blog/science-real-time-physics-simulations-virtual-labs">
+        <a href="/fr/blog/science-real-time-physics-simulations-virtual-labs/">
           La Science Derrière les Simulations Physiques en Temps Réel dans les
           Laboratoires Virtuels
         </a>
       </li>
       <li>
-        <a href="/fr/blog/sandbox-learning-revolution-stem-education">
+        <a href="/fr/blog/sandbox-learning-revolution-stem-education/">
           La Révolution de l'Apprentissage Sandbox : Pourquoi la Liberté d'Échouer
           est Essentielle pour l'Éducation STEM
         </a>

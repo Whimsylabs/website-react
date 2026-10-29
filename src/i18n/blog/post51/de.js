@@ -56,7 +56,7 @@ export const content = (
 
     <p>
       <strong>Demonstrationsvideo.</strong> Günstig, sicher und für alle gleichzeitig verfügbar. Es ist aber auch passiv. Einer erfahrenen Fachkraft bei einer makellosen Destillation zuzusehen zeigt Lernenden, wie Erfolg aussieht, und fast nichts darüber, wie man ihn erreicht. Wir haben bereits darüber geschrieben, warum{" "}
-      <a href="/de/blog/edtech-critics-right-passive-learning-vs-active-labs">die meisten Bildungstechnologien an ihrer Passivität scheitern</a>, und das Demonstrationsvideo ist dafür in den Naturwissenschaften das deutlichste Beispiel.
+      <a href="/de/blog/edtech-critics-right-passive-learning-vs-active-labs/">die meisten Bildungstechnologien an ihrer Passivität scheitern</a>, und das Demonstrationsvideo ist dafür in den Naturwissenschaften das deutlichste Beispiel.
     </p>
 
     <p>
@@ -101,7 +101,7 @@ export const content = (
 
     <p>
       Beim IB-Diplom ist das Bild deutlich offener. Die Scientific Investigation, die interne Bewertung im Wert von 20% der Fachnote, erlaubt ausdrücklich Untersuchungen auf Basis von Datenbanken, Modellierung, Simulation oder einer Mischung daraus neben praktischer Arbeit. Eine Online-Schule mit IB-Programm kann Simulation daher als vollwertigen Weg durch die interne Bewertung nutzen statt als Notlösung, worüber wir gesondert in{" "}
-      <a href="/de/blog/ib-diploma-science-practicals-virtual-labs">unserem Leitfaden zu IB-Naturwissenschaften online</a> geschrieben haben.
+      <a href="/de/blog/ib-diploma-science-practicals-virtual-labs/">unserem Leitfaden zu IB-Naturwissenschaften online</a> geschrieben haben.
     </p>
 
     <h2>Wie sieht ein wirklich gutes Angebot aus?</h2>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/flipped-practical-preloading-lab-skills">
+          <a href="/de/blog/flipped-practical-preloading-lab-skills/">
             Das umgedrehte Praktikum: schon kompetent an der Laborbank ankommen
           </a>
         </li>
         <li>
-          <a href="/de/blog/ib-diploma-science-practicals-virtual-labs">
+          <a href="/de/blog/ib-diploma-science-practicals-virtual-labs/">
             IB-Naturwissenschaften online: Simulation und Scientific Investigation
           </a>
         </li>
         <li>
-          <a href="/de/blog/physicality-in-virtual-labs">
+          <a href="/de/blog/physicality-in-virtual-labs/">
             Physikalität in virtuellen Laboren: jenseits klassischer Simulationen
           </a>
         </li>
         <li>
-          <a href="/de/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/de/blog/how-to-choose-virtual-lab-software-school/">
             Virtuelle Laborsoftware für weiterführende Schulen: ein Einkaufsleitfaden
           </a>
         </li>

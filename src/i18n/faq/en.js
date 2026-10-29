@@ -100,7 +100,7 @@ export default {
     },
     "when-can-i-gain-access-to-the-pilot-program": {
       "question": "When can I gain access to the pilot program?",
-      "answer": "The pilot program is currently open to select schools and institutions. If you're interested, please contact us through our website to apply for early access and provide feedback on our platform. If you're interested, please <a href='/contact'>contact us here</a>."
+      "answer": "The pilot program is currently open to select schools and institutions. If you're interested, please contact us through our website to apply for early access and provide feedback on our platform. If you're interested, please <a href='/contact/'>contact us here</a>."
     },
     "how-does-whimsylabs-support-teachers": {
       "question": "How does Whimsylabs support teachers?",
@@ -140,7 +140,7 @@ export default {
     },
     "do-you-offer-discounts-for-underfunded-schools": {
       "question": "Do you offer discounts for underfunded schools?",
-      "answer": "Absolutely. Whimsylabs is fundamentally committed to educational equity and democratizing access to high-quality science education through specialised grants schools can apply for. We provide special case discounts of up to for schools with limited funding, including those eligible for pupil premium, Title I funding, or equivalent support schemes globally. Our Educational Equity Reinvestment Program (EERP) aims to support underfunded schools across all countries, with our goals of reaching student globally who currently lack access to quality laboratory experiences. Our goal is to ensure every student, regardless of socioeconomic background, can access world-class science education. As stated by UNESCO's Education for All initiative: 'Education is a basic human right and a global public good with the power to transform individual lives, communities and the planet for the better over generations.' If you believe you have a unique circumstance, and would think Whimsylabs would help you, please <a href='/contact'>contact us here</a>."
+      "answer": "Absolutely. Whimsylabs is fundamentally committed to educational equity and democratizing access to high-quality science education through specialised grants schools can apply for. We provide special case discounts of up to for schools with limited funding, including those eligible for pupil premium, Title I funding, or equivalent support schemes globally. Our Educational Equity Reinvestment Program (EERP) aims to support underfunded schools across all countries, with our goals of reaching student globally who currently lack access to quality laboratory experiences. Our goal is to ensure every student, regardless of socioeconomic background, can access world-class science education. As stated by UNESCO's Education for All initiative: 'Education is a basic human right and a global public good with the power to transform individual lives, communities and the planet for the better over generations.' If you believe you have a unique circumstance, and would think Whimsylabs would help you, please <a href='/contact/'>contact us here</a>."
     },
     "what-pricing-options-are-available-for-schools": {
       "question": "What pricing options are available for schools?",

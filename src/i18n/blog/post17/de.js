@@ -46,7 +46,7 @@ export const content = (
 
     <h2>Ein Jahr der Auszeichnungen</h2>
     <p>
-      Dies ist unsere zweite bedeutende BETT-Anerkennung in zwei aufeinanderfolgenden Jahren. Auf der <a href="/de/blog/whimsylabs-education-revolution">BETT 2025</a> wurden wir mit dem <strong>Kids Judge Bett Award</strong> geehrt, der von den Schülern selbst ausgewählt wurde, weil wir gezeigt haben, wie virtuelle Labore die Laborausbildung transformieren und gleichzeitig Nachhaltigkeitsziele unterstützen können.
+      Dies ist unsere zweite bedeutende BETT-Anerkennung in zwei aufeinanderfolgenden Jahren. Auf der <a href="/de/blog/whimsylabs-education-revolution/">BETT 2025</a> wurden wir mit dem <strong>Kids Judge Bett Award</strong> geehrt, der von den Schülern selbst ausgewählt wurde, weil wir gezeigt haben, wie virtuelle Labore die Laborausbildung transformieren und gleichzeitig Nachhaltigkeitsziele unterstützen können.
     </p>
     <p>
       Der Tech&amp;Learning #1 Best of BETT 2026 Award repräsentiert eine Anerkennung aus einer anderen Perspektive: Bildungstechnologie-Experten und Praktiker, die Produkte nach Kriterien wie Innovation, Auswirkungen im Klassenzimmer, einfache Implementierung und Bildungswert bewertet haben. Beide Auszeichnungen zu gewinnen zeigt, dass WhimsyLabs bei allen ankommt, die wichtig sind: den Schülern, die unsere Plattform nutzen, und den Pädagogen, die sie implementieren.
@@ -92,7 +92,7 @@ export const content = (
       Wir möchten Tech&amp;Learning unseren herzlichen Dank für diese Anerkennung aussprechen, dem BETT-Team für die Ausrichtung einer außergewöhnlichen Veranstaltung, und vor allem den Pädagogen und Schülern, die alles inspirieren, was wir entwickeln. Diese Auszeichnung gehört allen, die glauben, dass naturwissenschaftliche Bildung praktisch, zugänglich und wirklich begeisternd sein sollte.
     </p>
     <p>
-      Bereit zu erleben, warum WhimsyLabs den #1 Best of BETT 2026 gewonnen hat? <a href="/de/contact">Kontaktieren Sie uns</a>, um eine Demo zu vereinbaren, oder erfahren Sie mehr über unsere <a href="/de/">virtuelle Laborplattform</a>.
+      Bereit zu erleben, warum WhimsyLabs den #1 Best of BETT 2026 gewonnen hat? <a href="/de/contact/">Kontaktieren Sie uns</a>, um eine Demo zu vereinbaren, oder erfahren Sie mehr über unsere <a href="/de/">virtuelle Laborplattform</a>.
     </p>
   </div>
 );

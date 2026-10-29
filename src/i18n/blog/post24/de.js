@@ -108,7 +108,7 @@ export const content = (
       Wir sind transparent in Bezug auf Daten: Schülerinformationen bleiben pro Schule isoliert, werden nie für KI-Training verwendet und sind vollständig DSGVO-konform.
     </p>
     <p>
-      Wenn Sie virtuelle Laborsoftware evaluieren, würden wir Ihnen gerne zeigen, wie WhimsyLabs im Vergleich abschneidet. <a href="/contact">Kontaktieren Sie uns</a>, um eine Demo mit Ihrem Naturwissenschaftsteam zu vereinbaren.
+      Wenn Sie virtuelle Laborsoftware evaluieren, würden wir Ihnen gerne zeigen, wie WhimsyLabs im Vergleich abschneidet. <a href="/contact/">Kontaktieren Sie uns</a>, um eine Demo mit Ihrem Naturwissenschaftsteam zu vereinbaren.
     </p>
   </>
 );

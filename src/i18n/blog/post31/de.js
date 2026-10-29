@@ -265,24 +265,24 @@ export const content = (
       Wir werden den Gipfel aufmerksam verfolgen und unser Verständnis aktualisieren, wenn
       mehr Details bekannt werden. In der Zwischenzeit, wenn Sie neugierig sind, wie KI-Nachhilfe
       und -Bewertung in der Praxis tatsächlich funktionieren,{" "}
-      <a href="/contact">nehmen Sie Kontakt auf</a>. Wir teilen gerne, was wir
+      <a href="/contact/">nehmen Sie Kontakt auf</a>. Wir teilen gerne, was wir
       gelernt haben.
     </p>
 
     <h2>Verwandte Artikel</h2>
     <ul>
       <li>
-        <a href="/de/blog/ai-assessment-crisis-solution">
+        <a href="/de/blog/ai-assessment-crisis-solution/">
           KI-Bewertung: Wie Technologie die Korrekturkrise adressiert
         </a>
       </li>
       <li>
-        <a href="/de/blog/ai-science-tutor-classroom-what-works">
+        <a href="/de/blog/ai-science-tutor-classroom-what-works/">
           KI-Naturwissenschafts-Tutoren im Klassenzimmer: Was wirklich funktioniert?
         </a>
       </li>
       <li>
-        <a href="/de/blog/premium-science-education-accessible-grants">
+        <a href="/de/blog/premium-science-education-accessible-grants/">
           Naturwissenschaftsbildung auf Premium-Niveau für jede Schule zugänglich machen
         </a>
       </li>

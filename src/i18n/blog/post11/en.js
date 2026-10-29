@@ -416,18 +416,18 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
+        <a href="/blog/green-labs-sustainability-virtual-stem-education/">
           Green Labs, Greener Future: How Virtual Laboratories Transform
           Sustainability
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
+        <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis/">
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis/">
           How AI-Powered Virtual Labs Are Solving the Global Science Education
           Crisis
         </a>

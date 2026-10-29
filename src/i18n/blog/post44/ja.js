@@ -134,22 +134,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/vr-winter-web-first-virtual-labs">
+          <a href="/jp/blog/vr-winter-web-first-virtual-labs/">
             VRの冬と、ウェブ優先の仮想実験室という選択
           </a>
         </li>
         <li>
-          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             仮想実験室と実物の実験室：費用対効果の分析
           </a>
         </li>
         <li>
-          <a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine/">
             物理エンジンなしの仮想実験室が失敗する理由
           </a>
         </li>
         <li>
-          <a href="/jp/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/jp/blog/how-to-choose-virtual-lab-software-school/">
             学校向け仮想実験室ソフトウェアの選び方
           </a>
         </li>

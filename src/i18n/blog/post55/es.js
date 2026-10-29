@@ -16,7 +16,7 @@ export const content = (
   <>
     <p>
       Los centros que se plantean la realidad virtual casi siempre lo enfocan como una decisión de compra: cuántos visores, a qué precio, gestionados cómo, guardados dónde, cargados por quién. Es un enfoque razonable y es la razón por la que la mayoría de los colegios concluye que la VR no es asequible. Un juego de equipos para toda una clase supone un compromiso de cinco cifras antes de que nadie haya impartido una sola sesión con ellos y, como escribimos cuando{" "}
-      <a href="/es/blog/meta-quest-education-support-cliff-2030">Meta retiró su plataforma educativa comercial</a>, ese hardware llega ahora con un horizonte de soporte publicado.
+      <a href="/es/blog/meta-quest-education-support-cliff-2030/">Meta retiró su plataforma educativa comercial</a>, ese hardware llega ahora con un horizonte de soporte publicado.
     </p>
 
     <p>
@@ -53,7 +53,7 @@ export const content = (
 
     <p>
       El verdadero trabajo de equidad está en otra parte, y es el de siempre: asegurarse de que la experiencia básica en un portátil doméstico modesto sea excelente y de que{" "}
-      <a href="/es/blog/vr-headsets-vs-chromebooks-cost-per-student">las condiciones de poco ancho de banda y equipos limitados</a>{" "}
+      <a href="/es/blog/vr-headsets-vs-chromebooks-cost-per-student/">las condiciones de poco ancho de banda y equipos limitados</a>{" "}
       se traten como condiciones normales de funcionamiento y no como casos extremos.
     </p>
 
@@ -65,7 +65,7 @@ export const content = (
 
     <p>
       La técnica manual es el caso más claro. Pipetear, valorar, enfocar un microscopio, alinear un montaje óptico. Todo ello implica dos manos haciendo cosas distintas en una relación espacial, y un visor con mandos rastreados representa eso con mucha más fidelidad que un ratón. Un estudiante que acabará de pie ante una poyata real obtiene con el visor una práctica mucho más transferible, que es el argumento que planteamos sobre{" "}
-      <a href="/es/blog/virtual-reality-prepares-students-real-world-stem-careers">la VR y las destrezas de laboratorio físicas</a>.
+      <a href="/es/blog/virtual-reality-prepares-students-real-world-stem-careers/">la VR y las destrezas de laboratorio físicas</a>.
     </p>
 
     <p>
@@ -80,7 +80,7 @@ export const content = (
 
     <p>
       Más que para nadie. Una{" "}
-      <a href="/es/blog/virtual-labs-online-schools-distance-learning">escuela online</a>{" "}
+      <a href="/es/blog/virtual-labs-online-schools-distance-learning/">escuela online</a>{" "}
       no tiene laboratorio, ni almacén de material, ni forma de poner un aparato en manos de un estudiante. Tampoco tiene una flota de visores ni la tendrá nunca, porque no hay un edificio donde guardarla.
     </p>
 
@@ -97,7 +97,7 @@ export const content = (
     <ul>
       <li>
         <strong>Protección del menor.</strong> Pregunte a qué puede acceder el estudiante desde dentro de la aplicación. Una plataforma sin chat, sin contenidos generados por los usuarios y sin salida hacia la web abierta plantea muchas menos dificultades de protección en un dispositivo doméstico que otra con funciones sociales. Esta es una de las razones por las que{" "}
-        <a href="/blog/dfe-ai-safety-standards-tutor-checklist">WhimsyCat no tiene ventana de chat para el estudiante</a>.
+        <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">WhimsyCat no tiene ventana de chat para el estudiante</a>.
       </li>
       <li>
         <strong>Clasificación por edades.</strong> La mayoría de los visores de consumo llevan una edad mínima fijada por el fabricante. Esa es una decisión de la familia, no del centro, pero el colegio debe conocerla y no debe dar a entender que se espera que haya un visor.
@@ -124,22 +124,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/meta-quest-education-support-cliff-2030">
+          <a href="/es/blog/meta-quest-education-support-cliff-2030/">
             Los visores de VR de su centro se han quedado sin hoja de ruta
           </a>
         </li>
         <li>
-          <a href="/es/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/es/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             Visores de VR frente a Chromebooks para laboratorios virtuales: guía de costes 2026
           </a>
         </li>
         <li>
-          <a href="/es/blog/vr-winter-web-first-virtual-labs">
+          <a href="/es/blog/vr-winter-web-first-virtual-labs/">
             ¿Invierno de la VR? Por qué los laboratorios virtuales web-first convienen a los centros
           </a>
         </li>
         <li>
-          <a href="/es/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/es/blog/virtual-labs-online-schools-distance-learning/">
             Laboratorios virtuales para escuelas online: ciencia a distancia
           </a>
         </li>

@@ -169,7 +169,7 @@ export const content = (
       </a>
     </p>
     <p>
-      皆さんにお会いできることを楽しみにしています。ご参加いただけない場合でも、仮想実験室でのプロセス重視の評価についてもっと知りたい方は、お気軽に<a href="/contact">お問い合わせ</a>ください。WhimsyLabsがあなたの学校や機関での真正な評価をどのようにサポートできるか、いつでも喜んでお話しします。
+      皆さんにお会いできることを楽しみにしています。ご参加いただけない場合でも、仮想実験室でのプロセス重視の評価についてもっと知りたい方は、お気軽に<a href="/contact/">お問い合わせ</a>ください。WhimsyLabsがあなたの学校や機関での真正な評価をどのようにサポートできるか、いつでも喜んでお話しします。
     </p>
 
     <div className="references-section">
@@ -189,10 +189,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/jp/blog/ai-assessment-crisis-solution">AI評価危機：仮想実験室が提供する解決策</a></li>
-      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師こそが専門家。私たちはツールを作るだけ。</a></li>
-      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatをご紹介：あなたの行動を見守るAIチューター</a></li>
-      <li><a href="/jp/blog/how-to-choose-virtual-lab-software-school">学校向け仮想実験室ソフトウェアの選び方</a></li>
+      <li><a href="/jp/blog/ai-assessment-crisis-solution/">AI評価危機：仮想実験室が提供する解決策</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer/">教師こそが専門家。私たちはツールを作るだけ。</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education/">WhimsyCatをご紹介：あなたの行動を見守るAIチューター</a></li>
+      <li><a href="/jp/blog/how-to-choose-virtual-lab-software-school/">学校向け仮想実験室ソフトウェアの選び方</a></li>
     </ul>
   </>
 );

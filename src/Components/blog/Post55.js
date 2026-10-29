@@ -20,7 +20,7 @@ export const content = (
   <div>
     <p>
       Schools thinking about VR almost always frame it as a purchasing decision: how many headsets, at what cost, managed how, stored where, charged by whom. It is a reasonable frame, and it is the reason most schools conclude that VR is not affordable. A class set is a five-figure commitment before anyone has taught a lesson with it, and as we wrote when{" "}
-      <a href="/blog/meta-quest-education-support-cliff-2030">Meta withdrew its commercial education platform</a>, that hardware now comes with a published support horizon attached.
+      <a href="/blog/meta-quest-education-support-cliff-2030/">Meta withdrew its commercial education platform</a>, that hardware now comes with a published support horizon attached.
     </p>
 
     <p>
@@ -57,7 +57,7 @@ export const content = (
 
     <p>
       The genuine equity work is elsewhere, and it is the same work as always: making sure the baseline experience on a modest home laptop is excellent, and that{" "}
-      <a href="/blog/vr-headsets-vs-chromebooks-cost-per-student">low-bandwidth and low-spec conditions</a>{" "}
+      <a href="/blog/vr-headsets-vs-chromebooks-cost-per-student/">low-bandwidth and low-spec conditions</a>{" "}
       are treated as normal operating conditions rather than edge cases.
     </p>
 
@@ -69,7 +69,7 @@ export const content = (
 
     <p>
       Manual technique is the clearest case. Pipetting, titrating, focusing a microscope, aligning optical apparatus. These involve two hands doing different things in a spatial relationship, and a headset with tracked controllers represents that far more faithfully than a mouse does. A student who is going to stand at a real bench eventually gets more transferable practice from the headset, which is the argument we made about{" "}
-      <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">VR and physical lab skills</a>.
+      <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers/">VR and physical lab skills</a>.
     </p>
 
     <p>
@@ -84,7 +84,7 @@ export const content = (
 
     <p>
       More than for anyone else. An{" "}
-      <a href="/blog/virtual-labs-online-schools-distance-learning">online school</a>{" "}
+      <a href="/blog/virtual-labs-online-schools-distance-learning/">online school</a>{" "}
       has no laboratory, no equipment store, and no ability to hand a student a piece of apparatus. It also has no headset fleet and never will, because there is no site to keep one on.
     </p>
 
@@ -101,7 +101,7 @@ export const content = (
     <ul>
       <li>
         <strong>Safeguarding.</strong> Ask what the student can reach from inside the application. A platform with no chat surface, no user-generated content and no route out to the open web is a much simpler safeguarding proposition on a home device than one with social features. This is one of the reasons{" "}
-        <a href="/blog/dfe-ai-safety-standards-tutor-checklist">WhimsyCat has no student chat window</a>.
+        <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">WhimsyCat has no student chat window</a>.
       </li>
       <li>
         <strong>Age ratings.</strong> Most consumer headsets carry a manufacturer minimum age. That is the family's decision to make, not the school's, but the school should be aware of it and should not imply that a headset is expected.
@@ -128,22 +128,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/meta-quest-education-support-cliff-2030">
+          <a href="/blog/meta-quest-education-support-cliff-2030/">
             Your School's VR Headsets Just Lost Their Roadmap
           </a>
         </li>
         <li>
-          <a href="/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             VR Headsets vs Chromebooks for Virtual Labs: A 2026 Cost Guide
           </a>
         </li>
         <li>
-          <a href="/blog/vr-winter-web-first-virtual-labs">
+          <a href="/blog/vr-winter-web-first-virtual-labs/">
             VR Winter? Why Web-First Virtual Labs Are Smart for Schools
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/blog/virtual-labs-online-schools-distance-learning/">
             Virtual Labs for Online Schools: Science at a Distance
           </a>
         </li>

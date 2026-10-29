@@ -172,7 +172,7 @@ export const content = (
       Les notes augmentent dans les salles de classe assistées par l'IA. Mais comme le montre la recherche, les notes ne sont pas synonymes d'apprentissage.
     </p>
     <p>
-      Prêt à découvrir des laboratoires virtuels qui développent de vraies compétences ? <a href="/fr/contact">Contactez-nous</a> pour expérimenter la différence WhimsyLabs.
+      Prêt à découvrir des laboratoires virtuels qui développent de vraies compétences ? <a href="/fr/contact/">Contactez-nous</a> pour expérimenter la différence WhimsyLabs.
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

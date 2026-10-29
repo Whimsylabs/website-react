@@ -198,18 +198,18 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href="/blog/physicality-in-virtual-labs/">
           The Importance of Physicality in Virtual Labs: A Step Beyond
           Traditional Simulations
         </a>
       </li>
       <li>
-        <a href="/blog/science-real-time-physics-simulations-virtual-labs">
+        <a href="/blog/science-real-time-physics-simulations-virtual-labs/">
           The Science Behind Real-Time Physics Simulations in Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/blog/sandbox-learning-revolution-stem-education/">
           The Sandbox Learning Revolution: Why Freedom to Fail is Essential for
           STEM Education
         </a>

@@ -93,11 +93,6 @@ class MetadataInjector {
         description: t.bett?.description || 'Visit WhimsyLabs at BETT 2026 to experience our award-winning virtual science lab. Book a demo of our AI-powered lab simulation software.',
         keywords: 'BETT 2026, EdTech exhibition, virtual lab demo, science education technology, WhimsyLabs BETT, education technology show',
       },
-      '/demo': {
-        title: 'Demo | WhimsyLabs Virtual Lab Software',
-        description: 'Try WhimsyLabs virtual laboratory software with our interactive demo. Experience our STEM education platform and see how virtual labs enhance science learning.',
-        keywords: 'virtual lab demo, online lab simulation trial, free virtual lab, science lab software demo, try virtual lab',
-      },
       '/privacy': {
         title: t.privacy?.title || 'Privacy Policy | WhimsyLabs Virtual Lab Software',
         description: t.privacy?.description || 'Read WhimsyLabs privacy policy to understand how we protect your data and privacy when using our virtual laboratory software for STEM education.',
@@ -109,9 +104,15 @@ class MetadataInjector {
         description: 'SafeLab by WhimsyLabs: simulation training where process and lab staff practise COSHH handling, spill response and quality procedures repeatedly, on standard PCs or VR. Ufi VocTech funded. Free pilot places open.',
         keywords: 'industrial safety training simulation, COSHH training, spill response training, VR safety training, process operator training, lab technician training, competency assessment, ISO 9001 training records',
       },
+      '/industrial-v2': {
+        // Internal design concept, English-only, noindex.
+        title: 'Industrial v2 concept | WhimsyLabs',
+        description: 'Internal design concept for the industrial page. Not for public indexing. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .',
+        keywords: '',
+      },
       '/data-security': {
         title: t.dataSecurity?.title || 'Student Data Security | WhimsyLabs Virtual Lab Software',
-        description: t.dataSecurity?.description || 'How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.',
+        description: t.dataSecurity?.description || 'How WhimsyLabs protects student data with per-school encryption keys, no AI training on student data, full GDPR/FERPA/COPPA compliance.',
         keywords: 'student data privacy, EdTech security, FERPA compliance, GDPR education, COPPA compliance, school data security, virtual lab data protection',
       },
       '/grants': getGrantMetadata('/grants', routeLang),
@@ -154,13 +155,13 @@ class MetadataInjector {
         description: t.sendScience?.description || 'Virtual labs built for SEND: control remapping, text-to-speech, self-paced practicals, and evidence for the 2026 SEND White Paper.',
         keywords: 'SEND science practicals, accessible virtual labs, SEND white paper 2026, inclusive science education, special educational needs science',
       },
-      '/spa': {
-        title: t.landingDemo?.title || 'WhimsyLabs - Award-Winning Virtual Lab Software for STEM Education',
-        description: t.landingDemo?.description || 'WhimsyLabs provides interactive virtual lab software for Biology, Chemistry, and Physics. Our online lab simulations enhance STEM education in schools across the EU.',
-        keywords: 'virtual lab software, virtual science lab, online lab simulation, science simulation software, STEM virtual labs for schools',
-      }
     };
 
+    if (!metaInfo[normalizedRoute]) {
+      // A route missing from this table would silently ship the homepage
+      // title/description — make the fallback loud so it gets fixed.
+      console.warn(`⚠️ No metadata entry for route "${normalizedRoute}" - falling back to homepage metadata`);
+    }
     return metaInfo[normalizedRoute] || metaInfo['/'];
   }
 
@@ -335,14 +336,31 @@ class MetadataInjector {
     <meta property="og:image:height" content="${ogImage.height}">`
       : '';
 
+    // Blog posts are articles, not generic website pages
+    const isBlogPost = /\/blog\/[^/]+/.test(route);
+    const ogType = isBlogPost ? 'article' : 'website';
+    let articleTags = '';
+    if (isBlogPost) {
+      const published = customMeta.date || customMeta.datePublished;
+      const modified = customMeta.dateModified || published;
+      if (published) {
+        articleTags += `
+    <meta property="article:published_time" content="${published}">
+    <meta property="article:modified_time" content="${modified}">`;
+      }
+      articleTags += `
+    <meta property="article:author" content="https://www.linkedin.com/in/drmarisafrench/">
+    <meta property="article:section" content="STEM Education">`;
+    }
+
     return `
     <meta property="og:title" content="${meta.title}">
     <meta property="og:description" content="${meta.description}">
     <meta property="og:url" content="${this.baseUrl}${normalizedRoute}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="${ogType}">
     <meta property="og:site_name" content="WhimsyLabs">
     <meta property="og:locale" content="${ogLocale}">
-    <meta property="og:image" content="${ogImage.url}">${ogImageDimensions}`;
+    <meta property="og:image" content="${ogImage.url}">${ogImageDimensions}${articleTags}`;
   }
 
   /**
@@ -470,6 +488,10 @@ class MetadataInjector {
 
     const t = schemaTranslations[langCode] || schemaTranslations.en;
 
+    // All page URLs in schema must match the canonical form exactly (trailing slash)
+    const canonicalRoute = route === '/' ? '/' : (route.endsWith('/') ? route : `${route}/`);
+    const canonicalUrl = `${this.baseUrl}${canonicalRoute}`;
+
     const organizationSchema = {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -504,7 +526,21 @@ class MetadataInjector {
       ]
     };
 
-    let schemas = [organizationSchema];
+    // WebSite schema gives Google an explicit site-name signal
+    const webSiteSchema = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "WhimsyLabs",
+      "url": `${this.baseUrl}/`,
+      "inLanguage": langCode,
+      "publisher": {
+        "@type": "Organization",
+        "name": "WhimsyLabs",
+        "url": this.baseUrl
+      }
+    };
+
+    let schemas = [organizationSchema, webSiteSchema];
 
     // Add route-specific schemas
     if (route === '/' || route.match(/^\/[a-z]{2}\/?$/)) {
@@ -514,11 +550,6 @@ class MetadataInjector {
         "name": "WhimsyLabs Virtual Laboratory",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Web, Windows, MacOS, Android, VR",
-        "offers": {
-          "@type": "Offer",
-          "price": "Contact for pricing",
-          "priceCurrency": "GBP"
-        },
         "description": "A sandbox virtual laboratory simulation that gives you the freedom to explore, play and learn scientific concepts firsthand.",
         "award": "BETT 2025 Kids Judge Award Winner - Best Science Lab (Start Up)"
       };
@@ -600,7 +631,7 @@ class MetadataInjector {
         },
         "offers": {
           "@type": "Offer",
-          "url": `${this.baseUrl}/bett`,
+          "url": canonicalUrl,
           "price": "0",
           "priceCurrency": "GBP",
           "availability": "https://schema.org/InStock",
@@ -611,7 +642,7 @@ class MetadataInjector {
           "name": "WhimsyLabs"
         },
         "image": `${this.baseUrl}/logo.png`,
-        "url": `${this.baseUrl}/bett`
+        "url": canonicalUrl
       };
       schemas.push(eventSchema);
     }
@@ -640,9 +671,23 @@ class MetadataInjector {
       const pathParts = basePath.split('/').filter(p => p && !['de', 'es', 'fr', 'jp'].includes(p));
       let currentUrl = `${this.baseUrl}${langPrefix}`;
       
+      // Acronyms and proper names the generic title-casing below would get wrong
+      const breadcrumbLabels = {
+        'faq': 'FAQ',
+        'bett': 'BETT',
+        'send': 'SEND',
+        'ai-assessment': 'AI Assessment',
+        'royal-society': 'Royal Society',
+        'british-science-week': 'British Science Week',
+        'uk-school-funding': 'UK School Funding',
+        'us-education': 'US Education',
+        'erasmus-plus': 'Erasmus Plus',
+        'inclusive-mainstream-fund': 'Inclusive Mainstream Fund'
+      };
       pathParts.forEach((part, index) => {
         currentUrl += `/${part}`;
-        const name = part.charAt(0).toUpperCase() + part.slice(1).replace(/-/g, ' ');
+        const name = breadcrumbLabels[part] ||
+          part.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
         breadcrumbItems.push({
           "@type": "ListItem",
           "position": breadcrumbItems.length + 1,
@@ -753,9 +798,10 @@ class MetadataInjector {
 
     // Generate FAQ schema for all language versions of FAQ page
     if (route === '/faq' || route === '/faq/' || route.includes('/faq/') || route.endsWith('/faq')) {
-      // Dynamically load ALL FAQ items
-      const { getAllFAQItems } = require('../src/data/faqData.js');
-      const allFAQs = getAllFAQItems();
+      // Dynamically load ALL FAQ items in the page's language so the schema
+      // matches the visible content (Google flags EN schema on translated pages)
+      const { getAllFAQItems } = require('../src/i18n/faqDataGenerator.js');
+      const allFAQs = getAllFAQItems(langCode);
 
       // Helper to strip HTML tags
       const stripHtml = (html) => {
@@ -845,10 +891,10 @@ class MetadataInjector {
             "height": 630
           }
         },
-        "url": `${this.baseUrl}${route}`,
+        "url": canonicalUrl,
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": `${this.baseUrl}${route}`
+          "@id": canonicalUrl
         },
         "timeRequired": `PT${readingMinutes}M`,
         "articleSection": "STEM Education Technology",
@@ -889,7 +935,7 @@ class MetadataInjector {
         "@type": "LearningResource",
         "name": data.title || "WhimsyLabs Educational Article",
         "description": data.description || "",
-        "url": `${this.baseUrl}${route}`,
+        "url": canonicalUrl,
         "author": {
           "@type": "Person",
           "name": "Marisa French",
@@ -936,7 +982,7 @@ class MetadataInjector {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": this.baseUrl
+          "item": `${this.baseUrl}${language === 'en' ? '' : '/' + language}/`
         },
         {
           "@type": "ListItem",
@@ -948,7 +994,7 @@ class MetadataInjector {
           "@type": "ListItem",
           "position": 3,
           "name": data.title || "Blog Post",
-          "item": `${this.baseUrl}${route}`
+          "item": canonicalUrl
         }
       ];
 

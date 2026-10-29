@@ -188,22 +188,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/ai-assessment-crisis-solution">
+          <a href="/jp/blog/ai-assessment-crisis-solution/">
             AIと評価の危機：プロセスデータがすべてを変える方法
           </a>
         </li>
         <li>
-          <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             批評家は正しい：ほとんどのEdTechは役に立たない
           </a>
         </li>
         <li>
-          <a href="/jp/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/jp/blog/vr-stem-education-research-pedagogical-scaffolding/">
             新しいVR研究が確認：教育学のない技術は失敗する
           </a>
         </li>
         <li>
-          <a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">
+          <a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education/">
             WhimsyCatのご紹介：科学教育における私たちのAIイノベーション
           </a>
         </li>

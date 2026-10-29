@@ -16,7 +16,7 @@ export const content = (
   <>
     <p>
       VRの導入を検討する学校は、ほぼ必ずそれを購買の問題として捉えます。何台買うのか、いくらかかるのか、どう管理し、どこに保管し、誰が充電するのか。これは当然の捉え方であり、また多くの学校がVRは予算的に無理だと結論づける理由でもあります。1クラス分をそろえるとなれば、授業を1回も行わないうちに5桁の金額を投じる約束をすることになります。さらに、{" "}
-      <a href="/jp/blog/meta-quest-education-support-cliff-2030">Metaが法人向け教育プラットフォームから撤退した</a>際に述べたとおり、そのハードウェアには現在、公表されたサポート期限が付いて回ります。
+      <a href="/jp/blog/meta-quest-education-support-cliff-2030/">Metaが法人向け教育プラットフォームから撤退した</a>際に述べたとおり、そのハードウェアには現在、公表されたサポート期限が付いて回ります。
     </p>
 
     <p>
@@ -53,7 +53,7 @@ export const content = (
 
     <p>
       本当に取り組むべき公平性の課題は別のところにあり、それは従来から変わりません。ごく標準的な家庭用ノートパソコンでの基本体験を優れたものに保つこと、そして{" "}
-      <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student">低帯域・低スペックの環境</a>{" "}
+      <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student/">低帯域・低スペックの環境</a>{" "}
       を例外ではなく通常の動作条件として扱うことです。
     </p>
 
@@ -65,7 +65,7 @@ export const content = (
 
     <p>
       最もわかりやすいのは手技です。ピペット操作、滴定、顕微鏡のピント合わせ、光学系の光軸合わせ。いずれも両手が空間的な関係のなかで別々の動きをするものであり、トラッキング対応のコントローラーを備えたヘッドセットは、マウスよりもはるかに忠実にそれを再現します。いずれ実際の実験台に立つ生徒にとって、ヘッドセットでの練習ははるかに転移しやすいものになります。これは{" "}
-      <a href="/jp/blog/virtual-reality-prepares-students-real-world-stem-careers">VRと実験室での実技</a>について論じた際の主張でもあります。
+      <a href="/jp/blog/virtual-reality-prepares-students-real-world-stem-careers/">VRと実験室での実技</a>について論じた際の主張でもあります。
     </p>
 
     <p>
@@ -80,7 +80,7 @@ export const content = (
 
     <p>
       他のどの学校よりも大きな意味を持ちます。{" "}
-      <a href="/jp/blog/virtual-labs-online-schools-distance-learning">オンライン校</a>{" "}
+      <a href="/jp/blog/virtual-labs-online-schools-distance-learning/">オンライン校</a>{" "}
       には実験室も器具庫もなく、生徒に器具を手渡す手段もありません。ヘッドセットの保有台数もゼロであり、保管する校舎がない以上、今後も増えることはありません。
     </p>
 
@@ -97,7 +97,7 @@ export const content = (
     <ul>
       <li>
         <strong>児童生徒の保護。</strong> アプリケーションの内部から生徒が何にアクセスできるのかを確認してください。チャット機能がなく、ユーザー生成コンテンツもなく、外部のウェブへ抜ける経路もないプラットフォームは、ソーシャル機能を備えたものに比べ、家庭の端末上でもはるかに安全管理が容易です。これは{" "}
-        <a href="/blog/dfe-ai-safety-standards-tutor-checklist">WhimsyCatに生徒用のチャット画面がない</a>理由の一つでもあります。
+        <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">WhimsyCatに生徒用のチャット画面がない</a>理由の一つでもあります。
       </li>
       <li>
         <strong>年齢制限。</strong> 民生用ヘッドセットの多くには、メーカーが定める最低年齢があります。その判断は学校ではなく家庭が行うものですが、学校はそれを把握したうえで、ヘッドセットの所持が前提であるかのような印象を与えてはなりません。
@@ -124,22 +124,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/meta-quest-education-support-cliff-2030">
+          <a href="/jp/blog/meta-quest-education-support-cliff-2030/">
             学校のVRヘッドセットがロードマップを失った日
           </a>
         </li>
         <li>
-          <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             VRヘッドセットとChromebookの比較：仮想実験室の2026年コストガイド
           </a>
         </li>
         <li>
-          <a href="/jp/blog/vr-winter-web-first-virtual-labs">
+          <a href="/jp/blog/vr-winter-web-first-virtual-labs/">
             VRの冬？ウェブファーストの仮想実験室が学校に適している理由
           </a>
         </li>
         <li>
-          <a href="/jp/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/jp/blog/virtual-labs-online-schools-distance-learning/">
             オンライン校のための仮想実験室：遠隔での理科教育
           </a>
         </li>

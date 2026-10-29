@@ -154,17 +154,17 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/es/blog/oecd-ai-learning-paradox-virtual-labs/">
             La paradoja del aprendizaje con IA de la OCDE: por qué la IA generativa falla a los estudiantes (y cómo los laboratorios virtuales triunfan)
           </a>
         </li>
         <li>
-          <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             Los críticos tienen razón: la mayoría de la EdTech es inútil
           </a>
         </li>
         <li>
-          <a href="/es/blog/ai-science-tutor-classroom-what-works">
+          <a href="/es/blog/ai-science-tutor-classroom-what-works/">
             Tutores de IA para ciencias: qué funciona realmente en el aula
           </a>
         </li>

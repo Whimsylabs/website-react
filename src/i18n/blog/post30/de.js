@@ -55,7 +55,7 @@ export const content = (
 
     <h3>Fördermöglichkeiten in Großbritannien</h3>
     <p>
-      Das <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a>-Programm bietet britischen staatlichen Schulen bis zu 3.000 £ für investigative MINT-Projekte. Wir haben mit Dutzenden von Schulen zusammengearbeitet, um diese Zuschüsse für VR-Wissenschaftslabore zu sichern. Die Royal Society stellt die Finanzierung für Hardware bereit. Wir stellen die Software kostenlos zur Verfügung.
+      Das <a href="/blog/royal-society-partnership-grants-vr-science-labs/">Royal Society Partnership Grants</a>-Programm bietet britischen staatlichen Schulen bis zu 3.000 £ für investigative MINT-Projekte. Wir haben mit Dutzenden von Schulen zusammengearbeitet, um diese Zuschüsse für VR-Wissenschaftslabore zu sichern. Die Royal Society stellt die Finanzierung für Hardware bereit. Wir stellen die Software kostenlos zur Verfügung.
     </p>
     <p>
       Über die Royal Society hinaus können britische Schulen auf folgende Mittel zugreifen:
@@ -170,7 +170,7 @@ export const content = (
 
     <h2>Loslegen</h2>
     <p>
-      Wenn Sie daran interessiert sind, WhimsyLabs durch Förderfinanzierung an Ihre Schule zu bringen, helfen wir Ihnen gerne. Beginnen Sie mit dem Besuch unserer <a href="/grants">Seite für Förderungen und Finanzierung</a>. Sie finden dort Details zu spezifischen Fördermöglichkeiten und wie wir Ihre Bewerbung unterstützen können.
+      Wenn Sie daran interessiert sind, WhimsyLabs durch Förderfinanzierung an Ihre Schule zu bringen, helfen wir Ihnen gerne. Beginnen Sie mit dem Besuch unserer <a href="/grants/">Seite für Förderungen und Finanzierung</a>. Sie finden dort Details zu spezifischen Fördermöglichkeiten und wie wir Ihre Bewerbung unterstützen können.
     </p>
     <p>
       Premium-Naturwissenschaftsunterricht sollte nicht wohlhabenden Schulen vorbehalten sein. Mit der richtigen Finanzierung und der richtigen Unterstützung ist er für alle zugänglich.
@@ -198,10 +198,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Britische Schulen: 3.000 £ für VR-Wissenschaftslabore erhalten</a></li>
-      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtuelle Labore vs. Physische Labore: Der echte Kostenvergleich</a></li>
-      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der Naturwissenschaften wirklich versteht</a></li>
-      <li><a href="/de/blog/edtech-vendor-security-questions-powerschool">10 Fragen, die Sie EdTech-Anbietern zur Datensicherheit stellen sollten</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">Britische Schulen: 3.000 £ für VR-Wissenschaftslabore erhalten</a></li>
+      <li><a href="/de/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Virtuelle Labore vs. Physische Labore: Der echte Kostenvergleich</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education/">Lernen Sie WhimsyCat kennen: Der KI-Tutor, der Naturwissenschaften wirklich versteht</a></li>
+      <li><a href="/de/blog/edtech-vendor-security-questions-powerschool/">10 Fragen, die Sie EdTech-Anbietern zur Datensicherheit stellen sollten</a></li>
     </ul>
   </>
 );

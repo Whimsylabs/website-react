@@ -55,7 +55,7 @@ export const content = (
 
     <h3>イギリスの資金調達機会</h3>
     <p>
-      <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a>プログラムは、イギリスの公立学校に調査型STEMプロジェクトのために最大3,000ポンドを提供しています。私たちは数十の学校と協力して、VR科学ラボのためのこれらの助成金を確保してきました。Royal Societyがハードウェアの資金を提供します。私たちはソフトウェアを無料で提供します。
+      <a href="/blog/royal-society-partnership-grants-vr-science-labs/">Royal Society Partnership Grants</a>プログラムは、イギリスの公立学校に調査型STEMプロジェクトのために最大3,000ポンドを提供しています。私たちは数十の学校と協力して、VR科学ラボのためのこれらの助成金を確保してきました。Royal Societyがハードウェアの資金を提供します。私たちはソフトウェアを無料で提供します。
     </p>
     <p>
       Royal Society以外にも、イギリスの学校は以下にアクセスできます：
@@ -170,7 +170,7 @@ export const content = (
 
     <h2>始めましょう</h2>
     <p>
-      助成金を通じてWhimsyLabsをあなたの学校に導入することに興味がある場合、私たちがお手伝いします。まず<a href="/grants">助成金と資金援助ページ</a>をご覧ください。特定の資金調達機会と、申請をどのようにサポートできるかの詳細が記載されています。
+      助成金を通じてWhimsyLabsをあなたの学校に導入することに興味がある場合、私たちがお手伝いします。まず<a href="/grants/">助成金と資金援助ページ</a>をご覧ください。特定の資金調達機会と、申請をどのようにサポートできるかの詳細が記載されています。
     </p>
     <p>
       プレミアム科学教育は裕福な学校だけのものであってはなりません。適切な資金と適切なサポートがあれば、すべての人がアクセス可能です。
@@ -198,10 +198,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">イギリスの学校：VR科学ラボのために£3,000を獲得</a></li>
-      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想ラボ vs 物理ラボ：本当のコスト比較</a></li>
-      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会おう：科学を本当に理解するAIチューター</a></li>
-      <li><a href="/jp/blog/edtech-vendor-security-questions-powerschool">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">イギリスの学校：VR科学ラボのために£3,000を獲得</a></li>
+      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">仮想ラボ vs 物理ラボ：本当のコスト比較</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education/">WhimsyCatに会おう：科学を本当に理解するAIチューター</a></li>
+      <li><a href="/jp/blog/edtech-vendor-security-questions-powerschool/">EdTechベンダーに聞くべきデータセキュリティに関する10の質問</a></li>
     </ul>
   </>
 );

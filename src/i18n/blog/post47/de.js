@@ -140,22 +140,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/de/blog/oecd-ai-learning-paradox-virtual-labs/">
             KI steigerte die Noten um 127 %. Dann konnten die Lernenden nicht mehr denken.
           </a>
         </li>
         <li>
-          <a href="/de/blog/teachers-are-experts-custom-experiment-designer">
+          <a href="/de/blog/teachers-are-experts-custom-experiment-designer/">
             Lehrkräfte sind die Fachleute. Wir bauen nur die Werkzeuge.
           </a>
         </li>
         <li>
-          <a href="/de/blog/ai-science-tutor-classroom-what-works">
+          <a href="/de/blog/ai-science-tutor-classroom-what-works/">
             KI-Tutoren im Naturwissenschaftsunterricht: Was wirklich funktioniert
           </a>
         </li>
         <li>
-          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">
             Wie WhimsyCat die DfE-KI-Sicherheitsstandards ohne Chatfenster erfüllt
           </a>
         </li>

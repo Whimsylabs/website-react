@@ -60,7 +60,7 @@ export const content = (
 
     <p>
       <strong>Demonstration video.</strong> Cheap, safe, and available to everyone at once. It is also passive. Watching an experienced technician perform a distillation flawlessly teaches a student what success looks like, and almost nothing about how to achieve it. We have written before about why{" "}
-      <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs">most edtech fails by being passive</a>, and demonstration video is the clearest example in science.
+      <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs/">most edtech fails by being passive</a>, and demonstration video is the clearest example in science.
     </p>
 
     <p>
@@ -105,7 +105,7 @@ export const content = (
 
     <p>
       For the IB Diploma the picture is markedly more open. The Scientific Investigation internal assessment, worth 20% of the subject grade, explicitly permits investigations built on databases, modelling, simulation, or a hybrid of these alongside hands-on work. An online school running the IB can therefore use simulation as a first-class route through the IA rather than a workaround, which we have written about separately in{" "}
-      <a href="/blog/ib-diploma-science-practicals-virtual-labs">our guide to IB sciences online</a>.
+      <a href="/blog/ib-diploma-science-practicals-virtual-labs/">our guide to IB sciences online</a>.
     </p>
 
     <h2>What Does Good Provision Actually Look Like?</h2>
@@ -132,22 +132,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/flipped-practical-preloading-lab-skills">
+          <a href="/blog/flipped-practical-preloading-lab-skills/">
             The Flipped Practical: Arriving at the Bench Already Competent
           </a>
         </li>
         <li>
-          <a href="/blog/ib-diploma-science-practicals-virtual-labs">
+          <a href="/blog/ib-diploma-science-practicals-virtual-labs/">
             IB Sciences Online: Simulation and the Scientific Investigation
           </a>
         </li>
         <li>
-          <a href="/blog/physicality-in-virtual-labs">
+          <a href="/blog/physicality-in-virtual-labs/">
             Physicality in Virtual Labs: Beyond Traditional Simulations
           </a>
         </li>
         <li>
-          <a href="/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/blog/how-to-choose-virtual-lab-software-school/">
             Virtual Lab Software for Secondary Schools: A Buyer's Guide
           </a>
         </li>

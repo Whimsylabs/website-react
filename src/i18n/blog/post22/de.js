@@ -176,7 +176,7 @@ export const content = (
       Dokumentieren Sie die Antworten, die Sie erhalten. Nehmen Sie Sicherheitsanforderungen in Ihre Verträge auf. Und scheuen Sie sich nicht, von Anbietern abzusehen, die keine klaren Antworten geben können.
     </p>
     <p>
-      Bei WhimsyLabs glauben wir, dass Transparenz Vertrauen schafft. Wir beantworten gerne alle zehn dieser Fragen für jede Schule, die unsere virtuellen Naturwissenschaftslabore in Betracht zieht. <a href="/contact">Kontaktieren Sie uns</a> und wir senden Ihnen unsere vollständige Sicherheitsdokumentation.
+      Bei WhimsyLabs glauben wir, dass Transparenz Vertrauen schafft. Wir beantworten gerne alle zehn dieser Fragen für jede Schule, die unsere virtuellen Naturwissenschaftslabore in Betracht zieht. <a href="/contact/">Kontaktieren Sie uns</a> und wir senden Ihnen unsere vollständige Sicherheitsdokumentation.
     </p>
 
     <div className="references-section">
@@ -257,9 +257,9 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK-Schulen: 3.000 £ für VR-Naturwissenschaftslabore erhalten</a></li>
-      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
-      <li><a href="/de/blog/ai-assessment-crisis-solution">KI-Erkennung funktioniert nicht. Prozessbasierte Bewertung schon.</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">UK-Schulen: 3.000 £ für VR-Naturwissenschaftslabore erhalten</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer/">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/ai-assessment-crisis-solution/">KI-Erkennung funktioniert nicht. Prozessbasierte Bewertung schon.</a></li>
     </ul>
   </>
 );

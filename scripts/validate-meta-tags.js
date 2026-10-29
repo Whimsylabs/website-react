@@ -1,6 +1,14 @@
 const fs = require('fs').promises;
 const path = require('path');
 const glob = require('glob');
+const { isRedirectStub } = require('./is-redirect-stub');
+
+// Placeholder strings emitted when a blog post's real metadata could not be
+// resolved at build time. They must never reach production.
+const GENERIC_FALLBACKS = ['Blog Post post', 'Blog post description'];
+
+// Pages that are not indexable documents and so carry no canonical/description.
+const SKIPPED_FILES = ['404.html'];
 
 class MetaTagValidator {
   constructor(buildPath) {
@@ -19,8 +27,12 @@ class MetaTagValidator {
 
     console.log(`📄 Found ${htmlFiles.length} HTML files to validate`);
 
+    this.skipped = 0;
     for (const filePath of htmlFiles) {
       await this.validateFile(filePath);
+    }
+    if (this.skipped > 0) {
+      console.log(`↩️  Skipped ${this.skipped} redirect stubs / non-indexable pages`);
     }
 
     this.printReport();
@@ -31,6 +43,14 @@ class MetaTagValidator {
     try {
       const content = await fs.readFile(filePath, 'utf8');
       const relativePath = path.relative(this.buildPath, filePath);
+
+      // Redirect stubs are deliberately bare (noindex + meta-refresh) - nothing to check.
+      if (SKIPPED_FILES.includes(path.basename(filePath)) || isRedirectStub(content)) {
+        this.skipped = (this.skipped || 0) + 1;
+        return;
+      }
+
+      this.validateRequiredTags(content, relativePath);
 
       // Check for duplicate meta descriptions
       const metaDescriptions = content.match(/<meta[^>]+name=['"]description['"][^>]*>/gi) || [];
@@ -43,7 +63,7 @@ class MetaTagValidator {
         });
       }
       // Check for duplicate viewport tags
-      const metaViewports = content.match(/<meta[^>]+name=['"']viewport['"'][^>]*>/gi) || [];
+      const metaViewports = content.match(/<meta[^>]+name=['"]viewport['"][^>]*>/gi) || [];
       if (metaViewports.length > 1) {
         this.errors.push({
           type: 'duplicate_meta_viewport',
@@ -54,10 +74,10 @@ class MetaTagValidator {
       }
 
       // Check for duplicate hreflang tags (same lang attribute)
-      const hreflangs = content.match(/<link[^>]+rel=['"']alternate['"'][^>]+hreflang=['"'][^'"]+['"'][^>]*>/gi) || [];
+      const hreflangs = content.match(/<link[^>]+rel=['"]alternate['"][^>]+hreflang=['"][^'"]+['"][^>]*>/gi) || [];
       const hreflangLangs = {};
       hreflangs.forEach(tag => {
-        const langMatch = tag.match(/hreflang=['"']([^'"]+)['"]/);
+        const langMatch = tag.match(/hreflang=['"]([^'"]+)['"]/);
         if (langMatch) {
           const lang = langMatch[1];
           if (!hreflangLangs[lang]) hreflangLangs[lang] = [];
@@ -101,6 +121,57 @@ class MetaTagValidator {
     }
   }
 
+  /**
+   * Every indexable page needs a non-empty title, a meta description and a
+   * canonical URL ending in a trailing slash (the site's canonical form).
+   */
+  validateRequiredTags(content, relativePath) {
+    const add = (type, detail) => this.errors.push({ type, file: relativePath, detail });
+
+    // Title
+    const titleMatch = content.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+    const title = titleMatch ? titleMatch[1].trim() : null;
+    if (!titleMatch) {
+      add('missing_title', 'no <title> tag');
+    } else if (!title) {
+      add('empty_title', '<title> is empty');
+    }
+
+    // Meta description
+    const descMatch = content.match(/<meta[^>]+name=['"]description['"][^>]*>/i);
+    let description = null;
+    if (!descMatch) {
+      add('missing_description', 'no meta description tag');
+    } else {
+      const contentMatch = descMatch[0].match(/content=['"]([\s\S]*?)['"]/i);
+      description = contentMatch ? contentMatch[1].trim() : '';
+      if (!description) {
+        add('empty_description', 'meta description has no content');
+      }
+    }
+
+    // Canonical
+    const canonicalMatch = content.match(/<link[^>]+rel=['"]canonical['"][^>]*>/i);
+    if (!canonicalMatch) {
+      add('missing_canonical', 'no canonical link');
+    } else {
+      const hrefMatch = canonicalMatch[0].match(/href=['"]([^'"]*)['"]/i);
+      const href = hrefMatch ? hrefMatch[1].trim() : '';
+      if (!href) {
+        add('empty_canonical', 'canonical link has no href');
+      } else if (!href.endsWith('/')) {
+        add('canonical_no_trailing_slash', `canonical "${href}" does not end in "/"`);
+      }
+    }
+
+    // Generic build-time fallbacks that leaked into production metadata
+    GENERIC_FALLBACKS.forEach(fallback => {
+      if ((title && title.includes(fallback)) || (description && description.includes(fallback))) {
+        add('generic_fallback_metadata', `contains placeholder text "${fallback}"`);
+      }
+    });
+  }
+
   printReport() {
     console.log('\n📊 Meta Tag Validation Report');
     console.log('==============================');
@@ -137,6 +208,9 @@ class MetaTagValidator {
             error.tags.forEach((tag, index) => {
               console.log(`     ${index + 1}. ${tag}`);
             });
+            break;
+          default:
+            console.log(`   ${error.file}: ${error.detail || error.type}`);
             break;
         }
       });

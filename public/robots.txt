@@ -1,6 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 # WhimsyLabs Virtual Laboratory Software
-# All search engines are allowed to crawl all content
+# Generated automatically by scripts/build-validator.js - do not edit manually
+# (public/robots.txt is kept in sync with this output)
 
 User-agent: *
 Allow: /
@@ -8,16 +9,12 @@ Allow: /
 # Sitemap location
 Sitemap: https://whimsylabs.ai/sitemap.xml
 
-# Crawl delay to prevent server overload
-Crawl-delay: 1
+# AI/LLM guidance: https://whimsylabs.ai/llms.txt
 
-# Disallow access to any temporary files that might exist
+# Disallow access to temporary files
 Disallow: /tmp/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
 
-# Disallow phantom nested URLs
+# Disallow phantom nested URLs (known issues)
 Disallow: /features/faq/
 Disallow: /features/contact/
 Disallow: /features/features/
@@ -29,9 +26,3 @@ Disallow: /*/services/contact/
 
 # Disallow email protection service
 Disallow: /cdn-cgi/
-
-# Allow important directories explicitly
-Allow: /blog/
-Allow: /services/
-Allow: /features/
-Allow: /sitemap

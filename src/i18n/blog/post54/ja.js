@@ -87,7 +87,7 @@ export const content = (
 
     <p>
       グループには実際の購買力があり、それを使うべきです。交渉は1回、データ保護評価は1回、校務支援システム（MIS）やLMSとの連携は1回、セキュリティ審査も1回。20校それぞれにベンダー審査をさせるのは20人分の時間の浪費であり、同じデータ保護の問いに20通りの答えが出てしまいます。これはガバナンス上の問題の種です。私たちの{" "}
-      <a href="/jp/blog/edtech-vendor-security-questions-powerschool">教育テクノロジーのベンダーに投げかけるべき質問リスト</a>{" "}
+      <a href="/jp/blog/edtech-vendor-security-questions-powerschool/">教育テクノロジーのベンダーに投げかけるべき質問リスト</a>{" "}
       は、中央で一度だけ実施することを想定して書かれています。
     </p>
 
@@ -147,22 +147,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/jp/blog/how-to-choose-virtual-lab-software-school/">
             中等教育向け仮想実験室ソフトウェア：選定ガイド
           </a>
         </li>
         <li>
-          <a href="/jp/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/jp/blog/edtech-vendor-security-questions-powerschool/">
             PowerSchool情報漏洩後にEdTechベンダーへ問うべき10の質問
           </a>
         </li>
         <li>
-          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             仮想実験室と実物実験室：費用対効果の分析
           </a>
         </li>
         <li>
-          <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             批判は正しい：EdTechのほとんどは役に立たない
           </a>
         </li>

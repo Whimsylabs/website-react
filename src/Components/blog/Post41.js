@@ -128,22 +128,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/virtual-kidney-dissection-send-engagement">
+          <a href="/blog/virtual-kidney-dissection-send-engagement/">
             Virtual Kidney Dissection: How Virtual Labs Boost SEND Engagement
           </a>
         </li>
         <li>
-          <a href="/blog/premium-science-education-accessible-grants">
+          <a href="/blog/premium-science-education-accessible-grants/">
             Making Premium Science Education Accessible Through Grants
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-biology-lab-dissections-microscopy">
+          <a href="/blog/virtual-biology-lab-dissections-microscopy/">
             The Virtual Biology Lab: Dissections and Microscopy Without the Barriers
           </a>
         </li>
         <li>
-          <a href="/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/blog/how-to-choose-virtual-lab-software-school/">
             How to Choose Virtual Lab Software for Your School
           </a>
         </li>

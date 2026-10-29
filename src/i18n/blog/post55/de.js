@@ -16,7 +16,7 @@ export const content = (
   <>
     <p>
       Schulen, die über VR nachdenken, fassen das Thema fast immer als Beschaffungsentscheidung auf: wie viele Brillen, zu welchem Preis, wie verwaltet, wo gelagert, von wem geladen. Das ist ein nachvollziehbarer Blickwinkel, und er ist der Grund, warum die meisten Schulen zu dem Schluss kommen, dass VR nicht bezahlbar ist. Ein Klassensatz bedeutet eine fünfstellige Verpflichtung, bevor überhaupt eine einzige Stunde damit unterrichtet wurde, und wie wir bereits schrieben, als{" "}
-      <a href="/de/blog/meta-quest-education-support-cliff-2030">Meta seine kommerzielle Bildungsplattform eingestellt hat</a>, trägt diese Hardware inzwischen einen veröffentlichten Support-Horizont.
+      <a href="/de/blog/meta-quest-education-support-cliff-2030/">Meta seine kommerzielle Bildungsplattform eingestellt hat</a>, trägt diese Hardware inzwischen einen veröffentlichten Support-Horizont.
     </p>
 
     <p>
@@ -53,7 +53,7 @@ export const content = (
 
     <p>
       Die eigentliche Gerechtigkeitsarbeit liegt woanders, und es ist dieselbe wie immer: dafür zu sorgen, dass das Grunderlebnis auf einem bescheidenen Laptop zu Hause hervorragend ist und dass{" "}
-      <a href="/de/blog/vr-headsets-vs-chromebooks-cost-per-student">geringe Bandbreite und schwache Hardware</a>{" "}
+      <a href="/de/blog/vr-headsets-vs-chromebooks-cost-per-student/">geringe Bandbreite und schwache Hardware</a>{" "}
       als normale Betriebsbedingungen gelten und nicht als Sonderfälle.
     </p>
 
@@ -65,7 +65,7 @@ export const content = (
 
     <p>
       Am deutlichsten ist das beim manuellen Arbeiten. Pipettieren, Titrieren, ein Mikroskop scharf stellen, einen optischen Aufbau justieren. Dabei tun zwei Hände in räumlicher Beziehung zueinander Unterschiedliches, und eine Brille mit getrackten Controllern bildet das weit getreuer ab als eine Maus. Wer irgendwann an einer echten Laborbank stehen wird, gewinnt aus der Brille deutlich übertragbarere Übung, wie wir es im Beitrag über{" "}
-      <a href="/de/blog/virtual-reality-prepares-students-real-world-stem-careers">VR und praktische Laborfertigkeiten</a> dargelegt haben.
+      <a href="/de/blog/virtual-reality-prepares-students-real-world-stem-careers/">VR und praktische Laborfertigkeiten</a> dargelegt haben.
     </p>
 
     <p>
@@ -80,7 +80,7 @@ export const content = (
 
     <p>
       Mehr als für alle anderen. Eine{" "}
-      <a href="/de/blog/virtual-labs-online-schools-distance-learning">Onlineschule</a>{" "}
+      <a href="/de/blog/virtual-labs-online-schools-distance-learning/">Onlineschule</a>{" "}
       hat kein Labor, keine Gerätekammer und keine Möglichkeit, jemandem ein Instrument in die Hand zu drücken. Sie hat auch keinen Brillenbestand und wird nie einen haben, weil es keinen Standort gibt, an dem er stehen könnte.
     </p>
 
@@ -97,7 +97,7 @@ export const content = (
     <ul>
       <li>
         <strong>Kinder- und Jugendschutz.</strong> Fragen Sie, was aus der Anwendung heraus erreichbar ist. Eine Plattform ohne Chatfunktion, ohne nutzergenerierte Inhalte und ohne Ausgang ins offene Netz ist auf einem privaten Gerät deutlich einfacher abzusichern als eine mit sozialen Funktionen. Das ist einer der Gründe, warum{" "}
-        <a href="/blog/dfe-ai-safety-standards-tutor-checklist">WhimsyCat kein Chatfenster für Lernende hat</a>.
+        <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">WhimsyCat kein Chatfenster für Lernende hat</a>.
       </li>
       <li>
         <strong>Altersfreigaben.</strong> Die meisten Consumer-Brillen haben ein vom Hersteller festgelegtes Mindestalter. Darüber entscheidet die Familie, nicht die Schule, aber die Schule sollte es kennen und darf nicht den Eindruck erwecken, eine Brille werde erwartet.
@@ -124,22 +124,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/meta-quest-education-support-cliff-2030">
+          <a href="/de/blog/meta-quest-education-support-cliff-2030/">
             Die VR-Brillen Ihrer Schule haben gerade ihre Roadmap verloren
           </a>
         </li>
         <li>
-          <a href="/de/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/de/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             VR-Brillen oder Chromebooks für virtuelle Labore: Kostenvergleich 2026
           </a>
         </li>
         <li>
-          <a href="/de/blog/vr-winter-web-first-virtual-labs">
+          <a href="/de/blog/vr-winter-web-first-virtual-labs/">
             VR-Winter? Warum web-first virtuelle Labore für Schulen klug sind
           </a>
         </li>
         <li>
-          <a href="/de/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/de/blog/virtual-labs-online-schools-distance-learning/">
             Virtuelle Labore für Onlineschulen: Naturwissenschaft auf Distanz
           </a>
         </li>

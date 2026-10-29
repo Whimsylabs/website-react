@@ -210,7 +210,7 @@ export const content = (
       Das ist die Zukunft, die wir mit WhimsyCat aufbauen. Keine KI, die Lehrerexpertise ersetzt, sondern eine KI, die sie erweitert. Technologie, die das tut, was KI gut kann, während sie sich fest an ihre Grenzen hält bei Dingen, die nur Menschen können.
     </p>
     <p>
-      Wenn Sie sehen möchten, wie das in der Praxis aussieht, <a href="/contact">nehmen Sie Kontakt auf</a>. Wir zeigen Ihnen WhimsyCat in Aktion und lassen Sie selbst beurteilen, was er kann und was nicht.
+      Wenn Sie sehen möchten, wie das in der Praxis aussieht, <a href="/contact/">nehmen Sie Kontakt auf</a>. Wir zeigen Ihnen WhimsyCat in Aktion und lassen Sie selbst beurteilen, was er kann und was nicht.
     </p>
 
     <div className="references-section">
@@ -271,10 +271,10 @@ export const content = (
 
     <h2>Weiterführende Lektüre</h2>
     <ul>
-      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education">Lernen Sie WhimsyCat kennen: KI-Tutor für den Naturwissenschaftsunterricht</a></li>
-      <li><a href="/de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat: Frustrationserkennung mit KI</a></li>
-      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
-      <li><a href="/de/blog/ai-assessment-crisis-solution">KI-Bewertung in den Naturwissenschaften: Von der Krise zur Lösung</a></li>
+      <li><a href="/de/blog/whimsycat-ai-tutor-transforming-science-education/">Lernen Sie WhimsyCat kennen: KI-Tutor für den Naturwissenschaftsunterricht</a></li>
+      <li><a href="/de/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">WhimsyCat: Frustrationserkennung mit KI</a></li>
+      <li><a href="/de/blog/teachers-are-experts-custom-experiment-designer/">Lehrkräfte sind die Experten. Wir bauen nur die Werkzeuge.</a></li>
+      <li><a href="/de/blog/ai-assessment-crisis-solution/">KI-Bewertung in den Naturwissenschaften: Von der Krise zur Lösung</a></li>
     </ul>
   </>
 );

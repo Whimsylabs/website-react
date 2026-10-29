@@ -49,6 +49,9 @@ const config = {
   defaultLanguage: 'en'
 };
 
+// Our /jp/ URL prefix carries language "ja" — hreflang and <html lang> need the ISO 639-1 code
+const toHreflangCode = (lang) => (lang === 'jp' ? 'ja' : lang);
+
 // Import translations for metadata
 const { translations } = require('./src/i18n/translations.js');
 
@@ -110,9 +113,16 @@ const getPageMetadata = (lang = 'en') => ({
     description: "SafeLab by WhimsyLabs: simulation training where process and lab staff practise COSHH handling, spill response and quality procedures repeatedly, on standard PCs or VR. Ufi VocTech funded. Free pilot places open.",
     keywords: "industrial safety training simulation, COSHH training, spill response training, VR safety training, process operator training, lab technician training, competency assessment",
   },
+  "/industrial-v2": {
+    // Internal design concept, English-only, noindex. Delete this block, the
+    // routeComponentMap entry and the englishOnlyRoutes entry to remove v2.
+    title: "Industrial v2 concept | WhimsyLabs",
+    description: "Internal design concept for the industrial page. Not for public indexing. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah .",
+    keywords: "",
+  },
   "/data-security": {
     title: translations[lang]?.dataSecurity?.title || "Student Data Security | WhimsyLabs Virtual Lab Software",
-    description: translations[lang]?.dataSecurity?.description || "How WhimsyLabs protects student data with isolated per-school deployments, no AI training, full GDPR/FERPA/COPPA compliance.",
+    description: translations[lang]?.dataSecurity?.description || "How WhimsyLabs protects student data with per-school encryption keys, no AI training on student data, full GDPR/FERPA/COPPA compliance.",
     keywords: "student data privacy, EdTech security, FERPA compliance, GDPR education, virtual lab data protection, school data security",
   },
   "/chemistry": {
@@ -159,6 +169,7 @@ const routeComponentMap = {
   "/privacy": "PrivacyPage",
   "/data-security": "DataSecurityPage",
   "/industrial": "IndustrialPage",
+  "/industrial-v2": "IndustrialPageV2",
   "/bett": "BettPage",
   "/grants": "GrantsPage",
   "/grants/royal-society": "RoyalSocietyGrantPage",
@@ -310,6 +321,13 @@ async function loadReactComponents() {
     ReactComponents.IndustrialPage =
       require("./src/Components/IndustrialPage.js").default;
     console.log("✅ Loaded IndustrialPage");
+
+    // v2 design concept, served alongside v1 at /industrial-v2 for comparison.
+    // Remove this require together with the two entries above and the
+    // englishOnlyRoutes / metadata-injector entries to drop v2 entirely.
+    ReactComponents.IndustrialPageV2 =
+      require("./src/Components/IndustrialPageV2.js").default;
+    console.log("✅ Loaded IndustrialPageV2");
 
     ReactComponents.BettPage = require("./src/Components/BettPage.js").default;
     console.log("✅ Loaded BettPage");
@@ -944,6 +962,206 @@ async function getBlogPosts(language = 'en') {
   }
 }
 
+/* ---------------------------------------------------------------------------
+ * Helmet head collection
+ *
+ * Pages are server-rendered inside a HelmetProvider (scripts/component-renderer.js),
+ * but the collected Helmet output used to be thrown away. Anything a component
+ * declared in <Helmet> - robots meta, stylesheet links, JSON-LD, extra OG tags -
+ * worked under `npm start` and silently vanished from the static build. The
+ * helpers below merge that output into the head alongside scripts/metadata-injector.js.
+ *
+ * PRECEDENCE. The injector is authoritative for the small set of tags it curates
+ * per route in its own translated metadata table; Helmet is authoritative for
+ * everything else, and either side fills a gap the other leaves. Two concrete
+ * reasons the curated set is NOT ceded to Helmet:
+ *
+ *   - Components hardcode English. Blog.js declares an English <title> while the
+ *     injector ships a translated one, so letting Helmet win would replace the
+ *     localised title on /es/blog/, /fr/blog/, /de/blog/ and /jp/blog/ with English.
+ *   - Components duplicate each other. IndustrialPageV2's Helmet title is
+ *     byte-identical to the title /industrial/ already ships, so letting Helmet
+ *     win would put the same <title> on two live pages.
+ *
+ * Canonical stays with the injector for a third reason: it is emitted as one
+ * consistent cluster with the hreflang alternates (generateCanonicalAndHreflangTags),
+ * and replacing only the canonical half would desynchronise the pair.
+ * ------------------------------------------------------------------------- */
+
+// Tag identities the metadata injector owns outright. Everything else a
+// component declares in <Helmet> overrides the injector's generic default.
+const INJECTOR_OWNED_HEAD_TAGS = new Set([
+  "title",
+  "meta:name:description",
+  "meta:name:keywords",
+  "link:rel:canonical",
+]);
+
+// Matches a single <title>, <meta> or <link> in a head fragment.
+const headTagPattern = () =>
+  /<title\b[^>]*>[\s\S]*?<\/title>|<(?:meta|link)\b[^>]*?>/gi;
+
+/**
+ * Stable de-duplication key for a head tag, or null when the tag has no
+ * identity worth de-duplicating on (e.g. <meta charset>).
+ * @param {string} tag - A single head tag
+ * @returns {string|null}
+ */
+function headTagIdentity(tag) {
+  const attr = (name) => {
+    const m = tag.match(
+      new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, "i")
+    );
+    if (!m) return null;
+    return (m[1] !== undefined ? m[1] : m[2]).trim().toLowerCase();
+  };
+
+  if (/^<title\b/i.test(tag)) return "title";
+
+  if (/^<meta\b/i.test(tag)) {
+    for (const key of ["name", "property", "http-equiv", "itemprop"]) {
+      const value = attr(key);
+      if (value) return `meta:${key}:${value}`;
+    }
+    return null;
+  }
+
+  if (/^<link\b/i.test(tag)) {
+    const rel = attr("rel");
+    if (!rel) return null;
+    // Only rel values that must appear at most once are keyed by rel alone.
+    // hreflang alternates, preloads and stylesheets legitimately repeat, so
+    // they include the href and therefore collapse only on an exact duplicate.
+    if (rel === "canonical") return "link:rel:canonical";
+    return `link:rel:${rel}:${attr("href") || ""}`;
+  }
+
+  return null;
+}
+
+/**
+ * Split a head fragment into tags paired with their identity.
+ * @param {string} html - Head fragment
+ * @returns {Array<{tag: string, identity: string|null}>}
+ */
+function splitHeadTags(html) {
+  return (html.match(headTagPattern()) || []).map((tag) => ({
+    tag,
+    identity: headTagIdentity(tag),
+  }));
+}
+
+/**
+ * Render Helmet's tags in the same shape the metadata injector emits.
+ *
+ * react-helmet-async writes `<meta data-rh="true" property="og:title" ... />`.
+ * That is valid HTML, but the SEO validators in scripts/ parse the build output
+ * with attribute-order-sensitive regexes such as
+ * `/<meta property="og:([^"]+)" content="([^"]+)">/`, so a Helmet-shaped tag
+ * reads to them as a missing tag. Dropping the marker attribute and the XHTML
+ * self-closing slash keeps the whole head in one convention and leaves those
+ * validators working. It also matches how Helmet already behaves on the client
+ * today, where it appends its tags rather than adopting the pre-rendered ones.
+ *
+ * @param {string} tag - A single head tag emitted by react-helmet-async
+ * @returns {string}
+ */
+function normalizeHelmetTag(tag) {
+  // Helmet always emits data-rh first, straight after the tag name, so anchoring
+  // the match there keeps it away from any content inside <script>/<style>.
+  const withoutMarker = tag.replace(
+    /(<[a-z][a-z0-9-]*)\s+data-rh=(?:"[^"]*"|'[^']*')/gi,
+    "$1"
+  );
+  // Only void elements get the self-closing slash removed; doing this blindly
+  // could corrupt characters inside a JSON-LD payload.
+  return /^<(?:meta|link|base)\b/i.test(withoutMarker)
+    ? withoutMarker.replace(/\s*\/>$/, ">")
+    : withoutMarker;
+}
+
+/**
+ * Merge react-helmet-async SSR output with the metadata injector's head tags so
+ * that every tag identity appears exactly once.
+ *
+ * Note that react-helmet-async emits `<title data-rh="true"></title>` even for a
+ * component that declares no <Helmet> at all, so the empty-title case has to be
+ * dropped here or every Helmet-free page would ship two <title> tags.
+ *
+ * @param {Object|null} helmet - helmetContext.helmet from ComponentRenderer
+ * @param {string} injectorMeta - Head fragment from MetadataInjector
+ * @returns {{meta: string, helmetMeta: string, helmetAssets: string}}
+ */
+function mergeHelmetHead(helmet, injectorMeta) {
+  const section = (key) =>
+    helmet && helmet[key] && typeof helmet[key].toString === "function"
+      ? helmet[key].toString().trim()
+      : "";
+
+  // <base>, <style>, <script> carry no comparable identity, so they are always
+  // additive. Multiple ld+json blocks per page are valid and already the norm here.
+  const passthrough = ["base", "style", "script", "noscript"]
+    .map(section)
+    .filter(Boolean)
+    .map(normalizeHelmetTag)
+    .join("\n    ");
+
+  const helmetTags = splitHeadTags(
+    ["title", "meta", "link"].map(section).filter(Boolean).join("\n")
+  );
+
+  const injectorIdentities = new Set(
+    splitHeadTags(injectorMeta)
+      .map((t) => t.identity)
+      .filter(Boolean)
+  );
+  const helmetIdentities = new Set(
+    helmetTags.map((t) => t.identity).filter(Boolean)
+  );
+
+  // Helmet side: drop what the injector owns and actually emitted.
+  const keptHelmetTags = helmetTags.filter(
+    (t) =>
+      !(
+        t.identity &&
+        injectorIdentities.has(t.identity) &&
+        INJECTOR_OWNED_HEAD_TAGS.has(t.identity)
+      )
+  );
+
+  // Injector side: drop what Helmet declared and the injector does not own.
+  const keptInjectorMeta = injectorMeta
+    .replace(headTagPattern(), (tag) => {
+      const identity = headTagIdentity(tag);
+      const overriddenByHelmet =
+        identity &&
+        helmetIdentities.has(identity) &&
+        !INJECTOR_OWNED_HEAD_TAGS.has(identity);
+      return overriddenByHelmet ? "" : tag;
+    })
+    // Tidy the whitespace-only lines left behind by removed tags.
+    .replace(/\n[ \t]*(?=\n)/g, "");
+
+  const isMetaish = (t) => /^<(?:title|meta)\b/i.test(t.tag);
+
+  return {
+    meta: keptInjectorMeta,
+    helmetMeta: keptHelmetTags
+      .filter(isMetaish)
+      .map((t) => normalizeHelmetTag(t.tag))
+      .join("\n    "),
+    helmetAssets: [
+      keptHelmetTags
+        .filter((t) => !isMetaish(t))
+        .map((t) => normalizeHelmetTag(t.tag))
+        .join("\n    "),
+      passthrough,
+    ]
+      .filter(Boolean)
+      .join("\n    "),
+  };
+}
+
 /**
  * Generate HTML for a route using React Server-Side Rendering
  * @param {string} route - The route to render
@@ -1075,11 +1293,15 @@ async function generatePageHTML(route, data = {}) {
       route
     );
 
+    // Fold the component's <Helmet> declarations into the injector's head tags.
+    // See mergeHelmetHead above for the precedence rule.
+    const head = mergeHelmetHead(renderResult.helmet, completeMetadata.meta);
+
     const currentLang = data.language || config.defaultLanguage;
 
     // Generate complete HTML document
     const html = `<!DOCTYPE html>
-<html lang="${currentLang}">
+<html lang="${toHreflangCode(currentLang)}">
 <head>
     <!-- Cookie Consent & Conditional GTM -->
     <script>
@@ -1109,9 +1331,11 @@ async function generatePageHTML(route, data = {}) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    ${completeMetadata.meta}
+    ${head.meta}
+    ${head.helmetMeta}
     ${assets.preload}
     ${assets.css}
+    ${head.helmetAssets}
     ${completeMetadata.script}
     <script>
         // Set initial route and language for React Router
@@ -1128,9 +1352,9 @@ async function generatePageHTML(route, data = {}) {
             <p>Please enable JavaScript to use this website.</p>
             <nav style="margin-top: 20px;">
                 <a href="/" style="margin: 0 10px;">Home</a>
-                <a href="/blog" style="margin: 0 10px;">Blog</a>
-                <a href="/contact" style="margin: 0 10px;">Contact</a>
-                <a href="/faq" style="margin: 0 10px;">FAQ</a>
+                <a href="/blog/" style="margin: 0 10px;">Blog</a>
+                <a href="/contact/" style="margin: 0 10px;">Contact</a>
+                <a href="/faq/" style="margin: 0 10px;">FAQ</a>
             </nav>
         </div>
     </noscript>
@@ -1240,6 +1464,24 @@ async function generateSitemap() {
     const posts = await getBlogPosts('en'); // Use English posts for sitemap structure
     const currentDate = new Date().toISOString().split("T")[0];
 
+    // Stable lastmod per static page from the component's last git commit.
+    // Using the build date here made every deploy look like a site-wide update,
+    // burning the Google Indexing API quota on unchanged pages.
+    const { execSync } = require('child_process');
+    const getStaticLastmod = (routePath) => {
+      const key = routePath === '/' ? '/' : routePath.replace(/\/$/, '');
+      const componentName = routeComponentMap[key];
+      if (!componentName) return currentDate;
+      try {
+        const out = execSync(`git log -1 --format=%cs -- "src/Components/${componentName}.js"`, {
+          encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore']
+        }).trim();
+        return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : currentDate;
+      } catch (e) {
+        return currentDate;
+      }
+    };
+
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
 
@@ -1280,6 +1522,7 @@ async function generateSitemap() {
       const isEnglishOnly = englishOnlyRoutes.includes(page.path.replace(/\/$/, ''));
       const pageLangs = isEnglishOnly ? [config.defaultLanguage] : config.supportedLanguages;
 
+      const pageLastmod = getStaticLastmod(page.path);
       for (const lang of pageLangs) {
         const langPrefix = lang === config.defaultLanguage ? '' : `/${lang}`;
         const url = `${config.siteUrl}${langPrefix}${page.path}`;
@@ -1287,17 +1530,19 @@ async function generateSitemap() {
         sitemap += `
     <url>
         <loc>${url}</loc>
-        <lastmod>${currentDate}</lastmod>
+        <lastmod>${pageLastmod}</lastmod>
         <changefreq>${page.changefreq}</changefreq>
         <priority>${page.priority}</priority>`;
 
-        // Add alternate language links
+        // Add alternate language links (hreflang needs ISO 639-1: our /jp/ prefix is language "ja")
         for (const altLang of pageLangs) {
           const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
           const altUrl = `${config.siteUrl}${altLangPrefix}${page.path}`;
           sitemap += `
-        <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}"/>`;
+        <xhtml:link rel="alternate" hreflang="${toHreflangCode(altLang)}" href="${altUrl}"/>`;
         }
+        sitemap += `
+        <xhtml:link rel="alternate" hreflang="x-default" href="${config.siteUrl}${page.path}"/>`;
 
         sitemap += `
     </url>`;
@@ -1326,13 +1571,17 @@ async function generateSitemap() {
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>`;
 
-        // Add alternate language links for blog posts
+        // Add alternate language links for blog posts (hreflang needs ISO 639-1: /jp/ prefix is language "ja")
         for (const altLang of config.supportedLanguages) {
           if (allowedLangs && !allowedLangs.includes(altLang)) continue; // region-specific: omit unpublished languages
           const altLangPrefix = altLang === config.defaultLanguage ? '' : `/${altLang}`;
           const altUrl = `${config.siteUrl}${altLangPrefix}/blog/${post.id}/`;
           sitemap += `
-        <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}"/>`;
+        <xhtml:link rel="alternate" hreflang="${toHreflangCode(altLang)}" href="${altUrl}"/>`;
+        }
+        if (!allowedLangs || allowedLangs.includes(config.defaultLanguage)) {
+          sitemap += `
+        <xhtml:link rel="alternate" hreflang="x-default" href="${config.siteUrl}/blog/${post.id}/"/>`;
         }
         
         sitemap += `
@@ -1379,6 +1628,8 @@ async function generateLlmsTxt() {
 
 The site is available in English (default, no URL prefix), Spanish (/es/), French (/fr/), German (/de/), and Japanese (/jp/).
 
+Full text of every key page and blog post: ${config.siteUrl}/llms-full.txt
+
 ## Key pages
 
 - [Home](${config.siteUrl}/): What WhimsyLabs is, how the physics-first simulation and AI assessment work
@@ -1390,7 +1641,7 @@ The site is available in English (default, no URL prefix), Spanish (/es/), Frenc
 - [Virtual Chemistry Lab](${config.siteUrl}/chemistry/): Titrations, reactions, electrolysis with simulated chemistry
 - [Virtual Biology Lab](${config.siteUrl}/biology/): Dissections, microscopy, and physiology
 - [Virtual Physics Lab](${config.siteUrl}/physics/): Mechanics, circuits, waves on a real-time physics engine
-- [FAQ](${config.siteUrl}/faq/): 40+ answered questions on pricing, setup, VR requirements, and curriculum fit
+- [FAQ](${config.siteUrl}/faq/): dozens of answered questions on pricing, setup, VR requirements, and curriculum fit
 - [Grants](${config.siteUrl}/grants/): Funding routes schools can use to pay for WhimsyLabs
 - [Data Security](${config.siteUrl}/data-security/): Student data protection, GDPR/FERPA/COPPA compliance
 - [Contact](${config.siteUrl}/contact/): Book a demo or request a school trial
@@ -1406,9 +1657,80 @@ The site is available in English (default, no URL prefix), Spanish (/es/), Frenc
 
     await fs.writeFile(`${config.distDir}/llms.txt`, llmsTxt);
     console.log(`✅ Generated llms.txt with ${sortedPosts.length} blog posts`);
+
+    await generateLlmsFullTxt(sortedPosts);
   } catch (error) {
     console.error("❌ Error generating llms.txt:", error);
   }
+}
+
+// llms-full.txt: the full-text companion to llms.txt, so AI assistants can
+// ingest the whole English site's content in one fetch (https://llmstxt.org/)
+async function generateLlmsFullTxt(sortedPosts) {
+  const decodeEntities = (s) => s
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;|&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');
+
+  const extractPageText = async (routePath) => {
+    const dir = routePath === '/' ? '' : routePath.replace(/\/$/, '');
+    const filePath = `${config.distDir}${dir}/index.html`;
+    if (!await fs.pathExists(filePath)) return null;
+    let html = await fs.readFile(filePath, 'utf8');
+    // Prefer the article body; fall back to the whole page
+    const articleMatch = html.match(/<article[\s\S]*?<\/article>/);
+    const mainMatch = html.match(/<main[\s\S]*?<\/main>/);
+    let content = articleMatch ? articleMatch[0] : (mainMatch ? mainMatch[0] : html);
+    content = content
+      .replace(/<script[\s\S]*?<\/script>/g, ' ')
+      .replace(/<style[\s\S]*?<\/style>/g, ' ')
+      .replace(/<noscript[\s\S]*?<\/noscript>/g, ' ')
+      .replace(/<[^>]+>/g, ' ');
+    return decodeEntities(content).replace(/\s+/g, ' ').trim();
+  };
+
+  const keyPages = [
+    { path: '/', title: 'Home' },
+    { path: '/features/', title: 'Features' },
+    { path: '/services/', title: 'Services' },
+    { path: '/ai-assessment/', title: 'AI-Proof Assessment' },
+    { path: '/choose-virtual-lab/', title: 'How to Choose Virtual Lab Software' },
+    { path: '/send/', title: 'SEND Science Practicals' },
+    { path: '/chemistry/', title: 'Virtual Chemistry Lab' },
+    { path: '/biology/', title: 'Virtual Biology Lab' },
+    { path: '/physics/', title: 'Virtual Physics Lab' },
+    { path: '/faq/', title: 'FAQ' },
+    { path: '/grants/', title: 'Grants' },
+    { path: '/data-security/', title: 'Data Security' }
+  ];
+
+  let fullTxt = `# WhimsyLabs (full content)
+
+> Full-text version of https://whimsylabs.ai/ for AI assistants. See ${config.siteUrl}/llms.txt for the index. All URLs below are canonical.
+
+`;
+
+  let included = 0;
+  for (const page of keyPages) {
+    const text = await extractPageText(page.path);
+    if (!text) continue;
+    fullTxt += `## ${page.title}\nURL: ${config.siteUrl}${page.path}\n\n${text}\n\n`;
+    included++;
+  }
+
+  fullTxt += `# Blog posts\n\n`;
+  for (const post of sortedPosts) {
+    const text = await extractPageText(`/blog/${post.id}/`);
+    if (!text) continue;
+    fullTxt += `## ${post.title}\nURL: ${config.siteUrl}/blog/${post.id}/\nDate: ${post.date}\n\n${text}\n\n`;
+    included++;
+  }
+
+  await fs.writeFile(`${config.distDir}/llms-full.txt`, fullTxt);
+  console.log(`✅ Generated llms-full.txt with ${included} pages of full text`);
 }
 
 // Validate build consistency

@@ -142,7 +142,7 @@ export const content = (
     </p>
 
     <p>
-      これを実際に見ることに興味がありますか？<a href="/contact">お問い合わせください</a>、WhimsyLabsがあなたの学校の実践的な科学評価をどのように改善できるかを学んでください。
+      これを実際に見ることに興味がありますか？<a href="/contact/">お問い合わせください</a>、WhimsyLabsがあなたの学校の実践的な科学評価をどのように改善できるかを学んでください。
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

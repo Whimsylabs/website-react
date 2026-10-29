@@ -108,7 +108,7 @@ export const content = (
       </li>
       <li>
         <strong>Behalten Sie den Labortisch.</strong> Wo Labore vorhanden sind, nutzen Sie Simulation zur Vorbereitung darauf statt als Ersatz. Das{" "}
-        <a href="/de/blog/flipped-practical-preloading-lab-skills">Modell des umgedrehten Praktikums</a>{" "}
+        <a href="/de/blog/flipped-practical-preloading-lab-skills/">Modell des umgedrehten Praktikums</a>{" "}
         gilt für das IB genauso wie überall sonst.
       </li>
     </ul>
@@ -131,22 +131,22 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/de/blog/virtual-labs-online-schools-distance-learning/">
             Virtuelle Labore für Online-Schulen: Naturwissenschaft auf Distanz
           </a>
         </li>
         <li>
-          <a href="/de/blog/flipped-practical-preloading-lab-skills">
+          <a href="/de/blog/flipped-practical-preloading-lab-skills/">
             Das umgedrehte Praktikum: kompetent an den Labortisch kommen
           </a>
         </li>
         <li>
-          <a href="/de/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/de/blog/why-traditional-virtual-labs-fail-physics-engine/">
             Warum andere virtuelle Labore scheitern: die Physik-Engine als Lösung
           </a>
         </li>
         <li>
-          <a href="/de/blog/process-based-lab-assessment-future">
+          <a href="/de/blog/process-based-lab-assessment-future/">
             Den Prozess bewerten, nicht die Antwort
           </a>
         </li>

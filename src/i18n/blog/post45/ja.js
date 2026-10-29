@@ -118,22 +118,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/jp/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             VRヘッドセット対Chromebook：2026年の仮想実験室コストガイド
           </a>
         </li>
         <li>
-          <a href="/jp/blog/vr-winter-web-first-virtual-labs">
+          <a href="/jp/blog/vr-winter-web-first-virtual-labs/">
             VRの冬？ウェブファーストの仮想実験室が賢明な投資である理由
           </a>
         </li>
         <li>
-          <a href="/jp/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/jp/blog/how-to-choose-virtual-lab-software-school/">
             中等教育向けバーチャルラボソフトウェア：購入ガイド
           </a>
         </li>
         <li>
-          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             仮想実験室と実際の実験室：費用対効果の分析
           </a>
         </li>

@@ -263,23 +263,23 @@ export const content = (
       Nous suivrons le sommet de près et mettrons à jour notre compréhension au fur et à mesure que
       plus de détails émergeront. En attendant, si vous êtes curieux de savoir comment le tutorat
       et l'évaluation par IA fonctionnent réellement en pratique,{" "}
-      <a href="/contact">contactez-nous</a>. Nous serons heureux de partager ce que nous avons appris.
+      <a href="/contact/">contactez-nous</a>. Nous serons heureux de partager ce que nous avons appris.
     </p>
 
     <h2>Articles connexes</h2>
     <ul>
       <li>
-        <a href="/fr/blog/ai-assessment-crisis-solution">
+        <a href="/fr/blog/ai-assessment-crisis-solution/">
           Évaluation par IA : Comment la technologie répond à la crise de la notation
         </a>
       </li>
       <li>
-        <a href="/fr/blog/ai-science-tutor-classroom-what-works">
+        <a href="/fr/blog/ai-science-tutor-classroom-what-works/">
           Tuteurs de sciences par IA en classe : Qu'est-ce qui fonctionne vraiment ?
         </a>
       </li>
       <li>
-        <a href="/fr/blog/premium-science-education-accessible-grants">
+        <a href="/fr/blog/premium-science-education-accessible-grants/">
           Rendre l'éducation scientifique premium accessible à toutes les écoles
         </a>
       </li>

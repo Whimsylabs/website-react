@@ -140,22 +140,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/jp/blog/oecd-ai-learning-paradox-virtual-labs/">
             AIが成績を127%押し上げた。その後、生徒は考えられなくなった。
           </a>
         </li>
         <li>
-          <a href="/jp/blog/teachers-are-experts-custom-experiment-designer">
+          <a href="/jp/blog/teachers-are-experts-custom-experiment-designer/">
             専門家は教員です。私たちは道具を作るだけ。
           </a>
         </li>
         <li>
-          <a href="/jp/blog/ai-science-tutor-classroom-what-works">
+          <a href="/jp/blog/ai-science-tutor-classroom-what-works/">
             教室でのAI理科チューター：実際に効果があるもの
           </a>
         </li>
         <li>
-          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">
             WhimsyCatがチャット画面なしでDfEのAI安全基準を満たす方法
           </a>
         </li>

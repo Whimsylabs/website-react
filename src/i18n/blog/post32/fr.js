@@ -169,7 +169,7 @@ export const content = (
       </a>
     </p>
     <p>
-      J'espère vous y voir. Et si vous ne pouvez pas y assister mais souhaitez en savoir plus sur l'évaluation axée sur le processus dans les laboratoires virtuels, n'hésitez pas à <a href="/contact">nous contacter</a> directement. Nous sommes toujours heureux de discuter de la façon dont WhimsyLabs peut soutenir l'évaluation authentique dans votre école ou établissement.
+      J'espère vous y voir. Et si vous ne pouvez pas y assister mais souhaitez en savoir plus sur l'évaluation axée sur le processus dans les laboratoires virtuels, n'hésitez pas à <a href="/contact/">nous contacter</a> directement. Nous sommes toujours heureux de discuter de la façon dont WhimsyLabs peut soutenir l'évaluation authentique dans votre école ou établissement.
     </p>
 
     <div className="references-section">
@@ -189,10 +189,10 @@ export const content = (
 
     <h2>Pour aller plus loin</h2>
     <ul>
-      <li><a href="/fr/blog/ai-assessment-crisis-solution">The AI Assessment Crisis: How Virtual Labs Offer a Solution</a></li>
-      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
-      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Watches What You Do</a></li>
-      <li><a href="/fr/blog/how-to-choose-virtual-lab-software-school">How to Choose Virtual Lab Software for Your School</a></li>
+      <li><a href="/fr/blog/ai-assessment-crisis-solution/">The AI Assessment Crisis: How Virtual Labs Offer a Solution</a></li>
+      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education/">Meet WhimsyCat: The AI Tutor That Watches What You Do</a></li>
+      <li><a href="/fr/blog/how-to-choose-virtual-lab-software-school/">How to Choose Virtual Lab Software for Your School</a></li>
     </ul>
   </>
 );

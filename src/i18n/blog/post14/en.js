@@ -388,23 +388,23 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/24-7-ai-tutoring-personalized-daily-recommendations">
+        <a href="/blog/24-7-ai-tutoring-personalized-daily-recommendations/">
           24/7 AI Tutoring: How Personalized Support Helps Students Never Fall
           Behind
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/blog/sandbox-learning-revolution-stem-education/">
           The Sandbox Learning Revolution: Why Freedom to Fail is Essential
         </a>
       </li>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education/">
           Meet WhimsyCat: The AI Tutor That Makes Learning Engaging
         </a>
       </li>

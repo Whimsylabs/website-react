@@ -55,7 +55,7 @@ export const content = (
 
     <h3>UK Funding Opportunities</h3>
     <p>
-      The <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a> programme offers UK state schools up to £3,000 for investigative STEM projects. We've worked with dozens of schools to secure these grants for VR science labs. The Royal Society provides the funding for hardware. We provide the software free of charge.
+      The <a href="/blog/royal-society-partnership-grants-vr-science-labs/">Royal Society Partnership Grants</a> programme offers UK state schools up to £3,000 for investigative STEM projects. We've worked with dozens of schools to secure these grants for VR science labs. The Royal Society provides the funding for hardware. We provide the software free of charge.
     </p>
     <p>
       Beyond the Royal Society, UK schools can access:
@@ -170,7 +170,7 @@ export const content = (
 
     <h2>Get Started</h2>
     <p>
-      If you're interested in bringing WhimsyLabs to your school through grant funding, we're here to help. Start by visiting our <a href="/grants">grants and funding page</a>. You'll find details on specific funding opportunities and how we can support your application.
+      If you're interested in bringing WhimsyLabs to your school through grant funding, we're here to help. Start by visiting our <a href="/grants/">grants and funding page</a>. You'll find details on specific funding opportunities and how we can support your application.
     </p>
     <p>
       Premium science education shouldn't be reserved for wealthy schools. With the right funding and the right support, it's accessible to everyone.
@@ -198,10 +198,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtual Labs vs Physical Labs: The Real Cost Comparison</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: The AI Tutor That Actually Understands Science</a></li>
-      <li><a href="/blog/edtech-vendor-security-questions-powerschool">10 Questions to Ask EdTech Vendors About Data Security</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">UK Schools: Get £3,000 for VR Science Labs</a></li>
+      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Virtual Labs vs Physical Labs: The Real Cost Comparison</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education/">Meet WhimsyCat: The AI Tutor That Actually Understands Science</a></li>
+      <li><a href="/blog/edtech-vendor-security-questions-powerschool/">10 Questions to Ask EdTech Vendors About Data Security</a></li>
     </ul>
   </>
 );

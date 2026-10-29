@@ -176,7 +176,7 @@ export const content = (
       受け取った回答を文書化してください。契約にセキュリティ要件を含めてください。そして、明確な回答を提供できないベンダーから離れることを恐れないでください。
     </p>
     <p>
-      WhimsyLabsでは、透明性が信頼を築くと信じています。私たちのバーチャル理科実験室を検討しているすべての学校に、これら10の質問すべてに喜んでお答えします。<a href="/contact">お問い合わせください</a>。完全なセキュリティ文書をお送りします。
+      WhimsyLabsでは、透明性が信頼を築くと信じています。私たちのバーチャル理科実験室を検討しているすべての学校に、これら10の質問すべてに喜んでお答えします。<a href="/contact/">お問い合わせください</a>。完全なセキュリティ文書をお送りします。
     </p>
 
     <div className="references-section">
@@ -257,9 +257,9 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">英国の学校：VR理科実験室に3,000ポンドの助成金を取得</a></li>
-      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です。私たちはツールを作るだけです。</a></li>
-      <li><a href="/jp/blog/ai-assessment-crisis-solution">AI検出は機能しません。プロセスベースの評価は機能します。</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">英国の学校：VR理科実験室に3,000ポンドの助成金を取得</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer/">教師は専門家です。私たちはツールを作るだけです。</a></li>
+      <li><a href="/jp/blog/ai-assessment-crisis-solution/">AI検出は機能しません。プロセスベースの評価は機能します。</a></li>
     </ul>
   </>
 );

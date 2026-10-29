@@ -210,7 +210,7 @@ export const content = (
       C'est l'avenir que nous construisons avec WhimsyCat. Pas une IA qui remplace l'expertise enseignante, mais une IA qui l'étend. Une technologie qui fait les choses que l'IA fait bien, tout en restant fermement dans son couloir sur les choses que seuls les humains peuvent faire.
     </p>
     <p>
-      Si vous aimeriez voir à quoi cela ressemble en pratique, <a href="/contact">contactez-nous</a>. Nous vous montrerons WhimsyCat en action et vous laisserons juger par vous-même ce qu'il peut et ne peut pas faire.
+      Si vous aimeriez voir à quoi cela ressemble en pratique, <a href="/contact/">contactez-nous</a>. Nous vous montrerons WhimsyCat en action et vous laisserons juger par vous-même ce qu'il peut et ne peut pas faire.
     </p>
 
     <div className="references-section">
@@ -271,10 +271,10 @@ export const content = (
 
     <h2>Lectures complémentaires</h2>
     <ul>
-      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">Découvrez WhimsyCat : Tuteur IA pour l'enseignement des sciences</a></li>
-      <li><a href="/fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat : Détecter la frustration des élèves avec l'IA</a></li>
-      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer">Les enseignants sont les experts. Nous construisons juste les outils.</a></li>
-      <li><a href="/fr/blog/ai-assessment-crisis-solution">L'évaluation par IA en sciences : de la crise à la solution</a></li>
+      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education/">Découvrez WhimsyCat : Tuteur IA pour l'enseignement des sciences</a></li>
+      <li><a href="/fr/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">WhimsyCat : Détecter la frustration des élèves avec l'IA</a></li>
+      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer/">Les enseignants sont les experts. Nous construisons juste les outils.</a></li>
+      <li><a href="/fr/blog/ai-assessment-crisis-solution/">L'évaluation par IA en sciences : de la crise à la solution</a></li>
     </ul>
   </>
 );

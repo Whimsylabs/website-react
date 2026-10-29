@@ -184,17 +184,17 @@ export const content = (
       <h2>Verwandte Artikel</h2>
       <ul>
         <li>
-          <a href="/de/blog/ai-assessment-crisis-solution">
+          <a href="/de/blog/ai-assessment-crisis-solution/">
             KI und die Bewertungskrise: Wie Prozessdaten alles verändern
           </a>
         </li>
         <li>
-          <a href="/de/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/de/blog/vr-stem-education-research-pedagogical-scaffolding/">
             Neue VR-Forschung bestätigt: Technologie ohne Pädagogik versagt
           </a>
         </li>
         <li>
-          <a href="/de/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/de/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             Die Kritiker haben Recht: Die meiste EdTech ist nutzlos
           </a>
         </li>

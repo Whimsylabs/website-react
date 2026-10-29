@@ -11,6 +11,11 @@ const Footer = ({ t, currentLang }) => {
             <ul className="footer-links" aria-label={t('footer.navigation')}>
                 <li><a href={getLocalizedPath("/", currentLang)} className="nav-link" aria-label={t('footer.homeLabel')}>{t('footer.home')}</a></li>
                 <li><a href={getLocalizedPath("/features", currentLang)} className="nav-link" aria-label={t('footer.featuresLabel')}>{t('footer.features')}</a></li>
+                <li><a href={getLocalizedPath("/biology", currentLang)} className="nav-link" aria-label={t('footer.biologyLabel')}>{t('footer.biology')}</a></li>
+                <li><a href={getLocalizedPath("/chemistry", currentLang)} className="nav-link" aria-label={t('footer.chemistryLabel')}>{t('footer.chemistry')}</a></li>
+                <li><a href={getLocalizedPath("/physics", currentLang)} className="nav-link" aria-label={t('footer.physicsLabel')}>{t('footer.physics')}</a></li>
+                <li><a href={getLocalizedPath("/choose-virtual-lab", currentLang)} className="nav-link" aria-label={t('footer.chooseVirtualLabLabel')}>{t('footer.chooseVirtualLab')}</a></li>
+                <li><a href={getLocalizedPath("/send", currentLang)} className="nav-link" aria-label={t('footer.sendLabel')}>{t('footer.send')}</a></li>
                 <li><a href={getLocalizedPath("/services", currentLang)} className="nav-link" aria-label={t('footer.servicesLabel')}>{t('footer.services')}</a></li>
                 <li><a href={getLocalizedPath("/bett", currentLang)} className="nav-link" aria-label={t('footer.bettLabel')}>{t('footer.bett')}</a></li>
                 <li><a href={getLocalizedPath("/contact", currentLang)} className="nav-link" aria-label={t('footer.contactLabel')}>{t('footer.contact')}</a></li>

@@ -108,7 +108,7 @@ export const content = (
       </li>
       <li>
         <strong>Keep the bench.</strong> Where you have laboratories, use simulation to prepare students for them rather than to replace them. The{" "}
-        <a href="/blog/flipped-practical-preloading-lab-skills">flipped practical model</a>{" "}
+        <a href="/blog/flipped-practical-preloading-lab-skills/">flipped practical model</a>{" "}
         applies as well to the IB as to anything else.
       </li>
     </ul>
@@ -131,22 +131,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/blog/virtual-labs-online-schools-distance-learning/">
             Virtual Labs for Online Schools: Science at a Distance
           </a>
         </li>
         <li>
-          <a href="/blog/flipped-practical-preloading-lab-skills">
+          <a href="/blog/flipped-practical-preloading-lab-skills/">
             The Flipped Practical: Arriving at the Bench Already Competent
           </a>
         </li>
         <li>
-          <a href="/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/blog/why-traditional-virtual-labs-fail-physics-engine/">
             Why Other Virtual Labs Fail: The Physics Engine Solution
           </a>
         </li>
         <li>
-          <a href="/blog/process-based-lab-assessment-future">
+          <a href="/blog/process-based-lab-assessment-future/">
             Grading the Process, Not the Answer
           </a>
         </li>

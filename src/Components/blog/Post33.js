@@ -217,17 +217,17 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/blog/oecd-ai-learning-paradox-virtual-labs/">
             The OECD AI Learning Paradox: Why GenAI Fails Students (And How Virtual Labs Succeed)
           </a>
         </li>
         <li>
-          <a href="/blog/ai-assessment-crisis-solution">
+          <a href="/blog/ai-assessment-crisis-solution/">
             The AI Assessment Crisis Has a Solution
           </a>
         </li>
         <li>
-          <a href="/blog/pearson-webinar-vr-assessment-ai-age">
+          <a href="/blog/pearson-webinar-vr-assessment-ai-age/">
             Assessment in the Age of AI: Join Our Pearson Webinar
           </a>
         </li>

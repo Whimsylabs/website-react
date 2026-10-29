@@ -46,7 +46,7 @@ export const content = (
 
     <h2>A Year of Awards</h2>
     <p>
-      This marks our second major BETT recognition in as many years. At <a href="/blog/whimsylabs-education-revolution">BETT 2025</a>, we were honoured with the <strong>Kids Judge Bett Award</strong>, selected by pupils themselves for demonstrating how virtual labs can transform laboratory education while supporting sustainability goals.
+      This marks our second major BETT recognition in as many years. At <a href="/blog/whimsylabs-education-revolution/">BETT 2025</a>, we were honoured with the <strong>Kids Judge Bett Award</strong>, selected by pupils themselves for demonstrating how virtual labs can transform laboratory education while supporting sustainability goals.
     </p>
     <p>
       The Tech&amp;Learning #1 Best of BETT 2026 award represents recognition from a different perspective: education technology experts and practitioners who evaluated products on criteria including innovation, classroom impact, ease of implementation, and educational value. Winning both awards demonstrates that WhimsyLabs resonates with everyone who matters: the students who use our platform and the educators who implement it.
@@ -92,7 +92,7 @@ export const content = (
       We extend our heartfelt gratitude to Tech&amp;Learning for this recognition, to the BETT team for hosting an exceptional event, and most importantly, to the educators and students who inspire everything we build. This award belongs to everyone who believes that science education should be hands-on, accessible, and genuinely exciting.
     </p>
     <p>
-      Ready to experience why WhimsyLabs won #1 Best of BETT 2026? <a href="/contact">Get in touch</a> to schedule a demo, or learn more about our <a href="/">virtual laboratory platform</a>.
+      Ready to experience why WhimsyLabs won #1 Best of BETT 2026? <a href="/contact/">Get in touch</a> to schedule a demo, or learn more about our <a href="/">virtual laboratory platform</a>.
     </p>
   </div>
 );

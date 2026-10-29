@@ -216,7 +216,7 @@ export const content = (
       Les laboratoires virtuels de chimie sont un outil. Comme tout outil, ils sont utiles quand ils sont appliqués de manière appropriée et inutiles quand ils sont mal utilisés. Les enseignants qui en tirent le plus de valeur sont ceux qui réfléchissent soigneusement à la façon dont ces outils s'intègrent à leur contexte spécifique, à leurs élèves et à leurs objectifs curriculaires.
     </p>
     <p>
-      Si vous souhaitez voir comment les simulations de chimie WhimsyLabs fonctionnent en pratique, <a href="/contact">contactez-nous</a> pour une démo. Nous vous guiderons à travers la plateforme et discuterons de la façon dont elle pourrait s'intégrer à votre enseignement.
+      Si vous souhaitez voir comment les simulations de chimie WhimsyLabs fonctionnent en pratique, <a href="/contact/">contactez-nous</a> pour une démo. Nous vous guiderons à travers la plateforme et discuterons de la façon dont elle pourrait s'intégrer à votre enseignement.
     </p>
 
     <div className="references-section">
@@ -247,10 +247,10 @@ export const content = (
 
     <h2>Lectures complémentaires</h2>
     <ul>
-      <li><a href="/fr/blog/why-traditional-virtual-labs-fail-physics-engine">Pourquoi les laboratoires virtuels traditionnels échouent : La différence du moteur physique</a></li>
-      <li><a href="/fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratoires virtuels vs. laboratoires physiques : Une analyse coût-bénéfice</a></li>
-      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education">Découvrez WhimsyCat : Le tuteur IA qui sait quand vous êtes bloqué</a></li>
-      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer">Les enseignants sont les experts. Nous construisons juste les outils.</a></li>
+      <li><a href="/fr/blog/why-traditional-virtual-labs-fail-physics-engine/">Pourquoi les laboratoires virtuels traditionnels échouent : La différence du moteur physique</a></li>
+      <li><a href="/fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Laboratoires virtuels vs. laboratoires physiques : Une analyse coût-bénéfice</a></li>
+      <li><a href="/fr/blog/whimsycat-ai-tutor-transforming-science-education/">Découvrez WhimsyCat : Le tuteur IA qui sait quand vous êtes bloqué</a></li>
+      <li><a href="/fr/blog/teachers-are-experts-custom-experiment-designer/">Les enseignants sont les experts. Nous construisons juste les outils.</a></li>
     </ul>
   </>
 );

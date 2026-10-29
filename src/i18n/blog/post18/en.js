@@ -156,7 +156,7 @@ export const content = (
       WhimsyLabs works on the devices your school already has, scales with your needs, and remains valuable regardless of what happens in the VR market. That's not a compromise; it's smart educational technology procurement.
     </p>
     <p>
-      Ready to see physics-first virtual labs that work on any device? <a href="/contact">Get in touch</a> to schedule a demonstration.
+      Ready to see physics-first virtual labs that work on any device? <a href="/contact/">Get in touch</a> to schedule a demonstration.
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

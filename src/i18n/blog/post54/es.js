@@ -87,7 +87,7 @@ export const content = (
 
     <p>
       Las redes tienen un poder de compra real y deberían usarlo: una negociación, una evaluación de protección de datos, una integración con el sistema de gestión escolar (MIS) o el LMS, una revisión de seguridad. Hacer que veinte centros realicen cada uno su propia diligencia debida sobre el proveedor desperdicia el tiempo de veinte personas y produce veinte respuestas distintas a la misma pregunta de protección de datos, lo que es un problema de gobernanza en ciernes. Nuestra{" "}
-      <a href="/es/blog/edtech-vendor-security-questions-powerschool">lista de preguntas para plantear a los proveedores de tecnología educativa</a>{" "}
+      <a href="/es/blog/edtech-vendor-security-questions-powerschool/">lista de preguntas para plantear a los proveedores de tecnología educativa</a>{" "}
       está pensada para aplicarse una sola vez, de forma centralizada.
     </p>
 
@@ -147,22 +147,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/es/blog/how-to-choose-virtual-lab-software-school/">
             Software de laboratorio virtual para secundaria: guía de compra
           </a>
         </li>
         <li>
-          <a href="/es/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/es/blog/edtech-vendor-security-questions-powerschool/">
             10 preguntas para los proveedores de EdTech tras la brecha de PowerSchool
           </a>
         </li>
         <li>
-          <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Laboratorios virtuales frente a físicos: análisis coste-beneficio
           </a>
         </li>
         <li>
-          <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             Los críticos tienen razón: la mayoría de la EdTech es inútil
           </a>
         </li>

@@ -144,22 +144,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/blog/oecd-ai-learning-paradox-virtual-labs/">
             AI Boosted Scores 127%. Then Students Couldn't Think.
           </a>
         </li>
         <li>
-          <a href="/blog/teachers-are-experts-custom-experiment-designer">
+          <a href="/blog/teachers-are-experts-custom-experiment-designer/">
             Teachers Are the Experts. We Just Build the Tools.
           </a>
         </li>
         <li>
-          <a href="/blog/ai-science-tutor-classroom-what-works">
+          <a href="/blog/ai-science-tutor-classroom-what-works/">
             AI Science Tutors in the Classroom: What Actually Works
           </a>
         </li>
         <li>
-          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">
             How WhimsyCat Meets the DfE AI Safety Standards Without a Chat Box
           </a>
         </li>

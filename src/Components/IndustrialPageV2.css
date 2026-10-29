@@ -1,0 +1,642 @@
+/* The font import lives here, not in Helmet.
+
+   build.js does not collect Helmet output at all: page metadata is injected
+   separately by scripts/metadata-injector.js, so a <link> placed in Helmet
+   renders fine under `npm start` and vanishes from the static build. That is
+   exactly the failure v1 has with Poppins, and this page's whole argument is
+   that the typeface is named and actually loads. Importing from the component
+   stylesheet means it ships wherever the component ships, and no other page
+   pays for it. */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+/* IndustrialPageV2.css - /industrial-v2
+   ---------------------------------------------------------------------------
+   v2 of the industrial page. v1 (IndustrialPage.css) is untouched and still
+   live at /industrial.
+
+   What changed and why:
+
+   1. TYPE IS NAMED AND ACTUALLY LOADED. v1's own comment notes that the site
+      asks for Poppins and never loads it, so everything renders as system-ui.
+      v2 loads Barlow (a grotesque built from Californian road-signage forms,
+      so it belongs in this subject) with Barlow Condensed for dense labels and
+      IBM Plex Mono for anything evidence-grade. Loaded in the component via
+      Helmet so no other page pays for it.
+
+   2. TWO BLUES WITH DIFFERENT JOBS. v1's #1f1968 stays as the WhimsyLabs brand
+      tie. #005EB8, the ISO 7010 mandatory-action blue, is introduced for
+      anything showing the PRODUCT: status, evidence, compliance. Brand and
+      signage read as related without competing.
+
+   3. THE SIGNAGE VOCABULARY IS ON THE PAGE, NOT DESCRIBED. Green square is
+      current, amber triangle is due, red slashed circle is lapsed, blue disc
+      is action required. Shape carries state alongside colour, so it survives
+      colourblind viewing and reads across a room. Showing one real compliance
+      strip demonstrates the product better than a paragraph claiming it does.
+
+   4. GOLD SURVIVES ALMOST UNCHANGED. v1's #f59e0b and the product's amber
+      #F5A800 turned out to be the same colour arrived at twice. Kept.
+
+   Colour presence, in order: INK (structure, type), SIGNAGE BLUE (product,
+   evidence, CTA), BRAND INDIGO (one band, the tie back to WhimsyLabs), then
+   green/amber/red used only for actual state.
+   --------------------------------------------------------------------------- */
+
+.iv2 {
+    /* ground */
+    --iv2-paper: #edefec;
+    --iv2-card: #ffffff;
+    --iv2-wash: #f6f7f5;
+
+    /* ink */
+    --iv2-ink: #131a1e;
+    --iv2-ink-2: #46525a;
+    --iv2-ink-3: #7c868d;
+    --iv2-line: #d2d7d2;
+    --iv2-line-2: #e4e7e2;
+
+    /* brand tie, carried from v1 */
+    --iv2-brand: #1f1968;
+    --iv2-brand-2: #2d2a6e;
+
+    /* ISO 7010 signage: state, and the product */
+    --iv2-blue: #005eb8;
+    --iv2-blue-ink: #004c96;
+    --iv2-blue-tint: #e3edf8;
+    --iv2-green: #007a33;
+    --iv2-green-tint: #e2f0e6;
+    --iv2-amber: #f5a800;
+    --iv2-amber-ink: #8a6100;
+    --iv2-amber-tint: #fbf0d3;
+    --iv2-red: #c8102e;
+    --iv2-red-ink: #af0e28;
+    --iv2-red-tint: #f9e3e5;
+
+    --iv2-sans: "Barlow", "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+    --iv2-cond: "Barlow Condensed", "Arial Narrow", "Segoe UI", sans-serif;
+    --iv2-mono: "IBM Plex Mono", "SF Mono", Consolas, "Roboto Mono", monospace;
+
+    font-family: var(--iv2-sans);
+    color: var(--iv2-ink);
+    background: var(--iv2-paper);
+    text-align: left;
+}
+
+.iv2 *,
+.iv2 *::before,
+.iv2 *::after {
+    box-sizing: border-box;
+}
+
+.iv2-wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- type ---------- */
+
+.iv2 h1,
+.iv2 h2,
+.iv2 h3 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.014em;
+    line-height: 1.12;
+}
+
+.iv2 h1 {
+    font-size: clamp(2.3rem, 5.4vw, 3.7rem);
+    font-weight: 700;
+    letter-spacing: -0.026em;
+}
+
+.iv2 h2 {
+    font-size: clamp(1.6rem, 3.2vw, 2.15rem);
+}
+
+.iv2 h3 {
+    font-size: 1.08rem;
+}
+
+.iv2 p {
+    margin: 0 0 1em;
+    font-size: 1.03rem;
+    line-height: 1.62;
+    color: var(--iv2-ink-2);
+    max-width: 64ch;
+}
+
+.iv2-eyebrow {
+    display: inline-block;
+    font-family: var(--iv2-cond);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--iv2-blue);
+    margin-bottom: 12px;
+}
+
+.iv2-eyebrow--light {
+    color: #9fc4ea;
+}
+
+.iv2-lede {
+    font-size: 1.16rem !important;
+    line-height: 1.56;
+    color: var(--iv2-ink) !important;
+    max-width: 62ch;
+}
+
+.iv2-note {
+    font-size: 0.92rem !important;
+    color: var(--iv2-ink-3) !important;
+    border-left: 3px solid var(--iv2-line);
+    padding-left: 14px;
+    margin-top: 26px;
+}
+
+/* ---------- bands ---------- */
+
+.iv2-band {
+    padding: 76px 0;
+    border-top: 1px solid var(--iv2-line);
+}
+
+.iv2-band--paper {
+    background: var(--iv2-card);
+}
+
+.iv2-band--wash {
+    background: var(--iv2-wash);
+}
+
+.iv2-band--ink {
+    background: var(--iv2-ink);
+    color: #e6eaec;
+    border-top: none;
+}
+
+.iv2-band--ink h2 {
+    color: #ffffff;
+}
+
+.iv2-band--ink p {
+    color: #b8c2c7;
+}
+
+.iv2-band--ink .iv2-lede {
+    color: #e6eaec !important;
+}
+
+.iv2-band--brand {
+    background: var(--iv2-brand);
+    color: #ffffff;
+    border-top: none;
+}
+
+.iv2-band--brand h2 {
+    color: #ffffff;
+}
+
+.iv2-band--brand p {
+    color: #c9c6e4;
+}
+
+/* ---------- hero ---------- */
+
+.iv2-hero {
+    background: var(--iv2-ink);
+    color: #ffffff;
+    padding: 92px 0 76px;
+    /* A hairline of signage blue along the top: the first thing the page does
+       is state which vocabulary it is speaking. */
+    border-top: 4px solid var(--iv2-blue);
+}
+
+.iv2-hero h1 {
+    color: #ffffff;
+    max-width: 17ch;
+}
+
+.iv2-hero-sub {
+    color: #b8c2c7 !important;
+    font-size: 1.16rem !important;
+    max-width: 58ch;
+    margin-top: 22px;
+}
+
+.iv2-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 26px;
+}
+
+.iv2-btn {
+    display: inline-block;
+    font-family: var(--iv2-cond);
+    font-size: 1.06rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 13px 26px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: background 0.12s, border-color 0.12s;
+}
+
+.iv2-btn-primary {
+    background: var(--iv2-blue);
+    color: #ffffff;
+}
+
+.iv2-btn-primary:hover {
+    background: var(--iv2-blue-ink);
+    color: #ffffff;
+}
+
+.iv2-btn-ghost {
+    border-color: #5b676d;
+    color: #e6eaec;
+}
+
+.iv2-btn-ghost:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.iv2-band--paper .iv2-btn-ghost,
+.iv2-band--wash .iv2-btn-ghost {
+    border-color: var(--iv2-ink-3);
+    color: var(--iv2-ink);
+}
+
+.iv2-funder {
+    font-size: 0.9rem !important;
+    color: #8c979d !important;
+    font-family: var(--iv2-mono);
+    max-width: 70ch;
+}
+
+.iv2-funder a {
+    color: #9fc4ea;
+}
+
+/* ---------- the state vocabulary, shown rather than described ---------- */
+
+.iv2-strip {
+    background: var(--iv2-card);
+    border: 1px solid var(--iv2-line);
+    padding: 20px 22px 22px;
+    margin-top: 34px;
+    max-width: 620px;
+}
+
+.iv2-strip-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--iv2-line-2);
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+
+.iv2-strip-title {
+    font-family: var(--iv2-cond);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--iv2-ink-2);
+}
+
+.iv2-strip-meta {
+    font-family: var(--iv2-mono);
+    font-size: 0.78rem;
+    color: var(--iv2-ink-3);
+}
+
+.iv2-row {
+    display: grid;
+    grid-template-columns: 22px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 7px 0;
+    font-size: 0.96rem;
+}
+
+.iv2-row + .iv2-row {
+    border-top: 1px solid var(--iv2-line-2);
+}
+
+.iv2-row-name {
+    color: var(--iv2-ink);
+}
+
+.iv2-row-state {
+    font-family: var(--iv2-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+}
+
+.iv2-row-state--ok {
+    color: var(--iv2-green);
+}
+
+.iv2-row-state--due {
+    color: var(--iv2-amber-ink);
+}
+
+.iv2-row-state--lapsed {
+    color: var(--iv2-red-ink);
+}
+
+.iv2-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 16px;
+    padding-top: 13px;
+    border-top: 1px solid var(--iv2-line-2);
+    font-size: 0.84rem;
+    color: var(--iv2-ink-3);
+}
+
+.iv2-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* ---------- modules ---------- */
+
+.iv2-modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1px;
+    background: var(--iv2-line);
+    border: 1px solid var(--iv2-line);
+    margin-top: 30px;
+}
+
+.iv2-module {
+    background: var(--iv2-card);
+    padding: 22px 22px 24px;
+}
+
+.iv2-module-code {
+    display: block;
+    font-family: var(--iv2-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--iv2-blue);
+    margin-bottom: 8px;
+}
+
+.iv2-module h3 {
+    margin-bottom: 8px;
+}
+
+.iv2-module p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.iv2-module--next {
+    background: var(--iv2-wash);
+}
+
+.iv2-module--next .iv2-module-code {
+    color: var(--iv2-ink-3);
+}
+
+.iv2-module--next h3 {
+    color: var(--iv2-ink-2);
+}
+
+/* ---------- two column ---------- */
+
+.iv2-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 34px;
+    margin-top: 24px;
+}
+
+/* ---------- inspector card, the thing that sells it ---------- */
+
+.iv2-inspector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 34px;
+    align-items: start;
+    margin-top: 28px;
+}
+
+.iv2-card {
+    background: var(--iv2-card);
+    border: 1px solid var(--iv2-line);
+    padding: 24px 26px 26px;
+}
+
+.iv2-card h3 {
+    font-size: 1.24rem;
+    margin-bottom: 16px;
+    max-width: 22ch;
+}
+
+.iv2-check {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.iv2-check li {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 11px;
+    align-items: start;
+    font-size: 0.99rem;
+    color: var(--iv2-ink);
+}
+
+.iv2-card-foot {
+    font-family: var(--iv2-mono);
+    font-size: 0.78rem;
+    color: var(--iv2-ink-3);
+    border-top: 1px solid var(--iv2-line-2);
+    padding-top: 12px;
+    margin-top: 4px;
+}
+
+/* ---------- stats ---------- */
+
+.iv2-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1px;
+    background: #2b353a;
+    border: 1px solid #2b353a;
+    margin: 30px 0;
+}
+
+.iv2-stat {
+    background: var(--iv2-ink);
+    padding: 20px 22px;
+}
+
+.iv2-stat-value {
+    display: block;
+    font-family: var(--iv2-cond);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.iv2-stat-label {
+    display: block;
+    font-size: 0.88rem;
+    color: #9aa5ab;
+    margin-top: 7px;
+    line-height: 1.4;
+}
+
+/* ---------- checklist ---------- */
+
+.iv2-list {
+    list-style: none;
+    margin: 22px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 18px 30px;
+}
+
+.iv2-list li {
+    border-top: 2px solid var(--iv2-blue);
+    padding-top: 12px;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: #b8c2c7;
+}
+
+.iv2-band--paper .iv2-list li,
+.iv2-band--wash .iv2-list li {
+    color: var(--iv2-ink-2);
+}
+
+.iv2-list strong {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.iv2-band--paper .iv2-list strong,
+.iv2-band--wash .iv2-list strong {
+    color: var(--iv2-ink);
+}
+
+/* ---------- pilot ---------- */
+
+.iv2-deal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--iv2-line);
+    border: 1px solid var(--iv2-line);
+    margin-top: 28px;
+}
+
+.iv2-deal-col {
+    background: var(--iv2-card);
+    padding: 24px 26px 26px;
+}
+
+.iv2-deal-col ul {
+    margin: 12px 0 0;
+    padding-left: 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 0.97rem;
+    color: var(--iv2-ink-2);
+}
+
+.iv2-deal-col li::marker {
+    color: var(--iv2-blue);
+}
+
+/* ---------- cta ---------- */
+
+.iv2-cta {
+    background: var(--iv2-blue);
+    color: #ffffff;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.iv2-cta h2 {
+    color: #ffffff;
+}
+
+.iv2-cta p {
+    color: #cfe0f2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iv2-cta .iv2-actions {
+    justify-content: center;
+}
+
+.iv2-cta .iv2-btn-primary {
+    background: #ffffff;
+    color: var(--iv2-blue-ink);
+}
+
+.iv2-cta .iv2-btn-primary:hover {
+    background: #e3edf8;
+    color: var(--iv2-blue-ink);
+}
+
+.iv2-cta .iv2-btn-ghost {
+    border-color: #7fb0e0;
+    color: #ffffff;
+}
+
+.iv2-cta .iv2-btn-ghost:hover {
+    border-color: #ffffff;
+}
+
+/* ---------- accessibility and motion ---------- */
+
+.iv2 a:focus-visible,
+.iv2 button:focus-visible {
+    outline: 3px solid var(--iv2-amber);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .iv2 * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .iv2-band {
+        padding: 54px 0;
+    }
+
+    .iv2-hero {
+        padding: 64px 0 54px;
+    }
+}

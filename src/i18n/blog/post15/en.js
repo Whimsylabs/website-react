@@ -362,22 +362,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsylabs-education-revolution">
+        <a href="/blog/whimsylabs-education-revolution/">
           A Brief History of WhimsyLabs: From Humble Start to BETT 2025 Winner
         </a>
       </li>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href="/blog/physicality-in-virtual-labs/">
           The Physicality Breakthrough: How We Made Virtual Labs Feel Real
         </a>
       </li>
       <li>
-        <a href="/blog/green-labs-sustainability-virtual-stem-education">
+        <a href="/blog/green-labs-sustainability-virtual-stem-education/">
           Green Labs, Greener Future: Virtual Labs and Sustainability
         </a>
       </li>
       <li>
-        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis">
+        <a href="/blog/ai-powered-virtual-labs-solving-education-crisis/">
           How AI-Powered Virtual Labs Are Solving the Global Science Education
           Crisis
         </a>

@@ -154,17 +154,17 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/jp/blog/oecd-ai-learning-paradox-virtual-labs/">
             OECDのAI学習パラドックス：なぜ生成AIは学生に失敗するのか（そしてバーチャルラボがどう成功するのか）
           </a>
         </li>
         <li>
-          <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             批評家は正しい：ほとんどのEdTechは役に立たない
           </a>
         </li>
         <li>
-          <a href="/jp/blog/ai-science-tutor-classroom-what-works">
+          <a href="/jp/blog/ai-science-tutor-classroom-what-works/">
             AI理科チューター：教室で実際に機能するもの
           </a>
         </li>

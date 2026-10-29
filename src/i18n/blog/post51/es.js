@@ -56,7 +56,7 @@ export const content = (
 
     <p>
       <strong>Vídeo de demostración.</strong> Barato, seguro y disponible para todos a la vez. También es pasivo. Ver a un técnico experimentado ejecutar una destilación impecable le enseña al estudiante qué aspecto tiene el éxito, y casi nada sobre cómo lograrlo. Ya hemos escrito sobre por qué{" "}
-      <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs">la mayoría de la tecnología educativa fracasa por ser pasiva</a>, y el vídeo de demostración es el ejemplo más claro en ciencias.
+      <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs/">la mayoría de la tecnología educativa fracasa por ser pasiva</a>, y el vídeo de demostración es el ejemplo más claro en ciencias.
     </p>
 
     <p>
@@ -101,7 +101,7 @@ export const content = (
 
     <p>
       En el Diploma del IB el panorama es notablemente más abierto. La Scientific Investigation, la evaluación interna que vale el 20% de la nota de la asignatura, permite de forma explícita investigaciones construidas sobre bases de datos, modelización, simulación o una combinación de todo ello junto al trabajo manipulativo. Una escuela online que imparta el IB puede usar por tanto la simulación como una vía de pleno derecho para la evaluación interna, y no como un apaño, algo sobre lo que hemos escrito aparte en{" "}
-      <a href="/es/blog/ib-diploma-science-practicals-virtual-labs">nuestra guía sobre las ciencias del IB en modalidad online</a>.
+      <a href="/es/blog/ib-diploma-science-practicals-virtual-labs/">nuestra guía sobre las ciencias del IB en modalidad online</a>.
     </p>
 
     <h2>¿Cómo es una buena oferta práctica en la realidad?</h2>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/flipped-practical-preloading-lab-skills">
+          <a href="/es/blog/flipped-practical-preloading-lab-skills/">
             La práctica invertida: llegar al banco de trabajo ya competente
           </a>
         </li>
         <li>
-          <a href="/es/blog/ib-diploma-science-practicals-virtual-labs">
+          <a href="/es/blog/ib-diploma-science-practicals-virtual-labs/">
             Ciencias del IB en línea: simulación y Scientific Investigation
           </a>
         </li>
         <li>
-          <a href="/es/blog/physicality-in-virtual-labs">
+          <a href="/es/blog/physicality-in-virtual-labs/">
             La fisicalidad en los laboratorios virtuales: más allá de las simulaciones tradicionales
           </a>
         </li>
         <li>
-          <a href="/es/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/es/blog/how-to-choose-virtual-lab-software-school/">
             Software de laboratorio virtual para secundaria: guía de compra
           </a>
         </li>

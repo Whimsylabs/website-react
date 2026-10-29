@@ -306,22 +306,22 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+        <a href="/blog/whimsycat-ai-tutor-transforming-science-education/">
           Meet WhimsyCat: The AI Tutor Behind 24/7 Personalized Support
         </a>
       </li>
       <li>
-        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+        <a href="/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">
           The Future of Learning: Emotional Intelligence in AI Tutors
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis">
+        <a href="/blog/virtual-labs-solve-stem-teacher-shortage-crisis/">
           Addressing the STEM Teacher Shortage Crisis with Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/gamification-science-education-points-rewards-engagement">
+        <a href="/blog/gamification-science-education-points-rewards-engagement/">
           Gamification Done Right: Engaging Students Through Mastery, Not
           Manipulation
         </a>

@@ -62,7 +62,7 @@ export const content = (
 
     <p>
       代わりになり得ますし、一部の学校や一部の生徒にとってはそうならざるを得ません。{" "}
-      <a href="/jp/blog/virtual-labs-online-schools-distance-learning">オンラインスクール</a>{" "}
+      <a href="/jp/blog/virtual-labs-online-schools-distance-learning/">オンラインスクール</a>{" "}
       には他の選択肢がありませんし、Royal Society（英国王立協会）のScience Education Trackerによれば、少なくとも二週に一度は実験に取り組むGCSE段階の生徒の割合は、2016年の44%から2023年には26%へと低下しました。これは、通学制の学校に通う多くの生徒も実験台に向かう時間をあまり得られていないことを示唆しています。
     </p>
 
@@ -86,7 +86,7 @@ export const content = (
 
     <p>
       これは{" "}
-      <a href="/jp/blog/physicality-in-virtual-labs">仮想実験室における身体性</a>について詳しく論じてきた主張であり、反転型実験実習こそ、それが最も具体的に報われる場面です。シミュレーションで培った筋肉の記憶こそが、このモデルが後になって時間を節約する仕組みそのものです。
+      <a href="/jp/blog/physicality-in-virtual-labs/">仮想実験室における身体性</a>について詳しく論じてきた主張であり、反転型実験実習こそ、それが最も具体的に報われる場面です。シミュレーションで培った筋肉の記憶こそが、このモデルが後になって時間を節約する仕組みそのものです。
     </p>
 
     <h2>実際にどう運用するのか</h2>
@@ -117,7 +117,7 @@ export const content = (
 
     <p>
       私たちの経験では三つのグループです。良い実験室を持ちながら、そこで使える時間が足りない学校。これはほとんどの中等学校が当てはまります。実験の実施が施設ではなく器具の予算に縛られている学校。EngineeringUKの2024年の調査では、英国の理科教員の27%が、自校では実験授業に必要な器具を購入できないと回答しています。そして、物理的な実験室の環境に圧倒されてしまう生徒。その生徒たちにとって、その場の要求にあらかじめ慣れた状態で来られるかどうかは、参加できるか耐えるだけかの分かれ目になります。この最後のグループこそ、私たちが{" "}
-      <a href="/jp/blog/virtual-kidney-dissection-send-engagement">仮想解剖と特別支援教育（SEND）の生徒の参加</a>について書いた理由であり、時間の節約だけを目的に導入した学校を驚かせがちな効果でもあります。
+      <a href="/jp/blog/virtual-kidney-dissection-send-engagement/">仮想解剖と特別支援教育（SEND）の生徒の参加</a>について書いた理由であり、時間の節約だけを目的に導入した学校を驚かせがちな効果でもあります。
     </p>
 
     <p>
@@ -128,22 +128,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/jp/blog/virtual-labs-online-schools-distance-learning/">
             オンラインスクールのための仮想実験室：遠隔での理科教育
           </a>
         </li>
         <li>
-          <a href="/jp/blog/physicality-in-virtual-labs">
+          <a href="/jp/blog/physicality-in-virtual-labs/">
             仮想実験室における身体性：従来のシミュレーションを超えて
           </a>
         </li>
         <li>
-          <a href="/jp/blog/sandbox-learning-revolution-stem-education">
+          <a href="/jp/blog/sandbox-learning-revolution-stem-education/">
             サンドボックス学習：STEMに失敗する自由が不可欠な理由
           </a>
         </li>
         <li>
-          <a href="/jp/blog/virtual-reality-prepares-students-real-world-stem-careers">
+          <a href="/jp/blog/virtual-reality-prepares-students-real-world-stem-careers/">
             VRは実践的な実験技能でSTEMキャリアへの準備を整える
           </a>
         </li>

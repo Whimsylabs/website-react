@@ -176,7 +176,7 @@ export const content = (
       Documente las respuestas que reciba. Incluya requisitos de seguridad en sus contratos. Y no tenga miedo de alejarse de proveedores que no pueden proporcionar respuestas claras.
     </p>
     <p>
-      En WhimsyLabs, creemos que la transparencia genera confianza. Estamos encantados de responder las diez preguntas para cualquier escuela que considere nuestros laboratorios de ciencias virtuales. <a href="/contact">Contáctenos</a> y le enviaremos nuestra documentación de seguridad completa.
+      En WhimsyLabs, creemos que la transparencia genera confianza. Estamos encantados de responder las diez preguntas para cualquier escuela que considere nuestros laboratorios de ciencias virtuales. <a href="/contact/">Contáctenos</a> y le enviaremos nuestra documentación de seguridad completa.
     </p>
 
     <div className="references-section">
@@ -257,9 +257,9 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Escuelas del Reino Unido: Obtenga £3,000 para laboratorios de ciencias VR</a></li>
-      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
-      <li><a href="/es/blog/ai-assessment-crisis-solution">La detección de IA no funciona. La evaluación basada en procesos sí.</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">Escuelas del Reino Unido: Obtenga £3,000 para laboratorios de ciencias VR</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer/">Los profesores son los expertos. Nosotros solo construimos las herramientas.</a></li>
+      <li><a href="/es/blog/ai-assessment-crisis-solution/">La detección de IA no funciona. La evaluación basada en procesos sí.</a></li>
     </ul>
   </>
 );

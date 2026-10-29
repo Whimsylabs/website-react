@@ -94,7 +94,7 @@ function validatePageHreflang(pagePath, expectedPath) {
     const normalizedExpected = `${BASE_URL}${expectedEnUrl}`.replace(/([^:]\/)\/+/g, '$1');
 
     if (xDefault.href !== normalizedExpected) {
-      warnings.push(`x-default points to ${xDefault.href}, expected ${normalizedExpected}`);
+      errors.push(`x-default points to ${xDefault.href}, expected ${normalizedExpected}`);
     }
   }
 
@@ -110,7 +110,7 @@ function validatePageHreflang(pagePath, expectedPath) {
   } else {
     const expectedSelfUrl = `${BASE_URL}${expectedPath}`.replace(/([^:]\/)\/+/g, '$1');
     if (selfRef.href !== expectedSelfUrl) {
-      warnings.push(`Self-referencing hreflang incorrect: ${selfRef.href} vs ${expectedSelfUrl}`);
+      errors.push(`Self-referencing hreflang incorrect: ${selfRef.href} vs ${expectedSelfUrl}`);
     }
   }
 
@@ -130,7 +130,7 @@ function validatePageHreflang(pagePath, expectedPath) {
   } else {
     const expectedCanonical = `${BASE_URL}${expectedPath}`.replace(/([^:]\/)\/+/g, '$1');
     if (canonical !== expectedCanonical) {
-      warnings.push(`Canonical mismatch: ${canonical} vs ${expectedCanonical}`);
+      errors.push(`Canonical mismatch: ${canonical} vs ${expectedCanonical}`);
     }
   }
 
@@ -141,6 +141,100 @@ function validatePageHreflang(pagePath, expectedPath) {
     hreflangTags,
     canonical
   };
+}
+
+// ISO 639-1 two-letter language codes. Anything else in an hreflang attribute
+// (notably "jp", which is a country code - Japanese is "ja") is invalid and is
+// silently ignored by Google, which drops the whole cluster.
+const ISO_639_1 = new Set((
+  'aa ab ae af ak am an ar as av ay az ba be bg bh bi bm bn bo br bs ca ce ch co cr cs cu cv cy ' +
+  'da de dv dz ee el en eo es et eu fa ff fi fj fo fr fy ga gd gl gn gu gv ha he hi ho hr ht hu ' +
+  'hy hz ia id ie ig ii ik io is it iu ja jv ka kg ki kj kk kl km kn ko kr ks ku kv kw ky la lb ' +
+  'lg li ln lo lt lu lv mg mh mi mk ml mn mr ms mt my na nb nd ne ng nl nn no nr nv ny oc oj om ' +
+  'or os pa pi pl ps pt qu rm rn ro ru rw sa sc sd se sg si sk sl sm sn so sq sr ss st su sv sw ' +
+  'ta te tg th ti tk tl tn to tr ts tt tw ty ug uk ur uz ve vi vo wa wo xh yi yo za zh zu'
+).split(' '));
+
+/**
+ * Validate build/sitemap.xml hreflang alternates.
+ *
+ * The sitemap is a second, independent declaration of the hreflang cluster, so it
+ * can drift from the <head> tags. Checks: valid ISO 639-1 codes (no "jp"),
+ * an x-default wherever an English variant exists, and trailing slashes everywhere.
+ */
+function validateSitemapHreflang(buildDir) {
+  const errors = [];
+  const sitemapPath = path.join(buildDir, 'sitemap.xml');
+
+  if (!fs.existsSync(sitemapPath)) {
+    return { errors: ['sitemap.xml not found in build directory'], urlCount: 0 };
+  }
+
+  const xml = fs.readFileSync(sitemapPath, 'utf8');
+  const urlBlocks = xml.match(/<url>[\s\S]*?<\/url>/g) || [];
+  const badCodes = new Map(); // invalid code -> example loc
+  let missingXDefault = 0;
+  let firstMissingXDefault = null;
+  const missingSlashes = new Set();
+
+  urlBlocks.forEach(block => {
+    const locMatch = block.match(/<loc>\s*(.*?)\s*<\/loc>/);
+    const loc = locMatch ? locMatch[1] : '(no <loc>)';
+
+    // (c) <loc> must end with a trailing slash
+    if (locMatch && !loc.endsWith('/')) {
+      missingSlashes.add(`<loc> ${loc}`);
+    }
+
+    const alternates = [];
+    const altPattern = /<xhtml:link[^>]*hreflang=["']([^"']+)["'][^>]*href=["']([^"']+)["']/g;
+    let match;
+    while ((match = altPattern.exec(block)) !== null) {
+      alternates.push({ lang: match[1], href: match[2] });
+    }
+
+    if (alternates.length === 0) return;
+
+    alternates.forEach(({ lang, href }) => {
+      // (a) hreflang code must be ISO 639-1 (optionally with a region) or x-default
+      const base = lang.split('-')[0].toLowerCase();
+      if (lang !== 'x-default' && !ISO_639_1.has(base)) {
+        if (!badCodes.has(lang)) badCodes.set(lang, loc);
+      }
+      // (c) alternate hrefs must end with a trailing slash
+      if (!href.endsWith('/')) {
+        missingSlashes.add(`hreflang="${lang}" ${href}`);
+      }
+    });
+
+    // (b) an English variant means there must be an x-default
+    const hasEnglish = alternates.some(a => a.lang === 'en' || a.lang.toLowerCase().startsWith('en-'));
+    const hasXDefault = alternates.some(a => a.lang === 'x-default');
+    if (hasEnglish && !hasXDefault) {
+      missingXDefault++;
+      if (!firstMissingXDefault) firstMissingXDefault = loc;
+    }
+  });
+
+  badCodes.forEach((exampleLoc, code) => {
+    const hint = code === 'jp'
+      ? ' - "jp" is a country code; Japanese must use "ja"'
+      : ' - not a valid ISO 639-1 language code';
+    errors.push(`sitemap.xml: invalid hreflang code "${code}"${hint} (e.g. ${exampleLoc})`);
+  });
+
+  if (missingXDefault > 0) {
+    errors.push(`sitemap.xml: ${missingXDefault} <url> entries have an English alternate but no x-default (e.g. ${firstMissingXDefault})`);
+  }
+
+  [...missingSlashes].slice(0, 20).forEach(entry => {
+    errors.push(`sitemap.xml: URL missing trailing slash - ${entry}`);
+  });
+  if (missingSlashes.size > 20) {
+    errors.push(`sitemap.xml: ... and ${missingSlashes.size - 20} more URLs missing a trailing slash`);
+  }
+
+  return { errors, urlCount: urlBlocks.length };
 }
 
 function validateHreflang() {
@@ -167,20 +261,12 @@ function validateHreflang() {
   let totalErrors = 0;
   let totalWarnings = 0;
 
-  // Pages to skip validation (special pages that don't need hreflang)
-  const skipPages = ['/spa/', '/demo/'];
-
   // Validate each HTML file
   htmlFiles.forEach(filePath => {
     // Extract expected path from file location
     const relativePath = path.relative(buildDir, path.dirname(filePath));
     const expectedPath = '/' + relativePath.replace(/\\/g, '/') + '/';
     const normalizedPath = expectedPath.replace(/\/+/g, '/').replace(/\/$/, '/');
-
-    // Skip special pages that don't need hreflang tags
-    if (skipPages.includes(normalizedPath)) {
-      return;
-    }
 
     const pageName = normalizedPath === '/' ? 'Homepage' : normalizedPath;
 
@@ -195,6 +281,10 @@ function validateHreflang() {
     totalWarnings += result.warnings.length;
   });
 
+  // Validate the sitemap's own hreflang cluster
+  const sitemapResult = validateSitemapHreflang(buildDir);
+  totalErrors += sitemapResult.errors.length;
+
   // Print results
   console.log('📊 hreflang Validation Results:');
   console.log('================================\n');
@@ -207,39 +297,41 @@ function validateHreflang() {
   console.log(`❌ Failed: ${failed.length}`);
   console.log(`⚠️  With warnings: ${withWarnings.length}\n`);
 
-  // Show failures (limit to first 20)
+  // Show all failures
   if (failed.length > 0) {
     console.log('❌ ERRORS:\n');
-    failed.slice(0, 20).forEach(result => {
+    failed.forEach(result => {
       console.log(`  ${result.page}:`);
       result.errors.forEach(error => console.log(`    - ${error}`));
       console.log('');
     });
-
-    if (failed.length > 20) {
-      console.log(`  ... and ${failed.length - 20} more pages with errors\n`);
-    }
   }
 
-  // Show warnings (limit to first 10)
-  if (withWarnings.length > 0 && withWarnings.length <= 10) {
+  // Show sitemap errors
+  if (sitemapResult.errors.length > 0) {
+    console.log('❌ SITEMAP ERRORS:\n');
+    sitemapResult.errors.forEach(error => console.log(`    - ${error}`));
+    console.log('');
+  }
+
+  // Show all warnings
+  if (withWarnings.length > 0) {
     console.log('⚠️  WARNINGS:\n');
     withWarnings.forEach(result => {
       console.log(`  ${result.page}:`);
       result.warnings.forEach(warning => console.log(`    - ${warning}`));
       console.log('');
     });
-  } else if (withWarnings.length > 10) {
-    console.log(`⚠️  ${withWarnings.length} pages have warnings (run with --verbose to see all)\n`);
   }
 
   // Summary
   console.log('📈 Summary:');
   console.log(`   Total pages: ${results.length}`);
+  console.log(`   Sitemap URLs checked: ${sitemapResult.urlCount}`);
   console.log(`   Total errors: ${totalErrors}`);
   console.log(`   Total warnings: ${totalWarnings}\n`);
 
-  if (failed.length === 0) {
+  if (failed.length === 0 && sitemapResult.errors.length === 0) {
     console.log('✅ All hreflang tags are valid!');
     if (totalWarnings > 0) {
       console.log(`⚠️  Consider reviewing ${totalWarnings} warnings`);
@@ -247,7 +339,7 @@ function validateHreflang() {
     return true;
   } else {
     console.log('❌ hreflang validation failed');
-    console.log('💡 Fix the errors in metadata-injector.js and rebuild');
+    console.log('💡 Fix the errors in metadata-injector.js / the sitemap generator in build.js, then rebuild');
     return false;
   }
 }

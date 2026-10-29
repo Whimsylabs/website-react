@@ -55,7 +55,7 @@ export const content = (
 
     <h3>Oportunidades de financiación en el Reino Unido</h3>
     <p>
-      El programa <a href="/blog/royal-society-partnership-grants-vr-science-labs">Royal Society Partnership Grants</a> ofrece a las escuelas públicas del Reino Unido hasta £3,000 para proyectos STEM de investigación. Hemos trabajado con docenas de escuelas para asegurar estas subvenciones para laboratorios de ciencias de RV. La Royal Society proporciona la financiación para el hardware. Nosotros proporcionamos el software de forma gratuita.
+      El programa <a href="/blog/royal-society-partnership-grants-vr-science-labs/">Royal Society Partnership Grants</a> ofrece a las escuelas públicas del Reino Unido hasta £3,000 para proyectos STEM de investigación. Hemos trabajado con docenas de escuelas para asegurar estas subvenciones para laboratorios de ciencias de RV. La Royal Society proporciona la financiación para el hardware. Nosotros proporcionamos el software de forma gratuita.
     </p>
     <p>
       Más allá de la Royal Society, las escuelas del Reino Unido pueden acceder a:
@@ -170,7 +170,7 @@ export const content = (
 
     <h2>Comienza</h2>
     <p>
-      Si estás interesado en llevar WhimsyLabs a tu escuela a través de financiación por subvención, estamos aquí para ayudar. Comienza visitando nuestra <a href="/grants">página de subvenciones y financiación</a>. Encontrarás detalles sobre oportunidades de financiación específicas y cómo podemos apoyar tu solicitud.
+      Si estás interesado en llevar WhimsyLabs a tu escuela a través de financiación por subvención, estamos aquí para ayudar. Comienza visitando nuestra <a href="/grants/">página de subvenciones y financiación</a>. Encontrarás detalles sobre oportunidades de financiación específicas y cómo podemos apoyar tu solicitud.
     </p>
     <p>
       La educación científica premium no debería estar reservada para escuelas adineradas. Con la financiación adecuada y el apoyo correcto, es accesible para todos.
@@ -198,10 +198,10 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias de RV</a></li>
-      <li><a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Laboratorios virtuales vs laboratorios físicos: La comparación real de costos</a></li>
-      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: El tutor de IA que realmente entiende la ciencia</a></li>
-      <li><a href="/es/blog/edtech-vendor-security-questions-powerschool">10 preguntas que debes hacer a los proveedores de EdTech sobre seguridad de datos</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias de RV</a></li>
+      <li><a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Laboratorios virtuales vs laboratorios físicos: La comparación real de costos</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education/">Conoce a WhimsyCat: El tutor de IA que realmente entiende la ciencia</a></li>
+      <li><a href="/es/blog/edtech-vendor-security-questions-powerschool/">10 preguntas que debes hacer a los proveedores de EdTech sobre seguridad de datos</a></li>
     </ul>
   </>
 );

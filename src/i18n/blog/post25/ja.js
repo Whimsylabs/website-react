@@ -216,7 +216,7 @@ export const content = (
       仮想化学実験室はツールです。他のツールと同様に、適切に適用されると役立ち、誤用されると役に立ちません。最も価値を得る教師は、これらのツールが特定のコンテキスト、生徒、カリキュラムの目標にどのように適合するかを慎重に考える人です。
     </p>
     <p>
-      WhimsyLabs化学シミュレーションが実際にどのように機能するかを見たい場合は、デモのために<a href="/contact">お問い合わせください</a>。プラットフォームを案内し、あなたの教育にどのように適合するかを議論します。
+      WhimsyLabs化学シミュレーションが実際にどのように機能するかを見たい場合は、デモのために<a href="/contact/">お問い合わせください</a>。プラットフォームを案内し、あなたの教育にどのように適合するかを議論します。
     </p>
 
     <div className="references-section">
@@ -247,10 +247,10 @@ export const content = (
 
     <h2>さらに読む</h2>
     <ul>
-      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">なぜ従来の仮想実験室は失敗するのか：物理エンジンの違い</a></li>
-      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">仮想実験室 vs 物理実験室：費用対効果分析</a></li>
-      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatに会いましょう：行き詰まったときを知るAIチューター</a></li>
-      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師がエキスパートです。私たちはツールを作るだけです。</a></li>
+      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine/">なぜ従来の仮想実験室は失敗するのか：物理エンジンの違い</a></li>
+      <li><a href="/jp/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">仮想実験室 vs 物理実験室：費用対効果分析</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education/">WhimsyCatに会いましょう：行き詰まったときを知るAIチューター</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer/">教師がエキスパートです。私たちはツールを作るだけです。</a></li>
     </ul>
   </>
 );

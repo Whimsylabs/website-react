@@ -173,22 +173,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/process-based-lab-assessment-future">
+          <a href="/blog/process-based-lab-assessment-future/">
             Grading the Process, Not the Answer: The Future of Lab Assessment
           </a>
         </li>
         <li>
-          <a href="/blog/ai-text-grading-fails-process-assessment-works">
+          <a href="/blog/ai-text-grading-fails-process-assessment-works/">
             Why AI Text Grading Fails and Process Assessment Works
           </a>
         </li>
         <li>
-          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/blog/oecd-ai-learning-paradox-virtual-labs/">
             The OECD AI Learning Paradox and What It Means for Virtual Labs
           </a>
         </li>
         <li>
-          <a href="/blog/ai-assessment-crisis-solution">
+          <a href="/blog/ai-assessment-crisis-solution/">
             AI and the Assessment Crisis: A Practical Solution
           </a>
         </li>

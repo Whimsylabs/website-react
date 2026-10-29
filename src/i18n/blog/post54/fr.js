@@ -87,7 +87,7 @@ export const content = (
 
     <p>
       Les réseaux disposent d'un vrai pouvoir d'achat et devraient s'en servir : une négociation, une analyse de protection des données, une intégration avec le logiciel de vie scolaire (MIS) ou le LMS, une revue de sécurité. Faire mener à vingt établissements leur propre audit de l'éditeur gaspille le temps de vingt personnes et produit vingt réponses différentes à la même question de protection des données, ce qui est un problème de gouvernance en devenir. Notre{" "}
-      <a href="/fr/blog/edtech-vendor-security-questions-powerschool">liste de questions à poser aux éditeurs de solutions éducatives</a>{" "}
+      <a href="/fr/blog/edtech-vendor-security-questions-powerschool/">liste de questions à poser aux éditeurs de solutions éducatives</a>{" "}
       est conçue pour être utilisée une seule fois, au niveau central.
     </p>
 
@@ -147,22 +147,22 @@ export const content = (
       <h2>Articles connexes</h2>
       <ul>
         <li>
-          <a href="/fr/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/fr/blog/how-to-choose-virtual-lab-software-school/">
             Logiciels de laboratoire virtuel pour le secondaire : guide d'achat
           </a>
         </li>
         <li>
-          <a href="/fr/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/fr/blog/edtech-vendor-security-questions-powerschool/">
             10 questions à poser aux éditeurs EdTech après la fuite PowerSchool
           </a>
         </li>
         <li>
-          <a href="/fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/fr/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Laboratoires virtuels ou physiques : analyse coûts-bénéfices
           </a>
         </li>
         <li>
-          <a href="/fr/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/fr/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             Les critiques ont raison : la plupart des EdTech ne servent à rien
           </a>
         </li>

@@ -110,6 +110,9 @@ async function generateBlogData() {
           const descriptionMatch = fileContent.match(/export const description\s*=\s*["'`](.*?)["'`];/s);
           const keywordsMatch = fileContent.match(/export const keywords = \[([\s\S]*?)\];/);
           const contentMatch = fileContent.match(/export const content = \(([\s\S]*?)\);$/);
+          // Optional: posts can export updatedDate ("YYYY-MM-DD") to signal a
+          // substantive revision; flows into schema dateModified + article meta
+          const updatedMatch = fileContent.match(/export const updatedDate\s*=\s*["'`](\d{4}-\d{2}-\d{2})["'`];?/);
 
           const title = titleMatch ? titleMatch[1] : `Blog Post ${postId}`;
           const description = descriptionMatch ? descriptionMatch[1] : 'Blog post description';
@@ -141,6 +144,7 @@ async function generateBlogData() {
             description: description,
             keywords: keywords,
             date: postDates[postId],
+            ...(updatedMatch ? { dateModified: updatedMatch[1] } : {}),
             hasFullTranslation: hasContent,
             language: language
           });

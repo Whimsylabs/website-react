@@ -937,6 +937,37 @@ const LandingDemo = ({ language = 'en' }) => {
         </div>
       </section>
 
+      {/* Explore the labs: internal links to subject pages and buyer's guide */}
+      <nav className="explore-labs" aria-labelledby="explore-labs-heading">
+        <h2 id="explore-labs-heading">{t('exploreLabs.heading')}</h2>
+        <p>{t('exploreLabs.intro')}</p>
+        <ul className="explore-labs-links">
+          <li>
+            <a href={getLocalizedPath("/biology/", language)} className="explore-labs-link">
+              {t('exploreLabs.biology')}
+            </a>
+          </li>
+          <li>
+            <a href={getLocalizedPath("/chemistry/", language)} className="explore-labs-link">
+              {t('exploreLabs.chemistry')}
+            </a>
+          </li>
+          <li>
+            <a href={getLocalizedPath("/physics/", language)} className="explore-labs-link">
+              {t('exploreLabs.physics')}
+            </a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("/choose-virtual-lab/", language)}
+              className="explore-labs-link explore-labs-link--guide"
+            >
+              {t('exploreLabs.chooseVirtualLab')}
+            </a>
+          </li>
+        </ul>
+      </nav>
+
       {/* Partners Section */}
       <Partners />
 

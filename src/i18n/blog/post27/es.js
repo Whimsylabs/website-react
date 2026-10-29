@@ -210,7 +210,7 @@ export const content = (
       Ese es el futuro que estamos construyendo con WhimsyCat. No una IA que reemplaza la experiencia docente, sino una IA que la extiende. Tecnología que hace las cosas que la IA hace bien, mientras se mantiene firmemente en su carril en las cosas que solo los humanos pueden hacer.
     </p>
     <p>
-      Si te gustaría ver cómo se ve eso en la práctica, <a href="/contact">ponte en contacto</a>. Te mostraremos WhimsyCat en acción y te dejaremos juzgar por ti mismo lo que puede y no puede hacer.
+      Si te gustaría ver cómo se ve eso en la práctica, <a href="/contact/">ponte en contacto</a>. Te mostraremos WhimsyCat en acción y te dejaremos juzgar por ti mismo lo que puede y no puede hacer.
     </p>
 
     <div className="references-section">
@@ -271,10 +271,10 @@ export const content = (
 
     <h2>Lecturas adicionales</h2>
     <ul>
-      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: Tutor de IA para la educación científica</a></li>
-      <li><a href="/es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat: Detectando la frustración estudiantil con IA</a></li>
-      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer">Los docentes son los expertos. Nosotros solo construimos las herramientas.</a></li>
-      <li><a href="/es/blog/ai-assessment-crisis-solution">Evaluación con IA en ciencias: de la crisis a la solución</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education/">Conoce a WhimsyCat: Tutor de IA para la educación científica</a></li>
+      <li><a href="/es/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">WhimsyCat: Detectando la frustración estudiantil con IA</a></li>
+      <li><a href="/es/blog/teachers-are-experts-custom-experiment-designer/">Los docentes son los expertos. Nosotros solo construimos las herramientas.</a></li>
+      <li><a href="/es/blog/ai-assessment-crisis-solution/">Evaluación con IA en ciencias: de la crisis a la solución</a></li>
     </ul>
   </>
 );

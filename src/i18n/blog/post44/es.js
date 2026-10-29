@@ -134,22 +134,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/vr-winter-web-first-virtual-labs">
+          <a href="/es/blog/vr-winter-web-first-virtual-labs/">
             El invierno de la RV y los laboratorios virtuales que priorizan la web
           </a>
         </li>
         <li>
-          <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Laboratorios virtuales frente a físicos: análisis coste-beneficio
           </a>
         </li>
         <li>
-          <a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/es/blog/why-traditional-virtual-labs-fail-physics-engine/">
             Por qué fallan los laboratorios virtuales sin un motor de física
           </a>
         </li>
         <li>
-          <a href="/es/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/es/blog/how-to-choose-virtual-lab-software-school/">
             Cómo elegir el software de laboratorio virtual para tu centro
           </a>
         </li>

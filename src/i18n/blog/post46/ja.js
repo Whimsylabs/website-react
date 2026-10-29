@@ -164,22 +164,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/blog/dfe-ai-safety-standards-tutor-checklist">
+          <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">
             WhimsyCatがチャット欄なしでDfEのAI安全基準を満たす方法
           </a>
         </li>
         <li>
-          <a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">
+          <a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">
             感情を読むAI：WhimsyCatは生徒のいら立ちを検知して対応する
           </a>
         </li>
         <li>
-          <a href="/jp/blog/purpose-built-ai-education-difference">
+          <a href="/jp/blog/purpose-built-ai-education-difference/">
             目的特化型AI対ChatGPT：なぜ設計が重要なのか
           </a>
         </li>
         <li>
-          <a href="/jp/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/jp/blog/edtech-vendor-security-questions-powerschool/">
             PowerSchool情報流出後にエドテック企業へ問うべき10の質問
           </a>
         </li>

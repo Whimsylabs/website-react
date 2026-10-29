@@ -79,23 +79,30 @@ function validate404Redirects() {
   }
 
   if (extraIn404.length > 0) {
-    console.log('\n⚠️  WARNINGS: Paths in 404.html that don\'t exist in build:');
+    // A stale validPaths entry makes 404.html treat a dead URL as valid, so the
+    // visitor gets a blank "valid" page instead of a proper 404. That is an error.
+    console.log('\n❌ ERRORS: Stale paths in 404.html that no longer exist in the build:');
     extraIn404.forEach(path => {
       console.log(`   - '${path}'`);
     });
-    console.log('   (These paths may be intentional or from other languages)');
+    hasErrors = true;
   }
 
   if (hasErrors) {
     console.log('\n💡 To fix:');
-    console.log('1. Add the missing paths to the validPaths array in public/404.html');
-    console.log('2. Find the validPaths array around line 22-35 in public/404.html');
-    console.log('3. Add the missing paths to the array');
-    console.log('\nExample:');
-    console.log('var validPaths = [');
-    missingInvalidPaths.slice(0, 3).forEach(p => console.log(`  '${p}',`));
-    console.log('  // ... etc');
-    console.log('];');
+    if (missingInvalidPaths.length > 0) {
+      console.log('1. Add the missing paths to the validPaths array in public/404.html');
+      console.log('2. Find the validPaths array around line 22-35 in public/404.html');
+      console.log('3. Add the missing paths to the array');
+      console.log('\nExample:');
+      console.log('var validPaths = [');
+      missingInvalidPaths.slice(0, 3).forEach(p => console.log(`  '${p}',`));
+      console.log('  // ... etc');
+      console.log('];');
+    }
+    if (extraIn404.length > 0) {
+      console.log(`\nRemove the ${extraIn404.length} stale entr${extraIn404.length === 1 ? 'y' : 'ies'} listed above from the validPaths array in public/404.html.`);
+    }
 
     return false;
   }

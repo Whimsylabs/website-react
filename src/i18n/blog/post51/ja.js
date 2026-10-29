@@ -56,7 +56,7 @@ export const content = (
 
     <p>
       <strong>実演動画。</strong>安価で、安全で、全員が同時に視聴できます。同時に受動的でもあります。熟練した技術者が完璧に蒸留を行う様子を見ても、生徒が学べるのは成功がどのようなものかであって、それをどう達成するかについてはほとんど何も学べません。私たちは以前にも、なぜ{" "}
-      <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs">多くの教育テクノロジーが受動的であるがゆえに失敗するのか</a>について書いてきましたが、実演動画は理科におけるその最も明快な例です。
+      <a href="/jp/blog/edtech-critics-right-passive-learning-vs-active-labs/">多くの教育テクノロジーが受動的であるがゆえに失敗するのか</a>について書いてきましたが、実演動画は理科におけるその最も明快な例です。
     </p>
 
     <p>
@@ -101,7 +101,7 @@ export const content = (
 
     <p>
       国際バカロレア（IB）ディプロマでは、状況ははるかに開かれています。教科評価の20%を占める内部評価であるScientific Investigationは、データベース、モデリング、シミュレーション、あるいはそれらと実技を組み合わせた探究を明示的に認めています。したがってIBを提供するオンラインスクールは、シミュレーションを間に合わせの手段ではなく、内部評価を進める正規の経路として使えます。この点については{" "}
-      <a href="/jp/blog/ib-diploma-science-practicals-virtual-labs">IB理科をオンラインで学ぶためのガイド</a>で別途取り上げています。
+      <a href="/jp/blog/ib-diploma-science-practicals-virtual-labs/">IB理科をオンラインで学ぶためのガイド</a>で別途取り上げています。
     </p>
 
     <h2>優れた実験提供体制とは実際どのようなものか</h2>
@@ -128,22 +128,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/flipped-practical-preloading-lab-skills">
+          <a href="/jp/blog/flipped-practical-preloading-lab-skills/">
             反転型実験：実験台に着く前に技能を身につける
           </a>
         </li>
         <li>
-          <a href="/jp/blog/ib-diploma-science-practicals-virtual-labs">
+          <a href="/jp/blog/ib-diploma-science-practicals-virtual-labs/">
             IB理科をオンラインで：シミュレーションとScientific Investigation
           </a>
         </li>
         <li>
-          <a href="/jp/blog/physicality-in-virtual-labs">
+          <a href="/jp/blog/physicality-in-virtual-labs/">
             仮想実験室における身体性：従来のシミュレーションを超えて
           </a>
         </li>
         <li>
-          <a href="/jp/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/jp/blog/how-to-choose-virtual-lab-software-school/">
             中等教育向け仮想実験室ソフトウェア：選定ガイド
           </a>
         </li>

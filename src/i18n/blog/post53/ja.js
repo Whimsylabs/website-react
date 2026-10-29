@@ -108,7 +108,7 @@ export const content = (
       </li>
       <li>
         <strong>実験台を手放さないこと。</strong>実験室がある学校では、シミュレーションを置き換えではなく準備のために使ってください。{" "}
-        <a href="/jp/blog/flipped-practical-preloading-lab-skills">反転型実技の考え方</a>{" "}
+        <a href="/jp/blog/flipped-practical-preloading-lab-skills/">反転型実技の考え方</a>{" "}
         は、IBにも同じように当てはまります。
       </li>
     </ul>
@@ -131,22 +131,22 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/jp/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/jp/blog/virtual-labs-online-schools-distance-learning/">
             オンラインスクールのためのバーチャルラボ：遠隔での理科教育
           </a>
         </li>
         <li>
-          <a href="/jp/blog/flipped-practical-preloading-lab-skills">
+          <a href="/jp/blog/flipped-practical-preloading-lab-skills/">
             反転型実技：実験台に立つ前に技能を身につける
           </a>
         </li>
         <li>
-          <a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">
+          <a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine/">
             他の仮想実験室が失敗する理由：物理エンジンによる解決策
           </a>
         </li>
         <li>
-          <a href="/jp/blog/process-based-lab-assessment-future">
+          <a href="/jp/blog/process-based-lab-assessment-future/">
             答えではなくプロセスを評価する
           </a>
         </li>

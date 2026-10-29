@@ -118,22 +118,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/es/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             Cascos VR vs Chromebooks para laboratorios virtuales en 2026
           </a>
         </li>
         <li>
-          <a href="/es/blog/vr-winter-web-first-virtual-labs">
+          <a href="/es/blog/vr-winter-web-first-virtual-labs/">
             ¿Invierno de RV? Por qué los labos web-first son la mejor opción
           </a>
         </li>
         <li>
-          <a href="/es/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/es/blog/how-to-choose-virtual-lab-software-school/">
             Laboratorios virtuales para secundaria: guía de compra
           </a>
         </li>
         <li>
-          <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/es/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Laboratorios virtuales vs. físicos: análisis costo-beneficio
           </a>
         </li>

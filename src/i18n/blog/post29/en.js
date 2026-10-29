@@ -159,7 +159,7 @@ export const content = (
       Words can only describe so much. Physics is best understood through experience.
     </p>
     <p>
-      If you teach physics and want to see what a genuine physics simulation engine can do, <a href="/contact">request a demo</a>. We'll show you experiments where the physics actually works, where student mistakes produce real consequences, and where data analysis reveals genuine physical relationships.
+      If you teach physics and want to see what a genuine physics simulation engine can do, <a href="/contact/">request a demo</a>. We'll show you experiments where the physics actually works, where student mistakes produce real consequences, and where data analysis reveals genuine physical relationships.
     </p>
     <p>
       Your students deserve simulations that teach correct intuitions. WhimsyLabs provides them.
@@ -203,10 +203,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/science-real-time-physics-simulations-virtual-labs">Real-Time Physics in Virtual Labs: Making Learning Fun</a></li>
-      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine">Why Traditional Virtual Labs Fail: The Physics Engine Problem</a></li>
-      <li><a href="/blog/sandbox-learning-revolution-stem-education">The Sandbox Learning Revolution: Why Freedom to Fail is Essential</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts: Custom Experiment Designer</a></li>
+      <li><a href="/blog/science-real-time-physics-simulations-virtual-labs/">Real-Time Physics in Virtual Labs: Making Learning Fun</a></li>
+      <li><a href="/blog/why-traditional-virtual-labs-fail-physics-engine/">Why Traditional Virtual Labs Fail: The Physics Engine Problem</a></li>
+      <li><a href="/blog/sandbox-learning-revolution-stem-education/">The Sandbox Learning Revolution: Why Freedom to Fail is Essential</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts: Custom Experiment Designer</a></li>
     </ul>
   </>
 );

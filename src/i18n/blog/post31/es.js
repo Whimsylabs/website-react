@@ -263,23 +263,23 @@ export const content = (
       Estaremos siguiendo la cumbre de cerca y actualizando nuestra comprensión a medida que
       surjan más detalles. Mientras tanto, si tienes curiosidad sobre cómo funcionan en la práctica
       la tutoría y evaluación con IA,{" "}
-      <a href="/contact">ponte en contacto</a>. Estaremos encantados de compartir lo que hemos aprendido.
+      <a href="/contact/">ponte en contacto</a>. Estaremos encantados de compartir lo que hemos aprendido.
     </p>
 
     <h2>Artículos relacionados</h2>
     <ul>
       <li>
-        <a href="/es/blog/ai-assessment-crisis-solution">
+        <a href="/es/blog/ai-assessment-crisis-solution/">
           Evaluación con IA: Cómo la tecnología está abordando la crisis de corrección
         </a>
       </li>
       <li>
-        <a href="/es/blog/ai-science-tutor-classroom-what-works">
+        <a href="/es/blog/ai-science-tutor-classroom-what-works/">
           Tutores de ciencias con IA en el aula: ¿Qué funciona realmente?
         </a>
       </li>
       <li>
-        <a href="/es/blog/premium-science-education-accessible-grants">
+        <a href="/es/blog/premium-science-education-accessible-grants/">
           Educación científica premium accesible para todas las escuelas
         </a>
       </li>

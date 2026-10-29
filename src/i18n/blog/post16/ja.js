@@ -188,17 +188,17 @@ export const content = (
     <h2>関連記事</h2>
     <ul>
       <li>
-        <a href="/jp/blog/physicality-in-virtual-labs">
+        <a href="/jp/blog/physicality-in-virtual-labs/">
           仮想実験室における物理性の重要性：従来のシミュレーションを超えて
         </a>
       </li>
       <li>
-        <a href="/jp/blog/science-real-time-physics-simulations-virtual-labs">
+        <a href="/jp/blog/science-real-time-physics-simulations-virtual-labs/">
           仮想実験室におけるリアルタイム物理シミュレーションの科学
         </a>
       </li>
       <li>
-        <a href="/jp/blog/sandbox-learning-revolution-stem-education">
+        <a href="/jp/blog/sandbox-learning-revolution-stem-education/">
           サンドボックス学習革命：失敗する自由がSTEM教育に不可欠な理由
         </a>
       </li>

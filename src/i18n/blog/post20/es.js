@@ -142,7 +142,7 @@ export const content = (
     </p>
 
     <p>
-      ¿Interesado en ver esto en acción? <a href="/contact">Contáctenos</a> para saber cómo WhimsyLabs puede mejorar la evaluación práctica de ciencias en su escuela.
+      ¿Interesado en ver esto en acción? <a href="/contact/">Contáctenos</a> para saber cómo WhimsyLabs puede mejorar la evaluación práctica de ciencias en su escuela.
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

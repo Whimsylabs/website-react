@@ -62,7 +62,7 @@ export const content = (
 
     <p>
       Puede hacerlo, y para algunos centros y algunos alumnos tiene que hacerlo.{" "}
-      <a href="/es/blog/virtual-labs-online-schools-distance-learning">Los centros online</a>{" "}
+      <a href="/es/blog/virtual-labs-online-schools-distance-learning/">Los centros online</a>{" "}
       no tienen alternativa, y el Science Education Tracker de la Royal Society constató que la proporción de alumnos de GCSE que realizan trabajo práctico al menos cada quince días cayó del 44% en 2016 al 26% en 2023, lo que sugiere que muchísimos alumnos de centros presenciales tampoco pisan demasiado el laboratorio.
     </p>
 
@@ -86,7 +86,7 @@ export const content = (
 
     <p>
       Este es el argumento que hemos desarrollado con detalle sobre la{" "}
-      <a href="/es/blog/physicality-in-virtual-labs">fisicidad en los laboratorios virtuales</a>, y la práctica invertida es donde da sus frutos de forma más concreta. La memoria muscular construida en la simulación es todo el mecanismo por el que este modelo ahorra tiempo después.
+      <a href="/es/blog/physicality-in-virtual-labs/">fisicidad en los laboratorios virtuales</a>, y la práctica invertida es donde da sus frutos de forma más concreta. La memoria muscular construida en la simulación es todo el mecanismo por el que este modelo ahorra tiempo después.
     </p>
 
     <h2>¿Cómo se pone en marcha?</h2>
@@ -117,7 +117,7 @@ export const content = (
 
     <p>
       Tres grupos, según nuestra experiencia. Los centros con buenos laboratorios y pocas horas en ellos, que son la mayoría de los institutos. Los centros cuya oferta práctica está limitada por el presupuesto de material más que por las instalaciones: la investigación de EngineeringUK de 2024 recogió que el 27% del profesorado de ciencias del Reino Unido afirma que su centro no puede permitirse el material necesario para las clases prácticas. Y el alumnado que encuentra abrumador el entorno físico del laboratorio, para quien llegar ya familiarizado con las exigencias del espacio marca la diferencia entre participar y limitarse a sobrellevarlo. Ese último grupo es la razón por la que escribimos sobre la{" "}
-      <a href="/es/blog/virtual-kidney-dissection-send-engagement">disección virtual y la participación del alumnado con necesidades educativas especiales</a>, y es un beneficio que suele sorprender a los centros que adoptaron el modelo únicamente por motivos de tiempo.
+      <a href="/es/blog/virtual-kidney-dissection-send-engagement/">disección virtual y la participación del alumnado con necesidades educativas especiales</a>, y es un beneficio que suele sorprender a los centros que adoptaron el modelo únicamente por motivos de tiempo.
     </p>
 
     <p>
@@ -128,22 +128,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/es/blog/virtual-labs-online-schools-distance-learning/">
             Laboratorios virtuales para centros online: ciencia a distancia
           </a>
         </li>
         <li>
-          <a href="/es/blog/physicality-in-virtual-labs">
+          <a href="/es/blog/physicality-in-virtual-labs/">
             Fisicidad en los laboratorios virtuales: más allá de las simulaciones tradicionales
           </a>
         </li>
         <li>
-          <a href="/es/blog/sandbox-learning-revolution-stem-education">
+          <a href="/es/blog/sandbox-learning-revolution-stem-education/">
             Aprendizaje sandbox: por qué la libertad de fallar es esencial en STEM
           </a>
         </li>
         <li>
-          <a href="/es/blog/virtual-reality-prepares-students-real-world-stem-careers">
+          <a href="/es/blog/virtual-reality-prepares-students-real-world-stem-careers/">
             La RV prepara al alumnado para carreras STEM con destrezas de laboratorio
           </a>
         </li>

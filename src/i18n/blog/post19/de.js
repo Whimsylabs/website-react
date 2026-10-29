@@ -172,7 +172,7 @@ export const content = (
       Die Noten steigen in KI-unterstützten Klassenzimmern. Aber wie die Forschung zeigt, sind Noten nicht dasselbe wie Lernen.
     </p>
     <p>
-      Bereit, virtuelle Labore zu sehen, die echte Fähigkeiten aufbauen? <a href="/de/contact">Kontaktieren Sie uns</a>, um den WhimsyLabs-Unterschied zu erleben.
+      Bereit, virtuelle Labore zu sehen, die echte Fähigkeiten aufbauen? <a href="/de/contact/">Kontaktieren Sie uns</a>, um den WhimsyLabs-Unterschied zu erleben.
     </p>
 
     <hr style={{ margin: '2rem 0', border: 'none', borderTop: '1px solid #ddd' }} />

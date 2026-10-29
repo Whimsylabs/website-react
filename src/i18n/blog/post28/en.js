@@ -69,7 +69,7 @@ export const content = (
       Not all biology topics benefit equally from virtual treatment. Based on our work with schools, certain applications stand out.
     </p>
     <p>
-      <strong>Kidney dissection</strong> translates exceptionally well to virtual format. We've written previously about <a href="/blog/virtual-kidney-dissection-send-engagement">how virtual kidney dissection supports SEND students</a>, but the benefits extend to all learners. The kidney's internal structures, particularly the nephrons and collecting ducts, are difficult to visualise in a physical specimen because they're microscopic. Virtual dissection can zoom from whole organ to cellular level seamlessly, something impossible with a real kidney and a student microscope.
+      <strong>Kidney dissection</strong> translates exceptionally well to virtual format. We've written previously about <a href="/blog/virtual-kidney-dissection-send-engagement/">how virtual kidney dissection supports SEND students</a>, but the benefits extend to all learners. The kidney's internal structures, particularly the nephrons and collecting ducts, are difficult to visualise in a physical specimen because they're microscopic. Virtual dissection can zoom from whole organ to cellular level seamlessly, something impossible with a real kidney and a student microscope.
     </p>
     <p>
       <strong>Heart dissection</strong> demonstrates similar advantages. Physical heart specimens from pigs or sheep provide good analogies for human anatomy, but cutting through tough cardiac muscle requires tools and technique that students often lack. Virtual versions allow students to make clean sections, examine chamber structures from multiple angles, and trace blood flow through the organ without any risk of destroying the specimen before they've understood it.
@@ -131,7 +131,7 @@ export const content = (
       We offer demo access to our biology simulations specifically so teachers can evaluate them properly. No commitment, no sales pressure. Just you, a virtual kidney, and the chance to decide whether this could work for your students.
     </p>
     <p>
-      <a href="/contact">Request a demo</a> and we'll set you up with access to our full biology simulation library. See for yourself whether virtual dissection deserves a place in your teaching toolkit.
+      <a href="/contact/">Request a demo</a> and we'll set you up with access to our full biology simulation library. See for yourself whether virtual dissection deserves a place in your teaching toolkit.
     </p>
 
     <div className="references-section">
@@ -177,10 +177,10 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/virtual-kidney-dissection-send-engagement">Virtual Kidney Dissection Boosts SEND Engagement</a></li>
-      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">Virtual Labs vs Physical Labs: Cost-Benefit Analysis</a></li>
-      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education">Meet WhimsyCat: AI That Supports, Not Replaces</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/blog/virtual-kidney-dissection-send-engagement/">Virtual Kidney Dissection Boosts SEND Engagement</a></li>
+      <li><a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">Virtual Labs vs Physical Labs: Cost-Benefit Analysis</a></li>
+      <li><a href="/blog/whimsycat-ai-tutor-transforming-science-education/">Meet WhimsyCat: AI That Supports, Not Replaces</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
     </ul>
   </>
 );

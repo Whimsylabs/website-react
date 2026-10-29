@@ -46,16 +46,21 @@ function findHtmlFiles(dir, files = []) {
   return files;
 }
 
+// Canonical URLs on this site always end in a trailing slash. A link to a page
+// without one costs a redirect hop (or 404s on GitHub Pages), so it is an error.
+// Asset links are exempt - they are files, not pages.
+const FILE_EXTENSION_PATTERN = /\.(pdf|docx?|xlsx?|pptx?|png|jpe?g|gif|svg|webp|avif|ico|bmp|xml|txt|html?|json|webmanifest|mp4|webm|mov|mp3|wav|m4a|ogg|css|js|mjs|map|zip|woff2?|ttf|eot)$/i;
+
 /**
  * Extract all internal links from HTML content
  */
 function extractLinks(content, baseUrl) {
   const links = new Set();
-  
+
   // Match href="/..." patterns
   const hrefPattern = /href=["'](\/[^"'#?]*)/g;
   let match;
-  
+
   while ((match = hrefPattern.exec(content)) !== null) {
     let url = match[1];
     // Normalize: ensure trailing slash for directories
@@ -64,8 +69,30 @@ function extractLinks(content, baseUrl) {
     }
     links.add(url);
   }
-  
+
   return links;
+}
+
+/**
+ * Find internal page links that are missing their trailing slash.
+ * Excludes external/protocol-relative URLs, mailto:/tel:, pure anchors and asset files.
+ * Returns the raw offending hrefs (deduplicated) so they can be grepped for in src/.
+ */
+function findMissingTrailingSlashLinks(content) {
+  const offenders = new Set();
+  const hrefPattern = /href=["'](\/[^"']*)["']/g;
+  let match;
+
+  while ((match = hrefPattern.exec(content)) !== null) {
+    const href = match[1];
+    if (href.startsWith('//')) continue;                      // protocol-relative external URL
+    const pathPart = href.split('#')[0].split('?')[0];
+    if (!pathPart || pathPart === '/') continue;              // pure anchor or root
+    if (FILE_EXTENSION_PATTERN.test(pathPart)) continue;      // asset, not a page
+    if (!pathPart.endsWith('/')) offenders.add(href);
+  }
+
+  return [...offenders];
 }
 
 /**
@@ -126,9 +153,16 @@ function validateInternalLinking() {
   }
   
   // Second pass: analyze links
+  const slashOffenders = new Map(); // offending href -> Set of pages containing it
+
   for (const [sourceUrl, { content }] of pageUrls) {
+    for (const href of findMissingTrailingSlashLinks(content)) {
+      if (!slashOffenders.has(href)) slashOffenders.set(href, new Set());
+      slashOffenders.get(href).add(sourceUrl);
+    }
+
     const links = extractLinks(content, sourceUrl);
-    
+
     for (const targetUrl of links) {
       // Only count links to pages that exist
       if (pageUrls.has(targetUrl)) {
@@ -214,7 +248,18 @@ function validateInternalLinking() {
   }
   
   console.log(`   Pages missing hreflang: ${missingLangLinks}\n`);
-  
+
+  // Phase 6: Trailing slash on internal page links
+  console.log('📋 Phase 6: Checking trailing slashes on internal links...');
+  for (const [href, pages] of [...slashOffenders].sort()) {
+    const samples = [...pages].slice(0, 3).join(', ');
+    errors.push(
+      `Missing trailing slash: href="${href}" -> should be "${href.split('#')[0].split('?')[0]}/"` +
+      ` (on ${pages.size} page${pages.size === 1 ? '' : 's'}, e.g. ${samples})`
+    );
+  }
+  console.log(`   Links missing a trailing slash: ${slashOffenders.size} unique href${slashOffenders.size === 1 ? '' : 's'}\n`);
+
   // Summary
   console.log('═'.repeat(60));
   console.log('📊 INTERNAL LINKING VALIDATION SUMMARY');
@@ -224,6 +269,7 @@ function validateInternalLinking() {
   console.log(`   Low-link pages: ${lowLinkPages.length}`);
   console.log(`   Blog posts without cross-links: ${postsWithoutCrossLinks}`);
   console.log(`   Missing hreflang: ${missingLangLinks}`);
+  console.log(`   Links missing trailing slash: ${slashOffenders.size}`);
   console.log(`   Errors: ${errors.length}`);
   console.log(`   Warnings: ${warnings.length}`);
   console.log('═'.repeat(60));
@@ -253,19 +299,19 @@ function validateInternalLinking() {
   
   if (errors.length > 0) {
     console.log('\n❌ ERRORS:');
-    for (const err of errors.slice(0, 10)) {
+    for (const err of errors.slice(0, 30)) {
       console.log(`   ${err}`);
     }
-    if (errors.length > 10) {
-      console.log(`   ... and ${errors.length - 10} more`);
+    if (errors.length > 30) {
+      console.log(`   ... and ${errors.length - 30} more`);
     }
   }
-  
+
   // Final result
   console.log('');
   if (errors.length > 0) {
     console.log('❌ INTERNAL LINKING VALIDATION FAILED!');
-    console.log('   Fix hreflang issues before deploying.\n');
+    console.log('   Fix hreflang / trailing-slash issues before deploying.\n');
     process.exit(1);
   } else if (orphanPages.length > 0 || lowLinkPages.length > 20) {
     console.log('⚠️  INTERNAL LINKING VALIDATION PASSED WITH WARNINGS');

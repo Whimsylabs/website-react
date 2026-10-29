@@ -176,7 +176,7 @@ export const content = (
       Document the answers you receive. Include security requirements in your contracts. And don't be afraid to walk away from vendors who can't provide clear answers.
     </p>
     <p>
-      At WhimsyLabs, we believe transparency builds trust. We're happy to answer all ten of these questions for any school considering our virtual science labs. <a href="/contact">Get in touch</a> and we'll send you our complete security documentation.
+      At WhimsyLabs, we believe transparency builds trust. We're happy to answer all ten of these questions for any school considering our virtual science labs. <a href="/contact/">Get in touch</a> and we'll send you our complete security documentation.
     </p>
 
     <div className="references-section">
@@ -257,9 +257,9 @@ export const content = (
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">UK Schools: Get £3,000 for VR Science Labs</a></li>
-      <li><a href="/blog/teachers-are-experts-custom-experiment-designer">Teachers Are the Experts. We Just Build the Tools.</a></li>
-      <li><a href="/blog/ai-assessment-crisis-solution">AI Detection Doesn't Work. Process-Based Assessment Does.</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">UK Schools: Get £3,000 for VR Science Labs</a></li>
+      <li><a href="/blog/teachers-are-experts-custom-experiment-designer/">Teachers Are the Experts. We Just Build the Tools.</a></li>
+      <li><a href="/blog/ai-assessment-crisis-solution/">AI Detection Doesn't Work. Process-Based Assessment Does.</a></li>
     </ul>
   </>
 );

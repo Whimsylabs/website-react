@@ -1,0 +1,13 @@
+[mcp_servers.gsc]
+command = "npx"
+args = [
+    "-y",
+    "mcp-server-gsc",
+]
+
+[mcp_servers.gsc.env]
+GOOGLE_APPLICATION_CREDENTIALS = "./secret/gsc-service-account.json"
+
+[mcp_servers.whimsylabs-geo]
+command = "node"
+args = ["./mcp-servers/geo-mcp/index.js"]

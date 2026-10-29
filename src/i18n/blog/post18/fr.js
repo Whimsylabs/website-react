@@ -148,7 +148,7 @@ export const content = (
       WhimsyLabs fonctionne sur les appareils que votre école possède déjà, s'adapte à vos besoins et reste précieux quel que soit ce qui se passe sur le marché de la RV. Ce n'est pas un compromis ; c'est un approvisionnement intelligent en technologie éducative.
     </p>
     <p>
-      Prêt à voir des laboratoires virtuels basés sur la physique qui fonctionnent sur n'importe quel appareil ? <a href="/fr/contact">Contactez-nous</a> pour planifier une démonstration.
+      Prêt à voir des laboratoires virtuels basés sur la physique qui fonctionnent sur n'importe quel appareil ? <a href="/fr/contact/">Contactez-nous</a> pour planifier une démonstration.
     </p>
   </div>
 );

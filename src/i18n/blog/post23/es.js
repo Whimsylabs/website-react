@@ -149,7 +149,7 @@ export const content = (
       Así que construimos WhimsyLabs sobre una premisa diferente: los profesores son los expertos en enseñar. Nosotros solo somos expertos en construir laboratorios virtuales. Cuando nos mantenemos en nuestro carril y te damos el control, los estudiantes obtienen lo mejor de ambos mundos.
     </p>
     <p>
-      Si eres un profesor que quiere laboratorios virtuales que funcionen como tú, nos encantaría mostrarte cómo se ve eso. <a href="/contact">Ponte en contacto</a> y programaremos una demostración.
+      Si eres un profesor que quiere laboratorios virtuales que funcionen como tú, nos encantaría mostrarte cómo se ve eso. <a href="/contact/">Ponte en contacto</a> y programaremos una demostración.
     </p>
 
     <div className="references-section">
@@ -195,10 +195,10 @@ export const content = (
 
     <h2>Lectura adicional</h2>
     <ul>
-      <li><a href="/es/blog/sandbox-learning-revolution-stem-education">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
-      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">Conoce a WhimsyCat: IA que apoya, no reemplaza</a></li>
-      <li><a href="/es/blog/edtech-vendor-security-questions-powerschool">10 preguntas para proveedores EdTech después de la brecha de PowerSchool</a></li>
-      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias VR</a></li>
+      <li><a href="/es/blog/sandbox-learning-revolution-stem-education/">La revolución del aprendizaje sandbox: Por qué la libertad de fallar es esencial</a></li>
+      <li><a href="/es/blog/whimsycat-ai-tutor-transforming-science-education/">Conoce a WhimsyCat: IA que apoya, no reemplaza</a></li>
+      <li><a href="/es/blog/edtech-vendor-security-questions-powerschool/">10 preguntas para proveedores EdTech después de la brecha de PowerSchool</a></li>
+      <li><a href="/blog/royal-society-partnership-grants-vr-science-labs/">Escuelas del Reino Unido: Obtén £3,000 para laboratorios de ciencias VR</a></li>
     </ul>
   </>
 );

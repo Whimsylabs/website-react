@@ -194,7 +194,7 @@ const BettPage = ({ t, language }) => {
           
           <div className="bett-blog-link-section" style={{ display: "flex", justifyContent: "center", margin: "30px 0" }}>
             <a 
-              href="/blog/whimsylabs-bett-2026-exhibition-announcement" 
+              href="/blog/whimsylabs-bett-2026-exhibition-announcement/" 
               className="bett-cta-button bett-cta-primary"
 
             >

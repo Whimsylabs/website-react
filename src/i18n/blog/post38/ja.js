@@ -171,17 +171,17 @@ export const content = (
       <h2>関連記事</h2>
       <ul>
         <li>
-          <a href="/blog/uk-government-ai-education-funding-2026">
+          <a href="/blog/uk-government-ai-education-funding-2026/">
             英国がAI教育に4,900万ポンドを投資：学校にとっての意味
           </a>
         </li>
         <li>
-          <a href="/jp/blog/whimsylabs-wins-techlearning-best-of-bett-2026">
+          <a href="/jp/blog/whimsylabs-wins-techlearning-best-of-bett-2026/">
             WhimsyLabsがTech&amp;Learning Best of BETT 2026賞を受賞
           </a>
         </li>
         <li>
-          <a href="/jp/blog/ai-science-tutor-classroom-what-works">
+          <a href="/jp/blog/ai-science-tutor-classroom-what-works/">
             AI科学チューター：教室で実際に機能するもの
           </a>
         </li>

@@ -188,22 +188,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/ai-assessment-crisis-solution">
+          <a href="/blog/ai-assessment-crisis-solution/">
             AI and the Assessment Crisis: How Process Data Changes Everything
           </a>
         </li>
         <li>
-          <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             The Critics Are Right: Most EdTech Is Useless
           </a>
         </li>
         <li>
-          <a href="/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/blog/vr-stem-education-research-pedagogical-scaffolding/">
             New VR Research Confirms: Technology Without Pedagogy Falls Flat
           </a>
         </li>
         <li>
-          <a href="/blog/whimsycat-ai-tutor-transforming-science-education">
+          <a href="/blog/whimsycat-ai-tutor-transforming-science-education/">
             Meet WhimsyCat: Our AI Innovation in Science Education
           </a>
         </li>

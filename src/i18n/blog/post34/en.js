@@ -154,17 +154,17 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/oecd-ai-learning-paradox-virtual-labs">
+          <a href="/blog/oecd-ai-learning-paradox-virtual-labs/">
             The OECD AI Learning Paradox: Why GenAI Fails Students (And How Virtual Labs Succeed)
           </a>
         </li>
         <li>
-          <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             The Critics Are Right: Most EdTech Is Useless
           </a>
         </li>
         <li>
-          <a href="/blog/ai-science-tutor-classroom-what-works">
+          <a href="/blog/ai-science-tutor-classroom-what-works/">
             AI Science Tutors: What Actually Works in the Classroom
           </a>
         </li>

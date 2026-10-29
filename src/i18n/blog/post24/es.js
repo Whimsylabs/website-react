@@ -108,7 +108,7 @@ export const content = (
       Somos transparentes sobre los datos: la información de los estudiantes permanece aislada por centro, nunca se usa para entrenar IA, y cumple totalmente con el RGPD.
     </p>
     <p>
-      Si estás evaluando software de laboratorio virtual, nos encantaría mostrarte cómo se compara WhimsyLabs. <a href="/contact">Contáctanos</a> para organizar una demostración con tu equipo de ciencias.
+      Si estás evaluando software de laboratorio virtual, nos encantaría mostrarte cómo se compara WhimsyLabs. <a href="/contact/">Contáctanos</a> para organizar una demostración con tu equipo de ciencias.
     </p>
   </>
 );

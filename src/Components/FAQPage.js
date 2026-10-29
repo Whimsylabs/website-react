@@ -11,7 +11,7 @@ const FAQPage = ({ t, currentLang, language }) => {
     <main className="container-fluid text-center p-0">
       <Helmet>
         <title>Virtual Lab FAQ: Pricing, Setup & Free Trials | WhimsyLabs</title>
-        <meta name="description" content="How much does WhimsyLabs cost? Do you need VR headsets? How do free school trials work? Clear answers to 40+ questions about our virtual lab software." />
+        <meta name="description" content="How much does WhimsyLabs cost? Do you need VR headsets? How do free school trials work? Clear answers to dozens of questions about our virtual lab software." />
         <meta name="keywords" content="virtual lab software FAQ, online lab simulations help, STEM virtual labs questions, virtual laboratory software support" />
       </Helmet>
       <Header currentLang={language || currentLang} />

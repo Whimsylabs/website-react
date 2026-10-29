@@ -196,18 +196,18 @@ export const content = (
     <h2>Verwandte Artikel</h2>
     <ul>
       <li>
-        <a href="/de/blog/physicality-in-virtual-labs">
+        <a href="/de/blog/physicality-in-virtual-labs/">
           Die Bedeutung der Physikalität in virtuellen Laboren: Ein Schritt über
           traditionelle Simulationen hinaus
         </a>
       </li>
       <li>
-        <a href="/de/blog/science-real-time-physics-simulations-virtual-labs">
+        <a href="/de/blog/science-real-time-physics-simulations-virtual-labs/">
           Die Wissenschaft hinter Echtzeit-Physiksimulationen in virtuellen Laboren
         </a>
       </li>
       <li>
-        <a href="/de/blog/sandbox-learning-revolution-stem-education">
+        <a href="/de/blog/sandbox-learning-revolution-stem-education/">
           Die Sandbox-Lernrevolution: Warum die Freiheit zu scheitern für die
           MINT-Bildung wesentlich ist
         </a>

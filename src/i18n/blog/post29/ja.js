@@ -151,7 +151,7 @@ export const content = (
       言葉は多くのことしか説明できません。物理学は経験を通じて最もよく理解されます。
     </p>
     <p>
-      物理を教えていて、本物の物理シミュレーションエンジンが何ができるかを見たい場合は、<a href="/contact">デモをリクエスト</a>してください。物理が実際に機能する実験、生徒の間違いが実際の結果を生む実験、データ分析が本物の物理的関係を明らかにする実験をお見せします。
+      物理を教えていて、本物の物理シミュレーションエンジンが何ができるかを見たい場合は、<a href="/contact/">デモをリクエスト</a>してください。物理が実際に機能する実験、生徒の間違いが実際の結果を生む実験、データ分析が本物の物理的関係を明らかにする実験をお見せします。
     </p>
     <p>
       あなたの生徒は正しい直感を教えるシミュレーションに値します。WhimsyLabsはそれを提供します。
@@ -195,10 +195,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/jp/blog/science-real-time-physics-simulations-virtual-labs">バーチャルラボでのリアルタイム物理：学習を楽しくする</a></li>
-      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine">従来のバーチャルラボが失敗する理由：物理エンジンの問題</a></li>
-      <li><a href="/jp/blog/sandbox-learning-revolution-stem-education">サンドボックス学習革命：失敗する自由が不可欠な理由</a></li>
-      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師は専門家です：カスタム実験デザイナー</a></li>
+      <li><a href="/jp/blog/science-real-time-physics-simulations-virtual-labs/">バーチャルラボでのリアルタイム物理：学習を楽しくする</a></li>
+      <li><a href="/jp/blog/why-traditional-virtual-labs-fail-physics-engine/">従来のバーチャルラボが失敗する理由：物理エンジンの問題</a></li>
+      <li><a href="/jp/blog/sandbox-learning-revolution-stem-education/">サンドボックス学習革命：失敗する自由が不可欠な理由</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer/">教師は専門家です：カスタム実験デザイナー</a></li>
     </ul>
   </>
 );

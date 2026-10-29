@@ -210,7 +210,7 @@ export const content = (
       それが私たちがWhimsyCatで構築している未来です。教師の専門知識を置き換えるAIではなく、それを拡張するAI。AIがうまくできることを行い、人間だけができることについてはしっかりと自分のレーンに留まるテクノロジー。
     </p>
     <p>
-      実際にそれがどのように見えるかを見たい場合は、<a href="/contact">お問い合わせください</a>。WhimsyCatの動作をお見せし、何ができて何ができないかをご自身で判断していただきます。
+      実際にそれがどのように見えるかを見たい場合は、<a href="/contact/">お問い合わせください</a>。WhimsyCatの動作をお見せし、何ができて何ができないかをご自身で判断していただきます。
     </p>
 
     <div className="references-section">
@@ -271,10 +271,10 @@ export const content = (
 
     <h2>関連記事</h2>
     <ul>
-      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education">WhimsyCatをご紹介：理科教育のためのAIチューター</a></li>
-      <li><a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection">WhimsyCat：AIで生徒のフラストレーションを検出</a></li>
-      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer">教師こそが専門家。私たちはツールを作るだけ。</a></li>
-      <li><a href="/jp/blog/ai-assessment-crisis-solution">理科におけるAI評価：危機から解決へ</a></li>
+      <li><a href="/jp/blog/whimsycat-ai-tutor-transforming-science-education/">WhimsyCatをご紹介：理科教育のためのAIチューター</a></li>
+      <li><a href="/jp/blog/emotional-intelligence-ai-tutors-whimsycat-frustration-detection/">WhimsyCat：AIで生徒のフラストレーションを検出</a></li>
+      <li><a href="/jp/blog/teachers-are-experts-custom-experiment-designer/">教師こそが専門家。私たちはツールを作るだけ。</a></li>
+      <li><a href="/jp/blog/ai-assessment-crisis-solution/">理科におけるAI評価：危機から解決へ</a></li>
     </ul>
   </>
 );

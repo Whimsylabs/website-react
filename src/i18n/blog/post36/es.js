@@ -188,22 +188,22 @@ export const content = (
       <h2>Artículos relacionados</h2>
       <ul>
         <li>
-          <a href="/es/blog/ai-assessment-crisis-solution">
+          <a href="/es/blog/ai-assessment-crisis-solution/">
             IA y la crisis de evaluación: Cómo los datos de proceso cambian todo
           </a>
         </li>
         <li>
-          <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/es/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             Los críticos tienen razón: La mayoría de EdTech es inútil
           </a>
         </li>
         <li>
-          <a href="/es/blog/vr-stem-education-research-pedagogical-scaffolding">
+          <a href="/es/blog/vr-stem-education-research-pedagogical-scaffolding/">
             Nueva investigación de RV confirma: La tecnología sin pedagogía fracasa
           </a>
         </li>
         <li>
-          <a href="/es/blog/whimsycat-ai-tutor-transforming-science-education">
+          <a href="/es/blog/whimsycat-ai-tutor-transforming-science-education/">
             Conoce a WhimsyCat: Nuestra innovación de IA en educación científica
           </a>
         </li>

@@ -352,23 +352,23 @@ export const content = (
     <h2>Related Articles</h2>
     <ul>
       <li>
-        <a href="/blog/physicality-in-virtual-labs">
+        <a href="/blog/physicality-in-virtual-labs/">
           The Importance of Physicality in Virtual Labs
         </a>
       </li>
       <li>
-        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers">
+        <a href="/blog/virtual-reality-prepares-students-real-world-stem-careers/">
           Preparing Industry-Ready STEM Graduates Through Virtual Laboratory
           Training
         </a>
       </li>
       <li>
-        <a href="/blog/sandbox-learning-revolution-stem-education">
+        <a href="/blog/sandbox-learning-revolution-stem-education/">
           The Sandbox Learning Revolution: Why Freedom to Fail is Essential
         </a>
       </li>
       <li>
-        <a href="/blog/whimsylabs-education-revolution">
+        <a href="/blog/whimsylabs-education-revolution/">
           A Brief History of WhimsyLabs: From Real-Time Simulations to BETT 2025
           Winner
         </a>

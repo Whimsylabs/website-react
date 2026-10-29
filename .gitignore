@@ -90,3 +90,20 @@ secret/*
 *.out
 *.synctex.gz
 *.toc
+
+# Client partnership packs: local only, never published.
+# The repo is public, so anything naming a prospect stays out of it.
+# The shared template and the generic partials ARE committed, so the
+# system is reusable; only client-identifying material is excluded.
+/docs/*-partnership-pack.html
+/docs/*-partnership-pack.pdf
+/packs/clients/*.json
+!/packs/clients/_example.json
+/packs/partials/roadmap-*.html
+!/packs/partials/roadmap-standard.html
+docs/pricing-copy-draft.md
+docs/pricing-research-aug-2026.md
+/packs
+
+# Private business document
+private/

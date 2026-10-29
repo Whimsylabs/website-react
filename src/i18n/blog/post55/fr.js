@@ -16,7 +16,7 @@ export const content = (
   <>
     <p>
       Les établissements qui envisagent la réalité virtuelle abordent presque toujours le sujet comme une décision d'achat : combien de casques, à quel prix, gérés comment, stockés où, rechargés par qui. Le cadrage est légitime, et c'est précisément pour cela que la plupart des établissements concluent que la VR n'est pas abordable. Une dotation pour une classe représente un engagement à cinq chiffres avant même qu'un seul cours n'ait été assuré et, comme nous l'écrivions lorsque{" "}
-      <a href="/fr/blog/meta-quest-education-support-cliff-2030">Meta a retiré sa plateforme éducative commerciale</a>, ce matériel s'accompagne désormais d'un horizon de support publié.
+      <a href="/fr/blog/meta-quest-education-support-cliff-2030/">Meta a retiré sa plateforme éducative commerciale</a>, ce matériel s'accompagne désormais d'un horizon de support publié.
     </p>
 
     <p>
@@ -53,7 +53,7 @@ export const content = (
 
     <p>
       Le vrai travail d'équité est ailleurs, et c'est toujours le même : garantir que l'expérience de base sur un ordinateur portable familial modeste soit excellente, et que{" "}
-      <a href="/fr/blog/vr-headsets-vs-chromebooks-cost-per-student">les connexions lentes et les configurations modestes</a>{" "}
+      <a href="/fr/blog/vr-headsets-vs-chromebooks-cost-per-student/">les connexions lentes et les configurations modestes</a>{" "}
       soient traitées comme des conditions normales d'utilisation et non comme des cas marginaux.
     </p>
 
@@ -65,7 +65,7 @@ export const content = (
 
     <p>
       Le geste technique est le cas le plus évident. Pipeter, doser, faire la mise au point d'un microscope, aligner un montage optique. Tout cela suppose deux mains effectuant des actions différentes dans une relation spatiale, et un casque équipé de manettes suivies en restitue la réalité bien plus fidèlement qu'une souris. Un élève qui se tiendra un jour devant une véritable paillasse tire du casque un entraînement nettement plus transférable, argument que nous avons développé à propos de{" "}
-      <a href="/fr/blog/virtual-reality-prepares-students-real-world-stem-careers">la VR et des compétences de laboratoire réelles</a>.
+      <a href="/fr/blog/virtual-reality-prepares-students-real-world-stem-careers/">la VR et des compétences de laboratoire réelles</a>.
     </p>
 
     <p>
@@ -80,7 +80,7 @@ export const content = (
 
     <p>
       Plus que pour quiconque. Une{" "}
-      <a href="/fr/blog/virtual-labs-online-schools-distance-learning">école en ligne</a>{" "}
+      <a href="/fr/blog/virtual-labs-online-schools-distance-learning/">école en ligne</a>{" "}
       n'a ni laboratoire, ni réserve de matériel, ni possibilité de remettre un instrument à un élève. Elle n'a pas non plus de parc de casques et n'en aura jamais, faute de site où l'entreposer.
     </p>
 
@@ -97,7 +97,7 @@ export const content = (
     <ul>
       <li>
         <strong>Protection des élèves.</strong> Demandez ce que l'élève peut atteindre depuis l'intérieur de l'application. Une plateforme sans espace de discussion, sans contenu généré par les utilisateurs et sans porte de sortie vers le web ouvert est bien plus simple à sécuriser sur un appareil domestique qu'une plateforme dotée de fonctions sociales. C'est l'une des raisons pour lesquelles{" "}
-        <a href="/blog/dfe-ai-safety-standards-tutor-checklist">WhimsyCat ne propose aucune fenêtre de discussion à l'élève</a>.
+        <a href="/blog/dfe-ai-safety-standards-tutor-checklist/">WhimsyCat ne propose aucune fenêtre de discussion à l'élève</a>.
       </li>
       <li>
         <strong>Limites d'âge.</strong> La plupart des casques grand public affichent un âge minimum fixé par le fabricant. C'est à la famille d'en décider, pas à l'établissement, mais celui-ci doit en avoir connaissance et ne doit jamais laisser entendre qu'un casque est attendu.
@@ -124,22 +124,22 @@ export const content = (
       <h2>Articles connexes</h2>
       <ul>
         <li>
-          <a href="/fr/blog/meta-quest-education-support-cliff-2030">
+          <a href="/fr/blog/meta-quest-education-support-cliff-2030/">
             Les casques VR de votre établissement viennent de perdre leur feuille de route
           </a>
         </li>
         <li>
-          <a href="/fr/blog/vr-headsets-vs-chromebooks-cost-per-student">
+          <a href="/fr/blog/vr-headsets-vs-chromebooks-cost-per-student/">
             Casques VR ou Chromebooks pour les laboratoires virtuels : guide des coûts 2026
           </a>
         </li>
         <li>
-          <a href="/fr/blog/vr-winter-web-first-virtual-labs">
+          <a href="/fr/blog/vr-winter-web-first-virtual-labs/">
             Hiver de la VR ? Pourquoi les laboratoires virtuels web-first ont du sens à l'école
           </a>
         </li>
         <li>
-          <a href="/fr/blog/virtual-labs-online-schools-distance-learning">
+          <a href="/fr/blog/virtual-labs-online-schools-distance-learning/">
             Laboratoires virtuels pour les écoles en ligne : la science à distance
           </a>
         </li>

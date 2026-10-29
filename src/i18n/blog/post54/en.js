@@ -87,7 +87,7 @@ export const content = (
 
     <p>
       Groups have real buying power and should use it: one negotiation, one data protection assessment, one integration with the MIS or LMS, one security review. Making twenty schools each run their own vendor due diligence is a waste of twenty people's time, and it produces twenty different answers to the same data protection question, which is a governance problem waiting to happen. Our{" "}
-      <a href="/blog/edtech-vendor-security-questions-powerschool">list of questions to put to edtech vendors</a>{" "}
+      <a href="/blog/edtech-vendor-security-questions-powerschool/">list of questions to put to edtech vendors</a>{" "}
       is written to be run once, centrally.
     </p>
 
@@ -147,22 +147,22 @@ export const content = (
       <h2>Related Articles</h2>
       <ul>
         <li>
-          <a href="/blog/how-to-choose-virtual-lab-software-school">
+          <a href="/blog/how-to-choose-virtual-lab-software-school/">
             Virtual Lab Software for Secondary Schools: A Buyer's Guide
           </a>
         </li>
         <li>
-          <a href="/blog/edtech-vendor-security-questions-powerschool">
+          <a href="/blog/edtech-vendor-security-questions-powerschool/">
             10 Questions to Ask EdTech Vendors After the PowerSchool Breach
           </a>
         </li>
         <li>
-          <a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis">
+          <a href="/blog/virtual-labs-vs-physical-labs-cost-benefit-analysis/">
             Virtual vs Physical Labs: A Cost-Benefit Analysis
           </a>
         </li>
         <li>
-          <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs">
+          <a href="/blog/edtech-critics-right-passive-learning-vs-active-labs/">
             The Critics Are Right: Most EdTech Is Useless
           </a>
         </li>
